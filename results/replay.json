@@ -1,5 +1,5 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -7728,6 +7728,31 @@
       "statement": "(f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0 for every binary sextic",
       "random_sextics_checked": 20,
       "held": 20
+    },
+    "certificates": {
+      "cubic: det L_3 = (A^2-B/6)/16": {
+        "grid_points": 125,
+        "degree_bound": 4,
+        "failures": [],
+        "certified": true
+      },
+      "quartic: (f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0": {
+        "grid_points": 64,
+        "degree_bound": 3,
+        "failures": [],
+        "certified": true
+      },
+      "degree 12: (f,G)_3, (f,G)_5 divisible by A^2-25B/96": {
+        "grid_points": 512,
+        "degree_bound": 7,
+        "failures": [],
+        "certified": true
+      }
+    },
+    "degree12_partner": {
+      "statement": "if A^2 = 25B/96 then G(f) satisfies (f,G)_3 = (f,G)_5 = 0",
+      "formula": "G = 144A^2 f^2 + 216/5 A iH + 24A f(f,i)_2 - 9/4 i^3 - 9 Delta H + (f,i)_2^2",
+      "converse": "open; random sextics off the hypersurface have no degree-12 partner"
     },
     "drop_curves_as_invariant_loci": [
       {

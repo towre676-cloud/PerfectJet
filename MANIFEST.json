@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e9f5960dba2a78852c50736fececdfa7c726d3f3ed73661ae729a1a0af3b1678",
-      "size_bytes": 5033
+      "sha256": "2d9e76f3424142dd5487fdadece5abf162af501817051b21f29d573c6ac83235",
+      "size_bytes": 5178
     },
     {
       "path": "archive/README.md",
@@ -84,8 +84,8 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "28a2237c43341fb2e40ae69273f4a93773f0f74580ae8bb07587d9f0d7430feb",
-      "size_bytes": 119804
+      "sha256": "cfca01ce542a3b5aa965f557a4656c96e65b4db13302b4502c3ba2b34741e041",
+      "size_bytes": 121091
     },
     {
       "path": "data/topics.json",
@@ -94,8 +94,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "bd8fd13f9c4a57db25944975d30b68b71c7558fe783fd61ecf49206903b4ddc4",
-      "size_bytes": 4593
+      "sha256": "0454b65fcd07e7baf85090fb706fb9de377c7436d6c73f5b325a73ddf6de4aee",
+      "size_bytes": 4642
     },
     {
       "path": "docs/COVERAGE_MAP.md",
@@ -104,13 +104,13 @@
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "3cb1165eede6eabface83dd997ad8c34b35a940b6f83a11b6cff7da79239564e",
-      "size_bytes": 53122
+      "sha256": "4710b1431ec541c8acd5f89d91d230c4573b72f5583af6de60ce61aec8daaa21",
+      "size_bytes": 53812
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "87983d97ae1e55ad48d3ce517e35f72ba2730c5352356cbd475507e77e7d6b38",
-      "size_bytes": 153332
+      "sha256": "ee4d99ce3b99034cc6296eae6a99b3001a8b151146c097ee31489ef0bdd1bb4a",
+      "size_bytes": 156455
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -119,8 +119,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "18b33126077f127fd32312cc7410a1e6de5555ee88de14a8474c65cc1ac3a2fe",
-      "size_bytes": 15669
+      "sha256": "bf55b8d412406c3f8161eba795c49270be01b529d142da47d06a90feb91a1ffc",
+      "size_bytes": 16944
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
-      "sha256": "4bb88ae4cf8fe2aed2a65057d929b2cf02d45a4db4fe50db479822702b1f6eda",
-      "size_bytes": 8491
+      "sha256": "63ee738b82ef0a69303024725fb18f0aa324eb5ec20305ec346e50b5d955cd8e",
+      "size_bytes": 9328
     },
     {
       "path": "docs/chapters/16_deformation_moduli_and_codes.md",
@@ -234,13 +234,13 @@
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "3670f66c53e83d2999462da2163a8ad036c0a96613e48ec98513cfd47f65a7c8",
-      "size_bytes": 4639
+      "sha256": "c5f3df086e23efd8260d13bbbf20931befb5d59e539d3469bfc1e94d8d81681d",
+      "size_bytes": 4831
     },
     {
       "path": "docs/chapters/24_mathematical_proofs.md",
-      "sha256": "8667c4988d4f08de1dbf4e29534a25cb1066c8cf5061728ce695e0cb42b80bfa",
-      "size_bytes": 20725
+      "sha256": "dd8ec09eb88bbab2b132e225c6ad48632404b364949e54b19038b4c215ba6040",
+      "size_bytes": 22129
     },
     {
       "path": "docs/chapters/25_historical_results_and_extended_leads.md",
@@ -274,7 +274,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "57eacaf4a1030c029588b196990d2277220321bdf303ec7f7ac9a31e9766f9c6",
+      "sha256": "9938a68e6d7709482ed01ce4d5707f982814faad3f551e259ceb12501b0bb5e1",
       "size_bytes": 381
     },
     {
@@ -314,18 +314,18 @@
     },
     {
       "path": "results/replay.json",
-      "sha256": "18ea86bb8f22782ffd0adc31c84a76619159d20da52d0dd02ef6cb4cea073875",
-      "size_bytes": 192993
+      "sha256": "8b5501838c5ea72840b6442d3cbadde482315b29c63ffeaf944813192af03cc6",
+      "size_bytes": 193818
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "b052fb3db2c17fdde60baada4af0d1ab826fc64144027cb6c39f724f1d144ed3",
-      "size_bytes": 70436
+      "sha256": "8dbac50be281c33afec002a0612172b6ba30dc46fb5b11c5acddb0a24e38a846",
+      "size_bytes": 71465
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "4b26a3906eba8f68cb3f3dcb6b37225cda3d1b1f4422e3234c97ad235dbe98e6",
-      "size_bytes": 48001
+      "sha256": "27aee22e750634e3d6fd709ad3077044c42fcf8da37dff66f21cc9063b0c1c39",
+      "size_bytes": 48625
     },
     {
       "path": "scripts/build_release.py",
@@ -349,7 +349,7 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "523fac81c078eaf6ca322ae07426fc36cfce04aabdc80857eb88851c0fb27e7d",
+      "sha256": "30c487c4cb3a7b19aaad755b522ad24a1dfa348a03555d5621c150b31938cc68",
       "size_bytes": 103
     },
     {
@@ -444,8 +444,8 @@
     },
     {
       "path": "src/perfectjet/invariants.py",
-      "sha256": "10d802bee0ed3f236a6bc066dd4c9bff3a4a943944ebf7e5e21be8f1dab40ba2",
-      "size_bytes": 9724
+      "sha256": "bdc96ac97943df36a5dba2c5ffb7387944e63c671c39ddbdd6322021b37b0f69",
+      "size_bytes": 12502
     },
     {
       "path": "src/perfectjet/jets.py",
@@ -534,8 +534,8 @@
     },
     {
       "path": "tests/test_invariants.py",
-      "sha256": "0db42b85cf5b5e02a3c055b0f1c74e08ea321043165534ff89b08e104a2bd37d",
-      "size_bytes": 3317
+      "sha256": "c93484612a34f05efbcd4ab38d49bee08b2a19446cda57b401134a18c701810b",
+      "size_bytes": 4317
     },
     {
       "path": "tests/test_lattice_realization.py",
