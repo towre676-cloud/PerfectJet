@@ -1,0 +1,11 @@
+{
+  "registered_before_control_scores": true,
+  "adaptive_after_initial_onset_scores": true,
+  "reason": "Test whether the3.45%secondary onset precision gain reflects individually observed motion or only a transformed conventional trait basis.",
+  "families": [
+    "physics_reference",
+    "repeat_increment"
+  ],
+  "control": "Training-source expected motion from conventional traits only; no evaluated individual movement metric enters reference. Repeat increment keeps only reliability-scaled actual deviation from that expectation. Counts shared by every model.",
+  "scope": "All primary/secondary scores retained; no gain selected using2025can become confirmatory."
+}

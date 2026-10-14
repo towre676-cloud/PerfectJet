@@ -1,3 +1,5 @@
+Latest continuation: `ONSET_AND_TRAVEL.md` reconciles the accessible PerfectJet v0.10 branch and introduces actual NFL onset/travel targets. Post-onset travel is repeatable (game-half rank correlation0.855), but the new source models do not establish a scouting advantage. Original duration and pooled results remain retained.
+
 Current update: the twelve-partition audit in `POOLED_SCOUTING_AUDIT.md` supersedes the earlier three-partition stability assessment below. All original scores reproduce, but the expanded mean relative gain is −0.13%.
 
 # Canonical NFL movement findings after the two-session merge

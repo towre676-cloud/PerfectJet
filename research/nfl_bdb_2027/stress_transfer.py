@@ -16,10 +16,18 @@ from mechanism import player_splits
 SEED=F.SEED+15000
 FAMILIES=['conventional','raw_motion','matched_recovery','stress_curve','robust_recovery']
 ALPHAS=[10.,100.,1000.]
+NUM_CONTEXT=F.NUM+F.CAT
 
 def context_predict(tr,te,target,cache='private_stress/context'):
     if set(tr.nfl_id)&set(te.nfl_id):raise ValueError('context player leakage')
-    path=Path(cache);path.mkdir(parents=True,exist_ok=True);key=hashlib.sha256(json.dumps(['fixed_forest120_depth6_leaf30',target,sorted(map(int,tr.nfl_id.unique())),sorted(map(int,te.nfl_id.unique()))]).encode()).hexdigest();file=path/(key+'.pkl');ids=te[['game_id','play_id','nfl_id']]
+    path=Path(cache);path.mkdir(parents=True,exist_ok=True)
+    # Player ids alone do not identify a training dataset. Changed eligible
+    # records, labels or context values must not reuse a stale fitted reference.
+    # Held-out outcome labels are deliberately absent from the test-input hash.
+    columns=['game_id','play_id','nfl_id']+NUM_CONTEXT
+    train_hash=hashlib.sha256(pd.util.hash_pandas_object(tr[columns+[target]],index=False).to_numpy().tobytes()).hexdigest()
+    test_hash=hashlib.sha256(pd.util.hash_pandas_object(te[columns],index=False).to_numpy().tobytes()).hexdigest()
+    key=hashlib.sha256(json.dumps(['fixed_forest120_depth6_leaf30_content_v2',target,train_hash,test_hash]).encode()).hexdigest();file=path/(key+'.pkl');ids=te[['game_id','play_id','nfl_id']]
     if file.exists():q=pd.read_pickle(file);assert q[['game_id','play_id','nfl_id']].reset_index(drop=True).equals(ids.reset_index(drop=True));return q.prediction.to_numpy()
     num=T.numeric().fit(tr[F.NUM]);cat=OneHotEncoder(handle_unknown='ignore',sparse_output=False).fit(tr[F.CAT].fillna('MISSING').astype(str))
     def matrix(x):return np.c_[num.transform(x[F.NUM]),cat.transform(x[F.CAT].fillna('MISSING').astype(str))]

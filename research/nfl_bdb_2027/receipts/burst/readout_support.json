@@ -1,0 +1,1762 @@
+{
+  "panels": 278,
+  "own_empirical_mean_identified": 278,
+  "earlier_reference_identified": 13,
+  "reports": [
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 1
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 4
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 5
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 6
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 6
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 2
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": true,
+      "distinct_directions": 5
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "own_readout_identified": true,
+      "earlier_reference_identified": false,
+      "distinct_directions": 3
+    }
+  ],
+  "planning_examples": [
+    {
+      "variance_before": 0.1220305483726689,
+      "best_candidate": 4,
+      "reduction": 0.09286037414525954,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.06362425220809677,
+      "best_candidate": 0,
+      "reduction": 0.032663279400855075,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.028728421358559634,
+      "best_candidate": 7,
+      "reduction": 0.009431626334355809,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.01861126227314476,
+      "best_candidate": 1,
+      "reduction": 0.005244905485847607,
+      "new_direction": true,
+      "resolves_readout": true
+    },
+    {
+      "variance_before": 0.04936624522551246,
+      "best_candidate": 1,
+      "reduction": 0.018800967093686262,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.022899718944951027,
+      "best_candidate": 3,
+      "reduction": 0.00984209721692564,
+      "new_direction": true,
+      "resolves_readout": true
+    },
+    {
+      "variance_before": 0.05406895772721231,
+      "best_candidate": 6,
+      "reduction": 0.024413400082774577,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.017411283720884137,
+      "best_candidate": 4,
+      "reduction": 0.004249632831853459,
+      "new_direction": true,
+      "resolves_readout": true
+    },
+    {
+      "variance_before": 0.06362425220809677,
+      "best_candidate": 0,
+      "reduction": 0.032663279400855075,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.0352455036946405,
+      "best_candidate": 6,
+      "reduction": 0.017332862927128993,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.04879756404149258,
+      "best_candidate": 3,
+      "reduction": 0.01919719111134718,
+      "new_direction": true,
+      "resolves_readout": false
+    },
+    {
+      "variance_before": 0.02044902637042876,
+      "best_candidate": 5,
+      "reduction": 0.007656307004576169,
+      "new_direction": true,
+      "resolves_readout": true
+    }
+  ],
+  "scope": "Exact rational row-space claims for declared bilinear response and rounded raw coordinates. Own mean is supported by construction. Earlier-reference demand weights learned from earlier source athletes only. Planning variance assumes isotropic coefficient prior and independent noise1/20, not a fitted biological posterior. No predictive advantage follows from these algebraic identities."
+}

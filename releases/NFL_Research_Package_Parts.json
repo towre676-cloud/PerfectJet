@@ -1,0 +1,21 @@
+{
+  "output": "NFL_Big_Data_Bowl_2027_Research_Package.zip",
+  "sha256": "d1b78745ebbf38d449c6c01ec3b210383cba270ab92a9783892ec8643d526c1c",
+  "parts": [
+    {
+      "name": "NFL_Big_Data_Bowl_2027_Research_Package.zip.part01",
+      "sha256": "736deee76a191768861cc496d608d34321ed3d1e5d63cad1b93d4c879aa4b09c",
+      "size": 8388608
+    },
+    {
+      "name": "NFL_Big_Data_Bowl_2027_Research_Package.zip.part02",
+      "sha256": "facbe7009d68f261419a1884968550aca482898f312756e0bd0dbb7b4e9f6512",
+      "size": 8388608
+    },
+    {
+      "name": "NFL_Big_Data_Bowl_2027_Research_Package.zip.part03",
+      "sha256": "5cb9a4fb07016e6bce4545eaf9ca1c942f185424766846ad0a9c4afdd61b6340",
+      "size": 6439853
+    }
+  ]
+}

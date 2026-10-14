@@ -1,0 +1,58 @@
+{
+  "source_attempts": 467,
+  "source_players": 74,
+  "population": {
+    "0.5": {
+      "records": 11723,
+      "players": 74,
+      "by_class": {
+        "2023": 23,
+        "2024": 22,
+        "2025": 29
+      },
+      "median_onset": 0.20000004768371582,
+      "median_travel1": 0.557364645595341,
+      "rank_getoff_onset": 0.42529795782745455,
+      "rank_getoff_total": 0.7161050152279396
+    },
+    "1.0": {
+      "records": 14057,
+      "players": 74,
+      "by_class": {
+        "2023": 23,
+        "2024": 22,
+        "2025": 29
+      },
+      "median_onset": 0.2999999523162842,
+      "median_travel1": 0.4670057960732663,
+      "rank_getoff_onset": 0.5903875155762456,
+      "rank_getoff_total": 0.7439379299463902
+    },
+    "2.0": {
+      "records": 13573,
+      "players": 74,
+      "by_class": {
+        "2023": 23,
+        "2024": 22,
+        "2025": 29
+      },
+      "median_onset": 0.5999999046325684,
+      "median_travel1": 0.354131141758283,
+      "rank_getoff_onset": 0.720962007171151,
+      "rank_getoff_total": 0.7441314652602492
+    }
+  },
+  "rejects": {
+    "game_0.5_already_active_at_snap": 2936,
+    "game_2.0_no_sustained_onset": 1058,
+    "game_1.0_already_active_at_snap": 594,
+    "game_2.0_already_active_at_snap": 32,
+    "game_0.5_short_post_snap": 2,
+    "game_1.0_short_post_snap": 2,
+    "game_2.0_short_post_snap": 2,
+    "game_1.0_no_sustained_onset": 12,
+    "game_0.5_no_sustained_onset": 4
+  },
+  "target": "Operational snap-to-sustained-speed onset plus post-onset one-yard smoothed geometric arc travel; no supplied get-off/reaction/LOS/contact equivalence assumed.",
+  "branches": "Source nine speed/smoothing scenarios; >=5valid. Primary NFL1yd/s gate, with.5/2supporting; game smoothing7. Whole pre/post-snap traces must be contiguous."
+}

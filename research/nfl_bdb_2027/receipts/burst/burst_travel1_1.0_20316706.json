@@ -1,0 +1,268 @@
+{
+  "target": "burst_travel1",
+  "threshold": 1.0,
+  "seed": 20316706,
+  "bank": [
+    [
+      "conventional",
+      10.0,
+      0
+    ],
+    [
+      "conventional",
+      100.0,
+      0
+    ],
+    [
+      "conventional",
+      1000.0,
+      0
+    ],
+    [
+      "burst",
+      10.0,
+      2
+    ],
+    [
+      "burst",
+      10.0,
+      4
+    ],
+    [
+      "burst",
+      100.0,
+      2
+    ],
+    [
+      "burst",
+      100.0,
+      4
+    ],
+    [
+      "burst",
+      1000.0,
+      2
+    ],
+    [
+      "burst",
+      1000.0,
+      4
+    ],
+    [
+      "repeat_precision",
+      10.0,
+      2
+    ],
+    [
+      "repeat_precision",
+      10.0,
+      4
+    ],
+    [
+      "repeat_precision",
+      100.0,
+      2
+    ],
+    [
+      "repeat_precision",
+      100.0,
+      4
+    ],
+    [
+      "repeat_precision",
+      1000.0,
+      2
+    ],
+    [
+      "repeat_precision",
+      1000.0,
+      4
+    ]
+  ],
+  "outer_selection": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "burst",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "repeat_precision",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "selected",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "burst",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "repeat_precision",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "selected",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "burst",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "repeat_precision",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "selected",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        1000.0,
+        0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "burst",
+      "spec": [
+        "burst",
+        100.0,
+        2
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "repeat_precision",
+      "spec": [
+        "repeat_precision",
+        1000.0,
+        2
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "selected",
+      "spec": [
+        "burst",
+        100.0,
+        2
+      ]
+    }
+  ],
+  "prior_2025_inspection": true,
+  "target_scope": "Operational geometric burst outcome, residualized by training-only NFL context reference. Actual game situations define target only. Not a verified neurological reaction, LOS crossing, contact or causal ability.",
+  "predictors": "15conventional body/timed/NGS attributes, Combine position and shared source attempt counts; source1yard travel/speed/acceleration summaries. Repeat-precision moments fit inside every inner and outer split.",
+  "context_scope": "Every inner/outer split rebuilds crossfitted training target and train-only evaluated target; fixed120tree reference from prior study. No held-out labels construct training target.",
+  "development": {
+    "players": 45,
+    "mse": {
+      "conventional": 0.0003392961672402378,
+      "burst": 0.00034025170288687123,
+      "repeat_precision": 0.0003394973639191972,
+      "selected": 0.00034025170288687123
+    },
+    "comparisons": {
+      "burst": {
+        "absolute_gain": -9.555356466334258e-07,
+        "relative_gain": -0.002816228825705718,
+        "conditional_ci95": [
+          -1.294224107441228e-05,
+          1.3683824198746203e-05
+        ]
+      },
+      "repeat_precision": {
+        "absolute_gain": -2.0119667895937217e-07,
+        "relative_gain": -0.0005929824689617414,
+        "conditional_ci95": [
+          -2.4475195444499096e-06,
+          1.6938934491151514e-06
+        ]
+      },
+      "selected": {
+        "absolute_gain": -9.555356466334258e-07,
+        "relative_gain": -0.002816228825705718,
+        "conditional_ci95": [
+          -1.3322457019862337e-05,
+          1.328842852360149e-05
+        ]
+      }
+    },
+    "scope": "Paired fixed-prediction player bootstrap, omitting refitting and adaptive-search uncertainty; outcomes constructed by held-out context reference."
+  }
+}

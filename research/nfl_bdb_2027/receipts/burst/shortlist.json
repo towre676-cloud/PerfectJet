@@ -1,0 +1,707 @@
+{
+  "posthoc_after_primary_MSE": true,
+  "rule": "Best predicted quarter versus best observed quarter within each held-out fold/class; lower operational time is better. Every family and fold retained.",
+  "scope": "Descriptive decision metric, not frozen unseen-class confirmation or selection-adjusted advantage. Context target differs by training fold.",
+  "reports": [
+    {
+      "target": "burst_onset",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_3",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_onset",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_2",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 2,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 2,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 2,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 2,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_onset",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_0",
+      "players": 12,
+      "models": {
+        "conventional": {
+          "hits": 2,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_onset",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_1",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 2,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 2,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 2,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 2,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_onset",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "forward",
+      "players": 29,
+      "models": {
+        "conventional": {
+          "hits": 3,
+          "selected": 8
+        },
+        "burst": {
+          "hits": 3,
+          "selected": 8
+        },
+        "repeat_precision": {
+          "hits": 3,
+          "selected": 8
+        },
+        "selected": {
+          "hits": 3,
+          "selected": 8
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 0.5,
+      "seed": 20316306,
+      "partition": "fold_3",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 0.5,
+      "seed": 20316306,
+      "partition": "fold_2",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 2,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 2,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 2,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 2,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 0.5,
+      "seed": 20316306,
+      "partition": "fold_0",
+      "players": 12,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 0.5,
+      "seed": 20316306,
+      "partition": "fold_1",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 0.5,
+      "seed": 20316306,
+      "partition": "forward",
+      "players": 29,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 8
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 8
+        },
+        "repeat_precision": {
+          "hits": 2,
+          "selected": 8
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 8
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_3",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_2",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_0",
+      "players": 12,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "fold_1",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316306,
+      "partition": "forward",
+      "players": 29,
+      "models": {
+        "conventional": {
+          "hits": 3,
+          "selected": 8
+        },
+        "burst": {
+          "hits": 3,
+          "selected": 8
+        },
+        "repeat_precision": {
+          "hits": 3,
+          "selected": 8
+        },
+        "selected": {
+          "hits": 3,
+          "selected": 8
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316506,
+      "partition": "fold_3",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316506,
+      "partition": "fold_2",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316506,
+      "partition": "fold_0",
+      "players": 12,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316506,
+      "partition": "fold_1",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316706,
+      "partition": "fold_3",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316706,
+      "partition": "fold_2",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316706,
+      "partition": "fold_0",
+      "players": 12,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 0,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 0,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 1.0,
+      "seed": 20316706,
+      "partition": "fold_1",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 2.0,
+      "seed": 20316306,
+      "partition": "fold_3",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 2.0,
+      "seed": 20316306,
+      "partition": "fold_2",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 2.0,
+      "seed": 20316306,
+      "partition": "fold_0",
+      "players": 12,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 0,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 1,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 1,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 2.0,
+      "seed": 20316306,
+      "partition": "fold_1",
+      "players": 11,
+      "models": {
+        "conventional": {
+          "hits": 0,
+          "selected": 3
+        },
+        "burst": {
+          "hits": 1,
+          "selected": 3
+        },
+        "repeat_precision": {
+          "hits": 2,
+          "selected": 3
+        },
+        "selected": {
+          "hits": 2,
+          "selected": 3
+        }
+      }
+    },
+    {
+      "target": "burst_travel1",
+      "threshold": 2.0,
+      "seed": 20316306,
+      "partition": "forward",
+      "players": 29,
+      "models": {
+        "conventional": {
+          "hits": 1,
+          "selected": 8
+        },
+        "burst": {
+          "hits": 2,
+          "selected": 8
+        },
+        "repeat_precision": {
+          "hits": 2,
+          "selected": 8
+        },
+        "selected": {
+          "hits": 2,
+          "selected": 8
+        }
+      }
+    }
+  ]
+}

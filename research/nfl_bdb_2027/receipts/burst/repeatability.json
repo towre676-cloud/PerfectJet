@@ -1,0 +1,27 @@
+{
+  "repeats": 200,
+  "same_primary_cohort": true,
+  "game_half_rank_quantiles": {
+    "onset": [
+      0.3079638714056523,
+      0.42815932370726895,
+      0.5278762495372085
+    ],
+    "travel1": [
+      0.8024180858941133,
+      0.8551616685178329,
+      0.8999043564112058
+    ],
+    "total1": [
+      0.5434214179933359,
+      0.6359990127113415,
+      0.724134579785265
+    ],
+    "player_get_off": [
+      0.7124699185486857,
+      0.7873627051709244,
+      0.8491777736640751
+    ]
+  },
+  "scope": "Random recorded-game halves; measurement/role/context sensitivity, not independent talent ground truth or an accuracy ceiling."
+}

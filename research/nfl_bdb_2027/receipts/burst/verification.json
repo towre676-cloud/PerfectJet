@@ -1,0 +1,16 @@
+{
+  "reconstructed_from_verified_official_inputs": true,
+  "execution_resumed_after_environment_interruption": true,
+  "official_input_hashes": 9,
+  "embedded_modules": 27,
+  "numeric_outputs_compared": 1552,
+  "maximum_difference": 9.71445146547012e-17,
+  "receipts_compared": 11,
+  "integrated_tests": 74,
+  "movement_donor_tests": 18,
+  "perfectjet_branch_tests": 137,
+  "total_checks": 229,
+  "notebook_words_including_stream": 764,
+  "notebook_figures": 4,
+  "all_code_cells_completed": true
+}
