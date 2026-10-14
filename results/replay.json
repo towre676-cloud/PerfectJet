@@ -1,5 +1,5 @@
 {
-  "version": "0.9.0",
+  "version": "0.10.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -533,6 +533,46 @@
       "value": 7,
       "tie_count": 1
     },
+    "attribution": {
+      "unconstrained": 16,
+      "feasible": 9,
+      "constraints": [
+        {
+          "constraint": 0,
+          "capacity": 3,
+          "count_without": 10,
+          "removed_only_by_this": 1
+        },
+        {
+          "constraint": 1,
+          "capacity": 3,
+          "count_without": 12,
+          "removed_only_by_this": 3
+        }
+      ]
+    },
+    "inclusion": [
+      {
+        "project": 0,
+        "feasible_share": "1/3",
+        "optimal_share": "1"
+      },
+      {
+        "project": 1,
+        "feasible_share": "1/3",
+        "optimal_share": "1"
+      },
+      {
+        "project": 2,
+        "feasible_share": "2/9",
+        "optimal_share": "0"
+      },
+      {
+        "project": 3,
+        "feasible_share": "4/9",
+        "optimal_share": "0"
+      }
+    ],
     "rank_unrank_replay": true
   },
   "SOE": {
@@ -8207,6 +8247,59 @@
         65
       ],
       "completeness": "complete: residue classes of y"
+    }
+  },
+  "deformation": {
+    "potential": "x^4/4 - x^2/2 + t1 x + t2 x^3 + t3 x^2",
+    "mirror_relation": {
+      "dR_dtheta": [
+        "-1",
+        "-3",
+        "0"
+      ],
+      "breaking_witness": {
+        "direction": [
+          "1",
+          "0",
+          "0"
+        ],
+        "dR": "-1"
+      },
+      "preserving_dimension": 2,
+      "verdict": "protected by the symmetry; broken only by symmetry-breaking perturbations",
+      "symmetric_perturbations": [
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "symmetry_protects": true
+    },
+    "location_relation": {
+      "dR_dtheta": [
+        "-1/2",
+        "-3/2",
+        "-1"
+      ],
+      "breaking_witness": {
+        "direction": [
+          "1",
+          "0",
+          "0"
+        ],
+        "dR": "-1/2"
+      },
+      "preserving_dimension": 2,
+      "verdict": "accidental: broken at first order",
+      "symmetric_perturbations": [
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "symmetry_protects": false
     }
   },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."

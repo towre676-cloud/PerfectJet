@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "2d9e76f3424142dd5487fdadece5abf162af501817051b21f29d573c6ac83235",
-      "size_bytes": 5178
+      "sha256": "6688e09878b286250c9f86c9b5993213d57602572ad54c1bffa75bc86cd65c2c",
+      "size_bytes": 5203
     },
     {
       "path": "archive/README.md",
@@ -84,8 +84,8 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "cfca01ce542a3b5aa965f557a4656c96e65b4db13302b4502c3ba2b34741e041",
-      "size_bytes": 121091
+      "sha256": "2154d4d99d59f159e93bc9fd05423cc4e8bc54f8bc93893f110222a4a4a66292",
+      "size_bytes": 122612
     },
     {
       "path": "data/topics.json",
@@ -94,8 +94,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "0454b65fcd07e7baf85090fb706fb9de377c7436d6c73f5b325a73ddf6de4aee",
-      "size_bytes": 4642
+      "sha256": "4ff9417a5ec5067603e18d451cbd31a3a3feaf88a99f1206360a2a138520a3b7",
+      "size_bytes": 4814
     },
     {
       "path": "docs/COVERAGE_MAP.md",
@@ -104,13 +104,13 @@
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "4710b1431ec541c8acd5f89d91d230c4573b72f5583af6de60ce61aec8daaa21",
-      "size_bytes": 53812
+      "sha256": "b7104d9d63249189f4ccf0c9597be608e2f78d5ff3f16a67259ce50aaa5c862f",
+      "size_bytes": 54539
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "ee4d99ce3b99034cc6296eae6a99b3001a8b151146c097ee31489ef0bdd1bb4a",
-      "size_bytes": 156455
+      "sha256": "286987cc33cd169c9bb6c1da8e86b5a62e9d9901ecbd21a09fe7c82619569e8d",
+      "size_bytes": 158753
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -119,8 +119,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "bf55b8d412406c3f8161eba795c49270be01b529d142da47d06a90feb91a1ffc",
-      "size_bytes": 16944
+      "sha256": "55efe23e965d502b21011141e97bdf09b639e993830b107722acfff25ffbd2cd",
+      "size_bytes": 17762
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -144,8 +144,8 @@
     },
     {
       "path": "docs/chapters/05_exact_populations_and_navigation.md",
-      "sha256": "47792bd7d771b1c0ab0308bf59cbacc0ffe237f2d42976ef058ff68e21525f73",
-      "size_bytes": 2266
+      "sha256": "70e5289655195b4a9ed706c62c01ee94e9f06501f6479fe50775b966cfa188f5",
+      "size_bytes": 2823
     },
     {
       "path": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
@@ -209,8 +209,8 @@
     },
     {
       "path": "docs/chapters/18_mathematical_physics_and_protection.md",
-      "sha256": "aa68db822db5762205aaa06511cab79d4dfe9e0eec290e8f5826c077ff4c9a5a",
-      "size_bytes": 2499
+      "sha256": "c612c37d5fe461d8ae344dff6b3d0f1181ea98a4a0fc4649af51016b0bd483e3",
+      "size_bytes": 3342
     },
     {
       "path": "docs/chapters/19_WIND_and_environmental_observability.md",
@@ -234,8 +234,8 @@
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "c5f3df086e23efd8260d13bbbf20931befb5d59e539d3469bfc1e94d8d81681d",
-      "size_bytes": 4831
+      "sha256": "18e0ffcd7b49dd7905c647c45940ba86b8e0e91ecbc21174d48c563f7e468ab8",
+      "size_bytes": 5001
     },
     {
       "path": "docs/chapters/24_mathematical_proofs.md",
@@ -274,8 +274,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "9938a68e6d7709482ed01ce4d5707f982814faad3f551e259ceb12501b0bb5e1",
-      "size_bytes": 381
+      "sha256": "e87d595a569db37acaa04a0e212ed98b88f3842e8f2c988a03d056fe185cd3cb",
+      "size_bytes": 382
     },
     {
       "path": "results/nfl-synthetic/cards.json",
@@ -314,18 +314,18 @@
     },
     {
       "path": "results/replay.json",
-      "sha256": "8b5501838c5ea72840b6442d3cbadde482315b29c63ffeaf944813192af03cc6",
-      "size_bytes": 193818
+      "sha256": "5821c8f648608e31ac2efac0f17f7432c1d30f05eb3a2776b737f2ae9564f624",
+      "size_bytes": 195692
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "8dbac50be281c33afec002a0612172b6ba30dc46fb5b11c5acddb0a24e38a846",
-      "size_bytes": 71465
+      "sha256": "38e798fee3bbed437e2de0b63cbc387e6b5f8c4d83e6c8b5692654282f7c77c8",
+      "size_bytes": 73035
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "27aee22e750634e3d6fd709ad3077044c42fcf8da37dff66f21cc9063b0c1c39",
-      "size_bytes": 48625
+      "sha256": "70ef8a53f118b5d4280d555c0cf5a9563c848f3ea3ebecfc481122163c7ec6f0",
+      "size_bytes": 49263
     },
     {
       "path": "scripts/build_release.py",
@@ -349,8 +349,8 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "30c487c4cb3a7b19aaad755b522ad24a1dfa348a03555d5621c150b31938cc68",
-      "size_bytes": 103
+      "sha256": "2c5f24017b9dd1aa132c5a53752e232d51553ce168afb9ce0efe0aa6a86f9c60",
+      "size_bytes": 104
     },
     {
       "path": "src/perfectjet/applications/__init__.py",
@@ -414,8 +414,8 @@
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "c2155d7a5d50a2c3cec9afb76fe2b2d049f0a0c1e2919b546aee2e59fc1d5921",
-      "size_bytes": 5789
+      "sha256": "470731299e58c295459d6747c3b1c1294d7f8526e1cbaa4216fa0846428bb7f4",
+      "size_bytes": 6103
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -426,6 +426,11 @@
       "path": "src/perfectjet/decisions.py",
       "sha256": "2590d318a10bd65ecd87c56026726c1128b4b785b55bed863d48a8da56116a76",
       "size_bytes": 5027
+    },
+    {
+      "path": "src/perfectjet/deformation.py",
+      "sha256": "627b1a38092122976782d201599f762f98b2445f52636f48efc440f48854f0a9",
+      "size_bytes": 4554
     },
     {
       "path": "src/perfectjet/dynamics.py",
@@ -474,8 +479,8 @@
     },
     {
       "path": "src/perfectjet/populations.py",
-      "sha256": "0c039bc40cd33773190d378cbd08feb7e4f4e3e426c479e63931b3a69f50d33e",
-      "size_bytes": 3835
+      "sha256": "ffe6d67db73e7fba70bdf516ec952557c1dd0bbfa65e1cfea090a6f570ca60ab",
+      "size_bytes": 5753
     },
     {
       "path": "src/perfectjet/psg.py",
@@ -551,6 +556,11 @@
       "path": "tests/test_parametric.py",
       "sha256": "249e6353f199e4f7bc8a428cc6e1a1159e1d3b8f9b873694843849a0c595e491",
       "size_bytes": 5280
+    },
+    {
+      "path": "tests/test_populations_deformation.py",
+      "sha256": "fb8cfc0a4bcfbbfac1e6a5eda478cf02c30dc50e80cf943807bda5d5a71dd6ac",
+      "size_bytes": 2831
     },
     {
       "path": "tests/test_quadratic.py",
