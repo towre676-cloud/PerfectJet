@@ -326,6 +326,10 @@ observability|Gaussian value of information|VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e 
 decisions|settled decision|Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))|exact_checked|Valid intervals; refinement restricted to overlapping contenders.
 decisions|evolution-defect split|e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t|exact_checked|Replayed at every step in rational arithmetic with an infinity-norm bound.
 closure|adaptive monomial closure|add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}|exact_checked|Stops on degree growth or budget with the residual support.
+counting|constraint attribution|removed_only_by_k = #F(constraints minus k) - #F|exact_checked|Selections violating constraint k and no other; compared with enumeration.
+counting|inclusion profile|Pr(x_i=1 | feasible) = #F(x_i=1)/#F; Pr(x_i=1 | optimal) = ties(x_i=1)/ties|exact_checked|Counts original objects; compared with enumeration.
+physics|stationary response|dx*/dtheta = -H^{-1} d2V/dx dtheta at (x*,0)|derived|Nondegenerate stationary point; first order only.
+physics|symmetry protection|dR(v)=0 for every perturbation v fixed by the symmetry|exact_checked|First-order statement; higher orders need an exact symmetry argument.
 transport|quadratic square transport|k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a)|exact_checked|Integers; X=b mod 2a required; branches a=0, definite, square D, N0=0 handled separately.
 pell|Nagell class bound|N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1)))|derived|x^2-Dy^2=N0, D>0 nonsquare, (x1,y1) fundamental unit; classical theorem, cited.
 pell|compiled quadratic population|hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a}|exact_checked|Complete for the Pell branch; checked against brute force on 158 equations; remote indices replayed exactly.
@@ -363,7 +367,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.9.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.10.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

@@ -71,6 +71,8 @@ For general finite factors, $Z=\sum_x\prod_jf_j(x_{\mathrm{scope}_j})$. Independ
 The Petersen 50-project historical result is 702,508,860,122,761 feasible selections, objective16,537, one maximizer. The retained report used176 terminal partitions,437,533,492 visits and189,856,527 setup cells, with construction around362 seconds. Later retrieval reports independent decision-diagram reproduction, including all176 leaves and conditional counts16,777,216,512,16,095,745; a separate historical report gives5.3seconds and about518MiB. These workload/version-dependent figures are not new PerfectJet benchmarks. Original costs and the full retained DAG are not in this release, so this repo does not claim to replay that instance.
 
 Exact counting also includes distinct outputs versus inputs, collision populations, CRT intervals, restricted-digit sums, monomial degrees, nonlinear sequence residues, generating functions, and integer calibration. The generic completion engine is implemented; these broader upstream adapters are indexed rather than falsely presented as already integrated.
+
+Since0.10.0 the selection population explains itself. `attribution` counts, for each capacity constraint, the selections that it alone eliminates. That is the population with the constraint dropped, minus the feasible population; the unconstrained population is 2^n. `inclusion_profile` gives, for each project, the exact share of feasible selections and of optimal selections that contain it. It fixes the project and counts the residual population, so ties are counted in the original objects. Both are compared with exhaustive enumeration in the tests.
 ''',
 '06_series_hankel_and_weighted_quotients':r'''# Series, predictive state, and weighted quotients
 
@@ -261,6 +263,8 @@ The six-term phase potential is cos2theta+(2/3)cos3theta+(2/5)cos5theta+(1/4)cos
 Ceff=c(1-c2)/(ab), a=|Uus|,b=|Ucb|,c=|Uub|. If a model enforces Ceff=phi^-2, then c2(1-c2)2-3abc(1-c2)+a2b2=0. A different archived coefficient7 polynomial and N,K,t,J phase relations remain unresolved because their definitions were missing. Do not merge them. The allowed CP-even deformation V0+epsilon x changed the relation historically. A stationary point sensitivity -(Hessian V0)^-1 grad W and relation tangent -grad R^T(Hessian V0)^-1 grad W identify which permitted operators break protection; symmetry zero modes require quotienting.
 
 Domain-wall work reported whole-line sign/barrier enclosures,1,080vacua,Goldstone/gauge derivative/cubic channels,Goldstone width~3.8e-8GeV,WW+ZZ~1.8e-9GeV atg.4,threshold(M-2m)3,frame window6.56<t<9.52,one-loop radial correction/counterterm,thermal wall-only window~8.63MeV,and late-network gravitational-wave simulations. These are model-specific reports. Running,thresholds,higher operators,higher loops,global vacuum selection,Sommerfeld/physical66degree prediction remain explicit frontiers. No physics source is modified by this repository.
+
+Since0.10.0 `deformation.py` tests relations among stationary states against a declared perturbation space. At a nondegenerate stationary point, the implicit function theorem gives dx*/dtheta=-H^{-1}M exactly. A relation R among several stationary points then has first-order response dR/dtheta=sum_s grad_sR.dx*_s/dtheta. The module returns the breaking directions and the preserving subspace. Given a symmetry's action on the perturbations, it decides whether every symmetric perturbation preserves R. In the double well x4/4-x2/2+t1x+t2x3+t3x2, the mirror relation x*_++x*_-=0 is broken by the odd perturbations t1 and t2 and is protected by x->-x. The location x*_+=1 is accidental, broken even by the symmetric t3. First order only: a protected first-order relation can still break at higher order unless the symmetry argument is exact.
 ''',
 '19_WIND_and_environmental_observability':r'''# WIND and environmental observability
 
@@ -333,6 +337,8 @@ Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-param
 Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
+
+Release0.10.0 adds constraint attribution and inclusion profiles for selection populations, and first-order deformation protection of relations among stationary states.
 
 Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
 

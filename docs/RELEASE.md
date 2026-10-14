@@ -1,3 +1,10 @@
+# PerfectJet 0.10.0
+
+- **Population explanations** (`populations.py`): `attribution` counts the selections each capacity constraint removes on its own, and `inclusion_profile` gives each project's exact share of feasible and of optimal selections. Both are compared with exhaustive enumeration.
+- **Deformation protection** (`deformation.py`): the exact first-order response of stationary points, dx*/dtheta = -H^{-1}M, and of relations among them. The module returns breaking directions, the preserving subspace, and whether a symmetry's fixed perturbations preserve the relation. In a double well, the mirror relation is protected by x -> -x, while the location of a minimum is accidental.
+
+The registry has 343 entries. Chapters 05, 18 and 23 were updated, and the CLI has a new command, `perfectjet deformation`.
+
 # PerfectJet 0.9.0
 
 This release turns the partner evidence into certified statements and finds an explicit degree-12 partner.

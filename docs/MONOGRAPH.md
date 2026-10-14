@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.9.0 · 14 October 2026
+Version 0.10.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -114,6 +114,8 @@ For general finite factors, $Z=\sum_x\prod_jf_j(x_{\mathrm{scope}_j})$. Independ
 The Petersen 50-project historical result is 702,508,860,122,761 feasible selections, objective16,537, one maximizer. The retained report used176 terminal partitions,437,533,492 visits and189,856,527 setup cells, with construction around362 seconds. Later retrieval reports independent decision-diagram reproduction, including all176 leaves and conditional counts16,777,216,512,16,095,745; a separate historical report gives5.3seconds and about518MiB. These workload/version-dependent figures are not new PerfectJet benchmarks. Original costs and the full retained DAG are not in this release, so this repo does not claim to replay that instance.
 
 Exact counting also includes distinct outputs versus inputs, collision populations, CRT intervals, restricted-digit sums, monomial degrees, nonlinear sequence residues, generating functions, and integer calibration. The generic completion engine is implemented; these broader upstream adapters are indexed rather than falsely presented as already integrated.
+
+Since0.10.0 the selection population explains itself. `attribution` counts, for each capacity constraint, the selections that it alone eliminates. That is the population with the constraint dropped, minus the feasible population; the unconstrained population is 2^n. `inclusion_profile` gives, for each project, the exact share of feasible selections and of optimal selections that contain it. It fixes the project and counts the residual population, so ties are counted in the original objects. Both are compared with exhaustive enumeration in the tests.
 
 
 ---
@@ -344,6 +346,8 @@ Ceff=c(1-c2)/(ab), a=|Uus|,b=|Ucb|,c=|Uub|. If a model enforces Ceff=phi^-2, the
 
 Domain-wall work reported whole-line sign/barrier enclosures,1,080vacua,Goldstone/gauge derivative/cubic channels,Goldstone width~3.8e-8GeV,WW+ZZ~1.8e-9GeV atg.4,threshold(M-2m)3,frame window6.56<t<9.52,one-loop radial correction/counterterm,thermal wall-only window~8.63MeV,and late-network gravitational-wave simulations. These are model-specific reports. Running,thresholds,higher operators,higher loops,global vacuum selection,Sommerfeld/physical66degree prediction remain explicit frontiers. No physics source is modified by this repository.
 
+Since0.10.0 `deformation.py` tests relations among stationary states against a declared perturbation space. At a nondegenerate stationary point, the implicit function theorem gives dx*/dtheta=-H^{-1}M exactly. A relation R among several stationary points then has first-order response dR/dtheta=sum_s grad_sR.dx*_s/dtheta. The module returns the breaking directions and the preserving subspace. Given a symmetry's action on the perturbations, it decides whether every symmetric perturbation preserves R. In the double well x4/4-x2/2+t1x+t2x3+t3x2, the mirror relation x*_++x*_-=0 is broken by the odd perturbations t1 and t2 and is protected by x->-x. The location x*_+=1 is accidental, broken even by the symmetric t3. First order only: a protected first-order relation can still break at higher order unless the symmetry argument is exact.
+
 
 ---
 
@@ -430,6 +434,8 @@ Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-param
 Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
+
+Release0.10.0 adds constraint attribution and inclusion profiles for selection populations, and first-order deformation protection of relations among stationary states.
 
 Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
 
@@ -976,21 +982,25 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E319 | decisions | settled decision | Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b)) | exact_checked | Valid intervals; refinement restricted to overlapping contenders. |
 | PJ-E320 | decisions | evolution-defect split | e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t | exact_checked | Replayed at every step in rational arithmetic with an infinity-norm bound. |
 | PJ-E321 | closure | adaptive monomial closure | add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...} | exact_checked | Stops on degree growth or budget with the residual support. |
-| PJ-E322 | transport | quadratic square transport | k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a) | exact_checked | Integers; X=b mod 2a required; branches a=0, definite, square D, N0=0 handled separately. |
-| PJ-E323 | pell | Nagell class bound | N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1))) | derived | x^2-Dy^2=N0, D>0 nonsquare, (x1,y1) fundamental unit; classical theorem, cited. |
-| PJ-E324 | pell | compiled quadratic population | hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a} | exact_checked | Complete for the Pell branch; checked against brute force on 158 equations; remote indices replayed exactly. |
-| PJ-E325 | invariants | Clebsch invariants of the sextic | i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2 | definition | Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2. |
-| PJ-E326 | invariants | weighted orbit test | (A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} | derived | Proves GL2(Qbar)-equivalence only for squarefree sextics. |
-| PJ-E327 | invariants | Cayley-Sylvester count | dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2 | derived | p counts partitions into at most d parts of size at most n. |
-| PJ-E328 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; certified on the dense slice by a 125-point exact grid. |
-| PJ-E329 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0. |
-| PJ-E330 | invariants | degree-12 covariant partner | G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96 | exact_checked | Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0. |
-| PJ-E331 | invariants | degree-12 partner converse | ker L_12(f)!=0 => A^2=25B/96 | open | Supported by random sextics and two independent families; not proved. |
-| PJ-E332 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
-| PJ-E333 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
-| PJ-E334 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
-| PJ-E335 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
-| PJ-E336 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
-| PJ-E337 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
-| PJ-E338 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
-| PJ-E339 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
+| PJ-E322 | counting | constraint attribution | removed_only_by_k = #F(constraints minus k) - #F | exact_checked | Selections violating constraint k and no other; compared with enumeration. |
+| PJ-E323 | counting | inclusion profile | Pr(x_i=1 \| feasible) = #F(x_i=1)/#F; Pr(x_i=1 \| optimal) = ties(x_i=1)/ties | exact_checked | Counts original objects; compared with enumeration. |
+| PJ-E324 | physics | stationary response | dx*/dtheta = -H^{-1} d2V/dx dtheta at (x*,0) | derived | Nondegenerate stationary point; first order only. |
+| PJ-E325 | physics | symmetry protection | dR(v)=0 for every perturbation v fixed by the symmetry | exact_checked | First-order statement; higher orders need an exact symmetry argument. |
+| PJ-E326 | transport | quadratic square transport | k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a) | exact_checked | Integers; X=b mod 2a required; branches a=0, definite, square D, N0=0 handled separately. |
+| PJ-E327 | pell | Nagell class bound | N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1))) | derived | x^2-Dy^2=N0, D>0 nonsquare, (x1,y1) fundamental unit; classical theorem, cited. |
+| PJ-E328 | pell | compiled quadratic population | hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a} | exact_checked | Complete for the Pell branch; checked against brute force on 158 equations; remote indices replayed exactly. |
+| PJ-E329 | invariants | Clebsch invariants of the sextic | i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2 | definition | Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2. |
+| PJ-E330 | invariants | weighted orbit test | (A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} | derived | Proves GL2(Qbar)-equivalence only for squarefree sextics. |
+| PJ-E331 | invariants | Cayley-Sylvester count | dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2 | derived | p counts partitions into at most d parts of size at most n. |
+| PJ-E332 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; certified on the dense slice by a 125-point exact grid. |
+| PJ-E333 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0. |
+| PJ-E334 | invariants | degree-12 covariant partner | G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96 | exact_checked | Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0. |
+| PJ-E335 | invariants | degree-12 partner converse | ker L_12(f)!=0 => A^2=25B/96 | open | Supported by random sextics and two independent families; not proved. |
+| PJ-E336 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
+| PJ-E337 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
+| PJ-E338 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
+| PJ-E339 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
+| PJ-E340 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
+| PJ-E341 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
+| PJ-E342 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
+| PJ-E343 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |

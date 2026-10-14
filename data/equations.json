@@ -2892,6 +2892,42 @@
     },
     {
       "id": "PJ-E322",
+      "domain": "counting",
+      "title": "constraint attribution",
+      "equation": "removed_only_by_k = #F(constraints minus k) - #F",
+      "status": "exact_checked",
+      "assumptions": "Selections violating constraint k and no other; compared with enumeration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E323",
+      "domain": "counting",
+      "title": "inclusion profile",
+      "equation": "Pr(x_i=1 | feasible) = #F(x_i=1)/#F; Pr(x_i=1 | optimal) = ties(x_i=1)/ties",
+      "status": "exact_checked",
+      "assumptions": "Counts original objects; compared with enumeration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E324",
+      "domain": "physics",
+      "title": "stationary response",
+      "equation": "dx*/dtheta = -H^{-1} d2V/dx dtheta at (x*,0)",
+      "status": "derived",
+      "assumptions": "Nondegenerate stationary point; first order only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E325",
+      "domain": "physics",
+      "title": "symmetry protection",
+      "equation": "dR(v)=0 for every perturbation v fixed by the symmetry",
+      "status": "exact_checked",
+      "assumptions": "First-order statement; higher orders need an exact symmetry argument.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E326",
       "domain": "transport",
       "title": "quadratic square transport",
       "equation": "k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a)",
@@ -2900,7 +2936,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E323",
+      "id": "PJ-E327",
       "domain": "pell",
       "title": "Nagell class bound",
       "equation": "N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1)))",
@@ -2909,7 +2945,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E324",
+      "id": "PJ-E328",
       "domain": "pell",
       "title": "compiled quadratic population",
       "equation": "hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a}",
@@ -2918,7 +2954,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E325",
+      "id": "PJ-E329",
       "domain": "invariants",
       "title": "Clebsch invariants of the sextic",
       "equation": "i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2",
@@ -2927,7 +2963,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E326",
+      "id": "PJ-E330",
       "domain": "invariants",
       "title": "weighted orbit test",
       "equation": "(A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i}",
@@ -2936,7 +2972,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E327",
+      "id": "PJ-E331",
       "domain": "invariants",
       "title": "Cayley-Sylvester count",
       "equation": "dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2",
@@ -2945,7 +2981,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E328",
+      "id": "PJ-E332",
       "domain": "invariants",
       "title": "cubic partner theorem",
       "equation": "det L_3(f)=(A^2-B/6)/16",
@@ -2954,7 +2990,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E329",
+      "id": "PJ-E333",
       "domain": "invariants",
       "title": "quartic covariant partner",
       "equation": "(f,(f,f)_4)_3=(f,(f,f)_4)_5=0",
@@ -2963,7 +2999,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E330",
+      "id": "PJ-E334",
       "domain": "invariants",
       "title": "degree-12 covariant partner",
       "equation": "G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96",
@@ -2972,7 +3008,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E331",
+      "id": "PJ-E335",
       "domain": "invariants",
       "title": "degree-12 partner converse",
       "equation": "ker L_12(f)!=0 => A^2=25B/96",
@@ -2981,7 +3017,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E332",
+      "id": "PJ-E336",
       "domain": "invariants",
       "title": "slice certificate",
       "equation": "covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3",
@@ -2990,7 +3026,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E333",
+      "id": "PJ-E337",
       "domain": "invariants",
       "title": "surface drop curves as invariant loci",
       "equation": "deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0",
@@ -2999,7 +3035,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E334",
+      "id": "PJ-E338",
       "domain": "invariants",
       "title": "named exceptional sextics",
       "equation": "(0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4)",
@@ -3008,7 +3044,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E335",
+      "id": "PJ-E339",
       "domain": "empirical",
       "title": "normalized recovery travel",
       "equation": "eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)",
@@ -3017,7 +3053,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E336",
+      "id": "PJ-E340",
       "domain": "empirical",
       "title": "recovery response model",
       "equation": "eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)",
@@ -3026,7 +3062,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E337",
+      "id": "PJ-E341",
       "domain": "empirical",
       "title": "context-adjusted target",
       "equation": "r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)",
@@ -3035,7 +3071,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E338",
+      "id": "PJ-E342",
       "domain": "empirical",
       "title": "paired predictive gain",
       "equation": "G=1-MSE_movement/MSE_baseline",
@@ -3044,7 +3080,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E339",
+      "id": "PJ-E343",
       "domain": "empirical",
       "title": "scouting advantage",
       "equation": "G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class",

@@ -16,6 +16,8 @@ Release0.4.0 adds comprehensive rank cells for several parameters, with an exact
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
 
+Release0.10.0 adds constraint attribution and inclusion profiles for selection populations, and first-order deformation protection of relations among stationary states.
+
 Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
 
 Release0.8.0 adds a solution-carrying compiler for k y2=an2+bn+c. Every branch has a reconstruction map and a completeness status, Nagell seeds make the Pell branch complete, and exact remote-index queries are supported.
