@@ -2889,6 +2889,51 @@
       "status": "exact_checked",
       "assumptions": "Stops on degree growth or budget with the residual support.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E322",
+      "domain": "empirical",
+      "title": "normalized recovery travel",
+      "equation": "eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)",
+      "status": "definition",
+      "assumptions": "Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E323",
+      "domain": "empirical",
+      "title": "recovery response model",
+      "equation": "eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)",
+      "status": "proposal",
+      "assumptions": "Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E324",
+      "domain": "empirical",
+      "title": "context-adjusted target",
+      "equation": "r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)",
+      "status": "definition",
+      "assumptions": "Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E325",
+      "domain": "empirical",
+      "title": "paired predictive gain",
+      "equation": "G=1-MSE_movement/MSE_baseline",
+      "status": "definition",
+      "assumptions": "Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E326",
+      "domain": "empirical",
+      "title": "scouting advantage",
+      "equation": "G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class",
+      "status": "open",
+      "assumptions": "Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }

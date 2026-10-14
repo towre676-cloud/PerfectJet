@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.5.0 · 14 October 2026
+Version 0.6.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -361,6 +361,8 @@ Industrial portfolio570solved versus baseline584 with42.1% extra summed time and
 
 Since0.5.0 the identifiability question has an exact kernel. For the response $\eta=\beta_0+\beta_1s+\beta_2a+\beta_3sa$, a player's attempts form a design X. A readout $h^\top\beta$ is determined by those attempts exactly when $h\in\operatorname{row}(X)$. `readout.identify` returns estimator weights, or a vector n with Xn=0 and $h^\top n\ne0$: two coefficient vectors that fit every attempt and disagree on the readout. `demand_readout` forms $h_q=\sum_kq_k\phi(d_k)$ for a declared demand distribution. `repair` finds the smallest set of candidate conditions making the readout identifiable, and `value_of_information` gives the exact Gaussian posterior-variance reduction of each candidate, marked as a repeat or a new direction. In the receipt, repeats reduce variance by about0.16 while two new conditions are needed to identify the readout at all.
 
+Since0.6.0 the scouting question has its own adapter, `applications/nfl_scouting`, with a protocol in docs/nfl. It asks whether a repeatable, demand-adjusted recovery readout from the Combine predicts NFL get-off beyond position, body measurements, timed tests and drill availability known before the draft. The pipeline detects turns and records every smoothing and alignment branch of eta with full lineage. It fits the demand frame and a linear mixed model by EM on training athletes only, and gates each athlete's readout with the exact identifiability test. Targets are cross-fitted context residuals with training-only shrinkage, and a leakage check runs every time. Validation uses athlete-grouped temporal folds with identical availability indicators and tuning for both models, the paired metric G=1-MSE_movement/MSE_baseline, fixed-prediction and full-refit intervals, diagnostics, a frozen shortlist rule, and scouting cards that show pooling reliance and the most informative next condition. A synthetic generator with a planted or null signal tests the pipeline: it recovers a planted signal and reports none under the null. Synthetic results are never evidence about football, and no real-data scouting advantage is claimed.
+
 
 ---
 
@@ -413,6 +415,8 @@ Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-param
 Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
+
+Release0.6.0 adds the Combine scouting adapter and its protocol; it implements the empirical test but does not report a real-data result.
 
 Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
@@ -932,3 +936,8 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E319 | decisions | settled decision | Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b)) | exact_checked | Valid intervals; refinement restricted to overlapping contenders. |
 | PJ-E320 | decisions | evolution-defect split | e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t | exact_checked | Replayed at every step in rational arithmetic with an infinity-norm bound. |
 | PJ-E321 | closure | adaptive monomial closure | add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...} | exact_checked | Stops on degree growth or budget with the residual support. |
+| PJ-E322 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
+| PJ-E323 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
+| PJ-E324 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
+| PJ-E325 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
+| PJ-E326 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |

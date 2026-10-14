@@ -326,6 +326,11 @@ observability|Gaussian value of information|VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e 
 decisions|settled decision|Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))|exact_checked|Valid intervals; refinement restricted to overlapping contenders.
 decisions|evolution-defect split|e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t|exact_checked|Replayed at every step in rational arithmetic with an infinity-norm bound.
 closure|adaptive monomial closure|add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}|exact_checked|Stops on degree growth or budget with the residual support.
+empirical|normalized recovery travel|eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)|definition|Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency.
+empirical|recovery response model|eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)|proposal|Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance.
+empirical|context-adjusted target|r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)|definition|Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only.
+empirical|paired predictive gain|G=1-MSE_movement/MSE_baseline|definition|Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds.
+empirical|scouting advantage|G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class|open|Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only.
 '''
 
 def build():
@@ -345,7 +350,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.5.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.6.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

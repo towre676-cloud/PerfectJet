@@ -1,3 +1,16 @@
+# PerfectJet 0.6.0
+
+This release adds the Combine scouting adapter, `src/perfectjet/applications/nfl_scouting`, and fixes its analysis in docs/nfl/PROTOCOL.md.
+
+- **Events with lineage** (`events.py`): turns detected as a speed minimum followed by a direction change; eta = normalized travel in the outgoing direction over 0.5 s, with all six smoothing/alignment branches kept as a sensitivity range; an outcome-blinded, stratified review sheet with difficult examples.
+- **Identifiability and readouts** (`readouts.py`): a training-fitted demand frame and reference distribution; the exact test h_q in row(X_i) for each athlete; a linear mixed model fitted by EM on training athletes; a random-intercept primary readout, a pooled secondary readout with pooling reliance, split-half repeatability, and the next condition that most reduces readout variance, marked repeat or new direction.
+- **Targets** (`outcomes.py`): cross-fitted context residuals for training athletes, training-only models for test athletes, training-only shrinkage, and a leakage check on every run.
+- **Validation** (`validate.py`): athlete-grouped temporal folds; identical availability indicators, imputation and tuning for baseline and movement models; G=1-MSE_movement/MSE_baseline; fixed-prediction and full-refit intervals (event extraction included); diagnostics by position, class, play count and single-athlete influence; a frozen shortlist rule.
+- **One command** (`perfectjet nfl` or `python -m perfectjet.applications.nfl_scouting`): results.json with source hashes, code revision, configuration hash and folds; report.md; cards.json; review_sheet.csv; three SVG figures.
+- **Data contract** (docs/nfl/DATA_CONTRACT.md): CSV layout through a column mapping, availability dates enforced, a join and chronology audit.
+
+On synthetic data the pipeline recovers a planted signal and reports none under a null signal; a retained synthetic run is in results/nfl-synthetic. Synthetic results are never evidence about football. No real-data scouting advantage is claimed: the data are not in this repository, and the get-off definition must be confirmed before use.
+
 # PerfectJet 0.5.0
 
 This release turns the partner surface into active strata and adds the first pieces of the adaptive engine.

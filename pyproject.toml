@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "perfectjet"
-version = "0.5.0"
+version = "0.6.0"
 description = "Exact representations, populations, closure defects, and arithmetic research atlas"
 requires-python = ">=3.10"
 dependencies = []

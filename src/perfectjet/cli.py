@@ -54,6 +54,10 @@ def report():
 
 
 def main():
+    import sys
+    if len(sys.argv)>1 and sys.argv[1]=="nfl":
+        from .applications.nfl_scouting.pipeline import main as nfl
+        return nfl(sys.argv[2:])
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","strata","readout","decisions","engine","sieve","atlas"])
     parser.add_argument("--output",type=Path)
