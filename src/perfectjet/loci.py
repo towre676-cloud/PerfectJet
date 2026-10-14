@@ -174,9 +174,59 @@ def rational_roots(p):
         p=p[1:]
     if len(p)<2:return roots
     den=lcm(*(x.denominator for x in p));ints=[int(x*den) for x in p]
+    if max(abs(ints[0]),abs(ints[-1]))>10**8:
+        return sorted(roots+_isolated_rational_roots(ints))
     for cand in sorted({Q(s*u,v) for u in _divisors(ints[0]) for v in _divisors(ints[-1]) for s in (1,-1)}):
         if evaluate(p,cand)==0:roots.append(cand)
     return sorted(roots)
+
+
+def _sturm_changes(seq,x):
+    signs=[s for s in ((evaluate(p,x)>0)-(evaluate(p,x)<0) for p in seq) if s]
+    return sum(1 for u,v in zip(signs,signs[1:]) if u!=v)
+
+
+def _simplest_between(lo,hi):
+    """Smallest-denominator rational in the closed interval [lo,hi] (Stern-Brocot descent)."""
+    from math import floor
+    fl=floor(lo)
+    if fl==lo:return Q(fl)
+    if fl+1<=hi:return Q(fl+1)
+    rest=_simplest_between(1/(hi-fl),1/(lo-fl))
+    return fl+1/rest
+
+
+def _isolated_rational_roots(ints):
+    """Rational roots when the rational-root-theorem candidate set is too large to enumerate.
+
+    A root p/q has q dividing the leading coefficient D, so distinct candidates are at
+    least 1/D^2 apart. Sturm bisection isolates each real root of the squarefree part in
+    an interval narrower than that; the simplest rational in the interval is then the
+    only possible rational root there, and it is tested exactly.
+    """
+    p=squarefree(ints);lead=abs(ints[-1])
+    seq=[p,derivative(p)]
+    while degree(seq[-1])>0:
+        r=pneg(pdivmod(seq[-2],seq[-1])[1])
+        if not r:break
+        seq.append(r)
+    bound=1+max(abs(c/p[-1]) for c in p[:-1]) if len(p)>1 else Q(1)
+    width=Q(1,2*lead*lead);out=[];stack=[(-bound,bound)]
+    while stack:
+        lo,hi=stack.pop()
+        count=_sturm_changes(seq,lo)-_sturm_changes(seq,hi)
+        if count==0:continue
+        if hi-lo<width:
+            cand=_simplest_between(lo,hi)
+            if evaluate(p,cand)==0 and cand not in out:out.append(cand)
+            if evaluate(p,hi)==0 and hi not in out:out.append(hi)
+            continue
+        mid=(lo+hi)/2
+        if evaluate(p,mid)==0:
+            if mid not in out:out.append(mid)
+            stack+=[(lo,mid-width/4),(mid+width/4,hi)]
+        else:stack+=[(lo,mid),(mid,hi)]
+    return [r for r in out if r!=0]
 
 
 def _divisors(n):

@@ -95,3 +95,23 @@ If $F(n)=m^d$, then $F(n)\equiv m^d \pmod q$ for every q. A residue that is not 
 Work over the algebraic closure. Rabinowitsch: a point t lies in V(I) minus V(q) exactly when some z satisfies $I(t)=0$ and $1-zq(t)=0$. Projecting away z, the ideal $(I+\langle1-zq\rangle)\cap Q[t]$ is $I:q^\infty$, and V of it is the Zariski closure of V(I) minus V(q). An elimination order with z largest computes this intersection as the z-free part of a Groebner basis. Saturating by inequations one at a time gives $S=I:(q_1\cdots q_s)^\infty$.
 
 Each branch keeps a pair (S,N) with S saturated by every member of N. Its cell V(S) minus V(prod N) is dense in V(S), so the cell is empty exactly when S is the unit ideal. A pivot p is zero on the whole cell exactly when $S:p^\infty$ is the unit ideal. Otherwise the pivot branch $(S:p^\infty,N+p)$ and the zero branch $((S+p):N^\infty,N)$ split the cell into two disjoint constructible pieces whose union is the cell. Matrix entries may be reduced modulo S, because they are unchanged on V(S). In the pivot branch, the row operation $\mathrm{row}_k\to p\,\mathrm{row}_k-a_{kj}\mathrm{row}_i$ multiplies a row by p, which is nonzero on the cell. An exact division by the previous pivot, also nonzero on the cell, likewise preserves the pointwise rank. Each branch removes a row and column or adds a polynomial that is not already in the radical. Noetherianity and finite matrix size give termination. The leaves therefore partition parameter space, and the rank is constant on each leaf. Rational points of a zero-dimensional closure come from a lexicographic Groebner basis, the rational root theorem on its last eliminant, and back substitution. Tests compare each leaf's rank with direct evaluation on a grid.
+
+## Active strata
+
+On a correction cell C the rank of $L_N$ is constant. Running comprehensive elimination of $[L_N;P_N]$ from the starting pair (S,N) of C only ever adds equations or inequations, so its leaves partition C and the joint rank is constant on each leaf. Both ranks are then constant on every stratum, and so are $\dim\ker L_N=N+1-\operatorname{rank}L_N$ and $\dim A_N=\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, because $\ker[L_N;P_N]=\ker L_N\cap\ker P_N$. At a rational point, choosing kernel vectors whose $P_N$-images are independent gives a basis of the active quotient, and the nullspace of $P_N$ restricted to $\ker L_N$ gives the commuting part; each vector is replayed as a form with exact transvectants. The sextic has a repeated root exactly when the resultant of $f(x,1)$ and its derivative vanishes, since the leading coefficient is1.
+
+## Identifiable readouts
+
+If $h=X^\top c$, then $h^\top\beta=c^\top X\beta$ is a function of the noiseless observations. If $h\notin\operatorname{row}(X)=\ker(X)^\perp$, some $n\in\ker X$ has $h^\top n\ne0$; then $X\beta=X(\beta+n)$ while the readouts differ by $h^\top n$. Adding a row already in row(X) leaves row(X) unchanged, so a repeat can never make a non-identified readout identified. For $y=X\beta+e$ with Gaussian prior and noise, the posterior covariance $(\Sigma_0^{-1}+X^\top X/\sigma^2)^{-1}$ does not depend on y, so the expected variance reduction of a new row equals its realized reduction. Adding a row adds a positive semidefinite term to the precision, so no candidate increases the variance.
+
+## Settled decisions and targeted refinement
+
+If every reported interval contains its true value and the leader's lower bound exceeds every competitor's upper bound, the leader is strictly best whatever the true values are inside the intervals. Refinement of an action whose interval is already below the leader's lower bound cannot change the comparison, so only overlapping contenders need refinement.
+
+## Evolution-defect split
+
+From $x_{t+1}=Ax_t+Bu_t$ and $z_{t+1}=Gz_t+Hu_t$, $e_{t+1}=Ax_t+Bu_t-VGz_t-VHu_t=A(e_t+Vz_t)-VGz_t+(B-VH)u_t=Ae_t+(AV-VG)z_t+(B-VH)u_t$. Taking norms, $\|e_{t+1}\|\le\|A\|\|e_t\|+\|(AV-VG)z_t\|+\|(B-VH)u_t\|$, which is the recursion the implementation reports.
+
+## Adaptive monomial closure
+
+Pullback by a polynomial map sends a monomial to a polynomial, and the loop adds exactly the monomials of the pullbacks that are missing. If the loop stops with nothing missing, every retained monomial pulls back into their span, which is the closure identity. The span of $C,CK,CK^2,\dots$ inside it is the smallest pullback-closed space containing the outputs, by the observable-space argument of chapter07.

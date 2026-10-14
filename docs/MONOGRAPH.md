@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.4.0 · 14 October 2026
+Version 0.5.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -153,6 +153,12 @@ An action is certified best when its lower objective bound exceeds all competing
 
 Historical DynaComp reports include256-state compile time37.6s->1.3s,58 tests at one stage, later210/229 tests,200-state heat->7 states with0.01 ceiling and5.89x runtime gain, break-even about222 batches of256 scenarios, and descriptor200->9 with0.003483 bound and4.50x gain. Other models were slower or uncertifiable. These are upstream dated workloads, not universal or freshly reproduced PerfectJet results.
 
+Since0.5.0 `engine.py` runs the augmentation loop rather than describing it. `adaptive_closure` starts from the monomials of the requested outputs, pulls every feature back through F, and adds exactly the monomials of the residual support. On closure it replays $m(F(x))=\sum_jK_{mj}m_j(x)$ for every retained monomial and extracts the smallest pullback-closed space containing the outputs, span$\{C,CK,CK^2,\dots\}$, which can be smaller than the monomial space (y+12x2 is a one-dimensional eigenfunction of $(x,y)\mapsto(x/2,y/3+x^2)$). When a missing monomial has higher degree than every retained one, the failure is classified as degree growth and the loop stops instead of inflating the model; the residual support is returned.
+
+`decisions.py` implements the stopping rule above. `certified_choice` returns the settled action or the overlapping contenders; `refine_until_settled` refines only the widest contender, and its receipt records the evaluations spent against uniform refinement. `defect_split` replays $e_{t+1}=Ae_t+(AV-VG)z_t+(B-VH)u_t$ exactly at every step and reports the evolution and input defects separately, together with the geometric bound in the infinity norm.
+
+Every adapter of `engine.py` returns one report shape: question, representation, preserved questions, replayed identities, answer, obstruction, obligations, and the next calculation implicated by the obstruction. Adapters exist for polynomial dynamics, linear sensing, readouts of linear responses, integer systems, and transvectant partners.
+
 
 ---
 
@@ -269,6 +275,15 @@ Applied to the two-parameter family x6+y6+a x3y3+b(x4y2+x2y4), whose slice b=0 i
 
 Degree3 has a whole drop curve of rank3: a4-16a2b2/3+256b4/81-2560b3/27-400a2+6400b2/9=0. In degree8 the drop locus contains the line b=0, which is why the C3 family has its degree-eight partner g8 for every lambda. The full incidence variety in all seven sextic coefficients remains open.
 
+Since0.5.0 `strata.py` stratifies both dimensions. Each correction cell is refined by the joint cells of $[L_N;P_N]$, started from the correction cell itself, so every stratum carries the kernel dimension, the active dimension $\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, and the commuting dimension. At rational points of each stratum the module constructs actual partners: a basis of the active quotient and of $\ker L_N\cap\ker P_N$, each replayed with exact transvectants. A Bareiss determinant of the Sylvester matrix gives the sextic discriminant on the surface, of total degree8, and each stratum is labelled repeated-root, squarefree, or generically squarefree.
+
+The refinement changes the reading of the surface:
+- (0,3), f=(x2+y2)3, is not an active exception in degrees4..10. Its extra kernel directions are powers of x2+y2, which commute with f. In degree4 the generic active partner becomes the commuting form (x2+y2)2, so the active dimension drops from1 to0. Only degree12 gains active capacity there (kernel3, active2).
+- (+/-16,-9), f=(x-y)4(x2+4xy+y2), gains one active partner in every degree3..12. In degree6 the partner is xy(x-y)4.
+- New rational exceptional points lie on drop curves found by the cells. The degree3 curve passes through (+/-4,6) and (+/-24,6) and (+/-24,-9). The degree8 cubic a2b-4b3+6a2-28b2+20b+300=0 passes through (+/-11,6) and through (0,-5). The degree12 quartic b4+24b3+81a2-126b2+405=0 passes through (+/-4,-3) and (+/-32/25,-9/5). All of these are squarefree except (+/-4,-3), which has one double root. Each carries a replayed active partner in the jump degree.
+
+The curve points come from a bounded-height scan (slices b=b0 with height at most12); they are not a complete list of rational points on those curves, which can be of positive genus. The strata are cells over the algebraic closure, and partners are constructed only at rational samples.
+
 
 ---
 
@@ -344,6 +359,8 @@ NFL Combine scouting seeks hidden talent,bust risk,and position-specific develop
 
 Industrial portfolio570solved versus baseline584 with42.1% extra summed time and zero conflicts is a retained negative comparison. Family-held-out512tasks/128tests,graph504samples,sequence52families and calibration/experiment examples are workload-specific historical reports. Customer economics require setup,runtime,break-even,and supported-model conditions.
 
+Since0.5.0 the identifiability question has an exact kernel. For the response $\eta=\beta_0+\beta_1s+\beta_2a+\beta_3sa$, a player's attempts form a design X. A readout $h^\top\beta$ is determined by those attempts exactly when $h\in\operatorname{row}(X)$. `readout.identify` returns estimator weights, or a vector n with Xn=0 and $h^\top n\ne0$: two coefficient vectors that fit every attempt and disagree on the readout. `demand_readout` forms $h_q=\sum_kq_k\phi(d_k)$ for a declared demand distribution. `repair` finds the smallest set of candidate conditions making the readout identifiable, and `value_of_information` gives the exact Gaussian posterior-variance reduction of each candidate, marked as a repeat or a new direction. In the receipt, repeats reduce variance by about0.16 while two new conditions are needed to identify the readout at all.
+
 
 ---
 
@@ -374,6 +391,8 @@ The second enhancement sharpens this into active transvectant spectra,exact ansa
 
 The master interface should record a domain,questions,state representation,legal operations,weights,exact identities,error bounds,source maps,obstructions,costs,and evidence. A new application adds an adapter and its preserved questions. It must not acquire correctness from its similarity to an older application. The decisive reuse is an executable identity with matching assumptions.
 
+Release0.5.0 makes the master interface executable as `engine.py`: one report shape for every adapter, an adaptive closure loop that adds only residual-implicated structure, and decisions that stop once settled. The partner program now stratifies active capacity, not only correction rank, and readout identifiability gives the empirical program an exact gate before any fitting.
+
 
 ---
 
@@ -392,6 +411,8 @@ The strongest finite executable contributions in0.1.0 are observable-space closu
 Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-parameter rank loci (which rediscover the 7lambda-40 obstruction and certify the rational exceptional set of the C3 partner family for degrees3..12), and the adaptive local sieve for perfect-power hits.
 
 Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
+
+Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
 
 Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
@@ -495,6 +516,26 @@ If $F(n)=m^d$, then $F(n)\equiv m^d \pmod q$ for every q. A residue that is not 
 Work over the algebraic closure. Rabinowitsch: a point t lies in V(I) minus V(q) exactly when some z satisfies $I(t)=0$ and $1-zq(t)=0$. Projecting away z, the ideal $(I+\langle1-zq\rangle)\cap Q[t]$ is $I:q^\infty$, and V of it is the Zariski closure of V(I) minus V(q). An elimination order with z largest computes this intersection as the z-free part of a Groebner basis. Saturating by inequations one at a time gives $S=I:(q_1\cdots q_s)^\infty$.
 
 Each branch keeps a pair (S,N) with S saturated by every member of N. Its cell V(S) minus V(prod N) is dense in V(S), so the cell is empty exactly when S is the unit ideal. A pivot p is zero on the whole cell exactly when $S:p^\infty$ is the unit ideal. Otherwise the pivot branch $(S:p^\infty,N+p)$ and the zero branch $((S+p):N^\infty,N)$ split the cell into two disjoint constructible pieces whose union is the cell. Matrix entries may be reduced modulo S, because they are unchanged on V(S). In the pivot branch, the row operation $\mathrm{row}_k\to p\,\mathrm{row}_k-a_{kj}\mathrm{row}_i$ multiplies a row by p, which is nonzero on the cell. An exact division by the previous pivot, also nonzero on the cell, likewise preserves the pointwise rank. Each branch removes a row and column or adds a polynomial that is not already in the radical. Noetherianity and finite matrix size give termination. The leaves therefore partition parameter space, and the rank is constant on each leaf. Rational points of a zero-dimensional closure come from a lexicographic Groebner basis, the rational root theorem on its last eliminant, and back substitution. Tests compare each leaf's rank with direct evaluation on a grid.
+
+## Active strata
+
+On a correction cell C the rank of $L_N$ is constant. Running comprehensive elimination of $[L_N;P_N]$ from the starting pair (S,N) of C only ever adds equations or inequations, so its leaves partition C and the joint rank is constant on each leaf. Both ranks are then constant on every stratum, and so are $\dim\ker L_N=N+1-\operatorname{rank}L_N$ and $\dim A_N=\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, because $\ker[L_N;P_N]=\ker L_N\cap\ker P_N$. At a rational point, choosing kernel vectors whose $P_N$-images are independent gives a basis of the active quotient, and the nullspace of $P_N$ restricted to $\ker L_N$ gives the commuting part; each vector is replayed as a form with exact transvectants. The sextic has a repeated root exactly when the resultant of $f(x,1)$ and its derivative vanishes, since the leading coefficient is1.
+
+## Identifiable readouts
+
+If $h=X^\top c$, then $h^\top\beta=c^\top X\beta$ is a function of the noiseless observations. If $h\notin\operatorname{row}(X)=\ker(X)^\perp$, some $n\in\ker X$ has $h^\top n\ne0$; then $X\beta=X(\beta+n)$ while the readouts differ by $h^\top n$. Adding a row already in row(X) leaves row(X) unchanged, so a repeat can never make a non-identified readout identified. For $y=X\beta+e$ with Gaussian prior and noise, the posterior covariance $(\Sigma_0^{-1}+X^\top X/\sigma^2)^{-1}$ does not depend on y, so the expected variance reduction of a new row equals its realized reduction. Adding a row adds a positive semidefinite term to the precision, so no candidate increases the variance.
+
+## Settled decisions and targeted refinement
+
+If every reported interval contains its true value and the leader's lower bound exceeds every competitor's upper bound, the leader is strictly best whatever the true values are inside the intervals. Refinement of an action whose interval is already below the leader's lower bound cannot change the comparison, so only overlapping contenders need refinement.
+
+## Evolution-defect split
+
+From $x_{t+1}=Ax_t+Bu_t$ and $z_{t+1}=Gz_t+Hu_t$, $e_{t+1}=Ax_t+Bu_t-VGz_t-VHu_t=A(e_t+Vz_t)-VGz_t+(B-VH)u_t=Ae_t+(AV-VG)z_t+(B-VH)u_t$. Taking norms, $\|e_{t+1}\|\le\|A\|\|e_t\|+\|(AV-VG)z_t\|+\|(B-VH)u_t\|$, which is the recursion the implementation reports.
+
+## Adaptive monomial closure
+
+Pullback by a polynomial map sends a monomial to a polynomial, and the loop adds exactly the monomials of the pullbacks that are missing. If the loop stops with nothing missing, every retained monomial pulls back into their span, which is the closure identity. The span of $C,CK,CK^2,\dots$ inside it is the smallest pullback-closed space containing the outputs, by the observable-space argument of chapter07.
 
 
 ---
@@ -879,3 +920,15 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E307 | invariants | Rabinowitsch saturation | I:q^infinity = (I+<1-zq>) intersect Q[t] | derived | Elimination order on z; cell nonempty iff saturated ideal is not 1. |
 | PJ-E308 | invariants | two-parameter partner surface | f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0) | exact_checked | Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0. |
 | PJ-E309 | invariants | fourfold-root exceptional sextic | x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2) | exact_checked | Correction rank drops at this point in degrees5,6,7,9,10,11. |
+| PJ-E310 | invariants | active strata | dim A_N=rank[L_N;P_N]-rank L_N constant on refined cells; commuting=dim ker L_N-dim A_N | exact_checked | Two-parameter sextic surface, degrees3..12; partners replayed at rational samples only. |
+| PJ-E311 | invariants | surface discriminant | Res_x(f(x,1),f_x(x,1)) in Q[a,b], total degree8 | exact_checked | Bareiss determinant of the Sylvester matrix; vanishes exactly at repeated roots since f is monic in x. |
+| PJ-E312 | invariants | perfect-cube commuting exceptions | f=(x^2+y^2)^3: ker L_N=span{(x^2+y^2)^(N/2)} with A_N=0 for N=4,6,8,10 | exact_checked | Correction-rank exception that adds no active capacity; degree12 kernel3 active2. |
+| PJ-E313 | invariants | degree8 partner curve | a^2b-4b^3+6a^2-28b^2+20b+300=0; rational points (+/-11,6),(+/-16,-9),(0,-5) | exact_checked | Bounded-height scan, height<=12; not a complete rational point list. |
+| PJ-E314 | invariants | degree12 partner curve | b^4+24b^3+81a^2-126b^2+405=0; rational points (+/-4,-3),(+/-32/25,-9/5),(+/-16,-9) | exact_checked | (+/-4,-3) has a double root; (+/-32/25,-9/5) is squarefree. |
+| PJ-E315 | observability | readout identifiability | h^T beta determined by X beta iff h in row(X); else Xn=0, h^T n!=0 | exact_checked | Noiseless linear response; witness gives two fits with different readouts. |
+| PJ-E316 | observability | demand-supported readout | theta_i=sum_k q_k phi(d_k)^T beta_i=h_q^T beta_i | definition | q a declared training-derived demand distribution. |
+| PJ-E317 | observability | repeat versus new condition | row in row(X) leaves identifiability unchanged | exact_checked | Repeats sharpen precision only; minimal identifying sets by exhaustive search up to a size bound. |
+| PJ-E318 | observability | Gaussian value of information | VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e e^T/s^2)^{-1}h | exact_checked | Linear Gaussian model; reduction independent of the unseen outcome; conditional on prior and noise. |
+| PJ-E319 | decisions | settled decision | Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b)) | exact_checked | Valid intervals; refinement restricted to overlapping contenders. |
+| PJ-E320 | decisions | evolution-defect split | e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t | exact_checked | Replayed at every step in rational arithmetic with an infinity-norm bound. |
+| PJ-E321 | closure | adaptive monomial closure | add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...} | exact_checked | Stops on degree growth or budget with the residual support. |

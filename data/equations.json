@@ -2781,6 +2781,114 @@
       "status": "exact_checked",
       "assumptions": "Correction rank drops at this point in degrees5,6,7,9,10,11.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E310",
+      "domain": "invariants",
+      "title": "active strata",
+      "equation": "dim A_N=rank[L_N;P_N]-rank L_N constant on refined cells; commuting=dim ker L_N-dim A_N",
+      "status": "exact_checked",
+      "assumptions": "Two-parameter sextic surface, degrees3..12; partners replayed at rational samples only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E311",
+      "domain": "invariants",
+      "title": "surface discriminant",
+      "equation": "Res_x(f(x,1),f_x(x,1)) in Q[a,b], total degree8",
+      "status": "exact_checked",
+      "assumptions": "Bareiss determinant of the Sylvester matrix; vanishes exactly at repeated roots since f is monic in x.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E312",
+      "domain": "invariants",
+      "title": "perfect-cube commuting exceptions",
+      "equation": "f=(x^2+y^2)^3: ker L_N=span{(x^2+y^2)^(N/2)} with A_N=0 for N=4,6,8,10",
+      "status": "exact_checked",
+      "assumptions": "Correction-rank exception that adds no active capacity; degree12 kernel3 active2.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E313",
+      "domain": "invariants",
+      "title": "degree8 partner curve",
+      "equation": "a^2b-4b^3+6a^2-28b^2+20b+300=0; rational points (+/-11,6),(+/-16,-9),(0,-5)",
+      "status": "exact_checked",
+      "assumptions": "Bounded-height scan, height<=12; not a complete rational point list.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E314",
+      "domain": "invariants",
+      "title": "degree12 partner curve",
+      "equation": "b^4+24b^3+81a^2-126b^2+405=0; rational points (+/-4,-3),(+/-32/25,-9/5),(+/-16,-9)",
+      "status": "exact_checked",
+      "assumptions": "(+/-4,-3) has a double root; (+/-32/25,-9/5) is squarefree.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E315",
+      "domain": "observability",
+      "title": "readout identifiability",
+      "equation": "h^T beta determined by X beta iff h in row(X); else Xn=0, h^T n!=0",
+      "status": "exact_checked",
+      "assumptions": "Noiseless linear response; witness gives two fits with different readouts.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E316",
+      "domain": "observability",
+      "title": "demand-supported readout",
+      "equation": "theta_i=sum_k q_k phi(d_k)^T beta_i=h_q^T beta_i",
+      "status": "definition",
+      "assumptions": "q a declared training-derived demand distribution.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E317",
+      "domain": "observability",
+      "title": "repeat versus new condition",
+      "equation": "row in row(X) leaves identifiability unchanged",
+      "status": "exact_checked",
+      "assumptions": "Repeats sharpen precision only; minimal identifying sets by exhaustive search up to a size bound.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E318",
+      "domain": "observability",
+      "title": "Gaussian value of information",
+      "equation": "VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e e^T/s^2)^{-1}h",
+      "status": "exact_checked",
+      "assumptions": "Linear Gaussian model; reduction independent of the unseen outcome; conditional on prior and noise.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E319",
+      "domain": "decisions",
+      "title": "settled decision",
+      "equation": "Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))",
+      "status": "exact_checked",
+      "assumptions": "Valid intervals; refinement restricted to overlapping contenders.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E320",
+      "domain": "decisions",
+      "title": "evolution-defect split",
+      "equation": "e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t",
+      "status": "exact_checked",
+      "assumptions": "Replayed at every step in rational arithmetic with an infinity-norm bound.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E321",
+      "domain": "closure",
+      "title": "adaptive monomial closure",
+      "equation": "add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}",
+      "status": "exact_checked",
+      "assumptions": "Stops on degree growth or budget with the residual support.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }

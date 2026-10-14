@@ -100,6 +100,12 @@ For staged reconstructions, total error is at most $\epsilon_1+\|V_1\|\epsilon_2
 An action is certified best when its lower objective bound exceeds all competing upper bounds. With common error epsilon, a gap above2epsilon suffices. Computation can concentrate on candidates whose intervals overlap the best lower bound. This turns model-error machinery into decision machinery; deterministic approximation bounds do not replace empirical uncertainty about sports or markets.
 
 Historical DynaComp reports include256-state compile time37.6s->1.3s,58 tests at one stage, later210/229 tests,200-state heat->7 states with0.01 ceiling and5.89x runtime gain, break-even about222 batches of256 scenarios, and descriptor200->9 with0.003483 bound and4.50x gain. Other models were slower or uncertifiable. These are upstream dated workloads, not universal or freshly reproduced PerfectJet results.
+
+Since0.5.0 `engine.py` runs the augmentation loop rather than describing it. `adaptive_closure` starts from the monomials of the requested outputs, pulls every feature back through F, and adds exactly the monomials of the residual support. On closure it replays $m(F(x))=\sum_jK_{mj}m_j(x)$ for every retained monomial and extracts the smallest pullback-closed space containing the outputs, span$\{C,CK,CK^2,\dots\}$, which can be smaller than the monomial space (y+12x2 is a one-dimensional eigenfunction of $(x,y)\mapsto(x/2,y/3+x^2)$). When a missing monomial has higher degree than every retained one, the failure is classified as degree growth and the loop stops instead of inflating the model; the residual support is returned.
+
+`decisions.py` implements the stopping rule above. `certified_choice` returns the settled action or the overlapping contenders; `refine_until_settled` refines only the widest contender, and its receipt records the evaluations spent against uniform refinement. `defect_split` replays $e_{t+1}=Ae_t+(AV-VG)z_t+(B-VH)u_t$ exactly at every step and reports the evolution and input defects separately, together with the geometric bound in the infinity norm.
+
+Every adapter of `engine.py` returns one report shape: question, representation, preserved questions, replayed identities, answer, obstruction, obligations, and the next calculation implicated by the obstruction. Adapters exist for polynomial dynamics, linear sensing, readouts of linear responses, integer systems, and transvectant partners.
 ''',
 '09_energy_IMP_and_numerical_structure':r'''# Energy diagnostics, IMP, and numerical structure
 
@@ -195,6 +201,15 @@ Applied to the two-parameter family x6+y6+a x3y3+b(x4y2+x2y4), whose slice b=0 i
 - (0,15)=(x2+y2)(x4+14x2y2+y4) and (0,-5)=(x2+y2)(x4-6x2y2+y4) are squarefree and still exceptional, at (0,15) in degrees3,8,10 and at (0,-5) in degrees4,8.
 
 Degree3 has a whole drop curve of rank3: a4-16a2b2/3+256b4/81-2560b3/27-400a2+6400b2/9=0. In degree8 the drop locus contains the line b=0, which is why the C3 family has its degree-eight partner g8 for every lambda. The full incidence variety in all seven sextic coefficients remains open.
+
+Since0.5.0 `strata.py` stratifies both dimensions. Each correction cell is refined by the joint cells of $[L_N;P_N]$, started from the correction cell itself, so every stratum carries the kernel dimension, the active dimension $\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, and the commuting dimension. At rational points of each stratum the module constructs actual partners: a basis of the active quotient and of $\ker L_N\cap\ker P_N$, each replayed with exact transvectants. A Bareiss determinant of the Sylvester matrix gives the sextic discriminant on the surface, of total degree8, and each stratum is labelled repeated-root, squarefree, or generically squarefree.
+
+The refinement changes the reading of the surface:
+- (0,3), f=(x2+y2)3, is not an active exception in degrees4..10. Its extra kernel directions are powers of x2+y2, which commute with f. In degree4 the generic active partner becomes the commuting form (x2+y2)2, so the active dimension drops from1 to0. Only degree12 gains active capacity there (kernel3, active2).
+- (+/-16,-9), f=(x-y)4(x2+4xy+y2), gains one active partner in every degree3..12. In degree6 the partner is xy(x-y)4.
+- New rational exceptional points lie on drop curves found by the cells. The degree3 curve passes through (+/-4,6) and (+/-24,6) and (+/-24,-9). The degree8 cubic a2b-4b3+6a2-28b2+20b+300=0 passes through (+/-11,6) and through (0,-5). The degree12 quartic b4+24b3+81a2-126b2+405=0 passes through (+/-4,-3) and (+/-32/25,-9/5). All of these are squarefree except (+/-4,-3), which has one double root. Each carries a replayed active partner in the jump degree.
+
+The curve points come from a bounded-height scan (slices b=b0 with height at most12); they are not a complete list of rational points on those curves, which can be of positive genus. The strata are cells over the algebraic closure, and partners are constructed only at rational samples.
 ''',
 '16_deformation_moduli_and_codes':r'''# Deformation, moduli, and arithmetic codes
 
@@ -255,6 +270,8 @@ Harsh Audit/tau-Crystal sought to prevent Texas-Sharpshooter post-hoc mass fitti
 NFL Combine scouting seeks hidden talent,bust risk,and position-specific development. Early movement is a sequence: approach,braking,turn,recovery,acceleration. Pauli products separate dot-product alignment from cross-product order information; nested commutators propose higher interactions. A commutative ablation and held-out continuation tests are required. Reported future-speed MSE reductions33.36%/26.59% do not establish scouting success or betting profitability. An earlier betting baseline trailed market; live odds and bookmaker access were separate integration tasks. Exact representation machinery structures the candidate features; outcomes still require empirical validation.
 
 Industrial portfolio570solved versus baseline584 with42.1% extra summed time and zero conflicts is a retained negative comparison. Family-held-out512tasks/128tests,graph504samples,sequence52families and calibration/experiment examples are workload-specific historical reports. Customer economics require setup,runtime,break-even,and supported-model conditions.
+
+Since0.5.0 the identifiability question has an exact kernel. For the response $\eta=\beta_0+\beta_1s+\beta_2a+\beta_3sa$, a player's attempts form a design X. A readout $h^\top\beta$ is determined by those attempts exactly when $h\in\operatorname{row}(X)$. `readout.identify` returns estimator weights, or a vector n with Xn=0 and $h^\top n\ne0$: two coefficient vectors that fit every attempt and disagree on the readout. `demand_readout` forms $h_q=\sum_kq_k\phi(d_k)$ for a declared demand distribution. `repair` finds the smallest set of candidate conditions making the readout identifiable, and `value_of_information` gives the exact Gaussian posterior-variance reduction of each candidate, marked as a repeat or a new direction. In the receipt, repeats reduce variance by about0.16 while two new conditions are needed to identify the readout at all.
 ''',
 '21_closure_stress_geometry_games_and_integrations':r'''# Closure stress, geometry, games, and integrations
 
@@ -279,6 +296,8 @@ Arithmetic height relative to a question organizes fibres but cannot bypass comp
 The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; exact Smith-form lattice repair,single-output Hankel word realization,and coarsest exact lumping became executable in0.2.0; Hermite form,multi-output realization,one-parameter rank loci,and the adaptive power-residue sieve followed in0.3.0; multi-parameter comprehensive rank cells in0.4.0. The full sextic incidence variety,sieving beyond perfect-power hits,numerical Hankel discovery,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
 
 The master interface should record a domain,questions,state representation,legal operations,weights,exact identities,error bounds,source maps,obstructions,costs,and evidence. A new application adds an adapter and its preserved questions. It must not acquire correctness from its similarity to an older application. The decisive reuse is an executable identity with matching assumptions.
+
+Release0.5.0 makes the master interface executable as `engine.py`: one report shape for every adapter, an adaptive closure loop that adds only residual-implicated structure, and decisions that stop once settled. The partner program now stratifies active capacity, not only correction rank, and readout identifiability gives the empirical program an exact gate before any fitting.
 ''',
 '23_status_corrections_and_frontiers':r'''# Corrections, missing sources, and remaining frontiers
 
@@ -295,6 +314,8 @@ The strongest finite executable contributions in0.1.0 are observable-space closu
 Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-parameter rank loci (which rediscover the 7lambda-40 obstruction and certify the rational exceptional set of the C3 partner family for degrees3..12), and the adaptive local sieve for perfect-power hits.
 
 Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
+
+Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
 
 Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 '''

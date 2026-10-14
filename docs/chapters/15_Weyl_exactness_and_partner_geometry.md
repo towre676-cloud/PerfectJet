@@ -20,3 +20,12 @@ Applied to the two-parameter family x6+y6+a x3y3+b(x4y2+x2y4), whose slice b=0 i
 - (0,15)=(x2+y2)(x4+14x2y2+y4) and (0,-5)=(x2+y2)(x4-6x2y2+y4) are squarefree and still exceptional, at (0,15) in degrees3,8,10 and at (0,-5) in degrees4,8.
 
 Degree3 has a whole drop curve of rank3: a4-16a2b2/3+256b4/81-2560b3/27-400a2+6400b2/9=0. In degree8 the drop locus contains the line b=0, which is why the C3 family has its degree-eight partner g8 for every lambda. The full incidence variety in all seven sextic coefficients remains open.
+
+Since0.5.0 `strata.py` stratifies both dimensions. Each correction cell is refined by the joint cells of $[L_N;P_N]$, started from the correction cell itself, so every stratum carries the kernel dimension, the active dimension $\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, and the commuting dimension. At rational points of each stratum the module constructs actual partners: a basis of the active quotient and of $\ker L_N\cap\ker P_N$, each replayed with exact transvectants. A Bareiss determinant of the Sylvester matrix gives the sextic discriminant on the surface, of total degree8, and each stratum is labelled repeated-root, squarefree, or generically squarefree.
+
+The refinement changes the reading of the surface:
+- (0,3), f=(x2+y2)3, is not an active exception in degrees4..10. Its extra kernel directions are powers of x2+y2, which commute with f. In degree4 the generic active partner becomes the commuting form (x2+y2)2, so the active dimension drops from1 to0. Only degree12 gains active capacity there (kernel3, active2).
+- (+/-16,-9), f=(x-y)4(x2+4xy+y2), gains one active partner in every degree3..12. In degree6 the partner is xy(x-y)4.
+- New rational exceptional points lie on drop curves found by the cells. The degree3 curve passes through (+/-4,6) and (+/-24,6) and (+/-24,-9). The degree8 cubic a2b-4b3+6a2-28b2+20b+300=0 passes through (+/-11,6) and through (0,-5). The degree12 quartic b4+24b3+81a2-126b2+405=0 passes through (+/-4,-3) and (+/-32/25,-9/5). All of these are squarefree except (+/-4,-3), which has one double root. Each carries a replayed active partner in the jump degree.
+
+The curve points come from a bounded-height scan (slices b=b0 with height at most12); they are not a complete list of rational points on those curves, which can be of positive genus. The strata are cells over the algebraic closure, and partners are constructed only at rational samples.

@@ -314,6 +314,18 @@ invariants|comprehensive rank cells|parameter space = disjoint union of V(S_i) m
 invariants|Rabinowitsch saturation|I:q^infinity = (I+<1-zq>) intersect Q[t]|derived|Elimination order on z; cell nonempty iff saturated ideal is not 1.
 invariants|two-parameter partner surface|f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0)|exact_checked|Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0.
 invariants|fourfold-root exceptional sextic|x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2)|exact_checked|Correction rank drops at this point in degrees5,6,7,9,10,11.
+invariants|active strata|dim A_N=rank[L_N;P_N]-rank L_N constant on refined cells; commuting=dim ker L_N-dim A_N|exact_checked|Two-parameter sextic surface, degrees3..12; partners replayed at rational samples only.
+invariants|surface discriminant|Res_x(f(x,1),f_x(x,1)) in Q[a,b], total degree8|exact_checked|Bareiss determinant of the Sylvester matrix; vanishes exactly at repeated roots since f is monic in x.
+invariants|perfect-cube commuting exceptions|f=(x^2+y^2)^3: ker L_N=span{(x^2+y^2)^(N/2)} with A_N=0 for N=4,6,8,10|exact_checked|Correction-rank exception that adds no active capacity; degree12 kernel3 active2.
+invariants|degree8 partner curve|a^2b-4b^3+6a^2-28b^2+20b+300=0; rational points (+/-11,6),(+/-16,-9),(0,-5)|exact_checked|Bounded-height scan, height<=12; not a complete rational point list.
+invariants|degree12 partner curve|b^4+24b^3+81a^2-126b^2+405=0; rational points (+/-4,-3),(+/-32/25,-9/5),(+/-16,-9)|exact_checked|(+/-4,-3) has a double root; (+/-32/25,-9/5) is squarefree.
+observability|readout identifiability|h^T beta determined by X beta iff h in row(X); else Xn=0, h^T n!=0|exact_checked|Noiseless linear response; witness gives two fits with different readouts.
+observability|demand-supported readout|theta_i=sum_k q_k phi(d_k)^T beta_i=h_q^T beta_i|definition|q a declared training-derived demand distribution.
+observability|repeat versus new condition|row in row(X) leaves identifiability unchanged|exact_checked|Repeats sharpen precision only; minimal identifying sets by exhaustive search up to a size bound.
+observability|Gaussian value of information|VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e e^T/s^2)^{-1}h|exact_checked|Linear Gaussian model; reduction independent of the unseen outcome; conditional on prior and noise.
+decisions|settled decision|Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))|exact_checked|Valid intervals; refinement restricted to overlapping contenders.
+decisions|evolution-defect split|e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t|exact_checked|Replayed at every step in rational arithmetic with an infinity-norm bound.
+closure|adaptive monomial closure|add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}|exact_checked|Stops on degree growth or budget with the residual support.
 '''
 
 def build():
@@ -333,7 +345,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.4.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.5.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

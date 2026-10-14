@@ -1,3 +1,18 @@
+# PerfectJet 0.5.0
+
+This release turns the partner surface into active strata and adds the first pieces of the adaptive engine.
+
+- **Active strata** (`strata.py`): each correction cell is refined by the joint cells of [L_N;P_N], so every stratum carries kernel, active and commuting dimensions. At rational points the module builds a basis of the active quotient and of the commuting part and replays each partner with exact transvectants. A Bareiss determinant of the Sylvester matrix gives the sextic discriminant on the surface (total degree 8), and each stratum is labelled repeated-root, squarefree or generically squarefree. Findings:
+  - the perfect cube (0,3) adds no active capacity in degrees 4 to 10; its extra kernel is powers of x^2+y^2, and in degree 4 the generic active partner becomes commuting;
+  - (+/-16,-9) gains one active partner in every degree 3 to 12; in degree 6 it is xy(x-y)^4;
+  - new rational exceptional points on drop curves, found by a bounded-height scan: (+/-4,6), (+/-24,6), (+/-24,-9) in degree 3; (+/-11,6) in degree 8; (+/-4,-3) and (+/-32/25,-9/5) in degree 12. All are squarefree except (+/-4,-3), which has one double root.
+- **Rational roots for large coefficients** (`loci.py`): when the rational-root-theorem candidate set is too large, Sturm bisection isolates real roots below the 1/D^2 separation and the simplest rational in each interval is tested exactly.
+- **Readout identifiability** (`readout.py`): h in row(X) with estimator weights, or a two-fit witness; demand-supported readouts; the smallest identifying set of candidate conditions; exact Gaussian value of information with each candidate marked repeat or new direction.
+- **Certified decisions** (`decisions.py`): settled choice, refinement of overlapping contenders only, and an exact replay of e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t with an infinity-norm bound.
+- **Adaptive engine** (`engine.py`): monomial closure that adds only residual-implicated monomials and extracts the minimal pullback-closed space, or stops on degree growth; adapters for sensing, readouts, integer systems and partners; every adapter returns the same representation-and-obstruction report.
+
+Chapters 08, 15, 20, 22, 23 and 24 were updated; the registry has 321 entries. The CLI has four new commands: `strata`, `readout`, `decisions` and `engine`. No new Lean verification is claimed. The curve point lists are bounded-height scans, not complete rational point sets.
+
 # PerfectJet 0.4.0
 
 This release extends rank loci from one parameter to several.

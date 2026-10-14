@@ -26,6 +26,10 @@ def report():
     from .loci import partner_loci
     from .sieve import sieve_receipt
     from .parametric import surface_receipt
+    from .strata import strata_receipt
+    from .readout import readout_receipt
+    from .decisions import decisions_receipt
+    from .engine import engine_receipt
     p=SelectionPopulation([(2,1),(1,2),(2,2),(0,1)],(3,3),[4,3,5,0])
     machine=PartialMachine([0,0,1,1],[(2,),(3,),(2,),(3,)])
     reduced,mapping,blocks=machine.quotient()
@@ -44,12 +48,14 @@ def report():
             "flip_defect":iterate_defect([0,-1,1,2],5),
             "lattice":lattice_receipt(),"realization":realization_receipt(),
             "partner_loci":partner_loci(),"sieve":sieve_receipt(),"partner_surface":surface_receipt(),
+            "active_strata":strata_receipt(),"readout":readout_receipt(),"decisions":decisions_receipt(),
+            "engine":engine_receipt(),
             "limitations":"No imported upstream solver or Lean theorem is claimed by this release."}
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","sieve","atlas"])
+    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","strata","readout","decisions","engine","sieve","atlas"])
     parser.add_argument("--output",type=Path)
     parser.add_argument("--conductor",type=int,default=7)
     parser.add_argument("--index",type=int,default=10**100)
@@ -80,6 +86,18 @@ def main():
     elif args.command=="surface":
         from .parametric import surface_receipt
         out=surface_receipt()
+    elif args.command=="strata":
+        from .strata import strata_receipt
+        out=strata_receipt()
+    elif args.command=="readout":
+        from .readout import readout_receipt
+        out=readout_receipt()
+    elif args.command=="decisions":
+        from .decisions import decisions_receipt
+        out=decisions_receipt()
+    elif args.command=="engine":
+        from .engine import engine_receipt
+        out=engine_receipt()
     elif args.command=="sieve":
         from .sieve import sieve_receipt
         out=sieve_receipt()

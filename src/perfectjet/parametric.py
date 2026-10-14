@@ -228,12 +228,14 @@ def saturate_by(ideal,q,n):
     return groebner([{e[:-1]:c for e,c in p.items()} for p in g if all(e[-1]==0 for e in p)])
 
 
-def rank_cells(a,nvars):
-    """Partition of parameter space into constructible cells of constant rank.
+def rank_cells(a,nvars,equations=None,inequations=None):
+    """Partition of parameter space (or of one cell of it) into constructible cells of constant rank.
 
     Each cell is V(S) minus V(prod N) with S already saturated by every member of N.
     Then the cell is nonempty exactly when S is not the unit ideal, and it is dense
     in V(S), so a pivot p vanishes on the whole cell exactly when S : p^infinity = 1.
+    A starting cell V(equations) minus V(prod inequations) restricts the partition to
+    that cell; equations must already be saturated by the inequations.
     """
     a=[[clean(p) for p in row] for row in a]
     cells=[]
@@ -275,7 +277,7 @@ def rank_cells(a,nvars):
                 zero=saturate_by(zero,q,nvars)
             if not is_unit_ideal(zero):run(m,zero,N,r,prev)
 
-    run(a,[],[],0,None)
+    run(a,list(equations or []),list(inequations or []),0,None)
     return cells
 
 
