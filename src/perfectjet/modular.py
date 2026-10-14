@@ -293,3 +293,35 @@ def nullspace_mod(rows, ncols):
             v[pc] = (-rows[i][fcol]) % P
         out.append(v)
     return out
+
+
+def standard_monomials_mod(gb, nvars, bound=60):
+    leads = [_lead(g)[0] for g in gb]
+    std = [e for e in itertools.product(range(bound), repeat=nvars) if not any(_divides(l, e) for l in leads)]
+    return sorted(std, key=_key)
+
+
+def nilpotent_off(gb, h, nvars):
+    """For a zero-dimensional ideal: is V(I) contained in V(h)? (h nilpotent in the quotient algebra.)"""
+    std = standard_monomials_mod(gb, nvars)
+    idx = {e: i for i, e in enumerate(std)}
+    n = len(std)
+    if n == 0:
+        return True, 0
+    cols = []
+    for e in std:
+        nf = reduce_mod(mul_mod(h, {e: 1}), gb)
+        col = [0]*n
+        for mono, c in nf.items():
+            col[idx[mono]] = c
+        cols.append(col)
+    mat = [list(r) for r in zip(*cols)]
+    # h is nilpotent iff mat^n == 0; square repeatedly.
+    def mm(a, b):
+        bt = list(zip(*b))
+        return [[sum(x*y for x, y in zip(row, col)) % P for col in bt] for row in a]
+    power, k = mat, 1
+    while k < n:
+        power = mm(power, power)
+        k *= 2
+    return all(not any(r) for r in power), n
