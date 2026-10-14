@@ -574,7 +574,7 @@ def degree8_relations(seed=1, plane=True, projections=10):
     return out
 
 
-def projected_slice_test(n, relations=None, seed=1, projections=12, prime=None):
+def projected_slice_test(n, relations=None, seed=1, projections=12, prime=None, check_empty=True):
     """Modulo a prime: is {ker L_N != 0} empty on the slice off repeated roots at 0 and 1, and which
     invariant relations vanish on it?
 
@@ -609,7 +609,9 @@ def projected_slice_test(n, relations=None, seed=1, projections=12, prime=None):
             dets.append(M.det_mod(rows, 3))
         p, q, r = var(0, 3), var(1, 3), var(2, 3)
         h = M.to_mod(mul(r, add(add(add(p, q), r), const(1, 3))))
-        out = {"degree": n, "prime": M.P, "empty": M.saturated_unit(dets, h, 3)}
+        out = {"degree": n, "prime": M.P}
+        if check_empty:
+            out["empty"] = M.saturated_unit(dets, h, 3)
         for name, rel in (relations or {}).items():
             out[name] = M.saturated_unit(dets, M.mul_mod(h, M.to_mod(rel)), 3)
         return out
