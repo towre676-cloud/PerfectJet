@@ -16,6 +16,8 @@ Release0.4.0 adds comprehensive rank cells for several parameters, with an exact
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
 
+Release0.8.0 adds a solution-carrying compiler for k y2=an2+bn+c. Every branch has a reconstruction map and a completeness status, Nagell seeds make the Pell branch complete, and exact remote-index queries are supported.
+
 Release0.7.0 proves two universal partner statements for binary sextics: det L3=(A2-B/6)/16, and the covariant (f,f)4 is always correction-free. It identifies the surface's drop curves as invariant loci, and identifies (0,15) with x6+y6 and (0,-5) with the octahedral sextic.
 
 Release0.6.0 adds the Combine scouting adapter and its protocol; it implements the empirical test but does not report a real-data result.

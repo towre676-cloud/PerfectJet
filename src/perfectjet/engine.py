@@ -179,6 +179,15 @@ def integer_problem(a, b):
     return out
 
 
+# ------------------------------------------------------------- arithmetic
+
+
+def arithmetic_problem(k, a, b, c, nmax=10**6):
+    """k y^2 = a n^2 + b n + c compiled to a norm equation with its reconstruction map."""
+    from .quadratic import QuadraticSquare
+    return QuadraticSquare(k, a, b, c).report(nmax)
+
+
 # --------------------------------------------------------------- partners
 
 
@@ -209,5 +218,6 @@ def engine_receipt():
                               candidates=[phi(5, 120), phi(7, 60), phi(7, 120)])
     integer = integer_problem([[2, 0], [0, 3]], [1, 3])
     partner = partner_problem(16, -9, 6)
-    return {"closure": closed, "degree_growth": growing, "sensing": sens, "readout": readout,
+    arithmetic = arithmetic_problem(2, 1, 0, 7, 10**9)
+    return {"arithmetic": arithmetic, "closure": closed, "degree_growth": growing, "sensing": sens, "readout": readout,
             "integer": integer, "partner": partner}

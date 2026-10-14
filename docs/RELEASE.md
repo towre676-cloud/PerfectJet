@@ -1,3 +1,17 @@
+# PerfectJet 0.8.0
+
+This release adds a solution-carrying arithmetic compiler (`quadratic.py`) for k y^2 = a n^2 + b n + c over the integers.
+
+- **Transport with the way back**: X = 2an+b, Y = y gives X^2 - 4ak Y^2 = b^2 - 4ac. The reconstruction is n = (X-b)/(2a), with the congruence X = b mod 2a as an explicit condition.
+- **Branches with completeness status**:
+  - a = 0 gives residue classes of y;
+  - definite forms, square D and N0 = 0 have finitely many norm solutions;
+  - the indefinite nonsquare case is a generalized Pell equation. Nagell's bounds give a seed in every class, so seeds times unit powers are all solutions.
+- **Navigable population**: admissible positions are periodic along each orbit. The compiler answers hits below any bound and the j-th hit at remote indices with exact integers, replaying each returned n in the original equation.
+- **Engine adapter** `arithmetic_problem` returns the unified report.
+
+Tests compare 158 equations with brute force, across every branch. Pell7, n^2+7 = 2y^2, has hits 1, 5, 11, 31, 65, 181, and so on. Its 1000th orbit hit has 766 digits. The square-triangular equation gives 0, 2, 14, 84, 492, 2870, and so on. The registry has 336 entries. The CLI has a new command, `perfectjet quadratic`. Higher-degree equations (Thue, elliptic) remain outside the compiler.
+
 # PerfectJet 0.7.0
 
 This release explains the partner strata by invariant theory (`invariants.py`).

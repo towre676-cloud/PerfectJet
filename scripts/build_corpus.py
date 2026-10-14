@@ -326,6 +326,9 @@ observability|Gaussian value of information|VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e 
 decisions|settled decision|Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))|exact_checked|Valid intervals; refinement restricted to overlapping contenders.
 decisions|evolution-defect split|e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t|exact_checked|Replayed at every step in rational arithmetic with an infinity-norm bound.
 closure|adaptive monomial closure|add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}|exact_checked|Stops on degree growth or budget with the residual support.
+transport|quadratic square transport|k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a)|exact_checked|Integers; X=b mod 2a required; branches a=0, definite, square D, N0=0 handled separately.
+pell|Nagell class bound|N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1)))|derived|x^2-Dy^2=N0, D>0 nonsquare, (x1,y1) fundamental unit; classical theorem, cited.
+pell|compiled quadratic population|hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a}|exact_checked|Complete for the Pell branch; checked against brute force on 158 equations; remote indices replayed exactly.
 invariants|Clebsch invariants of the sextic|i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2|definition|Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2.
 invariants|weighted orbit test|(A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i}|derived|Proves GL2(Qbar)-equivalence only for squarefree sextics.
 invariants|Cayley-Sylvester count|dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2|derived|p counts partitions into at most d parts of size at most n.
@@ -357,7 +360,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.7.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.8.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]
