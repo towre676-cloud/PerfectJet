@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -7609,6 +7609,361 @@
       "next": null,
       "history": []
     }
+  },
+  "invariants": {
+    "invariants": "Clebsch A,B,C,D from unnormalized transvectants; weights 2,4,6,10",
+    "cayley_sylvester": {
+      "degree4_invariants": 2,
+      "degree3_invariants": 0,
+      "degree3_order4_covariants": 0
+    },
+    "cubic_partner_theorem": {
+      "statement": "det L_3(f) = (A^2 - B/6)/16 for every binary sextic",
+      "random_sextics_checked": 20,
+      "identity_held": 20
+    },
+    "quartic_covariant_partner": {
+      "statement": "(f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0 for every binary sextic",
+      "random_sextics_checked": 20,
+      "held": 20
+    },
+    "drop_curves_as_invariant_loci": [
+      {
+        "degree": 3,
+        "curve": "a^4 - 16/3*a^2*b^2 + 256/81*b^4 - 2560/27*b^3 - 400*a^2 + 6400/9*b^2",
+        "invariant_relation": [
+          {
+            "weight": 2,
+            "relation": {
+              "B^1": "-1/6",
+              "A^2": "1"
+            }
+          }
+        ]
+      },
+      {
+        "degree": 8,
+        "curve": "a^2*b - 4*b^3 + 6*a^2 - 28*b^2 + 20*b + 300",
+        "invariant_relation": [
+          {
+            "weight": 5,
+            "relation": {
+              "D^1": "-9/2",
+              "B^1*C^1": "1/6",
+              "A^1*B^2": "1"
+            }
+          }
+        ]
+      },
+      {
+        "degree": 12,
+        "curve": "b^4 + 24*b^3 + 81*a^2 - 126*b^2 + 405",
+        "invariant_relation": [
+          {
+            "weight": 2,
+            "relation": {
+              "B^1": "-25/96",
+              "A^2": "1"
+            }
+          }
+        ]
+      }
+    ],
+    "points": [
+      {
+        "a": "1",
+        "b": "1",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "89568/15625",
+          "-8895744/390625",
+          "7102826496/6103515625"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "0",
+        "b": "3",
+        "squarefree": false,
+        "absolute": [
+          "A",
+          "96/25",
+          "2304/125",
+          "18432/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "16",
+        "b": "-9",
+        "squarefree": false,
+        "absolute": [
+          "D"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "0",
+        "b": "15",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "6",
+          "-36",
+          "0"
+        ],
+        "equivalent_to": [
+          "x^6+y^6 (root set fixed by a dihedral group of order 12 in PGL2)"
+        ]
+      },
+      {
+        "a": "0",
+        "b": "-5",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "0",
+          "0",
+          "0"
+        ],
+        "equivalent_to": [
+          "xy(x^4-y^4) (octahedral root set, order 24 in PGL2)"
+        ]
+      },
+      {
+        "a": "24",
+        "b": "-9",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "6",
+          "4248/125",
+          "48114/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "4",
+        "b": "6",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "6",
+          "-972/125",
+          "16464/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "11",
+        "b": "6",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "11616/25",
+          "3066624/125",
+          "1469253632/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "4",
+        "b": "-3",
+        "squarefree": false,
+        "absolute": [
+          "A",
+          "96/25",
+          "-1296/125",
+          "-768/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "32/25",
+        "b": "-9/5",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "96/25",
+          "-22041344/1842375",
+          "-6982573568/1078203909375"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-1",
+        "b": "1",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "89568/15625",
+          "-8895744/390625",
+          "7102826496/6103515625"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-16",
+        "b": "-9",
+        "squarefree": false,
+        "absolute": [
+          "D"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-24",
+        "b": "-9",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "6",
+          "4248/125",
+          "48114/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-4",
+        "b": "6",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "6",
+          "-972/125",
+          "16464/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-11",
+        "b": "6",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "11616/25",
+          "3066624/125",
+          "1469253632/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-4",
+        "b": "-3",
+        "squarefree": false,
+        "absolute": [
+          "A",
+          "96/25",
+          "-1296/125",
+          "-768/3125"
+        ],
+        "equivalent_to": []
+      },
+      {
+        "a": "-32/25",
+        "b": "-9/5",
+        "squarefree": true,
+        "absolute": [
+          "A",
+          "96/25",
+          "-22041344/1842375",
+          "-6982573568/1078203909375"
+        ],
+        "equivalent_to": []
+      }
+    ],
+    "classes": [
+      [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "-1",
+          "1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "3"
+        ]
+      ],
+      [
+        [
+          "16",
+          "-9"
+        ],
+        [
+          "-16",
+          "-9"
+        ]
+      ],
+      [
+        [
+          "0",
+          "15"
+        ]
+      ],
+      [
+        [
+          "0",
+          "-5"
+        ]
+      ],
+      [
+        [
+          "24",
+          "-9"
+        ],
+        [
+          "-24",
+          "-9"
+        ]
+      ],
+      [
+        [
+          "4",
+          "6"
+        ],
+        [
+          "-4",
+          "6"
+        ]
+      ],
+      [
+        [
+          "11",
+          "6"
+        ],
+        [
+          "-11",
+          "6"
+        ]
+      ],
+      [
+        [
+          "4",
+          "-3"
+        ],
+        [
+          "-4",
+          "-3"
+        ]
+      ],
+      [
+        [
+          "32/25",
+          "-9/5"
+        ],
+        [
+          "-32/25",
+          "-9/5"
+        ]
+      ]
+    ],
+    "scope": "equal invariants prove GL2(Qbar)-equivalence only for squarefree sextics"
   },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
 }

@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "fc34cae5a6b27e4c4dbc6a84d9bd973ad59741fe20f653ef1937adc731f080e7",
-      "size_bytes": 4701
+      "sha256": "241768ceb966bea43191f750ac72225248a81fc720d1213197527d6a554670e4",
+      "size_bytes": 4864
     },
     {
       "path": "archive/README.md",
@@ -84,8 +84,8 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "7de01ccf4fdaba1d70851de933e13a0e2a5c03266a20288c084fc938497b8ba8",
-      "size_bytes": 115708
+      "sha256": "35db71b56841eca38eb9a4c3f24af85d25b693c41c44992df648dc6e8a612c40",
+      "size_bytes": 118539
     },
     {
       "path": "data/topics.json",
@@ -94,8 +94,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "2ac1ed3e7de4317394c571d2d9207823899cb3cdd0c311f3b13b7619cc9389ef",
-      "size_bytes": 4141
+      "sha256": "f54332b524a919c758557f7a85bbec40c01ffc8a58d19bf9782d32c176961597",
+      "size_bytes": 4346
     },
     {
       "path": "docs/COVERAGE_MAP.md",
@@ -104,23 +104,23 @@
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "6c3155d842a1936e74be9bb7d8f5110466c160ea663bfec6002767a0f731ae48",
-      "size_bytes": 51016
+      "sha256": "a3bdd315009df7e14341b3dcdb1621c0b6fde79d87fe4f16c24e4a3f72a7fc66",
+      "size_bytes": 52454
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "a9513a335301977b70e0a758f24d8ff85584d0bfe6f36aa95a3011831b425f7b",
-      "size_bytes": 145598
+      "sha256": "beb44bb61e5b1d607f82e644155f1535dd2db83642285dee2f7c0f5dc1316527",
+      "size_bytes": 151265
     },
     {
       "path": "docs/QUICKSTART.md",
-      "sha256": "e24c8ee6e432968b67bab9c440b2cc871b4024262d460118b954e04cead604f0",
-      "size_bytes": 3167
+      "sha256": "e98460d298f87fdd3277f3eaecbf743bad67d5140ed1fbcac9762aed2317ab31",
+      "size_bytes": 3419
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "83dcfa33bce599468e7835b571742f188806f8945946470d4067b6157fed3951",
-      "size_bytes": 12694
+      "sha256": "431a3edd8605396b115096190e59b1276b6d344cdbf09507cbca07b0abc4e1fd",
+      "size_bytes": 14340
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
-      "sha256": "6e082e3c9109102bee588cd7b454de91495c3daf6904915f620992a3b37fbbf5",
-      "size_bytes": 6529
+      "sha256": "4bb88ae4cf8fe2aed2a65057d929b2cf02d45a4db4fe50db479822702b1f6eda",
+      "size_bytes": 8491
     },
     {
       "path": "docs/chapters/16_deformation_moduli_and_codes.md",
@@ -234,13 +234,13 @@
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "66599a2ce859a059c17c7966265f6dce8bdf6ce30732a50ff8150e1252f25a2f",
-      "size_bytes": 4140
+      "sha256": "1483c3abf027652095be5e582e21c652a7d29e812802f32aa8dca5cd39ebef8a",
+      "size_bytes": 4417
     },
     {
       "path": "docs/chapters/24_mathematical_proofs.md",
-      "sha256": "6a8966c00c0572d55dee6ef87439f17b724b8b37ef76e8eb24e2d695bf2f41cc",
-      "size_bytes": 18735
+      "sha256": "8667c4988d4f08de1dbf4e29534a25cb1066c8cf5061728ce695e0cb42b80bfa",
+      "size_bytes": 20725
     },
     {
       "path": "docs/chapters/25_historical_results_and_extended_leads.md",
@@ -274,7 +274,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "e156d0ebedac7d6ecd01fac911d34b5b7aa4b2286cb9a1fbee4776f18e1232db",
+      "sha256": "40439d2c09f77c3cfa83900e50d610ebaf138f6b2e8186e57413d00352db979d",
       "size_bytes": 381
     },
     {
@@ -314,18 +314,18 @@
     },
     {
       "path": "results/replay.json",
-      "sha256": "23da4a680e5a093b454d34d341100d4c1427f8f42ea2818d4dca5e85e59d40e2",
-      "size_bytes": 182119
+      "sha256": "7c1609fc4c6117441a296359fecc958684695ed05e13cc3fb971718656c2eda6",
+      "size_bytes": 188742
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "185160b2facac9af030ba636284632a2646c317e737680bf9a6cd5b306c5baf0",
-      "size_bytes": 66798
+      "sha256": "b676bc5fcbedff69cb98257e5cbc2dbbb7c2a9f46373b709bfe475a2779bb512",
+      "size_bytes": 69037
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "3133771f9afdc6bf939776084a80498c42f66c9fa13e8543796341017ca15313",
-      "size_bytes": 46115
+      "sha256": "5cf2e71934237f1fa4fbbd160f38afafdc4c6c1b2ff7f3d7f8ee226a8632c522",
+      "size_bytes": 47399
     },
     {
       "path": "scripts/build_release.py",
@@ -349,7 +349,7 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "47cf3de87bb7fa9e67f6cee0423842c5075534a20bcb5b3e30e1fdb7ea8a5b6a",
+      "sha256": "229d45daf6a9b3f05ecf6e1cb3ce6063cdc6304bc17dae9e3b37ee4beb399218",
       "size_bytes": 103
     },
     {
@@ -414,8 +414,8 @@
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "b33d96821909905690ed16f9df99dd42447c45cd1e4ca562fdb7288cd590e8ef",
-      "size_bytes": 5368
+      "sha256": "6d91989381c1e03645d1bc7302701c68e0eaca1dc34bb832a19559b900004d02",
+      "size_bytes": 5583
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -441,6 +441,11 @@
       "path": "src/perfectjet/exact.py",
       "sha256": "f819cbb9b3f84a658a0ddad313ae6da49845c3f7a24e01b981e19528f5bddb40",
       "size_bytes": 3277
+    },
+    {
+      "path": "src/perfectjet/invariants.py",
+      "sha256": "10d802bee0ed3f236a6bc066dd4c9bff3a4a943944ebf7e5e21be8f1dab40ba2",
+      "size_bytes": 9724
     },
     {
       "path": "src/perfectjet/jets.py",
@@ -521,6 +526,11 @@
       "path": "tests/test_exact.py",
       "sha256": "adfb14a1ac03f5ce39ae98a816beb4a98bb04af05ddf471b38f31524fa8123cf",
       "size_bytes": 10447
+    },
+    {
+      "path": "tests/test_invariants.py",
+      "sha256": "0db42b85cf5b5e02a3c055b0f1c74e08ea321043165534ff89b08e104a2bd37d",
+      "size_bytes": 3317
     },
     {
       "path": "tests/test_lattice_realization.py",
