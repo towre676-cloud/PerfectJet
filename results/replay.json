@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.8.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -7297,6 +7297,108 @@
     }
   },
   "engine": {
+    "arithmetic": {
+      "question": "find all integers n >= 0 with 2 y^2 = 1 n^2 + 0 n + 7",
+      "representation": {
+        "kind": "pell branch",
+        "transport": "X=2an+b, Y=y, X^2-DY^2=N0",
+        "D": 8,
+        "N0": -28,
+        "unit": [
+          3,
+          1
+        ],
+        "seeds": [
+          [
+            2,
+            2
+          ]
+        ],
+        "modulus": 2,
+        "orbits": [
+          {
+            "seed": [
+              2,
+              2
+            ],
+            "preperiod": 0,
+            "period": 1,
+            "admissible": [
+              0
+            ]
+          },
+          {
+            "seed": [
+              2,
+              -2
+            ],
+            "preperiod": 0,
+            "period": 1,
+            "admissible": [
+              0
+            ]
+          },
+          {
+            "seed": [
+              -2,
+              2
+            ],
+            "preperiod": 0,
+            "period": 1,
+            "admissible": [
+              0
+            ]
+          },
+          {
+            "seed": [
+              -2,
+              -2
+            ],
+            "preperiod": 0,
+            "period": 1,
+            "admissible": [
+              0
+            ]
+          }
+        ]
+      },
+      "preserved": [
+        "every hit and its y",
+        "hit counts below any bound",
+        "hits at remote indices"
+      ],
+      "identities": [
+        {
+          "equation": "(2an+b)^2 - 4ak y^2 = b^2 - 4ac",
+          "replayed": true
+        },
+        {
+          "equation": "n = (X-b)/(2a) with X = b mod 2a",
+          "replayed": true
+        }
+      ],
+      "answer": {
+        "hits_up_to_bound": 23,
+        "first_hits": [
+          1,
+          5,
+          11,
+          31,
+          65,
+          181,
+          379,
+          1055,
+          2209,
+          6149
+        ],
+        "growth": "A(N) ~ c log N, c = (admissible positions per period) / (period log epsilon), summed over orbits",
+        "completeness": "complete: Nagell bound covers every class"
+      },
+      "obstruction": null,
+      "obligations": [],
+      "next": null,
+      "history": []
+    },
     "closure": {
       "question": "find psi with psi(F(x)) = G psi(x) containing the outputs",
       "representation": {
@@ -7964,6 +8066,123 @@
       ]
     ],
     "scope": "equal invariants prove GL2(Qbar)-equivalence only for squarefree sextics"
+  },
+  "quadratic": {
+    "pell7": {
+      "hits_up_to_bound": 31,
+      "first_hits": [
+        1,
+        5,
+        11,
+        31,
+        65,
+        181,
+        379,
+        1055,
+        2209,
+        6149
+      ],
+      "growth": "A(N) ~ c log N, c = (admissible positions per period) / (period log epsilon), summed over orbits",
+      "completeness": "complete: Nagell bound covers every class"
+    },
+    "pell7_orbits": [
+      {
+        "seed": [
+          2,
+          2
+        ],
+        "preperiod": 0,
+        "period": 1,
+        "admissible": [
+          0
+        ]
+      },
+      {
+        "seed": [
+          2,
+          -2
+        ],
+        "preperiod": 0,
+        "period": 1,
+        "admissible": [
+          0
+        ]
+      },
+      {
+        "seed": [
+          -2,
+          2
+        ],
+        "preperiod": 0,
+        "period": 1,
+        "admissible": [
+          0
+        ]
+      },
+      {
+        "seed": [
+          -2,
+          -2
+        ],
+        "preperiod": 0,
+        "period": 1,
+        "admissible": [
+          0
+        ]
+      }
+    ],
+    "pell7_remote_index_1000": [
+      [
+        766,
+        "325400589588",
+        true
+      ],
+      [
+        766,
+        "681335573470",
+        true
+      ]
+    ],
+    "square_triangular": {
+      "hits_up_to_bound": 21,
+      "first_hits": [
+        0,
+        2,
+        14,
+        84,
+        492,
+        2870,
+        16730,
+        97512,
+        568344,
+        3312554
+      ],
+      "growth": "A(N) ~ c log N, c = (admissible positions per period) / (period log epsilon), summed over orbits",
+      "completeness": "complete: Nagell bound covers every class"
+    },
+    "finite_branch": {
+      "hits_up_to_bound": 1,
+      "first_hits": [
+        2
+      ],
+      "completeness": "complete: finite norm equation"
+    },
+    "linear_branch": {
+      "hits_up_to_bound": 16,
+      "first_hits": [
+        0,
+        1,
+        5,
+        8,
+        16,
+        21,
+        33,
+        40,
+        56,
+        65
+      ],
+      "completeness": "complete: residue classes of y"
+    }
   },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
 }

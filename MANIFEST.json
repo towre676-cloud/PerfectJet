@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "241768ceb966bea43191f750ac72225248a81fc720d1213197527d6a554670e4",
-      "size_bytes": 4864
+      "sha256": "e9f5960dba2a78852c50736fececdfa7c726d3f3ed73661ae729a1a0af3b1678",
+      "size_bytes": 5033
     },
     {
       "path": "archive/README.md",
@@ -84,8 +84,8 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "35db71b56841eca38eb9a4c3f24af85d25b693c41c44992df648dc6e8a612c40",
-      "size_bytes": 118539
+      "sha256": "28a2237c43341fb2e40ae69273f4a93773f0f74580ae8bb07587d9f0d7430feb",
+      "size_bytes": 119804
     },
     {
       "path": "data/topics.json",
@@ -94,8 +94,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "f54332b524a919c758557f7a85bbec40c01ffc8a58d19bf9782d32c176961597",
-      "size_bytes": 4346
+      "sha256": "bd8fd13f9c4a57db25944975d30b68b71c7558fe783fd61ecf49206903b4ddc4",
+      "size_bytes": 4593
     },
     {
       "path": "docs/COVERAGE_MAP.md",
@@ -104,23 +104,23 @@
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "a3bdd315009df7e14341b3dcdb1621c0b6fde79d87fe4f16c24e4a3f72a7fc66",
-      "size_bytes": 52454
+      "sha256": "3cb1165eede6eabface83dd997ad8c34b35a940b6f83a11b6cff7da79239564e",
+      "size_bytes": 53122
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "beb44bb61e5b1d607f82e644155f1535dd2db83642285dee2f7c0f5dc1316527",
-      "size_bytes": 151265
+      "sha256": "87983d97ae1e55ad48d3ce517e35f72ba2730c5352356cbd475507e77e7d6b38",
+      "size_bytes": 153332
     },
     {
       "path": "docs/QUICKSTART.md",
-      "sha256": "e98460d298f87fdd3277f3eaecbf743bad67d5140ed1fbcac9762aed2317ab31",
-      "size_bytes": 3419
+      "sha256": "4b156f62ec8cff86611a9c19b923af25be03071b6061d5d23b72da86542caf15",
+      "size_bytes": 3627
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "431a3edd8605396b115096190e59b1276b6d344cdbf09507cbca07b0abc4e1fd",
-      "size_bytes": 14340
+      "sha256": "18b33126077f127fd32312cc7410a1e6de5555ee88de14a8474c65cc1ac3a2fe",
+      "size_bytes": 15669
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -134,8 +134,8 @@
     },
     {
       "path": "docs/chapters/03_pell_orbits_and_transport.md",
-      "sha256": "de9f9378673afee13a3063d8d83c01a8bbd8b824faa280d264bbfd8c82934e79",
-      "size_bytes": 2689
+      "sha256": "88561677aa7446501b03fc7881fcf8d898cb65d1475a867428aeb8faecb56411",
+      "size_bytes": 3866
     },
     {
       "path": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
@@ -234,8 +234,8 @@
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "1483c3abf027652095be5e582e21c652a7d29e812802f32aa8dca5cd39ebef8a",
-      "size_bytes": 4417
+      "sha256": "3670f66c53e83d2999462da2163a8ad036c0a96613e48ec98513cfd47f65a7c8",
+      "size_bytes": 4639
     },
     {
       "path": "docs/chapters/24_mathematical_proofs.md",
@@ -274,7 +274,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "40439d2c09f77c3cfa83900e50d610ebaf138f6b2e8186e57413d00352db979d",
+      "sha256": "57eacaf4a1030c029588b196990d2277220321bdf303ec7f7ac9a31e9766f9c6",
       "size_bytes": 381
     },
     {
@@ -314,18 +314,18 @@
     },
     {
       "path": "results/replay.json",
-      "sha256": "7c1609fc4c6117441a296359fecc958684695ed05e13cc3fb971718656c2eda6",
-      "size_bytes": 188742
+      "sha256": "18ea86bb8f22782ffd0adc31c84a76619159d20da52d0dd02ef6cb4cea073875",
+      "size_bytes": 192993
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "b676bc5fcbedff69cb98257e5cbc2dbbb7c2a9f46373b709bfe475a2779bb512",
-      "size_bytes": 69037
+      "sha256": "b052fb3db2c17fdde60baada4af0d1ab826fc64144027cb6c39f724f1d144ed3",
+      "size_bytes": 70436
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "5cf2e71934237f1fa4fbbd160f38afafdc4c6c1b2ff7f3d7f8ee226a8632c522",
-      "size_bytes": 47399
+      "sha256": "4b26a3906eba8f68cb3f3dcb6b37225cda3d1b1f4422e3234c97ad235dbe98e6",
+      "size_bytes": 48001
     },
     {
       "path": "scripts/build_release.py",
@@ -349,7 +349,7 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "229d45daf6a9b3f05ecf6e1cb3ce6063cdc6304bc17dae9e3b37ee4beb399218",
+      "sha256": "523fac81c078eaf6ca322ae07426fc36cfce04aabdc80857eb88851c0fb27e7d",
       "size_bytes": 103
     },
     {
@@ -414,8 +414,8 @@
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "6d91989381c1e03645d1bc7302701c68e0eaca1dc34bb832a19559b900004d02",
-      "size_bytes": 5583
+      "sha256": "c2155d7a5d50a2c3cec9afb76fe2b2d049f0a0c1e2919b546aee2e59fc1d5921",
+      "size_bytes": 5789
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -434,8 +434,8 @@
     },
     {
       "path": "src/perfectjet/engine.py",
-      "sha256": "a7f1f2e8d7934eb77fe5fd8829e994ceb7aa84d4b599e59bb616599c4f081d4d",
-      "size_bytes": 11500
+      "sha256": "8ab5c6e8a3a91de887b7e3730991ff5c73797ef460d6dd04be9dd6a3fdc2ba2e",
+      "size_bytes": 11894
     },
     {
       "path": "src/perfectjet/exact.py",
@@ -481,6 +481,11 @@
       "path": "src/perfectjet/psg.py",
       "sha256": "ff702aa425fbf97fb445e35bec0fe7d24924b5fd77727aed57b38d82b15544bc",
       "size_bytes": 904
+    },
+    {
+      "path": "src/perfectjet/quadratic.py",
+      "sha256": "944fbe4a293f7c8857a55c4571ed601294533ecaa5059bb2926d0f67977fb43a",
+      "size_bytes": 11676
     },
     {
       "path": "src/perfectjet/readout.py",
@@ -546,6 +551,11 @@
       "path": "tests/test_parametric.py",
       "sha256": "249e6353f199e4f7bc8a428cc6e1a1159e1d3b8f9b873694843849a0c595e491",
       "size_bytes": 5280
+    },
+    {
+      "path": "tests/test_quadratic.py",
+      "sha256": "cb954aabf22003f53bb981450769cd4bf628292db3ba7b220fb81369a4d01649",
+      "size_bytes": 2039
     },
     {
       "path": "tests/test_strata.py",
