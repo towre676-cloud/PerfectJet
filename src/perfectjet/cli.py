@@ -33,6 +33,7 @@ def report():
     from .invariants import invariants_receipt
     from .quadratic import quadratic_receipt
     from .deformation import deformation_receipt
+    from .incidence import incidence_receipt
     p=SelectionPopulation([(2,1),(1,2),(2,2),(0,1)],(3,3),[4,3,5,0])
     machine=PartialMachine([0,0,1,1],[(2,),(3,),(2,),(3,)])
     reduced,mapping,blocks=machine.quotient()
@@ -53,7 +54,7 @@ def report():
             "lattice":lattice_receipt(),"realization":realization_receipt(),
             "partner_loci":partner_loci(),"sieve":sieve_receipt(),"partner_surface":surface_receipt(),
             "active_strata":strata_receipt(),"readout":readout_receipt(),"decisions":decisions_receipt(),
-            "engine":engine_receipt(),"invariants":invariants_receipt(),"quadratic":quadratic_receipt(),"deformation":deformation_receipt(),
+            "engine":engine_receipt(),"invariants":invariants_receipt(),"quadratic":quadratic_receipt(),"deformation":deformation_receipt(),"incidence":incidence_receipt(),
             "limitations":"No imported upstream solver or Lean theorem is claimed by this release."}
 
 
@@ -79,7 +80,7 @@ def main():
         from .applications.nfl_scouting.pipeline import main as nfl
         return nfl(sys.argv[2:])
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","strata","readout","decisions","engine","invariants","quadratic","deformation","sieve","atlas"])
+    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","strata","readout","decisions","engine","invariants","quadratic","deformation","incidence","sieve","atlas"])
     parser.add_argument("--output",type=Path)
     parser.add_argument("--conductor",type=int,default=7)
     parser.add_argument("--index",type=int,default=10**100)
@@ -128,6 +129,9 @@ def main():
     elif args.command=="quadratic":
         from .quadratic import quadratic_receipt
         out=quadratic_receipt()
+    elif args.command=="incidence":
+        from .incidence import incidence_receipt
+        out=incidence_receipt()
     elif args.command=="deformation":
         from .deformation import deformation_receipt
         out=deformation_receipt()

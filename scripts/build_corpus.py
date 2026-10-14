@@ -384,6 +384,18 @@ counting|rationalized package regret|raw_objective(S_raw_opt)-raw_objective(S_ra
 observability|target-information non-submodularity witness|VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751|exact_checked|The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows.
 '''
 
+EQUATIONS += r"""
+invariants|line probe for partner hypersurfaces|rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N|exact_checked|Exact on each line; genericity of the line supported by agreement of independent random lines.
+invariants|partner hypersurfaces in degrees 3..19|codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96)|exact_checked|Two independent random lines for N<=14, one line for N<=19.
+invariants|dense slice|f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots|derived|Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r.
+invariants|covariants over a quotient ring|Clebsch invariants of the slice computed in Q[p,q,r]/I|exact_checked|Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration.
+invariants|quintic partner classification|ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6|exact_checked|Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly.
+invariants|octahedral quartic jump|dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5|exact_checked|Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly.
+invariants|dihedral cubic jump|dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6|exact_checked|Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots.
+invariants|degree-8 bielliptic conjecture|ker L_8(f)!=0 => f bielliptic and AB^2+BC/6-9D/2=0|open|26 points in three non-symmetric families all have a root involution and satisfy the relation numerically; 0 of 179 random sextics have one; not sufficient (lines b=15+/-3a/2).
+invariants|orbit count check|slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6|derived|Ordered placements of three simple roots; stabilizer orders 6 and 12.
+"""
+
 def build():
     equations=[]
     for line in EQUATIONS.strip().splitlines():
@@ -402,7 +414,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.12.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.13.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

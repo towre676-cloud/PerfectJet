@@ -1,3 +1,20 @@
+# PerfectJet 0.13.0
+
+This release studies the partner incidence variety in the full seven-coefficient space of binary sextics (`incidence.py`, chapter 28). The atlas has listed this formal frontier since 0.1.0.
+
+- **Hypersurface components by lines.** A random line meets every hypersurface component of P_N = {ker L_N larger than generic}. The exact one-parameter locus on the line gives the degree of that component, and dividing invariant monomials by it identifies the defining invariant. On two independent lines for degrees 3 to 14, and on one line up to 19, only two degrees have a hypersurface component:
+  - degree 3, A^2 = B/6;
+  - degree 12, A^2 = 25B/96.
+- **Exact covariants over a quotient ring.** Clebsch invariants of the dense slice xy(x-y)(x^3+px^2y+qxy^2+ry^3) are computed with coefficients in Q[p,q,r]/I. Minimal polynomials of the absolute invariants are found by Krylov iteration. A single linear minimal polynomial with a stable Clebsch point certifies that the locus is one GL2-orbit.
+- **Classification in small degrees** (all over the algebraic closure):
+  - degree 5: a sextic has a quintic partner exactly when it has a root of multiplicity at least four, or is equivalent to x^6+(40/7)x^3y^3+y^6. The slice ideal has length 20, which is 120 placements divided by the order-6 stabilizer. This makes the 7lambda-40 obstruction the only squarefree source of quintic partners.
+  - degree 4: dim ker L_4 >= 2 exactly for the octahedral sextic xy(x^4-y^4) and for sextics with a root of multiplicity at least five;
+  - degree 3: dim ker L_3 >= 2 on the slice exactly for the dihedral sextic x^6+y^6 (length 10).
+- **Degenerate root patterns.** Seven forms and the family x^2y^2(x-y)(x-sy) are profiled directly, which completes the slice results.
+- **Degree-8 conjecture with a counterexample to sufficiency.** All 26 degree-8 partner points in three non-symmetric families are bielliptic and satisfy AB^2+BC/6-9D/2 = 0 (`scripts/partner_degree8_evidence.py`, numerical). The relation is not sufficient: two lines on the symmetric family satisfy it and have no partner.
+
+Degrees 6 and 7, and the lower-dimensional components in degree 8 and above, remain open; the dependency-free Groebner engine does not finish them. The CLI has a new command, `perfectjet incidence`, and the report includes its receipt.
+
 # PerfectJet 0.12.0
 
 This release implements the physical and statistical bridges from Combine movement to NFL scouting: bounded official movement-target extraction; training-player finite-horizon delay-state discovery; physical-coordinate continuation transfer; an outcome decoder trained on out-of-player movement predictions; frozen source-to-movement-to-get-off loadings and error decomposition; exact joint measurement packages with correlated attempt noise; robust multi-loading objectives; and contender-difference sensing. The full official-data pipeline retains the supplied get-off endpoint, all fifteen conventional traits, identical coverage/support flags and temporal player isolation.

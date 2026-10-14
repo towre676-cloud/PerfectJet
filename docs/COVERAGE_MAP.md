@@ -455,3 +455,16 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T449 | NFL math bridges | Robust multi-loading allocation | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
 | PJ-T450 | NFL math bridges | Contender-difference sensing | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
 | PJ-T451 | NFL math bridges | Synthetic mechanism evidence versus NFL performance | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T452 | Partner incidence | Line probes for hypersurface components | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T453 | Partner incidence | Invariant identification on a line | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T454 | Partner incidence | Dense slice with three simple roots | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T455 | Partner incidence | Saturation away from repeated roots | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T456 | Partner incidence | Covariants over a quotient ring | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T457 | Partner incidence | Minimal polynomials of absolute invariants | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T458 | Partner incidence | Single-orbit certificate from a stable Clebsch point | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T459 | Partner incidence | Quintic partner classification | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T460 | Partner incidence | Octahedral quartic jump | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T461 | Partner incidence | Dihedral cubic jump | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T462 | Partner incidence | Degenerate root patterns | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T463 | Partner incidence | Degree-twelve hypersurface part | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T464 | Partner incidence | Open lower-dimensional components | [28_partner_incidence](chapters/28_partner_incidence.md) |

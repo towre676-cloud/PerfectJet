@@ -3366,6 +3366,87 @@
       "status": "exact_checked",
       "assumptions": "The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E375",
+      "domain": "invariants",
+      "title": "line probe for partner hypersurfaces",
+      "equation": "rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N",
+      "status": "exact_checked",
+      "assumptions": "Exact on each line; genericity of the line supported by agreement of independent random lines.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E376",
+      "domain": "invariants",
+      "title": "partner hypersurfaces in degrees 3..19",
+      "equation": "codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96)",
+      "status": "exact_checked",
+      "assumptions": "Two independent random lines for N<=14, one line for N<=19.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E377",
+      "domain": "invariants",
+      "title": "dense slice",
+      "equation": "f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots",
+      "status": "derived",
+      "assumptions": "Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E378",
+      "domain": "invariants",
+      "title": "covariants over a quotient ring",
+      "equation": "Clebsch invariants of the slice computed in Q[p,q,r]/I",
+      "status": "exact_checked",
+      "assumptions": "Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E379",
+      "domain": "invariants",
+      "title": "quintic partner classification",
+      "equation": "ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6",
+      "status": "exact_checked",
+      "assumptions": "Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E380",
+      "domain": "invariants",
+      "title": "octahedral quartic jump",
+      "equation": "dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5",
+      "status": "exact_checked",
+      "assumptions": "Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E381",
+      "domain": "invariants",
+      "title": "dihedral cubic jump",
+      "equation": "dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6",
+      "status": "exact_checked",
+      "assumptions": "Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E382",
+      "domain": "invariants",
+      "title": "degree-8 bielliptic conjecture",
+      "equation": "ker L_8(f)!=0 => f bielliptic and AB^2+BC/6-9D/2=0",
+      "status": "open",
+      "assumptions": "26 points in three non-symmetric families all have a root involution and satisfy the relation numerically; 0 of 179 random sextics have one; not sufficient (lines b=15+/-3a/2).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E383",
+      "domain": "invariants",
+      "title": "orbit count check",
+      "equation": "slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6",
+      "status": "derived",
+      "assumptions": "Ordered placements of three simple roots; stabilizer orders 6 and 12.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }

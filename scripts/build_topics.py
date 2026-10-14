@@ -46,6 +46,12 @@ GROUPS['27']=('NFL math bridges', ['Operational NFL movement target geometry','B
     'Rationalized fitted-loading provenance','Uniform coefficient-rounding score bound','Rational-snapshot optimization regret','Robust multi-loading allocation',
     'Contender-difference sensing','Synthetic mechanism evidence versus NFL performance'])
 
+GROUPS['28']=('Partner incidence', ['Line probes for hypersurface components','Invariant identification on a line',
+    'Dense slice with three simple roots','Saturation away from repeated roots','Covariants over a quotient ring',
+    'Minimal polynomials of absolute invariants','Single-orbit certificate from a stable Clebsch point',
+    'Quintic partner classification','Octahedral quartic jump','Dihedral cubic jump','Degenerate root patterns',
+    'Degree-twelve hypersurface part','Open lower-dimensional components'])
+
 def build():
     rows=[]
     for prefix,(domain,topics) in GROUPS.items():
