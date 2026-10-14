@@ -1,5 +1,5 @@
 {
-  "version": "0.3.0",
+  "version": "0.4.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -970,6 +970,528 @@
       "brute_force_agrees": true
     },
     "identity_case": "1"
+  },
+  "partner_surface": {
+    "family": "x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); b=0 is the C3 family",
+    "over": "cells are constructible sets over the algebraic closure; rational points listed separately",
+    "degrees": [
+      {
+        "degree": 3,
+        "correction_rank": 4,
+        "cells": 7,
+        "drop_cells": [
+          {
+            "closure": [
+              "a^4 - 16/3*a^2*b^2 + 256/81*b^4 - 2560/27*b^3 - 400*a^2 + 6400/9*b^2"
+            ],
+            "excluding": [
+              "b",
+              "-4/3*a*b^2 - 20*a*b"
+            ],
+            "rank": 3,
+            "dimension": 1
+          },
+          {
+            "closure": [
+              "b^2 - 225",
+              "a*b + 15*a",
+              "a^2 + 80/3*b - 400"
+            ],
+            "excluding": [
+              "b"
+            ],
+            "rank": 2,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "15"
+              ]
+            ]
+          },
+          {
+            "closure": [
+              "b",
+              "a^2 - 400"
+            ],
+            "excluding": [
+              "-3/4*a",
+              "a^2"
+            ],
+            "rank": 3,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-20",
+                "0"
+              ],
+              [
+                "20",
+                "0"
+              ]
+            ]
+          },
+          {
+            "closure": [
+              "b",
+              "a"
+            ],
+            "excluding": [],
+            "rank": 2,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "0"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 4,
+        "correction_rank": 4,
+        "cells": 4,
+        "drop_cells": [
+          {
+            "closure": [
+              "b^2 + 5*b",
+              "a*b",
+              "a^2 + 10*b + 50"
+            ],
+            "excluding": [],
+            "rank": 2,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "-5"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 5,
+        "correction_rank": 6,
+        "cells": 14,
+        "drop_cells": [
+          {
+            "closure": [
+              "a^2*b - 192/61*b^3 + 513/61*a^2 - 1712/61*b^2 - 2080/61*b - 10800/61",
+              "b^4 + 14132/793*b^3 + 1323/793*a^2 + 12042/793*b^2 - 820260/793*b - 3597075/793",
+              "a^4 + 934656/5551*b^3 - 16691648/38857*a^2 + 55929344/38857*b^2 - 54017280/5551*b - 1437286400/38857"
+            ],
+            "excluding": [
+              "-27/22*a",
+              "a^2*b^2 + 675/37*a^2*b"
+            ],
+            "rank": 5,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-16",
+                "-9"
+              ],
+              [
+                "16",
+                "-9"
+              ]
+            ]
+          },
+          {
+            "closure": [
+              "b",
+              "a^2 - 1600/49"
+            ],
+            "excluding": [
+              "-27/22*a",
+              "135/11*a^3 + 6750/11*a"
+            ],
+            "rank": 5,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-40/7",
+                "0"
+              ],
+              [
+                "40/7",
+                "0"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 6,
+        "correction_rank": 6,
+        "cells": 7,
+        "drop_cells": [
+          {
+            "closure": [
+              "b + 9",
+              "a^2 - 256"
+            ],
+            "excluding": [
+              "-a"
+            ],
+            "rank": 5,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-16",
+                "-9"
+              ],
+              [
+                "16",
+                "-9"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 7,
+        "correction_rank": 8,
+        "cells": 15,
+        "drop_cells": [
+          {
+            "closure": [
+              "a^2 - 52/9*b^2 - 40*b - 148",
+              "b^3 + 27*b^2 + 243*b + 729"
+            ],
+            "excluding": [
+              "-27/35*a",
+              "a^2*b^2 + 567/41*a^2*b"
+            ],
+            "rank": 7,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-16",
+                "-9"
+              ],
+              [
+                "16",
+                "-9"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 8,
+        "correction_rank": 9,
+        "cells": 11,
+        "drop_cells": [
+          {
+            "closure": [
+              "a^2*b - 4*b^3 + 6*a^2 - 28*b^2 + 20*b + 300"
+            ],
+            "excluding": [
+              "-135/224*a",
+              "a^2*b^2 + 27/2*a^2*b"
+            ],
+            "rank": 8,
+            "dimension": 1
+          },
+          {
+            "closure": [
+              "b + 27/2",
+              "a^2 - 3179/5"
+            ],
+            "excluding": [
+              "-135/224*a",
+              "-135/8*a*b"
+            ],
+            "rank": 8,
+            "dimension": 0,
+            "rational_points": []
+          },
+          {
+            "closure": [
+              "b"
+            ],
+            "excluding": [
+              "-135/224*a",
+              "405/64*a^3 + 10125/176*a"
+            ],
+            "rank": 8,
+            "dimension": 1
+          },
+          {
+            "closure": [
+              "b",
+              "a^2 + 100/11"
+            ],
+            "excluding": [
+              "-135/224*a"
+            ],
+            "rank": 8,
+            "dimension": 0,
+            "rational_points": []
+          },
+          {
+            "closure": [
+              "a",
+              "b^4 - 8*b^3 - 110*b^2 + 1125"
+            ],
+            "excluding": [
+              "-1/2*b^2 + 5/4*b",
+              "-1/14*b^4 + 65/308*b^3 - 25/308*b^2"
+            ],
+            "rank": 8,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "-5"
+              ],
+              [
+                "0",
+                "3"
+              ],
+              [
+                "0",
+                "15"
+              ]
+            ]
+          },
+          {
+            "closure": [
+              "b",
+              "a"
+            ],
+            "excluding": [],
+            "rank": 8,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "0"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 9,
+        "correction_rank": 10,
+        "cells": 15,
+        "drop_cells": [
+          {
+            "closure": [
+              "a^2 - 1036/207*b^2 - 600/23*b - 1964/23",
+              "b^3 + 27*b^2 + 243*b + 729"
+            ],
+            "excluding": [
+              "-25/52*a",
+              "a^2*b^2 + 28125/2123*a^2*b"
+            ],
+            "rank": 9,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-16",
+                "-9"
+              ],
+              [
+                "16",
+                "-9"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 10,
+        "correction_rank": 11,
+        "cells": 14,
+        "drop_cells": [
+          {
+            "closure": [
+              "b^3 - 27*a^2 + 153*b^2 + 783*b + 2295",
+              "a^2*b - 111*a^2 + 624*b^2 + 3296*b + 9840",
+              "a^4 + 18048*a^2 - 272128/3*b^2 - 444928*b - 1342720"
+            ],
+            "excluding": [
+              "-9/23*a",
+              "a^2*b^2 + 675/52*a^2*b"
+            ],
+            "rank": 10,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-16",
+                "-9"
+              ],
+              [
+                "16",
+                "-9"
+              ]
+            ]
+          },
+          {
+            "closure": [
+              "a",
+              "b^2 - 18*b + 45"
+            ],
+            "excluding": [
+              "-2/5*b^2 + 26/23*b",
+              "-4/45*b^4 + 98/207*b^3 - 130/207*b^2"
+            ],
+            "rank": 10,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "3"
+              ],
+              [
+                "0",
+                "15"
+              ]
+            ]
+          },
+          {
+            "closure": [
+              "b",
+              "a"
+            ],
+            "excluding": [],
+            "rank": 10,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "0"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 11,
+        "correction_rank": 12,
+        "cells": 15,
+        "drop_cells": [
+          {
+            "closure": [
+              "a^2 - 292/69*b^2 - 280/23*b - 524/23",
+              "b^3 + 27*b^2 + 243*b + 729"
+            ],
+            "excluding": [
+              "-189/583*a",
+              "a^2*b^2 + 33075/2621*a^2*b"
+            ],
+            "rank": 11,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "-16",
+                "-9"
+              ],
+              [
+                "16",
+                "-9"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "degree": 12,
+        "correction_rank": 13,
+        "cells": 8,
+        "drop_cells": [
+          {
+            "closure": [
+              "b^4 + 24*b^3 + 81*a^2 - 126*b^2 + 405"
+            ],
+            "excluding": [
+              "-3/11*a",
+              "a^2*b^2 + 12*a^2*b"
+            ],
+            "rank": 12,
+            "dimension": 1
+          },
+          {
+            "closure": [
+              "b^2 + 12*b",
+              "a^2 + 40*b + 5"
+            ],
+            "excluding": [
+              "-3/11*a",
+              "45*a"
+            ],
+            "rank": 12,
+            "dimension": 0,
+            "rational_points": []
+          },
+          {
+            "closure": [
+              "a",
+              "b^2 + 30*b + 45"
+            ],
+            "excluding": [
+              "-1/3*b^2 + b",
+              "-1/11*b^4 + 6/11*b^3 - 9/11*b^2"
+            ],
+            "rank": 12,
+            "dimension": 0,
+            "rational_points": []
+          },
+          {
+            "closure": [
+              "b - 3",
+              "a"
+            ],
+            "excluding": [],
+            "rank": 10,
+            "dimension": 0,
+            "rational_points": [
+              [
+                "0",
+                "3"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "exceptional_factorizations": [
+      {
+        "a": 16,
+        "b": -9,
+        "factorization_verified": true,
+        "structure": "fourfold root"
+      },
+      {
+        "a": -16,
+        "b": -9,
+        "factorization_verified": true,
+        "structure": "fourfold root"
+      },
+      {
+        "a": 0,
+        "b": 3,
+        "factorization_verified": true,
+        "structure": "perfect cube"
+      },
+      {
+        "a": 0,
+        "b": 15,
+        "factorization_verified": true,
+        "structure": "squarefree"
+      },
+      {
+        "a": 0,
+        "b": -5,
+        "factorization_verified": true,
+        "structure": "squarefree"
+      }
+    ]
   },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
 }

@@ -12,4 +12,6 @@ The strongest finite executable contributions in0.1.0 are observable-space closu
 
 Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-parameter rank loci (which rediscover the 7lambda-40 obstruction and certify the rational exceptional set of the C3 partner family for degrees3..12), and the adaptive local sieve for perfect-power hits.
 
-Formal frontiers include multi-parameter rank-locus certificates over Q,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
+Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
+
+Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.

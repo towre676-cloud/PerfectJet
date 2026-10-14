@@ -17,13 +17,14 @@ The current code is a small exact nucleus underneath a much larger documented pr
 | `lattice.py` | Smith and Hermite forms, integer solvability, integer kernels, saturation | Certificate row; unsaturated witness |
 | `realization.py` | Single- and multi-output word-Hankel realization, coarsest exact lumping | Held-out witness word; split block |
 | `loci.py` | Exact one-parameter rank loci; partner-family exceptional parameters | Locus factor with its rank |
+| `parametric.py` | Groebner bases, saturation, comprehensive rank cells in several parameters | Cell equations, inequations, rational points |
 | `sieve.py` | Adaptive local power-residue sieve | Excluding modulus and residue |
 
 The common structure is a representation q, evolution F, output O, and possibly weights. Exact dynamics requires qF=Fbar q. Exact weighted aggregation requires RA=Abar R. Approximate closure supplies residuals rather than an exact identity. Evidence status is external metadata; it must not be inferred from a class name.
 
 ## Boundaries
 
-Lean source mentioned in the historical atlas remains upstream. General interval proving, multi-parameter rank loci, numerical Hankel realization, unlimited nonlinear closure, global elliptic completeness, chemical simulation, empirical forecasting, and site/mobile synchronization are not implemented in 0.3.0. Smith form, exact single-output word realization, and coarsest exact lumping were added in 0.2.0; Hermite form, multi-output realization, one-parameter rank loci, and the local sieve in 0.3.0. Their integration requirements are retained explicitly.
+Lean source mentioned in the historical atlas remains upstream. General interval proving, the full seven-coefficient sextic incidence variety, numerical Hankel realization, unlimited nonlinear closure, global elliptic completeness, chemical simulation, empirical forecasting, and site/mobile synchronization are not implemented in 0.4.0. Smith form, exact single-output word realization, and coarsest exact lumping were added in 0.2.0; Hermite form, multi-output realization, one-parameter rank loci, and the local sieve in 0.3.0; multi-parameter rank cells in 0.4.0. Their integration requirements are retained explicitly.
 
 ## Add a result
 

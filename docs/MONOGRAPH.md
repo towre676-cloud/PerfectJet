@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.3.0 · 14 October 2026
+Version 0.4.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -258,7 +258,16 @@ Define L_N:g->((f,g)_3,(f,g)_5), K_N=ker L_N, P_N:g->(f,g)_1. Active quotient A_
 
 The archived squarefree quintic g=-xy(x-y)(x2-xy+y2), sextic f=(2x6-6x5y+5x4y2+5x2y4-6xy5+2y6)/2 passes exact gate replay with nonzero Poisson bracket. Normalized quintic elimination yields b6(b-1)6 times four quadratics(b2-3b+3)(b2-b+1)(b2+b+1)(3b2-3b+1). Archive orbit count was corrected3->1, but its supplied verifier uses numerical Mobius matching; exact orbit certificates are still preferable. R7/R9 modular patch evidence remains conjectural over Q. Incidence varieties I_N={(f,g):gates0} and symbolic minors are the correct next objects.
 
-Since0.3.0 the one-parameter case is executable. `loci.py` computes the generic rank of a matrix over Q(lambda) and its exact drop locus, and `partner_loci` applies it to the gate matrices of f_lambda. The correction locus is lambda(lambda2-400) in degree3, lambda2-1600/49 in degree5, and lambda in degree10. It is lambda2+50 in degree4 and lambda2+5 in degree12, which have no rational points, and trivial in degrees6-9 and11. The joint matrix [L_N;P_N] has no drop locus in degrees3..12. The active dimension therefore jumps exactly at correction-locus points. The 7lambda-40 obstruction is rediscovered without being supplied, together with its mirror -40/7 under y->-y. The census parameters0,+/-20 and40/7 are the complete rational exceptional set in degrees3..12. Over Q, this replaces the finite census with a certificate for every lambda. Several parameters and the full incidence variety remain open.
+Since0.3.0 the one-parameter case is executable. `loci.py` computes the generic rank of a matrix over Q(lambda) and its exact drop locus, and `partner_loci` applies it to the gate matrices of f_lambda. The correction locus is lambda(lambda2-400) in degree3, lambda2-1600/49 in degree5, and lambda in degree10. It is lambda2+50 in degree4 and lambda2+5 in degree12, which have no rational points, and trivial in degrees6-9 and11. The joint matrix [L_N;P_N] has no drop locus in degrees3..12. The active dimension therefore jumps exactly at correction-locus points. The 7lambda-40 obstruction is rediscovered without being supplied, together with its mirror -40/7 under y->-y. The census parameters0,+/-20 and40/7 are the complete rational exceptional set in degrees3..12. Over Q, this replaces the finite census with a certificate for every lambda.
+
+Since0.4.0 `parametric.py` handles several parameters. Comprehensive Gaussian elimination branches on each pivot, either nonzero or zero, and keeps each branch as V(S) minus V(N), with S saturated by every inequation. An exact Groebner basis decides whether the branch is empty and gives its Zariski closure. The leaves partition parameter space, over the algebraic closure, into cells of constant rank. Bareiss division by the previous pivot, when exact, keeps degrees small.
+
+Applied to the two-parameter family x6+y6+a x3y3+b(x4y2+x2y4), whose slice b=0 is the C3 family, the method reproduces every one-parameter point on b=0. It also finds new rational exceptional points:
+- (+/-16,-9), where f=(x-y)4(x2+4xy+y2) has a fourfold root, drops the correction rank in degrees5,6,7,9,10 and11.
+- (0,3), where f=(x2+y2)3, drops the rank in degrees8,10 and12.
+- (0,15)=(x2+y2)(x4+14x2y2+y4) and (0,-5)=(x2+y2)(x4-6x2y2+y4) are squarefree and still exceptional, at (0,15) in degrees3,8,10 and at (0,-5) in degrees4,8.
+
+Degree3 has a whole drop curve of rank3: a4-16a2b2/3+256b4/81-2560b3/27-400a2+6400b2/9=0. In degree8 the drop locus contains the line b=0, which is why the C3 family has its degree-eight partner g8 for every lambda. The full incidence variety in all seven sextic coefficients remains open.
 
 
 ---
@@ -361,7 +370,7 @@ Question-specific equivalence and preservation profiles separate dimensions,outp
 
 Arithmetic height relative to a question organizes fibres but cannot bypass completeness. Adaptive local tests prioritize exact exclusions. Integral Smith/Hermite transport repairs rational-span gaps. Commutators isolate order effects. Deformation tangents test protection before expensive global physical work. Failed representations should return distinguishing words,unclosed polynomial coefficients,duplicate auxiliary extensions,divisibility failures,hidden target vectors,failed metric conditions,or allowed perturbations breaking a relation.
 
-The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; exact Smith-form lattice repair,single-output Hankel word realization,and coarsest exact lumping became executable in0.2.0; Hermite form,multi-output realization,one-parameter rank loci,and the adaptive power-residue sieve followed in0.3.0. Multi-parameter rank-locus discovery,sieving beyond perfect-power hits,numerical Hankel discovery,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
+The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; exact Smith-form lattice repair,single-output Hankel word realization,and coarsest exact lumping became executable in0.2.0; Hermite form,multi-output realization,one-parameter rank loci,and the adaptive power-residue sieve followed in0.3.0; multi-parameter comprehensive rank cells in0.4.0. The full sextic incidence variety,sieving beyond perfect-power hits,numerical Hankel discovery,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
 
 The master interface should record a domain,questions,state representation,legal operations,weights,exact identities,error bounds,source maps,obstructions,costs,and evidence. A new application adds an adapter and its preserved questions. It must not acquire correctness from its similarity to an older application. The decisive reuse is an executable identity with matching assumptions.
 
@@ -382,7 +391,9 @@ The strongest finite executable contributions in0.1.0 are observable-space closu
 
 Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-parameter rank loci (which rediscover the 7lambda-40 obstruction and certify the rational exceptional set of the C3 partner family for degrees3..12), and the adaptive local sieve for perfect-power hits.
 
-Formal frontiers include multi-parameter rank-locus certificates over Q,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
+Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
+
+Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
 
 ---
@@ -478,6 +489,12 @@ Let r be the rank of A(t) over Q(t). Some r-minor is a nonzero polynomial of deg
 ## Local power exclusions
 
 If $F(n)=m^d$, then $F(n)\equiv m^d \pmod q$ for every q. A residue that is not a d-th power modulo q therefore excludes n. Survivors for a set of moduli are residues modulo their least common multiple whose reductions survive each modulus. By the Chinese remainder theorem this set depends only on the set of moduli, not on their order. The greedy choice changes cost, never correctness. The sieved count equals the brute-force count, because integer roots are checked on every survivor.
+
+## Comprehensive rank cells
+
+Work over the algebraic closure. Rabinowitsch: a point t lies in V(I) minus V(q) exactly when some z satisfies $I(t)=0$ and $1-zq(t)=0$. Projecting away z, the ideal $(I+\langle1-zq\rangle)\cap Q[t]$ is $I:q^\infty$, and V of it is the Zariski closure of V(I) minus V(q). An elimination order with z largest computes this intersection as the z-free part of a Groebner basis. Saturating by inequations one at a time gives $S=I:(q_1\cdots q_s)^\infty$.
+
+Each branch keeps a pair (S,N) with S saturated by every member of N. Its cell V(S) minus V(prod N) is dense in V(S), so the cell is empty exactly when S is the unit ideal. A pivot p is zero on the whole cell exactly when $S:p^\infty$ is the unit ideal. Otherwise the pivot branch $(S:p^\infty,N+p)$ and the zero branch $((S+p):N^\infty,N)$ split the cell into two disjoint constructible pieces whose union is the cell. Matrix entries may be reduced modulo S, because they are unchanged on V(S). In the pivot branch, the row operation $\mathrm{row}_k\to p\,\mathrm{row}_k-a_{kj}\mathrm{row}_i$ multiplies a row by p, which is nonzero on the cell. An exact division by the previous pivot, also nonzero on the cell, likewise preserves the pointwise rank. Each branch removes a row and column or adds a polynomial that is not already in the radical. Noetherianity and finite matrix size give termination. The leaves therefore partition parameter space, and the rank is constant on each leaf. Rational points of a zero-dimensional closure come from a lexicographic Groebner basis, the rational root theorem on its last eliminant, and back substitution. Tests compare each leaf's rank with direct evaluation on a grid.
 
 
 ---
@@ -858,3 +875,7 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E303 | invariants | parametric rank locus | {t:rank A(t)<r}=Z(gcd of r-minors) subset Z(M_0) | exact_checked | One variable over Q; elimination over Q[t]/(squarefree M_0) with zero-divisor splitting. |
 | PJ-E304 | invariants | C3 family exceptional parameters | degree5 correction locus lambda^2-1600/49; degree3 lambda(lambda^2-400); degree10 lambda | exact_checked | Degrees3..12 over Q; degree4 lambda^2+50 and degree12 lambda^2+5 have no rational points. |
 | PJ-E305 | arithmetic | local power exclusion | F(n) mod q not a d-th power residue mod q => F(n) is not a d-th power | derived | Exact for every modulus q>=2; the sieve only orders these tests. |
+| PJ-E306 | invariants | comprehensive rank cells | parameter space = disjoint union of V(S_i) minus V(prod N_i), rank constant on each | exact_checked | Several parameters over the algebraic closure; S_i saturated by N_i; branch on pivot zero/nonzero. |
+| PJ-E307 | invariants | Rabinowitsch saturation | I:q^infinity = (I+<1-zq>) intersect Q[t] | derived | Elimination order on z; cell nonempty iff saturated ideal is not 1. |
+| PJ-E308 | invariants | two-parameter partner surface | f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0) | exact_checked | Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0. |
+| PJ-E309 | invariants | fourfold-root exceptional sextic | x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2) | exact_checked | Correction rank drops at this point in degrees5,6,7,9,10,11. |

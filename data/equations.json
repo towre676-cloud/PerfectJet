@@ -2745,6 +2745,42 @@
       "status": "derived",
       "assumptions": "Exact for every modulus q>=2; the sieve only orders these tests.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E306",
+      "domain": "invariants",
+      "title": "comprehensive rank cells",
+      "equation": "parameter space = disjoint union of V(S_i) minus V(prod N_i), rank constant on each",
+      "status": "exact_checked",
+      "assumptions": "Several parameters over the algebraic closure; S_i saturated by N_i; branch on pivot zero/nonzero.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E307",
+      "domain": "invariants",
+      "title": "Rabinowitsch saturation",
+      "equation": "I:q^infinity = (I+<1-zq>) intersect Q[t]",
+      "status": "derived",
+      "assumptions": "Elimination order on z; cell nonempty iff saturated ideal is not 1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E308",
+      "domain": "invariants",
+      "title": "two-parameter partner surface",
+      "equation": "f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0)",
+      "status": "exact_checked",
+      "assumptions": "Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E309",
+      "domain": "invariants",
+      "title": "fourfold-root exceptional sextic",
+      "equation": "x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2)",
+      "status": "exact_checked",
+      "assumptions": "Correction rank drops at this point in degrees5,6,7,9,10,11.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }

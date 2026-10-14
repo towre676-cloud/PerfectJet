@@ -24,7 +24,7 @@ The report checks selected identities and populations. It includes the finite mo
 
 `perfectjet lattice` shows a system that is solvable over Q but not over Z, with its certificate row, and an unsaturated lattice with its index and witness. `perfectjet realization` recovers the two-state Fibonacci model and a three-state factor counter from Hankel blocks, confirms them on longer held-out words, and reports a coarsest exact lumping.
 
-`perfectjet loci` prints the exact parameter loci of the C3 partner family for degrees 3 to 12, including the rediscovered 40/7. `perfectjet sieve` runs the adaptive power-residue sieve on the Pell7 equation and on n^3+3, and checks both against brute force.
+`perfectjet loci` prints the exact parameter loci of the C3 partner family for degrees 3 to 12, including the rediscovered 40/7. `perfectjet surface` divides the two-parameter sextic family into cells of constant rank for degrees 3 to 12. It lists rational exceptional points such as (16,-9), where the sextic is (x-y)^4(x^2+4xy+y^2). `perfectjet sieve` runs the adaptive power-residue sieve on the Pell7 equation and on n^3+3, and checks both against brute force.
 
 For source-checkout use, `perfectjet atlas` emits the equation registry. The registry is intentionally not treated as an executable theorem database: every entry has an evidence status and assumptions.
 

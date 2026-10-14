@@ -1,3 +1,18 @@
+# PerfectJet 0.4.0
+
+This release extends rank loci from one parameter to several.
+
+- **Exact Groebner engine** (`parametric.py`): Buchberger with the product and chain criteria. It returns reduced bases in graded reverse lexicographic or elimination order. It also provides Rabinowitsch saturation, Krull dimension from leading monomials, and rational points of zero-dimensional ideals by lexicographic elimination.
+- **Comprehensive rank cells** (`parametric.py`): Gaussian elimination over Q[t1..tk] that branches on whether each pivot is zero. Each cell is stored as V(S) minus V(N) with S already saturated, so the cell is nonempty exactly when S is not 1. Bareiss division keeps degrees low. The leaves partition parameter space, over the algebraic closure, into cells of constant rank. On a grid, every point lies in exactly one cell, and the cell's rank equals direct evaluation.
+- **Two-parameter partner surface**: f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4), degrees 3 to 12, about 1.4 seconds in total. The b=0 slice reproduces every one-parameter point. New rational exceptional points:
+  - (+/-16,-9), where f=(x-y)^4(x^2+4xy+y^2), in degrees 5, 6, 7, 9, 10 and 11;
+  - (0,3), where f=(x^2+y^2)^3, in degrees 8, 10 and 12;
+  - (0,15) and (0,-5), which are squarefree and still exceptional.
+
+  Degree 3 has a whole drop curve. Degree 8 contains the line b=0, which explains the C3 degree-eight partner. These factorizations are checked with the package's own polynomial arithmetic.
+
+The registry has 309 entries. Chapters 15, 22, 23 and 24 were updated, and chapter 24 proves the cell decomposition. The CLI has a new command, `perfectjet surface`, and the report includes the surface receipt. Local validation ran 78 unittest methods, all passing. No new Lean verification is claimed. The full seven-coefficient incidence variety remains open.
+
 # PerfectJet 0.3.0
 
 This release adds four executable kernels.

@@ -310,6 +310,10 @@ series|multi-output Hankel realization|H_{u,(v,j)}=f_j(uv); f(w)=alpha A_w Beta 
 invariants|parametric rank locus|{t:rank A(t)<r}=Z(gcd of r-minors) subset Z(M_0)|exact_checked|One variable over Q; elimination over Q[t]/(squarefree M_0) with zero-divisor splitting.
 invariants|C3 family exceptional parameters|degree5 correction locus lambda^2-1600/49; degree3 lambda(lambda^2-400); degree10 lambda|exact_checked|Degrees3..12 over Q; degree4 lambda^2+50 and degree12 lambda^2+5 have no rational points.
 arithmetic|local power exclusion|F(n) mod q not a d-th power residue mod q => F(n) is not a d-th power|derived|Exact for every modulus q>=2; the sieve only orders these tests.
+invariants|comprehensive rank cells|parameter space = disjoint union of V(S_i) minus V(prod N_i), rank constant on each|exact_checked|Several parameters over the algebraic closure; S_i saturated by N_i; branch on pivot zero/nonzero.
+invariants|Rabinowitsch saturation|I:q^infinity = (I+<1-zq>) intersect Q[t]|derived|Elimination order on z; cell nonempty iff saturated ideal is not 1.
+invariants|two-parameter partner surface|f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0)|exact_checked|Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0.
+invariants|fourfold-root exceptional sextic|x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2)|exact_checked|Correction rank drops at this point in degrees5,6,7,9,10,11.
 '''
 
 def build():
@@ -329,7 +333,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.3.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.4.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]
