@@ -1,5 +1,5 @@
 {
-  "version": "0.14.0",
+  "version": "0.15.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -8832,6 +8832,11 @@
         "degree": 7,
         "statement": "ker L_7 != 0 iff f has a root of multiplicity >= 4",
         "status": "slice locus empty modulo two large primes; degenerate forms exact"
+      },
+      {
+        "degree": 8,
+        "statement": "ker L_8 != 0 iff f has a root of multiplicity >= 4 or an automorphism of order 3 (f ~ x^6+lambda x^3y^3+y^6 or x^3y^3)",
+        "status": "converse exact; forward direction modulo one prime plus numerical search"
       },
       {
         "degree": 12,
