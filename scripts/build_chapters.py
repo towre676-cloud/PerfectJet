@@ -1,0 +1,290 @@
+"""Canonical, reviewable master chapters. Rebuild with Python, no network required."""
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+
+CHAPTERS={
+'01_purpose_and_historical_audit':r'''# Purpose and historical audit
+
+PerfectJet is the master repository for the mathematical program assembled in the October 14, 2026 conversation. It preserves the first categorized audit, equation-mining pass, first enhancement program, second archival pass, and second enhancement program. It supplies executable exact kernels where the present evidence supports them, and records the remaining work without silently converting proposals into theorems.
+
+The strongest historical pattern is arithmetic and operator structure at the boundary between a sufficient representation and a failed representation. Computational arithmetic geometry is the strongest traditional subject. Spectral structure, effective dimension, exact populations, observability, and closure make the broader program. This assessment is an interpretation of the recovered requests and discussions, not an objective numerical ranking of interests.
+
+The chronology reaches SYMMETRON in February 2025; MMHW in May; Harsh-Lattice, crystalline receipts, and master-program discussions in August; tau-Crystal in September; IMP, MEF, Arithmetic Shadow, subdivision and Pisot work in November; Finsler escape and transformer studies in December; thermal spectra in January 2026; prefix arithmetic in February; PSG jets and walls in March-April; PhaseNet, conductors, collision zeta, fault graphs, closure stress, and Weyl exactness in June; Shadow-Core and Morphonic in July; flux population work in August; WIND and PerfectPower in September; and DynaComp, allocation, games, BLAST, physics, and NFL in October. Dates identify recovered activity, not project inception.
+
+The complete equation registry is machine-readable in `data/equations.json`. The topic census is in `data/topics.json`. Every archival extract has a source entry and byte hash in `archive/SOURCES.json`. Hashes identify these extracted/reconstructed bytes; they do not pretend to hash inaccessible original DOCX/PDF packages.
+
+The repository intentionally preserves negative findings. A plausible reduction can fail on invariance; a norm-square condition can fall short of Selmer membership; an operator block can fail contraction; a finite-part equality can fail scaling; a movement feature can fail held-out prediction. A failure is retained as a mathematical object that directs the next step.
+''',
+'02_arithmetic_geometry':r'''# Arithmetic geometry and perfect-power populations
+
+The arithmetic entrance is $S(n)+k=m^d$, with integer polynomial $S$, integer inputs, and $d\ge2$. Define $A_{F,d}(N)=\#\{1\le n\le N:\exists m\in\mathbb Z,F(n)=m^d\}$. The existential definition counts inputs once even when signed square roots give two witnesses. The historical density uses $\limsup A(N)/N$. A polynomial identity $S+k=G^d$ with $G\in\mathbb Z[x]$ produces a hit at every input. Historical sparse classifications and multiplicity-based exponents are retained with their hypothesis gaps, rather than advertised for arbitrary sequences.
+
+Exact transformations include $y^2+y=F(n)\iff(2y+1)^2=4F(n)+1$ and $y(y+1)/2=F(n)\iff(2y+1)^2=8F(n)+1$. For $ay^2+by+c=F(n)$, $a\ne0$, the square discriminant $b^2-4a(c-F(n))$ must be accompanied by the divisibility of $-b\pm\sqrt\Delta$ by $2a$. The integer chart for $x^2=y^3$ is $(t^3,t^2)$; for $2x^2=3y^3$ it is $(\pm18t^3,6t^2)$.
+
+Morphonic expanded the arithmetic setting through localizations, real and p-adic completions, finite extensions, Galois actions, and adelic viewpoints. PerfectPower added concrete Mordell and Thue reductions, unit representatives, subgroup lattices, saturation, quartic coverings, source-bound lists, and polynomial pullbacks. Root splitting fields, Pell unit fields, polynomial discriminants, field discriminants, and nonmaximal orders must remain distinct.
+
+The historical frontier moved from 316 Thue branches to 79 GL2 classes, later to a 457-curve census, with changing constructive witness counts. Those counts are dated historical snapshots, not current PerfectJet statistics. Global rank justification, saturation bounds, effective unit exponents, elliptic-logarithm enumeration, and integral-point completeness remain separate obligations. A finite list found by a backend is not automatically a kernel-checked complete solution set.
+
+OEIS work was intended as a discovery/comparison layer using definitions, offsets, recurrences, references, and transformations. Prefix matches, transformed matches, proved identities, and rejected matches require different labels. Abelian heat/Dirichlet transforms, Bilu-Tichy, Runge, signed rank-two sieving, quartic covariants, and optimization over infinite families belong to the preserved frontier; their complete implementations are not imported into this repository.
+''',
+'03_pell_orbits_and_transport':r'''# Pell dynamics and solution-carrying transport
+
+A quadratic norm equation $x^2-Dy^2=N$ becomes a multiplicative orbit $x_j+y_j\sqrt D=\alpha\varepsilon^j$. If $\varepsilon=a+b\sqrt D$, the step is the integer matrix $\begin{pmatrix}a&Db\\b&a\end{pmatrix}$. For $m^2-2n^2=1$, $(n,m)\mapsto(3n+2m,4n+3m)$. The shifted problem $(x^2+7)/2=y^2$ is $x^2-2y^2=-7$. A complete family requires all seeds, signs, admissibility restrictions, and index ranges.
+
+An admissibility automaton on an orbit can turn infinitude into a reachable-cycle question. A cycle of period $\pi$ with $g$ good positions contributes $g\log N/(\pi\log\varepsilon)+O(1)$ under the retained orbit-growth hypotheses. Thus arithmetic counting combines a growing eigenmode with a finite residue state. The exact identity $(1+\sqrt2)^6=99+70\sqrt2$ is a small illustration.
+
+For $F(n)=(rn+s)^3+k$, $r\ne0$, a complete source list $L_k$ transports to $W=\{((t-s)/r,y):(t,y)\in L_k,r\mid t-s\}$. Integral-image restrictions are essential; omitting them turns the transported population into a different problem. The completeness contract is $m^2=F(n)\iff(n,m)\in W$, conditional on source completeness and preserved domains.
+
+The recovered -23 leaves are $-u^3-3u^2v+6uv^2+4v^3=1$ and $-u^3-6u^2v+69uv^2+46v^3=1$, with $\theta^3-6\theta-3=0$. The D=72 leaf is $H=-3u^3+9uv^2-2v^3=\pm1$, with $\beta^3-27\beta-18=0$ and $\gamma=-3u-\beta v$, $N(\gamma)=9H$. Its reconstructed coordinates require $C=0$, $3\mid A$, $u=-A/3$, $v=-B$. Unit representations $\gamma=\zeta\alpha_j\varepsilon_1^{e_1}\varepsilon_2^{e_2}$ still need a complete representative inventory and an effective global exponent bound.
+
+Question-dependent height $h_q(x)=h(q(x))$ can organize queries on residues or invariants, but cannot replace a completeness theorem for original objects. Adaptive local sieving changes the order of valid exclusions according to elimination-per-cost; it does not change the truth of any exclusion. The core transport principle is to carry the inverse map, the exceptional branches, and multiplicities with every reduction.
+''',
+'04_descent_saturation_and_integer_lattices':r'''# Descent, saturation, and integral lattices
+
+For $y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$, define $b_2=a_1^2+4a_2$, $b_4=2a_4+a_1a_3$, $b_6=a_3^2+4a_6$. Completing the square gives $(2y+a_1x+a_3)^2=4x^3+b_2x^2+2b_4x+b_6$. The cubic $\psi_2$ has discriminant $16\Delta_E$. With the monic cubic normalization and its root $\theta$, $N(x-\theta)=((2y+a_1x+a_3)/2)^2$.
+
+This norm-square bridge only supplies a necessary squareclass condition. Genuine 2-descent needs the S-unit and class-group spaces, norm restrictions, complete local Kummer images, and their global intersection. Sampled local signatures are not complete local images. The standard exact sequence $0\to E(\mathbb Q)/2E(\mathbb Q)\to\mathrm{Sel}_2\to\Sha[2]\to0$ explains why Selmer dimension is not automatically rational rank.
+
+The historical anonymous model $y^2=x^3+2x^2-12x+16$ used $u^3+8u^2-192u+1024$, reported field discriminant -107, S={2,107}, six S-unit squareclass generators, a three-dimensional norm kernel, Selmer dimension two, and trivial Sha[2]. These are recorded upstream reports, not a descent engine implemented here.
+
+The denominator-free kernel expression $K=\det(BB^T)I-B^T\operatorname{adj}(BB^T)B$ satisfies $BK=0$ and acts as multiplication by $\det(BB^T)$ on $\ker B$. This is rational-span information. Integral structure needs a lattice stage. In Smith form $UBV=D$ with unimodular transforms, $Bx=b$ requires $d_i\mid(Ub)_i$ and vanishing remaining coordinates. Integer nullspaces come from the free columns of V. This proposed integration repairs the frequent gap between a rational parametrization and an integer population.
+
+Historical prime-specific saturation, bounded division, subgroup preimages, torsion-aware relation lattices, and isogeny witnesses must retain their scope. A proof for one finite box or one prime is not a global saturation bound. The master repo preserves these distinctions and pins upstream repositories for future integration without importing their formal proofs by implication.
+''',
+'05_exact_populations_and_navigation':r'''# Exact populations and navigation
+
+The selection polynomial $P(\mathbf z)=\prod_j(1+\prod_kz_k^{c_{jk}})$ encodes resource-use multiplicities. Summing coefficients with exponent vector bounded by capacities gives the feasible count when costs are nonnegative integers. Additional incompatibilities require additional factors or compatibility state. Adding a profit variable gives a distribution by objective, with Laurent exponents if profits may be negative.
+
+The runnable residual-capacity engine preserves original project order. At prefix q, $C(q)=C(q0)+C(q1)$; terminal feasible assignments contribute one, infeasible ones zero. Lexicographic rank is $\sum_{i:x_i=1}C(x_{<i}0)$. Inverse rank follows the zero-branch population; uniform sampling draws an integer rank uniformly and reconstructs its original object. Optimization reports both value and tie count, including zero-cost and zero-profit multiplicities.
+
+For general finite factors, $Z=\sum_x\prod_jf_j(x_{\mathrm{scope}_j})$. Independent components multiply; disjoint branches add. Auxiliary encodings preserve counts only when each original assignment has exactly one legal auxiliary extension. Weighted symmetry compression must preserve original multiplicity, not merely representatives.
+
+The Petersen 50-project historical result is 702,508,860,122,761 feasible selections, objective16,537, one maximizer. The retained report used176 terminal partitions,437,533,492 visits and189,856,527 setup cells, with construction around362 seconds. Later retrieval reports independent decision-diagram reproduction, including all176 leaves and conditional counts16,777,216,512,16,095,745; a separate historical report gives5.3seconds and about518MiB. These workload/version-dependent figures are not new PerfectJet benchmarks. Original costs and the full retained DAG are not in this release, so this repo does not claim to replay that instance.
+
+Exact counting also includes distinct outputs versus inputs, collision populations, CRT intervals, restricted-digit sums, monomial degrees, nonlinear sequence residues, generating functions, and integer calibration. The generic completion engine is implemented; these broader upstream adapters are indexed rather than falsely presented as already integrated.
+''',
+'06_series_hankel_and_weighted_quotients':r'''# Series, predictive state, and weighted quotients
+
+Let $A_c$ encode finite transitions of positive integer cost c. With initial vector s and accepting map H, $\mathcal G(z)=H(I-\sum_cz^cA_c)^{-1}s$ sums all histories by cost. The formal inverse expands in operator powers because the transition series has zero constant term. Unit costs give $H(I-zA)^{-1}s$. The linear-system response series $C(I-zA)^{-1}B$ has coefficients $CA^kB$. The algebra is shared; coefficient meaning and admissible weights differ.
+
+Initialization matters. $1/(1-z-z^2)$ gives Fibonacci-type populations, while $z/(1-z)$ starts0,1,1,... . A zero initial sample can increase realization size. Word-indexed Hankel data $\mathcal H_{u,v}=f(uv)$ encode predictive distinctions. Over a field, finite rank corresponds to a finite linear representation $f(w)=\alpha^TA_{a_1}\cdots A_{a_\ell}\beta$, with minimal dimension equal to Hankel rank. A field-minimal model can have signed coordinates; it need not be a probabilistic model or quotient of actual states.
+
+For column-state transitions, an aggregation R must satisfy $RA=\bar AR$. Its block condition says each source in a block has the same total outgoing weight into each destination block. Initial weights aggregate as $\bar s=Rs$; accepting outputs require $H=\bar HR$. Then $HA^ts=\bar H\bar A^t\bar s$. Coefficientwise identities $RA_c=\bar A_cR$ preserve the cost series. Python exact matrix replay is supplied; automatic weighted quotient discovery remains a proposal.
+
+The first enhancement program proposed deriving state from Hankel distinctions, refining it when a new question adds an independent row/column, preserving event order with separate action matrices, and stacking multiple output Hankel blocks. Numerical Hankel rank requires held-out continuation tests and tolerance sensitivity. The equation atlas retains these designs and separates them from the currently implemented exact finite sequence rank calculation.
+''',
+'07_semantics_and_observability':r'''# Semantics and target-relative observability
+
+SOE starts with $\pi:I\to S$ and legal fibres $\pi^{-1}(s)\cap L$. An implementation may be selected afterward by cost. Future equivalence identifies states that yield identical behavior under every finite permitted action word. For partial actions, whether a word is defined is part of behavior. The executable finite Moore-machine quotient supplies shortest distinguishing words via pair BFS, checks observation and transition preservation, and returns the exact equivalence blocks. It is Python mathematics, not a newly imported Lean theorem.
+
+The historical Lean result `SOESemantics.quotient_complete` and324 two-state examples are documented upstream. The specialized generator used Fin2 and saved witnesses; general Python refinement was tested rather than universally formally verified. Historical adaptive diagnosis required two probes versus three in every fixed schedule for a retained example. The game bridge reported14->7 and68->34 phase/symbolic models; those are declared abstractions, not complete original games.
+
+For linear dynamics, the observable row space is $\mathrm{span}\{\mathrm{rows}(CA^k):k\ge0\}$. Its annihilator is $\bigcap_k\ker(CA^k)$. Exact target recovery is $\ker\mathcal O\subseteq\ker G\iff G=L\mathcal O$. The rational implementation returns a hidden vector with nonzero target response on failure. Delay observations add rows C,CA,...; nonlinear delay sufficiency needs separate assumptions.
+
+For quadratic target $T=g^Tx+\tfrac12x^TQx$ on fibre $x_0+\mathrm{im}N$, symmetric Q, constancy is equivalent to $N^T(g+Qx_0)=0$ and $N^TQN=0$. Linear sensitivity and hidden curvature are different obstructions. New sensors repair exactly when $\ker(H_{new}N)\subseteq\ker(GN)$. Repeated copies of the same row may reduce noise without repairing the nullspace.
+
+A representation is relative to its question family. Enlarging Q refines equivalence. Joint coordinates $(q_1,q_2)$ preserve both question families, after which redundancy can be removed. The proposed preservation profile records exact questions, bounded questions, error, domain, and cost. This is a mathematical interface, not a universal scalar compression score.
+''',
+'08_feature_closure_error_and_decisions':r'''# Feature closure, quantified defects, and decisions
+
+Exact polynomial-feature closure means each $p_i\circ F$ belongs to the rational span of retained features. Then $p(F(x))=Gp(x)$ and $p(F^t(x))=G^tp(x)$. Outputs must lie in the feature span to be reconstructed. The implementation solves rational coefficient systems and replays the identities. It reports an unclosed pullback instead of silently fitting it.
+
+When $\psi\circ F=G\psi+r$, residual structure can supply missing features. If $r=B\chi$ and $\chi\circ F=C\psi+D\chi$, the block state $[\psi;\chi]$ evolves by $[[G,B],[C,D]]$. Missing monomials, lags, order interactions, and parameter terms suggest different repairs. Finite closure may not exist. This release does not promise that augmentation terminates.
+
+For full $x'=Ax+Bu$ and reduced $z'=Gz+Hu$, set $e=x-Vz$, $R=AV-VG$, $S=B-VH$. Then $e'=Ae+Rz+Su$ and $e_t=A^te_0+\sum_{j<t}A^{t-1-j}(Rz_j+Su_j)$. Continuous-time Lyapunov uses $A^TP+PA\preceq-2\alpha P$; discrete time uses $A^TPA\preceq\gamma^2P$. Mixing these forms is rejected. In a contracting norm, error is bounded by a geometric convolution; a uniform defect delta gives $\gamma^t\|e_0\|+\delta(1-\gamma^t)/(1-\gamma)$.
+
+For staged reconstructions, total error is at most $\epsilon_1+\|V_1\|\epsilon_2$, or $\epsilon_1+L_1\epsilon_2$ for a Lipschitz first map. Model error and roundoff should remain separate. Parameter sensitivity evolves as $S_{t+1}=D_xF S_t+D_\theta F$; trajectory accuracy does not imply correct parameter response.
+
+An action is certified best when its lower objective bound exceeds all competing upper bounds. With common error epsilon, a gap above2epsilon suffices. Computation can concentrate on candidates whose intervals overlap the best lower bound. This turns model-error machinery into decision machinery; deterministic approximation bounds do not replace empirical uncertainty about sports or markets.
+
+Historical DynaComp reports include256-state compile time37.6s->1.3s,58 tests at one stage, later210/229 tests,200-state heat->7 states with0.01 ceiling and5.89x runtime gain, break-even about222 batches of256 scenarios, and descriptor200->9 with0.003483 bound and4.50x gain. Other models were slower or uncertifiable. These are upstream dated workloads, not universal or freshly reproduced PerfectJet results.
+''',
+'09_energy_IMP_and_numerical_structure':r'''# Energy diagnostics, IMP, and numerical structure
+
+For $\dot u=Au+f$ and constant SPD mass matrix M, $E=\tfrac12u^TMu$, $S_M=(A^TM+MA)/2$, and $\dot E=u^TS_Mu+u^TMf$. Define $\lambda=-2u^TS_Mu/(u^TMu)$ and $\zeta=2u^TMf/(u^TMu)$. Then $d\log E/dt=-\lambda+\zeta$ and $\rho=1-\zeta/\lambda$ when lambda is nonzero. Positive source reduces net decay for positive lambda. This corrects the historical plus sign and missing factor2. Python exact checks validate dimensions, positive definiteness, and the identity; rho is None at zero dial.
+
+CRO/crystalline work estimated $\hat\alpha=-(\log E_k-\log E_{k-1})/\Delta t$, compared $|\hat\alpha-\alpha|$, and proposed compact128-byte manifests and40-byte receipts. Historical constants alpha=.0333996828 and beta=.6732050807568877 are retained as selected model constants, not proven universal values. The rank-one matrix $I+t11^T$ has determinant1+nt. Receipt hashes identify records, not the truth of physical claims.
+
+IMP explicitly means Inertial Manifold Projector. Its SVD projector $P=QQ^T$ does not establish $M^k\to P$. An orthogonal rotation has all singular values1 and nonconvergent powers. A sufficient fixed-mode split is $M=P+T$, $P^2=P$, $PT=TP=0$, $\rho(T)<1$, which gives $M^k=P+T^k$. General retained dynamics requires $MQ=QG$, not fixed vectors. Invariant-space leakage $(I-P)AP$ indicates closure failure.
+
+Historical Catmull-Clark11->2, transformer ranks6-7, diffusion65536->1024, errors around1e-14, and10-100x reductions were claims requiring source computation. The local valence6 block [[-7/48,3(1+i sqrt3)/32],[5(1-i sqrt3)/16,-9/8]] has characteristic $x^2+61x/48+3/64$. One root magnitude exceeds1; the block cannot supply a contraction claim without the true operator interpretation. The plastic/Pisot interpretation was removed from that specific block. More extensive motivic, holographic, fan-law, and global-refinement-period claims remain proposals or unsupported reports.
+''',
+'10_PSG_scalar_and_coefficient_geometry':r'''# PSG scalar balance and coefficient geometry
+
+On0<x<pi/2, $L=-\log\cos x$, $U=x^2+L^2$, $K_\alpha=U^{-\alpha/2}$, $T=\tan x$, $H=x+LT$, $A=xH/(2U)$. Since $U'=2H$, $K_\alpha'=-\alpha HK_\alpha/U$. At a fixed point the multiplier is -2alpha A, so flip parameter is1/(2A). In L coordinates, $x=\arccos(e^{-L})$, $T=\sqrt{e^{2L}-1}$, and the scalar balance is $F=\log U+4A\log x=0$. Root replay gives L=.5319166892432992,x=.9428576799823384,A=.6740320257295228,alpha=.7418045150878947. It checks fixed residual and multiplier, but supplies no interval uniqueness or transcendence proof.
+
+For v=2L, $a(v)=x(x+(v/2)T)/(2(x^2+v^2/4))$, $x=\arccos(e^{-v/2})$, $T=\sqrt{e^v-1}$. The archived differential-algebraic equation is $EF_1+F_0=0$, with E=e^v-1, $F_0=a(2a-1)(v+4-8a)^2$, and $F_1=(av-2a-2pv+1)(2av+4a-4pv-v-2)$, p=a'. This extracts E=-F0/F1 away from the exceptional branch.
+
+The cleared field is $\widetilde X=D\partial_v+Dp\partial_a+N\partial_p$, $D=2av^2(2a-1)(v+4-8a)^2$. Its six listed factors are v,a,2a-1,v+4-8a and the two F1 factors. Darboux means $\widetilde X(H)=KH$. Listing and checking factors does not establish all-degree completeness. The source lacks full N and has a cofactor inconsistency: X(v)=D implies cofactor D/v, not D. Complete classification and algebraic-point exclusion need the missing global arguments.
+
+The original26-term PSG source was reported to eliminate T using $T^2=Y^2-1$ into a100-term polynomial with even exponents U=x^2,Z=Y^2. Reconstruction T=-A/B needs the B=0 branch and integer-image conditions. Those actual26/100 coefficients were not recovered here; they remain explicitly missing rather than fabricated.
+
+The sources mix numerical certification language with exact proofs, and one passage says A<1/2 while reporting A*=.674.... These contradictions are preserved in the archival extract and corrected in the canonical text. Neither a high-precision numerical root nor dense-intersection rhetoric establishes transcendence of alpha*.
+''',
+'11_jets_Schroeder_and_obstruction':r'''# Jets, reflection, and model-specific obstruction
+
+PSG's recovered normalized jets include A/A*=1+.3282804759delta+.0800766090delta^2+.0108819139delta^3+... and F/(L*F')=delta-.3793897467delta^2+.3008496421delta^3-.2807207864delta^4+... . They are root-centered normalized data, not an origin germ. Six coefficients cannot determine the actual seventh without a defining law. The quadratic-ODE prediction22.2074398750 was not an actual origin coefficient. Later reports of23.240 use a different stated context and do not erase the provenance issue.
+
+The archive reports eighth-order jets,40 coefficients,Padé[20/20],a14-step preimage chain, and a fifth-order b5 effect on a seventh-order normalization. Reported b5 values .5604 versus .7771, normalized b7=-19.3142007715725, and offset -2.49298145474 with sensitivity11.5037 are historical claims. Full source and interval replay are needed. A negative squared Puiseux amplitude followed by a real-branch claim is rejected.
+
+An invertible analytic coordinate satisfying Psi(f)=-Psi requires f^2=id. Conversely a centered involution with f'(0)=-1 has Psi=(x-f(x))/2 and Psi'(0)=1. Thus generic flip bifurcations cannot be advertised as exactly reflection-linearized. For f=-x+ax^2+bx^3+..., $f^2-x=-2(b+a^2)x^3+...$. The implementation computes finite composition defects exactly. Vanishing at a finite order does not establish an involution.
+
+After recentering the parameter-dependent fixed point, a normal form $f_\nu=-(1+\nu)x+\kappa x^3+...$ has second-iterate leading equation $2\nu x-2\kappa x^3=0$, requiring x^2~nu/kappa>0 for a small real cycle. Signs follow the actual parameter convention.
+
+For a specified Riccati model I'=a+bI+cI^2, Taylor coefficients obey $(n+1)i_{n+1}=a1_{n=0}+bi_n+c\sum_{j=0}^ni_ji_{n-j}$. The residual supplies a precise rejection test. Nonzero exact residual rejects this model; an interval residual excluding0 does the same. It is not a test of all algebraic germs or transcendence. MTB/GTT classifications and Feigenbaum depth profiles are archived exploratory classifications, not promoted to established mathematical universality in this release.
+''',
+'12_collision_zeta_and_finite_parts':r'''# Collision arithmetic, root-of-unity closure, and finite parts
+
+The valuation kernel $\kappa(m,n)=\sum_pv_p(m)v_p(n)$ is symmetric and additive under multiplication. It vanishes exactly for coprime positive integers. kappa(72,108)=12. The divisor rank polynomial $R_n(q)=\prod_p(1+...+q^{v_p(n)})$ yields $F_{m,n}=R_mR_n-R_{mn}$ and at1 gives tau(m)tau(n)-tau(mn). For12,18 the36 divisor pairs map to16 product divisors; the surplus is20. The p3,p2 fibre profile is1,2,3,3,2,1.
+
+The collision zeta $Z_t(s)=\sum_{m,n}e^{t\kappa(m,n)}(mn)^{-s}$ has Euler factors $\sum_{a,b}e^{tab}p^{-s(a+b)}$. For real t>0, the a=b=N terms fail to vanish, so it diverges. For t<=0 and Re(s)>1 it converges absolutely. At t->-infinity only coprime pairs survive, giving zeta(s)^2/zeta(2s) and H(1)->6/pi2. Reported H_t(1) at0,-.25,-.5,-1,-2,-4,-8 is1,.814101,.738157,.670474,.626911,.610278,.607970. Count asymptotics require original analytic hypotheses.
+
+At zeta_L, exact residue splitting gives $L_L(x)=N_L(x)/(1-x^L)^2$, $N_L=\sum_{r,s<L}\zeta_L^{rs}x^{r+s}$. N(0)=1,N(1)=L,top coefficient zeta_L. For n=dL+r, a_n=dG_r+B_r, with complete and partial quadratic sums G,B. Hence a_{n+2L}-2a_{n+L}+a_n=0. The implementation checks direct coefficients and numerator convolution in exact cyclotomic quotient rings; it answers an index10^100 without iteration through prior indices. The archived blanket complete-Gauss coefficient claim is repaired by retaining partial blocks.
+
+The higher-rank archive uses log Z=r log zeta(Ls)+sum a_m P(ms), a1=r zeta_L, and branch-stripped FP=zeta(L)^r product_p[N(1/p)e^{-a1/p}]. If the tail logarithm satisfies abs(r_p)<=C/p2 beyond a cutoff, omitted log tail<=C/P and multiplicative error<=exp(C/P)-1. Explicit C, finite zero factors, and logarithm branches are needed; no generic tail certificate is manufactured.
+
+Negative collision suppression e^{-beta kappa} is not PSD: on{1,2} the determinant is e^{-beta}-1<0. A positive geometric kernel is exp(-beta norm(v(m)-v(n))2), factorizing into two norm weights times e^{2beta kappa}. The two serve different roles. Prime-product FP versus quantum D2 failed the retained low-height projection sweep; the separate conductor volume carries growth. Keep this negative finding.
+''',
+'13_conductors_representation_and_fault_graphs':r'''# Conductors, representation structure, and weighted fault graphs
+
+PhaseNet/Deformation-Conductor Networks organized UV=e^{2pi i theta}VU. With Ue_j=e_{j+1}, Ve_j=omega^j e_j, the actual relation is VU=omega UV. Sign/order conventions must be fixed. Rational theta=p/L supports finite conductor representations; irrational theta leads to A_theta and trace range Z+theta Z. Continued-fraction denominators form approximation levels, but are not automatically an inverse system without bonding maps. Bounded partial quotients imply q_{n+1}<=(A+1)q_n and chi=limsup log(q_{n+1})/log(q_n)=1. For j<=q_n, phase-coordinate error<=1/q_{n+1}.
+
+Finite quadratic modules define b(x,y)=q(x+y)-q(x)-q(y), Sxy=|A|^-1/2 exp(-2pi i b), Txx=exp(2pi i q), with S2=C,(ST)3=xi C under the correct hypotheses. Weil commutant dimensions depend on the exact pair. Odd prime law a+1 and CRT multiplicativity were reported; dyadic2a-1 belongs to a different specified model than the cyclic pair with1,3,8,19,... . The model definition must precede any all-exponent statement.
+
+For su2 level k, L=k+2, d_a=sin((a+1)pi/L)/sin(pi/L), D2=sum d_a2=L/(2sin2(pi/L))~L3/(2pi2). The simply-laced Weyl formula gives exponent rank+2positive-root-count=dim(g), reported3,8,15,28 for A1,A2,A3,D4. Nonsimply-laced finite-level normalizations remain distinct. A fusion wall should use monic integer polynomial U_{L-1}(X/2) in X=2cos(theta), not silently treat nonmonic U_m(x) as a monic integral relation.
+
+DAT/DAU required both C_cond<C_Pauli and p_eff<p_th. Historical437 tests/74certificates and8x structural->about3.19x nominal net saving were model-level; device fidelity, heralding, feedforward, reset and noise gates remained essential. DBD solved a pointed sector with residuals2.9e-16/7.9e-16, while a672-target coupled component had residual about1.1 and0/48 recognitions: full spinor closure was open.
+
+Weighted walks use Z_N(u)=sum_n c_n exp(n.u), gradient=E[n], Hessian=Cov(n)>=0 and abs(Z_N(u+i phi))<=Z_N(u). The archive reports4,133,166 length10 walks represented by66 type vectors. Histograms preserve type-dependent questions, not order-sensitive ones. Fault tails require justified native-graph counts and mu eta<1; the geometric tail is C(mu eta)^d/(1-mu eta). Square bounds cannot be transferred silently to triangular/hook graphs. Native extraction, assumptions and weights remain part of the result.
+''',
+'14_shadow_core_and_regulators':r'''# Shadow-Core Lift and exact coefficient fields
+
+The5_2 program distinguishes a conductor7 abelian shadow from a discriminant-23 nonabelian core. Recovered polynomials include alpha3-alpha2+1, the plastic beta3-beta-1, visible z3-2z2+3z-1, critical u3-4u2+5u-1 (each discriminant-23), and cyclic z3-2z2-z+1 (discriminant49). Equal discriminants do not establish field identity. Explicit transports do: u=1+alpha,beta=-1/alpha, with inverse alpha=u-1=-1/beta.
+
+The canonical exact quotient ring is Q[u]/(u3-4u2+5u-1). This release computes h=(-2u2+3u-2)/(-u2+u), v=(6u-8)/(3u2-8u+5), proves denominators invertible in the ring, and replays h3+4h2-23h+23=0 and23v3+4v+200=0. These are preserved as field coordinates. Polynomial discriminants -1127=-23*72 and -571325888 are not automatically field discriminants.
+
+The archive reports critical factorization (z-1)2(z3-4z2+5z-1), isolating a boundary branch from the cubic. It reports D(alpha)=.9427073627769277209... and3D=2.8281220883307831628..., with another embedding/avatar giving half the D value. These are selected-embedding regulator numbers; identification with geometric volume requires the actual oriented geometric data.
+
+Corner P_ab=(1-z)^a-z^b scans reportedly found the visible cubic only at coprime(3,2) and hidden avatar at(5,1) through a<=300 under the specified search range, with smaller exact factors through a<=20. This is bounded evidence, not global isolation. The28-row9-field Theta atlas, Theta(5_2)=4/9, p-adic valuations3 and4, and ramified local Q23(sqrt(-23)) descriptions are retained reports requiring original source/certificates for promotion.
+
+Bloch-Wigner conjugation D(conj z)=-D(z) means the unweighted sum over all embeddings cancels. Store one representative per conjugate pair as a regulator vector, then distinguish its squared norm from an oriented scalar c^T R. The first is conjugation-choice independent; the second needs coefficients from geometry. Zero at one embedding is not a zero regulator class. This repairs the archived positive all-embedding defect formula.
+
+The proposed CoreLift pipeline is shadow->obstruction->legal receiving space->field-valued output. Abelian data are useful routing information but cannot be treated as a complete identity of nonabelian targets. Exact transports and embedding provenance are the enhancement, not a claim that every core extraction is implemented.
+''',
+'15_Weyl_exactness_and_partner_geometry':r'''# Weyl exactness and partner-spectrum geometry
+
+For monomials q^ap^b,q^cp^d, Poisson bracket is(ad-bc)q^{a+c-1}p^{b+d-1}. The normalized Moyal bracket is a finite sum over odd k<=min(a,d)+min(b,c), with coefficient (-1)^((k-1)/2)hbar^(k-1)S_k/(2^(k-1)k!), S_k=sum_r(-1)^r binomial(k,r)(a)_{k-r}(b)_r(c)_r(d)_{k-r}. Falling factorials make the arithmetic exact. It can be expressed as a terminating Hahn-type3F2 with careful denominator interpretation. Cubic q3,p3 yields9q2p2-3hbar2/2; quadratic q2,p2 is exact4qp.
+
+Binary forms use unnormalized transvectants(f,g)_k=sum_i(-1)^i binomial(k,i)partial_x^{k-i}partial_y^i f times partial_x^i partial_y^{k-i}g. For sextic f only odd correction gates3 and5 remain. Exact partners need both gates zero; active partners additionally require nonzero first transvectant. Individual exact pairs do not overturn the full quantization no-go theorem.
+
+For f_lambda=x6+lambda x3y3+y6, g8=xy(x6+y6-7lambda x3y3/20) has both correction gates zero for all lambda. Exact polynomial arithmetic checks it at four parameters; degree<=2 in lambda plus three distinct roots establishes the identities. Its Poisson bracket has leading6x12 and is nonzero. For h=xy(x3-y3), (f_lambda,h)_3=72(7lambda-40)(x4y+xy4), (f_lambda,h)_5=0. At lambda40/7, g8=(x3-y3)h. This is a precise ansatz obstruction and factorization, not an all-degree classification.
+
+Define L_N:g->((f,g)_3,(f,g)_5), K_N=ker L_N, P_N:g->(f,g)_1. Active quotient A_N=K_N/(K_N intersect ker P_N) has dimension rank([L_N;P_N])-rank(L_N). The finite census for lambdas0,1,40/7,20,-20 and degrees3..12 separates trivial self-partners from nontrivial channels. At degree6 every retained family point has kernel1 but active0. At lambda40/7 degree5 has active1, absent at lambda1. Lambda0 has active2 in degree3 and1 in degree10; +/-20 has active1 in degree3. This finite result is recorded, not extrapolated to degree11 globally.
+
+The archived squarefree quintic g=-xy(x-y)(x2-xy+y2), sextic f=(2x6-6x5y+5x4y2+5x2y4-6xy5+2y6)/2 passes exact gate replay with nonzero Poisson bracket. Normalized quintic elimination yields b6(b-1)6 times four quadratics(b2-3b+3)(b2-b+1)(b2+b+1)(3b2-3b+1). Archive orbit count was corrected3->1, but its supplied verifier uses numerical Mobius matching; exact orbit certificates are still preferable. R7/R9 modular patch evidence remains conjectural over Q. Incidence varieties I_N={(f,g):gates0} and symbolic minors are the correct next objects.
+''',
+'16_deformation_moduli_and_codes':r'''# Deformation, moduli, and arithmetic codes
+
+For hypersurface f=0, a square-zero deformation f+epsilon g and marked point p+epsilon v require df_p(v)+g(p)=0. At cusp y2-x3 and origin, df=0: constant g=1 obstructs a point lift while g=x permits it. The local cotangent complex is[I/I2 -> Omega], and its dual records tangent/obstruction dimensions. Tjurina algebra for the cusp is Q[x,y]/(f,fx,fy)=span{1,x}; node/cusp historical dimensions were(2,1,1)/(2,1,2) in the indicated tangent/obstruction/T1 conventions. These local objects are not interchangeable with a complete global moduli theory.
+
+E37 short model Y2=X3-16X+16 has Delta151552,c4=768,j110592/37. The differential dj=(559872/1369,373248/1369), gauge direction(64,-96) gives0, moduli direction(96,64) gives77635584/1369. The coordinate direction changes Delta while preserving j, so Delta preservation is not the correct gauge test. Canonical coefficient-space motion should be decomposed into presentation change and genuine moduli change.
+
+The Z[sqrt(-5)] weight-one comparison has(2)=p2^2,(3)=p3+ p3-,(1+/-sqrt(-5))=p2 p3+/-. A nonprincipal ideal class has order2. Rank plus determinant class gives a K0 description Z plus Z/2, and the divisor/Picard/motivic weight-one comparisons agree in the saved artifact. No arbitrary higher-weight comparison is inferred.
+
+Artin-Schreier-Witt0->Z/p^n->W_n --F-1-->W_n->0 belongs to characteristic-p etale sheaves, not the mixed-characteristic cubic Selmer pipeline. Historical Hermitian y^p+y=x^{p+1} over F_{p2} code reports were[8,4,4]_4,[27,6,19]_9,[125,3,119]_25. The p5 nonzero weight enumerator12000z119+600z120+3000z124+24z125 needs constant1 for all words. Another curve y^q+y=x2 had reported n=2q2-q and q7[91,37,52]_49, subject to evaluation conventions. The MK-VII claim was reported refuted; the monograph preserves that boundary.
+
+These strands strengthen the master interpretation: equivalence can hide coordinate change, while an obstruction can survive every legal change. Actual comparison maps and tests are needed; derived/cohomological terminology alone supplies neither.
+''',
+'17_prefix_arithmetic_and_machine_semantics':r'''# Prefix arithmetic and machine semantics
+
+For normal finite binary64 values, x=(-1)^s(2^52+F)2^{E-1075}. Subnormals, zeros, infinities and NaNs require separate semantics. The frozen MIE mapping flips the sign bit for nonnegative encodings and complements all bits for negative encodings. Prefix lcp(a,b)=clz(MIE(a) xor MIE(b)); k(x)=lcp(x,+0), D=64-k. Signed zeros remain distinct in the historical golden model; NaNs used k0/COLLAPSED. A prefix ultrametric2^-lcp on distinct encodings is not ordinary numerical distance.
+
+Restricted transfer predictions included ADD=min(kA,kB),MUL=max(0,kA+kB-53),DIV=max(0,kA-kB),SQRT=max(0,kA-1),FMA=min(MUL,kC). They are retained explicitly as heuristics/restricted-semantic claims, not universal floating-point guarantees. Binade changes, carry, cancellation, exponent alignment, normalization, jamming, rounding, exception handling and extended precision can alter leading bits independently of mantissa precision.
+
+The candidate prefix-Fermat condition k(f(x+delta),f(x))>=k(delta)-kappa_f connects the bit geometry to divided differences, Lawvere/Fermat theories, jets and Kahler differentials. A concrete operation/domain is needed before it becomes a theorem. The original PADD/PSC definitions, segmented-adder semantics, and complete corner-case model were not recovered sufficiently to implement them. A Chisel ordinary addition expression is not proof of those semantics.
+
+The exact dyadic power test is different and sound: write nonzero finite rational dyadic x=+/-u2^e with u odd. It is a rational dth power iff u is an integer dth power and d divides e, with a negative sign only when d odd. Zero is separate. This is arithmetic of the value, not a heuristic prefix-depth prediction.
+
+The historical corrected experiment found lambda_min16 inactive because mean k~1; collision1/escalation0 null; an LCP margin due to initialization; and H2 due to trivial weight shrinkage. Training had not established induced prefix geometry. The December modular-addition Transformer run had training~.99 but validation~.3333 through epoch1000, with ranks about13,76,78 across encoders. These negative results remain in the corpus.
+''',
+'18_mathematical_physics_and_protection':r'''# Mathematical physics and deformation protection
+
+SYMMETRON explored Weyl/crossed-product algebras, ADE/non-ADE deformation, Berry curvature, modular/Monster/Umbral/Mathieu moonshine, VOAs, derived geometry, graphene/Kagome models, spectral dimension and quantum-gravity proposals. Historical constants alpha=.0333996828,beta=.6732050807568877,kappa=1.923606797749979,C~7042.25 and activation .0712 do not become derived physical constants merely by being retained. The proposed Hamiltonian L0-c/24+sum gamma_g T_g+kappa log L0 requires a positive spectral domain. L-value formulas lacked recovered underlying objects. The model tests recorded zero Berry curvature for both compared cases, not an observed topological distinction.
+
+MMHW used psi=(1-alpha x2)e^-x2/2(1+beta sin(pi x2)e^-abs(x)3), with noncommutative-torus Chern/index/soliton applications. Claimed index error+.01,Hall response2.00+-.02 e2/h,nu1/3 and soliton.50+-.02 are model reports, not experimental validation. Admissibility of a wavelet family requires its own conditions.
+
+The six-term phase potential is cos2theta+(2/3)cos3theta+(2/5)cos5theta+(1/4)cos8theta-(2/9)cos9theta-(1/6)cos12theta. At11pi/30 the derivative cancels numerically and second derivative~12.2092 is positive. The exact identity1-2cos12theta=(3-sqrt5)/2=phi^-2 also holds at other phase points. This does not establish global selection or the physical CKM phase.
+
+Ceff=c(1-c2)/(ab), a=|Uus|,b=|Ucb|,c=|Uub|. If a model enforces Ceff=phi^-2, then c2(1-c2)2-3abc(1-c2)+a2b2=0. A different archived coefficient7 polynomial and N,K,t,J phase relations remain unresolved because their definitions were missing. Do not merge them. The allowed CP-even deformation V0+epsilon x changed the relation historically. A stationary point sensitivity -(Hessian V0)^-1 grad W and relation tangent -grad R^T(Hessian V0)^-1 grad W identify which permitted operators break protection; symmetry zero modes require quotienting.
+
+Domain-wall work reported whole-line sign/barrier enclosures,1,080vacua,Goldstone/gauge derivative/cubic channels,Goldstone width~3.8e-8GeV,WW+ZZ~1.8e-9GeV atg.4,threshold(M-2m)3,frame window6.56<t<9.52,one-loop radial correction/counterterm,thermal wall-only window~8.63MeV,and late-network gravitational-wave simulations. These are model-specific reports. Running,thresholds,higher operators,higher loops,global vacuum selection,Sommerfeld/physical66degree prediction remain explicit frontiers. No physics source is modified by this repository.
+''',
+'19_WIND_and_environmental_observability':r'''# WIND and environmental observability
+
+WIND connects measurements to target questions rather than treating a reconstructed field as uniquely observed. Radar support, beam geometry, averaging windows, noise, staleness and target functionals are explicit. The historical corpus had272 NEXRAD volumes, and a lower velocity split in54/54 NewEngland volumes with mean absolute difference .74->1.556m/s. These are saved empirical reports; original radar bytes are not in PerfectJet and have not been replayed here.
+
+The signed vorticity ledger is zeta=v_x-u_y,S=(zeta+f)w_z,T=-v_z w_x+u_z w_y,D=-(zeta+f)div(u),B=(rho_x p_y-rho_y p_x)/rho2,F=(curl forcing)_z,P_beta=-beta v, total=S+T+D+B+F+P_beta. A complete budget needs compatible signs, supports and fields. Surface geostrophic inference,3D Lorenz energy budgets,and storm impact targets are different quantities.
+
+Information J=H^T R^-1H,hidden-target optimization over ker H intersect ker M,exact linear SDE F=e^{A dt},Qd=int e^{As}LL^T e^{A^Ts}ds,innovation I=sum K_i nu_i^T S_i^-1 nu_i,constraint injection C=delta_xC^T Q delta_xC,and residual R=norm(W[partial_t x+N(x)-F(x)])2 were recovered. K_i can mean a spatial support kernel; do not silently read every K as a Kalman gain.
+
+Expiry criteria compare structural ambiguity or propagated uncertainty to positive baselines. The exterior law v=c r^-p,p=1+2h used quadrant threshold radii; pooled earlier p~.5123/.5445 and continuation .593829/.459171 are different fits/windows, not a universal exponent. A simultaneous quadratic pressure fit needs rank6 and at least7 stations for residual capacity, plus time alignment and conditioning. Repeated radial rows cannot repair a hidden crosswind; an independent crossbeam can in the declared linear model.
+
+The source archive distinguishes frozen target truth from changed reporting windows, sustained winds from gusts,one-minute from ten-minute means,height/datum from other quantities,and missing from zero. Chemistry/aerosols were described as reduced HOx-NOx-VOC-ozone,two-moment microphysics,and4D transport, but individual rate equations and source states remain unrecovered. We preserve their integration plan without inventing reaction constants or claiming complete atmospheric chemistry.
+''',
+'20_Finsler_thermal_and_empirical_decisions':r'''# Finsler action, thermal spectra, and empirical decisions
+
+For c>=0,D>0,phi(v)=0 for abs(v)<=c and(abs(v)-c)2/(4D) outside. Its convex conjugate is c abs(p)+D p2. With drift b, H=b.p+sum(c_i abs(p_i)+D_i p_i2). This fixes the normalization; another archived D/4 Hamiltonian belongs to a different convention and cannot be combined silently. Quasipotential H(x,grad W)=0 uses viscosity/subgradient treatment at facets. Historical finite optimizations .4,.5568,1.6 were model reports; the reversible .4 kink was later not robust. LC impedance Z0=sqrt(L/C),f0=1/(2pi sqrt(LC)) is a concrete physical mapping; its broader Finsler metric interpretation requires the actual circuit reduction.
+
+Thermal spectra use H_i=E_i+cE_i^a,Z=sum exp(-beta H_i),F=log Z(2beta)-2log Z(beta)=log Tr rho_beta2. Variance over a declared log-beta grid is a particular objective, not every historical q-KMS criterion. Recovered fits included nonCMa.263053,c1.005524,V.006647506;CMa.25,c~2e-6,V7.650634e-7;Gopela.274014,c1.050564,V.08105414;dilationa.297677,c1.128171,V.2077005;Sp8a.285513,c1.059989,V.1003861. Sizes reached5000,12reps,400bootstrap,another1728draws/object/clip. Rankings were clip-dependent; c near0 weakly identifies a. Claims of universal2/3-versus1/4 splitting are not inferred.
+
+Harsh Audit/tau-Crystal sought to prevent Texas-Sharpshooter post-hoc mass fitting through fixed prior lattices, transformation chains, perturbation/null tests,MDL/Bayes comparisons,and discovery ledgers. Historical implementations and executions varied. The math goal is distinguish explanatory restriction from added fit flexibility.
+
+NFL Combine scouting seeks hidden talent,bust risk,and position-specific development. Early movement is a sequence: approach,braking,turn,recovery,acceleration. Pauli products separate dot-product alignment from cross-product order information; nested commutators propose higher interactions. A commutative ablation and held-out continuation tests are required. Reported future-speed MSE reductions33.36%/26.59% do not establish scouting success or betting profitability. An earlier betting baseline trailed market; live odds and bookmaker access were separate integration tasks. Exact representation machinery structures the candidate features; outcomes still require empirical validation.
+
+Industrial portfolio570solved versus baseline584 with42.1% extra summed time and zero conflicts is a retained negative comparison. Family-held-out512tasks/128tests,graph504samples,sequence52families and calibration/experiment examples are workload-specific historical reports. Customer economics require setup,runtime,break-even,and supported-model conditions.
+''',
+'21_closure_stress_geometry_games_and_integrations':r'''# Closure stress, geometry, games, and integrations
+
+Finite closure cl(A)=intersection of stable supersets and debt mu(cl(A))-mu(A) describe information missing from an admitted state. Historical13-atom8192-world and16-atom65536-state programs tracked Omega_miss,Omega_ung,Omega_rule and sought minimal admitted closure cost. The proposed invariant I_tau=(K_tau*,Lambda_tau,B_tau) combined cost,cheaper-route obstruction,and fake-work spectrum. Closure means entailment under the rules; grounding/replay relates it to actual truth. Equivalent Horn bases,atom renaming,cost rescaling,refinement and reencoding were proposed invariance tests.
+
+Comparison cochains gamma_ij=C_i-C_j and eta_i(f)=Psi(f)C_i-C_i Phi(f) require an additive linear setting. A true double complex has D=delta_Cech+(-1)^p d_I,D2=0. Then an unclosed defect is incoherent,a coboundary removable,and a closed nonexact class an obstruction. Arbitrary nonlinear constraint sheaves cannot be assigned ordinary H1 without constructing the complex. Null-labor efficiency1-K(residue)/K(expansion) needs an explicit cost model and preserved answer.
+
+Geometry includes compatible charts,shared-factor intersections,unordered determinant identities,Jacobian transport,polygon triangulations,separating halfplanes,boundary cancellation,area identities,and visibility-graph shortest paths. Generic graph optimality from potentials does not prove the graph contains exactly all valid geometric edges. Exact mesh arithmetic does not replace full coverage/topology. Riemannian source mining,genus2 periods/marking,Richelot singular/stable reduction,signed quartic lifts,and smooth-curve comparisons remain separate integrations.
+
+STRING/Pokepolis used finite phase abstractions,exact route populations,battle replay,and feedback studies. Historical reports include68->34 symbolic reduction,8->4 forecast statistic,6912route cases,232battle replays,and48battle studies. FF7 architectural reuse involves saved script positions,waits,request/ack boundaries,future-equivalence,and distinguishing experiments; original opcode archive was not recovered.151procedural rigs and1812property combinations are art reports,not proof of semantic completeness. Desired interactive worlds,clear gameplay,live research updates,and user-facing Explorers are application requirements.
+
+BLAST work requested full-source adapters,recurrence proof,annotation,whole-database recall,and dedicated branch publication. Exact equations and complete original source/corpus were not recovered sufficiently to claim implementation here. The master repository keeps these destinations and obligations visible. PerfectPower and DynaComp are pinned upstream references,not vendored or silently merged. No existing site,mobile app,or external physics session is changed by this release.
+''',
+'22_master_enhancement_architecture':r'''# Master enhancement architecture
+
+The preserved enhancement stack is question->candidate representation->closure test->exact executable model,bounded approximate model,or repair witness. It is a design organizing several precise mathematical mechanisms,not a single universal theorem. Its five central equations are qF_a=Fbar_a q,RA=Abar R,psi composed F=Gpsi+r,e_next=Ae+Rz+Su,and H_{u,v}=f(uv).
+
+Question-specific equivalence and preservation profiles separate dimensions,outputs,multiplicity,reconstruction,valid domain,time horizon,and cost. Hankel structure discovers predictive state. Weighted quotients preserve populations only under an aggregation identity. Residual features repair nonlinear closure where possible; delays distinguish missing memory from missing sensors. Sensitivity states test response to parameter changes. Composed bounds permit multistage reduction,and decision margins stop refinement when a choice is settled.
+
+Arithmetic height relative to a question organizes fibres but cannot bypass completeness. Adaptive local tests prioritize exact exclusions. Integral Smith/Hermite transport repairs rational-span gaps. Commutators isolate order effects. Deformation tangents test protection before expensive global physical work. Failed representations should return distinguishing words,unclosed polynomial coefficients,duplicate auxiliary extensions,divisibility failures,hidden target vectors,failed metric conditions,or allowed perturbations breaking a relation.
+
+The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; automatic symbolic rank-locus discovery,full local sieving,Smith form,Hankel word realization,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
+
+The master interface should record a domain,questions,state representation,legal operations,weights,exact identities,error bounds,source maps,obstructions,costs,and evidence. A new application adds an adapter and its preserved questions. It must not acquire correctness from its similarity to an older application. The decisive reuse is an executable identity with matching assumptions.
+''',
+'23_status_corrections_and_frontiers':r'''# Corrections, missing sources, and remaining frontiers
+
+This repository preserves content by recording corrections rather than deleting awkward history. Exact checked means rational/cyclotomic replay in the supplied Python tests; numerical checked means floating evidence; derived means a stated mathematical argument; historical report means a prior claim not freshly reproduced; proposal/open/conditional/rejected retain their plain meanings. No status means new Lean verification.
+
+Key corrections are the HLR source sign/factor2; singular vectors versus invariant modes; PSG multiplier factor2,A<1/2 contradiction,cofactor D versus D/v,finite-degree versus global Darboux classification,root jets versus origin germ,Puiseux sign,flip versus involution; dyadic Weil model mismatch; complete Gauss sum versus full/partial blocks; penalty versus PSD kernel; finite part versus quantum volume; all-embedding regulator cancellation; discriminant versus field identity; numerical orbit matching versus an exact orbit proof; integer saturation versus rational span; and deterministic error versus empirical predictive uncertainty.
+
+Missing originals remain explicit: the separately named arithmetic GCD-kernel construction; complete master.txt; full SOE original archives; FF7 opcode archive; original PSG26/100-term coefficients and full prolonged numerator; complete PADD/PSC corner-case semantics; chemical/aerosol reaction-rate tables; full BLAST recurrence/adapters/corpus; original definitions for the coefficient7 CKM polynomial and N,K,t,J; radar bytes; original Petersen50 resource data and DAG. A filename or workflow title is not mathematical evidence for these items.
+
+The strongest finite executable contributions in0.1.0 are observable-space closure and hidden witnesses,partial-machine equivalence,polynomial-feature span replay,residual selection counts/rank/unrank/ties,weighted aggregation checks,energy balance,jet composition/Riccati residuals,corrected PSG root replay,cyclotomic coefficient recurrence,transvectant active census,and exact cubic coefficient-field identities. Archive algorithms are preserved as upstream source text and are not automatically included in the runnable trusted core.
+
+Formal frontiers include unrestricted rank-locus certificates over Q,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
+'''
+}
+
+def build():
+    folder=ROOT/'docs/chapters';folder.mkdir(parents=True,exist_ok=True)
+    for name,text in CHAPTERS.items():
+        (folder/(name+'.md')).write_text(text.strip()+'\n')
+    print(len(CHAPTERS),'master chapters written')
+
+if __name__=='__main__':build()

@@ -1,0 +1,586 @@
+<PARSED TEXT FOR PAGE: 1 / 20>
+Hahn Stratification of Weyl-Exact Monomial Brackets
+Final form: theorem, tables, and classification boundary
+Working manuscript generated from exact symbolic tables
+June 29, 2026
+Abstract
+This manuscript gives the final professional form of the monomial Weyl-exactness program. For
+monomials q
+ap
+b and q
+cp
+d
+, every odd order of the normalized Moyal bracket contributes a single
+monomial multiplied by an explicit integer coefficient Sk. Equivalently, Sk is a terminating Hahn-type
+hypergeometric value 3F2(1). Exact preservation of the Poisson bracket is therefore a finite arithmetic
+zero problem: all odd coefficients S3, S5, . . . , Sκ must vanish, where κ = min(a, d)+min(b, c). The exact
+sector splits into the degree-safe region, antisymmetric self-pairs, balanced qp-families, and a sparse
+nonzero-Poisson Hahn-ray sector. The first accidental layer, κ = 4, is classified algebraically by branch
+factorization. Targeted exact integer search through total degree D = 80 finds no nonzero-Poisson
+exact pairs outside those four κ = 4 rays and ordered reversals. The canonical Groenewold witnesses
+form rigid all-order towers with no rung cancellation, while higher-κ cubic cancellations are shown to be
+decoys destroyed by S5 or later coefficients. All numerical tables are computed by exact integer/rational
+arithmetic; floating-point decimals, where displayed, are presentational only.
+1 Core calculus
+Let
+Ma,b = q
+a
+p
+b
+, Nc,d = q
+c
+p
+d
+,
+with a, b, c, d ∈ N. The Poisson bracket is
+{Ma,b, Nc,d} = (ad − bc)q
+a+c−1
+p
+b+d−1
+.
+The scalar ad − bc is the classical area determinant of the exponent vectors (a, b) and (c, d). It separates
+ordinary Poisson-zero commutation from the genuinely interesting case where the classical flow is nonzero
+but the Moyal correction nevertheless vanishes.
+Define the finite order bound
+κ(a, b, c, d) = min(a, d) + min(b, c).
+The normalized Moyal bracket has the finite expansion
+1
+iℏ
+[Ma,b, Nc,d]⋆ =
+X
+k≤κ
+k odd
+(−1)(k−1)/2ℏ
+k−1
+2
+k−1k!
+Sk(a, b, c, d)q
+a+c−k
+p
+b+d−k
+,
+where
+Sk(a, b, c, d) = X
+k
+r=0
+(−1)r
+
+k
+r
+
+(a)k−r(b)r(c)r(d)k−r.
+1
+<PARSED TEXT FOR PAGE: 2 / 20>
+Here (x)m = x(x − 1)· · ·(x − m + 1) is the falling factorial. The same coefficient may be written as the
+terminating Hahn-type value
+Sk = (a)k(d)k 3F2
+
+−k, −b, −c
+a − k + 1, d − k + 1; 1
+,
+understood as the finite polynomial identity above whenever denominator parameters hit nonpositive
+integers.
+Definition 1 (Weyl-exact monomial pair). A pair (Ma,b, Nc,d) is Weyl-exact if
+1
+iℏ
+[Ma,b, Nc,d]⋆ = {Ma,b, Nc,d}.
+Equivalently,
+Sk(a, b, c, d) = 0 for every odd k ∈ {3, 5, . . . , κ}.
+The exactness locus is therefore the arithmetic stratification
+E = {(a, b, c, d) ∈ N
+4
+: S3 = S5 = · · · = Sκ = 0},
+where the active equation set changes with κ. This is the central professional object: Weyl exactness is a
+finite Hahn-zero problem, not merely a qualitative no-go theorem.
+2 Theorem map
+Table 1: The core professional theorem map.
+Theorem Formula / condition Status Meaning
+Universal coefficient
+theorem
+S
+Pk =
+r
+(−1)r
+k
+r
+
+(a)k−r(b)r(c)r(d)k−r
+Proved by the finite bidifferen￾tial Moyal product and equiva￾lently expressible as terminating
+3F2(1).
+Every monomial bracket or￾der is a one-scalar arithmetic
+coefficient.
+Exactness criterion S3 = S5 = · · · = Sκ = 0 Finite because
+kappa=min(a,d)+min(b,c).
+Classification becomes inte￾ger geometry on Hahn-zero
+hypersurfaces.
+Safe-zone theorem κ ≤ 2 ⇒ exact There is no room for the cu￾bic bidifferential. This is the
+operational mechanism behind
+affine-quadratic exactness.
+Safe exactness is an order￾count fact, not a mysterious
+metaplectic exception.
+κ = 4 classification branch factorization of S3 Complete for nonzero-Poisson
+pairs: four rays and ordered
+reversals.
+This is the first accidental
+exact stratum and the first
+real theorem beyond census.
+Rigid pure-power tower ∆ℏ(q
+n, pn) =
+P
+j≥1
+(−1)jℏ
+2j
+4j (2j+1)! [(n)2j+1]
+2
+(qp)
+n−2j−1
+Closed form; depth floor((n￾1)/2).
+Groenewold failure is a
+tower, not a single cubic
+anecdote.
+Rigid route inconsis￾tency
+Gn =
+P
+j≥1
+(−1)jℏ
+2j
+4j (2j+1)! 2j(2n −
+2j − 1)[(n)2j+1]
+2
+(qp)
+n−2j−1
+The multiplier 2j(2n-2j-1) is
+positive on every admissible
+rung.
+Canonical route mismatch
+has no hidden rung cancella￾tion.
+Global Hahn-ray con￾jecture
+nonzero-Poisson exactness =
+four κ = 4 rays + symmetries
+Supported by targeted exact
+search through D=80, not glob￾ally proved.
+The remaining theorem
+target is to eliminate higher￾kappa Hahn intersections.
+The map separates what is already theorem-level from what remains conjectural. The final boundary
+is intentionally sharp: κ = 4 is classified; the global absence of higher-κ nonzero-Poisson exactness is
+supported by exact search, but is not yet claimed as a proof.
+3 Degree-cutoff census
+2
+<PARSED TEXT FOR PAGE: 3 / 20>
+Table 2: Ordered monomial-pair census by total-degree cutoff.
+D monomials ordered pairs EXACT CENTRAL NONCENTRAL exact rate interpretation
+0 1 1 1 0 0 100.000000% All ordered pairs are exact because no cubic bidifferential order
+can be admitted.
+1 3 9 9 0 0 100.000000% All ordered pairs are exact because no cubic bidifferential order
+can be admitted.
+2 6 36 36 0 0 100.000000% All ordered pairs are exact because no cubic bidifferential order
+can be admitted.
+3 10 100 96 4 0 96.000000% The first cubic scalar defects appear; exactness remains domi￾nant but no noncentral defects exist yet.
+4 15 225 193 4 28 85.777778% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+5 21 441 327 4 110 74.149660% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+6 28 784 504 4 276 64.285714% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+7 36 1,296 712 4 580 54.938272% This is the original atlas scale: EXACT 712, CENTRAL 4,
+NONCENTRAL 580.
+10 66 4,356 1,576 4 2,776 36.179982% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+12 91 8,281 2,337 4 5,940 28.221229% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+15 136 18,496 3,756 4 14,736 20.307093% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+20 231 53,361 6,881 4 46,476 12.895186% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+25 351 123,201 10,931 4 112,266 8.872493% Generic higher-degree pairs enter the NONCENTRAL sector;
+exactness is increasingly sparse.
+30 496 246,016 15,944 4 230,068 6.480879% The exact sector has become a thin arithmetic skeleton while
+CENTRAL remains frozen at four ordered pairs.
+40 861 741,321 28,749 4 712,568 3.878077% The exact sector has become a thin arithmetic skeleton while
+CENTRAL remains frozen at four ordered pairs.
+3
+<PARSED TEXT FOR PAGE: 4 / 20>
+The census shows three stable facts. First, exactness is complete for D ≤ 2 and nearly complete at the
+first cubic boundary. Second, CENTRAL remains frozen at four ordered pairs after D = 3. Third, almost
+all new high-degree mass is NONCENTRAL. Thus the central Groenewold witness is not representative
+of the generic high-degree failure; it is the scalar tip of a much larger noncentral obstruction sector.
+4 Exact-sector decomposition
+4
+<PARSED TEXT FOR PAGE: 5 / 20>
+Table 3: Exact-sector decomposition by mechanism.
+D safe κ ≤ 2 self nonsafe balanced nonsafe Hahn nonzero-Poisson other Poisson-zero EXACT interpretation
+3 96 0 0 0 0 96 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+4 192 1 0 0 0 193 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+5 324 3 0 0 0 327 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+6 492 6 2 4 0 504 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+7 696 10 2 4 0 712 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+10 1,524 28 12 12 0 1,576 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+20 6,624 153 72 32 0 6,881 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+30 15,324 378 182 60 0 15,944 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+40 27,624 703 342 80 0 28,749 The equality is exact in the computed window: safe + self
++ balanced + Hahn-ray + residual Poisson-zero structure
+equals EXACT.
+5
+<PARSED TEXT FOR PAGE: 6 / 20>
+For the computed window, exactness decomposes into named mechanisms. The safe term is order-theoretic;
+the self term is bracket antisymmetry; the balanced term is exact commutation of functions of qp; the
+Hahn term is the genuine nonzero-Poisson accident. The formula visible in the table is
+E(D) = S(D) + I(D) + B(D) + H(D) + R(D),
+where R(D) is the residual Poisson-zero structural sector recorded in the exact tables. The nonzero-Poisson
+contribution obeys the ray count
+H(D) = 4 
+D − 2
+4
+
++ 4 
+D − 3
+3
+
+− 4
+for D ≥ 6 in the computed range.
+5 κ-strata
+6
+<PARSED TEXT FOR PAGE: 7 / 20>
+Table 4: κ-strata at total-degree cutoff D = 40.
+κ ordered pairs EXACT CENTRAL NONCENTRAL exact Poisson-zero exact nonzero-Poisson interpretation
+0 4,921 4,921 0 0 4,921 0 Safe stratum: every pair is exact because only the Poisson
+term can occur.
+1 9,362 9,362 0 0 0 9,362 Safe stratum: every pair is exact because only the Poisson
+term can occur.
+2 13,341 13,341 0 0 115 13,226 Safe stratum: every pair is exact because only the Poisson
+term can occur.
+3 16,876 0 4 16,872 0 0 First obstruction: no exact pairs and exactly four central
+scalar defects.
+4 19,985 189 0 19,796 109 80 First accidental layer: exact nonzero-Poisson pairs appear,
+all on the classified Hahn rays.
+5 22,686 0 0 22,686 0 0 No exact pairs in the D=40 census.
+6 24,997 103 0 24,894 103 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+7 26,936 0 0 26,936 0 0 No exact pairs in the D=40 census.
+8 28,521 97 0 28,424 97 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+9 29,770 0 0 29,770 0 0 No exact pairs in the D=40 census.
+10 30,701 91 0 30,610 91 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+11 31,332 0 0 31,332 0 0 No exact pairs in the D=40 census.
+12 31,681 85 0 31,596 85 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+20 26,481 61 0 26,420 61 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+30 10,261 31 0 10,230 31 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+40 41 1 0 40 1 0 Only Poisson-zero structural exactness survives; all
+nonzero-Poisson pairs are defective.
+7
+<PARSED TEXT FOR PAGE: 8 / 20>
+The κ table is the structural heart of the computation. The strata κ = 0, 1, 2 are safe. The stratum
+κ = 3 is rigidly obstructed, with exactly four scalar defects and no exact nonzero-Poisson points. The
+stratum κ = 4 is the only stratum in the table where nonzero-Poisson exactness survives. At higher even
+κ, exactness is Poisson-zero only; at higher odd κ, no exactness appears in the displayed window. This
+strongly suggests that the nonzero-Poisson exact sector is a low-order Hahn-ray phenomenon rather than
+a growing high-order family.
+6 The first accidental stratum: complete κ = 4 branch split
+Set
+s = min(a, d), t = min(b, c), s + t = 4.
+On this stratum, exactness requires only S3 = 0. Branch factorization gives the following complete split.
+8
+<PARSED TEXT FOR PAGE: 9 / 20>
+Table 5: Complete branch factorization of S3 = 0 on κ = 4.
+(s, t) branch constraints S3 factor admissible zero classification
+(1,3) a=1,b=3 d¿=1, c¿=3 -6 c (c-1) (c-3 d-2) c=3*d+2 nonzero-Poisson A ray: qpˆ3 vs
+qˆ(3d+2)pˆd
+(1,3) a=1,c=3 d¿=1, b¿=3 -6 b (b-1) (b-3 d-2) b=3*d+2 orientation/symmetry ray
+(1,3) d=1,b=3 a¿=1, c¿=3 6 c (c-1) (3 a-c+2) c=3*a+2 orientation/symmetry ray
+(1,3) d=1,c=3 a¿=1, b¿=3 6 b (b-1) (3 a-b+2) b=3*a+2 orientation/symmetry ray
+(2,2) a=2,b=2 c¿=2, d¿=2 12 c d (c-d) c=d balanced Poisson-zero only
+(2,2) a=2,c=2 b¿=2, d¿=2 12 b d (b-d) b=d balanced Poisson-zero only
+(2,2) d=2,b=2 a¿=2, c¿=2 -12 a c (a-c) a=c balanced Poisson-zero only
+(2,2) d=2,c=2 a¿=2, b¿=2 -12 a b (a-b) a=b balanced Poisson-zero only
+(3,1) a=3,b=1 d¿=3, c¿=1 -6 d (d-1) (3 c-d+2) d=3*c+2 nonzero-Poisson B-dual ray
+(3,1) a=3,c=1 d¿=3, b¿=1 -6 d (d-1) (3 b-d+2) d=3*b+2 nonzero-Poisson B ray
+(3,1) d=3,b=1 a¿=3, c¿=1 6 a (a-1) (a-3 c-2) a=3*c+2 nonzero-Poisson B ray
+(3,1) d=3,c=1 a¿=3, b¿=1 6 a (a-1) (a-3 b-2) a=3*b+2 nonzero-Poisson B-dual ray
+(4,0) a=4,b=0 d¿=4, c=0 or ¿=0 with
+min(b,c)=0
+24 d (d-1) (d-2) no admissible zero since
+d¿=4
+none
+(4,0) d=4,b=0 a¿=4, c=0 or ¿=0 with
+min(b,c)=0
+24 a (a-1) (a-2) no admissible zero since
+a¿=4
+none
+(0,4) a=0,b=4 d=0 or ¿=0 with
+min(a,d)=0, c¿=4
+-24 c (c-1) (c-2) no admissible zero since
+c¿=4
+none
+(0,4) d=0,c=4 a=0 or ¿=0 with
+min(a,d)=0, b¿=4
+-24 b (b-1) (b-2) no admissible zero since
+b¿=4
+none
+9
+<PARSED TEXT FOR PAGE: 10 / 20>
+The table proves the first classification theorem. The (2, 2) branch yields only balanced Poisson-zero
+exactness. The edge branches (4, 0) and (0, 4) have algebraic roots that are killed by admissibility. Only
+(1, 3) and (3, 1) produce nonzero-Poisson exactness, and those zeros are linear rays.
+Theorem 1 (κ = 4 nonzero-Poisson classification). Let Ma,b and Nc,d be obstruction-capable monomials
+with κ = 4 and ad − bc ̸= 0. Then the pair is Weyl-exact if and only if, up to ordered reversal and q/p
+duality, it lies on one of the four ray families
+qp3
+against q
+3r+2p
+r
+, q3
+p against q
+r
+p
+3r+2
+,
+q
+3
+p
+r
+against qp3r+2, qr
+p
+3
+against q
+3r+2p, r ≥ 1.
+7 The four nonzero-Poisson rays
+10
+<PARSED TEXT FOR PAGE: 11 / 20>
+Table 6: The four nonzero-Poisson Hahn-exact rays.
+ray monomial pair κ S3 Poisson bracket meaning
+A qp3, q3r+2pr 4 0 −(8r + 6)q3r+2pr+2 Primitive ray from the branch a=1,b=3; exactness is
+complete because S5 is not active.
+A-dual q3p, qrp3r+2 4 0 +(8r + 6)qr+2p3r+2 The q/p dual ray, with the same arithmetic cancellation
+and opposite orientation.
+B q3pr, qp3r+2 4 0 +(8r + 6)q3p4r+1 The (3,1) branch ray; nonzero Poisson scalar and no
+higher active obstruction.
+B-dual qrp3, q3r+2p 4 0 −(8r + 6)q4r+1p3 The remaining q/p-dual and orientation-symmetric ray.
+11
+<PARSED TEXT FOR PAGE: 12 / 20>
+These rays are the genuinely new exact sector. They are not Poisson-zero, not self-pairs, and not
+degree-safe. They are exact because the first available quantum correction has a Hahn-zero coefficient
+and no later correction exists.
+8 Higher-κ decoys: S3 = 0 is not enough
+12
+<PARSED TEXT FOR PAGE: 13 / 20>
+Table 7: Representative higher-κ pairs with S3 = 0 but not exact.
+quadruple (a, b, c, d) κ S3 first failed odd k failed coefficient interpretation
+(1,4,5,2) 5 0 5 28,800 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,8,4) 5 0 5 806,400 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,11,6) 5 0 5 5,702,400 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,14,8) 5 0 5 23,063,040 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,17,10) 5 0 5 68,544,000 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,20,12) 5 0 5 167,443,200 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,23,14) 5 0 5 357,033,600 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,26,16) 5 0 5 688,896,000 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,29,18) 5 0 5 1,231,251,840 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,32,20) 5 0 5 2,071,296,000 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,35,22) 5 0 5 3,317,529,600 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+(1,4,38,24) 5 0 5 5,102,092,800 S3-zero is a false positive; exactness fails at the first listed higher
+odd order.
+13
+<PARSED TEXT FOR PAGE: 14 / 20>
+A representative symbolic family is
+(a, b, c, d) = (1, 4, 3r + 2, 2r), r ≥ 1.
+It satisfies S3 = 0, but
+S5 = 720r
+2
+(3r − 1)(3r + 1)(3r + 2),
+which is nonzero for every r ≥ 1. This is the cleanest proof-of-concept for the decoy principle: cubic
+cancellation is only the first gate. Exactness requires survival through the whole active Hahn tower.
+9 Targeted D = 80 nonzero-Poisson search
+14
+<PARSED TEXT FOR PAGE: 15 / 20>
+Table 8: Nonzero-Poisson S3-zero statistics through total-degree cutoff D = 80.
+κ nonzero-Poisson tested S3 = 0 exact meaning
+3 71,828 0 0 No cubic cancellation in the nonzero-Poisson tested set.
+4 87,396 172 172 Every S3-zero pair is exact because the tower stops before S5.
+5 102,338 184 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+6 116,030 468 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+7 129,408 144 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+8 141,452 136 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+9 153,022 224 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+10 163,538 104 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+11 173,692 72 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+12 182,416 144 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+13 191,186 64 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+14 198,582 68 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+15 205,528 76 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+16 211,760 48 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+17 217,610 8 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+18 222,186 32 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+19 226,800 20 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+20 230,164 20 0 Cubic cancellation occurs, but the pair fails at S5 or a later odd coefficient.
+15
+<PARSED TEXT FOR PAGE: 16 / 20>
+The exact search through D = 80 examined 10, 903, 844 obstruction-capable nonzero-Poisson ordered
+pairs. It found 2, 424 pairs on the cubic surface S3 = 0, but only 172 were exact. Every exact pair lies on
+the four κ = 4 rays and ordered reversals. The table does not prove global absence of higher-κ exact
+families, but it makes the conjectural boundary precise.
+Conjecture 1 (Global nonzero-Poisson Hahn-ray classification). Every Weyl-exact monomial pair with
+nonzero Poisson bracket is generated, up to ordered reversal and q/p duality, by the four κ = 4 Hahn rays
+listed above.
+10 The four central defects
+Table 9: The four ordered central defects.
+first monomial second monomial κ Poisson scalar S3 Moyal correction
+p
+3 q
+3 3 -9 -36 +3ℏ
+2/2
+qp2 q
+2p 3 -3 12 −ℏ
+2/2
+q
+2p qp2 3 3 -12 +ℏ
+2/2
+q
+3 p
+3 3 9 36 −3ℏ
+2/2
+The central correction column uses −ℏ
+2S3/24. These four pairs are the scalar cubic core of the Groenewold
+obstruction. The census shows that this sector does not grow with total-degree cutoff; higher-degree
+obstruction is overwhelmingly noncentral.
+11 Rigid towers
+16
+<PARSED TEXT FOR PAGE: 17 / 20>
+Table 10: Leading coefficients for the pure-power defect and route inconsistency
+towers.
+n depth pure ℏ
+2 coeff abs pure route ℏ
+2 coeff abs route multiplier pure top central
+3 1 -3/2 1.5 -9 9 6 yes
+4 1 -24 24 -240 240 10 no
+5 2 -150 150 -2100 2100 14 yes
+6 2 -600 600 -10800 10800 18 no
+7 3 -3675/2 1837.5 -40425 40425 22 yes
+8 3 -4704 4704 -122304 122304 26 no
+9 4 -10584 10584 -317520 317520 30 yes
+10 4 -21600 21600 -734400 734400 34 no
+11 5 -81675/2 40837.5 -1551825 1551825 38 yes
+12 5 -72600 72600 -3049200 3049200 42 no
+15 7 -621075/2 310537.5 -16769025 16769025 54 yes
+20 9 -1949400 1949400 -144255600 144255600 74 no
+25 12 -7935000 7935000 -745890000 745890000 94 yes
+30 14 -24725400 24725400 -2818695600 2818695600 114 no
+17
+<PARSED TEXT FOR PAGE: 18 / 20>
+For pure powers,
+∆ℏ(q
+n
+, pn
+) = X
+j≥1
+(−1)jℏ
+2j
+4
+j (2j + 1)![(n)2j+1]
+2
+(qp)
+n−2j−1
+.
+The leading coefficient is exactly
+−
+[n(n − 1)(n − 2)]2
+24
+.
+For the scaled route inconsistency,
+Gn =
+X
+j≥1
+(−1)jℏ
+2j
+4
+j (2j + 1)!2j(2n − 2j − 1)[(n)2j+1]
+2
+(qp)
+n−2j−1
+.
+At leading order the route coefficient is (4n − 6) times the pure-power leading coefficient. At every rung
+the multiplier 2j(2n − 2j − 1) is positive on the admissible range, so the canonical route inconsistency
+has no hidden cancellation.
+12 Numerical-stability envelope
+The cancellation coordinate belongs as a numerical-analysis appendix, not as the main theorem. For an
+expanded polynomial sum, define
+fake bits = log2
+P
+k
+|ckx
+k
+|
+|
+P
+k
+ckx
+k|
+.
+Recursive summation in IEEE double satisfies the one-sided envelope
+measured(x) ≤ fake bits(x) + log2
+γN
+ε
+, γN =
+Nu
+1 − Nu
+.
+Thus the cancellation coordinate is not merely a fitted stress signal; it is a certified upper envelope up to
+an explicit Higham slack.
+18
+<PARSED TEXT FOR PAGE: 19 / 20>
+Table 11: Representative cancellation-envelope samples.
+n delta fake bits measured bits gap envelope meaning
+6 1e-02 45.906310147074 40.348947908109 -5.557362238964 1.807354922058 Envelope holds; observed gap is below the bound.
+8 1e-02 61.208413529431 58.719196644789 -2.489216884643 2.169925001442 Envelope holds; observed gap is below the bound.
+10 1e-02 76.510516911789 72.082416788057 -4.428100123732 2.459431618637 Envelope holds; observed gap is below the bound.
+12 1e-02 91.812620294147 85.876021396710 -5.936598897437 2.700439718141 Envelope holds; observed gap is below the bound.
+14 1e-02 107.114723676505 103.405230246274 -3.709493430231 2.906890595609 Envelope holds; observed gap is below the bound.
+16 1e-02 122.416827058863 118.684052870060 -3.732774188803 3.087462841250 Envelope holds; observed gap is below the bound.
+18 1e-02 137.718930441221 135.959008762224 -1.759921678997 3.247927513444 Envelope holds; observed gap is below the bound.
+20 1e-02 153.021033823579 145.387146154308 -7.633887669270 3.392317422779 Envelope holds; observed gap is below the bound.
+22 1e-02 168.323137205936 162.372060262720 -5.951076943216 3.523561956057 Envelope holds; observed gap is below the bound.
+24 1e-02 183.625240588294 179.125020513227 -4.500220075068 3.643856189775 Envelope holds; observed gap is below the bound.
+19
+<PARSED TEXT FOR PAGE: 20 / 20>
+13 Final professional boundary
+The final form is the following. Weyl exactness on monomial pairs is a finite Hahn-zero stratification.
+Generic monomial pairs above the safe zone fail exactness and acquire noncentral Moyal corrections. The
+canonical Groenewold witnesses do not merely fail once; they form rigid all-order towers. Nevertheless,
+exact classical behavior persists on sparse arithmetic strata: safe pairs, self-pairs, balanced qp-families,
+and the classified nonzero-Poisson κ = 4 Hahn rays.
+The proved part is the coefficient theorem, exactness criterion, safe-zone mechanism, central cubic defect
+list, pure-power tower, route inconsistency tower, and the complete κ = 4 nonzero-Poisson classification.
+The conjectural part is global: that no higher-κ Hahn intersection produces additional nonzero-Poisson
+exact families. The exact D = 80 search and the symbolic S5 decoy family make that conjecture precise
+and testable.
+Groenewold failure is generic and tower-rigid; Weyl exactness survives only on sparse Hahn-zero strata.
+20

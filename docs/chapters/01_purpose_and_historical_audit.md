@@ -1,0 +1,11 @@
+# Purpose and historical audit
+
+PerfectJet is the master repository for the mathematical program assembled in the October 14, 2026 conversation. It preserves the first categorized audit, equation-mining pass, first enhancement program, second archival pass, and second enhancement program. It supplies executable exact kernels where the present evidence supports them, and records the remaining work without silently converting proposals into theorems.
+
+The strongest historical pattern is arithmetic and operator structure at the boundary between a sufficient representation and a failed representation. Computational arithmetic geometry is the strongest traditional subject. Spectral structure, effective dimension, exact populations, observability, and closure make the broader program. This assessment is an interpretation of the recovered requests and discussions, not an objective numerical ranking of interests.
+
+The chronology reaches SYMMETRON in February 2025; MMHW in May; Harsh-Lattice, crystalline receipts, and master-program discussions in August; tau-Crystal in September; IMP, MEF, Arithmetic Shadow, subdivision and Pisot work in November; Finsler escape and transformer studies in December; thermal spectra in January 2026; prefix arithmetic in February; PSG jets and walls in March-April; PhaseNet, conductors, collision zeta, fault graphs, closure stress, and Weyl exactness in June; Shadow-Core and Morphonic in July; flux population work in August; WIND and PerfectPower in September; and DynaComp, allocation, games, BLAST, physics, and NFL in October. Dates identify recovered activity, not project inception.
+
+The complete equation registry is machine-readable in `data/equations.json`. The topic census is in `data/topics.json`. Every archival extract has a source entry and byte hash in `archive/SOURCES.json`. Hashes identify these extracted/reconstructed bytes; they do not pretend to hash inaccessible original DOCX/PDF packages.
+
+The repository intentionally preserves negative findings. A plausible reduction can fail on invariance; a norm-square condition can fall short of Selmer membership; an operator block can fail contraction; a finite-part equality can fail scaling; a movement feature can fail held-out prediction. A failure is retained as a mathematical object that directs the next step.

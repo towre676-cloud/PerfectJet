@@ -1,0 +1,11 @@
+# Collision arithmetic, root-of-unity closure, and finite parts
+
+The valuation kernel $\kappa(m,n)=\sum_pv_p(m)v_p(n)$ is symmetric and additive under multiplication. It vanishes exactly for coprime positive integers. kappa(72,108)=12. The divisor rank polynomial $R_n(q)=\prod_p(1+...+q^{v_p(n)})$ yields $F_{m,n}=R_mR_n-R_{mn}$ and at1 gives tau(m)tau(n)-tau(mn). For12,18 the36 divisor pairs map to16 product divisors; the surplus is20. The p3,p2 fibre profile is1,2,3,3,2,1.
+
+The collision zeta $Z_t(s)=\sum_{m,n}e^{t\kappa(m,n)}(mn)^{-s}$ has Euler factors $\sum_{a,b}e^{tab}p^{-s(a+b)}$. For real t>0, the a=b=N terms fail to vanish, so it diverges. For t<=0 and Re(s)>1 it converges absolutely. At t->-infinity only coprime pairs survive, giving zeta(s)^2/zeta(2s) and H(1)->6/pi2. Reported H_t(1) at0,-.25,-.5,-1,-2,-4,-8 is1,.814101,.738157,.670474,.626911,.610278,.607970. Count asymptotics require original analytic hypotheses.
+
+At zeta_L, exact residue splitting gives $L_L(x)=N_L(x)/(1-x^L)^2$, $N_L=\sum_{r,s<L}\zeta_L^{rs}x^{r+s}$. N(0)=1,N(1)=L,top coefficient zeta_L. For n=dL+r, a_n=dG_r+B_r, with complete and partial quadratic sums G,B. Hence a_{n+2L}-2a_{n+L}+a_n=0. The implementation checks direct coefficients and numerator convolution in exact cyclotomic quotient rings; it answers an index10^100 without iteration through prior indices. The archived blanket complete-Gauss coefficient claim is repaired by retaining partial blocks.
+
+The higher-rank archive uses log Z=r log zeta(Ls)+sum a_m P(ms), a1=r zeta_L, and branch-stripped FP=zeta(L)^r product_p[N(1/p)e^{-a1/p}]. If the tail logarithm satisfies abs(r_p)<=C/p2 beyond a cutoff, omitted log tail<=C/P and multiplicative error<=exp(C/P)-1. Explicit C, finite zero factors, and logarithm branches are needed; no generic tail certificate is manufactured.
+
+Negative collision suppression e^{-beta kappa} is not PSD: on{1,2} the determinant is e^{-beta}-1<0. A positive geometric kernel is exp(-beta norm(v(m)-v(n))2), factorizing into two norm weights times e^{2beta kappa}. The two serve different roles. Prime-product FP versus quantum D2 failed the retained low-height projection sweep; the separate conductor volume carries growth. Keep this negative finding.

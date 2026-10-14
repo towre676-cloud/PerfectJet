@@ -1,0 +1,2 @@
+# Preserve extracted archival whitespace; canonical source remains normally checked.
+archive/extracted/* whitespace=-blank-at-eof

@@ -1,0 +1,366 @@
+{
+  "schema": "perfectjet/release-manifest/1",
+  "version": "0.1.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "9bc507930e3d30b8621515405b87297669f8fb307d15184eafc8edd49e59dba3",
+      "size_bytes": 130
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "sha256": "a864f18bfa46704306d3dba4c2db46326417f2de21496a4e3009fa4b1ae1ae12",
+      "size_bytes": 623
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "f2110b963e75fa83f054119c3f4d2b872e01daa8949ec2530537b9724d5a9b9c",
+      "size_bytes": 70
+    },
+    {
+      "path": "README.md",
+      "sha256": "c019364438455863cff296855af11e41987a499ac2a916cf25325d62dd64f453",
+      "size_bytes": 3119
+    },
+    {
+      "path": "archive/README.md",
+      "sha256": "78dee5de057c57a4826a658dd2158442313c2bd9c542cee65e3f1a0f73faee57",
+      "size_bytes": 1234
+    },
+    {
+      "path": "archive/SOURCES.json",
+      "sha256": "2c56a1f5cda2ceadaaad2b58c8a78452edde3a7d0a351ee1668f5c47a2e76b64",
+      "size_bytes": 2931
+    },
+    {
+      "path": "archive/SOURCE_METADATA.json",
+      "sha256": "4a9df60d8f144ec193037f58a7c229b4770176685ba62d42da17025ff8629aae",
+      "size_bytes": 2043
+    },
+    {
+      "path": "archive/extracted/PSG_Schroeder_Wall_v2_2.txt",
+      "sha256": "a983d289d9d47a64fbb6a7a9d216676da836e7210a687100359f0a04b8a40808",
+      "size_bytes": 83838
+    },
+    {
+      "path": "archive/extracted/PSG_ZeroDim_v1_3.txt",
+      "sha256": "7db2e386662edfa2b08bf6d404ebab051c90104af4fad3c036440eda571a0942",
+      "size_bytes": 34179
+    },
+    {
+      "path": "archive/extracted/hahn_stratification_final_form_extracted.txt",
+      "sha256": "dadedef9229dbb7ec564ecdb0270cce94c328ffd56243d539216fb35c863f62d",
+      "size_bytes": 24499
+    },
+    {
+      "path": "archive/extracted/level_deformation_selected_sections.html",
+      "sha256": "e8a18ba3dc7b9b0a388897c3e0cc84c1597133466c40121f460a494447b587a4",
+      "size_bytes": 108091
+    },
+    {
+      "path": "archive/extracted/motivic_deformation_laboratory_v1_55_0.html",
+      "sha256": "8536508493e900b42ca1be0d7e3d1af92130ff3c5dd3e731b95ba9d5d99e365b",
+      "size_bytes": 17478
+    },
+    {
+      "path": "archive/extracted/shadow_core_lift_beyond_monograph.html",
+      "sha256": "f7dbfbca10938aa487fd29f2d822ce0cdd2d46dc2ddd15bac308186774f264cb",
+      "size_bytes": 103758
+    },
+    {
+      "path": "archive/extracted/transvectant_rank_loci_exact_status.md",
+      "sha256": "a88a7d26f3c8864292de0069fa6a44b97a532bffcc4d6acfa16769407c9b7a48",
+      "size_bytes": 6059
+    },
+    {
+      "path": "archive/extracted/verify_transvectant_rank_loci.py",
+      "sha256": "c75d36565ce1c054b9ca292bf29d5dd788b3554ce649ac76c7e3b8e4e25f992e",
+      "size_bytes": 5828
+    },
+    {
+      "path": "archive/session/coverage.json",
+      "sha256": "a49a946e56d601c063fc830c724648f9f6980af71a1b4caade402659437d6d44",
+      "size_bytes": 1451
+    },
+    {
+      "path": "data/equations.json",
+      "sha256": "5055629123f2e556b9336fb77f695ed503b1f3046edf63051203ac87b447d81c",
+      "size_bytes": 102682
+    },
+    {
+      "path": "data/topics.json",
+      "sha256": "40cdc7ff52304d4e0c5f66af33b38b4481de783bf9709024b8ce1dfa1f4c702d",
+      "size_bytes": 115211
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "4860d11d10b67d51ebb0d17a23982932f8f10faa739be2d8476a3e5b2d42b40d",
+      "size_bytes": 2305
+    },
+    {
+      "path": "docs/COVERAGE_MAP.md",
+      "sha256": "4dff8f4d4d26408b3ffef4a2c025f8e82bdd9c7eba5b852abd23c995ce89a88d",
+      "size_bytes": 62957
+    },
+    {
+      "path": "docs/EQUATION_ATLAS.md",
+      "sha256": "bc60674a446e2fa8edeb0e4b88162c06f157180357f729cedbd6d42a7d08d003",
+      "size_bytes": 44157
+    },
+    {
+      "path": "docs/MONOGRAPH.md",
+      "sha256": "14721da8274e3ee7c0ffb48ef0e83a79ee2ac7acc0cb492118d300158ca5306b",
+      "size_bytes": 115408
+    },
+    {
+      "path": "docs/QUICKSTART.md",
+      "sha256": "f4f60042fbb26d3ebd859404a79a0d8fbe6702a7e4dcc5c655efd5ebd6fb9ca7",
+      "size_bytes": 1754
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "sha256": "2cb001575871497fb13e23fd5b35eadd82fc2962699cd77cbec752e9c2f8f33e",
+      "size_bytes": 1575
+    },
+    {
+      "path": "docs/chapters/01_purpose_and_historical_audit.md",
+      "sha256": "526fed5f821170283eb90c54a541874cb117806f2fe05a57e06064b8c9e121a6",
+      "size_bytes": 2332
+    },
+    {
+      "path": "docs/chapters/02_arithmetic_geometry.md",
+      "sha256": "cc2807bd2218919168828030cd44d2d01629d889c64b2504c0dc172caae4f116",
+      "size_bytes": 2364
+    },
+    {
+      "path": "docs/chapters/03_pell_orbits_and_transport.md",
+      "sha256": "af228c218c72401675e9b6dbc3c205823956f675dc18d3552276cd66cbedda80",
+      "size_bytes": 2085
+    },
+    {
+      "path": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "sha256": "07ac74b033074cb5df79c05c4bc73f8917d9008b5454e4e5a9a85acbe2ce3683",
+      "size_bytes": 2005
+    },
+    {
+      "path": "docs/chapters/05_exact_populations_and_navigation.md",
+      "sha256": "47792bd7d771b1c0ab0308bf59cbacc0ffe237f2d42976ef058ff68e21525f73",
+      "size_bytes": 2266
+    },
+    {
+      "path": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "sha256": "4f1bb71ef0c07f3e143e658f4202f30c86c38e46f43a04c3448feccdc51bb9c9",
+      "size_bytes": 1964
+    },
+    {
+      "path": "docs/chapters/07_semantics_and_observability.md",
+      "sha256": "6c1631cc9de5bb363bd4be673147f9e1c1a5cdd97c84fc3ea3f02ff9b5b91b2b",
+      "size_bytes": 2209
+    },
+    {
+      "path": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "sha256": "918c1f37b4e01c3ff4a9e3b9cd2b415c2e66b0c902b04d2ab5738eb6bfe46649",
+      "size_bytes": 2327
+    },
+    {
+      "path": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "sha256": "f07fe90172256914fe983f25ba2257a215bc8ccc4858f02b7f6d14e40ce79c50",
+      "size_bytes": 1953
+    },
+    {
+      "path": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "sha256": "9d020bb5311e8f225c06c2a6202e500511b172375740db6498c349fe3946e4ae",
+      "size_bytes": 1989
+    },
+    {
+      "path": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "sha256": "90473230ea8e21c68ba2e9a539668ca2d11a2f73cd59b99805a27a0e40cc9ae2",
+      "size_bytes": 2139
+    },
+    {
+      "path": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "sha256": "78ef32e4e383875ca187a881547477642e3e98fe472e7279e5ac747094f30fc8",
+      "size_bytes": 2243
+    },
+    {
+      "path": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "sha256": "8705d5850c593f529eed55e33ec4d01359fb881dad01a2138a847f0d7b6e4933",
+      "size_bytes": 2384
+    },
+    {
+      "path": "docs/chapters/14_shadow_core_and_regulators.md",
+      "sha256": "0a1f364c4ed92162b51447ec6e83636c4e8ac2546b0f1fd805b2f5056ccc4ed2",
+      "size_bytes": 2392
+    },
+    {
+      "path": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "sha256": "6909480120f610b9ae55d5f9b6016e6b30cb4b9bb58a074106a7f1f07fbf621c",
+      "size_bytes": 2462
+    },
+    {
+      "path": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "sha256": "ca67aeb0b4f0f57a6360b7f3427f7beb7ffce9340b26f7444ad2a4aad5861d17",
+      "size_bytes": 2097
+    },
+    {
+      "path": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "sha256": "6d780cf394716376333ba3fa88b081db60191564c2b0fe857d40563d33156e5a",
+      "size_bytes": 2170
+    },
+    {
+      "path": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "sha256": "aa68db822db5762205aaa06511cab79d4dfe9e0eec290e8f5826c077ff4c9a5a",
+      "size_bytes": 2499
+    },
+    {
+      "path": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "sha256": "dd072d7d974bddb7a2892f3982b261c3223ccba61584e4abcc45b9d0c48ca6b1",
+      "size_bytes": 2248
+    },
+    {
+      "path": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "sha256": "03bc5ea3c973415066504390382b84ddde9b7114cbe786b408398eab33922810",
+      "size_bytes": 2666
+    },
+    {
+      "path": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "sha256": "89dffbfac39faf3c6f972b83b438225cc76c1aa882640208d41e171e1142f1cc",
+      "size_bytes": 2810
+    },
+    {
+      "path": "docs/chapters/22_master_enhancement_architecture.md",
+      "sha256": "558df19f23705f383cea98d0782a901362ddec9eb3d018823e277b7f75e8f0c3",
+      "size_bytes": 2520
+    },
+    {
+      "path": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "sha256": "2407738077679300d0f45fe4256d9d79111f11e924d9c7093ebd290d21058299",
+      "size_bytes": 2632
+    },
+    {
+      "path": "docs/chapters/24_mathematical_proofs.md",
+      "sha256": "8233af211ddcabf1020c6da95a2f7af1859c1af771bb3effb9d9b79ed286e782",
+      "size_bytes": 7905
+    },
+    {
+      "path": "docs/chapters/25_historical_results_and_extended_leads.md",
+      "sha256": "02a0d1188350e99be4e919706a72c4028edc992e9edaebcb379276103d9bb64b",
+      "size_bytes": 7755
+    },
+    {
+      "path": "examples/walkthrough.py",
+      "sha256": "71c943cf8314c872f87de5142796a60fc83179af6c94673c904e2898bdb181ba",
+      "size_bytes": 883
+    },
+    {
+      "path": "integrations/upstreams.json",
+      "sha256": "2e34e1302a35447c5be51698b5647abaf5323e6e85d8f70382c8120a2168b8c2",
+      "size_bytes": 631
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7b7a3fbaa7ca8ad164378b732b01c9da25ab6059e9b367a493c4abb8d1f87d02",
+      "size_bytes": 381
+    },
+    {
+      "path": "results/replay.json",
+      "sha256": "a4a0d38fbac7cc1bf38d662196af9fa163da9752a6dbe4b9d50915d62d1a0246",
+      "size_bytes": 14733
+    },
+    {
+      "path": "scripts/build_chapters.py",
+      "sha256": "549cd33f751610d8ba108a4221b619336444b69b937edc6776f739bea84cfd67",
+      "size_bytes": 54297
+    },
+    {
+      "path": "scripts/build_corpus.py",
+      "sha256": "b72147bdc278219a95f23d762c1b2d2a2d285ffc127bde4ea969038b0b21ecc6",
+      "size_bytes": 39940
+    },
+    {
+      "path": "scripts/build_release.py",
+      "sha256": "a259f936baffc4ea00a7aff1157275ba2b171ec9e8b4163820baa9d645e623a5",
+      "size_bytes": 1937
+    },
+    {
+      "path": "scripts/build_topics.py",
+      "sha256": "03f3e3bb6527fac8be09dc443e1bdc66db8565eb3b422a5a0f686bbe63c4c059",
+      "size_bytes": 14083
+    },
+    {
+      "path": "scripts/check_coverage.py",
+      "sha256": "66fc8c19bf27e9d98da5748900bc62d6d7d7752b2b8d79862c3dced5933ddc75",
+      "size_bytes": 1415
+    },
+    {
+      "path": "scripts/source_manifest.py",
+      "sha256": "be6052b845fb6e8730ff1e92a27ea30dd6e816f81d35a03a0964495f403938da",
+      "size_bytes": 415
+    },
+    {
+      "path": "src/perfectjet/__init__.py",
+      "sha256": "240bd24b8e90a3e75ed4afc1ca93322b7bf6da6ec668e8fddd0aa44015e0a0aa",
+      "size_bytes": 103
+    },
+    {
+      "path": "src/perfectjet/cli.py",
+      "sha256": "4294b63a854f916a9ea28915b6537065457a0e47c561a036eba9b679ccad0417",
+      "size_bytes": 3441
+    },
+    {
+      "path": "src/perfectjet/collision.py",
+      "sha256": "86fe0bbb39b73e62572cf653c2d87e25d6accc8f3bc40d467660d6cedf14e5b9",
+      "size_bytes": 2772
+    },
+    {
+      "path": "src/perfectjet/dynamics.py",
+      "sha256": "63fb2c760ba9ad99ddcda1b21f781442c05d9f165698bad6cee3eaea0832c63c",
+      "size_bytes": 2783
+    },
+    {
+      "path": "src/perfectjet/exact.py",
+      "sha256": "f819cbb9b3f84a658a0ddad313ae6da49845c3f7a24e01b981e19528f5bddb40",
+      "size_bytes": 3277
+    },
+    {
+      "path": "src/perfectjet/jets.py",
+      "sha256": "aefad9c4b165832afa25bff097a610265d372adef3e8e903bc3f86b97382d549",
+      "size_bytes": 1388
+    },
+    {
+      "path": "src/perfectjet/polynomial.py",
+      "sha256": "e19ee2d48bf546a96d97a9dbb3cbdcbb5a1579e6e3156224254a34c5c05173bc",
+      "size_bytes": 4931
+    },
+    {
+      "path": "src/perfectjet/populations.py",
+      "sha256": "0c039bc40cd33773190d378cbd08feb7e4f4e3e426c479e63931b3a69f50d33e",
+      "size_bytes": 3835
+    },
+    {
+      "path": "src/perfectjet/psg.py",
+      "sha256": "ff702aa425fbf97fb445e35bec0fe7d24924b5fd77727aed57b38d82b15544bc",
+      "size_bytes": 904
+    },
+    {
+      "path": "src/perfectjet/rings.py",
+      "sha256": "9edc43208c99877b4d9e6b5580b090a7ea73a8a63807b33b6baedfb2bb27de71",
+      "size_bytes": 4311
+    },
+    {
+      "path": "src/perfectjet/semantics.py",
+      "sha256": "0d2cc562e6a1f0c1ed017a051da6fc6036ecf55ba81b896269e4f04f7eec55c2",
+      "size_bytes": 2504
+    },
+    {
+      "path": "src/perfectjet/transvectants.py",
+      "sha256": "11d51a064629185335894f4494cabcde6552b497acfdf44144398f02d198ede7",
+      "size_bytes": 2506
+    },
+    {
+      "path": "tests/test_exact.py",
+      "sha256": "adfb14a1ac03f5ce39ae98a816beb4a98bb04af05ddf471b38f31524fa8123cf",
+      "size_bytes": 10447
+    }
+  ]
+}

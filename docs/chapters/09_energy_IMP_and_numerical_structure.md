@@ -1,0 +1,9 @@
+# Energy diagnostics, IMP, and numerical structure
+
+For $\dot u=Au+f$ and constant SPD mass matrix M, $E=\tfrac12u^TMu$, $S_M=(A^TM+MA)/2$, and $\dot E=u^TS_Mu+u^TMf$. Define $\lambda=-2u^TS_Mu/(u^TMu)$ and $\zeta=2u^TMf/(u^TMu)$. Then $d\log E/dt=-\lambda+\zeta$ and $\rho=1-\zeta/\lambda$ when lambda is nonzero. Positive source reduces net decay for positive lambda. This corrects the historical plus sign and missing factor2. Python exact checks validate dimensions, positive definiteness, and the identity; rho is None at zero dial.
+
+CRO/crystalline work estimated $\hat\alpha=-(\log E_k-\log E_{k-1})/\Delta t$, compared $|\hat\alpha-\alpha|$, and proposed compact128-byte manifests and40-byte receipts. Historical constants alpha=.0333996828 and beta=.6732050807568877 are retained as selected model constants, not proven universal values. The rank-one matrix $I+t11^T$ has determinant1+nt. Receipt hashes identify records, not the truth of physical claims.
+
+IMP explicitly means Inertial Manifold Projector. Its SVD projector $P=QQ^T$ does not establish $M^k\to P$. An orthogonal rotation has all singular values1 and nonconvergent powers. A sufficient fixed-mode split is $M=P+T$, $P^2=P$, $PT=TP=0$, $\rho(T)<1$, which gives $M^k=P+T^k$. General retained dynamics requires $MQ=QG$, not fixed vectors. Invariant-space leakage $(I-P)AP$ indicates closure failure.
+
+Historical Catmull-Clark11->2, transformer ranks6-7, diffusion65536->1024, errors around1e-14, and10-100x reductions were claims requiring source computation. The local valence6 block [[-7/48,3(1+i sqrt3)/32],[5(1-i sqrt3)/16,-9/8]] has characteristic $x^2+61x/48+3/64$. One root magnitude exceeds1; the block cannot supply a contraction claim without the true operator interpretation. The plastic/Pisot interpretation was removed from that specific block. More extensive motivic, holographic, fan-law, and global-refinement-period claims remain proposals or unsupported reports.

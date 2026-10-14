@@ -1,0 +1,12 @@
+{
+  "schema": "perfectjet/session-coverage/1",
+  "session_date": "2026-10-14",
+  "preservation": "canonical content synthesis, equation registry, topic census, source extracts; not a verbatim conversation export",
+  "passes": {
+    "first_audit": ["docs/chapters/01_purpose_and_historical_audit.md", "docs/COVERAGE_MAP.md"],
+    "first_equation_pass": ["docs/EQUATION_ATLAS.md", "docs/chapters/02_arithmetic_geometry.md", "docs/chapters/23_status_corrections_and_frontiers.md"],
+    "first_enhancement": ["docs/chapters/06_series_hankel_and_weighted_quotients.md", "docs/chapters/07_semantics_and_observability.md", "docs/chapters/08_feature_closure_error_and_decisions.md", "docs/chapters/22_master_enhancement_architecture.md"],
+    "second_archive_pass": ["archive/SOURCES.json", "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md", "docs/chapters/12_collision_zeta_and_finite_parts.md", "docs/chapters/14_shadow_core_and_regulators.md", "docs/chapters/15_Weyl_exactness_and_partner_geometry.md", "docs/chapters/16_deformation_moduli_and_codes.md", "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md"],
+    "second_enhancement": ["docs/chapters/11_jets_Schroeder_and_obstruction.md", "docs/chapters/12_collision_zeta_and_finite_parts.md", "docs/chapters/14_shadow_core_and_regulators.md", "docs/chapters/15_Weyl_exactness_and_partner_geometry.md", "docs/chapters/22_master_enhancement_architecture.md", "results/replay.json"]
+  }
+}

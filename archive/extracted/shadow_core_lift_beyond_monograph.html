@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Shadow-Core Lift II: Beyond the First Extraction</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">:root {
+--bg: #fbfaf7;
+--paper: #ffffff;
+--text: #171717;
+--muted: #5d5d5d;
+--rule: #ded8cf;
+--accent: #583f2e;
+--accent-soft: #f2ece5;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--text);
+font-family: Georgia, 'Times New Roman', serif;
+font-size: 18px;
+line-height: 1.62;
+}
+main, body > article, body > div, body > section {
+max-width: 980px;
+margin: 0 auto;
+}
+body {
+padding: 3.5rem 1.25rem;
+}
+body > * {
+max-width: 980px;
+margin-left: auto;
+margin-right: auto;
+}
+header, #title-block-header {
+margin: 0 auto 2.5rem auto;
+padding-bottom: 1.5rem;
+border-bottom: 1px solid var(--rule);
+}
+h1.title, h1:first-child {
+font-size: clamp(2.2rem, 5vw, 4.2rem);
+line-height: 1.04;
+letter-spacing: -0.035em;
+color: var(--accent);
+margin: 0 0 0.75rem 0;
+}
+h1, h2, h3, h4 {
+color: var(--accent);
+line-height: 1.18;
+margin-top: 2.1em;
+margin-bottom: 0.55em;
+letter-spacing: -0.015em;
+}
+h2 {
+font-size: 1.7rem;
+border-top: 1px solid var(--rule);
+padding-top: 1rem;
+}
+h3 { font-size: 1.3rem; }
+p { margin: 0 0 1.05rem 0; }
+a { color: #7b3f00; text-decoration-thickness: 0.06em; text-underline-offset: 0.18em; }
+strong, b { color: #0e0e0e; }
+blockquote {
+border-left: 4px solid var(--accent);
+background: var(--accent-soft);
+margin: 1.5rem 0;
+padding: 1rem 1.25rem;
+}
+code, pre {
+font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+font-size: 0.92em;
+}
+pre {
+white-space: pre-wrap;
+overflow-x: auto;
+background: #f7f4ef;
+border: 1px solid var(--rule);
+border-radius: 8px;
+padding: 1rem;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+margin: 1.35rem 0 1.7rem;
+font-size: 0.93em;
+background: var(--paper);
+}
+th, td {
+border: 1px solid var(--rule);
+padding: 0.55rem 0.65rem;
+vertical-align: top;
+}
+th {
+background: var(--accent-soft);
+color: var(--accent);
+text-align: left;
+}
+img { max-width: 100%; height: auto; }
+nav#TOC, #TOC {
+background: var(--paper);
+border: 1px solid var(--rule);
+border-radius: 12px;
+padding: 1rem 1.25rem;
+margin: 1.75rem auto 2.5rem;
+box-shadow: 0 1px 8px rgba(0,0,0,.03);
+}
+#TOC ul { margin-top: 0.3rem; }
+#TOC a { text-decoration: none; }
+hr {
+border: 0;
+border-top: 1px solid var(--rule);
+margin: 2rem 0;
+}
+@media print {
+body { background: #fff; padding: 0.5in; font-size: 12pt; }
+nav#TOC, #TOC { box-shadow: none; }
+a { color: inherit; }
+}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Shadow-Core Lift II: Beyond the First Extraction</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#i.-from-the-first-lift-to-the-second-problem-extraction-is-not-the-end" id="toc-i.-from-the-first-lift-to-the-second-problem-extraction-is-not-the-end">I.
+From the first lift to the second problem: extraction is not the
+end</a></li>
+<li><a href="#ii.-plate-a-the-shadow-core-extractor-as-an-algorithm-not-a-metaphor" id="toc-ii.-plate-a-the-shadow-core-extractor-as-an-algorithm-not-a-metaphor">II.
+Plate A: the Shadow-Core extractor as an algorithm, not a metaphor</a>
+<ul>
+<li><a href="#plate-b-computational-objects-after-section-2" id="toc-plate-b-computational-objects-after-section-2">Plate B:
+computational objects after section 2</a></li>
+</ul></li>
+<li><a href="#iii.-plate-b-the-coefficient-field-virtual-machine" id="toc-iii.-plate-b-the-coefficient-field-virtual-machine">III. Plate
+B: the coefficient-field virtual machine</a>
+<ul>
+<li><a href="#plate-c-computational-objects-after-section-3" id="toc-plate-c-computational-objects-after-section-3">Plate C:
+computational objects after section 3</a></li>
+</ul></li>
+<li><a href="#iv.-plate-c-exact-saddle-separation-and-branch-typing" id="toc-iv.-plate-c-exact-saddle-separation-and-branch-typing">IV. Plate
+C: exact saddle separation and branch typing</a>
+<ul>
+<li><a href="#plate-d-computational-objects-after-section-4" id="toc-plate-d-computational-objects-after-section-4">Plate D:
+computational objects after section 4</a></li>
+</ul></li>
+<li><a href="#v.-plate-d-the-corner-divisor-search-as-a-real-discovery-engine" id="toc-v.-plate-d-the-corner-divisor-search-as-a-real-discovery-engine">V.
+Plate D: the corner-divisor search as a real discovery engine</a>
+<ul>
+<li><a href="#plate-e-computational-objects-after-section-5" id="toc-plate-e-computational-objects-after-section-5">Plate E:
+computational objects after section 5</a></li>
+</ul></li>
+<li><a href="#vi.-plate-e-p-adic-ramification-as-a-computational-control-surface" id="toc-vi.-plate-e-p-adic-ramification-as-a-computational-control-surface">VI.
+Plate E: p-adic ramification as a computational control surface</a></li>
+<li><a href="#vii.-plate-f-the-cube-root-spine-as-the-obstruction-method-cousin" id="toc-vii.-plate-f-the-cube-root-spine-as-the-obstruction-method-cousin">VII.
+Plate F: the Cube-Root Spine as the obstruction-method cousin</a></li>
+<li><a href="#viii.-beyond-volume-regulator-output-is-only-the-first-observable" id="toc-viii.-beyond-volume-regulator-output-is-only-the-first-observable">VIII.
+Beyond volume: regulator output is only the first observable</a></li>
+<li><a href="#ix.-a-core-aware-search-program-for-new-examples" id="toc-ix.-a-core-aware-search-program-for-new-examples">IX. A
+<li><a href="#ix.-a-core-aware-search-program-for-new-examples" id="toc-ix.-a-core-aware-search-program-for-new-examples">IX. A
+core-aware search program for new examples</a></li>
+<li><a href="#x.-the-computing-architecture-corelift-engine-v0" id="toc-x.-the-computing-architecture-corelift-engine-v0">X. The
+computing architecture: CoreLift Engine v0</a>
+<ul>
+<li><a href="#plate-j-computational-objects-after-section-10" id="toc-plate-j-computational-objects-after-section-10">Plate J:
+computational objects after section 10</a></li>
+</ul></li>
+<li><a href="#xi.-new-conjectures-suggested-by-the-computation" id="toc-xi.-new-conjectures-suggested-by-the-computation">XI. New
+conjectures suggested by the computation</a></li>
+<li><a href="#xii.-what-to-compute-next-in-exact-order" id="toc-xii.-what-to-compute-next-in-exact-order">XII. What to compute
+next, in exact order</a></li>
+<li><a href="#xiii.-dense-mathematical-closure-the-lift-as-a-functorial-refusal" id="toc-xiii.-dense-mathematical-closure-the-lift-as-a-functorial-refusal">XIII.
+Dense mathematical closure: the lift as a functorial refusal</a></li>
+<li><a href="#xiv.-final-synthesis-where-this-leads" id="toc-xiv.-final-synthesis-where-this-leads">XIV. Final synthesis:
+where this leads</a></li>
+<li><a href="#xv.-experimental-protocols-for-the-first-breakthrough-computation" id="toc-xv.-experimental-protocols-for-the-first-breakthrough-computation">XV.
+Experimental protocols for the first breakthrough computation</a></li>
+<li><a href="#appendix-a.-computation-transcript-summary" id="toc-appendix-a.-computation-transcript-summary">Appendix A.
+Computation transcript summary</a></li>
+</ul>
+</nav>
+<p><strong>SHADOW-CORE LIFT II</strong></p>
+<p><em>Beyond Discriminant -23: non-abelian extraction,
+coefficient-field computation, and the next frontier of core-aware
+mathematics</em></p>
+<p>A second-pass technical monograph: machine-checked algebra, regulator
+numerics, corner searches, perturbative architectures, and computational
+proposals beyond the first Shadow-Core synthesis</p>
+<p>July 2026 * working sequel * dense formal push</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Machine object</strong></th>
+<th><strong>Polynomial / equation</strong></th>
+<th><strong>Discriminant</strong></th>
+<th><strong>Interpretation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Core cubic</td>
+<td>x**3 - x**2 + 1</td>
+<td>-23</td>
+<td>irreducible; non-square discriminant; S3 closure</td>
+</tr>
+<tr class="even">
+<td>Plastic avatar</td>
+<td>x**3 - x - 1</td>
+<td>-23</td>
+<td>same field by beta=-1/alpha</td>
+</tr>
+<tr class="odd">
+<td>Corner (3,2)</td>
+<td>z**3 - 2*z**2 + 3*z - 1</td>
+<td>-23</td>
+<td>visible 5_2 corner pin</td>
+</tr>
+<tr class="even">
+<td>Hidden corner (5,1)</td>
+<td>z**3 - 4*z**2 + 5*z - 1</td>
+<td>-23</td>
+<td>AK/character cubic and hidden cofactor</td>
+</tr>
+<tr class="odd">
+<td>Nahm free shadow</td>
+<td>z**3 - 2*z**2 - z + 1</td>
+<td>49</td>
+<td>cyclic conductor-7 abelian field</td>
+</tr>
+<tr class="even">
+<td>One-loop exact field element</td>
+<td>y**3 + 4*y**2 - 23*y + 23</td>
+<td>-1127</td>
+<td>trace-field-valued Hessian determinant</td>
+</tr>
+<tr class="odd">
+<td>Two-loop exact field element</td>
+<td>23*y**3 + 4*y + 200</td>
+<td>-571325888</td>
+<td>trace-field-valued vertex ratio</td>
+</tr>
+</tbody>
+</table>
+<p><em>Computation pass: exact symbolic discriminants and resultants in
+sympy; 80-decimal Bloch-Wigner evaluation in mpmath; quotient-ring
+corner divisibility scan through a&lt;=300 for the two discriminant--23
+cubic avatars; small exact corner factor scan through a&lt;=20.</em></p>
+<h1 id="i.-from-the-first-lift-to-the-second-problem-extraction-is-not-the-end">I.
+From the first lift to the second problem: extraction is not the
+end</h1>
+<p>The first Shadow-Core monograph established the essential separation:
+the abelian shadow of 5_2 is not false, but it is too small to carry the
+non-abelian trace field. This sequel begins one step later. The new
+question is not whether the discriminant--23 field is real, nor whether
+it appears in the character variety, nor whether the abelian shadow
+misses it. Those points are now the base layer. The more valuable
+question is what the discovery lets us compute that we could not compute
+cleanly before. A core field that merely names a manifold is a
+classification datum. A core field that supports exact coefficient
+arithmetic, exact saddle separation, regulator evaluation, p-adic depth,
+and search heuristics is a computational substrate. The second pass
+therefore shifts from recognition to production. It asks what kind of
+machine should exist once the non-abelian core has been extracted.</p>
+<p>The answer I want to develop is that the core should be treated as an
+execution ring. Instead of storing a perturbative coefficient as a
+floating complex number, store it as an element of K = Q[u]/(u^3 - 4u^2
++ 5u - 1), or equivalently Q[x]/(x^3 - x^2 + 1). Instead of deciding
+saddle membership by numerical proximity, decide it by elimination into
+exact components, then evaluate the selected component under the
+required embedding. Instead of searching corner-divisor coincidences by
+volume alone, search quotient rings for exact divisibility by candidate
+field avatars. Instead of treating p-adic ramification as a decorative
+afterthought, make it a branch-selection and denominator-control signal.
+The computational leap is not that exact algebra replaces numerical
+analysis. The leap is that exact algebra becomes the coordinate system
+in which numerical analysis is allowed to happen.</p>
+<p>The machine-precision pass that precedes this document checked the
+small but load-bearing facts. The polynomials x^3 - x^2 + 1, x^3 - x -
+1, z^3 - 2z^2 + 3z - 1, and z^3 - 4z^2 + 5z - 1 all have discriminant
+-23 and are irreducible over Q; hence each non-square cubic presentation
+has S_3 Galois closure. The Nahm free-direction cubic z^3 - 2z^2 - z + 1
+has discriminant 49 and is irreducible, hence it is cyclic rather than
+S_3, exactly matching the conductor-7 abelian shadow. The one-loop
+expression (-2u^2+3u-2)/(-u^2+u), where u^3 - 4u^2 + 5u - 1 = 0, has
+resultant minimal polynomial y^3 + 4y^2 - 23y + 23 and discriminant
+-1127 = -23 * 7^2. The two-loop expression (6u-8)/(3u^2 - 8u + 5) has
+resultant polynomial 23y^3 + 4y + 200. Thus the perturbative
+coefficients are not merely numerically close to the field; they are
+generated by exact rational functions of the core coordinate. In the
+Bloch regulator check, the complex root of x^3 - x^2 + 1 produced
+D(z)=0.94270736277692772092129960309221164759032710576688 and
+3D(z)=2.8281220883307831627638988092766349427709813173006. The
+translated AK root of z^3 - 4z^2 + 5z - 1 produced
+D=0.47135368138846386046064980154610582379516355288344, so 2D is the
+preceding value. These are not proof of volume conjectures, but they are
+high-precision sanity checks on the regulator branch.</p>
+<p>The corner computation gave the most interesting beyond-core result.
+In the family P_{a,b}(z)=(1-z)^a - z^b, the visible discriminant--23
+corner field z^3 - 2z^2 + 3z - 1 divides only the coprime corner
+(a,b)=(3,2) through a&lt;=300 in an exact quotient-ring divisibility
+scan. The AK/hidden avatar z^3 - 4z^2 + 5z - 1 divides only (a,b)=(5,1)
+through the same scan. This means the known recurrence of the field in
+the corner family is not a broad periodic event at small height. It
+looks isolated: one direct corner and one hidden cofactor under the
+elementary regular-tetrahedron factor. That isolation is a new
+computational clue. The field is not simply recurring whenever a+b has
+some congruence property; the regular tetrahedron factor z^2 - z + 1 is
+governed by the simple rule 6 divides a+b, while the -23 cubic is not
+governed by that elementary cyclotomic rule in the scanned range. The
+non-abelian core resists the easy periodic mechanism.</p>
+<p>This motivates the sequel thesis: a core-aware computation system
+should not begin by assuming that the hidden field is frequent. It
+should assume the opposite. The non-abelian core is sparse, and
+therefore valuable. It appears when a projection has become singular,
+when an abelian boundary branch has split off, when an exact elimination
+has exposed a Morse hyperbolic component, or when a corner cofactor
+escapes the cyclotomic rule. The computational goal is to build the
+extractor that finds those events without confusing them with the
+abundant shadows around them. In the first pass, the slogan was 7 is the
+shadow and -23 is the core. In this pass, the slogan becomes: compute in
+the core, search by the obstruction, and let the shadow serve as a
+routing index rather than a final answer.</p>
+<h1 id="ii.-plate-a-the-shadow-core-extractor-as-an-algorithm-not-a-metaphor">II.
+Plate A: the Shadow-Core extractor as an algorithm, not a metaphor</h1>
+<p>The first plate in the sequel is an algorithmic plate. Given a
+mathematical object X presented by a knot, a state sum, a q-series, a
+gluing system, a corner equation, or a finite conductor module, define a
+pipeline with four explicit stages. The first stage computes Shadow(X),
+the largest reliably available abelian or finite-conductor projection.
+The second stage computes Obstruct(X), a proof that the target core is
+either contained in the shadow or cannot be contained there. The third
+stage constructs Receive(X), a legal non-abelian receiving space:
+character variety, AK critical ideal, A-polynomial branch, Bloch group
+class, p-adic skeleton, or exact transvectant-rank locus. The fourth
+stage computes Output(X), not as a decimal but as a field-valued or
+regulator-valued object. The extracted form is</p>
+<p>X |-&gt; (Shadow(X), Obstruct(X), Receive(X), Output(X)).</p>
+<p>For 5_2 the shadow stage is almost embarrassingly rich: determinant
+7, Fox-coloring spike, Alexander value at -1, linking-form Gauss sum,
+cyclotomic rapidity limit, and the abelian Nahm saddle Q(sqrt2) times
+Q(zeta_7)^+. The obstruction stage is twofold: the cyclotomic route is
+blocked by Kronecker-Weber because the target has S_3 Galois closure,
+and the Nahm-sum route is blocked by direct saddle calculation because
+its fields are abelian. The receiving stage is the full
+Andersen-Kashaev/character critical ideal, whose exact elimination gives
+(z-1)^2(z^3 - 4z^2 + 5z - 1). The output stage includes the Bloch-Wigner
+volume, the one-loop Hessian determinant, the two-loop vertex ratio, and
+the p-adic denominator/ramification behavior.</p>
+<p>This is already a program. It can be implemented with exact algebra
+kernels and high-precision embeddings. The important design rule is that
+no stage is allowed to overwrite the previous one. The determinant 7 is
+not replaced by -23; it is stored as a shadow coordinate. The cyclotomic
+obstruction is not an error; it is stored as a denied-containment proof.
+The parabolic branch (z-1)^2 is not thrown away; it is stored as the
+abelian boundary component. The cubic branch is not just selected
+numerically; it is stored as the core component, together with
+discriminant, Galois marker, embedding choices, regulator values, and
+perturbative coefficient ring. This produces a data object that can
+answer questions of the form: which invariants were visible before the
+lift, which were impossible before the lift, and which new computations
+become possible after the lift?</p>
+<p>The extractor should therefore be represented not as a single solver
+but as a typed graph. Nodes are rings, fields, varieties, saddles,
+regulators, and q-series presentations. Edges are projections,
+degenerations, eliminations, inclusions, obstructions, and embeddings. A
+shadow edge lowers arithmetic complexity: for example, character variety
+to abelianization, trace field to determinant, full state integral to
+Nahm-sum saddle, or non-abelian Galois closure to cyclotomic field if
+possible. A core edge raises arithmetic complexity legally: for example,
+cyclotomic obstruction to character variety, determinant shadow to
+trace-field search, Nahm det-zero matrix to full AK critical ideal. The
+graph has a simple health condition: every lift edge must be justified
+by an obstruction at the lower level. Otherwise the system merely
+wanders upward, adding complexity without need.</p>
+<p>The 5_2 graph teaches a general rule for computation: the shadow is
+best used as a hash, not as a certificate of identity. Determinant 7
+narrows the search; it does not identify the core. Q(zeta_7)^+ tells us
+that the Nahm free direction is linked to determinant 7; it does not
+imply that the full quantum field is cyclic. The same caution applies
+more generally. A field, determinant, or volume can look compatible with
+a manifold while failing the invariant trace-field test. A low-rank
+matrix can look like a geometric presentation while being a stabilized
+q-series presentation instead. A root-of-unity degeneration can look
+like it approaches quantum content while remaining trapped in the
+abelian closure. The extractor must keep each such datum in the correct
+lane.</p>
+<p>Computationally, the first implementation should expose four
+primitives. The primitive abelian_shadow(X) returns determinant, first
+homology, cyclotomic support, torsion characters, and any finite
+conductor closure. The primitive obstruction_test(shadow, target) tests
+Galois containments, discriminant supports, norm denominators, and
+rank/kernel constraints. The primitive core_eliminate(X) computes
+resultants, primary components, critical equations, or field-recognized
+shape factors. The primitive coefficient_ring(core) constructs exact
+quotient arithmetic and embedding maps for numerical evaluation. The
+return type is not a theorem text but a computable object: a small
+database of exact polynomials, field embeddings, denied containments,
+regulator values, and coefficient vectors. That object can then generate
+the prose theorem, the plate, the perturbative series, or the next
+search.</p>
+<p>This is the main computing breakthrough suggested by the second pass.
+Do not build another all-purpose symbolic solver. Build a lift extractor
+specialized to the repeated failure pattern: abelian data is easy and
+abundant, non-abelian core data is sparse and productive, and the right
+algorithm is the one that knows when to stop trusting the shadow. In
+ordinary numerical workflows, the saddle is a complex point and the
+coefficient is a complex number. In the core-aware workflow, the saddle
+is a prime ideal or irreducible factor; the coefficient is a
+quotient-ring element; the complex number is only an embedding of the
+exact object. That change of representation is the difference between
+estimating a phenomenon and computing in its natural field.</p>
+<h2 id="plate-b-computational-objects-after-section-2">Plate B:
+computational objects after section 2</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Exact object</strong></th>
+<th><strong>Machine operation</strong></th>
+<th><strong>Frontier question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Shadow</td>
+<td>det=7; Q(zeta_7)+; Q(sqrt2)</td>
+<td>abelian_shadow, determinant, field test</td>
+<td>which invariants are first visible here?</td>
+</tr>
+<tr class="even">
+<td>Obstruction</td>
+<td>K_23 not cyclotomic; K_23 not Nahm saddle</td>
+<td>Galois containment and saddle-field comparison</td>
+<td>what is the minimal legal receiver?</td>
+</tr>
+<tr class="odd">
+<td>Receiver</td>
+<td>AK/character critical ideal</td>
+<td>resultant, factorization, branch typing</td>
+<td>which branch is Morse and hyperbolic?</td>
+</tr>
+<tr class="even">
+<td>Output</td>
+<td>D(z), H_1, H_2 in K_23</td>
+<td>regulator and coefficient-field VM</td>
+<td>how far do exact coefficients persist?</td>
+</tr>
+</tbody>
+</table>
+<p><em>Plate note: the table is intentionally operational. Each row
+names an exact object, the computational operation that acts on it, and
+the next frontier question rather than restating the first
+monograph.</em></p>
+<h1 id="iii.-plate-b-the-coefficient-field-virtual-machine">III. Plate
+B: the coefficient-field virtual machine</h1>
+<p>The second plate is the most practical. Once the AK/character saddle
+has been selected, every perturbative computation should be performed in
+the coefficient field rather than in floating arithmetic. For 5_2 choose
+the core coordinate u satisfying</p>
+<p>u^3 - 4u^2 + 5u - 1 = 0.</p>
+<p>Then every algebraic coefficient in the first computed loop data is
+represented by a vector a0 + a1 u + a2 u^2 with rational entries.
+Multiplication is reduction modulo u^3 = 4u^2 - 5u + 1. Division is
+inversion in the quotient field, implemented by an extended Euclidean
+calculation or by solving a 3 by 3 rational system. Embedding into C
+occurs only at the output boundary, by choosing the hyperbolic root u =
+1.877438833123346... + 0.744861766619744... i. The one-loop determinant
+is not first a decimal. It is</p>
+<p>H_1(u) = (-2u^2 + 3u - 2)/(-u^2 + u),</p>
+<p>and the two-loop vertex ratio is</p>
+<p>H_2(u) = (6u - 8)/(3u^2 - 8u + 5).</p>
+<p>The exact resultant calculation gives minpoly(H_1)=y^3 + 4y^2 - 23y +
+23 and minpoly(H_2)=23y^3 + 4y + 200. The first discriminant is -1127 =
+-23 * 7^2. This is a compact signature of the whole lift: the
+non-abelian core discriminant -23 remains visible, while the
+determinant/conductor shadow 7 reappears squared in the one-loop
+element. The coefficient field therefore remembers both the core and the
+shadow without confusing them.</p>
+<p>A coefficient-field virtual machine, or CFVM, would make this exact.
+Its memory cells are not floats but field vectors. A cell in K_23 stores
+(a0,a1,a2; denominator) together with a field tag. The field tag
+contains the defining polynomial, discriminant, preferred embeddings,
+ramified primes, and known isomorphisms to alternate avatars. Arithmetic
+instructions are ADD, MUL, INV, EMBED_sigma, TRACE, NORM, MINPOLY, and
+REGULATOR_EVAL. A perturbative instruction layer then builds
+Feynman-like contractions, Hessian determinants, cubic and quartic
+vertex combinations, and rational functions of saddle coordinates. The
+result is a field element, and only at the last stage is it sent to a
+numerical embedding. This is how one avoids losing the exact coefficient
+field behind a fog of high-precision decimals.</p>
+<p>The most immediate benefit is compression of perturbative expansions.
+A naive expansion stores c_0, c_1, c_2, ... as complex numbers with many
+digits. A core-aware expansion stores the field K, the selected
+embedding sigma, and each coefficient as a rational vector in the basis
+1,u,u^2. If denominators are controlled by the ramified set {23} plus
+small structural primes and determinant factors, the series becomes a
+sparse exact object. For a long perturbative expansion, the storage
+model changes from O(N * precision) digits to O(N * degree *
+rational_height) plus one field descriptor. More importantly, equality
+testing becomes exact. Two coefficients are equal if their rational
+vectors match after reduction; two expansions match if their field tags
+and coefficient vectors match up to the declared field isomorphism. This
+is not merely more elegant. It is how one builds a reliable database of
+quantum invariants without silently merging near-equal but distinct
+embeddings.</p>
+<p>The second benefit is automatic branch discipline. A field can have
+several embeddings. For the cubic K_23 there is one real embedding and
+one pair of complex embeddings. The hyperbolic branch requires the
+complex embedding with positive imaginary part. The real embedding may
+be useful for regulator or unit computations but is not the geometric
+volume branch. A CFVM can carry embedding labels explicitly. The output
+D(sigma(u)) is then not just D(u); it is D evaluated at the selected
+sigma_C^+ branch. This matters in exactly the places where ordinary
+numerical workflows become fragile: branch cuts of logarithms,
+dilogarithm sheets, Chern-Simons normalizations, Stokes walls, and
+p-adic Hensel branches. If the embedding is part of the type, the
+program is less likely to compare numbers produced by incompatible
+branches.</p>
+<p>The third benefit is modularity across avatars. The Condensoroid
+field x^3 - x^2 + 1, the AK field z^3 - 4z^2 + 5z - 1, and the plastic
+avatar x^3 - x - 1 should be registered as the same field with explicit
+generator maps. Translation z = x + 1 maps x^3 - x^2 + 1 to z^3 - 4z^2 +
+5z - 1. Inversion beta = -1/x maps the Condensoroid generator to the
+plastic unit. The corner polynomial z^3 - 2z^2 + 3z - 1 is a different
+generator of the same field. A CFVM should not duplicate these as
+unrelated coefficient rings. It should build a FieldID object that
+stores the reduced absolute polynomial, discriminant, signature, and
+isomorphism maps. Then when a coefficient from the AK expansion and a
+regulator from the Condensoroid root are compared, the system knows they
+live in the same arithmetic object.</p>
+<p>The fourth benefit is that the p-adic side becomes available to the
+same machine. If a coefficient denominator is a power of 23, this is not
+a nuisance; it is a signal. The field K_23 has ramification at 23. The
+symmetrized Habiro series lands in Z[z,1/23]. The p-adic regulator depth
+in the atlas was uniformly three across the rows checked. A CFVM can
+record denominator support, valuation depth, and Hensel branch. Then the
+same coefficient object can be evaluated in C for volume, in Q_23 for
+ramification/skeleton behavior, and in exact algebra for identity
+checks. This is what it means for the core field to be the coefficient
+field of quantum perturbation theory: it is not only the field in which
+c_i happen to lie, but the field in which the entire calculation should
+be organized.</p>
+<p>If built, the CFVM would be a tangible computational deliverable. It
+would accept a critical ideal and a chosen irreducible factor; construct
+the quotient field; reduce saddle variables into that quotient; compute
+Hessians and higher derivatives symbolically; output loop coefficients
+as exact field vectors; and provide controlled embeddings for numerical
+checks. The current computations already contain the first nontrivial
+test case. The one-loop and two-loop rational functions reduce exactly
+to cubic minimal polynomials tied to -23. The next frontier is not to
+restate that fact but to compute c_2, c_3, and higher terms directly in
+K_23, compare them against numerical state-integral asymptotics when
+available, and measure whether coefficient heights obey a hidden
+recurrence or denominator law. That would turn the discovered field into
+a working arithmetic processor.</p>
+<h2 id="plate-c-computational-objects-after-section-3">Plate C:
+computational objects after section 3</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Exact object</strong></th>
+<th><strong>Machine operation</strong></th>
+<th><strong>Frontier question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Field header</td>
+<td>u^3-4u^2+5u-1; disc -23</td>
+<td>construct quotient field</td>
+<td>normalize field aliases</td>
+</tr>
+<tr class="even">
+<td>Coefficient</td>
+<td>a0+a1u+a2u^2 over Q</td>
+<td>ADD/MUL/INV/MINPOLY</td>
+<td>compute c_2,c_3 exactly</td>
+</tr>
+<tr class="odd">
+<td>Embedding</td>
+<td>sigma_C^+(u)</td>
+<td>controlled complex evaluation</td>
+<td>lock log/dilog branches</td>
+</tr>
+<tr class="even">
+<td>Valuation</td>
+<td>v_23, v_7, norm factors</td>
+<td>denominator profile</td>
+<td>find mixed prime law</td>
+</tr>
+</tbody>
+</table>
+<p><em>Plate note: the table is intentionally operational. Each row
+names an exact object, the computational operation that acts on it, and
+the next frontier question rather than restating the first
+monograph.</em></p>
+<h1 id="iv.-plate-c-exact-saddle-separation-and-branch-typing">IV. Plate
+C: exact saddle separation and branch typing</h1>
+<p>The third plate is the saddle plate. The AK critical ideal of 5_2
+factors into a degenerate abelian branch and a non-abelian hyperbolic
+branch. The exact factorization is</p>
+<p>F(z) = (z - 1)^2 (z^3 - 4z^2 + 5z - 1).</p>
+<p>This is a computational blessing because it converts analytic
+ambiguity into algebraic typing. The factor (z - 1)^2 is not a failed
+approximation to the hyperbolic saddle. It is a separate component:
+parabolic, reducible, abelian, zero volume, non-Morse. The cubic factor
+is also not simply the other root. It is irreducible, discriminant -23,
+S_3, positive-volume, Morse in the computed Hessian sense. The branch
+selector can therefore begin with exact factor membership rather than a
+floating initial condition.</p>
+<p>The next frontier is to formalize a branch type system. A branch B of
+a critical ideal receives attributes: dimension, multiplicity, field,
+Galois marker, volume value, Hessian status, and shadow/core flag. For
+the parabolic branch, B_par has field Q, multiplicity two, volume zero,
+Hessian singular or divergent, shadow flag abelian. For the hyperbolic
+branch, B_hyp has field K_23, multiplicity one, nonzero Bloch-Wigner
+volume, finite nonzero Hessian, core flag non-abelian. This branch type
+system is what lets a computation refuse to average over branches that
+are analytically distinct. A numerical solver may see two nearby
+critical behaviors or a singular limit; the branch type system knows one
+is a degenerate boundary component and one is the geometric saddle.</p>
+<p>This matters for Stokes analysis. The full Stokes graph proof of
+contour dominance is still named open in the source work. But not every
+part of saddle selection has to wait for the full Stokes theorem. Exact
+branch typing can already remove the parabolic branch from the standard
+Gaussian list because it is non-Morse and zero-volume. It can certify
+that the hyperbolic branch is the only branch among the exact components
+that has the right Morse/nonzero-volume profile for a standard
+semiclassical contribution. That is not the same as proving dominance on
+the actual Faddeev contour, but it shrinks the analytic problem. The
+Stokes problem becomes: prove that the actual contour intersects or
+flows to the already-typed hyperbolic Morse branch with the required
+orientation and dominance. It no longer has to discover the branch from
+scratch.</p>
+<p>A computational Stokes program can now be designed around exact
+algebra plus numerical flow. First, compute the critical ideal and
+factor it. Second, attach exact branch types. Third, choose a potential
+V and compute Re(V/hbar) and Im(V/hbar) under the selected complex
+embedding. Fourth, integrate steepest descent/ascent flows using high
+precision, but with branch endpoints anchored by exact algebraic points.
+Fifth, track logarithm and dilogarithm branches by continuous lifting
+rather than by local principal-value guesses. Sixth, compute
+intersection numbers of the original contour with the Lefschetz
+thimbles. The exact branch data supplies the endpoints; numerical flow
+supplies the geometry; homological intersection supplies the final
+saddle coefficient.</p>
+<p>The important computational insight is that branch typing should
+occur before Stokes numerics. Too often the workflow is reversed:
+numerical saddle search first, algebraic recognition later. That risks
+recognizing a wrong branch because floating logs and dilogarithms can
+cross cuts. A core-aware system should first produce the exact branch
+inventory. For each branch it should know the field and degeneracy
+status. Only then should it run contour transport. The branch inventory
+becomes a map for the numerical integrator.</p>
+<p>For 5_2, the typed branch inventory has an especially clean
+interpretation. The degenerate branch is the abelian shadow. The cubic
+branch is the non-abelian core. The equation itself contains the lift:
+(z-1)^2 is the boundary component that the shadow can see; z^3 - 4z^2 +
+5z - 1 is the core that the shadow cannot contain. The AK critical ideal
+therefore does not merely host the core field; it displays the
+shadow-core split internally. This is precisely the sort of algebraic
+pattern one should search for in other knots and state integrals. The
+desired pattern is not only an irreducible factor with an interesting
+discriminant. The desired pattern is a factorization in which an abelian
+degenerate component and a non-abelian Morse component coexist, with the
+non-abelian component carrying the perturbative coefficient field.</p>
+<p>A useful invariant for future computation is the branch lift index.
+Define L(B) to be zero for rational/parabolic/zero-volume branches, one
+for abelian cyclotomic or torsion branches, and two for non-abelian
+hyperbolic Morse branches with nonzero Bloch regulator. This is not a
+topological invariant yet; it is a computational classifier. For the 5_2
+AK ideal, L((z-1)^2)=0 and L(cubic)=2. For the 4_1 ideal tetrahedron
+calibration, the geometric field Q(sqrt(-3)) is abelian but
+volume-positive, so it occupies a special torsion-regulator class: L=1
+with geometry. That distinction is valuable. It separates abelian
+geometry from non-abelian geometry, rather than flattening every
+hyperbolic volume into the same bucket. The goal is not to worship
+non-abelian data but to know exactly which computations require it.</p>
+<p>The plate should therefore depict a branch table, not a single arrow.
+Branches are rows; columns are exact factor, field, discriminant, Galois
+type, regulator, Hessian, and status. The 5_2 row with discriminant -23
+is then the first complete non-abelian core branch. The next
+computational target is to populate this table for a family: twist
+knots, small census manifolds, corner-divisor pins, or state-integral
+presentations. A breakthrough would be a classifier that predicts from
+the shadow whether a non-abelian Morse branch must appear, and then
+finds it by exact elimination with minimal search.</p>
+<h2 id="plate-d-computational-objects-after-section-4">Plate D:
+computational objects after section 4</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Exact object</strong></th>
+<th><strong>Machine operation</strong></th>
+<th><strong>Frontier question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Parabolic</td>
+<td>(z-1)^2</td>
+<td>degenerate branch type</td>
+<td>exclude from Gaussian expansion</td>
+</tr>
+<tr class="even">
+<td>Hyperbolic</td>
+<td>z^3-4z^2+5z-1</td>
+<td>core branch type</td>
+<td>prove contour dominance</td>
+</tr>
+<tr class="odd">
+<td>Hessian</td>
+<td>finite/nonzero on cubic</td>
+<td>Morse test</td>
+<td>extend to full Stokes graph</td>
+</tr>
+<tr class="even">
+<td>Regulator</td>
+<td>Bloch-Wigner nonzero</td>
+<td>volume branch check</td>
+<td>normalize Chern-Simons phase</td>
+</tr>
+</tbody>
+</table>
+<p><em>Plate note: the table is intentionally operational. Each row
+names an exact object, the computational operation that acts on it, and
+the next frontier question rather than restating the first
+monograph.</em></p>
+<h1 id="v.-plate-d-the-corner-divisor-search-as-a-real-discovery-engine">V.
+Plate D: the corner-divisor search as a real discovery engine</h1>
+<p>The fourth plate turns the corner-divisor family into a search
+engine. The family is small enough to be exact and large enough to
+reveal structure:</p>
+<p>P_{a,b}(z) = (1-z)^a - z^b, gcd(a,b)=1, a&gt;b&gt;=1.</p>
+<p>The first pass used it as a source of trace-field pins: (3,2) gives
+the 5_2 field; (3,1) gives the -31 field; (4,1) and (4,3) give the -283
+quartic field. The second-pass computation asks a more targeted
+question: is the discriminant--23 cubic a periodic resident of the
+corner family, or is it sparse? To avoid volume numerics, the scan
+worked in quotient rings. For a candidate cubic g(z), compute (1-z)^a
+and z^b modulo g(z); if they are equal, then g divides P_{a,b}. This
+avoids factoring every high-degree P_{a,b}; it tests exact divisibility
+in the field itself.</p>
+<p>For g_1(z)=z^3 - 2z^2 + 3z - 1, the visible corner avatar, the exact
+scan through a&lt;=300 found only (a,b)=(3,2). For g_2(z)=z^3 - 4z^2 +
+5z - 1, the AK/translated avatar, the exact scan through a&lt;=300 found
+only (a,b)=(5,1). This does not prove global uniqueness, but it is
+strong evidence that the recurrence is not governed by a small modular
+period like the regular tetrahedron factor. Compare the elementary
+factor z^2 - z + 1: it divides P_{a,b} exactly when 6 divides a+b,
+producing many rows. The -23 cubics do not behave that way in the
+scanned range. They appear as isolated events: one direct pin and one
+hidden cofactor.</p>
+<p>The hidden cofactor is especially important. At (5,1), P_{5,1}
+factors as the regular tetrahedron factor z^2 - z + 1 times z^3 - 4z^2 +
+5z - 1. The first factor is cyclotomic, discriminant -3, a familiar
+abelian/torsion tetrahedral piece. The second factor is the 5_2 core
+field. Thus a corner that looks elementary from its visible cyclotomic
+component quietly carries the non-abelian core as a cofactor. This is a
+miniature version of the entire Shadow-Core Lift: an abelian factor is
+visible, but the real non-abelian field is the hidden complementary
+factor. The corner family therefore becomes a laboratory for shadow-core
+factorization.</p>
+<p>The natural computational next step is to build a corner factor atlas
+in which every factor receives a shadow/core type. For each P_{a,b},
+factor over Q, compute discriminants, signatures, Galois markers when
+feasible, Bloch values at complex roots, and possible census-volume
+matches. Then classify factors as elementary cyclotomic, abelian
+non-cyclotomic, non-abelian cubic, non-abelian higher degree, or
+unresolved. The scan through a&lt;=20 already recovers the expected
+small fields: z^2 - 3z + 1 with discriminant 5 at (2,1), the -31 cubic
+at (3,1), the -23 cubic at (3,2), the -283 quartics at (4,1) and (4,3),
+the split -3 and -23 at (5,1), and the quintic rows with discriminants
+3017, 3233, 2869, plus the (7,5) split row with the -3 factor and
+quintic discriminant 1649. The numbers themselves are less important
+than the classification behavior: some rows are direct core pins, some
+are elementary shadows, and some are higher-degree candidates rejected
+or unresolved by volume matching.</p>
+<p>The breakthrough possibility is a quotient-ring search for hidden
+cores. Instead of scanning every P_{a,b} by full factorization, take a
+library of known core fields K_i with generator polynomials g_i and test
+divisibility by fast modular exponentiation. For each g_i, the condition
+g_i | P_{a,b} is simply (1-z)^a = z^b in the finite-dimensional algebra
+Q[z]/(g_i). This is a dynamical system on a finite-rank vector space
+over Q. It can be accelerated by representing multiplication by z and
+1-z as matrices and searching for exponent pairs where A^a v = B^b v.
+Over reductions modulo good primes, the search becomes finite and very
+fast; rational confirmation follows only for hits. This is a more
+powerful engine than volume-first search because it can find hidden
+field factors even when no census volume is currently known.</p>
+<p>For the -23 field, the scan suggests two distinguished relations in
+the field: (1-z)^3 = z^2 for one generator, and (1-z)^5 = z for the
+translated generator. These are not two unrelated coincidences. They are
+two ways the same field sits inside the corner dynamics, one as the
+direct 5_2 regulator corner and one as the AK geometric branch under a
+regular-tetrahedron split. The challenge is to identify the internal
+field-theoretic reason. Is there a unit equation in K_23 governing both?
+Are these relations conjugate under a cluster transformation z |-&gt;
+1-z, z |-&gt; 1/z, or a Neumann-Zagier shape change? Does the pair (3,2)
+and (5,1) encode two triangulation presentations of the same Bloch
+class, one direct and one stabilized by a regular tetrahedron? These are
+not rhetorical questions; they are exact algebra questions.</p>
+<p>A concrete next computation would enumerate unit equations (1-z)^a =
+z^b inside K_23 for all small-height generators z = r_0 + r_1 alpha +
+r_2 alpha^2 with bounded rational coefficients, not only for the four
+known polynomial avatars. The quotient-ring scan fixed g and varied
+(a,b). The inverse search fixes K_23 and searches for elements z in K_23
+satisfying corner-like unit equations. This could reveal whether (3,2)
+and (5,1) are two points in a larger internal unit-equation orbit or
+truly isolated minimal solutions. If the only low-height solutions
+correspond to the known geometry, that itself is a theorem candidate:
+the 5_2 Bloch class is isolated among small corner unit equations in its
+own field. That would be a genuine beyond-core discovery.</p>
+<h2 id="plate-e-computational-objects-after-section-5">Plate E:
+computational objects after section 5</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Exact object</strong></th>
+<th><strong>Machine operation</strong></th>
+<th><strong>Frontier question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Direct hit</td>
+<td>(3,2): z^3-2z^2+3z-1</td>
+<td>quotient-ring divisibility</td>
+<td>prove uniqueness?</td>
+</tr>
+<tr class="even">
+<td>Hidden hit</td>
+<td>(5,1): (z^2-z+1)*(z^3-4z^2+5z-1)</td>
+<td>factor scan and field tag</td>
+<td>explain shape-transform origin</td>
+</tr>
+<tr class="odd">
+<td>Elementary rule</td>
+<td>z^2-z+1 iff 6|(a+b)</td>
+<td>cyclotomic factor theorem</td>
+<td>separate shadow from core</td>
+</tr>
+<tr class="even">
+<td>Inverse search</td>
+<td>z in K_23 satisfying (1-z)^a=z^b</td>
+<td>S-unit enumeration</td>
+<td>find all low-height core corners</td>
+</tr>
+</tbody>
+</table>
+<p><em>Plate note: the table is intentionally operational. Each row
+names an exact object, the computational operation that acts on it, and
+the next frontier question rather than restating the first
+monograph.</em></p>
+<h1 id="vi.-plate-e-p-adic-ramification-as-a-computational-control-surface">VI.
+Plate E: p-adic ramification as a computational control surface</h1>
+<p>The p-adic side should not be treated as a separate annex. In a
+core-aware computing architecture, ramification is a control surface.
+The discriminant -23 says that 23 is the unique ramified rational prime
+of the cubic core field. The Habiro symmetrization line says
+denominators localize at 23: the relevant ring is Z[z,1/23]. The
+Condensoroid side says the mod-23 factorization has a double root and a
+recentered Newton polygon with slope behavior. The p-adic regulator side
+says that across the computed atlas rows a uniform depth appears. These
+are not independent facts. They all tell the computation where singular
+arithmetic lives.</p>
+<p>A p-adic control surface has three jobs. First, it tracks
+denominators. If a perturbative coefficient in K_23 develops
+denominators supported at 23, the system should not mark that as
+arbitrary coefficient growth. It should recognize the ramified prime and
+attach the valuation to the field descriptor. Second, it selects
+branches. Hensel lifts near a double root behave differently from lifts
+near simple roots; the recentered Newton polygon tells the computation
+which local extension and which slope are present. Third, it helps
+separate genuine core behavior from accidental decimal agreement. A
+volume coincidence over C is less convincing if the p-adic skeleton and
+ramification behavior do not match. Conversely, a field whose complex
+regulator and p-adic branch both match has stronger custody.</p>
+<p>For the Shadow-Core extractor, the p-adic stage should be placed
+after field recognition but before final regulator claims. Once an
+irreducible factor is found, compute its discriminant, ramified primes,
+factorization modulo ramified primes, Hensel data, and valuation
+behavior of the key denominators. For K_23, the mod-23 double-root
+phenomenon is not optional decoration. It is the finite-place shadow of
+the same field that produces the complex hyperbolic volume. The real
+regulator log rho, complex Bloch regulator D(z), and p-adic skeleton are
+three evaluations of one algebraic carrier. A computation that stores
+only the complex root has thrown away two-thirds of the
+architecture.</p>
+<p>The p-adic control surface also connects to the coefficient-field
+virtual machine. Suppose c_n is a loop coefficient represented as a
+rational vector in 1,u,u^2. The CFVM can compute v_23 of its denominator
+and of its norm. Across coefficients, this produces a valuation profile.
+That profile may be as meaningful as the complex magnitude. If a hidden
+integrality law exists, it will likely appear as bounded denominator
+growth after a natural normalization, or as a predictable valuation
+slope tied to the loop order. The existing one-loop discriminant -23 *
+7^2 already hints at mixed core/shadow arithmetic: ramified 23 from the
+core and determinant 7 from the shadow. Higher-loop coefficients may
+reveal whether this mixture follows a stable law.</p>
+<p>A concrete computational program is therefore: compute c_0 through
+c_N as exact K_23 elements, normalize by expected powers of the Hessian
+and torsion factors, record denominator support, norm factorization,
+trace, and valuations at 23 and 7, and compare against the abelian Nahm
+shadow. If the non-abelian coefficients show a stable 23-adic depth that
+the Nahm shadow lacks, that becomes a new invariant separating full AK
+perturbation from q-hypergeometric shadow. If the 7-adic factors appear
+only through determinant-normalization terms while 23 controls ramified
+field denominators, then the phrase 7 is the shadow and -23 is the core
+becomes a coefficient-level theorem rather than a slogan.</p>
+<p>The p-adic control surface also gives a better way to search beyond
+5_2. For any candidate core field K, compute Ram(K), the set of ramified
+primes. Compare it to determinant primes, Alexander primes, cyclotomic
+conductor primes, and state-sum exceptional primes. A pure shadow case
+should have close agreement between determinant/conductor and field
+ramification. A non-abelian lift case may show a new ramified prime not
+predicted by the abelian shadow. For 5_2, determinant 7 and discriminant
+prime 23 are distinct. That split is a warning that determinant data is
+not enough. In other knots, a similar mismatch may predict where the
+shadow-core obstruction will appear.</p>
+<p>This suggests a search heuristic: rank candidate objects by
+ramification surprise. Define Surprise(X)=Ram(CoreCandidate) minus
+primes visible in Shadow(X). If Surprise is empty, the object may still
+be interesting but is less likely to force a non-abelian lift. If
+Surprise contains a new prime with non-square discriminant and complex
+regulator support, prioritize it. For 5_2, Surprise includes 23 relative
+to determinant 7. For 4_1, the geometric field Q(sqrt(-3)) is cyclotomic
+and closely tied to the tetrahedral prime 3, so surprise is low. This
+does not prove anything, but it directs computation toward the cases
+where the abelian shadow is arithmetically incomplete.</p>
+<p>The deepest version would combine p-adic and complex selection. A
+candidate core branch is accepted only if it passes an Archimedean test,
+D(z) nonzero and volume-compatible; a finite-place test, ramification
+and Hensel data coherent; and an algebraic test, irreducible
+factor/Galois marker not contained in the shadow field. This tri-test
+avoids chasing false positives. It also converts the word “custody” into
+a computational predicate: a branch has custody of an invariant when it
+carries the complex regulator, finite ramification, and exact
+coefficient field simultaneously. The -23 field passes this predicate
+for 5_2. The cyclic conductor-7 field passes a shadow predicate but
+fails the core predicate. That is the separation the next machine should
+automate.</p>
+<h1 id="vii.-plate-f-the-cube-root-spine-as-the-obstruction-method-cousin">VII.
+Plate F: the Cube-Root Spine as the obstruction-method cousin</h1>
+<p>The Cube-Root Spine should be included in the sequel, but not by
+forcing it into the discriminant--23 story. Its value is methodological.
+It proves that an apparent discriminant wall can be too crude, and that
+the true exactness locus may sit deeper inside a rank-defect stratum. In
+the sextic Weyl-exactness problem, the Moyal correction tower closes to
+two transvectant gates, (f,g)_3 and (f,g)_5. Along the cube-root line
+f_lambda = x^6 + lambda x^3y^3 + y^6, the exceptional value lambda=40/7
+produces a finite exact spectrum. The theorem is not that an infinite
+channel opens; the theorem is that the exact corridor is real and
+finite. The reverse odd-degree gates then show that rank failure for
+squarefree septimic or nonic partners does not occur on the full
+discriminant wall but only on deep multiple-root strata such as a
+quintuple-root stratum.</p>
+<p>This is precisely the same epistemic discipline as the Shadow-Core
+Lift. The visible wall is not the answer. In 5_2, determinant and
+cyclotomic conductor are visible walls; they are useful but too small.
+In the cube-root atlas, the ordinary discriminant is a visible wall; it
+is useful but too broad. In both settings the computation must push past
+the first algebraic surface and locate the true carrier. For 5_2 the
+carrier is the non-abelian character/AK branch. For the cube-root
+problem the carrier is a finite rank-defect locus in the transvectant
+gate map. The mathematical objects differ; the discovery pattern
+matches.</p>
+<p>The practical lesson for computing is important. A generic solver
+tends to report walls: discriminants, singular matrices, zero
+determinants, bad primes, rank drops. But a discovery engine must refine
+walls into carriers. A determinant-zero Nahm matrix is a wall; the
+actual carrier of the -23 field is not that matrix saddle but the full
+AK critical ideal. A discriminant-zero binary form is a wall; the actual
+carrier of reverse-gate rank failure is a quintuple-root stratum, not an
+arbitrary repeated-root form. A cyclotomic root-of-unity degeneration is
+a wall; the actual non-abelian core requires a gluing/character lift.
+Thus the shared computational primitive is not discriminant detection.
+It is wall refinement.</p>
+<p>The wall-refinement algorithm has a general form. Given a wall W
+defined by a coarse condition, decompose W into strata S_i. For each
+stratum compute the rank, field, obstruction class, or regulator
+behavior that actually matters. Then identify the minimal stratum S_*
+where the desired phenomenon occurs. In the cube-root case, W is the
+discriminant locus of the partner form, but S_* is the quintuple-root
+stratum for rank failure. In 5_2, W is the determinant-zero or
+cyclotomic degeneration boundary, but S_* is the full non-abelian
+AK/character branch. The same algorithm can be used in many domains:
+singular closures, deformation quantization exactness, state-integral
+critical loci, p-adic Newton polygon branches, and compiler-like
+elimination graphs.</p>
+<p>This provides a better way to connect the cube-root program to the
+topological one without making a false field claim. The cube-root result
+is not evidence that -23 is universal. It is evidence that the method
+which found -23 can be generalized. The method says: when a visible
+obstruction appears, do not stop; stratify it. Compute the exact locus
+where the obstruction becomes productive. Distinguish empty walls from
+live corridors, degenerate branches from Morse branches, abelian shadows
+from non-abelian cores. The Cube-Root Spine is therefore the
+algebraic-exactness laboratory for the same extraction discipline that
+the 5_2 work demonstrates in quantum topology.</p>
+<p>A computing breakthrough here would be a unified obstruction
+stratifier. It would accept an ideal, matrix family, transvectant gate,
+or critical equation. It would compute coarse walls by
+determinants/discriminants, then refine them by primary decomposition,
+rank profiles, multiplicity strata, Galois fields, and regulator tests.
+Its output would not be “singular” or “nonsingular”; it would be a
+stratified map of which singularities are productive. In the cube-root
+problem, productive means a Weyl-exact corridor. In the AK problem,
+productive means a non-abelian Morse saddle with a coefficient field. In
+p-adic skeletons, productive means a ramified branch with meaningful
+Newton slope. The same infrastructure could serve all these cases.</p>
+<p>The philosophical gain is that it prevents overfitting to one
+beautiful number. The number -23 is extraordinary in the 5_2 program,
+but the larger discovery is the ability to extract hidden carriers from
+shadows. The cube-root atlas proves that this ability is not confined to
+hyperbolic knot fields. It works in invariant theory and deformation
+quantization too. The next document after this one could therefore be
+organized around “carrier extraction” rather than “disc -23.” The 5_2
+field would be the first non-abelian carrier, the cube-root sextic would
+be the first finite Weyl-exact carrier, and future examples would be
+searched for by the same wall-refinement engine.</p>
+<h1 id="viii.-beyond-volume-regulator-output-is-only-the-first-observable">VIII.
+Beyond volume: regulator output is only the first observable</h1>
+<p>Hyperbolic volume is the most visible output because it is a single
+real number and it agrees spectacularly with Bloch-Wigner evaluation.
+But a core-aware program should not stop at volume. Volume is one
+regulator coordinate of the Bloch class. The same core field can control
+Chern-Simons values, one-loop torsion, higher-loop perturbative
+coefficients, p-adic regulators, and possibly exact recursions in
+q-holonomic or state-integral expansions. Treating volume as the final
+prize would repeat the error of treating determinant as the final
+shadow. The volume is a gateway observable.</p>
+<p>For 5_2 the Bloch regulator line is already strong:</p>
+<p>Vol(5_2)=3D(z), z in K_23, D(z)=Im Li_2(z)+arg(1-z)log|z|.</p>
+<p>The Borel-Zagier line then relates zeta_K(2) to the same volume up to
+the explicit rational and pi/discriminant factors. The p-adic regulator
+line reads the same class at the ramified finite place. The perturbative
+line reads Hessian and vertex data at the same geometric saddle. These
+should be treated as components of a regulator vector rather than as
+separate facts. A future invariant could be written schematically as</p>
+<p>Reg^sharp(X) = (Reg_infty^D(Bloch(X)), Reg_p(Bloch(X)), Torsion_1(X),
+Loop_2(X), ...),</p>
+<p>with each coordinate computed in or from the same core field. The old
+scalar Theta is a shadow of this vector. The stronger object is the
+complete regulator-and-coefficient packet.</p>
+<p>This shift suggests a new computational target: a regulator bundle.
+Given a core branch, compute all available regulator outputs from one
+shared field representation. At the complex embedding, evaluate
+Bloch-Wigner volume and, when branch choices are controlled,
+Chern-Simons phase. At the algebraic level, compute adjoint torsion and
+loop coefficients as field elements. At the p-adic level, compute
+Coleman/p-adic dilogarithm shadows or the available regulator depth. At
+the zeta level, compare Dedekind zeta values, L-functions, and
+Borel-Zagier ratios. The output is not a single number but a bundle
+whose internal consistency is itself evidence of correct branch
+selection.</p>
+<p>For computing, the advantage is fault localization. If the volume
+matches but the field does not, the branch is suspicious. If the field
+matches but the p-adic ramification does not, the local place selection
+is suspicious. If one-loop coefficients leave the field, the
+perturbative derivation is suspicious. If the zeta ratio fails while
+volume and field match, the normalization or class multiple is
+suspicious. A regulator bundle lets the system determine which part of
+the lift has failed. This is much stronger than a global yes/no
+comparison.</p>
+<p>The perturbative coefficient field gives a particularly promising
+next observable. The one-loop and two-loop values already sit in K_23.
+Higher loops should be computed exactly as rational functions of saddle
+variables and derivative tensors. If all c_n lie in K_23 after
+appropriate normalization, then the AK perturbative series is a
+K_23-valued transseries at the selected branch. If denominators follow a
+predictable support law, then the series may have a hidden arithmetic
+recurrence. If coefficient heights grow in a structured way, that
+structure may reflect the same conductor/shadow split. This is where
+“the core field is the coefficient field of quantum perturbation theory”
+becomes an experimental program rather than a sentence.</p>
+<p>There is also a possible compression gain. A high-order perturbative
+series over complex numbers is expensive and brittle. A K-valued series
+is exact and structurally smaller. Suppose each coefficient c_n is
+stored as (a_n,b_n,c_n)/d_n in the basis 1,u,u^2. The dominant storage
+becomes rational height growth rather than decimal precision. If the
+denominator d_n factors only over a small prime set after normalization,
+the series is even more compressible. This is not generic data
+compression; it is semantic arithmetic compression. The field is the
+codec.</p>
+<p>This connects unexpectedly to the user’s broader compression and
+compiler programs. A semantic codec succeeds when it identifies the
+latent grammar that generated data. Here the latent grammar of
+perturbative quantum data is not a byte pattern but a number field and a
+branch of a critical ideal. Storing decimals is like storing rendered
+pixels; storing field coordinates is like storing glyph IDs and layout
+instructions. The Shadow-Core Lift is therefore a mathematical version
+of semantic compression: recover the generating carrier and store data
+in that carrier. That analogy is not merely poetic. It suggests concrete
+code: a perturbative series format with a field header, embedding
+header, branch header, and exact coefficient vectors.</p>
+<p>The future benchmark should compare three representations of the same
+loop expansion: raw complex decimals; high-precision algebraic
+recognition after the fact; and native field-valued computation from the
+beginning. The native method should win on exact equality, storage,
+reproducibility, branch control, and p-adic inspection. If it also wins
+on speed for high-order coefficients by avoiding repeated high-precision
+recognition, then the computational case becomes decisive. The
+breakthrough would be to show that core extraction is not only more
+truthful but more efficient.</p>
+<h1 id="ix.-a-core-aware-search-program-for-new-examples">IX. A
+core-aware search program for new examples</h1>
+<p>The natural next question is where to search after 5_2. The answer
+should not be “everywhere.” The Shadow-Core framework gives priorities.
+Search where the abelian shadow is strong enough to route the object but
+visibly insufficient to explain the candidate core. Search where
+determinant primes and trace-field discriminant primes diverge. Search
+where a cyclotomic or Nahm saddle exists but a geometric or character
+branch has larger Galois group. Search where a critical ideal splits
+into a degenerate abelian branch plus an irreducible positive-volume
+branch. Search where a corner-divisor equation contains an elementary
+cyclotomic factor and a non-abelian cofactor. Search where p-adic
+ramification introduces a prime not seen by the determinant.</p>
+<p>The first domain is small hyperbolic knots and cusped census
+manifolds with cubic (1,1) trace fields. The existing atlas already
+found 28 rows across nine fields with rational Theta values in powers of
+2 and 3. That atlas should now be reinterpreted through shadow-core
+extraction. For each row, compute determinant or first-homology shadow,
+trace-field discriminant, Galois marker, Bloch volume, p-adic
+ramification depth, and available state-sum/Nahm data. Then ask which
+rows behave like 5_2: abelian shadow small, non-abelian core larger,
+perturbative coefficient field computable. The discriminant -31 and -283
+pins should be treated as the next test cases. Do they have analogues of
+determinant-shadow split? Do their AK or character critical ideals
+factor into abelian and non-abelian branches? Do one-loop coefficients
+lie in their trace fields with mixed discriminant factors? These are
+concrete computations.</p>
+<p>The second domain is twist knots. The 5_2 knot is a twist knot; 4_1
+is the abelian/torsion calibration; 6_1 and 7_2 already have their own
+saddle and obstruction stories in the broader program. A twist-knot
+family may reveal how the shadow-core lift changes with crossing number
+and sign. For each twist knot, compute the colored Jones/Kashaev
+asymptotic saddle, trace field, determinant, Nahm candidate matrix if
+available, and AK critical ideal factorization. Classify whether the
+core field is cyclotomic, abelian non-cyclotomic, S_3 cubic, higher
+non-abelian, or obstructed. The goal is not to prove the volume
+conjecture for all twist knots; it is to classify where the abelian
+shadow stops.</p>
+<p>The third domain is the corner-divisor family. It is computationally
+cheap and conceptually aligned. Use quotient-ring divisibility scans to
+search for known trace fields as exact factors. Then invert the search:
+for a desired field K, find low-height elements z in K satisfying
+(1-z)^a = z^b for small coprime a,b. This produces candidate Bloch
+classes and regulator values without requiring a manifold first. Some
+will match census manifolds; others may be pure arithmetic regulators.
+The distinction is useful. A field can have a regulator corner without
+being the invariant trace field of a known small manifold. The atlas
+should separate “field pin,” “volume near-hit,” “regulator-only class,”
+and “manifold custody.”</p>
+<p>The fourth domain is q-hypergeometric/Nahm data. The 5_2 case showed
+that the Nahm-sum saddle may be abelian even when the full quantum field
+is non-abelian. That suggests searching for other cases where q-series
+presentations are shadows, not cores. For each Nahm matrix A, compute
+its saddle fields, kernel/free directions, conductor fields, and compare
+with known geometric trace fields. Cases where the fields disagree are
+not failures; they are lift candidates. The exact question is: which
+additional analytic structure must be added to move from the Nahm shadow
+to the geometric core? For 5_2 the answer is the full
+Andersen-Kashaev/Faddeev state integral. Other knots may require
+different completions.</p>
+<p>The fifth domain is deformation quantization exactness, represented
+by the Cube-Root Spine. Search for Hamiltonians whose Weyl-exact partner
+spectra are finite but nontrivial, and classify the exactness carriers.
+Here the core is not a number field but a rank-defect module or
+invariant-theoretic stratum. Still, the same algorithms apply: compute
+coarse obstruction, refine wall, identify minimal productive stratum,
+store exact carrier. A cross-domain database could then compare carrier
+types: trace field, Bloch class, p-adic skeleton, transvectant kernel,
+finite conductor module, or semantic compression grammar.</p>
+<p>A core-aware search program should return negative results with the
+same care as positives. The corner scan through a&lt;=300 did not find
+additional divisibility hits for the two -23 cubic avatars. That
+negative result is useful because it argues against a simple periodic
+law. The rapidity degeneration obstruction is a stronger negative result
+because it proves cyclotomic routes cannot reach S_3. The Nahm-sum
+separation is another negative result because it proves the det-zero
+matrix saddle is abelian. In the new search, a failed containment or
+absent field should be stored as evidence. Breakthroughs often occur
+when the system can say exactly where something is not.</p>
+<p>The final output of the search program should be an atlas of lift
+types. Type 0: shadow complete, core abelian or absent. Type 1: abelian
+geometry, as with 4_1 and Q(sqrt(-3)). Type 2: non-abelian core with
+direct character/AK extraction, as with 5_2. Type 3: non-abelian core
+suspected by volume/regulator but missing branch custody. Type 4:
+shadow/core mismatch with unknown receiving space. Type 5:
+wall-refinement carrier outside topology, such as cube-root Weyl
+exactness. Such an atlas would be more valuable than another list of
+invariants because it tells a computation what kind of lift is
+required.</p>
+<h1 id="x.-the-computing-architecture-corelift-engine-v0">X. The
+computing architecture: CoreLift Engine v0</h1>
+<p>A concrete CoreLift Engine can be built in layers. The algebra layer
+contains polynomial arithmetic, quotient fields, resultants,
+discriminants, factorization, field isomorphism heuristics, norm/trace,
+and exact matrix operations. The numeric layer contains high-precision
+complex embeddings, Bloch-Wigner and related regulator evaluations,
+interval or ball arithmetic where possible, and branch-aware
+logarithm/dilogarithm lifting. The p-adic layer contains modular
+factorization, Hensel lifting, Newton polygon extraction, valuations,
+and denominator support. The topology/state-integral layer contains
+gluing equation ingestion, Neumann-Zagier matrices, AK/Faddeev potential
+templates, A-polynomial/resultant elimination, and branch typing. The
+search layer contains corner scans, quotient-ring divisibility tests,
+determinant-shadow comparison, and Galois-containment obstruction
+tests.</p>
+<p>The key design decision is that every layer exchanges typed carriers,
+not untyped numbers. A field object is not just a polynomial; it
+includes reduced polynomial, discriminant, signature, embeddings,
+ramified primes, isomorphism maps, and known aliases. A branch object is
+not just a root; it includes exact factor, multiplicity, field, volume
+status, Hessian status, and shadow/core classification. A coefficient
+object is not just a decimal; it includes field vector, denominator,
+embedding, norm, trace, and valuation profile. A regulator object is not
+just a real number; it includes Bloch class expression, embedding,
+branch choices, numerical value, and precision certificate. This typed
+design is what prevents the old failure mode: a solver finds a decimal,
+recognizes a polynomial, and then silently forgets which branch
+generated it.</p>
+<p>The minimal v0 should implement five commands. The command shadow
+object computes determinant-level and abelian data from available input.
+The command obstruct shadow target runs Galois, cyclotomic,
+discriminant, and rank/kernel obstruction tests. The command
+eliminate-critical input computes exact critical ideal factors for a
+gluing or AK template. The command branch-type factors evaluates factor
+degree, discriminant, Galois marker, Bloch volume if applicable, and
+Hessian nondegeneracy when derivative data are present. The command
+coeff-field branch expressions reduces symbolic loop expressions into
+the branch quotient field and emits exact coefficient vectors plus
+minimal polynomials. With only these five commands, the 5_2 story can be
+reproduced as computation rather than prose.</p>
+<p>The first benchmark should be the 5_2 known path. Input: determinant
+7, Habiro/Nahm matrix A, m015 gluing equations or embedded critical
+ideal template, and loop expressions. Expected output: shadow
+determinant 7; Nahm saddle fields Q(sqrt2) and Q(zeta_7)^+; obstruction
+that the S_3 -23 field is not cyclotomic and not in the Nahm saddle;
+critical factorization (z-1)^2 times z^3 - 4z^2 + 5z - 1; branch typing
+parabolic versus hyperbolic; one-loop and two-loop coefficient minimal
+polynomials; Bloch-Wigner regulator value. The benchmark passes only if
+all facts are produced as typed objects and if the system refuses to
+label the Nahm saddle as the non-abelian core.</p>
+<p>The second benchmark should be 4_1 as a calibration. Input:
+figure-eight gluing data. Expected output: field Q(sqrt(-3)),
+discriminant -3, cyclotomic containment in Q(zeta_3), positive Bloch
+volume, torsion/abelian compatibility. The point is to prove the engine
+does not force every hyperbolic object into Type 2 non-abelian lift.
+Some cores are already contained in abelian/cyclotomic closures. 4_1 is
+the control that keeps the theory honest.</p>
+<p>The third benchmark should be the corner family. Input: P_{a,b} for
+a&lt;=N and a library of fields. Expected output: exact factor table,
+elementary z^2-z+1 rule, direct -23 hit at (3,2), hidden -23 cofactor at
+(5,1), no additional exact divisibility hits for the two tested -23
+avatars through a declared bound, and field classifications for -31 and
+-283 pins. This benchmark tests whether the engine can discover rather
+than merely verify known gluing equations.</p>
+<p>The fourth benchmark should be Cube-Root Spine. Input: the
+transvectant gate maps for the sextic exactness problem. Expected
+output: coarse discriminant wall, refined rank-defect stratum, finite
+Weyl-exact spectrum, and negative squarefree odd gaps. This benchmark
+tests whether the architecture is genuinely about carrier extraction
+rather than only about knot trace fields. The engine must handle a
+carrier that is a rank stratum instead of a number field.</p>
+<p>From a software standpoint, the CoreLift Engine should be small and
+exact-first. Sympy/Sage/PARI can handle polynomial and number-field
+arithmetic; mpmath or Arb-style ball arithmetic can handle regulator
+numerics; SnapPy or pre-exported gluing rows can feed topology; custom
+quotient-ring scans can handle corner searches quickly. The novelty is
+not any single backend. The novelty is the workflow contract: no numeric
+answer is final until it has been assigned to a typed carrier, and no
+lift is legal until a lower-level obstruction explains why the shadow
+was insufficient.</p>
+<p>If this engine works, the computing breakthrough is broader than 5_2.
+It becomes a way to search for hidden structure in mathematical data
+sets: exact fields behind volumes, exact strata behind rank drops, exact
+grammars behind compression artifacts, exact p-adic branches behind
+denominators. The same architecture can serve quantum topology,
+deformation quantization, semantic codecs, and compiler optimization
+because it is built around a universal computational move: identify the
+projection, prove its insufficiency, extract the carrier, compute
+natively in the carrier.</p>
+<h2 id="plate-j-computational-objects-after-section-10">Plate J:
+computational objects after section 10</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Layer</strong></th>
+<th><strong>Exact object</strong></th>
+<th><strong>Machine operation</strong></th>
+<th><strong>Frontier question</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CoreLift v0</td>
+<td>typed carriers</td>
+<td>exact algebra first</td>
+<td>reproduce 5_2 end to end</td>
+</tr>
+<tr class="even">
+<td>Benchmark 4_1</td>
+<td>Q(sqrt(-3)) cyclotomic</td>
+<td>control abelian geometry</td>
+<td>avoid overfitting non-abelian lift</td>
+</tr>
+<tr class="odd">
+<td>Benchmark corners</td>
+<td>factor/divisibility atlas</td>
+<td>discover hidden fields</td>
+<td>scale search cheaply</td>
+</tr>
+<tr class="even">
+<td>Benchmark cube-root</td>
+<td>rank-defect carrier</td>
+<td>wall refinement</td>
+<td>show architecture beyond topology</td>
+</tr>
+</tbody>
+</table>
+<p><em>Plate note: the table is intentionally operational. Each row
+names an exact object, the computational operation that acts on it, and
+the next frontier question rather than restating the first
+monograph.</em></p>
+<h1 id="xi.-new-conjectures-suggested-by-the-computation">XI. New
+conjectures suggested by the computation</h1>
+<p>The sequel should not hide its conjectural edge. The computations
+suggest several statements that are not yet proved but are precise
+enough to guide work. The first is the Isolated Corner Recurrence
+Conjecture for the 5_2 field. In the coprime corner family
+P_{a,b}=(1-z)^a - z^b, the two discriminant--23 cubic avatars z^3 - 2z^2
++ 3z - 1 and z^3 - 4z^2 + 5z - 1 occur only at (3,2) and (5,1),
+respectively, up to the equivalences generated by the standard shape
+transformations z, 1-z, 1/z, 1/(1-z), z/(z-1), (z-1)/z. The computation
+verified the raw divisibility form through a&lt;=300 for two avatars,
+not the full shape-orbit conjecture. The next step is to formulate the
+shape-orbit action exactly and reduce the unit equation to a finite
+S-unit problem in K_23.</p>
+<p>The second is the Coefficient-Field Persistence Conjecture. For the
+5_2 Andersen-Kashaev expansion at the hyperbolic Morse branch, after a
+fixed normalization of the classical action and Hessian, every
+perturbative coefficient lies in the cubic trace field K_23. The current
+pass checks one-loop and two-loop inputs exactly. The conjecture says
+this persists to all orders because the potential derivatives and saddle
+coordinates are algebraic in the same quotient field, and the Feynman
+contractions use rational operations. The subtlety is not algebraic
+closure under rational operations; it is normalization, branch, and
+possible transcendental constants. The conjecture should be stated with
+those normalizations explicit.</p>
+<p>The third is the Mixed Prime Law. In normalized perturbative
+invariants for 5_2, the prime 23 enters through core-field ramification
+and the prime 7 enters through determinant/shadow torsion factors. The
+one-loop discriminant -23 * 7^2 is the first clue. The law would predict
+that higher-loop minimal polynomials or denominator norms factor into a
+stable pattern separating ramified core primes from determinant-shadow
+primes and universal small primes. This is computationally testable once
+c_2, c_3, and beyond are computed exactly.</p>
+<p>The fourth is the Branch Split Principle. When a shadow-core lift is
+complete for a hyperbolic knot with a non-abelian trace field, the
+relevant analytic critical ideal should contain, after appropriate
+elimination, at least one degenerate abelian boundary component and at
+least one irreducible non-abelian Morse component. The 5_2 factorization
+(z-1)^2 times the -23 cubic is the prototype. The principle may fail in
+this simple form for more complicated manifolds, but if a generalized
+version holds, it gives a powerful search heuristic: look for
+factorizations that internally display the split between shadow and
+core.</p>
+<p>The fifth is the Wall Refinement Principle. In both the topological
+and cube-root programs, the first visible wall is too coarse. The
+determinant-zero matrix does not carry the non-abelian field; the full
+AK critical branch does. The ordinary discriminant wall does not
+characterize reverse Weyl-exact rank failure; the quintuple-root stratum
+does. The conjecture is that productive mathematical obstructions almost
+always live on refined strata of coarse singular walls, and a discovery
+engine should privilege stratification over scalar scoring. This is
+broad, but it is computationally meaningful: algorithms should output
+stratified carriers rather than global wall flags.</p>
+<p>The sixth is the Semantic Field Compression Principle. For exact
+perturbative or regulator data generated by a fixed non-abelian core,
+the natural compressed representation is the field plus coefficient
+vectors, not decimal approximations. If coefficient heights grow
+moderately after normalization, field-native storage will outperform
+high-precision decimal storage in reliability and possibly size. This is
+not a theorem yet; it is a benchmark proposal. Generate N perturbative
+coefficients, store them as decimals and as K-vectors, compare size,
+equality testing, regeneration cost, and branch safety. If the field
+codec wins, the Shadow-Core Lift becomes a computational compression
+principle.</p>
+<p>The seventh is the Ramification Surprise Heuristic. Objects whose
+trace-field discriminants introduce primes absent from
+determinant/conductor shadows are high-priority candidates for
+non-abelian lifts. The 5_2 split between determinant 7 and discriminant
+prime 23 is the prototype. The heuristic should be tested across the
+28-row cubic atlas and beyond. It is not sufficient: a new ramified
+prime does not guarantee a useful core. But it is a cheap ranking score
+for where the abelian shadow is likely incomplete.</p>
+<p>These conjectures are deliberately mixed in strength. Some are
+near-theorems awaiting formalization; some are search heuristics; some
+are software benchmarks. That mixture is healthy. The program is not a
+single theorem but a computation-guided architecture. Its job is to turn
+observed structure into exact tests, exact tests into algorithms,
+algorithms into new data, and new data into sharper conjectures. The
+second pass therefore should not pretend that everything is settled. It
+should identify the frontier sharply enough that the next computation
+can fail usefully.</p>
+<h1 id="xii.-what-to-compute-next-in-exact-order">XII. What to compute
+next, in exact order</h1>
+<p>The next computational sequence should be disciplined. First, finish
+the CFVM prototype for K_23. Implement quotient arithmetic for u^3 -
+4u^2 + 5u - 1, exact rational vectors, norm, trace, inverse, embedding,
+and minimal-polynomial extraction. Reproduce H_1 and H_2 from the
+current pass. Then add symbolic derivative tensors for the AK potential
+and compute the next loop coefficient c_2, not as a decimal but as a
+K_23 vector. The deliverable is a small file: field descriptor, branch
+descriptor, coefficient vectors, minimal polynomials where useful,
+valuation profiles, and embedded complex values.</p>
+<p>Second, build the branch inventory for 5_2 as a machine object. Store
+the exact factorization (z-1)^2 and cubic, branch types, Hessian status,
+Bloch values, and field tags. Add a function that refuses to compute a
+standard Gaussian on the parabolic branch because the Hessian is
+singular or divergent. Add a function that accepts the cubic branch as
+Morse/hyperbolic but marks Stokes dominance as open. This creates honest
+automation: the system can compute what is algebraically settled while
+naming the analytic gap.</p>
+<p>Third, extend the corner scan. The quotient-ring scan through
+a&lt;=300 for two avatars is useful, but the shape-transform orbit
+should be included. Generate all six shape transforms of a generator and
+their minimal polynomials in K_23. For each transformed polynomial, run
+the divisibility scan. Then invert the search by enumerating low-height
+elements of K_23 and solving (1-z)^a = z^b for small a,b. This will test
+whether (3,2) and (5,1) are shape-related isolated solutions or two
+members of a larger hidden family. The output should be exact, not
+volume-based.</p>
+<p>Fourth, apply the same corner and branch machinery to the -31 and
+-283 pins. For -31, use the cubic x^3 + x - 1 and the closed m149(1,2)
+row. For -283, use the quartic x^4 - x - 1 and the m178 row. Compute
+shadow data, possible determinant/conductor analogues, branch fields,
+and if available perturbative or regulator coefficients. The goal is to
+determine whether 5_2 is exceptional because it is first, or whether
+every genuine corner pin has a shadow-core split with its own
+coefficient field.</p>
+<p>Fifth, run the Ramification Surprise Heuristic over the cubic atlas.
+For each row, compute determinant or homological shadow if available,
+trace-field discriminant, ramified primes, and Theta value. Rank rows by
+primes present in the trace discriminant but absent from the simple
+shadow. Then select the top few for AK/character branch extraction. This
+turns the atlas into a target generator.</p>
+<p>Sixth, build the Cube-Root wall-refinement module. Take the existing
+transvectant gate data and represent the exactness carrier in the same
+typed framework: wall, refined stratum, rank profile, finite spectrum.
+The deliverable should demonstrate that the CoreLift Engine can process
+a non-field carrier. This prevents the architecture from collapsing into
+a knot-only tool.</p>
+<p>Seventh, attempt a numeric state-integral asymptotic check only after
+the exact branch and coefficient-field machinery is ready. Numerical
+integration without exact branch typing is likely to be noisy and
+ambiguous. With branch typing, the numerical task is better posed:
+evaluate whether the actual contour sees the hyperbolic Morse branch
+with the expected orientation and compare early coefficients. This is
+the hardest analytic step, so it should not be first.</p>
+<p>Eighth, package the results as a reproducible notebook or CLI rather
+than only as prose. The command should regenerate discriminants,
+resultants, Bloch values, corner divisibility hits, and coefficient
+vectors. The document can explain; the machine should reproduce. This is
+especially important for the new claims. The isolated corner scan and
+coefficient-field persistence tests will be convincing only if they are
+easily rerun.</p>
+<p>If forced to choose one immediate breakthrough target, choose the
+CFVM plus c_2. It is the clearest path from conceptual architecture to
+new computation. The first pass already argued that the core field is
+not just a label. The way to prove that computationally is to compute
+more perturbative coefficients natively in the core field. If c_2 and
+c_3 land cleanly in K_23 with controlled denominators and a visible 23/7
+valuation pattern, the program gains a new empirical theorem. If they do
+not, the failure will reveal exactly which normalization or analytic
+ingredient is missing. Either outcome advances the frontier.</p>
+<h1 id="xiii.-dense-mathematical-closure-the-lift-as-a-functorial-refusal">XIII.
+Dense mathematical closure: the lift as a functorial refusal</h1>
+<p>The cleanest formal sentence is that the Shadow-Core Lift is a
+functorial refusal of premature abelianization. There is a projection pi
+from the full geometric or analytic object to its abelian shadow. For
+many computations pi is useful and perhaps optimal. But for a
+non-abelian core object, pi is not faithful. It identifies or erases
+data required for regulator and perturbative computation. The lift is
+not the inverse of pi; generally no inverse exists. It is a legal
+enlargement chosen after proving that pi has lost the required
+invariant. This is why obstruction is central. Without obstruction, the
+lift is arbitrary complexity. With obstruction, the lift is forced.</p>
+<p>In 5_2 the projection pi sends the full object to determinant 7,
+cyclotomic coloring data, Gauss sums, and an abelian Nahm saddle. The
+invariant lost by pi is the S_3 trace field K_23. The obstruction is
+Galois-theoretic and saddle-theoretic: K_23 cannot sit in a cyclotomic
+field, and it is not in the Q(sqrt2) times Q(zeta_7)^+ Nahm saddle. The
+receiving object is the AK/character critical ideal. The exact
+factorization proves that the receiving object contains both the abelian
+boundary branch and the non-abelian core branch. Therefore the lift is
+not a vague instruction to use more geometry. It is a precise map from
+denied containment to exact branch extraction.</p>
+<p>The coefficient-field claim adds another layer. If the core were only
+a trace-field label, the lift would be classificatory. But the one-loop
+and two-loop calculations show that perturbative quantities are rational
+functions in the core coordinate. Hence the lift changes the arithmetic
+of computation. In the shadow world, coefficients appear as unexplained
+complex numbers or abelian approximations. In the core world, they are
+exact elements of K_23. The field is the native coordinate ring for the
+expansion. The numerical embedding is a representation of that exact
+object, not the object itself.</p>
+<p>This has philosophical consequences but also software consequences. A
+mathematical program that stores only the embedded complex numbers has
+already applied pi again: it has projected the exact algebraic
+coefficient into a decimal shadow. That may be acceptable for plotting,
+but it is not acceptable for identity, comparison, p-adic inspection, or
+long-range computation. The right software object is therefore not
+Complex but AlgebraicCoefficient(FieldID, vector, embedding). The right
+branch object is not Root but CriticalBranch(factor, field, type,
+embedding, regulator, Hessian). The right invariant object is not Volume
+but RegulatorBundle. The Shadow-Core Lift thus pushes all the way down
+into data structures.</p>
+<p>This is why the second pass can honestly claim to seek computing
+breakthroughs. The breakthrough is not a faster approximation to a known
+number. It is a different representation of the problem: exact carrier
+first, numerical value second. The same shift appears in semantic
+compression, where storing the generative structure beats storing
+pixels; in compiler optimization, where preserving high-level blocks
+beats flattening early; in deformation quantization, where exact
+transvectant kernels beat global impossible quantization; and in quantum
+topology, where the trace field and critical branch beat determinant
+shadows. The shared law is: do not flatten before the obstruction has
+been classified.</p>
+<p>The final mathematical object may be written as a tower:</p>
+<p>Shadow_0(X) &lt;= Shadow_1(X) &lt;= Presentation(X) &lt;= Critical(X)
+&lt;= Core(X) &lt;= Output(X).</p>
+<p>The arrows are not always inclusions; they may be projections,
+degenerations, or dispatches. But the tower records the increasing
+ability to compute invariants. Shadow_0 might be determinant. Shadow_1
+might be cyclotomic conductor. Presentation might be Nahm or q-series
+data. Critical might be the AK/character ideal. Core is the selected
+non-abelian branch. Output is regulator and perturbative coefficient
+data. The task of the engine is to know where each invariant first
+becomes visible. For 5_2, determinant appears at Shadow_0, conductor 7
+at Shadow_1/Nahm, but the -23 field appears at Critical/Core, and loop
+coefficients appear at Core/Output.</p>
+<p>This “first visibility” concept is useful. Define vis(I,X) as the
+lowest layer of the tower where invariant I is computable without loss.
+Then vis(det)=Shadow, vis(K_23)=Critical, vis(volume)=Core regulator,
+vis(one-loop)=Core coefficient field, vis(Stokes dominance)=full contour
+homology. A mature atlas would list invariants by first visibility. This
+prevents one of the most common errors in mathematical synthesis: seeing
+an invariant at a high layer and retroactively attributing it to a lower
+layer. The 5_2 work specifically corrected that error for the Nahm free
+direction. The -23 field was expected there; the computation showed it
+was not there. Its first visibility is the full AK/character critical
+layer.</p>
+<p>The sequel therefore ends with a sharper doctrine. The point is not
+to unify everything by saying all layers are the same. They are not. The
+point is to build a machine that knows which layer carries which
+invariant, proves when a lower layer cannot carry it, and computes
+natively in the first layer where it appears. That is the Shadow-Core
+Lift as a computational theory.</p>
+<h1 id="xiv.-final-synthesis-where-this-leads">XIV. Final synthesis:
+where this leads</h1>
+<p>The first pass found the spine. The second pass points toward an
+engine. The discriminant--23 field remains the iconic object, but the
+future is not another essay about its recurrence. The future is a class
+of computations that use the field as an active algebra. For 5_2, the
+field K_23 is the trace field, the Bloch-regulator field, the ramified
+p-adic field, the AK Morse-saddle field, and the perturbative
+coefficient field. Once that is accepted, the correct next move is
+obvious: compute inside K_23 until the computation itself reveals the
+next obstruction.</p>
+<p>The most likely short-term breakthrough is coefficient-field
+expansion. Compute the next loop coefficients exactly. Track denominator
+support and valuations. Compare the 23-core and 7-shadow primes. Build a
+field-valued series object. If the pattern holds, the result will be
+stronger than another volume match: it will show that the full quantum
+perturbative expansion is organized by the non-abelian core field. That
+is a publishable computational discovery if carried far enough and
+normalized carefully.</p>
+<p>The second likely breakthrough is hidden corner isolation. The
+quotient-ring scan already suggests that the two -23 corner appearances
+are isolated through a nontrivial bound. Extend this to the
+shape-transform orbit and internal unit-equation search. If the
+isolation survives, it says the corner-divisor appearance of the 5_2
+field is rigid, not periodic. If new solutions appear, they may reveal
+undiscovered regulator identities or alternate triangulation
+presentations. Either result is valuable.</p>
+<p>The third likely breakthrough is branch inventory automation.
+Reproduce the 5_2 split, then apply it to -31, -283, and the cubic
+atlas. The goal is to find more examples where an abelian branch and
+non-abelian branch coexist in the critical ideal, and to classify which
+branch carries the perturbative coefficient field. This could turn the
+Shadow-Core Lift from a one-case theorem into a family phenomenon.</p>
+<p>The fourth likely breakthrough is wall-refinement software. The
+Cube-Root Spine shows the method outside topology. If the same engine
+can refine discriminant walls into exact rank-defect carriers, then the
+architecture becomes genuinely general. It would cover non-abelian trace
+fields, Weyl-exact finite spectra, p-adic skeletons, and semantic
+compression carriers under one computational discipline.</p>
+<p>The final shape of the program is therefore not a ledger and not a
+metaphor. It is a carrier-extraction stack. Start with a shadow. Prove
+whether the shadow is complete. If incomplete, identify the obstruction.
+Dispatch to the smallest legal receiving space. Factor the critical
+equations. Type the branches. Select the core. Compute regulators and
+perturbative coefficients natively in the core field. Store outputs as
+exact carrier data. Only then embed numerically. This is the opposite of
+premature flattening.</p>
+<p>For 5_2 the doctrine is already concrete:</p>
+<p>Shadow: det=7, Fox/Gauss/cyclotomic/Nahm data.<br />
+Obstruction: S_3 field not cyclotomic; not in the abelian Nahm
+saddle.<br />
+Receiver: full AK/character critical ideal.<br />
+Core: Q[u]/(u^3-u+1), equivalently Q[z]/(z^3-4z^2+5z-1), discriminant
+-23.<br />
+Output: Vol(5_2), Borel-Zagier zeta bridge, p-adic ramification,
+one-loop and two-loop exact coefficients.</p>
+<p>The line “the core field is not just a label; it is the coefficient
+field of quantum perturbation theory” should be treated as an
+engineering requirement. Every future computation should either
+strengthen it, normalize it, or find the exact boundary where it fails.
+The breakthrough will not be in saying the sentence again. The
+breakthrough will be a file of exact coefficients, field vectors,
+valuations, and embeddings that makes the sentence executable.</p>
+<h1 id="xv.-experimental-protocols-for-the-first-breakthrough-computation">XV.
+Experimental protocols for the first breakthrough computation</h1>
+<p>The sequel becomes most useful if it ends not with aspiration but
+with an experimental protocol. The first protocol is the coefficient
+persistence protocol. Input the AK branch polynomial u^3 - 4u^2 + 5u -
+1, the symbolic potential derivatives in the chosen normalization, and
+the known rational expressions for one-loop and two-loop data. The
+system constructs K_23, reduces all derivative tensors into K_23,
+computes Gaussian contractions algebraically, and emits c_0, c_1, c_2,
+... as vectors in the basis 1,u,u^2. At each order it records minimal
+polynomial, norm, trace, denominator factorization, v_23, v_7, and
+complex embedding under sigma_C^+. The pass condition is not that the
+decimals look plausible. The pass condition is that the coefficients
+reduce exactly in K_23 and that the denominator/valuation profile is
+reproducible. The first failure condition is a coefficient that leaves
+K_23 after all normalizations are included. The second failure condition
+is uncontrolled branch dependence. Either failure is informative: it
+identifies the missing analytic normalization or the point where the
+coefficient-field statement must be weakened.</p>
+<p>The second protocol is the hidden corner protocol. Begin with the
+known K_23 field, generate a library of low-height elements z = a0 + a1
+alpha + a2 alpha^2 with bounded rational height, and test the unit
+equation (1-z)^a = z^b for coprime a&gt;b. For every solution compute
+the minimal polynomial of z, discriminant, shape-transform orbit,
+Bloch-Wigner value under complex embeddings, and whether P_{a,b} has
+elementary cyclotomic factors. This inverts the earlier scan. Instead of
+asking whether a fixed polynomial divides many corners, it asks which
+field elements of K_23 generate corner relations. If the only low-height
+solutions are the visible (3,2) and hidden (5,1) relations up to shape
+transformations, one obtains strong evidence for isolation. If new
+relations appear, they become candidates for new regulator identities.
+The important point is that the search is exact over K_23 until the
+final regulator evaluation.</p>
+<p>The third protocol is the branch inventory protocol. For each
+candidate knot or census manifold, ingest gluing equations or
+precomputed Neumann-Zagier rows and eliminate to low-dimensional
+critical factors. For each factor compute degree, discriminant,
+square/non-square status, field signature, volume test, Hessian test,
+and relation to determinant/conductor shadow. The output is a branch
+table. The program should explicitly label parabolic, cyclotomic,
+abelian hyperbolic, non-abelian hyperbolic, and unresolved branches. A
+new discovery occurs when the table contains an abelian boundary branch
+and a non-abelian Morse branch whose field is not visible in the
+determinant/cyclotomic/Nahm shadow. That is the 5_2 pattern generalized.
+A negative discovery occurs when every geometric branch is already
+cyclotomic or abelian; that identifies a shadow-complete case.</p>
+<p>The fourth protocol is the ramification surprise protocol. For a
+corpus of manifolds, knots, or corner equations, compute shadow primes
+from determinant, conductor, and obvious cyclotomic data, then compute
+core primes from trace-field discriminants and denominator norms. Rank
+objects by the set difference CorePrimes minus ShadowPrimes. For
+high-surprise objects, prioritize full branch extraction and
+coefficient-field computation. For low-surprise objects, use them as
+calibrations. This protocol is cheap and should be run before expensive
+state-integral numerics. It is not a theorem, but it is a search
+heuristic grounded in the 5_2 split between 7 and 23.</p>
+<p>The fifth protocol is the wall-refinement protocol. Given a coarse
+singular wall such as determinant zero, discriminant zero, rank drop, or
+bad-prime set, decompose it into refined strata and test which stratum
+actually carries the desired invariant. In the cube-root problem, this
+means separating the whole discriminant wall from the quintuple-root
+rank-failure stratum. In the AK problem, this means separating the
+determinant-zero Nahm presentation from the full non-abelian critical
+branch. In p-adic computations, this means separating simple-root Hensel
+branches from recentered double-root ramification. The pass condition is
+a minimal productive stratum, not merely detection of singularity.</p>
+<p>The sixth protocol is the field-codec benchmark. Take an exact
+perturbative series computed through N terms and serialize it three
+ways: decimal complex numbers at a fixed precision, algebraic numbers
+recognized after numerical computation, and native field vectors
+computed directly in K. Compare file size, equality testing, branch
+reproducibility, re-embedding cost, and p-adic inspectability. The
+hypothesis is that native field vectors win in reliability immediately
+and may win in storage once N is large or precision is high. This
+benchmark matters because it converts an abstract mathematical insight
+into a computing claim. If the field is truly the coefficient carrier,
+then using it as the storage grammar should outperform using its
+rendered decimal shadow.</p>
+<p>Together these protocols turn the sequel into an executable research
+plan. The first protocol tests whether the core field continues to
+control quantum perturbation. The second tests whether the corner
+appearances are isolated or part of a hidden unit-equation family. The
+third searches for new shadow-core lifts. The fourth prioritizes
+targets. The fifth generalizes the method beyond number fields. The
+sixth tests whether the whole architecture improves computation, not
+merely exposition. The immediate next file should therefore not be
+another monograph. It should be a small computational package: K_23
+arithmetic, branch inventory, corner search, and coefficient-field
+expansion. If that package produces c_2 in K_23 and extends the corner
+scan through shape orbits, the program will have moved from synthesis to
+discovery.</p>
+<h1 id="appendix-a.-computation-transcript-summary">Appendix A.
+Computation transcript summary</h1>
+<p>The symbolic computation pass used exact rational polynomial
+arithmetic for discriminants and resultants, and 80-decimal mpmath
+arithmetic for the Bloch-Wigner sanity checks. The Condensoroid cubic
+x^3-x^2+1, the plastic avatar x^3-x-1, the visible corner cubic
+z^3-2z^2+3z-1, and the AK geometric cubic z^3-4z^2+5z-1 each have
+discriminant -23 and are irreducible over Q. The Nahm free-direction
+cubic z^3-2z^2-z+1 has discriminant 49, confirming the cyclic
+conductor-7 shadow. The one-loop rational function in the AK coordinate
+has resultant minimal polynomial y**3 + 4*y**2 - 23*y + 23 with
+discriminant -1127. The two-loop rational function has resultant
+polynomial 23*y**3 + 4*y + 200 with discriminant -571325888.</p>
+<p>The Bloch-Wigner check for the positive-imaginary complex root of
+x^3-x^2+1 gave D(z)=0.94270736277692772092129960309221164759032710576688
+and 3D(z)=2.8281220883307831627638988092766349427709813173006. The
+translated AK root gave
+D(z)=0.47135368138846386046064980154610582379516355288344, and twice
+that value equals the preceding D(z), matching the
+rectangular-normalization relationship used in the sequel. The
+corner-divisor quotient-ring scan through a&lt;=300 found divisibility
+of the visible corner field only at [[3, 2]] and divisibility of the
+AK/hidden field only at [[5, 1]]. The exact factor scan through a&lt;=20
+recovered the elementary z^2-z+1 rows, the -31 and -283 pins, and the
+split (5,1) row containing the hidden -23 cofactor. These computations
+are not represented as final theorems beyond their searched bounds, but
+they are the computational basis for the sequel conjectures.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>a</strong></th>
+<th><strong>b</strong></th>
+<th><strong>degree</strong></th>
+<th><strong>factor</strong></th>
+<th><strong>disc</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>z**2 - 3*z + 1</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>1</td>
+<td>3</td>
+<td>z**3 - 3*z**2 + 4*z - 1</td>
+<td>-31</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>2</td>
+<td>3</td>
+<td>z**3 - 2*z**2 + 3*z - 1</td>
+<td>-23</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>1</td>
+<td>4</td>
+<td>z**4 - 4*z**3 + 6*z**2 - 5*z + 1</td>
+<td>-283</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>3</td>
+<td>4</td>
+<td>z**4 - 5*z**3 + 6*z**2 - 4*z + 1</td>
+<td>-283</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>1</td>
+<td>2</td>
+<td>z**2 - z + 1</td>
+<td>-3</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>1</td>
+<td>3</td>
+<td>z**3 - 4*z**2 + 5*z - 1</td>
+<td>-23</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>2</td>
+<td>5</td>
+<td>z**5 - 5*z**4 + 10*z**3 - 9*z**2 + 5*z - 1</td>
+<td>3017</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>3</td>
+<td>5</td>
+<td>z**5 - 5*z**4 + 11*z**3 - 10*z**2 + 5*z - 1</td>
+<td>3233</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>4</td>
+<td>5</td>
+<td>z**5 - 4*z**4 + 10*z**3 - 10*z**2 + 5*z - 1</td>
+<td>2869</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>5</td>
+<td>2</td>
+<td>z**2 - z + 1</td>
+<td>-3</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>5</td>
+<td>5</td>
+<td>z**5 - 6*z**4 + 15*z**3 - 14*z**2 + 6*z - 1</td>
+<td>1649</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>1</td>
+<td>2</td>
+<td>z**2 - z + 1</td>
+<td>-3</td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td>7</td>
+<td>2</td>
+<td>z**2 - z + 1</td>
+<td>-3</td>
+</tr>
+</tbody>
+</table>
+<p>Source basis: uploaded Condensoroid Program Reforged text; uploaded
+Closure Calculus v0.5 HTML; uploaded Level and the Deformation v4.54.1
+HTML; uploaded Cube-Root Spine v3.8 HTML; and the first Shadow-Core Lift
+document generated in the previous pass. This sequel deliberately
+minimizes reiteration of the first document and emphasizes beyond-core
+computation, exact coefficient fields, search architectures, and
+frontier conjectures.</p>
+<p>Approximate body word count generated before tables and captions:
+12,646 words.</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "schema": "perfectjet/source-metadata/1",
+  "sources": [
+    {
+      "path": "archive/extracted/PSG_ZeroDim_v1_3.txt",
+      "source_title": "PSG_ZeroDim_v1(3).docx",
+      "scope": "complete extracted text, 141 rendered lines; DOCX bytes not preserved"
+    },
+    {
+      "path": "archive/extracted/PSG_Schroeder_Wall_v2_2.txt",
+      "source_title": "PSG_Schroeder_Wall_v2(2).docx",
+      "scope": "complete extracted text, 292 rendered lines; DOCX bytes not preserved"
+    },
+    {
+      "path": "archive/extracted/verify_transvectant_rank_loci.py",
+      "source_title": "verify_transvectant_rank_loci.py",
+      "scope": "complete extracted source; upstream SymPy implementation; numerical orbit routine not an exact certificate"
+    },
+    {
+      "path": "archive/extracted/transvectant_rank_loci_exact_status.md",
+      "source_title": "transvectant_rank_loci_exact_status.md",
+      "scope": "complete extracted status document; statements assessed in canonical corrections"
+    },
+    {
+      "path": "archive/extracted/hahn_stratification_final_form_extracted.txt",
+      "source_title": "hahn_stratification_final_form.pdf",
+      "scope": "complete extracted text, 586 rendered lines; PDF layout and bytes not preserved"
+    },
+    {
+      "path": "archive/extracted/motivic_deformation_laboratory_v1_55_0.html",
+      "source_title": "motivic-deformation-laboratory-v1.55.0.html",
+      "scope": "complete extracted HTML text, rendered lines1-630"
+    },
+    {
+      "path": "archive/extracted/level_deformation_selected_sections.html",
+      "source_title": "level_deformation_monograph_v4_54_1.html",
+      "scope": "selected rendered sections 7860-7924, 8912-8923, 9170-9379 and 9334-9379; overlapping excerpts retained; embedded image payloads omitted"
+    },
+    {
+      "path": "archive/extracted/shadow_core_lift_beyond_monograph.html",
+      "source_title": "shadow_core_lift_beyond_monograph.html",
+      "scope": "complete extracted rendered lines1-1930; boundary line180 repeated during concatenation"
+    }
+  ]
+}

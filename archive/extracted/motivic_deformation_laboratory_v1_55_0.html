@@ -1,0 +1,630 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Motivic Deformation Laboratory v1.55</title><style>body{margin:0;background:#070a12;color:#eef2ff;font:16px/1.55 system-ui}header,main{max-width:1450px;margin:auto;padding:24px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}.card{background:#111827;border:1px solid #374765;border-radius:14px;padding:18px}.ok{color:#83efb7}.warn{color:#ffd18a}table{border-collapse:collapse;width:100%}th,td{padding:8px;border-bottom:1px solid #34415c;text-align:left}pre{white-space:pre-wrap;word-break:break-word;background:#050812;padding:12px;border-radius:8px;max-height:500px;overflow:auto}</style></head><body><header><h1>Exact Cotangent Complexes and Motivic Realization Foundations</h1><p>One authoritative source now compiles into Jacobian cotangent complexes, square-zero lift equations, Tjurina deformation classes, Weierstrass gauge/moduli directions, perfect-complex K0 classes, and weight-one motivic comparisons.</p><p class="ok">Program digest fnv1a64:b60742584d8053c8</p></header><main><section class="card"><h2>Singularity deformation table</h2><table><thead><tr><th>model</th><th>tangent</th><th>obstruction</th><th>Tjurina T1</th><th>basis</th></tr></thead><tbody><tr><td>Smooth affine line y=0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Node xy=0</td><td>2</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Cusp y^2=x^3</td><td>2</td><td>1</td><td>2</td><td>1, x</td></tr></tbody></table></section><section class="grid"><article class="card"><h2>E37 coefficient deformation</h2><pre>{
+  "model": {
+    "kind": "weierstrass-moduli-tangent",
+    "modelId": "weierstrass:E37-short",
+    "coefficients": {
+      "a": "-16",
+      "b": "16"
+    },
+    "discriminant": "151552",
+    "c4": "768",
+    "j": "110592/37",
+    "coefficientTangentDimension": 2,
+    "gaugeDirection": [
+      "64",
+      "-96"
+    ],
+    "gaugeDimension": 1,
+    "moduliDimension": 1,
+    "selectedModuliDirection": [
+      "96",
+      "64"
+    ],
+    "directionsIndependent": true,
+    "discriminantDifferential": [
+      "-49152",
+      "-13824"
+    ],
+    "discriminantGaugeDerivative": "-1818624",
+    "jDifferential": [
+      "559872/1369",
+      "373248/1369"
+    ],
+    "jGaugeDerivative": "0",
+    "jModuliDerivative": "77635584/1369",
+    "exact": true
+  },
+  "gaugeDeformation": {
+    "kind": "weierstrass-first-order-deformation",
+    "modelId": "weierstrass:E37-short",
+    "direction": [
+      "64",
+      "-96"
+    ],
+    "discriminant": "151552",
+    "discriminantDerivative": "-1818624",
+    "smoothBase": true,
+    "preservesDiscriminantToFirstOrder": false,
+    "jDerivative": "0",
+    "gaugeEquivalentToZero": true,
+    "exact": true
+  },
+  "moduliDeformation": {
+    "kind": "weierstrass-first-order-deformation",
+    "modelId": "weierstrass:E37-short",
+    "direction": [
+      "96",
+      "64"
+    ],
+    "discriminant": "151552",
+    "discriminantDerivative": "-5603328",
+    "smoothBase": true,
+    "preservesDiscriminantToFirstOrder": false,
+    "jDerivative": "77635584/1369",
+    "gaugeEquivalentToZero": false,
+    "exact": true
+  }
+}</pre></article><article class="card"><h2>K0 and weight one</h2><pre>{
+  "k0": {
+    "kind": "perfect-complex-k0-flagships",
+    "specZ": {
+      "scheme": "Spec Z",
+      "picardOrder": 1,
+      "structureSheaf": {
+        "rank": 1,
+        "picardClass": 0,
+        "picardOrder": 1,
+        "label": "(1, 0 mod 1)"
+      },
+      "k0Description": "Z by rank"
+    },
+    "zsqrtMinus5": {
+      "scheme": "Spec Z[sqrt(-5)]",
+      "picardOrder": 2,
+      "structureSheaf": {
+        "rank": 1,
+        "picardClass": 0,
+        "picardOrder": 2,
+        "label": "(1, 0 mod 2)"
+      },
+      "nonprincipalLine": {
+        "rank": 1,
+        "picardClass": 1,
+        "picardOrder": 2,
+        "label": "(1, 1 mod 2)"
+      },
+      "k0Description": "Z direct-sum Z/2 by rank and determinant class",
+      "tensorSquareDeterminant": {
+        "rank": 1,
+        "picardClass": 0,
+        "picardOrder": 2,
+        "label": "(1, 0 mod 2)"
+      }
+    },
+    "acyclicComplex": {
+      "terms": [
+        {
+          "degree": 0,
+          "rank": 1,
+          "picardClass": 1
+        },
+        {
+          "degree": 1,
+          "rank": 1,
+          "picardClass": 1
+        }
+      ],
+      "eulerClass": {
+        "rank": 0,
+        "picardClass": 0,
+        "picardOrder": 2,
+        "label": "(0, 0 mod 2)"
+      },
+      "vanishes": true
+    },
+    "shortExactAdditivity": {
+      "left": {
+        "rank": 1,
+        "picardClass": 1,
+        "picardOrder": 2,
+        "label": "(1, 1 mod 2)"
+      },
+      "right": {
+        "rank": 1,
+        "picardClass": 0,
+        "picardOrder": 2,
+        "label": "(1, 0 mod 2)"
+      },
+      "middle": {
+        "rank": 2,
+        "picardClass": 1,
+        "picardOrder": 2,
+        "label": "(2, 1 mod 2)"
+      },
+      "holds": true
+    },
+    "grothendieckCompletionWitness": {
+      "kind": "grothendieck-class",
+      "representative": [
+        "0",
+        "3"
+      ],
+      "canonicalRepresentative": [
+        "0",
+        "3"
+      ],
+      "integer": "-3",
+      "crossSumEquality": true,
+      "exact": true
+    },
+    "exact": true
+  },
+  "motivic": {
+    "kind": "weight-one-motivic-flagships",
+    "scope": "finite exact weight-one comparison only",
+    "identities": [
+      "H^1_mot(X,Z(1)) = O(X)^*",
+      "H^2_mot(X,Z(1)) = Pic(X) for the implemented regular arithmetic flagships"
+    ],
+    "specZ": {
+      "scheme": "Spec Z",
+      "h1": {
+        "interpretation": "global units",
+        "group": "Z/2Z",
+        "representatives": [
+          "1",
+          "-1"
+        ]
+      },
+      "h2": {
+        "interpretation": "Picard group",
+        "group": "0"
+      },
+      "comparison": {
+        "unitsAgreement": true,
+        "picardAgreement": true
+      }
+    },
+    "specZsqrtMinus5": {
+      "scheme": "Spec Z[sqrt(-5)]",
+      "h1": {
+        "interpretation": "global units",
+        "group": "Z/2Z",
+        "representatives": [
+          "1",
+          "-1"
+        ]
+      },
+      "h2": {
+        "interpretation": "Picard group",
+        "group": "Z/2Z",
+        "generator": "line-bundle:P2"
+      },
+      "divisorComplex": {
+        "map": "K^* -> Div -> Pic",
+        "selectedRelations": [
+          {
+            "element": "2",
+            "divisor": {
+              "P2": 2
+            },
+            "principal": true
+          },
+          {
+            "element": "3",
+            "divisor": {
+              "P3+": 1,
+              "P3-": 1
+            },
+            "principal": true
+          },
+          {
+            "element": "1+√-5",
+            "divisor": {
+              "P2": 1,
+              "P3+": 1
+            },
+            "principal": true
+          },
+          {
+            "element": "1-√-5",
+            "divisor": {
+              "P2": 1,
+              "P3-": 1
+            },
+            "principal": true
+          }
+        ],
+        "nonprincipalClass": {
+          "ideal": "ideal:O:Qsqrt-5:2,1,1",
+          "class": "1 mod 2",
+          "principal": false
+        }
+      },
+      "comparison": {
+        "picardClass": "1 in Z/2Z",
+        "k0DeterminantClass": 1,
+        "agreement": true
+      }
+    },
+    "controls": {
+      "nonprincipalDivisorSurvivesToH2": true,
+      "principalDivisorsMapToZero": true,
+      "doesNotClaimHigherWeights": true
+    },
+    "exact": true
+  }
+}</pre></article><article class="card"><h2>Realization comparisons</h2><pre>{
+  "kind": "motivic-deformation-realization-portfolio",
+  "objects": [
+    {
+      "kind": "realization-object",
+      "id": "realization:cusp",
+      "label": "Cusp deformation realization object",
+      "source": {
+        "equation": "y^2-x^3",
+        "point": [
+          "0",
+          "0"
+        ]
+      },
+      "realizations": {
+        "cotangent": {
+          "kind": "cotangent-fiber",
+          "modelId": "cusp",
+          "point": [
+            "0",
+            "0"
+          ],
+          "degrees": {
+            "minusOne": 1,
+            "zero": 2
+          },
+          "differential": [
+            [
+              {
+                "numerator": "0",
+                "denominator": "1"
+              }
+            ],
+            [
+              {
+                "numerator": "0",
+                "denominator": "1"
+              }
+            ]
+          ],
+          "rank": 0,
+          "homology": {
+            "minusOne": 1,
+            "zero": 2
+          },
+          "exact": true
+        },
+        "tangentObstruction": {
+          "kind": "tangent-obstruction-fiber",
+          "modelId": "cusp",
+          "point": [
+            "0",
+            "0"
+          ],
+          "differential": [
+            [
+              {
+                "numerator": "0",
+                "denominator": "1"
+              },
+              {
+                "numerator": "0",
+                "denominator": "1"
+              }
+            ]
+          ],
+          "rank": 0,
+          "tangentDimension": 2,
+          "obstructionDimension": 1,
+          "tangentBasis": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "1"
+            ]
+          ],
+          "exact": true
+        },
+        "tjurina": {
+          "kind": "tjurina-algebra",
+          "modelId": "cusp",
+          "dimension": 2,
+          "basis": [
+            "1",
+            "x"
+          ],
+          "groebner": [
+            "1*x^2",
+            "1*y"
+          ],
+          "exact": true
+        },
+        "markedPointLifts": {
+          "constant": {
+            "kind": "square-zero-point-lift",
+            "modelId": "cusp",
+            "point": [
+              "0",
+              "0"
+            ],
+            "deformation": "1",
+            "gradient": [
+              "0",
+              "0"
+            ],
+            "forcing": "1",
+            "liftExists": false,
+            "velocity": null,
+            "equationCheck": null,
+            "obstructionClass": "1",
+            "exact": true
+          },
+          "xDirection": {
+            "kind": "square-zero-point-lift",
+            "modelId": "cusp",
+            "point": [
+              "0",
+              "0"
+            ],
+            "deformation": "1*x",
+            "gradient": [
+              "0",
+              "0"
+            ],
+            "forcing": "0",
+            "liftExists": true,
+            "velocity": [
+              "0",
+              "0"
+            ],
+            "equationCheck": "0",
+            "obstructionClass": "0",
+            "exact": true
+          }
+        }
+      },
+      "comparisons": [
+        {
+          "from": "cotangent dual",
+          "to": "tangent-obstruction complex",
+          "law": "exact matrix transpose",
+          "holds": true
+        },
+        {
+          "from": "Jacobian quotient",
+          "to": "T^1 deformation basis",
+          "law": "normal forms [1,x]",
+          "holds": true
+        }
+      ],
+      "exact": true,
+      "digest": "fnv1a64:b640f4551cb0744b"
+    },
+    {
+      "kind": "realization-object",
+      "id": "realization:ZsqrtMinus5",
+      "label": "Z[sqrt(-5)] weight-one realization object",
+      "source": {
+        "scheme": "Spec Z[sqrt(-5)]"
+      },
+      "realizations": {
+        "picard": {
+          "interpretation": "Picard group",
+          "group": "Z/2Z",
+          "generator": "line-bundle:P2"
+        },
+        "k0": {
+          "scheme": "Spec Z[sqrt(-5)]",
+          "picardOrder": 2,
+          "structureSheaf": {
+            "rank": 1,
+            "picardClass": 0,
+            "picardOrder": 2,
+            "label": "(1, 0 mod 2)"
+          },
+          "nonprincipalLine": {
+            "rank": 1,
+            "picardClass": 1,
+            "picardOrder": 2,
+            "label": "(1, 1 mod 2)"
+          },
+          "k0Description": "Z direct-sum Z/2 by rank and determinant class",
+          "tensorSquareDeterminant": {
+            "rank": 1,
+            "picardClass": 0,
+            "picardOrder": 2,
+            "label": "(1, 0 mod 2)"
+          }
+        },
+        "motivicWeightOne": {
+          "scheme": "Spec Z[sqrt(-5)]",
+          "h1": {
+            "interpretation": "global units",
+            "group": "Z/2Z",
+            "representatives": [
+              "1",
+              "-1"
+            ]
+          },
+          "h2": {
+            "interpretation": "Picard group",
+            "group": "Z/2Z",
+            "generator": "line-bundle:P2"
+          },
+          "divisorComplex": {
+            "map": "K^* -> Div -> Pic",
+            "selectedRelations": [
+              {
+                "element": "2",
+                "divisor": {
+                  "P2": 2
+                },
+                "principal": true
+              },
+              {
+                "element": "3",
+                "divisor": {
+                  "P3+": 1,
+                  "P3-": 1
+                },
+                "principal": true
+              },
+              {
+                "element": "1+√-5",
+                "divisor": {
+                  "P2": 1,
+                  "P3+": 1
+                },
+                "principal": true
+              },
+              {
+                "element": "1-√-5",
+                "divisor": {
+                  "P2": 1,
+                  "P3-": 1
+                },
+                "principal": true
+              }
+            ],
+            "nonprincipalClass": {
+              "ideal": "ideal:O:Qsqrt-5:2,1,1",
+              "class": "1 mod 2",
+              "principal": false
+            }
+          },
+          "comparison": {
+            "picardClass": "1 in Z/2Z",
+            "k0DeterminantClass": 1,
+            "agreement": true
+          }
+        }
+      },
+      "comparisons": [
+        {
+          "from": "Picard generator",
+          "to": "K0 determinant class",
+          "law": "rank-one bundle determinant",
+          "holds": true
+        },
+        {
+          "from": "divisor class",
+          "to": "motivic H2",
+          "law": "weight-one cycle comparison",
+          "holds": true
+        }
+      ],
+      "exact": true,
+      "digest": "fnv1a64:820491215467baf8"
+    },
+    {
+      "kind": "realization-object",
+      "id": "realization:E37-deformation",
+      "label": "E37 infinitesimal realization object",
+      "source": {
+        "equation": "Y^2=X^3-16X+16"
+      },
+      "realizations": {
+        "coefficientModuli": {
+          "kind": "weierstrass-moduli-tangent",
+          "modelId": "weierstrass:E37-short",
+          "coefficients": {
+            "a": "-16",
+            "b": "16"
+          },
+          "discriminant": "151552",
+          "c4": "768",
+          "j": "110592/37",
+          "coefficientTangentDimension": 2,
+          "gaugeDirection": [
+            "64",
+            "-96"
+          ],
+          "gaugeDimension": 1,
+          "moduliDimension": 1,
+          "selectedModuliDirection": [
+            "96",
+            "64"
+          ],
+          "directionsIndependent": true,
+          "discriminantDifferential": [
+            "-49152",
+            "-13824"
+          ],
+          "discriminantGaugeDerivative": "-1818624",
+          "jDifferential": [
+            "559872/1369",
+            "373248/1369"
+          ],
+          "jGaugeDerivative": "0",
+          "jModuliDerivative": "77635584/1369",
+          "exact": true
+        },
+        "gauge": {
+          "kind": "weierstrass-first-order-deformation",
+          "modelId": "weierstrass:E37-short",
+          "direction": [
+            "64",
+            "-96"
+          ],
+          "discriminant": "151552",
+          "discriminantDerivative": "-1818624",
+          "smoothBase": true,
+          "preservesDiscriminantToFirstOrder": false,
+          "jDerivative": "0",
+          "gaugeEquivalentToZero": true,
+          "exact": true
+        },
+        "moduli": {
+          "kind": "weierstrass-first-order-deformation",
+          "modelId": "weierstrass:E37-short",
+          "direction": [
+            "96",
+            "64"
+          ],
+          "discriminant": "151552",
+          "discriminantDerivative": "-5603328",
+          "smoothBase": true,
+          "preservesDiscriminantToFirstOrder": false,
+          "jDerivative": "77635584/1369",
+          "gaugeEquivalentToZero": false,
+          "exact": true
+        }
+      },
+      "comparisons": [
+        {
+          "from": "coordinate scaling",
+          "to": "j invariant",
+          "law": "gauge direction has zero j derivative",
+          "holds": true
+        },
+        {
+          "from": "moduli direction",
+          "to": "j invariant",
+          "law": "selected transverse direction changes j",
+          "holds": true
+        }
+      ],
+      "exact": true,
+      "digest": "fnv1a64:69d18fddb9bbf85b"
+    }
+  ],
+  "allComparisonsHold": true,
+  "exact": true
+}</pre></article><article class="card"><h2 class="warn">Scope</h2><pre>{
+  "semanticAuthority": "exact finite cotangent complexes, square-zero lift equations, hypersurface Tjurina quotients, first-order Weierstrass moduli, Dedekind K0 flagships, and weight-one motivic comparisons",
+  "generalDerivedAlgebraicGeometry": false,
+  "generalMotivicHomotopyTheory": false,
+  "generalAlgebraicKTheory": false,
+  "generalDeformationStack": false,
+  "rendererAuthority": false
+}</pre></article></section></main></body></html>

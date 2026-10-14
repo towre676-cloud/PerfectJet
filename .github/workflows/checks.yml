@@ -1,0 +1,21 @@
+name: Exact mathematics and coverage
+on: [push, pull_request]
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s tests -v
+        env:
+          PYTHONPATH: src
+      - run: python -m perfectjet.cli report --output results/replay-ci.json
+        env:
+          PYTHONPATH: src
+      - run: python scripts/check_coverage.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: perfectjet-exact-replay
+          path: results/replay-ci.json

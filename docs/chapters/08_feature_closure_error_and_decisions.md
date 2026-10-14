@@ -1,0 +1,13 @@
+# Feature closure, quantified defects, and decisions
+
+Exact polynomial-feature closure means each $p_i\circ F$ belongs to the rational span of retained features. Then $p(F(x))=Gp(x)$ and $p(F^t(x))=G^tp(x)$. Outputs must lie in the feature span to be reconstructed. The implementation solves rational coefficient systems and replays the identities. It reports an unclosed pullback instead of silently fitting it.
+
+When $\psi\circ F=G\psi+r$, residual structure can supply missing features. If $r=B\chi$ and $\chi\circ F=C\psi+D\chi$, the block state $[\psi;\chi]$ evolves by $[[G,B],[C,D]]$. Missing monomials, lags, order interactions, and parameter terms suggest different repairs. Finite closure may not exist. This release does not promise that augmentation terminates.
+
+For full $x'=Ax+Bu$ and reduced $z'=Gz+Hu$, set $e=x-Vz$, $R=AV-VG$, $S=B-VH$. Then $e'=Ae+Rz+Su$ and $e_t=A^te_0+\sum_{j<t}A^{t-1-j}(Rz_j+Su_j)$. Continuous-time Lyapunov uses $A^TP+PA\preceq-2\alpha P$; discrete time uses $A^TPA\preceq\gamma^2P$. Mixing these forms is rejected. In a contracting norm, error is bounded by a geometric convolution; a uniform defect delta gives $\gamma^t\|e_0\|+\delta(1-\gamma^t)/(1-\gamma)$.
+
+For staged reconstructions, total error is at most $\epsilon_1+\|V_1\|\epsilon_2$, or $\epsilon_1+L_1\epsilon_2$ for a Lipschitz first map. Model error and roundoff should remain separate. Parameter sensitivity evolves as $S_{t+1}=D_xF S_t+D_\theta F$; trajectory accuracy does not imply correct parameter response.
+
+An action is certified best when its lower objective bound exceeds all competing upper bounds. With common error epsilon, a gap above2epsilon suffices. Computation can concentrate on candidates whose intervals overlap the best lower bound. This turns model-error machinery into decision machinery; deterministic approximation bounds do not replace empirical uncertainty about sports or markets.
+
+Historical DynaComp reports include256-state compile time37.6s->1.3s,58 tests at one stage, later210/229 tests,200-state heat->7 states with0.01 ceiling and5.89x runtime gain, break-even about222 batches of256 scenarios, and descriptor200->9 with0.003483 bound and4.50x gain. Other models were slower or uncertifiable. These are upstream dated workloads, not universal or freshly reproduced PerfectJet results.

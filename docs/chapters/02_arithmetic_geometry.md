@@ -1,0 +1,11 @@
+# Arithmetic geometry and perfect-power populations
+
+The arithmetic entrance is $S(n)+k=m^d$, with integer polynomial $S$, integer inputs, and $d\ge2$. Define $A_{F,d}(N)=\#\{1\le n\le N:\exists m\in\mathbb Z,F(n)=m^d\}$. The existential definition counts inputs once even when signed square roots give two witnesses. The historical density uses $\limsup A(N)/N$. A polynomial identity $S+k=G^d$ with $G\in\mathbb Z[x]$ produces a hit at every input. Historical sparse classifications and multiplicity-based exponents are retained with their hypothesis gaps, rather than advertised for arbitrary sequences.
+
+Exact transformations include $y^2+y=F(n)\iff(2y+1)^2=4F(n)+1$ and $y(y+1)/2=F(n)\iff(2y+1)^2=8F(n)+1$. For $ay^2+by+c=F(n)$, $a\ne0$, the square discriminant $b^2-4a(c-F(n))$ must be accompanied by the divisibility of $-b\pm\sqrt\Delta$ by $2a$. The integer chart for $x^2=y^3$ is $(t^3,t^2)$; for $2x^2=3y^3$ it is $(\pm18t^3,6t^2)$.
+
+Morphonic expanded the arithmetic setting through localizations, real and p-adic completions, finite extensions, Galois actions, and adelic viewpoints. PerfectPower added concrete Mordell and Thue reductions, unit representatives, subgroup lattices, saturation, quartic coverings, source-bound lists, and polynomial pullbacks. Root splitting fields, Pell unit fields, polynomial discriminants, field discriminants, and nonmaximal orders must remain distinct.
+
+The historical frontier moved from 316 Thue branches to 79 GL2 classes, later to a 457-curve census, with changing constructive witness counts. Those counts are dated historical snapshots, not current PerfectJet statistics. Global rank justification, saturation bounds, effective unit exponents, elliptic-logarithm enumeration, and integral-point completeness remain separate obligations. A finite list found by a backend is not automatically a kernel-checked complete solution set.
+
+OEIS work was intended as a discovery/comparison layer using definitions, offsets, recurrences, references, and transformations. Prefix matches, transformed matches, proved identities, and rejected matches require different labels. Abelian heat/Dirichlet transforms, Bilu-Tichy, Runge, signed rank-two sieving, quartic covariants, and optimization over infinite families belong to the preserved frontier; their complete implementations are not imported into this repository.

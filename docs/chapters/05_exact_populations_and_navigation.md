@@ -1,0 +1,11 @@
+# Exact populations and navigation
+
+The selection polynomial $P(\mathbf z)=\prod_j(1+\prod_kz_k^{c_{jk}})$ encodes resource-use multiplicities. Summing coefficients with exponent vector bounded by capacities gives the feasible count when costs are nonnegative integers. Additional incompatibilities require additional factors or compatibility state. Adding a profit variable gives a distribution by objective, with Laurent exponents if profits may be negative.
+
+The runnable residual-capacity engine preserves original project order. At prefix q, $C(q)=C(q0)+C(q1)$; terminal feasible assignments contribute one, infeasible ones zero. Lexicographic rank is $\sum_{i:x_i=1}C(x_{<i}0)$. Inverse rank follows the zero-branch population; uniform sampling draws an integer rank uniformly and reconstructs its original object. Optimization reports both value and tie count, including zero-cost and zero-profit multiplicities.
+
+For general finite factors, $Z=\sum_x\prod_jf_j(x_{\mathrm{scope}_j})$. Independent components multiply; disjoint branches add. Auxiliary encodings preserve counts only when each original assignment has exactly one legal auxiliary extension. Weighted symmetry compression must preserve original multiplicity, not merely representatives.
+
+The Petersen 50-project historical result is 702,508,860,122,761 feasible selections, objective16,537, one maximizer. The retained report used176 terminal partitions,437,533,492 visits and189,856,527 setup cells, with construction around362 seconds. Later retrieval reports independent decision-diagram reproduction, including all176 leaves and conditional counts16,777,216,512,16,095,745; a separate historical report gives5.3seconds and about518MiB. These workload/version-dependent figures are not new PerfectJet benchmarks. Original costs and the full retained DAG are not in this release, so this repo does not claim to replay that instance.
+
+Exact counting also includes distinct outputs versus inputs, collision populations, CRT intervals, restricted-digit sums, monomial degrees, nonlinear sequence residues, generating functions, and integer calibration. The generic completion engine is implemented; these broader upstream adapters are indexed rather than falsely presented as already integrated.

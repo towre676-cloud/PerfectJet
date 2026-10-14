@@ -1,0 +1,2917 @@
+{
+  "schema": "perfectjet/topics/1",
+  "topics": [
+    {
+      "id": "PJ-T001",
+      "domain": "Historical audit",
+      "topic": "Computational arithmetic geometry",
+      "chapter": "docs/chapters/01_purpose_and_historical_audit.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T002",
+      "domain": "Historical audit",
+      "topic": "Arithmetic-spectral effective dimension",
+      "chapter": "docs/chapters/01_purpose_and_historical_audit.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T003",
+      "domain": "Historical audit",
+      "topic": "Sufficient representation",
+      "chapter": "docs/chapters/01_purpose_and_historical_audit.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T004",
+      "domain": "Historical audit",
+      "topic": "Restrict transport reduce evolve count",
+      "chapter": "docs/chapters/01_purpose_and_historical_audit.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T005",
+      "domain": "Historical audit",
+      "topic": "Chronology February2025-October2026",
+      "chapter": "docs/chapters/01_purpose_and_historical_audit.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T006",
+      "domain": "Historical audit",
+      "topic": "User goals: complete populations and useful decisions",
+      "chapter": "docs/chapters/01_purpose_and_historical_audit.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T007",
+      "domain": "Arithmetic",
+      "topic": "Morphonic arithmetic kernel",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T008",
+      "domain": "Arithmetic",
+      "topic": "PerfectPower perfect-power density",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T009",
+      "domain": "Arithmetic",
+      "topic": "Polynomial identities",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T010",
+      "domain": "Arithmetic",
+      "topic": "Sparse growth classes",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T011",
+      "domain": "Arithmetic",
+      "topic": "Mordell curves",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T012",
+      "domain": "Arithmetic",
+      "topic": "Thue equations",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T013",
+      "domain": "Arithmetic",
+      "topic": "Cubic fields and orders",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T014",
+      "domain": "Arithmetic",
+      "topic": "Quartic coverings",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T015",
+      "domain": "Arithmetic",
+      "topic": "Runge methods",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T016",
+      "domain": "Arithmetic",
+      "topic": "Bilu-Tichy",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T017",
+      "domain": "Arithmetic",
+      "topic": "OEIS sequence discovery",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T018",
+      "domain": "Arithmetic",
+      "topic": "Abelian heat and Dirichlet transforms",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T019",
+      "domain": "Arithmetic",
+      "topic": "Heights and Baker-Matveev bounds",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T020",
+      "domain": "Arithmetic",
+      "topic": "Signed rank-two sieve",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T021",
+      "domain": "Arithmetic",
+      "topic": "Arithmetic oscillator program",
+      "chapter": "docs/chapters/02_arithmetic_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T022",
+      "domain": "Pell and transport",
+      "topic": "Pell unit orbits",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T023",
+      "domain": "Pell and transport",
+      "topic": "Generalized Pell seed inventory",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T024",
+      "domain": "Pell and transport",
+      "topic": "Quadratic norm matrices",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T025",
+      "domain": "Pell and transport",
+      "topic": "Sqrt2 atlas",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T026",
+      "domain": "Pell and transport",
+      "topic": "Pell7 family",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T027",
+      "domain": "Pell and transport",
+      "topic": "Finite-state congruence filtering",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T028",
+      "domain": "Pell and transport",
+      "topic": "Affine polynomial pullbacks",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T029",
+      "domain": "Pell and transport",
+      "topic": "Solution-carrying descent",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T030",
+      "domain": "Pell and transport",
+      "topic": "Thue23 leaves",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T031",
+      "domain": "Pell and transport",
+      "topic": "D72 residual equation",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T032",
+      "domain": "Pell and transport",
+      "topic": "Integral-image reconstruction",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T033",
+      "domain": "Pell and transport",
+      "topic": "Question-dependent height",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T034",
+      "domain": "Pell and transport",
+      "topic": "Adaptive local sieve",
+      "chapter": "docs/chapters/03_pell_orbits_and_transport.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T035",
+      "domain": "Descent and lattices",
+      "topic": "Cubic etale Kummer bridge",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T036",
+      "domain": "Descent and lattices",
+      "topic": "Norm-square versus Selmer",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T037",
+      "domain": "Descent and lattices",
+      "topic": "S-units",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T038",
+      "domain": "Descent and lattices",
+      "topic": "Class-group correction",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T039",
+      "domain": "Descent and lattices",
+      "topic": "Complete local Kummer images",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T040",
+      "domain": "Descent and lattices",
+      "topic": "Global Selmer intersection",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T041",
+      "domain": "Descent and lattices",
+      "topic": "Cassels-Tate and Sha frontier",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T042",
+      "domain": "Descent and lattices",
+      "topic": "Rational rank bounds",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T043",
+      "domain": "Descent and lattices",
+      "topic": "Global saturation",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T044",
+      "domain": "Descent and lattices",
+      "topic": "Prime-specific bounded division",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T045",
+      "domain": "Descent and lattices",
+      "topic": "Torsion-aware relation lattices",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T046",
+      "domain": "Descent and lattices",
+      "topic": "Hermite and Smith forms",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T047",
+      "domain": "Descent and lattices",
+      "topic": "Isogeny point transport",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T048",
+      "domain": "Descent and lattices",
+      "topic": "Rational versus integral kernel",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T049",
+      "domain": "Descent and lattices",
+      "topic": "Anonymous -107 field descent",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T050",
+      "domain": "Descent and lattices",
+      "topic": "457-curve census",
+      "chapter": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T051",
+      "domain": "Populations",
+      "topic": "Petersen50 population",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T052",
+      "domain": "Populations",
+      "topic": "Residual-polynomial decomposition",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T053",
+      "domain": "Populations",
+      "topic": "Meet-in-the-middle",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T054",
+      "domain": "Populations",
+      "topic": "Weighted symmetry compression",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T055",
+      "domain": "Populations",
+      "topic": "Generating polynomial resource use",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T056",
+      "domain": "Populations",
+      "topic": "Conditional completion counts",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T057",
+      "domain": "Populations",
+      "topic": "Original-order ranking",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T058",
+      "domain": "Populations",
+      "topic": "Inverse ranking",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T059",
+      "domain": "Populations",
+      "topic": "Uniform sampling",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T060",
+      "domain": "Populations",
+      "topic": "Maximizer tie count",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T061",
+      "domain": "Populations",
+      "topic": "Factor elimination",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T062",
+      "domain": "Populations",
+      "topic": "Auxiliary witness uniqueness",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T063",
+      "domain": "Populations",
+      "topic": "Distinct-output populations",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T064",
+      "domain": "Populations",
+      "topic": "CRT interval populations",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T065",
+      "domain": "Populations",
+      "topic": "Restricted-digit sums",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T066",
+      "domain": "Populations",
+      "topic": "Monomial degree counts",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T067",
+      "domain": "Populations",
+      "topic": "Integer calibration",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T068",
+      "domain": "Populations",
+      "topic": "Optimization over infinite families",
+      "chapter": "docs/chapters/05_exact_populations_and_navigation.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T069",
+      "domain": "Series",
+      "topic": "Weighted automaton series",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T070",
+      "domain": "Series",
+      "topic": "Positive-cost transfer resolvent",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T071",
+      "domain": "Series",
+      "topic": "Fibonacci population",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T072",
+      "domain": "Series",
+      "topic": "Zero-series initialization",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T073",
+      "domain": "Series",
+      "topic": "Linear response Markov parameters",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T074",
+      "domain": "Series",
+      "topic": "Word-indexed Hankel rank",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T075",
+      "domain": "Series",
+      "topic": "Signed versus probabilistic realization",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T076",
+      "domain": "Series",
+      "topic": "Weighted quotient aggregation",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T077",
+      "domain": "Series",
+      "topic": "Coefficientwise cost preservation",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T078",
+      "domain": "Series",
+      "topic": "Multi-output predictive state",
+      "chapter": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T079",
+      "domain": "Semantics and observations",
+      "topic": "SOE legal implementation fibres",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T080",
+      "domain": "Semantics and observations",
+      "topic": "Delayed implementation selection",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T081",
+      "domain": "Semantics and observations",
+      "topic": "Partial-state definedness",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T082",
+      "domain": "Semantics and observations",
+      "topic": "All-future equivalence",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T083",
+      "domain": "Semantics and observations",
+      "topic": "Shortest distinguishing words",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T084",
+      "domain": "Semantics and observations",
+      "topic": "SOE Lean quotient theorem (upstream)",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T085",
+      "domain": "Semantics and observations",
+      "topic": "324 two-state examples (upstream)",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T086",
+      "domain": "Semantics and observations",
+      "topic": "Fin2 generator limitation",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T087",
+      "domain": "Semantics and observations",
+      "topic": "Adaptive2 versus fixed3 diagnosis",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T088",
+      "domain": "Semantics and observations",
+      "topic": "Observable row-space closure",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T089",
+      "domain": "Semantics and observations",
+      "topic": "Hidden target witness",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T090",
+      "domain": "Semantics and observations",
+      "topic": "Quadratic fibre curvature",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T091",
+      "domain": "Semantics and observations",
+      "topic": "Target sensor repair",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T092",
+      "domain": "Semantics and observations",
+      "topic": "Delay-coordinate memory",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T093",
+      "domain": "Semantics and observations",
+      "topic": "Question-family refinement",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T094",
+      "domain": "Semantics and observations",
+      "topic": "Joint representations",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T095",
+      "domain": "Semantics and observations",
+      "topic": "Preservation profile",
+      "chapter": "docs/chapters/07_semantics_and_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T096",
+      "domain": "Dynamics",
+      "topic": "Polynomial feature closure",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T097",
+      "domain": "Dynamics",
+      "topic": "Exact coefficient replay",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T098",
+      "domain": "Dynamics",
+      "topic": "Nonlinear closure defect",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T099",
+      "domain": "Dynamics",
+      "topic": "Residual-state augmentation",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T100",
+      "domain": "Dynamics",
+      "topic": "Missing monomial/lag/action features",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T101",
+      "domain": "Dynamics",
+      "topic": "Initial evolution input error separation",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T102",
+      "domain": "Dynamics",
+      "topic": "Continuous Lyapunov",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T103",
+      "domain": "Dynamics",
+      "topic": "Discrete Lyapunov",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T104",
+      "domain": "Dynamics",
+      "topic": "Schur-Cohn and Routh-Hurwitz frontier",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T105",
+      "domain": "Dynamics",
+      "topic": "General metric search",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T106",
+      "domain": "Dynamics",
+      "topic": "Correlated domains and zonotopes",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T107",
+      "domain": "Dynamics",
+      "topic": "All-time bounds",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T108",
+      "domain": "Dynamics",
+      "topic": "Roundoff versus model error",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T109",
+      "domain": "Dynamics",
+      "topic": "Compositional error",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T110",
+      "domain": "Dynamics",
+      "topic": "Decision margin certificate",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T111",
+      "domain": "Dynamics",
+      "topic": "Parameter sensitivity state",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T112",
+      "domain": "Dynamics",
+      "topic": "Descriptor mass matrices",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T113",
+      "domain": "Dynamics",
+      "topic": "Direct feedthrough",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T114",
+      "domain": "Dynamics",
+      "topic": "Continuous sampling limits",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T115",
+      "domain": "Dynamics",
+      "topic": "Switching model limitations",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T116",
+      "domain": "Dynamics",
+      "topic": "DynaComp native workload economics",
+      "chapter": "docs/chapters/08_feature_closure_error_and_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T117",
+      "domain": "Energy and reduction",
+      "topic": "HLR carrier and mass inner product",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T118",
+      "domain": "Energy and reduction",
+      "topic": "Corrected HLR sign and factor",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T119",
+      "domain": "Energy and reduction",
+      "topic": "Zero decay dial",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T120",
+      "domain": "Energy and reduction",
+      "topic": "CRO decay estimate",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T121",
+      "domain": "Energy and reduction",
+      "topic": "Crystalline rank-one determinant",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T122",
+      "domain": "Energy and reduction",
+      "topic": "Compact manifest/receipt idea",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T123",
+      "domain": "Energy and reduction",
+      "topic": "IMP Inertial Manifold Projector",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T124",
+      "domain": "Energy and reduction",
+      "topic": "SVD invariant-space correction",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T125",
+      "domain": "Energy and reduction",
+      "topic": "Fixed-mode decomposition",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T126",
+      "domain": "Energy and reduction",
+      "topic": "General retained dynamics",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T127",
+      "domain": "Energy and reduction",
+      "topic": "Nonnormal transient behavior",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T128",
+      "domain": "Energy and reduction",
+      "topic": "Catmull-Clark local block",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T129",
+      "domain": "Energy and reduction",
+      "topic": "Subdivision operator identity",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T130",
+      "domain": "Energy and reduction",
+      "topic": "Loop Doo-Sabin Kobbelt Butterfly extensions",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T131",
+      "domain": "Energy and reduction",
+      "topic": "Transformer effective rank",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T132",
+      "domain": "Energy and reduction",
+      "topic": "CountSketch telemetry",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T133",
+      "domain": "Energy and reduction",
+      "topic": "Diffusion mode claims",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T134",
+      "domain": "Energy and reduction",
+      "topic": "MEF computational-field design",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T135",
+      "domain": "Energy and reduction",
+      "topic": "Arithmetic Shadow speculation",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T136",
+      "domain": "Energy and reduction",
+      "topic": "Global refinement period claims",
+      "chapter": "docs/chapters/09_energy_IMP_and_numerical_structure.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T137",
+      "domain": "PSG",
+      "topic": "PSG defining nonlinear map",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T138",
+      "domain": "PSG",
+      "topic": "Scalar balance flip reduction",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T139",
+      "domain": "PSG",
+      "topic": "Correct multiplier normalization",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T140",
+      "domain": "PSG",
+      "topic": "Numerical flip root",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T141",
+      "domain": "PSG",
+      "topic": "Coefficient curve in v=2L",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T142",
+      "domain": "PSG",
+      "topic": "Exponential extraction",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T143",
+      "domain": "PSG",
+      "topic": "Exceptional denominator factors",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T144",
+      "domain": "PSG",
+      "topic": "Darboux polynomial test",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T145",
+      "domain": "PSG",
+      "topic": "Full prolonged numerator missing",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T146",
+      "domain": "PSG",
+      "topic": "All-degree classification gap",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T147",
+      "domain": "PSG",
+      "topic": "26-term source/100-term elimination missing",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T148",
+      "domain": "PSG",
+      "topic": "B=0 exceptional reconstruction",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T149",
+      "domain": "PSG",
+      "topic": "A amplitude contradiction",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T150",
+      "domain": "PSG",
+      "topic": "Cofactor D versus D/v",
+      "chapter": "docs/chapters/10_PSG_scalar_and_coefficient_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T151",
+      "domain": "Jets",
+      "topic": "Root-centered versus origin germ",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T152",
+      "domain": "Jets",
+      "topic": "Finite jet nonidentifiability",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T153",
+      "domain": "Jets",
+      "topic": "Riccati mimicry",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T154",
+      "domain": "Jets",
+      "topic": "Riccati residual rejection",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T155",
+      "domain": "Jets",
+      "topic": "Schroeder flip resonance",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T156",
+      "domain": "Jets",
+      "topic": "Involution criterion",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T157",
+      "domain": "Jets",
+      "topic": "Second-iterate cubic obstruction",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T158",
+      "domain": "Jets",
+      "topic": "Recentered two-cycle sign",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T159",
+      "domain": "Jets",
+      "topic": "Puiseux expansion",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T160",
+      "domain": "Jets",
+      "topic": "B5/B7 triangular selection reports",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T161",
+      "domain": "Jets",
+      "topic": "MTB/GTT proposed taxonomy",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T162",
+      "domain": "Jets",
+      "topic": "Feigenbaum depth profile",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T163",
+      "domain": "Jets",
+      "topic": "Pade and Borel-Stokes archive",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T164",
+      "domain": "Jets",
+      "topic": "Fourteen-step preimage chain",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T165",
+      "domain": "Jets",
+      "topic": "PSG transcendence frontier",
+      "chapter": "docs/chapters/11_jets_Schroeder_and_obstruction.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T166",
+      "domain": "Collision arithmetic",
+      "topic": "Valuation collision form",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T167",
+      "domain": "Collision arithmetic",
+      "topic": "Divisor fibre multiplicity",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T168",
+      "domain": "Collision arithmetic",
+      "topic": "Collision zeta Euler product",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T169",
+      "domain": "Collision arithmetic",
+      "topic": "Positive-temperature divergence",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T170",
+      "domain": "Collision arithmetic",
+      "topic": "Coprime endpoint6/pi2",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T171",
+      "domain": "Collision arithmetic",
+      "topic": "Thermal H_t table",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T172",
+      "domain": "Collision arithmetic",
+      "topic": "Cyclotomic finite numerator",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T173",
+      "domain": "Collision arithmetic",
+      "topic": "Complete and partial Gauss blocks",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T174",
+      "domain": "Collision arithmetic",
+      "topic": "Affine-periodic coefficient state",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T175",
+      "domain": "Collision arithmetic",
+      "topic": "Stride-L second difference",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T176",
+      "domain": "Collision arithmetic",
+      "topic": "10^100 index query",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T177",
+      "domain": "Collision arithmetic",
+      "topic": "Arithmetic penalty not PSD",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T178",
+      "domain": "Collision arithmetic",
+      "topic": "Positive valuation Gaussian",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T179",
+      "domain": "Collision arithmetic",
+      "topic": "Prime-zeta branch decomposition",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T180",
+      "domain": "Collision arithmetic",
+      "topic": "Regularized finite-part product",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T181",
+      "domain": "Collision arithmetic",
+      "topic": "Tail error bound",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T182",
+      "domain": "Collision arithmetic",
+      "topic": "Failed finite-part D2 weld",
+      "chapter": "docs/chapters/12_collision_zeta_and_finite_parts.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T183",
+      "domain": "Conductors",
+      "topic": "PhaseNet deformation-conductor networks",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T184",
+      "domain": "Conductors",
+      "topic": "Finite Heisenberg clock/shift convention",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T185",
+      "domain": "Conductors",
+      "topic": "Irrational noncommutative torus",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T186",
+      "domain": "Conductors",
+      "topic": "Continued-fraction approximation tower",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T187",
+      "domain": "Conductors",
+      "topic": "Quadratic modules S and T",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T188",
+      "domain": "Conductors",
+      "topic": "Gauss factor",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T189",
+      "domain": "Conductors",
+      "topic": "Weil commutant",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T190",
+      "domain": "Conductors",
+      "topic": "Dyadic operator-model distinction",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T191",
+      "domain": "Conductors",
+      "topic": "CRT factorization",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T192",
+      "domain": "Conductors",
+      "topic": "Fourier degeneracy maps (archive)",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T193",
+      "domain": "Conductors",
+      "topic": "Old/new sectors (archive)",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T194",
+      "domain": "Conductors",
+      "topic": "Quantum dimension volume",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T195",
+      "domain": "Conductors",
+      "topic": "Root/coroot normalization",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T196",
+      "domain": "Conductors",
+      "topic": "Fusion wall monic variable",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T197",
+      "domain": "Conductors",
+      "topic": "DAT/DAU cost and noise gates",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T198",
+      "domain": "Conductors",
+      "topic": "DBD pentagon/spinor obstruction",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T199",
+      "domain": "Conductors",
+      "topic": "Native fault graph extraction",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T200",
+      "domain": "Conductors",
+      "topic": "Peierls subcritical tail",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T201",
+      "domain": "Conductors",
+      "topic": "Colored walk histogram",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T202",
+      "domain": "Conductors",
+      "topic": "Weighted pressure covariance",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T203",
+      "domain": "Conductors",
+      "topic": "Phase domination",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T204",
+      "domain": "Conductors",
+      "topic": "Primitive rays and Farey cells",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T205",
+      "domain": "Conductors",
+      "topic": "Orchard visibility is not threshold evidence",
+      "chapter": "docs/chapters/13_conductors_representation_and_fault_graphs.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T206",
+      "domain": "Shadow-Core",
+      "topic": "5_2 abelian shadow",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T207",
+      "domain": "Shadow-Core",
+      "topic": "Discriminant-23 nonabelian core",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T208",
+      "domain": "Shadow-Core",
+      "topic": "Explicit cubic field transports",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T209",
+      "domain": "Shadow-Core",
+      "topic": "Critical boundary/core factorization",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T210",
+      "domain": "Shadow-Core",
+      "topic": "Exact Hessian field element",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T211",
+      "domain": "Shadow-Core",
+      "topic": "Exact vertex field element",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T212",
+      "domain": "Shadow-Core",
+      "topic": "Polynomial versus field discriminant",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T213",
+      "domain": "Shadow-Core",
+      "topic": "Selected Bloch-Wigner regulator",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T214",
+      "domain": "Shadow-Core",
+      "topic": "All-conjugate regulator cancellation",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T215",
+      "domain": "Shadow-Core",
+      "topic": "Oriented regulator vector",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T216",
+      "domain": "Shadow-Core",
+      "topic": "Corner divisibility bounded scan",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T217",
+      "domain": "Shadow-Core",
+      "topic": "Theta28-row9-field atlas",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T218",
+      "domain": "Shadow-Core",
+      "topic": "Ramified23 local field",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T219",
+      "domain": "Shadow-Core",
+      "topic": "Coefficient-ring execution",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T220",
+      "domain": "Shadow-Core",
+      "topic": "CoreLift receiving-space architecture",
+      "chapter": "docs/chapters/14_shadow_core_and_regulators.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T221",
+      "domain": "Weyl and invariants",
+      "topic": "Monomial Moyal coefficient S_k",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T222",
+      "domain": "Weyl and invariants",
+      "topic": "Hahn3F2 form",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T223",
+      "domain": "Weyl and invariants",
+      "topic": "Degree-safe exactness",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T224",
+      "domain": "Weyl and invariants",
+      "topic": "Cubic quantum obstruction",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T225",
+      "domain": "Weyl and invariants",
+      "topic": "Polynomial molecular cancellation",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T226",
+      "domain": "Weyl and invariants",
+      "topic": "Sextic transvectant gates",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T227",
+      "domain": "Weyl and invariants",
+      "topic": "Universal quartic partner",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T228",
+      "domain": "Weyl and invariants",
+      "topic": "C3 degree8 partner",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T229",
+      "domain": "Weyl and invariants",
+      "topic": "Exceptional quintic40/7",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T230",
+      "domain": "Weyl and invariants",
+      "topic": "Cube-root spine factor",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T231",
+      "domain": "Weyl and invariants",
+      "topic": "Kernel versus active quotient",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T232",
+      "domain": "Weyl and invariants",
+      "topic": "Finite partner census3..12",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T233",
+      "domain": "Weyl and invariants",
+      "topic": "Symbolic rank-minor loci",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T234",
+      "domain": "Weyl and invariants",
+      "topic": "Squarefree quintic pair",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T235",
+      "domain": "Weyl and invariants",
+      "topic": "R5 elimination factor",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T236",
+      "domain": "Weyl and invariants",
+      "topic": "Orbit3->1 correction",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T237",
+      "domain": "Weyl and invariants",
+      "topic": "Numerical orbit certificate limitation",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T238",
+      "domain": "Weyl and invariants",
+      "topic": "R7/R9 characteristic-zero gap",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T239",
+      "domain": "Weyl and invariants",
+      "topic": "N11 census boundary",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T240",
+      "domain": "Weyl and invariants",
+      "topic": "Incidence variety",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T241",
+      "domain": "Weyl and invariants",
+      "topic": "No-go theorem scope",
+      "chapter": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T242",
+      "domain": "Deformation and codes",
+      "topic": "Cotangent-complex fibre",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T243",
+      "domain": "Deformation and codes",
+      "topic": "Square-zero point lift",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T244",
+      "domain": "Deformation and codes",
+      "topic": "Node/cusp tangent obstruction",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T245",
+      "domain": "Deformation and codes",
+      "topic": "Tjurina basis",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T246",
+      "domain": "Deformation and codes",
+      "topic": "E37 gauge versus moduli",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T247",
+      "domain": "Deformation and codes",
+      "topic": "Discriminant changes under gauge",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T248",
+      "domain": "Deformation and codes",
+      "topic": "Perfect-complex/RHom proposals",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T249",
+      "domain": "Deformation and codes",
+      "topic": "Zsqrt-5 Picard/K0 comparison",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T250",
+      "domain": "Deformation and codes",
+      "topic": "Weight-one realization limit",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T251",
+      "domain": "Deformation and codes",
+      "topic": "Artin-Schreier-Witt",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T252",
+      "domain": "Deformation and codes",
+      "topic": "Hermitian AG codes",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T253",
+      "domain": "Deformation and codes",
+      "topic": "P5 weight enumerator",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T254",
+      "domain": "Deformation and codes",
+      "topic": "Alternate X_q code",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T255",
+      "domain": "Deformation and codes",
+      "topic": "MK-VII refutation",
+      "chapter": "docs/chapters/16_deformation_moduli_and_codes.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T256",
+      "domain": "Machine arithmetic",
+      "topic": "IEEE754 normal encoding",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T257",
+      "domain": "Machine arithmetic",
+      "topic": "MIE monotone encoding",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T258",
+      "domain": "Machine arithmetic",
+      "topic": "Shared-prefix depth",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T259",
+      "domain": "Machine arithmetic",
+      "topic": "Prefix ultrametric",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T260",
+      "domain": "Machine arithmetic",
+      "topic": "Signed zeros NaNs subnormals",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T261",
+      "domain": "Machine arithmetic",
+      "topic": "PADD/PSC missing semantics",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T262",
+      "domain": "Machine arithmetic",
+      "topic": "Restricted transfer heuristics",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T263",
+      "domain": "Machine arithmetic",
+      "topic": "Binade crossing correction",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T264",
+      "domain": "Machine arithmetic",
+      "topic": "Prefix-Fermat proposal",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T265",
+      "domain": "Machine arithmetic",
+      "topic": "Lawvere/Fermat algebraic theories",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T266",
+      "domain": "Machine arithmetic",
+      "topic": "Kahler differentials",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T267",
+      "domain": "Machine arithmetic",
+      "topic": "Jet/truncation towers",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T268",
+      "domain": "Machine arithmetic",
+      "topic": "lim1 obstruction proposal",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T269",
+      "domain": "Machine arithmetic",
+      "topic": "Exact dyadic power criterion",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T270",
+      "domain": "Machine arithmetic",
+      "topic": "Prefix ML null experiment",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T271",
+      "domain": "Machine arithmetic",
+      "topic": "Transformer validation failure",
+      "chapter": "docs/chapters/17_prefix_arithmetic_and_machine_semantics.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T272",
+      "domain": "Physics",
+      "topic": "SYMMETRON Weyl crossed products",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T273",
+      "domain": "Physics",
+      "topic": "ADE Hochschild claims",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T274",
+      "domain": "Physics",
+      "topic": "Berry curvature zero comparison",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T275",
+      "domain": "Physics",
+      "topic": "Monster Umbral Mathieu moonshine",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T276",
+      "domain": "Physics",
+      "topic": "VOA modular Hamiltonian",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T277",
+      "domain": "Physics",
+      "topic": "L-value constant proposals",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T278",
+      "domain": "Physics",
+      "topic": "Spectral dimension ansatz",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T279",
+      "domain": "Physics",
+      "topic": "Graphene Kagome models",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T280",
+      "domain": "Physics",
+      "topic": "MMHW wavelet",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T281",
+      "domain": "Physics",
+      "topic": "Noncommutative torus Chern indices",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T282",
+      "domain": "Physics",
+      "topic": "Baum-Connes and soliton reports",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T283",
+      "domain": "Physics",
+      "topic": "384-dimensional framework limits",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T284",
+      "domain": "Physics",
+      "topic": "Flux Hodge candidate counting",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T285",
+      "domain": "Physics",
+      "topic": "66degree cosine potential",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T286",
+      "domain": "Physics",
+      "topic": "Golden phase identity",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T287",
+      "domain": "Physics",
+      "topic": "Conditional CKM observable polynomial",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T288",
+      "domain": "Physics",
+      "topic": "Coefficient7/NKtJ definitions missing",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T289",
+      "domain": "Physics",
+      "topic": "CP-even deformation failure",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T290",
+      "domain": "Physics",
+      "topic": "Allowed invariant contractions",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T291",
+      "domain": "Physics",
+      "topic": "3.A6 central-cover triplet proposal",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T292",
+      "domain": "Physics",
+      "topic": "Global vacuum selection",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T293",
+      "domain": "Physics",
+      "topic": "Stationary perturbation tangent",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T294",
+      "domain": "Physics",
+      "topic": "Loop counterterm frontier",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T295",
+      "domain": "Physics",
+      "topic": "Gauge Yukawa Higgs running",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T296",
+      "domain": "Physics",
+      "topic": "Threshold higher operators higher loops",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T297",
+      "domain": "Physics",
+      "topic": "Domain-wall signs and Higgs barrier",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T298",
+      "domain": "Physics",
+      "topic": "Goldstone gauge leakage",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T299",
+      "domain": "Physics",
+      "topic": "Wall decay widths",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T300",
+      "domain": "Physics",
+      "topic": "Near-threshold cubic law",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T301",
+      "domain": "Physics",
+      "topic": "Frame window",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T302",
+      "domain": "Physics",
+      "topic": "1080vacua",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T303",
+      "domain": "Physics",
+      "topic": "Thermal wall-only phase",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T304",
+      "domain": "Physics",
+      "topic": "Annihilation gravitational waves",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T305",
+      "domain": "Physics",
+      "topic": "Sommerfeld physical-phase nonprediction",
+      "chapter": "docs/chapters/18_mathematical_physics_and_protection.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T306",
+      "domain": "WIND",
+      "topic": "Radar272-volume historical corpus",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T307",
+      "domain": "WIND",
+      "topic": "Lower velocity split54/54",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T308",
+      "domain": "WIND",
+      "topic": "Measurement geometry and support",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T309",
+      "domain": "WIND",
+      "topic": "Vorticity signed source ledger",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T310",
+      "domain": "WIND",
+      "topic": "Linear SDE covariance",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T311",
+      "domain": "WIND",
+      "topic": "Information debt D",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T312",
+      "domain": "WIND",
+      "topic": "Spatial innovation I",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T313",
+      "domain": "WIND",
+      "topic": "Constraint injection C",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T314",
+      "domain": "WIND",
+      "topic": "Governing residual R",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T315",
+      "domain": "WIND",
+      "topic": "Structural ambiguity expiry",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T316",
+      "domain": "WIND",
+      "topic": "Exterior-law time windows",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T317",
+      "domain": "WIND",
+      "topic": "Pressure rank/time adequacy",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T318",
+      "domain": "WIND",
+      "topic": "Surface/aloft target difference",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T319",
+      "domain": "WIND",
+      "topic": "Assimilation dynamics commutator",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T320",
+      "domain": "WIND",
+      "topic": "Frozen targets versus hindsight",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T321",
+      "domain": "WIND",
+      "topic": "Sustained gust height duration datum distinction",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T322",
+      "domain": "WIND",
+      "topic": "HOx NOx VOC ozone missing rate tables",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T323",
+      "domain": "WIND",
+      "topic": "Two-moment aerosol missing equations",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T324",
+      "domain": "WIND",
+      "topic": "Reactive4D transport plan",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T325",
+      "domain": "WIND",
+      "topic": "Lorenz energy budget frontier",
+      "chapter": "docs/chapters/19_WIND_and_environmental_observability.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T326",
+      "domain": "Empirical programs",
+      "topic": "Finsler dead-zone action",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T327",
+      "domain": "Empirical programs",
+      "topic": "Legendre conjugate",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T328",
+      "domain": "Empirical programs",
+      "topic": "Hamilton-Jacobi facets",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T329",
+      "domain": "Empirical programs",
+      "topic": "Fenichel throat escape",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T330",
+      "domain": "Empirical programs",
+      "topic": "FW noise normalization",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T331",
+      "domain": "Empirical programs",
+      "topic": "LC circuit reduction",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T332",
+      "domain": "Empirical programs",
+      "topic": "Reversible kink negative result",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T333",
+      "domain": "Empirical programs",
+      "topic": "Thermal purity identity",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T334",
+      "domain": "Empirical programs",
+      "topic": "Hecke theta Gopel spectra",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T335",
+      "domain": "Empirical programs",
+      "topic": "Q-KMS clipping dependence",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T336",
+      "domain": "Empirical programs",
+      "topic": "Near-zero deformation weak exponent identification",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T337",
+      "domain": "Empirical programs",
+      "topic": "Harsh Audit",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T338",
+      "domain": "Empirical programs",
+      "topic": "Tau-Crystal anti-posthoc fitting",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T339",
+      "domain": "Empirical programs",
+      "topic": "Bayes/MDL null tests",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T340",
+      "domain": "Empirical programs",
+      "topic": "NFL Combine scouting",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T341",
+      "domain": "Empirical programs",
+      "topic": "Ordered movement phases",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T342",
+      "domain": "Empirical programs",
+      "topic": "Pauli commutator features",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T343",
+      "domain": "Empirical programs",
+      "topic": "Commutative ablation",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T344",
+      "domain": "Empirical programs",
+      "topic": "Future-speed MSE versus scouting outcomes",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T345",
+      "domain": "Empirical programs",
+      "topic": "Betting baseline market deficit",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T346",
+      "domain": "Empirical programs",
+      "topic": "Industrial portfolio negative result",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T347",
+      "domain": "Empirical programs",
+      "topic": "Family-held-out benchmark scope",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T348",
+      "domain": "Empirical programs",
+      "topic": "Customer break-even economics",
+      "chapter": "docs/chapters/20_Finsler_thermal_and_empirical_decisions.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T349",
+      "domain": "Integrations",
+      "topic": "Finite Horn closure",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T350",
+      "domain": "Integrations",
+      "topic": "Grounding versus entailment",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T351",
+      "domain": "Integrations",
+      "topic": "Closure debt",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T352",
+      "domain": "Integrations",
+      "topic": "Obstruction partition",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T353",
+      "domain": "Integrations",
+      "topic": "Closure-cost invariant",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T354",
+      "domain": "Integrations",
+      "topic": "Cech/naturality defects",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T355",
+      "domain": "Integrations",
+      "topic": "Actual double-complex requirement",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T356",
+      "domain": "Integrations",
+      "topic": "Null-labor residue cost",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T357",
+      "domain": "Integrations",
+      "topic": "Polygon triangulation arithmetic",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T358",
+      "domain": "Integrations",
+      "topic": "Mesh coverage/topology frontier",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T359",
+      "domain": "Integrations",
+      "topic": "Visibility graph completeness frontier",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T360",
+      "domain": "Integrations",
+      "topic": "Compatible chart determinants",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T361",
+      "domain": "Integrations",
+      "topic": "Shared-factor intersections",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T362",
+      "domain": "Integrations",
+      "topic": "Richelot singular/stable reduction",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T363",
+      "domain": "Integrations",
+      "topic": "Genus2 periods and marking",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T364",
+      "domain": "Integrations",
+      "topic": "Riemannian metric transport",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T365",
+      "domain": "Integrations",
+      "topic": "Smooth-curve bound frontier",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T366",
+      "domain": "Integrations",
+      "topic": "STRING symbolic states",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T367",
+      "domain": "Integrations",
+      "topic": "Pokepolis exact routes",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T368",
+      "domain": "Integrations",
+      "topic": "Battle feedback studies",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T369",
+      "domain": "Integrations",
+      "topic": "FF7 opcode architecture and missing archive",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T370",
+      "domain": "Integrations",
+      "topic": "Procedural3D art scope",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T371",
+      "domain": "Integrations",
+      "topic": "PerfectPower Explorer",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T372",
+      "domain": "Integrations",
+      "topic": "DynaComp Explorer",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T373",
+      "domain": "Integrations",
+      "topic": "Live research data synchronization requirement",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T374",
+      "domain": "Integrations",
+      "topic": "NIH BLAST recurrence/annotation",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T375",
+      "domain": "Integrations",
+      "topic": "Whole-database recall",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T376",
+      "domain": "Integrations",
+      "topic": "Source adapter certification",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T377",
+      "domain": "Integrations",
+      "topic": "Dedicated BLAST branch provenance",
+      "chapter": "docs/chapters/21_closure_stress_geometry_games_and_integrations.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T378",
+      "domain": "Enhancements",
+      "topic": "Question-relative minimal state",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T379",
+      "domain": "Enhancements",
+      "topic": "Joint preservation profile",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T380",
+      "domain": "Enhancements",
+      "topic": "Hankel predictive discovery",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T381",
+      "domain": "Enhancements",
+      "topic": "Weighted quotient populations",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T382",
+      "domain": "Enhancements",
+      "topic": "Closure-defect promotion",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T383",
+      "domain": "Enhancements",
+      "topic": "Delay before new sensors",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T384",
+      "domain": "Enhancements",
+      "topic": "Compositional approximation",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T385",
+      "domain": "Enhancements",
+      "topic": "Decision-first refinement",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T386",
+      "domain": "Enhancements",
+      "topic": "Question-dependent height",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T387",
+      "domain": "Enhancements",
+      "topic": "Adaptive modulus selection",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T388",
+      "domain": "Enhancements",
+      "topic": "Integral lattice repair",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T389",
+      "domain": "Enhancements",
+      "topic": "Order commutator decomposition",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T390",
+      "domain": "Enhancements",
+      "topic": "Parameter sensitivity preservation",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T391",
+      "domain": "Enhancements",
+      "topic": "Physical deformation protection",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T392",
+      "domain": "Enhancements",
+      "topic": "Failure as repair witness",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T393",
+      "domain": "Enhancements",
+      "topic": "Active partner spectra",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T394",
+      "domain": "Enhancements",
+      "topic": "Exact ansatz rank jump",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T395",
+      "domain": "Enhancements",
+      "topic": "Affine-periodic collision engine",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T396",
+      "domain": "Enhancements",
+      "topic": "Positive kernel distinction",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T397",
+      "domain": "Enhancements",
+      "topic": "Finite-part tail enclosure",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T398",
+      "domain": "Enhancements",
+      "topic": "Explicit field maps",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T399",
+      "domain": "Enhancements",
+      "topic": "Oriented regulator output",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T400",
+      "domain": "Enhancements",
+      "topic": "Flip involution repair",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T401",
+      "domain": "Enhancements",
+      "topic": "Model-specific jet rejection",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T402",
+      "domain": "Enhancements",
+      "topic": "Target-first sensing",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T403",
+      "domain": "Enhancements",
+      "topic": "Reusable weighted histogram",
+      "chapter": "docs/chapters/22_master_enhancement_architecture.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T404",
+      "domain": "Missing and corrections",
+      "topic": "Arithmetic GCD kernel original unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T405",
+      "domain": "Missing and corrections",
+      "topic": "Full master.txt unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T406",
+      "domain": "Missing and corrections",
+      "topic": "Original SOE corpus unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T407",
+      "domain": "Missing and corrections",
+      "topic": "Original FF7 corpus unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T408",
+      "domain": "Missing and corrections",
+      "topic": "PSG source coefficients unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T409",
+      "domain": "Missing and corrections",
+      "topic": "PADD hardware semantics unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T410",
+      "domain": "Missing and corrections",
+      "topic": "Chemistry rate table unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T411",
+      "domain": "Missing and corrections",
+      "topic": "BLAST original recurrence unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T412",
+      "domain": "Missing and corrections",
+      "topic": "Concrete Petersen50 DAG unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T413",
+      "domain": "Missing and corrections",
+      "topic": "Full radar bytes unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T414",
+      "domain": "Missing and corrections",
+      "topic": "Full formal proof integration unresolved",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T415",
+      "domain": "Missing and corrections",
+      "topic": "No new Lean theorem claim",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T416",
+      "domain": "Missing and corrections",
+      "topic": "Exact numerical historical proposal status separation",
+      "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    }
+  ]
+}

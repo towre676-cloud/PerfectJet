@@ -1,0 +1,601 @@
+{
+  "version": "0.1.0",
+  "molecular": {
+    "arithmetic": "exact rational",
+    "scope": "retained finite checks; parameter identities documented separately",
+    "rows": [
+      {
+        "lambda": "0",
+        "g8_T3_zero": true,
+        "g8_T5_zero": true,
+        "g8_Poisson_nonzero": true,
+        "quintic_obstruction_replay": true,
+        "quintic_T5_zero": true
+      },
+      {
+        "lambda": "1",
+        "g8_T3_zero": true,
+        "g8_T5_zero": true,
+        "g8_Poisson_nonzero": true,
+        "quintic_obstruction_replay": true,
+        "quintic_T5_zero": true
+      },
+      {
+        "lambda": "40/7",
+        "g8_T3_zero": true,
+        "g8_T5_zero": true,
+        "g8_Poisson_nonzero": true,
+        "quintic_obstruction_replay": true,
+        "quintic_T5_zero": true
+      },
+      {
+        "lambda": "-3/2",
+        "g8_T3_zero": true,
+        "g8_T5_zero": true,
+        "g8_Poisson_nonzero": true,
+        "quintic_obstruction_replay": true,
+        "quintic_T5_zero": true
+      }
+    ],
+    "exceptional_factorization": true,
+    "partner_census": {
+      "0": [
+        {
+          "degree": 3,
+          "kernel_dimension": 2,
+          "active_dimension": 2
+        },
+        {
+          "degree": 4,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 5,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 6,
+          "kernel_dimension": 1,
+          "active_dimension": 0
+        },
+        {
+          "degree": 7,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 8,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 9,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 10,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 11,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 12,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        }
+      ],
+      "1": [
+        {
+          "degree": 3,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 4,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 5,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 6,
+          "kernel_dimension": 1,
+          "active_dimension": 0
+        },
+        {
+          "degree": 7,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 8,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 9,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 10,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 11,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 12,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        }
+      ],
+      "40/7": [
+        {
+          "degree": 3,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 4,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 5,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 6,
+          "kernel_dimension": 1,
+          "active_dimension": 0
+        },
+        {
+          "degree": 7,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 8,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 9,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 10,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 11,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 12,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        }
+      ],
+      "20": [
+        {
+          "degree": 3,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 4,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 5,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 6,
+          "kernel_dimension": 1,
+          "active_dimension": 0
+        },
+        {
+          "degree": 7,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 8,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 9,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 10,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 11,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 12,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        }
+      ],
+      "-20": [
+        {
+          "degree": 3,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 4,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 5,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 6,
+          "kernel_dimension": 1,
+          "active_dimension": 0
+        },
+        {
+          "degree": 7,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 8,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        {
+          "degree": 9,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 10,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 11,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        },
+        {
+          "degree": 12,
+          "kernel_dimension": 0,
+          "active_dimension": 0
+        }
+      ]
+    }
+  },
+  "core_field": {
+    "modulus": [
+      -1,
+      5,
+      -4,
+      1
+    ],
+    "arithmetic": "exact rational quotient ring",
+    "alpha_polynomial_zero": true,
+    "plastic_polynomial_zero": true,
+    "hessian_identity_zero": true,
+    "vertex_identity_zero": true,
+    "hessian_coordinates": [
+      "-10",
+      "11",
+      "-3"
+    ],
+    "vertex_coordinates": [
+      "-76/23",
+      "132/23",
+      "-50/23"
+    ]
+  },
+  "collision": {
+    "arithmetic": "exact cyclotomic quotient rings",
+    "kappa_72_108": 12,
+    "rows": [
+      {
+        "conductor": 2,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "2"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "1"
+        ]
+      },
+      {
+        "conductor": 3,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "3",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666668",
+          "3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
+        ]
+      },
+      {
+        "conductor": 4,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "4",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001",
+          "-5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      },
+      {
+        "conductor": 5,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "5",
+          "0",
+          "0",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "-1999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+          "0",
+          "-4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-4000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      },
+      {
+        "conductor": 6,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "6",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "0",
+          "-1"
+        ]
+      },
+      {
+        "conductor": 7,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "7",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "2857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142858",
+          "0",
+          "2857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142856",
+          "2857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142857142858",
+          "1428571428571428571428571428571428571428571428571428571428571428571428571428571428571428571428571429",
+          "0"
+        ]
+      },
+      {
+        "conductor": 8,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "8",
+          "0",
+          "0",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "1",
+          "0",
+          "0",
+          "-5000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ]
+      },
+      {
+        "conductor": 9,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "9",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "2",
+          "-3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+          "0",
+          "0",
+          "-3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333",
+          "0"
+        ]
+      },
+      {
+        "conductor": 10,
+        "direct_coefficients_match": true,
+        "stride_recurrence": true,
+        "numerator_at_one": [
+          "10",
+          "0",
+          "0",
+          "0"
+        ],
+        "numerator_at_one_is_L": true,
+        "large_index": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "large_coefficient": [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    ]
+  },
+  "PSG": {
+    "L": 0.5319166892432992,
+    "x": 0.9428576799823384,
+    "T": 1.3774820420447476,
+    "U": 1.17191596899723,
+    "H": 1.6755633672788797,
+    "A": 0.6740320257295228,
+    "F": -4.163336342344337e-16,
+    "alpha": 0.7418045150878947,
+    "fixed_residual": 1.1102230246251565e-16,
+    "multiplier": -1.0000000000000002,
+    "status": "floating numerical replay; not interval certification or uniqueness proof"
+  },
+  "observability": {
+    "hidden": {
+      "recoverable": false,
+      "hidden_vector": [
+        "-1",
+        "1"
+      ],
+      "target_response": [
+        "-2"
+      ]
+    },
+    "repaired": {
+      "recoverable": true,
+      "hidden_vector": null,
+      "target_response": null
+    },
+    "observable_rows": [
+      [
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "selection": {
+    "count": 9,
+    "optimum": {
+      "value": 7,
+      "tie_count": 1
+    },
+    "rank_unrank_replay": true
+  },
+  "SOE": {
+    "blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "mapping": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "reduced_states": 2
+  },
+  "features": {
+    "closed": {
+      "closed": true,
+      "transition": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ]
+    },
+    "unclosed": {
+      "closed": false,
+      "pullback": [
+        {
+          "exponents": [
+            2
+          ],
+          "coefficient": "1"
+        }
+      ],
+      "reason": "pullback is outside the supplied rational feature span"
+    }
+  },
+  "energy": {
+    "energy": "1",
+    "energy_derivative": "-2",
+    "lambda": "3",
+    "zeta": "1",
+    "log_energy_derivative": "-2",
+    "rho": "2/3"
+  },
+  "flip_defect": [
+    "0",
+    "0",
+    "0",
+    "-6",
+    "3",
+    "10"
+  ],
+  "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
+}

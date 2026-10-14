@@ -1,0 +1,2660 @@
+{
+  "schema": "perfectjet/equations/1",
+  "equations": [
+    {
+      "id": "PJ-E001",
+      "domain": "arithmetic",
+      "title": "perfect-power equation",
+      "equation": "S(n)+k=m^d",
+      "status": "definition",
+      "assumptions": "Integer polynomial S; integer n,k,m; d>=2.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E002",
+      "domain": "arithmetic",
+      "title": "hit count",
+      "equation": "A_{F,d}(N)=#{n in N:n<=N, exists m in Z:F(n)=m^d}",
+      "status": "definition",
+      "assumptions": "Positive inputs; existential m avoids double-counting signed witnesses.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E003",
+      "domain": "arithmetic",
+      "title": "hit density",
+      "equation": "H_d^S(k)=limsup_{N->infinity} A_{S+k,d}(N)/N",
+      "status": "definition",
+      "assumptions": "Density claim depends on the sequence class.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E004",
+      "domain": "arithmetic",
+      "title": "polynomial identity case",
+      "equation": "S(x)+k=G(x)^d",
+      "status": "derived",
+      "assumptions": "G in Z[x] supplies a hit at each positive input.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E005",
+      "domain": "arithmetic",
+      "title": "historical geometric exponent",
+      "equation": "e=gcd(d,m_i); A(N)=O(N^(e/d+epsilon))",
+      "status": "historical_report",
+      "assumptions": "Multiplicity notation and hypotheses must be restored before using this bound.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E006",
+      "domain": "arithmetic",
+      "title": "growth taxonomy",
+      "equation": "bounded; c log N+O(1); c sqrt(N)+O(1); N",
+      "status": "historical_report",
+      "assumptions": "Retained square-hit classification; not a universal classification of every sequence.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E007",
+      "domain": "arithmetic",
+      "title": "Mordell curve",
+      "equation": "y^2=x^3+k",
+      "status": "definition",
+      "assumptions": "Rational group structure and integral completeness are separate questions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E008",
+      "domain": "arithmetic",
+      "title": "generalized Pell",
+      "equation": "y^2-Dx^2=N_0",
+      "status": "definition",
+      "assumptions": "Nonsquare D>0 for standard unit-orbit analysis.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E009",
+      "domain": "arithmetic",
+      "title": "triangular reduction",
+      "equation": "(2y+1)^2=8F(n)+1",
+      "status": "derived",
+      "assumptions": "Equivalent to y(y+1)/2=F(n) with odd-square reconstruction.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E010",
+      "domain": "arithmetic",
+      "title": "completed square",
+      "equation": "(2y+1)^2=4F(n)+1",
+      "status": "derived",
+      "assumptions": "Equivalent to y^2+y=F(n).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E011",
+      "domain": "arithmetic",
+      "title": "quadratic discriminant",
+      "equation": "Delta(n)=b^2-4a(c-F(n)); y=(-b +/- sqrt(Delta))/(2a)",
+      "status": "derived",
+      "assumptions": "a nonzero; discriminant square AND numerator divisible by 2a.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E012",
+      "domain": "arithmetic",
+      "title": "coefficient power chart",
+      "equation": "2x^2=3y^3; x=+/-18t^3,y=6t^2",
+      "status": "derived",
+      "assumptions": "Integer parametrization; retain signs and t=0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E013",
+      "domain": "arithmetic",
+      "title": "cusp power chart",
+      "equation": "x^2=y^3; x=t^3,y=t^2",
+      "status": "derived",
+      "assumptions": "Integer t carries the sign of x.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E014",
+      "domain": "pell",
+      "title": "quadratic norm",
+      "equation": "N(x+y sqrt(D))=x^2-Dy^2",
+      "status": "derived",
+      "assumptions": "Quadratic extension convention.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E015",
+      "domain": "pell",
+      "title": "unit orbit",
+      "equation": "x_j+y_j sqrt(D)=alpha epsilon^j",
+      "status": "historical_report",
+      "assumptions": "Seed inventory and index domain must be complete.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E016",
+      "domain": "pell",
+      "title": "unit matrix",
+      "equation": "[x';y']=[[a,Db],[b,a]][x;y]",
+      "status": "derived",
+      "assumptions": "epsilon=a+b sqrt(D); multiplication identity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E017",
+      "domain": "pell",
+      "title": "sqrt2 hit recurrence",
+      "equation": "n'=3n+2m; m'=4n+3m; m^2-2n^2=1",
+      "status": "derived",
+      "assumptions": "A single orbit step; seeds/domain still matter.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E018",
+      "domain": "pell",
+      "title": "Pell7",
+      "equation": "x^2-2y^2=-7",
+      "status": "derived",
+      "assumptions": "Equivalent to (x^2+7)/2=y^2.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E019",
+      "domain": "pell",
+      "title": "orbit coordinate",
+      "equation": "X_j=(eta epsilon^j+(Delta/eta)epsilon^(-j))/2",
+      "status": "historical_report",
+      "assumptions": "Original seed/norm convention required.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E020",
+      "domain": "pell",
+      "title": "input asymptotic",
+      "equation": "n_j=eta epsilon^j/(4A)-B/(2A)+O(epsilon^(-j))",
+      "status": "historical_report",
+      "assumptions": "Original quadratic pullback coefficients required.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E021",
+      "domain": "pell",
+      "title": "filtered orbit population",
+      "equation": "A_orbit(N)=g log(N)/(pi_period log(epsilon))+O(1)",
+      "status": "historical_report",
+      "assumptions": "Reachable cycle with period pi_period and g admissible positions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E022",
+      "domain": "pell",
+      "title": "filtered infinitude",
+      "equation": "reachable admissible cycle iff infinitely many admissible orbit hits",
+      "status": "historical_report",
+      "assumptions": "For retained finite-state orbit encoding, not arbitrary automata.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E023",
+      "domain": "pell",
+      "title": "unit identity",
+      "equation": "(1+sqrt(2))^6=99+70sqrt(2)",
+      "status": "derived",
+      "assumptions": "Exact binomial expansion.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E024",
+      "domain": "descent",
+      "title": "general Weierstrass",
+      "equation": "y^2+a1xy+a3y=x^3+a2x^2+a4x+a6",
+      "status": "definition",
+      "assumptions": "Nonsingular elliptic model when discriminant nonzero.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E025",
+      "domain": "descent",
+      "title": "Weierstrass coefficients",
+      "equation": "b2=a1^2+4a2; b4=2a4+a1a3; b6=a3^2+4a6",
+      "status": "definition",
+      "assumptions": "Standard model coefficients.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E026",
+      "domain": "descent",
+      "title": "square completion",
+      "equation": "(2y+a1x+a3)^2=4x^3+b2x^2+2b4x+b6",
+      "status": "derived",
+      "assumptions": "Direct polynomial identity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E027",
+      "domain": "descent",
+      "title": "two-torsion cubic",
+      "equation": "psi2(x)=4x^3+b2x^2+2b4x+b6",
+      "status": "definition",
+      "assumptions": "Leading coefficient 4; use monic normalization for the norm.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E028",
+      "domain": "descent",
+      "title": "cubic discriminant",
+      "equation": "disc(psi2)=16Delta_E",
+      "status": "derived",
+      "assumptions": "Standard discriminant normalization.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E029",
+      "domain": "descent",
+      "title": "cubic etale norm",
+      "equation": "N(x-theta)=((2y+a1x+a3)/2)^2",
+      "status": "derived",
+      "assumptions": "theta is root of monic psi2/4; norm-square is necessary, not sufficient for Selmer membership.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E030",
+      "domain": "descent",
+      "title": "squareclasses",
+      "equation": "L^*/L^(*2)",
+      "status": "definition",
+      "assumptions": "Product algebra when cubic splits; do not silently assume a field.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E031",
+      "domain": "descent",
+      "title": "local Kummer condition",
+      "equation": "loc_v(alpha) in image(delta_v)",
+      "status": "definition",
+      "assumptions": "Actual complete local images, not sampled signatures.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E032",
+      "domain": "descent",
+      "title": "Selmer intersection",
+      "equation": "Sel2={alpha in appropriate global squareclasses:loc_v(alpha) in image(delta_v) for all v}",
+      "status": "definition",
+      "assumptions": "S-unit/class-group/norm conditions must also be supplied.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E033",
+      "domain": "descent",
+      "title": "unit-class sequence",
+      "equation": "O_{L,S}^*/O_{L,S}^{*2}->L(S,2)->Cl(O_{L,S})[2]",
+      "status": "historical_report",
+      "assumptions": "Recover exact sequence conventions before downstream proof.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E034",
+      "domain": "descent",
+      "title": "Selmer exact sequence",
+      "equation": "0->E(Q)/2E(Q)->Sel2(E/Q)->Sha(E/Q)[2]->0",
+      "status": "derived",
+      "assumptions": "Standard 2-Selmer interpretation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E035",
+      "domain": "descent",
+      "title": "anonymous model",
+      "equation": "y^2=x^3+2x^2-12x+16",
+      "status": "historical_report",
+      "assumptions": "v1.67 report; not imported as a complete descent implementation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E036",
+      "domain": "descent",
+      "title": "anonymous field",
+      "equation": "u^3+8u^2-192u+1024=0",
+      "status": "historical_report",
+      "assumptions": "Field discriminant reported -107; polynomial and field discriminants differ.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E037",
+      "domain": "transport",
+      "title": "affine pullback",
+      "equation": "F(n)=(rn+s)^3+k",
+      "status": "definition",
+      "assumptions": "r nonzero for inverse transport.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E038",
+      "domain": "transport",
+      "title": "transported list",
+      "equation": "W={((t-s)/r,y):(t,y) in L_k, r divides t-s}",
+      "status": "derived",
+      "assumptions": "L_k must be complete to conclude complete pullback.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E039",
+      "domain": "transport",
+      "title": "list contract",
+      "equation": "m^2=F(n) iff (n,m) in W",
+      "status": "conditional",
+      "assumptions": "Requires complete source list and preserved domains.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E040",
+      "domain": "transport",
+      "title": "Thue23 first",
+      "equation": "-u^3-3u^2v+6uv^2+4v^3=1",
+      "status": "historical_report",
+      "assumptions": "Retained descent leaf; all branches/reconstruction needed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E041",
+      "domain": "transport",
+      "title": "Thue23 second",
+      "equation": "-u^3-6u^2v+69uv^2+46v^3=1",
+      "status": "historical_report",
+      "assumptions": "Retained descent leaf.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E042",
+      "domain": "transport",
+      "title": "field621",
+      "equation": "theta^3-6theta-3=0",
+      "status": "historical_report",
+      "assumptions": "Associated field representation in archive.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E043",
+      "domain": "transport",
+      "title": "D72 leaf",
+      "equation": "H(u,v)=-3u^3+9uv^2-2v^3=+/-1",
+      "status": "historical_report",
+      "assumptions": "Residual branch, not a closure claim.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E044",
+      "domain": "transport",
+      "title": "D72 field",
+      "equation": "beta^3-27beta-18=0",
+      "status": "historical_report",
+      "assumptions": "Coordinates and order matter.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E045",
+      "domain": "transport",
+      "title": "D72 norm",
+      "equation": "gamma=-3u-beta v; N(gamma)=9H(u,v)=+/-9",
+      "status": "historical_report",
+      "assumptions": "Exact identity attached to the selected field/order.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E046",
+      "domain": "transport",
+      "title": "D72 units",
+      "equation": "gamma=zeta alpha_j epsilon1^e1 epsilon2^e2",
+      "status": "historical_report",
+      "assumptions": "Need representatives and effective global exponent bounds.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E047",
+      "domain": "transport",
+      "title": "D72 reconstruction",
+      "equation": "C=0; 3 divides A; u=-A/3; v=-B",
+      "status": "historical_report",
+      "assumptions": "Coordinate restrictions are part of completeness.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E048",
+      "domain": "transport",
+      "title": "scaled rational kernel",
+      "equation": "K=det(BB^T)I-B^T adj(BB^T)B",
+      "status": "derived",
+      "assumptions": "Full row rank for nondegenerate projector interpretation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E049",
+      "domain": "transport",
+      "title": "kernel identities",
+      "equation": "BK=0; Bx=0 implies Kx=det(BB^T)x",
+      "status": "derived",
+      "assumptions": "Rational-span statement does not prove integral saturation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E050",
+      "domain": "transport",
+      "title": "Smith form",
+      "equation": "UBV=D",
+      "status": "proposal",
+      "assumptions": "Unimodular U,V; implementation deferred in this release.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E051",
+      "domain": "transport",
+      "title": "integral solvability",
+      "equation": "d_i divides (Ub)_i; remaining coordinates (Ub)_i=0",
+      "status": "derived",
+      "assumptions": "For Smith form of Bx=b.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E052",
+      "domain": "counting",
+      "title": "resource polynomial",
+      "equation": "P(z)=product_j(1+product_k z_k^{c_jk})",
+      "status": "derived",
+      "assumptions": "Nonnegative integral costs; extra compatibility requires extra factors/state.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E053",
+      "domain": "counting",
+      "title": "capacity population",
+      "equation": "#F=sum_{a<=b}[z^a]P(z)",
+      "status": "derived",
+      "assumptions": "Componentwise capacity bound.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E054",
+      "domain": "counting",
+      "title": "profit polynomial",
+      "equation": "P(z,t)=product_j(1+t^{p_j}product_k z_k^{c_jk})",
+      "status": "proposal",
+      "assumptions": "Laurent t exponents if profits negative.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E055",
+      "domain": "counting",
+      "title": "completion recurrence",
+      "equation": "C(q)=C(q0)+C(q1)",
+      "status": "exact_checked",
+      "assumptions": "Disjoint binary prefixes; populations.py and exhaustive comparisons.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E056",
+      "domain": "counting",
+      "title": "terminal count",
+      "equation": "C(q)=1 if complete and feasible else 0",
+      "status": "exact_checked",
+      "assumptions": "Original objects counted once.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E057",
+      "domain": "counting",
+      "title": "ranking",
+      "equation": "rank(x)=sum_{i:x_i=1} C(x_<i 0)",
+      "status": "exact_checked",
+      "assumptions": "Lexicographic original project order.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E058",
+      "domain": "counting",
+      "title": "unranking",
+      "equation": "r<C(q0):choose0; else choose1 and r<-r-C(q0)",
+      "status": "exact_checked",
+      "assumptions": "0<=r<C(q).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E059",
+      "domain": "counting",
+      "title": "uniform sampling",
+      "equation": "Pr(0|q)=C(q0)/C(q)",
+      "status": "derived",
+      "assumptions": "Exact uniformity over original objects, not quotient representatives.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E060",
+      "domain": "counting",
+      "title": "factor population",
+      "equation": "Z=sum_x product_j f_j(x_scope_j)",
+      "status": "definition",
+      "assumptions": "Finite domains and specified weight algebra.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E061",
+      "domain": "counting",
+      "title": "variable elimination",
+      "equation": "g(x_rest)=sum_{x_i}product_{j containing i}f_j",
+      "status": "derived",
+      "assumptions": "No duplicated auxiliary witnesses.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E062",
+      "domain": "counting",
+      "title": "auxiliary uniqueness",
+      "equation": "for every original legal x, #{y:encoding(x,y)}=1",
+      "status": "definition",
+      "assumptions": "Needed to preserve population under functional encodings.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E063",
+      "domain": "counting",
+      "title": "Petersen historical total",
+      "equation": "702508860122761; optimum=16537; tie_count=1",
+      "status": "historical_report",
+      "assumptions": "Upstream retained result; original 50-project data not included here.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E064",
+      "domain": "counting",
+      "title": "population aggregation",
+      "equation": "Z_{A disjoint-union B}=Z_A+Z_B; Z_{A times B}=Z_A Z_B",
+      "status": "derived",
+      "assumptions": "Disjointness / independence essential.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E065",
+      "domain": "counting",
+      "title": "exponent-pattern polynomial",
+      "equation": "product_i(1+q+...+q^{a_i})",
+      "status": "definition",
+      "assumptions": "Prime-exponent populations.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E066",
+      "domain": "counting",
+      "title": "power-exponent criterion",
+      "equation": "d divides gcd(a_1,...,a_s)",
+      "status": "derived",
+      "assumptions": "Positive integer prime factorization; handle 1 separately.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E067",
+      "domain": "series",
+      "title": "weighted transfer series",
+      "equation": "G(z)=H(I-sum_c z^c A_c)^(-1)s",
+      "status": "derived",
+      "assumptions": "Positive integral costs; finite-dimensional formal series.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E068",
+      "domain": "series",
+      "title": "resolvent expansion",
+      "equation": "(I-M(z))^(-1)=sum_{ell>=0}M(z)^ell",
+      "status": "derived",
+      "assumptions": "M has zero constant term, or other convergence hypotheses.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E069",
+      "domain": "series",
+      "title": "Fibonacci series",
+      "equation": "1/(1-z-z^2)",
+      "status": "definition",
+      "assumptions": "Initialization determines sequence offset.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E070",
+      "domain": "series",
+      "title": "zero-series initialization",
+      "equation": "z/(1-z)=0+z+z^2+...",
+      "status": "historical_report",
+      "assumptions": "Zero initial sample can change minimal realization size.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E071",
+      "domain": "series",
+      "title": "linear response",
+      "equation": "G(z)=C(I-zA)^(-1)B; coefficients=CA^kB",
+      "status": "derived",
+      "assumptions": "Linear input/output convention.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E072",
+      "domain": "series",
+      "title": "Hankel matrix",
+      "equation": "H_{u,v}=f(uv)",
+      "status": "proposal",
+      "assumptions": "Word-indexed predictive state; finite rank over a field.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E073",
+      "domain": "series",
+      "title": "linear word realization",
+      "equation": "f(w)=alpha^T A_{a1}...A_{aell} beta",
+      "status": "derived",
+      "assumptions": "Minimal field realization dimension equals finite Hankel rank; positivity is separate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E074",
+      "domain": "semantics",
+      "title": "semantic fibre",
+      "equation": "pi:I->S; I_s=pi^(-1)(s) intersect L",
+      "status": "definition",
+      "assumptions": "Legal implementations of a meaning.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E075",
+      "domain": "semantics",
+      "title": "cost realization",
+      "equation": "i*=argmin_{i in I_s}cost(i)",
+      "status": "proposal",
+      "assumptions": "Minimum must exist or infimum used.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E076",
+      "domain": "semantics",
+      "title": "future equivalence",
+      "equation": "x~y iff all finite permitted words have equal behavior",
+      "status": "exact_checked",
+      "assumptions": "Partial definedness included; finite machine replay.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E077",
+      "domain": "semantics",
+      "title": "quotient dynamics",
+      "equation": "qF_a=Fbar_a q",
+      "status": "exact_checked",
+      "assumptions": "Observation and definedness preserved.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E078",
+      "domain": "semantics",
+      "title": "quotient observation",
+      "equation": "O=Obar q",
+      "status": "exact_checked",
+      "assumptions": "Chosen output family only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E079",
+      "domain": "semantics",
+      "title": "completeness",
+      "equation": "q(x)=q(y) iff x~y",
+      "status": "exact_checked",
+      "assumptions": "Finite Python quotient, not new Lean theorem.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E080",
+      "domain": "semantics",
+      "title": "distinguishing word",
+      "equation": "exists w:behavior(x,w)!=behavior(y,w)",
+      "status": "exact_checked",
+      "assumptions": "Shortest witness via pair BFS.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E081",
+      "domain": "semantics",
+      "title": "question refinement",
+      "equation": "Q subset Q' implies equivalence(Q') subset equivalence(Q)",
+      "status": "derived",
+      "assumptions": "More questions can only refine the state partition.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E082",
+      "domain": "semantics",
+      "title": "joint representation",
+      "equation": "q=(q1,q2)",
+      "status": "proposal",
+      "assumptions": "Then remove redundant distinctions relative to joint questions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E083",
+      "domain": "observability",
+      "title": "row closure",
+      "equation": "O=span{rows(CA^k):k>=0}",
+      "status": "exact_checked",
+      "assumptions": "Finite rational matrices; exact observable-space compiler.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E084",
+      "domain": "observability",
+      "title": "hidden space",
+      "equation": "N=intersection_{k>=0}ker(CA^k)",
+      "status": "derived",
+      "assumptions": "Linear all-future output equivalence.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E085",
+      "domain": "observability",
+      "title": "target recovery",
+      "equation": "ker(O) subset ker(G) iff G=L O",
+      "status": "exact_checked",
+      "assumptions": "Finite dimensions; hidden-vector failure witness.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E086",
+      "domain": "observability",
+      "title": "hidden target amplitude",
+      "equation": "max_{delta in ker(H) intersect ker(M),norm(delta)<=1}|g^T delta|",
+      "status": "derived",
+      "assumptions": "Norm must be declared; Euclidean formula uses orthonormal hidden basis.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E087",
+      "domain": "observability",
+      "title": "quadratic fibre constancy",
+      "equation": "N^T(g+Qx0)=0 and N^T QN=0",
+      "status": "derived",
+      "assumptions": "T=g^Tx+1/2 x^TQx, symmetric Q, full affine fibre x0+image(N).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E088",
+      "domain": "observability",
+      "title": "sensor repair",
+      "equation": "ker(Hnew N) subset ker(GN)",
+      "status": "derived",
+      "assumptions": "Repairs target-affecting hidden directions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E089",
+      "domain": "observability",
+      "title": "information matrix",
+      "equation": "J=H^T R^(-1)H",
+      "status": "definition",
+      "assumptions": "Positive noise covariance; prior added separately.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E090",
+      "domain": "observability",
+      "title": "sensor sensitivity",
+      "equation": "d(g^T P g)/dw=-(h^T P g)^2",
+      "status": "derived",
+      "assumptions": "P=(J0+w hh^T)^(-1), nonsingular.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E091",
+      "domain": "observability",
+      "title": "stable recovery",
+      "equation": "G^*G <= lambda O^*O",
+      "status": "historical_report",
+      "assumptions": "Bounded-operator assumptions; exact recovery and stable recovery differ.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E092",
+      "domain": "observability",
+      "title": "delay coordinates",
+      "equation": "Psi_L=[O;O F;...;O F^(L-1)]",
+      "status": "proposal",
+      "assumptions": "Linear observability rows become [C;CA;...]; nonlinear sufficiency needs hypotheses.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E093",
+      "domain": "features",
+      "title": "finite feature closure",
+      "equation": "p_i composed F in span_Q{p_j}",
+      "status": "exact_checked",
+      "assumptions": "Exact coefficient replay, not fitted regression.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E094",
+      "domain": "features",
+      "title": "feature evolution",
+      "equation": "p(F(x))=G p(x)",
+      "status": "exact_checked",
+      "assumptions": "Output must belong to retained feature span.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E095",
+      "domain": "features",
+      "title": "all-time feature evolution",
+      "equation": "p(F^t(x))=G^t p(x)",
+      "status": "derived",
+      "assumptions": "Induction from exact closure.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E096",
+      "domain": "features",
+      "title": "closure defect",
+      "equation": "psi(F(x))=G psi(x)+r(x)",
+      "status": "definition",
+      "assumptions": "Explicit residual rather than silent truncation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E097",
+      "domain": "features",
+      "title": "defect state augmentation",
+      "equation": "[psi';chi']=[[G,B],[C,D]][psi;chi]",
+      "status": "proposal",
+      "assumptions": "r=Bchi and chi'=Cpsi+Dchi; closure may never terminate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E098",
+      "domain": "features",
+      "title": "parameter sensitivity",
+      "equation": "S_{t+1}=D_xF S_t+D_theta F",
+      "status": "derived",
+      "assumptions": "Differentiable parameterized dynamics.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E099",
+      "domain": "features",
+      "title": "linear sensitivity",
+      "equation": "S'=A S+A_theta x+B_theta u",
+      "status": "derived",
+      "assumptions": "Discrete-time prime notation means next state; input fixed relative to parameter.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E100",
+      "domain": "dynamics",
+      "title": "reconstruction error",
+      "equation": "e=x-Vz",
+      "status": "definition",
+      "assumptions": "State error versus output error distinguished.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E101",
+      "domain": "dynamics",
+      "title": "evolution defects",
+      "equation": "R=AV-VG; S=B-VH",
+      "status": "exact_checked",
+      "assumptions": "Compatible linear model/reconstruction matrices.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E102",
+      "domain": "dynamics",
+      "title": "error recurrence",
+      "equation": "e_next=Ae+Rz+Su",
+      "status": "derived",
+      "assumptions": "Direct substitution into full and reduced dynamics.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E103",
+      "domain": "dynamics",
+      "title": "error convolution",
+      "equation": "e_t=A^t e0+sum_{j<t}A^(t-1-j)(Rz_j+Su_j)",
+      "status": "derived",
+      "assumptions": "Exact finite-time identity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E104",
+      "domain": "dynamics",
+      "title": "continuous Lyapunov",
+      "equation": "A^T P+PA<=-2alpha P; P>0",
+      "status": "derived",
+      "assumptions": "Continuous time; alpha positive for decay.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E105",
+      "domain": "dynamics",
+      "title": "discrete Lyapunov",
+      "equation": "A^T PA<=gamma^2 P; 0<=gamma<1",
+      "status": "derived",
+      "assumptions": "Discrete time; fixed metric.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E106",
+      "domain": "dynamics",
+      "title": "contractive error",
+      "equation": "norm(e_t)<=gamma^t norm(e0)+sum gamma^(t-1-j)delta_j",
+      "status": "exact_checked",
+      "assumptions": "Defects nonnegative bounds in the same contracting norm.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E107",
+      "domain": "dynamics",
+      "title": "uniform defect bound",
+      "equation": "norm(e_t)<=gamma^t norm(e0)+delta(1-gamma^t)/(1-gamma)",
+      "status": "derived",
+      "assumptions": "Supremum defect delta and gamma<1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E108",
+      "domain": "dynamics",
+      "title": "composed error",
+      "equation": "epsilon_total<=epsilon1+norm(V1)epsilon2",
+      "status": "derived",
+      "assumptions": "Compatible reconstruction stages.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E109",
+      "domain": "dynamics",
+      "title": "nonlinear composed error",
+      "equation": "epsilon_total<=epsilon1+L1 epsilon2",
+      "status": "derived",
+      "assumptions": "First reconstruction Lipschitz with constant L1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E110",
+      "domain": "dynamics",
+      "title": "decision certificate",
+      "equation": "Jhat(a*)-epsilon_a*>max_{b!=a*}(Jhat(b)+epsilon_b)",
+      "status": "exact_checked",
+      "assumptions": "Deterministic interval bounds; empirical uncertainty separate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E111",
+      "domain": "energy",
+      "title": "mass energy",
+      "equation": "E=1/2 u^T M u",
+      "status": "definition",
+      "assumptions": "Constant symmetric positive-definite M.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E112",
+      "domain": "energy",
+      "title": "symmetric energy operator",
+      "equation": "S_M=(A^T M+MA)/2",
+      "status": "exact_checked",
+      "assumptions": "u'=Au+f.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E113",
+      "domain": "energy",
+      "title": "energy derivative",
+      "equation": "E'=u^T S_M u+u^T M f",
+      "status": "exact_checked",
+      "assumptions": "Direct identity; boundaries/sources in A or f.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E114",
+      "domain": "energy",
+      "title": "corrected decay dial",
+      "equation": "lambda=-2u^T S_Mu/(u^TMu)",
+      "status": "exact_checked",
+      "assumptions": "Nonzero state; sign chosen for predicted decay.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E115",
+      "domain": "energy",
+      "title": "corrected source term",
+      "equation": "zeta=2u^T Mf/(u^TMu)",
+      "status": "exact_checked",
+      "assumptions": "Positive source reduces net decay when lambda>0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E116",
+      "domain": "energy",
+      "title": "corrected residue",
+      "equation": "d log(E)/dt=-lambda+zeta; rho=1-zeta/lambda",
+      "status": "exact_checked",
+      "assumptions": "rho undefined at lambda=0; historical plus-sign formula rejected.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E117",
+      "domain": "energy",
+      "title": "CRO measured rate",
+      "equation": "alpha_hat=-(log E_k-log E_{k-1})/Delta_t",
+      "status": "definition",
+      "assumptions": "Positive energies; window and integration scheme retained.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E118",
+      "domain": "energy",
+      "title": "CRO residual",
+      "equation": "R1=|alpha_hat-alpha|",
+      "status": "definition",
+      "assumptions": "Diagnostic, not proof of physical universality.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E119",
+      "domain": "energy",
+      "title": "rank-one crystalline matrix",
+      "equation": "S(t)=I+t11^T; det(S)=1+nt",
+      "status": "derived",
+      "assumptions": "n-dimensional all-ones vector.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E120",
+      "domain": "energy",
+      "title": "invariant-space leakage",
+      "equation": "(I-P)AP",
+      "status": "definition",
+      "assumptions": "Zero iff range(P) invariant when P is a projection.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E121",
+      "domain": "imp",
+      "title": "SVD projector",
+      "equation": "M=U Sigma V^T; P=QQ^T",
+      "status": "historical_report",
+      "assumptions": "Unit singular vectors do not establish invariant fixed modes.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E122",
+      "domain": "imp",
+      "title": "rejected SVD limit",
+      "equation": "all selected singular values=1 implies M^k->P",
+      "status": "rejected",
+      "assumptions": "Orthogonal rotation counterexample.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E123",
+      "domain": "imp",
+      "title": "sufficient fixed-mode split",
+      "equation": "M=P+T; P^2=P; PT=TP=0; rho(T)<1",
+      "status": "derived",
+      "assumptions": "Then M^k=P+T^k and M^k x->Px.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E124",
+      "domain": "imp",
+      "title": "general invariant reduction",
+      "equation": "MQ=QG",
+      "status": "derived",
+      "assumptions": "Retained dynamics may evolve instead of remaining fixed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E125",
+      "domain": "imp",
+      "title": "exact retained evolution",
+      "equation": "M^k Q=QG^k",
+      "status": "derived",
+      "assumptions": "Induction from intertwining.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E126",
+      "domain": "psg",
+      "title": "potential",
+      "equation": "L=-log cos(x); U=x^2+L^2; K_alpha=U^(-alpha/2)",
+      "status": "definition",
+      "assumptions": "0<x<pi/2; global contraction is not assumed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E127",
+      "domain": "psg",
+      "title": "support functions",
+      "equation": "T=tan(x); H=x+LT; A=xH/(2U)",
+      "status": "definition",
+      "assumptions": "Archive A<1/2 claim contradicts retained root A*=0.674... .",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E128",
+      "domain": "psg",
+      "title": "corrected derivative",
+      "equation": "K_alpha'=-alpha H K_alpha/U",
+      "status": "derived",
+      "assumptions": "U'=2H; factor-of-two repaired.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E129",
+      "domain": "psg",
+      "title": "flip parameter",
+      "equation": "alpha=1/(2A)",
+      "status": "numerical_checked",
+      "assumptions": "At a fixed point with multiplier -1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E130",
+      "domain": "psg",
+      "title": "scalar balance",
+      "equation": "F(L)=log U(L)+4A(L)log x(L)=0",
+      "status": "numerical_checked",
+      "assumptions": "x=acos(exp(-L)); bracket replay only, not uniqueness/transcendence proof.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E131",
+      "domain": "psg",
+      "title": "coordinate derivatives",
+      "equation": "x'=1/sqrt(exp(2L)-1); L_x'=tan x; T_x'=1+T^2",
+      "status": "derived",
+      "assumptions": "Positive L and admissible angle.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E132",
+      "domain": "psg",
+      "title": "root receipt",
+      "equation": "L*=0.531916689243299; x*=0.942857679982338; alpha*=0.741804515087895",
+      "status": "numerical_checked",
+      "assumptions": "Floating root reproduction, historical higher precision not re-certified.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E133",
+      "domain": "psg",
+      "title": "coefficient curve",
+      "equation": "a(v)=x(x+(v/2)T)/(2(x^2+v^2/4)); x=acos(exp(-v/2)); T=sqrt(exp(v)-1)",
+      "status": "historical_report",
+      "assumptions": "Correct v=2L convention; archive typography inconsistent in places.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E134",
+      "domain": "psg",
+      "title": "exponential extraction",
+      "equation": "E F1+F0=0; E=exp(v)-1=-F0/F1",
+      "status": "historical_report",
+      "assumptions": "p=a'; F1 nonzero; original numerator and certificates needed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E135",
+      "domain": "psg",
+      "title": "F0",
+      "equation": "a(2a-1)(v+4-8a)^2",
+      "status": "historical_report",
+      "assumptions": "Factor structure preserved.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E136",
+      "domain": "psg",
+      "title": "F1",
+      "equation": "(av-2a-2pv+1)(2av+4a-4pv-v-2)",
+      "status": "historical_report",
+      "assumptions": "Factor structure preserved.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E137",
+      "domain": "psg",
+      "title": "cleared jet field",
+      "equation": "Xtilde=D partial_v+Dp partial_a+N partial_p",
+      "status": "historical_report",
+      "assumptions": "D=2av^2(2a-1)(v+4-8a)^2; full N absent from read document.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E138",
+      "domain": "psg",
+      "title": "Darboux equation",
+      "equation": "Xtilde(H)=KH",
+      "status": "definition",
+      "assumptions": "Listed identities do not by themselves establish unrestricted classification.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E139",
+      "domain": "psg",
+      "title": "PSG source elimination",
+      "equation": "P(x,L,T)=0; T^2=Y^2-1; T=-A/B",
+      "status": "historical_report",
+      "assumptions": "26-term source/100-term elimination reported; B=0 and integer-image branches must remain.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E140",
+      "domain": "psg",
+      "title": "normalized amplitude jet",
+      "equation": "A/A*=1+.3282804759delta+.0800766090delta^2+.0108819139delta^3+...",
+      "status": "historical_report",
+      "assumptions": "Root-centered finite jet; not an origin-germ coefficient table.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E141",
+      "domain": "psg",
+      "title": "normalized balance jet",
+      "equation": "F/(L*F')=delta-.3793897467delta^2+.3008496421delta^3-.2807207864delta^4+...",
+      "status": "historical_report",
+      "assumptions": "Declared normalization required.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E142",
+      "domain": "psg",
+      "title": "logarithmic derivative",
+      "equation": "I=F''/F'",
+      "status": "definition",
+      "assumptions": "Derivative ratio; archive sometimes conflates Taylor factorial conventions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E143",
+      "domain": "jets",
+      "title": "Schroeder equation",
+      "equation": "Psi(f(x))=-Psi(x)",
+      "status": "conditional",
+      "assumptions": "Locally invertible exact solution requires f^2=id.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E144",
+      "domain": "jets",
+      "title": "reflection criterion",
+      "equation": "Psi=(x-f(x))/2; f^2=id implies Psi composed f=-Psi",
+      "status": "derived",
+      "assumptions": "Centered analytic f with f'(0)=-1 gives Psi'(0)=1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E145",
+      "domain": "jets",
+      "title": "flip obstruction",
+      "equation": "f=-x+ax^2+bx^3+...; f^2-x=-2(b+a^2)x^3+...",
+      "status": "exact_checked",
+      "assumptions": "Centered coordinates; coefficient convention without factorials.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E146",
+      "domain": "jets",
+      "title": "two-cycle leading sign",
+      "equation": "f_nu=-(1+nu)x+kappa x^3+...; x^2~nu/kappa",
+      "status": "derived",
+      "assumptions": "Real small cycle requires positive ratio; parameter-dependent fixed point recentered.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E147",
+      "domain": "jets",
+      "title": "Riccati coefficient law",
+      "equation": "(n+1)i_{n+1}=a 1_{n=0}+b i_n+c sum_{j=0}^n i_j i_{n-j}",
+      "status": "exact_checked",
+      "assumptions": "Specific ODE I'=a+bI+cI^2; not a transcendence test.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E148",
+      "domain": "jets",
+      "title": "Riccati rejection residual",
+      "equation": "r_n=(n+1)i_{n+1}-a1_{n=0}-b i_n-c sum i_j i_{n-j}",
+      "status": "exact_checked",
+      "assumptions": "Nonzero exact residual rejects this fixed model.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E149",
+      "domain": "jets",
+      "title": "Puiseux series",
+      "equation": "xi=a1 sqrt(epsilon)+a2 epsilon+a3 epsilon^(3/2)+...",
+      "status": "proposal",
+      "assumptions": "Check second-iterate signs before claiming a real branch.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E150",
+      "domain": "jets",
+      "title": "seventh-order freedom",
+      "equation": "b7 leaves orders0..6 unchanged; order7 coefficient=1/128",
+      "status": "historical_report",
+      "assumptions": "Specific archived wall normalization; not recomputed here.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E151",
+      "domain": "recurrences",
+      "title": "Padovan",
+      "equation": "P_n=P_{n-2}+P_{n-3}; characteristic=x^3-x-1",
+      "status": "definition",
+      "assumptions": "Initial conditions fixed separately.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E152",
+      "domain": "recurrences",
+      "title": "Padovan modes",
+      "equation": "P_n=A psi^n+B q^n+conjugate(B q^n)",
+      "status": "derived",
+      "assumptions": "Distinct characteristic roots and real initial data.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E153",
+      "domain": "recurrences",
+      "title": "Fibonacci kernel",
+      "equation": "F_{n+1}=sum_{k=0}^{floor(n/2)} binomial(n-k,k)",
+      "status": "derived",
+      "assumptions": "Standard finite combinatorial identity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E154",
+      "domain": "recurrences",
+      "title": "Tribonacci",
+      "equation": "T_n=T_{n-1}+T_{n-2}+T_{n-3}; x^3-x^2-x-1=0",
+      "status": "definition",
+      "assumptions": "Separate family from Catmull-Clark operator spectra.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E155",
+      "domain": "recurrences",
+      "title": "Escher-Pisot proposal",
+      "equation": "F_{n+1}(z)=lambda F_n(exp(2pi i alpha)conj(z))+sum_k(-1)^k theta^(-2k-1)binomial(n-k,k)q^(k(k+1)/2)+Phi(F_n(z))",
+      "status": "proposal",
+      "assumptions": "Finite k range for given n; no global contraction from lambda>1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E156",
+      "domain": "recurrences",
+      "title": "mode stability",
+      "equation": "abs(lambda exp(-im alpha)+a)<1",
+      "status": "conditional",
+      "assumptions": "Specified linearized mode only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E157",
+      "domain": "topology",
+      "title": "MMHW wavelet",
+      "equation": "psi_{alpha,beta}(x)=(1-alpha x^2)exp(-x^2/2)(1+beta sin(pi x^2)exp(-abs(x)^3))",
+      "status": "proposal",
+      "assumptions": "Wavelet admissibility and topological accuracy need separate analysis.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E158",
+      "domain": "topology",
+      "title": "subdivision block",
+      "equation": "M=[[-7/48,3(1+i sqrt3)/32],[5(1-i sqrt3)/16,-9/8]]",
+      "status": "historical_report",
+      "assumptions": "Particular local block, not established full refinement operator.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E159",
+      "domain": "topology",
+      "title": "block characteristic",
+      "equation": "chi=x^2+61x/48+3/64",
+      "status": "derived",
+      "assumptions": "Trace/determinant checked in session; one root magnitude>1 prevents naive contraction claim.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E160",
+      "domain": "topology",
+      "title": "finite quadratic phases",
+      "equation": "b(x,y)=q(x+y)-q(x)-q(y)",
+      "status": "definition",
+      "assumptions": "Finite nondegenerate quadratic module conventions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E161",
+      "domain": "topology",
+      "title": "finite S,T",
+      "equation": "S_xy=|A|^(-1/2)exp(-2pi i b(x,y)); T_xx=exp(2pi i q(x))",
+      "status": "definition",
+      "assumptions": "Choice of sign fixes relations.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E162",
+      "domain": "topology",
+      "title": "modular relations",
+      "equation": "S^2=C; (ST)^3=xi C; xi=|A|^(-1/2)sum_x exp(2pi i q(x))",
+      "status": "conditional",
+      "assumptions": "Correct quadratic-module hypotheses and convention.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E163",
+      "domain": "conductor",
+      "title": "rotation algebra",
+      "equation": "UV=exp(2pi i theta)VU",
+      "status": "definition",
+      "assumptions": "Generator conventions explicit.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E164",
+      "domain": "conductor",
+      "title": "clock shift convention",
+      "equation": "Ue_j=e_{j+1}; Ve_j=omega^j e_j; VU=omega UV",
+      "status": "derived",
+      "assumptions": "Corrects sign/order mismatch with alternate UV convention.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E165",
+      "domain": "conductor",
+      "title": "irrational trace range",
+      "equation": "Z+theta Z",
+      "status": "historical_report",
+      "assumptions": "K-theory/trace conventions for A_theta.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E166",
+      "domain": "conductor",
+      "title": "Weil commutant",
+      "equation": "c=dim{X:XS=SX,XT=TX}",
+      "status": "definition",
+      "assumptions": "Operator pair must be specified, particularly dyadic case.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E167",
+      "domain": "conductor",
+      "title": "odd prime law",
+      "equation": "c(p^a)=a+1",
+      "status": "historical_report",
+      "assumptions": "Specific Weil core; not imported formal theorem.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E168",
+      "domain": "conductor",
+      "title": "multiplicativity",
+      "equation": "c(mn)=c(m)c(n), gcd(m,n)=1",
+      "status": "conditional",
+      "assumptions": "Requires product representation compatibility.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E169",
+      "domain": "conductor",
+      "title": "model-specific dyadic",
+      "equation": "c(2^a)=2a-1",
+      "status": "historical_report",
+      "assumptions": "Different archive cyclic dyadic pair gives 1,3,8,19,...; do not conflate models.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E170",
+      "domain": "conductor",
+      "title": "DAT hardware gates",
+      "equation": "C_cond<C_Pauli and p_eff<p_th",
+      "status": "proposal",
+      "assumptions": "Illustrative rates are not measured native hardware.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E171",
+      "domain": "conductor",
+      "title": "continued-fraction tower",
+      "equation": "chi(theta)=limsup log(q_{n+1})/log(q_n)",
+      "status": "definition",
+      "assumptions": "Growth diagnostic, not an inverse system without supplied bonding maps.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E172",
+      "domain": "conductor",
+      "title": "bounded type tower",
+      "equation": "a_n<=A implies q_{n+1}<=(A+1)q_n and chi=1",
+      "status": "derived",
+      "assumptions": "Irrational continued fractions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E173",
+      "domain": "conductor",
+      "title": "finite phase approximation",
+      "equation": "abs(j theta-j p_n/q_n)<=1/q_{n+1}, j<=q_n",
+      "status": "derived",
+      "assumptions": "From convergent error bound; trace claims require output continuity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E174",
+      "domain": "conductor",
+      "title": "su2 quantum dimension",
+      "equation": "D^2=L/(2sin^2(pi/L))",
+      "status": "derived",
+      "assumptions": "L=k+2>=3; direct sine-sum identity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E175",
+      "domain": "conductor",
+      "title": "Weyl volume",
+      "equation": "D^2=|P/Q| L^r/product_{alpha>0}(2sin(pi<rho,alpha^vee>/L))^2",
+      "status": "historical_report",
+      "assumptions": "Archived simply-laced scope; nonsimply-laced normalization separate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E176",
+      "domain": "conductor",
+      "title": "volume asymptotic",
+      "equation": "D^2~C_g L^(r+2|Phi+|)=C_g L^dim(g)",
+      "status": "derived",
+      "assumptions": "For fixed valid root-data formula.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E177",
+      "domain": "conductor",
+      "title": "fusion wall corrected variable",
+      "equation": "U_{L-1}(X/2)=0; X=2cos(theta)",
+      "status": "derived",
+      "assumptions": "Use monic integer polynomial, rather than silently treating nonmonic U_m(x) as a monic Z[x] quotient.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E178",
+      "domain": "collision",
+      "title": "valuation kernel",
+      "equation": "kappa(m,n)=sum_p v_p(m)v_p(n)",
+      "status": "exact_checked",
+      "assumptions": "Positive integers; arithmetic dot product.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E179",
+      "domain": "collision",
+      "title": "coprime orthogonality",
+      "equation": "kappa(m,n)=0 iff gcd(m,n)=1",
+      "status": "exact_checked",
+      "assumptions": "Nonnegative valuations.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E180",
+      "domain": "collision",
+      "title": "multiplicative bilinearity",
+      "equation": "kappa(mn,r)=kappa(m,r)+kappa(n,r)",
+      "status": "exact_checked",
+      "assumptions": "Valuation additivity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E181",
+      "domain": "collision",
+      "title": "divisor collision defect",
+      "equation": "F_{m,n}(q)=R_m(q)R_n(q)-R_mn(q)",
+      "status": "derived",
+      "assumptions": "R_n product over prime-exponent intervals.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E182",
+      "domain": "collision",
+      "title": "collision zeta",
+      "equation": "Z_t(s)=sum_{m,n} exp(t kappa(m,n))/(mn)^s",
+      "status": "definition",
+      "assumptions": "t real<=0 and Re(s)>1 ensures absolute convergence.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E183",
+      "domain": "collision",
+      "title": "Euler factor",
+      "equation": "product_p sum_{a,b>=0} exp(tab)p^(-s(a+b))",
+      "status": "derived",
+      "assumptions": "Absolute convergence or appropriate formal interpretation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E184",
+      "domain": "collision",
+      "title": "positive-temperature divergence",
+      "equation": "exp(tN^2)p^(-2sN) does not tend to zero for real t>0",
+      "status": "derived",
+      "assumptions": "Single-prime diagonal suffices.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E185",
+      "domain": "collision",
+      "title": "coprime endpoint",
+      "equation": "Z_{-infinity}(s)=zeta(s)^2/zeta(2s)",
+      "status": "derived",
+      "assumptions": "Re(s)>1; monotone/dominated limit for real parameters.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E186",
+      "domain": "collision",
+      "title": "historical thermal factor",
+      "equation": "Z_t(s)=zeta(s)^2 H_t(s)",
+      "status": "historical_report",
+      "assumptions": "t<0; analytic continuation/remainders require original hypotheses.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E187",
+      "domain": "collision",
+      "title": "historical count asymptotic",
+      "equation": "A_t(X)=H_t(1)Xlog X+((2gamma-1)H_t(1)+H_t'(1))X+...",
+      "status": "historical_report",
+      "assumptions": "Original Tauberian/analytic bounds not imported.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E188",
+      "domain": "collision",
+      "title": "finite numerator",
+      "equation": "N_L(x)=sum_{r,s=0}^{L-1}zeta_L^(rs)x^(r+s)",
+      "status": "exact_checked",
+      "assumptions": "Exact ring implementation and series convolution comparisons.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E189",
+      "domain": "collision",
+      "title": "rational closure",
+      "equation": "L_L(x)=N_L(x)/(1-x^L)^2",
+      "status": "exact_checked",
+      "assumptions": "Formal series or abs(x)<1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E190",
+      "domain": "collision",
+      "title": "direct coefficient",
+      "equation": "a_n=sum_{j=0}^n zeta_L^(j(n-j))",
+      "status": "exact_checked",
+      "assumptions": "Retains full and partial residue blocks.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E191",
+      "domain": "collision",
+      "title": "affine-periodic coefficient",
+      "equation": "a_{dL+r}=dG_r+B_r",
+      "status": "exact_checked",
+      "assumptions": "G complete sum, B partial sum, 0<=r<L.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E192",
+      "domain": "collision",
+      "title": "stride recurrence",
+      "equation": "a_{n+2L}-2a_{n+L}+a_n=0",
+      "status": "exact_checked",
+      "assumptions": "All n>=0; finite exact state.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E193",
+      "domain": "collision",
+      "title": "numerator checkpoints",
+      "equation": "N_L(0)=1; N_L(1)=L; leading coefficient=zeta_L",
+      "status": "exact_checked",
+      "assumptions": "For L>=2; L=1 special but implemented.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E194",
+      "domain": "collision",
+      "title": "rejected penalty PSD",
+      "equation": "exp(-beta kappa(m,n)) is always PSD",
+      "status": "rejected",
+      "assumptions": "On {1,2}, determinant exp(-beta)-1<0 for beta>0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E195",
+      "domain": "collision",
+      "title": "positive valuation kernel",
+      "equation": "K_beta(m,n)=exp(-beta norm(v(m)-v(n))^2)",
+      "status": "derived",
+      "assumptions": "beta>=0, finite valuation supports; Gaussian PSD.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E196",
+      "domain": "collision",
+      "title": "Gaussian factorization",
+      "equation": "K=e^(-beta norm(v(m))^2)e^(-beta norm(v(n))^2)e^(2beta kappa(m,n))",
+      "status": "derived",
+      "assumptions": "Similarity role differs from collision suppression.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E197",
+      "domain": "collision",
+      "title": "prime-zeta decomposition",
+      "equation": "log Z_Gamma,L=r log zeta(Ls)+sum_m a_m P(ms)",
+      "status": "historical_report",
+      "assumptions": "Original numerator/branch conventions; P prime zeta.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E198",
+      "domain": "collision",
+      "title": "branch-stripped product",
+      "equation": "FPbr= zeta(L)^r product_p[N(1/p)exp(-a1/p)]",
+      "status": "historical_report",
+      "assumptions": "Finite factors, zeros, and branch conventions explicit.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E199",
+      "domain": "collision",
+      "title": "finite-part tail",
+      "equation": "abs(log tail)<=C/P; abs(tail-1)<=exp(C/P)-1",
+      "status": "derived",
+      "assumptions": "Requires proved local remainder bound abs(r_p)<=C/p^2 beyond cutoff.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E200",
+      "domain": "collision",
+      "title": "failed dimension weld",
+      "equation": "FPbr != D^2 under retained projection/normalization sweep",
+      "status": "historical_report",
+      "assumptions": "Bounded tested family, not exclusion of every possible relationship.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E201",
+      "domain": "core",
+      "title": "core cubic",
+      "equation": "alpha^3-alpha^2+1=0",
+      "status": "exact_checked",
+      "assumptions": "Transported from cubic quotient ring.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E202",
+      "domain": "core",
+      "title": "critical cubic",
+      "equation": "u^3-4u^2+5u-1=0",
+      "status": "exact_checked",
+      "assumptions": "Canonical ring modulus in rings.py.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E203",
+      "domain": "core",
+      "title": "plastic transport",
+      "equation": "u=1+alpha; beta=-1/alpha; beta^3-beta-1=0",
+      "status": "exact_checked",
+      "assumptions": "Explicit inverse maps; not discriminant-only identification.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E204",
+      "domain": "core",
+      "title": "critical factorization",
+      "equation": "(z-1)^2(z^3-4z^2+5z-1)",
+      "status": "historical_report",
+      "assumptions": "Critical ideal elimination source retained; not recomputed full ideal.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E205",
+      "domain": "core",
+      "title": "abelian shadow cubic",
+      "equation": "z^3-2z^2-z+1; disc=49",
+      "status": "historical_report",
+      "assumptions": "Conductor7 cyclic shadow versus nonabelian core.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E206",
+      "domain": "core",
+      "title": "Hessian element",
+      "equation": "h=(-2u^2+3u-2)/(-u^2+u); h^3+4h^2-23h+23=0",
+      "status": "exact_checked",
+      "assumptions": "Denominators invertible; field coordinates retained.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E207",
+      "domain": "core",
+      "title": "vertex element",
+      "equation": "v=(6u-8)/(3u^2-8u+5); 23v^3+4v+200=0",
+      "status": "exact_checked",
+      "assumptions": "Archived quantity, no new physical loop prediction.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E208",
+      "domain": "core",
+      "title": "corner family",
+      "equation": "P_{a,b}(z)=(1-z)^a-z^b",
+      "status": "definition",
+      "assumptions": "Bounded divisibility census not global isolation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E209",
+      "domain": "core",
+      "title": "regulator volume report",
+      "equation": "3D(alpha)=2.8281220883307831628...",
+      "status": "historical_report",
+      "assumptions": "Selected complex embedding/orientation; volume identification requires geometric input.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E210",
+      "domain": "core",
+      "title": "Bloch conjugation",
+      "equation": "D(conjugate(z))=-D(z)",
+      "status": "derived",
+      "assumptions": "All-conjugate unweighted sum cancels.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E211",
+      "domain": "core",
+      "title": "oriented regulator",
+      "equation": "R(xi)=(D(sigma1 xi),...,D(sigmar xi)); scalar=c^T R",
+      "status": "proposal",
+      "assumptions": "One embedding per conjugate pair; c from geometry.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E212",
+      "domain": "core",
+      "title": "regulator magnitude",
+      "equation": "norm(R(xi))^2",
+      "status": "proposal",
+      "assumptions": "Conjugation-choice independent magnitude, not automatically volume.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E213",
+      "domain": "deformation",
+      "title": "cotangent fibre",
+      "equation": "L_{B/Q} tensor k(p)=[I/I^2 tensor k(p) -> Omega tensor k(p)]",
+      "status": "historical_report",
+      "assumptions": "Local complete-intersection convention; differential df_p.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E214",
+      "domain": "deformation",
+      "title": "point lift",
+      "equation": "df_p(v)+g(p)=0",
+      "status": "derived",
+      "assumptions": "Square-zero deformation f+epsilon g and marked point p+epsilon v.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E215",
+      "domain": "deformation",
+      "title": "cusp",
+      "equation": "f=y^2-x^3; Tjurina=Q[x,y]/(f,f_x,f_y)=span{1,x}",
+      "status": "historical_report",
+      "assumptions": "Characteristic0 or suitable good characteristic.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E216",
+      "domain": "deformation",
+      "title": "E37 model",
+      "equation": "Y^2=X^3-16X+16; Delta=151552; j=110592/37",
+      "status": "derived",
+      "assumptions": "Standard short-Weierstrass invariants.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E217",
+      "domain": "deformation",
+      "title": "E37 tangent",
+      "equation": "dj=(559872/1369,373248/1369); gauge=(64,-96); moduli=(96,64)",
+      "status": "historical_report",
+      "assumptions": "dj(gauge)=0; dj(moduli)=77635584/1369.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E218",
+      "domain": "deformation",
+      "title": "discriminant formula",
+      "equation": "Delta=-16(4a^3+27b^2); j=1728(4a^3)/(4a^3+27b^2)",
+      "status": "derived",
+      "assumptions": "Nonsingular short model; coordinate scaling can alter Delta while preserving j.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E219",
+      "domain": "deformation",
+      "title": "Zsqrt-5 divisors",
+      "equation": "(2)=p2^2; (3)=p3+ p3-; (1+/-sqrt(-5))=p2 p3+/-",
+      "status": "historical_report",
+      "assumptions": "Archive weight-one Picard/K0 comparison; not arbitrary higher weights.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E220",
+      "domain": "deformation",
+      "title": "stationary sensitivity",
+      "equation": "dx*/d epsilon=-(Hessian V0)^(-1)gradient W",
+      "status": "derived",
+      "assumptions": "Nonsingular Hessian; symmetry zero modes require quotient/gauge fixing.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E221",
+      "domain": "deformation",
+      "title": "relation response",
+      "equation": "dR/d epsilon=-gradient R^T(Hessian V0)^(-1)gradient W",
+      "status": "derived",
+      "assumptions": "Allowed perturbation space must be specified.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E222",
+      "domain": "codes",
+      "title": "Artin-Schreier-Witt",
+      "equation": "0->Z/p^n->W_n --F-1-->W_n->0",
+      "status": "historical_report",
+      "assumptions": "Characteristic p etale sheaf setting; not mixed-characteristic elliptic descent.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E223",
+      "domain": "codes",
+      "title": "Hermitian curve",
+      "equation": "y^p+y=x^(p+1)",
+      "status": "definition",
+      "assumptions": "Over F_{p^2}; code divisor/evaluation set needed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E224",
+      "domain": "codes",
+      "title": "Hermitian code reports",
+      "equation": "[8,4,4]_4; [27,6,19]_9; [125,3,119]_25",
+      "status": "historical_report",
+      "assumptions": "Retained numerical/exact reports, implementation not imported.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E225",
+      "domain": "codes",
+      "title": "p5 weight enumerator",
+      "equation": "12000z^119+600z^120+3000z^124+24z^125",
+      "status": "historical_report",
+      "assumptions": "Nonzero words; add constant1 for full enumerator.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E226",
+      "domain": "codes",
+      "title": "alternate curve",
+      "equation": "X_q:y^q+y=x^2; n_q=2q^2-q",
+      "status": "historical_report",
+      "assumptions": "Point-count convention and q conditions must be supplied.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E227",
+      "domain": "prefix",
+      "title": "normal binary64",
+      "equation": "x=(-1)^s(2^52+F)2^(E-1075)",
+      "status": "derived",
+      "assumptions": "Normal finite values only; subnormals special.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E228",
+      "domain": "prefix",
+      "title": "monotone integer encoding",
+      "equation": "MIE(raw)=raw xor 2^63 if nonnegative; raw xor(2^64-1) if negative",
+      "status": "historical_report",
+      "assumptions": "Frozen bit convention; NaNs/signed zeros explicitly handled in original model.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E229",
+      "domain": "prefix",
+      "title": "prefix depth",
+      "equation": "lcp(a,b)=clz(MIE(a) xor MIE(b)); k(x)=lcp(x,+0); D=64-k",
+      "status": "definition",
+      "assumptions": "Same bit depth can mean different numerical precision across binades.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E230",
+      "domain": "prefix",
+      "title": "prefix distance",
+      "equation": "d(a,b)=2^(-lcp(a,b)) for a!=b; d(a,a)=0",
+      "status": "derived",
+      "assumptions": "Ultrametric on finite bit encodings, not ordinary real distance.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E231",
+      "domain": "prefix",
+      "title": "dyadic power test",
+      "equation": "x=+/-u2^e, u odd; u=v^d and d divides e",
+      "status": "derived",
+      "assumptions": "Rational dth powers; negative sign allowed only odd d; zero separate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E232",
+      "domain": "prefix",
+      "title": "restricted transfer heuristics",
+      "equation": "ADD=min(kA,kB); MUL=max(0,kA+kB-53); DIV=max(0,kA-kB); SQRT=max(0,kA-1)",
+      "status": "historical_report",
+      "assumptions": "Not universal IEEE754 guarantee; binade/cancellation cases matter.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E233",
+      "domain": "prefix",
+      "title": "prefix bookkeeping",
+      "equation": "Delta_pflux=k_result-k_in; Ksys_new=Ksys_old-k_old+k_result",
+      "status": "definition",
+      "assumptions": "Register selection and meanings explicit.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E234",
+      "domain": "prefix",
+      "title": "prefix Fermat proposal",
+      "equation": "k(f(x+delta),f(x))>=k(delta)-kappa_f",
+      "status": "proposal",
+      "assumptions": "Restricted operation/domain hypotheses and exact bit semantics needed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E235",
+      "domain": "physics",
+      "title": "SYMMETRON Hamiltonian",
+      "equation": "H=L0-c/24+sum_g gamma_g T_g+kappa log L0",
+      "status": "proposal",
+      "assumptions": "Positive spectral domain for logarithm; not a validated gravity theory.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E236",
+      "domain": "physics",
+      "title": "log-periodic coupling",
+      "equation": "g(E)~E^alpha[1+A cos(2pi log(E/E0)/log C)]",
+      "status": "proposal",
+      "assumptions": "Parameters and units specified before physical interpretation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E237",
+      "domain": "physics",
+      "title": "L-value constant proposals",
+      "equation": "alpha=L(E,1)/(2pi); beta=L(f,3/2)/pi^(3/2); kappa=L'(g,1)/L(g,1)",
+      "status": "proposal",
+      "assumptions": "Underlying objects not recovered; cannot use as determined constants.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E238",
+      "domain": "physics",
+      "title": "activation model",
+      "equation": "F(x)=1/(1+exp(-x/.0712)); H*=H+alpha abs(H)^beta F(H/Ep)",
+      "status": "proposal",
+      "assumptions": "Functional calculus, units, and physical fit not established.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E239",
+      "domain": "physics",
+      "title": "spectral dimension model",
+      "equation": "d_s(E)=4-alpha(E/Ep)^beta F(E/Ep)",
+      "status": "proposal",
+      "assumptions": "Model ansatz, not observed dimension law.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E240",
+      "domain": "physics",
+      "title": "six-term potential",
+      "equation": "U(theta)=cos2theta+(2/3)cos3theta+(2/5)cos5theta+(1/4)cos8theta-(2/9)cos9theta-(1/6)cos12theta",
+      "status": "historical_report",
+      "assumptions": "Local phase check distinct from physical CKM prediction/global proof.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E241",
+      "domain": "physics",
+      "title": "phase derivative",
+      "equation": "U'=-2sin2theta-2sin3theta-2sin5theta-2sin8theta+2sin9theta+2sin12theta",
+      "status": "derived",
+      "assumptions": "Direct derivative.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E242",
+      "domain": "physics",
+      "title": "golden phase identity",
+      "equation": "theta*=11pi/30; 1-2cos(12theta*)=(3-sqrt5)/2=phi^(-2)",
+      "status": "derived",
+      "assumptions": "Shared by other phase points; does not alone select66degrees.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E243",
+      "domain": "physics",
+      "title": "observable ratio",
+      "equation": "Ceff=|Uub|(1-|Uub|^2)/(|Uus||Ucb|)",
+      "status": "definition",
+      "assumptions": "Nonzero denominator; model must enforce value.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E244",
+      "domain": "physics",
+      "title": "conditional observable polynomial",
+      "equation": "c^2(1-c^2)^2-3abc(1-c^2)+a^2b^2=0",
+      "status": "conditional",
+      "assumptions": "a=|Uus|,b=|Ucb|,c=|Uub|, if Ceff=phi^-2.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E245",
+      "domain": "physics",
+      "title": "unresolved archived polynomial",
+      "equation": "c^2 t^4-7abc t^2+a^2b^2=0",
+      "status": "open",
+      "assumptions": "Original a,b,c,t definitions unrecovered; do not equate with coefficient3 relation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E246",
+      "domain": "physics",
+      "title": "unresolved phase polynomials",
+      "equation": "4t^2 J^2=4K-N^2; N^8-7N^6K+14N^4K^2-8N^2K^3+K^4=0",
+      "status": "open",
+      "assumptions": "Original N,K,t,J definitions missing.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E247",
+      "domain": "physics",
+      "title": "allowed perturbation",
+      "equation": "V_epsilon=V0+epsilon x",
+      "status": "historical_report",
+      "assumptions": "A CP-even deformation changed the golden relation; protection unresolved.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E248",
+      "domain": "physics",
+      "title": "coercivity certificate",
+      "equation": "f-L=sigma0+sum_i sigma_i g_i+sum_j q_j h_j",
+      "status": "proposal",
+      "assumptions": "SOS positivity and constraint conventions needed; no universal optimizer guarantee.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E249",
+      "domain": "physics",
+      "title": "wall threshold law",
+      "equation": "Gamma proportional (M-2m)^3 near threshold",
+      "status": "historical_report",
+      "assumptions": "Specific channels/model, not universal decay law.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E250",
+      "domain": "wind",
+      "title": "vorticity",
+      "equation": "zeta=v_x-u_y",
+      "status": "definition",
+      "assumptions": "Coordinates and velocity components explicit.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E251",
+      "domain": "wind",
+      "title": "stretch tilt divergence",
+      "equation": "S=(zeta+f)w_z; T=-v_z w_x+u_z w_y; D=-(zeta+f)div(u)",
+      "status": "historical_report",
+      "assumptions": "Saved signed-source ledger; governing equation convention must match.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E252",
+      "domain": "wind",
+      "title": "baroclinicity",
+      "equation": "B=(rho_x p_y-rho_y p_x)/rho^2",
+      "status": "historical_report",
+      "assumptions": "Density positive; coordinate signs fixed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E253",
+      "domain": "wind",
+      "title": "forcing beta source",
+      "equation": "F=(curl forcing)_z; P_beta=-beta v; S_zeta=S+T+D+B+F+P_beta",
+      "status": "historical_report",
+      "assumptions": "Budget term ledger, not full unobserved atmosphere reconstruction.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E254",
+      "domain": "wind",
+      "title": "exact SDE",
+      "equation": "F=exp(A Delta_t); Qd=int_0^Delta_t exp(As)LL^T exp(A^Ts) ds",
+      "status": "derived",
+      "assumptions": "Linear constant-coefficient SDE.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E255",
+      "domain": "wind",
+      "title": "innovation support",
+      "equation": "I=sum_i K_i nu_i^T S_i^(-1)nu_i",
+      "status": "historical_report",
+      "assumptions": "K_i spatial support kernel, not necessarily Kalman gain.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E256",
+      "domain": "wind",
+      "title": "constraint injection",
+      "equation": "C=delta_xC^T Q delta_xC",
+      "status": "definition",
+      "assumptions": "Declared metric; mechanism and causality separate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E257",
+      "domain": "wind",
+      "title": "dynamic residual",
+      "equation": "R=norm(W[partial_t x+N(x)-F(x)])^2",
+      "status": "definition",
+      "assumptions": "Units, supports, operators required.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E258",
+      "domain": "wind",
+      "title": "expiry rule",
+      "equation": "t_exp=inf{t:A_struct^2/V0>=eta_s or Vplus/V0>=eta_p}",
+      "status": "historical_report",
+      "assumptions": "Baseline positive; model expiry criterion.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E259",
+      "domain": "wind",
+      "title": "exterior law",
+      "equation": "v=c r^(-p); p=1+2h",
+      "status": "historical_report",
+      "assumptions": "Quadrant envelopes are not pointwise wind samples.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E260",
+      "domain": "wind",
+      "title": "pressure adequacy",
+      "equation": "Delta_t<=L/(2U); quadratic fit needs at least7 stations",
+      "status": "historical_report",
+      "assumptions": "Six coefficients plus residual degree of freedom, rank/conditioning separately checked.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E261",
+      "domain": "wind",
+      "title": "assimilation commutator",
+      "equation": "[A,F]x",
+      "status": "proposal",
+      "assumptions": "Order effects between assimilation and dynamics.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E262",
+      "domain": "sequence",
+      "title": "Pauli product",
+      "equation": "(a.sigma)(b.sigma)=(a.b)I+i(a cross b).sigma",
+      "status": "derived",
+      "assumptions": "Standard Pauli convention.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E263",
+      "domain": "sequence",
+      "title": "commutator",
+      "equation": "[a.sigma,b.sigma]=2i(a cross b).sigma",
+      "status": "derived",
+      "assumptions": "Order-sensitive interaction, not automatically empirical predictive feature.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E264",
+      "domain": "sequence",
+      "title": "symmetric-order split",
+      "equation": "AB=1/2{A,B}+1/2[A,B]",
+      "status": "derived",
+      "assumptions": "Algebraic identity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E265",
+      "domain": "sequence",
+      "title": "nested interaction",
+      "equation": "[A,[B,C]]",
+      "status": "proposal",
+      "assumptions": "Higher-order feature; test against commutative ablation.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E266",
+      "domain": "graphs",
+      "title": "weighted histogram",
+      "equation": "Z_N(u)=sum_n c_n exp(n.u)",
+      "status": "exact_checked",
+      "assumptions": "Histogram partition exact for rational multiplicative weights; log derivatives mathematical.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E267",
+      "domain": "graphs",
+      "title": "gradient covariance",
+      "equation": "grad log Z=E[n]; Hessian log Z=Cov(n)>=0",
+      "status": "derived",
+      "assumptions": "Finite positive partition function.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E268",
+      "domain": "graphs",
+      "title": "phase domination",
+      "equation": "abs(Z_N(u+i phi))<=Z_N(u)",
+      "status": "derived",
+      "assumptions": "Positive multiplicities; triangle inequality.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E269",
+      "domain": "graphs",
+      "title": "subcritical tail",
+      "equation": "sum_{ell>=d}C(mu eta)^ell=C(mu eta)^d/(1-mu eta)",
+      "status": "derived",
+      "assumptions": "mu eta<1 and justified graph-count domination.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E270",
+      "domain": "graphs",
+      "title": "finite histogram compression",
+      "equation": "4133166 walks ->66 type vectors",
+      "status": "historical_report",
+      "assumptions": "Specific retained length10 graph; order-specific observables require richer state.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E271",
+      "domain": "finsler",
+      "title": "dead-zone action",
+      "equation": "phi(v)=0 if abs(v)<=c; (abs(v)-c)^2/(4D) otherwise",
+      "status": "definition",
+      "assumptions": "D>0,c>=0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E272",
+      "domain": "finsler",
+      "title": "convex conjugate",
+      "equation": "phi*(p)=c abs(p)+D p^2",
+      "status": "derived",
+      "assumptions": "Exact Legendre transform of declared dead-zone action.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E273",
+      "domain": "finsler",
+      "title": "Hamiltonian",
+      "equation": "H=b.p+sum_i(c_i abs(p_i)+D_i p_i^2)",
+      "status": "derived",
+      "assumptions": "Normalization tied to the displayed Lagrangian.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E274",
+      "domain": "finsler",
+      "title": "Hamilton-Jacobi",
+      "equation": "H(x,grad W)=0",
+      "status": "proposal",
+      "assumptions": "Viscosity/subgradient treatment at nonsmooth facets.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E275",
+      "domain": "finsler",
+      "title": "FW action",
+      "equation": "S=1/4 int (xdot-b)^T D^(-1)(xdot-b) dt",
+      "status": "definition",
+      "assumptions": "Noise normalization fixes epsilon and diffusion factors.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E276",
+      "domain": "finsler",
+      "title": "escape proxy",
+      "equation": "lambda_FW=exp(-Wmin/epsilon); P_T=1-exp(-T lambda)",
+      "status": "historical_report",
+      "assumptions": "Asymptotic exponential rate/prefactors and Poisson assumptions separate.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E277",
+      "domain": "thermal",
+      "title": "energy deformation",
+      "equation": "H_i=E_i+cE_i^a",
+      "status": "definition",
+      "assumptions": "Energy domain for fractional powers and units required.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E278",
+      "domain": "thermal",
+      "title": "partition and purity",
+      "equation": "Z(beta)=sum_i exp(-beta H_i); F(beta)=log Z(2beta)-2log Z(beta)",
+      "status": "derived",
+      "assumptions": "Finite Gibbs spectrum.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E279",
+      "domain": "thermal",
+      "title": "purity identity",
+      "equation": "exp(F)=Tr(rho_beta^2)",
+      "status": "derived",
+      "assumptions": "Normalized Gibbs density matrix.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E280",
+      "domain": "thermal",
+      "title": "variance objective",
+      "equation": "V=Var_{t uniform}[F(exp(t))]",
+      "status": "definition",
+      "assumptions": "Grid/range/clipping specified; different historical objectives not conflated.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E281",
+      "domain": "thermal",
+      "title": "finite-size intercept",
+      "equation": "spread(N)=A+B/N",
+      "status": "proposal",
+      "assumptions": "Model fit, not automatically an asymptotic theorem.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E282",
+      "domain": "thermal",
+      "title": "weak exponent identification",
+      "equation": "c=0 implies H_i independent of a",
+      "status": "derived",
+      "assumptions": "Near-zero c undermines preferred-exponent inference.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E283",
+      "domain": "closure",
+      "title": "finite closure",
+      "equation": "cl(A)=intersection{B superset A:B stable}",
+      "status": "definition",
+      "assumptions": "Finite closure-system implementation proposal.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E284",
+      "domain": "closure",
+      "title": "closure debt",
+      "equation": "D(A)=mu(cl(A))-mu(A)",
+      "status": "definition",
+      "assumptions": "Monotone nonnegative measure mu.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E285",
+      "domain": "closure",
+      "title": "admitted state",
+      "equation": "adm=c_{R_sound(w)}(X) intersect(S intersect w)",
+      "status": "historical_report",
+      "assumptions": "Original finite atom/rule semantics required.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E286",
+      "domain": "closure",
+      "title": "obstruction partition",
+      "equation": "Omega=Omega_miss disjoint-union Omega_ung disjoint-union Omega_rule",
+      "status": "historical_report",
+      "assumptions": "Missing support, ungrounded claims, rule gaps.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E287",
+      "domain": "closure",
+      "title": "closure-cost invariant",
+      "equation": "I_tau=(K_tau*,Lambda_tau,B_tau)",
+      "status": "proposal",
+      "assumptions": "Minimal admitted closure cost, cheaper-route witnesses, fake-work spectrum; invariance tests needed.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E288",
+      "domain": "closure",
+      "title": "comparison cochains",
+      "equation": "gamma_ij=C_i-C_j; eta_i(f)=Psi(f)C_i-C_i Phi(f)",
+      "status": "proposal",
+      "assumptions": "Linear/additive setting required for subtraction/cohomology.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E289",
+      "domain": "closure",
+      "title": "total differential",
+      "equation": "D=delta_Cech+(-1)^p d_I; D^2=0",
+      "status": "conditional",
+      "assumptions": "Compatible double-complex structure, not arbitrary nonlinear constraint sheaves.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E290",
+      "domain": "closure",
+      "title": "cohomological trichotomy",
+      "equation": "DDelta!=0 incoherent; Delta=Dh removable; closed nonexact obstruction",
+      "status": "derived",
+      "assumptions": "For an actual declared cochain complex.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E291",
+      "domain": "closure",
+      "title": "null-labor efficiency",
+      "equation": "eta(E)=1-K(residue)/K(expansion)",
+      "status": "definition",
+      "assumptions": "Cost model and correctness preservation must be explicit.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E292",
+      "domain": "closure",
+      "title": "representation profile",
+      "equation": "P(q)=(Q_exact,Q_bounded,E,D,C)",
+      "status": "proposal",
+      "assumptions": "Preserved questions, bounds, domain, and cost.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E293",
+      "domain": "closure",
+      "title": "question-dependent height",
+      "equation": "h_q(x)=h(q(x))",
+      "status": "proposal",
+      "assumptions": "Organizes search, does not replace a global completeness bound.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E294",
+      "domain": "closure",
+      "title": "adaptive local sieve",
+      "equation": "R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost",
+      "status": "proposal",
+      "assumptions": "Valid exact exclusions independent of heuristic test order.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E295",
+      "domain": "closure",
+      "title": "repair pipeline",
+      "equation": "question->candidate->closure test->exact model / bounded model / repair witness",
+      "status": "proposal",
+      "assumptions": "Master architecture; not one universal theorem.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    }
+  ]
+}

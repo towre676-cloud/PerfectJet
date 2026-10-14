@@ -1,0 +1,20 @@
+{
+  "schema": "perfectjet/upstreams/1",
+  "inspected_at": "2026-10-14",
+  "upstreams": [
+    {
+      "name": "PerfectPower",
+      "url": "https://github.com/towre676-cloud/perfectpower",
+      "branch": "main",
+      "sha": "01d8da12d8a22b1b174a0801f6fde9317313814e",
+      "integration": "reference only; source and formal results are not vendored"
+    },
+    {
+      "name": "DynaComp",
+      "url": "https://github.com/towre676-cloud/DynaComp",
+      "branch": "main",
+      "sha": "cd788c7ac695728e3f5b22056a0f99a2c1e1463c",
+      "integration": "reference only; source and existing applications are not modified"
+    }
+  ]
+}

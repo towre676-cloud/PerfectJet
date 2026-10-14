@@ -1,0 +1,9 @@
+# Series, predictive state, and weighted quotients
+
+Let $A_c$ encode finite transitions of positive integer cost c. With initial vector s and accepting map H, $\mathcal G(z)=H(I-\sum_cz^cA_c)^{-1}s$ sums all histories by cost. The formal inverse expands in operator powers because the transition series has zero constant term. Unit costs give $H(I-zA)^{-1}s$. The linear-system response series $C(I-zA)^{-1}B$ has coefficients $CA^kB$. The algebra is shared; coefficient meaning and admissible weights differ.
+
+Initialization matters. $1/(1-z-z^2)$ gives Fibonacci-type populations, while $z/(1-z)$ starts0,1,1,... . A zero initial sample can increase realization size. Word-indexed Hankel data $\mathcal H_{u,v}=f(uv)$ encode predictive distinctions. Over a field, finite rank corresponds to a finite linear representation $f(w)=\alpha^TA_{a_1}\cdots A_{a_\ell}\beta$, with minimal dimension equal to Hankel rank. A field-minimal model can have signed coordinates; it need not be a probabilistic model or quotient of actual states.
+
+For column-state transitions, an aggregation R must satisfy $RA=\bar AR$. Its block condition says each source in a block has the same total outgoing weight into each destination block. Initial weights aggregate as $\bar s=Rs$; accepting outputs require $H=\bar HR$. Then $HA^ts=\bar H\bar A^t\bar s$. Coefficientwise identities $RA_c=\bar A_cR$ preserve the cost series. Python exact matrix replay is supplied; automatic weighted quotient discovery remains a proposal.
+
+The first enhancement program proposed deriving state from Hankel distinctions, refining it when a new question adds an independent row/column, preserving event order with separate action matrices, and stacking multiple output Hankel blocks. Numerical Hankel rank requires held-out continuation tests and tolerance sensitivity. The equation atlas retains these designs and separates them from the currently implemented exact finite sequence rank calculation.
