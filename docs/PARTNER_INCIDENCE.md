@@ -50,14 +50,14 @@ Across degrees 5 to 7, then, a root of multiplicity at least four is the uniform
 
 R5 = AB^2 + BC/6 - 9D/2 = 0 and C^2 = 6B^3.
 
-These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
+These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629 and 1000000007, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
 
 The solutions of the two relations in weighted projective space form a single rational curve, parametrized by (A, B=6t^2, C=36t^3, D determined by R5). The C3 family maps onto it. Its special members are:
 - (x^3-y^3)^2, the GL2 class of x^2y^2(x-y)^2;
 - the octahedral sextic, at (lambda^2+50)^2 = 0;
 - x^3y^3, at lambda = infinity.
 
-Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on one prime:
+Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on two primes:
 
 > ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
 
@@ -69,4 +69,4 @@ This explains everything recorded in 0.13.0. Order-three sextics are bielliptic,
 
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 and 7 rest on Groebner bases modulo two large primes, and the forward direction of degree 8 on one, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6, 7 and the forward direction of degree 8 rest on Groebner bases modulo two large primes, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.

@@ -430,7 +430,7 @@ THEOREMS = [
     {"degree": 7, "statement": "ker L_7 != 0 iff f has a root of multiplicity >= 4",
      "status": "slice locus empty modulo two large primes; degenerate forms exact"},
     {"degree": 8, "statement": "ker L_8 != 0 iff f has a root of multiplicity >= 4 or an automorphism of order 3 (f ~ x^6+lambda x^3y^3+y^6 or x^3y^3)",
-     "status": "converse exact; forward direction modulo one prime plus numerical search"},
+     "status": "converse exact; forward direction modulo two primes plus numerical search"},
     {"degree": 12, "statement": "the hypersurface part of {ker L_12 != 0} is A^2 = 25B/96; G(f) is a partner there",
      "status": "hypersurface part exact on random lines; lower-dimensional components not excluded"},
 ]

@@ -456,7 +456,7 @@ Release0.13.0 studies the partner incidence variety in the full seven-coefficien
 
 Release0.14.0 adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
 
-Release0.15.0 identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on computation modulo one prime.
+Release0.15.0 identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on two primes.
 
 Formal frontiers include the remaining lower-dimensional components of the seven-coefficient incidence variety in degrees eight and above,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
@@ -961,14 +961,14 @@ Across degrees 5 to 7, then, a root of multiplicity at least four is the uniform
 
 R5 = AB^2 + BC/6 - 9D/2 = 0 and C^2 = 6B^3.
 
-These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
+These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629 and 1000000007, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
 
 The solutions of the two relations in weighted projective space form a single rational curve, parametrized by (A, B=6t^2, C=36t^3, D determined by R5). The C3 family maps onto it. Its special members are:
 - (x^3-y^3)^2, the GL2 class of x^2y^2(x-y)^2;
 - the octahedral sextic, at (lambda^2+50)^2 = 0;
 - x^3y^3, at lambda = infinity.
 
-Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on one prime:
+Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on two primes:
 
 > ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
 
@@ -980,7 +980,7 @@ This explains everything recorded in 0.13.0. Order-three sextics are bielliptic,
 
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 and 7 rest on Groebner bases modulo two large primes, and the forward direction of degree 8 on one, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6, 7 and the forward direction of degree 8 rest on Groebner bases modulo two large primes, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.
 
 
 ---
@@ -1372,7 +1372,7 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E379 | invariants | quintic partner classification | ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6 | exact_checked | Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly. |
 | PJ-E380 | invariants | octahedral quartic jump | dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5 | exact_checked | Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly. |
 | PJ-E381 | invariants | dihedral cubic jump | dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6 | exact_checked | Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots. |
-| PJ-E382 | invariants | degree-8 partner classification | ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3 | numerical_checked | Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo 2147483629; 557 numeric points; supersedes the 0.13.0 bielliptic conjecture. |
+| PJ-E382 | invariants | degree-8 partner classification | ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3 | numerical_checked | Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the 0.13.0 bielliptic conjecture. |
 | PJ-E383 | invariants | C3 curve in moduli | x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3 | exact_checked | Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0. |
 | PJ-E384 | invariants | sextic partner jump | dim ker L_6(f)>=2 iff f has a root of multiplicity>=4 | numerical_checked | Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. |
 | PJ-E385 | invariants | septic partners | ker L_7(f)!=0 iff f has a root of multiplicity>=4 | numerical_checked | Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. |
