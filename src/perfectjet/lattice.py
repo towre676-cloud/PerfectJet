@@ -183,3 +183,37 @@ def lattice_receipt():
             "integer_kernel":integer_kernel([[2,4,6]]),
             "unsaturated":saturation([[2,0],[0,1]]),
             "saturated":saturation([[1,1,0],[0,1,1]])}
+
+
+def hermite_form(a):
+    """Row Hermite normal form H=UA: echelon, positive pivots, entries above each pivot in [0,pivot)."""
+    h=_integer_matrix(a);m=len(h);n=len(h[0]) if h else 0
+    u=_identity(m);row=0;pivots=[]
+    for col in range(n):
+        if row==m:break
+        while True:
+            live=[i for i in range(row,m) if h[i][col]]
+            if not live:break
+            p=min(live,key=lambda i:abs(h[i][col]))
+            h[row],h[p]=h[p],h[row];u[row],u[p]=u[p],u[row]
+            done=True
+            for i in range(row+1,m):
+                q=h[i][col]//h[row][col]
+                if q:
+                    h[i]=[x-q*y for x,y in zip(h[i],h[row])];u[i]=[x-q*y for x,y in zip(u[i],u[row])]
+                if h[i][col]:done=False
+            if done:break
+        if not any(h[i][col] for i in range(row,m)):continue
+        if h[row][col]<0:h[row]=[-x for x in h[row]];u[row]=[-x for x in u[row]]
+        for i in range(row):
+            q=h[i][col]//h[row][col]
+            if q:h[i]=[x-q*y for x,y in zip(h[i],h[row])];u[i]=[x-q*y for x,y in zip(u[i],u[row])]
+        pivots.append(col);row+=1
+    assert _mul(u,_integer_matrix(a))==h if m and n else True
+    return u,h,pivots
+
+
+def same_lattice(a,b):
+    """Row lattices are equal exactly when their nonzero Hermite rows agree."""
+    ha,hb=hermite_form(a)[1],hermite_form(b)[1]
+    return [r for r in ha if any(r)]==[r for r in hb if any(r)]

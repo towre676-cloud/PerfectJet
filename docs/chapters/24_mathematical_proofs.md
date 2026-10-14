@@ -73,3 +73,19 @@ Let M be the invertible Hankel block on prefixes $P_0$ and suffixes $S_0$, with 
 ## Coarsest exact lumping
 
 Call a partition valid when every action matrix has constant block-column sums within each source block and the output is constant on blocks. The refinement step splits blocks by the vector of block-totals computed under the current partition. Suppose a valid partition $\pi$ refines the current partition. Two states in one $\pi$-block have equal totals into each $\pi$-block, so they also have equal totals into the unions that form current blocks. They are therefore never separated. The initial output partition is refined by every valid partition. By induction, every valid partition refines every iterate. The iteration stops only when the partition is valid, so its fixed point is the unique coarsest valid partition. With R the block indicator, the constant sums give $RA_c=\bar A_cR$ and $H=\bar HR$, which preserves the weighted cost series.
+
+## Hermite form and lattice equality
+
+Integer row operations keep U unimodular. In each column, Euclidean reduction among the remaining rows terminates with one nonzero entry, because the minimum absolute value strictly decreases. Rows above that pivot are then reduced modulo it. Uniqueness: let H and H' be Hermite forms of the same row lattice. Their pivot columns agree, because the pivot columns record the first nonzero coordinate across the lattice's echelon filtration. The first pivots are equal and positive, since each generates the projection of the lattice onto that coordinate. Inductively, row i of H minus row i of H' is a lattice vector whose first possible nonzero coordinate is pivot i, and that entry lies strictly between minus the pivot and the pivot. It must therefore vanish. The difference then has no nonzero pivot coordinate and is zero. Hence two row lattices are equal exactly when their nonzero Hermite rows agree.
+
+## Multi-output realization
+
+Replace columns indexed by suffixes with columns indexed by suffix-output pairs. The argument for single-output realization applies unchanged: each row $H[p,\cdot]$ is $x_pM^{-1}H[P_0,\cdot]$, so one state vector serves all outputs. A stacked rank can exceed every single-output rank, because the outputs may read independent parts of the state.
+
+## One-parameter rank loci
+
+Let r be the rank of A(t) over Q(t). Some r-minor is a nonzero polynomial of degree at most rd, where d bounds the entry degrees. It cannot vanish at all rd+1 evaluation nodes, so the maximum sampled rank is r. At any t, rank A(t)<r exactly when every r-minor vanishes there. Every drop point is therefore a root of the chosen nonzero minor $M_0$, and multiplicities do not matter, so the squarefree part s suffices. Over $R=Q[t]/(s)$, an element that is zero vanishes at every root of s. An element coprime to s vanishes at none of them, and an element sharing a factor g with s splits $R\cong Q[t]/(g)\times Q[t]/(s/g)$ by the Chinese remainder theorem. Elimination whose pivots are units of R is valid simultaneously at every root of the current modulus, so the rank is constant across those roots. Splitting at zero divisors terminates because degrees decrease. The drop locus is the product of the factors whose rank is less than r. Rational drop points come from the rational root theorem, and their ranks are replayed by direct evaluation.
+
+## Local power exclusions
+
+If $F(n)=m^d$, then $F(n)\equiv m^d \pmod q$ for every q. A residue that is not a d-th power modulo q therefore excludes n. Survivors for a set of moduli are residues modulo their least common multiple whose reductions survive each modulus. By the Chinese remainder theorem this set depends only on the set of moduli, not on their order. The greedy choice changes cost, never correctness. The sieved count equals the brute-force count, because integer roots are checked on every survivor.

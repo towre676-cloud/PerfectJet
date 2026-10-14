@@ -23,6 +23,8 @@ def report():
     from .jets import iterate_defect
     from .lattice import lattice_receipt
     from .realization import realization_receipt
+    from .loci import partner_loci
+    from .sieve import sieve_receipt
     p=SelectionPopulation([(2,1),(1,2),(2,2),(0,1)],(3,3),[4,3,5,0])
     machine=PartialMachine([0,0,1,1],[(2,),(3,),(2,),(3,)])
     reduced,mapping,blocks=machine.quotient()
@@ -40,12 +42,13 @@ def report():
             "energy":energy_balance([[-1,0],[0,-2]],[[1,0],[0,1]],[1,1],[1,0]),
             "flip_defect":iterate_defect([0,-1,1,2],5),
             "lattice":lattice_receipt(),"realization":realization_receipt(),
+            "partner_loci":partner_loci(),"sieve":sieve_receipt(),
             "limitations":"No imported upstream solver or Lean theorem is claimed by this release."}
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","atlas"])
+    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","sieve","atlas"])
     parser.add_argument("--output",type=Path)
     parser.add_argument("--conductor",type=int,default=7)
     parser.add_argument("--index",type=int,default=10**100)
@@ -70,6 +73,12 @@ def main():
     elif args.command=="realization":
         from .realization import realization_receipt
         out=realization_receipt()
+    elif args.command=="loci":
+        from .loci import partner_loci
+        out=partner_loci()
+    elif args.command=="sieve":
+        from .sieve import sieve_receipt
+        out=sieve_receipt()
     else:
         root=Path(__file__).resolve().parents[2]
         atlas=root/"data"/"equations.json"

@@ -1,3 +1,14 @@
+# PerfectJet 0.3.0
+
+This release adds four executable kernels.
+
+- **Hermite normal form** (`lattice.py`). `hermite_form` returns H=UB with U unimodular. `same_lattice` decides row-lattice equality by comparing Hermite forms. The tests check shape and reduction, invariance under random unimodular mixing, and agreement with mutual membership decided by integer solvability.
+- **Multi-output word-Hankel realization** (`realization.py`). `realize(..., outputs=k)` stacks output coordinates into the Hankel columns and returns one shared state with a matrix-valued beta. A stacked rank can exceed every single-output rank, and a test shows this.
+- **One-parameter rank loci** (`loci.py`). For a matrix over Q[t], `rank_locus` returns the generic rank over Q(t), the exact drop locus, and the rank on each locus factor. It never enumerates minors: one nonzero minor bounds the locus, and elimination over Q[t]/(squarefree minor) splits at zero divisors. The tests compare it with the gcd of all minors, with planted loci, and with direct evaluation. `partner_loci` applies it to the C3 sextic family. It rediscovers lambda=40/7 in degree 5, together with its mirror -40/7, and certifies that 0, +/-20 and +/-40/7 are the only rational exceptional parameters for degrees 3 to 12.
+- **Adaptive local sieve** (`sieve.py`). The sieve keeps the residues n mod q for which F(n) is a d-th power residue mod q, combines them by CRT, and chooses moduli greedily by density drop per unit cost. It returns exclusion witnesses. The tests check soundness against brute-force hits, independence of test order, that a polynomial identity excludes nothing, and that density decreases strictly at each step.
+
+The registry has 305 entries, and the adaptive-sieve row changed status to exact checked. Chapters 03, 04, 06, 15, 22, 23 and 24 were updated. The CLI has two new commands, `perfectjet loci` and `perfectjet sieve`, and the report includes both receipts. Local validation ran 65 unittest methods, all passing. No new Lean verification is claimed.
+
 # PerfectJet 0.2.0
 
 This release adds three exact kernels that 0.1.0 described as missing.

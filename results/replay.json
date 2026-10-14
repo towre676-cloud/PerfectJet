@@ -1,5 +1,5 @@
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -724,6 +724,252 @@
         ]
       ]
     }
+  },
+  "partner_loci": [
+    {
+      "degree": 3,
+      "correction_rank": 4,
+      "joint_rank": 4,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "0",
+        "-400",
+        "0",
+        "1"
+      ],
+      "correction_points": [
+        {
+          "t": "-20",
+          "rank": 3
+        },
+        {
+          "t": "0",
+          "rank": 2
+        },
+        {
+          "t": "20",
+          "rank": 3
+        }
+      ],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 4,
+      "correction_rank": 4,
+      "joint_rank": 5,
+      "generic_active_dimension": 1,
+      "correction_locus": [
+        "50",
+        "0",
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 5,
+      "correction_rank": 6,
+      "joint_rank": 6,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "-1600/49",
+        "0",
+        "1"
+      ],
+      "correction_points": [
+        {
+          "t": "-40/7",
+          "rank": 5
+        },
+        {
+          "t": "40/7",
+          "rank": 5
+        }
+      ],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 6,
+      "correction_rank": 6,
+      "joint_rank": 6,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 7,
+      "correction_rank": 8,
+      "joint_rank": 8,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 8,
+      "correction_rank": 8,
+      "joint_rank": 9,
+      "generic_active_dimension": 1,
+      "correction_locus": [
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 9,
+      "correction_rank": 10,
+      "joint_rank": 10,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 10,
+      "correction_rank": 11,
+      "joint_rank": 11,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "0",
+        "1"
+      ],
+      "correction_points": [
+        {
+          "t": "0",
+          "rank": 10
+        }
+      ],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 11,
+      "correction_rank": 12,
+      "joint_rank": 12,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    },
+    {
+      "degree": 12,
+      "correction_rank": 13,
+      "joint_rank": 13,
+      "generic_active_dimension": 0,
+      "correction_locus": [
+        "5",
+        "0",
+        "1"
+      ],
+      "correction_points": [],
+      "joint_locus": [
+        "1"
+      ],
+      "joint_points": []
+    }
+  ],
+  "sieve": {
+    "pell7": {
+      "modulus": 56100,
+      "density": "224/4675",
+      "steps": [
+        4,
+        3,
+        5,
+        11,
+        17,
+        25
+      ],
+      "hits": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          22,
+          31
+        ],
+        [
+          46,
+          65
+        ],
+        [
+          128,
+          181
+        ],
+        [
+          268,
+          379
+        ],
+        [
+          746,
+          1055
+        ],
+        [
+          1562,
+          2209
+        ]
+      ],
+      "tested": 93,
+      "brute_force_agrees": true
+    },
+    "n3_plus_3": {
+      "modulus": 25740,
+      "density": "6/715",
+      "hits": [
+        [
+          1,
+          2
+        ]
+      ],
+      "tested": 18,
+      "brute_force_agrees": true
+    },
+    "identity_case": "1"
   },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
 }

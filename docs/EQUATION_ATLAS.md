@@ -297,10 +297,15 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E291 | closure | null-labor efficiency | eta(E)=1-K(residue)/K(expansion) | definition | Cost model and correctness preservation must be explicit. |
 | PJ-E292 | closure | representation profile | P(q)=(Q_exact,Q_bounded,E,D,C) | proposal | Preserved questions, bounds, domain, and cost. |
 | PJ-E293 | closure | question-dependent height | h_q(x)=h(q(x)) | proposal | Organizes search, does not replace a global completeness bound. |
-| PJ-E294 | closure | adaptive local sieve | R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost | proposal | Valid exact exclusions independent of heuristic test order. |
+| PJ-E294 | closure | adaptive local sieve | R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost | exact_checked | Implemented for F(n)=m^d in sieve.py; exclusions independent of test order; counts replayed against integer roots. |
 | PJ-E295 | closure | repair pipeline | question->candidate->closure test->exact model / bounded model / repair witness | proposal | Master architecture; not one universal theorem. |
 | PJ-E296 | transport | integer infeasibility certificate | y in Q^m, yB in Z^n, yb not in Z => Bx=b has no integer solution | exact_checked | y=U_i/d_i from a failing Smith coordinate; yB=0, yb!=0 when the system already fails over Q. |
 | PJ-E297 | transport | saturation index | [(Q-span(G) intersect Z^n):Z-span(G)]=d_1 d_2...d_r | exact_checked | Rows of G independent or not; witness row of V^{-1} at the first d_i>1. |
 | PJ-E298 | transport | integer kernel | ker_Z B=Z-span(V e_{r+1},...,V e_n) | exact_checked | UBV=D with rank r; the basis is saturated. |
 | PJ-E299 | series | Hankel realization | x_{pa}=x_p M^{-1}H_a; f(p)=x_p M^{-1}h; alpha=x_empty | exact_checked | M invertible Hankel block on chosen prefixes/suffixes; agreement beyond the block is a held-out check with a witness word. |
 | PJ-E300 | series | coarsest exact lumping | sum_{i in B}A_c[i][j] constant over j in C for all blocks B,C and all costs c; H constant on blocks | exact_checked | Partition refinement from output labels; every valid lumping refines the result. |
+| PJ-E301 | transport | Hermite normal form | H=UB; echelon, pivots positive, entries above pivots in [0,pivot) | exact_checked | U unimodular; equal row lattices iff equal nonzero Hermite rows. |
+| PJ-E302 | series | multi-output Hankel realization | H_{u,(v,j)}=f_j(uv); f(w)=alpha A_w Beta with Beta n-by-k | exact_checked | Stacked block; shared state can exceed each single-output rank. |
+| PJ-E303 | invariants | parametric rank locus | {t:rank A(t)<r}=Z(gcd of r-minors) subset Z(M_0) | exact_checked | One variable over Q; elimination over Q[t]/(squarefree M_0) with zero-divisor splitting. |
+| PJ-E304 | invariants | C3 family exceptional parameters | degree5 correction locus lambda^2-1600/49; degree3 lambda(lambda^2-400); degree10 lambda | exact_checked | Degrees3..12 over Q; degree4 lambda^2+50 and degree12 lambda^2+5 have no rational points. |
+| PJ-E305 | arithmetic | local power exclusion | F(n) mod q not a d-th power residue mod q => F(n) is not a d-th power | derived | Exact for every modulus q>=2; the sieve only orders these tests. |

@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "336eb61aea029464105f23405f9ade8ff3d18bd1de1c5232e7e0e4169a5e2762",
-      "size_bytes": 3371
+      "sha256": "cd124352f2653f38e4c502ef14ca705df45c3ab972a22911c28ac491332df36e",
+      "size_bytes": 3521
     },
     {
       "path": "archive/README.md",
@@ -84,8 +84,8 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "effc7d99df5b754153b8aac5a9c131425978f529b36e88dd6d917556eaab7528",
-      "size_bytes": 104840
+      "sha256": "94582a30bf92988d0fa755c2427b059cf480fa8ec6f2702286d6da5b8e233481",
+      "size_bytes": 106953
     },
     {
       "path": "data/topics.json",
@@ -94,8 +94,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "f071b56d1f1b4f9adb1b0608bc50abbe49a2eae391748f18e22f24aa8295aa68",
-      "size_bytes": 2654
+      "sha256": "4dba603644a1441aa8dc6c87c1b02cfae840ba2fd44586d73b5a8e68de3ae474",
+      "size_bytes": 2975
     },
     {
       "path": "docs/COVERAGE_MAP.md",
@@ -104,23 +104,23 @@
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "b16b0ddbe524a952b63f5055c8215750b9d0cf4dad1a060b499492eb84223d55",
-      "size_bytes": 45322
+      "sha256": "7fa4baee8a0d227ecf1915264f2f7096d783078e926d8b6580e2245bda518d3c",
+      "size_bytes": 46440
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "19d8cd1ffb7ac58cef5923168fbc77da3e5eeb45b66e70b565f378f1bc289759",
-      "size_bytes": 122054
+      "sha256": "d244b8b7cca57177545a8231e3c77d8cf797772b3532b86ae15fb9f1bc97925a",
+      "size_bytes": 128517
     },
     {
       "path": "docs/QUICKSTART.md",
-      "sha256": "b5e4ccc53f275761cb61a872f6c97600471ef8579d34aa47167bda37ea2ab7bd",
-      "size_bytes": 2107
+      "sha256": "db63c588c30131d46ab8e92603bea53a05b2e9e6a4718b231a386d5c1c973170",
+      "size_bytes": 2367
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "62397f15b99b18a6983e0722d42d7ece32ee32e95304bd7f13ba62268b024302",
-      "size_bytes": 4209
+      "sha256": "c11def03290b04059ffaa27b9df8af6af2a1149ff1633ed9b7373981795f1ead",
+      "size_bytes": 6245
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -134,13 +134,13 @@
     },
     {
       "path": "docs/chapters/03_pell_orbits_and_transport.md",
-      "sha256": "af228c218c72401675e9b6dbc3c205823956f675dc18d3552276cd66cbedda80",
-      "size_bytes": 2085
+      "sha256": "de9f9378673afee13a3063d8d83c01a8bbd8b824faa280d264bbfd8c82934e79",
+      "size_bytes": 2689
     },
     {
       "path": "docs/chapters/04_descent_saturation_and_integer_lattices.md",
-      "sha256": "7a163728ab86054056cbe6f0ff780bc70bd8a85b9d646c70f2c167264892a683",
-      "size_bytes": 2727
+      "sha256": "f83f1b2f86cf3c1e4b5dc6725668367412ae97f3dda7f201474e363f1b7d56e1",
+      "size_bytes": 2995
     },
     {
       "path": "docs/chapters/05_exact_populations_and_navigation.md",
@@ -149,8 +149,8 @@
     },
     {
       "path": "docs/chapters/06_series_hankel_and_weighted_quotients.md",
-      "sha256": "d457d27bc4416edd2bf1ccc3bdafe5734e2d591c8031a3944d5a48525269fa01",
-      "size_bytes": 2742
+      "sha256": "b4b38c7954233731608c06959da9ceaf28d7f7213ca7d036798fcf425e0948bc",
+      "size_bytes": 2993
     },
     {
       "path": "docs/chapters/07_semantics_and_observability.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "docs/chapters/15_Weyl_exactness_and_partner_geometry.md",
-      "sha256": "6909480120f610b9ae55d5f9b6016e6b30cb4b9bb58a074106a7f1f07fbf621c",
-      "size_bytes": 2462
+      "sha256": "85214a29c59698d521420c1d9d0e2c21b72ea2e91d43e62d86bbf1705e8c834d",
+      "size_bytes": 3374
     },
     {
       "path": "docs/chapters/16_deformation_moduli_and_codes.md",
@@ -229,18 +229,18 @@
     },
     {
       "path": "docs/chapters/22_master_enhancement_architecture.md",
-      "sha256": "bb4efa20b3f8a3da54ac24a785658a36e9bfe9f05ae3206084bc4309e32d060c",
-      "size_bytes": 2652
+      "sha256": "fc11862931ca2e5d05b9bfca157907f7bc2e7ad968d9d08cf570e591be42f6ed",
+      "size_bytes": 2765
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "362cf263d1825efdd7af94a4e945a9ec6c4158bd31fd14ca08c051ee2ca1cdcf",
-      "size_bytes": 2984
+      "sha256": "696a3f40811b99a0058742726a43396fac45bcf907956a6bfd96415165ad3d2d",
+      "size_bytes": 3266
     },
     {
       "path": "docs/chapters/24_mathematical_proofs.md",
-      "sha256": "0dd2c402da892f2411ad1ff8a9bc5fd345d67adff76c00ef4b8bc0753f4a7fd8",
-      "size_bytes": 11402
+      "sha256": "535e1ed24af82eb66306313dfa74fd1f70a310c94568b5830a5eebf6259666c6",
+      "size_bytes": 14317
     },
     {
       "path": "docs/chapters/25_historical_results_and_extended_leads.md",
@@ -259,23 +259,23 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "8dea4f1848adbdd09491a573568daa31cd7044e18ef1813c4c90ff534974b11c",
+      "sha256": "e2d7a8b73de71fed1ec96efa18c5d5cbaf5f93fb78ca4d2d365439d5a610b227",
       "size_bytes": 381
     },
     {
       "path": "results/replay.json",
-      "sha256": "f1241c0392a491afd2f00c0c19df1611327316d6adf70fb50613a23bdc8bb2a1",
-      "size_bytes": 16560
+      "sha256": "71eba74b6ed78c5f57b8e662506ede0095e2f7b69e72d0564324bf3b48d404e5",
+      "size_bytes": 20747
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "9b390e24543b85fc1603635b75e95724886203c3b17b08492f9edc106d06e940",
-      "size_bytes": 56281
+      "sha256": "4842ec08b0c683a89e9f1955190c8afe2eeddf1dae2a6a5247f1950e9e395494",
+      "size_bytes": 58711
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "5e3a19f410b830f17d7296a46c1b49a783bce9b5b81f1332247c7e586a216dc5",
-      "size_bytes": 40993
+      "sha256": "ee88082b171d6ba904341d75b0941f65d6baf574c2d8cdfe7b0db9ed146f925c",
+      "size_bytes": 42001
     },
     {
       "path": "scripts/build_release.py",
@@ -299,13 +299,13 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "eadfe88e75e04c6a2b654ca0780cbedf5dd3e054d859baf951242b2963a3322b",
+      "sha256": "f539b6931f9e69a4fb393dbf3dcdc1970666d272bd78c620ded34afca857bc05",
       "size_bytes": 103
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "fc2b629f56944fd8b745a259412214394daa2f20d2fa63714e320a1d93461650",
-      "size_bytes": 3866
+      "sha256": "ba633665d3f8f419ac7e4b994793d3b5d00b816c1bfd766018f0a2c91940b97d",
+      "size_bytes": 4218
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -329,8 +329,13 @@
     },
     {
       "path": "src/perfectjet/lattice.py",
-      "sha256": "861da862006f1a71e7e72c3c783038180f2e9440a51a33c59914e4bcb9f840e8",
-      "size_bytes": 7270
+      "sha256": "90dfef714e6cff481e555478b72d5105e4d513e3345c1f856482156b4a4c858a",
+      "size_bytes": 8690
+    },
+    {
+      "path": "src/perfectjet/loci.py",
+      "sha256": "822d19c235ff48416e72e450e16110d3f3a402489e9ab7e7295ca01d2acc8d73",
+      "size_bytes": 7755
     },
     {
       "path": "src/perfectjet/polynomial.py",
@@ -349,8 +354,8 @@
     },
     {
       "path": "src/perfectjet/realization.py",
-      "sha256": "16c57fd9e82a53cb5ae52b5f8ef33ba6aeca02d4bf5334912331f9d23661532c",
-      "size_bytes": 6061
+      "sha256": "462ce75b186f7b92c8f831f91f8a2d488c0fb3e69869ac0263efafda8dbb199c",
+      "size_bytes": 7600
     },
     {
       "path": "src/perfectjet/rings.py",
@@ -361,6 +366,11 @@
       "path": "src/perfectjet/semantics.py",
       "sha256": "0d2cc562e6a1f0c1ed017a051da6fc6036ecf55ba81b896269e4f04f7eec55c2",
       "size_bytes": 2504
+    },
+    {
+      "path": "src/perfectjet/sieve.py",
+      "sha256": "b7e9c4769623712a7e11397efc4d28e2984e4abebfed8a8249947d4d9264e603",
+      "size_bytes": 4541
     },
     {
       "path": "src/perfectjet/transvectants.py",
@@ -376,6 +386,11 @@
       "path": "tests/test_lattice_realization.py",
       "sha256": "f658889ab757fa5643f79bccb09bcfea8ef6d9e2cc1623c9c88c9254686bdbf6",
       "size_bytes": 9707
+    },
+    {
+      "path": "tests/test_v03.py",
+      "sha256": "f06ea161e18ae4757a52015cb32aa66cb046d9f7ac6f97c620a576f005ab9fd5",
+      "size_bytes": 9559
     }
   ]
 }

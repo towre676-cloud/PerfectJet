@@ -2643,8 +2643,8 @@
       "domain": "closure",
       "title": "adaptive local sieve",
       "equation": "R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost",
-      "status": "proposal",
-      "assumptions": "Valid exact exclusions independent of heuristic test order.",
+      "status": "exact_checked",
+      "assumptions": "Implemented for F(n)=m^d in sieve.py; exclusions independent of test order; counts replayed against integer roots.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
@@ -2699,6 +2699,51 @@
       "equation": "sum_{i in B}A_c[i][j] constant over j in C for all blocks B,C and all costs c; H constant on blocks",
       "status": "exact_checked",
       "assumptions": "Partition refinement from output labels; every valid lumping refines the result.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E301",
+      "domain": "transport",
+      "title": "Hermite normal form",
+      "equation": "H=UB; echelon, pivots positive, entries above pivots in [0,pivot)",
+      "status": "exact_checked",
+      "assumptions": "U unimodular; equal row lattices iff equal nonzero Hermite rows.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E302",
+      "domain": "series",
+      "title": "multi-output Hankel realization",
+      "equation": "H_{u,(v,j)}=f_j(uv); f(w)=alpha A_w Beta with Beta n-by-k",
+      "status": "exact_checked",
+      "assumptions": "Stacked block; shared state can exceed each single-output rank.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E303",
+      "domain": "invariants",
+      "title": "parametric rank locus",
+      "equation": "{t:rank A(t)<r}=Z(gcd of r-minors) subset Z(M_0)",
+      "status": "exact_checked",
+      "assumptions": "One variable over Q; elimination over Q[t]/(squarefree M_0) with zero-divisor splitting.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E304",
+      "domain": "invariants",
+      "title": "C3 family exceptional parameters",
+      "equation": "degree5 correction locus lambda^2-1600/49; degree3 lambda(lambda^2-400); degree10 lambda",
+      "status": "exact_checked",
+      "assumptions": "Degrees3..12 over Q; degree4 lambda^2+50 and degree12 lambda^2+5 have no rational points.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E305",
+      "domain": "arithmetic",
+      "title": "local power exclusion",
+      "equation": "F(n) mod q not a d-th power residue mod q => F(n) is not a d-th power",
+      "status": "derived",
+      "assumptions": "Exact for every modulus q>=2; the sieve only orders these tests.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]

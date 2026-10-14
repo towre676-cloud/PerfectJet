@@ -38,54 +38,91 @@ def _inverse(a):
 
 
 class LinearRepresentation:
+    """f(w)=alpha*A[w1]*...*A[wl]*beta; beta is a vector (scalar output) or an n-by-k matrix."""
     def __init__(self,alpha,actions,beta):
         self.alpha=[Q(x) for x in alpha];self.actions=[matrix(a) for a in actions]
-        self.beta=[Q(x) for x in beta];n=len(self.alpha)
+        self.vector=bool(beta) and isinstance(beta[0],(list,tuple))
+        self.beta=[[Q(x) for x in row] for row in beta] if self.vector else [Q(x) for x in beta]
+        n=len(self.alpha)
         if len(self.beta)!=n or any(len(a)!=n or any(len(r)!=n for r in a) for a in self.actions):
             raise ValueError("inconsistent dimensions")
 
     @property
     def dimension(self):return len(self.alpha)
 
-    def __call__(self,word):
+    def state(self,word):
         x=self.alpha
         for letter in word:
             a=self.actions[letter];x=[sum((x[i]*a[i][j] for i in range(len(x))),Q(0)) for j in range(len(x))]
+        return x
+
+    def __call__(self,word):
+        x=self.state(word)
+        if self.vector:
+            return tuple(sum((x[i]*self.beta[i][j] for i in range(len(x))),Q(0)) for j in range(len(self.beta[0])))
         return sum((p*q for p,q in zip(x,self.beta)),Q(0))
 
 
-def hankel_block(f,prefixes,suffixes,middle=()):
-    return [[Q(f(tuple(p)+tuple(middle)+tuple(s))) for s in suffixes] for p in prefixes]
+def _value(f,word,outputs):
+    v=f(tuple(word))
+    if outputs is None:return (Q(v),)
+    v=tuple(Q(x) for x in v)
+    if len(v)!=outputs:raise ValueError("output length differs")
+    return v
 
 
-def realize(f,alphabet,depth):
+def hankel_block(f,prefixes,suffixes,middle=(),outputs=None):
+    """Rows are prefixes; columns are suffixes (times output coordinates when outputs is set)."""
+    return [[x for s in suffixes for x in _value(f,tuple(p)+tuple(middle)+tuple(s),outputs)] for p in prefixes]
+
+
+def realize(f,alphabet,depth,outputs=None):
     """Minimal representation consistent with the Hankel block on words of length <= depth.
 
     Queries f on words of length <= 2*depth+1. The returned model reproduces f on
-    every word p+s and p+a+s with |p|,|s| <= depth.
+    every word p+s and p+a+s with |p|,|s| <= depth. With outputs=k, f returns a
+    length-k vector and the stacked multi-output Hankel block is used.
     """
     if alphabet<1 or depth<0:raise ValueError("need a nonempty alphabet and depth >= 0")
-    ws=words(alphabet,depth);h=hankel_block(f,ws,ws)
+    k=1 if outputs is None else outputs
+    ws=words(alphabet,depth);h=hankel_block(f,ws,ws,(),outputs)
+    columns=[(s,j) for s in ws for j in range(k)]
     rows=_independent_rows(h)
-    if not rows:return LinearRepresentation([],[[] for _ in range(alphabet)],[]),{"rank":0,"prefixes":[],"suffixes":[]}
+    if not rows:
+        return _ZeroModel(outputs),{"rank":0,"prefixes":[],"suffixes":[]}
     cols=_independent_rows([list(c) for c in zip(*[h[i] for i in rows])])
-    p0,s0=[ws[i] for i in rows],[ws[j] for j in cols]
-    minv=_inverse(hankel_block(f,p0,s0))
-    alpha=[Q(f(tuple(s))) for s in s0]
-    beta=[row[0] for row in matmul(minv,[[Q(f(tuple(p)))] for p in p0])]
-    actions=[matmul(minv,hankel_block(f,p0,s0,(a,))) for a in range(alphabet)]
+    p0,c0=[ws[i] for i in rows],[columns[j] for j in cols]
+
+    def block(middle):
+        return [[_value(f,tuple(p)+tuple(middle)+tuple(s),outputs)[j] for s,j in c0] for p in p0]
+    minv=_inverse(block(()))
+    alpha=[_value(f,s,outputs)[j] for s,j in c0]
+    beta=matmul(minv,[list(_value(f,p,outputs)) for p in p0])
+    if outputs is None:beta=[row[0] for row in beta]
+    actions=[matmul(minv,block((a,))) for a in range(alphabet)]
     model=LinearRepresentation(alpha,actions,beta)
+    norm=(lambda v:(v,)) if outputs is None else tuple
     for p in ws:
         for s in ws:
-            assert model(p+s)==f(p+s)
-            for a in range(alphabet):assert model(p+(a,)+s)==f(p+(a,)+s)
-    return model,{"rank":len(rows),"prefixes":p0,"suffixes":s0}
+            assert norm(model(p+s))==_value(f,p+s,outputs)
+            for a in range(alphabet):assert norm(model(p+(a,)+s))==_value(f,p+(a,)+s,outputs)
+    return model,{"rank":len(rows),"prefixes":p0,"suffixes":c0 if outputs is not None else [s for s,_ in c0]}
+
+
+class _ZeroModel:
+    dimension=0
+
+    def __init__(self,outputs):self.outputs=outputs
+
+    def __call__(self,word):
+        return Q(0) if self.outputs is None else (Q(0),)*self.outputs
 
 
 def held_out(model,f,alphabet,length):
     """First word of length <= length on which model and f differ, or None."""
     for w in words(alphabet,length):
-        if model(w)!=f(w):return {"word":w,"model":model(w),"value":Q(f(w))}
+        value=f(w);value=tuple(Q(x) for x in value) if isinstance(value,(list,tuple)) else Q(value)
+        if model(w)!=value:return {"word":w,"model":model(w),"value":value}
     return None
 
 
