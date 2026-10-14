@@ -34,3 +34,12 @@ class ModularTests(unittest.TestCase):
 
 
 if __name__=="__main__":unittest.main()
+
+
+class Degree8Tests(unittest.TestCase):
+    def test_degree8_locus_lies_on_c3_curve(self):
+        from perfectjet.incidence import degree8_relations,c3_degree8_certificate,c3_curve_relations
+        r=degree8_relations(seed=2)
+        self.assertTrue(r["R5"]);self.assertTrue(r["C^2-6B^3"]);self.assertFalse(r["A (control)"])
+        self.assertTrue(c3_degree8_certificate()["identity"])
+        self.assertEqual(c3_curve_relations(),{"R5_vanishes":True,"C2_minus_6B3_vanishes":True})

@@ -20,8 +20,11 @@ def _clean(p):
     return {e: c % P for e, c in p.items() if c % P}
 
 
+_ORDER = [_key]
+
+
 def _lead(p):
-    e = max(p, key=_key)
+    e = max(p, key=_ORDER[-1])
     return e, p[e]
 
 
@@ -211,3 +214,82 @@ def quotient_length(gb, nvars, bound=40):
         if not any(_divides(l, e) for l in leads):
             count += 1
     return count
+
+
+def _elim_key(e):
+    """Block order: the last variable dominates, then grevlex on the rest."""
+    return (e[-1], _key(e[:-1]))
+
+
+def groebner_mod_order(polys, key):
+    _ORDER.append(key)
+    try:
+        return groebner_mod(polys)
+    finally:
+        _ORDER.pop()
+
+
+def saturate_mod(ideal, h, nvars):
+    """Groebner basis (grevlex) of I : h^infinity modulo P."""
+    ext = [{e+(0,): c for e, c in p.items()} for p in ideal]
+    ext.append(_clean({(0,)*(nvars+1): 1, **{e+(1,): (-c) % P for e, c in h.items()}}))
+    g = groebner_mod_order(ext, _elim_key)
+    return groebner_mod([{e[:-1]: c for e, c in p.items()} for p in g if all(e[-1] == 0 for e in p)])
+
+
+def dimension_mod(gb, nvars):
+    if not gb:
+        return nvars
+    if is_unit(gb):
+        return -1
+    leads = [_lead(g)[0] for g in gb]
+    best = 0
+    for mask in itertools.product((0, 1), repeat=nvars):
+        free = [i for i in range(nvars) if mask[i]]
+        if all(any(e[i] for i in range(nvars) if i not in free) for e in leads):
+            best = max(best, len(free))
+    return best
+
+
+def rational_reconstruction(a, m=None):
+    """Smallest-height fraction congruent to a modulo m (Wang's algorithm), or None."""
+    from fractions import Fraction
+    from math import isqrt
+    m = m or P
+    a %= m
+    bound = isqrt(m//2)
+    r0, r1, s0, s1 = m, a, 0, 1
+    while r1 > bound:
+        q = r0//r1
+        r0, r1, s0, s1 = r1, r0-q*r1, s1, s0-q*s1
+    if s1 == 0 or abs(s1) > bound:
+        return None
+    return Fraction(r1, s1) if s1 > 0 else Fraction(-r1, -s1)
+
+
+def nullspace_mod(rows, ncols):
+    rows = [[x % P for x in r] for r in rows]
+    piv, r = [], 0
+    for c in range(ncols):
+        k = next((i for i in range(r, len(rows)) if rows[i][c]), None)
+        if k is None:
+            continue
+        rows[r], rows[k] = rows[k], rows[r]
+        inv = pow(rows[r][c], P-2, P)
+        rows[r] = [x*inv % P for x in rows[r]]
+        for i in range(len(rows)):
+            if i != r and rows[i][c]:
+                f = rows[i][c]
+                rows[i] = [(x-f*y) % P for x, y in zip(rows[i], rows[r])]
+        piv.append(c)
+        r += 1
+    out = []
+    for fcol in range(ncols):
+        if fcol in piv:
+            continue
+        v = [0]*ncols
+        v[fcol] = 1
+        for i, pc in enumerate(piv):
+            v[pc] = (-rows[i][fcol]) % P
+        out.append(v)
+    return out

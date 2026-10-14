@@ -46,16 +46,27 @@ The engine is calibrated on degree 5. Modulo P it reports the quintic locus none
 
 Across degrees 5 to 7, then, a root of multiplicity at least four is the uniform source of extra partners. The C3 class at 40/7 in degree 5 is the only exception.
 
-**Degree 8.** No line meets a hypersurface component, so P_8 has codimension at least two. On the symmetric surface family x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4), the degree-8 curves satisfy R5 = AB^2+BC/6-9D/2 = 0 (0.7.0). Three sparse families without that symmetry have zero-dimensional degree-8 loci, 26 points in all. `scripts/partner_degree8_evidence.py` locates them numerically from exact Groebner bases. Every one of the 26 sextics has an involution of P^1 permuting its roots, which makes the associated genus-two curve bielliptic, and every one satisfies R5 = 0 to about 1e-7. The same involution test flags none of 179 random integer sextics. The evidence supports:
+**Degree 8.** No line meets a hypersurface component, so P_8 has codimension at least two. The C3 family x^6+lambda x^3y^3+y^6 has the partner g_8 = xy(x^6+y^6-(7/20)lambda x^3y^3) for every lambda. Its gate coefficients are polynomials of degree at most two in lambda, and they vanish at five values (`c3_degree8_certificate`). On that family, the invariants satisfy exactly two relations of lowest weight (`c3_curve_relations`):
 
-> Conjecture. Every binary sextic with a degree-8 correction-free partner is bielliptic and satisfies AB^2+BC/6-9D/2 = 0.
+R5 = AB^2 + BC/6 - 9D/2 = 0 and C^2 = 6B^3.
 
-The two conditions are not sufficient together. On the symmetric family, R5 restricts to b^2 times the square of the degree-8 cubic times ((b-15)^2-(3a/2)^2). The lines b = 15 +/- 3a/2 are bielliptic and satisfy R5 = 0, but they carry no degree-8 partner. A second defining equation is still missing.
+These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
+
+The solutions of the two relations in weighted projective space form a single rational curve, parametrized by (A, B=6t^2, C=36t^3, D determined by R5). The C3 family maps onto it. Its special members are:
+- (x^3-y^3)^2, the GL2 class of x^2y^2(x-y)^2;
+- the octahedral sextic, at (lambda^2+50)^2 = 0;
+- x^3y^3, at lambda = infinity.
+
+Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on one prime:
+
+> ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
+
+This explains everything recorded in 0.13.0. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
 
 **Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
 
-**Remaining components.** Lower-dimensional components of P_N for N >= 8, including the degree-8 curve beyond the conjecture above, and of P_12 beyond its hypersurface, remain open.
+**Remaining components.** Lower-dimensional components of P_N for N >= 8, and of P_12 beyond its hypersurface, remain open. Degrees 9 to 11 have not been examined on the slice.
 
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 and 7 rest on Groebner bases modulo two large primes, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 and 7 rest on Groebner bases modulo two large primes, and the forward direction of degree 8 on one, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.

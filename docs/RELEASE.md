@@ -1,3 +1,17 @@
+# PerfectJet 0.15.0
+
+This release identifies the degree-8 partner locus.
+
+- **Exact converse**: x^6+lambda x^3y^3+y^6 has the degree-8 partner g_8 = xy(x^6+y^6-7/20 lambda x^3y^3) for every lambda (`incidence.c3_degree8_certificate`). On that family the lowest-weight invariant relations are AB^2+BC/6-9D/2 = 0 and C^2 = 6B^3 (`c3_curve_relations`).
+- **Forward direction, modulo two primes**: random projections det(R L_8) contain the degree-8 locus on the dense slice. Both relations vanish on every point of it with no repeated root at 0 or 1, by three-variable radical tests modulo 2147483629 (`incidence.degree8_relations`). As controls, A does not vanish there, and on plane sections (16 points) both relations lie in the ideal.
+- **Numerical cross-check**: 557 squarefree degree-8 points from a global slice search satisfy both relations to about 1e-14.
+- **Result**: ker L_8(f) != 0 exactly when f has a root of multiplicity at least four or a projective automorphism of order three.
+  - The order-three sextics are x^6+lambda x^3y^3+y^6 and x^3y^3.
+  - This includes (x^3-y^3)^2 and the octahedral sextic, at (lambda^2+50)^2 = 0.
+  - It supersedes the 0.13.0 bielliptic conjecture and explains why the lines b = 15 +/- 3a/2 carry no partner.
+
+The forward direction is labelled numerical_checked; a rational certificate is open. Degrees 9 to 11 have not been examined on the slice.
+
 # PerfectJet 0.14.0
 
 This release closes degrees 6 and 7 of the partner incidence problem, modulo primes.

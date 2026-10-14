@@ -34,4 +34,6 @@ Release0.13.0 studies the partner incidence variety in the full seven-coefficien
 
 Release0.14.0 adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
 
+Release0.15.0 identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on computation modulo one prime.
+
 Formal frontiers include the remaining lower-dimensional components of the seven-coefficient incidence variety in degrees eight and above,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.

@@ -429,6 +429,8 @@ THEOREMS = [
      "status": "slice locus empty modulo two large primes; degenerate forms exact"},
     {"degree": 7, "statement": "ker L_7 != 0 iff f has a root of multiplicity >= 4",
      "status": "slice locus empty modulo two large primes; degenerate forms exact"},
+    {"degree": 8, "statement": "ker L_8 != 0 iff f has a root of multiplicity >= 4 or an automorphism of order 3 (f ~ x^6+lambda x^3y^3+y^6 or x^3y^3)",
+     "status": "converse exact; forward direction modulo one prime plus numerical search"},
     {"degree": 12, "statement": "the hypersurface part of {ker L_12 != 0} is A^2 = 25B/96; G(f) is a partner there",
      "status": "hypersurface part exact on random lines; lower-dimensional components not excluded"},
 ]
@@ -475,3 +477,98 @@ def slice_locus_empty_mod_p(n, kernel, prime=None):
                 "empty": modular.saturated_unit(ideal, avoid, 3)}
     finally:
         modular.P = old
+
+
+# ------------------------------------------------------------- degree 8 and order-3 symmetry
+
+
+def c3_degree8_certificate():
+    """g8 = xy(x^6+y^6-7/20 lambda x^3y^3) is a partner of x^6+lambda x^3y^3+y^6 for every lambda.
+
+    The gate coefficients are polynomials in lambda of degree at most 2, so vanishing at
+    three values of lambda proves vanishing identically; five are checked.
+    """
+    from .transvectants import c3_family, transvectant
+    zero = Poly()
+    rows = []
+    for lam in range(-2, 3):
+        f, _, g8 = c3_family(Q(lam))
+        rows.append(transvectant(f, g8, 3) == zero and transvectant(f, g8, 5) == zero)
+    return {"lambdas_checked": 5, "degree_bound_in_lambda": 2, "identity": all(rows)}
+
+
+def c3_curve_relations():
+    """Invariant relations of x^6+lambda x^3y^3+y^6: R5 = AB^2+BC/6-9D/2 = 0 and C^2 = 6B^3."""
+    from .transvectants import c3_family
+    from .loci import interpolate
+    nodes = list(range(12))
+    vals = [clebsch(c3_family(Q(t))[0]) for t in nodes]
+    a, b, c, d = (interpolate(nodes, [v[k] for v in vals]) for k in range(4))
+    from .loci import pmul, padd, trim
+    r5 = trim(padd(padd(pmul(a, pmul(b, b)), [x/6 for x in pmul(b, c)]), [-Q(9, 2)*x for x in d]))
+    c6 = trim(padd(pmul(c, c), [-6*x for x in pmul(b, pmul(b, b))]))
+    return {"R5_vanishes": not r5, "C2_minus_6B3_vanishes": not c6}
+
+
+def slice_invariants():
+    """A, B, C, D of the slice form as exact polynomials in (p, q, r)."""
+    return clebsch_over(QuotientRing([], 3), slice_coefficients())
+
+
+def degree8_relations(seed=1, plane=True, projections=10):
+    """Modulo P: R5 and C^2-6B^3 vanish wherever ker L_8 != 0 on the slice (off repeated roots at 0, 1).
+
+    The zero set is cut out by random projections det(R L_8), which contain the true locus, so a
+    relation vanishing there vanishes on the locus. With plane=True the slice is first intersected
+    with a random plane r = al p + be q + ga (finite, fast; meets every curve component); with
+    plane=False the full three-variable radical test is run (slower; also covers isolated points).
+    """
+    import random
+    from . import modular as M
+    from .parametric import var, add, const, mul, scale, sub, polynomial_matrix as pmat
+    from .invariants import slice_form
+    rng = random.Random(seed)
+    nv = 2 if plane else 3
+    al, be, ga = (rng.randrange(1, M.P) for _ in range(3))
+    lin = {(1, 0): al, (0, 1): be, (0, 0): ga}
+    powers = {0: {(0, 0): 1}}
+
+    def lp(k):
+        if k not in powers:
+            powers[k] = M.mul_mod(lp(k-1), lin)
+        return powers[k]
+
+    def restrict(p):
+        if not plane:
+            return p
+        out = {}
+        for (a, b, c), v in p.items():
+            for e, w in lp(c).items():
+                f = (e[0]+a, e[1]+b)
+                out[f] = (out.get(f, 0)+v*w) % M.P
+        return M._clean(out)
+    m = pmat(lambda p, q, r: correction_matrix(slice_form(p, q, r), 8), 3, 1)
+    mm = [[restrict(M.to_mod(x)) for x in row] for row in m]
+    dets = []
+    for _ in range(projections):
+        rmat = [[rng.randrange(M.P) for _ in range(len(mm))] for _ in range(9)]
+        rows = []
+        for i in range(9):
+            row = []
+            for j in range(9):
+                acc = {}
+                for l in range(len(mm)):
+                    for e, c in mm[l][j].items():
+                        acc[e] = (acc.get(e, 0)+rmat[i][l]*c) % M.P
+                row.append(M._clean(acc))
+            rows.append(row)
+        dets.append(M.det_mod(rows, nv))
+    p, q, r = var(0, 3), var(1, 3), var(2, 3)
+    h = restrict(M.to_mod(mul(r, add(add(add(p, q), r), const(1, 3)))))
+    a, b, c, d = slice_invariants()
+    rels = {"R5": add(add(mul(a, mul(b, b)), scale(mul(b, c), Q(1, 6))), scale(d, Q(-9, 2))),
+            "C^2-6B^3": sub(mul(c, c), scale(mul(b, mul(b, b)), 6)), "A (control)": a}
+    out = {"prime": M.P, "plane": plane}
+    for name, rel in rels.items():
+        out[name] = M.saturated_unit(dets, M.mul_mod(h, restrict(M.to_mod(rel))), nv)
+    return out
