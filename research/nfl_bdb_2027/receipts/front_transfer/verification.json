@@ -1,0 +1,36 @@
+{
+  "all_eight_cells_completed": true,
+  "execution": "Raw-input reconstruction and private checkpoint resumption; all numerical experiments and final source-onset/athlete-averaging experiments rerun",
+  "embedded_modules_match_current": true,
+  "source_sha256": {
+    "analysis.py": "03abc5d6a5b1a74bcb9f038fa60cd62574acd9e459e7faf6ab009ea9dfcfe519",
+    "repo_predict.py": "db27f6ea463cf829e72e7b7b7aa891adc0539de6240599bc89dcdc758a3bf04b",
+    "mechanism.py": "5df271425fe6beb8bdd879f49b3c2074ea45adfcf886a110ce36f12022df411e",
+    "observability.py": "96c30e72491f920ed4a9cde803a4a0334a5fb1992fc5290bc71339d92e014445",
+    "turn_transfer.py": "b8c7fab1913d76d725c6b0bedaf0d5079d92601049caafe65f42d2bb82ec0f80",
+    "front_transfer.py": "c47374229644a05e4e879e467214ba1e9e89cd7b51e77c013adf6ce089079e11",
+    "front_diagnostics.py": "36467789874bcc00bb8b78c764918c17bf9e8db81c9ddb4cf5e2ff2b88f4b0a3",
+    "render_front.py": "21e774b95b59c08e52df35757a6bf433fe558832ad211e9cd71bcb129f72ea4b",
+    "front_bouts.py": "1809045858cf359c6e48969b7a6b4df652a613c971a5d9d67ee53d62fc7b4204",
+    "front_player_bagging.py": "54267b9b6ec35f0247fc9bc483bd7c90cbabfaa7fc43584038f6ae2c4e005380"
+  },
+  "model_mse_comparisons": 48,
+  "maximum_mse_difference": 6.938893903907228e-18,
+  "bootstrap_replicates": 80,
+  "maximum_joint_bootstrap_difference": 2.168404344971009e-19,
+  "markdown_and_stream_words": 1205,
+  "figures": [
+    "notebook_figure_1.png",
+    "notebook_figure_2.png",
+    "notebook_figure_3.png",
+    "notebook_figure_4.png"
+  ],
+  "software_tests_passed": 45,
+  "final_visual_refresh": "Last two visualization cells rerun against retained verified numerical checkpoints to fix colorbar/tick layout; no predictive model changed.",
+  "figure_sha256": {
+    "notebook_figure_1.png": "a123bdcaa20d8d5f1ace1fa93ce7d3c7db3b63cc2246309c34ab6a88009db151",
+    "notebook_figure_2.png": "dce1cce5e672e2d801f847a48ce65b0003e784fe780cb1e8993f0a074e0ade48",
+    "notebook_figure_3.png": "d2dba2da7610e4fa500e5bb83841cef84c875d150432f6f69b5d499d537d7f5e",
+    "notebook_figure_4.png": "c532bc649512bee9cff7543702b8e236cc5d70def206a9bcfa640d5b0edc9679"
+  }
+}

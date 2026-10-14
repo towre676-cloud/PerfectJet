@@ -1,0 +1,15 @@
+{
+  "fresh_execution": true,
+  "official_input_hashes": 9,
+  "embedded_modules": 27,
+  "exact_numeric_scores_and_diagnostics": 997,
+  "maximum_difference": 0,
+  "aggregate_receipts_compared": 16,
+  "training_subset_refits": 128,
+  "integrated_tests": 67,
+  "donor_tests": 18,
+  "total_tests": 85,
+  "notebook_words_including_stream": 659,
+  "notebook_figures": 4,
+  "all_code_cells_completed": true
+}

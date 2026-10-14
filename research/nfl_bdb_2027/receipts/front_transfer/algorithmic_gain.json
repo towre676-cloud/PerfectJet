@@ -1,0 +1,50 @@
+[
+  {
+    "split": "nested",
+    "old_conventional_mse": 0.0012547127155869274,
+    "bagged_conventional_mse": 0.0009976460555967727,
+    "bagged_tracking_mse": 0.0008883412688132029,
+    "algorithmic_gain": {
+      "delta_mse": 0.000257066659990155,
+      "ci95": [
+        1.9918806068037047e-05,
+        0.0006878057155436019
+      ],
+      "players": 45,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "total_gain": {
+      "delta_mse": 0.0003663714467737246,
+      "ci95": [
+        4.575805200592396e-05,
+        0.0009030471137492319
+      ],
+      "players": 45,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    }
+  },
+  {
+    "split": "exploratory_2025",
+    "old_conventional_mse": 0.0007042353185925262,
+    "bagged_conventional_mse": 0.0005750755264042485,
+    "bagged_tracking_mse": 0.0005471465975655795,
+    "algorithmic_gain": {
+      "delta_mse": 0.0001291597921882779,
+      "ci95": [
+        7.3827021491208594e-06,
+        0.00029111002723979936
+      ],
+      "players": 29,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "total_gain": {
+      "delta_mse": 0.0001570887210269467,
+      "ci95": [
+        6.490583671837235e-06,
+        0.00035010902688360394
+      ],
+      "players": 29,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    }
+  }
+]

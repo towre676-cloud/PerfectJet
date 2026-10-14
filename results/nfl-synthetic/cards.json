@@ -1,0 +1,818 @@
+[
+  {
+    "athlete": "A0003",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": 0.024697100838282963,
+    "movement_prediction": 0.026039968487931348,
+    "change": 0.0013428676496483848,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.1569506726457399,
+    "attempt_spread": 0.12200972476951188,
+    "measurement_sensitivity": 0.007207990346528211,
+    "pooling_reliance": 0.09812987892450664,
+    "best_new_condition": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 4.156531126371562e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0007",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.047722252869136776,
+    "movement_prediction": 0.042662636916630345,
+    "change": -0.005059615952506431,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.11659192825112108,
+    "attempt_spread": 0.11810488150347165,
+    "measurement_sensitivity": 0.015207194634821647,
+    "pooling_reliance": 0.15063319026344824,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 45.0,
+      "reduction": 0.00011001378374158824,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 7.51497841033274e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0011",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.0050182106234358806,
+    "movement_prediction": -0.004270313553836894,
+    "change": 0.0007478970695989863,
+    "events": 2,
+    "distinct_demands": 2,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.10986547085201792,
+    "attempt_spread": 0.013011754844065693,
+    "measurement_sensitivity": 0.009451234136526293,
+    "pooling_reliance": 0.2876773922927442,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 0.0003349733994987865,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0015",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": 0.022685792358192364,
+    "movement_prediction": 0.017969045142091994,
+    "change": -0.0047167472161003705,
+    "events": 4,
+    "distinct_demands": 3,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.18161434977578475,
+    "attempt_spread": 0.05400919627305223,
+    "measurement_sensitivity": 0.009185672327587588,
+    "pooling_reliance": 0.1559541529187165,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00011528821119463536,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 8.099853456078023e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0019",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.02353276943314406,
+    "movement_prediction": 0.022703614154451383,
+    "change": -0.0008291552786926781,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.08520179372197309,
+    "attempt_spread": 0.043202630357285554,
+    "measurement_sensitivity": 0.016714717986214545,
+    "pooling_reliance": 0.1474729585100802,
+    "best_new_condition": {
+      "speed": 5.0,
+      "angle": 45.0,
+      "reduction": 9.47400164414913e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0023",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": 0.00650250562938466,
+    "movement_prediction": 0.0033036175192655078,
+    "change": -0.0031988881101191525,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.28026905829596416,
+    "attempt_spread": 0.10472102515827958,
+    "measurement_sensitivity": 0.009933127190242122,
+    "pooling_reliance": 0.10414008688912894,
+    "best_new_condition": {
+      "speed": 7.0,
+      "angle": 135.0,
+      "reduction": 5.791893709658681e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 4.831448390542456e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0027",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": -0.015982668084419952,
+    "movement_prediction": -0.019410580261548366,
+    "change": -0.0034279121771284143,
+    "events": 2,
+    "distinct_demands": 1,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.07399103139013453,
+    "attempt_spread": 0.014405342374163799,
+    "measurement_sensitivity": 0.01983221323709683,
+    "pooling_reliance": 0.3028043674153005,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00036997364388203125,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 0.0001632219924168224,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0031",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.034362110206611986,
+    "movement_prediction": 0.05849523174330963,
+    "change": 0.024133121536697645,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.10986547085201794,
+    "attempt_spread": 0.09264599122318573,
+    "measurement_sensitivity": 0.010816763178698377,
+    "pooling_reliance": 0.097584081678176,
+    "best_new_condition": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 3.9572539178030165e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 4.0,
+      "angle": 90.0,
+      "reduction": 3.879364486645588e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0035",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.0248072319906806,
+    "movement_prediction": -0.02541335833691559,
+    "change": -0.0006061263462349906,
+    "events": 4,
+    "distinct_demands": 3,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.14798206278026907,
+    "attempt_spread": 0.057670919672428544,
+    "measurement_sensitivity": 0.023971727555224573,
+    "pooling_reliance": 0.16026041859473789,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00013094771739035629,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 8.993787856436487e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0039",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": -0.0023086644638561807,
+    "movement_prediction": -0.0027323988914951755,
+    "change": -0.0004237344276389948,
+    "events": 6,
+    "distinct_demands": 5,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.2399103139013453,
+    "attempt_spread": 0.10829204614772059,
+    "measurement_sensitivity": 0.0227755132289691,
+    "pooling_reliance": 0.09993007482811281,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 4.0593409330554216e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 4.06987041506566e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0043",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.01938553050174554,
+    "movement_prediction": 0.009199097305412641,
+    "change": -0.010186433196332898,
+    "events": 2,
+    "distinct_demands": 2,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.08968609865470853,
+    "attempt_spread": 0.01772691088503764,
+    "measurement_sensitivity": 0.014480893492618385,
+    "pooling_reliance": 0.2893920737930018,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 0.0003439248943762957,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0047",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.0038447919024333283,
+    "movement_prediction": 0.0015234350246402402,
+    "change": 0.005368226927073568,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.09192825112107623,
+    "attempt_spread": 0.2479478951506876,
+    "measurement_sensitivity": 0.020857628490732028,
+    "pooling_reliance": 0.15243593766065744,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00010807595845489803,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0051",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": -0.035236286215597774,
+    "movement_prediction": -0.031176187953595794,
+    "change": 0.004060098262001981,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.24439461883408073,
+    "attempt_spread": 0.11768315842392663,
+    "measurement_sensitivity": 0.021081357303535903,
+    "pooling_reliance": 0.09781379611583062,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 135.0,
+      "reduction": 3.980516813504323e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 4.002055075842328e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0055",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.02697399576050038,
+    "movement_prediction": 0.021355628283713835,
+    "change": -0.005618367476786543,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.16591928251121077,
+    "attempt_spread": 0.09384240664891508,
+    "measurement_sensitivity": 0.01230947035202333,
+    "pooling_reliance": 0.15552169236305105,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00011954328823154101,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 9.343635601250302e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0059",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.030112403543323257,
+    "movement_prediction": -0.026949496086782234,
+    "change": 0.0031629074565410233,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.2623318385650224,
+    "attempt_spread": 0.16940711326651275,
+    "measurement_sensitivity": 0.021136681271667773,
+    "pooling_reliance": 0.10044872240207232,
+    "best_new_condition": {
+      "speed": 7.0,
+      "angle": 135.0,
+      "reduction": 4.8061849731711656e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 3.743024487383613e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0063",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": -0.016665295032835047,
+    "movement_prediction": -0.008036391034212664,
+    "change": 0.008628903998622383,
+    "events": 4,
+    "distinct_demands": 3,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.16143497757847533,
+    "attempt_spread": 0.16293149883055547,
+    "measurement_sensitivity": 0.009241247776870576,
+    "pooling_reliance": 0.1661355206887448,
+    "best_new_condition": {
+      "speed": 7.0,
+      "angle": 170.0,
+      "reduction": 0.00015296211740451756,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0067",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.0202515456507732,
+    "movement_prediction": 0.00957574314664667,
+    "change": -0.010675802504126529,
+    "events": 6,
+    "distinct_demands": 5,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.20179372197309417,
+    "attempt_spread": 0.19442423266107306,
+    "measurement_sensitivity": 0.01351858159796554,
+    "pooling_reliance": 0.09964095891486317,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 135.0,
+      "reduction": 4.560393130843886e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 4.443583767459164e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0071",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": 0.0027431369655575217,
+    "movement_prediction": 0.011947920847013337,
+    "change": 0.009204783881455816,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.21748878923766818,
+    "attempt_spread": 0.052676133888445165,
+    "measurement_sensitivity": 0.008677214489234739,
+    "pooling_reliance": 0.17300458166713298,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 0.0001662112103712477,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 8.72003741173751e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0075",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": -0.00420589241119399,
+    "movement_prediction": -0.007545702453015091,
+    "change": -0.0033398100418211016,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.21300448430493274,
+    "attempt_spread": 0.11103007599638592,
+    "measurement_sensitivity": 0.010872926966085522,
+    "pooling_reliance": 0.09921943789369911,
+    "best_new_condition": {
+      "speed": 7.0,
+      "angle": 135.0,
+      "reduction": 4.475473060222183e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 3.274873840943167e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0079",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.016078374429578796,
+    "movement_prediction": 0.0064661098664308084,
+    "change": -0.009612264563147987,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.3452914798206278,
+    "attempt_spread": 0.1327275346496749,
+    "measurement_sensitivity": 0.021540115516017883,
+    "pooling_reliance": 0.09786630329533424,
+    "best_new_condition": {
+      "speed": 5.0,
+      "angle": 135.0,
+      "reduction": 4.064328998653222e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 4.0116877684876254e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0083",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.01681596616257465,
+    "movement_prediction": -0.014886457999197987,
+    "change": 0.0019295081633766628,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.23318385650224216,
+    "attempt_spread": 0.07414764191505169,
+    "measurement_sensitivity": 0.02078679479273146,
+    "pooling_reliance": 0.14055654027654288,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 7.865322351937459e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 6.351552318780394e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0087",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": -0.004306395528505544,
+    "movement_prediction": -0.017440501808498585,
+    "change": -0.01313410627999304,
+    "events": 2,
+    "distinct_demands": 2,
+    "readout_identified_by_own_attempts": false,
+    "demand_mass_observed": 0.033632286995515695,
+    "attempt_spread": 0.03173964973507415,
+    "measurement_sensitivity": 0.009198551597762561,
+    "pooling_reliance": 0.2692839356333689,
+    "best_new_condition": {
+      "speed": 7.0,
+      "angle": 170.0,
+      "reduction": 0.0002810094805083029,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": true
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0091",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.017308845177223597,
+    "movement_prediction": 0.017864490008949536,
+    "change": 0.0005556448317259391,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.3273542600896861,
+    "attempt_spread": 0.1042788028533892,
+    "measurement_sensitivity": 0.01729745857465405,
+    "pooling_reliance": 0.09896339163394387,
+    "best_new_condition": {
+      "speed": 7.0,
+      "angle": 135.0,
+      "reduction": 3.960173399368425e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 3.6182443049615604e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0095",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": 0.003379723724405954,
+    "movement_prediction": 0.01689300450274307,
+    "change": 0.013513280778337116,
+    "events": 6,
+    "distinct_demands": 5,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.23766816143497757,
+    "attempt_spread": 0.0888068760626195,
+    "measurement_sensitivity": 0.00951254022545465,
+    "pooling_reliance": 0.10062347964130455,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 4.487680148853034e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0099",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": 0.0020093090063383226,
+    "movement_prediction": 0.013543796371821163,
+    "change": 0.01153448736548284,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.2713004484304933,
+    "attempt_spread": 0.0955610012395855,
+    "measurement_sensitivity": 0.00964227931718283,
+    "pooling_reliance": 0.09998415684238861,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 135.0,
+      "reduction": 4.5974976981336655e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 7.0,
+      "angle": 170.0,
+      "reduction": 2.4661319953949118e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0103",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.017323689760648336,
+    "movement_prediction": 0.01741406597196771,
+    "change": 9.037621131937484e-05,
+    "events": 6,
+    "distinct_demands": 5,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.19730941704035873,
+    "attempt_spread": 0.10564549830312797,
+    "measurement_sensitivity": 0.01208574136917199,
+    "pooling_reliance": 0.09759572062255456,
+    "best_new_condition": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 3.866520345667312e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": null
+  },
+  {
+    "athlete": "A0107",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.02291930963569495,
+    "movement_prediction": -0.020936300623502217,
+    "change": 0.001983009012192734,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.09865470852017937,
+    "attempt_spread": 0.06021439507983195,
+    "measurement_sensitivity": 0.016368782112251207,
+    "pooling_reliance": 0.15785282373748227,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00012019845942561503,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 4.0,
+      "angle": 90.0,
+      "reduction": 9.036233549175571e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0111",
+    "position": "DE",
+    "class": 2024,
+    "baseline_prediction": 0.0098781405220155,
+    "movement_prediction": 0.008716191348416892,
+    "change": -0.0011619491735986084,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.23094170403587444,
+    "attempt_spread": 0.1386646585356423,
+    "measurement_sensitivity": 0.015645986476843843,
+    "pooling_reliance": 0.09783155615085812,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 135.0,
+      "reduction": 4.0243668444721044e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 90.0,
+      "reduction": 3.9415909810768446e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0115",
+    "position": "DT",
+    "class": 2024,
+    "baseline_prediction": 0.01976542275412808,
+    "movement_prediction": 0.035271374474212296,
+    "change": 0.015505951720084215,
+    "events": 4,
+    "distinct_demands": 4,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.16143497757847533,
+    "attempt_spread": 0.06423357804023266,
+    "measurement_sensitivity": 0.011782584540685773,
+    "pooling_reliance": 0.15647435970221255,
+    "best_new_condition": {
+      "speed": 4.0,
+      "angle": 45.0,
+      "reduction": 0.00012535030993849727,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 6.0,
+      "angle": 170.0,
+      "reduction": 5.7505843534405424e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  },
+  {
+    "athlete": "A0119",
+    "position": "OLB",
+    "class": 2024,
+    "baseline_prediction": -0.019054368515699457,
+    "movement_prediction": -0.023890599553025974,
+    "change": -0.004836231037326517,
+    "events": 6,
+    "distinct_demands": 6,
+    "readout_identified_by_own_attempts": true,
+    "demand_mass_observed": 0.3116591928251121,
+    "attempt_spread": 0.13621215647620116,
+    "measurement_sensitivity": 0.017485059229667265,
+    "pooling_reliance": 0.09757311432057134,
+    "best_new_condition": {
+      "speed": 6.0,
+      "angle": 135.0,
+      "reduction": 3.9042054485389924e-05,
+      "repeat_of_observed_demand": false,
+      "new_design_direction": false
+    },
+    "best_repeat": {
+      "speed": 5.0,
+      "angle": 90.0,
+      "reduction": 3.88885536027067e-05,
+      "repeat_of_observed_demand": true,
+      "new_design_direction": false
+    }
+  }
+]

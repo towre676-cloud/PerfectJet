@@ -1,0 +1,9 @@
+{
+  "repeats": 200,
+  "rank_correlation_quantiles": [
+    0.7146674071331607,
+    0.7747130692336173,
+    0.8297173886214984
+  ],
+  "scope": "Recorded game-halves, conditional on actual roles/context and annotation. Supporting target, not a replacement for primary pressure or independently established causal get-off physiology."
+}

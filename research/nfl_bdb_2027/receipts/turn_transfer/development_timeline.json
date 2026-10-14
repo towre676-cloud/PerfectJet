@@ -1,0 +1,40 @@
+{
+  "scope": "2023 development qualifying WR turns only",
+  "player_routes": 1211,
+  "tracking_seconds_after_release_quantiles": [
+    1.3,
+    2.6,
+    3.2,
+    4.0,
+    20.9
+  ],
+  "fraction_at_least_half_second_after_release": 1.0,
+  "events": {
+    "ball_snap": 1211,
+    "pass_forward": 1211,
+    "pass_arrived": 939,
+    "pass_outcome_caught": 720,
+    "tackle": 566,
+    "first_contact": 484,
+    "pass_outcome_incomplete": 428,
+    "out_of_bounds": 173,
+    "autoevent_passinterrupted": 153,
+    "play_action": 136,
+    "line_set": 34,
+    "dropped_pass": 30,
+    "pass_outcome_interception": 29,
+    "pass_outcome_touchdown": 27,
+    "play_submit": 24,
+    "man_in_motion": 23,
+    "pass_tipped": 17,
+    "touchdown": 16,
+    "fumble": 11,
+    "fumble_defense_recovered": 6,
+    "fumble_offense_recovered": 5,
+    "qb_strip_sack": 4,
+    "autoevent_playaction": 3,
+    "lateral": 1,
+    "touchback": 1,
+    "penalty_flag": 1
+  }
+}

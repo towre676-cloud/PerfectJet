@@ -1,0 +1,12 @@
+{
+  "repository": "towre676-cloud/perfectpower",
+  "branch_head": "85f8dea557a95a5a01682f50d63a0ac6438e6d78",
+  "engine_parent": "f987fbeb2b6cbc3478548919ff49bfdd658ab1a4",
+  "verified_source_files": {
+    "python/perfectpower/arithmetic_modes.py": "db13bc8f8ace9e8f7cd748c8e317cbc721d73ac9",
+    "docs/ARITHMETIC_MODES_MONOGRAPH.md": "2726a123f7733a625660169152888a3498d1c78f"
+  },
+  "license": "Apache-2.0",
+  "transfer": "Conceptual adaptation of finite-state ordered-language observations. New real-valued weighted phase DP and channel areas; no copied arithmetic modes implementation, no donor Lean certification claimed.",
+  "scope": "Finite source motion features. Prime heights and Pauli interference not physiological mechanisms."
+}

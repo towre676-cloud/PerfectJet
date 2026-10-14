@@ -1,0 +1,1045 @@
+{
+  "evidence_scope": "Explicitly artificial cross-domain fixture; no NFL evidence or empirical noise/cost estimates",
+  "fixture_seed": 991,
+  "split_seed": 71,
+  "config": {
+    "source_drills": [
+      "FORTY_YARD_DASH"
+    ],
+    "state_history_steps": [
+      1,
+      3
+    ],
+    "state_ranks": [
+      1
+    ],
+    "state_penalties": [
+      0.1
+    ],
+    "state_horizon_steps": 2,
+    "state_inner_folds": 2,
+    "maximum_nfl_sequences_per_athlete": 2,
+    "minimum_training_athletes": 4,
+    "minimum_movement_plays": 2,
+    "minimum_movement_athletes": 2,
+    "stack_folds": 2,
+    "movement_penalty": 100.0,
+    "decoder_penalties": [
+      100.0
+    ],
+    "outer_inner_folds": 2
+  },
+  "source_sha256": {
+    "src/perfectjet/applications/nfl_scouting/__init__.py": "7f710c0e4464b47a9f99ec57a9e0d7355d5d2c1042d91aa63ab8772d40721e89",
+    "src/perfectjet/applications/nfl_scouting/__main__.py": "75ffbfbfeccfd1ea336fb962ed3cc44afb714dec80e57587e016986cbbb09ef2",
+    "src/perfectjet/applications/nfl_scouting/allocation.py": "5a37f5937fa3b7fccbad9aafd3203642b6102454410118b0b32e912c4defebfe",
+    "src/perfectjet/applications/nfl_scouting/bridge_allocation.py": "f0eb5bb1e08c4c6dd8f52eeaaddda53df0fe72dcb798c54f352b5a1a0a35f095",
+    "src/perfectjet/applications/nfl_scouting/bridge_receipt.py": "b78bf252e0d544eb68334c83cb596a46acf3c6aed9cb8d850acab7efeefb2e74",
+    "src/perfectjet/applications/nfl_scouting/bridges.py": "229ad7b478300970135e6d3bad4c540c68c6bc68fc4f712a34deb70ee7ce180a",
+    "src/perfectjet/applications/nfl_scouting/burst.py": "c7b5a1d67f80449a7e1cab566a8ba53bc545e03df76efd5ee13b0084414e4dc3",
+    "src/perfectjet/applications/nfl_scouting/burst_transfer.py": "3aa4fc7327681393613f58086ccace4aa067ad393f8e22a341ca5809bda54448",
+    "src/perfectjet/applications/nfl_scouting/crossing.py": "82285460042dfd0c76b67214e4d227fe4c4e90528c2aa247ef9a9cfad52cee94",
+    "src/perfectjet/applications/nfl_scouting/events.py": "696cfaa9989e570480e5511a4608c4cecfd1d714bd5d83b595ca7f1f924e791e",
+    "src/perfectjet/applications/nfl_scouting/figures.py": "12d14272a8a585439762f718722e149aad517cb11453382d682ff96da127e956",
+    "src/perfectjet/applications/nfl_scouting/linalg.py": "69dde0739f40986a478f1a3cfb29583a484ef9e3c651b6056c4312ff32f007fb",
+    "src/perfectjet/applications/nfl_scouting/movement_targets.py": "82b2104e7bb2d176fb638ed7ccbd23f55105ffedc5bdb7d1f0de23627a5c1b5f",
+    "src/perfectjet/applications/nfl_scouting/official.py": "518e159566cd5e327be8a034a78f59c4b6ecc6315eba2d3face1f27159d22c28",
+    "src/perfectjet/applications/nfl_scouting/outcomes.py": "99db134c3e9142356d55c05cc916a68e7dd4c9f2bd496b0571cce86a3b99e515",
+    "src/perfectjet/applications/nfl_scouting/pipeline.py": "b506175332e0a6897b5c80edcd7a57ab952ae64e9bdb73c3ea77a08f59c38851",
+    "src/perfectjet/applications/nfl_scouting/predictive_state.py": "b524b37089152ca6f3ed3dab3629f3f86ec5ea74a9d9ee625c70ecb6009e281c",
+    "src/perfectjet/applications/nfl_scouting/readouts.py": "84c5c4ed5d0915d52429dcbc97ae7159a7ed18726e699034364ad5a0d22bba66",
+    "src/perfectjet/applications/nfl_scouting/schema.py": "ea26e889f1d81614f534ebbec8ea91cf2374b273a8030237d4359a64cf864a8c",
+    "src/perfectjet/applications/nfl_scouting/synthetic.py": "602c1b37105d9047def0ba2ee706f41abfcaf84b2848800db891304e427d3d9e",
+    "src/perfectjet/applications/nfl_scouting/validate.py": "f76521102c5671089b6a79d90a556235915af825f1f27647192df4b06fda02ed"
+  },
+  "fit": {
+    "ids": [
+      "1012",
+      "1013",
+      "1014",
+      "1015",
+      "1016",
+      "1017"
+    ],
+    "y": [
+      0.11960200769503682,
+      0.10229311824565497,
+      0.08902176647275073,
+      0.0637135777597015,
+      0.03423473993193019,
+      0.016761178727316788
+    ],
+    "baseline": [
+      0.01346385464014491,
+      0.009077120114818817,
+      0.02824220454731975,
+      -0.0008655087035875166,
+      -0.005353903566495597,
+      -0.004929321193622802
+    ],
+    "movement": [
+      0.033098947258556596,
+      0.022953613354665517,
+      0.037437071808196894,
+      0.005200220238713852,
+      -0.005063183567844704,
+      0.00017248174251900133
+    ],
+    "bridge": [
+      0.033098947258556596,
+      0.022953613354665517,
+      0.037437071808196894,
+      0.005200220238713852,
+      -0.005063183567844704,
+      0.00017248174251900133
+    ],
+    "conventional_bridge": [
+      0.03708591156209873,
+      0.02162747843058929,
+      0.05298209516710517,
+      0.005395654081663376,
+      -0.010299658744016607,
+      -0.004510674132985765
+    ],
+    "counts": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "alpha": 100,
+    "year": 2024,
+    "training_target_quartile": -0.07207487010253805,
+    "movement_channels": [
+      "forward_displacement_05",
+      "motion_to_los"
+    ],
+    "movement_predictions": [
+      [
+        -0.11115733461588712,
+        0.09068766752483035
+      ],
+      [
+        -0.07474246970010098,
+        0.06203691140351014
+      ],
+      [
+        -0.07045661882563267,
+        0.0587221897503347
+      ],
+      [
+        -0.027257290903805066,
+        0.021346323138735013
+      ],
+      [
+        0.009325319195062094,
+        -0.007442099216507227
+      ],
+      [
+        -0.020055457856862923,
+        0.01662933415966777
+      ]
+    ],
+    "movement_truth": [
+      [
+        -0.21079618280121717,
+        0.16625688798200758
+      ],
+      [
+        -0.16858167222279308,
+        0.13532121644469922
+      ],
+      [
+        -0.13376871026641124,
+        0.10475637300064698
+      ],
+      [
+        -0.09563369136024354,
+        0.07927109878006683
+      ],
+      [
+        -0.057786292122698237,
+        0.045460226130015234
+      ],
+      [
+        -0.0233496502479603,
+        0.016937594149128488
+      ]
+    ],
+    "movement_transfer_covariance": [
+      [
+        0.010656031596508773,
+        -0.008648510240303829
+      ],
+      [
+        -0.008648510240303829,
+        0.007036484475770557
+      ]
+    ],
+    "movement_transfer_covariance_scope": "Empirical training-player OOF transfer-residual covariance; not a calibrated source prior or total uncertainty; context-fit and loading uncertainty excluded",
+    "loading": [
+      -0.09409167291129444,
+      0.11366738981994332
+    ],
+    "frozen_jacobian": {
+      "source_features": [
+        "source__displacement_05",
+        "source__terminal_forward_speed",
+        "source__endpoint_retention",
+        "forecast__forward_speed__step1",
+        "forecast__lateral_speed__step1",
+        "forecast__forward_speed__step2",
+        "forecast__lateral_speed__step2"
+      ],
+      "source_to_movement": [
+        [
+          0.07336510222497128,
+          0.022863957013914082,
+          0.0,
+          0.039084249171321805,
+          -1.7336574342979314,
+          0.04314071482910607,
+          -1.5477971885491053
+        ],
+        [
+          -0.06019400855821822,
+          -0.018762573508171287,
+          0.0,
+          -0.03207323638871165,
+          1.422670407804188,
+          -0.035402044916528264,
+          1.2701501541583757
+        ]
+      ],
+      "movement_to_outcome": [
+        -0.09409167291129444,
+        0.11366738981994332
+      ],
+      "source_to_outcome": [
+        -0.013745141037267672,
+        -0.004284000721789747,
+        0.0,
+        -0.007323183452394421,
+        0.32483396007737125,
+        -0.00808324006880984,
+        0.2900094795005647
+      ],
+      "training_receipt": {
+        "training_athlete_ids": [
+          "1000",
+          "1001",
+          "1002",
+          "1003",
+          "1004",
+          "1005",
+          "1006",
+          "1007",
+          "1008",
+          "1009",
+          "1010",
+          "1011"
+        ],
+        "held_out_athlete_ids": [
+          "1012",
+          "1013",
+          "1014",
+          "1015",
+          "1016",
+          "1017"
+        ],
+        "outcome_cutoff": 2023,
+        "latest_training_outcome": 2023,
+        "model_id": "nfl-math-bridge/1:seed71:alpha100:before2024",
+        "loading_source": "conditional fitted source-to-movement-to-getoff affine Jacobian; physical feature coordinates"
+      },
+      "training_cutoff_exclusive": 2024,
+      "probe_reference": "training rows only; evaluated-player feature values do not set the frozen loading",
+      "scope": "affine fitted sensitivity in declared feature units with fixed preprocessing/missingness; not causal or future uncertainty"
+    },
+    "error_decomposition": [
+      {
+        "decoder_residual": -0.06853811848367282,
+        "transferred_movement_error": -0.0179649419528074,
+        "total_error": -0.08650306043648022,
+        "identity_error": 0.0,
+        "oracle_prediction": 0.051063889211364,
+        "scope": "held-out diagnostic using true movement; never a deployable forecast"
+      },
+      {
+        "decoder_residual": -0.06217998167216712,
+        "transferred_movement_error": -0.01715952321882233,
+        "total_error": -0.07933950489098945,
+        "identity_error": 0.0,
+        "oracle_prediction": 0.04011313657348785,
+        "scope": "held-out diagnostic using true movement; never a deployable forecast"
+      },
+      {
+        "decoder_residual": -0.04039496861282218,
+        "transferred_movement_error": -0.011189726051731658,
+        "total_error": -0.051584694664553836,
+        "identity_error": 0.0,
+        "oracle_prediction": 0.04862679785992855,
+        "scope": "held-out diagnostic using true movement; never a deployable forecast"
+      },
+      {
+        "decoder_residual": -0.04549554956133274,
+        "transferred_movement_error": -0.013017807959654914,
+        "total_error": -0.05851335752098765,
+        "identity_error": 3.469446951953614e-18,
+        "oracle_prediction": 0.018218028198368767,
+        "scope": "held-out diagnostic using true movement; never a deployable forecast"
+      },
+      {
+        "decoder_residual": -0.026970010481569627,
+        "transferred_movement_error": -0.012327913018205268,
+        "total_error": -0.0392979234997749,
+        "identity_error": 5.204170427930421e-18,
+        "oracle_prediction": 0.007264729450360564,
+        "scope": "held-out diagnostic using true movement; never a deployable forecast"
+      },
+      {
+        "decoder_residual": -0.016243701803439856,
+        "transferred_movement_error": -0.00034499518135793286,
+        "total_error": -0.01658869698479779,
+        "identity_error": 0.0,
+        "oracle_prediction": 0.0005174769238769342,
+        "scope": "held-out diagnostic using true movement; never a deployable forecast"
+      }
+    ],
+    "stacking_audit": [
+      {
+        "training_ids": [
+          "1000",
+          "1001",
+          "1002",
+          "1006",
+          "1007",
+          "1008"
+        ],
+        "training_group_ids": [
+          "1000",
+          "1001",
+          "1002",
+          "1006",
+          "1007",
+          "1008"
+        ],
+        "evaluated_ids": [
+          "1003",
+          "1004",
+          "1005",
+          "1009",
+          "1010",
+          "1011"
+        ],
+        "state_training_ids": [
+          "1000",
+          "1001",
+          "1002",
+          "1006",
+          "1007",
+          "1008"
+        ],
+        "movement_training_ids": [
+          "1000",
+          "1001",
+          "1002",
+          "1006",
+          "1007",
+          "1008"
+        ],
+        "nfl_sequences": 12,
+        "state_history_steps": 1,
+        "state_count": 1,
+        "state_cv_mse": 0.34602459653519907,
+        "instantaneous_cv_mse": 0.34602459653519907,
+        "state_sample_interval_seconds": 0.1,
+        "state_horizon_seconds": 0.2,
+        "state_output_units": "forward/lateral velocity in yards/second",
+        "state_training_maximum_season": 2023,
+        "state_training_support_p95": 1.5629737337220069,
+        "source_prefix_horizon_seconds": 0.5,
+        "maximum_sequences_per_athlete": 2,
+        "state_selection_uses_football_outcomes": false
+      },
+      {
+        "training_ids": [
+          "1003",
+          "1004",
+          "1005",
+          "1009",
+          "1010",
+          "1011"
+        ],
+        "training_group_ids": [
+          "1003",
+          "1004",
+          "1005",
+          "1009",
+          "1010",
+          "1011"
+        ],
+        "evaluated_ids": [
+          "1000",
+          "1001",
+          "1002",
+          "1006",
+          "1007",
+          "1008"
+        ],
+        "state_training_ids": [
+          "1003",
+          "1004",
+          "1005",
+          "1009",
+          "1010",
+          "1011"
+        ],
+        "movement_training_ids": [
+          "1003",
+          "1004",
+          "1005",
+          "1009",
+          "1010",
+          "1011"
+        ],
+        "nfl_sequences": 12,
+        "state_history_steps": 1,
+        "state_count": 1,
+        "state_cv_mse": 0.2235781260757088,
+        "instantaneous_cv_mse": 0.2235781260757088,
+        "state_sample_interval_seconds": 0.1,
+        "state_horizon_seconds": 0.2,
+        "state_output_units": "forward/lateral velocity in yards/second",
+        "state_training_maximum_season": 2023,
+        "state_training_support_p95": 1.5909620886707478,
+        "source_prefix_horizon_seconds": 0.5,
+        "maximum_sequences_per_athlete": 2,
+        "state_selection_uses_football_outcomes": false
+      }
+    ],
+    "full_stage_audit": {
+      "training_ids": [
+        "1000",
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1010",
+        "1011"
+      ],
+      "training_group_ids": [
+        "1000",
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1010",
+        "1011"
+      ],
+      "evaluated_ids": [
+        "1012",
+        "1013",
+        "1014",
+        "1015",
+        "1016",
+        "1017"
+      ],
+      "state_training_ids": [
+        "1000",
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1010",
+        "1011"
+      ],
+      "movement_training_ids": [
+        "1000",
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1010",
+        "1011"
+      ],
+      "nfl_sequences": 24,
+      "state_history_steps": 1,
+      "state_count": 1,
+      "state_cv_mse": 0.2440317215450815,
+      "instantaneous_cv_mse": 0.2440317215450815,
+      "state_sample_interval_seconds": 0.1,
+      "state_horizon_seconds": 0.2,
+      "state_output_units": "forward/lateral velocity in yards/second",
+      "state_training_maximum_season": 2023,
+      "state_training_support_p95": 1.5581775270843434,
+      "source_prefix_horizon_seconds": 0.5,
+      "maximum_sequences_per_athlete": 2,
+      "state_selection_uses_football_outcomes": false
+    },
+    "source_coverage": {
+      "1012": {
+        "source_prefix_count": 2.0,
+        "source_prefix_available": 1.0,
+        "source_prefix_repeats": 1.0,
+        "source_history_support_distance": 1.0011618074808817,
+        "source_history_outside_training_support": 0.0
+      },
+      "1013": {
+        "source_prefix_count": 2.0,
+        "source_prefix_available": 1.0,
+        "source_prefix_repeats": 1.0,
+        "source_history_support_distance": 1.2620359544184074,
+        "source_history_outside_training_support": 0.0
+      },
+      "1014": {
+        "source_prefix_count": 2.0,
+        "source_prefix_available": 1.0,
+        "source_prefix_repeats": 1.0,
+        "source_history_support_distance": 1.5292884267013243,
+        "source_history_outside_training_support": 0.5
+      },
+      "1015": {
+        "source_prefix_count": 2.0,
+        "source_prefix_available": 1.0,
+        "source_prefix_repeats": 1.0,
+        "source_history_support_distance": 1.8000723937301044,
+        "source_history_outside_training_support": 1.0
+      },
+      "1016": {
+        "source_prefix_count": 2.0,
+        "source_prefix_available": 1.0,
+        "source_prefix_repeats": 1.0,
+        "source_history_support_distance": 2.073002201533254,
+        "source_history_outside_training_support": 1.0
+      },
+      "1017": {
+        "source_prefix_count": 2.0,
+        "source_prefix_available": 1.0,
+        "source_prefix_repeats": 1.0,
+        "source_history_support_distance": 1.770586095746777,
+        "source_history_outside_training_support": 1.0
+      }
+    },
+    "shared_baseline_columns": [
+      "height",
+      "weight",
+      "hand_size",
+      "arm_length",
+      "wing_span",
+      "ten_yd_split",
+      "forty",
+      "vertical",
+      "broad",
+      "three_cone",
+      "shuttle",
+      "bench",
+      "ngs_athleticism_score",
+      "ngs_college_production_score",
+      "ngs_final_score",
+      "combine_position",
+      "count__PASS_RUSH_DRILL",
+      "available__PASS_RUSH_DRILL",
+      "count__RUN_THE_HOOP_DRILL",
+      "available__RUN_THE_HOOP_DRILL",
+      "count__FOUR_BAG_AGILITY_DRILL",
+      "available__FOUR_BAG_AGILITY_DRILL",
+      "count__FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "available__FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "count__FORTY_YARD_DASH",
+      "available__FORTY_YARD_DASH",
+      "source_prefix_count",
+      "source_prefix_available",
+      "source_prefix_repeats",
+      "source_history_support_distance",
+      "source_history_outside_training_support"
+    ],
+    "synthetic": true,
+    "outcome_variance": [
+      7.220072196487302e-05,
+      6.4504701549020565e-06,
+      7.95717968817054e-06,
+      8.00183088805394e-05,
+      0.00021163040962654528,
+      1.7893402627005465e-09
+    ],
+    "deployment": "Combine-only source and conventional measurements; evaluated-player NFL frames/context/labels excluded from predictors"
+  },
+  "allocation": {
+    "allocation": {
+      "candidate_ids": [
+        "synthetic-measure-4",
+        "synthetic-measure-6"
+      ],
+      "bits": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "cost": 2,
+      "budget": 2,
+      "objective_reduction": "50927498109081548741324060087302417/537145869295069969961164928886311688",
+      "objective": "worst_target",
+      "objective_scope": "conditional reduction across supplied frozen training loading rows; worst_target rows are declared scenarios, not a confidence region",
+      "tie_count": 1,
+      "tie_ranks": [
+        5
+      ],
+      "population_rank": 5,
+      "feasible_count": 29,
+      "evaluated_packages": 29,
+      "optimality": "exhaustive over the declared finite candidate population",
+      "package": {
+        "candidate_ids": [
+          "synthetic-measure-4",
+          "synthetic-measure-6"
+        ],
+        "cost": 2,
+        "source_covariance_before": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        "source_covariance_after": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/2",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1/2"
+          ]
+        ],
+        "source_variance_before": "7",
+        "source_variance_after": "6",
+        "source_variance_reduction": "1",
+        "target_covariance_before": [
+          [
+            "61827690116993254062582799126378402146378743171389099334981908391740184742453013188458873007776860822141/325496523865105354266508952862265671128602055854520444431271704495751722651359099109814649816954968451600"
+          ]
+        ],
+        "target_covariance_after": [
+          [
+            "30966941573199296323844946942492384636215739597165224550847656786573527310496418214017542617571611606491/325496523865105354266508952862265671128602055854520444431271704495751722651359099109814649816954968451600"
+          ]
+        ],
+        "target_variance_before": "61827690116993254062582799126378402146378743171389099334981908391740184742453013188458873007776860822141/325496523865105354266508952862265671128602055854520444431271704495751722651359099109814649816954968451600",
+        "target_variance_after": "30966941573199296323844946942492384636215739597165224550847656786573527310496418214017542617571611606491/325496523865105354266508952862265671128602055854520444431271704495751722651359099109814649816954968451600",
+        "target_variance_reduction": "50927498109081548741324060087302417/537145869295069969961164928886311688",
+        "target_variance_scope": "H source_covariance H^T; excludes irreducible NFL noise and uncertainty in the frozen transfer loading",
+        "marginal_target_reductions": [
+          "50927498109081548741324060087302417/537145869295069969961164928886311688"
+        ],
+        "design_rank_before": 0,
+        "design_rank_after": 2,
+        "readouts": [
+          {
+            "target": 0,
+            "before": {
+              "identified": false,
+              "witness": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "readout_shift": "-11563033/841245133",
+              "explanation": "X n = 0 but h.n != 0: beta and beta+n fit every observation"
+            },
+            "after": {
+              "identified": false,
+              "witness": [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0",
+                "0"
+              ],
+              "readout_shift": "-11563033/841245133",
+              "explanation": "X n = 0 but h.n != 0: beta and beta+n fit every observation"
+            },
+            "repair_from_this_package": {
+              "needed": null,
+              "candidate_indices": null,
+              "smaller_sets_rejected": 3
+            },
+            "row_repair": {
+              "needed": null,
+              "rows": null,
+              "smaller_sets_rejected": 3
+            }
+          }
+        ],
+        "measurements": [
+          {
+            "candidate_id": "synthetic-measure-4",
+            "athlete_id": null,
+            "repetitions": 1,
+            "attempt_ids": [
+              "new-independent-attempt-4"
+            ],
+            "independence_provenance": "distinct supplied original attempt IDs",
+            "channels": 1,
+            "repeat_of_observed_row": false,
+            "new_design_direction": true,
+            "classification": "new_direction"
+          },
+          {
+            "candidate_id": "synthetic-measure-6",
+            "athlete_id": null,
+            "repetitions": 1,
+            "attempt_ids": [
+              "new-independent-attempt-6"
+            ],
+            "independence_provenance": "distinct supplied original attempt IDs",
+            "channels": 1,
+            "repeat_of_observed_row": false,
+            "new_design_direction": true,
+            "classification": "new_direction"
+          }
+        ],
+        "training_receipt": "ca23c8908e3a4033ba64d06756c251fe3df9b9187a8028281c393b57f823a1e0",
+        "assumptions": [
+          "fixed training-derived target loadings",
+          "supplied linear Gaussian source and transfer model",
+          "independent measurement errors, including repetitions",
+          "conditional information; no asserted NFL prediction lift"
+        ]
+      }
+    },
+    "training": {
+      "schema": "pj-nfl-fitted-loading/1",
+      "model_id": "nfl-math-bridge/1:seed71:alpha100:before2024",
+      "loading_source": "conditional fitted source-to-movement-to-getoff affine Jacobian; physical feature coordinates",
+      "training_athlete_ids": [
+        "1000",
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1010",
+        "1011"
+      ],
+      "held_out_athlete_ids": [
+        "1012",
+        "1013",
+        "1014",
+        "1015",
+        "1016",
+        "1017"
+      ],
+      "evaluation_athlete_ids": [
+        "1012",
+        "1013",
+        "1014",
+        "1015",
+        "1016",
+        "1017"
+      ],
+      "outcome_cutoff": 2023,
+      "cutoff_kind": "NFL season",
+      "latest_training_outcome": 2023,
+      "declared_training_evaluation_disjointness_checked": true,
+      "latest_training_outcome_checked": true,
+      "training_chronology_independently_verified": false,
+      "receipt_sha256": "ca23c8908e3a4033ba64d06756c251fe3df9b9187a8028281c393b57f823a1e0"
+    },
+    "rationalization": {
+      "schema": "pj-nfl-fitted-loading/1",
+      "original_decimal_snapshot": [
+        [
+          "-1718142629658459/125000000000000000",
+          "-4284000721789747/1000000000000000000",
+          "0",
+          "-7323183452394421/1000000000000000000",
+          "259867168061897/800000000000000",
+          "-101040500860123/12500000000000000",
+          "2900094795005647/10000000000000000"
+        ]
+      ],
+      "rational_loadings": [
+        [
+          "-11563033/841245133",
+          "-1501214/350423377",
+          "0",
+          "-6288647/858731321",
+          "194756332/599556561",
+          "-2223231/275042060",
+          "250676231/864372542"
+        ]
+      ],
+      "coefficient_absolute_errors": [
+        [
+          "86030047/105155641625000000000000000",
+          "627715619/350423377000000000000000000",
+          "0",
+          "1758360141/858731321000000000000000000",
+          "456217/479645248800000000000000",
+          "88669/171901287500000000000000",
+          "872337/4321862710000000000000000"
+        ]
+      ],
+      "max_denominator": 1000000000,
+      "max_abs_error": "1/1000000000",
+      "largest_absolute_error": "1758360141/858731321000000000000000000",
+      "interpretation": "exact allocation for a declared rational approximation of a conditional fitted loading",
+      "exact_learned_truth_claim": false
+    },
+    "rationalization_guarantee": {
+      "per_loading_uniform_objective_error_bounds": [
+        "66741841453067548842196352652660349287239875014190381250187351917496404307050967618776072583316691304822160508427674801/8137413096627633856662723821556641778215051396363011110781792612393793066283977477745366245423874211290000000000000000000000000000000000"
+      ],
+      "uniform_objective_error_bound": "66741841453067548842196352652660349287239875014190381250187351917496404307050967618776072583316691304822160508427674801/8137413096627633856662723821556641778215051396363011110781792612393793066283977477745366245423874211290000000000000000000000000000000000",
+      "original_snapshot_optimality_gap_bound": "66741841453067548842196352652660349287239875014190381250187351917496404307050967618776072583316691304822160508427674801/4068706548313816928331361910778320889107525698181505555390896306196896533141988738872683122711937105645000000000000000000000000000000000",
+      "scope": "rationalization error only, over the declared finite package population",
+      "proof": "0 <= covariance reduction <= source posterior covariance; quantized optimal selection has original-snapshot regret at most twice the uniform score error"
+    },
+    "original_snapshot_selected_objective": "75849039927894270406973571685061/800000000000000000000000000000000",
+    "selected_objective_rationalization_difference": "-19740314553202096620367734981202086004022927411621/53714586929506996996116492888631168800000000000000000000000000000000",
+    "loading_scope": "conditional fitted-model loading or local Jacobian; not a physiological law",
+    "covariance_scope": "caller-provided source covariance and attempt-noise model",
+    "evidence_scope": "synthetic fitted-bridge fixture; no NFL empirical scouting claim",
+    "source_feature_order": [
+      "source__displacement_05",
+      "source__terminal_forward_speed",
+      "source__endpoint_retention",
+      "forecast__forward_speed__step1",
+      "forecast__lateral_speed__step1",
+      "forecast__forward_speed__step2",
+      "forecast__lateral_speed__step2"
+    ],
+    "fitted_jacobian_scope": "affine fitted sensitivity in declared feature units with fixed preprocessing/missingness; not causal or future uncertainty",
+    "jacobian_composition_audit": {
+      "identity": "h = w @ F",
+      "source_to_outcome": [
+        "-1718142629658459/125000000000000000",
+        "-4284000721789747/1000000000000000000",
+        "0",
+        "-7323183452394421/1000000000000000000",
+        "259867168061897/800000000000000",
+        "-101040500860123/12500000000000000",
+        "2900094795005647/10000000000000000"
+      ],
+      "composed_source_to_outcome": [
+        "-17181426296584590519736946518717/1250000000000000000000000000000000",
+        "-107100018044743682874941618893923/25000000000000000000000000000000000",
+        "0",
+        "-36615917261972101504975095854711/5000000000000000000000000000000000",
+        "40604245009671407871690350868197/125000000000000000000000000000000",
+        "-101040500860122986378361942740591/12500000000000000000000000000000000",
+        "4531398117196324008635478189529/15625000000000000000000000000000"
+      ],
+      "absolute_errors": [
+        "519736946518717/1250000000000000000000000000000000",
+        "7874941618893923/25000000000000000000000000000000000",
+        "0",
+        "3495024904145289/5000000000000000000000000000000000",
+        "1621690350868197/125000000000000000000000000000000",
+        "13621638057259409/12500000000000000000000000000000000",
+        "571135478189529/15625000000000000000000000000000"
+      ],
+      "per_coefficient_tolerances": [
+        "1267181426296584590519736946518717/1250000000000000000000000000000000000000000",
+        "25107100018044743682874941618893923/25000000000000000000000000000000000000000000",
+        "1/1000000000",
+        "5036615917261972101504975095854711/5000000000000000000000000000000000000000000",
+        "165604245009671407871690350868197/125000000000000000000000000000000000000000",
+        "12601040500860122986378361942740591/12500000000000000000000000000000000000000000",
+        "20156398117196324008635478189529/15625000000000000000000000000000000000000"
+      ],
+      "passed": true,
+      "loading_override_allowed": false
+    },
+    "cutoff_conversion": {
+      "exclusive_fit_cutoff": 2024,
+      "inclusive_outcome_cutoff": 2023,
+      "rule": "explicit supplied inclusive NFL-season receipt"
+    },
+    "fitted_training_ids": [
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010",
+      "1011"
+    ],
+    "fitted_training_group_ids": [
+      "1000",
+      "1001",
+      "1002",
+      "1003",
+      "1004",
+      "1005",
+      "1006",
+      "1007",
+      "1008",
+      "1009",
+      "1010",
+      "1011"
+    ],
+    "fitted_evaluated_group_ids": []
+  },
+  "declared_synthetic_measurement_model": {
+    "prior": "Identity in fixture source-feature units",
+    "independent_noise_variance": 1,
+    "unit_candidate_cost": 1,
+    "budget": 2
+  }
+}

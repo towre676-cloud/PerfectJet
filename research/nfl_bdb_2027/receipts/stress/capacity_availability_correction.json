@@ -1,0 +1,6 @@
+{
+  "reason": "Initial capacity pilot did not share sprint-tracking availability with conventional model; predictive claim could reflect missingness",
+  "change": "All families receive capacity_available. Source profiles and context-reference unchanged.",
+  "preservation": "Initial fixed-clock trials and uncontrolled-capacity pilot retained. Controlled run uses fresh model-output directories.",
+  "status": "Corrected specification fixed before new controlled scores; prior2025inspection disclosed"
+}

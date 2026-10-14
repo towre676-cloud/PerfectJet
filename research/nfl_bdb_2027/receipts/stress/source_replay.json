@@ -1,0 +1,10 @@
+{
+  "private_stress": {
+    "turns": 601,
+    "max_difference": 0.0
+  },
+  "private_stress_clock": {
+    "turns": 582,
+    "max_difference": 0.0
+  }
+}

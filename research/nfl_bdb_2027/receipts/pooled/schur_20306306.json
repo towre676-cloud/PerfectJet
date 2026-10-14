@@ -1,0 +1,347 @@
+{
+  "seed": 20306306,
+  "adaptive_after_pooled_scores": true,
+  "grid_population": 60,
+  "component_specs": [
+    [
+      "capacity",
+      "baseline100_motion1000",
+      2,
+      10.0
+    ],
+    [
+      "duration",
+      "baseline100_motion1000",
+      2,
+      10.0
+    ],
+    [
+      "pooled",
+      "baseline100_motion1000",
+      2,
+      10.0
+    ]
+  ],
+  "selection": [
+    {
+      "fold": 0,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 0,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 0,
+      "family": "class_mean",
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 1.3664222540297183e-07
+    },
+    {
+      "fold": 1,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "training_selection_score": 6.664683614712111e-06
+    },
+    {
+      "fold": 1,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 1,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "training_selection_score": 3.5955717658837623e-06
+    },
+    {
+      "fold": 2,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 2,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 2,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "training_selection_score": 5.896055141411258e-07
+    },
+    {
+      "fold": 3,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 3,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 3,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    }
+  ],
+  "guard_scope": "Lower-one-standard-error heuristic; no calibrated selection-adjusted confidence guarantee. All choices from training players.",
+  "forward_selection": [
+    {
+      "family": "mean_guard",
+      "weights": [
+        0.5,
+        0.0,
+        0.1
+      ],
+      "training_selection_score": 1.0088079836190274e-07
+    },
+    {
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "family": "class_mean",
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 3.2662160235530844e-07
+    }
+  ],
+  "development": {
+    "mse": {
+      "conventional": 0.0009532293987675863,
+      "capacity": 0.0009528488685189256,
+      "duration": 0.0009751213570562808,
+      "pooled": 0.0009507235364423603,
+      "mean_guard": 0.0009670977501852237,
+      "class_guard": 0.0009532293987675863,
+      "class_mean": 0.0009673460944479868
+    },
+    "comparisons": {
+      "capacity": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009528488685189256,
+        "relative_gain": 0.00039920112530387303,
+        "absolute_gain": 3.805302486605956e-07,
+        "athlete_bootstrap_95": [
+          -1.607423974246172e-07,
+          9.615550298954829e-07
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "duration": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009751213570562808,
+        "relative_gain": -0.022966096426524647,
+        "absolute_gain": -2.1891958288694444e-05,
+        "athlete_bootstrap_95": [
+          -4.993325850249121e-05,
+          2.3589606037636973e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "pooled": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009507235364423603,
+        "relative_gain": 0.002628813513794112,
+        "absolute_gain": 2.5058623252260024e-06,
+        "athlete_bootstrap_95": [
+          -3.593441873209047e-06,
+          8.003519334056233e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "mean_guard": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009670977501852237,
+        "relative_gain": -0.014548807910842386,
+        "absolute_gain": -1.3868351417637447e-05,
+        "athlete_bootstrap_95": [
+          -4.001580171430693e-05,
+          5.552422930298336e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "class_guard": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009532293987675863,
+        "relative_gain": 0.0,
+        "absolute_gain": 0.0,
+        "athlete_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "class_mean": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009673460944479868,
+        "relative_gain": -0.014809337289273356,
+        "absolute_gain": -1.4116695680400573e-05,
+        "athlete_bootstrap_95": [
+          -4.030904965511139e-05,
+          5.530150565489968e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      }
+    }
+  },
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 0.0006904210445883682,
+      "capacity": 0.0006915711095113784,
+      "duration": 0.0006852956698639955,
+      "pooled": 0.0006906100176722899,
+      "mean_guard": 0.0006909706172463884,
+      "class_guard": 0.0006904210445883682,
+      "class_mean": 0.0006915711095113784
+    },
+    "comparisons": {
+      "capacity": {
+        "baseline_mse": 0.0006904210445883682,
+        "candidate_mse": 0.0006915711095113784,
+        "relative_gain": -0.001665744304905689,
+        "absolute_gain": -1.150064923010099e-06,
+        "athlete_bootstrap_95": [
+          -2.181806506393919e-06,
+          -3.5893115995440053e-07
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "duration": {
+        "baseline_mse": 0.0006904210445883682,
+        "candidate_mse": 0.0006852956698639955,
+        "relative_gain": 0.007423549389964688,
+        "absolute_gain": 5.1253747243727355e-06,
+        "athlete_bootstrap_95": [
+          -1.7388999930194183e-06,
+          1.2098156803634505e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "pooled": {
+        "baseline_mse": 0.0006904210445883682,
+        "candidate_mse": 0.0006906100176722899,
+        "relative_gain": -0.00027370701603439597,
+        "absolute_gain": -1.889730839216217e-07,
+        "athlete_bootstrap_95": [
+          -1.3240153998726569e-05,
+          1.1490929157604373e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "mean_guard": {
+        "baseline_mse": 0.0006904210445883682,
+        "candidate_mse": 0.0006909706172463884,
+        "relative_gain": -0.0007959963884759726,
+        "absolute_gain": -5.49572658020134e-07,
+        "athlete_bootstrap_95": [
+          -2.0830098262750202e-06,
+          6.243194502176795e-07
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "class_guard": {
+        "baseline_mse": 0.0006904210445883682,
+        "candidate_mse": 0.0006904210445883682,
+        "relative_gain": 0.0,
+        "absolute_gain": 0.0,
+        "athlete_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "class_mean": {
+        "baseline_mse": 0.0006904210445883682,
+        "candidate_mse": 0.0006915711095113784,
+        "relative_gain": -0.001665744304905689,
+        "absolute_gain": -1.150064923010099e-06,
+        "athlete_bootstrap_95": [
+          -2.181806506393919e-06,
+          -3.5893115995440053e-07
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      }
+    }
+  }
+}

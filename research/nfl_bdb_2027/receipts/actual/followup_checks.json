@@ -1,0 +1,83 @@
+{
+  "status": "actual_data_post_primary_diagnostics",
+  "test_reuse_disclosed": true,
+  "smoothing_sensitivity": [
+    {
+      "smoothing_frames": 5,
+      "test_mse": 3.346906802353437,
+      "test_rmse_yards": 1.8294553294227867,
+      "delta_vs_primary_baseline": -0.3264639895211445
+    },
+    {
+      "smoothing_frames": 7,
+      "test_mse": 3.322538728019654,
+      "test_rmse_yards": 1.8227832367068921,
+      "delta_vs_primary_baseline": -0.30209591518736145
+    },
+    {
+      "smoothing_frames": 9,
+      "test_mse": 3.3546945639001406,
+      "test_rmse_yards": 1.8315825299178141,
+      "delta_vs_primary_baseline": -0.334251751067848
+    }
+  ],
+  "development_player_block_permutation": {
+    "repetitions": 30,
+    "test_mse_values": [
+      3.7258677249733165,
+      3.1244146905198553,
+      3.0855725435057035,
+      3.0186656863774566,
+      3.0320414026530744,
+      3.0498580165221254,
+      3.023455325911532,
+      2.999015870450443,
+      3.157962224624781,
+      3.0531083453899175,
+      3.000830718778462,
+      3.012153024656941,
+      3.1473291706058726,
+      3.0183891489657193,
+      3.0143910670146528,
+      3.136413441976225,
+      3.08591946441387,
+      3.072000365139914,
+      3.0556624351059325,
+      3.054966665278682,
+      3.1078178230884723,
+      3.085456983313689,
+      3.133643971774424,
+      3.5279724014054445,
+      3.048991892886649,
+      3.0677446398156962,
+      3.0184655951919352,
+      3.0972869690842453,
+      3.079147945876584,
+      3.2298146777166026
+    ],
+    "mean_test_mse": 3.1088120077672747,
+    "scope": "diagnostic only; not a null-test p-value or model-selection criterion"
+  },
+  "player_mean_calibration": {
+    "ridge_conventional": {
+      "player_mean_prediction_bias_yards": 0.12252418639314953,
+      "player_mean_rmse_yards": 0.32161200936521994,
+      "descriptive_calibration_slope": 0.8661690205976545
+    },
+    "ridge_tracking": {
+      "player_mean_prediction_bias_yards": 0.34596425647309026,
+      "player_mean_rmse_yards": 0.6346495989673303,
+      "descriptive_calibration_slope": -0.09400308211697617
+    },
+    "forest_conventional": {
+      "player_mean_prediction_bias_yards": 0.07024709249050201,
+      "player_mean_rmse_yards": 0.30309342395619066,
+      "descriptive_calibration_slope": 1.5396036293466102
+    },
+    "forest_tracking": {
+      "player_mean_prediction_bias_yards": 0.06606897393606272,
+      "player_mean_rmse_yards": 0.320822654875446,
+      "descriptive_calibration_slope": 1.2738720842122673
+    }
+  }
+}

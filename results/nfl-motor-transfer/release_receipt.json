@@ -1,0 +1,112 @@
+{
+  "schema": "perfectjet/nfl-motor-release/1",
+  "status": "real_input_execution_blocked",
+  "raw_data_present": false,
+  "official_api_status": 401,
+  "browser_authenticated": false,
+  "new_real_data_gain": null,
+  "historical_research_commit": "2d2fc62af6502618821de23ddaf15e68cdb16a3e",
+  "protocol": {
+    "schema": "perfectjet/nfl-burst-transfer/1",
+    "primary": "forty-yard post-onset half-second burst -> context-adjusted rookie LOS-crossing time",
+    "secondary": "same functional on predeclared front starts, with drill nuisance adjustment",
+    "horizon_seconds": 0.5,
+    "onset_speed_yards_per_second": 0.5,
+    "sustained_frames": 3,
+    "maximum_turn_degrees": 15,
+    "baseline_penalties": [
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "inner_player_folds": 3,
+    "source_nuisance_penalty": 100.0,
+    "scout_correction_penalty": 1.0,
+    "minimum_plays": 30,
+    "primary_metric": "equal-athlete paired squared-error reduction",
+    "decision_rule": "shortlist lowest predicted quartile per class; hit = target below training lower quartile",
+    "source_noise": "estimated from independent repeat attempts; branch ranges are descriptive",
+    "conventional": [
+      "height",
+      "weight",
+      "hand_size",
+      "arm_length",
+      "wing_span",
+      "ten_yd_split",
+      "forty",
+      "vertical",
+      "broad",
+      "three_cone",
+      "shuttle",
+      "bench",
+      "ngs_athleticism_score",
+      "ngs_college_production_score",
+      "ngs_final_score"
+    ],
+    "availability": "all five raw drill flags and attempt counts shared by every model",
+    "NGS": "strong comparator includes supplied draft grades under declared pre-draft interpretation; repeat without NGS",
+    "context": "starting LOS depth, width, speed, situation and alignment; fit on training athletes only",
+    "NFL_horizon": "rookie regular season; training seasons strictly before evaluated class",
+    "2025": "previously inspected development evidence, never a fresh holdout",
+    "candidate_status": "protocol is fixed before this new experiment, but the data have prior adaptive use"
+  },
+  "exact_los_confounding": {
+    "observation_design": [
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "onset_identification": {
+      "identified": false,
+      "witness": [
+        "-1",
+        "1"
+      ],
+      "readout_shift": "-1",
+      "explanation": "X n = 0 but h.n != 0: beta and beta+n fit every observation"
+    },
+    "travel_identification": {
+      "identified": false,
+      "witness": [
+        "-1",
+        "1"
+      ],
+      "readout_shift": "1",
+      "explanation": "X n = 0 but h.n != 0: beta and beta+n fit every observation"
+    },
+    "nonlinear_explanations": [
+      {
+        "onset": "1/5",
+        "travel": "4/5",
+        "acceleration": "25/8",
+        "snap_to_los": "1"
+      },
+      {
+        "onset": "3/10",
+        "travel": "7/10",
+        "acceleration": "200/49",
+        "snap_to_los": "1"
+      }
+    ],
+    "identities_replayed": true,
+    "scope": "linear witness concerns onset plus travel; acceleration nonuniqueness is exhibited separately"
+  },
+  "declared_travel_box": {
+    "lower": 0.2965351654086268,
+    "upper": 1.1547005383792517,
+    "minimum_corner": [
+      0.5,
+      0.5,
+      8.0
+    ],
+    "maximum_corner": [
+      2.0,
+      0.0,
+      3.0
+    ],
+    "endpoint_polynomial_signs_checked_exactly": true,
+    "model": "d = v*t + a*t^2/2; independent nonnegative d,v box and positive a box"
+  },
+  "scope": "Analytic mathematics and implementation checks only. No new NFL prediction result."
+}

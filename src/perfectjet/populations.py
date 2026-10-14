@@ -80,6 +80,44 @@ class SelectionPopulation:
         return {"value":value,"tie_count":ties}
 
 
+    def _restricted(self,item,value,capacities=None):
+        """Population of the other projects after fixing project `item` to 0 or 1."""
+        caps=list(capacities or self.capacities)
+        if value:caps=[x-c for x,c in zip(caps,self.costs[item])]
+        if any(x<0 for x in caps):return None
+        keep=[i for i in range(self.n) if i!=item]
+        return SelectionPopulation([self.costs[i] for i in keep],caps,[self.profits[i] for i in keep])
+
+    def inclusion_profile(self):
+        """Exact share of feasible and of optimal selections containing each project."""
+        total=self.count();best=self.optimum()
+        rows=[]
+        for i in range(self.n):
+            sub=self._restricted(i,1)
+            with_i=sub.count() if sub else 0
+            opt_i=0
+            if sub:
+                o=sub.optimum()
+                if o["value"] is not None and o["value"]+self.profits[i]==best["value"]:opt_i=o["tie_count"]
+            rows.append({"project":i,"feasible_share":Q(with_i,total) if total else None,
+                         "optimal_share":Q(opt_i,best["tie_count"]) if best["tie_count"] else None})
+        return rows
+
+    def attribution(self):
+        """How many selections each capacity constraint removes on its own.
+
+        relaxed_k counts selections with constraint k dropped; relaxed_k - count is the
+        number violating constraint k and no other. The unconstrained population is 2^n.
+        """
+        total=self.count();out=[]
+        for k in range(len(self.capacities)):
+            caps=list(self.capacities);caps[k]=sum(row[k] for row in self.costs)
+            relaxed=SelectionPopulation(self.costs,caps,self.profits).count()
+            out.append({"constraint":k,"capacity":self.capacities[k],"count_without":relaxed,
+                        "removed_only_by_this":relaxed-total})
+        return {"unconstrained":2**self.n,"feasible":total,"constraints":out}
+
+
 def weighted_quotient_replay(a,aggregation,reduced):
     """Column-state convention: RA = Abar R."""
     a,r,b=matrix(a),matrix(aggregation),matrix(reduced)

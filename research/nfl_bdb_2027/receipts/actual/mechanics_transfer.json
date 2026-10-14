@@ -1,0 +1,22 @@
+{
+  "status": "descriptive_post_primary",
+  "correlations": {
+    "entry_speed": {
+      "rho": 0.07335164835164834,
+      "players": 64
+    },
+    "speed_retention": {
+      "rho": 0.013598901098901097,
+      "players": 64
+    },
+    "exit_gain": {
+      "rho": -0.051556776556776554,
+      "players": 64
+    },
+    "turn_angle": {
+      "rho": 0.11025641025641025,
+      "players": 64
+    }
+  },
+  "note": "No causal inference; no test-model selection; mechanics transfer is different from predicting separation."
+}

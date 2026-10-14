@@ -1,0 +1,38 @@
+{
+  "bagged_models_per_family": 16,
+  "configs": "Earlier-player / 2024 selected unbagged configurations retained; both conventional and combined receive identical athlete bagging",
+  "adaptive_followup": true,
+  "source_folder": "private_front_macro",
+  "nested": {
+    "mse": {
+      "conventional": 0.0009976460555967727,
+      "combined": 0.0008883412688132029
+    },
+    "combined": {
+      "delta_mse": 0.00010930478678356966,
+      "ci95": [
+        -6.596916732249398e-07,
+        0.00023599251964112218
+      ],
+      "players": 45,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 45
+  },
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 0.0005750755264042485,
+      "combined": 0.0005471465975655795
+    },
+    "combined": {
+      "delta_mse": 2.792892883866886e-05,
+      "ci95": [
+        -1.2285780107143565e-05,
+        7.412851592344462e-05
+      ],
+      "players": 29,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 29
+  }
+}

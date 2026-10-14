@@ -2912,6 +2912,251 @@
       "topic": "Exact numerical historical proposal status separation",
       "chapter": "docs/chapters/23_status_corrections_and_frontiers.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T417",
+      "domain": "NFL motor transfer",
+      "topic": "Official nine-file Combine adapter",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T418",
+      "domain": "NFL motor transfer",
+      "topic": "LOS onset-travel confounding",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T419",
+      "domain": "NFL motor transfer",
+      "topic": "Half-second post-onset functional",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T420",
+      "domain": "NFL motor transfer",
+      "topic": "Independent-repeat source variance",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T421",
+      "domain": "NFL motor transfer",
+      "topic": "Uncertainty-integrated scouting correction",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T422",
+      "domain": "NFL motor transfer",
+      "topic": "Exact rational demand gate repair",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T423",
+      "domain": "NFL motor transfer",
+      "topic": "Original-player bootstrap grouping",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T424",
+      "domain": "NFL motor transfer",
+      "topic": "Nested source and outcome reconstruction",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T425",
+      "domain": "NFL motor transfer",
+      "topic": "Chronological rookie outcomes",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T426",
+      "domain": "NFL motor transfer",
+      "topic": "Strong fifteen-measurement comparator",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T427",
+      "domain": "NFL motor transfer",
+      "topic": "Fixed-budget shortlist test",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T428",
+      "domain": "NFL motor transfer",
+      "topic": "Unexecuted real-data status and full historical preservation",
+      "chapter": "docs/chapters/26_nfl_motor_transfer.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T429",
+      "domain": "NFL math bridges",
+      "topic": "Operational NFL movement target geometry",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T430",
+      "domain": "NFL math bridges",
+      "topic": "Bounded two-pass NFL frame extraction",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T431",
+      "domain": "NFL math bridges",
+      "topic": "Finite-horizon supervised Hankel continuation",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T432",
+      "domain": "NFL math bridges",
+      "topic": "Physical-coordinate SVD transfer",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T433",
+      "domain": "NFL math bridges",
+      "topic": "Same-current different-history predictive witness",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T434",
+      "domain": "NFL math bridges",
+      "topic": "Equal-player weighting and preserved bootstrap multiplicity",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T435",
+      "domain": "NFL math bridges",
+      "topic": "Train-only NFL-to-Combine continuation alignment",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T436",
+      "domain": "NFL math bridges",
+      "topic": "Descriptive support distances",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T437",
+      "domain": "NFL math bridges",
+      "topic": "Out-of-player movement stacking",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T438",
+      "domain": "NFL math bridges",
+      "topic": "Strong shared-availability scouting baseline",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T439",
+      "domain": "NFL math bridges",
+      "topic": "Physical source-to-movement-to-outcome loading",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T440",
+      "domain": "NFL math bridges",
+      "topic": "Fitted transfer-error decomposition",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T441",
+      "domain": "NFL math bridges",
+      "topic": "Exact joint measurement-package optimum",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T442",
+      "domain": "NFL math bridges",
+      "topic": "Zero-standalone-value nuisance cancellation",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T443",
+      "domain": "NFL math bridges",
+      "topic": "Non-submodular target information",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T444",
+      "domain": "NFL math bridges",
+      "topic": "Correlated within-attempt measurement blocks",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T445",
+      "domain": "NFL math bridges",
+      "topic": "Original-attempt deduplication",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T446",
+      "domain": "NFL math bridges",
+      "topic": "Rationalized fitted-loading provenance",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T447",
+      "domain": "NFL math bridges",
+      "topic": "Uniform coefficient-rounding score bound",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T448",
+      "domain": "NFL math bridges",
+      "topic": "Rational-snapshot optimization regret",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T449",
+      "domain": "NFL math bridges",
+      "topic": "Robust multi-loading allocation",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T450",
+      "domain": "NFL math bridges",
+      "topic": "Contender-difference sensing",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T451",
+      "domain": "NFL math bridges",
+      "topic": "Synthetic mechanism evidence versus NFL performance",
+      "chapter": "docs/chapters/27_nfl_math_bridges.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "archive_library_file_id": "libfile_ee1a026a6658819197b81a9f835a83fa",
+  "archive_sha256": "6a13b82220d25f1bf1a186b07f55bf2bbcbf9e016072ce78be2b8094f4471a3e",
+  "unaltered_source_checks": {
+    "python/perfectpower/movement_language.py": true,
+    "python/perfectpower/movement_features.py": true,
+    "scripts/run_movement_transfer.py": true
+  },
+  "cohort_hash_matches": true,
+  "tracking_hash_matches": true,
+  "integration": "Source files unchanged; isolated namespace stub added. Original mathematical and experimental claims retained separately from new canonical comparisons."
+}

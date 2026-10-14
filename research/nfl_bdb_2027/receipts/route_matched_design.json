@@ -1,0 +1,28 @@
+{
+  "scope": "additional exploratory mechanism test; previous 2025 results already inspected",
+  "routes": [
+    "IN",
+    "OUT",
+    "SLANT",
+    "HITCH"
+  ],
+  "mapping": {
+    "IN": [
+      "DAGGER_ROUTE_LEFT"
+    ],
+    "OUT": [
+      "SPEED_OUT_ROUTE_LEFT",
+      "SPEED_OUT_LEFT (explicit name alias)"
+    ],
+    "SLANT": [
+      "SLANT_ROUTE_LEFT"
+    ],
+    "HITCH": [
+      "CURL_ROUTE_RIGHT",
+      "COMEBACK_ROUTE_RIGHT"
+    ]
+  },
+  "comparison": "same conventional predictors, candidate budget and group splits; direct route-matched readout from Combine signature/state features",
+  "selection": "earlier cohorts only",
+  "claim_boundary": "new matched-route population cannot be compared directly against old five-route metrics"
+}

@@ -1,0 +1,182 @@
+{
+  "alpha": 1000,
+  "adaptive_after_primary_and_situation_inspection": true,
+  "no_family_selection": true,
+  "seed": 20289306,
+  "development": {
+    "players": 45,
+    "mse": {
+      "conventional": 0.0010620519779780647,
+      "capacity_only": 0.0010545290381583751,
+      "raw_motion": 0.001108286000334018,
+      "matched_recovery": 0.0010939035157574576,
+      "stress_curve": 0.0011053338254077552,
+      "robust_recovery": 0.0011029383315895888
+    },
+    "comparisons": {
+      "capacity_only": {
+        "absolute_gain": 7.5229398196896095e-06,
+        "relative_gain": 0.0070834007898669775,
+        "conditional_ci95": [
+          -1.7940025397310905e-06,
+          1.6828813172980214e-05
+        ]
+      },
+      "raw_motion": {
+        "absolute_gain": -4.623402235595329e-05,
+        "relative_gain": -0.043532730332063084,
+        "conditional_ci95": [
+          -0.00013536642307508348,
+          1.872800794239624e-05
+        ]
+      },
+      "matched_recovery": {
+        "absolute_gain": -3.18515377793928e-05,
+        "relative_gain": -0.02999056396470517,
+        "conditional_ci95": [
+          -8.812262329634086e-05,
+          1.0165729717075736e-05
+        ]
+      },
+      "stress_curve": {
+        "absolute_gain": -4.328184742969036e-05,
+        "relative_gain": -0.040753040648811155,
+        "conditional_ci95": [
+          -0.00011608018661561872,
+          1.0098111053281024e-05
+        ]
+      },
+      "robust_recovery": {
+        "absolute_gain": -4.088635361152365e-05,
+        "relative_gain": -0.038497507145896115,
+        "conditional_ci95": [
+          -0.00011551515942222821,
+          1.3449244186213272e-05
+        ]
+      }
+    },
+    "versus_capacity": {
+      "raw_motion": {
+        "absolute_gain": -5.375696217564291e-05,
+        "relative_gain": -0.05097722322518859,
+        "conditional_ci95": [
+          -0.0001454088872380464,
+          1.2518216465550289e-05
+        ]
+      },
+      "matched_recovery": {
+        "absolute_gain": -3.937447759908241e-05,
+        "relative_gain": -0.03733844794624701,
+        "conditional_ci95": [
+          -0.00010082588681052487,
+          6.841150682971271e-06
+        ]
+      },
+      "stress_curve": {
+        "absolute_gain": -5.0804787249379974e-05,
+        "relative_gain": -0.048177703421145454,
+        "conditional_ci95": [
+          -0.000127073355977163,
+          5.741880548061899e-06
+        ]
+      },
+      "robust_recovery": {
+        "absolute_gain": -4.840929343121328e-05,
+        "relative_gain": -0.045906079092667806,
+        "conditional_ci95": [
+          -0.00012499403361611346,
+          8.642835512307668e-06
+        ]
+      }
+    },
+    "scope": "Paired fixed-prediction player bootstrap, omitting refitting and adaptive-search uncertainty; outcomes constructed by held-out context reference."
+  },
+  "exploratory_2025": {
+    "players": 29,
+    "mse": {
+      "conventional": 0.0006410506821563278,
+      "capacity_only": 0.0006299571888808488,
+      "raw_motion": 0.0005963630109480517,
+      "matched_recovery": 0.0006471556845103403,
+      "stress_curve": 0.0006448272123020841,
+      "robust_recovery": 0.0006204654149646036
+    },
+    "comparisons": {
+      "capacity_only": {
+        "absolute_gain": 1.1093493275478993e-05,
+        "relative_gain": 0.017305173497613895,
+        "conditional_ci95": [
+          1.2546622476084896e-06,
+          2.167095165619598e-05
+        ]
+      },
+      "raw_motion": {
+        "absolute_gain": 4.468767120827625e-05,
+        "relative_gain": 0.06971004392033177,
+        "conditional_ci95": [
+          1.4090933969590493e-05,
+          7.943847904925959e-05
+        ]
+      },
+      "matched_recovery": {
+        "absolute_gain": -6.105002354012294e-06,
+        "relative_gain": -0.009523431647364687,
+        "conditional_ci95": [
+          -3.111660890436926e-05,
+          1.942536086541553e-05
+        ]
+      },
+      "stress_curve": {
+        "absolute_gain": -3.77653014575602e-06,
+        "relative_gain": -0.005891156894261081,
+        "conditional_ci95": [
+          -3.312770815707384e-05,
+          2.434992216950615e-05
+        ]
+      },
+      "robust_recovery": {
+        "absolute_gain": 2.0585267191724258e-05,
+        "relative_gain": 0.03211176239994125,
+        "conditional_ci95": [
+          -1.4071369009325733e-05,
+          5.7808523341275704e-05
+        ]
+      }
+    },
+    "versus_capacity": {
+      "raw_motion": {
+        "absolute_gain": 3.359417793279726e-05,
+        "relative_gain": 0.05332771579681317,
+        "conditional_ci95": [
+          7.988313941569757e-06,
+          6.265890622368733e-05
+        ]
+      },
+      "matched_recovery": {
+        "absolute_gain": -1.719849562949129e-05,
+        "relative_gain": -0.02730105463205412,
+        "conditional_ci95": [
+          -4.285831482802814e-05,
+          5.1764579404235866e-06
+        ]
+      },
+      "stress_curve": {
+        "absolute_gain": -1.4870023421235012e-05,
+        "relative_gain": -0.023604815825107688,
+        "conditional_ci95": [
+          -4.297918402124522e-05,
+          1.1729264023093414e-05
+        ]
+      },
+      "robust_recovery": {
+        "absolute_gain": 9.491773916245267e-06,
+        "relative_gain": 0.015067331691393012,
+        "conditional_ci95": [
+          -2.3203166507718683e-05,
+          4.605144714997322e-05
+        ]
+      }
+    },
+    "scope": "Paired fixed-prediction player bootstrap, omitting refitting and adaptive-search uncertainty; outcomes constructed by held-out context reference."
+  }
+}

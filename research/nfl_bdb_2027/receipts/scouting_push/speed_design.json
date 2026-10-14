@@ -1,0 +1,13 @@
+{
+  "target": "Rookie WR route-speed capacity: per-player 90th percentile of route 95th-percentile speeds, snap+1s through release, >=30 routes",
+  "inputs": "pre-draft only; body/timed/NGS, plus common conventional late-speed proxy 30/(forty-ten_yd_split) and initial-acceleration proxy 20/ten_yd_split^2",
+  "tracked_features": "sensor .95 quantile speed before4.5s, mean3\u20134s, early .5\u20131.5s/ceiling ratio; repeated attempt medians",
+  "families": [
+    "conventional",
+    "ceiling",
+    "shape"
+  ],
+  "selection": "4 outer,3 inner earlier-player folds; 2023 train/2024 validation then earlier-year refit/2025 exploratory; identical ridge1/10/100 and depth3 forest bank",
+  "source_flag": "Strong conventional algebraic proxies and forest full feature availability set before inspection of pilot forward results. Pilot retained, not a fair strong-baseline improvement claim.",
+  "inference": "Global prior2025WR inspection; prospective confirmation requires untouched population. Source linear residualization only uses training players."
+}

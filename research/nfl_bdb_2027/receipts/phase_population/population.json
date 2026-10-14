@@ -1,0 +1,29 @@
+{
+  "attempts": 361,
+  "source_players": 74,
+  "NFL_players": 74,
+  "NFL_rows": 14665,
+  "onsets_yd_per_s": [
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "temperatures": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "rejections": {},
+  "onset_span_quantiles_s": {
+    "0.0": 0.0,
+    "0.5": 0.5,
+    "0.9": 1.7000000000000002,
+    "1.0": 3.8000000000000003
+  },
+  "source_dimensions": 432,
+  "weights": "Equal onset and temperature sensitivity mixture; Gibbs path costs. These are assumed weights, not empirically calibrated semantic phase probabilities. Each legal path has uniform base weight; duration multiplicity is a prior.",
+  "phase_language": "stay or advance: approach/brake/redirect/recover, fixed start and finish. Operational single-transition summary of first up-to-5s, not ground-truth drill segmentation.",
+  "order_control": "Joint frame permutation before signed-area and phase features, preserving per-window channel multiset. Ordinary summaries identical in sequence/shuffled families.",
+  "inference_scope": "Rookie pressure-event rate conditional on recorded NFL workloads; prior 2025 inspection. No untouched test class remains."
+}

@@ -1,0 +1,26 @@
+{
+  "unit_tests": {
+    "passed": 26,
+    "method": "python -m unittest discover -s tests"
+  },
+  "scientific_figures_visually_inspected": 5,
+  "offline_explorer": {
+    "syntax_and_slider_event_logic": "passed under Node DOM/canvas stub",
+    "full_browser_visual_test": "not performed"
+  },
+  "source_snapshot_hash_match": "all nine files",
+  "full_notebook_replay": {
+    "completed_code_cells": 6,
+    "embedded_figures": 5,
+    "narrative_words": 1029,
+    "narrative_plus_printed_outputs_words": 1601,
+    "clean_temporary_directory": true,
+    "standalone_vs_notebook_model_mse_absolute_tolerance": 1e-12,
+    "diagnostics_maximum_numeric_difference": 1.1102230246251565e-16,
+    "all_30_profile_shuffles_recomputed": true,
+    "newer_historical_studies_replayed": false,
+    "post_execution_edit": "Findings prose only; executable cells unchanged."
+  },
+  "notebook_sha256": "83efd408db95419be285ae6ea1232468a715e2cfc1af1c0258eb295fa70c12ec",
+  "embedded_modules_match_package": true
+}

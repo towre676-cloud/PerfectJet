@@ -1,0 +1,77 @@
+{
+  "status": "completed_reconstructed_actual_data",
+  "kinematic_baselines_2025_mse": {
+    "early_speed_persistence": 17.37079546550767,
+    "constant_early_acceleration": 4.277411666425603
+  },
+  "training_profile_shuffles": {
+    "mse": [
+      0.6417445566594796,
+      0.6372055029768778,
+      0.6402995080095931,
+      0.6419796416129242,
+      0.6365865354388921,
+      0.6398029351708525,
+      0.6407350590288892,
+      0.6438262486314222,
+      0.6430838132570906,
+      0.6403390667943092,
+      0.6363865508344967,
+      0.6394350014048886,
+      0.6392961204532845,
+      0.639191734416208,
+      0.6419553896316599,
+      0.6375234651826996,
+      0.6385258695588155,
+      0.6395588710635322,
+      0.632757959976938,
+      0.6399423988890531,
+      0.6336278256264115,
+      0.6393964623709656,
+      0.6435558183145458,
+      0.6387349269998407,
+      0.6434681065978975,
+      0.6410307974036331,
+      0.6358438534284852,
+      0.6406611688999344,
+      0.6407918849698692,
+      0.6356197769445807
+    ],
+    "mean_mse": 0.6394302283516023,
+    "real_profile_mse": 0.6446826372107144,
+    "scope": "Selected configuration fixed, training source profiles shuffled within class; held-out labels do not select settings. Diagnostic, not a reselection-based permutation p-value."
+  },
+  "state_channel_team_cluster_ci95": [
+    0.2625692634319902,
+    0.4051203691039864
+  ],
+  "team_clusters": 16,
+  "coverage_subsets": {
+    "man": {
+      "delta_mse": 0.27722344627636347,
+      "ci95": [
+        0.20225408855104787,
+        0.35421611423465965
+      ],
+      "players": 18,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "zone": {
+      "delta_mse": 0.3444310561266265,
+      "ci95": [
+        0.25561177279970604,
+        0.4648771003222882
+      ],
+      "players": 18,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    }
+  },
+  "source_first_last_rank_correlation": {
+    "motion__order2_V": 0.8250677506775067,
+    "motion__order2_tau": 0.3729674796747967,
+    "motion__speed_1.5": 0.2747515808491418,
+    "motion__speed_3": 0.6325880758807588
+  },
+  "repeat_players": 81,
+  "repeatability_scope": "Descriptive across all Combine classes, not used to select the model; alignment, effort and preprocessing contribute."
+}

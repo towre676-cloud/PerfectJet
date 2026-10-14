@@ -1,0 +1,10 @@
+{
+  "registered_before_situation_scores": true,
+  "groups": [
+    "down3 andyards_to_go>=5",
+    "blitzing chartedtrue"
+  ],
+  "eligibility": "atleast10eligible records/player in group",
+  "models": "Same six families, fixedRidge1000 to avoid extra group tuning; target reference and source adjustment from earlier45players only",
+  "scope": "Exploratory supporting interactions; no best subgroup promoted to primary finding;2025 priorinspection disclosed"
+}

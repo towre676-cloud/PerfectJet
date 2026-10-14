@@ -1,0 +1,27 @@
+{
+  "registered_before_blend_scores": true,
+  "adaptive_after_first_pooled_trial": true,
+  "population": 60,
+  "component_specs": [
+    [
+      "capacity",
+      1000.0,
+      2,
+      10.0
+    ],
+    [
+      "duration",
+      1000.0,
+      2,
+      10.0
+    ],
+    [
+      "pooled",
+      1000.0,
+      2,
+      10.0
+    ]
+  ],
+  "goal": "Reduce feature-search variance through fixed high-shrinkage components and finite low-weight corrections. Select worst-class improvement, optionally subtract1SE, within nested training folds.",
+  "scope": "2025already inspected; no fresh confirmation; all3guard variants reported."
+}

@@ -95,3 +95,42 @@ If $F(n)=m^d$, then $F(n)\equiv m^d \pmod q$ for every q. A residue that is not 
 Work over the algebraic closure. Rabinowitsch: a point t lies in V(I) minus V(q) exactly when some z satisfies $I(t)=0$ and $1-zq(t)=0$. Projecting away z, the ideal $(I+\langle1-zq\rangle)\cap Q[t]$ is $I:q^\infty$, and V of it is the Zariski closure of V(I) minus V(q). An elimination order with z largest computes this intersection as the z-free part of a Groebner basis. Saturating by inequations one at a time gives $S=I:(q_1\cdots q_s)^\infty$.
 
 Each branch keeps a pair (S,N) with S saturated by every member of N. Its cell V(S) minus V(prod N) is dense in V(S), so the cell is empty exactly when S is the unit ideal. A pivot p is zero on the whole cell exactly when $S:p^\infty$ is the unit ideal. Otherwise the pivot branch $(S:p^\infty,N+p)$ and the zero branch $((S+p):N^\infty,N)$ split the cell into two disjoint constructible pieces whose union is the cell. Matrix entries may be reduced modulo S, because they are unchanged on V(S). In the pivot branch, the row operation $\mathrm{row}_k\to p\,\mathrm{row}_k-a_{kj}\mathrm{row}_i$ multiplies a row by p, which is nonzero on the cell. An exact division by the previous pivot, also nonzero on the cell, likewise preserves the pointwise rank. Each branch removes a row and column or adds a polynomial that is not already in the radical. Noetherianity and finite matrix size give termination. The leaves therefore partition parameter space, and the rank is constant on each leaf. Rational points of a zero-dimensional closure come from a lexicographic Groebner basis, the rational root theorem on its last eliminant, and back substitution. Tests compare each leaf's rank with direct evaluation on a grid.
+
+## Active strata
+
+On a correction cell C the rank of $L_N$ is constant. Running comprehensive elimination of $[L_N;P_N]$ from the starting pair (S,N) of C only ever adds equations or inequations, so its leaves partition C and the joint rank is constant on each leaf. Both ranks are then constant on every stratum, and so are $\dim\ker L_N=N+1-\operatorname{rank}L_N$ and $\dim A_N=\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, because $\ker[L_N;P_N]=\ker L_N\cap\ker P_N$. At a rational point, choosing kernel vectors whose $P_N$-images are independent gives a basis of the active quotient, and the nullspace of $P_N$ restricted to $\ker L_N$ gives the commuting part; each vector is replayed as a form with exact transvectants. The sextic has a repeated root exactly when the resultant of $f(x,1)$ and its derivative vanishes, since the leading coefficient is1.
+
+## Identifiable readouts
+
+If $h=X^\top c$, then $h^\top\beta=c^\top X\beta$ is a function of the noiseless observations. If $h\notin\operatorname{row}(X)=\ker(X)^\perp$, some $n\in\ker X$ has $h^\top n\ne0$; then $X\beta=X(\beta+n)$ while the readouts differ by $h^\top n$. Adding a row already in row(X) leaves row(X) unchanged, so a repeat can never make a non-identified readout identified. For $y=X\beta+e$ with Gaussian prior and noise, the posterior covariance $(\Sigma_0^{-1}+X^\top X/\sigma^2)^{-1}$ does not depend on y, so the expected variance reduction of a new row equals its realized reduction. Adding a row adds a positive semidefinite term to the precision, so no candidate increases the variance.
+
+## Settled decisions and targeted refinement
+
+If every reported interval contains its true value and the leader's lower bound exceeds every competitor's upper bound, the leader is strictly best whatever the true values are inside the intervals. Refinement of an action whose interval is already below the leader's lower bound cannot change the comparison, so only overlapping contenders need refinement.
+
+## Evolution-defect split
+
+From $x_{t+1}=Ax_t+Bu_t$ and $z_{t+1}=Gz_t+Hu_t$, $e_{t+1}=Ax_t+Bu_t-VGz_t-VHu_t=A(e_t+Vz_t)-VGz_t+(B-VH)u_t=Ae_t+(AV-VG)z_t+(B-VH)u_t$. Taking norms, $\|e_{t+1}\|\le\|A\|\|e_t\|+\|(AV-VG)z_t\|+\|(B-VH)u_t\|$, which is the recursion the implementation reports.
+
+## Adaptive monomial closure
+
+Pullback by a polynomial map sends a monomial to a polynomial, and the loop adds exactly the monomials of the pullbacks that are missing. If the loop stops with nothing missing, every retained monomial pulls back into their span, which is the closure identity. The span of $C,CK,CK^2,\dots$ inside it is the smallest pullback-closed space containing the outputs, by the observable-space argument of chapter07.
+
+## Cubic and quartic partners of every sextic
+
+Transvectants are SL2-equivariant. For a cubic g, (f,g)_5 has negative order and vanishes, so L_3(f) is the map g -> (f,g)_3 from cubics to cubics. It is linear in f and equivariant, so det L_3(f) is an SL2-invariant of f of degree 4. By the Cayley-Sylvester formula, the binary sextic has exactly two linearly independent invariants of degree 4 (`covariant_count(6,4,0)=2`), namely A^2 and B. Hence det L_3 = alpha A^2 + beta B. Two sextics with independent (A^2,B) determine alpha and beta. The identity det L_3=(A^2-B/6)/16 is then certified by the slice argument below. A cubic partner exists exactly when L_3(f) is singular, that is, when B=6A^2.
+
+Let i=(f,f)_4, a covariant of degree 2 and order 4. Then (f,i)_5 is an invariant of degree 3, and (f,i)_3 is a covariant of degree 3 and order 4. The Cayley-Sylvester counts `covariant_count(6,3,0)` and `covariant_count(6,3,4)` are both 0, so both vanish identically. Thus i lies in ker L_4(f) for every sextic. It is active exactly when (f,i)_1 is nonzero.
+
+## Strata as invariant loci
+
+For g in GL2, transvectants satisfy (f∘g, h∘g)_k = det(g)^k (f,h)_k ∘ g. Hence ker L_N(f∘g) = (ker L_N(f))∘g, and the same holds for ker P_N. So kernel and active dimensions are functions on GL2-orbits. On a family, every stratum is therefore a union of fibres of the invariant map. If a weighted-homogeneous polynomial R(A,B,C,D), written as a polynomial in the family parameters, reduces to zero modulo a Groebner basis of a curve's ideal, then R lies in that ideal and vanishes at every point of the curve. Relations that vanish on the whole family are discarded, so a returned relation is specific to the curve. For squarefree sextics, two forms with equal points (A:B:C:D) in weighted projective space P(1,2,3,5) lie in one GL2(Qbar)-orbit, by the classical theory of genus-two curves. The test I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} is that equality, written without roots.
+
+## Slice certificates for covariant identities
+
+Let P(f)=Q(f) be an identity between covariants of the same degree d, order and weight, built from transvectants and invariants. The set of sextics where it holds is Zariski closed and GL2-stable. Every sextic with three distinct roots can be moved by GL2 over the algebraic closure to c·xy(x-y)(x^3+px^2y+qxy^2+ry^3). Scaling absorbs c, because both sides have the same degree. These slice forms therefore have a dense GL2-orbit, and the identity holds everywhere once it holds on the slice. On the slice, the coefficients of f are affine in (p,q,r), so P-Q is a polynomial of degree at most d in each of p, q and r. A polynomial with that bound that vanishes on {0,...,d}^3 is zero. `grid_certificate` evaluates the identity at those (d+1)^3 points in exact arithmetic. It certifies:
+- the cubic partner theorem, with d=4 and 125 points;
+- the quartic covariant partner, with d=3 and 64 points;
+- the degree-12 identities, with d=7 and 512 points. Here s=A^2-25B/96, and (f,G)_3=-432 s (f,(f,f)_2)_1 and (f,G)_5=25920 s (f,(f,f)_4)_1, for G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9 Delta H+(f,i)_2^2.
+
+The degree-12 identities show that on the hypersurface A^2=25B/96, G(f) lies in ker L_12(f) whenever it is nonzero. The converse, that a degree-12 partner forces A^2=25B/96, is supported by random sextics and by two independent families, but is not proved.

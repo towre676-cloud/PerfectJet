@@ -1,0 +1,17 @@
+{
+  "adaptive_after_initial_results": true,
+  "registered_before_clock_capacity_scores": true,
+  "measurement_change": "Start recovery at80% of monotone angular progress; entry speed before20%; same15 smoothing/center branches",
+  "capacity_baseline": "Three tracked sprint descriptors; each source family includes them, and recovery adjustment includes entry/ceiling and interaction with turnangle",
+  "target": "Same context-adjusted pressure primary/getoff support; same74player cohort and heldout context procedure",
+  "families": [
+    "conventional",
+    "capacity_only",
+    "raw_motion",
+    "matched_recovery",
+    "stress_curve",
+    "robust_recovery",
+    "selected"
+  ],
+  "bank": "Ridge10/100/1000; conventional fallback.18 configurations. No2025based tuning."
+}

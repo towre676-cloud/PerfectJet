@@ -1,0 +1,39 @@
+{
+  "status": "completed_exact_surrogate_design",
+  "model": "B(v,angle)=beta0+beta1*u+beta2*w+beta3*u*w+beta4*u^2+beta5*w^2; u=v/8,w=angle_degrees/90; speeds quantized 0.1 yd/s, angles 1 degree",
+  "players_with_source_and_game_demands": 56,
+  "source_design_rank_histogram": {
+    "2": 3,
+    "4": 26,
+    "6": 9,
+    "3": 3,
+    "5": 15
+  },
+  "minimum_additional_measurement_histogram": {
+    "4": 3,
+    "2": 26,
+    "0": 9,
+    "3": 3,
+    "1": 15
+  },
+  "ambiguous_NFL_target_maps": 47,
+  "full_rank_source_designs": 9,
+  "after_selected_measurements_exact_target_factor": 56,
+  "candidate_conditions": {
+    "speed_yd_per_s": [
+      3,
+      4.5,
+      6,
+      7.5
+    ],
+    "angle_degrees": [
+      30,
+      60,
+      90,
+      120
+    ]
+  },
+  "optimality_scope": "Minimum cardinality for full six-parameter model by rank lower bound and exact completion; numerical noise criterion selects among minimum-cardinality candidate subsets. It is not an optimal biomechanical training program.",
+  "noise_scope": "Unit independent observation-noise model only; actual sensor noise and model misspecification not estimated by these algebraic calculations.",
+  "trust_boundary": "Exact rational statements hold for supplied quantized design matrices and chosen quadratic surrogate. Actual athletes need not follow this model. Pooling route intent is deliberately optimistic. No real-world predictive gain or causal intervention benefit inferred."
+}

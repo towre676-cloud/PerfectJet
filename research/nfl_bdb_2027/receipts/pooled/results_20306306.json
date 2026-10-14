@@ -1,0 +1,774 @@
+{
+  "seed": 20306306,
+  "bank": [
+    [
+      "conventional",
+      1.0,
+      0,
+      10.0
+    ],
+    [
+      "conventional",
+      10.0,
+      0,
+      10.0
+    ],
+    [
+      "conventional",
+      100.0,
+      0,
+      10.0
+    ],
+    [
+      "capacity",
+      10.0,
+      2,
+      10.0
+    ],
+    [
+      "capacity",
+      10.0,
+      4,
+      10.0
+    ],
+    [
+      "capacity",
+      100.0,
+      2,
+      10.0
+    ],
+    [
+      "capacity",
+      100.0,
+      4,
+      10.0
+    ],
+    [
+      "duration",
+      10.0,
+      2,
+      10.0
+    ],
+    [
+      "duration",
+      10.0,
+      4,
+      10.0
+    ],
+    [
+      "duration",
+      100.0,
+      2,
+      10.0
+    ],
+    [
+      "duration",
+      100.0,
+      4,
+      10.0
+    ],
+    [
+      "pooled",
+      10.0,
+      2,
+      1.0
+    ],
+    [
+      "pooled",
+      10.0,
+      2,
+      10.0
+    ],
+    [
+      "pooled",
+      10.0,
+      2,
+      100.0
+    ],
+    [
+      "pooled",
+      10.0,
+      4,
+      1.0
+    ],
+    [
+      "pooled",
+      10.0,
+      4,
+      10.0
+    ],
+    [
+      "pooled",
+      10.0,
+      4,
+      100.0
+    ],
+    [
+      "pooled",
+      100.0,
+      2,
+      1.0
+    ],
+    [
+      "pooled",
+      100.0,
+      2,
+      10.0
+    ],
+    [
+      "pooled",
+      100.0,
+      2,
+      100.0
+    ],
+    [
+      "pooled",
+      100.0,
+      4,
+      1.0
+    ],
+    [
+      "pooled",
+      100.0,
+      4,
+      10.0
+    ],
+    [
+      "pooled",
+      100.0,
+      4,
+      100.0
+    ],
+    [
+      "duration_pooled",
+      10.0,
+      2,
+      1.0
+    ],
+    [
+      "duration_pooled",
+      10.0,
+      2,
+      10.0
+    ],
+    [
+      "duration_pooled",
+      10.0,
+      2,
+      100.0
+    ],
+    [
+      "duration_pooled",
+      10.0,
+      4,
+      1.0
+    ],
+    [
+      "duration_pooled",
+      10.0,
+      4,
+      10.0
+    ],
+    [
+      "duration_pooled",
+      10.0,
+      4,
+      100.0
+    ],
+    [
+      "duration_pooled",
+      100.0,
+      2,
+      1.0
+    ],
+    [
+      "duration_pooled",
+      100.0,
+      2,
+      10.0
+    ],
+    [
+      "duration_pooled",
+      100.0,
+      2,
+      100.0
+    ],
+    [
+      "duration_pooled",
+      100.0,
+      4,
+      1.0
+    ],
+    [
+      "duration_pooled",
+      100.0,
+      4,
+      10.0
+    ],
+    [
+      "duration_pooled",
+      100.0,
+      4,
+      100.0
+    ]
+  ],
+  "outer_selection": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "capacity",
+      "spec": [
+        "capacity",
+        100.0,
+        2,
+        10.0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "duration",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "duration_pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "selected",
+      "spec": [
+        "capacity",
+        100.0,
+        2,
+        10.0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "capacity",
+      "spec": [
+        "capacity",
+        100.0,
+        4,
+        10.0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "duration",
+      "spec": [
+        "duration",
+        100.0,
+        4,
+        10.0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "pooled",
+      "spec": [
+        "pooled",
+        100.0,
+        4,
+        100.0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "duration_pooled",
+      "spec": [
+        "duration_pooled",
+        100.0,
+        4,
+        100.0
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "selected",
+      "spec": [
+        "duration_pooled",
+        100.0,
+        4,
+        100.0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "capacity",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "duration",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "duration_pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "selected",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "capacity",
+      "spec": [
+        "capacity",
+        100.0,
+        4,
+        10.0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "duration",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "duration_pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "selected",
+      "spec": [
+        "capacity",
+        100.0,
+        4,
+        10.0
+      ]
+    }
+  ],
+  "prior_2025_inspection": true,
+  "scope": "Equal-player conditional recorded pressure rate. Whole-player nested choices; all source nuisance/geometry/noise and scouting transforms fitted within training folds. No unobserved individualized curve identification claim.",
+  "forward_selection": [
+    {
+      "family": "conventional",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "family": "capacity",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "family": "duration",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "family": "pooled",
+      "spec": [
+        "pooled",
+        10.0,
+        4,
+        1.0
+      ]
+    },
+    {
+      "family": "duration_pooled",
+      "spec": [
+        "conventional",
+        100.0,
+        0,
+        10.0
+      ]
+    },
+    {
+      "family": "selected",
+      "spec": [
+        "pooled",
+        10.0,
+        4,
+        1.0
+      ]
+    }
+  ],
+  "forward_validation_mse": [
+    0.002357783517571411,
+    0.0017382983997207438,
+    0.0015656764331467997,
+    0.0017887025545551703,
+    0.0017859384886389899,
+    0.0015714621759281182,
+    0.0015712848108691115,
+    0.0017942346112878947,
+    0.0019961248593129257,
+    0.0015870326571177506,
+    0.0016995836507418698,
+    0.0015424319291769606,
+    0.0016008423267117682,
+    0.0016198271381896688,
+    0.0012346814157664832,
+    0.0022478695967619333,
+    0.0020685601240648128,
+    0.0015106925070220158,
+    0.001512331282913079,
+    0.0015149674624580904,
+    0.0014063371392981062,
+    0.0016120292277696428,
+    0.001595726630405551,
+    0.0017906487091500231,
+    0.0017787390345434355,
+    0.0017759630116625917,
+    0.0019106415541355816,
+    0.0019201127003215244,
+    0.001924742494559313,
+    0.0015886496574517356,
+    0.00158669109774128,
+    0.0015852995684854999,
+    0.0016729844242703714,
+    0.0016961895063402255,
+    0.0017002935781916216
+  ],
+  "development": {
+    "players": 45,
+    "mse": {
+      "conventional": 0.0009532293987675863,
+      "capacity": 0.0009503859203402673,
+      "duration": 0.001005360745365821,
+      "pooled": 0.0009470056417770051,
+      "duration_pooled": 0.0010038427219682088,
+      "selected": 0.0010017701553138019
+    },
+    "versus_conventional": {
+      "capacity": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009503859203402673,
+        "relative_gain": 0.0029829948918857294,
+        "absolute_gain": 2.8434784273190025e-06,
+        "athlete_bootstrap_95": [
+          -2.063583536297334e-06,
+          8.253199503184066e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "duration": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.001005360745365821,
+        "relative_gain": -0.054689193037514766,
+        "absolute_gain": -5.213134659823481e-05,
+        "athlete_bootstrap_95": [
+          -0.00014242827082427026,
+          1.804415767573275e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "pooled": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0009470056417770051,
+        "relative_gain": 0.006529128244080364,
+        "absolute_gain": 6.22375699058109e-06,
+        "athlete_bootstrap_95": [
+          -2.566819430545691e-05,
+          3.698272913360438e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "duration_pooled": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0010038427219682088,
+        "relative_gain": -0.053096687183651195,
+        "absolute_gain": -5.061332320062262e-05,
+        "athlete_bootstrap_95": [
+          -0.00013925525179391059,
+          1.7942489556106996e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "selected": {
+        "baseline_mse": 0.0009532293987675863,
+        "candidate_mse": 0.0010017701553138019,
+        "relative_gain": -0.05092242917494263,
+        "absolute_gain": -4.854075654621559e-05,
+        "athlete_bootstrap_95": [
+          -0.0001381892788221976,
+          2.0330920879828952e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      }
+    },
+    "versus_duration": {
+      "pooled": {
+        "baseline_mse": 0.001005360745365821,
+        "candidate_mse": 0.0009470056417770051,
+        "relative_gain": 0.058043944780818126,
+        "absolute_gain": 5.835510358881589e-05,
+        "athlete_bootstrap_95": [
+          -1.6152858165596758e-05,
+          0.00015439133640533022
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "duration_pooled": {
+        "baseline_mse": 0.001005360745365821,
+        "candidate_mse": 0.0010038427219682088,
+        "relative_gain": 0.0015099290524416436,
+        "absolute_gain": 1.5180233976121924e-06,
+        "athlete_bootstrap_95": [
+          -6.434096397684798e-06,
+          1.0825624985898469e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "selected": {
+        "baseline_mse": 0.001005360745365821,
+        "candidate_mse": 0.0010017701553138019,
+        "relative_gain": 0.003571444447746566,
+        "absolute_gain": 3.5905900520192203e-06,
+        "athlete_bootstrap_95": [
+          -5.831256279126016e-06,
+          1.3876106114459929e-05
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      }
+    }
+  },
+  "exploratory_2025": {
+    "players": 29,
+    "mse": {
+      "conventional": 0.0006904210445883678,
+      "capacity": 0.0006904210445883678,
+      "duration": 0.0006904210445883678,
+      "pooled": 0.0008188535905279931,
+      "duration_pooled": 0.0006904210445883678,
+      "selected": 0.0008188535905279931
+    },
+    "versus_conventional": {
+      "capacity": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0006904210445883678,
+        "relative_gain": 0.0,
+        "absolute_gain": 0.0,
+        "athlete_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "duration": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0006904210445883678,
+        "relative_gain": 0.0,
+        "absolute_gain": 0.0,
+        "athlete_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "pooled": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0008188535905279931,
+        "relative_gain": -0.1860206129959398,
+        "absolute_gain": -0.0001284325459396253,
+        "athlete_bootstrap_95": [
+          -0.0003876539023097104,
+          0.00011238252073351018
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "duration_pooled": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0006904210445883678,
+        "relative_gain": 0.0,
+        "absolute_gain": 0.0,
+        "athlete_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "selected": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0008188535905279931,
+        "relative_gain": -0.1860206129959398,
+        "absolute_gain": -0.0001284325459396253,
+        "athlete_bootstrap_95": [
+          -0.0003876539023097104,
+          0.00011238252073351018
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      }
+    },
+    "versus_duration": {
+      "pooled": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0008188535905279931,
+        "relative_gain": -0.1860206129959398,
+        "absolute_gain": -0.0001284325459396253,
+        "athlete_bootstrap_95": [
+          -0.0003876539023097104,
+          0.00011238252073351018
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "duration_pooled": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0006904210445883678,
+        "relative_gain": 0.0,
+        "absolute_gain": 0.0,
+        "athlete_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      },
+      "selected": {
+        "baseline_mse": 0.0006904210445883678,
+        "candidate_mse": 0.0008188535905279931,
+        "relative_gain": -0.1860206129959398,
+        "absolute_gain": -0.0001284325459396253,
+        "athlete_bootstrap_95": [
+          -0.0003876539023097104,
+          0.00011238252073351018
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 29
+      }
+    }
+  }
+}

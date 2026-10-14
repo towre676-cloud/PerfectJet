@@ -1,0 +1,115 @@
+{
+  "protocol": "Previously conventional-selected fold-local and 2024 configs locked, identical 16 whole-athlete bootstraps per family. No new feature/config search. All scaling, physical residualization and PCA refitted inside each training resample. Four source availability flags and sprint availability shared.",
+  "bag_count": 16,
+  "prior_2025_inspection": true,
+  "families": {
+    "conventional": 0,
+    "summaries": 138,
+    "sequence": 298,
+    "shuffled": 298
+  },
+  "nested": {
+    "players": 45,
+    "player_rate_mse": {
+      "conventional": 0.0009976460555967727,
+      "summaries": 0.0016854939135752562,
+      "sequence": 0.0016371908463926309,
+      "shuffled": 0.0019377579374101727
+    },
+    "comparisons": {
+      "conventional->summaries": {
+        "delta_mse": -0.0006878478579784834,
+        "relative_reduction": -0.6894708339893411,
+        "ci95": [
+          -0.0015029943558743865,
+          -0.00011185529563815547
+        ]
+      },
+      "conventional->sequence": {
+        "delta_mse": -0.000639544790795858,
+        "relative_reduction": -0.6410537957906269,
+        "ci95": [
+          -0.001545748768269887,
+          -3.8379050861167504e-05
+        ]
+      },
+      "conventional->shuffled": {
+        "delta_mse": -0.0009401118818134006,
+        "relative_reduction": -0.9423300744180698,
+        "ci95": [
+          -0.0022835530794155685,
+          -0.00013630816652635962
+        ]
+      },
+      "summaries->sequence": {
+        "delta_mse": 4.83030671826253e-05,
+        "relative_reduction": 0.028658108340578473,
+        "ci95": [
+          -0.00024258969799745078,
+          0.00039072203477271723
+        ]
+      },
+      "shuffled->sequence": {
+        "delta_mse": 0.00030056709101754236,
+        "relative_reduction": 0.15511075207838004,
+        "ci95": [
+          -2.3446091617369357e-05,
+          0.000804169783364931
+        ]
+      }
+    },
+    "uncertainty": "Paired resampling of fixed player predictions only. No model-refitting, adaptive-search or onset-model uncertainty is covered."
+  },
+  "exploratory_2025": {
+    "players": 29,
+    "player_rate_mse": {
+      "conventional": 0.0005750755264042483,
+      "summaries": 0.0005643088634926922,
+      "sequence": 0.000576279648982661,
+      "shuffled": 0.0005963034328305514
+    },
+    "comparisons": {
+      "conventional->summaries": {
+        "delta_mse": 1.076666291155606e-05,
+        "relative_reduction": 0.018722171988219256,
+        "ci95": [
+          -3.446184110454927e-05,
+          5.6749794876477114e-05
+        ]
+      },
+      "conventional->sequence": {
+        "delta_mse": -1.20412257841279e-06,
+        "relative_reduction": -0.002093851195410382,
+        "ci95": [
+          -4.8600973470151564e-05,
+          4.328869715082314e-05
+        ]
+      },
+      "conventional->shuffled": {
+        "delta_mse": -2.122790642630325e-05,
+        "relative_reduction": -0.036913249567468345,
+        "ci95": [
+          -7.829549823466364e-05,
+          3.504849768715725e-05
+        ]
+      },
+      "summaries->sequence": {
+        "delta_mse": -1.1970785489968844e-05,
+        "relative_reduction": -0.021213179987777855,
+        "ci95": [
+          -4.258437158309832e-05,
+          1.4809170955111578e-05
+        ]
+      },
+      "shuffled->sequence": {
+        "delta_mse": 2.0023783847890466e-05,
+        "relative_reduction": 0.03357985673978255,
+        "ci95": [
+          -1.1489768959071683e-05,
+          5.2526483624415456e-05
+        ]
+      }
+    },
+    "uncertainty": "Paired resampling of fixed player predictions only. No model-refitting, adaptive-search or onset-model uncertainty is covered."
+  }
+}

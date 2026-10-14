@@ -1,0 +1,25 @@
+{
+  "cold_execution_completed": true,
+  "code_cells": 5,
+  "comparisons": 32,
+  "maximum_mse_difference": 0.0,
+  "markdown_and_stream_words": 991,
+  "figures": [
+    "figure_1.png",
+    "figure_2.png",
+    "figure_3.png"
+  ],
+  "software_tests_passed": 40,
+  "restricted_data_packaged": false,
+  "embedded_sources_match_current": true,
+  "source_sha256": {
+    "analysis.py": "03abc5d6a5b1a74bcb9f038fa60cd62574acd9e459e7faf6ab009ea9dfcfe519",
+    "repo_predict.py": "db27f6ea463cf829e72e7b7b7aa891adc0539de6240599bc89dcdc758a3bf04b",
+    "mechanism.py": "5df271425fe6beb8bdd879f49b3c2074ea45adfcf886a110ce36f12022df411e",
+    "observability.py": "96c30e72491f920ed4a9cde803a4a0334a5fb1992fc5290bc71339d92e014445",
+    "turn_transfer.py": "b8c7fab1913d76d725c6b0bedaf0d5079d92601049caafe65f42d2bb82ec0f80",
+    "post_release_transfer.py": "c80cc3e63a6cba53ab8dd5b6a7f0a8c2737d209d0278f3c189b0e9ebc5e093b4",
+    "yac_reference_correction.py": "2f21aaf805270ff53d38c125ff6480b027c877478311bfdcc9d9986337565426",
+    "ordered_motion.py": "66e752bbe891888dfcb892dfc27207100144b9148d24531de81ac578ce0d232f"
+  }
+}

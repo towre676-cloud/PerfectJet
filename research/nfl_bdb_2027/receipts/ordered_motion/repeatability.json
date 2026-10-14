@@ -1,0 +1,28 @@
+{
+  "repeat_attempt_pairs": 38,
+  "players": 30,
+  "selection": "Seven predesignated radius-1-second descriptors; no outcome-dependent ranking",
+  "metrics": {
+    "speed_acceleration_area": {
+      "spearman": 0.6185578290841449
+    },
+    "speed_turn_rate_area": {
+      "spearman": 0.5640660903818798
+    },
+    "acceleration_turn_rate_area": {
+      "spearman": 0.6785206258890469
+    },
+    "approach_occupancy": {
+      "spearman": 0.6183389867600394
+    },
+    "brake_occupancy": {
+      "spearman": 0.7216325637378268
+    },
+    "redirect_occupancy": {
+      "spearman": 0.3756428493270599
+    },
+    "recover_occupancy": {
+      "spearman": 0.379800853485064
+    }
+  }
+}

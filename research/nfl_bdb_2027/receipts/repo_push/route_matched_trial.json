@@ -1,0 +1,176 @@
+{
+  "scope": "exploratory route-matched population; original 2025 inspection disclosed",
+  "mapping": {
+    "IN": [
+      "DAGGER_ROUTE_LEFT"
+    ],
+    "OUT": [
+      "SPEED_OUT_ROUTE_LEFT"
+    ],
+    "SLANT": [
+      "SLANT_ROUTE_LEFT"
+    ],
+    "HITCH": [
+      "CURL_ROUTE_RIGHT",
+      "COMEBACK_ROUTE_RIGHT"
+    ]
+  },
+  "players_by_class": {
+    "2023": 24,
+    "2024": 19,
+    "2025": 16
+  },
+  "routes_by_class": {
+    "2023": 2829,
+    "2024": 1989,
+    "2025": 1424
+  },
+  "selected": {
+    "conventional": {
+      "config": {
+        "reg": "forest",
+        "alpha": 0,
+        "k": 4
+      },
+      "validation_mse": 2.979676341174718,
+      "exploratory_2025_mse": 2.8321078246398894,
+      "exploratory_2025_rmse": 1.682886753361583
+    },
+    "route_matched": {
+      "config": {
+        "reg": "forest",
+        "alpha": 0,
+        "k": 4
+      },
+      "validation_mse": 2.9821248405028573,
+      "exploratory_2025_mse": 2.8218767604800763,
+      "exploratory_2025_rmse": 1.6798442667342934
+    }
+  },
+  "paired_improvement": {
+    "delta_mse": 0.010231064159812762,
+    "ci95": [
+      -0.006857817440877513,
+      0.027016332669352355
+    ],
+    "players": 16
+  },
+  "validation_bank": [
+    {
+      "family": "conventional",
+      "config": 0,
+      "validation_mse": 3.0265648070898608
+    },
+    {
+      "family": "conventional",
+      "config": 1,
+      "validation_mse": 3.108929526438588
+    },
+    {
+      "family": "conventional",
+      "config": 2,
+      "validation_mse": 3.405461350055237
+    },
+    {
+      "family": "conventional",
+      "config": 3,
+      "validation_mse": 2.979676341174718
+    },
+    {
+      "family": "conventional",
+      "config": 4,
+      "validation_mse": 3.0005219198969377
+    },
+    {
+      "family": "route_matched",
+      "config": 0,
+      "validation_mse": 3.0286422521272756
+    },
+    {
+      "family": "route_matched",
+      "config": 1,
+      "validation_mse": 3.112158573125579
+    },
+    {
+      "family": "route_matched",
+      "config": 2,
+      "validation_mse": 3.423587658798956
+    },
+    {
+      "family": "route_matched",
+      "config": 3,
+      "validation_mse": 2.9821248405028573
+    },
+    {
+      "family": "route_matched",
+      "config": 4,
+      "validation_mse": 2.9899852365474455
+    }
+  ],
+  "nested_earlier_data": {
+    "players": 43,
+    "routes": 4818,
+    "conventional_mse": 3.1765656975764567,
+    "matched_mse": 3.159422234838957,
+    "paired_improvement": {
+      "delta_mse": 0.017143462737500205,
+      "ci95": [
+        -0.0038196724048414296,
+        0.03895833265865183
+      ],
+      "players": 43
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "family": "conventional",
+        "chosen_config": 3,
+        "outer_mse": 3.087675203073575
+      },
+      {
+        "fold": 0,
+        "family": "route_matched",
+        "chosen_config": 3,
+        "outer_mse": 3.0610365152714367
+      },
+      {
+        "fold": 1,
+        "family": "conventional",
+        "chosen_config": 4,
+        "outer_mse": 3.484660391078428
+      },
+      {
+        "fold": 1,
+        "family": "route_matched",
+        "chosen_config": 4,
+        "outer_mse": 3.4845916554008096
+      },
+      {
+        "fold": 2,
+        "family": "conventional",
+        "chosen_config": 0,
+        "outer_mse": 3.149279477141692
+      },
+      {
+        "fold": 2,
+        "family": "route_matched",
+        "chosen_config": 3,
+        "outer_mse": 3.0874205437173616
+      },
+      {
+        "fold": 3,
+        "family": "conventional",
+        "chosen_config": 4,
+        "outer_mse": 2.982167153518063
+      },
+      {
+        "fold": 3,
+        "family": "route_matched",
+        "chosen_config": 4,
+        "outer_mse": 2.998094616682438
+      }
+    ],
+    "test_2025_outcomes_used": false,
+    "drill_dictionary_scope": "fixed from all supplied Combine availability; 2025 outcome labels excluded from nested fitting"
+  }
+}

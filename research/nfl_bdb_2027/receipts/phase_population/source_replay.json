@@ -1,0 +1,7 @@
+{
+  "fresh_source_reconstruction_attempts": 361,
+  "compared_coordinates": 108,
+  "maximum_absolute_difference": 3.3306690738754696e-16,
+  "tolerance": 1e-10,
+  "note": "Independent reconstruction from actual source CSV after vectorizing the exact recurrence, before fitted predictions were inspected."
+}

@@ -1,0 +1,15 @@
+{
+  "DynaComp_archive_sha256": "725e265ed753c5f56f286dee80793c8562f3ea39ce8505011177d65c196bd3e5",
+  "imported_unchanged": {
+    "src/dynacomp/bounds.py": "4b69f6b799c852a20ac4def464f29e066a718cedbca067c07370f7cc3c54e246",
+    "src/dynacomp/rational.py": "027a48a2788ee5ddb788cde7cc5076c30a271c69eb8ff7707f3085bdab5c26ea",
+    "src/dynacomp/finite.py": "7e1b38782c72304a3af46fcc41b79d83acac97d28471a5399a772f939fbe5329"
+  },
+  "license_note": "No license file present in donor archive; user-owned code reuse authorized by this task. No third-party license invented.",
+  "other_adaptations": {
+    "WIND": "Target-conditioned finite branch diameter, rank-flip and annotation-value audits inspired by observational-fibre reasoning; new NFL implementation, not imported wind inversion or calibrated error likelihood.",
+    "PerfectPower": "Preserved finite movement-language engine plus fixed finite branch calculations; no arithmetic/quantum physiology.",
+    "SOE": "DynaComp finite all-future observational equivalence on declared quantized source traces; no equivalence claim for unseen athlete behavior.",
+    "geometry": "Entry/exit motion-relative coordinates and dimensionless recovery; numerical rigid-motion invariance tested."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "status": "completed_actual_data_diagnostics",
+  "raw_yac_identity_shuffles": {
+    "mse": [
+      5.487873217407818,
+      6.271084931393538,
+      5.771262261614509,
+      6.550396246382852,
+      7.027191154941859,
+      5.12473290572177,
+      8.029750349125166,
+      4.9692906477007535,
+      6.997014484823279,
+      4.916176345390548,
+      5.374536219811827,
+      5.106179828498028,
+      5.8934975414008735,
+      5.222744551003408,
+      6.170437257719816,
+      6.112974046308012,
+      5.6504841543305995,
+      5.353648232931837,
+      5.957576652528374,
+      5.723641686763532,
+      5.689040723660294,
+      5.361805813101556,
+      5.425803259555254,
+      5.515916263643201,
+      6.135447487715278,
+      6.960043797727687,
+      5.658525380740935,
+      5.8962473224463565,
+      6.056221242868157,
+      5.039052364044128
+    ],
+    "mean_mse": 5.848286545710042,
+    "real_profile_mse": 4.939145844234219,
+    "selected_config": 1,
+    "scope": "Whole training-player profiles swapped within class; selected configuration fixed; no reselection-based p-value."
+  },
+  "raw_YAC_vs_provided_reference_same_finite_subset": {
+    "catches": 75,
+    "reference_mse": 4.946158921305103,
+    "execution_mse": 4.899367921507224,
+    "paired": {
+      "delta_mse": 0.04679099979787959,
+      "ci95": [
+        -1.6235583205874147,
+        1.7714721488011511
+      ],
+      "players": 11,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    }
+  },
+  "leave_one_player_out_raw_YAC_delta_range": [
+    0.5519319519066501,
+    1.1679998825798288
+  ],
+  "same_drill_repeat_pairs": 38,
+  "same_drill_first_last_spearman": {
+    "entry": 0.9538242696137433,
+    "angle": 0.7614618667250246,
+    "burden": 0.6371003409927336,
+    "retention": 0.6754568333515701,
+    "exit_ratio": 0.525549841339315,
+    "area": 0.7975708502024291
+  },
+  "source_game_demand_overlap_2025": {
+    "IN": {
+      "game_turns": 201,
+      "inside_earlier_source_5_95_rectangle_fraction": 0.1691542288557214
+    },
+    "OUT": {
+      "game_turns": 150,
+      "inside_earlier_source_5_95_rectangle_fraction": 0.06666666666666667
+    },
+    "SLANT": {
+      "game_turns": 84,
+      "inside_earlier_source_5_95_rectangle_fraction": 0.14285714285714285
+    },
+    "HITCH": {
+      "game_turns": 82,
+      "inside_earlier_source_5_95_rectangle_fraction": 0.024390243902439025
+    }
+  },
+  "interpretation": "Support mismatch, small player counts and profile controls constrain transfer claims. LOO ranges are sensitivity diagnostics, not independent studies."
+}

@@ -1,0 +1,34 @@
+{
+  "anchor_scope": "Exact original pre-release first-turn anchors; only response follow-up extended",
+  "anchors": 2630,
+  "extended_turns": 2630,
+  "rejected_followup": {},
+  "incomplete_half_second": 0,
+  "players_by_year": {
+    "2023": 23,
+    "2024": 18,
+    "2025": 15
+  },
+  "turns_by_year": {
+    "2023": 1174,
+    "2024": 851,
+    "2025": 517
+  },
+  "recovery_bounds": {
+    "rows": 2630,
+    "observed_recovered_fraction": 0.7129277566539924,
+    "recovered_fraction_lower": 0.7129277566539924,
+    "recovered_fraction_upper": 0.7129277566539924,
+    "unresolved_before_horizon": 0,
+    "right_censored_total": 544,
+    "horizon_seconds": 0.5,
+    "scope": "Distribution-free bounds over observed records; no independent-censoring assumption. Not player balanced."
+  },
+  "target_catches_by_year": {
+    "2023": 201,
+    "2024": 146,
+    "2025": 81
+  },
+  "prior_2025_inspection": true,
+  "limitations": "NFL post-release movement may include catching or route termination; lower deficit is not universally better, especially on intentional stop routes."
+}

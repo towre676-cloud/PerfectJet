@@ -1,0 +1,244 @@
+{
+  "status": "completed_actual_data_repeated_partition_check",
+  "initial_seed_increment": {
+    "delta_mse": -0.0008983282323353288,
+    "ci95": [
+      -0.006057993281892399,
+      0.0035227308050776477
+    ],
+    "players": 44,
+    "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+  },
+  "repeated_partitions": [
+    {
+      "seed": 20271716,
+      "baseline_mse": 0.6921381451782578,
+      "motion_mse": 0.688776372950768,
+      "increment": {
+        "delta_mse": 0.003361772227489734,
+        "ci95": [
+          -0.0005592057018948202,
+          0.007127508198878057
+        ],
+        "players": 44,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "folds": [
+        {
+          "family": "conventional",
+          "fold": 0,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8308246730867808,
+            0.8731273628783861,
+            1.1069982057588506,
+            0.7663667181265855,
+            0.7001326565684854
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 0,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.9448855500459091,
+            0.997319782735595,
+            1.153433946053107,
+            0.77370152707672,
+            0.7023169338555405
+          ]
+        },
+        {
+          "family": "conventional",
+          "fold": 1,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.7749310107654485,
+            0.8729803927499805,
+            1.1282379288869562,
+            0.7460294421970669,
+            0.695820716356637
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 1,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.9736272520983603,
+            0.9989331664772458,
+            1.1663011741044822,
+            0.7427641421303481,
+            0.6897063532560406
+          ]
+        },
+        {
+          "family": "conventional",
+          "fold": 2,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8580050018455115,
+            0.9278405872155373,
+            1.1709579785487445,
+            0.7919365137976414,
+            0.7483017623787344
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 2,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.7838207361170242,
+            0.8932170314972595,
+            1.197279056923865,
+            0.7760743471698989,
+            0.7506366976374818
+          ]
+        },
+        {
+          "family": "conventional",
+          "fold": 3,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.776942150765846,
+            0.8568132730918739,
+            1.0821986786823572,
+            0.7323845842676073,
+            0.6971195758443341
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 3,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.7391934528232108,
+            0.8393602792577664,
+            1.0838983149841068,
+            0.73745602833988,
+            0.6982924356460098
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 20271916,
+      "baseline_mse": 0.7003525410009032,
+      "motion_mse": 0.6969224498455039,
+      "increment": {
+        "delta_mse": 0.003430091155399248,
+        "ci95": [
+          -0.001741552304946727,
+          0.008818066234059722
+        ],
+        "players": 44,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "folds": [
+        {
+          "family": "conventional",
+          "fold": 0,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8149549022084103,
+            0.8741072438882004,
+            1.0994409729675125,
+            0.7410991254162598,
+            0.694494328955236
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 0,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8164091892336272,
+            0.8859546987901793,
+            1.1140201088683925,
+            0.7419555058506928,
+            0.6928305983341717
+          ]
+        },
+        {
+          "family": "conventional",
+          "fold": 1,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8229241971438852,
+            0.8886262834885955,
+            1.128121095101898,
+            0.7892033434581017,
+            0.7229838709172943
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 1,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.7852240509003848,
+            0.8737020040936431,
+            1.1339230941167913,
+            0.7908735429752544,
+            0.7209505235778914
+          ]
+        },
+        {
+          "family": "conventional",
+          "fold": 2,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8904308303759519,
+            0.8773967267815226,
+            1.1018316549071558,
+            0.7866008116623827,
+            0.7139405988972364
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 2,
+          "chosen_config": 4,
+          "inner_mse": [
+            1.0196280246034408,
+            1.128819480315018,
+            1.2444716405134717,
+            0.7800071086717688,
+            0.7003028906615789
+          ]
+        },
+        {
+          "family": "conventional",
+          "fold": 3,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.8041688718557815,
+            0.8787028361119562,
+            1.1233896073531218,
+            0.7624071461279524,
+            0.7100712486600679
+          ]
+        },
+        {
+          "family": "target_motion",
+          "fold": 3,
+          "chosen_config": 4,
+          "inner_mse": [
+            0.7769415242135498,
+            0.8763613932702229,
+            1.1264665213544844,
+            0.7526462898636495,
+            0.7052267374360142
+          ]
+        }
+      ]
+    }
+  ],
+  "three_partition_mean_player_delta_mse": 0.001964511716851217,
+  "conditional_ci95": [
+    -0.0014145623797458347,
+    0.0050656857071073435
+  ],
+  "scope": "All repetitions reuse the same 44 earlier-season players. Conditional bootstrap averages each player over partitions; no independent-replication claim."
+}

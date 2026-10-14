@@ -1,0 +1,19 @@
+{
+  "eligible_records": 14665,
+  "pressure_timestamp_present": 1012,
+  "other_annotations": {
+    "quick_pressure": {
+      "positive_records": 313,
+      "positive_with_missing_pressure_timestamp": 0
+    },
+    "sack": {
+      "positive_records": 129,
+      "positive_with_missing_pressure_timestamp": 0
+    },
+    "time_to_qb_hurry": {
+      "positive_records": 1034,
+      "positive_with_missing_pressure_timestamp": 22
+    }
+  },
+  "scope": "Direct record consistency audit. Missing pressure timestamps remain absent recorded indicators, not proven negative physical pressure events; no causal or censoring interpretation inferred."
+}

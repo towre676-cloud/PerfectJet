@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "repository": "towre676-cloud/perfectpower",
+      "path": "python/perfectpower/observable_machine.py",
+      "blob_sha": "3ddb32476bdf07c99cd029d36b38cfde11f82a82",
+      "url": "https://github.com/towre676-cloud/perfectpower/blob/main/python/perfectpower/observable_machine.py",
+      "vendored": true,
+      "usage": "Pinned exact rational implementation"
+    },
+    {
+      "repository": "towre676-cloud/perfectpower",
+      "path": "python/perfectpower/exact_linear.py",
+      "blob_sha": "1506251583c9fb47c8ff239faaeb89c4ecb1f589",
+      "url": "https://github.com/towre676-cloud/perfectpower/blob/main/python/perfectpower/exact_linear.py",
+      "vendored": true,
+      "usage": "Pinned exact rational implementation"
+    },
+    {
+      "repository": "towre676-cloud/DynaComp",
+      "path": "src/dynacomp/memory.py",
+      "blob_sha": "a6d3c826f488392f87120da789a4926cef84d48c",
+      "url": "https://github.com/towre676-cloud/DynaComp/blob/main/src/dynacomp/memory.py",
+      "vendored": false,
+      "usage": "Reviewed architecture; no unlicensed source copied"
+    },
+    {
+      "repository": "towre676-cloud/DynaComp",
+      "path": "src/dynacomp/realization.py",
+      "blob_sha": "2836dc8ea0c1b91d40c277be3d743d881fa8eac7",
+      "url": "https://github.com/towre676-cloud/DynaComp/blob/main/src/dynacomp/realization.py",
+      "vendored": false,
+      "usage": "Reviewed architecture; no unlicensed source copied"
+    },
+    {
+      "repository": "towre676-cloud/DynaComp",
+      "path": "src/dynacomp/krylov.py",
+      "blob_sha": "eb673e8aec638cb0a752c958245151371fbc073e",
+      "url": "https://github.com/towre676-cloud/DynaComp/blob/main/src/dynacomp/krylov.py",
+      "vendored": false,
+      "usage": "Reviewed architecture; no unlicensed source copied"
+    }
+  ],
+  "pp_tree": "baea4f3d5e75d4f67b832339f84a705c3f5af1c3",
+  "dynacomp_tree": "cd788c7ac695728e3f5b22056a0f99a2c1e1463c",
+  "license": "Vendored PerfectPower files Apache-2.0; application code MIT",
+  "compatibility_exception": "Standalone divisor_square.py provides only WorkLimit; observable-machine source retained"
+}

@@ -1,0 +1,136 @@
+{
+  "status": "development_only_nested_player_validation",
+  "years": [
+    2023,
+    2024
+  ],
+  "test_2025_outcomes_used": false,
+  "drill_dictionary_scope": "fixed using full supplied Combine drill availability, including 2025; no outcome-based selection",
+  "players": 47,
+  "routes": 5611,
+  "baseline_mse": 3.127347580267022,
+  "motion_mse": 3.132058004157259,
+  "paired_improvement": {
+    "delta_mse": -0.004710423890237232,
+    "ci95": [
+      -0.015683279888571766,
+      0.0066993398640281514
+    ],
+    "players": 47
+  },
+  "fold_receipts": [
+    {
+      "outer_fold": 0,
+      "family": "baseline",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.1892204042912886,
+        3.2702712423735005,
+        3.580610647098025,
+        3.0816328223674874,
+        3.0438388947774544
+      ],
+      "outer_mse": 3.3748111638555915,
+      "outer_players": 13
+    },
+    {
+      "outer_fold": 0,
+      "family": "all",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.1999914345782496,
+        3.2797954939420833,
+        3.6078970956733376,
+        3.0741395794584796,
+        3.0474718094115745
+      ],
+      "outer_mse": 3.3848998013618536,
+      "outer_players": 13
+    },
+    {
+      "outer_fold": 1,
+      "family": "baseline",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.2850591014888955,
+        3.414128848152915,
+        3.735560524960873,
+        3.2686790906508647,
+        3.242096867752711
+      ],
+      "outer_mse": 2.858836849326077,
+      "outer_players": 11
+    },
+    {
+      "outer_fold": 1,
+      "family": "all",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.2946707535269275,
+        3.421646888124402,
+        3.8072216260933267,
+        3.2854840278053588,
+        3.2602292476796486
+      ],
+      "outer_mse": 2.8651836047120187,
+      "outer_players": 11
+    },
+    {
+      "outer_fold": 2,
+      "family": "baseline",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.302827539132952,
+        3.385933835350921,
+        3.6751357138961303,
+        3.2439502193019956,
+        3.1734173795348215
+      ],
+      "outer_mse": 3.058679384927074,
+      "outer_players": 12
+    },
+    {
+      "outer_fold": 2,
+      "family": "all",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.2959284351688196,
+        3.388972058352563,
+        3.70064108003695,
+        3.2469101373321636,
+        3.1849307041182535
+      ],
+      "outer_mse": 3.0563500039478138,
+      "outer_players": 12
+    },
+    {
+      "outer_fold": 3,
+      "family": "baseline",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.2819425651336904,
+        3.3597703444058293,
+        3.648478006655393,
+        3.2160019422782646,
+        3.1617991533109584
+      ],
+      "outer_mse": 3.178312107337781,
+      "outer_players": 11
+    },
+    {
+      "outer_fold": 3,
+      "family": "all",
+      "chosen_config": 4,
+      "inner_scores": [
+        3.3202953954791945,
+        3.37426372651845,
+        3.7079953090914644,
+        3.2051892980699432,
+        3.1652280356452653
+      ],
+      "outer_mse": 3.1827099162255554,
+      "outer_players": 11
+    }
+  ],
+  "scope": "unseen players in pooled earlier seasons; complements but does not replace a future-season holdout"
+}

@@ -1,0 +1,65 @@
+{
+  "repeated_nested_results": [
+    {
+      "outer_seed": 20271086,
+      "mse": {
+        "context": 3.1274878086431803,
+        "physical": 3.1280364304580504,
+        "motion": 3.128297745062126
+      },
+      "paired_motion_increment": {
+        "delta_mse": -0.00026131460407556324,
+        "ci95": [
+          -0.0015760986319016616,
+          0.001217457984991725
+        ],
+        "players": 43
+      }
+    },
+    {
+      "outer_seed": 20271286,
+      "mse": {
+        "context": 3.18574189737602,
+        "physical": 3.1861252887698175,
+        "motion": 3.1861364851801057
+      },
+      "paired_motion_increment": {
+        "delta_mse": -1.1196410288182158e-05,
+        "ci95": [
+          -0.001726809033985063,
+          0.0019086217227930104
+        ],
+        "players": 43
+      }
+    },
+    {
+      "outer_seed": 20271486,
+      "mse": {
+        "context": 3.144073924240541,
+        "physical": 3.151113999917071,
+        "motion": 3.1528891531423016
+      },
+      "paired_motion_increment": {
+        "delta_mse": -0.00177515322523102,
+        "ci95": [
+          -0.006209700025727404,
+          0.0020404880909451776
+        ],
+        "players": 43
+      }
+    }
+  ],
+  "partition_hashes": [
+    "3da5c0f76c5ceba78fdc6d55537e13bb174cc7f659362d941c85964e52b4a480",
+    "22ab2d21559bbff4aa65a9cf345ec4761d0831a3f6babdcece4dad1ae214cee7",
+    "e26dc11228354ba6ecdee080412ac0b7d58d70420316e023187d6141131590aa"
+  ],
+  "split_method": "Stratify unique players by draft year, then map all their routes to each fold",
+  "mean_player_delta_mse": -0.0006825547465315883,
+  "conditional_player_ci95": [
+    -0.0024845639065053256,
+    0.0011244478723478211
+  ],
+  "positive_split_count": 0,
+  "scope": "Repeated folds share players; these are not three independent studies. Bootstrap averages each player across splits and conditions on fitted folds."
+}

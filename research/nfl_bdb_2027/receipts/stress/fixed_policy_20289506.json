@@ -1,0 +1,94 @@
+{
+  "alpha": 1000,
+  "adaptive_after_primary_and_situation_inspection": true,
+  "no_family_selection": true,
+  "seed": 20289506,
+  "development": {
+    "players": 45,
+    "mse": {
+      "conventional": 0.0011425239819939956,
+      "capacity_only": 0.001133492041778847,
+      "raw_motion": 0.0012329265087964373,
+      "matched_recovery": 0.001207720414440829,
+      "stress_curve": 0.0012237879521317763,
+      "robust_recovery": 0.0012216208371857067
+    },
+    "comparisons": {
+      "capacity_only": {
+        "absolute_gain": 9.03194021514878e-06,
+        "relative_gain": 0.007905252193818936,
+        "conditional_ci95": [
+          -1.2125062133470927e-06,
+          1.9592554010583836e-05
+        ]
+      },
+      "raw_motion": {
+        "absolute_gain": -9.040252680244183e-05,
+        "relative_gain": -0.07912527721708422,
+        "conditional_ci95": [
+          -0.00019780553818806386,
+          -1.4150945370695482e-05
+        ]
+      },
+      "matched_recovery": {
+        "absolute_gain": -6.519643244683355e-05,
+        "relative_gain": -0.05706351330415766,
+        "conditional_ci95": [
+          -0.00013920249986477422,
+          -9.04644728694063e-06
+        ]
+      },
+      "stress_curve": {
+        "absolute_gain": -8.126397013778082e-05,
+        "relative_gain": -0.07112670842668395,
+        "conditional_ci95": [
+          -0.0001738425198345793,
+          -1.2070452509931708e-05
+        ]
+      },
+      "robust_recovery": {
+        "absolute_gain": -7.909685519171095e-05,
+        "relative_gain": -0.0692299299080504,
+        "conditional_ci95": [
+          -0.00017285782521502842,
+          -8.74743170238234e-06
+        ]
+      }
+    },
+    "versus_capacity": {
+      "raw_motion": {
+        "absolute_gain": -9.943446701759059e-05,
+        "relative_gain": -0.08772400983207874,
+        "conditional_ci95": [
+          -0.00021115505948382177,
+          -1.8299298080739276e-05
+        ]
+      },
+      "matched_recovery": {
+        "absolute_gain": -7.422837266198235e-05,
+        "relative_gain": -0.06548645241963232,
+        "conditional_ci95": [
+          -0.0001522395989020426,
+          -1.2456013405556695e-05
+        ]
+      },
+      "stress_curve": {
+        "absolute_gain": -9.029591035292957e-05,
+        "relative_gain": -0.07966170650057991,
+        "conditional_ci95": [
+          -0.0001898107957865991,
+          -1.34972225053597e-05
+        ]
+      },
+      "robust_recovery": {
+        "absolute_gain": -8.812879540685971e-05,
+        "relative_gain": -0.07774981398947865,
+        "conditional_ci95": [
+          -0.000185498742692179,
+          -1.3860779815073705e-05
+        ]
+      }
+    },
+    "scope": "Paired fixed-prediction player bootstrap, omitting refitting and adaptive-search uncertainty; outcomes constructed by held-out context reference."
+  }
+}

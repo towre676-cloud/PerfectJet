@@ -1,0 +1,514 @@
+{
+  "status": "completed_reconstructed_actual_data",
+  "target": "future_speed",
+  "outer_seed": 20271516,
+  "nested": {
+    "mse": {
+      "conventional_without_state": 0.9654067874572102,
+      "conventional_with_state": 0.7093494850980849,
+      "pca_with_state": 0.7098816622648921,
+      "target_motion_with_state": 0.7102478133304202,
+      "pca_without_state": 0.967664903845511,
+      "target_motion_without_state": 0.9679041120806336
+    },
+    "comparisons": {
+      "state_channel": {
+        "delta_mse": 0.2560573023591251,
+        "ci95": [
+          0.2067261091325415,
+          0.3220547529012255
+        ],
+        "players": 44,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "target_motion_increment": {
+        "delta_mse": -0.0008983282323353288,
+        "ci95": [
+          -0.006057993281892399,
+          0.0035227308050776477
+        ],
+        "players": 44,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "pca_increment": {
+        "delta_mse": -0.0005321771668072856,
+        "ci95": [
+          -0.005897031031142691,
+          0.004137323641028126
+        ],
+        "players": 44,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "target_motion_scouting": {
+        "delta_mse": -0.0024973246234235302,
+        "ci95": [
+          -0.005328622990882146,
+          0.00028547891898927826
+        ],
+        "players": 44,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      }
+    },
+    "players": 44,
+    "rows": 9101
+  },
+  "exploratory_2025": {
+    "mse": {
+      "conventional_without_state": 0.9722564935050565,
+      "conventional_with_state": 0.6468873513960948,
+      "pca_with_state": 0.6457189251533174,
+      "target_motion_with_state": 0.6446826372107144,
+      "pca_without_state": 0.9715869635089108,
+      "target_motion_without_state": 0.9680996319259781
+    },
+    "comparisons": {
+      "state_channel": {
+        "delta_mse": 0.3253691421089616,
+        "ci95": [
+          0.26236289705522203,
+          0.39855286887319735
+        ],
+        "players": 18,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "target_motion_increment": {
+        "delta_mse": 0.0022047141853803725,
+        "ci95": [
+          -0.00225526769736483,
+          0.007065402742472328
+        ],
+        "players": 18,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "pca_increment": {
+        "delta_mse": 0.0011684262427773984,
+        "ci95": [
+          -0.005347474319229775,
+          0.009188616020567166
+        ],
+        "players": 18,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "target_motion_scouting": {
+        "delta_mse": 0.0041568615790785165,
+        "ci95": [
+          -0.0008434888909486481,
+          0.009390942059400458
+        ],
+        "players": 18,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      }
+    },
+    "players": 18,
+    "rows": 3392
+  },
+  "folds": [
+    {
+      "family": "conventional_without_state",
+      "fold": 0,
+      "inner_mse": [
+        1.0693420791461261,
+        1.2329949476669768,
+        1.3434757984733972,
+        0.9781382892701584,
+        0.9637415058541411
+      ],
+      "config": 4,
+      "train_player_hash": "344b28933656b04d936099843518a911285124fe0aad6e77751fa3908cab0801",
+      "test_player_hash": "2e87549b13fadec66be451a5ddc440cf48d92e368be95fc3803fde4c77f92aa7"
+    },
+    {
+      "family": "conventional_without_state",
+      "fold": 1,
+      "inner_mse": [
+        1.0790709686924822,
+        1.1440606952842574,
+        1.2279377220912235,
+        0.9603974387854824,
+        0.9090576498537484
+      ],
+      "config": 4,
+      "train_player_hash": "52fe9459d4279b3d30d7e89d6978a3355f86bbdbd6c4d4c44896c00ed2693f49",
+      "test_player_hash": "6be1716d4e457cd6ba901cf5417691c56beb3f6f3baff0bc8da979e03ae9eab1"
+    },
+    {
+      "family": "conventional_without_state",
+      "fold": 2,
+      "inner_mse": [
+        1.1477593366269871,
+        1.2397789956311398,
+        1.3330969503450245,
+        1.0402424264654615,
+        0.9631168310749953
+      ],
+      "config": 4,
+      "train_player_hash": "a5559d77187dc3a75c7eae6341e00f3351a9d21d091d50fccc67ab8537412f05",
+      "test_player_hash": "b0252954dc1e3d1db03e870eb2c64b9e17b9e549ff38377dbcfa9f7fca88b01b"
+    },
+    {
+      "family": "conventional_without_state",
+      "fold": 3,
+      "inner_mse": [
+        1.1939400826030386,
+        1.2405674000571587,
+        1.302539483063519,
+        1.0089731269834175,
+        0.9217036910641098
+      ],
+      "config": 4,
+      "train_player_hash": "f7731d47aefadcda411b8890a6394fdf7e92a6258c0eaa72541314df3f6265c9",
+      "test_player_hash": "6094be6e9349b87264381aa6b7e45fed1c5cb692ef68ff02404c95e450b785e4"
+    },
+    {
+      "family": "conventional_with_state",
+      "fold": 0,
+      "inner_mse": [
+        0.7853670881846391,
+        0.8890856572658161,
+        1.1402898155023464,
+        0.7531267126517442,
+        0.7228922457272237
+      ],
+      "config": 4,
+      "train_player_hash": "344b28933656b04d936099843518a911285124fe0aad6e77751fa3908cab0801",
+      "test_player_hash": "2e87549b13fadec66be451a5ddc440cf48d92e368be95fc3803fde4c77f92aa7"
+    },
+    {
+      "family": "conventional_with_state",
+      "fold": 1,
+      "inner_mse": [
+        0.8041597722470128,
+        0.8459826898687975,
+        1.0619460001053092,
+        0.7214386600948849,
+        0.6967677608474925
+      ],
+      "config": 4,
+      "train_player_hash": "52fe9459d4279b3d30d7e89d6978a3355f86bbdbd6c4d4c44896c00ed2693f49",
+      "test_player_hash": "6be1716d4e457cd6ba901cf5417691c56beb3f6f3baff0bc8da979e03ae9eab1"
+    },
+    {
+      "family": "conventional_with_state",
+      "fold": 2,
+      "inner_mse": [
+        0.8103160069039355,
+        0.8914875019897875,
+        1.1333477810111925,
+        0.7764225614874033,
+        0.7127858856310124
+      ],
+      "config": 4,
+      "train_player_hash": "a5559d77187dc3a75c7eae6341e00f3351a9d21d091d50fccc67ab8537412f05",
+      "test_player_hash": "b0252954dc1e3d1db03e870eb2c64b9e17b9e549ff38377dbcfa9f7fca88b01b"
+    },
+    {
+      "family": "conventional_with_state",
+      "fold": 3,
+      "inner_mse": [
+        0.8818328679679217,
+        0.9043476024813114,
+        1.1190973661114232,
+        0.7657800565618031,
+        0.7008640020584505
+      ],
+      "config": 4,
+      "train_player_hash": "f7731d47aefadcda411b8890a6394fdf7e92a6258c0eaa72541314df3f6265c9",
+      "test_player_hash": "6094be6e9349b87264381aa6b7e45fed1c5cb692ef68ff02404c95e450b785e4"
+    },
+    {
+      "family": "pca_with_state",
+      "fold": 0,
+      "inner_mse": [
+        0.7529430174469595,
+        0.8791315805789948,
+        1.1696770330230757,
+        0.7651448611225024,
+        0.7209118559322034
+      ],
+      "config": 4,
+      "train_player_hash": "344b28933656b04d936099843518a911285124fe0aad6e77751fa3908cab0801",
+      "test_player_hash": "2e87549b13fadec66be451a5ddc440cf48d92e368be95fc3803fde4c77f92aa7"
+    },
+    {
+      "family": "pca_with_state",
+      "fold": 1,
+      "inner_mse": [
+        0.723288100081272,
+        0.8114686169879309,
+        1.0509165075569877,
+        0.7112060311310145,
+        0.6901016113623303
+      ],
+      "config": 4,
+      "train_player_hash": "52fe9459d4279b3d30d7e89d6978a3355f86bbdbd6c4d4c44896c00ed2693f49",
+      "test_player_hash": "6be1716d4e457cd6ba901cf5417691c56beb3f6f3baff0bc8da979e03ae9eab1"
+    },
+    {
+      "family": "pca_with_state",
+      "fold": 2,
+      "inner_mse": [
+        0.8614540915571527,
+        0.9158136476071513,
+        1.1611976780851623,
+        0.7823239698099069,
+        0.715480205059731
+      ],
+      "config": 4,
+      "train_player_hash": "a5559d77187dc3a75c7eae6341e00f3351a9d21d091d50fccc67ab8537412f05",
+      "test_player_hash": "b0252954dc1e3d1db03e870eb2c64b9e17b9e549ff38377dbcfa9f7fca88b01b"
+    },
+    {
+      "family": "pca_with_state",
+      "fold": 3,
+      "inner_mse": [
+        0.8811700602655557,
+        0.987170475277388,
+        1.1808009385414182,
+        0.7724022162608765,
+        0.7008423558303741
+      ],
+      "config": 4,
+      "train_player_hash": "f7731d47aefadcda411b8890a6394fdf7e92a6258c0eaa72541314df3f6265c9",
+      "test_player_hash": "6094be6e9349b87264381aa6b7e45fed1c5cb692ef68ff02404c95e450b785e4"
+    },
+    {
+      "family": "target_motion_with_state",
+      "fold": 0,
+      "inner_mse": [
+        0.8040517315300284,
+        0.9155524361445067,
+        1.1889071874472679,
+        0.7531877151479497,
+        0.7208496429232326
+      ],
+      "config": 4,
+      "train_player_hash": "344b28933656b04d936099843518a911285124fe0aad6e77751fa3908cab0801",
+      "test_player_hash": "2e87549b13fadec66be451a5ddc440cf48d92e368be95fc3803fde4c77f92aa7"
+    },
+    {
+      "family": "target_motion_with_state",
+      "fold": 1,
+      "inner_mse": [
+        0.7026692916568843,
+        0.8000196508250433,
+        1.041880158182317,
+        0.7122455292792931,
+        0.6840930018703438
+      ],
+      "config": 4,
+      "train_player_hash": "52fe9459d4279b3d30d7e89d6978a3355f86bbdbd6c4d4c44896c00ed2693f49",
+      "test_player_hash": "6be1716d4e457cd6ba901cf5417691c56beb3f6f3baff0bc8da979e03ae9eab1"
+    },
+    {
+      "family": "target_motion_with_state",
+      "fold": 2,
+      "inner_mse": [
+        0.8058554985709531,
+        0.9053600029076504,
+        1.1519868001569658,
+        0.781341220015768,
+        0.7140176576713192
+      ],
+      "config": 4,
+      "train_player_hash": "a5559d77187dc3a75c7eae6341e00f3351a9d21d091d50fccc67ab8537412f05",
+      "test_player_hash": "b0252954dc1e3d1db03e870eb2c64b9e17b9e549ff38377dbcfa9f7fca88b01b"
+    },
+    {
+      "family": "target_motion_with_state",
+      "fold": 3,
+      "inner_mse": [
+        0.9538062545801429,
+        1.0050470294283815,
+        1.1387620700685064,
+        0.7730004947807947,
+        0.7007151712226226
+      ],
+      "config": 4,
+      "train_player_hash": "f7731d47aefadcda411b8890a6394fdf7e92a6258c0eaa72541314df3f6265c9",
+      "test_player_hash": "6094be6e9349b87264381aa6b7e45fed1c5cb692ef68ff02404c95e450b785e4"
+    },
+    {
+      "family": "pca_without_state",
+      "fold": 0,
+      "inner_mse": [
+        1.1916809471068561,
+        1.3086986870713229,
+        1.3858265914657997,
+        0.9791070011832893,
+        0.9670975516808581
+      ],
+      "config": 4,
+      "train_player_hash": "344b28933656b04d936099843518a911285124fe0aad6e77751fa3908cab0801",
+      "test_player_hash": "2e87549b13fadec66be451a5ddc440cf48d92e368be95fc3803fde4c77f92aa7"
+    },
+    {
+      "family": "pca_without_state",
+      "fold": 1,
+      "inner_mse": [
+        1.1228147846921477,
+        1.1483995872091366,
+        1.2258360778864326,
+        0.9573385376343575,
+        0.9076589946095223
+      ],
+      "config": 4,
+      "train_player_hash": "52fe9459d4279b3d30d7e89d6978a3355f86bbdbd6c4d4c44896c00ed2693f49",
+      "test_player_hash": "6be1716d4e457cd6ba901cf5417691c56beb3f6f3baff0bc8da979e03ae9eab1"
+    },
+    {
+      "family": "pca_without_state",
+      "fold": 2,
+      "inner_mse": [
+        1.1646184696468305,
+        1.2941760827955067,
+        1.3765897839010381,
+        1.0439473147936758,
+        0.967424537495078
+      ],
+      "config": 4,
+      "train_player_hash": "a5559d77187dc3a75c7eae6341e00f3351a9d21d091d50fccc67ab8537412f05",
+      "test_player_hash": "b0252954dc1e3d1db03e870eb2c64b9e17b9e549ff38377dbcfa9f7fca88b01b"
+    },
+    {
+      "family": "pca_without_state",
+      "fold": 3,
+      "inner_mse": [
+        1.2437165510241377,
+        1.357188424056855,
+        1.3688611891940168,
+        1.02521215315287,
+        0.9249372692580424
+      ],
+      "config": 4,
+      "train_player_hash": "f7731d47aefadcda411b8890a6394fdf7e92a6258c0eaa72541314df3f6265c9",
+      "test_player_hash": "6094be6e9349b87264381aa6b7e45fed1c5cb692ef68ff02404c95e450b785e4"
+    },
+    {
+      "family": "target_motion_without_state",
+      "fold": 0,
+      "inner_mse": [
+        1.18225625231517,
+        1.3445010563758177,
+        1.382006426857816,
+        0.9785148188147196,
+        0.9632797210268231
+      ],
+      "config": 4,
+      "train_player_hash": "344b28933656b04d936099843518a911285124fe0aad6e77751fa3908cab0801",
+      "test_player_hash": "2e87549b13fadec66be451a5ddc440cf48d92e368be95fc3803fde4c77f92aa7"
+    },
+    {
+      "family": "target_motion_without_state",
+      "fold": 1,
+      "inner_mse": [
+        1.0541716323932298,
+        1.1525451538836904,
+        1.237681300070154,
+        0.9618625575382902,
+        0.91341361305098
+      ],
+      "config": 4,
+      "train_player_hash": "52fe9459d4279b3d30d7e89d6978a3355f86bbdbd6c4d4c44896c00ed2693f49",
+      "test_player_hash": "6be1716d4e457cd6ba901cf5417691c56beb3f6f3baff0bc8da979e03ae9eab1"
+    },
+    {
+      "family": "target_motion_without_state",
+      "fold": 2,
+      "inner_mse": [
+        1.204056609133431,
+        1.3380990738972243,
+        1.3779465957287353,
+        1.0403885573573797,
+        0.9647324341344201
+      ],
+      "config": 4,
+      "train_player_hash": "a5559d77187dc3a75c7eae6341e00f3351a9d21d091d50fccc67ab8537412f05",
+      "test_player_hash": "b0252954dc1e3d1db03e870eb2c64b9e17b9e549ff38377dbcfa9f7fca88b01b"
+    },
+    {
+      "family": "target_motion_without_state",
+      "fold": 3,
+      "inner_mse": [
+        1.2736727377393686,
+        1.3785735207973497,
+        1.356683612723371,
+        1.0019663245157342,
+        0.9244224881121714
+      ],
+      "config": 4,
+      "train_player_hash": "f7731d47aefadcda411b8890a6394fdf7e92a6258c0eaa72541314df3f6265c9",
+      "test_player_hash": "6094be6e9349b87264381aa6b7e45fed1c5cb692ef68ff02404c95e450b785e4"
+    }
+  ],
+  "forward_selection": [
+    {
+      "family": "conventional_without_state",
+      "config": 4,
+      "validation_mse": [
+        1.215777725044296,
+        1.2808173807461667,
+        1.373651436428786,
+        1.047509695756866,
+        1.0154290379000077
+      ]
+    },
+    {
+      "family": "conventional_with_state",
+      "config": 4,
+      "validation_mse": [
+        0.8968647574665503,
+        0.9981029253026259,
+        1.2218248234402709,
+        0.8606426307479842,
+        0.830190502079555
+      ]
+    },
+    {
+      "family": "pca_with_state",
+      "config": 4,
+      "validation_mse": [
+        0.8636450431184958,
+        0.9427325694439174,
+        1.2059756950479472,
+        0.8605918465268587,
+        0.8327807980519664
+      ]
+    },
+    {
+      "family": "target_motion_with_state",
+      "config": 4,
+      "validation_mse": [
+        1.1025403513422045,
+        1.2905867758570804,
+        1.4787864077567952,
+        0.8697400573963576,
+        0.8306453517259561
+      ]
+    },
+    {
+      "family": "pca_without_state",
+      "config": 4,
+      "validation_mse": [
+        1.2324752121140978,
+        1.2965937129251706,
+        1.357570417501412,
+        1.0505853514714718,
+        1.0138458152135148
+      ]
+    },
+    {
+      "family": "target_motion_without_state",
+      "config": 4,
+      "validation_mse": [
+        1.2415509093183579,
+        1.3156290063267901,
+        1.387290643204744,
+        1.0521931267341538,
+        1.003663644221949
+      ]
+    }
+  ],
+  "selection": "Unique-player class-stratified 4 outer / 3 inner folds; matched 5 candidate models. 2023 training/2024 tuning then 2025 exploratory transport. All transformations train-only.",
+  "prior_2025_inspection": true,
+  "not_identical_to_lost_implementation": true
+}

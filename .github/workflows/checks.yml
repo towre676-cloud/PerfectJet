@@ -7,15 +7,21 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
+      - run: python -m pip install -e '.[scouting]'
       - run: python -m unittest discover -s tests -v
         env:
           PYTHONPATH: src
       - run: python -m perfectjet.cli report --output results/replay-ci.json
         env:
           PYTHONPATH: src
+      - run: python -m perfectjet.cli math-bridges --output results/math-bridges-ci.json
+        env:
+          PYTHONPATH: src
       - run: python scripts/check_coverage.py
       - uses: actions/upload-artifact@v4
         with:
           name: perfectjet-exact-replay
-          path: results/replay-ci.json
+          path: |
+            results/replay-ci.json
+            results/math-bridges-ci.json

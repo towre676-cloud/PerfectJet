@@ -1,0 +1,228 @@
+{
+  "target": "nfl_speed_capacity",
+  "seed": 20275706,
+  "folds": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "config": 2,
+      "inner_loss": [
+        0.40605736740445475,
+        0.2310092492831357,
+        0.16630544043376483,
+        0.1743886841508894
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "ceiling",
+      "config": 3,
+      "inner_loss": [
+        0.29161540563391625,
+        0.20564918983561245,
+        0.1631821029767825,
+        0.1581504968054365
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "shape",
+      "config": 2,
+      "inner_loss": [
+        0.3135544960149121,
+        0.19979352317059487,
+        0.16096277771706155,
+        0.1618161851394254
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "config": 3,
+      "inner_loss": [
+        0.41328566715636256,
+        0.22016662264276998,
+        0.14057126835140407,
+        0.11936406918839293
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "ceiling",
+      "config": 3,
+      "inner_loss": [
+        0.3911642271048519,
+        0.22130970130103464,
+        0.14039480388522177,
+        0.12490247726188086
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "shape",
+      "config": 3,
+      "inner_loss": [
+        0.41997189491605247,
+        0.23108200793331166,
+        0.14115989821101016,
+        0.13295765628848963
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "config": 2,
+      "inner_loss": [
+        0.35119335362711007,
+        0.2606318203628411,
+        0.17282242652672217,
+        0.17907741449151468
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "ceiling",
+      "config": 2,
+      "inner_loss": [
+        0.3315551524640559,
+        0.2369107947855931,
+        0.16981963044611859,
+        0.1806715226052943
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "shape",
+      "config": 2,
+      "inner_loss": [
+        0.4945454635291701,
+        0.2477239207113875,
+        0.168925205968078,
+        0.1800257810768272
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "config": 2,
+      "inner_loss": [
+        0.37490760955980407,
+        0.2940528829627177,
+        0.18398327475566467,
+        0.19459926046803144
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "ceiling",
+      "config": 2,
+      "inner_loss": [
+        0.3781734076834113,
+        0.29226838388145326,
+        0.1827570942661146,
+        0.20320495799341967
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "shape",
+      "config": 2,
+      "inner_loss": [
+        0.3546732219693171,
+        0.28337024148485107,
+        0.18052327084984868,
+        0.2035173676872093
+      ]
+    }
+  ],
+  "selection": [
+    {
+      "family": "conventional",
+      "config": 2,
+      "validation_loss": [
+        0.4186840284259574,
+        0.27547175902114673,
+        0.1576277949289692,
+        0.17211651304321163
+      ]
+    },
+    {
+      "family": "ceiling",
+      "config": 2,
+      "validation_loss": [
+        0.421897652235398,
+        0.27430196981542343,
+        0.15660302911851884,
+        0.17065740535393614
+      ]
+    },
+    {
+      "family": "shape",
+      "config": 2,
+      "validation_loss": [
+        0.41504798390135117,
+        0.2532031280859465,
+        0.14909683791939915,
+        0.17171897525180113
+      ]
+    }
+  ],
+  "prior_2025_other_WR_targets_inspected": true,
+  "inputs_pre_draft_only": true,
+  "nested": {
+    "mse": {
+      "conventional": 0.1507631647126861,
+      "ceiling": 0.14001132804380367,
+      "shape": 0.14405440236137876
+    },
+    "comparisons": {
+      "ceiling": {
+        "delta_mse": 0.01075183666888242,
+        "ci95": [
+          -0.00841382741683772,
+          0.033329788384073786
+        ],
+        "players": 43,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "shape": {
+        "delta_mse": 0.006708762351307327,
+        "ci95": [
+          -0.004782674807722071,
+          0.01904211722541619
+        ],
+        "players": 43,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      }
+    },
+    "players": 43
+  },
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 0.08668477265415384,
+      "ceiling": 0.08605921947757342,
+      "shape": 0.09445586122167071
+    },
+    "comparisons": {
+      "ceiling": {
+        "delta_mse": 0.0006255531765804222,
+        "ci95": [
+          -0.0033813160713860755,
+          0.004632147143613225
+        ],
+        "players": 16,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "shape": {
+        "delta_mse": -0.007771088567516859,
+        "ci95": [
+          -0.02115263579864092,
+          0.0030475437570472185
+        ],
+        "players": 16,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      }
+    },
+    "players": 16
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "status": "actual_data_completed",
+  "primary_delta_mse_yards_squared": -0.30209591518735646,
+  "player_bootstrap_ci95": [
+    -0.6157226519476884,
+    -0.07817879195463705
+  ],
+  "test_players": 17,
+  "test_routes": 1737,
+  "results": [
+    {
+      "model": "ridge_conventional",
+      "test_player_balanced_mse": 3.0204428128322927,
+      "test_rmse_yards": 1.7379421201042031,
+      "validation_mse": 3.029967828610272
+    },
+    {
+      "model": "ridge_tracking",
+      "test_player_balanced_mse": 3.322538728019649,
+      "test_rmse_yards": 1.8227832367068908,
+      "validation_mse": 3.0461789757438904
+    },
+    {
+      "model": "ridge_physical_context_interactions",
+      "test_player_balanced_mse": 3.4137062688901647,
+      "test_rmse_yards": 1.8476217872958103,
+      "validation_mse": 3.0528513852390025
+    },
+    {
+      "model": "ridge_scouting_reference",
+      "test_player_balanced_mse": 3.0299703269449045,
+      "test_rmse_yards": 1.7406809951696791,
+      "validation_mse": 3.0313142352995825
+    },
+    {
+      "model": "forest_conventional",
+      "test_player_balanced_mse": 2.960604334412962,
+      "test_rmse_yards": 1.7206406755662154,
+      "validation_mse": 3.0088466363488573
+    },
+    {
+      "model": "forest_tracking",
+      "test_player_balanced_mse": 2.9765659656374828,
+      "test_rmse_yards": 1.7252727221043873,
+      "validation_mse": 3.0352118068590888
+    },
+    {
+      "model": "forest_physical_context_interactions",
+      "test_player_balanced_mse": 2.980417714788201,
+      "test_rmse_yards": 1.726388633763615,
+      "validation_mse": 3.0338134019606944
+    },
+    {
+      "model": "forest_scouting_reference",
+      "test_player_balanced_mse": 2.969176522852462,
+      "test_rmse_yards": 1.7231298624457942,
+      "validation_mse": 3.0140953395520262
+    }
+  ],
+  "selection": {
+    "ridge_conventional": {
+      "alpha": 1,
+      "validation_mse": 3.029967828610272
+    },
+    "ridge_tracking": {
+      "alpha": 1,
+      "validation_mse": 3.0461789757438904
+    },
+    "ridge_physical_context_interactions": {
+      "alpha": 1,
+      "validation_mse": 3.0528513852390025
+    },
+    "ridge_scouting_reference": {
+      "alpha": 1,
+      "validation_mse": 3.0313142352995825
+    },
+    "forest_conventional": {
+      "alpha": 10,
+      "validation_mse": 3.0088466363488573
+    },
+    "forest_tracking": {
+      "alpha": 10,
+      "validation_mse": 3.0352118068590888
+    },
+    "forest_physical_context_interactions": {
+      "alpha": 10,
+      "validation_mse": 3.0338134019606944
+    },
+    "forest_scouting_reference": {
+      "alpha": 10,
+      "validation_mse": 3.0140953395520262
+    }
+  },
+  "interpretation": "positive delta favors motion; CI crossing zero is inconclusive; cohort-generalization requires more years",
+  "selection_warning": "Exploratory models cannot replace the preregistered primary contrast after observing test labels."
+}

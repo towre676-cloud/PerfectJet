@@ -1,0 +1,15 @@
+{
+  "primary": "charted player_get_off seconds, not reaction time alone",
+  "secondary": "time_to_pressure timestamp observed indicator among get-off-charted records",
+  "positions": [
+    "DE",
+    "DT",
+    "NT",
+    "OLB"
+  ],
+  "models": "five equal-budget candidates per family; 4 outer/3 inner unique-player earlier-class splits; 2023 training/2024 tuning; refit earlier classes then 2025 exploratory transport",
+  "baseline_controls": "conventional body/timed/NGS, NFL position and alignment role, starting depth/width/speed, common situation and teams, five source-drill availability flags",
+  "source": "26 sprint dynamic descriptors plus 14 descriptors in four skill drills; player medians, train-only physical residualization, PCA, squared and body-mass interactions",
+  "prototype": "Initial pilot omitted source-availability flags, retained separately. Strengthened baseline specified before inspecting its forward scores; no 2025 score selects a configuration.",
+  "previous_2025_inspection": "WR/DB targets previously inspected. All present work called exploratory; any DL follow-up after this first look is adaptive."
+}

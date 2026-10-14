@@ -1,0 +1,9 @@
+{
+  "scope": "measurement consistency only; no predictive outcomes used",
+  "interior_active_wr_frames": 83712,
+  "rejected_attempts_time_quality": 0,
+  "coordinate_derived_vs_reported_speed_correlation": 0.99965761486998,
+  "median_absolute_difference": 0.03145726516447578,
+  "median_ratio": 1.0027670464317158,
+  "interpretation": "Agreement supports the coordinate derivative scale; neither signal is independent ground truth. No predictive-value claim."
+}

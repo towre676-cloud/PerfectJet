@@ -1,0 +1,16 @@
+{
+  "notebook": "notebooks/Canonical_Movement_Findings.ipynb",
+  "executed_code_cells": 4,
+  "embedded_modules_byte_equal": 14,
+  "directly_matched_notebook_scores": 16,
+  "maximum_score_difference": 0.0,
+  "training_player_refits": 512,
+  "word_count_including_stream_output": 959,
+  "figures": 3,
+  "integrated_tests": 54,
+  "donor_tests": 18,
+  "total_tests": 72,
+  "source_data_and_cohort_hashes_match_parallel_release": true,
+  "source_core_preserved": true,
+  "provenance": "New model comparisons fully refitted in notebook; source extraction reused verified private reconstructions; bootstrap resumes512 computed refits. Fresh notebook rebuilds both source representations and cohort from official CSVs."
+}

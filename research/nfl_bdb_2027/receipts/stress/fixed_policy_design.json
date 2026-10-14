@@ -1,0 +1,8 @@
+{
+  "adaptive_after_primary_and_context_scores": true,
+  "reason": "Source-grid selector overfits earlier-player folds; audit the already-used strongest shrinkage without a hyperparameter search",
+  "alpha": 1000,
+  "families": "All six, no selection basedon2025",
+  "validation": "Same three declared earlier-player partitions; one exploratory2025 check",
+  "claim": "Diagnostic of model-selection instability, not a fresh test or promised improvement"
+}

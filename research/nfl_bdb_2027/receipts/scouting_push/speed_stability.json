@@ -1,0 +1,9 @@
+{
+  "partitions": 3,
+  "mean_delta": 0.0127195592392702,
+  "conditional_ci95": [
+    -0.005642640099349997,
+    0.034139479854636834
+  ],
+  "scope": "Same earlier players, source-ceiling family, conditional predictions, exploratory."
+}

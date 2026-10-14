@@ -1,0 +1,111 @@
+{
+  "adaptive_after_phase_concat_and_prior_2025_inspection": true,
+  "method": "Fixed unchanged outer conventional16-athlete-ensemble plus player-level Ridge100 source correction; rank4 physical-conditioned PCA, squared components and mass interactions; intercept zero. Training residuals from three player-separated conventional16-athlete-ensemble fits. No hyperparameter selection or choosing among reported families.",
+  "scaled_and_support_limited": false,
+  "scaling_rule": "Unscaled nonlinear coordinates retained as failed first correction.",
+  "alpha": 100,
+  "nested": {
+    "players": 45,
+    "player_rate_mse": {
+      "conventional": 0.0009976460555967727,
+      "summaries": 0.0018139970742602593,
+      "sequence": 0.0015580348147615853,
+      "shuffled": 0.0016048152672989682
+    },
+    "comparisons": {
+      "conventional->summaries": {
+        "delta_mse": -0.0008163510186634865,
+        "relative_reduction": -0.8182771976932852,
+        "ci95": [
+          -0.0021796787029544134,
+          0.00014054480877816747
+        ]
+      },
+      "conventional->sequence": {
+        "delta_mse": -0.0005603887591648124,
+        "relative_reduction": -0.5617109956191814,
+        "ci95": [
+          -0.0018696622923946456,
+          0.000332069192001587
+        ]
+      },
+      "conventional->shuffled": {
+        "delta_mse": -0.0006071692117021952,
+        "relative_reduction": -0.6086018265656333,
+        "ci95": [
+          -0.0020356791881211075,
+          0.00035533657157121585
+        ]
+      },
+      "summaries->sequence": {
+        "delta_mse": 0.0002559622594986742,
+        "relative_reduction": 0.14110400900346248,
+        "ci95": [
+          -0.00014485051430933673,
+          0.0007556146755839207
+        ]
+      },
+      "shuffled->sequence": {
+        "delta_mse": 4.6780452537382834e-05,
+        "relative_reduction": 0.02915005452067892,
+        "ci95": [
+          -0.00017203902873387742,
+          0.0002882633385611707
+        ]
+      }
+    },
+    "uncertainty": "Paired resampling of fixed player predictions only. No model-refitting, adaptive-search or onset-model uncertainty is covered."
+  },
+  "exploratory_2025": {
+    "players": 29,
+    "player_rate_mse": {
+      "conventional": 0.0005750755264042483,
+      "summaries": 0.0009111974468799254,
+      "sequence": 0.000959405557259169,
+      "shuffled": 0.0011184281610214437
+    },
+    "comparisons": {
+      "conventional->summaries": {
+        "delta_mse": -0.0003361219204756771,
+        "relative_reduction": -0.5844830896862073,
+        "ci95": [
+          -0.0007903445451536971,
+          3.223766530832275e-05
+        ]
+      },
+      "conventional->sequence": {
+        "delta_mse": -0.0003843300308549207,
+        "relative_reduction": -0.6683122706646999,
+        "ci95": [
+          -0.0009684329374856803,
+          4.345491058476012e-05
+        ]
+      },
+      "conventional->shuffled": {
+        "delta_mse": -0.0005433526346171956,
+        "relative_reduction": -0.9448369990887889,
+        "ci95": [
+          -0.0012999837609016533,
+          3.09451579821336e-05
+        ]
+      },
+      "summaries->sequence": {
+        "delta_mse": -4.820811037924359e-05,
+        "relative_reduction": -0.05290632732160881,
+        "ci95": [
+          -0.0005303843508820848,
+          0.00039084445127210833
+        ]
+      },
+      "shuffled->sequence": {
+        "delta_mse": 0.00015902260376227486,
+        "relative_reduction": 0.14218401262092856,
+        "ci95": [
+          -3.2289754676411073e-05,
+          0.0003646662701249784
+        ]
+      }
+    },
+    "uncertainty": "Paired resampling of fixed player predictions only. No model-refitting, adaptive-search or onset-model uncertainty is covered."
+  }
+}

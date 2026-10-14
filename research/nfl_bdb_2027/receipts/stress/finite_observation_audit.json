@@ -1,0 +1,146 @@
+{
+  "audited_windows": 20,
+  "windows": [
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 58,
+      "same_initial_pairs": 20,
+      "later_distinguishable_pairs": 17
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 70,
+      "same_initial_pairs": 15,
+      "later_distinguishable_pairs": 13
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 62,
+      "same_initial_pairs": 13,
+      "later_distinguishable_pairs": 10
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 61,
+      "same_initial_pairs": 19,
+      "later_distinguishable_pairs": 18
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 41,
+      "same_initial_pairs": 26,
+      "later_distinguishable_pairs": 18
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 41,
+      "same_initial_pairs": 22,
+      "later_distinguishable_pairs": 10
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 35,
+      "same_initial_pairs": 24,
+      "later_distinguishable_pairs": 12
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 55,
+      "same_initial_pairs": 22,
+      "later_distinguishable_pairs": 18
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 65,
+      "same_initial_pairs": 17,
+      "later_distinguishable_pairs": 13
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 33,
+      "same_initial_pairs": 22,
+      "later_distinguishable_pairs": 11
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 49,
+      "same_initial_pairs": 18,
+      "later_distinguishable_pairs": 15
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 42,
+      "same_initial_pairs": 20,
+      "later_distinguishable_pairs": 9
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 70,
+      "same_initial_pairs": 21,
+      "later_distinguishable_pairs": 20
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 26,
+      "same_initial_pairs": 25,
+      "later_distinguishable_pairs": 3
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 50,
+      "same_initial_pairs": 22,
+      "later_distinguishable_pairs": 14
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 40,
+      "same_initial_pairs": 28,
+      "later_distinguishable_pairs": 19
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 53,
+      "same_initial_pairs": 24,
+      "later_distinguishable_pairs": 20
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 46,
+      "same_initial_pairs": 21,
+      "later_distinguishable_pairs": 19
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 62,
+      "same_initial_pairs": 20,
+      "later_distinguishable_pairs": 18
+    },
+    {
+      "branches": 15,
+      "full_states": 90,
+      "quotient_states": 31,
+      "same_initial_pairs": 24,
+      "later_distinguishable_pairs": 13
+    }
+  ],
+  "scope": "Actual branch traces quantized at0.05 normalized velocity. DynaComp all-future equivalence applies to the declared six-frame absorbing finite machine only. It does not certify unobserved athlete behavior. Quantization changes trapezoidal normalized recovery by at most0.025."
+}

@@ -1,0 +1,20 @@
+{
+  "pre_separation_filter_routes": 8487,
+  "measured_routes": 7439,
+  "missing_by_target": {
+    "false": 0.1510521764197175,
+    "true": 0.0
+  },
+  "by_cohort": {
+    "count": {
+      "2023": 3348,
+      "2024": 2311,
+      "2025": 1780
+    },
+    "size": {
+      "2023": 3774,
+      "2024": 2666,
+      "2025": 2047
+    }
+  }
+}

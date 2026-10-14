@@ -1,0 +1,11 @@
+{
+  "status": "Development-only timeline audit found full tracking beyond release; revision fixed before new post-release turn target extraction. Previous WR 2025 inspection remains disclosed.",
+  "reason": "Original pre-release truncation censored 1234/2630 half-second windows. All 1211 development 2023 qualifying turns have at least 1.3 seconds of tracking after release. A later recovery measurement cannot be observed correctly by truncating at the earlier release.",
+  "anchor": "Retain exactly the already frozen first qualifying pre-release turn and its entry speed/angle. Extend response observation using continuous supplied tracking after release. No post-release trajectory selects a different turn.",
+  "response": "Same fixed normalized half-second speed deficit, with genuine full follow-up; record 90% recovery through 1.5 seconds with actual trace-end censoring. No fabricated completion of missing observations.",
+  "models": "Same conventional/source-demands/execution families and five candidate settings as original turn protocol.",
+  "validation": "Same unique-player 4 outer/3 inner nested design; 2023 train/2024 tune/2025 exploratory transport; repeat two earlier-player partitions; retain original negative experiment.",
+  "secondary_separation": "Source-feature association with separation evaluated separately. Post-turn motion cannot cause separation measured at an earlier pass release; do not claim temporal mediation.",
+  "secondary_yac": "If at least ten players per class have >=3 targeted catches with measured YAC, evaluate raw yards-after-catch using the same models and budgets. Include pass length and supplied expected YAC in shared baseline, explicitly an outcome-side catch-context comparator. Otherwise retain feasibility failure.",
+  "interpretation": "Movement style transfer conditional on measured NFL demands, not a universal talent score. Intentional stopping routes may benefit from braking rather than minimizing deficit. Any coaching intervention remains a hypothesis, not a causal effect. No fresh-blind-test claim."
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "perfectjet/math-bridges-verification/1",
+  "version": "0.12.0",
+  "date": "2026-10-14",
+  "full_suite": {
+    "passed": true,
+    "tests": 273,
+    "seconds": 37.482,
+    "log": "results/nfl-math-bridges/tests.log"
+  },
+  "final_training_only_loading_checks": {
+    "passed": true,
+    "tests": 23,
+    "seconds": 2.815,
+    "log": "results/nfl-math-bridges/final_loading_checks.log"
+  },
+  "coverage": {
+    "chapters": 27,
+    "equations": 374,
+    "topics": 451,
+    "previous_equations_preserved": 351,
+    "previous_topics_preserved": 428,
+    "archive_source_hashes": "passed"
+  },
+  "notebooks": {
+    "PerfectJet_Motor_Transfer.ipynb": {
+      "embedded_modules": 46,
+      "hash_match": true,
+      "code_cells_syntax_checked": 4,
+      "executed_on_NFL_data": false
+    },
+    "PerfectJet_Math_Bridges.ipynb": {
+      "embedded_modules": 46,
+      "hash_match": true,
+      "code_cells_syntax_checked": 4,
+      "executed_on_NFL_data": false
+    }
+  },
+  "actual_fitted_fixture_to_allocation_connection": true,
+  "synthetic_fixture_explicitly_labeled": true,
+  "new_real_NFL_scouting_gain_claimed": false,
+  "official_raw_data_execution": "pending: official nine raw CSV inputs unavailable",
+  "remote_CI_at_packaging": "not yet observed; must verify after publication",
+  "preserved_research_parent": "cf0a92bf04ab91c1912cdfa20201a7c4ee605a62"
+}

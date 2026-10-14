@@ -1,0 +1,541 @@
+{
+  "schema": "pp-movement-transfer/1",
+  "baseline_columns": [
+    "combine_height",
+    "combine_weight",
+    "hand_size",
+    "arm_length",
+    "wing_span",
+    "ten_yd_split",
+    "forty",
+    "vertical",
+    "broad_jump",
+    "three_cone",
+    "short_shuttle",
+    "bench_reps",
+    "ngs_athleticism_score",
+    "ngs_college_production_score",
+    "ngs_final_score"
+  ],
+  "families": {
+    "conventional": 0,
+    "kinematic": 24,
+    "ordered": 48,
+    "uncertain": 88,
+    "combined": 160
+  },
+  "nested_selection": [
+    {
+      "outer_fold": 0,
+      "family": "conventional",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0034763434750209976,
+        0.0034763434750209976,
+        0.0018654917750333645,
+        0.0018654917750333645,
+        0.0013850630867062918,
+        0.0013850630867062918
+      ]
+    },
+    {
+      "outer_fold": 0,
+      "family": "kinematic",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.0033317120408104146,
+        0.0027039059164548867,
+        0.0018222781989353813,
+        0.0017869354609681687,
+        0.0013651659931014687,
+        0.0013558534268106708
+      ]
+    },
+    {
+      "outer_fold": 0,
+      "family": "ordered",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.003107844560122725,
+        0.003239487601266696,
+        0.00176820146198038,
+        0.00222211930566449,
+        0.0013572228287001178,
+        0.0014646240234789595
+      ]
+    },
+    {
+      "outer_fold": 0,
+      "family": "uncertain",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.003315378252096516,
+        0.0033045825479754445,
+        0.0018616644297294203,
+        0.0018967772796422654,
+        0.0013125633486465022,
+        0.001324100078859273
+      ]
+    },
+    {
+      "outer_fold": 0,
+      "family": "combined",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.0035192764036699378,
+        0.0032631866244320694,
+        0.0019830229292908423,
+        0.0019310735320281379,
+        0.0013807298863059573,
+        0.0013720720382975563
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "family": "conventional",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.002199064232531167,
+        0.002199064232531167,
+        0.0012202221489521013,
+        0.0012202221489521013,
+        0.0008973130455666953,
+        0.0008973130455666953
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "family": "kinematic",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.0031656963748507593,
+        0.0035079487847765357,
+        0.0013478503809845124,
+        0.001461067442067391,
+        0.0009113865039852196,
+        0.00089834970679641
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "family": "ordered",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.002938755317473518,
+        0.0030324597984670945,
+        0.0016088165719457587,
+        0.0017130094379963299,
+        0.000994089168567155,
+        0.000963811818990407
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "family": "uncertain",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.0021157100615703975,
+        0.0025933366606660496,
+        0.0012339894551066728,
+        0.00124501442249453,
+        0.0008827039904160133,
+        0.000882105650246443
+      ]
+    },
+    {
+      "outer_fold": 1,
+      "family": "combined",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.0027259022207862618,
+        0.0028761605627048016,
+        0.0014142238470391032,
+        0.0013843646425746082,
+        0.0009537751004681849,
+        0.0009257742267338879
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "family": "conventional",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0024747882611827446,
+        0.0024747882611827446,
+        0.0016554782474763297,
+        0.0016554782474763297,
+        0.001201442756200582,
+        0.001201442756200582
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "family": "kinematic",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.002936865311046232,
+        0.00425897145891376,
+        0.0018055840321503653,
+        0.002460927581842948,
+        0.001225287018967556,
+        0.0012728361459476225
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "family": "ordered",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.002882146982122493,
+        0.003325609002789859,
+        0.0017546559907300476,
+        0.002149543300056826,
+        0.0012328602257629913,
+        0.0012748490682271392
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "family": "uncertain",
+      "config": [
+        100.0,
+        4
+      ],
+      "inner_mse": [
+        0.0029402770066511244,
+        0.0026814924998130336,
+        0.0019375738887577945,
+        0.001825898176397133,
+        0.0012808771738267366,
+        0.0011996090644502517
+      ]
+    },
+    {
+      "outer_fold": 2,
+      "family": "combined",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0028285342959104586,
+        0.002751272897883182,
+        0.0018471723328139249,
+        0.00196267962908778,
+        0.0012480711469284348,
+        0.0012541342540235147
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "family": "conventional",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0010531510638455096,
+        0.0010531510638455096,
+        0.0008111766627643163,
+        0.0008111766627643163,
+        0.0007315186716370829,
+        0.0007315186716370829
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "family": "kinematic",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0011028689832920915,
+        0.001974464053723611,
+        0.0008790110225516753,
+        0.0011143105827808289,
+        0.0007392414332210059,
+        0.0007599316589940568
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "family": "ordered",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0011103052259687645,
+        0.0012756471920943068,
+        0.0008141350541706773,
+        0.0009703904654756954,
+        0.0007350463268012458,
+        0.0007880472826284173
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "family": "uncertain",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0011221107256296796,
+        0.0010375126059680893,
+        0.0009835612895369586,
+        0.0009926399392067406,
+        0.0008164833702278781,
+        0.0008381776275932093
+      ]
+    },
+    {
+      "outer_fold": 3,
+      "family": "combined",
+      "config": [
+        100.0,
+        2
+      ],
+      "inner_mse": [
+        0.0010774856961626726,
+        0.001134372080030666,
+        0.0009256460562620255,
+        0.000976749919842748,
+        0.0008037789286328274,
+        0.0008192989513744958
+      ]
+    }
+  ],
+  "forward_selection": [
+    {
+      "family": "conventional",
+      "config": [
+        100.0,
+        2
+      ],
+      "validation_mse": [
+        0.002353134270041479,
+        0.002353134270041479,
+        0.0017666548676233283,
+        0.0017666548676233283,
+        0.0015282435830928957,
+        0.0015282435830928957
+      ]
+    },
+    {
+      "family": "kinematic",
+      "config": [
+        100.0,
+        2
+      ],
+      "validation_mse": [
+        0.0024207530610742115,
+        0.002470833299760958,
+        0.0017258171487216688,
+        0.0018899268072393822,
+        0.0014936249765784366,
+        0.0015595308241250613
+      ]
+    },
+    {
+      "family": "ordered",
+      "config": [
+        100.0,
+        2
+      ],
+      "validation_mse": [
+        0.002596474401600105,
+        0.002911420987319517,
+        0.0017960971593502966,
+        0.0019664734411306926,
+        0.0015203757646200294,
+        0.0015690735062485134
+      ]
+    },
+    {
+      "family": "uncertain",
+      "config": [
+        100.0,
+        4
+      ],
+      "validation_mse": [
+        0.002971421809609418,
+        0.0023983675204066576,
+        0.0020644435850051966,
+        0.0017119438753145963,
+        0.0015996904690652534,
+        0.001457367870298073
+      ]
+    },
+    {
+      "family": "combined",
+      "config": [
+        100.0,
+        2
+      ],
+      "validation_mse": [
+        0.002447256569808126,
+        0.002950407115651649,
+        0.0017696436450923144,
+        0.0021272593555965776,
+        0.0014946665047936374,
+        0.0016707313278040816
+      ]
+    }
+  ],
+  "split_scope": "Entire athletes held out. Imputation, scales, residualization, PCA and alpha selected within training folds. Forward choices use 2023\u21922024 only.",
+  "2025_scope": "Exploratory reuse: this draft class has already been inspected in parallel experiments. No untouched external-test or competition-win claim.",
+  "model_scope": "Equal-player conditional pressure-rate regression. Known NFL position and Combine/source availability included. No NFL-derived movement covariate or outcome enters extraction.",
+  "nested_2023_2024": {
+    "kinematic": {
+      "baseline_mse": 0.0009627668273027141,
+      "candidate_mse": 0.0010038523878860162,
+      "relative_gain": -0.04267446635901177,
+      "absolute_gain": -4.1085560583301944e-05,
+      "athlete_bootstrap_95": [
+        -8.172740413088395e-05,
+        -3.594273433482785e-06
+      ],
+      "players": 45
+    },
+    "ordered": {
+      "baseline_mse": 0.0009627668273027141,
+      "candidate_mse": 0.001010994832251002,
+      "relative_gain": -0.05009313115139556,
+      "absolute_gain": -4.822800494828768e-05,
+      "athlete_bootstrap_95": [
+        -0.00010812461496583895,
+        7.630330638718014e-07
+      ],
+      "players": 45
+    },
+    "uncertain": {
+      "baseline_mse": 0.0009627668273027141,
+      "candidate_mse": 0.0010260581653168499,
+      "relative_gain": -0.06573900992356864,
+      "absolute_gain": -6.329133801413583e-05,
+      "athlete_bootstrap_95": [
+        -0.00015940844450591844,
+        3.0224189624414624e-05
+      ],
+      "players": 45
+    },
+    "combined": {
+      "baseline_mse": 0.0009627668273027141,
+      "candidate_mse": 0.0011372576764274727,
+      "relative_gain": -0.18123895025923553,
+      "absolute_gain": -0.00017449084912475872,
+      "athlete_bootstrap_95": [
+        -0.0002798416681028025,
+        -8.424934407755291e-05
+      ],
+      "players": 45
+    }
+  },
+  "exploratory_2025": {
+    "kinematic": {
+      "baseline_mse": 0.0007088574085993331,
+      "candidate_mse": 0.0007155042374698859,
+      "relative_gain": -0.009376820768067635,
+      "absolute_gain": -6.646828870552722e-06,
+      "athlete_bootstrap_95": [
+        -1.6074218632953483e-05,
+        1.4547398080008064e-06
+      ],
+      "players": 29
+    },
+    "ordered": {
+      "baseline_mse": 0.0007088574085993331,
+      "candidate_mse": 0.0007109729369879377,
+      "relative_gain": -0.00298442022745416,
+      "absolute_gain": -2.11552838860445e-06,
+      "athlete_bootstrap_95": [
+        -3.493035421395136e-05,
+        3.3505749778595464e-05
+      ],
+      "players": 29
+    },
+    "uncertain": {
+      "baseline_mse": 0.0007088574085993331,
+      "candidate_mse": 0.0007148323304532637,
+      "relative_gain": -0.008428947460303404,
+      "absolute_gain": -5.974921853930571e-06,
+      "athlete_bootstrap_95": [
+        -0.00016104819848088584,
+        0.00014048575342369714
+      ],
+      "players": 29
+    },
+    "combined": {
+      "baseline_mse": 0.0007088574085993331,
+      "candidate_mse": 0.0006544070113568334,
+      "relative_gain": 0.07681431636595427,
+      "absolute_gain": 5.445039724249983e-05,
+      "athlete_bootstrap_95": [
+        4.166399658394661e-06,
+        0.0001100120663443419
+      ],
+      "players": 29
+    }
+  },
+  "extraction": {
+    "input_cohort_sha256": "5f83794c138cf68268d8ef5b73671f25d5b3948d45645776763fd49ece52372d",
+    "source_tracking_sha256": "541c69f6629f5f803b08033c5c386735582120973562134b2c1e7ec6553fb0d3",
+    "source_attempts": 361,
+    "accepted_attempts": 361,
+    "source_rejections": {},
+    "players": 74,
+    "players_by_year": {
+      "2023": 23,
+      "2024": 22,
+      "2025": 29
+    },
+    "phase_populations_min": "3276",
+    "phase_populations_max": "27720",
+    "scenarios": 1083,
+    "extract_seconds": 60.37249565600359,
+    "target": "Mean observed pressure indicator in the supplied eligible rookie rush cohort; conditional, not unconditional career success.",
+    "onset_weights": "Equal source-only sensitivity scenarios .5,1,2 yd/s; not calibrated phase probabilities",
+    "frame_scope": "Up to first 61 contiguous 10Hz active frames. Gaps rejected. Four operational ordered phase templates, not labeled physiology."
+  }
+}

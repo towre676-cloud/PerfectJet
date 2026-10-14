@@ -1,0 +1,282 @@
+{
+  "status": "completed_actual_data_exploratory",
+  "target": "yards_after_catch",
+  "seed": 20272206,
+  "nested": {
+    "mse": {
+      "conventional": 10.599719713540475,
+      "source_demands": 10.705213766821734,
+      "execution": 10.92502438882912
+    },
+    "execution_increment": {
+      "delta_mse": -0.21981062200738483,
+      "ci95": [
+        -2.9204816511824334,
+        2.149908335165512
+      ],
+      "players": 29,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "tracking_increment": {
+      "delta_mse": -0.32530467528864204,
+      "ci95": [
+        -2.9823445852378874,
+        1.9720503887359677
+      ],
+      "players": 29,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 29,
+    "turns": 333
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "inner_mse": [
+        6.987986644493393,
+        8.051849032169713,
+        11.753308070985407,
+        8.564419203487882,
+        10.929208624688714
+      ],
+      "config": 0,
+      "train_player_hash": "a3a5ec25cb006196f91292a8e85442e90b13eb7318692ae658e91dcb9bdea3b7",
+      "test_player_hash": "2111f79fc6453c4cf42fcc2f7d32e97163cfceff8ec23bd98ada753d894ac68c"
+    },
+    {
+      "fold": 0,
+      "family": "source_demands",
+      "inner_mse": [
+        7.170919785224657,
+        8.2901989533591,
+        11.710300967921796,
+        8.603811191159421,
+        11.037647019923261
+      ],
+      "config": 0,
+      "train_player_hash": "a3a5ec25cb006196f91292a8e85442e90b13eb7318692ae658e91dcb9bdea3b7",
+      "test_player_hash": "2111f79fc6453c4cf42fcc2f7d32e97163cfceff8ec23bd98ada753d894ac68c"
+    },
+    {
+      "fold": 0,
+      "family": "execution",
+      "inner_mse": [
+        11.934845661522948,
+        9.738679360591508,
+        11.899185692179545,
+        8.604305916694962,
+        10.933796185870994
+      ],
+      "config": 3,
+      "train_player_hash": "a3a5ec25cb006196f91292a8e85442e90b13eb7318692ae658e91dcb9bdea3b7",
+      "test_player_hash": "2111f79fc6453c4cf42fcc2f7d32e97163cfceff8ec23bd98ada753d894ac68c"
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "inner_mse": [
+        33.97164784766195,
+        18.063962113915373,
+        17.183388469213018,
+        13.235790527806657,
+        15.260734564223599
+      ],
+      "config": 3,
+      "train_player_hash": "02e879796dee85899982c310c7c236725f02a249a8bd57d825fcf25e885477db",
+      "test_player_hash": "42d6b5a7fda1edab1d2e81c1814ba698be915253d842271becbc6b93aabb6221"
+    },
+    {
+      "fold": 1,
+      "family": "source_demands",
+      "inner_mse": [
+        33.931873544223215,
+        19.42989356039895,
+        17.38103509261506,
+        13.32786102625357,
+        15.371342268423128
+      ],
+      "config": 3,
+      "train_player_hash": "02e879796dee85899982c310c7c236725f02a249a8bd57d825fcf25e885477db",
+      "test_player_hash": "42d6b5a7fda1edab1d2e81c1814ba698be915253d842271becbc6b93aabb6221"
+    },
+    {
+      "fold": 1,
+      "family": "execution",
+      "inner_mse": [
+        38.08922597592011,
+        21.331904937791606,
+        17.996049092303,
+        13.448281416297194,
+        15.227623120369147
+      ],
+      "config": 3,
+      "train_player_hash": "02e879796dee85899982c310c7c236725f02a249a8bd57d825fcf25e885477db",
+      "test_player_hash": "42d6b5a7fda1edab1d2e81c1814ba698be915253d842271becbc6b93aabb6221"
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "inner_mse": [
+        11.710054732562417,
+        10.712745955040434,
+        16.41546619161169,
+        11.598678882171951,
+        14.903237689733267
+      ],
+      "config": 1,
+      "train_player_hash": "de693993eca7ef93cbfd3bab9b4ccffeac6d525cdfa22735f48c6d4de3b83848",
+      "test_player_hash": "0bf5fb1b7980a389e5b1aec824699dbfbdd4099c863f85d5c1bfd3df21c09dcc"
+    },
+    {
+      "fold": 2,
+      "family": "source_demands",
+      "inner_mse": [
+        11.924664144730384,
+        10.8533465056857,
+        16.45514641282646,
+        11.5419042514769,
+        14.878527845139763
+      ],
+      "config": 1,
+      "train_player_hash": "de693993eca7ef93cbfd3bab9b4ccffeac6d525cdfa22735f48c6d4de3b83848",
+      "test_player_hash": "0bf5fb1b7980a389e5b1aec824699dbfbdd4099c863f85d5c1bfd3df21c09dcc"
+    },
+    {
+      "fold": 2,
+      "family": "execution",
+      "inner_mse": [
+        15.298365009828258,
+        12.424812264057977,
+        16.73398523341656,
+        11.587618731926412,
+        14.823191691289006
+      ],
+      "config": 3,
+      "train_player_hash": "de693993eca7ef93cbfd3bab9b4ccffeac6d525cdfa22735f48c6d4de3b83848",
+      "test_player_hash": "0bf5fb1b7980a389e5b1aec824699dbfbdd4099c863f85d5c1bfd3df21c09dcc"
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "inner_mse": [
+        12.391975524492901,
+        13.633546889974836,
+        19.119655546318196,
+        13.624778741166955,
+        16.541984462810362
+      ],
+      "config": 0,
+      "train_player_hash": "d437423c0a02b82c47d9da509e4307b15d069e0afcf17c5eb2b02b0c28295697",
+      "test_player_hash": "d203855abc70d4df103dc2e99ee36cd8bad2f23b683a965c32ffa58266ad49dd"
+    },
+    {
+      "fold": 3,
+      "family": "source_demands",
+      "inner_mse": [
+        13.20170170289119,
+        14.167694823708118,
+        19.1779575481074,
+        13.68712702652973,
+        16.636076230296844
+      ],
+      "config": 0,
+      "train_player_hash": "d437423c0a02b82c47d9da509e4307b15d069e0afcf17c5eb2b02b0c28295697",
+      "test_player_hash": "d203855abc70d4df103dc2e99ee36cd8bad2f23b683a965c32ffa58266ad49dd"
+    },
+    {
+      "fold": 3,
+      "family": "execution",
+      "inner_mse": [
+        18.82975768555797,
+        15.74734461145981,
+        20.37876583865984,
+        13.999642958587893,
+        16.831336549598507
+      ],
+      "config": 3,
+      "train_player_hash": "d437423c0a02b82c47d9da509e4307b15d069e0afcf17c5eb2b02b0c28295697",
+      "test_player_hash": "d203855abc70d4df103dc2e99ee36cd8bad2f23b683a965c32ffa58266ad49dd"
+    }
+  ],
+  "prior_2025_inspection": true,
+  "primary_contrast": "execution versus source_demands; conventional is secondary",
+  "scope": "Conditional mechanical transfer using measured NFL turn demands; not live deployment or causal training benefit.",
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 5.900425032621971,
+      "source_demands": 5.908534946559422,
+      "execution": 4.939145844234219
+    },
+    "execution_increment": {
+      "delta_mse": 0.969389102325201,
+      "ci95": [
+        0.004457882605264442,
+        2.1268698288742733
+      ],
+      "players": 11,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "tracking_increment": {
+      "delta_mse": 0.9612791883877502,
+      "ci95": [
+        -0.024462977339192334,
+        2.1546090718427444
+      ],
+      "players": 11,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 11,
+    "turns": 77
+  },
+  "forward_selection": [
+    {
+      "family": "conventional",
+      "validation_mse": [
+        11.22557906717123,
+        11.619260632366549,
+        18.758983126605596,
+        13.83531529400704,
+        16.709126675446598
+      ],
+      "config": 0
+    },
+    {
+      "family": "source_demands",
+      "validation_mse": [
+        11.164329040353627,
+        11.648816130798368,
+        18.75413856211064,
+        13.596424864950114,
+        16.8446855809493
+      ],
+      "config": 0
+    },
+    {
+      "family": "execution",
+      "validation_mse": [
+        17.272015567716238,
+        12.788560485836449,
+        19.057681656391626,
+        13.712745802382871,
+        17.348069007819472
+      ],
+      "config": 1
+    }
+  ],
+  "catch_context_baseline": "Includes pass length and supplied expected YAC, an outcome-side vendor catch-context reference; not a pre-draft unconditional forecast.",
+  "population": {
+    "players_by_year": {
+      "2023": 17,
+      "2024": 12,
+      "2025": 11
+    },
+    "catches_by_year": {
+      "2023": 194,
+      "2024": 139,
+      "2025": 77
+    },
+    "eligibility": ">=3 targeted catches with measured YAC per player; original turn cohort retained"
+  },
+  "provided_expected_YAC_reference_mse": 4.946158921305103
+}

@@ -1,0 +1,15 @@
+{
+  "adaptive_trigger": "Concatenated source profiles harm earlier-class calibration and do not improve sequence transport",
+  "registered_before_correction_scores": true,
+  "fixed_alpha": 100,
+  "latent_rank": 4,
+  "intercept": false,
+  "baseline": "Keep original matched conventional16 ensemble predictions unchanged",
+  "training_target": "Player mean residual from3 cross-fitted conventional16-athlete-bag ensembles",
+  "families": [
+    "summaries",
+    "sequence",
+    "shuffled"
+  ],
+  "scope": "Adaptive exploratory follow-up. Never claim a fresh holdout or select a family from2025."
+}

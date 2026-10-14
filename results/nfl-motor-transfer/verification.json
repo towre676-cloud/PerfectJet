@@ -1,0 +1,22 @@
+{
+  "schema": "perfectjet/nfl-release-verification/1",
+  "local_tests": {
+    "passed": 185,
+    "runtime_seconds": 35.599,
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v"
+  },
+  "coverage": {
+    "chapters": 26,
+    "equations": 351,
+    "topics": 428,
+    "source_hashes": "passed"
+  },
+  "notebook": {
+    "embedded_source_modules": 40,
+    "compiled_code_cells": 4,
+    "executed_on_real_data": false
+  },
+  "real_data_execution": "blocked: absent official raw CSVs; API401 and browser signed out",
+  "new_scouting_gain": null,
+  "github_ci": "not yet observed for this commit"
+}

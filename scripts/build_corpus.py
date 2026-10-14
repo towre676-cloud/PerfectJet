@@ -314,11 +314,80 @@ invariants|comprehensive rank cells|parameter space = disjoint union of V(S_i) m
 invariants|Rabinowitsch saturation|I:q^infinity = (I+<1-zq>) intersect Q[t]|derived|Elimination order on z; cell nonempty iff saturated ideal is not 1.
 invariants|two-parameter partner surface|f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0)|exact_checked|Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0.
 invariants|fourfold-root exceptional sextic|x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2)|exact_checked|Correction rank drops at this point in degrees5,6,7,9,10,11.
+invariants|active strata|dim A_N=rank[L_N;P_N]-rank L_N constant on refined cells; commuting=dim ker L_N-dim A_N|exact_checked|Two-parameter sextic surface, degrees3..12; partners replayed at rational samples only.
+invariants|surface discriminant|Res_x(f(x,1),f_x(x,1)) in Q[a,b], total degree8|exact_checked|Bareiss determinant of the Sylvester matrix; vanishes exactly at repeated roots since f is monic in x.
+invariants|perfect-cube commuting exceptions|f=(x^2+y^2)^3: ker L_N=span{(x^2+y^2)^(N/2)} with A_N=0 for N=4,6,8,10|exact_checked|Correction-rank exception that adds no active capacity; degree12 kernel3 active2.
+invariants|degree8 partner curve|a^2b-4b^3+6a^2-28b^2+20b+300=0; rational points (+/-11,6),(+/-16,-9),(0,-5)|exact_checked|Bounded-height scan, height<=12; not a complete rational point list.
+invariants|degree12 partner curve|b^4+24b^3+81a^2-126b^2+405=0; rational points (+/-4,-3),(+/-32/25,-9/5),(+/-16,-9)|exact_checked|(+/-4,-3) has a double root; (+/-32/25,-9/5) is squarefree.
+observability|readout identifiability|h^T beta determined by X beta iff h in row(X); else Xn=0, h^T n!=0|exact_checked|Noiseless linear response; witness gives two fits with different readouts.
+observability|demand-supported readout|theta_i=sum_k q_k phi(d_k)^T beta_i=h_q^T beta_i|definition|q a declared training-derived demand distribution.
+observability|repeat versus new condition|row in row(X) leaves identifiability unchanged|exact_checked|Repeats sharpen precision only; minimal identifying sets by exhaustive search up to a size bound.
+observability|Gaussian value of information|VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e e^T/s^2)^{-1}h|exact_checked|Linear Gaussian model; reduction independent of the unseen outcome; conditional on prior and noise.
+decisions|settled decision|Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))|exact_checked|Valid intervals; refinement restricted to overlapping contenders.
+decisions|evolution-defect split|e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t|exact_checked|Replayed at every step in rational arithmetic with an infinity-norm bound.
+closure|adaptive monomial closure|add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}|exact_checked|Stops on degree growth or budget with the residual support.
+counting|constraint attribution|removed_only_by_k = #F(constraints minus k) - #F|exact_checked|Selections violating constraint k and no other; compared with enumeration.
+counting|inclusion profile|Pr(x_i=1 | feasible) = #F(x_i=1)/#F; Pr(x_i=1 | optimal) = ties(x_i=1)/ties|exact_checked|Counts original objects; compared with enumeration.
+physics|stationary response|dx*/dtheta = -H^{-1} d2V/dx dtheta at (x*,0)|derived|Nondegenerate stationary point; first order only.
+physics|symmetry protection|dR(v)=0 for every perturbation v fixed by the symmetry|exact_checked|First-order statement; higher orders need an exact symmetry argument.
+transport|quadratic square transport|k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a)|exact_checked|Integers; X=b mod 2a required; branches a=0, definite, square D, N0=0 handled separately.
+pell|Nagell class bound|N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1)))|derived|x^2-Dy^2=N0, D>0 nonsquare, (x1,y1) fundamental unit; classical theorem, cited.
+pell|compiled quadratic population|hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a}|exact_checked|Complete for the Pell branch; checked against brute force on 158 equations; remote indices replayed exactly.
+invariants|Clebsch invariants of the sextic|i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2|definition|Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2.
+invariants|weighted orbit test|(A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i}|derived|Proves GL2(Qbar)-equivalence only for squarefree sextics.
+invariants|Cayley-Sylvester count|dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2|derived|p counts partitions into at most d parts of size at most n.
+invariants|cubic partner theorem|det L_3(f)=(A^2-B/6)/16|exact_checked|Every binary sextic; certified on the dense slice by a 125-point exact grid.
+invariants|quartic covariant partner|(f,(f,f)_4)_3=(f,(f,f)_4)_5=0|exact_checked|Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0.
+invariants|degree-12 covariant partner|G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96|exact_checked|Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0.
+invariants|degree-12 partner converse|ker L_12(f)!=0 => A^2=25B/96|open|Supported by random sextics and two independent families; not proved.
+invariants|slice certificate|covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3|derived|Same degree, order and weight; dense GL2-orbit; grid vanishing lemma.
+invariants|surface drop curves as invariant loci|deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0|exact_checked|On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open.
+invariants|named exceptional sextics|(0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4)|exact_checked|Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure.
+empirical|normalized recovery travel|eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)|definition|Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency.
+empirical|recovery response model|eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)|proposal|Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance.
+empirical|context-adjusted target|r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)|definition|Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only.
+empirical|paired predictive gain|G=1-MSE_movement/MSE_baseline|definition|Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds.
+empirical|scouting advantage|G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class|open|Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only.
+observability|LOS onset-travel ambiguity|X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1|exact_checked|Total onset plus travel cannot identify either component; separate from acceleration models.
+empirical|stable crossing travel|u=2d/(v+sqrt(v^2+2ad))|derived|Local constant acceleration; d,v>=0 and a>0; not an athlete physiology law.
+empirical|crossing travel box|u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo)|exact_checked|Monotone extrema of declared box; outward polynomial signs rationally checked.
+empirical|half-second motor functional|A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2|definition|T=.5s post operational onset; no known cue or reaction-time claim.
+empirical|acceleration functional identity|A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt|derived|Integrable acceleration; analytic invariance tests; no second numerical differentiation.
+empirical|scalar source precision|V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2|derived|Gaussian player deviation; independent training repeats; branches are not repeats.
+empirical|uncertainty-integrated NFL correction|r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i)|derived|Conditional error independence; target precision descriptive; empirical transfer unestablished.
+empirical|paired loss noise cancellation|Delta_noisy=Delta_clean+2e(p_movement-p_baseline)|derived|Expected equality requires conditional mean-zero error; no automatic causal interpretation.
+'''
+
+EQUATIONS += r'''
+observability|operational get-off decomposition|t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset)|derived|Observed geometry and operational tracking onset; supplied official get-off retained separately; no reaction-time claim.
+observability|positive onset-travel hidden direction|X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1|exact_checked|Linear sum cannot determine onset independently; physically admissible positive witnesses in bridge receipt.
+empirical|game-cluster movement covariance|Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z)|definition|Common usable plays and original play weights; fewer than two games yields unknown covariance.
+dynamics|causal post-onset burst integral|A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du|derived|Twice differentiable directional position, causal initial velocity, T=.5 s; not force or reaction time.
+series|supervised delay continuation|K_lambda=(P^T W P+lambda I)^(-1)P^T W F|numerical_checked|Train-only standardized past/future movement blocks; equal sampled-player weight; player-held inner selection.
+series|target-directed finite state|z=p K_lambda V_r; forecast=z V_r^T|numerical_checked|Right singular vectors of fitted future outputs; centering/inverse scaling in code; finite declared horizon only.
+series|second-order predictive witness|u_(t+1)=3/2 u_t-3/4 u_(t-1)|numerical_checked|Explicitly synthetic recurrence; identical current samples need not imply equal continuations.
+empirical|cross-fitted physical movement transfer|qhat_i^OOF=f_(training minus fold(i))(B_i,X_i)|definition|State discovery, targets and preprocessing rebuilt for each player fold; physical units across SVD rotations.
+empirical|prediction-trained outcome decoder|g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2|definition|Training inputs are predicted movement; held-out NFL movement enters diagnostics only.
+dynamics|fitted two-stage error identity|yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y]|derived|Frozen fitted decoder and observed held-out target; algebraic decomposition does not imply causation.
+dynamics|fixed affine movement scenario bound|abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j|derived|Affine fitted decoder and valid supplied box abs(qhat_j-q_j)<=r_j; separate from empirical intervals.
+observability|physical scouting loading|q=F x+c, g=w^T q+b => h=F^T w|derived|Frozen affine fit and fixed preprocessing/missingness pattern; physical source units.
+observability|exact scalar posterior update|Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e)|exact_checked|Positive-definite rational prior, positive independent noise; fixed loading and declared Gaussian model.
+observability|correlated attempt block update|Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma|exact_checked|Positive-definite joint within-attempt noise; duplicate original attempt IDs rejected.
+counting|joint target measurement package|S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k|exact_checked|Declared finite hypotheses and at most18 candidate packages; exact feasible counts, ranks and tie population.
+observability|zero-isolated-value synergy|VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131|exact_checked|Sigma=I2, h=(1,0), A=(1,0) noise1, B=(1,1) noise1/10, C=(0,1) noise1/10, budget2.
+observability|joint package advantage witness|110/131-21/32=769/4192|exact_checked|Synthetic exact Gaussian allocation example; no empirical NFL gain inferred.
+observability|loading-family zero-effect limit|min_h VOI(S;h)=0 if 0 belongs to loading hypotheses|derived|Covariance reduction PSD; a zero target loading has zero conditional source benefit.
+decisions|contender-difference loading|h_(a,b)=H_a-H_b|definition|Frozen common source coordinates; only overlapping possible leaders need sensing under valid scenario bounds.
+observability|rationalized fitted loading|norm(h_decimal-h_rational)_infinity<=declared_tolerance|exact_checked|Exact calculation for rational snapshot; coefficient discrepancy recorded; estimated loading remains empirically uncertain.
+observability|uniform loading rationalization bound|abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2|exact_checked|0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate.
+counting|rationalized package regret|raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon|exact_checked|Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses.
+observability|target-information non-submodularity witness|VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751|exact_checked|The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows.
 '''
 
 def build():
     equations=[]
     for line in EQUATIONS.strip().splitlines():
+        if not line.strip():continue
         domain,title,rest=line.split('|',2)
         expression,status,assumptions=re.split(r'\|(definition|derived|historical_report|conditional|exact_checked|numerical_checked|proposal|open|rejected)\|',rest,maxsplit=1)
         equations.append({'id':f'PJ-E{len(equations)+1:03d}','domain':domain,'title':title,
@@ -333,7 +402,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.4.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.12.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

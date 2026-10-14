@@ -1,0 +1,267 @@
+{
+  "status": "completed_actual_data_exploratory",
+  "target": "exit_ratio",
+  "seed": 20274406,
+  "nested": {
+    "mse": {
+      "conventional": 0.04333530930737816,
+      "source_demands": 0.0432269151611403,
+      "execution": 0.04413775433654074
+    },
+    "execution_increment": {
+      "delta_mse": -0.0009108391754004413,
+      "ci95": [
+        -0.0014236109903440293,
+        -0.0004248028089111611
+      ],
+      "players": 42,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "tracking_increment": {
+      "delta_mse": -0.0008024450291625765,
+      "ci95": [
+        -0.0014090462280467128,
+        -0.00023965893712360418
+      ],
+      "players": 42,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 42,
+    "turns": 2296
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "inner_mse": [
+        0.05649702677865818,
+        0.055102534164654125,
+        0.0753740028087317,
+        0.046601926645170044,
+        0.048122617763221076
+      ],
+      "config": 3,
+      "train_player_hash": "598256bf445d56e227c647bc86e18d19e0d7f3581a78ad820a0be0d6a3d4c455",
+      "test_player_hash": "2c711e83d0aa3764e01f444d9ed53a275efeefd25585d481f158a5b73cb98ba0"
+    },
+    {
+      "fold": 0,
+      "family": "source_demands",
+      "inner_mse": [
+        0.056956445162162604,
+        0.055120432148443525,
+        0.07253909775472325,
+        0.046568418023410586,
+        0.04820313413089758
+      ],
+      "config": 3,
+      "train_player_hash": "598256bf445d56e227c647bc86e18d19e0d7f3581a78ad820a0be0d6a3d4c455",
+      "test_player_hash": "2c711e83d0aa3764e01f444d9ed53a275efeefd25585d481f158a5b73cb98ba0"
+    },
+    {
+      "fold": 0,
+      "family": "execution",
+      "inner_mse": [
+        0.07304324566914706,
+        0.057615227766581324,
+        0.07127457461448193,
+        0.04681608077087884,
+        0.04805761876730841
+      ],
+      "config": 3,
+      "train_player_hash": "598256bf445d56e227c647bc86e18d19e0d7f3581a78ad820a0be0d6a3d4c455",
+      "test_player_hash": "2c711e83d0aa3764e01f444d9ed53a275efeefd25585d481f158a5b73cb98ba0"
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "inner_mse": [
+        0.05644834768720034,
+        0.05675600262153144,
+        0.07472777426862696,
+        0.047937679912497914,
+        0.048407324576424014
+      ],
+      "config": 3,
+      "train_player_hash": "099566b47ce525ec49875f20e72843e1fea51bbfaead880fefec53a47b4e790f",
+      "test_player_hash": "b743be74a7a176f920f28bace57cc4bc6b8cf4bdec55cd593d37e7df08878d76"
+    },
+    {
+      "fold": 1,
+      "family": "source_demands",
+      "inner_mse": [
+        0.05746972191062103,
+        0.05718062081243838,
+        0.07253639488964923,
+        0.04783699471019753,
+        0.04909621840412331
+      ],
+      "config": 3,
+      "train_player_hash": "099566b47ce525ec49875f20e72843e1fea51bbfaead880fefec53a47b4e790f",
+      "test_player_hash": "b743be74a7a176f920f28bace57cc4bc6b8cf4bdec55cd593d37e7df08878d76"
+    },
+    {
+      "fold": 1,
+      "family": "execution",
+      "inner_mse": [
+        0.06388705471220806,
+        0.05922877775430998,
+        0.07113024552095361,
+        0.04816595840325479,
+        0.04869056102141639
+      ],
+      "config": 3,
+      "train_player_hash": "099566b47ce525ec49875f20e72843e1fea51bbfaead880fefec53a47b4e790f",
+      "test_player_hash": "b743be74a7a176f920f28bace57cc4bc6b8cf4bdec55cd593d37e7df08878d76"
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "inner_mse": [
+        0.05070119102544587,
+        0.050136477582341875,
+        0.06862311570901924,
+        0.04088519098139962,
+        0.042007324130194
+      ],
+      "config": 3,
+      "train_player_hash": "14182cec82fde420b3fa730fd7740814b656ff8106d75eca92843507c2e1dfde",
+      "test_player_hash": "5725eb40734395b56f9d0c3c910e342b3efa6bf6f474c7365a9e227798b8a6dc"
+    },
+    {
+      "fold": 2,
+      "family": "source_demands",
+      "inner_mse": [
+        0.05177599810406373,
+        0.05041780564033524,
+        0.06596223132670263,
+        0.04076163075286723,
+        0.04215235625175306
+      ],
+      "config": 3,
+      "train_player_hash": "14182cec82fde420b3fa730fd7740814b656ff8106d75eca92843507c2e1dfde",
+      "test_player_hash": "5725eb40734395b56f9d0c3c910e342b3efa6bf6f474c7365a9e227798b8a6dc"
+    },
+    {
+      "fold": 2,
+      "family": "execution",
+      "inner_mse": [
+        0.05146144247499593,
+        0.050239142380767314,
+        0.06493583203911478,
+        0.0410355327478568,
+        0.0426843215251158
+      ],
+      "config": 3,
+      "train_player_hash": "14182cec82fde420b3fa730fd7740814b656ff8106d75eca92843507c2e1dfde",
+      "test_player_hash": "5725eb40734395b56f9d0c3c910e342b3efa6bf6f474c7365a9e227798b8a6dc"
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "inner_mse": [
+        0.055702241970350265,
+        0.053488618130282696,
+        0.07428216412054753,
+        0.044428872897785965,
+        0.04569394956036604
+      ],
+      "config": 3,
+      "train_player_hash": "d7799b102c0b609688a3110cea9294933a0495146e798c28a2aa5e8cbe2bc62f",
+      "test_player_hash": "7572aa051efac1d55f480517cdcc45e218552d6c9f95c01883756e501ea3fe5e"
+    },
+    {
+      "fold": 3,
+      "family": "source_demands",
+      "inner_mse": [
+        0.056779526652964984,
+        0.054158536663847144,
+        0.07123390937322134,
+        0.044153248069339755,
+        0.045741606975333256
+      ],
+      "config": 3,
+      "train_player_hash": "d7799b102c0b609688a3110cea9294933a0495146e798c28a2aa5e8cbe2bc62f",
+      "test_player_hash": "7572aa051efac1d55f480517cdcc45e218552d6c9f95c01883756e501ea3fe5e"
+    },
+    {
+      "fold": 3,
+      "family": "execution",
+      "inner_mse": [
+        0.05878962425363904,
+        0.05442619452673347,
+        0.07029945558979817,
+        0.04491300749078863,
+        0.04594730942294003
+      ],
+      "config": 3,
+      "train_player_hash": "d7799b102c0b609688a3110cea9294933a0495146e798c28a2aa5e8cbe2bc62f",
+      "test_player_hash": "7572aa051efac1d55f480517cdcc45e218552d6c9f95c01883756e501ea3fe5e"
+    }
+  ],
+  "prior_2025_inspection": true,
+  "primary_contrast": "execution versus source_demands; conventional is secondary",
+  "scope": "Conditional mechanical transfer using measured NFL turn demands; not live deployment or causal training benefit.",
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 0.040203194388579236,
+      "source_demands": 0.04022775070182641,
+      "execution": 0.04041417055416758
+    },
+    "execution_increment": {
+      "delta_mse": -0.00018641985234116464,
+      "ci95": [
+        -0.0007119965113584317,
+        0.0004126034133273249
+      ],
+      "players": 15,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "tracking_increment": {
+      "delta_mse": -0.00021097616558833775,
+      "ci95": [
+        -0.0008216818712679995,
+        0.0004245361359136286
+      ],
+      "players": 15,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 15,
+    "turns": 641
+  },
+  "forward_selection": [
+    {
+      "family": "conventional",
+      "validation_mse": [
+        0.05989884418171133,
+        0.05951507102928547,
+        0.07851030158529802,
+        0.04897963160912495,
+        0.05164403385246771
+      ],
+      "config": 3
+    },
+    {
+      "family": "source_demands",
+      "validation_mse": [
+        0.06074131505012059,
+        0.06006681631914285,
+        0.07571767362638532,
+        0.04911622077822221,
+        0.052103676116701976
+      ],
+      "config": 3
+    },
+    {
+      "family": "execution",
+      "validation_mse": [
+        0.06110623954628775,
+        0.06153772899538839,
+        0.07608484755560431,
+        0.05012261890227057,
+        0.05272979358774192
+      ],
+      "config": 3
+    }
+  ]
+}

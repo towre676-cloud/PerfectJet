@@ -1,0 +1,23 @@
+{
+  "by_drill": {
+    "full": {
+      "FOUR_BAG_AGILITY_DRILL": 0.4244834830947334,
+      "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": 0.21381972368186986,
+      "PASS_RUSH_DRILL": 0.14566125775393468,
+      "RUN_THE_HOOP_DRILL": 0.18466891800721857
+    },
+    "center_resolved": {
+      "FOUR_BAG_AGILITY_DRILL": 0.004519280887644972,
+      "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": 0.004708692691385519,
+      "PASS_RUSH_DRILL": 0.0021304112986095802,
+      "RUN_THE_HOOP_DRILL": 0.01413403351008824
+    },
+    "smoothing_resolved": {
+      "FOUR_BAG_AGILITY_DRILL": 0.42298382202150464,
+      "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": 0.21083692900722906,
+      "PASS_RUSH_DRILL": 0.1454614984498923,
+      "RUN_THE_HOOP_DRILL": 0.18449475576411506
+    }
+  },
+  "scope": "Hypothetical worst-case remaining recovery range after revealing a declared center/smoothing branch. Not a measured annotation benefit or physiological sensor probability."
+}

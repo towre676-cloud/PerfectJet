@@ -1,0 +1,236 @@
+{
+  "status": "completed_actual_data_exploratory",
+  "population": {
+    "players_by_class": {
+      "2023": 24,
+      "2024": 19,
+      "2025": 16
+    },
+    "routes_by_class": {
+      "2023": 2829,
+      "2024": 1989,
+      "2025": 1424
+    },
+    "accepted_attempts": 384,
+    "rejected_attempts": {
+      "no qualifying turn": 51,
+      "insufficient three-second turn window": 128,
+      "insufficient approach speed": 1
+    },
+    "missing_movement_fraction": 0.25408522909323933,
+    "missing_separation_by_class_coverage": {
+      "(2023, 'MAN_COVERAGE')": 0.11534154535274356,
+      "(2023, 'ZONE_COVERAGE')": 0.1138865368331922,
+      "(2024, 'MAN_COVERAGE')": 0.13585434173669467,
+      "(2024, 'ZONE_COVERAGE')": 0.14036144578313253,
+      "(2025, 'MAN_COVERAGE')": 0.1527777777777778,
+      "(2025, 'ZONE_COVERAGE')": 0.11343523732904263
+    },
+    "movement_window_seconds": 3,
+    "features": [
+      "entry",
+      "retention",
+      "recovery",
+      "braking",
+      "propulsion",
+      "turn",
+      "bend",
+      "area",
+      "speed_mode_1",
+      "speed_mode_2",
+      "speed_mode_3",
+      "speed_mode_4"
+    ],
+    "mapping": {
+      "IN": [
+        "DAGGER_ROUTE_LEFT"
+      ],
+      "OUT": [
+        "SPEED_OUT_ROUTE_LEFT"
+      ],
+      "SLANT": [
+        "SLANT_ROUTE_LEFT"
+      ],
+      "HITCH": [
+        "CURL_ROUTE_RIGHT",
+        "COMEBACK_ROUTE_RIGHT"
+      ]
+    },
+    "feature_selection": "fixed mechanics and drill mapping; no outcome-directed selection"
+  },
+  "nested_development": {
+    "mse": {
+      "context": 3.1660219927967685,
+      "physical": 3.1758512275758997,
+      "motion": 3.1705933984244967
+    },
+    "paired_motion_increment": {
+      "delta_mse": 0.005257829151402978,
+      "ci95": [
+        0.0005910195303590683,
+        0.010964825981898307
+      ],
+      "players": 43
+    },
+    "folds": [
+      {
+        "fold": 0,
+        "family": "physical",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.227159463813946,
+          3.2119262071078505,
+          3.207579432846879
+        ],
+        "outer_mse": 3.0641903967893906
+      },
+      {
+        "fold": 0,
+        "family": "motion",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.2338804008472697,
+          3.2120475220702556,
+          3.2071956542318807
+        ],
+        "outer_mse": 3.0620826050726873
+      },
+      {
+        "fold": 1,
+        "family": "physical",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.1375269840251807,
+          3.1092889069971115,
+          3.0958288217871566
+        ],
+        "outer_mse": 3.384405365352194
+      },
+      {
+        "fold": 1,
+        "family": "motion",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.1658274392852204,
+          3.114997530002338,
+          3.096069451598625
+        ],
+        "outer_mse": 3.3852400178876807
+      },
+      {
+        "fold": 2,
+        "family": "physical",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.2681043260446367,
+          3.2227500891189473,
+          3.208883560514729
+        ],
+        "outer_mse": 3.094286986784507
+      },
+      {
+        "fold": 2,
+        "family": "motion",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.283861494396338,
+          3.2253935223885373,
+          3.2087780887419894
+        ],
+        "outer_mse": 3.094869488984405
+      },
+      {
+        "fold": 3,
+        "family": "physical",
+        "alpha": 100.0,
+        "inner_mse": [
+          3.2162342640897075,
+          3.1937112109159562,
+          3.1956528756036837
+        ],
+        "outer_mse": 3.1531072303964707
+      },
+      {
+        "fold": 3,
+        "family": "motion",
+        "alpha": 1000.0,
+        "inner_mse": [
+          3.246392102493406,
+          3.1999016726507783,
+          3.196254336565715
+        ],
+        "outer_mse": 3.133297489985931
+      }
+    ],
+    "players": 43,
+    "routes": 4818
+  },
+  "exploratory_2025": {
+    "mse": {
+      "context": 2.852678286212718,
+      "physical": 2.8488445483956704,
+      "motion": 2.848789255847131
+    },
+    "paired_motion_increment": {
+      "delta_mse": 5.52925485390837e-05,
+      "ci95": [
+        -0.0020472954459060354,
+        0.0019113818571519783
+      ],
+      "players": 16
+    },
+    "selection": {
+      "physical": {
+        "alpha": 1000.0,
+        "validation_mse": [
+          3.019724246257765,
+          2.9936288352196923,
+          2.9883967337760127
+        ]
+      },
+      "motion": {
+        "alpha": 1000.0,
+        "validation_mse": [
+          3.041201968068827,
+          2.9985819828142297,
+          2.9882953036655917
+        ]
+      }
+    },
+    "players": 16,
+    "routes": 1424
+  },
+  "predefined_man_subset": {
+    "nested": {
+      "man_coverage_players": 41,
+      "man_coverage_routes": 1371,
+      "paired_motion_increment": {
+        "delta_mse": -0.00048616027161470276,
+        "ci95": [
+          -0.004730927763068274,
+          0.0038122988498510554
+        ],
+        "players": 41
+      }
+    },
+    "exploratory_2025": {
+      "man_coverage_players": 16,
+      "man_coverage_routes": 352,
+      "paired_motion_increment": {
+        "delta_mse": -0.00025286304054423657,
+        "ci95": [
+          -0.003560371961172992,
+          0.002990479164782234
+        ],
+        "players": 16
+      }
+    }
+  },
+  "limitations": [
+    "2025 previously inspected; no fresh holdout",
+    "Residual targets are cross-fitted by player, not causal receiver effects",
+    "Context-only nuisance fixed before this run; identical three-alpha selection budgets",
+    "No correction for unmeasured quarterback, defender ability, or missing-not-at-random outcomes",
+    "Earlier nested folds overlap prior research; this is corroboration, not independent confirmatory evidence"
+  ]
+}

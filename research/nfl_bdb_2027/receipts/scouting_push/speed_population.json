@@ -1,0 +1,21 @@
+{
+  "source_attempts": 174,
+  "source_players": 93,
+  "players_by_year": {
+    "2023": 22,
+    "2024": 21,
+    "2025": 16
+  },
+  "routes_by_year": {
+    "2023": 4805,
+    "2024": 4402,
+    "2025": 3441
+  },
+  "rejections": {
+    "events": 1850,
+    "short_nonfinite": 258
+  },
+  "target": "Player 90th percentile of route 95th-percentile speeds, on rookie REG non-nullified charted routes from one second after snap through pass release; >=30 routes/player",
+  "scouting_inputs": "Only provided pre-draft conventional/NGS and Combine tracking; no NFL state, team, route mix, draft pick or route count predictor",
+  "limitation": "Capacity proxy depends on observed route opportunities and participating rookies; not separation, production, injury, draft-bust risk or a pure maximal physiological speed."
+}

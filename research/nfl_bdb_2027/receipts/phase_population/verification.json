@@ -1,0 +1,19 @@
+{
+  "notebook": "notebooks/Movement_Phase_Populations.ipynb",
+  "executed_code_cells": 6,
+  "embedded_modules_byte_equal": 9,
+  "matched_mse_scores": 24,
+  "maximum_score_difference": 0.0,
+  "figures": 4,
+  "markdown_and_stream_output_words": 1192,
+  "source_replay_maximum_difference": 3.3306690738754696e-16,
+  "software_tests_passed": 51,
+  "model_fitting": "Standalone fitting completed from actual tracking and prior raw-data cohort; notebook executed using controlled private resumption checkpoints. Fresh execution rebuilds from verified official files.",
+  "uncertainty": "Exploratory, repeated inspection; fixed-prediction intervals are not full refit or adaptive-search intervals.",
+  "figure_sha256": {
+    "receipts/phase_population/phase_geometry.png": "43a361ec27ed4f2f632ebf2b0155b6adf1aba0f837d9cf4fe26c9731397c1aaa",
+    "receipts/phase_population/phase_comparisons.png": "767c18b5e046a48826a42bd5586757ef532841db7484b32e50c01112a19af479",
+    "receipts/phase_population/correction/phase_comparisons.png": "50e1017d5e24a9e33ac0995a105a93b56dfeb300426789579378f9a8b4aebfbc",
+    "receipts/phase_population/scaled/phase_comparisons.png": "1d6135f2df87ad74903ebb04eceeff1a1877a72a1b96bb3b87e825313d73e107"
+  }
+}

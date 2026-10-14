@@ -1,0 +1,23 @@
+{
+  "scope": "exploratory after 2025 inspection; dominant team clusters approximate dependence, not a season bootstrap",
+  "comparisons": {
+    "forest_conventional": {
+      "delta_mse": 0.14755773788673188,
+      "team_cluster_ci95": [
+        0.027502917983558535,
+        0.2466417833097486
+      ],
+      "teams": 14,
+      "players": 17
+    },
+    "baseline": {
+      "delta_mse": 0.03766837813385317,
+      "team_cluster_ci95": [
+        -0.047533960660629676,
+        0.09968682264624787
+      ],
+      "teams": 14,
+      "players": 17
+    }
+  }
+}

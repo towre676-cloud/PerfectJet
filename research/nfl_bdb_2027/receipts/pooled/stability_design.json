@@ -1,0 +1,19 @@
+{
+  "registered_before_expanded_scores": true,
+  "seeds": [
+    20285306,
+    20285506,
+    20285706,
+    20285906,
+    20286106,
+    20286306,
+    20286506,
+    20286706,
+    20286906,
+    20287106,
+    20287306,
+    20287506
+  ],
+  "rationale": "Check whether prior positive duration partitions survive a larger declared partition bank, without choosing seeds using results. Preserve canonical availability baseline separately from new attempt-count baseline.",
+  "outcome_diagnostic": "200random splits of each athlete recorded games; rank correlation of observed pressure rate. Not an independent test sample or physiological ability ceiling."
+}

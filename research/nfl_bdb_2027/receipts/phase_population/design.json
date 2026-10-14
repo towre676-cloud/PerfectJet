@@ -1,0 +1,31 @@
+{
+  "question": "Does averaging source onset/phase ambiguity expose order-specific Combine information beyond ordinary summaries and athlete-averaged conventional models?",
+  "registered_before_this_run_outcomes": true,
+  "already_inspected_class": "2025; exploratory follow-up only",
+  "source_onsets": [
+    0.5,
+    1,
+    1.5,
+    2
+  ],
+  "phase_temperatures": [
+    0.5,
+    1,
+    2
+  ],
+  "families": [
+    "conventional",
+    "summaries",
+    "sequence",
+    "shuffled"
+  ],
+  "models": "Earlier conventional-selected outer-fold configurations, and 2024-selected forward config, locked identically across all four families; 16 paired athlete bootstrap fits each",
+  "target": "Mean pressure-event probability over actual charted rookie NFL workload; not unconditional pre-draft pressure production",
+  "comparison_priority": [
+    "sequence versus summaries",
+    "sequence versus shuffled",
+    "all source families versus conventional"
+  ],
+  "weights": "Sensitivity mixture, not calibrated boundary uncertainty",
+  "decision_rule": "Report all families in development and 2025 regardless of result. No tuning from these forward outcomes."
+}

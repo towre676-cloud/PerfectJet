@@ -1,0 +1,287 @@
+{
+  "scouting_rates": {
+    "nested": {
+      "mse": {
+        "conventional": 0.0013930387171199115,
+        "sprint": 0.0012249622653846756,
+        "skills": 0.001178297889584422,
+        "combined": 0.0012119397990871215
+      },
+      "comparisons": {
+        "sprint": {
+          "delta_mse": 0.0001680764517352359,
+          "ci95": [
+            -7.722809100511676e-05,
+            0.00041792792415095656
+          ],
+          "players": 45,
+          "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+        },
+        "skills": {
+          "delta_mse": 0.00021474082753548962,
+          "ci95": [
+            -1.3165784035908367e-05,
+            0.00047651129888326064
+          ],
+          "players": 45,
+          "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+        },
+        "combined": {
+          "delta_mse": 0.00018109891803278998,
+          "ci95": [
+            -4.975059358335723e-05,
+            0.0004500597885258587
+          ],
+          "players": 45,
+          "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+        }
+      },
+      "players": 45,
+      "definition": "Squared error of each player observed pressure-event frequency versus mean predicted probability over that player actual charted rush workload. Secondary metric added after play-level inspection; conditional on NFL workload/context, not unconditional pre-draft production."
+    },
+    "exploratory_2025": {
+      "mse": {
+        "conventional": 0.0007042353185925263,
+        "sprint": 0.0007299244243047184,
+        "skills": 0.0006867676954385944,
+        "combined": 0.0006236885346672996
+      },
+      "comparisons": {
+        "sprint": {
+          "delta_mse": -2.5689105712192178e-05,
+          "ci95": [
+            -0.0001240353620906166,
+            6.87346898979142e-05
+          ],
+          "players": 29,
+          "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+        },
+        "skills": {
+          "delta_mse": 1.7467623153931767e-05,
+          "ci95": [
+            -7.529875890831576e-05,
+            0.00011114927364699367
+          ],
+          "players": 29,
+          "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+        },
+        "combined": {
+          "delta_mse": 8.054678392522653e-05,
+          "ci95": [
+            2.0952856733101053e-05,
+            0.0001451239943561898
+          ],
+          "players": 29,
+          "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+        }
+      },
+      "players": 29,
+      "definition": "Squared error of each player observed pressure-event frequency versus mean predicted probability over that player actual charted rush workload. Secondary metric added after play-level inspection; conditional on NFL workload/context, not unconditional pre-draft production."
+    }
+  },
+  "secondary_metric_post_hoc": true,
+  "development_repeated_partitions": {
+    "details": [
+      {
+        "mse": {
+          "conventional": 0.0013930387171199115,
+          "sprint": 0.0012249622653846756,
+          "skills": 0.001178297889584422,
+          "combined": 0.0012119397990871215
+        },
+        "comparisons": {
+          "sprint": {
+            "delta_mse": 0.0001680764517352359,
+            "ci95": [
+              -7.722809100511676e-05,
+              0.00041792792415095656
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          },
+          "skills": {
+            "delta_mse": 0.00021474082753548962,
+            "ci95": [
+              -1.3165784035908367e-05,
+              0.00047651129888326064
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          },
+          "combined": {
+            "delta_mse": 0.00018109891803278998,
+            "ci95": [
+              -4.975059358335723e-05,
+              0.0004500597885258587
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          }
+        },
+        "players": 45,
+        "definition": "Squared error of each player observed pressure-event frequency versus mean predicted probability over that player actual charted rush workload. Secondary metric added after play-level inspection; conditional on NFL workload/context, not unconditional pre-draft production."
+      },
+      {
+        "mse": {
+          "conventional": 0.001332000589557379,
+          "sprint": 0.0007858805430099248,
+          "skills": 0.0009352477370652408,
+          "combined": 0.0009396815138826925
+        },
+        "comparisons": {
+          "sprint": {
+            "delta_mse": 0.0005461200465474547,
+            "ci95": [
+              0.0001368205669080562,
+              0.00107977090300323
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          },
+          "skills": {
+            "delta_mse": 0.0003967528524921385,
+            "ci95": [
+              -3.465714132152125e-05,
+              0.0009384902236241419
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          },
+          "combined": {
+            "delta_mse": 0.00039231907567468686,
+            "ci95": [
+              -7.114304115027662e-05,
+              0.000964569120630527
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          }
+        },
+        "players": 45,
+        "definition": "Squared error of each player observed pressure-event frequency versus mean predicted probability over that player actual charted rush workload. Secondary metric added after play-level inspection; conditional on NFL workload/context, not unconditional pre-draft production."
+      },
+      {
+        "mse": {
+          "conventional": 0.0012820590676057143,
+          "sprint": 0.0012280176905519321,
+          "skills": 0.0012735185679581059,
+          "combined": 0.0012283544499268645
+        },
+        "comparisons": {
+          "sprint": {
+            "delta_mse": 5.4041377053781874e-05,
+            "ci95": [
+              -6.57584945462998e-05,
+              0.00021613672807503846
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          },
+          "skills": {
+            "delta_mse": 8.540499647608214e-06,
+            "ci95": [
+              -0.00011106857184727818,
+              0.00015733479294592983
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          },
+          "combined": {
+            "delta_mse": 5.370461767884999e-05,
+            "ci95": [
+              -8.332077232738295e-05,
+              0.00019643984086021942
+            ],
+            "players": 45,
+            "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+          }
+        },
+        "players": 45,
+        "definition": "Squared error of each player observed pressure-event frequency versus mean predicted probability over that player actual charted rush workload. Secondary metric added after play-level inspection; conditional on NFL workload/context, not unconditional pre-draft production."
+      }
+    ],
+    "mean_player_rate_delta": 0.00020904087046210888,
+    "conditional_ci95": [
+      -5.5074835110028285e-06,
+      0.00046023183550846354
+    ],
+    "scope": "Same earlier players in all partitions; not three independent replications."
+  },
+  "profile_controls": {
+    "real_mse": 0.0006236885346672996,
+    "within_position_shuffled_mse": [
+      0.0006326047414106443,
+      0.0006163427213327636,
+      0.0006650337731258833,
+      0.0006400814999141275,
+      0.0006676306728794018,
+      0.0006347291940672735,
+      0.000652855403079729,
+      0.0007165550544084132,
+      0.000690961791701046,
+      0.0006361773512198494,
+      0.0006279722367110744,
+      0.0006357830997855825,
+      0.0006267267590609691,
+      0.0006319031219940328,
+      0.0006722252203036868,
+      0.0006492860563253654,
+      0.0006595593026729775,
+      0.0006698470836802468,
+      0.0006892410832923684,
+      0.000654730818655828,
+      0.000637807879404656,
+      0.0006221324830037109,
+      0.0006628285629367538,
+      0.0006636753974897703,
+      0.0006357261126219339,
+      0.00067030878333202,
+      0.0006592099007779322,
+      0.0006655527638613411,
+      0.0006544824943030048,
+      0.0006648842451717128
+    ],
+    "shuffles_better_than_real": 2,
+    "scope": "Fixed trained earlier-class model; whole held-out player profiles permuted within NFL position. No reselection. Diagnostic, not an exchangeability-certified p-value; permutations can break physical/profile dependence and availability."
+  },
+  "leave_one_player_out_delta_range": [
+    8.081011601405414e-05,
+    8.250639564951441e-05,
+    6.35161838693101e-05,
+    8.934044240965583e-05,
+    8.216956372799577e-05,
+    7.886220808421684e-05,
+    8.497830567283895e-05,
+    7.171964296069506e-05,
+    8.489023380777006e-05,
+    8.347538483710314e-05,
+    7.018011902449276e-05,
+    7.605001569490534e-05,
+    8.335066746166253e-05,
+    8.072073652267015e-05,
+    7.429872820751947e-05,
+    8.331065204125512e-05,
+    8.635337240510056e-05,
+    8.8407188282358e-05,
+    8.051866148222307e-05,
+    6.782984508112983e-05,
+    7.97217912683719e-05,
+    8.351633466335185e-05,
+    8.39952598049006e-05,
+    8.21691627936359e-05,
+    7.948790785442353e-05,
+    8.84811636525044e-05,
+    8.562609120737734e-05,
+    8.482382275644491e-05,
+    7.474673659408752e-05
+  ],
+  "team_cluster_forward": {
+    "teams": 21,
+    "delta_mse": 8.054678392522653e-05,
+    "conditional_ci95": [
+      2.4906772266994787e-05,
+      0.00014694829403098716
+    ],
+    "scope": "Team resampling over fixed player-mean errors; model and cohort fixed."
+  }
+}

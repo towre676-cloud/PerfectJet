@@ -1,0 +1,40 @@
+{
+  "source_attempts": 495,
+  "source_players": 106,
+  "source_rejections": {
+    "no_qualifying_first_turn": 66,
+    "short_response_window": 3
+  },
+  "eligible_route_records": 7306,
+  "game_rejections": {
+    "missing_or_nonunique_events": 888,
+    "no_qualifying_first_turn": 3773,
+    "short_or_irregular": 6
+  },
+  "all_qualifying_game_turns": 2630,
+  "incomplete_half_second_turns": 1234,
+  "primary_players_by_year": {
+    "2023": 21,
+    "2024": 16,
+    "2025": 14
+  },
+  "primary_turns_by_year": {
+    "2023": 599,
+    "2024": 430,
+    "2025": 287
+  },
+  "recovery_bounds_all_turns": {
+    "rows": 2630,
+    "observed_recovered_fraction": 0.6802281368821292,
+    "recovered_fraction_lower": 0.6802281368821292,
+    "recovered_fraction_upper": 0.9106463878326996,
+    "unresolved_before_horizon": 606,
+    "right_censored_total": 801,
+    "horizon_seconds": 0.5,
+    "scope": "Distribution-free bounds over observed records; no independent-censoring assumption. Not player balanced."
+  },
+  "measured_separation_fraction": 0.9908814589665653,
+  "primary_target": "burden: observed half-second normalized speed deficit in seconds",
+  "prior_2025_inspection": true,
+  "source_available_player_route_fraction": 0.8662613981762918
+}

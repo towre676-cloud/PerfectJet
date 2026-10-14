@@ -1,0 +1,22 @@
+{
+  "onset_rule": "First three consecutive observed speeds above2yd/s; first5s thereafter. Source-only threshold revision after onset audit. Still an operational rule, not labeled official cue or whole-drill semantic segmentation.",
+  "same_NFL_cohort_as_initial": true,
+  "athletic_source_attempts_in_NFL_cohort": 361,
+  "rejections": {},
+  "one_second_speed_comparison_by_drill": {
+    "old_speed_10": {
+      "FOUR_BAG_AGILITY_DRILL": 1.72,
+      "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": 3.253333333,
+      "PASS_RUSH_DRILL": 3.896666667,
+      "RUN_THE_HOOP_DRILL": 3.5283333335
+    },
+    "new_speed_10": {
+      "FOUR_BAG_AGILITY_DRILL": 1.66,
+      "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": 3.14,
+      "PASS_RUSH_DRILL": 4.253333333,
+      "RUN_THE_HOOP_DRILL": 3.4481744515
+    }
+  },
+  "metric": "Player pressure-rate selection on earlier classes, baseline includes revised source availability",
+  "adaptive_after_prior_forward_inspection": true
+}

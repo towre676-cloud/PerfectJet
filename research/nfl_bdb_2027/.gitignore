@@ -1,0 +1,16 @@
+data/
+private_results/
+__pycache__/
+*.pyc
+private_repo_results/
+private_repo_matched/
+private_notebook_original/
+private_reconstruction/
+private_repo_matched.log
+private_*/
+private_*.log
+private_*
+VERSION.json
+MANIFEST.json
+research_history.bundle
+phase_*.log

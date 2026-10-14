@@ -1,0 +1,85 @@
+{
+  "partitions": 3,
+  "players": 45,
+  "families": {
+    "capacity_only": {
+      "relative_gain": 0.0029490180943002116,
+      "absolute_gain": 3.239400218247464e-06,
+      "conditional_ci95": [
+        -1.4058207499343754e-05,
+        1.8131338827453372e-05
+      ],
+      "split_gains": [
+        0.006992175237164026,
+        -0.0005004160699031442,
+        0.0026105050687178365
+      ]
+    },
+    "raw_motion": {
+      "relative_gain": -0.0675590131728224,
+      "absolute_gain": -7.421137308028502e-05,
+      "conditional_ci95": [
+        -0.00014803798818618265,
+        -1.65860839120432e-05
+      ],
+      "split_gains": [
+        -0.08076575637466966,
+        0.0,
+        -0.12822543612574328
+      ]
+    },
+    "matched_recovery": {
+      "relative_gain": -0.04726169075922615,
+      "absolute_gain": -5.191542624173392e-05,
+      "conditional_ci95": [
+        -9.619067556276515e-05,
+        -1.5632424798401457e-05
+      ],
+      "split_gains": [
+        -0.02129316087003486,
+        -0.06518934359546166,
+        -0.054074982957880484
+      ]
+    },
+    "stress_curve": {
+      "relative_gain": -0.04307237484132278,
+      "absolute_gain": -4.7313599306526835e-05,
+      "conditional_ci95": [
+        -9.813204073969348e-05,
+        -7.000334090254707e-06
+      ],
+      "split_gains": [
+        -0.027505452107969855,
+        -0.026477099151860913,
+        -0.07716070292173184
+      ]
+    },
+    "robust_recovery": {
+      "relative_gain": -0.1729598585025053,
+      "absolute_gain": -0.00018999076488000307,
+      "conditional_ci95": [
+        -0.0003896624774070256,
+        -3.6709859592882155e-05
+      ],
+      "split_gains": [
+        -0.49527910102595357,
+        0.0,
+        -0.03401234296579696
+      ]
+    },
+    "selected": {
+      "relative_gain": -0.1936149654435096,
+      "absolute_gain": -0.0002126797263556672,
+      "conditional_ci95": [
+        -0.0004081514419521989,
+        -5.646551600664525e-05
+      ],
+      "split_gains": [
+        -0.4918419735983796,
+        -0.06568975966536482,
+        -0.02982090775617528
+      ]
+    }
+  },
+  "scope": "Same45players, context references refitted per partition; resampling fixed averaged player errors. Not three independent studies or full training uncertainty."
+}

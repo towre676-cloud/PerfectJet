@@ -1,0 +1,30 @@
+{
+  "status": "Aggregate results transcribed from observed completed experiment outputs after scratch maintenance. New source, per-player predictions and replay logs were lost; this is not a replay receipt.",
+  "population": {"position":"WR", "rookie_seasons":[2023,2024,2025], "players":[23,21,18], "routes":[4765,4337,3392], "tracking_hz":10},
+  "absolute_future_speed_observation_channel": {
+    "earlier_players": {"baseline_mse":0.9656526355579154,"prefix_mse":0.708903725292866,"relative_mse_reduction_pct":26.588122976199415,"paired_mse_difference":0.25674891026504937,"player_bootstrap_ci":[0.2076079103722587,0.32273831759068744]},
+    "2025": {"baseline_mse":0.9713617130973579,"prefix_mse":0.6472823848919012,"relative_mse_reduction_pct":33.36340354326636,"paired_mse_difference":0.3240793282054566,"player_bootstrap_ci":[0.2613799044783207,0.39680654576522295]},
+    "interpretation":"Gain from first-half-second game movement, not an incremental Combine scouting gain. 2025 WR analyses exploratory; conditional recorded-play population."
+  },
+  "absolute_future_speed_incremental_combine": {
+    "2025_without_prefix":{"baseline_mse":0.9713617130973579,"motion_mse":0.9659225959234239,"difference":0.005439117173933958,"ci":[-0.0012026358082759744,0.013072214684206305]},
+    "2025_with_prefix":{"baseline_mse":0.6472823848919012,"motion_mse":0.6461037956492953,"difference":0.0011785892426058131,"ci":[-0.003196373448202656,0.005884209154717245]},
+    "interpretation":"No reliable incremental advantage."
+  },
+  "speed_gain_incremental_combine": {
+    "2025":{"baseline_mse":0.6682153076129006,"motion_mse":0.6622154480009989,"difference":0.0059998596119016905,"ci":[-0.0001964859330674983,0.012358115088517033]},
+    "three_partition_average_difference":0.0032771333282686057,"three_partition_ci":[-0.006264238074494449,0.012107895413288064],
+    "shuffle_control":{"training_profile_shuffles":30,"mean_2025_mse":0.6583909762616682,"interpretation":"Shuffles outperformed actual profiles on average; selected-configuration diagnostic, not a reselection-based p-value."}
+  },
+  "response_transport":{"2025_tracking_minus_stopwatch_gain":0.00016013663012810967,"ci":[-0.00588020261765396,0.0065486959167108715]},
+  "repeatability_projection":{"2025_gain":-0.00015080710566291487,"ci":[-0.003941574095359491,0.003657827171908448]},
+  "separation":{"2025_gain":-0.00004529843537726878,"ci":[-0.010093403541581968,0.008978311834555136]},
+  "defensive_back_direction_change": {
+    "players":[19,27,20],"windows":[807,1390,1032],
+    "2025_baseline_mse":1.182786137504246,"2025_motion_mse":1.1934795575540966,"gain":-0.01069342004985036,"ci":[-0.02947903140303782,0.010265299705255167],
+    "protocol":"Development selection completed before first extraction of these DB 2025 targets. Original cryptographic freeze receipt lost during maintenance; no claim of a surviving freeze certificate.",
+    "initial_protocol":"Backpedal definition failed feasibility with five development players; revision used direction changes and removed backpedal interpretation."
+  },
+  "data_permissions":"Restricted raw data and private player-level outputs excluded. No Kaggle publication or formal submission completed.",
+  "full_new_notebook_replay":"Interrupted; completion not observed."
+}

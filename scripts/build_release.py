@@ -8,7 +8,12 @@ NAME=f'PerfectJet-v{VERSION}.zip'
 def eligible(path):
     rel=path.relative_to(ROOT)
     return (path.is_file() and not any(x in {'.git','__pycache__','.venv','.pytest_cache','dist','build'}
-                                      or x.endswith('.egg-info') for x in rel.parts)
+                                      or x.endswith('.egg-info') or x.startswith('private_')
+                                      or x in {'raw_data','restricted_data'} for x in rel.parts)
+            and path.name not in {'combine_results.csv','combine_tracking.csv','player_play.csv',
+                                  'players.csv','games.csv','player_career_successes.csv',
+                                  'game_tracking_2023.csv','game_tracking_2024.csv','game_tracking_2025.csv',
+                                  'kaggle.json'}
             and not (rel.parts[0]=='releases' and path.suffix in {'.zip','.sha256'})
             and rel.as_posix()!='MANIFEST.json')
 

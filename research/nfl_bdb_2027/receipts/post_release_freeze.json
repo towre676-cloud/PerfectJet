@@ -1,0 +1,10 @@
+{
+  "fixed_before_post_release_response_extraction_utc": "2026-10-14T02:29:31.181648+00:00",
+  "hashes": {
+    "post_release_transfer.py": "c80cc3e63a6cba53ab8dd5b6a7f0a8c2737d209d0278f3c189b0e9ebc5e093b4",
+    "receipts/post_release_design.json": "fa1340b29ef91df649017f590e83157c9e9d1c0aadbec87e93997f17cfdb1209"
+  },
+  "motivation": "2023 development-only timeline audit",
+  "prior_2025_WR_inspection": true,
+  "fresh_blind_test": false
+}

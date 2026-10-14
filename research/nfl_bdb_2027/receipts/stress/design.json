@@ -1,0 +1,11 @@
+{
+  "registered_before_new_scores": true,
+  "question": "Does matched entry-speed/turn-demand recovery efficiency predict context-adjusted rookie pressure frequency beyond conventional traits?",
+  "primary": "pressure_event residual mean",
+  "supporting": "player_get_off residual mean",
+  "source": "601 operational turns detected without NFL outcomes; full attempts rather than a generic first5s phase model",
+  "branches": "5/7/9-frame smoothing, centers shifts-2,-1,0,1,2; fixed validity filters",
+  "models": "Conventional; raw motion; demand-matched recovery; shrunk demand slope; ambiguity bounds/repeat dispersion; global training selector. All use same counts and conventional traits. Ridge10/100/1000, no PCA, baseline fallback.",
+  "validation": "Four outer/three inner class-stratified player splits. Context reference and training residuals rebuilt inside every inner/outer split;2023\u21922024 tuning before2025 refit evaluation.",
+  "scope": "Conditional context-adjusted recorded outcome, not causal talent or career productivity.2025 already inspected, all trials exploratory."
+}

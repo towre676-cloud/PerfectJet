@@ -1,0 +1,15 @@
+{
+  "completed_code_cells": 6,
+  "embedded_figures": 5,
+  "narrative_words": 1087,
+  "narrative_and_output_words": 1403,
+  "source_inputs": "nine official SHA-256 hashes checked",
+  "clean_temporary_directory": true,
+  "standalone_vs_cold_replay_max_numeric_difference": 3.552713678800501e-15,
+  "notebook_sha256": "ef69540103c4de58bfca9bc4e77c659f50a1a843d3a40be65a7f6a89856a9e20",
+  "prior_2025_inspection_disclosed": true,
+  "embedded_modules_match_packaged_source": true,
+  "unit_tests_passed": 38,
+  "figures_visually_inspected": 5,
+  "visual_QA_update": "After all model cells completed cold, bootstrap and figure cell were rerun with only plot label/tick and support-outline changes against retained verified outputs. Model source unchanged."
+}

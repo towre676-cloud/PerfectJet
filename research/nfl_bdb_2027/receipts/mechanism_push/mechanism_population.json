@@ -1,0 +1,58 @@
+{
+  "players_by_class": {
+    "2023": 24,
+    "2024": 19,
+    "2025": 16
+  },
+  "routes_by_class": {
+    "2023": 2829,
+    "2024": 1989,
+    "2025": 1424
+  },
+  "accepted_attempts": 384,
+  "rejected_attempts": {
+    "no qualifying turn": 51,
+    "insufficient three-second turn window": 128,
+    "insufficient approach speed": 1
+  },
+  "missing_movement_fraction": 0.25408522909323933,
+  "missing_separation_by_class_coverage": {
+    "(2023, 'MAN_COVERAGE')": 0.11534154535274356,
+    "(2023, 'ZONE_COVERAGE')": 0.1138865368331922,
+    "(2024, 'MAN_COVERAGE')": 0.13585434173669467,
+    "(2024, 'ZONE_COVERAGE')": 0.14036144578313253,
+    "(2025, 'MAN_COVERAGE')": 0.1527777777777778,
+    "(2025, 'ZONE_COVERAGE')": 0.11343523732904263
+  },
+  "movement_window_seconds": 3,
+  "features": [
+    "entry",
+    "retention",
+    "recovery",
+    "braking",
+    "propulsion",
+    "turn",
+    "bend",
+    "area",
+    "speed_mode_1",
+    "speed_mode_2",
+    "speed_mode_3",
+    "speed_mode_4"
+  ],
+  "mapping": {
+    "IN": [
+      "DAGGER_ROUTE_LEFT"
+    ],
+    "OUT": [
+      "SPEED_OUT_ROUTE_LEFT"
+    ],
+    "SLANT": [
+      "SLANT_ROUTE_LEFT"
+    ],
+    "HITCH": [
+      "CURL_ROUTE_RIGHT",
+      "COMEBACK_ROUTE_RIGHT"
+    ]
+  },
+  "feature_selection": "fixed mechanics and drill mapping; no outcome-directed selection"
+}

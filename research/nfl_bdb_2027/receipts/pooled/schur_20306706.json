@@ -1,0 +1,233 @@
+{
+  "seed": 20306706,
+  "adaptive_after_pooled_scores": true,
+  "grid_population": 60,
+  "component_specs": [
+    [
+      "capacity",
+      "baseline100_motion1000",
+      2,
+      10.0
+    ],
+    [
+      "duration",
+      "baseline100_motion1000",
+      2,
+      10.0
+    ],
+    [
+      "pooled",
+      "baseline100_motion1000",
+      2,
+      10.0
+    ]
+  ],
+  "selection": [
+    {
+      "fold": 0,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 0,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 0,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        0.1,
+        0.0
+      ],
+      "training_selection_score": 8.469786364562887e-09
+    },
+    {
+      "fold": 1,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "training_selection_score": 2.3913434063494952e-05
+    },
+    {
+      "fold": 1,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "training_selection_score": 9.023600010709627e-06
+    },
+    {
+      "fold": 1,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "training_selection_score": 2.2987936710375507e-05
+    },
+    {
+      "fold": 2,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 2,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 2,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 3,
+      "family": "mean_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 3,
+      "family": "class_guard",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    },
+    {
+      "fold": 3,
+      "family": "class_mean",
+      "weights": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "training_selection_score": 0.0
+    }
+  ],
+  "guard_scope": "Lower-one-standard-error heuristic; no calibrated selection-adjusted confidence guarantee. All choices from training players.",
+  "development": {
+    "mse": {
+      "conventional": 0.0010686639528242324,
+      "capacity": 0.0010688585891305584,
+      "duration": 0.001103767286140507,
+      "pooled": 0.0010742090399599926,
+      "mean_guard": 0.0010891730361348593,
+      "class_guard": 0.0010891730361348593,
+      "class_mean": 0.0010900611436169742
+    },
+    "comparisons": {
+      "capacity": {
+        "baseline_mse": 0.0010686639528242324,
+        "candidate_mse": 0.0010688585891305584,
+        "relative_gain": -0.00018213050586354004,
+        "absolute_gain": -1.9463630632612925e-07,
+        "athlete_bootstrap_95": [
+          -1.1098629763831131e-06,
+          6.844451503041854e-07
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "duration": {
+        "baseline_mse": 0.0010686639528242324,
+        "candidate_mse": 0.001103767286140507,
+        "relative_gain": -0.03284786880244684,
+        "absolute_gain": -3.5103333316274835e-05,
+        "athlete_bootstrap_95": [
+          -7.584609900927302e-05,
+          1.2451899752908035e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "pooled": {
+        "baseline_mse": 0.0010686639528242324,
+        "candidate_mse": 0.0010742090399599926,
+        "relative_gain": -0.005188803384923613,
+        "absolute_gain": -5.5450871357604925e-06,
+        "athlete_bootstrap_95": [
+          -1.5411245707586224e-05,
+          3.532372628269436e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "mean_guard": {
+        "baseline_mse": 0.0010686639528242324,
+        "candidate_mse": 0.0010891730361348593,
+        "relative_gain": -0.019191330685784075,
+        "absolute_gain": -2.050908331062725e-05,
+        "athlete_bootstrap_95": [
+          -5.753215525133347e-05,
+          8.891107827393778e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "class_guard": {
+        "baseline_mse": 0.0010686639528242324,
+        "candidate_mse": 0.0010891730361348593,
+        "relative_gain": -0.019191330685784075,
+        "absolute_gain": -2.050908331062725e-05,
+        "athlete_bootstrap_95": [
+          -5.753215525133347e-05,
+          8.891107827393778e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      },
+      "class_mean": {
+        "baseline_mse": 0.0010686639528242324,
+        "candidate_mse": 0.0010900611436169742,
+        "relative_gain": -0.020022375355876885,
+        "absolute_gain": -2.139719079274201e-05,
+        "athlete_bootstrap_95": [
+          -5.8489108261041565e-05,
+          8.241518304817337e-06
+        ],
+        "interval_scope": "Conditional on retained fitted predictions; does not include refitting or multiplicity across adaptive prior experiments",
+        "players": 45
+      }
+    }
+  }
+}

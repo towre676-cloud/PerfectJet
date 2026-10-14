@@ -420,3 +420,38 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T414 | Missing and corrections | Full formal proof integration unresolved | [23_status_corrections_and_frontiers](chapters/23_status_corrections_and_frontiers.md) |
 | PJ-T415 | Missing and corrections | No new Lean theorem claim | [23_status_corrections_and_frontiers](chapters/23_status_corrections_and_frontiers.md) |
 | PJ-T416 | Missing and corrections | Exact numerical historical proposal status separation | [23_status_corrections_and_frontiers](chapters/23_status_corrections_and_frontiers.md) |
+| PJ-T417 | NFL motor transfer | Official nine-file Combine adapter | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T418 | NFL motor transfer | LOS onset-travel confounding | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T419 | NFL motor transfer | Half-second post-onset functional | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T420 | NFL motor transfer | Independent-repeat source variance | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T421 | NFL motor transfer | Uncertainty-integrated scouting correction | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T422 | NFL motor transfer | Exact rational demand gate repair | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T423 | NFL motor transfer | Original-player bootstrap grouping | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T424 | NFL motor transfer | Nested source and outcome reconstruction | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T425 | NFL motor transfer | Chronological rookie outcomes | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T426 | NFL motor transfer | Strong fifteen-measurement comparator | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T427 | NFL motor transfer | Fixed-budget shortlist test | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T428 | NFL motor transfer | Unexecuted real-data status and full historical preservation | [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md) |
+| PJ-T429 | NFL math bridges | Operational NFL movement target geometry | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T430 | NFL math bridges | Bounded two-pass NFL frame extraction | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T431 | NFL math bridges | Finite-horizon supervised Hankel continuation | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T432 | NFL math bridges | Physical-coordinate SVD transfer | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T433 | NFL math bridges | Same-current different-history predictive witness | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T434 | NFL math bridges | Equal-player weighting and preserved bootstrap multiplicity | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T435 | NFL math bridges | Train-only NFL-to-Combine continuation alignment | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T436 | NFL math bridges | Descriptive support distances | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T437 | NFL math bridges | Out-of-player movement stacking | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T438 | NFL math bridges | Strong shared-availability scouting baseline | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T439 | NFL math bridges | Physical source-to-movement-to-outcome loading | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T440 | NFL math bridges | Fitted transfer-error decomposition | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T441 | NFL math bridges | Exact joint measurement-package optimum | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T442 | NFL math bridges | Zero-standalone-value nuisance cancellation | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T443 | NFL math bridges | Non-submodular target information | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T444 | NFL math bridges | Correlated within-attempt measurement blocks | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T445 | NFL math bridges | Original-attempt deduplication | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T446 | NFL math bridges | Rationalized fitted-loading provenance | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T447 | NFL math bridges | Uniform coefficient-rounding score bound | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T448 | NFL math bridges | Rational-snapshot optimization regret | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T449 | NFL math bridges | Robust multi-loading allocation | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T450 | NFL math bridges | Contender-difference sensing | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T451 | NFL math bridges | Synthetic mechanism evidence versus NFL performance | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |

@@ -1,0 +1,88 @@
+{
+  "status": "actual_data_prepared",
+  "draft_class_players": {
+    "2023": 26,
+    "2024": 21,
+    "2025": 17
+  },
+  "draft_class_routes": {
+    "2023": 3326,
+    "2024": 2285,
+    "2025": 1737
+  },
+  "wr_roster_players": 106,
+  "qualifying_attempts": 114,
+  "selected_drill": "DAGGER_ROUTE_LEFT",
+  "drill_player_availability": {
+    "2023": {
+      "CIRCUS_ROUTE_LEFT": 0,
+      "COMEBACK_ROUTE_RIGHT": 35,
+      "CURL_ROUTE_RIGHT": 36,
+      "DAGGER_ROUTE_LEFT": 38,
+      "GAUNTLET_DRILL": 38,
+      "OVER_SHOULDER_ADJUST": 0,
+      "POST_CORNER_ROUTE_LEFT": 38,
+      "POST_CORNER_ROUTE_RIGHT": 6,
+      "RED_ZONE_FADE_RIGHT": 19,
+      "SLANT_ROUTE_LEFT": 18,
+      "SLOT_SAIL_ROUTE_RIGHT": 30,
+      "SLOT_STRIKE_ROUTE_LEFT": 36,
+      "SPEED_OUT_LEFT": 0,
+      "SPEED_OUT_ROUTE_LEFT": 38
+    },
+    "2024": {
+      "CIRCUS_ROUTE_LEFT": 0,
+      "COMEBACK_ROUTE_RIGHT": 28,
+      "CURL_ROUTE_RIGHT": 30,
+      "DAGGER_ROUTE_LEFT": 31,
+      "GAUNTLET_DRILL": 31,
+      "OVER_SHOULDER_ADJUST": 1,
+      "POST_CORNER_ROUTE_LEFT": 30,
+      "POST_CORNER_ROUTE_RIGHT": 22,
+      "RED_ZONE_FADE_RIGHT": 18,
+      "SLANT_ROUTE_LEFT": 14,
+      "SLOT_SAIL_ROUTE_RIGHT": 30,
+      "SLOT_STRIKE_ROUTE_LEFT": 27,
+      "SPEED_OUT_LEFT": 31,
+      "SPEED_OUT_ROUTE_LEFT": 0
+    },
+    "2025": {
+      "CIRCUS_ROUTE_LEFT": 36,
+      "COMEBACK_ROUTE_RIGHT": 34,
+      "CURL_ROUTE_RIGHT": 36,
+      "DAGGER_ROUTE_LEFT": 37,
+      "GAUNTLET_DRILL": 37,
+      "OVER_SHOULDER_ADJUST": 0,
+      "POST_CORNER_ROUTE_LEFT": 0,
+      "POST_CORNER_ROUTE_RIGHT": 0,
+      "RED_ZONE_FADE_RIGHT": 9,
+      "SLANT_ROUTE_LEFT": 27,
+      "SLOT_SAIL_ROUTE_RIGHT": 34,
+      "SLOT_STRIKE_ROUTE_LEFT": 36,
+      "SPEED_OUT_LEFT": 0,
+      "SPEED_OUT_ROUTE_LEFT": 37
+    }
+  },
+  "drill_frame_counts": {
+    "GAUNTLET_DRILL": 18081,
+    "POST_CORNER_ROUTE_RIGHT": 7875,
+    "COMEBACK_ROUTE_RIGHT": 6593,
+    "DAGGER_ROUTE_LEFT": 7461,
+    "GO_ROUTE_RIGHT": 7583,
+    "CIRCUS_ROUTE_LEFT": 2551,
+    "SLOT_SAIL_ROUTE_RIGHT": 7332,
+    "OVER_SHOULDER_ADJUST": 6543,
+    "SLOT_STRIKE_ROUTE_LEFT": 6271,
+    "CURL_ROUTE_RIGHT": 6152,
+    "SPEED_OUT_ROUTE_LEFT": 3792,
+    "RED_ZONE_FADE_RIGHT": 4975,
+    "SLANT_ROUTE_LEFT": 4280,
+    "POST_CORNER_ROUTE_LEFT": 4236,
+    "SPEED_OUT_LEFT": 1675
+  },
+  "target_only_fraction": 0.20862819814915623,
+  "game_tracking_use": "Primary outcome uses official separation; game trajectory replication remains secondary and unrun.",
+  "excluded_attempts": {
+    "no_qualifying_turn": 404
+  }
+}

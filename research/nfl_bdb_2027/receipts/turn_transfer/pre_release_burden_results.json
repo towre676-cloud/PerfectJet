@@ -1,0 +1,267 @@
+{
+  "status": "completed_actual_data_exploratory",
+  "target": "burden",
+  "seed": 20272206,
+  "nested": {
+    "mse": {
+      "conventional": 0.0018508195037120721,
+      "source_demands": 0.0020079277347143363,
+      "execution": 0.0019071812353375621
+    },
+    "execution_increment": {
+      "delta_mse": 0.00010074649937677432,
+      "ci95": [
+        -3.0954865479317285e-05,
+        0.00023834924306336
+      ],
+      "players": 37,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "tracking_increment": {
+      "delta_mse": -5.636173162548937e-05,
+      "ci95": [
+        -0.00015879280970468944,
+        2.563900416104386e-05
+      ],
+      "players": 37,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 37,
+    "turns": 1029
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "inner_mse": [
+        0.0018618019200302815,
+        0.002134183241377619,
+        0.003272264962140075,
+        0.0018572857747159515,
+        0.0017721476499668112
+      ],
+      "config": 4,
+      "train_player_hash": "caee044bacc43d71e922ca6e5a2ae9e5a997ca022302f5d896738df6711e082b",
+      "test_player_hash": "e47933ed8875ad07779330c472aae487e9568d5ec7b926b87f54dc88e52a0b48"
+    },
+    {
+      "fold": 0,
+      "family": "source_demands",
+      "inner_mse": [
+        0.001749765741491509,
+        0.0018443943427536968,
+        0.0030203221046806784,
+        0.0018224050669178229,
+        0.0017973236131077353
+      ],
+      "config": 0,
+      "train_player_hash": "caee044bacc43d71e922ca6e5a2ae9e5a997ca022302f5d896738df6711e082b",
+      "test_player_hash": "e47933ed8875ad07779330c472aae487e9568d5ec7b926b87f54dc88e52a0b48"
+    },
+    {
+      "fold": 0,
+      "family": "execution",
+      "inner_mse": [
+        0.0017537751157185543,
+        0.001808642091820355,
+        0.0028156663663617683,
+        0.0018955310881210018,
+        0.001644258409526092
+      ],
+      "config": 4,
+      "train_player_hash": "caee044bacc43d71e922ca6e5a2ae9e5a997ca022302f5d896738df6711e082b",
+      "test_player_hash": "e47933ed8875ad07779330c472aae487e9568d5ec7b926b87f54dc88e52a0b48"
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "inner_mse": [
+        0.002031260148517277,
+        0.0022721733208975795,
+        0.0032316781880011077,
+        0.0017889628461682143,
+        0.0017839707420828103
+      ],
+      "config": 4,
+      "train_player_hash": "b3add3fec31051032aaf67a1284ab87949f989e5bb14a440a6aabfb4b78b0271",
+      "test_player_hash": "79ce36f8a84e16b229f4ab3e6d4ed5359663045414f88b537d9364f4aa97683b"
+    },
+    {
+      "fold": 1,
+      "family": "source_demands",
+      "inner_mse": [
+        0.002109687960207153,
+        0.002061828696514945,
+        0.0030125512437503012,
+        0.0018346963303117806,
+        0.0019000336053538796
+      ],
+      "config": 3,
+      "train_player_hash": "b3add3fec31051032aaf67a1284ab87949f989e5bb14a440a6aabfb4b78b0271",
+      "test_player_hash": "79ce36f8a84e16b229f4ab3e6d4ed5359663045414f88b537d9364f4aa97683b"
+    },
+    {
+      "fold": 1,
+      "family": "execution",
+      "inner_mse": [
+        0.0024056626282586272,
+        0.002234409004036142,
+        0.0030283076770523574,
+        0.0018480580416630613,
+        0.0018211416727854483
+      ],
+      "config": 4,
+      "train_player_hash": "b3add3fec31051032aaf67a1284ab87949f989e5bb14a440a6aabfb4b78b0271",
+      "test_player_hash": "79ce36f8a84e16b229f4ab3e6d4ed5359663045414f88b537d9364f4aa97683b"
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "inner_mse": [
+        0.002911802190393498,
+        0.002340233146225946,
+        0.0034456452065516775,
+        0.0019877364308149435,
+        0.001949101186579845
+      ],
+      "config": 4,
+      "train_player_hash": "3a76dcd83748ed500afcb4d91f3d41b6c1ed1b781de0a4e3ca25975bbe89c4a5",
+      "test_player_hash": "88cd2f7df3bbd52493255d9d60db8fcb9ef7320918279a8b871afb17257219e7"
+    },
+    {
+      "fold": 2,
+      "family": "source_demands",
+      "inner_mse": [
+        0.0038432007725616286,
+        0.0023281843398061156,
+        0.003200583756276704,
+        0.0021087084190508617,
+        0.0020440532389816627
+      ],
+      "config": 4,
+      "train_player_hash": "3a76dcd83748ed500afcb4d91f3d41b6c1ed1b781de0a4e3ca25975bbe89c4a5",
+      "test_player_hash": "88cd2f7df3bbd52493255d9d60db8fcb9ef7320918279a8b871afb17257219e7"
+    },
+    {
+      "fold": 2,
+      "family": "execution",
+      "inner_mse": [
+        0.0024423605340851444,
+        0.002176919274309937,
+        0.0030222964915058988,
+        0.0021428836759309253,
+        0.002010488883754514
+      ],
+      "config": 4,
+      "train_player_hash": "3a76dcd83748ed500afcb4d91f3d41b6c1ed1b781de0a4e3ca25975bbe89c4a5",
+      "test_player_hash": "88cd2f7df3bbd52493255d9d60db8fcb9ef7320918279a8b871afb17257219e7"
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "inner_mse": [
+        0.0016621495504726572,
+        0.0020132786700866206,
+        0.0032467484436253954,
+        0.002041998653768771,
+        0.0019458161982318402
+      ],
+      "config": 0,
+      "train_player_hash": "67567ac7782f79edc87959acd921ea1089ba7c4afc5bd3e45e0675763c088820",
+      "test_player_hash": "12acd957c61acc248c0ec360d7b5362f4c2c859d8d0cd5f4e1c05b7cb3abe536"
+    },
+    {
+      "fold": 3,
+      "family": "source_demands",
+      "inner_mse": [
+        0.0016770063087698022,
+        0.0018237319997544798,
+        0.0030611241661692838,
+        0.0021022198282171604,
+        0.0019807372062946357
+      ],
+      "config": 0,
+      "train_player_hash": "67567ac7782f79edc87959acd921ea1089ba7c4afc5bd3e45e0675763c088820",
+      "test_player_hash": "12acd957c61acc248c0ec360d7b5362f4c2c859d8d0cd5f4e1c05b7cb3abe536"
+    },
+    {
+      "fold": 3,
+      "family": "execution",
+      "inner_mse": [
+        0.0018465750913659814,
+        0.0018836193132811246,
+        0.0029930624151402966,
+        0.0020937317031425157,
+        0.0019266400764821427
+      ],
+      "config": 0,
+      "train_player_hash": "67567ac7782f79edc87959acd921ea1089ba7c4afc5bd3e45e0675763c088820",
+      "test_player_hash": "12acd957c61acc248c0ec360d7b5362f4c2c859d8d0cd5f4e1c05b7cb3abe536"
+    }
+  ],
+  "prior_2025_inspection": true,
+  "primary_contrast": "execution versus source_demands; conventional is secondary",
+  "scope": "Conditional mechanical transfer using measured NFL turn demands; not live deployment or causal training benefit.",
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 0.0011648532652172975,
+      "source_demands": 0.0011623708493253737,
+      "execution": 0.0012287524176224035
+    },
+    "execution_increment": {
+      "delta_mse": -6.638156829702992e-05,
+      "ci95": [
+        -0.00014258074930676947,
+        8.943735440568002e-06
+      ],
+      "players": 14,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "tracking_increment": {
+      "delta_mse": -6.38991524051062e-05,
+      "ci95": [
+        -0.0001394510040620038,
+        8.98220317252568e-06
+      ],
+      "players": 14,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 14,
+    "turns": 287
+  },
+  "forward_selection": [
+    {
+      "family": "conventional",
+      "validation_mse": [
+        0.0020028078635057405,
+        0.0024833539771765343,
+        0.0035863286763825183,
+        0.0022618045475844705,
+        0.0018046876525172665
+      ],
+      "config": 4
+    },
+    {
+      "family": "source_demands",
+      "validation_mse": [
+        0.0019964302333834658,
+        0.0021958487617905163,
+        0.003308340953890703,
+        0.002224507778358937,
+        0.0019479260597596451
+      ],
+      "config": 4
+    },
+    {
+      "family": "execution",
+      "validation_mse": [
+        0.0023621846640704425,
+        0.0023969070992395118,
+        0.003453162194296383,
+        0.002343988285934886,
+        0.0019667081874002517
+      ],
+      "config": 4
+    }
+  ]
+}

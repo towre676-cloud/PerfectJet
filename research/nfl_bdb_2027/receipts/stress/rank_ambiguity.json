@@ -1,0 +1,25 @@
+{
+  "drills": {
+    "PASS_RUSH_DRILL": {
+      "matched_pairs": 244,
+      "disjoint_branch_intervals": 11,
+      "fraction_ambiguous": 0.9549180327868853
+    },
+    "RUN_THE_HOOP_DRILL": {
+      "matched_pairs": 215,
+      "disjoint_branch_intervals": 13,
+      "fraction_ambiguous": 0.9395348837209302
+    },
+    "FOUR_BAG_AGILITY_DRILL": {
+      "matched_pairs": 199,
+      "disjoint_branch_intervals": 18,
+      "fraction_ambiguous": 0.9095477386934674
+    },
+    "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": {
+      "matched_pairs": 206,
+      "disjoint_branch_intervals": 70,
+      "fraction_ambiguous": 0.6601941747572815
+    }
+  },
+  "scope": "Same Combine position,forty within0.10s andweight within20lb. Adjusted-recovery branch intervals under earlier-trained source reference. Overlap is sensitivity ambiguity, not probability of misranking or evidence of NFL talent."
+}

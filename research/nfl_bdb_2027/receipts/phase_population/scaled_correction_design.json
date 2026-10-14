@@ -1,0 +1,10 @@
+{
+  "adaptive_after_unscaled_correction": true,
+  "registered_before_scaled_scores": true,
+  "reason": "Squared PCA and mass-interaction coordinates have unequal scales, defeating an equal ridge penalty; constrain extrapolation to training support",
+  "fixed_alpha": 100,
+  "clipping": "training1st/99th percentiles per nonlinear coordinate",
+  "scaler": "training-fitted StandardScaler after clipping",
+  "reuse": "identical prior player-cross-fitted baseline residuals and outer ensemble predictions",
+  "families": "all three retained; no family selection from2025"
+}

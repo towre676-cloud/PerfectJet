@@ -1,0 +1,15 @@
+{
+  "repeats": 200,
+  "players": 74,
+  "rank_correlation_quantiles": [
+    0.16511439902577413,
+    0.2796579638492014,
+    0.4167082440945628
+  ],
+  "smaller_half_records_quantiles": [
+    17.0,
+    71.0,
+    239.0
+  ],
+  "scope": "Random halves of recorded games; direct pressure-rate reproducibility, conditional on workload, contexts and annotation. No classical reliability correction, no independent ability ground truth and no predictive accuracy ceiling."
+}

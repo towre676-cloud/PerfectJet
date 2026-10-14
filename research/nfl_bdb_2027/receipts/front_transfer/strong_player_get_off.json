@@ -1,0 +1,342 @@
+{
+  "target": "player_get_off",
+  "seed": 20274306,
+  "folds": [
+    {
+      "fold": 0,
+      "family": "conventional",
+      "config": 0,
+      "inner_loss": [
+        0.05473836045702579,
+        0.05851353895748126,
+        0.07309428821147225,
+        0.05565596270988187,
+        0.05656616310208557
+      ],
+      "train_player_hash": "ec6c8790dbaac0e507c4d468ed65dfcc958f69bc7448ba89446b373e234cf256"
+    },
+    {
+      "fold": 0,
+      "family": "sprint",
+      "config": 3,
+      "inner_loss": [
+        0.22334314655906326,
+        0.19576827000379615,
+        0.10558918276679718,
+        0.05617520795779624,
+        0.056949366387584945
+      ],
+      "train_player_hash": "ec6c8790dbaac0e507c4d468ed65dfcc958f69bc7448ba89446b373e234cf256"
+    },
+    {
+      "fold": 0,
+      "family": "skills",
+      "config": 3,
+      "inner_loss": [
+        0.11509892072743676,
+        0.1314907653734062,
+        0.14286496408103214,
+        0.05622641015899565,
+        0.05771253983162872
+      ],
+      "train_player_hash": "ec6c8790dbaac0e507c4d468ed65dfcc958f69bc7448ba89446b373e234cf256"
+    },
+    {
+      "fold": 0,
+      "family": "combined",
+      "config": 3,
+      "inner_loss": [
+        0.08952248353367398,
+        0.09175082389495826,
+        0.09472967481404111,
+        0.055975468689244946,
+        0.05759233533482666
+      ],
+      "train_player_hash": "ec6c8790dbaac0e507c4d468ed65dfcc958f69bc7448ba89446b373e234cf256"
+    },
+    {
+      "fold": 1,
+      "family": "conventional",
+      "config": 0,
+      "inner_loss": [
+        0.050814644512167086,
+        0.054501345115747356,
+        0.07099979958228081,
+        0.05412842834924006,
+        0.05498507063334018
+      ],
+      "train_player_hash": "516625ae9ba58a45baed44d3ee2a81a5392239cfa8f57eda0d73441cdf4ef62d"
+    },
+    {
+      "fold": 1,
+      "family": "sprint",
+      "config": 3,
+      "inner_loss": [
+        0.3280896838251422,
+        0.23551669565211017,
+        0.1952087043123154,
+        0.054904874169261396,
+        0.05541252262174735
+      ],
+      "train_player_hash": "516625ae9ba58a45baed44d3ee2a81a5392239cfa8f57eda0d73441cdf4ef62d"
+    },
+    {
+      "fold": 1,
+      "family": "skills",
+      "config": 3,
+      "inner_loss": [
+        0.05709400721535627,
+        0.06126392864732829,
+        0.0783852624496016,
+        0.05445191487253954,
+        0.05565394222772072
+      ],
+      "train_player_hash": "516625ae9ba58a45baed44d3ee2a81a5392239cfa8f57eda0d73441cdf4ef62d"
+    },
+    {
+      "fold": 1,
+      "family": "combined",
+      "config": 3,
+      "inner_loss": [
+        0.07724576389592323,
+        0.07528508636607904,
+        0.09776104432891425,
+        0.0545271344304791,
+        0.05555927832191137
+      ],
+      "train_player_hash": "516625ae9ba58a45baed44d3ee2a81a5392239cfa8f57eda0d73441cdf4ef62d"
+    },
+    {
+      "fold": 2,
+      "family": "conventional",
+      "config": 3,
+      "inner_loss": [
+        0.054773374359450046,
+        0.05890583877833822,
+        0.07244600474589269,
+        0.05462980994741351,
+        0.05518327482726348
+      ],
+      "train_player_hash": "50bc2e6a799dfff6b321528007027505d8fe3127175ab5fa0ea85fe0038ed1a5"
+    },
+    {
+      "fold": 2,
+      "family": "sprint",
+      "config": 3,
+      "inner_loss": [
+        0.06341925660777635,
+        0.06421838697753145,
+        0.07512313138963918,
+        0.0546299736317268,
+        0.05517187806703753
+      ],
+      "train_player_hash": "50bc2e6a799dfff6b321528007027505d8fe3127175ab5fa0ea85fe0038ed1a5"
+    },
+    {
+      "fold": 2,
+      "family": "skills",
+      "config": 3,
+      "inner_loss": [
+        0.06143751831431369,
+        0.06274836999742692,
+        0.08283420052523378,
+        0.05490741504301171,
+        0.055320407510123494
+      ],
+      "train_player_hash": "50bc2e6a799dfff6b321528007027505d8fe3127175ab5fa0ea85fe0038ed1a5"
+    },
+    {
+      "fold": 2,
+      "family": "combined",
+      "config": 3,
+      "inner_loss": [
+        0.07306764478302394,
+        0.07344833873243294,
+        0.08444249035551536,
+        0.054866867042291136,
+        0.0551594198778802
+      ],
+      "train_player_hash": "50bc2e6a799dfff6b321528007027505d8fe3127175ab5fa0ea85fe0038ed1a5"
+    },
+    {
+      "fold": 3,
+      "family": "conventional",
+      "config": 0,
+      "inner_loss": [
+        0.054640806261272275,
+        0.05836637777622461,
+        0.07375615765069128,
+        0.057199034646010706,
+        0.058451042854410294
+      ],
+      "train_player_hash": "6e1ca4237450db634cbc1ff3de5a7b883890db12d0db364593a0a046c8b8c01c"
+    },
+    {
+      "fold": 3,
+      "family": "sprint",
+      "config": 3,
+      "inner_loss": [
+        0.0681900104661892,
+        0.07334359359931746,
+        0.07833589930168496,
+        0.05727947794695753,
+        0.05839593326939144
+      ],
+      "train_player_hash": "6e1ca4237450db634cbc1ff3de5a7b883890db12d0db364593a0a046c8b8c01c"
+    },
+    {
+      "fold": 3,
+      "family": "skills",
+      "config": 3,
+      "inner_loss": [
+        0.06080420245814674,
+        0.06545104013965951,
+        0.09063537387587688,
+        0.05735954418117167,
+        0.05834777556771564
+      ],
+      "train_player_hash": "6e1ca4237450db634cbc1ff3de5a7b883890db12d0db364593a0a046c8b8c01c"
+    },
+    {
+      "fold": 3,
+      "family": "combined",
+      "config": 3,
+      "inner_loss": [
+        0.05814598002176654,
+        0.06232719950547225,
+        0.08106050584457848,
+        0.05736114485718848,
+        0.0580969818089988
+      ],
+      "train_player_hash": "6e1ca4237450db634cbc1ff3de5a7b883890db12d0db364593a0a046c8b8c01c"
+    }
+  ],
+  "source_availability_in_every_baseline": true,
+  "conditional_player_weighting": true,
+  "prior_global_2025_WR_DB_inspection": true,
+  "DL_model_selection_2025_used": false,
+  "selection": [
+    {
+      "family": "conventional",
+      "config": 0,
+      "validation_loss": [
+        0.05463744579157681,
+        0.05645129447831887,
+        0.07215109275310673,
+        0.055551991399638116,
+        0.05894073437868406
+      ]
+    },
+    {
+      "family": "sprint",
+      "config": 3,
+      "validation_loss": [
+        0.0830328660927151,
+        0.10664590197103653,
+        0.137634389886605,
+        0.05728999366070915,
+        0.06037629371719348
+      ]
+    },
+    {
+      "family": "skills",
+      "config": 3,
+      "validation_loss": [
+        0.7971268407799355,
+        0.5274443036677456,
+        0.25193318470364223,
+        0.055727890893110435,
+        0.0600604528865823
+      ]
+    },
+    {
+      "family": "combined",
+      "config": 3,
+      "validation_loss": [
+        0.2647681435740497,
+        0.16853339777613777,
+        0.17404886116661258,
+        0.05594920993678272,
+        0.059392734513278575
+      ]
+    }
+  ],
+  "nested": {
+    "mse": {
+      "conventional": 0.05479268489062031,
+      "sprint": 0.05444339612364694,
+      "skills": 0.054577725134633916,
+      "combined": 0.054626408230165874
+    },
+    "comparisons": {
+      "sprint": {
+        "delta_mse": 0.0003492887669733586,
+        "ci95": [
+          -0.002188599889362117,
+          0.0037874172617447933
+        ],
+        "players": 45,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "skills": {
+        "delta_mse": 0.00021495975598638628,
+        "ci95": [
+          -0.002421741792359286,
+          0.0038085421737637424
+        ],
+        "players": 45,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "combined": {
+        "delta_mse": 0.00016627666045442003,
+        "ci95": [
+          -0.0025417890240182817,
+          0.0036893068700251403
+        ],
+        "players": 45,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      }
+    },
+    "players": 45,
+    "rows": 9583
+  },
+  "exploratory_2025": {
+    "mse": {
+      "conventional": 0.05667810999601645,
+      "sprint": 0.05770305681990006,
+      "skills": 0.05706230054493863,
+      "combined": 0.05737415428416526
+    },
+    "comparisons": {
+      "sprint": {
+        "delta_mse": -0.0010249468238836172,
+        "ci95": [
+          -0.0025229581723980013,
+          0.0005534741810493841
+        ],
+        "players": 29,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "skills": {
+        "delta_mse": -0.00038419054892218344,
+        "ci95": [
+          -0.001939655104678659,
+          0.0012501809354590573
+        ],
+        "players": 29,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      },
+      "combined": {
+        "delta_mse": -0.0006960442881488055,
+        "ci95": [
+          -0.0022437641451409896,
+          0.0009574936043311174
+        ],
+        "players": 29,
+        "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+      }
+    },
+    "players": 29,
+    "rows": 5082
+  }
+}

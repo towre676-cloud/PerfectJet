@@ -1,0 +1,19 @@
+{
+  "registered_before_common_comparison_results": true,
+  "goal": "Reconcile both source engines on identical player outcomes, predictor availability, splits and model bank",
+  "families": [
+    "conventional",
+    "onset_summaries",
+    "duration_kinematic",
+    "duration_ordered",
+    "duration_uncertain",
+    "duration_combined",
+    "merged",
+    "selected"
+  ],
+  "baseline": "Combine traits and Combine position, five common source-availability flags; NFL game context excluded",
+  "bank": "Three baseline alphas; six rank2/rank4 configurations per source family. All families can choose baseline. Global selection searches39 unique candidates entirely inside training folds.",
+  "development": "Three repeated class-stratified4x3 nested splits on the same45players; not independent cohorts",
+  "forward": "2023 train2024 tune; refit2023/24;2025 explicitly exploratory after both sessions inspection",
+  "prohibited": "No canonical model chosen from best2025MSE, no addition of percentage gains, no causal or championship guarantee"
+}

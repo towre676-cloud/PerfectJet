@@ -1,0 +1,21 @@
+{
+  "drills": {
+    "PASS_RUSH_DRILL": {
+      "attempts": 143,
+      "mean_onset_coordinate_sd_yd": 0.5044101023059782
+    },
+    "RUN_THE_HOOP_DRILL": {
+      "attempts": 76,
+      "mean_onset_coordinate_sd_yd": 0.3888920744017357
+    },
+    "FOUR_BAG_AGILITY_DRILL": {
+      "attempts": 71,
+      "mean_onset_coordinate_sd_yd": 0.4200684331452603
+    },
+    "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": {
+      "attempts": 71,
+      "mean_onset_coordinate_sd_yd": 0.5090287521044438
+    }
+  },
+  "scope": "Mean onset-averaged first-up-to-5s trajectories; initial approach rotated forward and final lateral direction reflected positive, normalized elapsed window. Gray coordinate-wise mean onset SD curves are sensitivity guides, not confidence bands. Recovery color follows assumed phase language, not validated semantic labels."
+}

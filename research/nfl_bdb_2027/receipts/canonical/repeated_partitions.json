@@ -1,0 +1,112 @@
+{
+  "players": 45,
+  "partitions": 3,
+  "scope": "Player-paired average errors over three reused partitions; no independent replication, model refits or adaptive-search correction.",
+  "families": {
+    "onset_summaries": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.0010090710247277319,
+      "relative_gain": -0.026390303355772603,
+      "absolute_gain": -2.5944994183031213e-05,
+      "fixed_prediction_ci95": [
+        -6.127672631585208e-05,
+        3.922944245428332e-06
+      ],
+      "split_relative_gains": [
+        0.0,
+        0.0,
+        -0.07679405818922547
+      ]
+    },
+    "duration_kinematic": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.0010002496339146009,
+      "relative_gain": -0.017417505831284763,
+      "absolute_gain": -1.7123603369900167e-05,
+      "fixed_prediction_ci95": [
+        -3.4957526826264726e-05,
+        -3.5547412247424085e-07
+      ],
+      "split_relative_gains": [
+        -0.018050797009632646,
+        0.0,
+        -0.03293751234516573
+      ]
+    },
+    "duration_ordered": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.0009906402690873395,
+      "relative_gain": -0.007643209831882451,
+      "absolute_gain": -7.514238542638822e-06,
+      "fixed_prediction_ci95": [
+        -3.3978355234058775e-05,
+        1.2773503390527958e-05
+      ],
+      "split_relative_gains": [
+        0.0,
+        0.0,
+        -0.022241241135776916
+      ]
+    },
+    "duration_uncertain": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.000955033271265071,
+      "relative_gain": 0.028574931806113212,
+      "absolute_gain": 2.8092759279629595e-05,
+      "fixed_prediction_ci95": [
+        -2.0763620892163398e-05,
+        8.193225359028099e-05
+      ],
+      "split_relative_gains": [
+        -0.023140835750441936,
+        -0.0014921211234131412,
+        0.10728455247254474
+      ]
+    },
+    "duration_combined": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.0009454625460704576,
+      "relative_gain": 0.03830992497815927,
+      "absolute_gain": 3.7663484474243e-05,
+      "fixed_prediction_ci95": [
+        -2.4980421445707432e-05,
+        9.840715628672984e-05
+      ],
+      "split_relative_gains": [
+        0.03670747730746003,
+        0.013222475194290878,
+        0.06313648974034344
+      ]
+    },
+    "merged": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.000964403323833317,
+      "relative_gain": 0.019044055522576597,
+      "absolute_gain": 1.8722706711383615e-05,
+      "fixed_prediction_ci95": [
+        -2.3425717315265153e-05,
+        6.651300336748459e-05
+      ],
+      "split_relative_gains": [
+        0.0,
+        0.0,
+        0.05541695706349992
+      ]
+    },
+    "selected": {
+      "mean_baseline_mse": 0.0009831260305447006,
+      "mean_candidate_mse": 0.0009400819886834841,
+      "relative_gain": 0.04378283203158395,
+      "absolute_gain": 4.30440418612165e-05,
+      "fixed_prediction_ci95": [
+        -1.2880237088994267e-05,
+        0.00010213589600819701
+      ],
+      "split_relative_gains": [
+        0.013566641557018201,
+        0.007318533988707874,
+        0.10728455247254474
+      ]
+    }
+  }
+}

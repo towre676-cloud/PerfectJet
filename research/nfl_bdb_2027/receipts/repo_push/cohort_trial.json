@@ -1,0 +1,245 @@
+{
+  "status": "exploratory_actual_data",
+  "test_previously_inspected": true,
+  "selection": "2023 train; 2024 tune; refit 2023+2024; 2025 exploratory transport",
+  "primary_new_family": "all",
+  "selected": {
+    "baseline": {
+      "config": {
+        "reg": "forest",
+        "alpha": 0,
+        "k": 4
+      },
+      "config_index": 3,
+      "validation_mse": 2.933024008158611,
+      "test_mse": 2.850714974660083,
+      "test_rmse_yards": 1.6884060455530485,
+      "motion_input_columns": 0,
+      "motion_latent_dimension": 0
+    },
+    "summary": {
+      "config": {
+        "reg": "forest",
+        "alpha": 0,
+        "k": 4
+      },
+      "config_index": 3,
+      "validation_mse": 2.9532824138018605,
+      "test_mse": 2.839453022131512,
+      "test_rmse_yards": 1.6850676609951043,
+      "motion_input_columns": 64,
+      "motion_latent_dimension": 4,
+      "paired_vs_strong_conventional": {
+        "delta_mse": 0.01126195252857113,
+        "ci95": [
+          0.0009717638327819459,
+          0.022400265383744445
+        ],
+        "players": 17
+      }
+    },
+    "signature": {
+      "config": {
+        "reg": "forest",
+        "alpha": 0,
+        "k": 4
+      },
+      "config_index": 3,
+      "validation_mse": 2.950431681124492,
+      "test_mse": 2.839973749165286,
+      "test_rmse_yards": 1.6852221661149862,
+      "motion_input_columns": 672,
+      "motion_latent_dimension": 4,
+      "paired_vs_strong_conventional": {
+        "delta_mse": 0.010741225494796926,
+        "ci95": [
+          -0.003029761869562476,
+          0.026785579241050152
+        ],
+        "players": 17
+      }
+    },
+    "dynamics": {
+      "config": {
+        "reg": "forest",
+        "alpha": 0,
+        "k": 4
+      },
+      "config_index": 3,
+      "validation_mse": 2.9403789897913803,
+      "test_mse": 2.839707427538577,
+      "test_rmse_yards": 1.685143147491802,
+      "motion_input_columns": 120,
+      "motion_latent_dimension": 4,
+      "paired_vs_strong_conventional": {
+        "delta_mse": 0.011007547121505997,
+        "ci95": [
+          -0.005971186973227321,
+          0.026806369234896012
+        ],
+        "players": 17
+      }
+    },
+    "all": {
+      "config": {
+        "reg": "extra",
+        "alpha": 0,
+        "k": 8
+      },
+      "config_index": 4,
+      "validation_mse": 2.952496551143956,
+      "test_mse": 2.81304659652623,
+      "test_rmse_yards": 1.6772139388063259,
+      "motion_input_columns": 856,
+      "motion_latent_dimension": 8,
+      "paired_vs_strong_conventional": {
+        "delta_mse": 0.037668378133853195,
+        "ci95": [
+          -0.04339454784526858,
+          0.10987114601732424
+        ],
+        "players": 17
+      },
+      "paired_vs_original_forest": {
+        "delta_mse": 0.14755773788673188,
+        "ci95": [
+          0.03133452297319013,
+          0.2616312125652319
+        ],
+        "players": 17
+      }
+    }
+  },
+  "validation_bank": [
+    {
+      "family": "baseline",
+      "config": 0,
+      "validation_mse": 2.9448930444738997
+    },
+    {
+      "family": "baseline",
+      "config": 1,
+      "validation_mse": 3.0499757762471376
+    },
+    {
+      "family": "baseline",
+      "config": 2,
+      "validation_mse": 3.388591521332019
+    },
+    {
+      "family": "baseline",
+      "config": 3,
+      "validation_mse": 2.933024008158611
+    },
+    {
+      "family": "baseline",
+      "config": 4,
+      "validation_mse": 2.93717310294048
+    },
+    {
+      "family": "summary",
+      "config": 0,
+      "validation_mse": 2.9679645896679334
+    },
+    {
+      "family": "summary",
+      "config": 1,
+      "validation_mse": 3.0861469498473135
+    },
+    {
+      "family": "summary",
+      "config": 2,
+      "validation_mse": 3.430959416613712
+    },
+    {
+      "family": "summary",
+      "config": 3,
+      "validation_mse": 2.9532824138018605
+    },
+    {
+      "family": "summary",
+      "config": 4,
+      "validation_mse": 2.962825145559303
+    },
+    {
+      "family": "signature",
+      "config": 0,
+      "validation_mse": 2.965855173308081
+    },
+    {
+      "family": "signature",
+      "config": 1,
+      "validation_mse": 3.0832421719007774
+    },
+    {
+      "family": "signature",
+      "config": 2,
+      "validation_mse": 3.4475239248297154
+    },
+    {
+      "family": "signature",
+      "config": 3,
+      "validation_mse": 2.950431681124492
+    },
+    {
+      "family": "signature",
+      "config": 4,
+      "validation_mse": 2.9596546511564066
+    },
+    {
+      "family": "dynamics",
+      "config": 0,
+      "validation_mse": 2.953395253562966
+    },
+    {
+      "family": "dynamics",
+      "config": 1,
+      "validation_mse": 3.0749420339188602
+    },
+    {
+      "family": "dynamics",
+      "config": 2,
+      "validation_mse": 3.4480524834486372
+    },
+    {
+      "family": "dynamics",
+      "config": 3,
+      "validation_mse": 2.9403789897913803
+    },
+    {
+      "family": "dynamics",
+      "config": 4,
+      "validation_mse": 2.9509921625897766
+    },
+    {
+      "family": "all",
+      "config": 0,
+      "validation_mse": 2.9645071484909047
+    },
+    {
+      "family": "all",
+      "config": 1,
+      "validation_mse": 3.0835907059707304
+    },
+    {
+      "family": "all",
+      "config": 2,
+      "validation_mse": 3.448227002859944
+    },
+    {
+      "family": "all",
+      "config": 3,
+      "validation_mse": 2.9562213596734592
+    },
+    {
+      "family": "all",
+      "config": 4,
+      "validation_mse": 2.952496551143956
+    }
+  ],
+  "same_candidates_per_family": 5,
+  "test_players": 17,
+  "test_routes": 1737,
+  "elapsed_seconds": 18.792302876994654,
+  "interpretation": "Ablations exploratory; superiority requires stronger development-only corroboration and fresh future validation."
+}

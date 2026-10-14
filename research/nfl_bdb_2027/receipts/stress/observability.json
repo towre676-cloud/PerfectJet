@@ -1,0 +1,287 @@
+{
+  "player_drill_panels": 278,
+  "rank_counts": {
+    "1": 108,
+    "2": 78,
+    "3": 73,
+    "4": 19
+  },
+  "unrounded_numeric_rank_counts": {
+    "1": 102,
+    "2": 82,
+    "3": 75,
+    "4": 19
+  },
+  "unrounded_numeric_fraction_not_full_rank": 0.9316546762589928,
+  "fraction_not_full_rank": 0.9316546762589928,
+  "fraction_reference_target_not_identified": 0.9280575539568345,
+  "by_drill": {
+    "FOUR_BAG_AGILITY_DRILL": {
+      "panels": 68,
+      "not_full_rank_fraction": 1.0,
+      "reference_blind_fraction": 1.0
+    },
+    "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": {
+      "panels": 68,
+      "not_full_rank_fraction": 0.8382352941176471,
+      "reference_blind_fraction": 0.8235294117647058
+    },
+    "PASS_RUSH_DRILL": {
+      "panels": 73,
+      "not_full_rank_fraction": 1.0,
+      "reference_blind_fraction": 1.0
+    },
+    "RUN_THE_HOOP_DRILL": {
+      "panels": 69,
+      "not_full_rank_fraction": 0.8840579710144928,
+      "reference_blind_fraction": 0.8840579710144928
+    }
+  },
+  "reference_demand": {
+    "speed": 4,
+    "angle_rad": 1.6
+  },
+  "minimum_plans": [
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "observed_rank": 1,
+      "minimum_declared_cost": 3,
+      "optimal_plan_count": 12,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 3.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "observed_rank": 1,
+      "minimum_declared_cost": 3,
+      "optimal_plan_count": 18,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 3.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "observed_rank": 2,
+      "minimum_declared_cost": 2,
+      "optimal_plan_count": 15,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "observed_rank": 3,
+      "minimum_declared_cost": 1,
+      "optimal_plan_count": 6,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "observed_rank": 1,
+      "minimum_declared_cost": 3,
+      "optimal_plan_count": 18,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 3.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "observed_rank": 3,
+      "minimum_declared_cost": 1,
+      "optimal_plan_count": 6,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "observed_rank": 2,
+      "minimum_declared_cost": 2,
+      "optimal_plan_count": 15,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "observed_rank": 3,
+      "minimum_declared_cost": 1,
+      "optimal_plan_count": 6,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "observed_rank": 1,
+      "minimum_declared_cost": 3,
+      "optimal_plan_count": 18,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 3.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "observed_rank": 2,
+      "minimum_declared_cost": 2,
+      "optimal_plan_count": 15,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 1.6,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "observed_rank": 2,
+      "minimum_declared_cost": 2,
+      "optimal_plan_count": 9,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        },
+        {
+          "speed_yd_s": 3.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "observed_rank": 3,
+      "minimum_declared_cost": 1,
+      "optimal_plan_count": 6,
+      "one_plan": [
+        {
+          "speed_yd_s": 2.5,
+          "angle_rad": 0.8,
+          "cost": 1
+        }
+      ],
+      "complete_plan_population": 512,
+      "scope": "Exact finite candidate-design enumeration for declared bilinear response model. Cost1 per candidate trial, cost2 at4.5yd/s, chosen illustrative workload. Does not establish physiological feasibility or NFL value."
+    }
+  ],
+  "scope": "Exact rational rank/nullspace on entry speed andangle rounded0.1. Bilinear coefficients1,s,angle,s*angle. Blind target means alternative coefficient vectors fit those design rows but differ at reference demand. No claim about noise calibration or all nonlinear athlete models. Priors/regularization can choose a curve but do not make it data-identified."
+}

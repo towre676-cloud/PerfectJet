@@ -1,0 +1,19 @@
+{
+  "matched_turns": 582,
+  "initial_median_width": 0.28380817671126496,
+  "clock_median_width": 0.1870084867432505,
+  "median_width_reduction": 0.3410743520138061,
+  "repeatability": {
+    "PASS_RUSH_DRILL": {
+      "paired_players": 61,
+      "raw_recovery_spearman": -0.003966155473294553,
+      "demand_adjusted_spearman": 0.17927022739291376
+    },
+    "RUN_THE_HOOP_DRILL": {
+      "paired_players": 7,
+      "raw_recovery_spearman": 0.642857142857143,
+      "demand_adjusted_spearman": 0.8214285714285715
+    }
+  },
+  "scope": "Branches are processing/clock scenarios, not a sensor-error posterior. Repeats can differ in drill demands; source adjustment fitted on earlier45players only."
+}

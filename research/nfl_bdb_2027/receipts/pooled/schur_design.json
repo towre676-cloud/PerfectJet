@@ -1,0 +1,11 @@
+{
+  "registered_before_scores": true,
+  "adaptive_reason": "Previous high-shrinkage fits changed conventional coefficients as well as movement, preventing a clean incremental test. Preserve prior trial and use exact Schur elimination with conventional penalty100 and extra-motion penalty1000.",
+  "component_families": [
+    "capacity",
+    "duration",
+    "pooled"
+  ],
+  "grid": "Same finite convex grid and all three guards; no changes based on2025performance.",
+  "scope": "Adaptive exploratory results; strongregularization chooses underidentified curve coefficients and cannot establish physical identification."
+}

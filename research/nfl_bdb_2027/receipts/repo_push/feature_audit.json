@@ -1,0 +1,24 @@
+{
+  "qualifying_attempts_all_drills": 1109,
+  "qualifying_shared_attempts": 837,
+  "shared_drills": [
+    "COMEBACK_ROUTE_RIGHT",
+    "CURL_ROUTE_RIGHT",
+    "DAGGER_ROUTE_LEFT",
+    "GAUNTLET_DRILL",
+    "RED_ZONE_FADE_RIGHT",
+    "SLANT_ROUTE_LEFT",
+    "SLOT_SAIL_ROUTE_RIGHT",
+    "SLOT_STRIKE_ROUTE_LEFT"
+  ],
+  "players_with_features": 106,
+  "feature_columns": 856,
+  "rejected_no_cut_attempts": 404,
+  "surrogate_order_counts": {
+    "2": 1109
+  },
+  "exact_surrogate_certificates_replayed": 1109,
+  "certified_readouts_per_surrogate": 12,
+  "name_alias_applied": false,
+  "scope": "quantized supplied surrogate only; measured trajectories and predictive skill not certified"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "Protocol fixed before this push extracts NFL turn responses; not a fresh blind test because the program previously inspected WR 2025 outcomes.",
+  "primary_question": "Does route-matched Combine execution beyond approach speed and turn demand predict NFL half-second post-turn speed deficit?",
+  "position": "WR",
+  "drill_mapping": {"IN":["DAGGER_ROUTE_LEFT"],"OUT":["SPEED_OUT_ROUTE_LEFT"],"SLANT":["SLANT_ROUTE_LEFT"],"HITCH":["CURL_ROUTE_RIGHT","COMEBACK_ROUTE_RIGHT"]},
+  "aliases": {"SPEED_OUT_LEFT":"SPEED_OUT_ROUTE_LEFT"},
+  "turn_definition": "First local peak of heading change over +/-0.3 s, peaks at least 1.0 s apart; turn angle 25–150 degrees; mean entry speed over -0.5 to -0.3 s >=2.5 yd/s; endpoint position-derived speeds >=1 yd/s. No global largest-turn selection.",
+  "nfl_eligibility": "Rookie REG non-nullified mapped routes; unique ball_snap and pass_forward; continuous 10 Hz snap-to-release frames; first eligible turn 0.5–3.0 s after snap; minimum ten fully measured half-second turn windows per player.",
+  "primary_response": "Integral from turn to +0.5 s of max(0,1-speed/entry_speed) dt, in seconds of normalized post-turn deficit. Six observed speed samples required. No imputed unobserved recovery.",
+  "recovery_secondary": "First two consecutive samples >=90% entry speed after local speed minimum; follow until release or 1.5 s after turn. Right-censored records retained. Distribution-free recovery bounds report unresolved outcomes, without independent-censoring assumptions.",
+  "source_responses": ["burden","retention","exit_ratio","area"],
+  "source_adjustment": "Training players only: source response ridge alpha10 versus entry speed, angle, entry*angle, entry squared and angle squared. Aggregate residuals by player/mapped route, then residualize against conventional physical attributes. Four execution traits plus fixed quadratic and game-demand/mass interactions.",
+  "families": ["conventional","source_demands","execution"],
+  "primary_contrast": "execution versus source_demands; controls route-matched source entry speed, angle, impulse and accepted-attempt count",
+  "secondary_targets": ["receiver separation at pass release on measured subset"],
+  "candidate_budget": "Same five conventional ridge/forest/extra-tree configurations per family; no 2025 selection",
+  "validation": "Four unique-player class-stratified outer / three inner folds on 2023+2024; 2023 train / 2024 tune / refit earlier classes / 2025 exploratory transport; two additional earlier-player partitions if population passes feasibility",
+  "feasibility": "At least ten eligible players in each of 2023,2024,2025 for season transport; otherwise report failure and do not silently relax this protocol.",
+  "negative_controls": "Whole-player source-profile swaps within training class, with fixed selected configurations; retain unfavorable results. Do not call these formal permutation p-values.",
+  "interpretation": "NFL turn demand is measured outcome-side context. This is conditional mechanical transfer, not a deployable live prediction or a causal player-development effect. Separation selection and censored recovery are reported."
+}

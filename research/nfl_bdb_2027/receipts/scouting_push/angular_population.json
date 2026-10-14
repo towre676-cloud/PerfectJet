@@ -1,0 +1,22 @@
+{
+  "source_attempts": 337,
+  "source_players": 106,
+  "players_by_year": {
+    "2023": 24,
+    "2024": 18,
+    "2025": 15
+  },
+  "turns_by_year": {
+    "2023": 1376,
+    "2024": 920,
+    "2025": 641
+  },
+  "rejections": {
+    "source_no_sustained_break": 9,
+    "game_missing_snap_release": 554,
+    "game_no_sustained_break": 1019,
+    "game_short_irregular": 18
+  },
+  "target": "Exit speed ratio after 80% rotation, conditional on observed NFL entry speed/angle/context. Not a pre-snap prediction.",
+  "selection": "Largest angle-times-entry sustained qualifying break before pass arrival; fixed route-specific angle gates, angular-progress response; not hand-labeled playbook truth."
+}

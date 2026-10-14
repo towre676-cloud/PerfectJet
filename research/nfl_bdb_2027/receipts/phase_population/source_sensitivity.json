@@ -1,0 +1,33 @@
+{
+  "drills": {
+    "FOUR_BAG_AGILITY_DRILL": {
+      "attempts": 71,
+      "players": 71,
+      "players_with_two_attempts": 0,
+      "summary_median_sensitivity_to_between_player_sd": 0.5881393846140883,
+      "sequence_median_sensitivity_to_between_player_sd": 0.6771836484669409
+    },
+    "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": {
+      "attempts": 71,
+      "players": 71,
+      "players_with_two_attempts": 0,
+      "summary_median_sensitivity_to_between_player_sd": 0.3479338103694328,
+      "sequence_median_sensitivity_to_between_player_sd": 0.44832475377863534
+    },
+    "PASS_RUSH_DRILL": {
+      "attempts": 143,
+      "players": 74,
+      "players_with_two_attempts": 68,
+      "summary_median_sensitivity_to_between_player_sd": 0.4155123284695569,
+      "sequence_median_sensitivity_to_between_player_sd": 0.5928065735285231
+    },
+    "RUN_THE_HOOP_DRILL": {
+      "attempts": 76,
+      "players": 69,
+      "players_with_two_attempts": 7,
+      "summary_median_sensitivity_to_between_player_sd": 0.6591646263655548,
+      "sequence_median_sensitivity_to_between_player_sd": 0.8872960596037321
+    }
+  },
+  "scope": "Source-only descriptive ratios, aggregated over coordinates; sensitivity SD across assumed onset/temperature mixture, divided by between-player SD of median profile. Not phase-label calibration or reliability probability."
+}

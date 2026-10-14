@@ -1,0 +1,218 @@
+{
+  "target": "yac_residual",
+  "baseline_preserving_correction": true,
+  "prior_2025_inspection": true,
+  "folds": [
+    {
+      "fold": 0,
+      "family": "baseline",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        24.541881323336757
+      ]
+    },
+    {
+      "fold": 0,
+      "family": "ordered",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        24.541881323336757,
+        50.23827029930995,
+        32.608891448795454,
+        25.787496921406,
+        35.337398118736125,
+        29.6558776027593,
+        25.548975954458538,
+        35.79003199896349,
+        29.376599697431534,
+        25.50551803922006
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "baseline",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        19.349813272181525
+      ]
+    },
+    {
+      "fold": 1,
+      "family": "ordered",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        19.349813272181525,
+        50.312402661193005,
+        28.293221259122152,
+        20.970474330776423,
+        27.846421115347795,
+        21.738955975847887,
+        20.20532001035234,
+        27.280188982904047,
+        22.07610320974992,
+        19.978215737745263
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "baseline",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        20.636949674060887
+      ]
+    },
+    {
+      "fold": 2,
+      "family": "ordered",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        20.636949674060887,
+        33.834097142381616,
+        26.969810909491613,
+        22.9464896423143,
+        27.176008714232676,
+        26.829358656183114,
+        22.806342003149165,
+        28.849669565034116,
+        27.24663177990749,
+        23.447845214836935
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "baseline",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        21.773446827558853
+      ]
+    },
+    {
+      "fold": 3,
+      "family": "ordered",
+      "selected": [
+        0,
+        null
+      ],
+      "loss": [
+        21.773446827558853,
+        26.348437912085572,
+        24.041961422310056,
+        21.950098052322772,
+        33.05974443445089,
+        26.45824429910188,
+        22.36555488020656,
+        27.61973521328225,
+        24.30726873564848,
+        22.188170093757392
+      ]
+    }
+  ],
+  "selection": [
+    {
+      "family": "baseline",
+      "selected": [
+        0,
+        null
+      ],
+      "validation_loss": [
+        27.264627561737008
+      ]
+    },
+    {
+      "family": "ordered",
+      "selected": [
+        0,
+        null
+      ],
+      "validation_loss": [
+        27.264627561737008,
+        52.829218157487254,
+        36.64531369100363,
+        30.008911485259596,
+        38.64022974947539,
+        29.28097724178056,
+        27.822493158305786,
+        38.814527813001966,
+        31.80447481289489,
+        27.556929823589407
+      ]
+    }
+  ],
+  "source_attempts": 495,
+  "source_players": 106,
+  "nested": {
+    "mse": {
+      "baseline": 21.4548580538101,
+      "ordered": 21.4548580538101,
+      "provided_expected_YAC": 21.4548580538101
+    },
+    "increment": {
+      "delta_mse": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "players": 34,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 34,
+    "rows": 1260,
+    "vs_reference": {
+      "delta_mse": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "players": 34,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    }
+  },
+  "exploratory_2025": {
+    "mse": {
+      "baseline": 10.405238821789778,
+      "ordered": 10.405238821789778,
+      "provided_expected_YAC": 10.405238821789778
+    },
+    "increment": {
+      "delta_mse": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "players": 13,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    },
+    "players": 13,
+    "rows": 331,
+    "vs_reference": {
+      "delta_mse": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "players": 13,
+      "scope": "Conditional player bootstrap; not refitting uncertainty or a causal effect."
+    }
+  }
+}

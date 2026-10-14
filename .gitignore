@@ -5,3 +5,7 @@ __pycache__/
 build/
 dist/
 releases/*.zip
+private_*/
+**/private_*
+**/raw_data/
+**/restricted_data/

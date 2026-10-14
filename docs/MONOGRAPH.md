@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.4.0 · 14 October 2026
+Version 0.12.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -31,6 +31,8 @@ A master synthesis of the two archival passes and both enhancement programs. The
 - [23_status_corrections_and_frontiers](chapters/23_status_corrections_and_frontiers.md)
 - [24_mathematical_proofs](chapters/24_mathematical_proofs.md)
 - [25_historical_results_and_extended_leads](chapters/25_historical_results_and_extended_leads.md)
+- [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md)
+- [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md)
 
 ---
 
@@ -76,6 +78,13 @@ The recovered -23 leaves are $-u^3-3u^2v+6uv^2+4v^3=1$ and $-u^3-6u^2v+69uv^2+46
 
 Question-dependent height $h_q(x)=h(q(x))$ can organize queries on residues or invariants, but cannot replace a completeness theorem for original objects. Adaptive local sieving changes the order of valid exclusions according to elimination-per-cost; it does not change the truth of any exclusion. Since 0.3.0, `sieve.py` implements this for $F(n)=m^d$. It keeps the residues n mod q for which F(n) is a d-th power residue mod q, combines moduli by CRT, and greedily chooses the modulus with the largest density drop per unit modulus. For the Pell7 input $2y^2-7=x^2$, moduli 4,3,5,11,17,25 leave density 224/4675. Integer roots are then tested on only93 of the first2000 inputs, and all nine hits are recovered. The tests confirm that every true hit survives every modulus and that a fixed modulus set excludes the same inputs in every order. A polynomial identity such as $(n+1)^2$ excludes nothing. The core transport principle is to carry the inverse map, the exceptional branches, and multiplicities with every reduction.
 
+Since0.8.0 `quadratic.py` compiles k y2=a n2+b n+c over the integers and keeps the route back at every step. The transport X=2an+b, Y=y gives X2-4akY2=b2-4ac, with reconstruction n=(X-b)/2a when X=b mod2a. Each branch carries its own completeness status:
+- a=0 is a congruence on y, so the hits are residue classes.
+- Definite forms, square D and N0=0 have finitely many norm solutions, from a bounded box or divisor pairs.
+- For the indefinite nonsquare case, Nagell's bounds give a representative of every class: N0>0 gives 0<=y<=y1 sqrt(N0/(2(x1+1))), and N0<0 gives 0<y<=y1 sqrt(-N0/(2(x1-1))). Seeds times powers of the fundamental unit are then all solutions.
+
+Admissibility X=b mod2a is periodic along each orbit, so the compiled population counts hits below any bound and returns the j-th hit at remote indices with exact integers. Every returned n is replayed in the original equation. The tests compare 158 equations with brute force, including definite, linear and finite branches. Pell7, n2+7=2y2, has hits 1,5,11,31,65,181,...; its 1000th hit on an orbit has 766 digits and is replayed exactly. The square-triangular equation y2=8n2+8n+1 gives 0,2,14,84,492,....
+
 
 ---
 
@@ -107,6 +116,8 @@ For general finite factors, $Z=\sum_x\prod_jf_j(x_{\mathrm{scope}_j})$. Independ
 The Petersen 50-project historical result is 702,508,860,122,761 feasible selections, objective16,537, one maximizer. The retained report used176 terminal partitions,437,533,492 visits and189,856,527 setup cells, with construction around362 seconds. Later retrieval reports independent decision-diagram reproduction, including all176 leaves and conditional counts16,777,216,512,16,095,745; a separate historical report gives5.3seconds and about518MiB. These workload/version-dependent figures are not new PerfectJet benchmarks. Original costs and the full retained DAG are not in this release, so this repo does not claim to replay that instance.
 
 Exact counting also includes distinct outputs versus inputs, collision populations, CRT intervals, restricted-digit sums, monomial degrees, nonlinear sequence residues, generating functions, and integer calibration. The generic completion engine is implemented; these broader upstream adapters are indexed rather than falsely presented as already integrated.
+
+Since0.10.0 the selection population explains itself. `attribution` counts, for each capacity constraint, the selections that it alone eliminates. That is the population with the constraint dropped, minus the feasible population; the unconstrained population is 2^n. `inclusion_profile` gives, for each project, the exact share of feasible selections and of optimal selections that contain it. It fixes the project and counts the residual population, so ties are counted in the original objects. Both are compared with exhaustive enumeration in the tests.
 
 
 ---
@@ -152,6 +163,12 @@ For staged reconstructions, total error is at most $\epsilon_1+\|V_1\|\epsilon_2
 An action is certified best when its lower objective bound exceeds all competing upper bounds. With common error epsilon, a gap above2epsilon suffices. Computation can concentrate on candidates whose intervals overlap the best lower bound. This turns model-error machinery into decision machinery; deterministic approximation bounds do not replace empirical uncertainty about sports or markets.
 
 Historical DynaComp reports include256-state compile time37.6s->1.3s,58 tests at one stage, later210/229 tests,200-state heat->7 states with0.01 ceiling and5.89x runtime gain, break-even about222 batches of256 scenarios, and descriptor200->9 with0.003483 bound and4.50x gain. Other models were slower or uncertifiable. These are upstream dated workloads, not universal or freshly reproduced PerfectJet results.
+
+Since0.5.0 `engine.py` runs the augmentation loop rather than describing it. `adaptive_closure` starts from the monomials of the requested outputs, pulls every feature back through F, and adds exactly the monomials of the residual support. On closure it replays $m(F(x))=\sum_jK_{mj}m_j(x)$ for every retained monomial and extracts the smallest pullback-closed space containing the outputs, span$\{C,CK,CK^2,\dots\}$, which can be smaller than the monomial space (y+12x2 is a one-dimensional eigenfunction of $(x,y)\mapsto(x/2,y/3+x^2)$). When a missing monomial has higher degree than every retained one, the failure is classified as degree growth and the loop stops instead of inflating the model; the residual support is returned.
+
+`decisions.py` implements the stopping rule above. `certified_choice` returns the settled action or the overlapping contenders; `refine_until_settled` refines only the widest contender, and its receipt records the evaluations spent against uniform refinement. `defect_split` replays $e_{t+1}=Ae_t+(AV-VG)z_t+(B-VH)u_t$ exactly at every step and reports the evolution and input defects separately, together with the geometric bound in the infinity norm.
+
+Every adapter of `engine.py` returns one report shape: question, representation, preserved questions, replayed identities, answer, obstruction, obligations, and the next calculation implicated by the obstruction. Adapters exist for polynomial dynamics, linear sensing, readouts of linear responses, integer systems, and transvectant partners.
 
 
 ---
@@ -269,6 +286,23 @@ Applied to the two-parameter family x6+y6+a x3y3+b(x4y2+x2y4), whose slice b=0 i
 
 Degree3 has a whole drop curve of rank3: a4-16a2b2/3+256b4/81-2560b3/27-400a2+6400b2/9=0. In degree8 the drop locus contains the line b=0, which is why the C3 family has its degree-eight partner g8 for every lambda. The full incidence variety in all seven sextic coefficients remains open.
 
+Since0.5.0 `strata.py` stratifies both dimensions. Each correction cell is refined by the joint cells of $[L_N;P_N]$, started from the correction cell itself, so every stratum carries the kernel dimension, the active dimension $\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, and the commuting dimension. At rational points of each stratum the module constructs actual partners: a basis of the active quotient and of $\ker L_N\cap\ker P_N$, each replayed with exact transvectants. A Bareiss determinant of the Sylvester matrix gives the sextic discriminant on the surface, of total degree8, and each stratum is labelled repeated-root, squarefree, or generically squarefree.
+
+The refinement changes the reading of the surface:
+- (0,3), f=(x2+y2)3, is not an active exception in degrees4..10. Its extra kernel directions are powers of x2+y2, which commute with f. In degree4 the generic active partner becomes the commuting form (x2+y2)2, so the active dimension drops from1 to0. Only degree12 gains active capacity there (kernel3, active2).
+- (+/-16,-9), f=(x-y)4(x2+4xy+y2), gains one active partner in every degree3..12. In degree6 the partner is xy(x-y)4.
+- New rational exceptional points lie on drop curves found by the cells. The degree3 curve passes through (+/-4,6) and (+/-24,6) and (+/-24,-9). The degree8 cubic a2b-4b3+6a2-28b2+20b+300=0 passes through (+/-11,6) and through (0,-5). The degree12 quartic b4+24b3+81a2-126b2+405=0 passes through (+/-4,-3) and (+/-32/25,-9/5). All of these are squarefree except (+/-4,-3), which has one double root. Each carries a replayed active partner in the jump degree.
+
+The curve points come from a bounded-height scan (slices b=b0 with height at most12); they are not a complete list of rational points on those curves, which can be of positive genus. The strata are cells over the algebraic closure, and partners are constructed only at rational samples.
+
+Since0.7.0 `invariants.py` explains the strata by invariant theory. With unnormalized transvectants, i=(f,f)4, Delta=(i,i)2, y1=(f,i)4, y2=(i,y1)2, y3=(i,y2)2 give the Clebsch invariants A=(f,f)6, B=(i,i)4, C=(i,Delta)4, D=(y3,y1)2 of degrees2,4,6,10. Because kernel and active dimensions are GL2-invariant, every stratum of the surface is the pullback of an invariant condition. Two universal statements follow, for every binary sextic:
+- **Cubic partners.** det L3(f)=(A2-B/6)/16. A sextic has a cubic correction-free partner exactly when B=6A2. L3 is an equivariant map between copies of the cubic representation, so its determinant is a degree-4 invariant, and the Cayley-Sylvester count gives exactly two such invariants, A2 and B. Exact evaluation fixes the constants, and twenty random sextics confirm them.
+- **Quartic partner.** The covariant i=(f,f)4 always satisfies (f,i)3=(f,i)5=0, because a binary sextic has no covariants of degree3 and order4 or0 (Cayley-Sylvester). This is the generic degree-4 partner seen on the surface. It is active unless (f,i)1=0, as at the perfect cube.
+
+On the two-parameter surface, the drop curves are invariant loci. A2-B/6 is a constant times the degree-3 curve, and A2-25B/96 is a constant times the degree-12 curve. The degree-8 curve satisfies AB2+BC/6-9D/2=0. Each relation is found by reducing weighted monomials in A,B,C,D modulo the curve ideal. Orbit comparison in weighted projective space also identifies two exceptional points. (0,15) is GL2-equivalent over the algebraic closure to x6+y6, the origin of the family, and has the same partner profile. (0,-5) is equivalent to the octahedral sextic xy(x4-y4), which explains its three-dimensional quartic kernel. (4,6) and (24,-9) lie on B=6A2 but are not equivalent to each other. Whether the degree-8 relation holds beyond this family is open.
+
+Since0.9.0 the degree-12 relation is understood beyond the family. On a second, non-symmetric family, x6+y6+a x5y+b xy5+2x3y3, the degree-12 drop curves ab=81/20 and ab=-9 again satisfy A2=25B/96. Random sextics placed on that hypersurface all acquire a degree-12 partner. A search over the seven-dimensional space of covariants of degree6 and order12 finds the partner explicitly: G=144A2f2+(216/5)A iH+24A f(f,i)2-(9/4)i3-9Delta H+(f,i)22, with H=(f,f)2. For every sextic, (f,G)3=-432(A2-25B/96)(f,H)1 and (f,G)5=25920(A2-25B/96)(f,i)1. So G is a correction-free degree-12 partner on the whole hypersurface wherever it is nonzero. These identities, the cubic theorem and the quartic partner are certified rather than sampled. Each side is a covariant, so checking a three-parameter slice whose GL2-orbit is dense suffices, and an exact grid of (d+1)^3 points on that slice proves an identity of degree d. The converse for degree12 remains open.
+
 
 ---
 
@@ -314,6 +348,8 @@ Ceff=c(1-c2)/(ab), a=|Uus|,b=|Ucb|,c=|Uub|. If a model enforces Ceff=phi^-2, the
 
 Domain-wall work reported whole-line sign/barrier enclosures,1,080vacua,Goldstone/gauge derivative/cubic channels,Goldstone width~3.8e-8GeV,WW+ZZ~1.8e-9GeV atg.4,threshold(M-2m)3,frame window6.56<t<9.52,one-loop radial correction/counterterm,thermal wall-only window~8.63MeV,and late-network gravitational-wave simulations. These are model-specific reports. Running,thresholds,higher operators,higher loops,global vacuum selection,Sommerfeld/physical66degree prediction remain explicit frontiers. No physics source is modified by this repository.
 
+Since0.10.0 `deformation.py` tests relations among stationary states against a declared perturbation space. At a nondegenerate stationary point, the implicit function theorem gives dx*/dtheta=-H^{-1}M exactly. A relation R among several stationary points then has first-order response dR/dtheta=sum_s grad_sR.dx*_s/dtheta. The module returns the breaking directions and the preserving subspace. Given a symmetry's action on the perturbations, it decides whether every symmetric perturbation preserves R. In the double well x4/4-x2/2+t1x+t2x3+t3x2, the mirror relation x*_++x*_-=0 is broken by the odd perturbations t1 and t2 and is protected by x->-x. The location x*_+=1 is accidental, broken even by the symmetric t3. First order only: a protected first-order relation can still break at higher order unless the symmetry argument is exact.
+
 
 ---
 
@@ -344,6 +380,10 @@ NFL Combine scouting seeks hidden talent,bust risk,and position-specific develop
 
 Industrial portfolio570solved versus baseline584 with42.1% extra summed time and zero conflicts is a retained negative comparison. Family-held-out512tasks/128tests,graph504samples,sequence52families and calibration/experiment examples are workload-specific historical reports. Customer economics require setup,runtime,break-even,and supported-model conditions.
 
+Since0.5.0 the identifiability question has an exact kernel. For the response $\eta=\beta_0+\beta_1s+\beta_2a+\beta_3sa$, a player's attempts form a design X. A readout $h^\top\beta$ is determined by those attempts exactly when $h\in\operatorname{row}(X)$. `readout.identify` returns estimator weights, or a vector n with Xn=0 and $h^\top n\ne0$: two coefficient vectors that fit every attempt and disagree on the readout. `demand_readout` forms $h_q=\sum_kq_k\phi(d_k)$ for a declared demand distribution. `repair` finds the smallest set of candidate conditions making the readout identifiable, and `value_of_information` gives the exact Gaussian posterior-variance reduction of each candidate, marked as a repeat or a new direction. In the receipt, repeats reduce variance by about0.16 while two new conditions are needed to identify the readout at all.
+
+Since0.6.0 the scouting question has its own adapter, `applications/nfl_scouting`, with a protocol in docs/nfl. It asks whether a repeatable, demand-adjusted recovery readout from the Combine predicts NFL get-off beyond position, body measurements, timed tests and drill availability known before the draft. The pipeline detects turns and records every smoothing and alignment branch of eta with full lineage. It fits the demand frame and a linear mixed model by EM on training athletes only, and gates each athlete's readout with the exact identifiability test. Targets are cross-fitted context residuals with training-only shrinkage, and a leakage check runs every time. Validation uses athlete-grouped temporal folds with identical availability indicators and tuning for both models, the paired metric G=1-MSE_movement/MSE_baseline, fixed-prediction and full-refit intervals, diagnostics, a frozen shortlist rule, and scouting cards that show pooling reliance and the most informative next condition. A synthetic generator with a planted or null signal tests the pipeline: it recovers a planted signal and reports none under the null. Synthetic results are never evidence about football, and no real-data scouting advantage is claimed.
+
 
 ---
 
@@ -370,9 +410,11 @@ Question-specific equivalence and preservation profiles separate dimensions,outp
 
 Arithmetic height relative to a question organizes fibres but cannot bypass completeness. Adaptive local tests prioritize exact exclusions. Integral Smith/Hermite transport repairs rational-span gaps. Commutators isolate order effects. Deformation tangents test protection before expensive global physical work. Failed representations should return distinguishing words,unclosed polynomial coefficients,duplicate auxiliary extensions,divisibility failures,hidden target vectors,failed metric conditions,or allowed perturbations breaking a relation.
 
-The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; exact Smith-form lattice repair,single-output Hankel word realization,and coarsest exact lumping became executable in0.2.0; Hermite form,multi-output realization,one-parameter rank loci,and the adaptive power-residue sieve followed in0.3.0; multi-parameter comprehensive rank cells in0.4.0. The full sextic incidence variety,sieving beyond perfect-power hits,numerical Hankel discovery,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
+The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; exact Smith-form lattice repair,single-output Hankel word realization,and coarsest exact lumping became executable in0.2.0; Hermite form,multi-output realization,one-parameter rank loci,and the adaptive power-residue sieve followed in0.3.0; multi-parameter comprehensive rank cells in0.4.0. The full sextic incidence variety,sieving beyond perfect-power hits,general nonlinear reduction and unrestricted empirical feature learning remain explicitly proposed. Release0.12.0 implements a finite-horizon numerical delay-state adapter for movement with player-held selection and physical-coordinate forecasts; this is distinct from exact all-future Hankel realization.
 
 The master interface should record a domain,questions,state representation,legal operations,weights,exact identities,error bounds,source maps,obstructions,costs,and evidence. A new application adds an adapter and its preserved questions. It must not acquire correctness from its similarity to an older application. The decisive reuse is an executable identity with matching assumptions.
+
+Release0.5.0 makes the master interface executable as `engine.py`: one report shape for every adapter, an adaptive closure loop that adds only residual-implicated structure, and decisions that stop once settled. The partner program now stratifies active capacity, not only correction rank, and readout identifiability gives the empirical program an exact gate before any fitting.
 
 
 ---
@@ -392,6 +434,20 @@ The strongest finite executable contributions in0.1.0 are observable-space closu
 Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-parameter rank loci (which rediscover the 7lambda-40 obstruction and certify the rational exceptional set of the C3 partner family for degrees3..12), and the adaptive local sieve for perfect-power hits.
 
 Release0.4.0 adds comprehensive rank cells for several parameters, with an exact Groebner engine and saturation. On a two-parameter sextic surface it finds the exceptional points (+/-16,-9), (0,3), (0,15) and (0,-5) beyond the C3 slice.
+
+Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
+
+Release0.10.0 adds constraint attribution and inclusion profiles for selection populations, and first-order deformation protection of relations among stationary states.
+
+Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
+
+Release0.8.0 adds a solution-carrying compiler for k y2=an2+bn+c. Every branch has a reconstruction map and a completeness status, Nagell seeds make the Pell branch complete, and exact remote-index queries are supported.
+
+Release0.7.0 proves two universal partner statements for binary sextics: det L3=(A2-B/6)/16, and the covariant (f,f)4 is always correction-free. It identifies the surface's drop curves as invariant loci, and identifies (0,15) with x6+y6 and (0,-5) with the octahedral sextic.
+
+Release0.6.0 adds the Combine scouting adapter and its protocol; it implements the empirical test but does not report a real-data result.
+
+Release0.12.0 connects operational NFL movement targets, finite-horizon numerical delay states, player-cross-fitted Combine-to-movement-to-get-off transfer, fitted physical loadings, and exact joint measurement allocation. It adds a reproducible Gaussian package counterexample and a rational-snapshot allocation regret bound. The official nine-file experiment remains unexecuted; no new empirical NFL advantage is claimed.
 
 Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
@@ -496,6 +552,45 @@ Work over the algebraic closure. Rabinowitsch: a point t lies in V(I) minus V(q)
 
 Each branch keeps a pair (S,N) with S saturated by every member of N. Its cell V(S) minus V(prod N) is dense in V(S), so the cell is empty exactly when S is the unit ideal. A pivot p is zero on the whole cell exactly when $S:p^\infty$ is the unit ideal. Otherwise the pivot branch $(S:p^\infty,N+p)$ and the zero branch $((S+p):N^\infty,N)$ split the cell into two disjoint constructible pieces whose union is the cell. Matrix entries may be reduced modulo S, because they are unchanged on V(S). In the pivot branch, the row operation $\mathrm{row}_k\to p\,\mathrm{row}_k-a_{kj}\mathrm{row}_i$ multiplies a row by p, which is nonzero on the cell. An exact division by the previous pivot, also nonzero on the cell, likewise preserves the pointwise rank. Each branch removes a row and column or adds a polynomial that is not already in the radical. Noetherianity and finite matrix size give termination. The leaves therefore partition parameter space, and the rank is constant on each leaf. Rational points of a zero-dimensional closure come from a lexicographic Groebner basis, the rational root theorem on its last eliminant, and back substitution. Tests compare each leaf's rank with direct evaluation on a grid.
 
+## Active strata
+
+On a correction cell C the rank of $L_N$ is constant. Running comprehensive elimination of $[L_N;P_N]$ from the starting pair (S,N) of C only ever adds equations or inequations, so its leaves partition C and the joint rank is constant on each leaf. Both ranks are then constant on every stratum, and so are $\dim\ker L_N=N+1-\operatorname{rank}L_N$ and $\dim A_N=\operatorname{rank}[L_N;P_N]-\operatorname{rank}L_N$, because $\ker[L_N;P_N]=\ker L_N\cap\ker P_N$. At a rational point, choosing kernel vectors whose $P_N$-images are independent gives a basis of the active quotient, and the nullspace of $P_N$ restricted to $\ker L_N$ gives the commuting part; each vector is replayed as a form with exact transvectants. The sextic has a repeated root exactly when the resultant of $f(x,1)$ and its derivative vanishes, since the leading coefficient is1.
+
+## Identifiable readouts
+
+If $h=X^\top c$, then $h^\top\beta=c^\top X\beta$ is a function of the noiseless observations. If $h\notin\operatorname{row}(X)=\ker(X)^\perp$, some $n\in\ker X$ has $h^\top n\ne0$; then $X\beta=X(\beta+n)$ while the readouts differ by $h^\top n$. Adding a row already in row(X) leaves row(X) unchanged, so a repeat can never make a non-identified readout identified. For $y=X\beta+e$ with Gaussian prior and noise, the posterior covariance $(\Sigma_0^{-1}+X^\top X/\sigma^2)^{-1}$ does not depend on y, so the expected variance reduction of a new row equals its realized reduction. Adding a row adds a positive semidefinite term to the precision, so no candidate increases the variance.
+
+## Settled decisions and targeted refinement
+
+If every reported interval contains its true value and the leader's lower bound exceeds every competitor's upper bound, the leader is strictly best whatever the true values are inside the intervals. Refinement of an action whose interval is already below the leader's lower bound cannot change the comparison, so only overlapping contenders need refinement.
+
+## Evolution-defect split
+
+From $x_{t+1}=Ax_t+Bu_t$ and $z_{t+1}=Gz_t+Hu_t$, $e_{t+1}=Ax_t+Bu_t-VGz_t-VHu_t=A(e_t+Vz_t)-VGz_t+(B-VH)u_t=Ae_t+(AV-VG)z_t+(B-VH)u_t$. Taking norms, $\|e_{t+1}\|\le\|A\|\|e_t\|+\|(AV-VG)z_t\|+\|(B-VH)u_t\|$, which is the recursion the implementation reports.
+
+## Adaptive monomial closure
+
+Pullback by a polynomial map sends a monomial to a polynomial, and the loop adds exactly the monomials of the pullbacks that are missing. If the loop stops with nothing missing, every retained monomial pulls back into their span, which is the closure identity. The span of $C,CK,CK^2,\dots$ inside it is the smallest pullback-closed space containing the outputs, by the observable-space argument of chapter07.
+
+## Cubic and quartic partners of every sextic
+
+Transvectants are SL2-equivariant. For a cubic g, (f,g)_5 has negative order and vanishes, so L_3(f) is the map g -> (f,g)_3 from cubics to cubics. It is linear in f and equivariant, so det L_3(f) is an SL2-invariant of f of degree 4. By the Cayley-Sylvester formula, the binary sextic has exactly two linearly independent invariants of degree 4 (`covariant_count(6,4,0)=2`), namely A^2 and B. Hence det L_3 = alpha A^2 + beta B. Two sextics with independent (A^2,B) determine alpha and beta. The identity det L_3=(A^2-B/6)/16 is then certified by the slice argument below. A cubic partner exists exactly when L_3(f) is singular, that is, when B=6A^2.
+
+Let i=(f,f)_4, a covariant of degree 2 and order 4. Then (f,i)_5 is an invariant of degree 3, and (f,i)_3 is a covariant of degree 3 and order 4. The Cayley-Sylvester counts `covariant_count(6,3,0)` and `covariant_count(6,3,4)` are both 0, so both vanish identically. Thus i lies in ker L_4(f) for every sextic. It is active exactly when (f,i)_1 is nonzero.
+
+## Strata as invariant loci
+
+For g in GL2, transvectants satisfy (f∘g, h∘g)_k = det(g)^k (f,h)_k ∘ g. Hence ker L_N(f∘g) = (ker L_N(f))∘g, and the same holds for ker P_N. So kernel and active dimensions are functions on GL2-orbits. On a family, every stratum is therefore a union of fibres of the invariant map. If a weighted-homogeneous polynomial R(A,B,C,D), written as a polynomial in the family parameters, reduces to zero modulo a Groebner basis of a curve's ideal, then R lies in that ideal and vanishes at every point of the curve. Relations that vanish on the whole family are discarded, so a returned relation is specific to the curve. For squarefree sextics, two forms with equal points (A:B:C:D) in weighted projective space P(1,2,3,5) lie in one GL2(Qbar)-orbit, by the classical theory of genus-two curves. The test I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} is that equality, written without roots.
+
+## Slice certificates for covariant identities
+
+Let P(f)=Q(f) be an identity between covariants of the same degree d, order and weight, built from transvectants and invariants. The set of sextics where it holds is Zariski closed and GL2-stable. Every sextic with three distinct roots can be moved by GL2 over the algebraic closure to c·xy(x-y)(x^3+px^2y+qxy^2+ry^3). Scaling absorbs c, because both sides have the same degree. These slice forms therefore have a dense GL2-orbit, and the identity holds everywhere once it holds on the slice. On the slice, the coefficients of f are affine in (p,q,r), so P-Q is a polynomial of degree at most d in each of p, q and r. A polynomial with that bound that vanishes on {0,...,d}^3 is zero. `grid_certificate` evaluates the identity at those (d+1)^3 points in exact arithmetic. It certifies:
+- the cubic partner theorem, with d=4 and 125 points;
+- the quartic covariant partner, with d=3 and 64 points;
+- the degree-12 identities, with d=7 and 512 points. Here s=A^2-25B/96, and (f,G)_3=-432 s (f,(f,f)_2)_1 and (f,G)_5=25920 s (f,(f,f)_4)_1, for G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9 Delta H+(f,i)_2^2.
+
+The degree-12 identities show that on the hypersurface A^2=25B/96, G(f) lies in ker L_12(f) whenever it is nonzero. The converse, that a degree-12 partner forces A^2=25B/96, is supported by random sextics and by two independent families, but is not proved.
+
 
 ---
 
@@ -560,6 +655,247 @@ The early MEF fan-law log10 N_h~4.33h-.28,Padovan dimensions d7=3,d12=12,and was
 The Finsler LC examples used L=.2H,C=1.5nF,impedance about11.5kOhm,resonance about9.2kHz;one other fit used7.5e-10F anddrive5.8kHz. These are different circuit descriptions. Noise conventions,escaperate prefactors,and mappings to a Finsler metric need explicit derivation.
 
 This appendix is a preservation layer. New work should select a precise source object, recover its missing definitions, and then implement or prove the claim. The master does not make an unsupported historical number reliable merely by cataloguing it.
+
+
+---
+
+# Combine motor transfer and the scouting test
+
+PerfectJet 0.11.0 preserves the complete previous NFL research package and implements a new experiment aimed at the actual scouting outcome. **No new real-data predictive gain is reported.** The recovered package excludes the nine raw competition CSVs; the official API requires authentication and the browser remains signed out. Analytic examples and fixture tests establish code behavior, not football advantage.
+
+The official Kaggle dictionary defines `player_get_off` as seconds from the snap until the defensive rusher moves forward across the line of scrimmage. It is not pure reaction time. The source is https://www.kaggle.com/competitions/nfl-big-data-bowl-2027/data, inspected October 14, 2026. The latest recovered canonical research commit is `2d2fc62af6502618821de23ddaf15e68cdb16a3e`; its original monograph, nine notebooks, aggregate receipts, vendor licenses and history bundle are preserved in `research/nfl_bdb_2027`.
+
+## Evidence carried forward
+
+The canonical audit reports 74 defensive-front rookies, 14,665 eligible NFL records and 582 angular-progress turns. A 34.1% sensitivity reduction is measurement stability. About 93.2% of individual player/drill panels cannot identify the four-coefficient bilinear response. Twelve overlapping duration-model partitions give four gains, two fallbacks, six losses and mean relative gain −0.13%. Pooled get-off's exploratory 2025 gain 2.72% is unstable; 11 of 64 fixed-configuration training-subset refits improve. These are recovered receipts, not new raw-data reproductions. Failed and adaptive stages remain intact.
+
+The new adapter defines its prospective cohort by Combine position, which may differ from the historical NFL-position cohort. It must report counts rather than automatically claim reproduction of 74 players. All 15 conventional measurements enter the stronger baseline. NGS grades use an explicit pre-draft interpretation; exact chronology remains unverified. Physical availability dates are proxied by observed Combine tracking dates. A no-NGS comparison is a sensitivity, not a substitute headline.
+
+## Target-relative mathematics
+
+Let total LOS time be $t=\tau+u$, onset plus travel. Its observation row is $X=(1,1)$, with hidden witness $n=(-1,1)$. Then $Xn=0$ but$(1,0)n=-1$: total time cannot identify either component. This is PerfectJet's exact linear readout theorem, not a physiological claim. Under the separate local model$d=vu+au^2/2$, the stable root is
+
+$$u(d,v,a)=\frac{2d}{v+\sqrt{v^2+2ad}},\qquad d,v\ge0,\quad a>0.$$
+
+At distance 1 yard, initial speed 0 and total time 1 second, onset$1/5$ with acceleration$25/8$ and onset$3/10$ with acceleration$200/49$ give the same total. The receipt replays both rational identities. This nonlinear nonuniqueness counterexample stays separate from the linear nullspace theorem. Travel increases with distance and decreases with speed/acceleration. `crossing.travel_time_bounds` uses these corner extrema over a declared box, checking outward endpoint polynomial signs exactly. It bounds the specified model, not sensor error or physiology.
+
+The new source readout is
+
+$$A_T=\frac{2}{T^2}\int_0^T[v(t_0+t)-v(t_0)]dt
+=\frac{2}{T^2}[x_\parallel(t_0+T)-x_\parallel(t_0)-Tv_\parallel(t_0)],\quad T=0.5\mathrm{s}.$$
+
+It equals acceleration for quadratic motion and otherwise weights acceleration by$2(T-t)/T^2$. It requires no second numerical differentiation. A causal trailing three-frame derivative avoids forward-difference acceleration bias. Extraction requires recorded launch history and sustained onset; it rejects a curved first start rather than searching for a favorable later window. Rotation,translation,irregular-time analytic motion and missing-history rejection are tested. The operational onset has no known Combine start cue.
+
+Primary extraction uses forty-yard starts. A separately declared secondary family uses the same functional on the four front-drill starts, with training-only drill and conventional nuisance adjustment. Smoothing variants remain sensitivity scenarios; they never count as independent attempts.
+
+For source-reference residuals$x_{ij}=z_i+\epsilon_{ij}$, the scalar Gaussian model assumes$z_i\sim N(0,\tau^2)$ and drill variance$\sigma_d^2$ learned from actual training-player repeats. Its posterior is
+
+$$V_i=(\tau^{-2}+\sum_j\sigma_{d_j}^{-2})^{-1},\qquad m_i=V_i\sum_jx_{ij}\sigma_{d_j}^{-2}.$$
+
+No repeat evidence produces an unavailable readout, not perfect reliability. Sparse drills may use explicitly labeled pooled repeat variance. Common player deviation across drills, independent attempt errors and transferable variance are assumptions. Branch width is never substituted for Gaussian noise.
+
+The NFL correction integrates source uncertainty:
+
+$$r_i\mid D_i\sim N(\lambda m_i,\sigma_{NFL}^2+\nu_i^2+\lambda^2V_i).$$
+
+Here$r_i$ is an out-of-player baseline residual. The descriptive$\nu_i^2$ uses game-cluster sums for the same play-weighted residual mean: with$G_i>1$ games and$n_i$plays, it is$G_i/(G_i-1)\sum_g[\sum_{p\in g}(r_{ip}-\bar r_i)/n_i]^2$. It omits context-reference uncertainty. Full pipeline refits address additional fitting variability. The scalar loading sees training outcomes only. Missing source information gives zero athlete-specific correction. This is materially different from estimating four unsupported coefficients.
+
+## Validation and decisions
+
+Both models receive all 15 conventional measurements,training-imputed missingness,Combine position,and identical raw drill flags/counts. NFL geometry defines labels only. Context adjustment includes depth,width,speed,formation,alignment and situation,with square-root/log depth terms motivated by travel. Training labels are cross-fitted by player; evaluated labels use the training reference. Every inner split rebuilds targets,source nuisance,repeat variance,imputation,scaling and models. Loading-residual folds also rebuild their context targets. Training NFL seasons precede the evaluated class; labels are rookie REG observations.
+
+The fixed ridge grid is 10, 100, 1000 with three inner player folds and identical selection budgets. The primary metric is equal-athlete$G=1-MSE_{movement}/MSE_{baseline}$,with paired losses,source coverage,class results and player influence. Bootstrap draws preserve class sizes and group every copy by the original player. The default requests 64 complete source/context/selection refits. Their percentile intervals remain exploratory; they do not undo prior adaptive data use. Inspected 2025 cannot become a fresh holdout.
+
+The separate NFL crossing extractor reconstructs thresholded onset,onset-to-LOS travel and half-second movement,flagging missing intervals,recrossing and anticipation. These are mechanism diagnostics. They must not replace a failed get-off result with a new headline. A fixed-budget shortlist comparison is needed before declaring improved scouting decisions. No betting advantage or causal development effect follows.
+
+## Execute on official inputs
+
+Use Python 3.12 and a private raw-input directory outside the checkout:
+
+```bash
+python -m pip install -e '.[scouting]'
+perfectjet nfl-burst --data /path/to/official-nine-files --out /path/to/private-nfl-run --verify-known-hashes --refits 64
+perfectjet nfl-burst --data /path/to/official-nine-files --out /path/to/private-nfl-no-ngs --verify-known-hashes --without-ngs --refits 64
+```
+
+Private results retain individual predictions and tuning choices. Aggregate output removes predictions and influence identities. Missing files cause a named-file error; the command has no synthetic fallback. `notebooks/PerfectJet_Motor_Transfer.ipynb` embeds the source and expects attached official data; it remains unexecuted until raw inputs exist. Fixture success is never a new NFL result.
+
+## Corrections from the release audit
+
+Independent rational approximations of standardized float coordinates broke bilinear dependencies: same-speed designs could have rank 3 instead of 2,and empirical demand averages sometimes failed identification from their own complete rows. The fixed gate forms raw rational$[1,s,a,sa]$ and exact cell-count averages. Bootstrap copies now share original-player folds; late events cannot alter predictors or availability; real drill indicators replace synthetic names; inner fitting is fully rebuilt; future NFL seasons cannot train historical folds; higher-is-better shortlists use the correct quartile. The inherited synthetic-first detector remains distinct from the older angular-progress detector,so 34.1% is not silently credited to this new code.
+
+The empirical conclusion remains unresolved: does the supported motor readout improve get-off and player decisions? The release makes that test executable and preserves honest failures. Exact algebra and synthetic recovery cannot answer it without running the actual NFL inputs.
+
+
+---
+
+# From predictive movement to scouting decisions
+
+PerfectJet 0.12.0 connects the representation program to a concrete pre-draft question: can measured Combine movement improve the prediction of rookie NFL snap-to-line-of-scrimmage get-off, beyond the full conventional information available for the same prospects? The implementation connects operational movement targets, finite-horizon predictive states, player-cross-fitted transfer, and exact target-directed measurement packages. It preserves the original atlas, every preceding release, and the recovered NFL work. This is an implemented research bridge; a new empirical scouting advantage remains unestablished until the official inputs are executed and independently validated.
+
+The prior study matters because it prevents a false restart. Its launch/turn extraction became more stable, while several downstream models failed to deliver stable scouting lift. A representation can improve its own numerical behavior without improving a football decision. The present bridge therefore has separate movement, transfer, prediction, and decision receipts. A positive result in one cannot substitute for another.
+
+## The mathematical chain and what each link preserves
+
+Let $B_i$ be the fifteen conventional measurements, Combine position, and observed drill availability for prospect $i$. Let $X_i$ be a causal history of that prospect's Combine movement. Let $q_i$ contain declared NFL movement readouts, and let $y_i$ be context-adjusted rookie snap-to-LOS get-off. The proposed connection is
+
+$$X_i \longmapsto \widehat q_i=f_{\mathcal T}(B_i,X_i)
+\longmapsto \widehat y_i=g_{\mathcal T}(B_i,\widehat q_i).$$
+
+The training set $\mathcal T$ includes only eligible past players. NFL context and tracked NFL movement define the training targets; prospect prediction uses Combine information. All physical readouts keep declared units. No raw SVD coordinate is treated as an invariant athlete trait.
+
+| Research family | Executable connection | Preserved quantity | Limit of the connection |
+|---|---|---|---|
+| Observability and hidden witnesses | LOS decomposition and exact linear readout tests | Whether a specified question is determined by available measurements | An exact rank test is conditional on the declared linear response model |
+| Finite jets and calculus | Causal position derivatives and the post-onset burst functional | A finite time and directional movement readout | Operational onset is a tracking proxy; no physiological reaction time is inferred |
+| Hankel and predictive state | Supervised delay-block continuation with player-held rank/history selection | Physical movement outputs over a fixed finite horizon | Numerical reduced-rank prediction does not prove an exact all-future realization |
+| Transport and reconstruction | Fixed-unit Combine-to-NFL target maps | An explicit movement target and its reconstruction into get-off prediction | A shared coordinate system does not prove cross-domain transport |
+| Closure and obstruction | Continuation residuals, unsupported histories, unavailable movement targets | A failure witness and its scope | A suggested residual repair must be fitted and validated again |
+| Compositional error | The actual fitted two-stage decoder's error decomposition | Where prediction error enters the chain | A deterministic scenario bound is separate from empirical uncertainty |
+| Gaussian information | Exact scalar and correlated-block posterior updates | Conditional uncertainty in a frozen scouting readout | Prior, noise and fitted loading uncertainty are assumptions, not established physiology |
+| Finite populations | Exact counting, ranking and joint package optimization | Original feasible measurement packages and ties | Exhaustive global optimality is for the declared finite candidate universe |
+| Certified decisions | Bound-separated winner and overlapping contenders | A decision under supplied valid bounds | NFL sampling uncertainty is retained separately |
+| Arithmetic geometry, lattice and invariant theory | Retained core and atlas; no forced athlete analogy | Exact arithmetic claims in their original domains | No evidence currently justifies inserting Pell or sextic features into scouting |
+
+This is a stronger reuse of the existing mathematics than an indiscriminate feature expansion. Arithmetic geometry remains a central part of the broader research program. In this application, the useful bridges are those whose inputs, outputs and assumptions match the scouting question.
+
+## Get-off is a sum with a hidden direction
+
+The official get-off variable measures the elapsed time from snap to crossing the line of scrimmage. For an observed post-snap operational onset $t_o$, crossing $t_c$ and snap $t_s$,
+
+$$y_{\rm tracked}=t_c-t_s=(t_o-t_s)+(t_c-t_o)=\tau+T_{\rm travel}.$$
+
+This identity explains the original underidentification. An observation row $X=(1,1)$ cannot determine the onset component $h=(1,0)$: the hidden direction $n=(-1,1)$ satisfies $Xn=0$ while $hn\ne0$. Two athletes can have identical get-off and different onset/travel decompositions. Additional rows resolve that ambiguity only if they measure the target-affecting hidden direction. More repetitions of $(1,1)$ increase precision but leave this structural gap.
+
+`movement_targets.py` reconstructs the geometry with official game/play/player identities. It finds the snap in a first tracking pass, then retains bounded selected-player windows in a second pass. A canonical forward axis points from the defensive start side toward LOS. The implementation rejects nonpositive starting depth; it does not silently take an absolute value and invent a different task. Translation, reflection and rotation tests check the geometry. Gaps, missing snap observations and invalid crossing paths retain failure records and counts.
+
+The supplied official get-off remains the primary outcome even when tracked decomposition fails. The tracked-minus-supplied discrepancy is a diagnostic. The two initial movement readouts are forward displacement over the first operational post-onset half-second, in yards, and motion-onset-to-LOS travel time, in seconds. Onset delay remains a diagnostic rather than a claim about reaction time. Anticipation and pre-snap motion must retain their own flags; an onset already outside the observed window cannot be manufactured from the first available frame.
+
+Player targets use a common set of usable plays for their channel vector. Context adjustment is fitted on training players and cross-fitted for training targets. Neither starting depth nor NFL contextual covariates become prospect predictors. For $G$ observed games and play weights $w_p$ defining the reported player mean, game-cluster uncertainty is
+
+$$S_g=\sum_{p\in g}w_p(z_p-\bar z),\qquad
+\widehat{\operatorname{Cov}}(\bar z)=\frac{G}{G-1}\sum_{g=1}^{G}S_gS_g^\top.$$
+
+One game does not estimate this cluster covariance: it produces unknown uncertainty, rather than a falsely precise zero. A thousand frames from one play do not constitute a thousand independent players or a thousand independent measurement attempts.
+
+## A physical source functional before a latent model
+
+The original post-onset Combine source is
+
+$$A_T=\frac{2}{T^2}\left[x_\parallel(t_o+T)-x_\parallel(t_o)-T v_\parallel(t_o)\right],\qquad T=0.5\,\mathrm{s}.$$
+
+For twice differentiable motion this is
+
+$$A_T=\frac{2}{T^2}\int_0^T(T-u)a_\parallel(t_o+u)\,du.$$
+
+It equals constant acceleration for quadratic motion. In general it is a weighted acceleration readout, with no force, power, efficiency or developmental interpretation. Initial velocity is estimated with a trailing causal derivative, and adequate pre-onset history is required. Straightness is tested over the declared source window. Smoothing alternatives represent extraction scenarios; they are never independent repetitions of the athlete.
+
+The new state bridge uses forward and lateral movement channels derived from observed history. Its source feature vector contains half-second forward displacement, terminal forward speed, endpoint directional retention, and physical-coordinate continuation forecasts; the preceding burst functional remains executable in the separate motor-transfer experiment. A forecast origin has a declared time. Frames beyond that origin cannot enter input derivatives, history blocks or source features. The physical forecast itself can extend over the fitted short horizon, but its input stays within the available prefix.
+
+## Predictive state without arbitrary cross-fold coordinates
+
+For channel vector $u_t$, form a history block $p_t=[u_{t-L+1},\ldots,u_t]$ and a future block $f_t=[u_{t+1},\ldots,u_{t+H}]$. Training-only scaling gives matrices $P,F$. The numerical continuation estimator is
+
+$$\widehat K_\lambda=(P^\top W P+\lambda I)^{-1}P^\top W F.$$
+
+The fitted future matrix $P\widehat K_\lambda$ is compressed through its right singular vectors. If $V_r$ contains the retained output directions, the state and physical forecast use
+
+$$z_t=p_t\widehat K_\lambda V_r,\qquad
+\widehat f_t=z_tV_r^\top,$$
+
+with the fitted centering and inverse scaling restored in code. History length, rank and ridge penalty are selected by whole-player inner validation on common forecast origins. The instantaneous comparison receives those same origins, data weights and declared horizon. Each sampled athlete has equal total weight; bootstrap multiplicity is preserved, while copies remain in their original athlete's fold.
+
+This implements a target-directed delay model inspired by the Hankel program. It does not assert that a noisy finite sample has discovered an exact weighted automaton, a nonlinear sufficient statistic, or an all-time physiological state. The forecast outputs are physical coordinates. A latent basis may rotate across separate SVD fits without changing those coordinates, so the transfer stage consumes physical forecasts rather than concatenating incompatible latent states.
+
+NFL movement histories train the continuation map within each training fold. Applying that map to a Combine history is a declared cross-domain hypothesis. Train-history Mahalanobis and orthogonal-design distances flag unsupported inputs. These distances are descriptive; their training 95th percentile does not become a calibrated prediction interval. An unsupported athlete remains visible in coverage and sensitivity reports. The bridge cannot call an unusual history familiar by refitting on the held-out NFL player.
+
+The analytic receipt uses an explicitly synthetic second-order recurrence to demonstrate why history can matter. Two histories with the same current sample can have different continuations. A history model can distinguish them, while an instantaneous model cannot. This establishes the implemented mechanism on the fixture; it establishes no NFL performance improvement.
+
+## Train the decoder on the predictions it will actually receive
+
+A frequent two-stage error is to train a football decoder on true NFL movement and then deploy it on noisy Combine-derived movement estimates. That changes its input distribution. The implemented bridge instead trains its decoder with player-out-of-fold movement predictions:
+
+$$\widehat q_i^{\rm OOF}=f_{\mathcal T\setminus\mathcal F(i)}(B_i,X_i),\qquad
+\widehat g=\arg\min_g\sum_{i\in\mathcal T}
+\left[y_i-g(B_i,\widehat q_i^{\rm OOF})\right]^2+\alpha\|g\|^2.$$
+
+Each stacking fold rebuilds the movement representation, context targets, source reference, preprocessing and transfer map using its training players. The final first-stage map is refitted on the outer training set and then feeds the frozen decoder for outer held-out prospects. Tuning occurs inside the outer training population. Athlete labels and NFL trajectories from the outer evaluation class enter scoring and post-prediction diagnostics only.
+
+The comparator receives all fifteen conventional measurements, position and identical drill availability. Any derived source coverage/support flags are shared with it, so a comparison cannot attribute missingness or attendance information to movement values. Missing trajectories remain missing. Eligibility dates, rookie seasons and training outcome cutoffs are enforced. Held-player perturbation tests change NFL labels and trajectories and check that fitted prospect predictions remain fixed.
+
+Temporal comparisons on previously inspected classes are development evidence. In particular, a newly packaged model cannot restore untouched status to 2025 merely by renaming an analysis. The primary headline remains supplied snap-to-LOS get-off. A useful onset or displacement result can be reported as a mechanism diagnostic without replacing a failed primary result.
+
+## Locate transfer error and ask for the measurement that matters
+
+After predictions are frozen, held-out NFL movement can locate the two-stage error:
+
+$$\widehat y-y=
+\underbrace{g(B,\widehat q)-g(B,q)}_{\text{movement transfer error}}+
+\underbrace{g(B,q)-y}_{\text{decoder residual}}.$$
+
+This is an algebraic decomposition for the actual fitted decoder. It does not establish causation or identifiability of a biological mechanism. For an affine decoder with loading $w$ and a supplied box $|\widehat q_j-q_j|\le r_j$,
+
+$$|g(B,\widehat q)-g(B,q)|\le\sum_j|w_j|r_j.$$
+
+Those radii must be supplied or validated. A fixed-fit box bound cannot be substituted for uncertain extrapolation, model selection variability, unknown loading uncertainty or NFL sampling error.
+
+For a fixed affine source-to-movement map $q=F x+c$ and decoder $g=w^\top q+b$, the scouting loading on physical source coordinates is $h=F^\top w$. The implementation exposes the fitted finite-difference Jacobian in physical units. Pipeline imputation and missingness make this a local conditional loading: it is not a universal derivative across missing-value boundaries or new support regions.
+
+The allocation bridge takes that frozen loading and a caller-declared prior covariance, measurement noise, candidate constraints and budget. It records training IDs, held-out IDs, cutoff and the loading's declared source. These receipts expose provenance; they do not independently prove that an external caller trained honestly. A floating fitted coefficient can be rationalized within a declared tolerance so the package algebra is reproducible. Exact arithmetic proves calculations for that rational snapshot, rather than proving that an estimated loading is exactly correct. The allocation wrapper also bounds the effect of coefficient rationalization over every feasible package, so a reproducible approximation comes with an optimization-error receipt.
+
+With prior covariance $\Sigma$, loading $h$, measurement row $e$ and independent noise variance $s^2$, the update is
+
+$$\Sigma' = \Sigma-
+\frac{\Sigma e e^\top\Sigma}{s^2+e^\top\Sigma e},\qquad
+\operatorname{VOI}(e)=h^\top(\Sigma-\Sigma')h.$$
+
+Several correlated channels from one attempt use the block update
+
+$$\Sigma' = \Sigma-\Sigma E^\top(R+E\Sigma E^\top)^{-1}E\Sigma.$$
+
+The channel block is one candidate with one cost and its full noise covariance. Duplicate original attempt IDs are rejected. Repeating an independent attempt may improve precision; splitting its frames into fictitious independent observations may not. Irreducible NFL outcome noise and uncertainty in the fitted loading are outside this conditional source-covariance reduction and must remain visible.
+
+If $D_S=\Sigma-\Sigma_S$ is the covariance reduction for a package, then $0\preceq D_S\preceq\Sigma$ and $|(D_S)_{ij}|\le(\Sigma_{ii}+\Sigma_{jj})/2$. A raw decimal loading $h$ and rational snapshot $\widetilde h$ therefore satisfy
+
+$$|h^\top D_Sh-\widetilde h^\top D_S\widetilde h|\le
+\sum_{i,j}|h_i h_j-\widetilde h_i\widetilde h_j|
+\frac{\Sigma_{ii}+\Sigma_{jj}}{2}=\epsilon.$$
+
+The bound is uniform over the declared candidate packages. The package optimized for the rational snapshot has raw-snapshot regret at most $2\epsilon$, including for the minimum over a declared loading family. This controls arithmetic approximation in the optimizer; it does not control errors in the fitted hypothesis, prior or noise model.
+
+## A concrete new exact result: isolated-value greedy allocation can fail
+
+The allocation receipt gives a small exact counterexample. Take $\Sigma=I_2$, $h=(1,0)$, budget two and unit candidate costs. Let A measure $(1,0)$ with noise variance one, B measure $(1,1)$ with noise variance $1/10$, and C measure $(0,1)$ with noise variance $1/10$.
+
+| Candidate or package | Conditional variance reduction in the target |
+|---|---:|
+| A alone | $1/2$ |
+| B alone | $10/21$ |
+| C alone | $0$ |
+| Greedy package A+B | $21/32$ |
+| Globally best package B+C | $110/131$ |
+
+The zero-isolated-value measurement C estimates the nuisance coordinate contaminating B. Together B and C recover the target far more precisely than the isolated-value ordering suggests. The difference is $769/4192$. Target-specific variance reduction is monotone but need not be submodular: the marginal value of C is zero at the empty package and $110/131-10/21=1000/2751$ after B. This violates diminishing returns, so additive-profit models and the usual submodular greedy guarantees do not apply. This is an exact linear-Gaussian counterexample, not a newly observed NFL benefit. It directly justifies optimizing packages jointly instead of sorting candidates by standalone value.
+
+The existing finite-population core counts and ranks the original feasible subsets; the allocation layer evaluates each joint posterior. For at most eighteen candidate packages the implementation provides a global optimum, tie count and feasible population receipt. Larger candidate universes require a separately declared search procedure; the bounded exhaustive routine does not silently claim scalable global optimality.
+
+Multiple plausible frozen loadings can be supplied. A robust objective maximizes the minimum variance reduction over that declared hypothesis family. If the family contains a zero source loading, its worst-case reduction is zero: a source-only measurement cannot guarantee value when an admissible fitted hypothesis gives the source no scouting effect. Weighted-mean optimization is a separate declared alternative, with explicit weights rather than an implicit uniform biological prior.
+
+## Decide which comparisons are still worth resolving
+
+For a higher-is-better score with valid fixed-fit bounds $[L_a,U_a]$, candidate $a$ is certified ahead when $L_a>\max_{b\ne a}U_b$. The get-off target is lower-is-better, so the direction must be transformed consistently before using that comparison. A fixed budget or roster constraint remains explicit.
+
+When the winner is unsettled, measurement can target score differences $H_a-H_b$ for overlapping contenders. Resolving an irrelevant athlete's complete parameter vector can consume budget without changing the decision. The contender allocator targets those score differences. When source uncertainties are correlated, a measurement on another athlete can still resolve a contender comparison; the exact joint search retains such candidates, including measurements with zero isolated benefit. Empirical uncertainty can be attached to the decision report, but is not silently reclassified as a proved scenario bound.
+
+The full scouting assessment still needs equal-player paired prediction loss, calibration, coverage, class-by-class behavior and the fixed-budget shortlist. A representation should earn its place by improving these outcomes against the comparably informed baseline. Selection must be frozen before evaluating the class. Repeated refits test instability; they do not erase adaptive use of an already inspected class.
+
+## Execution and evidence
+
+Install the scouting extras. Run `perfectjet math-bridges --output results/math-bridges.json` for the analytic and exact receipts without raw football data. Run `perfectjet nfl-bridges --data OFFICIAL_DIR --output private_results/bridges.json --verify-known-hashes --refits 64` for the official-data experiment and full original-player pipeline refits. The primary comparison uses the stronger of direct conventional and conventional two-stage decoding, selected within training-player validation. Both individual comparisons remain available. The bridge notebook embeds and hashes the actual repository modules and refuses a synthetic fallback when official inputs are absent.
+
+The official experiment needs `players.csv`, `combine_results.csv`, `combine_tracking.csv`, `player_play.csv`, `games.csv`, `player_career_successes.csv` and game-tracking files for 2023, 2024 and 2025. Their absence blocks empirical execution, rather than implementation, analytic verification or package publication. The released notebook is explicitly unexecuted on those raw inputs.
+
+The strongest completed result is a connected, falsifiable computation: physical targets, causal finite-history predictions, out-of-player transfer, a decoder trained on those actual predictions, an exposed physical loading, and exact measurement packages directed at that loading. The next empirical question is whether this chain improves football predictions and decisions. A negative result should identify whether the loss occurred in source coverage, finite-history forecasting, Combine-to-NFL transport or decoding, and remain in the permanent research record.
 
 
 ---
@@ -879,3 +1215,68 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E307 | invariants | Rabinowitsch saturation | I:q^infinity = (I+<1-zq>) intersect Q[t] | derived | Elimination order on z; cell nonempty iff saturated ideal is not 1. |
 | PJ-E308 | invariants | two-parameter partner surface | f=x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4); rational exceptional points (+/-16,-9),(0,3),(0,15),(0,-5),(0,0),(+/-20,0),(+/-40/7,0) | exact_checked | Degrees3..12 of the correction gates; degree3 has a drop curve, degree8 has drop curves including b=0. |
 | PJ-E309 | invariants | fourfold-root exceptional sextic | x^6+y^6+16x^3y^3-9(x^4y^2+x^2y^4)=(x-y)^4(x^2+4xy+y^2) | exact_checked | Correction rank drops at this point in degrees5,6,7,9,10,11. |
+| PJ-E310 | invariants | active strata | dim A_N=rank[L_N;P_N]-rank L_N constant on refined cells; commuting=dim ker L_N-dim A_N | exact_checked | Two-parameter sextic surface, degrees3..12; partners replayed at rational samples only. |
+| PJ-E311 | invariants | surface discriminant | Res_x(f(x,1),f_x(x,1)) in Q[a,b], total degree8 | exact_checked | Bareiss determinant of the Sylvester matrix; vanishes exactly at repeated roots since f is monic in x. |
+| PJ-E312 | invariants | perfect-cube commuting exceptions | f=(x^2+y^2)^3: ker L_N=span{(x^2+y^2)^(N/2)} with A_N=0 for N=4,6,8,10 | exact_checked | Correction-rank exception that adds no active capacity; degree12 kernel3 active2. |
+| PJ-E313 | invariants | degree8 partner curve | a^2b-4b^3+6a^2-28b^2+20b+300=0; rational points (+/-11,6),(+/-16,-9),(0,-5) | exact_checked | Bounded-height scan, height<=12; not a complete rational point list. |
+| PJ-E314 | invariants | degree12 partner curve | b^4+24b^3+81a^2-126b^2+405=0; rational points (+/-4,-3),(+/-32/25,-9/5),(+/-16,-9) | exact_checked | (+/-4,-3) has a double root; (+/-32/25,-9/5) is squarefree. |
+| PJ-E315 | observability | readout identifiability | h^T beta determined by X beta iff h in row(X); else Xn=0, h^T n!=0 | exact_checked | Noiseless linear response; witness gives two fits with different readouts. |
+| PJ-E316 | observability | demand-supported readout | theta_i=sum_k q_k phi(d_k)^T beta_i=h_q^T beta_i | definition | q a declared training-derived demand distribution. |
+| PJ-E317 | observability | repeat versus new condition | row in row(X) leaves identifiability unchanged | exact_checked | Repeats sharpen precision only; minimal identifying sets by exhaustive search up to a size bound. |
+| PJ-E318 | observability | Gaussian value of information | VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e e^T/s^2)^{-1}h | exact_checked | Linear Gaussian model; reduction independent of the unseen outcome; conditional on prior and noise. |
+| PJ-E319 | decisions | settled decision | Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b)) | exact_checked | Valid intervals; refinement restricted to overlapping contenders. |
+| PJ-E320 | decisions | evolution-defect split | e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t | exact_checked | Replayed at every step in rational arithmetic with an infinity-norm bound. |
+| PJ-E321 | closure | adaptive monomial closure | add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...} | exact_checked | Stops on degree growth or budget with the residual support. |
+| PJ-E322 | counting | constraint attribution | removed_only_by_k = #F(constraints minus k) - #F | exact_checked | Selections violating constraint k and no other; compared with enumeration. |
+| PJ-E323 | counting | inclusion profile | Pr(x_i=1 \| feasible) = #F(x_i=1)/#F; Pr(x_i=1 \| optimal) = ties(x_i=1)/ties | exact_checked | Counts original objects; compared with enumeration. |
+| PJ-E324 | physics | stationary response | dx*/dtheta = -H^{-1} d2V/dx dtheta at (x*,0) | derived | Nondegenerate stationary point; first order only. |
+| PJ-E325 | physics | symmetry protection | dR(v)=0 for every perturbation v fixed by the symmetry | exact_checked | First-order statement; higher orders need an exact symmetry argument. |
+| PJ-E326 | transport | quadratic square transport | k y^2=an^2+bn+c <=> X^2-4ak Y^2=b^2-4ac, X=2an+b, Y=y; n=(X-b)/(2a) | exact_checked | Integers; X=b mod 2a required; branches a=0, definite, square D, N0=0 handled separately. |
+| PJ-E327 | pell | Nagell class bound | N0>0: 0<=y<=y1 sqrt(N0/(2(x1+1))); N0<0: 0<y<=y1 sqrt(-N0/(2(x1-1))) | derived | x^2-Dy^2=N0, D>0 nonsquare, (x1,y1) fundamental unit; classical theorem, cited. |
+| PJ-E328 | pell | compiled quadratic population | hits = {(X-b)/(2a): (X,Y) in seeds*eps^Z, X=b mod 2a} | exact_checked | Complete for the Pell branch; checked against brute force on 158 equations; remote indices replayed exactly. |
+| PJ-E329 | invariants | Clebsch invariants of the sextic | i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2 | definition | Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2. |
+| PJ-E330 | invariants | weighted orbit test | (A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} | derived | Proves GL2(Qbar)-equivalence only for squarefree sextics. |
+| PJ-E331 | invariants | Cayley-Sylvester count | dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2 | derived | p counts partitions into at most d parts of size at most n. |
+| PJ-E332 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; certified on the dense slice by a 125-point exact grid. |
+| PJ-E333 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0. |
+| PJ-E334 | invariants | degree-12 covariant partner | G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96 | exact_checked | Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0. |
+| PJ-E335 | invariants | degree-12 partner converse | ker L_12(f)!=0 => A^2=25B/96 | open | Supported by random sextics and two independent families; not proved. |
+| PJ-E336 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
+| PJ-E337 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
+| PJ-E338 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
+| PJ-E339 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
+| PJ-E340 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
+| PJ-E341 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
+| PJ-E342 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
+| PJ-E343 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
+| PJ-E344 | observability | LOS onset-travel ambiguity | X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1 | exact_checked | Total onset plus travel cannot identify either component; separate from acceleration models. |
+| PJ-E345 | empirical | stable crossing travel | u=2d/(v+sqrt(v^2+2ad)) | derived | Local constant acceleration; d,v>=0 and a>0; not an athlete physiology law. |
+| PJ-E346 | empirical | crossing travel box | u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo) | exact_checked | Monotone extrema of declared box; outward polynomial signs rationally checked. |
+| PJ-E347 | empirical | half-second motor functional | A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2 | definition | T=.5s post operational onset; no known cue or reaction-time claim. |
+| PJ-E348 | empirical | acceleration functional identity | A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt | derived | Integrable acceleration; analytic invariance tests; no second numerical differentiation. |
+| PJ-E349 | empirical | scalar source precision | V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2 | derived | Gaussian player deviation; independent training repeats; branches are not repeats. |
+| PJ-E350 | empirical | uncertainty-integrated NFL correction | r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i) | derived | Conditional error independence; target precision descriptive; empirical transfer unestablished. |
+| PJ-E351 | empirical | paired loss noise cancellation | Delta_noisy=Delta_clean+2e(p_movement-p_baseline) | derived | Expected equality requires conditional mean-zero error; no automatic causal interpretation. |
+| PJ-E352 | observability | operational get-off decomposition | t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset) | derived | Observed geometry and operational tracking onset; supplied official get-off retained separately; no reaction-time claim. |
+| PJ-E353 | observability | positive onset-travel hidden direction | X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1 | exact_checked | Linear sum cannot determine onset independently; physically admissible positive witnesses in bridge receipt. |
+| PJ-E354 | empirical | game-cluster movement covariance | Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z) | definition | Common usable plays and original play weights; fewer than two games yields unknown covariance. |
+| PJ-E355 | dynamics | causal post-onset burst integral | A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du | derived | Twice differentiable directional position, causal initial velocity, T=.5 s; not force or reaction time. |
+| PJ-E356 | series | supervised delay continuation | K_lambda=(P^T W P+lambda I)^(-1)P^T W F | numerical_checked | Train-only standardized past/future movement blocks; equal sampled-player weight; player-held inner selection. |
+| PJ-E357 | series | target-directed finite state | z=p K_lambda V_r; forecast=z V_r^T | numerical_checked | Right singular vectors of fitted future outputs; centering/inverse scaling in code; finite declared horizon only. |
+| PJ-E358 | series | second-order predictive witness | u_(t+1)=3/2 u_t-3/4 u_(t-1) | numerical_checked | Explicitly synthetic recurrence; identical current samples need not imply equal continuations. |
+| PJ-E359 | empirical | cross-fitted physical movement transfer | qhat_i^OOF=f_(training minus fold(i))(B_i,X_i) | definition | State discovery, targets and preprocessing rebuilt for each player fold; physical units across SVD rotations. |
+| PJ-E360 | empirical | prediction-trained outcome decoder | g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2 | definition | Training inputs are predicted movement; held-out NFL movement enters diagnostics only. |
+| PJ-E361 | dynamics | fitted two-stage error identity | yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y] | derived | Frozen fitted decoder and observed held-out target; algebraic decomposition does not imply causation. |
+| PJ-E362 | dynamics | fixed affine movement scenario bound | abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j | derived | Affine fitted decoder and valid supplied box abs(qhat_j-q_j)<=r_j; separate from empirical intervals. |
+| PJ-E363 | observability | physical scouting loading | q=F x+c, g=w^T q+b => h=F^T w | derived | Frozen affine fit and fixed preprocessing/missingness pattern; physical source units. |
+| PJ-E364 | observability | exact scalar posterior update | Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e) | exact_checked | Positive-definite rational prior, positive independent noise; fixed loading and declared Gaussian model. |
+| PJ-E365 | observability | correlated attempt block update | Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma | exact_checked | Positive-definite joint within-attempt noise; duplicate original attempt IDs rejected. |
+| PJ-E366 | counting | joint target measurement package | S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k | exact_checked | Declared finite hypotheses and at most18 candidate packages; exact feasible counts, ranks and tie population. |
+| PJ-E367 | observability | zero-isolated-value synergy | VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131 | exact_checked | Sigma=I2, h=(1,0), A=(1,0) noise1, B=(1,1) noise1/10, C=(0,1) noise1/10, budget2. |
+| PJ-E368 | observability | joint package advantage witness | 110/131-21/32=769/4192 | exact_checked | Synthetic exact Gaussian allocation example; no empirical NFL gain inferred. |
+| PJ-E369 | observability | loading-family zero-effect limit | min_h VOI(S;h)=0 if 0 belongs to loading hypotheses | derived | Covariance reduction PSD; a zero target loading has zero conditional source benefit. |
+| PJ-E370 | decisions | contender-difference loading | h_(a,b)=H_a-H_b | definition | Frozen common source coordinates; only overlapping possible leaders need sensing under valid scenario bounds. |
+| PJ-E371 | observability | rationalized fitted loading | norm(h_decimal-h_rational)_infinity<=declared_tolerance | exact_checked | Exact calculation for rational snapshot; coefficient discrepancy recorded; estimated loading remains empirically uncertain. |
+| PJ-E372 | observability | uniform loading rationalization bound | abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2 | exact_checked | 0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate. |
+| PJ-E373 | counting | rationalized package regret | raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon | exact_checked | Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses. |
+| PJ-E374 | observability | target-information non-submodularity witness | VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751 | exact_checked | The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows. |

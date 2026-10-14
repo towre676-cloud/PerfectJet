@@ -1,0 +1,10 @@
+{
+  "fixed_before_new_turn_extraction_utc": "2026-10-14T02:20:25.003985+00:00",
+  "git_commit": "e41e6a5db665295d0f54ac88b1fae2c1fdc0e9a5",
+  "sha256": {
+    "turn_transfer.py": "b8c7fab1913d76d725c6b0bedaf0d5079d92601049caafe65f42d2bb82ec0f80",
+    "receipts/turn_transfer_design.json": "61cbeede10ed9ae318c08d500469d04d0f08b45165f76203d98cb64b16f25ae6"
+  },
+  "prior_2025_WR_inspection": true,
+  "fresh_blind_test_claim": false
+}

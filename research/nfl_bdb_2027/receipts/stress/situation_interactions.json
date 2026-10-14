@@ -1,0 +1,185 @@
+{
+  "fixed_alpha": 1000,
+  "minimum_records_per_conditional_player": 10,
+  "groups": {
+    "third_and_long": {
+      "training_players": 25,
+      "players": 18,
+      "mse": {
+        "conventional": 0.004048766744778151,
+        "capacity_only": 0.00398246468926473,
+        "raw_motion": 0.003915763895085082,
+        "matched_recovery": 0.004048006953108229,
+        "stress_curve": 0.004030330332798564,
+        "robust_recovery": 0.0039771069277830225
+      },
+      "comparisons": {
+        "capacity_only": {
+          "absolute_gain": 6.630205551341907e-05,
+          "relative_gain": 0.01637586447748104,
+          "conditional_ci95": [
+            2.9101430693393735e-05,
+            0.00010644518570407765
+          ]
+        },
+        "raw_motion": {
+          "absolute_gain": 0.00013300284969306917,
+          "relative_gain": 0.032850212935731114,
+          "conditional_ci95": [
+            2.315787031030877e-05,
+            0.00024331319736137008
+          ]
+        },
+        "matched_recovery": {
+          "absolute_gain": 7.597916699198325e-07,
+          "relative_gain": 0.0001876600253397568,
+          "conditional_ci95": [
+            -0.00014023157689489204,
+            0.00014446162979374572
+          ]
+        },
+        "stress_curve": {
+          "absolute_gain": 1.843641197958567e-05,
+          "relative_gain": 0.00455358709003521,
+          "conditional_ci95": [
+            -0.0001401794965325955,
+            0.00017323868352520384
+          ]
+        },
+        "robust_recovery": {
+          "absolute_gain": 7.165981699512749e-05,
+          "relative_gain": 0.01769917150390298,
+          "conditional_ci95": [
+            -8.147448298370984e-05,
+            0.0002191638598835018
+          ]
+        }
+      },
+      "versus_capacity": {
+        "raw_motion": {
+          "absolute_gain": 6.67007941796501e-05,
+          "relative_gain": 0.01674862161601861,
+          "conditional_ci95": [
+            -4.4123887006792144e-05,
+            0.00017726877787200749
+          ]
+        },
+        "matched_recovery": {
+          "absolute_gain": -6.554226384349923e-05,
+          "relative_gain": -0.016457713741989285,
+          "conditional_ci95": [
+            -0.00021082379432155624,
+            7.828824560467971e-05
+          ]
+        },
+        "stress_curve": {
+          "absolute_gain": -4.786564353383341e-05,
+          "relative_gain": -0.012019100549180435,
+          "conditional_ci95": [
+            -0.0002015408171164594,
+            0.00011124587305937731
+          ]
+        },
+        "robust_recovery": {
+          "absolute_gain": 5.357761481708426e-06,
+          "relative_gain": 0.001345338100837653,
+          "conditional_ci95": [
+            -0.00014739750067744057,
+            0.00014123517426621168
+          ]
+        }
+      },
+      "scope": "Paired fixed-prediction player bootstrap, omitting refitting and adaptive-search uncertainty; outcomes constructed by held-out context reference."
+    },
+    "blitz_charted": {
+      "training_players": 45,
+      "players": 29,
+      "mse": {
+        "conventional": 0.001123394575669529,
+        "capacity_only": 0.0011047781347636924,
+        "raw_motion": 0.0010465700080211598,
+        "matched_recovery": 0.001134075045107404,
+        "stress_curve": 0.0011299972154272162,
+        "robust_recovery": 0.0010779273337716295
+      },
+      "comparisons": {
+        "capacity_only": {
+          "absolute_gain": 1.861644090583686e-05,
+          "relative_gain": 0.0165715958658085,
+          "conditional_ci95": [
+            5.664369405085424e-07,
+            3.7336715330099316e-05
+          ]
+        },
+        "raw_motion": {
+          "absolute_gain": 7.682456764836928e-05,
+          "relative_gain": 0.06838609453190818,
+          "conditional_ci95": [
+            2.2949698864665154e-05,
+            0.00013664590664765362
+          ]
+        },
+        "matched_recovery": {
+          "absolute_gain": -1.0680469437874633e-05,
+          "relative_gain": -0.009507317971078157,
+          "conditional_ci95": [
+            -5.1349382722125306e-05,
+            3.383960434329492e-05
+          ]
+        },
+        "stress_curve": {
+          "absolute_gain": -6.602639757686938e-06,
+          "relative_gain": -0.005877400426071888,
+          "conditional_ci95": [
+            -5.558565721271744e-05,
+            4.1715353235219486e-05
+          ]
+        },
+        "robust_recovery": {
+          "absolute_gain": 4.546724189789998e-05,
+          "relative_gain": 0.04047308299561806,
+          "conditional_ci95": [
+            -1.4481856385216443e-05,
+            0.00011220265637072781
+          ]
+        }
+      },
+      "versus_capacity": {
+        "raw_motion": {
+          "absolute_gain": 5.820812674253244e-05,
+          "relative_gain": 0.05268761655477814,
+          "conditional_ci95": [
+            1.4978168727397842e-05,
+            0.00010762721914148639
+          ]
+        },
+        "matched_recovery": {
+          "absolute_gain": -2.929691034371149e-05,
+          "relative_gain": -0.026518365472519043,
+          "conditional_ci95": [
+            -7.098932849381392e-05,
+            8.100364002840672e-06
+          ]
+        },
+        "stress_curve": {
+          "absolute_gain": -2.5219080663523797e-05,
+          "relative_gain": -0.022827280763406906,
+          "conditional_ci95": [
+            -7.202791913249825e-05,
+            1.9712565946362772e-05
+          ]
+        },
+        "robust_recovery": {
+          "absolute_gain": 2.685080099206313e-05,
+          "relative_gain": 0.024304247293784834,
+          "conditional_ci95": [
+            -2.8606508673441436e-05,
+            9.104010648115395e-05
+          ]
+        }
+      },
+      "scope": "Paired fixed-prediction player bootstrap, omitting refitting and adaptive-search uncertainty; outcomes constructed by held-out context reference."
+    }
+  },
+  "scope": "Exploratory situation comparisons using fixed strongest shrinkage; no group-specific tuning or best-context selection. Source adjustment trained only on earlier players; target reference excludes heldout player labels. Outcomes condition on observed NFL context/opportunities; groups are not controlled causal interventions."
+}

@@ -1,0 +1,15 @@
+{
+  "unit_tests_passed": 20,
+  "source_recovery": "prior source/results package restored; local-only git history unavailable",
+  "all_nine_source_hashes_match_prior_acquisition": true,
+  "stability_partition_hashes_distinct": true,
+  "data_redistributed": false,
+  "kaggle_published": false,
+  "competition_submitted": false,
+  "notebook_all_code_cells_executed": 15,
+  "notebook_all_current_code_sources_verified_identical": true,
+  "notebook_narrative_words": 1692,
+  "notebook_composite_figures": 8,
+  "independent_notebook_replay_max_absolute_result_difference": 8.881784197001252e-16,
+  "numerical_replay_tolerance": 1e-12
+}

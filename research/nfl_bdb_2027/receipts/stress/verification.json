@@ -1,0 +1,31 @@
+{
+  "notebook": "notebooks/Movement_Stress_and_Recovery.ipynb",
+  "executed_code_cells": 4,
+  "source_modules_byte_equal": 19,
+  "directly_matched_mse_scores": 116,
+  "maximum_score_difference": 0.0,
+  "context_and_scout_refits": 64,
+  "embedded_figures": 4,
+  "word_count_including_streams": 1329,
+  "integrated_tests_passed": 61,
+  "donor_movement_tests_passed": 18,
+  "total_test_checks": 79,
+  "source_replays": {
+    "private_stress": {
+      "turns": 601,
+      "max_difference": 0.0
+    },
+    "private_stress_clock": {
+      "turns": 582,
+      "max_difference": 0.0
+    }
+  },
+  "unchanged_DynaComp_sources_verified": true,
+  "figure_sha256": {
+    "stress_surface.png": "9a9fe0b0c1d413e42095f60eab20fbf3fd0205d363bec91d410f200aee0a5866",
+    "scouting_results.png": "b2518c8364f5d5b673b19387dc290304e709ea5d12882476fe2d65b1b7cd4912",
+    "measurement_and_observability.png": "cad5583b609e537497065d73a0a2f751268bace924493c37a75bfb223d7315fa",
+    "recovery_geometry.png": "7858a5558fe1630bd1012dda417a5292afa7127fe351b62d4fb923865849be42"
+  },
+  "provenance": "Actual9inputfiles verified in notebook; source reconstructions independently replayed exactly. Numerical fits and full refits computed directly, notebook resumed controlled private checkpoints; fresh default reconstructs all stages."
+}

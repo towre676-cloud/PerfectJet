@@ -29,6 +29,23 @@ GROUPS={
 '23':('Missing and corrections',['Arithmetic GCD kernel original unresolved','Full master.txt unresolved','Original SOE corpus unresolved','Original FF7 corpus unresolved','PSG source coefficients unresolved','PADD hardware semantics unresolved','Chemistry rate table unresolved','BLAST original recurrence unresolved','Concrete Petersen50 DAG unresolved','Full radar bytes unresolved','Full formal proof integration unresolved','No new Lean theorem claim','Exact numerical historical proposal status separation'])
 }
 
+GROUPS['26']=('NFL motor transfer', ['Official nine-file Combine adapter','LOS onset-travel confounding',
+    'Half-second post-onset functional','Independent-repeat source variance','Uncertainty-integrated scouting correction',
+    'Exact rational demand gate repair','Original-player bootstrap grouping','Nested source and outcome reconstruction',
+    'Chronological rookie outcomes','Strong fifteen-measurement comparator','Fixed-budget shortlist test',
+    'Unexecuted real-data status and full historical preservation'])
+
+GROUPS['27']=('NFL math bridges', ['Operational NFL movement target geometry','Bounded two-pass NFL frame extraction',
+    'Finite-horizon supervised Hankel continuation','Physical-coordinate SVD transfer',
+    'Same-current different-history predictive witness','Equal-player weighting and preserved bootstrap multiplicity',
+    'Train-only NFL-to-Combine continuation alignment','Descriptive support distances',
+    'Out-of-player movement stacking','Strong shared-availability scouting baseline',
+    'Physical source-to-movement-to-outcome loading','Fitted transfer-error decomposition',
+    'Exact joint measurement-package optimum','Zero-standalone-value nuisance cancellation','Non-submodular target information',
+    'Correlated within-attempt measurement blocks','Original-attempt deduplication',
+    'Rationalized fitted-loading provenance','Uniform coefficient-rounding score bound','Rational-snapshot optimization regret','Robust multi-loading allocation',
+    'Contender-difference sensing','Synthetic mechanism evidence versus NFL performance'])
+
 def build():
     rows=[]
     for prefix,(domain,topics) in GROUPS.items():

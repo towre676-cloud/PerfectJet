@@ -1,0 +1,95 @@
+{
+  "schema": "pp-movement-language-release/1",
+  "tests": 18,
+  "exact_rank_roundtrips": 4000,
+  "extraction": {
+    "input_cohort_sha256": "5f83794c138cf68268d8ef5b73671f25d5b3948d45645776763fd49ece52372d",
+    "source_tracking_sha256": "541c69f6629f5f803b08033c5c386735582120973562134b2c1e7ec6553fb0d3",
+    "source_attempts": 361,
+    "accepted_attempts": 361,
+    "source_rejections": {},
+    "players": 74,
+    "players_by_year": {
+      "2023": 23,
+      "2024": 22,
+      "2025": 29
+    },
+    "phase_populations_min": "3276",
+    "phase_populations_max": "27720",
+    "scenarios": 1083,
+    "extract_seconds": 60.37249565600359,
+    "target": "Mean observed pressure indicator in the supplied eligible rookie rush cohort; conditional, not unconditional career success.",
+    "onset_weights": "Equal source-only sensitivity scenarios .5,1,2 yd/s; not calibrated phase probabilities",
+    "frame_scope": "Up to first 61 contiguous 10Hz active frames. Gaps rejected. Four operational ordered phase templates, not labeled physiology."
+  },
+  "numerical_scope": "Exact integer populations and ranks; binary64 log-weight inference and source observations. Rational reference API checked on small graphs.",
+  "formal_scope": "Uses the finite partial-state language framework developed in ArithmeticModes. New numerical compiler, feature extraction and NFL regression are not formally verified.",
+  "summary": "The reusable engine evaluates all allowed phase segmentations and event-order features. The first private-data experiment covers 361 drill attempts, 74 players and 1,083 onset scenarios. A combined model improves exploratory 2025 pressure-rate error by 7.7%, but performs worse in earlier-cohort nested tests; a stable scouting gain is not established.",
+  "benchmark": {
+    "cases": [
+      {
+        "frames": 61,
+        "phases": 4,
+        "count": "34220",
+        "edges": 3719,
+        "build_seconds": 0.01218782899377402,
+        "rank_roundtrips": 1000,
+        "rank_seconds": 0.006225983990589157,
+        "moment_seconds": 0.008615377999376506,
+        "duration_sum_error": 3.552713678800501e-14,
+        "scope": "Synthetic fixed observation weights; population and rank exact, posteriors floating."
+      },
+      {
+        "frames": 120,
+        "phases": 6,
+        "count": "182637273",
+        "edges": 28085,
+        "build_seconds": 0.11021297000115737,
+        "rank_roundtrips": 1000,
+        "rank_seconds": 0.019667307991767302,
+        "moment_seconds": 0.09716008399846032,
+        "duration_sum_error": 3.836930773104541e-13,
+        "scope": "Synthetic fixed observation weights; population and rank exact, posteriors floating."
+      },
+      {
+        "frames": 200,
+        "phases": 8,
+        "count": "2203959847089",
+        "edges": 116828,
+        "build_seconds": 0.5290774640016025,
+        "rank_roundtrips": 1000,
+        "rank_seconds": 0.0419465259910794,
+        "moment_seconds": 0.5436114410113078,
+        "duration_sum_error": 1.5631940186722204e-12,
+        "scope": "Synthetic fixed observation weights; population and rank exact, posteriors floating."
+      },
+      {
+        "frames": 300,
+        "phases": 12,
+        "count": "35513096590299098589",
+        "edges": 435754,
+        "build_seconds": 2.662367910001194,
+        "rank_roundtrips": 1000,
+        "rank_seconds": 0.0876699299988104,
+        "moment_seconds": 2.766148502996657,
+        "duration_sum_error": 1.1368683772161603e-13,
+        "scope": "Synthetic fixed observation weights; population and rank exact, posteriors floating."
+      }
+    ],
+    "rank_roundtrips": 4000
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0"
+  },
+  "source_sha256": {
+    "python/perfectpower/movement_language.py": "0589538b07f88d0533f8ea1f42a2a8119a9e1b9c919a0cbbda3edc2237d9e334",
+    "python/perfectpower/movement_features.py": "d7255fb929032e85696dd85994df2547456d0363d6a0e60abc1e16b69b9365c4",
+    "scripts/run_movement_transfer.py": "785673482be4626edcf338334c740baf57004000bf585cb75387b7da92b03469"
+  },
+  "restricted_raw_data_included": false,
+  "private_player_outputs_included": false,
+  "parallel_session": "No parallel source or data files changed; only its existing cohort and original tracking read."
+}
