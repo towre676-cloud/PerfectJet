@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,7 +19,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "8bfa1abf6989973f36eec1282ae0d0c0395891d6cd5a709a506c0284b69ac85d",
+      "sha256": "fb49eea4a476acbdb7e997f93c70650892a3efb6e97fff8177ede9538cab08c8",
       "size_bytes": 7640
     },
     {
@@ -109,7 +109,7 @@
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "d8cc2c66eb7e1a50c1da1da591c17fc90a72477e3e5ad3101d41eae6861ee27f",
+      "sha256": "a844a39bcd51e6b74e6f3f2b86b8e137b151ab12b491e9b9a444f85cce5e57ac",
       "size_bytes": 211359
     },
     {
@@ -119,8 +119,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "d0e7efe59602a81e6702df2d3bbc5bd824ac9007b939394a94928f63dca35f06",
-      "size_bytes": 22608
+      "sha256": "5e22b70b7d133cec3eb0541102ebd9ae1050782ac95015086dec41331dd7790c",
+      "size_bytes": 23342
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -319,17 +319,17 @@
     },
     {
       "path": "notebooks/PerfectJet_Math_Bridges.ipynb",
-      "sha256": "cef869bb26e96ae4273c74fbf2b0556b315d60579911d48c68d17f4b01de9418",
+      "sha256": "2ff932ca546943b6d1c670438981f7213d6a87d15f3baa929fc1d738ec1d7322",
       "size_bytes": 547295
     },
     {
       "path": "notebooks/PerfectJet_Motor_Transfer.ipynb",
-      "sha256": "a70ea680b1f90cd9d323981a7bdc48438839f930cb15cdbd0a31c9c28edf4e21",
+      "sha256": "40aa3a3ec41eaaa1afedc48d76bf824f96dbbd21a382b91540741f28cdbc4ae9",
       "size_bytes": 547595
     },
     {
       "path": "pyproject.toml",
-      "sha256": "2cf5d4c9567a7d6214f6d1f2b4d88fea4b4f5d07ab72b2058fcf9db094dfd1ed",
+      "sha256": "7d0728b17ed627b4c848a47e49b8e5962ebb9d097e65b526507f8dc9d338310a",
       "size_bytes": 500
     },
     {
@@ -2613,9 +2613,14 @@
       "size_bytes": 6612
     },
     {
+      "path": "results/real-nfl/unit-tests-v0.13.1.txt",
+      "sha256": "5d5bb726edea936ff6357f66781351eff4718ff482a0d208004cecb8cdcf283d",
+      "size_bytes": 403
+    },
+    {
       "path": "results/real-nfl/validation.json",
-      "sha256": "f254da8d5413087969ed5b64c953b550a364b03e36b0dec2d71723b89d21f9f2",
-      "size_bytes": 825
+      "sha256": "4eb6524ddb84f6a0b762ea160a8cf8ce0f152a89ff63af343539b9f076ae2f70",
+      "size_bytes": 1223
     },
     {
       "path": "results/replay.json",
@@ -2629,7 +2634,7 @@
     },
     {
       "path": "scripts/build_bridge_notebook.py",
-      "sha256": "2de8c49eaf3c63ec8cab333c68622d7243c59392081d8a92cdcf207674e7b9d5",
+      "sha256": "a2267716f882364320677cb10bd37ecc6314802e47b3f0f849b79a35cf633005",
       "size_bytes": 8293
     },
     {
@@ -2639,12 +2644,12 @@
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "d2c61794c90e8bb3a1d2417e78519315b2a33be8273d39131c3103610c9fda81",
+      "sha256": "cace6634978549cf1ced686b189e42575ca7af366c75bea5eca1fb47bbbcf4e0",
       "size_bytes": 57773
     },
     {
       "path": "scripts/build_motor_notebook.py",
-      "sha256": "a02c2b56f9ac4c6d69630eac00190cae95c2e144c6a8f5c09a76b724baad61a3",
+      "sha256": "b7cc26b44131d9a8ae743cefd8306e6ed6cce05c7e0ae49ad6b352fcde5492fb",
       "size_bytes": 8023
     },
     {
@@ -2699,7 +2704,7 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "34ae4f58562bb8fbfd4e0b24dcf376c84e4bb76099898e4415a281bc7aa5fb90",
+      "sha256": "48413631a802fc7a2633ef7e230138565352491279dc7ff44a9e99d6df0d0cfe",
       "size_bytes": 104
     },
     {
@@ -2994,8 +2999,8 @@
     },
     {
       "path": "tests/test_nfl_external_tracking.py",
-      "sha256": "cebda79d1a4a43c0f462a250971c71d2c70d5c27be536afc868036ef5b0568fc",
-      "size_bytes": 2906
+      "sha256": "3beebe727f824ba200d7196c2b84f86b413914abfb813272677dbf980d5d643b",
+      "size_bytes": 3202
     },
     {
       "path": "tests/test_nfl_movement_targets.py",

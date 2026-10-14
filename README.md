@@ -53,7 +53,7 @@ PerfectJet complements [PerfectPower](https://github.com/towre676-cloud/perfectp
 
 ## Download
 
-The complete [v0.13.0 package parts](releases/PerfectJet-v0.13.0.parts.json) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
+The complete [v0.13.1 package parts](releases/PerfectJet-v0.13.1.parts.json) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
 
 ## Reproduce the retained release
 
@@ -68,4 +68,4 @@ The release record states local test results separately from GitHub Actions stat
 
 The [real-data evidence chapter](docs/nfl/REAL_DATA.md) connects the recovered 2.3 GB official input, 51 temporally evaluated rookies, 5,310 public-cohort model fits, and 122 independent NFL tracking games. The [public benchmark](research/public_nfl/REPORT.md) and [external movement tests](docs/nfl/EXTERNAL_TRACKING.md) retain nulls, coverage failures and the stronger controls that erase weaker-comparator headlines. Restricted raw input and individual derived outputs remain private.
 
-Rebuild the complete release ZIP with `python releases/assemble_release.py releases/PerfectJet-v0.13.0.parts.json --download`. Every part and the assembled archive are SHA256-checked. GitHub rejected the single large blob; the verified parts preserve the exact complete ZIP.
+Rebuild the complete release ZIP with `python releases/assemble_release.py releases/PerfectJet-v0.13.1.parts.json --download`. Every part and the assembled archive are SHA256-checked. GitHub rejected the single large blob; the verified parts preserve the exact complete ZIP.

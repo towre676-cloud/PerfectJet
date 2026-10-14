@@ -415,7 +415,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.13.0 · 15 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.13.1 · 15 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

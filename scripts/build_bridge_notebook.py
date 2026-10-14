@@ -86,7 +86,7 @@ The repository preserves failed duration, phase/order and pooled profiles alongs
     notebook = {'nbformat': 4, 'nbformat_minor': 5,
                 'metadata': {'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'},
                              'language_info': {'name': 'python'},
-                             'perfectjet': {'version': '0.13.0',
+                             'perfectjet': {'version': '0.13.1',
                                            'execution_status': 'unexecuted_notebook_runner_evidence_separate',
                                            'source_sha256': hashes}}, 'cells': cells}
     path = ROOT / 'notebooks/PerfectJet_Math_Bridges.ipynb'

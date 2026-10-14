@@ -1,9 +1,9 @@
 {
   "schema": "perfectjet/real-data-validation/1",
-  "version": "0.13.0",
-  "unit_tests": 292,
+  "version": "0.13.1",
+  "unit_tests": 302,
   "unit_tests_result": "passed",
-  "unit_test_log_sha256": "18e9a178ba3251d8758808d21177024ffc0d1b5850840cb6b773d93435ca018c",
+  "unit_test_log_sha256": "5d5bb726edea936ff6357f66781351eff4718ff482a0d208004cecb8cdcf283d",
   "coverage": {
     "chapters": 28,
     "equations": 384,
@@ -20,5 +20,11 @@
   },
   "restricted_raw_rows_in_public_release": false,
   "individual_restricted_predictions_in_public_release": false,
-  "remote_ci": "pending publication; see GitHub checks"
+  "remote_ci": "new patch run pending publication; see GitHub checks",
+  "unit_test_log": "results/real-nfl/unit-tests-v0.13.1.txt",
+  "ci_correction": {
+    "original_failed_run": "https://github.com/towre676-cloud/PerfectJet/actions/runs/38653420136",
+    "cause": "undeclared pytest import; function-style external tests were not collected by unittest",
+    "fix": "convert all ten external tracking tests to unittest; no model or result changes"
+  }
 }

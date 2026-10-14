@@ -1,3 +1,9 @@
+# PerfectJet 0.13.1
+
+Fix the external tracking test harness to use the repository's standard unittest runner. The initial v0.13.0 CI run exposed an undeclared pytest import, and its function-style tracking tests were not being collected by local unittest discovery. All ten tests now run under unittest without an additional dependency. The complete suite contains 302 tests. No mathematical model, raw data, experimental split, prediction or fitted empirical result changes.
+
+The complete package, notebook source hashes and version metadata are rebuilt. The earlier v0.13.0 package and its published parts remain preserved as history. Current local test, archive-integrity and coverage receipts are separate from GitHub CI status.
+
 # PerfectJet 0.13.0
 
 This release recovers the original official nine-file NFL input from the earlier session, verifies every source hash, and executes the actual temporal Combine-to-NFL movement bridge. The 51-player evaluation, NGS chronology sensitivity, broader-drill secondary and strict burst coverage failure are preserved alongside complete original-player refits. It fixes timezone-naive official clocks and mixed-clock rejection and safely reuses each immutable split preparation across decoder penalties. Restricted rows, individual predictions and owned derived checkpoints stay private.

@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.13.0 · 15 October 2026
+Version 0.13.1 · 15 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
