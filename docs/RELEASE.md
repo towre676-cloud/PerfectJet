@@ -1,3 +1,22 @@
+# PerfectJet 0.7.0
+
+This release explains the partner strata by invariant theory (`invariants.py`).
+
+- **Clebsch invariants** A, B, C, D of degrees 2, 4, 6, 10, computed from unnormalized transvectants. They scale by det^(3k) under GL2, which the tests check. Equality in weighted projective space P(1,2,3,5) decides GL2-equivalence over the algebraic closure for squarefree sextics.
+- **Cayley-Sylvester counts** of covariants by degree and order. They give the dimension facts the proofs below use.
+- **Cubic partner theorem**: det L_3(f) = (A^2 - B/6)/16 for every binary sextic. A sextic has a cubic correction-free partner exactly when B = 6A^2.
+- **Quartic covariant partner**: (f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0 for every binary sextic, because there are no covariants of degree 3 and order 4 or 0. This explains the generic degree-4 partner. It is active unless the Poisson bracket vanishes, as at the perfect cube.
+- **Drop curves as invariant loci** on the two-parameter surface. Reducing weighted monomials in A, B, C, D modulo each curve ideal gives the lowest-weight relation:
+  - degree 3: A^2 = B/6;
+  - degree 12: A^2 = 25B/96;
+  - degree 8: AB^2 + BC/6 - 9D/2 = 0.
+- **Named exceptional points**:
+  - (0,15) is equivalent to x^6+y^6, the family origin, and has the same partner profile;
+  - (0,-5) is equivalent to the octahedral sextic xy(x^4-y^4);
+  - (4,6) and (24,-9) both lie on B = 6A^2 but are not equivalent to each other.
+
+Chapters 15, 23 and 24 were updated; the registry has 333 entries. The CLI has a new command, `perfectjet invariants`. Whether the degree-8 and degree-12 relations hold beyond this family is open.
+
 # PerfectJet 0.6.0
 
 This release adds the Combine scouting adapter, `src/perfectjet/applications/nfl_scouting`, and fixes its analysis in docs/nfl/PROTOCOL.md.

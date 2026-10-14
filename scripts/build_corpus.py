@@ -326,6 +326,13 @@ observability|Gaussian value of information|VOI(e)=h^T Sigma h-h^T(Sigma^{-1}+e 
 decisions|settled decision|Jhat(a*)-eps(a*)>max_{b!=a*}(Jhat(b)+eps(b))|exact_checked|Valid intervals; refinement restricted to overlapping contenders.
 decisions|evolution-defect split|e_{t+1}=A e_t+(AV-VG)z_t+(B-VH)u_t|exact_checked|Replayed at every step in rational arithmetic with an infinity-norm bound.
 closure|adaptive monomial closure|add supp(psi o F) minus current features until empty; minimal space span{C,CK,CK^2,...}|exact_checked|Stops on degree growth or budget with the residual support.
+invariants|Clebsch invariants of the sextic|i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2|definition|Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2.
+invariants|weighted orbit test|(A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i}|derived|Proves GL2(Qbar)-equivalence only for squarefree sextics.
+invariants|Cayley-Sylvester count|dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2|derived|p counts partitions into at most d parts of size at most n.
+invariants|cubic partner theorem|det L_3(f)=(A^2-B/6)/16|exact_checked|Every binary sextic; degree-4 invariants spanned by A^2,B; constants fixed and confirmed on random sextics.
+invariants|quartic covariant partner|(f,(f,f)_4)_3=(f,(f,f)_4)_5=0|exact_checked|Every binary sextic; no covariants of degree3 and order4 or0; active iff (f,(f,f)_4)_1!=0.
+invariants|surface drop curves as invariant loci|deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0|exact_checked|On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open.
+invariants|named exceptional sextics|(0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4)|exact_checked|Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure.
 empirical|normalized recovery travel|eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)|definition|Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency.
 empirical|recovery response model|eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)|proposal|Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance.
 empirical|context-adjusted target|r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)|definition|Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only.
@@ -350,7 +357,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.6.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.7.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

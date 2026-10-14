@@ -20,6 +20,7 @@ The current code is a small exact nucleus underneath a much larger documented pr
 | `parametric.py` | Groebner bases, saturation, comprehensive rank cells in several parameters | Cell equations, inequations, rational points |
 | `sieve.py` | Adaptive local power-residue sieve | Excluding modulus and residue |
 | `strata.py` | Active partner strata, sextic discriminant, replayed partners at rational points | Stratum equations; commuting versus active split |
+| `invariants.py` | Clebsch invariants, weighted orbit test, Cayley-Sylvester counts, invariant relations on cells | Unequal weighted point; relation weight |
 | `readout.py` | Readout identifiability, demand readouts, minimal repair, Gaussian value of information | Two-fit witness vector; repeat versus new direction |
 | `decisions.py` | Certified choice, targeted refinement, evolution-defect split | Overlapping contenders; separated defects |
 | `applications/nfl_scouting` | Combine turn events, identifiability gate, pooled readouts, leakage-checked targets, grouped temporal validation, cards | Unidentified readout witness; leakage check; per-fold G |
@@ -29,7 +30,7 @@ The common structure is a representation q, evolution F, output O, and possibly 
 
 ## Boundaries
 
-Lean source mentioned in the historical atlas remains upstream. General interval proving, the full seven-coefficient sextic incidence variety, numerical Hankel realization, unlimited nonlinear closure, global elliptic completeness, chemical simulation, empirical forecasting, and site/mobile synchronization are not implemented in 0.6.0. Smith form, exact single-output word realization, and coarsest exact lumping were added in 0.2.0; Hermite form, multi-output realization, one-parameter rank loci, and the local sieve in 0.3.0; multi-parameter rank cells in 0.4.0; active strata, readout identifiability, certified decisions, and the adaptive engine in 0.5.0; the Combine scouting adapter in 0.6.0, which reports no real-data result. Their integration requirements are retained explicitly.
+Lean source mentioned in the historical atlas remains upstream. General interval proving, the full seven-coefficient sextic incidence variety, numerical Hankel realization, unlimited nonlinear closure, global elliptic completeness, chemical simulation, empirical forecasting, and site/mobile synchronization are not implemented in 0.7.0. Smith form, exact single-output word realization, and coarsest exact lumping were added in 0.2.0; Hermite form, multi-output realization, one-parameter rank loci, and the local sieve in 0.3.0; multi-parameter rank cells in 0.4.0; active strata, readout identifiability, certified decisions, and the adaptive engine in 0.5.0; the Combine scouting adapter in 0.6.0, which reports no real-data result; invariant-theoretic partner results in 0.7.0. Their integration requirements are retained explicitly.
 
 ## Add a result
 

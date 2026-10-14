@@ -30,6 +30,7 @@ def report():
     from .readout import readout_receipt
     from .decisions import decisions_receipt
     from .engine import engine_receipt
+    from .invariants import invariants_receipt
     p=SelectionPopulation([(2,1),(1,2),(2,2),(0,1)],(3,3),[4,3,5,0])
     machine=PartialMachine([0,0,1,1],[(2,),(3,),(2,),(3,)])
     reduced,mapping,blocks=machine.quotient()
@@ -49,7 +50,7 @@ def report():
             "lattice":lattice_receipt(),"realization":realization_receipt(),
             "partner_loci":partner_loci(),"sieve":sieve_receipt(),"partner_surface":surface_receipt(),
             "active_strata":strata_receipt(),"readout":readout_receipt(),"decisions":decisions_receipt(),
-            "engine":engine_receipt(),
+            "engine":engine_receipt(),"invariants":invariants_receipt(),
             "limitations":"No imported upstream solver or Lean theorem is claimed by this release."}
 
 
@@ -59,7 +60,7 @@ def main():
         from .applications.nfl_scouting.pipeline import main as nfl
         return nfl(sys.argv[2:])
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","strata","readout","decisions","engine","sieve","atlas"])
+    parser.add_argument("command",choices=["report","psg","partners","collision","core-field","lattice","realization","loci","surface","strata","readout","decisions","engine","invariants","sieve","atlas"])
     parser.add_argument("--output",type=Path)
     parser.add_argument("--conductor",type=int,default=7)
     parser.add_argument("--index",type=int,default=10**100)
@@ -102,6 +103,9 @@ def main():
     elif args.command=="engine":
         from .engine import engine_receipt
         out=engine_receipt()
+    elif args.command=="invariants":
+        from .invariants import invariants_receipt
+        out=invariants_receipt()
     elif args.command=="sieve":
         from .sieve import sieve_receipt
         out=sieve_receipt()
