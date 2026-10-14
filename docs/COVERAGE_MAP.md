@@ -468,3 +468,6 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T462 | Partner incidence | Degenerate root patterns | [28_partner_incidence](chapters/28_partner_incidence.md) |
 | PJ-T463 | Partner incidence | Degree-twelve hypersurface part | [28_partner_incidence](chapters/28_partner_incidence.md) |
 | PJ-T464 | Partner incidence | Open lower-dimensional components | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T465 | Partner incidence | Prime-field Groebner bases | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T466 | Partner incidence | Sextic and septic partner emptiness modulo primes | [28_partner_incidence](chapters/28_partner_incidence.md) |
+| PJ-T467 | Partner incidence | Fourfold-root uniform source | [28_partner_incidence](chapters/28_partner_incidence.md) |

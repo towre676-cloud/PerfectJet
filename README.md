@@ -54,7 +54,7 @@ PerfectJet complements [PerfectPower](https://github.com/towre676-cloud/perfectp
 
 ## Download
 
-The complete [v0.13.0 package](releases/PerfectJet-v0.13.0.zip) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
+The complete [v0.14.0 package](releases/PerfectJet-v0.14.0.zip) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
 
 ## Reproduce the retained release
 

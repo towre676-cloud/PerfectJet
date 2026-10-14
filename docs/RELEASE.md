@@ -1,3 +1,14 @@
+# PerfectJet 0.14.0
+
+This release closes degrees 6 and 7 of the partner incidence problem, modulo primes.
+
+- **Prime-field Groebner engine** (`modular.py`). It builds every maximal minor of an affine polynomial matrix modulo P by fraction-free Bareiss, interreduces the minors linearly, runs Buchberger with the product and chain criteria, and decides emptiness off a hypersurface with one Rabinowitsch variable. On degree 5 it reproduces the exact rational results.
+- **Degree 6**: dim ker L_6 >= 2 exactly when f has a root of multiplicity at least four. The slice ideal of 1005 minors is the unit ideal off repeated roots modulo 2147483629 and 1000000007.
+- **Degree 7**: ker L_7 != 0 exactly when f has a root of multiplicity at least four. The 493 minors give the unit ideal modulo both primes.
+- **Numerical cross-check** (`scripts/partner_numeric_search.py`): Gauss-Newton on L_N(p,q,r) g = 0 from 1500 to 3000 random complex starts converges only to repeated-root forms in degrees 6 and 7. In degree 5 it recovers the C3 class at 40/7.
+
+Across degrees 5 to 7, a fourfold root is the uniform source of extra partners, and the C3 class at 40/7 is the only exception. The degree 6 and 7 statements rest on two primes; a rational certificate is open. `incidence.slice_locus_empty_mod_p` reproduces each verdict.
+
 # PerfectJet 0.13.0
 
 This release studies the partner incidence variety in the full seven-coefficient space of binary sextics (`incidence.py`, chapter 28). The atlas has listed this formal frontier since 0.1.0.

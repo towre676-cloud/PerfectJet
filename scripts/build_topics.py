@@ -50,7 +50,8 @@ GROUPS['28']=('Partner incidence', ['Line probes for hypersurface components','I
     'Dense slice with three simple roots','Saturation away from repeated roots','Covariants over a quotient ring',
     'Minimal polynomials of absolute invariants','Single-orbit certificate from a stable Clebsch point',
     'Quintic partner classification','Octahedral quartic jump','Dihedral cubic jump','Degenerate root patterns',
-    'Degree-twelve hypersurface part','Open lower-dimensional components'])
+    'Degree-twelve hypersurface part','Open lower-dimensional components',
+    'Prime-field Groebner bases','Sextic and septic partner emptiness modulo primes','Fourfold-root uniform source'])
 
 def build():
     rows=[]

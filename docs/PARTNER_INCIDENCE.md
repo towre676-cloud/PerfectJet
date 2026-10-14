@@ -29,7 +29,22 @@ If each minimal polynomial is linear, every point of the locus has the same Cleb
 
 The 7lambda-40 obstruction, found by an ansatz in the earliest archive and rediscovered in 0.3.0, is therefore the only squarefree source of quintic partners. On the slice no sextic has two independent quintic partners.
 
-**Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
+**Degree 6.** Exact rational Groebner bases of the 6-by-6 minors of L_6 on the slice do not finish. `modular.py` computes the same ideal over a prime field instead:
+- it builds all 1005 nonzero minors by fraction-free Bareiss modulo P;
+- it interreduces them linearly, since polynomials of this degree in three variables span few monomials;
+- it decides emptiness away from repeated roots at 0 and 1 with one Rabinowitsch variable.
+
+Modulo 2147483629 and 1000000007 the locus is empty. A global numerical search on the slice agrees: about 1500 Gauss-Newton starts converge only to repeated-root forms. Among degenerate forms, a two-dimensional sextic kernel occurs exactly when there is a root of multiplicity at least four. With evidence modulo two primes rather than a rational proof:
+
+> dim ker L_6(f) >= 2 if and only if f has a root of multiplicity at least four.
+
+The engine is calibrated on degree 5. Modulo P it reports the quintic locus nonempty and the two-dimensional quintic locus empty, which matches the exact rational results above.
+
+**Degree 7.** The 8-by-8 minors of the 12-by-8 matrix L_7 on the slice give 493 nonzero polynomials. Modulo 2147483629 and 1000000007, the locus is empty away from repeated roots at 0 and 1. A numerical search with 3000 starts converges only to repeated-root forms. Among degenerate forms, the septic kernel is nonzero exactly when there is a root of multiplicity at least four. With the same evidential status as degree 6:
+
+> ker L_7(f) != 0 if and only if f has a root of multiplicity at least four.
+
+Across degrees 5 to 7, then, a root of multiplicity at least four is the uniform source of extra partners. The C3 class at 40/7 in degree 5 is the only exception.
 
 **Degree 8.** No line meets a hypersurface component, so P_8 has codimension at least two. On the symmetric surface family x^6+y^6+a x^3y^3+b(x^4y^2+x^2y^4), the degree-8 curves satisfy R5 = AB^2+BC/6-9D/2 = 0 (0.7.0). Three sparse families without that symmetry have zero-dimensional degree-8 loci, 26 points in all. `scripts/partner_degree8_evidence.py` locates them numerically from exact Groebner bases. Every one of the 26 sextics has an involution of P^1 permuting its roots, which makes the associated genus-two curve bielliptic, and every one satisfies R5 = 0 to about 1e-7. The same involution test flags none of 179 random integer sextics. The evidence supports:
 
@@ -37,8 +52,10 @@ The 7lambda-40 obstruction, found by an ansatz in the earliest archive and redis
 
 The two conditions are not sufficient together. On the symmetric family, R5 restricts to b^2 times the square of the degree-8 cubic times ((b-15)^2-(3a/2)^2). The lines b = 15 +/- 3a/2 are bielliptic and satisfy R5 = 0, but they carry no degree-8 partner. A second defining equation is still missing.
 
-**Degrees 6 and 7, and the remaining components.** Exact slice ideals for dim ker L_6 >= 2, for ker L_7 != 0, and for degree 8 need thousands of maximal minors, or Groebner bases of high-degree projected determinants. The dependency-free engine does not finish these. They remain open, together with any lower-dimensional components of P_12.
+**Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
+
+**Remaining components.** Lower-dimensional components of P_N for N >= 8, including the degree-8 curve beyond the conjecture above, and of P_12 beyond its hypersurface, remain open.
 
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees above 7 on the slice, and lower-dimensional components of P_N for N >= 8, remain open except where stated.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 and 7 rest on Groebner bases modulo two large primes, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.

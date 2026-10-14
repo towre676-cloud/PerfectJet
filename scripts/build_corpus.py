@@ -393,6 +393,9 @@ invariants|quintic partner classification|ker L_5(f)!=0 iff f has a root of mult
 invariants|octahedral quartic jump|dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5|exact_checked|Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly.
 invariants|dihedral cubic jump|dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6|exact_checked|Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots.
 invariants|degree-8 bielliptic conjecture|ker L_8(f)!=0 => f bielliptic and AB^2+BC/6-9D/2=0|open|26 points in three non-symmetric families all have a root involution and satisfy the relation numerically; 0 of 179 random sextics have one; not sufficient (lines b=15+/-3a/2).
+invariants|sextic partner jump|dim ker L_6(f)>=2 iff f has a root of multiplicity>=4|numerical_checked|Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open.
+invariants|septic partners|ker L_7(f)!=0 iff f has a root of multiplicity>=4|numerical_checked|Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open.
+modular|prime-field Groebner evidence|1 in I mod p => 1 in I over Q outside finitely many bad primes|derived|Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime.
 invariants|orbit count check|slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6|derived|Ordered placements of three simple roots; stabilizer orders 6 and 12.
 """
 
@@ -414,7 +417,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.13.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.14.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

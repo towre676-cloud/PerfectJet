@@ -3248,6 +3248,27 @@
       "topic": "Open lower-dimensional components",
       "chapter": "docs/chapters/28_partner_incidence.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T465",
+      "domain": "Partner incidence",
+      "topic": "Prime-field Groebner bases",
+      "chapter": "docs/chapters/28_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T466",
+      "domain": "Partner incidence",
+      "topic": "Sextic and septic partner emptiness modulo primes",
+      "chapter": "docs/chapters/28_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T467",
+      "domain": "Partner incidence",
+      "topic": "Fourfold-root uniform source",
+      "chapter": "docs/chapters/28_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

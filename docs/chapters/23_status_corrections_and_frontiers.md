@@ -32,4 +32,6 @@ Release0.12.0 connects operational NFL movement targets, finite-horizon numerica
 
 Release0.13.0 studies the partner incidence variety in the full seven-coefficient space (chapter28). Random lines show that only degrees3 and12 have hypersurface components, A2=B/6 and A2=25B/96. Exact computation on the dense slice classifies the small degrees. Quintic partners occur exactly for sextics with a root of multiplicity at least four and for the GL2-class of x6+(40/7)x3y3+y6. Larger quartic kernels occur exactly for the octahedral sextic and fivefold roots. Larger cubic kernels occur on the dihedral class of x6+y6.
 
+Release0.14.0 adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
+
 Formal frontiers include the remaining lower-dimensional components of the seven-coefficient incidence variety in degrees eight and above,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.

@@ -425,6 +425,10 @@ THEOREMS = [
      "status": "exact on the slice plus the degenerate forms"},
     {"degree": 5, "statement": "ker L_5(f) != 0 iff f ~ x^6+40/7 x^3y^3+y^6 or f has a root of multiplicity >= 4; never >= 2 on the slice",
      "status": "exact on the slice plus the degenerate forms"},
+    {"degree": 6, "statement": "dim ker L_6 >= 2 iff f has a root of multiplicity >= 4",
+     "status": "slice locus empty modulo two large primes; degenerate forms exact"},
+    {"degree": 7, "statement": "ker L_7 != 0 iff f has a root of multiplicity >= 4",
+     "status": "slice locus empty modulo two large primes; degenerate forms exact"},
     {"degree": 12, "statement": "the hypersurface part of {ker L_12 != 0} is A^2 = 25B/96; G(f) is a partner there",
      "status": "hypersurface part exact on random lines; lower-dimensional components not excluded"},
 ]
@@ -445,3 +449,29 @@ def incidence_receipt(line_degrees=range(3, 13), seed=1):
             "quintic_certificate": degree5_classification(),
             "degenerate_forms": degenerate_profile(range(3, 13)),
             "theorems": THEOREMS}
+
+
+# --------------------------------------------------- modular emptiness for degrees 6 and 7
+
+
+def slice_locus_empty_mod_p(n, kernel, prime=None):
+    """Is {dim ker L_N >= kernel} empty on the slice away from repeated roots at 0 and 1, modulo a prime?
+
+    Evidence rather than proof: a rational ideal with a point over the algebraic closure
+    reduces to a proper ideal modulo every prime outside a finite bad set.
+    """
+    from . import modular
+    from .parametric import var, add, const, mul, polynomial_matrix as pmat
+    from .invariants import slice_form
+    old = modular.P
+    if prime:
+        modular.P = prime
+    try:
+        m = pmat(lambda p, q, r: correction_matrix(slice_form(p, q, r), n), 3, 1)
+        ideal = modular.ideal_of_minors(m, n+2-kernel, 3)
+        p, q, r = var(0, 3), var(1, 3), var(2, 3)
+        avoid = modular.to_mod(mul(r, add(add(add(p, q), r), const(1, 3))))
+        return {"degree": n, "kernel_at_least": kernel, "prime": modular.P, "minors": len(ideal),
+                "empty": modular.saturated_unit(ideal, avoid, 3)}
+    finally:
+        modular.P = old

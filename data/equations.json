@@ -3442,6 +3442,33 @@
     {
       "id": "PJ-E383",
       "domain": "invariants",
+      "title": "sextic partner jump",
+      "equation": "dim ker L_6(f)>=2 iff f has a root of multiplicity>=4",
+      "status": "numerical_checked",
+      "assumptions": "Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E384",
+      "domain": "invariants",
+      "title": "septic partners",
+      "equation": "ker L_7(f)!=0 iff f has a root of multiplicity>=4",
+      "status": "numerical_checked",
+      "assumptions": "Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E385",
+      "domain": "modular",
+      "title": "prime-field Groebner evidence",
+      "equation": "1 in I mod p => 1 in I over Q outside finitely many bad primes",
+      "status": "derived",
+      "assumptions": "Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E386",
+      "domain": "invariants",
       "title": "orbit count check",
       "equation": "slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6",
       "status": "derived",
