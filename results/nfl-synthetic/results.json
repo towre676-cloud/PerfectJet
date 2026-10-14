@@ -1,0 +1,260 @@
+{
+  "synthetic": true,
+  "warning": "SYNTHETIC DATA: tests the pipeline only; not evidence about football.",
+  "question": "Does a demand-adjusted Combine recovery readout predict NFL get-off beyond pre-draft information?",
+  "provenance": {
+    "sources": {
+      "seed": 1,
+      "signal": 0.5,
+      "n": 120
+    },
+    "code_revision": "43704be165b9ce6d8e06c1f539bbe9f089e642c4",
+    "extraction_version": "nfl-events/1",
+    "config": {
+      "seed": 1,
+      "bootstrap": 20,
+      "readout": "intercept",
+      "synthetic_athletes": 120,
+      "synthetic_signal": 0.5
+    },
+    "config_sha256": "2be9490c5d055da366c56e713052eff081d635e76d95d36c0bbbfd6e250ed2ff",
+    "model_selection": "ridge penalty from (0.1, 1.0, 10.0, 100.0) by 5-fold athlete-grouped CV inside each training set; same grid for both models",
+    "folds": [
+      {
+        "test_class": 2022,
+        "train_athletes": 30,
+        "test_athletes": 30
+      },
+      {
+        "test_class": 2023,
+        "train_athletes": 60,
+        "test_athletes": 30
+      },
+      {
+        "test_class": 2024,
+        "train_athletes": 90,
+        "test_athletes": 30
+      }
+    ]
+  },
+  "outcome_definition": {
+    "name": "get_off",
+    "units": "seconds",
+    "meaning": "SYNTHETIC get-off",
+    "eligible_play": "all synthetic plays",
+    "minimum_plays": 5,
+    "lower_is_better": true
+  },
+  "audit": {
+    "athletes": 120,
+    "tracked_unknown": [],
+    "played_unknown": [],
+    "tracked_never_played": 0,
+    "played_never_tracked": 0,
+    "plays_before_draft": [],
+    "n_plays_before_draft": 0,
+    "attempts_after_draft": [],
+    "n_attempts_after_draft": 0
+  },
+  "measurement": {
+    "events": 588,
+    "attempts": 588,
+    "median_branch_sensitivity": 0.012594820498508519,
+    "repeatability_intercept_readout": {
+      "athletes": 120,
+      "split_half": 0.8130907843557642,
+      "spearman_brown": 0.8969112758958458
+    },
+    "repeatability_raw_mean_eta": {
+      "athletes": 120,
+      "split_half": 0.8089159633601741,
+      "spearman_brown": 0.8943654428894113
+    }
+  },
+  "identifiability": {
+    "athletes": 120,
+    "readout_identified_share": 0.8416666666666667,
+    "median_distinct_demands": 5.0,
+    "median_demand_mass_observed": 0.20833333333333331
+  },
+  "validation": {
+    "G_pooled": 0.2754270072761642,
+    "by_fold": [
+      {
+        "test_class": 2022,
+        "G": 0.25401738752042635,
+        "mse_baseline": 0.0002839927134218187,
+        "mse_movement": 0.0002118536262835712,
+        "lambda_baseline": 1.0,
+        "lambda_movement": 1.0
+      },
+      {
+        "test_class": 2023,
+        "G": 0.22336799091650816,
+        "mse_baseline": 0.0002649927402452301,
+        "mse_movement": 0.00020580184424919294,
+        "lambda_baseline": 1.0,
+        "lambda_movement": 10.0
+      },
+      {
+        "test_class": 2024,
+        "G": 0.33579587871166194,
+        "mse_baseline": 0.0003292332113349866,
+        "mse_movement": 0.00021867805583369247,
+        "lambda_baseline": 1.0,
+        "lambda_movement": 1.0
+      }
+    ],
+    "fixed_prediction_interval_90": {
+      "lo": 0.16832558945755494,
+      "hi": 0.3756070726894318,
+      "draws": 400
+    },
+    "full_refit_interval_90": {
+      "lo": 0.11022228429927525,
+      "hi": 0.3966023211304959,
+      "median": 0.2551052137469798,
+      "draws": 20
+    },
+    "diagnostics": {
+      "G_all": 0.2754270072761642,
+      "G_by_position": {
+        "DE": {
+          "n": 30,
+          "G": 0.3116320925103213
+        },
+        "DT": {
+          "n": 30,
+          "G": 0.2736362539045768
+        },
+        "OLB": {
+          "n": 30,
+          "G": 0.2501720601839399
+        }
+      },
+      "G_by_year": {
+        "2022": 0.25401738752042635,
+        "2023": 0.22336799091650816,
+        "2024": 0.33579587871166194
+      },
+      "G_excluding_low_play_athletes": 0.3280348195031335,
+      "low_play_threshold": 20,
+      "athletes_kept": 76,
+      "largest_single_athlete_influence": [
+        {
+          "athlete": "A0034",
+          "delta_G": 0.03212420882495437
+        },
+        {
+          "athlete": "A0115",
+          "delta_G": 0.02556133325176191
+        },
+        {
+          "athlete": "A0031",
+          "delta_G": 0.021765115804811996
+        },
+        {
+          "athlete": "A0098",
+          "delta_G": 0.01907220463790782
+        },
+        {
+          "athlete": "A0037",
+          "delta_G": 0.01606275985570582
+        }
+      ],
+      "mean_error_baseline": -0.001931284499896314,
+      "mean_error_movement": -0.0011065916878099532
+    }
+  },
+  "decisions": {
+    "rule": "top 25% by predicted target within each class; hit means training best-quartile",
+    "folds": [
+      {
+        "year": 2022,
+        "shortlist": 8,
+        "hits_baseline": 6,
+        "hits_movement": 6,
+        "promoted": [],
+        "demoted": []
+      },
+      {
+        "year": 2023,
+        "shortlist": 8,
+        "hits_baseline": 7,
+        "hits_movement": 6,
+        "promoted": [
+          {
+            "athlete": "A0074",
+            "target": -0.003484669902839075,
+            "hit": false
+          }
+        ],
+        "demoted": [
+          {
+            "athlete": "A0018",
+            "target": -0.01580813127105597,
+            "hit": true
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "shortlist": 8,
+        "hits_baseline": 6,
+        "hits_movement": 7,
+        "promoted": [
+          {
+            "athlete": "A0087",
+            "target": -0.021692115296234892,
+            "hit": true
+          }
+        ],
+        "demoted": [
+          {
+            "athlete": "A0063",
+            "target": -0.00866957088665905,
+            "hit": false
+          }
+        ]
+      }
+    ],
+    "hits_baseline": 19,
+    "hits_movement": 19
+  },
+  "leakage_check": {
+    "training_targets_unchanged": true,
+    "context_model_unchanged": true
+  },
+  "historical_reports": [
+    {
+      "claim": "angular-progress alignment reduced measurement sensitivity by about 34.1%",
+      "status": "historical_report",
+      "meaning": "measurement improvement only; not a scouting advantage"
+    },
+    {
+      "claim": "about 93.2% of player/drill panels cannot identify all four response coefficients",
+      "status": "historical_report",
+      "meaning": "motivates supported readouts instead of full response surfaces"
+    },
+    {
+      "claim": "get-off split-half stability about 0.77 versus pressure about 0.28",
+      "status": "historical_report",
+      "meaning": "get-off is the primary outcome; confirm what the supplied variable measures"
+    },
+    {
+      "claim": "duration-model 2025 gain did not persist across earlier partitions",
+      "status": "historical_report",
+      "meaning": "2025 is development evidence, not a pristine holdout"
+    },
+    {
+      "claim": "pooled turn-response get-off gain was inconsistent across partitions",
+      "status": "historical_report",
+      "meaning": "pooling is a controlled candidate here, not the expected breakthrough"
+    },
+    {
+      "claim": "future-speed MSE reductions 33.36% / 26.59%",
+      "status": "historical_report",
+      "meaning": "short-horizon prediction; does not establish scouting success"
+    }
+  ]
+}
