@@ -447,8 +447,8 @@
       "domain": "transport",
       "title": "Smith form",
       "equation": "UBV=D",
-      "status": "proposal",
-      "assumptions": "Unimodular U,V; implementation deferred in this release.",
+      "status": "exact_checked",
+      "assumptions": "Unimodular U,V; d_1|d_2|...; replayed in lattice.py against gcd-of-minors divisors.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
@@ -456,8 +456,8 @@
       "domain": "transport",
       "title": "integral solvability",
       "equation": "d_i divides (Ub)_i; remaining coordinates (Ub)_i=0",
-      "status": "derived",
-      "assumptions": "For Smith form of Bx=b.",
+      "status": "exact_checked",
+      "assumptions": "For Smith form of Bx=b; failure returns a certificate row.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
@@ -645,8 +645,8 @@
       "domain": "series",
       "title": "Hankel matrix",
       "equation": "H_{u,v}=f(uv)",
-      "status": "proposal",
-      "assumptions": "Word-indexed predictive state; finite rank over a field.",
+      "status": "exact_checked",
+      "assumptions": "Word-indexed predictive state; finite rank over a field; exact on the supplied block only.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
@@ -2654,6 +2654,51 @@
       "equation": "question->candidate->closure test->exact model / bounded model / repair witness",
       "status": "proposal",
       "assumptions": "Master architecture; not one universal theorem.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E296",
+      "domain": "transport",
+      "title": "integer infeasibility certificate",
+      "equation": "y in Q^m, yB in Z^n, yb not in Z => Bx=b has no integer solution",
+      "status": "exact_checked",
+      "assumptions": "y=U_i/d_i from a failing Smith coordinate; yB=0, yb!=0 when the system already fails over Q.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E297",
+      "domain": "transport",
+      "title": "saturation index",
+      "equation": "[(Q-span(G) intersect Z^n):Z-span(G)]=d_1 d_2...d_r",
+      "status": "exact_checked",
+      "assumptions": "Rows of G independent or not; witness row of V^{-1} at the first d_i>1.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E298",
+      "domain": "transport",
+      "title": "integer kernel",
+      "equation": "ker_Z B=Z-span(V e_{r+1},...,V e_n)",
+      "status": "exact_checked",
+      "assumptions": "UBV=D with rank r; the basis is saturated.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E299",
+      "domain": "series",
+      "title": "Hankel realization",
+      "equation": "x_{pa}=x_p M^{-1}H_a; f(p)=x_p M^{-1}h; alpha=x_empty",
+      "status": "exact_checked",
+      "assumptions": "M invertible Hankel block on chosen prefixes/suffixes; agreement beyond the block is a held-out check with a witness word.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E300",
+      "domain": "series",
+      "title": "coarsest exact lumping",
+      "equation": "sum_{i in B}A_c[i][j] constant over j in C for all blocks B,C and all costs c; H constant on blocks",
+      "status": "exact_checked",
+      "assumptions": "Partition refinement from output labels; every valid lumping refines the result.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -597,5 +597,133 @@
     "3",
     "10"
   ],
+  "lattice": {
+    "matrix": [
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        -6,
+        6,
+        12
+      ],
+      [
+        10,
+        -4,
+        -16
+      ]
+    ],
+    "invariant_factors": [
+      2,
+      6,
+      12
+    ],
+    "rational_but_not_integral": {
+      "solvable": false,
+      "rational": true,
+      "coordinate": 1,
+      "invariant": 6,
+      "residue": 3,
+      "certificate": [
+        "1/2",
+        "1/3"
+      ],
+      "solution": null
+    },
+    "integral": {
+      "solvable": true,
+      "rational": true,
+      "coordinate": null,
+      "invariant": null,
+      "residue": null,
+      "certificate": null,
+      "solution": [
+        2,
+        1
+      ]
+    },
+    "integer_kernel": [
+      [
+        -2,
+        1,
+        0
+      ],
+      [
+        -3,
+        0,
+        1
+      ]
+    ],
+    "unsaturated": {
+      "rank": 2,
+      "index": 2,
+      "invariants": [
+        1,
+        2
+      ],
+      "witness": [
+        1,
+        0
+      ]
+    },
+    "saturated": {
+      "rank": 2,
+      "index": 1,
+      "invariants": [
+        1,
+        1
+      ],
+      "witness": null
+    }
+  },
+  "realization": {
+    "fibonacci_dimension": 2,
+    "fibonacci_held_out": null,
+    "factor_count_dimension": 3,
+    "factor_count_held_out": null,
+    "lumping": {
+      "blocks": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "aggregation": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "1"
+        ]
+      ],
+      "reduced": [
+        [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "2",
+            "1"
+          ]
+        ]
+      ],
+      "output": [
+        [
+          "1",
+          "0"
+        ]
+      ]
+    }
+  },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
 }

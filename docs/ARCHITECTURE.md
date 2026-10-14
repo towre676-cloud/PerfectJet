@@ -14,12 +14,14 @@ The current code is a small exact nucleus underneath a much larger documented pr
 | `dynamics.py` | Energy, defects, bounds, decision margins | Zero dial or unresolved decision |
 | `jets.py` | Finite composition and Riccati rejection | First nonzero residual |
 | `psg.py` | Corrected scalar flip reduction | Numerical bracket rejection |
+| `lattice.py` | Smith form, integer solvability, integer kernels, saturation | Certificate row; unsaturated witness |
+| `realization.py` | Word-Hankel realization, coarsest exact lumping | Held-out witness word; split block |
 
 The common structure is a representation q, evolution F, output O, and possibly weights. Exact dynamics requires qF=Fbar q. Exact weighted aggregation requires RA=Abar R. Approximate closure supplies residuals rather than an exact identity. Evidence status is external metadata; it must not be inferred from a class name.
 
 ## Boundaries
 
-Lean source mentioned in the historical atlas remains upstream. General interval proving, Smith normal form, word-Hankel realization, unlimited nonlinear closure, global elliptic completeness, chemical simulation, empirical forecasting, and site/mobile synchronization are not implemented in0.1.0. Their integration requirements are retained explicitly.
+Lean source mentioned in the historical atlas remains upstream. General interval proving, Hermite normal form, multi-output or numerical Hankel realization, unlimited nonlinear closure, global elliptic completeness, chemical simulation, empirical forecasting, and site/mobile synchronization are not implemented in 0.2.0. Smith form, exact single-output word realization, and coarsest exact lumping were added in 0.2.0. Their integration requirements are retained explicitly.
 
 ## Add a result
 

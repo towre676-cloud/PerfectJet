@@ -4,7 +4,7 @@
 
 PerfectJet brings together the PerfectPower, DynaComp, PSG, SOE, WIND, IMP, Morphonic, conductor, Shadow–Core, and Weyl-exactness programs. Its central question is: what smaller representation preserves the answer we need, and what witness tells us when it fails?
 
-The repository contains a [master monograph](docs/MONOGRAPH.md), a [complete topic map](docs/COVERAGE_MAP.md), a [295-equation atlas](docs/EQUATION_ATLAS.md), preserved [archival sources](archive/README.md), and a dependency-free Python core. Historical reports and open proposals remain labeled. No new Lean proof or complete imported upstream solver is claimed.
+The repository contains a [master monograph](docs/MONOGRAPH.md), a [complete topic map](docs/COVERAGE_MAP.md), a [300-equation atlas](docs/EQUATION_ATLAS.md), preserved [archival sources](archive/README.md), and a dependency-free Python core. Historical reports and open proposals remain labeled. No new Lean proof or complete imported upstream solver is claimed.
 
 ## Run the mathematics
 
@@ -17,12 +17,14 @@ perfectjet partners
 perfectjet collision --conductor 7 --index 100000000000000000000000000000000000000000000000000
 perfectjet core-field
 perfectjet psg
+perfectjet lattice
+perfectjet realization
 python -m unittest discover -s tests -v
 ```
 
 Without installation, set `PYTHONPATH=src` and use `python -m perfectjet.cli report`. [Windows instructions](docs/QUICKSTART.md) include PowerShell commands.
 
-The runnable core covers rational observability and hidden witnesses, finite partial-machine equivalence, polynomial feature closure, weighted quotient replay, exact selection counts/rank/unrank/ties, corrected energy balances, finite jets, transvectant partner dimensions, exact cubic-field identities, and cyclotomic collision coefficients at very large indices. The PSG root calculation is explicitly numerical.
+The runnable core covers rational observability and hidden witnesses, finite partial-machine equivalence, polynomial feature closure, weighted quotient replay, exact selection counts/rank/unrank/ties, corrected energy balances, finite jets, transvectant partner dimensions, exact cubic-field identities, cyclotomic collision coefficients at very large indices, integer lattices (Smith form, integer solvability with infeasibility certificates, integer kernels, saturation index), minimal word-Hankel realizations with held-out witnesses, and coarsest exact weighted lumping. The PSG root calculation is explicitly numerical.
 
 ## Read and explore
 
@@ -32,7 +34,7 @@ PerfectJet complements [PerfectPower](https://github.com/towre676-cloud/perfectp
 
 ## Download
 
-The complete [v0.1.0 package](releases/PerfectJet-v0.1.0.zip) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
+The complete [v0.2.0 package](releases/PerfectJet-v0.2.0.zip) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
 
 ## Reproduce the retained release
 

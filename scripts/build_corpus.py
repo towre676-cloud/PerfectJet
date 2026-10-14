@@ -54,8 +54,8 @@ transport|D72 units|gamma=zeta alpha_j epsilon1^e1 epsilon2^e2|historical_report
 transport|D72 reconstruction|C=0; 3 divides A; u=-A/3; v=-B|historical_report|Coordinate restrictions are part of completeness.
 transport|scaled rational kernel|K=det(BB^T)I-B^T adj(BB^T)B|derived|Full row rank for nondegenerate projector interpretation.
 transport|kernel identities|BK=0; Bx=0 implies Kx=det(BB^T)x|derived|Rational-span statement does not prove integral saturation.
-transport|Smith form|UBV=D|proposal|Unimodular U,V; implementation deferred in this release.
-transport|integral solvability|d_i divides (Ub)_i; remaining coordinates (Ub)_i=0|derived|For Smith form of Bx=b.
+transport|Smith form|UBV=D|exact_checked|Unimodular U,V; d_1|d_2|...; replayed in lattice.py against gcd-of-minors divisors.
+transport|integral solvability|d_i divides (Ub)_i; remaining coordinates (Ub)_i=0|exact_checked|For Smith form of Bx=b; failure returns a certificate row.
 counting|resource polynomial|P(z)=product_j(1+product_k z_k^{c_jk})|derived|Nonnegative integral costs; extra compatibility requires extra factors/state.
 counting|capacity population|#F=sum_{a<=b}[z^a]P(z)|derived|Componentwise capacity bound.
 counting|profit polynomial|P(z,t)=product_j(1+t^{p_j}product_k z_k^{c_jk})|proposal|Laurent t exponents if profits negative.
@@ -76,7 +76,7 @@ series|resolvent expansion|(I-M(z))^(-1)=sum_{ell>=0}M(z)^ell|derived|M has zero
 series|Fibonacci series|1/(1-z-z^2)|definition|Initialization determines sequence offset.
 series|zero-series initialization|z/(1-z)=0+z+z^2+...|historical_report|Zero initial sample can change minimal realization size.
 series|linear response|G(z)=C(I-zA)^(-1)B; coefficients=CA^kB|derived|Linear input/output convention.
-series|Hankel matrix|H_{u,v}=f(uv)|proposal|Word-indexed predictive state; finite rank over a field.
+series|Hankel matrix|H_{u,v}=f(uv)|exact_checked|Word-indexed predictive state; finite rank over a field; exact on the supplied block only.
 series|linear word realization|f(w)=alpha^T A_{a1}...A_{aell} beta|derived|Minimal field realization dimension equals finite Hankel rank; positivity is separate.
 semantics|semantic fibre|pi:I->S; I_s=pi^(-1)(s) intersect L|definition|Legal implementations of a meaning.
 semantics|cost realization|i*=argmin_{i in I_s}cost(i)|proposal|Minimum must exist or infimum used.
@@ -300,6 +300,11 @@ closure|representation profile|P(q)=(Q_exact,Q_bounded,E,D,C)|proposal|Preserved
 closure|question-dependent height|h_q(x)=h(q(x))|proposal|Organizes search, does not replace a global completeness bound.
 closure|adaptive local sieve|R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost|proposal|Valid exact exclusions independent of heuristic test order.
 closure|repair pipeline|question->candidate->closure test->exact model / bounded model / repair witness|proposal|Master architecture; not one universal theorem.
+transport|integer infeasibility certificate|y in Q^m, yB in Z^n, yb not in Z => Bx=b has no integer solution|exact_checked|y=U_i/d_i from a failing Smith coordinate; yB=0, yb!=0 when the system already fails over Q.
+transport|saturation index|[(Q-span(G) intersect Z^n):Z-span(G)]=d_1 d_2...d_r|exact_checked|Rows of G independent or not; witness row of V^{-1} at the first d_i>1.
+transport|integer kernel|ker_Z B=Z-span(V e_{r+1},...,V e_n)|exact_checked|UBV=D with rank r; the basis is saturated.
+series|Hankel realization|x_{pa}=x_p M^{-1}H_a; f(p)=x_p M^{-1}h; alpha=x_empty|exact_checked|M invertible Hankel block on chosen prefixes/suffixes; agreement beyond the block is a held-out check with a witness word.
+series|coarsest exact lumping|sum_{i in B}A_c[i][j] constant over j in C for all blocks B,C and all costs c; H constant on blocks|exact_checked|Partition refinement from output labels; every valid lumping refines the result.
 '''
 
 def build():
@@ -319,7 +324,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.1.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.2.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

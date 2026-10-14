@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.1.0 · 14 October 2026
+Version 0.2.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -87,7 +87,9 @@ This norm-square bridge only supplies a necessary squareclass condition. Genuine
 
 The historical anonymous model $y^2=x^3+2x^2-12x+16$ used $u^3+8u^2-192u+1024$, reported field discriminant -107, S={2,107}, six S-unit squareclass generators, a three-dimensional norm kernel, Selmer dimension two, and trivial Sha[2]. These are recorded upstream reports, not a descent engine implemented here.
 
-The denominator-free kernel expression $K=\det(BB^T)I-B^T\operatorname{adj}(BB^T)B$ satisfies $BK=0$ and acts as multiplication by $\det(BB^T)$ on $\ker B$. This is rational-span information. Integral structure needs a lattice stage. In Smith form $UBV=D$ with unimodular transforms, $Bx=b$ requires $d_i\mid(Ub)_i$ and vanishing remaining coordinates. Integer nullspaces come from the free columns of V. This proposed integration repairs the frequent gap between a rational parametrization and an integer population.
+The denominator-free kernel expression $K=\det(BB^T)I-B^T\operatorname{adj}(BB^T)B$ satisfies $BK=0$ and acts as multiplication by $\det(BB^T)$ on $\ker B$. This is rational-span information. Integral structure needs a lattice stage. In Smith form $UBV=D$ with unimodular transforms, $Bx=b$ requires $d_i\mid(Ub)_i$ and vanishing remaining coordinates. Integer nullspaces come from the free columns of V. Since 0.2.0 this stage is executable in `lattice.py`: Smith form with explicit unimodular transforms, integer solvability, an integer kernel basis, and the saturation index of a generated lattice.
+
+Each failure carries a witness. If coordinate i fails, the rational row $y=U_i/d_i$ has $yB=V^{-1}_i$ integral and $yb=(Ub)_i/d_i$ non-integral, so no integer x can satisfy Bx=b. When $d_i=0$ the row $y=U_i$ gives $yB=0$ and $yb\ne0$, a failure already over Q. For a generator matrix G with invariant factors $d_1|\cdots|d_r$, the lattice has index $d_1\cdots d_r$ in its saturation; a row of $V^{-1}$ at the first $d_i>1$ lies in the rational span, is integral, and is not generated. The example $\mathrm{diag}(2,3)x=(1,3)$ is solvable over Q and not over Z: the Smith form is diag(1,6) and the failing coordinate has residue3 modulo6.
 
 Historical prime-specific saturation, bounded division, subgroup preimages, torsion-aware relation lattices, and isogeny witnesses must retain their scope. A proof for one finite box or one prime is not a global saturation bound. The master repo preserves these distinctions and pins upstream repositories for future integration without importing their formal proofs by implication.
 
@@ -115,9 +117,9 @@ Let $A_c$ encode finite transitions of positive integer cost c. With initial vec
 
 Initialization matters. $1/(1-z-z^2)$ gives Fibonacci-type populations, while $z/(1-z)$ starts0,1,1,... . A zero initial sample can increase realization size. Word-indexed Hankel data $\mathcal H_{u,v}=f(uv)$ encode predictive distinctions. Over a field, finite rank corresponds to a finite linear representation $f(w)=\alpha^TA_{a_1}\cdots A_{a_\ell}\beta$, with minimal dimension equal to Hankel rank. A field-minimal model can have signed coordinates; it need not be a probabilistic model or quotient of actual states.
 
-For column-state transitions, an aggregation R must satisfy $RA=\bar AR$. Its block condition says each source in a block has the same total outgoing weight into each destination block. Initial weights aggregate as $\bar s=Rs$; accepting outputs require $H=\bar HR$. Then $HA^ts=\bar H\bar A^t\bar s$. Coefficientwise identities $RA_c=\bar A_cR$ preserve the cost series. Python exact matrix replay is supplied; automatic weighted quotient discovery remains a proposal.
+For column-state transitions, an aggregation R must satisfy $RA=\bar AR$. Its block condition says each source in a block has the same total outgoing weight into each destination block. Initial weights aggregate as $\bar s=Rs$; accepting outputs require $H=\bar HR$. Then $HA^ts=\bar H\bar A^t\bar s$. Coefficientwise identities $RA_c=\bar A_cR$ preserve the cost series. Python exact matrix replay is supplied. Since 0.2.0, `coarsest_lumping` discovers the aggregation: starting from the partition by output columns, it splits blocks by their vectors of block-totals until stable. Every valid exact lumping refines the result, which is therefore the coarsest; the tests confirm this by enumerating all set partitions of small state spaces.
 
-The first enhancement program proposed deriving state from Hankel distinctions, refining it when a new question adds an independent row/column, preserving event order with separate action matrices, and stacking multiple output Hankel blocks. Numerical Hankel rank requires held-out continuation tests and tolerance sensitivity. The equation atlas retains these designs and separates them from the currently implemented exact finite sequence rank calculation.
+The first enhancement program proposed deriving state from Hankel distinctions, refining it when a new question adds an independent row/column, preserving event order with separate action matrices, and stacking multiple output Hankel blocks. Numerical Hankel rank requires held-out continuation tests and tolerance sensitivity. Since 0.2.0 the exact single-output case is executable in `realization.py`. With prefixes and suffixes up to length k, choose prefixes $P_0$ and suffixes $S_0$ whose Hankel block M is invertible. The state after prefix p is the row $x_p=H[p,S_0]$; then $A_a=M^{-1}H_a[P_0,S_0]$, $\beta=M^{-1}f(P_0)$, and $\alpha=f(S_0)$. The construction reproduces f on every word $ps$ and $pas$ in the block. It cannot see beyond the block: $f(w)=[|w|=5]$ looks like zero through length3. Agreement on longer words is therefore a held-out check that returns the first disagreeing word. Multi-output stacking and numerical Hankel rank remain proposals.
 
 
 ---
@@ -357,7 +359,7 @@ Question-specific equivalence and preservation profiles separate dimensions,outp
 
 Arithmetic height relative to a question organizes fibres but cannot bypass completeness. Adaptive local tests prioritize exact exclusions. Integral Smith/Hermite transport repairs rational-span gaps. Commutators isolate order effects. Deformation tangents test protection before expensive global physical work. Failed representations should return distinguishing words,unclosed polynomial coefficients,duplicate auxiliary extensions,divisibility failures,hidden target vectors,failed metric conditions,or allowed perturbations breaking a relation.
 
-The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; automatic symbolic rank-locus discovery,full local sieving,Smith form,Hankel word realization,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
+The second enhancement sharpens this into active transvectant spectra,exact ansatz obstruction7lambda-40,affine-periodic cyclotomic coefficients,positive valuation kernels distinct from penalties,finite-part tail enclosures,explicit cubic field transports,oriented regulator vectors,flip involution tests,Riccati residuals,target-first sensor repair,and reusable type histograms. These changes are implemented where supported by the current exact kernel; exact Smith-form lattice repair,single-output Hankel word realization,and coarsest exact lumping became executable in0.2.0; automatic symbolic rank-locus discovery,full local sieving,multi-output or numerical Hankel discovery,general nonlinear reduction,and empirical feature learning remain explicitly proposed.
 
 The master interface should record a domain,questions,state representation,legal operations,weights,exact identities,error bounds,source maps,obstructions,costs,and evidence. A new application adds an adapter and its preserved questions. It must not acquire correctness from its similarity to an older application. The decisive reuse is an executable identity with matching assumptions.
 
@@ -371,6 +373,8 @@ This repository preserves content by recording corrections rather than deleting 
 Key corrections are the HLR source sign/factor2; singular vectors versus invariant modes; PSG multiplier factor2,A<1/2 contradiction,cofactor D versus D/v,finite-degree versus global Darboux classification,root jets versus origin germ,Puiseux sign,flip versus involution; dyadic Weil model mismatch; complete Gauss sum versus full/partial blocks; penalty versus PSD kernel; finite part versus quantum volume; all-embedding regulator cancellation; discriminant versus field identity; numerical orbit matching versus an exact orbit proof; integer saturation versus rational span; and deterministic error versus empirical predictive uncertainty.
 
 Missing originals remain explicit: the separately named arithmetic GCD-kernel construction; complete master.txt; full SOE original archives; FF7 opcode archive; original PSG26/100-term coefficients and full prolonged numerator; complete PADD/PSC corner-case semantics; chemical/aerosol reaction-rate tables; full BLAST recurrence/adapters/corpus; original definitions for the coefficient7 CKM polynomial and N,K,t,J; radar bytes; original Petersen50 resource data and DAG. A filename or workflow title is not mathematical evidence for these items.
+
+Release0.2.0 closes three implementation gaps rather than any formal frontier: integer lattices (Smith form, infeasibility certificates, integer kernels, saturation index), exact word-Hankel realization with held-out witnesses, and coarsest exact weighted lumping. The correction integer saturation versus rational span now has an executable witness.
 
 The strongest finite executable contributions in0.1.0 are observable-space closure and hidden witnesses,partial-machine equivalence,polynomial-feature span replay,residual selection counts/rank/unrank/ties,weighted aggregation checks,energy balance,jet composition/Riccati residuals,corrected PSG root replay,cyclotomic coefficient recurrence,transvectant active census,and exact cubic coefficient-field identities. Archive algorithms are preserved as upstream source text and are not automatically included in the runnable trusted core.
 
@@ -438,6 +442,22 @@ In the monic quotient Q[u]/(u3-4u2+5u-1), reduction produces unique degree<3 coo
 ## Decision margin
 
 If abs(J(a)-Jhat(a))<=epsilon_a, then J(a)>=Jhat(a)-epsilon_a and J(a)<=Jhat(a)+epsilon_a. A candidate whose lower bound exceeds every competitor's upper bound is strictly best. A shared epsilon therefore needs estimated margin>2epsilon. Equality only provides a non-strict comparison; the implementation returns unresolved for overlapping intervals. Empirical uncertainty needs its own justified intervals.
+
+## Smith form and integer certificates
+
+Row and column operations by integer elementary matrices keep U and V unimodular. Each pass either strictly lowers the absolute value of the pivot or clears its row and column. Positive integers cannot decrease forever, so the pass terminates. If the pivot fails to divide some later entry, adding that row to the pivot row and reducing again gives a smaller pivot. Thus the final diagonal satisfies $d_1|d_2|\cdots$. Unimodular transforms preserve the gcd $\Delta_k$ of all k-by-k minors, by Cauchy-Binet in both directions. For a divisibility-ordered diagonal, $\Delta_k=d_1\cdots d_k$. The tests compare these two routes.
+
+Put y=V^{-1}x, so Bx=b becomes Dy=Ub. Because V is unimodular, x is integral exactly when y is integral. Coordinatewise, $d_iy_i=(Ub)_i$; rows past the rank require $(Ub)_i=0$. If coordinate i fails, the row $U_i/d_i$ times B equals row i of $V^{-1}$, which is integral, while its product with b is not an integer. Any integer solution x would make the same product an integer, a contradiction. The integer kernel is $\{Vy:Dy=0\}$, so it is spanned by the last n-r columns of V. Those columns extend to the unimodular basis V, so the kernel lattice is saturated.
+
+For a generator matrix G, $UG=DV^{-1}$, and the rows of UG generate the same lattice as the rows of G. Hence the lattice is $\bigoplus_i d_i\mathbb Z w_i$, where $w_i$ are the rows of $V^{-1}$. Its rational span meets $\mathbb Z^n$ in $\bigoplus_{i\le r}\mathbb Z w_i$, because the $w_i$ form a basis of $\mathbb Z^n$. The quotient is $\bigoplus\mathbb Z/d_i$, with order $d_1\cdots d_r$. When $d_i>1$, $w_i$ is in the saturation and not in the lattice.
+
+## Hankel realization from a finite block
+
+Let M be the invertible Hankel block on prefixes $P_0$ and suffixes $S_0$, with r equal to the rank of the full finite block H on prefixes and suffixes of length at most k. Then every row $H[p,\cdot]$ is a combination $c_pH[P_0,\cdot]$, and restriction to $S_0$ gives $c_p=x_pM^{-1}$. Applied to the columns $as$ and to the empty suffix, $f(pas)=c_pH[P_0,as]$ and $f(p)=c_pH[P_0,\varepsilon]$. For prefixes p in the block, this gives $x_{pa}=x_pM^{-1}H_a[P_0,S_0]$ and $f(p)=x_pM^{-1}f(P_0)$. Induction on word length from $x_\varepsilon=f(S_0)$ shows the model agrees with f on the block. When f has a finite representation of dimension $n\le$ the block rank, the block rank equals the global Hankel rank, which is the minimal dimension. Without such a hypothesis the block cannot certify agreement on longer words. A held-out disagreement is then a witness that the block is too small.
+
+## Coarsest exact lumping
+
+Call a partition valid when every action matrix has constant block-column sums within each source block and the output is constant on blocks. The refinement step splits blocks by the vector of block-totals computed under the current partition. Suppose a valid partition $\pi$ refines the current partition. Two states in one $\pi$-block have equal totals into each $\pi$-block, so they also have equal totals into the unions that form current blocks. They are therefore never separated. The initial output partition is refined by every valid partition. By induction, every valid partition refines every iterate. The iteration stops only when the partition is valid, so its fixed point is the unique coarsest valid partition. With R the block indicator, the constant sums give $RA_c=\bar A_cR$ and $H=\bar HR$, which preserves the weighted cost series.
 
 
 ---
@@ -562,8 +582,8 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E047 | transport | D72 reconstruction | C=0; 3 divides A; u=-A/3; v=-B | historical_report | Coordinate restrictions are part of completeness. |
 | PJ-E048 | transport | scaled rational kernel | K=det(BB^T)I-B^T adj(BB^T)B | derived | Full row rank for nondegenerate projector interpretation. |
 | PJ-E049 | transport | kernel identities | BK=0; Bx=0 implies Kx=det(BB^T)x | derived | Rational-span statement does not prove integral saturation. |
-| PJ-E050 | transport | Smith form | UBV=D | proposal | Unimodular U,V; implementation deferred in this release. |
-| PJ-E051 | transport | integral solvability | d_i divides (Ub)_i; remaining coordinates (Ub)_i=0 | derived | For Smith form of Bx=b. |
+| PJ-E050 | transport | Smith form | UBV=D | exact_checked | Unimodular U,V; d_1\|d_2\|...; replayed in lattice.py against gcd-of-minors divisors. |
+| PJ-E051 | transport | integral solvability | d_i divides (Ub)_i; remaining coordinates (Ub)_i=0 | exact_checked | For Smith form of Bx=b; failure returns a certificate row. |
 | PJ-E052 | counting | resource polynomial | P(z)=product_j(1+product_k z_k^{c_jk}) | derived | Nonnegative integral costs; extra compatibility requires extra factors/state. |
 | PJ-E053 | counting | capacity population | #F=sum_{a<=b}[z^a]P(z) | derived | Componentwise capacity bound. |
 | PJ-E054 | counting | profit polynomial | P(z,t)=product_j(1+t^{p_j}product_k z_k^{c_jk}) | proposal | Laurent t exponents if profits negative. |
@@ -584,7 +604,7 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E069 | series | Fibonacci series | 1/(1-z-z^2) | definition | Initialization determines sequence offset. |
 | PJ-E070 | series | zero-series initialization | z/(1-z)=0+z+z^2+... | historical_report | Zero initial sample can change minimal realization size. |
 | PJ-E071 | series | linear response | G(z)=C(I-zA)^(-1)B; coefficients=CA^kB | derived | Linear input/output convention. |
-| PJ-E072 | series | Hankel matrix | H_{u,v}=f(uv) | proposal | Word-indexed predictive state; finite rank over a field. |
+| PJ-E072 | series | Hankel matrix | H_{u,v}=f(uv) | exact_checked | Word-indexed predictive state; finite rank over a field; exact on the supplied block only. |
 | PJ-E073 | series | linear word realization | f(w)=alpha^T A_{a1}...A_{aell} beta | derived | Minimal field realization dimension equals finite Hankel rank; positivity is separate. |
 | PJ-E074 | semantics | semantic fibre | pi:I->S; I_s=pi^(-1)(s) intersect L | definition | Legal implementations of a meaning. |
 | PJ-E075 | semantics | cost realization | i*=argmin_{i in I_s}cost(i) | proposal | Minimum must exist or infimum used. |
@@ -808,3 +828,8 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E293 | closure | question-dependent height | h_q(x)=h(q(x)) | proposal | Organizes search, does not replace a global completeness bound. |
 | PJ-E294 | closure | adaptive local sieve | R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost | proposal | Valid exact exclusions independent of heuristic test order. |
 | PJ-E295 | closure | repair pipeline | question->candidate->closure test->exact model / bounded model / repair witness | proposal | Master architecture; not one universal theorem. |
+| PJ-E296 | transport | integer infeasibility certificate | y in Q^m, yB in Z^n, yb not in Z => Bx=b has no integer solution | exact_checked | y=U_i/d_i from a failing Smith coordinate; yB=0, yb!=0 when the system already fails over Q. |
+| PJ-E297 | transport | saturation index | [(Q-span(G) intersect Z^n):Z-span(G)]=d_1 d_2...d_r | exact_checked | Rows of G independent or not; witness row of V^{-1} at the first d_i>1. |
+| PJ-E298 | transport | integer kernel | ker_Z B=Z-span(V e_{r+1},...,V e_n) | exact_checked | UBV=D with rank r; the basis is saturated. |
+| PJ-E299 | series | Hankel realization | x_{pa}=x_p M^{-1}H_a; f(p)=x_p M^{-1}h; alpha=x_empty | exact_checked | M invertible Hankel block on chosen prefixes/suffixes; agreement beyond the block is a held-out check with a witness word. |
+| PJ-E300 | series | coarsest exact lumping | sum_{i in B}A_c[i][j] constant over j in C for all blocks B,C and all costs c; H constant on blocks | exact_checked | Partition refinement from output labels; every valid lumping refines the result. |

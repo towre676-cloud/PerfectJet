@@ -53,8 +53,8 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E047 | transport | D72 reconstruction | C=0; 3 divides A; u=-A/3; v=-B | historical_report | Coordinate restrictions are part of completeness. |
 | PJ-E048 | transport | scaled rational kernel | K=det(BB^T)I-B^T adj(BB^T)B | derived | Full row rank for nondegenerate projector interpretation. |
 | PJ-E049 | transport | kernel identities | BK=0; Bx=0 implies Kx=det(BB^T)x | derived | Rational-span statement does not prove integral saturation. |
-| PJ-E050 | transport | Smith form | UBV=D | proposal | Unimodular U,V; implementation deferred in this release. |
-| PJ-E051 | transport | integral solvability | d_i divides (Ub)_i; remaining coordinates (Ub)_i=0 | derived | For Smith form of Bx=b. |
+| PJ-E050 | transport | Smith form | UBV=D | exact_checked | Unimodular U,V; d_1\|d_2\|...; replayed in lattice.py against gcd-of-minors divisors. |
+| PJ-E051 | transport | integral solvability | d_i divides (Ub)_i; remaining coordinates (Ub)_i=0 | exact_checked | For Smith form of Bx=b; failure returns a certificate row. |
 | PJ-E052 | counting | resource polynomial | P(z)=product_j(1+product_k z_k^{c_jk}) | derived | Nonnegative integral costs; extra compatibility requires extra factors/state. |
 | PJ-E053 | counting | capacity population | #F=sum_{a<=b}[z^a]P(z) | derived | Componentwise capacity bound. |
 | PJ-E054 | counting | profit polynomial | P(z,t)=product_j(1+t^{p_j}product_k z_k^{c_jk}) | proposal | Laurent t exponents if profits negative. |
@@ -75,7 +75,7 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E069 | series | Fibonacci series | 1/(1-z-z^2) | definition | Initialization determines sequence offset. |
 | PJ-E070 | series | zero-series initialization | z/(1-z)=0+z+z^2+... | historical_report | Zero initial sample can change minimal realization size. |
 | PJ-E071 | series | linear response | G(z)=C(I-zA)^(-1)B; coefficients=CA^kB | derived | Linear input/output convention. |
-| PJ-E072 | series | Hankel matrix | H_{u,v}=f(uv) | proposal | Word-indexed predictive state; finite rank over a field. |
+| PJ-E072 | series | Hankel matrix | H_{u,v}=f(uv) | exact_checked | Word-indexed predictive state; finite rank over a field; exact on the supplied block only. |
 | PJ-E073 | series | linear word realization | f(w)=alpha^T A_{a1}...A_{aell} beta | derived | Minimal field realization dimension equals finite Hankel rank; positivity is separate. |
 | PJ-E074 | semantics | semantic fibre | pi:I->S; I_s=pi^(-1)(s) intersect L | definition | Legal implementations of a meaning. |
 | PJ-E075 | semantics | cost realization | i*=argmin_{i in I_s}cost(i) | proposal | Minimum must exist or infimum used. |
@@ -299,3 +299,8 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E293 | closure | question-dependent height | h_q(x)=h(q(x)) | proposal | Organizes search, does not replace a global completeness bound. |
 | PJ-E294 | closure | adaptive local sieve | R_m={e mod m:retained constraints hold}; next test by eliminated_population/cost | proposal | Valid exact exclusions independent of heuristic test order. |
 | PJ-E295 | closure | repair pipeline | question->candidate->closure test->exact model / bounded model / repair witness | proposal | Master architecture; not one universal theorem. |
+| PJ-E296 | transport | integer infeasibility certificate | y in Q^m, yB in Z^n, yb not in Z => Bx=b has no integer solution | exact_checked | y=U_i/d_i from a failing Smith coordinate; yB=0, yb!=0 when the system already fails over Q. |
+| PJ-E297 | transport | saturation index | [(Q-span(G) intersect Z^n):Z-span(G)]=d_1 d_2...d_r | exact_checked | Rows of G independent or not; witness row of V^{-1} at the first d_i>1. |
+| PJ-E298 | transport | integer kernel | ker_Z B=Z-span(V e_{r+1},...,V e_n) | exact_checked | UBV=D with rank r; the basis is saturated. |
+| PJ-E299 | series | Hankel realization | x_{pa}=x_p M^{-1}H_a; f(p)=x_p M^{-1}h; alpha=x_empty | exact_checked | M invertible Hankel block on chosen prefixes/suffixes; agreement beyond the block is a held-out check with a witness word. |
+| PJ-E300 | series | coarsest exact lumping | sum_{i in B}A_c[i][j] constant over j in C for all blocks B,C and all costs c; H constant on blocks | exact_checked | Partition refinement from output labels; every valid lumping refines the result. |
