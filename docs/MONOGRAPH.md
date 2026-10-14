@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.8.0 · 14 October 2026
+Version 0.9.0 · 14 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -295,7 +295,9 @@ Since0.7.0 `invariants.py` explains the strata by invariant theory. With unnorma
 - **Cubic partners.** det L3(f)=(A2-B/6)/16. A sextic has a cubic correction-free partner exactly when B=6A2. L3 is an equivariant map between copies of the cubic representation, so its determinant is a degree-4 invariant, and the Cayley-Sylvester count gives exactly two such invariants, A2 and B. Exact evaluation fixes the constants, and twenty random sextics confirm them.
 - **Quartic partner.** The covariant i=(f,f)4 always satisfies (f,i)3=(f,i)5=0, because a binary sextic has no covariants of degree3 and order4 or0 (Cayley-Sylvester). This is the generic degree-4 partner seen on the surface. It is active unless (f,i)1=0, as at the perfect cube.
 
-On the two-parameter surface, the drop curves are invariant loci. A2-B/6 is a constant times the degree-3 curve, and A2-25B/96 is a constant times the degree-12 curve. The degree-8 curve satisfies AB2+BC/6-9D/2=0. Each relation is found by reducing weighted monomials in A,B,C,D modulo the curve ideal. Orbit comparison in weighted projective space also identifies two exceptional points. (0,15) is GL2-equivalent over the algebraic closure to x6+y6, the origin of the family, and has the same partner profile. (0,-5) is equivalent to the octahedral sextic xy(x4-y4), which explains its three-dimensional quartic kernel. (4,6) and (24,-9) lie on B=6A2 but are not equivalent to each other. Whether the degree-8 and degree-12 relations hold beyond this family is open. Generic codimension counts suggest those loci are smaller than hypersurfaces in the full moduli.
+On the two-parameter surface, the drop curves are invariant loci. A2-B/6 is a constant times the degree-3 curve, and A2-25B/96 is a constant times the degree-12 curve. The degree-8 curve satisfies AB2+BC/6-9D/2=0. Each relation is found by reducing weighted monomials in A,B,C,D modulo the curve ideal. Orbit comparison in weighted projective space also identifies two exceptional points. (0,15) is GL2-equivalent over the algebraic closure to x6+y6, the origin of the family, and has the same partner profile. (0,-5) is equivalent to the octahedral sextic xy(x4-y4), which explains its three-dimensional quartic kernel. (4,6) and (24,-9) lie on B=6A2 but are not equivalent to each other. Whether the degree-8 relation holds beyond this family is open.
+
+Since0.9.0 the degree-12 relation is understood beyond the family. On a second, non-symmetric family, x6+y6+a x5y+b xy5+2x3y3, the degree-12 drop curves ab=81/20 and ab=-9 again satisfy A2=25B/96. Random sextics placed on that hypersurface all acquire a degree-12 partner. A search over the seven-dimensional space of covariants of degree6 and order12 finds the partner explicitly: G=144A2f2+(216/5)A iH+24A f(f,i)2-(9/4)i3-9Delta H+(f,i)22, with H=(f,f)2. For every sextic, (f,G)3=-432(A2-25B/96)(f,H)1 and (f,G)5=25920(A2-25B/96)(f,i)1. So G is a correction-free degree-12 partner on the whole hypersurface wherever it is nonzero. These identities, the cubic theorem and the quartic partner are certified rather than sampled. Each side is a covariant, so checking a three-parameter slice whose GL2-orbit is dense suffices, and an exact grid of (d+1)^3 points on that slice proves an identity of degree d. The converse for degree12 remains open.
 
 
 ---
@@ -429,6 +431,8 @@ Release0.4.0 adds comprehensive rank cells for several parameters, with an exact
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
 
+Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
+
 Release0.8.0 adds a solution-carrying compiler for k y2=an2+bn+c. Every branch has a reconstruction map and a completeness status, Nagell seeds make the Pell branch complete, and exact remote-index queries are supported.
 
 Release0.7.0 proves two universal partner statements for binary sextics: det L3=(A2-B/6)/16, and the covariant (f,f)4 is always correction-free. It identifies the surface's drop curves as invariant loci, and identifies (0,15) with x6+y6 and (0,-5) with the octahedral sextic.
@@ -560,13 +564,22 @@ Pullback by a polynomial map sends a monomial to a polynomial, and the loop adds
 
 ## Cubic and quartic partners of every sextic
 
-Transvectants are SL2-equivariant. For a cubic g, (f,g)_5 has negative order and vanishes, so L_3(f) is the map g -> (f,g)_3 from cubics to cubics. It is linear in f and equivariant, so det L_3(f) is an SL2-invariant of f of degree 4. By the Cayley-Sylvester formula, the binary sextic has exactly two linearly independent invariants of degree 4 (`covariant_count(6,4,0)=2`), namely A^2 and B. Hence det L_3 = alpha A^2 + beta B. Two sextics with independent (A^2,B) determine alpha and beta, and the implementation confirms (alpha,beta)=(1/16,-1/96) exactly on further random sextics. A cubic partner exists exactly when L_3(f) is singular, that is, when B=6A^2.
+Transvectants are SL2-equivariant. For a cubic g, (f,g)_5 has negative order and vanishes, so L_3(f) is the map g -> (f,g)_3 from cubics to cubics. It is linear in f and equivariant, so det L_3(f) is an SL2-invariant of f of degree 4. By the Cayley-Sylvester formula, the binary sextic has exactly two linearly independent invariants of degree 4 (`covariant_count(6,4,0)=2`), namely A^2 and B. Hence det L_3 = alpha A^2 + beta B. Two sextics with independent (A^2,B) determine alpha and beta. The identity det L_3=(A^2-B/6)/16 is then certified by the slice argument below. A cubic partner exists exactly when L_3(f) is singular, that is, when B=6A^2.
 
 Let i=(f,f)_4, a covariant of degree 2 and order 4. Then (f,i)_5 is an invariant of degree 3, and (f,i)_3 is a covariant of degree 3 and order 4. The Cayley-Sylvester counts `covariant_count(6,3,0)` and `covariant_count(6,3,4)` are both 0, so both vanish identically. Thus i lies in ker L_4(f) for every sextic. It is active exactly when (f,i)_1 is nonzero.
 
 ## Strata as invariant loci
 
 For g in GL2, transvectants satisfy (f∘g, h∘g)_k = det(g)^k (f,h)_k ∘ g. Hence ker L_N(f∘g) = (ker L_N(f))∘g, and the same holds for ker P_N. So kernel and active dimensions are functions on GL2-orbits. On a family, every stratum is therefore a union of fibres of the invariant map. If a weighted-homogeneous polynomial R(A,B,C,D), written as a polynomial in the family parameters, reduces to zero modulo a Groebner basis of a curve's ideal, then R lies in that ideal and vanishes at every point of the curve. Relations that vanish on the whole family are discarded, so a returned relation is specific to the curve. For squarefree sextics, two forms with equal points (A:B:C:D) in weighted projective space P(1,2,3,5) lie in one GL2(Qbar)-orbit, by the classical theory of genus-two curves. The test I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} is that equality, written without roots.
+
+## Slice certificates for covariant identities
+
+Let P(f)=Q(f) be an identity between covariants of the same degree d, order and weight, built from transvectants and invariants. The set of sextics where it holds is Zariski closed and GL2-stable. Every sextic with three distinct roots can be moved by GL2 over the algebraic closure to c·xy(x-y)(x^3+px^2y+qxy^2+ry^3). Scaling absorbs c, because both sides have the same degree. These slice forms therefore have a dense GL2-orbit, and the identity holds everywhere once it holds on the slice. On the slice, the coefficients of f are affine in (p,q,r), so P-Q is a polynomial of degree at most d in each of p, q and r. A polynomial with that bound that vanishes on {0,...,d}^3 is zero. `grid_certificate` evaluates the identity at those (d+1)^3 points in exact arithmetic. It certifies:
+- the cubic partner theorem, with d=4 and 125 points;
+- the quartic covariant partner, with d=3 and 64 points;
+- the degree-12 identities, with d=7 and 512 points. Here s=A^2-25B/96, and (f,G)_3=-432 s (f,(f,f)_2)_1 and (f,G)_5=25920 s (f,(f,f)_4)_1, for G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9 Delta H+(f,i)_2^2.
+
+The degree-12 identities show that on the hypersurface A^2=25B/96, G(f) lies in ker L_12(f) whenever it is nonzero. The converse, that a degree-12 partner forces A^2=25B/96, is supported by random sextics and by two independent families, but is not proved.
 
 
 ---
@@ -969,12 +982,15 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E325 | invariants | Clebsch invariants of the sextic | i=(f,f)_4; A=(f,f)_6; B=(i,i)_4; C=(i,(i,i)_2)_4; D=(y3,y1)_2 with y1=(f,i)_4,y2=(i,y1)_2,y3=(i,y2)_2 | definition | Unnormalized transvectants; degrees2,4,6,10; scale by det^(3k) under GL2. |
 | PJ-E326 | invariants | weighted orbit test | (A:B:C:D) equal in P(1,2,3,5) iff I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} | derived | Proves GL2(Qbar)-equivalence only for squarefree sextics. |
 | PJ-E327 | invariants | Cayley-Sylvester count | dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)/2 | derived | p counts partitions into at most d parts of size at most n. |
-| PJ-E328 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; degree-4 invariants spanned by A^2,B; constants fixed and confirmed on random sextics. |
-| PJ-E329 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; active iff (f,(f,f)_4)_1!=0. |
-| PJ-E330 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
-| PJ-E331 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
-| PJ-E332 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
-| PJ-E333 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
-| PJ-E334 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
-| PJ-E335 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
-| PJ-E336 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
+| PJ-E328 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; certified on the dense slice by a 125-point exact grid. |
+| PJ-E329 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0. |
+| PJ-E330 | invariants | degree-12 covariant partner | G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96 | exact_checked | Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0. |
+| PJ-E331 | invariants | degree-12 partner converse | ker L_12(f)!=0 => A^2=25B/96 | open | Supported by random sextics and two independent families; not proved. |
+| PJ-E332 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
+| PJ-E333 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
+| PJ-E334 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
+| PJ-E335 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
+| PJ-E336 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
+| PJ-E337 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
+| PJ-E338 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
+| PJ-E339 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |

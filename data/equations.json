@@ -2950,7 +2950,7 @@
       "title": "cubic partner theorem",
       "equation": "det L_3(f)=(A^2-B/6)/16",
       "status": "exact_checked",
-      "assumptions": "Every binary sextic; degree-4 invariants spanned by A^2,B; constants fixed and confirmed on random sextics.",
+      "assumptions": "Every binary sextic; certified on the dense slice by a 125-point exact grid.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
@@ -2959,11 +2959,38 @@
       "title": "quartic covariant partner",
       "equation": "(f,(f,f)_4)_3=(f,(f,f)_4)_5=0",
       "status": "exact_checked",
-      "assumptions": "Every binary sextic; no covariants of degree3 and order4 or0; active iff (f,(f,f)_4)_1!=0.",
+      "assumptions": "Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
       "id": "PJ-E330",
+      "domain": "invariants",
+      "title": "degree-12 covariant partner",
+      "equation": "G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96",
+      "status": "exact_checked",
+      "assumptions": "Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E331",
+      "domain": "invariants",
+      "title": "degree-12 partner converse",
+      "equation": "ker L_12(f)!=0 => A^2=25B/96",
+      "status": "open",
+      "assumptions": "Supported by random sextics and two independent families; not proved.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E332",
+      "domain": "invariants",
+      "title": "slice certificate",
+      "equation": "covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3",
+      "status": "derived",
+      "assumptions": "Same degree, order and weight; dense GL2-orbit; grid vanishing lemma.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E333",
       "domain": "invariants",
       "title": "surface drop curves as invariant loci",
       "equation": "deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0",
@@ -2972,7 +2999,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E331",
+      "id": "PJ-E334",
       "domain": "invariants",
       "title": "named exceptional sextics",
       "equation": "(0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4)",
@@ -2981,7 +3008,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E332",
+      "id": "PJ-E335",
       "domain": "empirical",
       "title": "normalized recovery travel",
       "equation": "eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)",
@@ -2990,7 +3017,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E333",
+      "id": "PJ-E336",
       "domain": "empirical",
       "title": "recovery response model",
       "equation": "eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)",
@@ -2999,7 +3026,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E334",
+      "id": "PJ-E337",
       "domain": "empirical",
       "title": "context-adjusted target",
       "equation": "r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)",
@@ -3008,7 +3035,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E335",
+      "id": "PJ-E338",
       "domain": "empirical",
       "title": "paired predictive gain",
       "equation": "G=1-MSE_movement/MSE_baseline",
@@ -3017,7 +3044,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E336",
+      "id": "PJ-E339",
       "domain": "empirical",
       "title": "scouting advantage",
       "equation": "G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class",

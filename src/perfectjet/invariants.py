@@ -161,6 +161,10 @@ def invariants_receipt(random_checks=20, seed=7):
                                       "random_sextics_checked": random_checks, "identity_held": cubic},
             "quartic_covariant_partner": {"statement": "(f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0 for every binary sextic",
                                           "random_sextics_checked": random_checks, "held": quartic},
+            "certificates": partner_certificates(),
+            "degree12_partner": {"statement": "if A^2 = 25B/96 then G(f) satisfies (f,G)_3 = (f,G)_5 = 0",
+                                 "formula": "G = 144A^2 f^2 + 216/5 A iH + 24A f(f,i)_2 - 9/4 i^3 - 9 Delta H + (f,i)_2^2",
+                                 "converse": "open; random sextics off the hypersurface have no degree-12 partner"},
             "drop_curves_as_invariant_loci": curves,
             "points": [{"a": str(a), "b": str(b), "squarefree": evaluate(disc, (a, b)) != 0,
                         "absolute": [str(v) for v in absolute(inv[(a, b)])],
@@ -227,3 +231,56 @@ def invariant_relations(equations, max_weight=6, invariants=None, nvars=2):
         if found:
             return found
     return found
+
+
+# ------------------------------------------------- degree-12 partner and certificates
+
+
+def degree12_partner(f):
+    """G(f) = 144A^2 f^2 + 216/5 A iH + 24A f(f,i)_2 - 9/4 i^3 - 9 Delta H + (f,i)_2^2, H=(f,f)_2."""
+    a, _, _, _ = clebsch(f)
+    i = transvectant(f, f, 4)
+    h = transvectant(f, f, 2)
+    delta = transvectant(i, i, 2)
+    fi2 = transvectant(f, i, 2)
+    return (144*a*a*f*f+Q(216, 5)*a*i*h+24*a*f*fi2-Q(9, 4)*i*i*i-9*delta*h+fi2*fi2)
+
+
+def degree12_gate_identities(f):
+    """(f,G)_3 = -432 s (f,H)_1 and (f,G)_5 = 25920 s (f,i)_1 with s = A^2 - 25B/96."""
+    a, b, _, _ = clebsch(f)
+    s = a*a-Q(25, 96)*b
+    g = degree12_partner(f)
+    h = transvectant(f, f, 2)
+    i = transvectant(f, f, 4)
+    return (transvectant(f, g, 3) == transvectant(f, h, 1)*(-432*s)
+            and transvectant(f, g, 5) == transvectant(f, i, 1)*(25920*s))
+
+
+def slice_form(p, q, r):
+    """xy(x-y)(x^3+p x^2y+q xy^2+r y^3): roots 0, 1, infinity fixed; its GL2-orbit is dense."""
+    x, y = Poly.variable(0), Poly.variable(1)
+    return x*y*(x-y)*(x**3+Q(p)*x*x*y+Q(q)*x*y*y+Q(r)*y**3)
+
+
+def grid_certificate(identity, degree):
+    """Check a covariant identity of coefficient degree <= degree on the grid {0..degree}^3 of the slice.
+
+    Both sides are covariants of the same degree, order and weight, so the set of sextics
+    where the identity holds is closed and GL2-stable. The slice's GL2-orbit is dense, so
+    the identity holds for every sextic once it holds on the slice; and a polynomial in
+    (p,q,r) of degree <= degree in each variable vanishing on a grid with degree+1 values
+    per coordinate is zero.
+    """
+    pts = [(p, q, r) for p in range(degree+1) for q in range(degree+1) for r in range(degree+1)]
+    failures = [pt for pt in pts if not identity(slice_form(*pt))]
+    return {"grid_points": len(pts), "degree_bound": degree, "failures": failures[:5], "certified": not failures}
+
+
+def partner_certificates(include_degree12=True):
+    out = {"cubic: det L_3 = (A^2-B/6)/16": grid_certificate(lambda f: cubic_gate_identity(f)["identity"], 4),
+           "quartic: (f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0": grid_certificate(
+               lambda f: quartic_covariant_partner(f)["gates_vanish"], 3)}
+    if include_degree12:
+        out["degree 12: (f,G)_3, (f,G)_5 divisible by A^2-25B/96"] = grid_certificate(degree12_gate_identities, 7)
+    return out

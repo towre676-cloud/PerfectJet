@@ -4,7 +4,9 @@ from perfectjet.polynomial import Poly
 from perfectjet.parametric import sextic_family,sub,mul,scale,divide
 from perfectjet.invariants import (clebsch,same_weighted_point,substitute,absolute,cubic_gate_identity,
                                    quartic_covariant_partner,family_invariants,invariant_relations,orbit_classes,
-                                   weighted_monomials,covariant_count)
+                                   weighted_monomials,covariant_count,grid_certificate,degree12_partner,
+                                   degree12_gate_identities,partner_certificates)
+from perfectjet.transvectants import transvectant
 from perfectjet.strata import strata,point_profile
 
 x,y=Poly.variable(0),Poly.variable(1)
@@ -54,6 +56,20 @@ class InvariantTests(unittest.TestCase):
         self.assertEqual(point_profile(0,15)["nonzero_kernels"],point_profile(0,0)["nonzero_kernels"])
         classes,_=orbit_classes([(Q(4),Q(6)),(Q(-4),Q(6)),(Q(24),Q(-9))],sextic_family)
         self.assertEqual(len(classes),2)
+
+    def test_certificates(self):
+        for name,cert in partner_certificates().items():self.assertTrue(cert["certified"],name)
+        self.assertFalse(grid_certificate(lambda f:clebsch(f)[0]==0,2)["certified"])
+
+    def test_degree12_partner_on_hypersurface(self):
+        # (0,3)-free point on the family's degree-12 curve: (4,-3) and (32/25,-9/5).
+        for a,b in [(Q(4),Q(-3)),(Q(32,25),Q(-9,5))]:
+            f=sextic_family(a,b);A,B,_,_=clebsch(f);self.assertEqual(A*A,Q(25,96)*B)
+            g=degree12_partner(f);self.assertNotEqual(g,Poly())
+            self.assertEqual(transvectant(f,g,3),Poly());self.assertEqual(transvectant(f,g,5),Poly())
+            self.assertNotEqual(transvectant(f,g,1),Poly())
+        rng=random.Random(8)
+        for _ in range(5):self.assertTrue(degree12_gate_identities(rand_sextic(rng)))
 
     def test_drop_curves_are_invariant_loci(self):
         inv=family_invariants();A,B=inv[0],inv[1]

@@ -118,10 +118,19 @@ Pullback by a polynomial map sends a monomial to a polynomial, and the loop adds
 
 ## Cubic and quartic partners of every sextic
 
-Transvectants are SL2-equivariant. For a cubic g, (f,g)_5 has negative order and vanishes, so L_3(f) is the map g -> (f,g)_3 from cubics to cubics. It is linear in f and equivariant, so det L_3(f) is an SL2-invariant of f of degree 4. By the Cayley-Sylvester formula, the binary sextic has exactly two linearly independent invariants of degree 4 (`covariant_count(6,4,0)=2`), namely A^2 and B. Hence det L_3 = alpha A^2 + beta B. Two sextics with independent (A^2,B) determine alpha and beta, and the implementation confirms (alpha,beta)=(1/16,-1/96) exactly on further random sextics. A cubic partner exists exactly when L_3(f) is singular, that is, when B=6A^2.
+Transvectants are SL2-equivariant. For a cubic g, (f,g)_5 has negative order and vanishes, so L_3(f) is the map g -> (f,g)_3 from cubics to cubics. It is linear in f and equivariant, so det L_3(f) is an SL2-invariant of f of degree 4. By the Cayley-Sylvester formula, the binary sextic has exactly two linearly independent invariants of degree 4 (`covariant_count(6,4,0)=2`), namely A^2 and B. Hence det L_3 = alpha A^2 + beta B. Two sextics with independent (A^2,B) determine alpha and beta. The identity det L_3=(A^2-B/6)/16 is then certified by the slice argument below. A cubic partner exists exactly when L_3(f) is singular, that is, when B=6A^2.
 
 Let i=(f,f)_4, a covariant of degree 2 and order 4. Then (f,i)_5 is an invariant of degree 3, and (f,i)_3 is a covariant of degree 3 and order 4. The Cayley-Sylvester counts `covariant_count(6,3,0)` and `covariant_count(6,3,4)` are both 0, so both vanish identically. Thus i lies in ker L_4(f) for every sextic. It is active exactly when (f,i)_1 is nonzero.
 
 ## Strata as invariant loci
 
 For g in GL2, transvectants satisfy (f∘g, h∘g)_k = det(g)^k (f,h)_k ∘ g. Hence ker L_N(f∘g) = (ker L_N(f))∘g, and the same holds for ker P_N. So kernel and active dimensions are functions on GL2-orbits. On a family, every stratum is therefore a union of fibres of the invariant map. If a weighted-homogeneous polynomial R(A,B,C,D), written as a polynomial in the family parameters, reduces to zero modulo a Groebner basis of a curve's ideal, then R lies in that ideal and vanishes at every point of the curve. Relations that vanish on the whole family are discarded, so a returned relation is specific to the curve. For squarefree sextics, two forms with equal points (A:B:C:D) in weighted projective space P(1,2,3,5) lie in one GL2(Qbar)-orbit, by the classical theory of genus-two curves. The test I_i^{w_j}J_j^{w_i}=J_i^{w_j}I_j^{w_i} is that equality, written without roots.
+
+## Slice certificates for covariant identities
+
+Let P(f)=Q(f) be an identity between covariants of the same degree d, order and weight, built from transvectants and invariants. The set of sextics where it holds is Zariski closed and GL2-stable. Every sextic with three distinct roots can be moved by GL2 over the algebraic closure to c·xy(x-y)(x^3+px^2y+qxy^2+ry^3). Scaling absorbs c, because both sides have the same degree. These slice forms therefore have a dense GL2-orbit, and the identity holds everywhere once it holds on the slice. On the slice, the coefficients of f are affine in (p,q,r), so P-Q is a polynomial of degree at most d in each of p, q and r. A polynomial with that bound that vanishes on {0,...,d}^3 is zero. `grid_certificate` evaluates the identity at those (d+1)^3 points in exact arithmetic. It certifies:
+- the cubic partner theorem, with d=4 and 125 points;
+- the quartic covariant partner, with d=3 and 64 points;
+- the degree-12 identities, with d=7 and 512 points. Here s=A^2-25B/96, and (f,G)_3=-432 s (f,(f,f)_2)_1 and (f,G)_5=25920 s (f,(f,f)_4)_1, for G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9 Delta H+(f,i)_2^2.
+
+The degree-12 identities show that on the hypersurface A^2=25B/96, G(f) lies in ker L_12(f) whenever it is nonzero. The converse, that a degree-12 partner forces A^2=25B/96, is supported by random sextics and by two independent families, but is not proved.

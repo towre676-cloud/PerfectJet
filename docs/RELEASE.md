@@ -1,3 +1,15 @@
+# PerfectJet 0.9.0
+
+This release turns the partner evidence into certified statements and finds an explicit degree-12 partner.
+
+- **Slice certificates** (`invariants.grid_certificate`): an identity between covariants of the same degree d, order and weight holds for every binary sextic once it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3. The slice's GL2-orbit is dense, and a polynomial of degree at most d in each variable that vanishes on that grid is zero. The following identities are certified this way:
+  - cubic partner: det L_3 = (A^2-B/6)/16, with 125 points;
+  - quartic covariant partner: (f,(f,f)_4)_3 = (f,(f,f)_4)_5 = 0, with 64 points;
+  - degree-12 identities, with 512 points, below.
+- **Degree-12 partner on A^2 = 25B/96**: the drop curves of a second, non-symmetric family satisfy the same relation. Random sextics placed on the hypersurface all gain a degree-12 partner. The partner is the covariant G = 144A^2 f^2 + 216/5 A iH + 24A f(f,i)_2 - 9/4 i^3 - 9 Delta H + (f,i)_2^2, with H = (f,f)_2. For every sextic, (f,G)_3 = -432 (A^2-25B/96)(f,H)_1 and (f,G)_5 = 25920 (A^2-25B/96)(f,i)_1. The converse is open.
+
+The registry has 339 entries. Chapters 15, 23 and 24 were updated, and `perfectjet invariants` reports the certificates.
+
 # PerfectJet 0.8.0
 
 This release adds a solution-carrying arithmetic compiler (`quadratic.py`) for k y^2 = a n^2 + b n + c over the integers.
