@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "dac8b190086b7cca90449e8332b2e6130ba9e856eb1800b77247881417c481fb",
-      "size_bytes": 6752
+      "sha256": "8bfa1abf6989973f36eec1282ae0d0c0395891d6cd5a709a506c0284b69ac85d",
+      "size_bytes": 7640
     },
     {
       "path": "archive/README.md",
@@ -84,13 +84,13 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "aeb5807bdc4ab8687b4a14b71f1a96db1652924f31e11d9bf68332d06976ad6c",
-      "size_bytes": 135762
+      "sha256": "f3217e3e0cd0ce095908cb066f8bc03de3285b5218d48685c1c1daaf8e52755d",
+      "size_bytes": 140100
     },
     {
       "path": "data/topics.json",
-      "sha256": "322e743f31269fa34857a50f19c9bee2a9a1ac4c7cbe86428ca6911870721620",
-      "size_bytes": 124824
+      "sha256": "9f5ca1307e9fc38b8a5b0a289e3ac0bdde2f6f4fa87a077c1840192f9e179cd0",
+      "size_bytes": 128927
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -99,28 +99,28 @@
     },
     {
       "path": "docs/COVERAGE_MAP.md",
-      "sha256": "ce560a6e1b233242d07bb4d4cb69fbd90ff7276b27e91223fc69065bce1d0bda",
-      "size_bytes": 67554
+      "sha256": "3e76d21bcabb6e4d0db5a9a36bb411f6bec88b4d4f512fbcdf24c1c66e973221",
+      "size_bytes": 69512
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "144723c97bb9b17457125b8785983b652857ee1fd915970762dd6acb929ec3cb",
-      "size_bytes": 61520
+      "sha256": "5fcc0ba2a10d285306ecf3ed6012c2443f1382975e480ac37aa17375bf3c7775",
+      "size_bytes": 63868
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "5f8797909bb7acd6d777ceedfb4cd05192b43c61a9feddf6917bedd35987bbcb",
-      "size_bytes": 196736
+      "sha256": "d8cc2c66eb7e1a50c1da1da591c17fc90a72477e3e5ad3101d41eae6861ee27f",
+      "size_bytes": 211359
     },
     {
       "path": "docs/QUICKSTART.md",
-      "sha256": "4b156f62ec8cff86611a9c19b923af25be03071b6061d5d23b72da86542caf15",
-      "size_bytes": 3627
+      "sha256": "a9f749819fcafd2adbd52970f64efe7c5d2c0b36a4b899f14f34ec2c4ae75348",
+      "size_bytes": 5087
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "2645017a08100e6fd78e0842c30779e52d4c222b8a78a53b6ef06ea2f8dda137",
-      "size_bytes": 20661
+      "sha256": "d0e7efe59602a81e6702df2d3bbc5bd824ac9007b939394a94928f63dca35f06",
+      "size_bytes": 22608
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -258,9 +258,19 @@
       "size_bytes": 21369
     },
     {
+      "path": "docs/chapters/28_real_nfl_evidence.md",
+      "sha256": "393b8b975a226e1e7c6fe3c21e2331b2ddeb05e7024bfae491ecbb4dfdc77277",
+      "size_bytes": 12209
+    },
+    {
       "path": "docs/nfl/DATA_CONTRACT.md",
       "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
       "size_bytes": 2392
+    },
+    {
+      "path": "docs/nfl/EXTERNAL_TRACKING.md",
+      "sha256": "8ace0d005e83fc79437d807520e385a524c89500751876e2723152ac2e89e4f0",
+      "size_bytes": 11139
     },
     {
       "path": "docs/nfl/MATH_BRIDGES.md",
@@ -283,6 +293,11 @@
       "size_bytes": 6823
     },
     {
+      "path": "docs/nfl/REAL_DATA.md",
+      "sha256": "393b8b975a226e1e7c6fe3c21e2331b2ddeb05e7024bfae491ecbb4dfdc77277",
+      "size_bytes": 12209
+    },
+    {
       "path": "docs/nfl/WRITEUP_TEMPLATE.md",
       "sha256": "e9ad9e746a811061a6709f80a3d6ac69f124a80448def1af22e876a81c51b52d",
       "size_bytes": 2369
@@ -293,24 +308,64 @@
       "size_bytes": 883
     },
     {
+      "path": "integrations/nfl_research_preservation.json",
+      "sha256": "a92ad611784cb6670484e7084608cfb75fc70a1902260f8562f717a3607938aa",
+      "size_bytes": 275
+    },
+    {
       "path": "integrations/upstreams.json",
       "sha256": "2e34e1302a35447c5be51698b5647abaf5323e6e85d8f70382c8120a2168b8c2",
       "size_bytes": 631
     },
     {
       "path": "notebooks/PerfectJet_Math_Bridges.ipynb",
-      "sha256": "8963b9cc13f6122e7762dd60555009aa7c60b373d0253882826ac5ee0b5fe115",
-      "size_bytes": 492824
+      "sha256": "cef869bb26e96ae4273c74fbf2b0556b315d60579911d48c68d17f4b01de9418",
+      "size_bytes": 547295
     },
     {
       "path": "notebooks/PerfectJet_Motor_Transfer.ipynb",
-      "sha256": "def6489a0f4bcb9685125d8d63e0ef3e85b99adb694a04d73101e556dc295ec8",
-      "size_bytes": 493237
+      "sha256": "a70ea680b1f90cd9d323981a7bdc48438839f930cb15cdbd0a31c9c28edf4e21",
+      "size_bytes": 547595
     },
     {
       "path": "pyproject.toml",
-      "sha256": "1008eb0f9574ec11373ad44db37b8fca310244764afda550ec2e2c3716cdbbf4",
+      "sha256": "2cf5d4c9567a7d6214f6d1f2b4d88fea4b4f5d07ab72b2058fcf9db094dfd1ed",
       "size_bytes": 500
+    },
+    {
+      "path": "releases/NFL_Big_Data_Bowl_2027_Research_Package.zip.part01",
+      "sha256": "736deee76a191768861cc496d608d34321ed3d1e5d63cad1b93d4c879aa4b09c",
+      "size_bytes": 8388608
+    },
+    {
+      "path": "releases/NFL_Big_Data_Bowl_2027_Research_Package.zip.part02",
+      "sha256": "facbe7009d68f261419a1884968550aca482898f312756e0bd0dbb7b4e9f6512",
+      "size_bytes": 8388608
+    },
+    {
+      "path": "releases/NFL_Big_Data_Bowl_2027_Research_Package.zip.part03",
+      "sha256": "5cb9a4fb07016e6bce4545eaf9ca1c942f185424766846ad0a9c4afdd61b6340",
+      "size_bytes": 6439853
+    },
+    {
+      "path": "releases/NFL_Research_Package_Parts.json",
+      "sha256": "bd074cbcd8d5c9cad7dd98e557c24cc9f1cb588ae756e26ba21250b40da587ef",
+      "size_bytes": 720
+    },
+    {
+      "path": "releases/NFL_Research_Package_README.md",
+      "sha256": "0c53d878b14fa8e23772ba3d0f26009c3b91bbf589632c418b8a145967f80240",
+      "size_bytes": 488
+    },
+    {
+      "path": "releases/assemble_release.py",
+      "sha256": "eef175ec07ce190baaeb7f052f9acfd3efb5a3acf59f1c66b354c95530aa2483",
+      "size_bytes": 2482
+    },
+    {
+      "path": "releases/restore_nfl_research_package.py",
+      "sha256": "01aa2372fb26ba2a9d4f0ef1ef6bd3bf10dfab4212b21cd3e47129cfe4a03b38",
+      "size_bytes": 654
     },
     {
       "path": "research/nfl_bdb_2027/.gitignore",
@@ -324,17 +379,17 @@
     },
     {
       "path": "research/nfl_bdb_2027/MANIFEST.json",
-      "sha256": "cea71ec24324df0b87166dc220fef6beab88074d139c96779b437dc010bc75d4",
-      "size_bytes": 38135
+      "sha256": "a239a3089b8a9a322b2956ef147964aca460b179109e3a79d2371b3df33d5dc9",
+      "size_bytes": 46814
     },
     {
       "path": "research/nfl_bdb_2027/README.md",
-      "sha256": "37b0ab5272c5221363bab20ea69f70fbe0755aea57c770c105d2e8b53655f2a8",
-      "size_bytes": 4150
+      "sha256": "8bb254b0aba5f853965fa68a616691a3447b9dad5adc4ef13824948c54fe0942",
+      "size_bytes": 4736
     },
     {
       "path": "research/nfl_bdb_2027/VERSION.json",
-      "sha256": "655939b1a0ca37a10d6831cd41443075492e30e127ef96eac664172d79f9014e",
+      "sha256": "4b7838d15e7a03f43025cd02bbd6765815dcc466033173546033f8ddb260d52c",
       "size_bytes": 223
     },
     {
@@ -351,6 +406,11 @@
       "path": "research/nfl_bdb_2027/angular_breaks.py",
       "sha256": "07c3c734090b010927ed1a6e82d72385cf991a5b4622cb4d39948b456fa80b74",
       "size_bytes": 6956
+    },
+    {
+      "path": "research/nfl_bdb_2027/build_burst_notebook.py",
+      "sha256": "2d0e76fbbfe288cddc89e6ed39a890ae52e67c5850e8c527a1145a1641de1bd4",
+      "size_bytes": 9742
     },
     {
       "path": "research/nfl_bdb_2027/build_canonical_notebook.py",
@@ -398,6 +458,31 @@
       "size_bytes": 13519
     },
     {
+      "path": "research/nfl_bdb_2027/burst_controls.py",
+      "sha256": "2511f84bb67402b1e1925cbcda029bac140b25888ec1dda50146f24ac72b5982",
+      "size_bytes": 322
+    },
+    {
+      "path": "research/nfl_bdb_2027/burst_diagnostics.py",
+      "sha256": "1ea5e9fcdc5410e7b2dd1fd2242b5737c1ea81ab74670ef72d09411d725f2b10",
+      "size_bytes": 2926
+    },
+    {
+      "path": "research/nfl_bdb_2027/burst_motion.py",
+      "sha256": "a9483232a3bb00f17d2c72ae90e9c16d9b1f24b86fb576bac6d278e67b775d53",
+      "size_bytes": 6042
+    },
+    {
+      "path": "research/nfl_bdb_2027/burst_support.py",
+      "sha256": "b5f381c8f58b49f412e0b92b9dc5f55adb9e2607eb8d016d4c5711d4645f1f1d",
+      "size_bytes": 3366
+    },
+    {
+      "path": "research/nfl_bdb_2027/burst_transfer.py",
+      "sha256": "b93b8b10a67089ac969422824e04a8f971a951ef79aad95190ddc0519b2fc08a",
+      "size_bytes": 6409
+    },
+    {
       "path": "research/nfl_bdb_2027/canonical_diagnostics.py",
       "sha256": "8889b65244024139c2e25ef3ffaf7e4e3dd153106bf80edeb534c57783bdce66",
       "size_bytes": 3557
@@ -414,18 +499,23 @@
     },
     {
       "path": "research/nfl_bdb_2027/docs/CANONICAL_FINDINGS.md",
-      "sha256": "ed918c35219e41164619982edcc1476cc6316fe96469847010e303ffb86e4b98",
-      "size_bytes": 13629
+      "sha256": "5d905a3e052cf7c3183aad68924157ae55b0f83142b09685e3c1b5d0c8795efd",
+      "size_bytes": 13957
     },
     {
       "path": "research/nfl_bdb_2027/docs/MONOGRAPH.md",
-      "sha256": "9afba425a9c4393c661d44a91265e0aa1828596e47685eda9443e2182b192c7a",
-      "size_bytes": 131608
+      "sha256": "248b7c16c704a77ff97d016ff062a8f2037623f4a1b4c75c6f7d19b8bf850605",
+      "size_bytes": 143294
     },
     {
       "path": "research/nfl_bdb_2027/docs/OBSERVABILITY_REPLAY.md",
       "sha256": "b38541e38aa190650b2382559f791300fe591eb366395bd47d2f46e17124b5d5",
       "size_bytes": 12278
+    },
+    {
+      "path": "research/nfl_bdb_2027/docs/ONSET_AND_TRAVEL.md",
+      "sha256": "89378057e9bfcf74e66b3b26aaa40b440a5dcf1058444ae8fec99dfc972b4436",
+      "size_bytes": 11679
     },
     {
       "path": "research/nfl_bdb_2027/docs/ORDERED_MOTION.md",
@@ -531,6 +621,11 @@
       "path": "research/nfl_bdb_2027/notebooks/Movement_Stress_and_Recovery.ipynb",
       "sha256": "bc7bea4c3fc68fe8305e3436a81cadfa9d2eae69f254291692822f955b18c09a",
       "size_bytes": 790890
+    },
+    {
+      "path": "research/nfl_bdb_2027/notebooks/Onset_and_Travel_Scouting.ipynb",
+      "sha256": "aeb291c14d119965f49deefae298e1b4389f6f9ed0b1a5686c12e4b74a36bce3",
+      "size_bytes": 909049
     },
     {
       "path": "research/nfl_bdb_2027/notebooks/Ordered_Motion_Channels.ipynb",
@@ -691,6 +786,101 @@
       "path": "research/nfl_bdb_2027/receipts/actual/sensitivity_results.png",
       "sha256": "041df2e6861f502424397eb983f79891ad6c8ef014f6a1a263827dd5df05d94f",
       "size_bytes": 103618
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/burst_onset_1.0_20316306.json",
+      "sha256": "b0093e4e5e865ea41aa1343c9c0cf98e018c9103d28883cc80d6afbef80726f8",
+      "size_bytes": 6484
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/burst_travel1_0.5_20316306.json",
+      "sha256": "4e894c44bd2545b55e568208c7da53e63895bba9a67b5a5b835a0c7daaf5a37c",
+      "size_bytes": 6449
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/burst_travel1_1.0_20316306.json",
+      "sha256": "8b67cf38a90c3ffc2d7c1034f6fdd2412357098189949fe05c9341fed0c23a56",
+      "size_bytes": 6518
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/burst_travel1_1.0_20316506.json",
+      "sha256": "d88111becc2c4cd4b75ee25884faf4d99cb785821337c53310041e718e5e101c",
+      "size_bytes": 4889
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/burst_travel1_1.0_20316706.json",
+      "sha256": "5ef7960aa08cc9238d0f6df557fea029817ac86c36970a2d4b16a76487c52e2d",
+      "size_bytes": 4899
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/burst_travel1_2.0_20316306.json",
+      "sha256": "9c19077155b10671b3bda37d80b89020fbf6a2a91ddfa32fe5db356f3483aa67",
+      "size_bytes": 6528
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/control_burst_onset_1.0_20316306.json",
+      "sha256": "897838c1dcaadbcfd2bc77ec3fcf46b77c73b2e46682ccea252691c51311fb55",
+      "size_bytes": 9717
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/control_design.json",
+      "sha256": "bd05419e4e22d709c995030eb2bdc9dc60a2a534f0e96d6618cf733ac1c9c465",
+      "size_bytes": 673
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/design.json",
+      "sha256": "7c90535eb73d199e66eb1d430840916e6b72fc19fdeda723233a234043ba81c2",
+      "size_bytes": 1157
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/onset_and_travel.png",
+      "sha256": "f27df5cfcd882e1f530d46e3f16b335919601299fa35a7e981b51b30f64cfcf5",
+      "size_bytes": 143460
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/population.json",
+      "sha256": "bd51d3c4f8c8afde279a2a9e247bd7eaed41bc24145fd5c147dce9a5ff8a6f54",
+      "size_bytes": 1791
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/prediction_results.png",
+      "sha256": "ce98443af7e7f41d66ecfdce87e2af4605c227d66f21d8d01cdf0d4a209eac9a",
+      "size_bytes": 136166
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/readout_support.json",
+      "sha256": "89fa9becc5098491b374f4fb0e026670e4be3128a624ed89c4bca6640295ce60",
+      "size_bytes": 50129
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/repeatability.json",
+      "sha256": "4caa7debf5d2a40cc2ec7ef2880ff29c861b042fa43ba8fe468e312c2e6bb761",
+      "size_bytes": 636
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/repeatability_and_support.png",
+      "sha256": "4fddbde0cb27d17d7bbadb69e6c30ca3ee59012b6603cf62297946b950e02146",
+      "size_bytes": 110738
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/shortlist.json",
+      "sha256": "a71ba800763e0e0613a84d6f1daa4fb60025ca3b093a203b06b9a51fa482c44e",
+      "size_bytes": 14090
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/source_and_game.png",
+      "sha256": "10a8211a10b163065e0d57b649f3d20866de02bf96f3be790bd16325434459c5",
+      "size_bytes": 111070
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/upstream_reconciliation.json",
+      "sha256": "defafd8cf55cf24a929df99565a54be63fc294021705820d30244eb2f86f1785",
+      "size_bytes": 5368
+    },
+    {
+      "path": "research/nfl_bdb_2027/receipts/burst/verification.json",
+      "sha256": "d67c8fb50f3b1d22d073b5567a283a0ee216e79c6fecce9331f5aa7599981f70",
+      "size_bytes": 498
     },
     {
       "path": "research/nfl_bdb_2027/receipts/canonical/benchmark_replay.json",
@@ -1658,6 +1848,11 @@
       "size_bytes": 2135
     },
     {
+      "path": "research/nfl_bdb_2027/render_burst.py",
+      "sha256": "7d8401fcccc24630fa43108ee0a4b740d993cbbfce572615cafbcec200e05857",
+      "size_bytes": 5512
+    },
+    {
       "path": "research/nfl_bdb_2027/render_canonical.py",
       "sha256": "776f9b6355ddd9856b0420f7463ce94639f63a9c0fb13929b3ef2074377c9a12",
       "size_bytes": 4029
@@ -1729,8 +1924,8 @@
     },
     {
       "path": "research/nfl_bdb_2027/research_history.bundle",
-      "sha256": "44a2d49c36b88fac9f01e197a4a248eaf1574d96ccac6896169c20225f04fdcb",
-      "size_bytes": 10311889
+      "sha256": "bb2e14c1b673c088f524ad8c183db9959c0eca0110963bb52875ea3f7ec86fe5",
+      "size_bytes": 11444710
     },
     {
       "path": "research/nfl_bdb_2027/route_matched.py",
@@ -1774,8 +1969,8 @@
     },
     {
       "path": "research/nfl_bdb_2027/stress_transfer.py",
-      "sha256": "73ec874a26ca8eb0fc61930801fdd70beb4dc63f326f6aa57c555c553c0feed1",
-      "size_bytes": 10485
+      "sha256": "950af84c9a458fcd710705dd43258e397b55b79eba6f0f202085029f9cdfedbb",
+      "size_bytes": 11005
     },
     {
       "path": "research/nfl_bdb_2027/tests/test_analysis.py",
@@ -1783,9 +1978,19 @@
       "size_bytes": 1673
     },
     {
+      "path": "research/nfl_bdb_2027/tests/test_burst_motion.py",
+      "sha256": "8b04e79b5c99127e08627ac7897b73481ab6ded31e53901f30fa58552c621527",
+      "size_bytes": 1925
+    },
+    {
       "path": "research/nfl_bdb_2027/tests/test_canonical_transfer.py",
       "sha256": "66f1d202ee5c263b3f708cfd5a5c370bd6c546a4a1c53c143ccf9764acf1e8dc",
       "size_bytes": 1034
+    },
+    {
+      "path": "research/nfl_bdb_2027/tests/test_context_cache_content.py",
+      "sha256": "5ba9c6cbca99d8a88d90c44391c55a63c9bda6bf12f3ce2cc4fcf84d4e26a646",
+      "size_bytes": 1168
     },
     {
       "path": "research/nfl_bdb_2027/tests/test_front_angular.py",
@@ -1908,6 +2113,211 @@
       "size_bytes": 4121
     },
     {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/UPSTREAM_README.md",
+      "sha256": "6688e09878b286250c9f86c9b5993213d57602572ad54c1bffa75bc86cd65c2c",
+      "size_bytes": 5203
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/docs/nfl/DATA_CONTRACT.md",
+      "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
+      "size_bytes": 2392
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/docs/nfl/PROTOCOL.md",
+      "sha256": "f99b9b9c2dd6e11ec85107fce83ba3b35e37770200f62b30f040f54a13a8eede",
+      "size_bytes": 6823
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/docs/nfl/WRITEUP_TEMPLATE.md",
+      "sha256": "e9ad9e746a811061a6709f80a3d6ac69f124a80448def1af22e876a81c51b52d",
+      "size_bytes": 2369
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/__init__.py",
+      "sha256": "2c5f24017b9dd1aa132c5a53752e232d51553ce168afb9ce0efe0aa6a86f9c60",
+      "size_bytes": 104
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/__init__.py",
+      "sha256": "8c0f221658dcd4cdc25742dd846fde287d4e030627d986839a42486bb8b1716b",
+      "size_bytes": 101
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/__init__.py",
+      "sha256": "7f710c0e4464b47a9f99ec57a9e0d7355d5d2c1042d91aa63ab8772d40721e89",
+      "size_bytes": 719
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/__main__.py",
+      "sha256": "75ffbfbfeccfd1ea336fb962ed3cc44afb714dec80e57587e016986cbbb09ef2",
+      "size_bytes": 35
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/events.py",
+      "sha256": "696cfaa9989e570480e5511a4608c4cecfd1d714bd5d83b595ca7f1f924e791e",
+      "size_bytes": 7225
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/figures.py",
+      "sha256": "12d14272a8a585439762f718722e149aad517cb11453382d682ff96da127e956",
+      "size_bytes": 4427
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/linalg.py",
+      "sha256": "69dde0739f40986a478f1a3cfb29583a484ef9e3c651b6056c4312ff32f007fb",
+      "size_bytes": 2964
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/outcomes.py",
+      "sha256": "d1af536cad25ea0aceb98f37eee9d883909a0465ba0139a414e67ae5f1d4cda3",
+      "size_bytes": 4278
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/pipeline.py",
+      "sha256": "5337525bab7b24c189ff6e17db7fc6350b54bb826d1a0b1dbb606df9caabcf19",
+      "size_bytes": 14677
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/readouts.py",
+      "sha256": "1d91e6273bc17d26b90ee968f95ff15d2634d83f44dbd8ea11b78a48931955f8",
+      "size_bytes": 7820
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/schema.py",
+      "sha256": "0af8c85531aa5a1b2246a3ab4c3495a2056973a6b7846b4aa10c2de16138b879",
+      "size_bytes": 6775
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/synthetic.py",
+      "sha256": "602c1b37105d9047def0ba2ee706f41abfcaf84b2848800db891304e427d3d9e",
+      "size_bytes": 5631
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/applications/nfl_scouting/validate.py",
+      "sha256": "e5fb48698695fed4f36f2573ddc9c28ff5d940702d3f66abbe4c420fcc2fe18a",
+      "size_bytes": 11433
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/cli.py",
+      "sha256": "470731299e58c295459d6747c3b1c1294d7f8526e1cbaa4216fa0846428bb7f4",
+      "size_bytes": 6103
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/collision.py",
+      "sha256": "86fe0bbb39b73e62572cf653c2d87e25d6accc8f3bc40d467660d6cedf14e5b9",
+      "size_bytes": 2772
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/decisions.py",
+      "sha256": "2590d318a10bd65ecd87c56026726c1128b4b785b55bed863d48a8da56116a76",
+      "size_bytes": 5027
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/deformation.py",
+      "sha256": "627b1a38092122976782d201599f762f98b2445f52636f48efc440f48854f0a9",
+      "size_bytes": 4554
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/dynamics.py",
+      "sha256": "63fb2c760ba9ad99ddcda1b21f781442c05d9f165698bad6cee3eaea0832c63c",
+      "size_bytes": 2783
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/engine.py",
+      "sha256": "8ab5c6e8a3a91de887b7e3730991ff5c73797ef460d6dd04be9dd6a3fdc2ba2e",
+      "size_bytes": 11894
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/exact.py",
+      "sha256": "f819cbb9b3f84a658a0ddad313ae6da49845c3f7a24e01b981e19528f5bddb40",
+      "size_bytes": 3277
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/invariants.py",
+      "sha256": "bdc96ac97943df36a5dba2c5ffb7387944e63c671c39ddbdd6322021b37b0f69",
+      "size_bytes": 12502
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/jets.py",
+      "sha256": "aefad9c4b165832afa25bff097a610265d372adef3e8e903bc3f86b97382d549",
+      "size_bytes": 1388
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/lattice.py",
+      "sha256": "90dfef714e6cff481e555478b72d5105e4d513e3345c1f856482156b4a4c858a",
+      "size_bytes": 8690
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/loci.py",
+      "sha256": "c79e1525afff195fa866f1e3037a6ff0554ab4e87da8ceb320a5fade36862e84",
+      "size_bytes": 9691
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/parametric.py",
+      "sha256": "26bfd8463d3135bd1038785c289382d670d1dfb05495220617174c8592e89e8e",
+      "size_bytes": 14193
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/polynomial.py",
+      "sha256": "e19ee2d48bf546a96d97a9dbb3cbdcbb5a1579e6e3156224254a34c5c05173bc",
+      "size_bytes": 4931
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/populations.py",
+      "sha256": "ffe6d67db73e7fba70bdf516ec952557c1dd0bbfa65e1cfea090a6f570ca60ab",
+      "size_bytes": 5753
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/psg.py",
+      "sha256": "ff702aa425fbf97fb445e35bec0fe7d24924b5fd77727aed57b38d82b15544bc",
+      "size_bytes": 904
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/quadratic.py",
+      "sha256": "944fbe4a293f7c8857a55c4571ed601294533ecaa5059bb2926d0f67977fb43a",
+      "size_bytes": 11676
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/readout.py",
+      "sha256": "b5ddc1c1661c3f6fa7cde913f67dbe9cd14c4f8bb0e7fafe621cd1a0f1b07e4d",
+      "size_bytes": 6387
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/realization.py",
+      "sha256": "462ce75b186f7b92c8f831f91f8a2d488c0fb3e69869ac0263efafda8dbb199c",
+      "size_bytes": 7600
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/rings.py",
+      "sha256": "9edc43208c99877b4d9e6b5580b090a7ea73a8a63807b33b6baedfb2bb27de71",
+      "size_bytes": 4311
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/semantics.py",
+      "sha256": "0d2cc562e6a1f0c1ed017a051da6fc6036ecf55ba81b896269e4f04f7eec55c2",
+      "size_bytes": 2504
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/sieve.py",
+      "sha256": "b7e9c4769623712a7e11397efc4d28e2984e4abebfed8a8249947d4d9264e603",
+      "size_bytes": 4541
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/strata.py",
+      "sha256": "cbe088a56224f0022fb7dc92318a464e1903fbcb62e710b9bbfc81914596d945",
+      "size_bytes": 14238
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/src/perfectjet/transvectants.py",
+      "sha256": "11d51a064629185335894f4494cabcde6552b497acfdf44144398f02d198ede7",
+      "size_bytes": 2506
+    },
+    {
+      "path": "research/nfl_bdb_2027/vendor/perfectjet_scouting/test_nfl_scouting.py",
+      "sha256": "77b659f6b31c6712506def46d8e1115f9e42be8a525717018fe46e000ff7656b",
+      "size_bytes": 7772
+    },
+    {
       "path": "research/nfl_bdb_2027/vendor/perfectpower_movement/LICENSE",
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
       "size_bytes": 11358
@@ -2028,6 +2438,66 @@
       "size_bytes": 4083
     },
     {
+      "path": "research/public_nfl/REPORT.md",
+      "sha256": "2ef66e74f771ce7b5789d42ef8460cc2396c17ad6472d5b778ddbba4170b20cb",
+      "size_bytes": 9901
+    },
+    {
+      "path": "research/public_nfl/RUN_RECEIPT.json",
+      "sha256": "a3bd32f836705c27b4005ff93bbe0739aa3eeeb4f883e24ce5a5cc8f102d4c69",
+      "size_bytes": 1472
+    },
+    {
+      "path": "research/public_nfl/SOURCE_MANIFEST.json",
+      "sha256": "a6a11e31756ff0d7d9920a44b3ca4a47a29c79de697a71fcd576784360f3f7d8",
+      "size_bytes": 239626
+    },
+    {
+      "path": "research/public_nfl/public_cohort_all.json",
+      "sha256": "b7d47250a440f2a6f259f610ddf08d6ff108e5053eb4ab5c5a2ba11e82aa357d",
+      "size_bytes": 2298050
+    },
+    {
+      "path": "research/public_nfl/public_cohort_dl.json",
+      "sha256": "a9352b880b45e9ecb92453c10545d66c820460d8489b1facd4f1ec676302192b",
+      "size_bytes": 681321
+    },
+    {
+      "path": "research/public_nfl/public_cohort_front7.json",
+      "sha256": "c6bae3559858ef4ed59caedbbd3d671e30647f89d6462ef7115569e03618c421",
+      "size_bytes": 956173
+    },
+    {
+      "path": "research/public_nfl/public_sources.zip",
+      "sha256": "d569053aec57be4794010686fbcec4ee7f3d0a9ac001c3af9498566f3c395cb5",
+      "size_bytes": 37765052
+    },
+    {
+      "path": "research/public_nfl/public_sources.zip.sha256",
+      "sha256": "2da0dc50a7e0bcbd980680811ec206eafaae6204b3330ff83c120b6dba7ebf3f",
+      "size_bytes": 85
+    },
+    {
+      "path": "results/external-tracking/execution-receipt.json",
+      "sha256": "93d211d51d539aa7d1de7ebf9a000be42532a379ea53abb43649af0a0b2da07a",
+      "size_bytes": 862
+    },
+    {
+      "path": "results/external-tracking/official-2017-sample-manifest.json",
+      "sha256": "068e97854570ffbdd4b92fc984e234a681811a8cda4024d1d5958ea94a96a50e",
+      "size_bytes": 3081
+    },
+    {
+      "path": "results/external-tracking/public-source-manifest.json",
+      "sha256": "ef3c76ccb20953b516b7f5464b05c4dfddf292fc22c38d64510f5c688d186ea7",
+      "size_bytes": 109213
+    },
+    {
+      "path": "results/external-tracking/summary.json",
+      "sha256": "d4389f36b83094c8c39cb00048b97074a811db9e7f394f809e4c7c0d3a9c9fa6",
+      "size_bytes": 149465
+    },
+    {
       "path": "results/nfl-math-bridges/final_loading_checks.log",
       "sha256": "c3ab86005361127e4056d3229671c7b30dd544c40b4a088881fbe482d3cf7667",
       "size_bytes": 98
@@ -2103,6 +2573,51 @@
       "size_bytes": 20417
     },
     {
+      "path": "results/real-nfl/analytic-bridge-replay.json",
+      "sha256": "1d394eae7c7c3478be1a94b7dbf4e531e9c6bffd7df61de63efcbf4ad5c8bbd6",
+      "size_bytes": 20421
+    },
+    {
+      "path": "results/real-nfl/bridge_front.json",
+      "sha256": "e974689d2a4b75adc5c5225929eae50567eefa84a60872c8e213e1f1dad7410e",
+      "size_bytes": 8131
+    },
+    {
+      "path": "results/real-nfl/bridge_ngs.json",
+      "sha256": "0220d0bfd6c4fcfcd09e3f45b1f555915cfd15bc6ac2cb21acd92d6a578bb9bc",
+      "size_bytes": 7994
+    },
+    {
+      "path": "results/real-nfl/bridge_refits.json",
+      "sha256": "740fecd55bbba946554731c8523a848b1e191159d4d6fc0bb65a69c0360dca9a",
+      "size_bytes": 8784
+    },
+    {
+      "path": "results/real-nfl/bridge_without_ngs.json",
+      "sha256": "da4df394cb5d6da728aca97dcd9af2f3d90b14a1d805c7937f0f2cfef14c1e36",
+      "size_bytes": 8012
+    },
+    {
+      "path": "results/real-nfl/burst_ngs.json",
+      "sha256": "525fa57c81ddadb9b9781a1e65d506db3caed046c26d1cd38879108cb9e81d8e",
+      "size_bytes": 7508
+    },
+    {
+      "path": "results/real-nfl/exact-math-replay.json",
+      "sha256": "5dbc317b6facc0a938165497c0c634f57c97bb5e8d10e206e02e1d35fe592749",
+      "size_bytes": 195692
+    },
+    {
+      "path": "results/real-nfl/preparation.json",
+      "sha256": "414fda30092c83e1f4928373c1609d6b08dead43ef8a2a94abc18f8d1a383a9c",
+      "size_bytes": 6612
+    },
+    {
+      "path": "results/real-nfl/validation.json",
+      "sha256": "f254da8d5413087969ed5b64c953b550a364b03e36b0dec2d71723b89d21f9f2",
+      "size_bytes": 825
+    },
+    {
       "path": "results/replay.json",
       "sha256": "5821c8f648608e31ac2efac0f17f7432c1d30f05eb3a2776b737f2ae9564f624",
       "size_bytes": 195692
@@ -2114,38 +2629,68 @@
     },
     {
       "path": "scripts/build_bridge_notebook.py",
-      "sha256": "9a54c657ace93924499bc61e16912b5f1069f205cce75445c4bcdab1394b2459",
-      "size_bytes": 8126
+      "sha256": "2de8c49eaf3c63ec8cab333c68622d7243c59392081d8a92cdcf207674e7b9d5",
+      "size_bytes": 8293
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "9bc3adc5fe5515bbd09746c575dfaf94b93644974480d475da0e255297de7952",
-      "size_bytes": 73817
+      "sha256": "71b07f1911e83030f308df1e452d2e78818413daf7f096bf23cb61ed2fcaf3aa",
+      "size_bytes": 73895
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "9797d9c01d8910db3b0de571d4a08aef195775020ecde36366d6e02a878f88fd",
-      "size_bytes": 55622
+      "sha256": "d2c61794c90e8bb3a1d2417e78519315b2a33be8273d39131c3103610c9fda81",
+      "size_bytes": 57773
     },
     {
       "path": "scripts/build_motor_notebook.py",
-      "sha256": "45714c40237cbecfae01f0554cc964f1041db671f43f4b35a13a17b56868652f",
-      "size_bytes": 7994
+      "sha256": "a02c2b56f9ac4c6d69630eac00190cae95c2e144c6a8f5c09a76b724baad61a3",
+      "size_bytes": 8023
     },
     {
       "path": "scripts/build_release.py",
-      "sha256": "6e7db82fa90f2c33c52ed25f58a066224f39732b2c66d79952e5e5c5c955df2c",
-      "size_bytes": 2484
+      "sha256": "9ab981304f5af6f460c791e9d885fffa92c0d18b5f232c8b752a2b549af3a67d",
+      "size_bytes": 3204
     },
     {
       "path": "scripts/build_topics.py",
-      "sha256": "a108864ddf5f00360eedf34dfc60f6a84606be2c659bf2516a10a5aedc3a3b50",
-      "size_bytes": 15671
+      "sha256": "e9a298d222b197c4303780a05d567004860cb7f52262cf582452ec64d11e04bd",
+      "size_bytes": 16338
     },
     {
       "path": "scripts/check_coverage.py",
       "sha256": "66fc8c19bf27e9d98da5748900bc62d6d7d7752b2b8d79862c3dced5933ddc75",
       "size_bytes": 1415
+    },
+    {
+      "path": "scripts/ingest_public_nfl.py",
+      "sha256": "94e2b665065783100222c642951fe0e39e9408c01d2f24462b0cd4ecba6c9410",
+      "size_bytes": 1499
+    },
+    {
+      "path": "scripts/ingest_public_tracking.py",
+      "sha256": "a453762bc09342ddc3bfcf1ee53845e052a0d7f637fb70f4b9c5ab2de2907ced",
+      "size_bytes": 2629
+    },
+    {
+      "path": "scripts/prepare_official_bridge_data.py",
+      "sha256": "7d989f36c97002f9ef8a72674f8f89b8580abd367222185f7da61609204fb54c",
+      "size_bytes": 3752
+    },
+    {
+      "path": "scripts/run_external_tracking.py",
+      "sha256": "0c013ae833a4fe4ecc7483ed18ab8c25bf0f357a855c89c92bede8dc48efbb31",
+      "size_bytes": 2075
+    },
+    {
+      "path": "scripts/run_public_cohort.py",
+      "sha256": "51f3d3c419c667da8419cc2162e127c031425c46452f86c92d4cc04c1e3390d5",
+      "size_bytes": 1053
+    },
+    {
+      "path": "scripts/run_recovered_official.py",
+      "sha256": "2e48949eae0da22fd74980744f7b2824403965deb5e6c303351758a6c42a56b9",
+      "size_bytes": 5997
     },
     {
       "path": "scripts/source_manifest.py",
@@ -2154,7 +2699,7 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "68b584c8d77eb36b208a5f66dc0df4a1df7fdb481fff97e43c1a05b08a7bdfbf",
+      "sha256": "34ae4f58562bb8fbfd4e0b24dcf376c84e4bb76099898e4415a281bc7aa5fb90",
       "size_bytes": 104
     },
     {
@@ -2189,8 +2734,8 @@
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/bridges.py",
-      "sha256": "229ad7b478300970135e6d3bad4c540c68c6bc68fc4f712a34deb70ee7ce180a",
-      "size_bytes": 29362
+      "sha256": "6859b6e1bf9491f5439a118e5837da64a370e15bed61ec844ef3783c28b16aa2",
+      "size_bytes": 32294
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/burst.py",
@@ -2213,6 +2758,11 @@
       "size_bytes": 7225
     },
     {
+      "path": "src/perfectjet/applications/nfl_scouting/external_tracking.py",
+      "sha256": "8319e8e6032327a1d57f57201036ba57a8e410f873796d466dd6e6b1488ce683",
+      "size_bytes": 27805
+    },
+    {
       "path": "src/perfectjet/applications/nfl_scouting/figures.py",
       "sha256": "12d14272a8a585439762f718722e149aad517cb11453382d682ff96da127e956",
       "size_bytes": 4427
@@ -2224,13 +2774,13 @@
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/movement_targets.py",
-      "sha256": "82b2104e7bb2d176fb638ed7ccbd23f55105ffedc5bdb7d1f0de23627a5c1b5f",
-      "size_bytes": 24007
+      "sha256": "a8f78374ca2bf5c3c7dc11349f28e9cfe095d71925550822af13ac6f1171076d",
+      "size_bytes": 24155
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/official.py",
-      "sha256": "518e159566cd5e327be8a034a78f59c4b6ecc6315eba2d3face1f27159d22c28",
-      "size_bytes": 18726
+      "sha256": "32648a649fa7f606aadd342ff91d45cf163183495d812e8e89a714fdf675c9f2",
+      "size_bytes": 19305
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/outcomes.py",
@@ -2246,6 +2796,11 @@
       "path": "src/perfectjet/applications/nfl_scouting/predictive_state.py",
       "sha256": "b524b37089152ca6f3ed3dab3629f3f86ec5ea74a9d9ee625c70ecb6009e281c",
       "size_bytes": 26531
+    },
+    {
+      "path": "src/perfectjet/applications/nfl_scouting/public_cohort.py",
+      "sha256": "5ed4644dd5d9b4fa75d24f7efec46002ad48d27d6f8ea7d04e84f90a7420d68c",
+      "size_bytes": 18687
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/readouts.py",
@@ -2419,8 +2974,8 @@
     },
     {
       "path": "tests/test_nfl_bridges.py",
-      "sha256": "01d8c26e8ab2c75f2467c645f1c77201151d96c98842e1f44c1574216825bf56",
-      "size_bytes": 12328
+      "sha256": "b575c179f065f49d641d67ac2880b1e241774c37dedcad558103d483f7110c7b",
+      "size_bytes": 16992
     },
     {
       "path": "tests/test_nfl_burst.py",
@@ -2438,19 +2993,34 @@
       "size_bytes": 7347
     },
     {
+      "path": "tests/test_nfl_external_tracking.py",
+      "sha256": "cebda79d1a4a43c0f462a250971c71d2c70d5c27be536afc868036ef5b0568fc",
+      "size_bytes": 2906
+    },
+    {
       "path": "tests/test_nfl_movement_targets.py",
       "sha256": "e9e44a28dcd0559b46d544f4cd10764fc7483011642adbbecc1895ca59580689",
       "size_bytes": 16252
     },
     {
       "path": "tests/test_nfl_official.py",
-      "sha256": "614f4df11c56a42056cff451aad5cb2035a5d026b1ac675165bdb0256467c2fa",
-      "size_bytes": 9374
+      "sha256": "65438c80fb0abd35f0f4ee8e0398a872bd0558a611a8d892dba31cf97b6c5d7b",
+      "size_bytes": 10633
     },
     {
       "path": "tests/test_nfl_predictive_state.py",
       "sha256": "a442dfcae96ac8389b5c3eaf421eba74a536a76dbd9065e28cb74c22f01da275",
       "size_bytes": 12380
+    },
+    {
+      "path": "tests/test_nfl_public_cohort.py",
+      "sha256": "e4bd3f88d0af9656e0e2aa9cd56c27e5a8d0a4704f8b6b784efcf83e5fdc6142",
+      "size_bytes": 5962
+    },
+    {
+      "path": "tests/test_nfl_recovered_receipt.py",
+      "sha256": "b58f1014c640c0c204cf325f76d21f29ab8f95143b95fdc17e62969b47294014",
+      "size_bytes": 2550
     },
     {
       "path": "tests/test_nfl_scouting.py",

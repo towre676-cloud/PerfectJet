@@ -1,0 +1,122 @@
+[
+  {
+    "file": "games.csv",
+    "url": "https://raw.githubusercontent.com/nfl-football-ops/Big-Data-Bowl/master/Data/games.csv",
+    "bytes": 15825,
+    "sha256": "f5bbd13d9c711c07e3d4a5b674eb25c1f5f9ced099729337bfd366b5229199ed",
+    "columns": [
+      "season",
+      "week",
+      "gameDate",
+      "gameId",
+      "gameTimeEastern",
+      "HomeScore",
+      "VisitorScore",
+      "homeTeamAbbr",
+      "visitorTeamAbbr",
+      "homeDisplayName",
+      "visitorDisplayName",
+      "Stadium",
+      "Location",
+      "StadiumType",
+      "Turf",
+      "GameLength",
+      "GameWeather",
+      "Temperature",
+      "Humidity",
+      "WindSpeed",
+      "WindDirection"
+    ],
+    "records": 91
+  },
+  {
+    "file": "plays.csv",
+    "url": "https://raw.githubusercontent.com/nfl-football-ops/Big-Data-Bowl/master/Data/plays.csv",
+    "bytes": 3038568,
+    "sha256": "0f4c57478d129065119a2a24e243e913cf3fce626b1307720675d1ef55b3623c",
+    "columns": [
+      "gameId",
+      "playId",
+      "quarter",
+      "GameClock",
+      "down",
+      "yardsToGo",
+      "possessionTeam",
+      "yardlineSide",
+      "yardlineNumber",
+      "offenseFormation",
+      "personnel.offense",
+      "defendersInTheBox",
+      "numberOfPassRushers",
+      "personnel.defense",
+      "HomeScoreBeforePlay",
+      "VisitorScoreBeforePlay",
+      "HomeScoreAfterPlay",
+      "VisitorScoreAfterPlay",
+      "isPenalty",
+      "isSTPlay",
+      "SpecialTeamsPlayType",
+      "KickReturnYardage",
+      "PassLength",
+      "PassResult",
+      "YardsAfterCatch",
+      "PlayResult",
+      "playDescription"
+    ],
+    "records": 14193
+  },
+  {
+    "file": "players.csv",
+    "url": "https://raw.githubusercontent.com/nfl-football-ops/Big-Data-Bowl/master/Data/players.csv",
+    "bytes": 105229,
+    "sha256": "f83b569774d9511ab684a7569e3a7e277a85e5d317c8af96f05d5d0b7c637ca1",
+    "columns": [
+      "nflId",
+      "FirstName",
+      "LastName",
+      "PositionAbbr",
+      "EntryYear",
+      "DraftRound",
+      "DraftNumber",
+      "Height",
+      "Weight",
+      "College"
+    ],
+    "records": 1713
+  },
+  {
+    "file": "tracking_gameId_2017090700.csv",
+    "url": "https://raw.githubusercontent.com/nfl-football-ops/Big-Data-Bowl/master/Data/tracking_gameId_2017090700.csv",
+    "bytes": 31659157,
+    "sha256": "30e0de5a213093011d16f7c0893fb6108284cb82be155b5e1bb14de754319f9b",
+    "columns": [
+      "time",
+      "x",
+      "y",
+      "s",
+      "dis",
+      "dir",
+      "event",
+      "nflId",
+      "displayName",
+      "jerseyNumber",
+      "team",
+      "frame.id",
+      "gameId",
+      "playId"
+    ],
+    "records": 316025
+  },
+  {
+    "file": "schema.md",
+    "url": "https://raw.githubusercontent.com/nfl-football-ops/Big-Data-Bowl/master/schema.md",
+    "bytes": 5816,
+    "sha256": "b65a93f6daf67c879d73f8563dc5a32878bb7aee91a606883160dc9f7c274394"
+  },
+  {
+    "file": "README.md",
+    "url": "https://raw.githubusercontent.com/nfl-football-ops/Big-Data-Bowl/master/README.md",
+    "bytes": 6225,
+    "sha256": "c8fa7443aa7cdbc4a17482c19b3df7fee91db7b6483428b061491e171c528690"
+  }
+]

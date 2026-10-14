@@ -1,4 +1,4 @@
-"""Generate a standalone notebook; real-input execution remains explicitly pending."""
+"""Generate a standalone notebook; notebook execution is distinct from the recorded real-data runner."""
 import hashlib,json
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -66,7 +66,7 @@ axes[1,1].set(xticks=[.175,1.175],xticklabels=["Conventional","Movement"],title=
 fig.savefig(WORK/"aggregate_figures.png",dpi=180);plt.show()
 ''')
     cell('markdown','The four panels summarize coverage, development prediction gains, refit sensitivity and decision hits. Losses and null results receive the same visibility as gains. Refit intervals do not undo prior adaptive use or establish future transport. A true scouting advantage still requires held-out-player improvement against the equally informed baseline, practical decision value and independent future confirmation. No betting or causal developmental claim follows.')
-    nb={'nbformat':4,'nbformat_minor':5,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},'language_info':{'name':'python'},'perfectjet':{'version':'0.12.0','execution_status':'unexecuted_raw_inputs_unavailable','source_sha256':hashes}},'cells':cells}
+    nb={'nbformat':4,'nbformat_minor':5,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},'language_info':{'name':'python'},'perfectjet':{'version':'0.13.0','execution_status':'unexecuted_notebook_runner_evidence_separate','source_sha256':hashes}},'cells':cells}
     path=ROOT/'notebooks/PerfectJet_Motor_Transfer.ipynb';path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(nb,indent=1)+'\n')
     for row in cells:

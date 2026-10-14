@@ -74,6 +74,27 @@ def official_fixture(root):
 
 
 class OfficialAdapterTests(unittest.TestCase):
+    def test_actual_source_naive_clocks_preserve_relative_times_and_dates(self):
+        with tempfile.TemporaryDirectory() as root:
+            a, _, c, _ = official_fixture(root)
+            path=Path(root)/"combine_tracking.csv"
+            path.write_text(path.read_text().replace("Z", ""))
+            ds=load_official_directory(root,minimum_plays=2,minimum_frames=2)
+        self.assertEqual(set(ds.athletes), {a,c})
+        self.assertEqual([f.t for f in ds.attempts[0].frames], [0,.1,.2])
+        self.assertEqual(ds.attempts[0].recorded_on,"2023-03-02")
+        self.assertIn("no timezone inferred",ds.manifest["official_adapter"]["timestamp_basis"])
+
+    def test_mixed_naive_and_aware_source_clocks_are_rejected(self):
+        with tempfile.TemporaryDirectory() as root:
+            a, _, _, _=official_fixture(root)
+            path=Path(root)/"combine_tracking.csv"
+            text=path.read_text();text=text.replace("2023-03-02T15:00:00.000Z","2023-03-02T15:00:00.000",1)
+            path.write_text(text)
+            ds=load_official_directory(root,minimum_plays=2,minimum_frames=2)
+        self.assertNotIn(a,ds.athletes)
+        self.assertEqual(ds.manifest["official_adapter"]["audit"]["source_rejections"]["mixed_timestamp_timezones"],1)
+
     def test_exact_ids_do_not_round_and_reject_nonintegral(self):
         self.assertEqual(exact_id("9007199254740993.0"), "9007199254740993")
         self.assertEqual(exact_id("1e3"), "1000")

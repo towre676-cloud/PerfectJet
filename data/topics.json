@@ -3157,6 +3157,111 @@
       "topic": "Synthetic mechanism evidence versus NFL performance",
       "chapter": "docs/chapters/27_nfl_math_bridges.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T452",
+      "domain": "Real NFL evidence",
+      "topic": "Recovered official source hash equality",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T453",
+      "domain": "Real NFL evidence",
+      "topic": "Timezone-naive relative tracking clocks",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T454",
+      "domain": "Real NFL evidence",
+      "topic": "Mixed-clock rejection",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T455",
+      "domain": "Real NFL evidence",
+      "topic": "Observed-launch support bottleneck",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T456",
+      "domain": "Real NFL evidence",
+      "topic": "Real temporal physical bridge evaluation",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T457",
+      "domain": "Real NFL evidence",
+      "topic": "Conventional-only two-stage control",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T458",
+      "domain": "Real NFL evidence",
+      "topic": "NGS chronology sensitivity",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T459",
+      "domain": "Real NFL evidence",
+      "topic": "Private player outputs and public aggregate receipts",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T460",
+      "domain": "Real NFL evidence",
+      "topic": "Full-pipeline refit uncertainty",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T461",
+      "domain": "Real NFL evidence",
+      "topic": "Official-source identity crosswalk",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T462",
+      "domain": "Real NFL evidence",
+      "topic": "Public Combine temporal rookie outcomes",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T463",
+      "domain": "Real NFL evidence",
+      "topic": "Position-interaction conventional controls",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T464",
+      "domain": "Real NFL evidence",
+      "topic": "Independent real NFL tracking replication",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T465",
+      "domain": "Real NFL evidence",
+      "topic": "Strong history forecasting controls",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T466",
+      "domain": "Real NFL evidence",
+      "topic": "No scouting advantage from mechanism fit",
+      "chapter": "docs/chapters/28_real_nfl_evidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

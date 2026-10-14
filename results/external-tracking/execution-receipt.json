@@ -1,0 +1,13 @@
+{
+  "source_code_sha256": {
+    "src/perfectjet/applications/nfl_scouting/external_tracking.py": "8319e8e6032327a1d57f57201036ba57a8e410f873796d466dd6e6b1488ce683",
+    "scripts/run_external_tracking.py": "0c013ae833a4fe4ecc7483ed18ab8c25bf0f357a855c89c92bede8dc48efbb31",
+    "scripts/ingest_public_tracking.py": "a453762bc09342ddc3bfcf1ee53845e052a0d7f637fb70f4b9c5ab2de2907ced",
+    "tests/test_nfl_external_tracking.py": "cebda79d1a4a43c0f462a250971c71d2c70d5c27be536afc868036ef5b0568fc"
+  },
+  "test_command": "PYTHONPATH=src OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m pytest tests/test_nfl_external_tracking.py tests/test_nfl_predictive_state.py -q",
+  "raw_input_count": 127,
+  "raw_tracking_game_count": 122,
+  "reproduction_inputs_are_real": true,
+  "cache_checkpoint_sha256": "03d1b8c1b804e001351c1725cc700cabc616bbaf3df6147329586b6d0c70686e"
+}

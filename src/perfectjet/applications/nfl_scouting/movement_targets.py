@@ -341,6 +341,8 @@ def load_movement_targets(root, dataset, *, athlete_ids=None, season_before=None
                     continue
                 try:
                     stamp = _timestamp(row[ix["time"]])
+                    if (stamp.tzinfo is None) != (snaps[key].tzinfo is None):
+                        raise ValueError("mixed_timestamp_timezones")
                 except ValueError:
                     malformed.add(key)
                     continue

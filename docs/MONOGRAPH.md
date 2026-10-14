@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.12.0 · 14 October 2026
+Version 0.13.0 · 15 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -33,6 +33,7 @@ A master synthesis of the two archival passes and both enhancement programs. The
 - [25_historical_results_and_extended_leads](chapters/25_historical_results_and_extended_leads.md)
 - [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md)
 - [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md)
+- [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md)
 
 ---
 
@@ -900,6 +901,63 @@ The strongest completed result is a connected, falsifiable computation: physical
 
 ---
 
+# Real NFL data: recovery, execution, and the information bottleneck
+
+PerfectJet 0.13.0 executes the previously implemented mathematical bridges on the original official nine-file data, adds a broad public Combine benchmark and independently checks the movement machinery on 122 NFL games. The result is a usable, measured research system and an important negative finding: these experiments do not establish an incremental scouting advantage. The old atlas, both archival passes, both enhancement programs, exact kernels and recovered canonical NFL research remain preserved. This chapter supersedes the earlier releases' pending-input status; their historical execution statements describe those earlier releases.
+
+## The original ingestion was recovered
+
+The earlier Develop NFL Research Entry session had already acquired all nine official files and preserved the private input archives. Both restricted-input ZIP parts and the research checkpoint archive were recovered. Every original CSV matched the SHA256 and byte length recorded by that session: 2,306,804,135 bytes in total. No replacement Kaggle ingestion or new sign-in was needed. The current work uses those same bytes. Individual restricted player outputs and raw competition data remain private; public results below contain aggregates.
+
+Actual input exposed a clock assumption missed by the small fixtures: the official source timestamps omit timezone offsets. Treating all such values as invalid discarded all source attempts. The corrected reader uses their relative clock and source calendar date without claiming a timezone. Explicit-offset clocks normalize to UTC; mixed naive/aware clocks within an attempt are rejected. A regression test covers each case. Independently, the external 2021 data quantize timestamps to whole seconds, so their 10 Hz frame IDs are used only after a source-specific consistency check. There is no universal guessed timestamp repair.
+
+Preparation scanned all three NFL seasons and produced 118 tracked prospects, 745 source attempts and 14,665 eligible rookie REG plays. Of these players, 74 have eligible NFL outcomes: 23 in 2023, 22 in 2024 and 29 in 2025. The bounded movement extractor retained 454,325 frames and 13,692 usable movement records, including 8,674 usable records with observed post-snap onset. The effective scouting sample remains players, not these thousands of plays.
+
+The source launch gate exposed a serious coverage limit. The causal-prefix extractor accepts 309 attempts across the declared five drill families, but just 18 forty-yard attempts. Only 10 of the 74 eligible players have an accepted forty-yard launch prefix. The older acceleration functional uses stricter causal derivative and straightness requirements and accepts zero attempts under its declared protocol. Its resulting zero correction is a coverage failure, not evidence that true player acceleration has no value. Neither detector is loosened after outcome inspection to manufacture a larger primary population.
+
+## What the recovered Combine-to-NFL bridge actually did
+
+The primary temporal protocol trains on 2023 and evaluates 2024, then trains on 2023–2024 and evaluates 2025. Every inner and stacking fold rebuilds movement context, finite-horizon state, source transforms, conventional transforms and tuning from training players. The decoder trains on out-of-player forecasts, never true NFL movement supplied as a prospect predictor. Shared coverage/support flags and all fifteen conventional measurements remain available to the comparator. The 2025 cohort was previously inspected; all results are development evidence.
+
+Across 51 held players, the forty-source bridge reduces MSE by 0.764% against the training-selected comparator. Its fixed-prediction 90% interval is −0.0096% to +1.488%; it includes zero and excludes uncertainty from rebuilding the models. More tellingly, a conventional-only two-stage movement bridge performs better than the tracking bridge: tracking increases error by 0.323% against that control. This is evidence against crediting the small direct-comparator gain to additional tracking information.
+
+Removing NGS traits in the chronology sensitivity leaves a 0.0247% MSE improvement, with an interval spanning zero. The declared secondary bridge pooling the five front drill families loses 0.0593%, also with an interval spanning zero. In every bridge variant, the fixed-budget top-quarter shortlist is unchanged from its comparator. More elaborate representation did not change the actionable scouting choice. The original burst protocol accepts no source observations and produces the same baseline and movement predictions, with zero gain.
+
+Full original-player refits rebuild the entire primary procedure. This run completed 15 of 16 requested draws, with 1 failures. The exploratory 90% full-refit percentile interval is -6.489% to +10.946%; these few successful draws cannot support precise tail inference.  Their finite-draw receipt is `results/real-nfl/bridge_refits.json`; it reports successful and failed draws, not a silent reduced denominator. It remains a small development sensitivity analysis, not a calibrated prospective confidence guarantee. Fixed-prediction and full-refit intervals must remain distinct. The complete private predictions and checkpoint are retained separately from the public aggregate receipts.
+
+## Broad public Combine-to-rookie outcomes
+
+The public source pass ingested 88 files, 80,173,908 bytes and 1,084,747 CSV rows. It includes Combine traits, draft metadata, stable player crosswalks, season and weekly outcomes, snaps, pressure summaries, eleven NGS assets and the NFL's explicitly published 2017 tracking sample. Incomplete 2026 outcomes are excluded. Ambiguous player identities and ambiguous pressure totals are rejected, unknown outcomes remain missing, and fuzzy-name matching is absent. These choices prevent apparent performance from being built on silent wrong-player joins or fabricated zeros.
+
+The benchmark executed 125 temporal scope/target/class folds and 5,310 model fits, yielding 12,342 held target/player predictions across reused endpoints and overlapping scopes. Those 12,342 predictions are not 12,342 independent people. The primary population is Combine-listed defensive line; front-seven and all-position screens are exploratory. A deterministic mechanical transform of conventional measurements adds model flexibility, not new measured information: if $Z=\phi(B)$, then $\sigma(B,Z)=\sigma(B)$.
+
+The stronger conventional control includes numeric-by-Combine-position quadratic interactions and inner-selected penalties. Primary defensive-line MSE gains are −2.48% for rookie defensive snaps, −1.39% for sacks, −0.93% for QB hits, +0.56% for pressures and −0.83% for pressure rate; every fixed-prediction interval crosses zero. An initially promising front-seven pressure result shrinks to +2.09%, with 95% interval −6.45% to +9.64%, after improving the conventional role interactions. The 2025 class loses 12.92%. This control improvement is retained rather than publishing the earlier weaker-comparator headline. The detailed source audit, fold selections, metrics and attribution are in `research/public_nfl/REPORT.md` and its manifests.
+
+## Independent movement evidence from 122 games
+
+The regional NFL research source supplies 8,314,178 real tracking observations from 122 games in 2021, along with games, players, plays and PFF role labels. Downloaded raw assets total 865,324,685 bytes. Source URLs, hashes and the pinned upstream commit are recorded. Raw regional tracking stays outside the public repository; the source downloader and aggregate evidence are included. Its independence is useful for checking movement construction but does not supply paired pre-draft Combine histories.
+
+There are 34,780 valid rusher geometry records, 32,936 usable crossings and 21,406 observed post-snap onsets. On the same 254 players supported in both disjoint game halves, half-second forward displacement has Spearman repeatability 0.80186, compared with 0.72209 for path length, 0.39661 for onset delay and 0.72724 for travel time. These are descriptive player-mean stability estimates under observed situations. Role, team and geometry can contribute to stable means; repeatability is not innate ability, causality or Combine transfer.
+
+On 64 unseen players, the four-state five-frame history model forecasts the next 0.3 seconds of physical velocity with 0.28023 yd/s RMSE. The same test gives 0.49975 for instantaneous continuation, 0.39058 for last-difference constant acceleration, 0.41181 for a five-frame linear trend and 0.46684 for a quadratic trend. Ordinary full-history ridge achieves 0.28023 as well, within approximately 0.000003 yd/s. The compact state preserves the useful forecast; it does not demonstrate an accuracy advantage over a properly tuned ordinary autoregression.
+
+A separate role-depth hypothesis also receives an honest failure receipt. For later games of known players, adding player-specific depth response slopes gives 0.20459 seconds RMSE, worse than 0.19919 for conventional context. The simple physical arrival picture is a useful interpretation and an experimental hypothesis; these results do not support deploying fitted player-specific slopes. Full details and strong baseline selection are in `docs/nfl/EXTERNAL_TRACKING.md`.
+
+## How the mathematics earns its place
+
+The observability program identifies what the data cannot separate. Under the declared approximation $Y_i(d)=\tau_i+\beta_i\sqrt d$, one depth measures one linear readout of two hidden quantities. Two distinct depths give determinant $\sqrt{d_2}-\sqrt{d_1}$, nonzero exactly at distinct depths. This algebra identifies a possible measurement design, but the empirical slope failure prevents calling it a validated player model. Predictive-state mathematics earns a compression result against a strong history model. Closure/error decomposition identifies whether source transport or decoding fails. Exact allocation continues to solve its declared finite measurement packages, including correlation and nuisance cancellation, without pretending its assumed Gaussian information is an established scouting prior.
+
+The next empirical move is to increase useful, genuinely additional source information while keeping a strong conventional control. Existing in-motion Combine clips can support a separately declared causal rolling-motion experiment; they cannot be relabeled as observed launches. Any such protocol must freeze its physical target, source window, role demands, support exclusions and comparator budget before the next outcome evaluation. Untouched future players remain necessary. Additional equation families should enter only when they answer a measured bottleneck: missing launch coverage, unstable target construction, failed source-to-NFL transfer or unresolved decision margins. The present experiments do not support a breakthrough claim.
+
+## Reproduction and boundaries
+
+Run `scripts/prepare_official_bridge_data.py` on the recovered nine-file private directory. The preparation receipt binds original source hashes, extractor code hashes and the freshly owned private checkpoint. Run `scripts/run_recovered_official.py` for the primary, `--without-ngs` sensitivity, `--front-drills` secondary and `--kind burst` comparison; use `--refits` for full-pipeline draws. The runner verifies the checkpoint and extractor hashes and exports an explicit aggregate allowlist. It never loads arbitrary downloaded checkpoints or silently substitutes synthetic data.
+
+The public and external runners have their own frozen source manifests and source-specific audits. Public source re-ingestion rejects changed bytes rather than silently using a different snapshot. Tests distinguish analytic identities, fixture behavior, source parsing, causal windows, player isolation, strong comparator equality and privacy of restricted individual outputs. Unit-test counts and real-data execution counts are separate. This release preserves a reproducible research result: useful NFL movement structure, a measured Combine coverage problem, and no established incremental scouting edge.
+
+
+---
+
 # Complete equation registry
 
 Status describes the evidence available in this repository. Exact checking is not Lean verification.
@@ -1280,3 +1338,13 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E372 | observability | uniform loading rationalization bound | abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2 | exact_checked | 0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate. |
 | PJ-E373 | counting | rationalized package regret | raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon | exact_checked | Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses. |
 | PJ-E374 | observability | target-information non-submodularity witness | VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751 | exact_checked | The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows. |
+| PJ-E375 | empirical | equal-player temporal relative gain | G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2] | definition | Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage. |
+| PJ-E376 | empirical | same-input deterministic enhancement | Z=phi(B) => sigma(B,Z)=sigma(B) | derived | Deterministic conventional-trait transforms add function class flexibility, not new measured information. |
+| PJ-E377 | empirical | sample-clock relative displacement | Delta t=t_j-t_i=(k_j-k_i)/10 | conditional | 10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC. |
+| PJ-E378 | observability | observed launch eligibility | C_i=1{observed low-speed prefix and complete post-onset window} | definition | Coverage is measured before fitting; missing onset is never relabeled as a launch. |
+| PJ-E379 | empirical | conventional two-stage control | qhat_B=f_T(B), yhat_B=g_T(B,qhat_B) | definition | OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking. |
+| PJ-E380 | empirical | conditional bridge increment | Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX)) | definition | Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value. |
+| PJ-E381 | empirical | game-half movement stability | rho_S=corr(rank(m_i,early),rank(m_i,late)) | definition | Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result. |
+| PJ-E382 | empirical | original-player full refit | G_star=G(Refit(Resample_classes(original players))) | definition | Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only. |
+| PJ-E383 | observability | depth response observability | det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1) | derived | Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical. |
+| PJ-E384 | dynamics | arrival ranking switch locus | sqrt(d_star)=-Delta_tau/Delta_beta | conditional | Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge. |

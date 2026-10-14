@@ -384,6 +384,19 @@ counting|rationalized package regret|raw_objective(S_raw_opt)-raw_objective(S_ra
 observability|target-information non-submodularity witness|VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751|exact_checked|The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows.
 '''
 
+EQUATIONS += r"""
+empirical|equal-player temporal relative gain|G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2]|definition|Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage.
+empirical|same-input deterministic enhancement|Z=phi(B) => sigma(B,Z)=sigma(B)|derived|Deterministic conventional-trait transforms add function class flexibility, not new measured information.
+empirical|sample-clock relative displacement|Delta t=t_j-t_i=(k_j-k_i)/10|conditional|10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC.
+observability|observed launch eligibility|C_i=1{observed low-speed prefix and complete post-onset window}|definition|Coverage is measured before fitting; missing onset is never relabeled as a launch.
+empirical|conventional two-stage control|qhat_B=f_T(B), yhat_B=g_T(B,qhat_B)|definition|OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking.
+empirical|conditional bridge increment|Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX))|definition|Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value.
+empirical|game-half movement stability|rho_S=corr(rank(m_i,early),rank(m_i,late))|definition|Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result.
+empirical|original-player full refit|G_star=G(Refit(Resample_classes(original players)))|definition|Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only.
+observability|depth response observability|det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1)|derived|Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical.
+dynamics|arrival ranking switch locus|sqrt(d_star)=-Delta_tau/Delta_beta|conditional|Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge.
+"""
+
 def build():
     equations=[]
     for line in EQUATIONS.strip().splitlines():
@@ -402,7 +415,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.12.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.13.0 · 15 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

@@ -1,0 +1,290 @@
+{
+  "protocol": {
+    "schema": "perfectjet/nfl-math-bridge/1",
+    "config": {
+      "source_drills": [
+        "FORTY_YARD_DASH"
+      ],
+      "state_history_steps": [
+        1,
+        3,
+        5
+      ],
+      "state_ranks": [
+        1,
+        2
+      ],
+      "state_penalties": [
+        0.01,
+        0.1
+      ],
+      "state_horizon_steps": 3,
+      "state_inner_folds": 3,
+      "maximum_nfl_sequences_per_athlete": 6,
+      "minimum_training_athletes": 6,
+      "minimum_movement_plays": 5,
+      "minimum_movement_athletes": 4,
+      "stack_folds": 3,
+      "movement_penalty": 100.0,
+      "decoder_penalties": [
+        10.0,
+        100.0,
+        1000.0
+      ],
+      "outer_inner_folds": 3
+    },
+    "primary": "context-adjusted supplied rookie snap-to-LOS get-off",
+    "movement": [
+      "forward_displacement_05",
+      "motion_to_los"
+    ],
+    "2025": "previously inspected development cohort",
+    "state": "NFL-trained finite-horizon causal velocity continuation; Combine-domain transfer is an empirical hypothesis",
+    "decoder_training": "out-of-original-player first-stage physical movement predictions",
+    "baseline": "all fifteen available conventional measurements, raw drill counts, identical source coverage/support flags"
+  },
+  "protocol_sha256": "1d45b601a6f486c1989957dbc954804217fe1981608c9d21de8d324b2eebd8bb",
+  "synthetic": false,
+  "status": "real_data_development_experiment",
+  "include_ngs": true,
+  "summary": {
+    "athletes": 51,
+    "mse_baseline": 0.0025447081510261106,
+    "mse_movement": 0.002525267926215042,
+    "gain": 0.007639471270302511,
+    "calibration_mean_error": {
+      "baseline": -0.01957349505931473,
+      "movement": -0.019154046344559496
+    },
+    "decisions": [
+      {
+        "class": 2024,
+        "budget": 6,
+        "hits": {
+          "baseline": 0,
+          "movement": 0
+        },
+        "promoted": 0,
+        "demoted": 0
+      },
+      {
+        "class": 2025,
+        "budget": 8,
+        "hits": {
+          "baseline": 2,
+          "movement": 2
+        },
+        "promoted": 0,
+        "demoted": 0
+      }
+    ],
+    "fixed_prediction_interval_90": [
+      -9.638223549849333e-05,
+      0.014879318235716522
+    ],
+    "interval_scope": "fixed fitted predictions; does not include selection/training uncertainty"
+  },
+  "movement_vs_direct_baseline_summary": {
+    "athletes": 51,
+    "mse_baseline": 0.0025447081510261106,
+    "mse_movement": 0.002525267926215042,
+    "gain": 0.007639471270302511,
+    "calibration_mean_error": {
+      "baseline": -0.01957349505931473,
+      "movement": -0.019154046344559496
+    },
+    "decisions": [
+      {
+        "class": 2024,
+        "budget": 6,
+        "hits": {
+          "baseline": 0,
+          "movement": 0
+        },
+        "promoted": 0,
+        "demoted": 0
+      },
+      {
+        "class": 2025,
+        "budget": 8,
+        "hits": {
+          "baseline": 2,
+          "movement": 2
+        },
+        "promoted": 0,
+        "demoted": 0
+      }
+    ],
+    "fixed_prediction_interval_90": [
+      -9.638223549849333e-05,
+      0.014879318235716522
+    ],
+    "interval_scope": "fixed fitted predictions; does not include selection/training uncertainty"
+  },
+  "movement_vs_conventional_bridge_summary": {
+    "athletes": 51,
+    "mse_baseline": 0.002517142426128357,
+    "mse_movement": 0.002525267926215042,
+    "gain": -0.0032280652863903025,
+    "calibration_mean_error": {
+      "baseline": -0.018996230023873375,
+      "movement": -0.019154046344559496
+    },
+    "decisions": [
+      {
+        "class": 2024,
+        "budget": 6,
+        "hits": {
+          "baseline": 0,
+          "movement": 0
+        },
+        "promoted": 0,
+        "demoted": 0
+      },
+      {
+        "class": 2025,
+        "budget": 8,
+        "hits": {
+          "baseline": 2,
+          "movement": 2
+        },
+        "promoted": 0,
+        "demoted": 0
+      }
+    ],
+    "fixed_prediction_interval_90": [
+      -0.007986090222695919,
+      0.0008778506885511348
+    ],
+    "interval_scope": "fixed fitted predictions; does not include selection/training uncertainty"
+  },
+  "conventional_bridge_summary": {
+    "athletes": 51,
+    "mse_baseline": 0.0025447081510261106,
+    "mse_movement": 0.002517142426128357,
+    "gain": 0.010832568318939861,
+    "calibration_mean_error": {
+      "baseline": -0.01957349505931473,
+      "movement": -0.018996230023873375
+    },
+    "decisions": [
+      {
+        "class": 2024,
+        "budget": 6,
+        "hits": {
+          "baseline": 0,
+          "movement": 0
+        },
+        "promoted": 0,
+        "demoted": 0
+      },
+      {
+        "class": 2025,
+        "budget": 8,
+        "hits": {
+          "baseline": 2,
+          "movement": 2
+        },
+        "promoted": 0,
+        "demoted": 0
+      }
+    ],
+    "fixed_prediction_interval_90": [
+      1.395331454158726e-05,
+      0.021695944730292675
+    ],
+    "interval_scope": "fixed fitted predictions; does not include selection/training uncertainty"
+  },
+  "conclusion": "Scouting evidence must come from held-out primary outcomes; movement continuation and algebraic identities alone do not establish advantage.",
+  "elapsed_seconds": 39.465435905996856,
+  "checkpoint_sha256": "2ade4c164b540b124583ff630e7ace485b8147aefb6136471e5eec210f881957",
+  "aggregate_only_public_receipt": true,
+  "folds": [
+    {
+      "year": 2024,
+      "chosen_penalties": {
+        "baseline": 100.0,
+        "movement": 100.0,
+        "conventional_bridge": 100.0
+      },
+      "inner_scores": {
+        "baseline": [
+          0.005033073367804652,
+          0.0029713032928660537,
+          0.0033481806108858147
+        ],
+        "movement": [
+          0.005219317875412494,
+          0.0029671465301045288,
+          0.0033379277373915845
+        ],
+        "conventional_bridge": [
+          0.005116748570613893,
+          0.002977999142689605,
+          0.003340822979470126
+        ]
+      },
+      "strong_baseline_family": "baseline",
+      "strong_baseline_selection_scope": "selected only by inner training-player validation",
+      "evaluated_athletes": 22,
+      "mse_by_predictor": {
+        "baseline": 0.0025164297276619955,
+        "movement": 0.00250211215440669,
+        "conventional_bridge": 0.0024975007043230735,
+        "strong_baseline": 0.0025164297276619955
+      },
+      "training_movement_state": {
+        "nfl_sequences": 138,
+        "state_history_steps": 5,
+        "state_count": 2,
+        "state_cv_mse": 0.07048616868100774,
+        "instantaneous_cv_mse": 0.11751154279359864,
+        "state_horizon_seconds": 0.30000000000000004,
+        "state_training_maximum_season": 2023
+      }
+    },
+    {
+      "year": 2025,
+      "chosen_penalties": {
+        "baseline": 1000.0,
+        "movement": 1000.0,
+        "conventional_bridge": 1000.0
+      },
+      "inner_scores": {
+        "baseline": [
+          0.004737140673613658,
+          0.002820562203895338,
+          0.0027494008965526767
+        ],
+        "movement": [
+          0.005660367473490487,
+          0.0029991577271685863,
+          0.0027587968017959742
+        ],
+        "conventional_bridge": [
+          0.005471695495031605,
+          0.002984946097567791,
+          0.0027527561326893936
+        ]
+      },
+      "strong_baseline_family": "baseline",
+      "strong_baseline_selection_scope": "selected only by inner training-player validation",
+      "evaluated_athletes": 29,
+      "mse_by_predictor": {
+        "baseline": 0.002566160748060957,
+        "movement": 0.002542834373793792,
+        "conventional_bridge": 0.002532043042670297,
+        "strong_baseline": 0.002566160748060957
+      },
+      "training_movement_state": {
+        "nfl_sequences": 270,
+        "state_history_steps": 5,
+        "state_count": 2,
+        "state_cv_mse": 0.0583265251751833,
+        "instantaneous_cv_mse": 0.10472682832909,
+        "state_horizon_seconds": 0.30000000000000004,
+        "state_training_maximum_season": 2024
+      }
+    }
+  ]
+}

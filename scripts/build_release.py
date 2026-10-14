@@ -14,7 +14,8 @@ def eligible(path):
                                   'players.csv','games.csv','player_career_successes.csv',
                                   'game_tracking_2023.csv','game_tracking_2024.csv','game_tracking_2025.csv',
                                   'kaggle.json'}
-            and not (rel.parts[0]=='releases' and path.suffix in {'.zip','.sha256'})
+            and not (rel.parts[0]=='releases' and
+                     (path.suffix in {'.zip','.sha256'} or path.name.startswith('PerfectJet-v')))
             and rel.as_posix()!='MANIFEST.json')
 
 def main():
@@ -33,6 +34,18 @@ def main():
             archive.writestr(info,p.read_bytes())
     digest=hashlib.sha256(dest.read_bytes()).hexdigest()
     (release/(NAME+'.sha256')).write_text(digest+'  '+NAME+'\n')
+    if dest.stat().st_size > 40 * 1024 * 1024:
+        parts=[]
+        with dest.open('rb') as source:
+            index=1
+            while block := source.read(8 * 1024 * 1024):
+                name=NAME+f'.part{index:02d}'
+                (release/name).write_bytes(block)
+                parts.append({'name':name,'bytes':len(block),'sha256':hashlib.sha256(block).hexdigest()})
+                index+=1
+        assembly={'schema':'perfectjet/release-parts/1','output':NAME,
+                  'bytes':dest.stat().st_size,'sha256':digest,'parts':parts}
+        (release/f'PerfectJet-v{VERSION}.parts.json').write_text(json.dumps(assembly,indent=2)+'\n')
     with zipfile.ZipFile(dest) as archive:
         assert archive.testzip() is None
         for entry in manifest['files']:

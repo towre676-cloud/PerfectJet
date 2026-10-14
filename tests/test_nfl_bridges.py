@@ -1,7 +1,7 @@
 """Artificial cross-domain fixtures; these tests are not NFL performance data."""
 import copy
 import importlib.util
-from dataclasses import replace
+from dataclasses import FrozenInstanceError, replace
 import unittest
 from unittest.mock import patch
 
@@ -192,11 +192,11 @@ class BridgeIsolationTests(unittest.TestCase):
 
     def test_nested_selection_rebuilds_whole_player_stages_without_test_data(self):
         calls = []
-        real = bridges.fit_split
+        real = bridges._prepare_split
         def observed(ds, records, tr, te, *args, **kwargs):
             calls.append((set(tr),set(te)))
             return real(ds, records, tr, te, *args, **kwargs)
-        with patch.object(bridges, "fit_split", side_effect=observed):
+        with patch.object(bridges, "_prepare_split", side_effect=observed):
             result = bridges._nested_fold(self.ds, self.records, self.tr, self.te,
                                            2024, True, 71, self.config)
         self.assertEqual(len(calls), 3)
@@ -206,6 +206,77 @@ class BridgeIsolationTests(unittest.TestCase):
             self.assertEqual(train | held, set(self.tr))
         self.assertEqual(result["chosen_penalties"],
                          {"baseline":100.0,"movement":100.0,"conventional_bridge":100.0})
+
+    def test_three_decoder_penalties_share_one_preparation_per_actual_split(self):
+        config = replace(self.config, decoder_penalties=(10.0,100.0,1000.0))
+        with patch.object(bridges, "_prepare_split", wraps=bridges._prepare_split) as prepare:
+            with patch.object(bridges, "_fit_stage", wraps=bridges._fit_stage) as stage:
+                result = bridges._nested_fold(self.ds, self.records, self.tr, self.te,
+                                               2024, True, 71, config)
+        # Two independent inner original-player splits and one outer fit.
+        self.assertEqual(prepare.call_count, 3)
+        self.assertEqual(stage.call_count, 3*(config.stack_folds+1))
+        self.assertTrue(all(len(scores) == 3 for scores in result["inner_scores"].values()))
+
+    def test_reused_preparations_match_independent_full_pipeline_penalty_fits(self):
+        config = replace(self.config, decoder_penalties=(10.0,100.0,1000.0))
+        optimized = bridges._nested_fold(self.ds, self.records, self.tr, self.te,
+                                          2024, True, 71, config)
+        assignment = bridges.BT._groups(self.ds, self.tr, config.outer_inner_folds, 71+501)
+        scores = {family: [] for family in ("baseline","movement","conventional_bridge")}
+        for alpha in config.decoder_penalties:
+            fits = []
+            for fold in sorted(set(assignment.values())):
+                train = [a for a in self.tr if assignment[a] != fold]
+                held = [a for a in self.tr if assignment[a] == fold]
+                fits.append(bridges.fit_split(self.ds, self.records, train, held,
+                    2024, alpha, True, 71+601+fold, config))
+            for family in scores:
+                scores[family].append(bridges.BT._score(fits, family))
+        chosen = {family: config.decoder_penalties[int(np.argmin(value))]
+                  for family,value in scores.items()}
+        self.assertEqual(optimized["chosen_penalties"], chosen)
+        self.assertEqual(optimized["inner_scores"], scores)
+        # Rebuild every selected final model independently from raw fixture data.
+        for family,alpha in chosen.items():
+            independently_fitted = bridges.fit_split(self.ds, self.records,
+                self.tr, self.te, 2024, alpha, True, 71+801, config)
+            np.testing.assert_allclose(optimized[family], independently_fitted[family],
+                                       rtol=0, atol=1e-12)
+
+    def test_preparation_does_not_retain_mutable_dataset_or_result_storage(self):
+        ds, records = copy.deepcopy(self.ds), copy.deepcopy(self.records)
+        prepared = bridges._prepare_split(ds, records, self.tr, self.te,
+                                           2024, True, 71, self.config)
+        with self.assertRaises(FrozenInstanceError):
+            prepared.seed = 0
+        original_frame = prepared.base_train.frame()
+        changed_frame = prepared.base_train.frame()
+        changed_frame.iloc[:,0] = 9999
+        np.testing.assert_array_equal(original_frame.iloc[:,0], prepared.base_train.frame().iloc[:,0])
+        first = bridges._fit_decoder(prepared, 100)
+        first["stacking_audit"][0]["training_ids"].clear()
+        first["frozen_jacobian"]["source_features"].clear()
+        # After preparation, even mutating every input cannot change it.
+        ds.plays.clear(); ds.attempts.clear(); ds.athletes.clear(); records.clear()
+        second = bridges._fit_decoder(prepared, 100)
+        for key in ("baseline","movement","conventional_bridge","movement_predictions","loading"):
+            np.testing.assert_allclose(second[key], self.reference[key], rtol=0, atol=1e-12)
+        self.assertTrue(second["stacking_audit"][0]["training_ids"])
+        self.assertTrue(second["frozen_jacobian"]["source_features"])
+
+    def test_changed_training_content_with_identical_ids_forces_fresh_preparation(self):
+        ds = copy.deepcopy(self.ds)
+        selected = self.tr[0]
+        ds.plays = [replace(p, outcome=p.outcome+2) if p.athlete_id == selected else p
+                    for p in ds.plays]
+        with patch.object(bridges, "_prepare_split", wraps=bridges._prepare_split) as prepare:
+            first = bridges.fit_split(self.ds, self.records, self.tr, self.te,
+                                       2024, 100, True, 71, self.config)
+            changed = bridges.fit_split(ds, self.records, self.tr, self.te,
+                                         2024, 100, True, 71, self.config)
+        self.assertEqual(prepare.call_count, 2)
+        self.assertFalse(np.allclose(first["movement"], changed["movement"], rtol=0, atol=1e-8))
 
 
 if __name__ == "__main__":

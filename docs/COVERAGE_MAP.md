@@ -455,3 +455,18 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T449 | NFL math bridges | Robust multi-loading allocation | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
 | PJ-T450 | NFL math bridges | Contender-difference sensing | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
 | PJ-T451 | NFL math bridges | Synthetic mechanism evidence versus NFL performance | [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md) |
+| PJ-T452 | Real NFL evidence | Recovered official source hash equality | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T453 | Real NFL evidence | Timezone-naive relative tracking clocks | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T454 | Real NFL evidence | Mixed-clock rejection | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T455 | Real NFL evidence | Observed-launch support bottleneck | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T456 | Real NFL evidence | Real temporal physical bridge evaluation | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T457 | Real NFL evidence | Conventional-only two-stage control | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T458 | Real NFL evidence | NGS chronology sensitivity | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T459 | Real NFL evidence | Private player outputs and public aggregate receipts | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T460 | Real NFL evidence | Full-pipeline refit uncertainty | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T461 | Real NFL evidence | Official-source identity crosswalk | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T462 | Real NFL evidence | Public Combine temporal rookie outcomes | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T463 | Real NFL evidence | Position-interaction conventional controls | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T464 | Real NFL evidence | Independent real NFL tracking replication | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T465 | Real NFL evidence | Strong history forecasting controls | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T466 | Real NFL evidence | No scouting advantage from mechanism fit | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |

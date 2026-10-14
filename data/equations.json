@@ -3366,6 +3366,96 @@
       "status": "exact_checked",
       "assumptions": "The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E375",
+      "domain": "empirical",
+      "title": "equal-player temporal relative gain",
+      "equation": "G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2]",
+      "status": "definition",
+      "assumptions": "Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E376",
+      "domain": "empirical",
+      "title": "same-input deterministic enhancement",
+      "equation": "Z=phi(B) => sigma(B,Z)=sigma(B)",
+      "status": "derived",
+      "assumptions": "Deterministic conventional-trait transforms add function class flexibility, not new measured information.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E377",
+      "domain": "empirical",
+      "title": "sample-clock relative displacement",
+      "equation": "Delta t=t_j-t_i=(k_j-k_i)/10",
+      "status": "conditional",
+      "assumptions": "10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E378",
+      "domain": "observability",
+      "title": "observed launch eligibility",
+      "equation": "C_i=1{observed low-speed prefix and complete post-onset window}",
+      "status": "definition",
+      "assumptions": "Coverage is measured before fitting; missing onset is never relabeled as a launch.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E379",
+      "domain": "empirical",
+      "title": "conventional two-stage control",
+      "equation": "qhat_B=f_T(B), yhat_B=g_T(B,qhat_B)",
+      "status": "definition",
+      "assumptions": "OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E380",
+      "domain": "empirical",
+      "title": "conditional bridge increment",
+      "equation": "Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX))",
+      "status": "definition",
+      "assumptions": "Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E381",
+      "domain": "empirical",
+      "title": "game-half movement stability",
+      "equation": "rho_S=corr(rank(m_i,early),rank(m_i,late))",
+      "status": "definition",
+      "assumptions": "Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E382",
+      "domain": "empirical",
+      "title": "original-player full refit",
+      "equation": "G_star=G(Refit(Resample_classes(original players)))",
+      "status": "definition",
+      "assumptions": "Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E383",
+      "domain": "observability",
+      "title": "depth response observability",
+      "equation": "det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1)",
+      "status": "derived",
+      "assumptions": "Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E384",
+      "domain": "dynamics",
+      "title": "arrival ranking switch locus",
+      "equation": "sqrt(d_star)=-Delta_tau/Delta_beta",
+      "status": "conditional",
+      "assumptions": "Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }

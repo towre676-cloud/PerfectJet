@@ -1,0 +1,41 @@
+{
+  "schema": "perfectjet-public-cohort-run/1",
+  "input_data": "real published observations",
+  "synthetic_data": false,
+  "scopes": {
+    "dl": {
+      "held_scope_target_class_folds": 40,
+      "ridge_model_fits_in_final_run": 1650,
+      "held_target_player_predictions": 1667
+    },
+    "front7": {
+      "held_scope_target_class_folds": 42,
+      "ridge_model_fits_in_final_run": 1791,
+      "held_target_player_predictions": 2677
+    },
+    "all": {
+      "held_scope_target_class_folds": 43,
+      "ridge_model_fits_in_final_run": 1869,
+      "held_target_player_predictions": 7998
+    }
+  },
+  "total_held_scope_target_class_folds": 125,
+  "total_ridge_model_fits_in_final_runs": 5310,
+  "held_target_player_predictions": 12342,
+  "counts_note": "A player appears under multiple targets/scopes; this is not a unique-athlete count. Model fit count follows retained fold/grid execution receipts; earlier discarded weaker-control runs are excluded.",
+  "tests": 10,
+  "test_result": "pass",
+  "public_source_files": 88,
+  "source_bytes": 80173908,
+  "source_csv_rows": 1084747,
+  "source_archive_bytes": 37765052,
+  "source_archive_sha256": "d569053aec57be4794010686fbcec4ee7f3d0a9ac001c3af9498566f3c395cb5",
+  "scope_limit": "No paired Combine tracking in this public cohort; no independently established scouting advantage.",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0",
+    "scipy": "1.17.0"
+  }
+}

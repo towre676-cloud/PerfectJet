@@ -1,0 +1,24 @@
+{
+  "schema": "perfectjet/real-data-validation/1",
+  "version": "0.13.0",
+  "unit_tests": 292,
+  "unit_tests_result": "passed",
+  "unit_test_log_sha256": "18e9a178ba3251d8758808d21177024ffc0d1b5850840cb6b773d93435ca018c",
+  "coverage": {
+    "chapters": 28,
+    "equations": 384,
+    "topics": 466,
+    "source_hashes": "passed"
+  },
+  "exact_math_replay": "results/real-nfl/exact-math-replay.json",
+  "analytic_bridge_replay": "results/real-nfl/analytic-bridge-replay.json",
+  "notebooks": {
+    "embedded_modules_each": 48,
+    "cells_syntax_checked": true,
+    "notebook_execution_claimed": false,
+    "separate_real_data_runner_executed": true
+  },
+  "restricted_raw_rows_in_public_release": false,
+  "individual_restricted_predictions_in_public_release": false,
+  "remote_ci": "pending publication; see GitHub checks"
+}

@@ -356,6 +356,7 @@ Formal frontiers include the full seven-coefficient incidence variety,all-degree
 
 CHAPTERS['26_nfl_motor_transfer'] = (ROOT/'docs/nfl/MOTOR_TRANSFER.md').read_text()
 CHAPTERS['27_nfl_math_bridges'] = (ROOT/'docs/nfl/MATH_BRIDGES.md').read_text()
+CHAPTERS['28_real_nfl_evidence'] = (ROOT/'docs/nfl/REAL_DATA.md').read_text()
 
 def build():
     folder=ROOT/'docs/chapters';folder.mkdir(parents=True,exist_ok=True)
