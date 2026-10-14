@@ -572,3 +572,46 @@ def degree8_relations(seed=1, plane=True, projections=10):
     for name, rel in rels.items():
         out[name] = M.saturated_unit(dets, M.mul_mod(h, restrict(M.to_mod(rel))), nv)
     return out
+
+
+def projected_slice_test(n, relations=None, seed=1, projections=12, prime=None):
+    """Modulo a prime: is {ker L_N != 0} empty on the slice off repeated roots at 0 and 1, and which
+    invariant relations vanish on it?
+
+    Random projections det(R L_N) (R of size (N+1) x rows) vanish wherever L_N drops rank, so their
+    common zero set contains the locus: emptiness of the superset implies emptiness of the locus, and
+    a relation vanishing on the superset vanishes on the locus.
+    """
+    import random
+    from . import modular as M
+    from .parametric import var, add, const, mul, polynomial_matrix as pmat
+    from .invariants import slice_form
+    old = M.P
+    if prime:
+        M.P = prime
+    try:
+        rng = random.Random(seed)
+        m = pmat(lambda p, q, r: correction_matrix(slice_form(p, q, r), n), 3, 1)
+        mm = [[M.to_mod(x) for x in row] for row in m]
+        dets = []
+        for _ in range(projections):
+            rmat = [[rng.randrange(M.P) for _ in range(len(mm))] for _ in range(n+1)]
+            rows = []
+            for i in range(n+1):
+                row = []
+                for j in range(n+1):
+                    acc = {}
+                    for l in range(len(mm)):
+                        for e, c in mm[l][j].items():
+                            acc[e] = (acc.get(e, 0)+rmat[i][l]*c) % M.P
+                    row.append(M._clean(acc))
+                rows.append(row)
+            dets.append(M.det_mod(rows, 3))
+        p, q, r = var(0, 3), var(1, 3), var(2, 3)
+        h = M.to_mod(mul(r, add(add(add(p, q), r), const(1, 3))))
+        out = {"degree": n, "prime": M.P, "empty": M.saturated_unit(dets, h, 3)}
+        for name, rel in (relations or {}).items():
+            out[name] = M.saturated_unit(dets, M.mul_mod(h, M.to_mod(rel)), 3)
+        return out
+    finally:
+        M.P = old
