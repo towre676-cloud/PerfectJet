@@ -470,6 +470,54 @@
    "projections": 6,
    "seconds": 39.8,
    "empty": false
+  },
+  {
+   "degree": 15,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 66.3,
+   "empty": true
+  },
+  {
+   "degree": 16,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 104.8,
+   "empty": true
+  },
+  {
+   "degree": 17,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 160.2,
+   "empty": true
+  },
+  {
+   "degree": 18,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 236.8,
+   "empty": true
+  },
+  {
+   "degree": 19,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 346.4,
+   "empty": true
+  },
+  {
+   "degree": 20,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 553.5,
+   "empty": true
   }
  ],
  "meaning": "Each verdict is about the dense slice xy(x-y)(x^3+px^2y+qxy^2+ry^3) away from repeated roots at 0 and 1. Random projections det(P L_N S) contain the locus {dim ker L_N >= k}; 'empty' with a relation means the relation vanishes on the locus. msolve rows are characteristic-0 computations by an external solver; Singular rows are modulo the stated prime."

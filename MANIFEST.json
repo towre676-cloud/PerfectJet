@@ -19,7 +19,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "e8b50983effd61cbcdd693da2ad0a356a59a99956942437a40d44c28af3a46fc",
+      "sha256": "6e1cae3de53cb3296f7ceec194c69a1acc206eef2e6a7dcfa4d438d20afefb02",
       "size_bytes": 7661
     },
     {
@@ -84,7 +84,7 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "b414280a4520398f3a1caae8e3434ff4f4e768325ca1533901943e5522261176",
+      "sha256": "ea3d9ee583b8a3dde2b5f6a8d79dbcc04d1274b0c603da6b9912c329e3055d30",
       "size_bytes": 146739
     },
     {
@@ -104,18 +104,18 @@
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "241790b3792822b01f7aa7ccddb4a2341279cf3bf2b4f36b04e9d98e768c5812",
+      "sha256": "c256147ab22ba7cff32c3b07db163a690d558c3c0e7f792028c0eb7c1ab95354",
       "size_bytes": 67723
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "32bb9b43baab4aee0a38f052b1f2b4054b0ed8a7fd1476bd9b42619888e935d4",
-      "size_bytes": 229768
+      "sha256": "dc4b62ac5cfcea5d664017887a59e8839f8a409ff668b9a5b2772645789c1bff",
+      "size_bytes": 229710
     },
     {
       "path": "docs/PARTNER_INCIDENCE.md",
-      "sha256": "24cf44f67d531b61ae6d4da33d1c8d40232dd7e600bd156b2ab56cad54d0d7ae",
-      "size_bytes": 12714
+      "sha256": "161e011bb2ea20188684df115c1d54780ab13102f18275d2ba129ef8ec71104f",
+      "size_bytes": 12656
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -124,7 +124,7 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "a2707adf96db952b43116be8e292aa2d7249bc3d32acf0054c0d591211aa80b1",
+      "sha256": "3f720bc5e292977b8a7093c4f831f0cc51364c64666b700210bce619b64b868c",
       "size_bytes": 29115
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "78e5a5bfc3c4ca21de700d9f99258aa7df22355f04037ffe86f48b21d34f5080",
+      "sha256": "2f628390777b394a804db59183245fcb3717f263b8669ebb6575fc58c9f09c7e",
       "size_bytes": 7200
     },
     {
@@ -269,8 +269,8 @@
     },
     {
       "path": "docs/chapters/29_partner_incidence.md",
-      "sha256": "24cf44f67d531b61ae6d4da33d1c8d40232dd7e600bd156b2ab56cad54d0d7ae",
-      "size_bytes": 12714
+      "sha256": "161e011bb2ea20188684df115c1d54780ab13102f18275d2ba129ef8ec71104f",
+      "size_bytes": 12656
     },
     {
       "path": "docs/nfl/DATA_CONTRACT.md",
@@ -2589,8 +2589,8 @@
     },
     {
       "path": "results/partner_incidence_solver_receipts.json",
-      "sha256": "2a75c12c665ced9da45d831f68b5c1b6d31c1abce40539b9ce8468a86d6d7ccc",
-      "size_bytes": 8817
+      "sha256": "2fc6e89f27ee09e24d290574586ac8f4e90ca906a210b921601d8078ea6f0f77",
+      "size_bytes": 9885
     },
     {
       "path": "results/real-nfl/analytic-bridge-replay.json",
@@ -2659,12 +2659,12 @@
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "7e4a320d88a72dd922eac6603ab038540736e3472008c03c48632382920f11fc",
+      "sha256": "a5ad7227091c9d28041c61278f5c38d60c87b37f2ff28c54699874cc81ff8bfc",
       "size_bytes": 75751
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "6c223fedf1db2c32bf9639744a8a2c1c4bff2422eab4ecc3a6fe9cc3a5fd1698",
+      "sha256": "ee4d90bbeff3d048fca2325eeb242795c57943d93308960566500305d982deb3",
       "size_bytes": 61318
     },
     {
@@ -2904,8 +2904,8 @@
     },
     {
       "path": "src/perfectjet/incidence.py",
-      "sha256": "84fb39367d72f063624add956904c08224517813550fe680acdd689a84a5a6db",
-      "size_bytes": 26061
+      "sha256": "9b512b4c3d64e89ed58e373929455da9661021a8abc890363d12698e7186248b",
+      "size_bytes": 26064
     },
     {
       "path": "src/perfectjet/invariants.py",
