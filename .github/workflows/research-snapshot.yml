@@ -1,0 +1,30 @@
+name: Recoverable research source snapshot
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/research-snapshot.yml'
+permissions:
+  contents: read
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve complete committed source and history
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p snapshot
+          git bundle create snapshot/PerfectJet-Source.bundle --all
+          git bundle verify snapshot/PerfectJet-Source.bundle
+          git rev-parse HEAD > snapshot/SOURCE_COMMIT.txt
+          sha256sum snapshot/PerfectJet-Source.bundle > snapshot/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: perfectjet-source-${{ github.sha }}
+          path: snapshot/
+          compression-level: 0
+          retention-days: 14
