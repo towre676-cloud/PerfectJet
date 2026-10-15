@@ -1,0 +1,113 @@
+name: Publish tested stopped-flow research v0.14.0
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/publish-v014.yml'
+      - '.github/updates/v0.14.0.patch.xz.part*'
+permissions:
+  contents: write
+concurrency:
+  group: perfectjet-v014-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONPATH: src
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply the hash-bound public research update without replacing concurrent work
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib,lzma
+          from pathlib import Path
+          root=Path('.github/updates')
+          raw=b''.join((root/f'v0.14.0.patch.xz.part{i:02d}').read_bytes() for i in range(1,6))
+          assert hashlib.sha256(raw).hexdigest()=='739fc3bb3698411d6ddbe5517bc0f90515d95def7371c81f2e9cc747097daf79'
+          patch=lzma.decompress(raw)
+          assert hashlib.sha256(patch).hexdigest()=='43b558fbd70292794a6bdcfb198655f119797cb3ef818a9cf4f5ace747164e42'
+          Path('/tmp/perfectjet-v014.patch').write_bytes(patch)
+          PY
+          if git apply --check --index /tmp/perfectjet-v014.patch; then
+            git apply --index /tmp/perfectjet-v014.patch
+          elif git apply --reverse --check /tmp/perfectjet-v014.patch; then
+            echo 'The exact research patch is already present.'
+          else
+            echo 'Research patch conflicts with main; refusing to overwrite.' >&2
+            exit 1
+          fi
+      - name: Install pinned numerical dependencies and notebook runtime
+        run: python -m pip install -e '.[scouting]' nbformat nbclient ipykernel matplotlib
+      - name: Build the complete retained atlas and validate coverage
+        run: |
+          python scripts/build_chapters.py
+          python scripts/build_corpus.py
+          python scripts/build_topics.py
+          python scripts/check_coverage.py
+      - name: Test the exact mathematics and data separation
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests -v 2>&1 | tee /tmp/PerfectJet-v0.14.0-CI-tests.txt
+      - name: Execute the public source-complete replay notebook and bind evidence
+        run: |
+          python scripts/build_stopped_flow_notebook.py --execute
+          python scripts/build_stopped_flow_evidence.py
+      - name: Build and check the complete public release archive
+        run: python scripts/build_release.py
+      - name: Commit research and generated documentation to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src tests scripts docs data notebooks results README.md pyproject.toml MANIFEST.json
+          if ! git diff --cached --quiet; then
+            git diff --cached --check
+            git commit -m 'v0.14.0: stopped-flow observability, exact jets and real-data controls'
+            git push origin HEAD:main
+          fi
+      - name: Preserve the published source revision and deliverables
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p published
+          git bundle create published/PerfectJet-v0.14.0.bundle HEAD ^cf2e28495fa3c05dc7fc90e8a4c2fd7ba459e33d
+          git bundle verify published/PerfectJet-v0.14.0.bundle
+          git rev-parse HEAD > published/SOURCE_COMMIT.txt
+          cp releases/PerfectJet-v0.14.0.zip releases/PerfectJet-v0.14.0.zip.sha256 published/
+          cp docs/MONOGRAPH.md docs/nfl/STOPPED_FLOW.md notebooks/PerfectJet_Stopped_Flow.ipynb published/
+          cp /tmp/PerfectJet-v0.14.0-CI-tests.txt published/
+          cp results/stopped-flow/release-evidence.json published/
+          (cd published && sha256sum PerfectJet-v0.14.0.bundle MONOGRAPH.md STOPPED_FLOW.md PerfectJet_Stopped_Flow.ipynb > SHA256SUMS)
+      - name: Publish the permanent GitHub release
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v0.14.0 >/dev/null 2>&1; then
+            echo 'v0.14.0 already exists; refusing to overwrite an existing release.' >&2
+            exit 1
+          fi
+          gh release create v0.14.0 releases/PerfectJet-v0.14.0.zip releases/PerfectJet-v0.14.0.zip.sha256 docs/MONOGRAPH.md docs/nfl/STOPPED_FLOW.md notebooks/PerfectJet_Stopped_Flow.ipynb --target "$(git rev-parse HEAD)" --title 'PerfectJet v0.14.0 - Stopped-flow readouts' --notes 'Exact common-origin launch ambiguity, integrated acceleration readouts, noise-aware physical coordinates, full original-player refits and strong conventional controls. Includes the complete retained atlas and an executed source-complete replay notebook. The experiments do not establish an incremental NFL scouting edge. Restricted source data and individual outputs remain private.'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: perfectjet-v014-complete
+          path: published/
+          if-no-files-found: warn
+          compression-level: 0
+          retention-days: 14
