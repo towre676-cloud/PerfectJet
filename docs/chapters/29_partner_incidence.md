@@ -1,6 +1,6 @@
 # Partner incidence over the full sextic space
 
-The partner question asks, for a binary sextic f and a degree N, whether some nonzero form g of degree N satisfies the correction gates (f,g)_3 = (f,g)_5 = 0. The set P_N of sextics whose kernel ker L_N(f) exceeds its generic dimension is closed and GL2-invariant. Earlier releases studied P_N on two-parameter families. Release 0.13.0 studies it in the full seven-dimensional space of sextics, which is the formal frontier this atlas has listed since 0.1.0.
+The partner question asks, for a binary sextic f and a degree N, whether some nonzero form g of degree N satisfies the correction gates (f,g)_3 = (f,g)_5 = 0. The set P_N of sextics whose kernel ker L_N(f) exceeds its generic dimension is closed and GL2-invariant. Earlier releases studied P_N on two-parameter families. Release 0.14.0 studies it in the full seven-dimensional space of sextics, which is the formal frontier this atlas has listed since 0.1.0.
 
 ## Two reductions that make the full space computable
 
@@ -61,12 +61,43 @@ Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent
 
 > ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
 
-This explains everything recorded in 0.13.0. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
+This explains the earlier degree-8 observations. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
 
 **Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
 
 **Remaining components.** Lower-dimensional components of P_N for N >= 8, and of P_12 beyond its hypersurface, remain open. Degrees 9 to 11 have not been examined on the slice.
 
+## Rational certificates and the classification through degree 19
+
+Release 0.14.0 adds two external computer-algebra checks: `scripts/singular_partner_check.py` uses Singular over a prime field, and `scripts/msolve_partner_check.py` uses msolve over Q. They are optional verifiers; the dependency-free core does not need them.
+- **The system.** For each degree N and kernel threshold k, a few random integer projections det(P L_N S) on the slice vanish wherever dim ker L_N >= k, so their common zero set contains the locus. A Rabinowitsch variable removes repeated roots at 0 and 1.
+- **Emptiness.** msolve decides over Q whether that system has a complex solution. An empty superset means an empty locus.
+- **Invariant relations.** Multiplying the Rabinowitsch polynomial by an invariant relation J tests whether J vanishes on every point of the locus.
+- **Controls.** The control relation A fails wherever the locus is nonempty, as it must, and Singular modulo 2147483629 and 1000000007 agrees with every msolve verdict. The receipts are in `results/partner_incidence_solver_receipts.json`.
+
+Points of the locus have three simple roots, so their invariants do not all vanish. In degrees 3, 4, 10 and 14 the relations give B = C = D = 0, or B = 6A^2 with C = -36A^3 and D = 0, and these force A to be nonzero. The Clebsch point is then that of the octahedral sextic or of x^6+y^6. Both are stable, so the GIT fibre over that point is a single GL2-orbit. Combined with the exact profiles of the degenerate root patterns (`degenerate_profile`) and the exact partners of the named sextics, this gives, over the algebraic closure, trusting the msolve computations:
+
+| N | Extra correction-free partners occur exactly when f |
+|---|---|
+| 3 | satisfies B = 6A^2; dim ker >= 2 exactly for x^6+y^6 or a root of multiplicity >= 5 |
+| 4 | (beyond (f,f)_4) is octahedral xy(x^4-y^4) or has a root of multiplicity >= 5 |
+| 5 | has a root of multiplicity >= 4, or is equivalent to x^6+(40/7)x^3y^3+y^6 |
+| 6 | (beyond f itself) has a root of multiplicity >= 4 |
+| 7, 9, 11, 13, 15, 17, 19 | has a root of multiplicity >= 4 |
+| 8 | has a root of multiplicity >= 4, or an automorphism of order three (x^6+lambda x^3y^3+y^6, or x^3y^3) |
+| 10 | has a root of multiplicity >= 4, is x^3y^3, or is equivalent to x^6+y^6 |
+| 12 | satisfies A^2 = 25B/96 (the hypersurface, which contains the degenerate cases) |
+| 14 | has a root of multiplicity >= 4, is x^3y^3, or is octahedral |
+| 16, 18 | has a root of multiplicity >= 4, or is x^3y^3 |
+
+Degree 20 is reported in the receipts when its run completes. Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
+- the dihedral sextic x^6+y^6, in degrees 3 and 10;
+- the octahedral sextic, in degrees 4 and 14;
+- the order-three family, in degree 8;
+- its 40/7 member, in degree 5.
+
+The only other exceptions are the two invariant hypersurfaces in degrees 3 and 12. This is a computer-assisted classification: its rational steps rest on msolve's correctness, and degrees 6 to 8 also have the independent dependency-free modular evidence above.
+
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6, 7 and the forward direction of degree 8 rest on Groebner bases modulo two large primes, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 19 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.

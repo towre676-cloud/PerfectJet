@@ -4,7 +4,7 @@
 
 PerfectJet brings together the PerfectPower, DynaComp, PSG, SOE, WIND, IMP, Morphonic, conductor, Shadow–Core, and Weyl-exactness programs. Its central question is: what smaller representation preserves the answer we need, and what witness tells us when it fails?
 
-The repository contains a [master monograph](docs/MONOGRAPH.md), a [complete topic map](docs/COVERAGE_MAP.md), a [309-equation atlas](docs/EQUATION_ATLAS.md), preserved [archival sources](archive/README.md), and a dependency-free Python core. Historical reports and open proposals remain labeled. No new Lean proof or complete imported upstream solver is claimed.
+The repository contains a [master monograph](docs/MONOGRAPH.md), a [complete topic map](docs/COVERAGE_MAP.md), a [384-equation atlas](docs/EQUATION_ATLAS.md), preserved [archival sources](archive/README.md), and a dependency-free Python core. Historical reports and open proposals remain labeled. No new Lean proof or complete imported upstream solver is claimed.
 
 ## Run the mathematics
 
@@ -40,7 +40,7 @@ The runnable core covers rational observability and hidden witnesses, finite par
 
 ## Combine scouting
 
-The [0.12 math bridges](docs/nfl/MATH_BRIDGES.md) connect causal Combine histories to NFL movement readouts and a player-cross-fitted get-off decoder. Finite-horizon delay states transfer physical forecasts; the decoder trains on out-of-player movement predictions. Frozen fitted loadings feed exact joint measurement-package allocation, with correlated attempt noise, robust loading hypotheses and a rationalization regret bound. Run `perfectjet math-bridges --output results/bridge-receipt.json` for executed analytic/synthetic receipts and `perfectjet nfl-bridges --help` for the official experiment. The [source-complete bridge notebook](notebooks/PerfectJet_Math_Bridges.ipynb) remains unexecuted on absent official raw inputs. No new NFL scouting gain is claimed.
+The [0.12 math bridges](docs/nfl/MATH_BRIDGES.md) connect causal Combine histories to NFL movement readouts and a player-cross-fitted get-off decoder. Finite-horizon delay states transfer physical forecasts; the decoder trains on out-of-player movement predictions. Frozen fitted loadings feed exact joint measurement-package allocation, with correlated attempt noise, robust loading hypotheses and a rationalization regret bound. Run `perfectjet math-bridges --output results/bridge-receipt.json` for executed analytic/synthetic receipts and `perfectjet nfl-bridges --help` for the official experiment. The [source-complete bridge notebook](notebooks/PerfectJet_Math_Bridges.ipynb) embeds the current source; real-data execution receipts are recorded separately. The original nine-file input has now been recovered and verified. No incremental scouting advantage is established.
 
 The [0.11 motor-transfer study](docs/nfl/MOTOR_TRANSFER.md) tests a post-onset half-second Combine readout against snap-to-LOS NFL get-off, with independent-attempt reliability, uncertainty-integrated prediction and complete nested player validation. Install `.[scouting]`, then run `perfectjet nfl-burst --data DIR --out PRIVATE_DIR --verify-known-hashes --refits 64`. Its [standalone Kaggle notebook](notebooks/PerfectJet_Motor_Transfer.ipynb) is explicitly unexecuted until official raw inputs are available. The complete [prior NFL research](research/nfl_bdb_2027/README.md), including failed models, nine notebooks and Git history, is preserved. No new real-data gain is claimed. Exact demand ranks, inner reconstruction, bootstrap grouping and chronology were corrected.
 
@@ -54,7 +54,7 @@ PerfectJet complements [PerfectPower](https://github.com/towre676-cloud/perfectp
 
 ## Download
 
-The complete [v0.15.0 package](releases/PerfectJet-v0.15.0.zip) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
+The complete [v0.14.0 package parts](releases/PerfectJet-v0.14.0.parts.json) contains source, tests, documentation, registry, retained results, and extracted archives. GitHub's [source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) always follows `main`. The [monograph](docs/MONOGRAPH.md) is readable directly on GitHub.
 
 ## Reproduce the retained release
 
@@ -66,3 +66,7 @@ python scripts/check_coverage.py
 ```
 
 The release record states local test results separately from GitHub Actions status. The source provenance describes which documents are complete textual extractions and which are selected excerpts.
+
+The [real-data evidence chapter](docs/nfl/REAL_DATA.md) connects the recovered 2.3 GB official input, 51 temporally evaluated rookies, 5,310 public-cohort model fits, and 122 independent NFL tracking games. The [public benchmark](research/public_nfl/REPORT.md) and [external movement tests](docs/nfl/EXTERNAL_TRACKING.md) retain nulls, coverage failures and the stronger controls that erase weaker-comparator headlines. Restricted raw input and individual derived outputs remain private.
+
+Rebuild the complete release ZIP with `python releases/assemble_release.py releases/PerfectJet-v0.13.1.parts.json --download`. Every part and the assembled archive are SHA256-checked. GitHub rejected the single large blob; the verified parts preserve the exact complete ZIP.

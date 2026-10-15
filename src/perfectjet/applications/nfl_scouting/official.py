@@ -121,13 +121,17 @@ def official_manifest(root, verify_known_hashes=False):
 
 
 def _timestamp(value):
+    """Parse the source clock without inventing an absent timezone.
+
+    Official 2027 CSVs omit offsets. Their within-record time differences and
+    source calendar dates remain usable. Offset-bearing inputs normalize to
+    UTC; mixed naive/aware clocks within an attempt are rejected separately.
+    """
     try:
         stamp = datetime.fromisoformat(value.strip().replace("Z", "+00:00"))
     except (AttributeError, ValueError) as exc:
         raise ValueError("invalid_timestamp") from exc
-    if stamp.tzinfo is None:
-        raise ValueError("timestamp_missing_timezone")
-    return stamp.astimezone(timezone.utc)
+    return stamp if stamp.tzinfo is None else stamp.astimezone(timezone.utc)
 
 
 def _load_attempts(root, combine, players, drills, positions, minimum_frames, audit):
@@ -165,8 +169,11 @@ def _load_attempts(root, combine, players, drills, positions, minimum_frames, au
                 raise ValueError("source_draft_year_mismatch")
             if len({row["drill_name"] for row in rows}) != 1:
                 raise ValueError("inconsistent_attempt_drill")
-            values = sorted(((_timestamp(row["time"]), _number(row["x"]), _number(row["y"]))
-                             for row in rows), key=lambda value: value[0])
+            values = [(_timestamp(row["time"]), _number(row["x"]), _number(row["y"]))
+                      for row in rows]
+            if len({stamp.tzinfo is None for stamp, _, _ in values}) != 1:
+                raise ValueError("mixed_timestamp_timezones")
+            values.sort(key=lambda value: value[0])
             if len(values) < minimum_frames:
                 raise ValueError("short_attempt")
             if any(x is None or y is None for _, x, y in values):
@@ -349,10 +356,11 @@ def load_official_directory(root, minimum_plays=30, verify_known_hashes=False,
     audit["source_rejections"] = dict(audit["source_rejections"])
     audit["play_rejections"] = dict(audit["play_rejections"])
     manifest["official_adapter"] = {
-        "version": "official-bdb2027-v1", "competition": "nfl-big-data-bowl-2027",
+        "version": "official-bdb2027-v2", "competition": "nfl-big-data-bowl-2027",
         "synthetic": False, "audit": audit,
         "tracking_units": {"time": "seconds since first actual timestamp in attempt",
                            "x": "yards", "y": "yards", "sample_rate_hz": 10},
+        "timestamp_basis": "Timezone-naive source clocks preserved for relative differences/calendar dates; no timezone inferred; mixed naive/aware attempt clocks rejected",
         "measurement_columns": MEASUREMENT_COLUMNS,
         "measurement_availability": "Inferred proxy: latest accepted tracked Combine date per athlete; exact test publication dates absent",
         "ngs_availability": "Unverified chronology; inclusion requires an explicit pre-draft interpretation and a no-NGS sensitivity",

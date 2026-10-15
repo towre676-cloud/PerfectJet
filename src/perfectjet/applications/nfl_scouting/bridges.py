@@ -273,15 +273,55 @@ def _probe(model, frame, columns):
     return np.asarray(slopes).T
 
 
-def fit_split(ds, movement_targets, train_ids, test_ids, cutoff, alpha=100.0,
-              include_ngs=True, seed=81114, config=None):
-    """Fit a complete stacked bridge; permit labeled synthetic fixtures only here.
+@dataclass(frozen=True)
+class _FrozenFrame:
+    """Scalar-only frame snapshot; each decoder receives fresh mutable storage."""
+    columns: tuple
+    index: tuple
+    rows: tuple
+    dtypes: tuple
 
-    Decoder inputs for every training athlete are first-stage predictions from
-    other original athletes, including rebuilt NFL state and movement context.
-    Test NFL targets affect evaluation/diagnostics only. ``experiment`` refuses
-    synthetic evidence, while this lower-level function supports unit fixtures.
+    @classmethod
+    def capture(cls, frame):
+        return cls(tuple(frame.columns), tuple(frame.index),
+                   tuple(tuple(row) for row in frame.itertuples(index=False, name=None)),
+                   tuple(str(dtype) for dtype in frame.dtypes))
+
+    def frame(self):
+        return pd.DataFrame(self.rows, columns=self.columns, index=self.index).astype(
+            dict(zip(self.columns, self.dtypes)))
+
+
+@dataclass(frozen=True)
+class _SplitPreparation:
+    """Owned immutable result of one alpha-independent original-player split.
+
+    This value has no reference to the input dataset, trajectory records, fitted
+    state model or a global cache. JSON snapshots isolate result dictionaries;
+    tuples isolate forecasts and training labels. A new preparation is always
+    constructed for a new fit, even when the athlete IDs have appeared before.
     """
+    base_train: _FrozenFrame
+    base_test: _FrozenFrame
+    movement_oof: tuple
+    conventional_oof: tuple
+    forecast: tuple
+    conventional_forecast: tuple
+    y_train: tuple
+    source_jacobian: tuple
+    common_json: str
+    receipt_json: str
+    seed: int
+    cutoff: int
+
+
+def _matrix_snapshot(values):
+    return tuple(tuple(float(value) for value in row) for row in values)
+
+
+def _prepare_split(ds, movement_targets, train_ids, test_ids, cutoff,
+                   include_ngs=True, seed=81114, config=None):
+    """Rebuild all context, representation and stacking within this split."""
     config = config or BridgeConfig()
     records = _records(movement_targets)
     train_ids, test_ids = sorted(train_ids), sorted(test_ids)
@@ -308,34 +348,8 @@ def fit_split(ds, movement_targets, train_ids, test_ids, cutoff, alpha=100.0,
     q_oof = np.asarray([oof[a] for a in tr])
     conventional_q_oof = np.asarray([conventional_oof[a] for a in tr])
     yy = np.asarray([y[a] for a in tr])
-    baseline = BT._regressor(base_train, alpha).fit(base_train, yy)
-    decoder_train = _decoder_frame(base_train, q_oof)
-    decoder = BT._regressor(decoder_train, alpha).fit(decoder_train, yy)
-    conventional_decoder_train = _decoder_frame(base_train, conventional_q_oof)
-    conventional_decoder = BT._regressor(conventional_decoder_train, alpha).fit(conventional_decoder_train, yy)
-    decoder_test = _decoder_frame(full["base"], full["forecast"])
-    pb = baseline.predict(full["base"])
-    pm = decoder.predict(decoder_test)
-    pc = conventional_decoder.predict(_decoder_frame(full["base"], full["conventional_forecast"]))
-    loading = _probe(decoder, decoder_train, ["q__"+c for c in BRIDGE_CHANNELS])[0]
     source_jacobian = _probe(full["source_model"], full["source_training_reference"], full["source_names"])
-    end_to_end = loading@source_jacobian
     q_truth = [full["q"].get(a) for a in te]
-    decompositions = []
-    for i, aid in enumerate(te):
-        if q_truth[i] is None:
-            decompositions.append(None)
-            continue
-        oracle_frame = _decoder_frame(full["base"].iloc[i:i+1], np.asarray([q_truth[i]]))
-        oracle = float(decoder.predict(oracle_frame)[0])
-        decoder_residual = oracle-y[aid]
-        transfer_error = float(pm[i])-oracle
-        total = float(pm[i])-y[aid]
-        decompositions.append({"decoder_residual": decoder_residual,
-                               "transferred_movement_error": transfer_error, "total_error": total,
-                               "identity_error": abs(total-decoder_residual-transfer_error),
-                               "oracle_prediction": oracle,
-                               "scope": "held-out diagnostic using true movement; never a deployable forecast"})
     available_q = [a for a in tr if a in full["q"]]
     transfer_residuals = np.asarray([np.asarray(full["q"][a])-oof[a] for a in available_q])
     transfer_covariance = np.cov(transfer_residuals, rowvar=False, ddof=1).tolist() if len(available_q)>1 else None
@@ -345,32 +359,87 @@ def fit_split(ds, movement_targets, train_ids, test_ids, cutoff, alpha=100.0,
         "outcome_cutoff": cutoff-1,
         "latest_training_outcome": max(p.season for p in ds.plays
             if p.athlete_id in set(tr) and p.season < cutoff and p.season == ds.athletes[p.athlete_id].draft_year),
-        "model_id": f"nfl-math-bridge/1:seed{seed}:alpha{alpha}:before{cutoff}",
         "loading_source": "conditional fitted source-to-movement-to-getoff affine Jacobian; physical feature coordinates",
     }
-    return {
-        "ids": te, "y": [y[a] for a in te], "baseline": pb.tolist(),
-        "movement": pm.tolist(), "bridge": pm.tolist(), "conventional_bridge": pc.tolist(),
-        "counts": [counts[a] for a in te], "alpha": alpha, "year": cutoff,
+    common = {
+        "ids": te, "y": [y[a] for a in te],
+        "counts": [counts[a] for a in te], "year": cutoff,
         "training_target_quartile": float(np.quantile(yy, 0.25)),
         "movement_channels": list(BRIDGE_CHANNELS), "movement_predictions": full["forecast"].tolist(),
         "movement_truth": q_truth, "movement_transfer_covariance": transfer_covariance,
         "movement_transfer_covariance_scope": "Empirical training-player OOF transfer-residual covariance; not a calibrated source prior or total uncertainty; context-fit and loading uncertainty excluded",
-        "loading": loading.tolist(),
         "frozen_jacobian": {"source_features": full["source_names"],
                              "source_to_movement": source_jacobian.tolist(),
-                             "movement_to_outcome": loading.tolist(),
-                             "source_to_outcome": end_to_end.tolist(),
-                             "training_receipt": receipt,
                              "training_cutoff_exclusive": cutoff,
                              "probe_reference": "training rows only; evaluated-player feature values do not set the frozen loading",
                              "scope": "affine fitted sensitivity in declared feature units with fixed preprocessing/missingness; not causal or future uncertainty"},
-        "error_decomposition": decompositions, "stacking_audit": audits,
+        "stacking_audit": audits,
         "full_stage_audit": full["audit"], "source_coverage": full["base"][[c for c in full["base"] if c.startswith("source_")]].to_dict("index"),
         "shared_baseline_columns": list(base_train), "synthetic": ds.synthetic,
         "outcome_variance": [nu[a] for a in te],
         "deployment": "Combine-only source and conventional measurements; evaluated-player NFL frames/context/labels excluded from predictors",
     }
+    return _SplitPreparation(
+        _FrozenFrame.capture(base_train), _FrozenFrame.capture(full["base"]),
+        _matrix_snapshot(q_oof), _matrix_snapshot(conventional_q_oof),
+        _matrix_snapshot(full["forecast"]), _matrix_snapshot(full["conventional_forecast"]),
+        tuple(float(value) for value in yy), _matrix_snapshot(source_jacobian),
+        json.dumps(common), json.dumps(receipt), seed, cutoff)
+
+
+def _fit_decoder(prepared, alpha):
+    """Fit an independent decoder from this split's fixed training preparation."""
+    result = json.loads(prepared.common_json)
+    base_train, base_test = prepared.base_train.frame(), prepared.base_test.frame()
+    yy = np.asarray(prepared.y_train)
+    baseline = BT._regressor(base_train, alpha).fit(base_train, yy)
+    decoder_train = _decoder_frame(base_train, prepared.movement_oof)
+    decoder = BT._regressor(decoder_train, alpha).fit(decoder_train, yy)
+    conventional_train = _decoder_frame(base_train, prepared.conventional_oof)
+    conventional_decoder = BT._regressor(conventional_train, alpha).fit(conventional_train, yy)
+    pb = baseline.predict(base_test)
+    pm = decoder.predict(_decoder_frame(base_test, prepared.forecast))
+    pc = conventional_decoder.predict(_decoder_frame(base_test, prepared.conventional_forecast))
+    loading = _probe(decoder, decoder_train, ["q__"+c for c in BRIDGE_CHANNELS])[0]
+    end_to_end = loading @ np.asarray(prepared.source_jacobian)
+    decompositions = []
+    for i, truth in enumerate(result["movement_truth"]):
+        if truth is None:
+            decompositions.append(None)
+            continue
+        oracle_frame = _decoder_frame(base_test.iloc[i:i+1], np.asarray([truth]))
+        oracle = float(decoder.predict(oracle_frame)[0])
+        decoder_residual = oracle-result["y"][i]
+        transfer_error = float(pm[i])-oracle
+        total = float(pm[i])-result["y"][i]
+        decompositions.append({"decoder_residual": decoder_residual,
+                               "transferred_movement_error": transfer_error, "total_error": total,
+                               "identity_error": abs(total-decoder_residual-transfer_error),
+                               "oracle_prediction": oracle,
+                               "scope": "held-out diagnostic using true movement; never a deployable forecast"})
+    receipt = json.loads(prepared.receipt_json)
+    receipt["model_id"] = f"nfl-math-bridge/1:seed{prepared.seed}:alpha{alpha}:before{prepared.cutoff}"
+    result.update(baseline=pb.tolist(), movement=pm.tolist(), bridge=pm.tolist(),
+                  conventional_bridge=pc.tolist(), alpha=alpha, loading=loading.tolist(),
+                  error_decomposition=decompositions)
+    result["frozen_jacobian"].update(movement_to_outcome=loading.tolist(),
+        source_to_outcome=end_to_end.tolist(), training_receipt=receipt)
+    return result
+
+
+def fit_split(ds, movement_targets, train_ids, test_ids, cutoff, alpha=100.0,
+              include_ngs=True, seed=81114, config=None):
+    """Fit a complete stacked bridge; permit labeled synthetic fixtures only here.
+
+    Decoder inputs for every training athlete are first-stage predictions from
+    other original athletes, including rebuilt NFL state and movement context.
+    Test NFL targets affect evaluation/diagnostics only. ``experiment`` refuses
+    synthetic evidence, while this lower-level function supports unit fixtures.
+    No preparation survives this call or is shared with a different split.
+    """
+    prepared = _prepare_split(ds, movement_targets, train_ids, test_ids, cutoff,
+                               include_ngs, seed, config)
+    return _fit_decoder(prepared, alpha)
 
 
 def _nested_fold(ds, records, train_ids, test_ids, cutoff, include_ngs, seed, config):
@@ -378,18 +447,22 @@ def _nested_fold(ds, records, train_ids, test_ids, cutoff, include_ngs, seed, co
     assignment = BT._groups(ds, train_ids, min(config.outer_inner_folds, groups), seed+501)
     families = ("baseline", "movement", "conventional_bridge")
     scores = {family: [] for family in families}
+    fits_by_alpha = {alpha: [] for alpha in config.decoder_penalties}
+    for fold in sorted(set(assignment.values())):
+        a = [aid for aid in train_ids if assignment[aid] != fold]
+        b = [aid for aid in train_ids if assignment[aid] == fold]
+        prepared = _prepare_split(ds, records, a, b, cutoff, include_ngs,
+                                   seed+601+fold, config)
+        for alpha in config.decoder_penalties:
+            fits_by_alpha[alpha].append(_fit_decoder(prepared, alpha))
     for alpha in config.decoder_penalties:
-        fits = []
-        for fold in sorted(set(assignment.values())):
-            a = [aid for aid in train_ids if assignment[aid] != fold]
-            b = [aid for aid in train_ids if assignment[aid] == fold]
-            fits.append(fit_split(ds, records, a, b, cutoff, alpha, include_ngs,
-                                  seed+601+fold, config))
+        fits = fits_by_alpha[alpha]
         for family in families:
             scores[family].append(BT._score(fits, family))
     chosen = {family: config.decoder_penalties[int(np.argmin(score))] for family, score in scores.items()}
-    full = {alpha: fit_split(ds, records, train_ids, test_ids, cutoff, alpha,
-                            include_ngs, seed+801, config) for alpha in set(chosen.values())}
+    prepared = _prepare_split(ds, records, train_ids, test_ids, cutoff, include_ngs,
+                               seed+801, config)
+    full = {alpha: _fit_decoder(prepared, alpha) for alpha in set(chosen.values())}
     result = full[chosen["movement"]]
     result["baseline"] = full[chosen["baseline"]]["baseline"]
     result["conventional_bridge"] = full[chosen["conventional_bridge"]]["conventional_bridge"]

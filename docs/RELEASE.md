@@ -1,6 +1,8 @@
-# PerfectJet 0.15.0
+# PerfectJet 0.14.0
 
-This release identifies the degree-8 partner locus.
+This release classifies correction-free partners of binary sextics across the full seven-coefficient space (`incidence.py`, `modular.py`, chapter 29). It was developed on a branch as internal steps 0.13 to 0.15, which are combined here after the main line's 0.13.0 and 0.13.1. The classification now covers degrees 3 to 19 over Q, using the external solver msolve, with Singular modulo two primes as an independent check (chapter 29 table, `results/partner_incidence_solver_receipts.json`). Extra partners come from a fourfold root, from x^3y^3, from the symmetric sextics (dihedral x^6+y^6, octahedral, order-three family, and its 40/7 member), or from the two invariant hypersurfaces in degrees 3 and 12. Degrees 6 to 8, previously evidence modulo primes, are upgraded the same way.
+
+## Degree 8: the order-three family
 
 - **Exact converse**: x^6+lambda x^3y^3+y^6 has the degree-8 partner g_8 = xy(x^6+y^6-7/20 lambda x^3y^3) for every lambda (`incidence.c3_degree8_certificate`). On that family the lowest-weight invariant relations are AB^2+BC/6-9D/2 = 0 and C^2 = 6B^3 (`c3_curve_relations`).
 - **Forward direction, modulo two primes**: random projections det(R L_8) contain the degree-8 locus on the dense slice. Both relations vanish on every point of it with no repeated root at 0 or 1, by three-variable radical tests modulo 2147483629 and 1000000007 (`incidence.degree8_relations`). As controls, A does not vanish there, and on plane sections (16 points) both relations lie in the ideal.
@@ -12,9 +14,7 @@ This release identifies the degree-8 partner locus.
 
 The forward direction is labelled numerical_checked; a rational certificate is open. Degrees 9 to 11 have not been examined on the slice.
 
-# PerfectJet 0.14.0
-
-This release closes degrees 6 and 7 of the partner incidence problem, modulo primes.
+## Degrees 6 and 7 modulo primes
 
 - **Prime-field Groebner engine** (`modular.py`). It builds every maximal minor of an affine polynomial matrix modulo P by fraction-free Bareiss, interreduces the minors linearly, runs Buchberger with the product and chain criteria, and decides emptiness off a hypersurface with one Rabinowitsch variable. On degree 5 it reproduces the exact rational results.
 - **Degree 6**: dim ker L_6 >= 2 exactly when f has a root of multiplicity at least four. The slice ideal of 1005 minors is the unit ideal off repeated roots modulo 2147483629 and 1000000007.
@@ -23,9 +23,9 @@ This release closes degrees 6 and 7 of the partner incidence problem, modulo pri
 
 Across degrees 5 to 7, a fourfold root is the uniform source of extra partners, and the C3 class at 40/7 is the only exception. The degree 6 and 7 statements rest on two primes; a rational certificate is open. `incidence.slice_locus_empty_mod_p` reproduces each verdict.
 
-# PerfectJet 0.13.0
+## Partner incidence in the full sextic space
 
-This release studies the partner incidence variety in the full seven-coefficient space of binary sextics (`incidence.py`, chapter 28). The atlas has listed this formal frontier since 0.1.0.
+The work studies the partner incidence variety in the full seven-coefficient space of binary sextics (`incidence.py`, chapter 29). The atlas has listed this formal frontier since 0.1.0.
 
 - **Hypersurface components by lines.** A random line meets every hypersurface component of P_N = {ker L_N larger than generic}. The exact one-parameter locus on the line gives the degree of that component, and dividing invariant monomials by it identifies the defining invariant. On two independent lines for degrees 3 to 14, and on one line up to 19, only two degrees have a hypersurface component:
   - degree 3, A^2 = B/6;
@@ -39,6 +39,19 @@ This release studies the partner incidence variety in the full seven-coefficient
 - **Degree-8 conjecture with a counterexample to sufficiency.** All 26 degree-8 partner points in three non-symmetric families are bielliptic and satisfy AB^2+BC/6-9D/2 = 0 (`scripts/partner_degree8_evidence.py`, numerical). The relation is not sufficient: two lines on the symmetric family satisfy it and have no partner.
 
 Degrees 6 and 7, and the lower-dimensional components in degree 8 and above, remain open; the dependency-free Groebner engine does not finish them. The CLI has a new command, `perfectjet incidence`, and the report includes its receipt.
+# PerfectJet 0.13.1
+
+Fix the external tracking test harness to use the repository's standard unittest runner. The initial v0.13.0 CI run exposed an undeclared pytest import, and its function-style tracking tests were not being collected by local unittest discovery. All ten tests now run under unittest without an additional dependency. The complete suite contains 302 tests. No mathematical model, raw data, experimental split, prediction or fitted empirical result changes.
+
+The complete package, notebook source hashes and version metadata are rebuilt. The earlier v0.13.0 package and its published parts remain preserved as history. Current local test, archive-integrity and coverage receipts are separate from GitHub CI status.
+
+# PerfectJet 0.13.0
+
+This release recovers the original official nine-file NFL input from the earlier session, verifies every source hash, and executes the actual temporal Combine-to-NFL movement bridge. The 51-player evaluation, NGS chronology sensitivity, broader-drill secondary and strict burst coverage failure are preserved alongside complete original-player refits. It fixes timezone-naive official clocks and mixed-clock rejection and safely reuses each immutable split preparation across decoder penalties. Restricted rows, individual predictions and owned derived checkpoints stay private.
+
+The independent public benchmark ingests 88 source assets and executes 5,310 fits across 125 temporal endpoint/scope/class folds. Strong conventional position-interaction controls erase the earlier apparent front-seven pressure advantage. The 122-game real tracking pass processes 8,314,178 observations: forward displacement is more repeatable than path length, and a compact four-state model preserves ordinary history-ridge forecast accuracy. Player-specific arrival-depth slopes fail to improve later-game outcomes. No incremental NFL scouting advantage is established.
+
+The [real-data chapter](nfl/REAL_DATA.md) records results, support limits and next measurement priorities. Public aggregate receipts, replay scripts, pinned source manifests and the verified public-source snapshot accompany the full release. GitHub delivery uses SHA256-verified ZIP parts with `releases/assemble_release.py`; the complete ZIP is also built locally. The monograph preserves 28 chapters, 384 equations and 466 topics; both current standalone notebooks embed all 48 Python modules. Notebook syntax checks and separately executed real-data runners are explicitly distinguished. All 292 local unit tests and the full coverage check pass; the exact mathematics and analytic bridge replay were rerun. Remote CI status is reported separately after publication.
 
 # PerfectJet 0.12.0
 

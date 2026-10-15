@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.15.0",
+  "version": "0.14.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -19,8 +19,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "cc6cabfb8fb66c6b42cd194c95d45f515d543e329c2e164397d69b30c0a424d6",
-      "size_bytes": 6773
+      "sha256": "e8b50983effd61cbcdd693da2ad0a356a59a99956942437a40d44c28af3a46fc",
+      "size_bytes": 7661
     },
     {
       "path": "archive/README.md",
@@ -84,13 +84,13 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "189be395304b96bd779fd6a1f635c6d02ac44592ac22d11672bbaee42dfe80aa",
-      "size_bytes": 141562
+      "sha256": "b414280a4520398f3a1caae8e3434ff4f4e768325ca1533901943e5522261176",
+      "size_bytes": 146739
     },
     {
       "path": "data/topics.json",
-      "sha256": "d2740b0ae516dee60d23030b186ae1b95e0c910f90365a4b7ef5db786e4c305b",
-      "size_bytes": 129147
+      "sha256": "3a3145c1905584bee37cf74443b9ecbe120eac3e7ef2da07d02c148c74c7e210",
+      "size_bytes": 133250
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -99,33 +99,33 @@
     },
     {
       "path": "docs/COVERAGE_MAP.md",
-      "sha256": "e719a5d7fde57da995c8f75a9c344f8b65222d002cbff546d7a2024813a663b1",
-      "size_bytes": 69589
+      "sha256": "aab844e85f3306f180c015722885ff293a6a8c9c78a2fe52f977253d9020a75a",
+      "size_bytes": 71547
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "38d2ff8ed51eeab950a9c0f481c0fb11397700f6718c367d00b9ef87f25cf8d0",
-      "size_bytes": 64735
+      "sha256": "241790b3792822b01f7aa7ccddb4a2341279cf3bf2b4f36b04e9d98e768c5812",
+      "size_bytes": 67723
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "f49ec854e17d5763531e7a88cca27558e11355d7399df82a2f527c473199b7ae",
-      "size_bytes": 211201
+      "sha256": "32bb9b43baab4aee0a38f052b1f2b4054b0ed8a7fd1476bd9b42619888e935d4",
+      "size_bytes": 229768
     },
     {
       "path": "docs/PARTNER_INCIDENCE.md",
-      "sha256": "9df1934954267a7c40d9eeb7db8df617394cb4579629ec4689042037ae2721d9",
-      "size_bytes": 9642
+      "sha256": "24cf44f67d531b61ae6d4da33d1c8d40232dd7e600bd156b2ab56cad54d0d7ae",
+      "size_bytes": 12714
     },
     {
       "path": "docs/QUICKSTART.md",
-      "sha256": "4b156f62ec8cff86611a9c19b923af25be03071b6061d5d23b72da86542caf15",
-      "size_bytes": 3627
+      "sha256": "a9f749819fcafd2adbd52970f64efe7c5d2c0b36a4b899f14f34ec2c4ae75348",
+      "size_bytes": 5087
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "8ee6b2e2ba1da173e2b69c6b12a814dbd843cc9dbd272f0b88709f620efc4027",
-      "size_bytes": 25701
+      "sha256": "a2707adf96db952b43116be8e292aa2d7249bc3d32acf0054c0d591211aa80b1",
+      "size_bytes": 29115
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -239,8 +239,8 @@
     },
     {
       "path": "docs/chapters/23_status_corrections_and_frontiers.md",
-      "sha256": "ea0ef266313844ec6b6a39746172416c2758b42cc74af5eaa48bf79f4fd10490",
-      "size_bytes": 6968
+      "sha256": "78e5a5bfc3c4ca21de700d9f99258aa7df22355f04037ffe86f48b21d34f5080",
+      "size_bytes": 7200
     },
     {
       "path": "docs/chapters/24_mathematical_proofs.md",
@@ -263,14 +263,24 @@
       "size_bytes": 21369
     },
     {
-      "path": "docs/chapters/28_partner_incidence.md",
-      "sha256": "9df1934954267a7c40d9eeb7db8df617394cb4579629ec4689042037ae2721d9",
-      "size_bytes": 9642
+      "path": "docs/chapters/28_real_nfl_evidence.md",
+      "sha256": "393b8b975a226e1e7c6fe3c21e2331b2ddeb05e7024bfae491ecbb4dfdc77277",
+      "size_bytes": 12209
+    },
+    {
+      "path": "docs/chapters/29_partner_incidence.md",
+      "sha256": "24cf44f67d531b61ae6d4da33d1c8d40232dd7e600bd156b2ab56cad54d0d7ae",
+      "size_bytes": 12714
     },
     {
       "path": "docs/nfl/DATA_CONTRACT.md",
       "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
       "size_bytes": 2392
+    },
+    {
+      "path": "docs/nfl/EXTERNAL_TRACKING.md",
+      "sha256": "8ace0d005e83fc79437d807520e385a524c89500751876e2723152ac2e89e4f0",
+      "size_bytes": 11139
     },
     {
       "path": "docs/nfl/MATH_BRIDGES.md",
@@ -291,6 +301,11 @@
       "path": "docs/nfl/PROTOCOL.md",
       "sha256": "f99b9b9c2dd6e11ec85107fce83ba3b35e37770200f62b30f040f54a13a8eede",
       "size_bytes": 6823
+    },
+    {
+      "path": "docs/nfl/REAL_DATA.md",
+      "sha256": "393b8b975a226e1e7c6fe3c21e2331b2ddeb05e7024bfae491ecbb4dfdc77277",
+      "size_bytes": 12209
     },
     {
       "path": "docs/nfl/WRITEUP_TEMPLATE.md",
@@ -314,17 +329,17 @@
     },
     {
       "path": "notebooks/PerfectJet_Math_Bridges.ipynb",
-      "sha256": "8963b9cc13f6122e7762dd60555009aa7c60b373d0253882826ac5ee0b5fe115",
-      "size_bytes": 492824
+      "sha256": "2ff932ca546943b6d1c670438981f7213d6a87d15f3baa929fc1d738ec1d7322",
+      "size_bytes": 547295
     },
     {
       "path": "notebooks/PerfectJet_Motor_Transfer.ipynb",
-      "sha256": "def6489a0f4bcb9685125d8d63e0ef3e85b99adb694a04d73101e556dc295ec8",
-      "size_bytes": 493237
+      "sha256": "40aa3a3ec41eaaa1afedc48d76bf824f96dbbd21a382b91540741f28cdbc4ae9",
+      "size_bytes": 547595
     },
     {
       "path": "pyproject.toml",
-      "sha256": "c93793bb2a1143b67829f69bcf7a3cf1fba6ca0de783129ccd8f81030efcafd5",
+      "sha256": "4f3676360a29398974498fe400c2623dd9d8220ef1d61c27bfe0990a08ba1529",
       "size_bytes": 500
     },
     {
@@ -351,6 +366,11 @@
       "path": "releases/NFL_Research_Package_README.md",
       "sha256": "0c53d878b14fa8e23772ba3d0f26009c3b91bbf589632c418b8a145967f80240",
       "size_bytes": 488
+    },
+    {
+      "path": "releases/assemble_release.py",
+      "sha256": "eef175ec07ce190baaeb7f052f9acfd3efb5a3acf59f1c66b354c95530aa2483",
+      "size_bytes": 2482
     },
     {
       "path": "releases/restore_nfl_research_package.py",
@@ -2428,6 +2448,66 @@
       "size_bytes": 4083
     },
     {
+      "path": "research/public_nfl/REPORT.md",
+      "sha256": "2ef66e74f771ce7b5789d42ef8460cc2396c17ad6472d5b778ddbba4170b20cb",
+      "size_bytes": 9901
+    },
+    {
+      "path": "research/public_nfl/RUN_RECEIPT.json",
+      "sha256": "a3bd32f836705c27b4005ff93bbe0739aa3eeeb4f883e24ce5a5cc8f102d4c69",
+      "size_bytes": 1472
+    },
+    {
+      "path": "research/public_nfl/SOURCE_MANIFEST.json",
+      "sha256": "a6a11e31756ff0d7d9920a44b3ca4a47a29c79de697a71fcd576784360f3f7d8",
+      "size_bytes": 239626
+    },
+    {
+      "path": "research/public_nfl/public_cohort_all.json",
+      "sha256": "b7d47250a440f2a6f259f610ddf08d6ff108e5053eb4ab5c5a2ba11e82aa357d",
+      "size_bytes": 2298050
+    },
+    {
+      "path": "research/public_nfl/public_cohort_dl.json",
+      "sha256": "a9352b880b45e9ecb92453c10545d66c820460d8489b1facd4f1ec676302192b",
+      "size_bytes": 681321
+    },
+    {
+      "path": "research/public_nfl/public_cohort_front7.json",
+      "sha256": "c6bae3559858ef4ed59caedbbd3d671e30647f89d6462ef7115569e03618c421",
+      "size_bytes": 956173
+    },
+    {
+      "path": "research/public_nfl/public_sources.zip",
+      "sha256": "d569053aec57be4794010686fbcec4ee7f3d0a9ac001c3af9498566f3c395cb5",
+      "size_bytes": 37765052
+    },
+    {
+      "path": "research/public_nfl/public_sources.zip.sha256",
+      "sha256": "2da0dc50a7e0bcbd980680811ec206eafaae6204b3330ff83c120b6dba7ebf3f",
+      "size_bytes": 85
+    },
+    {
+      "path": "results/external-tracking/execution-receipt.json",
+      "sha256": "93d211d51d539aa7d1de7ebf9a000be42532a379ea53abb43649af0a0b2da07a",
+      "size_bytes": 862
+    },
+    {
+      "path": "results/external-tracking/official-2017-sample-manifest.json",
+      "sha256": "068e97854570ffbdd4b92fc984e234a681811a8cda4024d1d5958ea94a96a50e",
+      "size_bytes": 3081
+    },
+    {
+      "path": "results/external-tracking/public-source-manifest.json",
+      "sha256": "ef3c76ccb20953b516b7f5464b05c4dfddf292fc22c38d64510f5c688d186ea7",
+      "size_bytes": 109213
+    },
+    {
+      "path": "results/external-tracking/summary.json",
+      "sha256": "d4389f36b83094c8c39cb00048b97074a811db9e7f394f809e4c7c0d3a9c9fa6",
+      "size_bytes": 149465
+    },
+    {
       "path": "results/nfl-math-bridges/final_loading_checks.log",
       "sha256": "c3ab86005361127e4056d3229671c7b30dd544c40b4a088881fbe482d3cf7667",
       "size_bytes": 98
@@ -2508,9 +2588,64 @@
       "size_bytes": 7386
     },
     {
+      "path": "results/partner_incidence_solver_receipts.json",
+      "sha256": "2a75c12c665ced9da45d831f68b5c1b6d31c1abce40539b9ce8468a86d6d7ccc",
+      "size_bytes": 8817
+    },
+    {
+      "path": "results/real-nfl/analytic-bridge-replay.json",
+      "sha256": "1d394eae7c7c3478be1a94b7dbf4e531e9c6bffd7df61de63efcbf4ad5c8bbd6",
+      "size_bytes": 20421
+    },
+    {
+      "path": "results/real-nfl/bridge_front.json",
+      "sha256": "e974689d2a4b75adc5c5225929eae50567eefa84a60872c8e213e1f1dad7410e",
+      "size_bytes": 8131
+    },
+    {
+      "path": "results/real-nfl/bridge_ngs.json",
+      "sha256": "0220d0bfd6c4fcfcd09e3f45b1f555915cfd15bc6ac2cb21acd92d6a578bb9bc",
+      "size_bytes": 7994
+    },
+    {
+      "path": "results/real-nfl/bridge_refits.json",
+      "sha256": "740fecd55bbba946554731c8523a848b1e191159d4d6fc0bb65a69c0360dca9a",
+      "size_bytes": 8784
+    },
+    {
+      "path": "results/real-nfl/bridge_without_ngs.json",
+      "sha256": "da4df394cb5d6da728aca97dcd9af2f3d90b14a1d805c7937f0f2cfef14c1e36",
+      "size_bytes": 8012
+    },
+    {
+      "path": "results/real-nfl/burst_ngs.json",
+      "sha256": "525fa57c81ddadb9b9781a1e65d506db3caed046c26d1cd38879108cb9e81d8e",
+      "size_bytes": 7508
+    },
+    {
+      "path": "results/real-nfl/exact-math-replay.json",
+      "sha256": "5dbc317b6facc0a938165497c0c634f57c97bb5e8d10e206e02e1d35fe592749",
+      "size_bytes": 195692
+    },
+    {
+      "path": "results/real-nfl/preparation.json",
+      "sha256": "414fda30092c83e1f4928373c1609d6b08dead43ef8a2a94abc18f8d1a383a9c",
+      "size_bytes": 6612
+    },
+    {
+      "path": "results/real-nfl/unit-tests-v0.13.1.txt",
+      "sha256": "5d5bb726edea936ff6357f66781351eff4718ff482a0d208004cecb8cdcf283d",
+      "size_bytes": 403
+    },
+    {
+      "path": "results/real-nfl/validation.json",
+      "sha256": "4eb6524ddb84f6a0b762ea160a8cf8ce0f152a89ff63af343539b9f076ae2f70",
+      "size_bytes": 1223
+    },
+    {
       "path": "results/replay.json",
-      "sha256": "92923715096fda42990634a6c4d84e3395794b7babf60332d44e02fc0e354d7b",
-      "size_bytes": 207351
+      "sha256": "6d2cf3be69b6db7b05cf42be853e7f6681b7b213e65ff6bdb5fce5646673d009",
+      "size_bytes": 207683
     },
     {
       "path": "scripts/build_bridge_fixture.py",
@@ -2519,38 +2654,53 @@
     },
     {
       "path": "scripts/build_bridge_notebook.py",
-      "sha256": "9a54c657ace93924499bc61e16912b5f1069f205cce75445c4bcdab1394b2459",
-      "size_bytes": 8126
+      "sha256": "a2267716f882364320677cb10bd37ecc6314802e47b3f0f849b79a35cf633005",
+      "size_bytes": 8293
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "3700468b77a85b0af8f193b2f0a8bf96428287bf8158d2279355193bbd1a48c9",
-      "size_bytes": 75441
+      "sha256": "7e4a320d88a72dd922eac6603ab038540736e3472008c03c48632382920f11fc",
+      "size_bytes": 75751
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "326d979df038bcb7948dc4dda369c6e885f59a632e26886e8828134bfd5fbb9b",
-      "size_bytes": 58572
+      "sha256": "6c223fedf1db2c32bf9639744a8a2c1c4bff2422eab4ecc3a6fe9cc3a5fd1698",
+      "size_bytes": 61318
     },
     {
       "path": "scripts/build_motor_notebook.py",
-      "sha256": "45714c40237cbecfae01f0554cc964f1041db671f43f4b35a13a17b56868652f",
-      "size_bytes": 7994
+      "sha256": "b7cc26b44131d9a8ae743cefd8306e6ed6cce05c7e0ae49ad6b352fcde5492fb",
+      "size_bytes": 8023
     },
     {
       "path": "scripts/build_release.py",
-      "sha256": "6e7db82fa90f2c33c52ed25f58a066224f39732b2c66d79952e5e5c5c955df2c",
-      "size_bytes": 2484
+      "sha256": "9ab981304f5af6f460c791e9d885fffa92c0d18b5f232c8b752a2b549af3a67d",
+      "size_bytes": 3204
     },
     {
       "path": "scripts/build_topics.py",
-      "sha256": "e6a48255aba230be42837a1da7d0332906428768a1083e981ea84aaaeb7a53d8",
-      "size_bytes": 16314
+      "sha256": "655b9071064c4aab0b442617222bed7158fd04a461522bced7c63c9d82d984aa",
+      "size_bytes": 16980
     },
     {
       "path": "scripts/check_coverage.py",
       "sha256": "66fc8c19bf27e9d98da5748900bc62d6d7d7752b2b8d79862c3dced5933ddc75",
       "size_bytes": 1415
+    },
+    {
+      "path": "scripts/ingest_public_nfl.py",
+      "sha256": "94e2b665065783100222c642951fe0e39e9408c01d2f24462b0cd4ecba6c9410",
+      "size_bytes": 1499
+    },
+    {
+      "path": "scripts/ingest_public_tracking.py",
+      "sha256": "a453762bc09342ddc3bfcf1ee53845e052a0d7f637fb70f4b9c5ab2de2907ced",
+      "size_bytes": 2629
+    },
+    {
+      "path": "scripts/msolve_partner_check.py",
+      "sha256": "da9594090a4a7ad9d84dd467816ec98aebad75e5d8256a788905aa42494a4ea5",
+      "size_bytes": 2651
     },
     {
       "path": "scripts/partner_degree8_evidence.py",
@@ -2563,13 +2713,38 @@
       "size_bytes": 2865
     },
     {
+      "path": "scripts/prepare_official_bridge_data.py",
+      "sha256": "7d989f36c97002f9ef8a72674f8f89b8580abd367222185f7da61609204fb54c",
+      "size_bytes": 3752
+    },
+    {
+      "path": "scripts/run_external_tracking.py",
+      "sha256": "0c013ae833a4fe4ecc7483ed18ab8c25bf0f357a855c89c92bede8dc48efbb31",
+      "size_bytes": 2075
+    },
+    {
+      "path": "scripts/run_public_cohort.py",
+      "sha256": "51f3d3c419c667da8419cc2162e127c031425c46452f86c92d4cc04c1e3390d5",
+      "size_bytes": 1053
+    },
+    {
+      "path": "scripts/run_recovered_official.py",
+      "sha256": "2e48949eae0da22fd74980744f7b2824403965deb5e6c303351758a6c42a56b9",
+      "size_bytes": 5997
+    },
+    {
+      "path": "scripts/singular_partner_check.py",
+      "sha256": "653145e5648950bf886494dcc830357618f6d20c6b284ec7744a48c3fbadb4ca",
+      "size_bytes": 4470
+    },
+    {
       "path": "scripts/source_manifest.py",
       "sha256": "be6052b845fb6e8730ff1e92a27ea30dd6e816f81d35a03a0964495f403938da",
       "size_bytes": 415
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "27ee3d0b26db8ff16a8c471fb2d98ff311a1e9a08ca663cdbd72cc1346c98425",
+      "sha256": "62186094d43e19dc19b4b37e4d9ff3e0ad8ae29523f43accb17659ed6ff722cd",
       "size_bytes": 104
     },
     {
@@ -2604,8 +2779,8 @@
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/bridges.py",
-      "sha256": "229ad7b478300970135e6d3bad4c540c68c6bc68fc4f712a34deb70ee7ce180a",
-      "size_bytes": 29362
+      "sha256": "6859b6e1bf9491f5439a118e5837da64a370e15bed61ec844ef3783c28b16aa2",
+      "size_bytes": 32294
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/burst.py",
@@ -2628,6 +2803,11 @@
       "size_bytes": 7225
     },
     {
+      "path": "src/perfectjet/applications/nfl_scouting/external_tracking.py",
+      "sha256": "8319e8e6032327a1d57f57201036ba57a8e410f873796d466dd6e6b1488ce683",
+      "size_bytes": 27805
+    },
+    {
       "path": "src/perfectjet/applications/nfl_scouting/figures.py",
       "sha256": "12d14272a8a585439762f718722e149aad517cb11453382d682ff96da127e956",
       "size_bytes": 4427
@@ -2639,13 +2819,13 @@
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/movement_targets.py",
-      "sha256": "82b2104e7bb2d176fb638ed7ccbd23f55105ffedc5bdb7d1f0de23627a5c1b5f",
-      "size_bytes": 24007
+      "sha256": "a8f78374ca2bf5c3c7dc11349f28e9cfe095d71925550822af13ac6f1171076d",
+      "size_bytes": 24155
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/official.py",
-      "sha256": "518e159566cd5e327be8a034a78f59c4b6ecc6315eba2d3face1f27159d22c28",
-      "size_bytes": 18726
+      "sha256": "32648a649fa7f606aadd342ff91d45cf163183495d812e8e89a714fdf675c9f2",
+      "size_bytes": 19305
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/outcomes.py",
@@ -2661,6 +2841,11 @@
       "path": "src/perfectjet/applications/nfl_scouting/predictive_state.py",
       "sha256": "b524b37089152ca6f3ed3dab3629f3f86ec5ea74a9d9ee625c70ecb6009e281c",
       "size_bytes": 26531
+    },
+    {
+      "path": "src/perfectjet/applications/nfl_scouting/public_cohort.py",
+      "sha256": "5ed4644dd5d9b4fa75d24f7efec46002ad48d27d6f8ea7d04e84f90a7420d68c",
+      "size_bytes": 18687
     },
     {
       "path": "src/perfectjet/applications/nfl_scouting/readouts.py",
@@ -2719,8 +2904,8 @@
     },
     {
       "path": "src/perfectjet/incidence.py",
-      "sha256": "dfd4b7fa7f1c97a2424f3fb0f96edba327228fbfd854ddbbf5691e5da76aa8a1",
-      "size_bytes": 23851
+      "sha256": "84fb39367d72f063624add956904c08224517813550fe680acdd689a84a5a6db",
+      "size_bytes": 26061
     },
     {
       "path": "src/perfectjet/invariants.py",
@@ -2744,8 +2929,8 @@
     },
     {
       "path": "src/perfectjet/modular.py",
-      "sha256": "b0b99915fbfccf6640bec2ff86d635b07b1e3aa5a6e12fc5e8b9ec2bfb64e054",
-      "size_bytes": 9230
+      "sha256": "fe1e78e9623ac086d8cdce41de2d4ce340f9fa03ee294fd632d7a8c532163dd8",
+      "size_bytes": 10296
     },
     {
       "path": "src/perfectjet/parametric.py",
@@ -2854,8 +3039,8 @@
     },
     {
       "path": "tests/test_nfl_bridges.py",
-      "sha256": "01d8c26e8ab2c75f2467c645f1c77201151d96c98842e1f44c1574216825bf56",
-      "size_bytes": 12328
+      "sha256": "b575c179f065f49d641d67ac2880b1e241774c37dedcad558103d483f7110c7b",
+      "size_bytes": 16992
     },
     {
       "path": "tests/test_nfl_burst.py",
@@ -2873,19 +3058,34 @@
       "size_bytes": 7347
     },
     {
+      "path": "tests/test_nfl_external_tracking.py",
+      "sha256": "3beebe727f824ba200d7196c2b84f86b413914abfb813272677dbf980d5d643b",
+      "size_bytes": 3202
+    },
+    {
       "path": "tests/test_nfl_movement_targets.py",
       "sha256": "e9e44a28dcd0559b46d544f4cd10764fc7483011642adbbecc1895ca59580689",
       "size_bytes": 16252
     },
     {
       "path": "tests/test_nfl_official.py",
-      "sha256": "614f4df11c56a42056cff451aad5cb2035a5d026b1ac675165bdb0256467c2fa",
-      "size_bytes": 9374
+      "sha256": "65438c80fb0abd35f0f4ee8e0398a872bd0558a611a8d892dba31cf97b6c5d7b",
+      "size_bytes": 10633
     },
     {
       "path": "tests/test_nfl_predictive_state.py",
       "sha256": "a442dfcae96ac8389b5c3eaf421eba74a536a76dbd9065e28cb74c22f01da275",
       "size_bytes": 12380
+    },
+    {
+      "path": "tests/test_nfl_public_cohort.py",
+      "sha256": "e4bd3f88d0af9656e0e2aa9cd56c27e5a8d0a4704f8b6b784efcf83e5fdc6142",
+      "size_bytes": 5962
+    },
+    {
+      "path": "tests/test_nfl_recovered_receipt.py",
+      "sha256": "b58f1014c640c0c204cf325f76d21f29ab8f95143b95fdc17e62969b47294014",
+      "size_bytes": 2550
     },
     {
       "path": "tests/test_nfl_scouting.py",

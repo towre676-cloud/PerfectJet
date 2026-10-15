@@ -46,7 +46,15 @@ GROUPS['27']=('NFL math bridges', ['Operational NFL movement target geometry','B
     'Rationalized fitted-loading provenance','Uniform coefficient-rounding score bound','Rational-snapshot optimization regret','Robust multi-loading allocation',
     'Contender-difference sensing','Synthetic mechanism evidence versus NFL performance'])
 
-GROUPS['28']=('Partner incidence', ['Line probes for hypersurface components','Invariant identification on a line',
+GROUPS['28']=('Real NFL evidence', ['Recovered official source hash equality',
+    'Timezone-naive relative tracking clocks','Mixed-clock rejection',
+    'Observed-launch support bottleneck','Real temporal physical bridge evaluation',
+    'Conventional-only two-stage control','NGS chronology sensitivity',
+    'Private player outputs and public aggregate receipts','Full-pipeline refit uncertainty',
+    'Official-source identity crosswalk','Public Combine temporal rookie outcomes',
+    'Position-interaction conventional controls','Independent real NFL tracking replication',
+    'Strong history forecasting controls','No scouting advantage from mechanism fit'])
+GROUPS['29']=('Partner incidence', ['Line probes for hypersurface components','Invariant identification on a line',
     'Dense slice with three simple roots','Saturation away from repeated roots','Covariants over a quotient ring',
     'Minimal polynomials of absolute invariants','Single-orbit certificate from a stable Clebsch point',
     'Quintic partner classification','Octahedral quartic jump','Dihedral cubic jump','Degenerate root patterns',

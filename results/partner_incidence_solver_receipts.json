@@ -1,0 +1,464 @@
+{
+ "msolve_Q": [
+  {
+   "degree": 6,
+   "kernel_at_least": 2,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.2,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 7,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.2,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 9,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.7,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 11,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 1.5,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 13,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 4.2,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 15,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 9.6,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 16,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 14.3,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 17,
+   "kernel_at_least": 1,
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 27.5,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 18,
+   "kernel_at_least": 1,
+   "relation": null,
+   "statement": "locus empty",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 69.4,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 19,
+   "kernel_at_least": 1,
+   "relation": null,
+   "statement": "locus empty",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 51.3,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 3,
+   "kernel_at_least": 2,
+   "relation": "ORB100",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.3,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 3,
+   "kernel_at_least": 2,
+   "relation": "ORB101",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.5,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 3,
+   "kernel_at_least": 2,
+   "relation": "ORB102",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.5,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 4,
+   "kernel_at_least": 2,
+   "relation": "OCTA0",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.2,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 4,
+   "kernel_at_least": 2,
+   "relation": "OCTA1",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.7,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 4,
+   "kernel_at_least": 2,
+   "relation": "OCTA2",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 0.2,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 12,
+   "kernel_at_least": 1,
+   "relation": "S120",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 8.0,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 10,
+   "kernel_at_least": 1,
+   "relation": "ORB100",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 6.8,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 10,
+   "kernel_at_least": 1,
+   "relation": "ORB101",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 9.4,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 10,
+   "kernel_at_least": 1,
+   "relation": "ORB102",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 5.0,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 14,
+   "kernel_at_least": 1,
+   "relation": "OCTA0",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 28.6,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 14,
+   "kernel_at_least": 1,
+   "relation": "OCTA1",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 25.8,
+   "msolve_head": "[-1]:"
+  },
+  {
+   "degree": 14,
+   "kernel_at_least": 1,
+   "relation": "OCTA2",
+   "statement": "relation vanishes on the locus",
+   "field": "Q",
+   "solver": "msolve",
+   "projections": 6,
+   "empty": true,
+   "seconds": 26.4,
+   "msolve_head": "[-1]:"
+  }
+ ],
+ "singular_GF": [
+  {
+   "degree": 6,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 0.1,
+   "empty": false
+  },
+  {
+   "degree": 7,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 0.3,
+   "empty": true
+  },
+  {
+   "degree": 8,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 0.8,
+   "empty": false,
+   "R50": true,
+   "C60": true,
+   "A0": false
+  },
+  {
+   "degree": 9,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 1.4,
+   "empty": true
+  },
+  {
+   "degree": 10,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 16.0,
+   "empty": false,
+   "ORB100": true,
+   "ORB101": true,
+   "ORB102": true,
+   "A0": false
+  },
+  {
+   "degree": 11,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 6.4,
+   "empty": true
+  },
+  {
+   "degree": 12,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 4.9,
+   "empty": false,
+   "S120": true,
+   "A0": false
+  },
+  {
+   "degree": 13,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 22.9,
+   "empty": true
+  },
+  {
+   "degree": 14,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 40.3,
+   "empty": false
+  },
+  {
+   "degree": 15,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 66.2,
+   "empty": true
+  },
+  {
+   "degree": 16,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 103.4,
+   "empty": true
+  },
+  {
+   "degree": 17,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 157.8,
+   "empty": true
+  },
+  {
+   "degree": 18,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 234.9,
+   "empty": true
+  },
+  {
+   "degree": 19,
+   "kernel_at_least": 1,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 344.1,
+   "empty": true
+  },
+  {
+   "degree": 20,
+   "kernel_at_least": 1,
+   "field": "GF(2147483629)",
+   "projections": 6,
+   "seconds": 560.8,
+   "empty": true
+  },
+  {
+   "degree": 6,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 0.1,
+   "empty": false
+  },
+  {
+   "degree": 7,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 0.3,
+   "empty": true
+  },
+  {
+   "degree": 8,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 0.9,
+   "empty": false,
+   "R50": true,
+   "C60": true,
+   "A0": false
+  },
+  {
+   "degree": 9,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 1.4,
+   "empty": true
+  },
+  {
+   "degree": 10,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 16.2,
+   "empty": false,
+   "ORB100": true,
+   "ORB101": true,
+   "ORB102": true,
+   "A0": false
+  },
+  {
+   "degree": 11,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 6.5,
+   "empty": true
+  },
+  {
+   "degree": 12,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 5.0,
+   "empty": false,
+   "S120": true,
+   "A0": false
+  },
+  {
+   "degree": 13,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 23.5,
+   "empty": true
+  },
+  {
+   "degree": 14,
+   "kernel_at_least": 1,
+   "field": "GF(1000000007)",
+   "projections": 6,
+   "seconds": 39.8,
+   "empty": false
+  }
+ ],
+ "meaning": "Each verdict is about the dense slice xy(x-y)(x^3+px^2y+qxy^2+ry^3) away from repeated roots at 0 and 1. Random projections det(P L_N S) contain the locus {dim ker L_N >= k}; 'empty' with a relation means the relation vanishes on the locus. msolve rows are characteristic-0 computations by an external solver; Singular rows are modulo the stated prime."
+}

@@ -339,7 +339,6 @@ invariants|Cayley-Sylvester count|dim Cov_{d,m}(n)=p(w;d,n)-p(w-1;d,n), w=(nd-m)
 invariants|cubic partner theorem|det L_3(f)=(A^2-B/6)/16|exact_checked|Every binary sextic; certified on the dense slice by a 125-point exact grid.
 invariants|quartic covariant partner|(f,(f,f)_4)_3=(f,(f,f)_4)_5=0|exact_checked|Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0.
 invariants|degree-12 covariant partner|G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96|exact_checked|Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0.
-invariants|degree-12 partner converse|ker L_12(f)!=0 => A^2=25B/96|open|Supported by random sextics and two independent families; not proved.
 invariants|slice certificate|covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3|derived|Same degree, order and weight; dense GL2-orbit; grid vanishing lemma.
 invariants|surface drop curves as invariant loci|deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0|exact_checked|On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open.
 invariants|named exceptional sextics|(0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4)|exact_checked|Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure.
@@ -385,6 +384,16 @@ observability|target-information non-submodularity witness|VOI(C given empty)=0 
 '''
 
 EQUATIONS += r"""
+empirical|equal-player temporal relative gain|G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2]|definition|Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage.
+empirical|same-input deterministic enhancement|Z=phi(B) => sigma(B,Z)=sigma(B)|derived|Deterministic conventional-trait transforms add function class flexibility, not new measured information.
+empirical|sample-clock relative displacement|Delta t=t_j-t_i=(k_j-k_i)/10|conditional|10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC.
+observability|observed launch eligibility|C_i=1{observed low-speed prefix and complete post-onset window}|definition|Coverage is measured before fitting; missing onset is never relabeled as a launch.
+empirical|conventional two-stage control|qhat_B=f_T(B), yhat_B=g_T(B,qhat_B)|definition|OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking.
+empirical|conditional bridge increment|Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX))|definition|Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value.
+empirical|game-half movement stability|rho_S=corr(rank(m_i,early),rank(m_i,late))|definition|Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result.
+empirical|original-player full refit|G_star=G(Refit(Resample_classes(original players)))|definition|Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only.
+observability|depth response observability|det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1)|derived|Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical.
+dynamics|arrival ranking switch locus|sqrt(d_star)=-Delta_tau/Delta_beta|conditional|Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge.
 invariants|line probe for partner hypersurfaces|rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N|exact_checked|Exact on each line; genericity of the line supported by agreement of independent random lines.
 invariants|partner hypersurfaces in degrees 3..19|codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96)|exact_checked|Two independent random lines for N<=14, one line for N<=19.
 invariants|dense slice|f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots|derived|Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r.
@@ -392,10 +401,12 @@ invariants|covariants over a quotient ring|Clebsch invariants of the slice compu
 invariants|quintic partner classification|ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6|exact_checked|Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly.
 invariants|octahedral quartic jump|dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5|exact_checked|Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly.
 invariants|dihedral cubic jump|dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6|exact_checked|Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots.
-invariants|degree-8 partner classification|ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3|numerical_checked|Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the 0.13.0 bielliptic conjecture.
+invariants|degree-8 partner classification|ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3|exact_checked|Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the earlier bielliptic conjecture. Upgraded: verified over Q by msolve (external solver).
 invariants|C3 curve in moduli|x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3|exact_checked|Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0.
-invariants|sextic partner jump|dim ker L_6(f)>=2 iff f has a root of multiplicity>=4|numerical_checked|Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open.
-invariants|septic partners|ker L_7(f)!=0 iff f has a root of multiplicity>=4|numerical_checked|Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open.
+invariants|sextic partner jump|dim ker L_6(f)>=2 iff f has a root of multiplicity>=4|exact_checked|Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver).
+invariants|septic partners|ker L_7(f)!=0 iff f has a root of multiplicity>=4|exact_checked|Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver).
+invariants|partner classification through degree 19|extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12)|exact_checked|Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve.
+invariants|degree-12 partner converse|ker L_12(f)!=0 iff A^2=25B/96|exact_checked|Forward direction on the slice by msolve over Q; degenerate forms satisfy the relation; converse via the covariant G and closedness.
 modular|prime-field Groebner evidence|1 in I mod p => 1 in I over Q outside finitely many bad primes|derived|Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime.
 invariants|orbit count check|slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6|derived|Ordered placements of three simple roots; stabilizer orders 6 and 12.
 """
@@ -418,7 +429,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.15.0 · 14 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.14.0 · 15 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

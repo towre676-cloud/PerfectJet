@@ -1,6 +1,6 @@
-"""Build a source-complete official-data notebook for the 0.12 math bridge.
+"""Build a source-complete official-data notebook for the 0.13 math bridge.
 
-Syntax-checking cells is distinct from executing the unavailable NFL input.
+Syntax-checking cells is distinct from executing the notebook cells; real-input runner receipts are stored separately.
 """
 import hashlib
 import json
@@ -24,7 +24,7 @@ def build():
 
     cell('markdown', r'''# PerfectJet: causal movement, predictive state and scouting decisions
 
-**Official-data execution pending. No new NFL scouting gain is claimed.** This notebook embeds and hashes the actual 0.12 source. The analytic receipt can run without competition input; its exact package result and synthetic predictive-state examples do not constitute NFL evidence.
+**Official-data runner executed; no incremental scouting advantage established.** This notebook embeds and hashes the actual 0.13 source. The real-data aggregate receipts are in `results/real-nfl/`; this notebook itself has not been executed. The analytic receipt can run without competition input; its exact package result and synthetic predictive-state examples do not constitute NFL evidence.
 
 The football question is whether a Combine-derived movement forecast improves rookie snap-to-LOS get-off beyond all fifteen conventional measurements, position and shared availability. Previously inspected classes remain development evidence. Operational tracking onset is not physiological reaction time. Missing participation and unsupported histories remain visible.''')
     cell('code', 'SOURCES=' + repr(sources) + '\nHASHES=' + repr(hashes) + '\n' + '''import hashlib,json,sys,tempfile
@@ -72,9 +72,9 @@ For a frozen decoder, $widehat y-y=[g(B,widehat q)-g(B,q)]+[g(B,q)-y]$. The two 
     cell('code', '''from perfectjet.applications.nfl_scouting.bridges import experiment,full_refit_sensitivity
 import contextlib,io
 with contextlib.redirect_stdout(io.StringIO()):
-    result=experiment(ds,movement,include_ngs=True,seed=81014)
-    result["full_refit_sensitivity"]=full_refit_sensitivity(ds,movement,draws=64,include_ngs=True,seed=81014)
-    without_ngs=experiment(ds,movement,include_ngs=False,seed=81014)
+    result=experiment(ds,movement,include_ngs=True,seed=81114)
+    result["full_refit_sensitivity"]=full_refit_sensitivity(ds,movement,draws=64,include_ngs=True,seed=81114)
+    without_ngs=experiment(ds,movement,include_ngs=False,seed=81114)
 result["embedded_source_hashes"]=HASHES
 result["without_NGS_chronology_sensitivity"]=without_ngs
 (WORK/"private_bridge_results.json").write_text(json.dumps(result,indent=2))
@@ -86,8 +86,8 @@ The repository preserves failed duration, phase/order and pooled profiles alongs
     notebook = {'nbformat': 4, 'nbformat_minor': 5,
                 'metadata': {'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'},
                              'language_info': {'name': 'python'},
-                             'perfectjet': {'version': '0.12.0',
-                                           'execution_status': 'unexecuted_raw_inputs_unavailable',
+                             'perfectjet': {'version': '0.13.1',
+                                           'execution_status': 'unexecuted_notebook_runner_evidence_separate',
                                            'source_sha256': hashes}}, 'cells': cells}
     path = ROOT / 'notebooks/PerfectJet_Math_Bridges.ipynb'
     path.parent.mkdir(parents=True, exist_ok=True)

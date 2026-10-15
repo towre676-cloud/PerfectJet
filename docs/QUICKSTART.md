@@ -29,3 +29,11 @@ The report checks selected identities and populations. It includes the finite mo
 For source-checkout use, `perfectjet atlas` emits the equation registry. The registry is intentionally not treated as an executable theorem database: every entry has an evidence status and assumptions.
 
 Read the monograph for cross-project mathematics. Read the coverage map to locate a named program. Use the source index to distinguish original extracted text from the canonical corrected interpretation.
+
+## Real NFL research replay
+
+Install the optional scouting environment with `python -m pip install -e '.[scouting]'`. The original nine-file input has already been recovered and verified for this research run. Its raw files and individual derived outputs remain private; `results/real-nfl/preparation.json` records the source and extraction audit. Reuse a locally available copy rather than attempting another sign-in.
+
+Prepare a fresh owned checkpoint with `python scripts/prepare_official_bridge_data.py --data /absolute/private/nine-files --private-output /absolute/private/checkpoint --audit-output /absolute/private/preparation.json`. Evaluate it with `python scripts/run_recovered_official.py --checkpoint /absolute/private/checkpoint/official_bridge_data.pkl --receipt /absolute/private/preparation.json --private-output /absolute/private/results.json --output /absolute/aggregate.json`. Add `--without-ngs`, `--front-drills`, `--kind burst` or `--refits 16` for the recorded sensitivities. Checkpoint and extractor hashes must match. Pickle is only for this freshly generated, owned checkpoint.
+
+Read [the real-data chapter](nfl/REAL_DATA.md) before interpreting metrics. The public cohort and external tracking replay commands are in [the public benchmark](../research/public_nfl/REPORT.md) and [external tracking report](nfl/EXTERNAL_TRACKING.md). Their exact source snapshots, coverage exclusions and comparator definitions are part of the result.

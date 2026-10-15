@@ -1,0 +1,63 @@
+{
+  "schema": "perfectjet/release-parts/1",
+  "output": "PerfectJet-v0.14.0.zip",
+  "bytes": 86065988,
+  "sha256": "cdf5ded32df9f980ac2fac2ac612c959b1e39431a1a7ebc8ddc429e3706b66d0",
+  "parts": [
+    {
+      "name": "PerfectJet-v0.14.0.zip.part01",
+      "bytes": 8388608,
+      "sha256": "f21ba7e706d51e53d21a8aa98330b7d95a654008b91916d9438bcf7ae49efd09"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part02",
+      "bytes": 8388608,
+      "sha256": "e60a8eb858418b3624e79a3e7155b58977e2aefdad8470da874e11eb125f824e"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part03",
+      "bytes": 8388608,
+      "sha256": "159c87601bbe0aee468010992d8e7d715530e66963b47f09917962e63bcdee25"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part04",
+      "bytes": 8388608,
+      "sha256": "4a31a290995569b6b2654d50ffa3ed21f1d318a01d3f27c5794896e5609693ac"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part05",
+      "bytes": 8388608,
+      "sha256": "43ea168dbb7363cdcfe06d603988152a070cf8ba1ff7f75ada1006a27266762d"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part06",
+      "bytes": 8388608,
+      "sha256": "287e75bc4daf6f3ef90bf0fd39fd05cb7aa1b58a1e1a719a29e8608d40bb5e96"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part07",
+      "bytes": 8388608,
+      "sha256": "fb69fd2a05056e955185d10e9f8e1ac49b4a061a27497cdbca29b0938cf1617e"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part08",
+      "bytes": 8388608,
+      "sha256": "bb37d21400ba6ba61db5746d24203707aaa890e4b0797c3e88e026e028612c36"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part09",
+      "bytes": 8388608,
+      "sha256": "d820212fdad336e6b4baebec7e5822dcb2b1736d927bdbf552930fcac59e1037"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part10",
+      "bytes": 8388608,
+      "sha256": "792168daf29677fb533a10900ef23ff64c55c2ee392adb51866fb8df2148794d"
+    },
+    {
+      "name": "PerfectJet-v0.14.0.zip.part11",
+      "bytes": 2179908,
+      "sha256": "ddb23a3711942321d499bd29fca2095668be0ed8fc616c43bf468be7b0d4a5df"
+    }
+  ]
+}

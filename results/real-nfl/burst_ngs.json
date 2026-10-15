@@ -1,0 +1,249 @@
+{
+  "protocol": {
+    "schema": "perfectjet/nfl-burst-transfer/1",
+    "primary": "forty-yard post-onset half-second burst -> context-adjusted rookie LOS-crossing time",
+    "secondary": "same functional on predeclared front starts, with drill nuisance adjustment",
+    "horizon_seconds": 0.5,
+    "onset_speed_yards_per_second": 0.5,
+    "sustained_frames": 3,
+    "maximum_turn_degrees": 15,
+    "baseline_penalties": [
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "inner_player_folds": 3,
+    "source_nuisance_penalty": 100.0,
+    "scout_correction_penalty": 1.0,
+    "minimum_plays": 30,
+    "primary_metric": "equal-athlete paired squared-error reduction",
+    "decision_rule": "shortlist lowest predicted quartile per class; hit = target below training lower quartile",
+    "source_noise": "estimated from independent repeat attempts; branch ranges are descriptive",
+    "conventional": [
+      "height",
+      "weight",
+      "hand_size",
+      "arm_length",
+      "wing_span",
+      "ten_yd_split",
+      "forty",
+      "vertical",
+      "broad",
+      "three_cone",
+      "shuttle",
+      "bench",
+      "ngs_athleticism_score",
+      "ngs_college_production_score",
+      "ngs_final_score"
+    ],
+    "availability": "all five raw drill flags and attempt counts shared by every model",
+    "NGS": "strong comparator includes supplied draft grades under declared pre-draft interpretation; repeat without NGS",
+    "context": "starting LOS depth, width, speed, situation and alignment; fit on training athletes only",
+    "NFL_horizon": "rookie regular season; training seasons strictly before evaluated class",
+    "2025": "previously inspected development evidence, never a fresh holdout",
+    "candidate_status": "protocol is fixed before this new experiment, but the data have prior adaptive use"
+  },
+  "protocol_sha256": "96a8cadf0b10184fb76c7a85612ec6d196ed36e0b94dcdcf8201f6658eee9115",
+  "synthetic": false,
+  "status": "real_data_development_experiment",
+  "include_ngs": true,
+  "conclusion": "Development evidence only. A positive point estimate on inspected cohorts is not independent confirmation.",
+  "elapsed_seconds": 49.07713881199743,
+  "checkpoint_sha256": "2ade4c164b540b124583ff630e7ace485b8147aefb6136471e5eec210f881957",
+  "aggregate_only_public_receipt": true,
+  "families": {
+    "primary_forty": {
+      "usable_attempts": 0,
+      "source_players": 0,
+      "attempts_by_drill": {},
+      "summary": {
+        "athletes": 51,
+        "mse_baseline": 0.0026685909974390916,
+        "mse_movement": 0.0026685909974390916,
+        "gain": 0.0,
+        "calibration_mean_error": {
+          "baseline": -0.019218645769183897,
+          "movement": -0.019218645769183897
+        },
+        "decisions": [
+          {
+            "class": 2024,
+            "budget": 6,
+            "hits": {
+              "baseline": 0,
+              "movement": 0
+            },
+            "promoted": 0,
+            "demoted": 0
+          },
+          {
+            "class": 2025,
+            "budget": 8,
+            "hits": {
+              "baseline": 2,
+              "movement": 2
+            },
+            "promoted": 0,
+            "demoted": 0
+          }
+        ],
+        "fixed_prediction_interval_90": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "fixed fitted predictions; does not include selection/training uncertainty"
+      },
+      "folds": [
+        {
+          "year": 2024,
+          "chosen_penalties": {
+            "baseline": 100.0,
+            "movement": 100.0
+          },
+          "inner_scores": {
+            "baseline": [
+              0.005984289117918806,
+              0.004118796068793204,
+              0.004389581008075299
+            ],
+            "movement": [
+              0.005984289117918806,
+              0.004118796068793204,
+              0.004389581008075299
+            ]
+          },
+          "evaluated_athletes": 22,
+          "mse_by_predictor": {
+            "baseline": 0.00287891894929025,
+            "movement": 0.00287891894929025
+          },
+          "training_movement_state": {}
+        },
+        {
+          "year": 2025,
+          "chosen_penalties": {
+            "baseline": 100.0,
+            "movement": 100.0
+          },
+          "inner_scores": {
+            "baseline": [
+              0.004054881895888595,
+              0.0020868720249575114,
+              0.002121569842138381
+            ],
+            "movement": [
+              0.004054881895888595,
+              0.0020868720249575114,
+              0.002121569842138381
+            ]
+          },
+          "evaluated_athletes": 29,
+          "mse_by_predictor": {
+            "baseline": 0.0025090318615520056,
+            "movement": 0.0025090318615520056
+          },
+          "training_movement_state": {}
+        }
+      ]
+    },
+    "secondary_front_starts": {
+      "usable_attempts": 27,
+      "source_players": 26,
+      "attempts_by_drill": {
+        "RUN_THE_HOOP_DRILL": 13,
+        "FOUR_BAG_AGILITY_DRILL": 1,
+        "PASS_RUSH_DRILL": 11,
+        "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION": 2
+      },
+      "summary": {
+        "athletes": 51,
+        "mse_baseline": 0.0026685909974390916,
+        "mse_movement": 0.0026685909974390916,
+        "gain": 0.0,
+        "calibration_mean_error": {
+          "baseline": -0.019218645769183897,
+          "movement": -0.019218645769183897
+        },
+        "decisions": [
+          {
+            "class": 2024,
+            "budget": 6,
+            "hits": {
+              "baseline": 0,
+              "movement": 0
+            },
+            "promoted": 0,
+            "demoted": 0
+          },
+          {
+            "class": 2025,
+            "budget": 8,
+            "hits": {
+              "baseline": 2,
+              "movement": 2
+            },
+            "promoted": 0,
+            "demoted": 0
+          }
+        ],
+        "fixed_prediction_interval_90": [
+          0.0,
+          0.0
+        ],
+        "interval_scope": "fixed fitted predictions; does not include selection/training uncertainty"
+      },
+      "folds": [
+        {
+          "year": 2024,
+          "chosen_penalties": {
+            "baseline": 100.0,
+            "movement": 100.0
+          },
+          "inner_scores": {
+            "baseline": [
+              0.005984289117918806,
+              0.004118796068793204,
+              0.004389581008075299
+            ],
+            "movement": [
+              0.005984289117918806,
+              0.004118796068793204,
+              0.004389581008075299
+            ]
+          },
+          "evaluated_athletes": 22,
+          "mse_by_predictor": {
+            "baseline": 0.00287891894929025,
+            "movement": 0.00287891894929025
+          },
+          "training_movement_state": {}
+        },
+        {
+          "year": 2025,
+          "chosen_penalties": {
+            "baseline": 100.0,
+            "movement": 100.0
+          },
+          "inner_scores": {
+            "baseline": [
+              0.004054881895888595,
+              0.0020868720249575114,
+              0.002121569842138381
+            ],
+            "movement": [
+              0.004054881895888595,
+              0.0020868720249575114,
+              0.002121569842138381
+            ]
+          },
+          "evaluated_athletes": 29,
+          "mse_by_predictor": {
+            "baseline": 0.0025090318615520056,
+            "movement": 0.0025090318615520056
+          },
+          "training_movement_state": {}
+        }
+      ]
+    }
+  }
+}

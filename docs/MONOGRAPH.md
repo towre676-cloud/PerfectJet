@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.15.0 · 14 October 2026
+Version 0.14.0 · 15 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -33,7 +33,8 @@ A master synthesis of the two archival passes and both enhancement programs. The
 - [25_historical_results_and_extended_leads](chapters/25_historical_results_and_extended_leads.md)
 - [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md)
 - [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md)
-- [28_partner_incidence](chapters/28_partner_incidence.md)
+- [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md)
+- [29_partner_incidence](chapters/29_partner_incidence.md)
 
 ---
 
@@ -452,11 +453,11 @@ Release0.11.0 connects the mathematical core to a completed official-input NFL e
 
 Release0.12.0 connects operational NFL movement targets, finite-horizon numerical delay states, player-cross-fitted Combine-to-movement-to-get-off transfer, fitted physical loadings, and exact joint measurement allocation. It adds a reproducible Gaussian package counterexample and a rational-snapshot allocation regret bound. The official nine-file experiment remains unexecuted; no new empirical NFL advantage is claimed.
 
-Release0.13.0 studies the partner incidence variety in the full seven-coefficient space (chapter28). Random lines show that only degrees3 and12 have hypersurface components, A2=B/6 and A2=25B/96. Exact computation on the dense slice classifies the small degrees. Quintic partners occur exactly for sextics with a root of multiplicity at least four and for the GL2-class of x6+(40/7)x3y3+y6. Larger quartic kernels occur exactly for the octahedral sextic and fivefold roots. Larger cubic kernels occur on the dihedral class of x6+y6.
+Release0.14.0 studies the partner incidence variety in the full seven-coefficient space (chapter29). Random lines show that only degrees3 and12 have hypersurface components, A2=B/6 and A2=25B/96. Exact computation on the dense slice classifies the small degrees. Quintic partners occur exactly for sextics with a root of multiplicity at least four and for the GL2-class of x6+(40/7)x3y3+y6. Larger quartic kernels occur exactly for the octahedral sextic and fivefold roots. Larger cubic kernels occur on the dihedral class of x6+y6.
 
-Release0.14.0 adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
+It adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
 
-Release0.15.0 identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on two primes.
+External solvers then settle degrees 6 to 19: msolve over Q, Singular modulo primes. Extra partners come from a fourfold root, from x3y3, from the symmetric sextics x6+y6, the octahedral sextic and the order-three family, or from the hypersurfaces in degrees3 and12. It also identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on two primes.
 
 Formal frontiers include the remaining lower-dimensional components of the seven-coefficient incidence variety in degrees eight and above,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
@@ -909,9 +910,66 @@ The strongest completed result is a connected, falsifiable computation: physical
 
 ---
 
+# Real NFL data: recovery, execution, and the information bottleneck
+
+PerfectJet 0.13.0 executes the previously implemented mathematical bridges on the original official nine-file data, adds a broad public Combine benchmark and independently checks the movement machinery on 122 NFL games. The result is a usable, measured research system and an important negative finding: these experiments do not establish an incremental scouting advantage. The old atlas, both archival passes, both enhancement programs, exact kernels and recovered canonical NFL research remain preserved. This chapter supersedes the earlier releases' pending-input status; their historical execution statements describe those earlier releases.
+
+## The original ingestion was recovered
+
+The earlier Develop NFL Research Entry session had already acquired all nine official files and preserved the private input archives. Both restricted-input ZIP parts and the research checkpoint archive were recovered. Every original CSV matched the SHA256 and byte length recorded by that session: 2,306,804,135 bytes in total. No replacement Kaggle ingestion or new sign-in was needed. The current work uses those same bytes. Individual restricted player outputs and raw competition data remain private; public results below contain aggregates.
+
+Actual input exposed a clock assumption missed by the small fixtures: the official source timestamps omit timezone offsets. Treating all such values as invalid discarded all source attempts. The corrected reader uses their relative clock and source calendar date without claiming a timezone. Explicit-offset clocks normalize to UTC; mixed naive/aware clocks within an attempt are rejected. A regression test covers each case. Independently, the external 2021 data quantize timestamps to whole seconds, so their 10 Hz frame IDs are used only after a source-specific consistency check. There is no universal guessed timestamp repair.
+
+Preparation scanned all three NFL seasons and produced 118 tracked prospects, 745 source attempts and 14,665 eligible rookie REG plays. Of these players, 74 have eligible NFL outcomes: 23 in 2023, 22 in 2024 and 29 in 2025. The bounded movement extractor retained 454,325 frames and 13,692 usable movement records, including 8,674 usable records with observed post-snap onset. The effective scouting sample remains players, not these thousands of plays.
+
+The source launch gate exposed a serious coverage limit. The causal-prefix extractor accepts 309 attempts across the declared five drill families, but just 18 forty-yard attempts. Only 10 of the 74 eligible players have an accepted forty-yard launch prefix. The older acceleration functional uses stricter causal derivative and straightness requirements and accepts zero attempts under its declared protocol. Its resulting zero correction is a coverage failure, not evidence that true player acceleration has no value. Neither detector is loosened after outcome inspection to manufacture a larger primary population.
+
+## What the recovered Combine-to-NFL bridge actually did
+
+The primary temporal protocol trains on 2023 and evaluates 2024, then trains on 2023–2024 and evaluates 2025. Every inner and stacking fold rebuilds movement context, finite-horizon state, source transforms, conventional transforms and tuning from training players. The decoder trains on out-of-player forecasts, never true NFL movement supplied as a prospect predictor. Shared coverage/support flags and all fifteen conventional measurements remain available to the comparator. The 2025 cohort was previously inspected; all results are development evidence.
+
+Across 51 held players, the forty-source bridge reduces MSE by 0.764% against the training-selected comparator. Its fixed-prediction 90% interval is −0.0096% to +1.488%; it includes zero and excludes uncertainty from rebuilding the models. More tellingly, a conventional-only two-stage movement bridge performs better than the tracking bridge: tracking increases error by 0.323% against that control. This is evidence against crediting the small direct-comparator gain to additional tracking information.
+
+Removing NGS traits in the chronology sensitivity leaves a 0.0247% MSE improvement, with an interval spanning zero. The declared secondary bridge pooling the five front drill families loses 0.0593%, also with an interval spanning zero. In every bridge variant, the fixed-budget top-quarter shortlist is unchanged from its comparator. More elaborate representation did not change the actionable scouting choice. The original burst protocol accepts no source observations and produces the same baseline and movement predictions, with zero gain.
+
+Full original-player refits rebuild the entire primary procedure. This run completed 15 of 16 requested draws, with 1 failures. The exploratory 90% full-refit percentile interval is -6.489% to +10.946%; these few successful draws cannot support precise tail inference.  Their finite-draw receipt is `results/real-nfl/bridge_refits.json`; it reports successful and failed draws, not a silent reduced denominator. It remains a small development sensitivity analysis, not a calibrated prospective confidence guarantee. Fixed-prediction and full-refit intervals must remain distinct. The complete private predictions and checkpoint are retained separately from the public aggregate receipts.
+
+## Broad public Combine-to-rookie outcomes
+
+The public source pass ingested 88 files, 80,173,908 bytes and 1,084,747 CSV rows. It includes Combine traits, draft metadata, stable player crosswalks, season and weekly outcomes, snaps, pressure summaries, eleven NGS assets and the NFL's explicitly published 2017 tracking sample. Incomplete 2026 outcomes are excluded. Ambiguous player identities and ambiguous pressure totals are rejected, unknown outcomes remain missing, and fuzzy-name matching is absent. These choices prevent apparent performance from being built on silent wrong-player joins or fabricated zeros.
+
+The benchmark executed 125 temporal scope/target/class folds and 5,310 model fits, yielding 12,342 held target/player predictions across reused endpoints and overlapping scopes. Those 12,342 predictions are not 12,342 independent people. The primary population is Combine-listed defensive line; front-seven and all-position screens are exploratory. A deterministic mechanical transform of conventional measurements adds model flexibility, not new measured information: if $Z=\phi(B)$, then $\sigma(B,Z)=\sigma(B)$.
+
+The stronger conventional control includes numeric-by-Combine-position quadratic interactions and inner-selected penalties. Primary defensive-line MSE gains are −2.48% for rookie defensive snaps, −1.39% for sacks, −0.93% for QB hits, +0.56% for pressures and −0.83% for pressure rate; every fixed-prediction interval crosses zero. An initially promising front-seven pressure result shrinks to +2.09%, with 95% interval −6.45% to +9.64%, after improving the conventional role interactions. The 2025 class loses 12.92%. This control improvement is retained rather than publishing the earlier weaker-comparator headline. The detailed source audit, fold selections, metrics and attribution are in `research/public_nfl/REPORT.md` and its manifests.
+
+## Independent movement evidence from 122 games
+
+The regional NFL research source supplies 8,314,178 real tracking observations from 122 games in 2021, along with games, players, plays and PFF role labels. Downloaded raw assets total 865,324,685 bytes. Source URLs, hashes and the pinned upstream commit are recorded. Raw regional tracking stays outside the public repository; the source downloader and aggregate evidence are included. Its independence is useful for checking movement construction but does not supply paired pre-draft Combine histories.
+
+There are 34,780 valid rusher geometry records, 32,936 usable crossings and 21,406 observed post-snap onsets. On the same 254 players supported in both disjoint game halves, half-second forward displacement has Spearman repeatability 0.80186, compared with 0.72209 for path length, 0.39661 for onset delay and 0.72724 for travel time. These are descriptive player-mean stability estimates under observed situations. Role, team and geometry can contribute to stable means; repeatability is not innate ability, causality or Combine transfer.
+
+On 64 unseen players, the four-state five-frame history model forecasts the next 0.3 seconds of physical velocity with 0.28023 yd/s RMSE. The same test gives 0.49975 for instantaneous continuation, 0.39058 for last-difference constant acceleration, 0.41181 for a five-frame linear trend and 0.46684 for a quadratic trend. Ordinary full-history ridge achieves 0.28023 as well, within approximately 0.000003 yd/s. The compact state preserves the useful forecast; it does not demonstrate an accuracy advantage over a properly tuned ordinary autoregression.
+
+A separate role-depth hypothesis also receives an honest failure receipt. For later games of known players, adding player-specific depth response slopes gives 0.20459 seconds RMSE, worse than 0.19919 for conventional context. The simple physical arrival picture is a useful interpretation and an experimental hypothesis; these results do not support deploying fitted player-specific slopes. Full details and strong baseline selection are in `docs/nfl/EXTERNAL_TRACKING.md`.
+
+## How the mathematics earns its place
+
+The observability program identifies what the data cannot separate. Under the declared approximation $Y_i(d)=\tau_i+\beta_i\sqrt d$, one depth measures one linear readout of two hidden quantities. Two distinct depths give determinant $\sqrt{d_2}-\sqrt{d_1}$, nonzero exactly at distinct depths. This algebra identifies a possible measurement design, but the empirical slope failure prevents calling it a validated player model. Predictive-state mathematics earns a compression result against a strong history model. Closure/error decomposition identifies whether source transport or decoding fails. Exact allocation continues to solve its declared finite measurement packages, including correlation and nuisance cancellation, without pretending its assumed Gaussian information is an established scouting prior.
+
+The next empirical move is to increase useful, genuinely additional source information while keeping a strong conventional control. Existing in-motion Combine clips can support a separately declared causal rolling-motion experiment; they cannot be relabeled as observed launches. Any such protocol must freeze its physical target, source window, role demands, support exclusions and comparator budget before the next outcome evaluation. Untouched future players remain necessary. Additional equation families should enter only when they answer a measured bottleneck: missing launch coverage, unstable target construction, failed source-to-NFL transfer or unresolved decision margins. The present experiments do not support a breakthrough claim.
+
+## Reproduction and boundaries
+
+Run `scripts/prepare_official_bridge_data.py` on the recovered nine-file private directory. The preparation receipt binds original source hashes, extractor code hashes and the freshly owned private checkpoint. Run `scripts/run_recovered_official.py` for the primary, `--without-ngs` sensitivity, `--front-drills` secondary and `--kind burst` comparison; use `--refits` for full-pipeline draws. The runner verifies the checkpoint and extractor hashes and exports an explicit aggregate allowlist. It never loads arbitrary downloaded checkpoints or silently substitutes synthetic data.
+
+The public and external runners have their own frozen source manifests and source-specific audits. Public source re-ingestion rejects changed bytes rather than silently using a different snapshot. Tests distinguish analytic identities, fixture behavior, source parsing, causal windows, player isolation, strong comparator equality and privacy of restricted individual outputs. Unit-test counts and real-data execution counts are separate. This release preserves a reproducible research result: useful NFL movement structure, a measured Combine coverage problem, and no established incremental scouting edge.
+
+
+---
+
 # Partner incidence over the full sextic space
 
-The partner question asks, for a binary sextic f and a degree N, whether some nonzero form g of degree N satisfies the correction gates (f,g)_3 = (f,g)_5 = 0. The set P_N of sextics whose kernel ker L_N(f) exceeds its generic dimension is closed and GL2-invariant. Earlier releases studied P_N on two-parameter families. Release 0.13.0 studies it in the full seven-dimensional space of sextics, which is the formal frontier this atlas has listed since 0.1.0.
+The partner question asks, for a binary sextic f and a degree N, whether some nonzero form g of degree N satisfies the correction gates (f,g)_3 = (f,g)_5 = 0. The set P_N of sextics whose kernel ker L_N(f) exceeds its generic dimension is closed and GL2-invariant. Earlier releases studied P_N on two-parameter families. Release 0.14.0 studies it in the full seven-dimensional space of sextics, which is the formal frontier this atlas has listed since 0.1.0.
 
 ## Two reductions that make the full space computable
 
@@ -972,15 +1030,46 @@ Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent
 
 > ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
 
-This explains everything recorded in 0.13.0. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
+This explains the earlier degree-8 observations. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
 
 **Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
 
 **Remaining components.** Lower-dimensional components of P_N for N >= 8, and of P_12 beyond its hypersurface, remain open. Degrees 9 to 11 have not been examined on the slice.
 
+## Rational certificates and the classification through degree 19
+
+Release 0.14.0 adds two external computer-algebra checks: `scripts/singular_partner_check.py` uses Singular over a prime field, and `scripts/msolve_partner_check.py` uses msolve over Q. They are optional verifiers; the dependency-free core does not need them.
+- **The system.** For each degree N and kernel threshold k, a few random integer projections det(P L_N S) on the slice vanish wherever dim ker L_N >= k, so their common zero set contains the locus. A Rabinowitsch variable removes repeated roots at 0 and 1.
+- **Emptiness.** msolve decides over Q whether that system has a complex solution. An empty superset means an empty locus.
+- **Invariant relations.** Multiplying the Rabinowitsch polynomial by an invariant relation J tests whether J vanishes on every point of the locus.
+- **Controls.** The control relation A fails wherever the locus is nonempty, as it must, and Singular modulo 2147483629 and 1000000007 agrees with every msolve verdict. The receipts are in `results/partner_incidence_solver_receipts.json`.
+
+Points of the locus have three simple roots, so their invariants do not all vanish. In degrees 3, 4, 10 and 14 the relations give B = C = D = 0, or B = 6A^2 with C = -36A^3 and D = 0, and these force A to be nonzero. The Clebsch point is then that of the octahedral sextic or of x^6+y^6. Both are stable, so the GIT fibre over that point is a single GL2-orbit. Combined with the exact profiles of the degenerate root patterns (`degenerate_profile`) and the exact partners of the named sextics, this gives, over the algebraic closure, trusting the msolve computations:
+
+| N | Extra correction-free partners occur exactly when f |
+|---|---|
+| 3 | satisfies B = 6A^2; dim ker >= 2 exactly for x^6+y^6 or a root of multiplicity >= 5 |
+| 4 | (beyond (f,f)_4) is octahedral xy(x^4-y^4) or has a root of multiplicity >= 5 |
+| 5 | has a root of multiplicity >= 4, or is equivalent to x^6+(40/7)x^3y^3+y^6 |
+| 6 | (beyond f itself) has a root of multiplicity >= 4 |
+| 7, 9, 11, 13, 15, 17, 19 | has a root of multiplicity >= 4 |
+| 8 | has a root of multiplicity >= 4, or an automorphism of order three (x^6+lambda x^3y^3+y^6, or x^3y^3) |
+| 10 | has a root of multiplicity >= 4, is x^3y^3, or is equivalent to x^6+y^6 |
+| 12 | satisfies A^2 = 25B/96 (the hypersurface, which contains the degenerate cases) |
+| 14 | has a root of multiplicity >= 4, is x^3y^3, or is octahedral |
+| 16, 18 | has a root of multiplicity >= 4, or is x^3y^3 |
+
+Degree 20 is reported in the receipts when its run completes. Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
+- the dihedral sextic x^6+y^6, in degrees 3 and 10;
+- the octahedral sextic, in degrees 4 and 14;
+- the order-three family, in degree 8;
+- its 40/7 member, in degree 5.
+
+The only other exceptions are the two invariant hypersurfaces in degrees 3 and 12. This is a computer-assisted classification: its rational steps rest on msolve's correctness, and degrees 6 to 8 also have the independent dependency-free modular evidence above.
+
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6, 7 and the forward direction of degree 8 rest on Groebner bases modulo two large primes, not a rational proof. Lower-dimensional components of P_N for N >= 8 remain open except where stated.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 19 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.
 
 
 ---
@@ -1325,56 +1414,67 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E332 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; certified on the dense slice by a 125-point exact grid. |
 | PJ-E333 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0. |
 | PJ-E334 | invariants | degree-12 covariant partner | G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96 | exact_checked | Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0. |
-| PJ-E335 | invariants | degree-12 partner converse | ker L_12(f)!=0 => A^2=25B/96 | open | Supported by random sextics and two independent families; not proved. |
-| PJ-E336 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
-| PJ-E337 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
-| PJ-E338 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
-| PJ-E339 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
-| PJ-E340 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
-| PJ-E341 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
-| PJ-E342 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
-| PJ-E343 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
-| PJ-E344 | observability | LOS onset-travel ambiguity | X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1 | exact_checked | Total onset plus travel cannot identify either component; separate from acceleration models. |
-| PJ-E345 | empirical | stable crossing travel | u=2d/(v+sqrt(v^2+2ad)) | derived | Local constant acceleration; d,v>=0 and a>0; not an athlete physiology law. |
-| PJ-E346 | empirical | crossing travel box | u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo) | exact_checked | Monotone extrema of declared box; outward polynomial signs rationally checked. |
-| PJ-E347 | empirical | half-second motor functional | A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2 | definition | T=.5s post operational onset; no known cue or reaction-time claim. |
-| PJ-E348 | empirical | acceleration functional identity | A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt | derived | Integrable acceleration; analytic invariance tests; no second numerical differentiation. |
-| PJ-E349 | empirical | scalar source precision | V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2 | derived | Gaussian player deviation; independent training repeats; branches are not repeats. |
-| PJ-E350 | empirical | uncertainty-integrated NFL correction | r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i) | derived | Conditional error independence; target precision descriptive; empirical transfer unestablished. |
-| PJ-E351 | empirical | paired loss noise cancellation | Delta_noisy=Delta_clean+2e(p_movement-p_baseline) | derived | Expected equality requires conditional mean-zero error; no automatic causal interpretation. |
-| PJ-E352 | observability | operational get-off decomposition | t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset) | derived | Observed geometry and operational tracking onset; supplied official get-off retained separately; no reaction-time claim. |
-| PJ-E353 | observability | positive onset-travel hidden direction | X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1 | exact_checked | Linear sum cannot determine onset independently; physically admissible positive witnesses in bridge receipt. |
-| PJ-E354 | empirical | game-cluster movement covariance | Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z) | definition | Common usable plays and original play weights; fewer than two games yields unknown covariance. |
-| PJ-E355 | dynamics | causal post-onset burst integral | A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du | derived | Twice differentiable directional position, causal initial velocity, T=.5 s; not force or reaction time. |
-| PJ-E356 | series | supervised delay continuation | K_lambda=(P^T W P+lambda I)^(-1)P^T W F | numerical_checked | Train-only standardized past/future movement blocks; equal sampled-player weight; player-held inner selection. |
-| PJ-E357 | series | target-directed finite state | z=p K_lambda V_r; forecast=z V_r^T | numerical_checked | Right singular vectors of fitted future outputs; centering/inverse scaling in code; finite declared horizon only. |
-| PJ-E358 | series | second-order predictive witness | u_(t+1)=3/2 u_t-3/4 u_(t-1) | numerical_checked | Explicitly synthetic recurrence; identical current samples need not imply equal continuations. |
-| PJ-E359 | empirical | cross-fitted physical movement transfer | qhat_i^OOF=f_(training minus fold(i))(B_i,X_i) | definition | State discovery, targets and preprocessing rebuilt for each player fold; physical units across SVD rotations. |
-| PJ-E360 | empirical | prediction-trained outcome decoder | g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2 | definition | Training inputs are predicted movement; held-out NFL movement enters diagnostics only. |
-| PJ-E361 | dynamics | fitted two-stage error identity | yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y] | derived | Frozen fitted decoder and observed held-out target; algebraic decomposition does not imply causation. |
-| PJ-E362 | dynamics | fixed affine movement scenario bound | abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j | derived | Affine fitted decoder and valid supplied box abs(qhat_j-q_j)<=r_j; separate from empirical intervals. |
-| PJ-E363 | observability | physical scouting loading | q=F x+c, g=w^T q+b => h=F^T w | derived | Frozen affine fit and fixed preprocessing/missingness pattern; physical source units. |
-| PJ-E364 | observability | exact scalar posterior update | Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e) | exact_checked | Positive-definite rational prior, positive independent noise; fixed loading and declared Gaussian model. |
-| PJ-E365 | observability | correlated attempt block update | Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma | exact_checked | Positive-definite joint within-attempt noise; duplicate original attempt IDs rejected. |
-| PJ-E366 | counting | joint target measurement package | S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k | exact_checked | Declared finite hypotheses and at most18 candidate packages; exact feasible counts, ranks and tie population. |
-| PJ-E367 | observability | zero-isolated-value synergy | VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131 | exact_checked | Sigma=I2, h=(1,0), A=(1,0) noise1, B=(1,1) noise1/10, C=(0,1) noise1/10, budget2. |
-| PJ-E368 | observability | joint package advantage witness | 110/131-21/32=769/4192 | exact_checked | Synthetic exact Gaussian allocation example; no empirical NFL gain inferred. |
-| PJ-E369 | observability | loading-family zero-effect limit | min_h VOI(S;h)=0 if 0 belongs to loading hypotheses | derived | Covariance reduction PSD; a zero target loading has zero conditional source benefit. |
-| PJ-E370 | decisions | contender-difference loading | h_(a,b)=H_a-H_b | definition | Frozen common source coordinates; only overlapping possible leaders need sensing under valid scenario bounds. |
-| PJ-E371 | observability | rationalized fitted loading | norm(h_decimal-h_rational)_infinity<=declared_tolerance | exact_checked | Exact calculation for rational snapshot; coefficient discrepancy recorded; estimated loading remains empirically uncertain. |
-| PJ-E372 | observability | uniform loading rationalization bound | abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2 | exact_checked | 0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate. |
-| PJ-E373 | counting | rationalized package regret | raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon | exact_checked | Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses. |
-| PJ-E374 | observability | target-information non-submodularity witness | VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751 | exact_checked | The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows. |
-| PJ-E375 | invariants | line probe for partner hypersurfaces | rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N | exact_checked | Exact on each line; genericity of the line supported by agreement of independent random lines. |
-| PJ-E376 | invariants | partner hypersurfaces in degrees 3..19 | codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96) | exact_checked | Two independent random lines for N<=14, one line for N<=19. |
-| PJ-E377 | invariants | dense slice | f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots | derived | Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r. |
-| PJ-E378 | invariants | covariants over a quotient ring | Clebsch invariants of the slice computed in Q[p,q,r]/I | exact_checked | Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration. |
-| PJ-E379 | invariants | quintic partner classification | ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6 | exact_checked | Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly. |
-| PJ-E380 | invariants | octahedral quartic jump | dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5 | exact_checked | Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly. |
-| PJ-E381 | invariants | dihedral cubic jump | dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6 | exact_checked | Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots. |
-| PJ-E382 | invariants | degree-8 partner classification | ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3 | numerical_checked | Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the 0.13.0 bielliptic conjecture. |
-| PJ-E383 | invariants | C3 curve in moduli | x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3 | exact_checked | Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0. |
-| PJ-E384 | invariants | sextic partner jump | dim ker L_6(f)>=2 iff f has a root of multiplicity>=4 | numerical_checked | Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. |
-| PJ-E385 | invariants | septic partners | ker L_7(f)!=0 iff f has a root of multiplicity>=4 | numerical_checked | Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. |
-| PJ-E386 | modular | prime-field Groebner evidence | 1 in I mod p => 1 in I over Q outside finitely many bad primes | derived | Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime. |
-| PJ-E387 | invariants | orbit count check | slice points = 120/\|Stab_PGL2(roots)\|; 20 for C3(40/7), 10 for x^6+y^6 | derived | Ordered placements of three simple roots; stabilizer orders 6 and 12. |
+| PJ-E335 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
+| PJ-E336 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
+| PJ-E337 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
+| PJ-E338 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
+| PJ-E339 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
+| PJ-E340 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
+| PJ-E341 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
+| PJ-E342 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
+| PJ-E343 | observability | LOS onset-travel ambiguity | X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1 | exact_checked | Total onset plus travel cannot identify either component; separate from acceleration models. |
+| PJ-E344 | empirical | stable crossing travel | u=2d/(v+sqrt(v^2+2ad)) | derived | Local constant acceleration; d,v>=0 and a>0; not an athlete physiology law. |
+| PJ-E345 | empirical | crossing travel box | u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo) | exact_checked | Monotone extrema of declared box; outward polynomial signs rationally checked. |
+| PJ-E346 | empirical | half-second motor functional | A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2 | definition | T=.5s post operational onset; no known cue or reaction-time claim. |
+| PJ-E347 | empirical | acceleration functional identity | A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt | derived | Integrable acceleration; analytic invariance tests; no second numerical differentiation. |
+| PJ-E348 | empirical | scalar source precision | V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2 | derived | Gaussian player deviation; independent training repeats; branches are not repeats. |
+| PJ-E349 | empirical | uncertainty-integrated NFL correction | r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i) | derived | Conditional error independence; target precision descriptive; empirical transfer unestablished. |
+| PJ-E350 | empirical | paired loss noise cancellation | Delta_noisy=Delta_clean+2e(p_movement-p_baseline) | derived | Expected equality requires conditional mean-zero error; no automatic causal interpretation. |
+| PJ-E351 | observability | operational get-off decomposition | t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset) | derived | Observed geometry and operational tracking onset; supplied official get-off retained separately; no reaction-time claim. |
+| PJ-E352 | observability | positive onset-travel hidden direction | X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1 | exact_checked | Linear sum cannot determine onset independently; physically admissible positive witnesses in bridge receipt. |
+| PJ-E353 | empirical | game-cluster movement covariance | Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z) | definition | Common usable plays and original play weights; fewer than two games yields unknown covariance. |
+| PJ-E354 | dynamics | causal post-onset burst integral | A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du | derived | Twice differentiable directional position, causal initial velocity, T=.5 s; not force or reaction time. |
+| PJ-E355 | series | supervised delay continuation | K_lambda=(P^T W P+lambda I)^(-1)P^T W F | numerical_checked | Train-only standardized past/future movement blocks; equal sampled-player weight; player-held inner selection. |
+| PJ-E356 | series | target-directed finite state | z=p K_lambda V_r; forecast=z V_r^T | numerical_checked | Right singular vectors of fitted future outputs; centering/inverse scaling in code; finite declared horizon only. |
+| PJ-E357 | series | second-order predictive witness | u_(t+1)=3/2 u_t-3/4 u_(t-1) | numerical_checked | Explicitly synthetic recurrence; identical current samples need not imply equal continuations. |
+| PJ-E358 | empirical | cross-fitted physical movement transfer | qhat_i^OOF=f_(training minus fold(i))(B_i,X_i) | definition | State discovery, targets and preprocessing rebuilt for each player fold; physical units across SVD rotations. |
+| PJ-E359 | empirical | prediction-trained outcome decoder | g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2 | definition | Training inputs are predicted movement; held-out NFL movement enters diagnostics only. |
+| PJ-E360 | dynamics | fitted two-stage error identity | yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y] | derived | Frozen fitted decoder and observed held-out target; algebraic decomposition does not imply causation. |
+| PJ-E361 | dynamics | fixed affine movement scenario bound | abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j | derived | Affine fitted decoder and valid supplied box abs(qhat_j-q_j)<=r_j; separate from empirical intervals. |
+| PJ-E362 | observability | physical scouting loading | q=F x+c, g=w^T q+b => h=F^T w | derived | Frozen affine fit and fixed preprocessing/missingness pattern; physical source units. |
+| PJ-E363 | observability | exact scalar posterior update | Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e) | exact_checked | Positive-definite rational prior, positive independent noise; fixed loading and declared Gaussian model. |
+| PJ-E364 | observability | correlated attempt block update | Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma | exact_checked | Positive-definite joint within-attempt noise; duplicate original attempt IDs rejected. |
+| PJ-E365 | counting | joint target measurement package | S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k | exact_checked | Declared finite hypotheses and at most18 candidate packages; exact feasible counts, ranks and tie population. |
+| PJ-E366 | observability | zero-isolated-value synergy | VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131 | exact_checked | Sigma=I2, h=(1,0), A=(1,0) noise1, B=(1,1) noise1/10, C=(0,1) noise1/10, budget2. |
+| PJ-E367 | observability | joint package advantage witness | 110/131-21/32=769/4192 | exact_checked | Synthetic exact Gaussian allocation example; no empirical NFL gain inferred. |
+| PJ-E368 | observability | loading-family zero-effect limit | min_h VOI(S;h)=0 if 0 belongs to loading hypotheses | derived | Covariance reduction PSD; a zero target loading has zero conditional source benefit. |
+| PJ-E369 | decisions | contender-difference loading | h_(a,b)=H_a-H_b | definition | Frozen common source coordinates; only overlapping possible leaders need sensing under valid scenario bounds. |
+| PJ-E370 | observability | rationalized fitted loading | norm(h_decimal-h_rational)_infinity<=declared_tolerance | exact_checked | Exact calculation for rational snapshot; coefficient discrepancy recorded; estimated loading remains empirically uncertain. |
+| PJ-E371 | observability | uniform loading rationalization bound | abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2 | exact_checked | 0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate. |
+| PJ-E372 | counting | rationalized package regret | raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon | exact_checked | Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses. |
+| PJ-E373 | observability | target-information non-submodularity witness | VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751 | exact_checked | The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows. |
+| PJ-E374 | empirical | equal-player temporal relative gain | G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2] | definition | Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage. |
+| PJ-E375 | empirical | same-input deterministic enhancement | Z=phi(B) => sigma(B,Z)=sigma(B) | derived | Deterministic conventional-trait transforms add function class flexibility, not new measured information. |
+| PJ-E376 | empirical | sample-clock relative displacement | Delta t=t_j-t_i=(k_j-k_i)/10 | conditional | 10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC. |
+| PJ-E377 | observability | observed launch eligibility | C_i=1{observed low-speed prefix and complete post-onset window} | definition | Coverage is measured before fitting; missing onset is never relabeled as a launch. |
+| PJ-E378 | empirical | conventional two-stage control | qhat_B=f_T(B), yhat_B=g_T(B,qhat_B) | definition | OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking. |
+| PJ-E379 | empirical | conditional bridge increment | Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX)) | definition | Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value. |
+| PJ-E380 | empirical | game-half movement stability | rho_S=corr(rank(m_i,early),rank(m_i,late)) | definition | Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result. |
+| PJ-E381 | empirical | original-player full refit | G_star=G(Refit(Resample_classes(original players))) | definition | Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only. |
+| PJ-E382 | observability | depth response observability | det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1) | derived | Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical. |
+| PJ-E383 | dynamics | arrival ranking switch locus | sqrt(d_star)=-Delta_tau/Delta_beta | conditional | Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge. |
+| PJ-E384 | invariants | line probe for partner hypersurfaces | rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N | exact_checked | Exact on each line; genericity of the line supported by agreement of independent random lines. |
+| PJ-E385 | invariants | partner hypersurfaces in degrees 3..19 | codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96) | exact_checked | Two independent random lines for N<=14, one line for N<=19. |
+| PJ-E386 | invariants | dense slice | f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots | derived | Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r. |
+| PJ-E387 | invariants | covariants over a quotient ring | Clebsch invariants of the slice computed in Q[p,q,r]/I | exact_checked | Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration. |
+| PJ-E388 | invariants | quintic partner classification | ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6 | exact_checked | Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly. |
+| PJ-E389 | invariants | octahedral quartic jump | dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5 | exact_checked | Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly. |
+| PJ-E390 | invariants | dihedral cubic jump | dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6 | exact_checked | Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots. |
+| PJ-E391 | invariants | degree-8 partner classification | ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3 | exact_checked | Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the earlier bielliptic conjecture. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E392 | invariants | C3 curve in moduli | x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3 | exact_checked | Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0. |
+| PJ-E393 | invariants | sextic partner jump | dim ker L_6(f)>=2 iff f has a root of multiplicity>=4 | exact_checked | Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E394 | invariants | septic partners | ker L_7(f)!=0 iff f has a root of multiplicity>=4 | exact_checked | Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E395 | invariants | partner classification through degree 19 | extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12) | exact_checked | Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve. |
+| PJ-E396 | invariants | degree-12 partner converse | ker L_12(f)!=0 iff A^2=25B/96 | exact_checked | Forward direction on the slice by msolve over Q; degenerate forms satisfy the relation; converse via the covariant G and closedness. |
+| PJ-E397 | modular | prime-field Groebner evidence | 1 in I mod p => 1 in I over Q outside finitely many bad primes | derived | Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime. |
+| PJ-E398 | invariants | orbit count check | slice points = 120/\|Stab_PGL2(roots)\|; 20 for C3(40/7), 10 for x^6+y^6 | derived | Ordered placements of three simple roots; stabilizer orders 6 and 12. |
