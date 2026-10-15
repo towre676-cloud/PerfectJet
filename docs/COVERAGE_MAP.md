@@ -470,3 +470,19 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T464 | Real NFL evidence | Independent real NFL tracking replication | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
 | PJ-T465 | Real NFL evidence | Strong history forecasting controls | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
 | PJ-T466 | Real NFL evidence | No scouting advantage from mechanism fit | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T467 | Partner incidence | Line probes for hypersurface components | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T468 | Partner incidence | Invariant identification on a line | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T469 | Partner incidence | Dense slice with three simple roots | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T470 | Partner incidence | Saturation away from repeated roots | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T471 | Partner incidence | Covariants over a quotient ring | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T472 | Partner incidence | Minimal polynomials of absolute invariants | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T473 | Partner incidence | Single-orbit certificate from a stable Clebsch point | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T474 | Partner incidence | Quintic partner classification | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T475 | Partner incidence | Octahedral quartic jump | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T476 | Partner incidence | Dihedral cubic jump | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T477 | Partner incidence | Degenerate root patterns | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T478 | Partner incidence | Degree-twelve hypersurface part | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T479 | Partner incidence | Open lower-dimensional components | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T480 | Partner incidence | Prime-field Groebner bases | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T481 | Partner incidence | Sextic and septic partner emptiness modulo primes | [29_partner_incidence](chapters/29_partner_incidence.md) |
+| PJ-T482 | Partner incidence | Fourfold-root uniform source | [29_partner_incidence](chapters/29_partner_incidence.md) |

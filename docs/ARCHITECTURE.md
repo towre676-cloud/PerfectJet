@@ -21,6 +21,8 @@ The current code is a small exact nucleus underneath a much larger documented pr
 | `sieve.py` | Adaptive local power-residue sieve | Excluding modulus and residue |
 | `strata.py` | Active partner strata, sextic discriminant, replayed partners at rational points | Stratum equations; commuting versus active split |
 | `deformation.py` | Stationary response, relation breaking directions, symmetry protection | Breaking direction with its dR |
+| `modular.py` | Groebner bases over GF(p), minors by modular Bareiss, Rabinowitsch emptiness | Unit-ideal verdict modulo a stated prime |
+| `incidence.py` | Partner incidence in the full sextic space: line probes, covariants over quotient rings, slice classification, degenerate forms | Hypersurface invariant; orbit certificate; open degrees |
 | `quadratic.py` | Solution-carrying compiler for k y^2 = a n^2 + b n + c: transport, Nagell seeds, orbit admissibility, remote indices | Branch and completeness status; failed reconstruction congruence |
 | `invariants.py` | Clebsch invariants, weighted orbit test, Cayley-Sylvester counts, invariant relations on cells, slice certificates, degree-12 covariant partner | Unequal weighted point; relation weight |
 | `readout.py` | Readout identifiability, demand readouts, minimal repair, Gaussian value of information | Two-fit witness vector; repeat versus new direction |

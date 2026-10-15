@@ -1,5 +1,5 @@
 {
-  "version": "0.10.0",
+  "version": "0.14.0",
   "molecular": {
     "arithmetic": "exact rational",
     "scope": "retained finite checks; parameter identities documented separately",
@@ -8301,6 +8301,554 @@
       ],
       "symmetry_protects": false
     }
+  },
+  "incidence": {
+    "method": "random line f0+t f1 meets every hypersurface component; dense slice for lower-dimensional loci",
+    "hypersurfaces": [
+      {
+        "degree": 3,
+        "generic_kernel": 0,
+        "hypersurface_degree": 4,
+        "invariant": {
+          "weight": 2,
+          "coefficient_degree": 4,
+          "relation": {
+            "B^1": "-1/6",
+            "A^2": "1"
+          },
+          "restriction_equals_locus": true
+        }
+      },
+      {
+        "degree": 4,
+        "generic_kernel": 1,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 5,
+        "generic_kernel": 0,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 6,
+        "generic_kernel": 1,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 7,
+        "generic_kernel": 0,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 8,
+        "generic_kernel": 0,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 9,
+        "generic_kernel": 0,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 10,
+        "generic_kernel": 0,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 11,
+        "generic_kernel": 0,
+        "hypersurface_degree": 0
+      },
+      {
+        "degree": 12,
+        "generic_kernel": 0,
+        "hypersurface_degree": 4,
+        "invariant": {
+          "weight": 2,
+          "coefficient_degree": 4,
+          "relation": {
+            "B^1": "-25/96",
+            "A^2": "1"
+          },
+          "restriction_equals_locus": true
+        }
+      }
+    ],
+    "slice_jumps": [
+      {
+        "degree": 3,
+        "kernel_at_least": 2,
+        "dimension": 0,
+        "classification": {
+          "points": 10,
+          "A_unit": true,
+          "B/A^2": {
+            "minimal_polynomial": [
+              "-6",
+              "1"
+            ],
+            "rational_values": [
+              "6"
+            ]
+          },
+          "C/A^3": {
+            "minimal_polynomial": [
+              "36",
+              "1"
+            ],
+            "rational_values": [
+              "-36"
+            ]
+          },
+          "D/A^5": {
+            "minimal_polynomial": [
+              "0",
+              "1"
+            ],
+            "rational_values": [
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "degree": 4,
+        "kernel_at_least": 2,
+        "dimension": 0,
+        "classification": {
+          "points": 20,
+          "A_unit": true,
+          "B/A^2": {
+            "minimal_polynomial": [
+              "0",
+              "1"
+            ],
+            "rational_values": [
+              "0"
+            ]
+          },
+          "C/A^3": {
+            "minimal_polynomial": [
+              "0",
+              "1"
+            ],
+            "rational_values": [
+              "0"
+            ]
+          },
+          "D/A^5": {
+            "minimal_polynomial": [
+              "0",
+              "1"
+            ],
+            "rational_values": [
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "degree": 5,
+        "kernel_at_least": 1,
+        "dimension": 0,
+        "classification": {
+          "points": 20,
+          "A_unit": true,
+          "B/A^2": {
+            "minimal_polynomial": [
+              "-486",
+              "1"
+            ],
+            "rational_values": [
+              "486"
+            ]
+          },
+          "C/A^3": {
+            "minimal_polynomial": [
+              "26244",
+              "1"
+            ],
+            "rational_values": [
+              "-26244"
+            ]
+          },
+          "D/A^5": {
+            "minimal_polynomial": [
+              "419904",
+              "1"
+            ],
+            "rational_values": [
+              "-419904"
+            ]
+          }
+        }
+      },
+      {
+        "degree": 5,
+        "kernel_at_least": 2,
+        "dimension": -1
+      }
+    ],
+    "quintic_certificate": {
+      "slice_points_with_multiplicity": 20,
+      "relations_hold": {
+        "B-486A^2": true,
+        "C+26244A^3": true,
+        "D+419904A^5": true
+      },
+      "A_is_unit": true,
+      "C3_40_over_7_absolute": {
+        "B/A^2": "486",
+        "C/A^3": "-26244",
+        "D/A^5": "-419904"
+      }
+    },
+    "degenerate_forms": {
+      "fixed": {
+        "x^6": [
+          {
+            "degree": 3,
+            "kernel": 3
+          },
+          {
+            "degree": 4,
+            "kernel": 3
+          },
+          {
+            "degree": 5,
+            "kernel": 3
+          },
+          {
+            "degree": 6,
+            "kernel": 3
+          },
+          {
+            "degree": 7,
+            "kernel": 3
+          },
+          {
+            "degree": 8,
+            "kernel": 3
+          },
+          {
+            "degree": 9,
+            "kernel": 3
+          },
+          {
+            "degree": 10,
+            "kernel": 3
+          },
+          {
+            "degree": 11,
+            "kernel": 3
+          },
+          {
+            "degree": 12,
+            "kernel": 3
+          }
+        ],
+        "x^5y": [
+          {
+            "degree": 3,
+            "kernel": 2
+          },
+          {
+            "degree": 4,
+            "kernel": 3
+          },
+          {
+            "degree": 5,
+            "kernel": 2
+          },
+          {
+            "degree": 6,
+            "kernel": 2
+          },
+          {
+            "degree": 7,
+            "kernel": 2
+          },
+          {
+            "degree": 8,
+            "kernel": 2
+          },
+          {
+            "degree": 9,
+            "kernel": 2
+          },
+          {
+            "degree": 10,
+            "kernel": 2
+          },
+          {
+            "degree": 11,
+            "kernel": 2
+          },
+          {
+            "degree": 12,
+            "kernel": 2
+          }
+        ],
+        "x^4y^2": [
+          {
+            "degree": 3,
+            "kernel": 1
+          },
+          {
+            "degree": 4,
+            "kernel": 1
+          },
+          {
+            "degree": 5,
+            "kernel": 1
+          },
+          {
+            "degree": 6,
+            "kernel": 2
+          },
+          {
+            "degree": 7,
+            "kernel": 1
+          },
+          {
+            "degree": 8,
+            "kernel": 1
+          },
+          {
+            "degree": 9,
+            "kernel": 1
+          },
+          {
+            "degree": 10,
+            "kernel": 1
+          },
+          {
+            "degree": 11,
+            "kernel": 1
+          },
+          {
+            "degree": 12,
+            "kernel": 1
+          }
+        ],
+        "x^3y^3": [
+          {
+            "degree": 4,
+            "kernel": 1
+          },
+          {
+            "degree": 6,
+            "kernel": 1
+          },
+          {
+            "degree": 8,
+            "kernel": 1
+          },
+          {
+            "degree": 10,
+            "kernel": 1
+          },
+          {
+            "degree": 12,
+            "kernel": 3
+          }
+        ],
+        "x^4y(x-y)": [
+          {
+            "degree": 3,
+            "kernel": 1
+          },
+          {
+            "degree": 4,
+            "kernel": 1
+          },
+          {
+            "degree": 5,
+            "kernel": 1
+          },
+          {
+            "degree": 6,
+            "kernel": 2
+          },
+          {
+            "degree": 7,
+            "kernel": 1
+          },
+          {
+            "degree": 8,
+            "kernel": 1
+          },
+          {
+            "degree": 9,
+            "kernel": 1
+          },
+          {
+            "degree": 10,
+            "kernel": 1
+          },
+          {
+            "degree": 11,
+            "kernel": 1
+          },
+          {
+            "degree": 12,
+            "kernel": 1
+          }
+        ],
+        "x^3y^2(x-y)": [
+          {
+            "degree": 4,
+            "kernel": 1
+          },
+          {
+            "degree": 6,
+            "kernel": 1
+          },
+          {
+            "degree": 12,
+            "kernel": 1
+          }
+        ],
+        "x^2y^2(x-y)^2": [
+          {
+            "degree": 4,
+            "kernel": 1
+          },
+          {
+            "degree": 6,
+            "kernel": 1
+          },
+          {
+            "degree": 8,
+            "kernel": 1
+          }
+        ]
+      },
+      "x^2y^2(x-y)(x-sy)": [
+        {
+          "degree": 3,
+          "generic_kernel": 0,
+          "jumps": [
+            {
+              "factor": [
+                "1",
+                "-4/3",
+                "-122/81",
+                "-4/3",
+                "1"
+              ],
+              "kernel": 1,
+              "rational_s": []
+            }
+          ]
+        },
+        {
+          "degree": 4,
+          "generic_kernel": 1,
+          "jumps": []
+        },
+        {
+          "degree": 5,
+          "generic_kernel": 0,
+          "jumps": []
+        },
+        {
+          "degree": 6,
+          "generic_kernel": 1,
+          "jumps": []
+        },
+        {
+          "degree": 7,
+          "generic_kernel": 0,
+          "jumps": []
+        },
+        {
+          "degree": 8,
+          "generic_kernel": 0,
+          "jumps": [
+            {
+              "factor": [
+                "-1",
+                "1"
+              ],
+              "kernel": 1,
+              "rational_s": []
+            }
+          ]
+        },
+        {
+          "degree": 9,
+          "generic_kernel": 0,
+          "jumps": []
+        },
+        {
+          "degree": 10,
+          "generic_kernel": 0,
+          "jumps": []
+        },
+        {
+          "degree": 11,
+          "generic_kernel": 0,
+          "jumps": []
+        },
+        {
+          "degree": 12,
+          "generic_kernel": 0,
+          "jumps": [
+            {
+              "factor": [
+                "0",
+                "1"
+              ],
+              "kernel": 1,
+              "rational_s": []
+            }
+          ]
+        }
+      ]
+    },
+    "theorems": [
+      {
+        "degree": 3,
+        "statement": "ker L_3(f) != 0 iff B = 6A^2; dim ker L_3 >= 2 (three simple roots) iff f ~ x^6+y^6",
+        "status": "exact: det identity certified on the slice; jump classified on the slice"
+      },
+      {
+        "degree": 4,
+        "statement": "dim ker L_4 >= 1 always ((f,f)_4); >= 2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity >= 5",
+        "status": "exact on the slice plus the degenerate forms"
+      },
+      {
+        "degree": 5,
+        "statement": "ker L_5(f) != 0 iff f ~ x^6+40/7 x^3y^3+y^6 or f has a root of multiplicity >= 4; never >= 2 on the slice",
+        "status": "exact on the slice plus the degenerate forms"
+      },
+      {
+        "degree": 6,
+        "statement": "dim ker L_6 >= 2 iff f has a root of multiplicity >= 4",
+        "status": "slice locus empty modulo two large primes; degenerate forms exact"
+      },
+      {
+        "degree": 7,
+        "statement": "ker L_7 != 0 iff f has a root of multiplicity >= 4",
+        "status": "slice locus empty modulo two large primes; degenerate forms exact"
+      },
+      {
+        "degree": 8,
+        "statement": "ker L_8 != 0 iff f has a root of multiplicity >= 4 or an automorphism of order 3 (f ~ x^6+lambda x^3y^3+y^6 or x^3y^3)",
+        "status": "converse exact; forward direction modulo two primes plus numerical search"
+      },
+      {
+        "degree": "9-19",
+        "statement": "odd N: extra partners iff a root of multiplicity >= 4; N=10 adds x^3y^3 and x^6+y^6; N=14 adds x^3y^3 and the octahedral sextic; N=16,18 add x^3y^3",
+        "status": "slice verdicts over Q by msolve and modulo two primes by Singular; degenerate forms exact"
+      },
+      {
+        "degree": 12,
+        "statement": "the hypersurface part of {ker L_12 != 0} is A^2 = 25B/96; G(f) is a partner there",
+        "status": "hypersurface part exact on random lines; no other component on the slice (msolve over Q)"
+      }
+    ]
   },
   "limitations": "No imported upstream solver or Lean theorem is claimed by this release."
 }

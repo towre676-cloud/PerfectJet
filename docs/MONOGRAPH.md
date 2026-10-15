@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.13.1 · 15 October 2026
+Version 0.14.0 · 15 October 2026
 
 A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -34,6 +34,7 @@ A master synthesis of the two archival passes and both enhancement programs. The
 - [26_nfl_motor_transfer](chapters/26_nfl_motor_transfer.md)
 - [27_nfl_math_bridges](chapters/27_nfl_math_bridges.md)
 - [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md)
+- [29_partner_incidence](chapters/29_partner_incidence.md)
 
 ---
 
@@ -428,9 +429,9 @@ Key corrections are the HLR source sign/factor2; singular vectors versus invaria
 
 Missing originals remain explicit: the separately named arithmetic GCD-kernel construction; complete master.txt; full SOE original archives; FF7 opcode archive; original PSG26/100-term coefficients and full prolonged numerator; complete PADD/PSC corner-case semantics; chemical/aerosol reaction-rate tables; full BLAST recurrence/adapters/corpus; original definitions for the coefficient7 CKM polynomial and N,K,t,J; radar bytes; original Petersen50 resource data and DAG. A filename or workflow title is not mathematical evidence for these items.
 
-Release0.2.0 closes three implementation gaps rather than any formal frontier: integer lattices (Smith form, infeasibility certificates, integer kernels, saturation index), exact word-Hankel realization with held-out witnesses, and coarsest exact weighted lumping. The correction integer saturation versus rational span now has an executable witness.
-
 The strongest finite executable contributions in0.1.0 are observable-space closure and hidden witnesses,partial-machine equivalence,polynomial-feature span replay,residual selection counts/rank/unrank/ties,weighted aggregation checks,energy balance,jet composition/Riccati residuals,corrected PSG root replay,cyclotomic coefficient recurrence,transvectant active census,and exact cubic coefficient-field identities. Archive algorithms are preserved as upstream source text and are not automatically included in the runnable trusted core.
+
+Release0.2.0 closes three implementation gaps rather than any formal frontier: integer lattices (Smith form, infeasibility certificates, integer kernels, saturation index), exact word-Hankel realization with held-out witnesses, and coarsest exact weighted lumping. The correction integer saturation versus rational span now has an executable witness.
 
 Release0.3.0 adds Hermite form, multi-output Hankel realization, exact one-parameter rank loci (which rediscover the 7lambda-40 obstruction and certify the rational exceptional set of the C3 partner family for degrees3..12), and the adaptive local sieve for perfect-power hits.
 
@@ -438,19 +439,27 @@ Release0.4.0 adds comprehensive rank cells for several parameters, with an exact
 
 Release0.5.0 adds active strata with replayed partners and the sextic discriminant on the two-parameter surface; it shows that the perfect-cube point (0,3) is mostly commuting structure and finds new squarefree exceptional points such as (+/-11,6), (+/-24,-9) and (+/-32/25,-9/5). It also adds exact readout identifiability with repair and value of information, certified decisions with targeted refinement, the evolution-defect split, and the adaptive representation engine with a unified report.
 
-Release0.10.0 adds constraint attribution and inclusion profiles for selection populations, and first-order deformation protection of relations among stationary states.
-
-Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
-
-Release0.8.0 adds a solution-carrying compiler for k y2=an2+bn+c. Every branch has a reconstruction map and a completeness status, Nagell seeds make the Pell branch complete, and exact remote-index queries are supported.
+Release0.6.0 adds the Combine scouting adapter and its protocol; it implements the empirical test but does not report a real-data result.
 
 Release0.7.0 proves two universal partner statements for binary sextics: det L3=(A2-B/6)/16, and the covariant (f,f)4 is always correction-free. It identifies the surface's drop curves as invariant loci, and identifies (0,15) with x6+y6 and (0,-5) with the octahedral sextic.
 
-Release0.6.0 adds the Combine scouting adapter and its protocol; it implements the empirical test but does not report a real-data result.
+Release0.8.0 adds a solution-carrying compiler for k y2=an2+bn+c. Every branch has a reconstruction map and a completeness status, Nagell seeds make the Pell branch complete, and exact remote-index queries are supported.
+
+Release0.9.0 proves a degree-12 partner on the hypersurface A2=25B/96, with an explicit covariant formula. It also certifies the cubic, quartic and degree-12 identities by exact slice grids.
+
+Release0.10.0 adds constraint attribution and inclusion profiles for selection populations, and first-order deformation protection of relations among stationary states.
+
+Release0.11.0 connects the mathematical core to a completed official-input NFL experiment design, adds the half-second burst functional and onset-plus-travel ambiguity for snap-to-LOS get-off, and corrects rational demand ranks, bootstrap grouping, late input availability and shortlist thresholds. Raw-input execution remains blocked by missing competition files; no new scouting gain is claimed.
 
 Release0.12.0 connects operational NFL movement targets, finite-horizon numerical delay states, player-cross-fitted Combine-to-movement-to-get-off transfer, fitted physical loadings, and exact joint measurement allocation. It adds a reproducible Gaussian package counterexample and a rational-snapshot allocation regret bound. The official nine-file experiment remains unexecuted; no new empirical NFL advantage is claimed.
 
-Formal frontiers include the full seven-coefficient incidence variety,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
+Release0.14.0 studies the partner incidence variety in the full seven-coefficient space (chapter29). Random lines show that only degrees3 and12 have hypersurface components, A2=B/6 and A2=25B/96. Exact computation on the dense slice classifies the small degrees. Quintic partners occur exactly for sextics with a root of multiplicity at least four and for the GL2-class of x6+(40/7)x3y3+y6. Larger quartic kernels occur exactly for the octahedral sextic and fivefold roots. Larger cubic kernels occur on the dihedral class of x6+y6.
+
+It adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
+
+External solvers then settle degrees 6 to 20: msolve over Q, Singular modulo primes. Extra partners come from a fourfold root, from x3y3, from the symmetric sextics x6+y6, the octahedral sextic and the order-three family, or from the hypersurfaces in degrees3 and12. It also identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on two primes.
+
+Formal frontiers include the remaining lower-dimensional components of the seven-coefficient incidence variety in degrees eight and above,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
 
 ---
@@ -958,6 +967,113 @@ The public and external runners have their own frozen source manifests and sourc
 
 ---
 
+# Partner incidence over the full sextic space
+
+The partner question asks, for a binary sextic f and a degree N, whether some nonzero form g of degree N satisfies the correction gates (f,g)_3 = (f,g)_5 = 0. The set P_N of sextics whose kernel ker L_N(f) exceeds its generic dimension is closed and GL2-invariant. Earlier releases studied P_N on two-parameter families. Release 0.14.0 studies it in the full seven-dimensional space of sextics, which is the formal frontier this atlas has listed since 0.1.0.
+
+## Two reductions that make the full space computable
+
+**Lines find hypersurfaces.** A line f0 + t f1 meets every hypersurface component of P_N whose defining invariant does not vanish at f1, and a generic line misses every component of codimension two or more. Along the line, the exact one-parameter locus (`loci.rank_locus`) is therefore the restriction of the hypersurface part of P_N. Its degree is the degree of that hypersurface. Dividing invariant monomials of the matching weight by it identifies the defining invariant exactly (`incidence.identify_hypersurface`). On two independent random lines, only two degrees between 3 and 19 have a hypersurface component:
+- degree 3, the quartic hypersurface A^2 = B/6;
+- degree 12, the quartic hypersurface A^2 = 25B/96.
+
+In both cases the restriction of the invariant equals the locus exactly, so on these lines the hypersurface part of P_N is that invariant hypersurface and nothing else. Every other degree from 3 to 19 has no hypersurface component.
+
+**The slice finds everything else.** Every sextic with at least three simple roots is GL2-equivalent to xy(x-y)(x^3+px^2y+qxy^2+ry^3), with three simple roots at 0, 1 and infinity. Rank conditions on L_N become polynomial ideals in (p,q,r). Saturating by r and by 1+p+q+r removes placements where 0 or 1 is a repeated root. Those sextics reappear at other placements. When the locus is zero-dimensional, `incidence.classify_zero_dimensional` works in the finite algebra Q[p,q,r]/I:
+- it computes the Clebsch invariants of the slice form with coefficients in that algebra (`clebsch_over`);
+- it inverts A when A is a unit;
+- it returns the exact minimal polynomials of the absolute invariants B/A^2, C/A^3 and D/A^5.
+
+If each minimal polynomial is linear, every point of the locus has the same Clebsch point. When that point belongs to a squarefree sextic, the GIT fibre over it is a single orbit, so the locus is exactly one GL2-orbit. Sextics with fewer than three simple roots are, up to GL2, seven fixed forms and the family x^2y^2(x-y)(x-sy). They are checked directly (`degenerate_profile`).
+
+## Classification in small degrees
+
+**Degree 3.** For every sextic, det L_3 = (A^2-B/6)/16, certified in 0.9.0. On the slice, dim ker L_3 >= 2 is a zero-dimensional locus of ten points. Each point has absolute invariants (6,-36,0), which are those of x^6+y^6. Ten is 120 ordered placements divided by the order-12 dihedral stabilizer of the six roots. Among the degenerate forms, only those with a root of multiplicity at least five have a two-dimensional cubic kernel.
+
+**Degree 4.** Every sextic has the quartic partner (f,f)_4, certified in 0.9.0. On the slice, dim ker L_4 >= 2 is zero-dimensional with all absolute invariants 0, which is the octahedral sextic xy(x^4-y^4). Among degenerate forms, only x^6 and x^5y have a larger quartic kernel. Hence dim ker L_4 >= 2 exactly when f is octahedral or has a root of multiplicity at least five.
+
+**Degree 5.** The ideal of 6-by-6 minors of the 8-by-6 matrix L_5 on the slice is zero-dimensional of length 20. In Q[p,q,r]/I, B-486A^2, C+26244A^3 and D+419904A^5 reduce to zero and A is a unit. These are the absolute invariants of x^6+(40/7)x^3y^3+y^6, the C3 sextic at the 40/7 obstruction. Twenty is 120 placements divided by its order-6 stabilizer, so every point is a reduced point of that single orbit. The degenerate forms with a quintic partner are exactly those with a root of multiplicity at least four. These include x^4y(x-y), which is the GL2 class of (x-y)^4(x^2+4xy+y^2) at (+/-16,-9). Therefore:
+
+> A binary sextic has a nonzero quintic g with (f,g)_3 = (f,g)_5 = 0 if and only if it has a root of multiplicity at least four, or it is GL2-equivalent over the algebraic closure to x^6 + (40/7) x^3 y^3 + y^6.
+
+The 7lambda-40 obstruction, found by an ansatz in the earliest archive and rediscovered in 0.3.0, is therefore the only squarefree source of quintic partners. On the slice no sextic has two independent quintic partners.
+
+**Degree 6.** Exact rational Groebner bases of the 6-by-6 minors of L_6 on the slice do not finish. `modular.py` computes the same ideal over a prime field instead:
+- it builds all 1005 nonzero minors by fraction-free Bareiss modulo P;
+- it interreduces them linearly, since polynomials of this degree in three variables span few monomials;
+- it decides emptiness away from repeated roots at 0 and 1 with one Rabinowitsch variable.
+
+Modulo 2147483629 and 1000000007 the locus is empty. A global numerical search on the slice agrees: about 1500 Gauss-Newton starts converge only to repeated-root forms. Among degenerate forms, a two-dimensional sextic kernel occurs exactly when there is a root of multiplicity at least four. With evidence modulo two primes rather than a rational proof:
+
+> dim ker L_6(f) >= 2 if and only if f has a root of multiplicity at least four.
+
+The engine is calibrated on degree 5. Modulo P it reports the quintic locus nonempty and the two-dimensional quintic locus empty, which matches the exact rational results above.
+
+**Degree 7.** The 8-by-8 minors of the 12-by-8 matrix L_7 on the slice give 493 nonzero polynomials. Modulo 2147483629 and 1000000007, the locus is empty away from repeated roots at 0 and 1. A numerical search with 3000 starts converges only to repeated-root forms. Among degenerate forms, the septic kernel is nonzero exactly when there is a root of multiplicity at least four. With the same evidential status as degree 6:
+
+> ker L_7(f) != 0 if and only if f has a root of multiplicity at least four.
+
+Across degrees 5 to 7, then, a root of multiplicity at least four is the uniform source of extra partners. The C3 class at 40/7 in degree 5 is the only exception.
+
+**Degree 8.** No line meets a hypersurface component, so P_8 has codimension at least two. The C3 family x^6+lambda x^3y^3+y^6 has the partner g_8 = xy(x^6+y^6-(7/20)lambda x^3y^3) for every lambda. Its gate coefficients are polynomials of degree at most two in lambda, and they vanish at five values (`c3_degree8_certificate`). On that family, the invariants satisfy exactly two relations of lowest weight (`c3_curve_relations`):
+
+R5 = AB^2 + BC/6 - 9D/2 = 0 and C^2 = 6B^3.
+
+These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629 and 1000000007, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
+
+The solutions of the two relations in weighted projective space form a single rational curve, parametrized by (A, B=6t^2, C=36t^3, D determined by R5). The C3 family maps onto it. Its special members are:
+- (x^3-y^3)^2, the GL2 class of x^2y^2(x-y)^2;
+- the octahedral sextic, at (lambda^2+50)^2 = 0;
+- x^3y^3, at lambda = infinity.
+
+Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on two primes:
+
+> ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
+
+This explains the earlier degree-8 observations. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
+
+**Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
+
+**Remaining components.** Lower-dimensional components of P_N for N >= 8, and of P_12 beyond its hypersurface, remain open. Degrees 9 to 11 have not been examined on the slice.
+
+## Rational certificates and the classification through degree 19
+
+Release 0.14.0 adds two external computer-algebra checks: `scripts/singular_partner_check.py` uses Singular over a prime field, and `scripts/msolve_partner_check.py` uses msolve over Q. They are optional verifiers; the dependency-free core does not need them.
+- **The system.** For each degree N and kernel threshold k, a few random integer projections det(P L_N S) on the slice vanish wherever dim ker L_N >= k, so their common zero set contains the locus. A Rabinowitsch variable removes repeated roots at 0 and 1.
+- **Emptiness.** msolve decides over Q whether that system has a complex solution. An empty superset means an empty locus.
+- **Invariant relations.** Multiplying the Rabinowitsch polynomial by an invariant relation J tests whether J vanishes on every point of the locus.
+- **Controls.** The control relation A fails wherever the locus is nonempty, as it must, and Singular modulo 2147483629 and 1000000007 agrees with every msolve verdict. The receipts are in `results/partner_incidence_solver_receipts.json`.
+
+Points of the locus have three simple roots, so their invariants do not all vanish. In degrees 3, 4, 10 and 14 the relations give B = C = D = 0, or B = 6A^2 with C = -36A^3 and D = 0, and these force A to be nonzero. The Clebsch point is then that of the octahedral sextic or of x^6+y^6. Both are stable, so the GIT fibre over that point is a single GL2-orbit. Combined with the exact profiles of the degenerate root patterns (`degenerate_profile`) and the exact partners of the named sextics, this gives, over the algebraic closure, trusting the msolve computations:
+
+| N | Extra correction-free partners occur exactly when f |
+|---|---|
+| 3 | satisfies B = 6A^2; dim ker >= 2 exactly for x^6+y^6 or a root of multiplicity >= 5 |
+| 4 | (beyond (f,f)_4) is octahedral xy(x^4-y^4) or has a root of multiplicity >= 5 |
+| 5 | has a root of multiplicity >= 4, or is equivalent to x^6+(40/7)x^3y^3+y^6 |
+| 6 | (beyond f itself) has a root of multiplicity >= 4 |
+| 7, 9, 11, 13, 15, 17, 19 | has a root of multiplicity >= 4 |
+| 8 | has a root of multiplicity >= 4, or an automorphism of order three (x^6+lambda x^3y^3+y^6, or x^3y^3) |
+| 10 | has a root of multiplicity >= 4, is x^3y^3, or is equivalent to x^6+y^6 |
+| 12 | satisfies A^2 = 25B/96 (the hypersurface, which contains the degenerate cases) |
+| 14 | has a root of multiplicity >= 4, is x^3y^3, or is octahedral |
+| 16, 18, 20 | has a root of multiplicity >= 4, or is x^3y^3 |
+
+Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
+- the dihedral sextic x^6+y^6, in degrees 3 and 10;
+- the octahedral sextic, in degrees 4 and 14;
+- the order-three family, in degree 8;
+- its 40/7 member, in degree 5.
+
+The only other exceptions are the two invariant hypersurfaces in degrees 3 and 12. This is a computer-assisted classification: its rational steps rest on msolve's correctness, and degrees 6 to 8 also have the independent dependency-free modular evidence above.
+
+## Scope
+
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 20 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.
+
+
+---
+
 # Complete equation registry
 
 Status describes the evidence available in this repository. Exact checking is not Lean verification.
@@ -1298,53 +1414,67 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E332 | invariants | cubic partner theorem | det L_3(f)=(A^2-B/6)/16 | exact_checked | Every binary sextic; certified on the dense slice by a 125-point exact grid. |
 | PJ-E333 | invariants | quartic covariant partner | (f,(f,f)_4)_3=(f,(f,f)_4)_5=0 | exact_checked | Every binary sextic; no covariants of degree3 and order4 or0; slice certificate (64 points); active iff (f,(f,f)_4)_1!=0. |
 | PJ-E334 | invariants | degree-12 covariant partner | G=144A^2f^2+(216/5)A iH+24A f(f,i)_2-(9/4)i^3-9Delta H+(f,i)_2^2; (f,G)_3=-432 s (f,H)_1; (f,G)_5=25920 s (f,i)_1; s=A^2-25B/96 | exact_checked | Every binary sextic; slice certificate (512 points); G is a partner on s=0 where G!=0. |
-| PJ-E335 | invariants | degree-12 partner converse | ker L_12(f)!=0 => A^2=25B/96 | open | Supported by random sextics and two independent families; not proved. |
-| PJ-E336 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
-| PJ-E337 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
-| PJ-E338 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
-| PJ-E339 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
-| PJ-E340 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
-| PJ-E341 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
-| PJ-E342 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
-| PJ-E343 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
-| PJ-E344 | observability | LOS onset-travel ambiguity | X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1 | exact_checked | Total onset plus travel cannot identify either component; separate from acceleration models. |
-| PJ-E345 | empirical | stable crossing travel | u=2d/(v+sqrt(v^2+2ad)) | derived | Local constant acceleration; d,v>=0 and a>0; not an athlete physiology law. |
-| PJ-E346 | empirical | crossing travel box | u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo) | exact_checked | Monotone extrema of declared box; outward polynomial signs rationally checked. |
-| PJ-E347 | empirical | half-second motor functional | A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2 | definition | T=.5s post operational onset; no known cue or reaction-time claim. |
-| PJ-E348 | empirical | acceleration functional identity | A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt | derived | Integrable acceleration; analytic invariance tests; no second numerical differentiation. |
-| PJ-E349 | empirical | scalar source precision | V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2 | derived | Gaussian player deviation; independent training repeats; branches are not repeats. |
-| PJ-E350 | empirical | uncertainty-integrated NFL correction | r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i) | derived | Conditional error independence; target precision descriptive; empirical transfer unestablished. |
-| PJ-E351 | empirical | paired loss noise cancellation | Delta_noisy=Delta_clean+2e(p_movement-p_baseline) | derived | Expected equality requires conditional mean-zero error; no automatic causal interpretation. |
-| PJ-E352 | observability | operational get-off decomposition | t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset) | derived | Observed geometry and operational tracking onset; supplied official get-off retained separately; no reaction-time claim. |
-| PJ-E353 | observability | positive onset-travel hidden direction | X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1 | exact_checked | Linear sum cannot determine onset independently; physically admissible positive witnesses in bridge receipt. |
-| PJ-E354 | empirical | game-cluster movement covariance | Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z) | definition | Common usable plays and original play weights; fewer than two games yields unknown covariance. |
-| PJ-E355 | dynamics | causal post-onset burst integral | A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du | derived | Twice differentiable directional position, causal initial velocity, T=.5 s; not force or reaction time. |
-| PJ-E356 | series | supervised delay continuation | K_lambda=(P^T W P+lambda I)^(-1)P^T W F | numerical_checked | Train-only standardized past/future movement blocks; equal sampled-player weight; player-held inner selection. |
-| PJ-E357 | series | target-directed finite state | z=p K_lambda V_r; forecast=z V_r^T | numerical_checked | Right singular vectors of fitted future outputs; centering/inverse scaling in code; finite declared horizon only. |
-| PJ-E358 | series | second-order predictive witness | u_(t+1)=3/2 u_t-3/4 u_(t-1) | numerical_checked | Explicitly synthetic recurrence; identical current samples need not imply equal continuations. |
-| PJ-E359 | empirical | cross-fitted physical movement transfer | qhat_i^OOF=f_(training minus fold(i))(B_i,X_i) | definition | State discovery, targets and preprocessing rebuilt for each player fold; physical units across SVD rotations. |
-| PJ-E360 | empirical | prediction-trained outcome decoder | g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2 | definition | Training inputs are predicted movement; held-out NFL movement enters diagnostics only. |
-| PJ-E361 | dynamics | fitted two-stage error identity | yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y] | derived | Frozen fitted decoder and observed held-out target; algebraic decomposition does not imply causation. |
-| PJ-E362 | dynamics | fixed affine movement scenario bound | abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j | derived | Affine fitted decoder and valid supplied box abs(qhat_j-q_j)<=r_j; separate from empirical intervals. |
-| PJ-E363 | observability | physical scouting loading | q=F x+c, g=w^T q+b => h=F^T w | derived | Frozen affine fit and fixed preprocessing/missingness pattern; physical source units. |
-| PJ-E364 | observability | exact scalar posterior update | Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e) | exact_checked | Positive-definite rational prior, positive independent noise; fixed loading and declared Gaussian model. |
-| PJ-E365 | observability | correlated attempt block update | Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma | exact_checked | Positive-definite joint within-attempt noise; duplicate original attempt IDs rejected. |
-| PJ-E366 | counting | joint target measurement package | S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k | exact_checked | Declared finite hypotheses and at most18 candidate packages; exact feasible counts, ranks and tie population. |
-| PJ-E367 | observability | zero-isolated-value synergy | VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131 | exact_checked | Sigma=I2, h=(1,0), A=(1,0) noise1, B=(1,1) noise1/10, C=(0,1) noise1/10, budget2. |
-| PJ-E368 | observability | joint package advantage witness | 110/131-21/32=769/4192 | exact_checked | Synthetic exact Gaussian allocation example; no empirical NFL gain inferred. |
-| PJ-E369 | observability | loading-family zero-effect limit | min_h VOI(S;h)=0 if 0 belongs to loading hypotheses | derived | Covariance reduction PSD; a zero target loading has zero conditional source benefit. |
-| PJ-E370 | decisions | contender-difference loading | h_(a,b)=H_a-H_b | definition | Frozen common source coordinates; only overlapping possible leaders need sensing under valid scenario bounds. |
-| PJ-E371 | observability | rationalized fitted loading | norm(h_decimal-h_rational)_infinity<=declared_tolerance | exact_checked | Exact calculation for rational snapshot; coefficient discrepancy recorded; estimated loading remains empirically uncertain. |
-| PJ-E372 | observability | uniform loading rationalization bound | abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2 | exact_checked | 0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate. |
-| PJ-E373 | counting | rationalized package regret | raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon | exact_checked | Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses. |
-| PJ-E374 | observability | target-information non-submodularity witness | VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751 | exact_checked | The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows. |
-| PJ-E375 | empirical | equal-player temporal relative gain | G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2] | definition | Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage. |
-| PJ-E376 | empirical | same-input deterministic enhancement | Z=phi(B) => sigma(B,Z)=sigma(B) | derived | Deterministic conventional-trait transforms add function class flexibility, not new measured information. |
-| PJ-E377 | empirical | sample-clock relative displacement | Delta t=t_j-t_i=(k_j-k_i)/10 | conditional | 10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC. |
-| PJ-E378 | observability | observed launch eligibility | C_i=1{observed low-speed prefix and complete post-onset window} | definition | Coverage is measured before fitting; missing onset is never relabeled as a launch. |
-| PJ-E379 | empirical | conventional two-stage control | qhat_B=f_T(B), yhat_B=g_T(B,qhat_B) | definition | OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking. |
-| PJ-E380 | empirical | conditional bridge increment | Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX)) | definition | Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value. |
-| PJ-E381 | empirical | game-half movement stability | rho_S=corr(rank(m_i,early),rank(m_i,late)) | definition | Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result. |
-| PJ-E382 | empirical | original-player full refit | G_star=G(Refit(Resample_classes(original players))) | definition | Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only. |
-| PJ-E383 | observability | depth response observability | det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1) | derived | Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical. |
-| PJ-E384 | dynamics | arrival ranking switch locus | sqrt(d_star)=-Delta_tau/Delta_beta | conditional | Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge. |
+| PJ-E335 | invariants | slice certificate | covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3 | derived | Same degree, order and weight; dense GL2-orbit; grid vanishing lemma. |
+| PJ-E336 | invariants | surface drop curves as invariant loci | deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0 | exact_checked | On the two-parameter family only; whether the deg8/deg12 relations hold in the full moduli is open. |
+| PJ-E337 | invariants | named exceptional sextics | (0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4) | exact_checked | Equal Clebsch points of squarefree sextics; GL2 over the algebraic closure. |
+| PJ-E338 | empirical | normalized recovery travel | eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry) | definition | Velocity projected on the outgoing direction over 0.5s after a detected plant; trapezoid weights; not force or efficiency. |
+| PJ-E339 | empirical | recovery response model | eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T) | proposal | Linear mixed model fitted by EM on training athletes; pooling assumptions reported as pooling reliance. |
+| PJ-E340 | empirical | context-adjusted target | r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k) | definition | Cross-fitted for training athletes; training-only m and k for validation athletes; observed participants only. |
+| PJ-E341 | empirical | paired predictive gain | G=1-MSE_movement/MSE_baseline | definition | Same availability indicators, missing-data rule and tuning grid in both models; athlete-grouped temporal folds. |
+| PJ-E342 | empirical | scouting advantage | G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class | open | Proposed threshold awaiting owner confirmation; synthetic runs test the pipeline only. |
+| PJ-E343 | observability | LOS onset-travel ambiguity | X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1 | exact_checked | Total onset plus travel cannot identify either component; separate from acceleration models. |
+| PJ-E344 | empirical | stable crossing travel | u=2d/(v+sqrt(v^2+2ad)) | derived | Local constant acceleration; d,v>=0 and a>0; not an athlete physiology law. |
+| PJ-E345 | empirical | crossing travel box | u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo) | exact_checked | Monotone extrema of declared box; outward polynomial signs rationally checked. |
+| PJ-E346 | empirical | half-second motor functional | A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2 | definition | T=.5s post operational onset; no known cue or reaction-time claim. |
+| PJ-E347 | empirical | acceleration functional identity | A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt | derived | Integrable acceleration; analytic invariance tests; no second numerical differentiation. |
+| PJ-E348 | empirical | scalar source precision | V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2 | derived | Gaussian player deviation; independent training repeats; branches are not repeats. |
+| PJ-E349 | empirical | uncertainty-integrated NFL correction | r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i) | derived | Conditional error independence; target precision descriptive; empirical transfer unestablished. |
+| PJ-E350 | empirical | paired loss noise cancellation | Delta_noisy=Delta_clean+2e(p_movement-p_baseline) | derived | Expected equality requires conditional mean-zero error; no automatic causal interpretation. |
+| PJ-E351 | observability | operational get-off decomposition | t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset) | derived | Observed geometry and operational tracking onset; supplied official get-off retained separately; no reaction-time claim. |
+| PJ-E352 | observability | positive onset-travel hidden direction | X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1 | exact_checked | Linear sum cannot determine onset independently; physically admissible positive witnesses in bridge receipt. |
+| PJ-E353 | empirical | game-cluster movement covariance | Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z) | definition | Common usable plays and original play weights; fewer than two games yields unknown covariance. |
+| PJ-E354 | dynamics | causal post-onset burst integral | A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du | derived | Twice differentiable directional position, causal initial velocity, T=.5 s; not force or reaction time. |
+| PJ-E355 | series | supervised delay continuation | K_lambda=(P^T W P+lambda I)^(-1)P^T W F | numerical_checked | Train-only standardized past/future movement blocks; equal sampled-player weight; player-held inner selection. |
+| PJ-E356 | series | target-directed finite state | z=p K_lambda V_r; forecast=z V_r^T | numerical_checked | Right singular vectors of fitted future outputs; centering/inverse scaling in code; finite declared horizon only. |
+| PJ-E357 | series | second-order predictive witness | u_(t+1)=3/2 u_t-3/4 u_(t-1) | numerical_checked | Explicitly synthetic recurrence; identical current samples need not imply equal continuations. |
+| PJ-E358 | empirical | cross-fitted physical movement transfer | qhat_i^OOF=f_(training minus fold(i))(B_i,X_i) | definition | State discovery, targets and preprocessing rebuilt for each player fold; physical units across SVD rotations. |
+| PJ-E359 | empirical | prediction-trained outcome decoder | g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2 | definition | Training inputs are predicted movement; held-out NFL movement enters diagnostics only. |
+| PJ-E360 | dynamics | fitted two-stage error identity | yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y] | derived | Frozen fitted decoder and observed held-out target; algebraic decomposition does not imply causation. |
+| PJ-E361 | dynamics | fixed affine movement scenario bound | abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j | derived | Affine fitted decoder and valid supplied box abs(qhat_j-q_j)<=r_j; separate from empirical intervals. |
+| PJ-E362 | observability | physical scouting loading | q=F x+c, g=w^T q+b => h=F^T w | derived | Frozen affine fit and fixed preprocessing/missingness pattern; physical source units. |
+| PJ-E363 | observability | exact scalar posterior update | Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e) | exact_checked | Positive-definite rational prior, positive independent noise; fixed loading and declared Gaussian model. |
+| PJ-E364 | observability | correlated attempt block update | Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma | exact_checked | Positive-definite joint within-attempt noise; duplicate original attempt IDs rejected. |
+| PJ-E365 | counting | joint target measurement package | S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k | exact_checked | Declared finite hypotheses and at most18 candidate packages; exact feasible counts, ranks and tie population. |
+| PJ-E366 | observability | zero-isolated-value synergy | VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131 | exact_checked | Sigma=I2, h=(1,0), A=(1,0) noise1, B=(1,1) noise1/10, C=(0,1) noise1/10, budget2. |
+| PJ-E367 | observability | joint package advantage witness | 110/131-21/32=769/4192 | exact_checked | Synthetic exact Gaussian allocation example; no empirical NFL gain inferred. |
+| PJ-E368 | observability | loading-family zero-effect limit | min_h VOI(S;h)=0 if 0 belongs to loading hypotheses | derived | Covariance reduction PSD; a zero target loading has zero conditional source benefit. |
+| PJ-E369 | decisions | contender-difference loading | h_(a,b)=H_a-H_b | definition | Frozen common source coordinates; only overlapping possible leaders need sensing under valid scenario bounds. |
+| PJ-E370 | observability | rationalized fitted loading | norm(h_decimal-h_rational)_infinity<=declared_tolerance | exact_checked | Exact calculation for rational snapshot; coefficient discrepancy recorded; estimated loading remains empirically uncertain. |
+| PJ-E371 | observability | uniform loading rationalization bound | abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2 | exact_checked | 0<=D<=S in PSD order; exact bound valid for every declared package; fitted-loading uncertainty remains separate. |
+| PJ-E372 | counting | rationalized package regret | raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon | exact_checked | Uniform raw-versus-rational objective discrepancy<=epsilon; weighted mean or minimum over declared loading hypotheses. |
+| PJ-E373 | observability | target-information non-submodularity witness | VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751 | exact_checked | The declared Gaussian target-specific variance reduction is monotone; this exact example violates diminishing returns, so no generic submodular greedy guarantee follows. |
+| PJ-E374 | empirical | equal-player temporal relative gain | G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2] | definition | Held-player predictions fixed before evaluated labels; positive point estimates do not establish transfer or future advantage. |
+| PJ-E375 | empirical | same-input deterministic enhancement | Z=phi(B) => sigma(B,Z)=sigma(B) | derived | Deterministic conventional-trait transforms add function class flexibility, not new measured information. |
+| PJ-E376 | empirical | sample-clock relative displacement | Delta t=t_j-t_i=(k_j-k_i)/10 | conditional | 10 Hz frame index clock only after source-specific quantization/consistency checks; naive timestamps do not imply UTC. |
+| PJ-E377 | observability | observed launch eligibility | C_i=1{observed low-speed prefix and complete post-onset window} | definition | Coverage is measured before fitting; missing onset is never relabeled as a launch. |
+| PJ-E378 | empirical | conventional two-stage control | qhat_B=f_T(B), yhat_B=g_T(B,qhat_B) | definition | OOF training predictions and same training budget; tests whether a movement bottleneck helps without tracking. |
+| PJ-E379 | empirical | conditional bridge increment | Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX)) | definition | Same evaluated players and explicit baseline family; a positive comparison to direct regression alone need not show tracking value. |
+| PJ-E380 | empirical | game-half movement stability | rho_S=corr(rank(m_i,early),rank(m_i,late)) | definition | Common supported NFL players across disjoint games; descriptive repeatability is not a Combine transfer result. |
+| PJ-E381 | empirical | original-player full refit | G_star=G(Refit(Resample_classes(original players))) | definition | Rebuild context/state/preprocessing/stacking/tuning; repeated copies share original-player folds; development uncertainty only. |
+| PJ-E382 | observability | depth response observability | det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1) | derived | Two distinct nonnegative depths identify a declared two-factor linear arrival model; model correctness remains empirical. |
+| PJ-E383 | dynamics | arrival ranking switch locus | sqrt(d_star)=-Delta_tau/Delta_beta | conditional | Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge. |
+| PJ-E384 | invariants | line probe for partner hypersurfaces | rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N | exact_checked | Exact on each line; genericity of the line supported by agreement of independent random lines. |
+| PJ-E385 | invariants | partner hypersurfaces in degrees 3..19 | codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96) | exact_checked | Two independent random lines for N<=14, one line for N<=19. |
+| PJ-E386 | invariants | dense slice | f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots | derived | Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r. |
+| PJ-E387 | invariants | covariants over a quotient ring | Clebsch invariants of the slice computed in Q[p,q,r]/I | exact_checked | Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration. |
+| PJ-E388 | invariants | quintic partner classification | ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6 | exact_checked | Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly. |
+| PJ-E389 | invariants | octahedral quartic jump | dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5 | exact_checked | Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly. |
+| PJ-E390 | invariants | dihedral cubic jump | dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6 | exact_checked | Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots. |
+| PJ-E391 | invariants | degree-8 partner classification | ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3 | exact_checked | Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the earlier bielliptic conjecture. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E392 | invariants | C3 curve in moduli | x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3 | exact_checked | Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0. |
+| PJ-E393 | invariants | sextic partner jump | dim ker L_6(f)>=2 iff f has a root of multiplicity>=4 | exact_checked | Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E394 | invariants | septic partners | ker L_7(f)!=0 iff f has a root of multiplicity>=4 | exact_checked | Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E395 | invariants | partner classification through degree 20 | extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12) | exact_checked | Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve. |
+| PJ-E396 | invariants | degree-12 partner converse | ker L_12(f)!=0 iff A^2=25B/96 | exact_checked | Forward direction on the slice by msolve over Q; degenerate forms satisfy the relation; converse via the covariant G and closedness. |
+| PJ-E397 | modular | prime-field Groebner evidence | 1 in I mod p => 1 in I over Q outside finitely many bad primes | derived | Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime. |
+| PJ-E398 | invariants | orbit count check | slice points = 120/\|Stab_PGL2(roots)\|; 20 for C3(40/7), 10 for x^6+y^6 | derived | Ordered placements of three simple roots; stabilizer orders 6 and 12. |

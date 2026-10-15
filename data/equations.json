@@ -3010,15 +3010,6 @@
     {
       "id": "PJ-E335",
       "domain": "invariants",
-      "title": "degree-12 partner converse",
-      "equation": "ker L_12(f)!=0 => A^2=25B/96",
-      "status": "open",
-      "assumptions": "Supported by random sextics and two independent families; not proved.",
-      "source": "October 14 2026 session synthesis and recovered archival extracts"
-    },
-    {
-      "id": "PJ-E336",
-      "domain": "invariants",
       "title": "slice certificate",
       "equation": "covariant identity of degree d holds iff it holds on xy(x-y)(x^3+px^2y+qxy^2+ry^3) for (p,q,r) in {0..d}^3",
       "status": "derived",
@@ -3026,7 +3017,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E337",
+      "id": "PJ-E336",
       "domain": "invariants",
       "title": "surface drop curves as invariant loci",
       "equation": "deg3: A^2=B/6; deg12: A^2=25B/96; deg8: AB^2+BC/6-9D/2=0",
@@ -3035,7 +3026,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E338",
+      "id": "PJ-E337",
       "domain": "invariants",
       "title": "named exceptional sextics",
       "equation": "(0,15)~x^6+y^6; (0,-5)~xy(x^4-y^4)",
@@ -3044,7 +3035,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E339",
+      "id": "PJ-E338",
       "domain": "empirical",
       "title": "normalized recovery travel",
       "equation": "eta_ij=sum_k w_k v_ijk/(0.5 s_ij,entry)",
@@ -3053,7 +3044,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E340",
+      "id": "PJ-E339",
       "domain": "empirical",
       "title": "recovery response model",
       "equation": "eta=phi(s,a)^T(beta+u_i)+e, phi=(1,s',a',s'a'), u_i~N(0,T)",
@@ -3062,7 +3053,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E341",
+      "id": "PJ-E340",
       "domain": "empirical",
       "title": "context-adjusted target",
       "equation": "r_i=(1/n_i) sum_p [y_ip-m(x_ip)]; shrunk by n_i/(n_i+k)",
@@ -3071,7 +3062,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E342",
+      "id": "PJ-E341",
       "domain": "empirical",
       "title": "paired predictive gain",
       "equation": "G=1-MSE_movement/MSE_baseline",
@@ -3080,7 +3071,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E343",
+      "id": "PJ-E342",
       "domain": "empirical",
       "title": "scouting advantage",
       "equation": "G>=0.03 with fixed-prediction 90% lower bound >0 on an untouched class",
@@ -3089,7 +3080,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E344",
+      "id": "PJ-E343",
       "domain": "observability",
       "title": "LOS onset-travel ambiguity",
       "equation": "X=(1,1), n=(-1,1); Xn=0, (1,0)n=-1",
@@ -3098,7 +3089,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E345",
+      "id": "PJ-E344",
       "domain": "empirical",
       "title": "stable crossing travel",
       "equation": "u=2d/(v+sqrt(v^2+2ad))",
@@ -3107,7 +3098,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E346",
+      "id": "PJ-E345",
       "domain": "empirical",
       "title": "crossing travel box",
       "equation": "u(d_lo,v_hi,a_hi)<=u(d,v,a)<=u(d_hi,v_lo,a_lo)",
@@ -3116,7 +3107,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E347",
+      "id": "PJ-E346",
       "domain": "empirical",
       "title": "half-second motor functional",
       "equation": "A_T=2[x_parallel(t0+T)-x_parallel(t0)-T v_parallel(t0)]/T^2",
@@ -3125,7 +3116,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E348",
+      "id": "PJ-E347",
       "domain": "empirical",
       "title": "acceleration functional identity",
       "equation": "A_T=(2/T^2) integral_0^T (T-t) a_parallel(t0+t) dt",
@@ -3134,7 +3125,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E349",
+      "id": "PJ-E348",
       "domain": "empirical",
       "title": "scalar source precision",
       "equation": "V_i=(tau^-2+sum sigma_d^-2)^-1; m_i=V_i sum x_ij sigma_d^-2",
@@ -3143,7 +3134,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E350",
+      "id": "PJ-E349",
       "domain": "empirical",
       "title": "uncertainty-integrated NFL correction",
       "equation": "r_i given D_i ~ Normal(lambda m_i, sigma_NFL^2+nu_i^2+lambda^2 V_i)",
@@ -3152,7 +3143,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E351",
+      "id": "PJ-E350",
       "domain": "empirical",
       "title": "paired loss noise cancellation",
       "equation": "Delta_noisy=Delta_clean+2e(p_movement-p_baseline)",
@@ -3161,7 +3152,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E352",
+      "id": "PJ-E351",
       "domain": "observability",
       "title": "operational get-off decomposition",
       "equation": "t_cross-t_snap=(t_onset-t_snap)+(t_cross-t_onset)",
@@ -3170,7 +3161,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E353",
+      "id": "PJ-E352",
       "domain": "observability",
       "title": "positive onset-travel hidden direction",
       "equation": "X=(1,1), h=(1,0), n=(-1,1); Xn=0, hn=-1",
@@ -3179,7 +3170,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E354",
+      "id": "PJ-E353",
       "domain": "empirical",
       "title": "game-cluster movement covariance",
       "equation": "Cov(mean z)=G/(G-1) sum_g S_g S_g^T, S_g=sum_(p in g) w_p(z_p-mean z)",
@@ -3188,7 +3179,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E355",
+      "id": "PJ-E354",
       "domain": "dynamics",
       "title": "causal post-onset burst integral",
       "equation": "A_T=(2/T^2) integral_0^T (T-u) a_parallel(t_onset+u) du",
@@ -3197,7 +3188,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E356",
+      "id": "PJ-E355",
       "domain": "series",
       "title": "supervised delay continuation",
       "equation": "K_lambda=(P^T W P+lambda I)^(-1)P^T W F",
@@ -3206,7 +3197,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E357",
+      "id": "PJ-E356",
       "domain": "series",
       "title": "target-directed finite state",
       "equation": "z=p K_lambda V_r; forecast=z V_r^T",
@@ -3215,7 +3206,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E358",
+      "id": "PJ-E357",
       "domain": "series",
       "title": "second-order predictive witness",
       "equation": "u_(t+1)=3/2 u_t-3/4 u_(t-1)",
@@ -3224,7 +3215,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E359",
+      "id": "PJ-E358",
       "domain": "empirical",
       "title": "cross-fitted physical movement transfer",
       "equation": "qhat_i^OOF=f_(training minus fold(i))(B_i,X_i)",
@@ -3233,7 +3224,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E360",
+      "id": "PJ-E359",
       "domain": "empirical",
       "title": "prediction-trained outcome decoder",
       "equation": "g_hat=argmin_g sum_i (y_i-g(B_i,qhat_i^OOF))^2+alpha norm(g)^2",
@@ -3242,7 +3233,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E361",
+      "id": "PJ-E360",
       "domain": "dynamics",
       "title": "fitted two-stage error identity",
       "equation": "yhat-y=[g(B,qhat)-g(B,q)]+[g(B,q)-y]",
@@ -3251,7 +3242,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E362",
+      "id": "PJ-E361",
       "domain": "dynamics",
       "title": "fixed affine movement scenario bound",
       "equation": "abs(g(B,qhat)-g(B,q))<=sum_j abs(w_j) r_j",
@@ -3260,7 +3251,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E363",
+      "id": "PJ-E362",
       "domain": "observability",
       "title": "physical scouting loading",
       "equation": "q=F x+c, g=w^T q+b => h=F^T w",
@@ -3269,7 +3260,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E364",
+      "id": "PJ-E363",
       "domain": "observability",
       "title": "exact scalar posterior update",
       "equation": "Sigma'=Sigma-Sigma e e^T Sigma/(s^2+e^T Sigma e)",
@@ -3278,7 +3269,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E365",
+      "id": "PJ-E364",
       "domain": "observability",
       "title": "correlated attempt block update",
       "equation": "Sigma'=Sigma-Sigma E^T(R+E Sigma E^T)^(-1)E Sigma",
@@ -3287,7 +3278,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E366",
+      "id": "PJ-E365",
       "domain": "counting",
       "title": "joint target measurement package",
       "equation": "S*=argmax_(cost(S)<=budget) min_k h_k^T(Sigma-Sigma_S)h_k",
@@ -3296,7 +3287,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E367",
+      "id": "PJ-E366",
       "domain": "observability",
       "title": "zero-isolated-value synergy",
       "equation": "VOI(A)=1/2, VOI(B)=10/21, VOI(C)=0; VOI(A+B)=21/32, VOI(B+C)=110/131",
@@ -3305,7 +3296,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E368",
+      "id": "PJ-E367",
       "domain": "observability",
       "title": "joint package advantage witness",
       "equation": "110/131-21/32=769/4192",
@@ -3314,7 +3305,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E369",
+      "id": "PJ-E368",
       "domain": "observability",
       "title": "loading-family zero-effect limit",
       "equation": "min_h VOI(S;h)=0 if 0 belongs to loading hypotheses",
@@ -3323,7 +3314,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E370",
+      "id": "PJ-E369",
       "domain": "decisions",
       "title": "contender-difference loading",
       "equation": "h_(a,b)=H_a-H_b",
@@ -3332,7 +3323,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E371",
+      "id": "PJ-E370",
       "domain": "observability",
       "title": "rationalized fitted loading",
       "equation": "norm(h_decimal-h_rational)_infinity<=declared_tolerance",
@@ -3341,7 +3332,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E372",
+      "id": "PJ-E371",
       "domain": "observability",
       "title": "uniform loading rationalization bound",
       "equation": "abs(h^T D h-htilde^T D htilde)<=sum_ij abs(h_i h_j-htilde_i htilde_j)(S_ii+S_jj)/2",
@@ -3350,7 +3341,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E373",
+      "id": "PJ-E372",
       "domain": "counting",
       "title": "rationalized package regret",
       "equation": "raw_objective(S_raw_opt)-raw_objective(S_rational_opt)<=2 epsilon",
@@ -3359,7 +3350,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E374",
+      "id": "PJ-E373",
       "domain": "observability",
       "title": "target-information non-submodularity witness",
       "equation": "VOI(C given empty)=0 < VOI(C given B)=110/131-10/21=1000/2751",
@@ -3368,7 +3359,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E375",
+      "id": "PJ-E374",
       "domain": "empirical",
       "title": "equal-player temporal relative gain",
       "equation": "G=1-mean_i[(y_i-p_mi)^2]/mean_i[(y_i-p_bi)^2]",
@@ -3377,7 +3368,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E376",
+      "id": "PJ-E375",
       "domain": "empirical",
       "title": "same-input deterministic enhancement",
       "equation": "Z=phi(B) => sigma(B,Z)=sigma(B)",
@@ -3386,7 +3377,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E377",
+      "id": "PJ-E376",
       "domain": "empirical",
       "title": "sample-clock relative displacement",
       "equation": "Delta t=t_j-t_i=(k_j-k_i)/10",
@@ -3395,7 +3386,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E378",
+      "id": "PJ-E377",
       "domain": "observability",
       "title": "observed launch eligibility",
       "equation": "C_i=1{observed low-speed prefix and complete post-onset window}",
@@ -3404,7 +3395,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E379",
+      "id": "PJ-E378",
       "domain": "empirical",
       "title": "conventional two-stage control",
       "equation": "qhat_B=f_T(B), yhat_B=g_T(B,qhat_B)",
@@ -3413,7 +3404,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E380",
+      "id": "PJ-E379",
       "domain": "empirical",
       "title": "conditional bridge increment",
       "equation": "Delta_track=MSE(g(B,qhat_B))-MSE(g(B,qhat_BX))",
@@ -3422,7 +3413,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E381",
+      "id": "PJ-E380",
       "domain": "empirical",
       "title": "game-half movement stability",
       "equation": "rho_S=corr(rank(m_i,early),rank(m_i,late))",
@@ -3431,7 +3422,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E382",
+      "id": "PJ-E381",
       "domain": "empirical",
       "title": "original-player full refit",
       "equation": "G_star=G(Refit(Resample_classes(original players)))",
@@ -3440,7 +3431,7 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E383",
+      "id": "PJ-E382",
       "domain": "observability",
       "title": "depth response observability",
       "equation": "det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt(d2)-sqrt(d1)",
@@ -3449,12 +3440,147 @@
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     },
     {
-      "id": "PJ-E384",
+      "id": "PJ-E383",
       "domain": "dynamics",
       "title": "arrival ranking switch locus",
       "equation": "sqrt(d_star)=-Delta_tau/Delta_beta",
       "status": "conditional",
       "assumptions": "Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E384",
+      "domain": "invariants",
+      "title": "line probe for partner hypersurfaces",
+      "equation": "rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N",
+      "status": "exact_checked",
+      "assumptions": "Exact on each line; genericity of the line supported by agreement of independent random lines.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E385",
+      "domain": "invariants",
+      "title": "partner hypersurfaces in degrees 3..19",
+      "equation": "codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96)",
+      "status": "exact_checked",
+      "assumptions": "Two independent random lines for N<=14, one line for N<=19.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E386",
+      "domain": "invariants",
+      "title": "dense slice",
+      "equation": "f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots",
+      "status": "derived",
+      "assumptions": "Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E387",
+      "domain": "invariants",
+      "title": "covariants over a quotient ring",
+      "equation": "Clebsch invariants of the slice computed in Q[p,q,r]/I",
+      "status": "exact_checked",
+      "assumptions": "Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E388",
+      "domain": "invariants",
+      "title": "quintic partner classification",
+      "equation": "ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6",
+      "status": "exact_checked",
+      "assumptions": "Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E389",
+      "domain": "invariants",
+      "title": "octahedral quartic jump",
+      "equation": "dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5",
+      "status": "exact_checked",
+      "assumptions": "Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E390",
+      "domain": "invariants",
+      "title": "dihedral cubic jump",
+      "equation": "dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6",
+      "status": "exact_checked",
+      "assumptions": "Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E391",
+      "domain": "invariants",
+      "title": "degree-8 partner classification",
+      "equation": "ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3",
+      "status": "exact_checked",
+      "assumptions": "Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the earlier bielliptic conjecture. Upgraded: verified over Q by msolve (external solver).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E392",
+      "domain": "invariants",
+      "title": "C3 curve in moduli",
+      "equation": "x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3",
+      "status": "exact_checked",
+      "assumptions": "Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E393",
+      "domain": "invariants",
+      "title": "sextic partner jump",
+      "equation": "dim ker L_6(f)>=2 iff f has a root of multiplicity>=4",
+      "status": "exact_checked",
+      "assumptions": "Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E394",
+      "domain": "invariants",
+      "title": "septic partners",
+      "equation": "ker L_7(f)!=0 iff f has a root of multiplicity>=4",
+      "status": "exact_checked",
+      "assumptions": "Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E395",
+      "domain": "invariants",
+      "title": "partner classification through degree 20",
+      "equation": "extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12)",
+      "status": "exact_checked",
+      "assumptions": "Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E396",
+      "domain": "invariants",
+      "title": "degree-12 partner converse",
+      "equation": "ker L_12(f)!=0 iff A^2=25B/96",
+      "status": "exact_checked",
+      "assumptions": "Forward direction on the slice by msolve over Q; degenerate forms satisfy the relation; converse via the covariant G and closedness.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E397",
+      "domain": "modular",
+      "title": "prime-field Groebner evidence",
+      "equation": "1 in I mod p => 1 in I over Q outside finitely many bad primes",
+      "status": "derived",
+      "assumptions": "Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E398",
+      "domain": "invariants",
+      "title": "orbit count check",
+      "equation": "slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6",
+      "status": "derived",
+      "assumptions": "Ordered placements of three simple roots; stabilizer orders 6 and 12.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
