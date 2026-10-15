@@ -88,9 +88,9 @@ Points of the locus have three simple roots, so their invariants do not all vani
 | 10 | has a root of multiplicity >= 4, is x^3y^3, or is equivalent to x^6+y^6 |
 | 12 | satisfies A^2 = 25B/96 (the hypersurface, which contains the degenerate cases) |
 | 14 | has a root of multiplicity >= 4, is x^3y^3, or is octahedral |
-| 16, 18 | has a root of multiplicity >= 4, or is x^3y^3 |
+| 16, 18, 20 | has a root of multiplicity >= 4, or is x^3y^3 |
 
-Degree 20 is reported in the receipts when its run completes. Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
+Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
 - the dihedral sextic x^6+y^6, in degrees 3 and 10;
 - the octahedral sextic, in degrees 4 and 14;
 - the order-three family, in degree 8;
@@ -100,4 +100,4 @@ The only other exceptions are the two invariant hypersurfaces in degrees 3 and 1
 
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 19 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 20 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.

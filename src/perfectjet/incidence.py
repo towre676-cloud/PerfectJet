@@ -431,7 +431,7 @@ THEOREMS = [
      "status": "slice locus empty modulo two large primes; degenerate forms exact"},
     {"degree": 8, "statement": "ker L_8 != 0 iff f has a root of multiplicity >= 4 or an automorphism of order 3 (f ~ x^6+lambda x^3y^3+y^6 or x^3y^3)",
      "status": "converse exact; forward direction modulo two primes plus numerical search"},
-    {"degree": "9-19", "statement": "odd N: extra partners iff a root of multiplicity >= 4; N=10 adds x^3y^3 and x^6+y^6; N=14 adds x^3y^3 and the octahedral sextic; N=16,18 add x^3y^3",
+    {"degree": "9-20", "statement": "odd N: extra partners iff a root of multiplicity >= 4; N=10 adds x^3y^3 and x^6+y^6; N=14 adds x^3y^3 and the octahedral sextic; N=16,18,20 add x^3y^3",
      "status": "slice verdicts over Q by msolve and modulo two primes by Singular; degenerate forms exact"},
     {"degree": 12, "statement": "the hypersurface part of {ker L_12 != 0} is A^2 = 25B/96; G(f) is a partner there",
      "status": "hypersurface part exact on random lines; no other component on the slice (msolve over Q)"},

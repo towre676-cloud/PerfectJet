@@ -3550,7 +3550,7 @@
     {
       "id": "PJ-E395",
       "domain": "invariants",
-      "title": "partner classification through degree 19",
+      "title": "partner classification through degree 20",
       "equation": "extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12)",
       "status": "exact_checked",
       "assumptions": "Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve.",

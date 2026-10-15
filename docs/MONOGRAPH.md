@@ -457,7 +457,7 @@ Release0.14.0 studies the partner incidence variety in the full seven-coefficien
 
 It adds a prime-field Groebner engine. Modulo two large primes it shows that two-dimensional sextic kernels and nonzero septic kernels occur exactly for sextics with a root of multiplicity at least four.
 
-External solvers then settle degrees 6 to 19: msolve over Q, Singular modulo primes. Extra partners come from a fourfold root, from x3y3, from the symmetric sextics x6+y6, the octahedral sextic and the order-three family, or from the hypersurfaces in degrees3 and12. It also identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on two primes.
+External solvers then settle degrees 6 to 20: msolve over Q, Singular modulo primes. Extra partners come from a fourfold root, from x3y3, from the symmetric sextics x6+y6, the octahedral sextic and the order-three family, or from the hypersurfaces in degrees3 and12. It also identifies the degree-8 partner locus. Sextics with a degree-8 partner are those with a fourfold root or with a projective automorphism of order three, equivalently the C3 family x6+lambda x3y3+y6, whose invariants satisfy AB2+BC/6=9D/2 and C2=6B3. The forward direction rests on two primes.
 
 Formal frontiers include the remaining lower-dimensional components of the seven-coefficient incidence variety in degrees eight and above,all-degree Darboux classification,elliptic rank/saturation/global bounds,geometry coverage/visibility completeness,and concrete large-DAG formal attachment. Empirical frontiers include scouting outcome advantage,market superiority,native device rates,chemical state ingestion,and sensor coverage. Closing one frontier does not close the others.
 
@@ -1057,9 +1057,9 @@ Points of the locus have three simple roots, so their invariants do not all vani
 | 10 | has a root of multiplicity >= 4, is x^3y^3, or is equivalent to x^6+y^6 |
 | 12 | satisfies A^2 = 25B/96 (the hypersurface, which contains the degenerate cases) |
 | 14 | has a root of multiplicity >= 4, is x^3y^3, or is octahedral |
-| 16, 18 | has a root of multiplicity >= 4, or is x^3y^3 |
+| 16, 18, 20 | has a root of multiplicity >= 4, or is x^3y^3 |
 
-Degree 20 is reported in the receipts when its run completes. Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
+Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
 - the dihedral sextic x^6+y^6, in degrees 3 and 10;
 - the octahedral sextic, in degrees 4 and 14;
 - the order-three family, in degree 8;
@@ -1069,7 +1069,7 @@ The only other exceptions are the two invariant hypersurfaces in degrees 3 and 1
 
 ## Scope
 
-The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 19 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 20 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.
 
 
 ---
@@ -1474,7 +1474,7 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E392 | invariants | C3 curve in moduli | x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3 | exact_checked | Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0. |
 | PJ-E393 | invariants | sextic partner jump | dim ker L_6(f)>=2 iff f has a root of multiplicity>=4 | exact_checked | Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
 | PJ-E394 | invariants | septic partners | ker L_7(f)!=0 iff f has a root of multiplicity>=4 | exact_checked | Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
-| PJ-E395 | invariants | partner classification through degree 19 | extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12) | exact_checked | Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve. |
+| PJ-E395 | invariants | partner classification through degree 20 | extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12) | exact_checked | Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve. |
 | PJ-E396 | invariants | degree-12 partner converse | ker L_12(f)!=0 iff A^2=25B/96 | exact_checked | Forward direction on the slice by msolve over Q; degenerate forms satisfy the relation; converse via the covariant G and closedness. |
 | PJ-E397 | modular | prime-field Groebner evidence | 1 in I mod p => 1 in I over Q outside finitely many bad primes | derived | Points over the algebraic closure reduce modulo almost all primes; evidence, not proof, for any single prime. |
 | PJ-E398 | invariants | orbit count check | slice points = 120/\|Stab_PGL2(roots)\|; 20 for C3(40/7), 10 for x^6+y^6 | derived | Ordered placements of three simple roots; stabilizer orders 6 and 12. |
