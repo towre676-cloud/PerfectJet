@@ -1,0 +1,32 @@
+{
+  "schema": "perfectjet/repeat-controls/1",
+  "status": "exploratory strong-control follow-up after stopped-flow results",
+  "target": "second distinct-attempt three-gate area acceleration vector",
+  "features": "first distinct-attempt vector, no NFL measurements or labels",
+  "ordering": "source attempt ID order, not claimed chronological order",
+  "calibration": "earlier classes only; player-grouped symmetric repeat pairs in inner folds",
+  "controls": [
+    "prior",
+    "raw",
+    "scalar_shrinkage",
+    "diagonal_reliability",
+    "ridge",
+    "reliable"
+  ],
+  "ridge_penalties": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "scalar_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "uncertainty": "paired class-stratified fixed errors and whole original-player refits",
+  "limits": "repeat prediction, not NFL prediction; reused cohorts and adaptive methodology"
+}

@@ -1,0 +1,8 @@
+{
+  "input_records": 14665,
+  "accepted_plays": 12682,
+  "upstream_unusable": 973,
+  "gate_unavailable": 1010,
+  "accepted_players": 74,
+  "players_minimum_plays": 74
+}

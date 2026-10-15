@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.13.1",
+  "version": "0.14.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -8,9 +8,44 @@
       "size_bytes": 130
     },
     {
+      "path": ".github/updates/v0.14.0.patch.xz.part01",
+      "sha256": "9d153695d81811f994792ed08798b36a9238f506c03e81cf61fc6ae55d02269b",
+      "size_bytes": 12288
+    },
+    {
+      "path": ".github/updates/v0.14.0.patch.xz.part02",
+      "sha256": "1c469696dab63a47aee457814062598fae5370f0737c1f196d6361d68df64b0a",
+      "size_bytes": 12288
+    },
+    {
+      "path": ".github/updates/v0.14.0.patch.xz.part03",
+      "sha256": "662e67bb41ed8a448fcdfcab5a19fd3e28f5e77712977c72a035f01bc0295173",
+      "size_bytes": 12288
+    },
+    {
+      "path": ".github/updates/v0.14.0.patch.xz.part04",
+      "sha256": "20e88a7ef7c540cd5a83680835e1156d79026f72e04c21b99f7ddf0438ab7489",
+      "size_bytes": 12288
+    },
+    {
+      "path": ".github/updates/v0.14.0.patch.xz.part05",
+      "sha256": "da96010a2dab32da05bed82a230b25199fbbcedfa32f5a89649e60ec5a0dc11b",
+      "size_bytes": 9652
+    },
+    {
       "path": ".github/workflows/checks.yml",
       "sha256": "3625dfb8bc891f9838722161be97b8957d0d056e55129d7e8fa09857a3389091",
       "size_bytes": 858
+    },
+    {
+      "path": ".github/workflows/publish-v014.yml",
+      "sha256": "0c2b73444732a936b4dd33e6f765a8e715d94bccc994c68f24022edfee124791",
+      "size_bytes": 5479
+    },
+    {
+      "path": ".github/workflows/research-snapshot.yml",
+      "sha256": "43df217273b1fed8b26c8a58b461ebc1c03369cfd83b2feb877b4b725dba3eb4",
+      "size_bytes": 905
     },
     {
       "path": ".gitignore",
@@ -19,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "fb49eea4a476acbdb7e997f93c70650892a3efb6e97fff8177ede9538cab08c8",
-      "size_bytes": 7640
+      "sha256": "04e73950e0cee3ea53d3910e7e8013feb1a94384a448b0a8db8fda27c7d88007",
+      "size_bytes": 8505
     },
     {
       "path": "archive/README.md",
@@ -84,13 +119,13 @@
     },
     {
       "path": "data/equations.json",
-      "sha256": "f3217e3e0cd0ce095908cb066f8bc03de3285b5218d48685c1c1daaf8e52755d",
-      "size_bytes": 140100
+      "sha256": "0ac12bc41a966b5cb222ffbc3deecb4e373ff01c8b4831a7a31ce724ce3dc692",
+      "size_bytes": 149082
     },
     {
       "path": "data/topics.json",
-      "sha256": "9f5ca1307e9fc38b8a5b0a289e3ac0bdde2f6f4fa87a077c1840192f9e179cd0",
-      "size_bytes": 128927
+      "sha256": "a3bf378e91d6a2a96c36ca101bd6102d014b4e7ec9387c4f1fad6be7a6f57557",
+      "size_bytes": 134397
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -99,28 +134,28 @@
     },
     {
       "path": "docs/COVERAGE_MAP.md",
-      "sha256": "3e76d21bcabb6e4d0db5a9a36bb411f6bec88b4d4f512fbcdf24c1c66e973221",
-      "size_bytes": 69512
+      "sha256": "224908bd4038f1d1728466b1bfc8a71ad27682360e9d5e7e8268b301063d9027",
+      "size_bytes": 72022
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "5fcc0ba2a10d285306ecf3ed6012c2443f1382975e480ac37aa17375bf3c7775",
-      "size_bytes": 63868
+      "sha256": "ca46d05b9304f50964ca55850c451c90deebadbff4146e5390289ed82dfbf331",
+      "size_bytes": 68480
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "a844a39bcd51e6b74e6f3f2b86b8e137b151ab12b491e9b9a444f85cce5e57ac",
-      "size_bytes": 211359
+      "sha256": "4bad1560302f12b225c985b9f7e89b7b8b0b9fdd6a870e48912f0ed98ac1abf6",
+      "size_bytes": 237280
     },
     {
       "path": "docs/QUICKSTART.md",
-      "sha256": "a9f749819fcafd2adbd52970f64efe7c5d2c0b36a4b899f14f34ec2c4ae75348",
-      "size_bytes": 5087
+      "sha256": "c40c41422584b0477cac26878ded834ea0412c5727d2a1258e21466e425288df",
+      "size_bytes": 5614
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "5e22b70b7d133cec3eb0541102ebd9ae1050782ac95015086dec41331dd7790c",
-      "size_bytes": 23342
+      "sha256": "66877030b712fe4bd545169c6509360d26e30bb602d23874d56ed9c0bd48c936",
+      "size_bytes": 24550
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -263,6 +298,11 @@
       "size_bytes": 12209
     },
     {
+      "path": "docs/chapters/29_stopped_flow.md",
+      "sha256": "a0974f8955942f48c890674116d0301617b600cec85b7d5a1dd8cf0aff8fb68e",
+      "size_bytes": 21247
+    },
+    {
       "path": "docs/nfl/DATA_CONTRACT.md",
       "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
       "size_bytes": 2392
@@ -298,6 +338,16 @@
       "size_bytes": 12209
     },
     {
+      "path": "docs/nfl/ROLLING_PROTOCOL.json",
+      "sha256": "5b29211a602040e7018afcf34ca3fee982487d00c2aedbc6d679741f8bf8fcac",
+      "size_bytes": 2343
+    },
+    {
+      "path": "docs/nfl/STOPPED_FLOW.md",
+      "sha256": "a0974f8955942f48c890674116d0301617b600cec85b7d5a1dd8cf0aff8fb68e",
+      "size_bytes": 21247
+    },
+    {
       "path": "docs/nfl/WRITEUP_TEMPLATE.md",
       "sha256": "e9ad9e746a811061a6709f80a3d6ac69f124a80448def1af22e876a81c51b52d",
       "size_bytes": 2369
@@ -328,8 +378,13 @@
       "size_bytes": 547595
     },
     {
+      "path": "notebooks/PerfectJet_Stopped_Flow.ipynb",
+      "sha256": "7b5c59c4a497211c19660f131c25c22d5198b1b2ffb75a071a14ae6ac2aa8f55",
+      "size_bytes": 976094
+    },
+    {
       "path": "pyproject.toml",
-      "sha256": "7d0728b17ed627b4c848a47e49b8e5962ebb9d097e65b526507f8dc9d338310a",
+      "sha256": "4f3676360a29398974498fe400c2623dd9d8220ef1d61c27bfe0990a08ba1529",
       "size_bytes": 500
     },
     {
@@ -2628,6 +2683,156 @@
       "size_bytes": 195692
     },
     {
+      "path": "results/stopped-flow/exact-readout-identities.json",
+      "sha256": "51424f96fd2539be91b58f7ccef679beef6da2f2f548d55383c581255566e92f",
+      "size_bytes": 2615
+    },
+    {
+      "path": "results/stopped-flow/execution-receipt.json",
+      "sha256": "0ffbdbd491aaf11288f78f163de3a768c53f0bafa2a905251ca290bf93c95a0e",
+      "size_bytes": 6631
+    },
+    {
+      "path": "results/stopped-flow/front-drills.json",
+      "sha256": "19af611fe30515ea396794593bfeb03896deffc79acf7a48fe271b1d525527fc",
+      "size_bytes": 12241
+    },
+    {
+      "path": "results/stopped-flow/full-refits.json",
+      "sha256": "4d11f54f1c685647b92e1cebfefb40e7596f60eb90812c85398644659a2ea83e",
+      "size_bytes": 10383
+    },
+    {
+      "path": "results/stopped-flow/launch-ambiguity.json",
+      "sha256": "1b7bb9acec3e462fec978f183bba6616ff61625c1f99070e58f08176704f8202",
+      "size_bytes": 1094
+    },
+    {
+      "path": "results/stopped-flow/matched-motor-without-ngs.json",
+      "sha256": "b3b07ba25788d081d393e6e7af43336d4e13681af370695861987aaf7afa7282",
+      "size_bytes": 11815
+    },
+    {
+      "path": "results/stopped-flow/matched-motor.json",
+      "sha256": "1d076f246abc64b6805856696a21bbcf542e46d6f3ae90e5473bbae8931597af",
+      "size_bytes": 11820
+    },
+    {
+      "path": "results/stopped-flow/motor-full-refits.json",
+      "sha256": "ac5c9c67e7219d2d46d886b8577365308c807f325daa713176fbb167c2a05374",
+      "size_bytes": 10406
+    },
+    {
+      "path": "results/stopped-flow/motor-sensitivity-execution.json",
+      "sha256": "0c0aacd821d2318d9b43028a583fc1723f672a4492c923b20e2f0e630ab532b4",
+      "size_bytes": 516
+    },
+    {
+      "path": "results/stopped-flow/motor-target-coverage.json",
+      "sha256": "ad765d4e1e395b0a0eec6e434fc75095a7d513f279e3846d9ee9d83e55a1e1f8",
+      "size_bytes": 169
+    },
+    {
+      "path": "results/stopped-flow/primary.json",
+      "sha256": "5b74656d8f4b5b622a87f0d1e801cabb9cb4ad2a5feeb10e0a32415a8569256c",
+      "size_bytes": 12092
+    },
+    {
+      "path": "results/stopped-flow/release-evidence.json",
+      "sha256": "11c8d932d24e7e0f0dd1324aecbf70398203456f1545b83ffda5e4e08e1d6b2c",
+      "size_bytes": 11569
+    },
+    {
+      "path": "results/stopped-flow/reliability-execution.json",
+      "sha256": "1afdc241fea64b3fd48e9a091b41deee413394393e2d75eed2487d48f6091b49",
+      "size_bytes": 540
+    },
+    {
+      "path": "results/stopped-flow/reliability-protocol.json",
+      "sha256": "6ca344a4c3721f8fdbdc8f2c7f40a16f3b58d6c481ec133ed766cc3f7c0a5a5d",
+      "size_bytes": 891
+    },
+    {
+      "path": "results/stopped-flow/reliability-run-start.json",
+      "sha256": "b89d499e7c6c37983008c908aedd0c2fe3c039cc0a61f455fee61077491731b3",
+      "size_bytes": 229
+    },
+    {
+      "path": "results/stopped-flow/reliable-motor.json",
+      "sha256": "4df53fad1e4323ba053aea570dee280467567458ec74078846b401d3b573719a",
+      "size_bytes": 10973
+    },
+    {
+      "path": "results/stopped-flow/reliable-primary.json",
+      "sha256": "0a1c4d2ab3ca3f1c13fc167a83f04779bf3291e1515979cb14c4a96a2207d147",
+      "size_bytes": 11218
+    },
+    {
+      "path": "results/stopped-flow/reliable-without-ngs.json",
+      "sha256": "3ee90e723510ef3bc9721ae1f3ebc6c20200e03bf94e2873102e43962d269136",
+      "size_bytes": 11242
+    },
+    {
+      "path": "results/stopped-flow/repeat-controls-execution.json",
+      "sha256": "db6b046ed8b13ee747b5e9d13420c9c390e2823702c8b5e214040b084f543ae2",
+      "size_bytes": 482
+    },
+    {
+      "path": "results/stopped-flow/repeat-controls-protocol.json",
+      "sha256": "14be4bd83e64b881a529552438983398270c676784736a83b9c472edfe51339d",
+      "size_bytes": 905
+    },
+    {
+      "path": "results/stopped-flow/repeat-controls-refits.json",
+      "sha256": "34c6ccda53deaaa7c75579c7cc7d44bde0e0a803c276fc166c3ee0d8b94da7bf",
+      "size_bytes": 19645
+    },
+    {
+      "path": "results/stopped-flow/repeat-controls-start.json",
+      "sha256": "c75efa25ef463bcdc621c2162bcc5bd791bf120363d732be0e4e49f999f68bc9",
+      "size_bytes": 416
+    },
+    {
+      "path": "results/stopped-flow/repeat-controls.json",
+      "sha256": "d105ebf757f6b140b4d4f29626faa3f937642809d4cd37206e13dc8564394466",
+      "size_bytes": 5738
+    },
+    {
+      "path": "results/stopped-flow/repeat-prediction.json",
+      "sha256": "6ee27e6a0643aab89abe0413d4797f1dfa4e7b8feee30d2610392266044fe543",
+      "size_bytes": 3536
+    },
+    {
+      "path": "results/stopped-flow/run-start.json",
+      "sha256": "6d7623c409d2f3b671323804edf9bebec845f48c5fd30ef555f4004297b1bbbb",
+      "size_bytes": 5373
+    },
+    {
+      "path": "results/stopped-flow/source-coverage.json",
+      "sha256": "484ac23850f38afeada62e19d92c022218209982aa1e74bcf8d9c31ed9907528",
+      "size_bytes": 3345
+    },
+    {
+      "path": "results/stopped-flow/source-rejections.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "size_bytes": 3
+    },
+    {
+      "path": "results/stopped-flow/source-repeatability.json",
+      "sha256": "6708c1c387f3e324d322be38be2cf426bb68c15faa1df46b5dd14d37faa63965",
+      "size_bytes": 39066
+    },
+    {
+      "path": "results/stopped-flow/unit-tests-v0.14.txt",
+      "sha256": "1c855b0950f537e7e0245669cc6d01628a5962c0d3a7372dc7c858a17c585962",
+      "size_bytes": 101
+    },
+    {
+      "path": "results/stopped-flow/without-ngs.json",
+      "sha256": "62b5fd1e554b0cbaa1251811ebb37249fc91203bd16dcc92bd8431797a223ad9",
+      "size_bytes": 12090
+    },
+    {
       "path": "scripts/build_bridge_fixture.py",
       "sha256": "9070f4faa2f860c344e8ce391528460d55df26780398e300024b1d0d8d3c386a",
       "size_bytes": 2791
@@ -2639,13 +2844,13 @@
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "71b07f1911e83030f308df1e452d2e78818413daf7f096bf23cb61ed2fcaf3aa",
-      "size_bytes": 73895
+      "sha256": "1d19eafbf83d803f216d868ded394d0e80a86ec44506f5a78c4f53bae3029aee",
+      "size_bytes": 73971
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "cace6634978549cf1ced686b189e42575ca7af366c75bea5eca1fb47bbbcf4e0",
-      "size_bytes": 57773
+      "sha256": "f75768d516fb41f53664697c76fada18137a2e8664d580a781fc4a6c7894cbc2",
+      "size_bytes": 61923
     },
     {
       "path": "scripts/build_motor_notebook.py",
@@ -2658,9 +2863,19 @@
       "size_bytes": 3204
     },
     {
+      "path": "scripts/build_stopped_flow_evidence.py",
+      "sha256": "5f3ffb37f09ac90d25ec47335731d162b0a541ccc5b5e4e2b2d2d30dffd8e0d0",
+      "size_bytes": 3508
+    },
+    {
+      "path": "scripts/build_stopped_flow_notebook.py",
+      "sha256": "80743df1ed2d8b2ed69c77a92b47185b2b70c50009948f39c87b7c25acd233ec",
+      "size_bytes": 8994
+    },
+    {
       "path": "scripts/build_topics.py",
-      "sha256": "e9a298d222b197c4303780a05d567004860cb7f52262cf582452ec64d11e04bd",
-      "size_bytes": 16338
+      "sha256": "c293821f593d8837679aadf31aec241c70b696aeac2f364d7098a68faac2e24e",
+      "size_bytes": 17210
     },
     {
       "path": "scripts/check_coverage.py",
@@ -2688,6 +2903,11 @@
       "size_bytes": 2075
     },
     {
+      "path": "scripts/run_motor_sensitivity.py",
+      "sha256": "ce87232452a2bb6320c81f8437a22661ccd35463fc2f737f6e376ea665a14cdb",
+      "size_bytes": 1966
+    },
+    {
       "path": "scripts/run_public_cohort.py",
       "sha256": "51f3d3c419c667da8419cc2162e127c031425c46452f86c92d4cc04c1e3390d5",
       "size_bytes": 1053
@@ -2698,13 +2918,28 @@
       "size_bytes": 5997
     },
     {
+      "path": "scripts/run_reliable_stopped_flow.py",
+      "sha256": "714bd2b1030df1decf752d5f5c62894b7158218a65a62daec056b8119fdb488f",
+      "size_bytes": 2591
+    },
+    {
+      "path": "scripts/run_repeat_controls.py",
+      "sha256": "45b82236431f98cf1063c88d6d44aa9de5a7a932cbbc7dfd042a4981ab95daaf",
+      "size_bytes": 2117
+    },
+    {
+      "path": "scripts/run_stopped_flow.py",
+      "sha256": "c99f3487f77912649b1d41db1641c1667323c93a69bc7ac6e2a798c0bbd9bdbb",
+      "size_bytes": 4797
+    },
+    {
       "path": "scripts/source_manifest.py",
       "sha256": "be6052b845fb6e8730ff1e92a27ea30dd6e816f81d35a03a0964495f403938da",
       "size_bytes": 415
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "48413631a802fc7a2633ef7e230138565352491279dc7ff44a9e99d6df0d0cfe",
+      "sha256": "62186094d43e19dc19b4b37e4d9ff3e0ad8ae29523f43accb17659ed6ff722cd",
       "size_bytes": 104
     },
     {
@@ -2813,6 +3048,21 @@
       "size_bytes": 8447
     },
     {
+      "path": "src/perfectjet/applications/nfl_scouting/repeat_controls.py",
+      "sha256": "1aa8cf9212e265bc014dc2152701235643dada85ac10d46002649d9d4cea5689",
+      "size_bytes": 7179
+    },
+    {
+      "path": "src/perfectjet/applications/nfl_scouting/rolling.py",
+      "sha256": "8d07b56d84ad06072a6d53632ab07247bfe9c64766f9714fed91861c6f53697b",
+      "size_bytes": 20960
+    },
+    {
+      "path": "src/perfectjet/applications/nfl_scouting/rolling_reliability.py",
+      "sha256": "7b56c271e2fb971f9654154e1ee629c6fd21f8842eb91171ea07891439186b48",
+      "size_bytes": 7355
+    },
+    {
       "path": "src/perfectjet/applications/nfl_scouting/schema.py",
       "sha256": "ea26e889f1d81614f534ebbec8ea91cf2374b273a8030237d4359a64cf864a8c",
       "size_bytes": 7519
@@ -2878,6 +3128,11 @@
       "size_bytes": 8690
     },
     {
+      "path": "src/perfectjet/launch_ambiguity.py",
+      "sha256": "d0df52a11558fdc81f59ea25f26fb8b848eb0d4fac91799b0557700e853e4638",
+      "size_bytes": 2681
+    },
+    {
       "path": "src/perfectjet/loci.py",
       "sha256": "c79e1525afff195fa866f1e3037a6ff0554ab4e87da8ceb320a5fade36862e84",
       "size_bytes": 9691
@@ -2918,6 +3173,11 @@
       "size_bytes": 7600
     },
     {
+      "path": "src/perfectjet/reliable_modes.py",
+      "sha256": "5438abeb9a4748f31f38efbaeee2f1194f4beb33163d04772fcb3ade339bedfe",
+      "size_bytes": 3619
+    },
+    {
       "path": "src/perfectjet/rings.py",
       "sha256": "9edc43208c99877b4d9e6b5580b090a7ea73a8a63807b33b6baedfb2bb27de71",
       "size_bytes": 4311
@@ -2931,6 +3191,11 @@
       "path": "src/perfectjet/sieve.py",
       "sha256": "b7e9c4769623712a7e11397efc4d28e2984e4abebfed8a8249947d4d9264e603",
       "size_bytes": 4541
+    },
+    {
+      "path": "src/perfectjet/stopped_jets.py",
+      "sha256": "4f7a790718560beefcc8a2091f19fc8c2675aa6fd4ae042b881368314187da63",
+      "size_bytes": 6495
     },
     {
       "path": "src/perfectjet/strata.py",
@@ -2961,6 +3226,11 @@
       "path": "tests/test_lattice_realization.py",
       "sha256": "f658889ab757fa5643f79bccb09bcfea8ef6d9e2cc1623c9c88c9254686bdbf6",
       "size_bytes": 9707
+    },
+    {
+      "path": "tests/test_launch_ambiguity.py",
+      "sha256": "4439950c3094ae13c2c8f70419f1fe9b5e7ffc28177462efe49ef9dcb3577d52",
+      "size_bytes": 1092
     },
     {
       "path": "tests/test_nfl_allocation.py",
@@ -3028,6 +3298,16 @@
       "size_bytes": 2550
     },
     {
+      "path": "tests/test_nfl_rolling.py",
+      "sha256": "c3dd0bec096ae10aa91ce89434e9560ca97584eeb661a3d59cf1b342b20c437a",
+      "size_bytes": 3898
+    },
+    {
+      "path": "tests/test_nfl_rolling_integration.py",
+      "sha256": "fdda349a0a6b48648443d1d834627edc4a716b911ecb5656fe3575a764e5e635",
+      "size_bytes": 4979
+    },
+    {
       "path": "tests/test_nfl_scouting.py",
       "sha256": "508e07bb06ead7aeaf258f08d6be681437655b42483386461f7e5b37d3cb804b",
       "size_bytes": 11559
@@ -3046,6 +3326,16 @@
       "path": "tests/test_quadratic.py",
       "sha256": "cb954aabf22003f53bb981450769cd4bf628292db3ba7b220fb81369a4d01649",
       "size_bytes": 2039
+    },
+    {
+      "path": "tests/test_reliable_modes.py",
+      "sha256": "6484320c1631143faea4c79d61879dab3cfdc203ca6451c4c3120bed0c34d945",
+      "size_bytes": 2027
+    },
+    {
+      "path": "tests/test_stopped_jets.py",
+      "sha256": "e351b5f953c57e790c245235c0309b901a83c5783237c85df71a6a88c8cc9f79",
+      "size_bytes": 3013
     },
     {
       "path": "tests/test_strata.py",

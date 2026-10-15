@@ -1,0 +1,1082 @@
+[
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "entry_speed",
+    "paired_players": 84,
+    "spearman": -0.012173067751097688,
+    "half_squared_difference": 0.04714444973399438,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "forward_displacement",
+    "paired_players": 84,
+    "spearman": 0.28287941682697176,
+    "half_squared_difference": 0.016875059634396238,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "terminal_speed",
+    "paired_players": 84,
+    "spearman": 0.42759989911558755,
+    "half_squared_difference": 0.07767022643788765,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "path_length",
+    "paired_players": 84,
+    "spearman": 0.2965996588053536,
+    "half_squared_difference": 0.016803773645494447,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 84,
+    "spearman": 0.26601868031910114,
+    "half_squared_difference": 0.0074191704125767385,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "area_acceleration",
+    "paired_players": 84,
+    "spearman": 0.5348209720680661,
+    "half_squared_difference": 0.1420167464413179,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 84,
+    "spearman": 0.5485268806317707,
+    "half_squared_difference": 0.14613413473634307,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 2.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 84,
+    "spearman": -0.22563531436671055,
+    "half_squared_difference": 45.11476800256347,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "entry_speed",
+    "paired_players": 84,
+    "spearman": 0.3073460687823853,
+    "half_squared_difference": 0.028619160124689652,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "forward_displacement",
+    "paired_players": 84,
+    "spearman": 0.6661570626645175,
+    "half_squared_difference": 0.008742117558184883,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "terminal_speed",
+    "paired_players": 84,
+    "spearman": 0.7286550477482859,
+    "half_squared_difference": 0.04038520907273411,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "path_length",
+    "paired_players": 84,
+    "spearman": 0.668424969255144,
+    "half_squared_difference": 0.008792292658522684,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 84,
+    "spearman": 0.39686830794974204,
+    "half_squared_difference": 0.004046011352936478,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "area_acceleration",
+    "paired_players": 84,
+    "spearman": 0.5901387060848436,
+    "half_squared_difference": 0.12854729456694103,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 84,
+    "spearman": 0.5824845600890959,
+    "half_squared_difference": 0.12250091899077238,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 3.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 84,
+    "spearman": 0.04509466437177281,
+    "half_squared_difference": 32.17946682365239,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "entry_speed",
+    "paired_players": 84,
+    "spearman": 0.24207876787956373,
+    "half_squared_difference": 0.02444353472204294,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "forward_displacement",
+    "paired_players": 84,
+    "spearman": 0.7225748970188814,
+    "half_squared_difference": 0.006120579796238322,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "terminal_speed",
+    "paired_players": 84,
+    "spearman": 0.7272547763336003,
+    "half_squared_difference": 0.02806969759017275,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "path_length",
+    "paired_players": 84,
+    "spearman": 0.7128010165172659,
+    "half_squared_difference": 0.006169046499744918,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 84,
+    "spearman": 0.19998278759638208,
+    "half_squared_difference": 0.0030254661409208033,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "area_acceleration",
+    "paired_players": 84,
+    "spearman": 0.4037784943784368,
+    "half_squared_difference": 0.1290527726301173,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 84,
+    "spearman": 0.41156221524754477,
+    "half_squared_difference": 0.1370847982563121,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FORTY_YARD_DASH",
+    "gate": 4.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 84,
+    "spearman": 0.1381188620026324,
+    "half_squared_difference": 36.523193528221874,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "entry_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "forward_displacement",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "terminal_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "path_length",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "area_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 2.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "entry_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "forward_displacement",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "terminal_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "path_length",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "area_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 3.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "entry_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "forward_displacement",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "terminal_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "path_length",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "area_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FOUR_BAG_AGILITY_DRILL",
+    "gate": 4.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "entry_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "forward_displacement",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "terminal_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "path_length",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "area_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 2.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "entry_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "forward_displacement",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "terminal_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "path_length",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "area_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 3.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "entry_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "forward_displacement",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "terminal_speed",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "path_length",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "area_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+    "gate": 4.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 0,
+    "spearman": null,
+    "half_squared_difference": null,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "entry_speed",
+    "paired_players": 106,
+    "spearman": -0.16929794504150364,
+    "half_squared_difference": 0.030733391733310068,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "forward_displacement",
+    "paired_players": 106,
+    "spearman": 0.19793634720351108,
+    "half_squared_difference": 0.021247889567195328,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "terminal_speed",
+    "paired_players": 106,
+    "spearman": 0.34249812320823075,
+    "half_squared_difference": 0.09535248062321988,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "path_length",
+    "paired_players": 106,
+    "spearman": 0.25960148122024335,
+    "half_squared_difference": 0.017169970520146884,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 106,
+    "spearman": 0.3267199032672495,
+    "half_squared_difference": 0.02110405510382309,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "area_acceleration",
+    "paired_players": 106,
+    "spearman": 0.4017482429402726,
+    "half_squared_difference": 0.4114956630125504,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 106,
+    "spearman": 0.4010227473108799,
+    "half_squared_difference": 0.4126200263567258,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 2.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 106,
+    "spearman": 0.05464896591681991,
+    "half_squared_difference": 38.364323275445095,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "entry_speed",
+    "paired_players": 106,
+    "spearman": 0.3130074368820552,
+    "half_squared_difference": 0.013937636108816969,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "forward_displacement",
+    "paired_players": 106,
+    "spearman": 0.5186372021726853,
+    "half_squared_difference": 0.009956949451623506,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "terminal_speed",
+    "paired_players": 106,
+    "spearman": 0.5889191749510492,
+    "half_squared_difference": 0.06133438759124489,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "path_length",
+    "paired_players": 106,
+    "spearman": 0.560913922966471,
+    "half_squared_difference": 0.0094520263416927,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 106,
+    "spearman": 0.2791287634620277,
+    "half_squared_difference": 0.015111159054075469,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "area_acceleration",
+    "paired_players": 106,
+    "spearman": 0.3407295445384925,
+    "half_squared_difference": 0.418186436298039,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 106,
+    "spearman": 0.35811774189485357,
+    "half_squared_difference": 0.40050558129370695,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 3.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 106,
+    "spearman": 0.23239539511801902,
+    "half_squared_difference": 26.329441317731987,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "entry_speed",
+    "paired_players": 106,
+    "spearman": 0.23001347760478516,
+    "half_squared_difference": 0.018793660462321723,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "forward_displacement",
+    "paired_players": 106,
+    "spearman": 0.13468524069828955,
+    "half_squared_difference": 0.05589644139699566,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "terminal_speed",
+    "paired_players": 106,
+    "spearman": 0.11316619475491371,
+    "half_squared_difference": 0.3237444631747609,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "path_length",
+    "paired_players": 106,
+    "spearman": 0.1391087487719475,
+    "half_squared_difference": 0.045973660710757085,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 106,
+    "spearman": 0.05313751668891856,
+    "half_squared_difference": 0.021651668738247073,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "area_acceleration",
+    "paired_players": 106,
+    "spearman": 0.09633473562233921,
+    "half_squared_difference": 1.6847188902704604,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 106,
+    "spearman": 0.09672771242159359,
+    "half_squared_difference": 1.673005926603359,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "PASS_RUSH_DRILL",
+    "gate": 4.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 106,
+    "spearman": 0.12744036073254908,
+    "half_squared_difference": 30.798210272233113,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "entry_speed",
+    "paired_players": 10,
+    "spearman": 0.309090909090909,
+    "half_squared_difference": 0.011512393361621227,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "forward_displacement",
+    "paired_players": 10,
+    "spearman": 0.41818181818181815,
+    "half_squared_difference": 0.008412767950448442,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "terminal_speed",
+    "paired_players": 10,
+    "spearman": 0.2606060606060606,
+    "half_squared_difference": 0.051562939617869265,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "path_length",
+    "paired_players": 10,
+    "spearman": 0.2727272727272727,
+    "half_squared_difference": 0.008243327092516652,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 10,
+    "spearman": 0.3939393939393939,
+    "half_squared_difference": 0.01120143047763052,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "area_acceleration",
+    "paired_players": 10,
+    "spearman": 0.5636363636363636,
+    "half_squared_difference": 0.26604739007433487,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 10,
+    "spearman": 0.5151515151515151,
+    "half_squared_difference": 0.2504297663417039,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 2.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 10,
+    "spearman": -0.2606060606060606,
+    "half_squared_difference": 19.91727932430542,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "entry_speed",
+    "paired_players": 10,
+    "spearman": -0.012158110873601292,
+    "half_squared_difference": 0.015324748177051964,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "forward_displacement",
+    "paired_players": 10,
+    "spearman": 0.04242424242424241,
+    "half_squared_difference": 0.011165497429318862,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "terminal_speed",
+    "paired_players": 10,
+    "spearman": 0.2727272727272727,
+    "half_squared_difference": 0.035928776938450514,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "path_length",
+    "paired_players": 10,
+    "spearman": 0.006060606060606061,
+    "half_squared_difference": 0.00789457738095258,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 10,
+    "spearman": 0.8909090909090909,
+    "half_squared_difference": 0.004083413778491395,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "area_acceleration",
+    "paired_players": 10,
+    "spearman": -0.06666666666666665,
+    "half_squared_difference": 0.2537039475177493,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 10,
+    "spearman": -0.04242424242424241,
+    "half_squared_difference": 0.2565262269214426,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 3.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 10,
+    "spearman": 0.2606060606060606,
+    "half_squared_difference": 50.11445469182986,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "entry_speed",
+    "paired_players": 10,
+    "spearman": -0.5349568784384567,
+    "half_squared_difference": 0.023628457006631874,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "forward_displacement",
+    "paired_players": 10,
+    "spearman": -0.35757575757575755,
+    "half_squared_difference": 0.015585510483799725,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "terminal_speed",
+    "paired_players": 10,
+    "spearman": 0.13939393939393938,
+    "half_squared_difference": 0.08792198614562743,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "path_length",
+    "paired_players": 10,
+    "spearman": 0.07878787878787878,
+    "half_squared_difference": 0.0115322806759524,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "lateral_displacement_abs",
+    "paired_players": 10,
+    "spearman": 0.05454545454545454,
+    "half_squared_difference": 0.0631366872899716,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "area_acceleration",
+    "paired_players": 10,
+    "spearman": 0.4787878787878787,
+    "half_squared_difference": 0.289192753897906,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "minimum_variance_acceleration",
+    "paired_players": 10,
+    "spearman": 0.6121212121212121,
+    "half_squared_difference": 0.2714521564708611,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  },
+  {
+    "drill": "RUN_THE_HOOP_DRILL",
+    "gate": 4.0,
+    "readout": "minimum_variance_jerk",
+    "paired_players": 10,
+    "spearman": 0.41818181818181815,
+    "half_squared_difference": 14.190885037094798,
+    "scope": "descriptive disjoint-attempt repeatability; no independence across gate/readout rows; not innate ability"
+  }
+]

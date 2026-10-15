@@ -1,0 +1,287 @@
+{
+  "requested_draws": 32,
+  "successful_draws": 32,
+  "failed_draws": 0,
+  "failures": [],
+  "gains": [
+    {
+      "draw": 0,
+      "tracking_vs_conventional": -0.04352757297849963,
+      "jets_vs_conventional": -0.04971621144609695,
+      "jets_vs_full_history": 0.09645788051291426,
+      "jets_vs_strong_control": -0.04971621144609695,
+      "kinematics_vs_conventional": -0.04352757297849963
+    },
+    {
+      "draw": 1,
+      "tracking_vs_conventional": -0.31852930568914917,
+      "jets_vs_conventional": -0.1950252202576359,
+      "jets_vs_full_history": 0.09270786264506614,
+      "jets_vs_strong_control": 0.09164808536447999,
+      "kinematics_vs_conventional": -0.1514510668443798
+    },
+    {
+      "draw": 2,
+      "tracking_vs_conventional": -0.30800204018165633,
+      "jets_vs_conventional": -0.11700670350791587,
+      "jets_vs_full_history": 0.11635309274240369,
+      "jets_vs_strong_control": -0.11700670350791587,
+      "kinematics_vs_conventional": -0.04263285116899951
+    },
+    {
+      "draw": 3,
+      "tracking_vs_conventional": 0.2548002290555853,
+      "jets_vs_conventional": 0.2478776097395986,
+      "jets_vs_full_history": -0.038023242345351704,
+      "jets_vs_strong_control": 0.2478776097395986,
+      "kinematics_vs_conventional": 0.33325497642307667
+    },
+    {
+      "draw": 4,
+      "tracking_vs_conventional": 0.1551642207071987,
+      "jets_vs_conventional": 0.1365460615286579,
+      "jets_vs_full_history": 0.008154364560984506,
+      "jets_vs_strong_control": 0.013933142461976411,
+      "kinematics_vs_conventional": 0.1551642207071987
+    },
+    {
+      "draw": 5,
+      "tracking_vs_conventional": -0.08224928249063113,
+      "jets_vs_conventional": -0.10795034875799114,
+      "jets_vs_full_history": -0.020595095222532223,
+      "jets_vs_strong_control": -0.0025996060501578544,
+      "kinematics_vs_conventional": -0.08224928249063113
+    },
+    {
+      "draw": 6,
+      "tracking_vs_conventional": -0.01440310654091137,
+      "jets_vs_conventional": -0.025956403425122954,
+      "jets_vs_full_history": 0.005038650545087453,
+      "jets_vs_strong_control": -0.025956403425122954,
+      "kinematics_vs_conventional": -0.01440310654091137
+    },
+    {
+      "draw": 7,
+      "tracking_vs_conventional": -0.22771232764417726,
+      "jets_vs_conventional": -0.16614961467875178,
+      "jets_vs_full_history": -0.10395767004831313,
+      "jets_vs_strong_control": -0.16614961467875178,
+      "kinematics_vs_conventional": -0.19800030014147407
+    },
+    {
+      "draw": 8,
+      "tracking_vs_conventional": 0.3499334062973237,
+      "jets_vs_conventional": 0.26495282479545557,
+      "jets_vs_full_history": -0.4035737866791618,
+      "jets_vs_strong_control": 0.26495282479545557,
+      "kinematics_vs_conventional": 0.33973831454646475
+    },
+    {
+      "draw": 9,
+      "tracking_vs_conventional": 0.028876841054716884,
+      "jets_vs_conventional": 0.16441279254095187,
+      "jets_vs_full_history": 0.08928153972702302,
+      "jets_vs_strong_control": 0.16441279254095187,
+      "kinematics_vs_conventional": 0.028876841054716884
+    },
+    {
+      "draw": 10,
+      "tracking_vs_conventional": -0.010919808976880718,
+      "jets_vs_conventional": -0.029922338111071145,
+      "jets_vs_full_history": 0.01268708782764083,
+      "jets_vs_strong_control": -0.029922338111071145,
+      "kinematics_vs_conventional": -0.010919808976880718
+    },
+    {
+      "draw": 11,
+      "tracking_vs_conventional": 0.1254413928366077,
+      "jets_vs_conventional": 0.11417788404180695,
+      "jets_vs_full_history": 0.1805377020472947,
+      "jets_vs_strong_control": 0.11417788404180695,
+      "kinematics_vs_conventional": 0.15031837965450123
+    },
+    {
+      "draw": 12,
+      "tracking_vs_conventional": -0.04561587548063195,
+      "jets_vs_conventional": -0.04583846654995205,
+      "jets_vs_full_history": 0.034276098109747966,
+      "jets_vs_strong_control": -0.04583846654995205,
+      "kinematics_vs_conventional": -0.04561587548063195
+    },
+    {
+      "draw": 13,
+      "tracking_vs_conventional": -0.045519154172218634,
+      "jets_vs_conventional": -0.04991156347338688,
+      "jets_vs_full_history": 0.016800926213720202,
+      "jets_vs_strong_control": -0.033436358799604715,
+      "kinematics_vs_conventional": -0.0372241249080878
+    },
+    {
+      "draw": 14,
+      "tracking_vs_conventional": -0.2858755074564705,
+      "jets_vs_conventional": -0.3134394473585749,
+      "jets_vs_full_history": 0.020206583943949363,
+      "jets_vs_strong_control": -0.3134394473585749,
+      "kinematics_vs_conventional": -0.29061402925492463
+    },
+    {
+      "draw": 15,
+      "tracking_vs_conventional": 0.2925762457211206,
+      "jets_vs_conventional": 0.29909843761533583,
+      "jets_vs_full_history": -0.034985891836134764,
+      "jets_vs_strong_control": 0.009219639367162191,
+      "kinematics_vs_conventional": 0.29860770776163603
+    },
+    {
+      "draw": 16,
+      "tracking_vs_conventional": 0.13421330948692511,
+      "jets_vs_conventional": 0.07785923479349455,
+      "jets_vs_full_history": -0.006889840299813432,
+      "jets_vs_strong_control": 0.07785923479349455,
+      "kinematics_vs_conventional": 0.13625245036464118
+    },
+    {
+      "draw": 17,
+      "tracking_vs_conventional": -0.021393693537661962,
+      "jets_vs_conventional": -0.01696094561890238,
+      "jets_vs_full_history": 0.04450380081151406,
+      "jets_vs_strong_control": -0.01696094561890238,
+      "kinematics_vs_conventional": -0.021393693537661962
+    },
+    {
+      "draw": 18,
+      "tracking_vs_conventional": 0.35930742325761966,
+      "jets_vs_conventional": 0.3906610507930075,
+      "jets_vs_full_history": 0.20527037418499894,
+      "jets_vs_strong_control": 0.3906610507930075,
+      "kinematics_vs_conventional": 0.35930742325761966
+    },
+    {
+      "draw": 19,
+      "tracking_vs_conventional": -0.05436652552363208,
+      "jets_vs_conventional": -0.06171600171361313,
+      "jets_vs_full_history": -0.03931819640203549,
+      "jets_vs_strong_control": -0.06171600171361313,
+      "kinematics_vs_conventional": -0.05422670231099036
+    },
+    {
+      "draw": 20,
+      "tracking_vs_conventional": -0.1449010278365317,
+      "jets_vs_conventional": -0.07920367995416444,
+      "jets_vs_full_history": 0.023902740488461305,
+      "jets_vs_strong_control": -0.07920367995416444,
+      "kinematics_vs_conventional": -0.054472452200638344
+    },
+    {
+      "draw": 21,
+      "tracking_vs_conventional": 0.38329416398199745,
+      "jets_vs_conventional": 0.38589144087010374,
+      "jets_vs_full_history": 0.030219902250887998,
+      "jets_vs_strong_control": 0.38589144087010374,
+      "kinematics_vs_conventional": 0.3581562812261353
+    },
+    {
+      "draw": 22,
+      "tracking_vs_conventional": 0.10051645046945756,
+      "jets_vs_conventional": 0.10452409811638574,
+      "jets_vs_full_history": 0.10543272855083707,
+      "jets_vs_strong_control": 0.2160395015010137,
+      "kinematics_vs_conventional": 0.09856157620065331
+    },
+    {
+      "draw": 23,
+      "tracking_vs_conventional": -0.03296332986059691,
+      "jets_vs_conventional": -0.06342199617613065,
+      "jets_vs_full_history": -0.3458105941869314,
+      "jets_vs_strong_control": -0.06342199617613065,
+      "kinematics_vs_conventional": -0.03296332986059691
+    },
+    {
+      "draw": 24,
+      "tracking_vs_conventional": -0.01817955930049231,
+      "jets_vs_conventional": -0.02175565456171147,
+      "jets_vs_full_history": 0.00986692693466007,
+      "jets_vs_strong_control": -0.004703990604555619,
+      "kinematics_vs_conventional": -0.01817955930049231
+    },
+    {
+      "draw": 25,
+      "tracking_vs_conventional": 0.006022240441154625,
+      "jets_vs_conventional": 0.004663236216432387,
+      "jets_vs_full_history": -0.020463053438296797,
+      "jets_vs_strong_control": 0.004663236216432387,
+      "kinematics_vs_conventional": 0.006022240441154625
+    },
+    {
+      "draw": 26,
+      "tracking_vs_conventional": 0.2809762607070898,
+      "jets_vs_conventional": 0.22278639278526058,
+      "jets_vs_full_history": -0.1198075765720732,
+      "jets_vs_strong_control": 0.18278658843223428,
+      "kinematics_vs_conventional": 0.2330517307751695
+    },
+    {
+      "draw": 27,
+      "tracking_vs_conventional": -0.0041314097310218845,
+      "jets_vs_conventional": -0.01146677448161082,
+      "jets_vs_full_history": -0.021585371460881797,
+      "jets_vs_strong_control": -0.01146677448161082,
+      "kinematics_vs_conventional": -0.0041314097310218845
+    },
+    {
+      "draw": 28,
+      "tracking_vs_conventional": -0.7066368325006895,
+      "jets_vs_conventional": -0.5390677349940687,
+      "jets_vs_full_history": 0.1925081043610145,
+      "jets_vs_strong_control": 0.07334011353082981,
+      "kinematics_vs_conventional": -0.7066368325006895
+    },
+    {
+      "draw": 29,
+      "tracking_vs_conventional": -0.04829706275415924,
+      "jets_vs_conventional": -0.04829706275415924,
+      "jets_vs_full_history": 0.12716900178694068,
+      "jets_vs_strong_control": -0.04829706275415924,
+      "kinematics_vs_conventional": -0.03219952089190059
+    },
+    {
+      "draw": 30,
+      "tracking_vs_conventional": 0.07934382338063206,
+      "jets_vs_conventional": 0.07934382338063206,
+      "jets_vs_full_history": 0.014952789533954847,
+      "jets_vs_strong_control": 0.07934382338063206,
+      "kinematics_vs_conventional": 0.0843564098033085
+    },
+    {
+      "draw": 31,
+      "tracking_vs_conventional": -0.06458340792276451,
+      "jets_vs_conventional": -0.06458340792276451,
+      "jets_vs_full_history": -0.08788446992863275,
+      "jets_vs_strong_control": -0.06458340792276451,
+      "kinematics_vs_conventional": -0.015602362968758943
+    }
+  ],
+  "intervals_90": {
+    "tracking_vs_conventional": [
+      -0.3127393096600281,
+      0.3541517139294569
+    ],
+    "jets_vs_conventional": [
+      -0.24831162245305843,
+      0.3381552890799813
+    ],
+    "jets_vs_full_history": [
+      -0.22150893449875936,
+      0.1859243830884686
+    ],
+    "jets_vs_strong_control": [
+      -0.13912101353479203,
+      0.3193752020290472
+    ],
+    "kinematics_vs_conventional": [
+      -0.23967647824252683,
+      0.34802639955231646
+    ]
+  },
+  "scope": "full original-player class-stratified empirical bootstrap; reextract source and refit context, transformations, model family and penalties; not prospective coverage or protection against prior adaptive use"
+}

@@ -1,0 +1,117 @@
+{
+  "schema": "perfectjet/held-class-repeat-prediction/1",
+  "players": 55,
+  "folds": [
+    {
+      "year": 2024,
+      "players": 26,
+      "prior_mse": 0.2873096238168332,
+      "raw_first_attempt_mse": 0.31364645591453677,
+      "posterior_mse": 0.25861843976968674,
+      "source_calibration": {
+        "training_groups": 33,
+        "repeat_degrees_of_freedom": 29,
+        "empirical_generalized_signal_noise_eigenvalues": [
+          -0.023548562492574383,
+          0.342407279304939,
+          5.543082801052014
+        ],
+        "clipped_nonpositive_modes": 1,
+        "calibrated": true,
+        "noise_covariance": [
+          [
+            0.18423326364032155,
+            -0.008300767897435819,
+            -0.05465259929158607
+          ],
+          [
+            -0.008300767897435819,
+            0.1585719236822037,
+            0.006863119629846924
+          ],
+          [
+            -0.05465259929158607,
+            0.006863119629846924,
+            0.2029729812860597
+          ]
+        ],
+        "signal_covariance": [
+          [
+            0.3478507740709459,
+            0.33453041864364297,
+            0.18805570167272578
+          ],
+          [
+            0.33453041864364297,
+            0.3248719614761381,
+            0.1985690211628367
+          ],
+          [
+            0.18805570167272578,
+            0.1985690211628367,
+            0.20123076425230083
+          ]
+        ],
+        "scope": "method-of-moments independent-attempt Gaussian working model; window correlation retained; physical-coordinate output; covariance clipping is an estimator, not a proof of absent biology"
+      }
+    },
+    {
+      "year": 2025,
+      "players": 29,
+      "prior_mse": 0.24075060003345,
+      "raw_first_attempt_mse": 0.14394775486711636,
+      "posterior_mse": 0.09605521662041032,
+      "source_calibration": {
+        "training_groups": 64,
+        "repeat_degrees_of_freedom": 55,
+        "empirical_generalized_signal_noise_eigenvalues": [
+          -0.04737535625221705,
+          0.2131118324967132,
+          3.246077516533251
+        ],
+        "clipped_nonpositive_modes": 1,
+        "calibrated": true,
+        "noise_covariance": [
+          [
+            0.16589665732615688,
+            0.01355692042493067,
+            -0.031713475169170204
+          ],
+          [
+            0.01355692042493067,
+            0.18425208339453608,
+            -0.004994055384477289
+          ],
+          [
+            -0.031713475169170204,
+            -0.004994055384477289,
+            0.1711492458129296
+          ]
+        ],
+        "signal_covariance": [
+          [
+            0.22021551669164194,
+            0.1984825127596927,
+            0.12825486121826438
+          ],
+          [
+            0.1984825127596927,
+            0.20920529964799425,
+            0.1563107107343737
+          ],
+          [
+            0.12825486121826438,
+            0.1563107107343737,
+            0.12938194957403545
+          ]
+        ],
+        "scope": "method-of-moments independent-attempt Gaussian working model; window correlation retained; physical-coordinate output; covariance clipping is an estimator, not a proof of absent biology"
+      }
+    }
+  ],
+  "raw_mse": 0.22416895899862418,
+  "posterior_mse": 0.17290328574552283,
+  "prior_mse": 0.262760320367413,
+  "gain_vs_raw_first_attempt": 0.2286921145644255,
+  "scope": "equal-player mean across three correlated acceleration coordinates; calibration on earlier classes only; a repeat-measurement prediction, not an NFL outcome gain"
+}

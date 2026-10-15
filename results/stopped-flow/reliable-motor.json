@@ -1,0 +1,373 @@
+{
+  "protocol": {
+    "schema": "perfectjet/reliable-stopped-flow/1",
+    "status": "exploratory refinement declared after the initial stopped-flow outcome run",
+    "source": "forty area acceleration at speed gates 2,3,4 yd/s",
+    "measurement_groups": "complete three-gate vectors; distinct attempts, never independent gates",
+    "noise_ridge_fraction": 0.05,
+    "signal_estimator": "athlete mean covariance minus average mean-noise covariance; generalized nonpositive modes clipped",
+    "features": "three physical-coordinate posterior deviations; no latent-axis mixing",
+    "controls": [
+      "strong conventional",
+      "raw three-gate acceleration means"
+    ],
+    "model_selection": "inner original-player folds, penalties 10/100/1000; source covariance rebuilt in every fold",
+    "claim_limit": "working independent-attempt Gaussian model and estimated covariances; inspected cohorts, no prospective confirmation"
+  },
+  "include_ngs": true,
+  "target": {
+    "name": "rolling_forward_displacement_05",
+    "units": "yards",
+    "minimum_plays": 20,
+    "meaning": "half-second displacement along observed velocity after speed-2 NFL landmark; context residualized",
+    "lower_is_better": false
+  },
+  "comparisons": {
+    "reliable_vs_conventional": {
+      "athletes": 51,
+      "mse_baseline": 0.003978105779488613,
+      "mse_movement": 0.0038664955068042992,
+      "gain": 0.028056134972525015,
+      "calibration_mean_error": {
+        "baseline": -0.01248187476908435,
+        "movement": -0.015504779110487907
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 0
+          },
+          "promoted": 0,
+          "demoted": 0
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 3,
+            "movement": 2
+          },
+          "promoted": 1,
+          "demoted": 1
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.03678082485989333,
+        0.08941093034663068
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.05055784915041292,
+        0.10249127879885381
+      ],
+      "comparison": {
+        "baseline": "conventional",
+        "candidate": "reliable"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037689853980973197,
+          "candidate_mse": 0.0037613256675288896,
+          "gain": 0.0020323057160945845
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.004136748827440627,
+          "candidate_mse": 0.003946279522806334,
+          "gain": 0.04604323650757758
+        }
+      ]
+    },
+    "raw_vs_conventional": {
+      "athletes": 51,
+      "mse_baseline": 0.003978105779488613,
+      "mse_movement": 0.0038257593694238823,
+      "gain": 0.038296218981968666,
+      "calibration_mean_error": {
+        "baseline": -0.01248187476908435,
+        "movement": -0.01576205285162407
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 0
+          },
+          "promoted": 1,
+          "demoted": 1
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 3,
+            "movement": 2
+          },
+          "promoted": 1,
+          "demoted": 1
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.032559591565319325,
+        0.10271293578710364
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.04514144265061331,
+        0.11608259083460924
+      ],
+      "comparison": {
+        "baseline": "conventional",
+        "candidate": "raw"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037689853980973197,
+          "candidate_mse": 0.0037556220632435455,
+          "gain": 0.003545605366505389
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.004136748827440627,
+          "candidate_mse": 0.003878966981008965,
+          "gain": 0.06231508297571697
+        }
+      ]
+    },
+    "reliable_vs_raw": {
+      "athletes": 51,
+      "mse_baseline": 0.0038257593694238823,
+      "mse_movement": 0.0038664955068042992,
+      "gain": -0.010647856659774968,
+      "calibration_mean_error": {
+        "baseline": -0.01576205285162407,
+        "movement": -0.015504779110487907
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 0
+          },
+          "promoted": 1,
+          "demoted": 1
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 2,
+            "movement": 2
+          },
+          "promoted": 0,
+          "demoted": 0
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.044640226342957744,
+        0.021180544471487716
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.052401166605752156,
+        0.02657970106523039
+      ],
+      "comparison": {
+        "baseline": "raw",
+        "candidate": "reliable"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037556220632435455,
+          "candidate_mse": 0.0037613256675288896,
+          "gain": -0.0015186843056349542
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.003878966981008965,
+          "candidate_mse": 0.003946279522806334,
+          "gain": -0.017353213401125833
+        }
+      ]
+    }
+  },
+  "model_fits": 96,
+  "folds": [
+    {
+      "year": 2024,
+      "selected": {
+        "conventional": {
+          "family": "conventional",
+          "penalty": 100.0
+        },
+        "raw": {
+          "family": "raw",
+          "penalty": 100.0
+        },
+        "reliable": {
+          "family": "reliable",
+          "penalty": 100.0
+        }
+      },
+      "inner_mse": {
+        "conventional:10": 0.0039655732595670805,
+        "conventional:100": 0.003655121186152765,
+        "conventional:1000": 0.0038355445813743295,
+        "quadratic:10": 0.006797608022540618,
+        "quadratic:100": 0.006086803213957205,
+        "quadratic:1000": 0.004386830074266495,
+        "raw:10": 0.003967829458488191,
+        "raw:100": 0.0036323318429274803,
+        "raw:1000": 0.003828602201023986,
+        "reliable:10": 0.003921587914534439,
+        "reliable:100": 0.0036562427625713738,
+        "reliable:1000": 0.003831156168319616
+      },
+      "source_calibration": {
+        "training_groups": 33,
+        "repeat_degrees_of_freedom": 29,
+        "empirical_generalized_signal_noise_eigenvalues": [
+          -0.023548562492574383,
+          0.342407279304939,
+          5.543082801052014
+        ],
+        "clipped_nonpositive_modes": 1,
+        "calibrated": true,
+        "noise_covariance": [
+          [
+            0.18423326364032155,
+            -0.008300767897435819,
+            -0.05465259929158607
+          ],
+          [
+            -0.008300767897435819,
+            0.1585719236822037,
+            0.006863119629846924
+          ],
+          [
+            -0.05465259929158607,
+            0.006863119629846924,
+            0.2029729812860597
+          ]
+        ],
+        "signal_covariance": [
+          [
+            0.3478507740709459,
+            0.33453041864364297,
+            0.18805570167272578
+          ],
+          [
+            0.33453041864364297,
+            0.3248719614761381,
+            0.1985690211628367
+          ],
+          [
+            0.18805570167272578,
+            0.1985690211628367,
+            0.20123076425230083
+          ]
+        ],
+        "scope": "method-of-moments independent-attempt Gaussian working model; window correlation retained; physical-coordinate output; covariance clipping is an estimator, not a proof of absent biology"
+      },
+      "training_players": 23,
+      "model_fits": 48,
+      "evaluated_players": 22
+    },
+    {
+      "year": 2025,
+      "selected": {
+        "conventional": {
+          "family": "conventional",
+          "penalty": 10.0
+        },
+        "raw": {
+          "family": "raw",
+          "penalty": 10.0
+        },
+        "reliable": {
+          "family": "reliable",
+          "penalty": 10.0
+        }
+      },
+      "inner_mse": {
+        "conventional:10": 0.002845718858825017,
+        "conventional:100": 0.003009013743348478,
+        "conventional:1000": 0.0031529292901843315,
+        "quadratic:10": 0.00941326233324513,
+        "quadratic:100": 0.0073851206266487,
+        "quadratic:1000": 0.0044061257010128965,
+        "raw:10": 0.0026517605332238158,
+        "raw:100": 0.00297875088456762,
+        "raw:1000": 0.0031443436560408583,
+        "reliable:10": 0.0027842523667806762,
+        "reliable:100": 0.003024867403059194,
+        "reliable:1000": 0.0031486937689260406
+      },
+      "source_calibration": {
+        "training_groups": 64,
+        "repeat_degrees_of_freedom": 55,
+        "empirical_generalized_signal_noise_eigenvalues": [
+          -0.04737535625221705,
+          0.2131118324967132,
+          3.246077516533251
+        ],
+        "clipped_nonpositive_modes": 1,
+        "calibrated": true,
+        "noise_covariance": [
+          [
+            0.16589665732615688,
+            0.01355692042493067,
+            -0.031713475169170204
+          ],
+          [
+            0.01355692042493067,
+            0.18425208339453608,
+            -0.004994055384477289
+          ],
+          [
+            -0.031713475169170204,
+            -0.004994055384477289,
+            0.1711492458129296
+          ]
+        ],
+        "signal_covariance": [
+          [
+            0.22021551669164194,
+            0.1984825127596927,
+            0.12825486121826438
+          ],
+          [
+            0.1984825127596927,
+            0.20920529964799425,
+            0.1563107107343737
+          ],
+          [
+            0.12825486121826438,
+            0.1563107107343737,
+            0.12938194957403545
+          ]
+        ],
+        "scope": "method-of-moments independent-attempt Gaussian working model; window correlation retained; physical-coordinate output; covariance clipping is an estimator, not a proof of absent biology"
+      },
+      "training_players": 45,
+      "model_fits": 48,
+      "evaluated_players": 29
+    }
+  ]
+}

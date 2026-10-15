@@ -397,6 +397,32 @@ observability|depth response observability|det([[1,sqrt(d1)],[1,sqrt(d2)]])=sqrt
 dynamics|arrival ranking switch locus|sqrt(d_star)=-Delta_tau/Delta_beta|conditional|Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge.
 """
 
+
+EQUATIONS += r"""
+stopped_flow|late hidden launch|x_L=2z^3/3-z^4/4-5/12; z=t+1, -1<=t<=0|exact_checked|Common stationary start position -5/12; matches common C2 tail t+t^2/2 at zero.
+stopped_flow|early hidden launch|x_E=z^7-z^8/4-z^9/3-5/12; z=(t+2)/2, -2<=t<=0|exact_checked|Distinct launch at -2 with same start point and recorded tail; positive factor proof for velocity and acceleration.
+stopped_flow|launch observability obstruction|O(x_E)=O(x_L), launch(x_E)=-2 != -1=launch(x_L)|derived|Observation is the entire t>=0 tail plus common start point; piecewise C2 nonnegative-acceleration histories.
+stopped_flow|causal speed landmark|sigma_v=min{t_i: ||p_i-p_(i-2)||/0.2>=v and ||p_(i-1)-p_(i-3)||/0.2>=v}|definition|Two overlapping trailing speeds; fixed 0.1-second sampling, arithmetic threshold ties declared.
+stopped_flow|readout availability|F_sigma subset F_(sigma+0.5); readout available at sigma+0.5|definition|No claim that future half-second movement is known at the gate; later suffix cannot alter readout.
+stopped_flow|time-position area|A_tx=T(x(T)-x(0))/2-integral_0^T(x(t)-x(0))dt|derived|Antisymmetric level-two time-position path-signature coordinate; bounded-variation position path.
+stopped_flow|positive acceleration kernel|12 A_tx/T^3=integral_0^T 6t(T-t)a(t)/T^3 dt|derived|C2 position path; kernel is nonnegative and has total mass one.
+stopped_flow|Chen area composition|A(uv)=A(u)+A(v)+(delta_t(u)delta_x(v)-delta_x(u)delta_t(v))/2|exact_checked|Piecewise-linear rational increments; preserves order information.
+stopped_flow|sampled quadratic normalization|a_A=12 A_PL/(T^3-sum_i delta_t_i^3)|exact_checked|Exact for sampled quadratic position; not a universal interpolation guarantee.
+stopped_flow|six-position acceleration contrast|a_A=20x0-10x1-10x2-10x3-10x4+20x5|exact_checked|Six samples at 0.1-second spacing; weights in reciprocal seconds squared.
+stopped_flow|affine nuisance cancellation|sum_i w_i=0; sum_i w_i t_i=0|exact_checked|Fixed-window readout; complete speed-gated pipeline is not invariant to a velocity boost.
+stopped_flow|jet moment constraints|X^T w=h; X_ik=(t_i-T/2)^k/k!|definition|Identifies a selected polynomial derivative without requiring all hidden coefficients.
+stopped_flow|minimum-variance exact jet|w=C^-1 X (X^T C^-1 X)^-1 h|exact_checked|Positive-definite covariance; full independent polynomial constraints; implementation returns null witness on failure.
+stopped_flow|conditional noise ratio|Var(a_BLUE)/sigma^2=7500/7; (7500/7)/60000=1/56|exact_checked|Six-point cubic-exact midpoint readout versus 0.1-second three-point difference noise; equal independent position errors, not an empirical NFL gain.
+stopped_flow|jet remainder bound|abs(bias)<=M sum_i abs(w_i)abs(t_i-T/2)^(p+1)/(p+1)!|derived|Bounded (p+1)-th position derivative and the declared polynomial-unbiased readout.
+stopped_flow|repeated-view noise|N_hat=sum_i sum_j (z_ij-zbar_i)(z_ij-zbar_i)^T / sum_i(n_i-1)|definition|Distinct attempts, not independent speed gates; shared within-attempt covariance retained.
+stopped_flow|between-player correction|S_hat=Cov(zbar_i)-N_hat mean_i(1/n_i)|conditional|Independent-attempt additive covariance working model; fitted estimator can have negative modes.
+stopped_flow|generalized reliable modes|S q=lambda N q|definition|Empirical covariance pencil; nonpositive estimated modes are reported, not declared biologically absent.
+stopped_flow|physical-coordinate posterior|m_i=mu+S(S+N/n_i)^-1(zbar_i-mu)|conditional|Gaussian working model, frozen fitted covariances; outputs retain the same physical coordinates across folds.
+stopped_flow|conditional posterior covariance|V_i=S-S(S+N/n_i)^-1 S|conditional|Does not integrate covariance-estimation error or establish NFL calibration.
+stopped_flow|no information from deterministic jets|sigma(B,X,phi(X))=sigma(B,X)|derived|Jets can improve inductive bias but do not create additional measured information over complete positions.
+stopped_flow|development error gain|G=1-MSE_candidate/MSE_control|definition|Paired original-player temporal comparisons; fixed predictions and complete procedure refits are distinct.
+"""
+
 def build():
     equations=[]
     for line in EQUATIONS.strip().splitlines():
@@ -415,7 +441,7 @@ def build():
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.13.1 · 15 October 2026','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.14.0 · 15 October 2026 (UTC)','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

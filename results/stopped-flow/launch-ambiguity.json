@@ -1,0 +1,40 @@
+{
+  "schema": "perfectjet/launch-ambiguity/1",
+  "verified_boundary_jets": {
+    "late": {
+      "launch_time": "-1",
+      "start_jet": [
+        "-5/12",
+        "0",
+        "0"
+      ],
+      "end_jet": [
+        "0",
+        "1",
+        "1"
+      ]
+    },
+    "early": {
+      "launch_time": "-2",
+      "start_jet": [
+        "-5/12",
+        "0",
+        "0"
+      ],
+      "end_jet": [
+        "0",
+        "1",
+        "1"
+      ]
+    }
+  },
+  "common_observed_tail": "x(t)=t+t^2/2 for t>=0",
+  "common_starting_position": "-5/12",
+  "late_velocity": "z^2(2-z)",
+  "late_acceleration": "z(4-3z)",
+  "early_velocity": "z^6(7-2z-3z^2)/2",
+  "early_acceleration": "z^5(21-7z-12z^2)/2",
+  "positivity_argument": "For 0<=z<=1, 2-z>=1, 4-3z>=1, 7-2z-3z^2>=2, and 21-7z-12z^2>=2.",
+  "conclusion": "Launch time is not identifiable from the observed tail, even with the common starting position, C2 regularity, nonnegative speed and nonnegative acceleration.",
+  "scope": "exact rational piecewise-polynomial witness; not a universal impossibility under stronger global motion assumptions"
+}

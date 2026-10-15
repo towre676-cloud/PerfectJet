@@ -1,0 +1,10 @@
+{
+  "elapsed_seconds": 13.392268369000021,
+  "model_fits": 288,
+  "checkpoint_sha256": "2ade4c164b540b124583ff630e7ace485b8147aefb6136471e5eec210f881957",
+  "source_sha256": {
+    "src/perfectjet/reliable_modes.py": "5438abeb9a4748f31f38efbaeee2f1194f4beb33163d04772fcb3ade339bedfe",
+    "src/perfectjet/applications/nfl_scouting/rolling_reliability.py": "7b56c271e2fb971f9654154e1ee629c6fd21f8842eb91171ea07891439186b48",
+    "scripts/run_reliable_stopped_flow.py": "714bd2b1030df1decf752d5f5c62894b7158218a65a62daec056b8119fdb488f"
+  }
+}

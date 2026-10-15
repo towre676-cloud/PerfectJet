@@ -1,0 +1,8 @@
+{
+  "started_at_utc": "2026-10-15T00:35:01.906644+00:00",
+  "checkpoint_sha256": "2ade4c164b540b124583ff630e7ace485b8147aefb6136471e5eec210f881957",
+  "source_sha256": {
+    "scripts/run_repeat_controls.py": "45b82236431f98cf1063c88d6d44aa9de5a7a932cbbc7dfd042a4981ab95daaf",
+    "src/perfectjet/applications/nfl_scouting/repeat_controls.py": "1aa8cf9212e265bc014dc2152701235643dada85ac10d46002649d9d4cea5689"
+  }
+}

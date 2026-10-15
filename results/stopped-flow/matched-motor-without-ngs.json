@@ -1,0 +1,430 @@
+{
+  "schema": "perfectjet/stopped-flow-experiment/1",
+  "status": "real-data development evidence",
+  "include_ngs": false,
+  "source_drills": [
+    "FORTY_YARD_DASH"
+  ],
+  "target": {
+    "name": "rolling_forward_displacement_05",
+    "units": "yards",
+    "minimum_plays": 20,
+    "meaning": "half-second displacement along observed velocity after speed-2 NFL landmark; context residualized",
+    "lower_is_better": false
+  },
+  "comparisons": {
+    "tracking_vs_conventional": {
+      "athletes": 51,
+      "mse_baseline": 0.003984914281780591,
+      "mse_movement": 0.00390146272782004,
+      "gain": 0.020941869274854752,
+      "calibration_mean_error": {
+        "baseline": -0.008799337067805507,
+        "movement": -0.012856927628499567
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 1
+          },
+          "promoted": 1,
+          "demoted": 1
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 2,
+            "movement": 1
+          },
+          "promoted": 2,
+          "demoted": 2
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.11488769164444752,
+        0.12290589162473861
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.14768299064469628,
+        0.14030176009785264
+      ],
+      "comparison": {
+        "baseline": "conventional",
+        "candidate": "tracking"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037496811347540668,
+          "candidate_mse": 0.003939556613619949,
+          "gain": -0.05063776679729237
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.004163367014007609,
+          "candidate_mse": 0.003872563917902866,
+          "gain": 0.06984805690354434
+        }
+      ]
+    },
+    "jets_vs_conventional": {
+      "athletes": 51,
+      "mse_baseline": 0.003984914281780591,
+      "mse_movement": 0.00390146272782004,
+      "gain": 0.020941869274854752,
+      "calibration_mean_error": {
+        "baseline": -0.008799337067805507,
+        "movement": -0.012856927628499567
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 1
+          },
+          "promoted": 1,
+          "demoted": 1
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 2,
+            "movement": 1
+          },
+          "promoted": 2,
+          "demoted": 2
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.11488769164444752,
+        0.12290589162473861
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.14768299064469628,
+        0.14030176009785264
+      ],
+      "comparison": {
+        "baseline": "conventional",
+        "candidate": "jets"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037496811347540668,
+          "candidate_mse": 0.003939556613619949,
+          "gain": -0.05063776679729237
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.004163367014007609,
+          "candidate_mse": 0.003872563917902866,
+          "gain": 0.06984805690354434
+        }
+      ]
+    },
+    "jets_vs_full_history": {
+      "athletes": 51,
+      "mse_baseline": 0.0031394666920733037,
+      "mse_movement": 0.00390146272782004,
+      "gain": -0.24271512026888686,
+      "calibration_mean_error": {
+        "baseline": -0.015326010798639942,
+        "movement": -0.012856927628499567
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 1,
+            "movement": 1
+          },
+          "promoted": 1,
+          "demoted": 1
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 4,
+            "movement": 1
+          },
+          "promoted": 4,
+          "demoted": 4
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.5280330600577121,
+        -0.039060695403570184
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.5766191097248157,
+        -0.004959383545098932
+      ],
+      "comparison": {
+        "baseline": "history",
+        "candidate": "jets"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.004068230955381945,
+          "candidate_mse": 0.003939556613619949,
+          "gain": 0.031629065107960486
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.002434886906115024,
+          "candidate_mse": 0.003872563917902866,
+          "gain": -0.5904491942427514
+        }
+      ]
+    },
+    "jets_vs_strong_control": {
+      "athletes": 51,
+      "mse_baseline": 0.003984914281780591,
+      "mse_movement": 0.00390146272782004,
+      "gain": 0.020941869274854752,
+      "calibration_mean_error": {
+        "baseline": -0.008799337067805507,
+        "movement": -0.012856927628499567
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 1
+          },
+          "promoted": 1,
+          "demoted": 1
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 2,
+            "movement": 1
+          },
+          "promoted": 2,
+          "demoted": 2
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        -0.11488769164444752,
+        0.12290589162473861
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        -0.14768299064469628,
+        0.14030176009785264
+      ],
+      "comparison": {
+        "baseline": "strong_control",
+        "candidate": "jets"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037496811347540668,
+          "candidate_mse": 0.003939556613619949,
+          "gain": -0.05063776679729237
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.004163367014007609,
+          "candidate_mse": 0.003872563917902866,
+          "gain": 0.06984805690354434
+        }
+      ]
+    },
+    "kinematics_vs_conventional": {
+      "athletes": 51,
+      "mse_baseline": 0.003984914281780591,
+      "mse_movement": 0.0030163317786926517,
+      "gain": 0.24306231818244906,
+      "calibration_mean_error": {
+        "baseline": -0.008799337067805507,
+        "movement": -0.015478969367174359
+      },
+      "decisions": [
+        {
+          "class": 2024,
+          "budget": 6,
+          "hits": {
+            "baseline": 0,
+            "movement": 0
+          },
+          "promoted": 2,
+          "demoted": 2
+        },
+        {
+          "class": 2025,
+          "budget": 8,
+          "hits": {
+            "baseline": 2,
+            "movement": 4
+          },
+          "promoted": 2,
+          "demoted": 2
+        }
+      ],
+      "fixed_prediction_interval_90": [
+        0.126372906923944,
+        0.3370070912438983
+      ],
+      "interval_scope": "class-stratified paired-player resampling of fixed predictions; excludes model selection/refit and adaptive-research uncertainty",
+      "fixed_prediction_interval_95": [
+        0.10319769773801575,
+        0.3522653540700844
+      ],
+      "comparison": {
+        "baseline": "conventional",
+        "candidate": "kinematics"
+      },
+      "by_class": [
+        {
+          "year": 2024,
+          "players": 22,
+          "baseline_mse": 0.0037496811347540668,
+          "candidate_mse": 0.003721808309517215,
+          "gain": 0.0074333854627027796
+        },
+        {
+          "year": 2025,
+          "players": 29,
+          "baseline_mse": 0.004163367014007609,
+          "candidate_mse": 0.002481142686342983,
+          "gain": 0.4040538155787847
+        }
+      ]
+    }
+  },
+  "model_fits": 120,
+  "source_features": {
+    "conventional": 29,
+    "kinematics": 44,
+    "jets": 53,
+    "history": 74
+  },
+  "prediction_rule": "Combine only; no held-player NFL frames or labels in predictors",
+  "folds": [
+    {
+      "year": 2024,
+      "evaluated_players": 22,
+      "training_players": 23,
+      "selected": {
+        "conventional": {
+          "family": "conventional",
+          "penalty": 100.0
+        },
+        "tracking": {
+          "family": "jets",
+          "penalty": 100.0
+        },
+        "jets": {
+          "family": "jets",
+          "penalty": 100.0
+        },
+        "kinematics": {
+          "family": "kinematics",
+          "penalty": 100.0
+        },
+        "history": {
+          "family": "history",
+          "penalty": 1000.0
+        },
+        "strong_control": {
+          "family": "conventional",
+          "penalty": 100.0
+        }
+      },
+      "inner_mse": {
+        "conventional:10": 0.003947695853432731,
+        "conventional:100": 0.003564371889843899,
+        "conventional:1000": 0.003828321065836943,
+        "quadratic:10": 0.006873455651832829,
+        "quadratic:100": 0.005845337271284285,
+        "quadratic:1000": 0.004286410589046342,
+        "kinematics:10": 0.004037689204705692,
+        "kinematics:100": 0.003660302056138615,
+        "kinematics:1000": 0.003817058147602462,
+        "jets:10": 0.0038032231916395195,
+        "jets:100": 0.0035494997253326193,
+        "jets:1000": 0.003790266299223745,
+        "history:10": 0.004841835089536428,
+        "history:100": 0.004053593213125049,
+        "history:1000": 0.003848653646995931
+      },
+      "model_fits": 60
+    },
+    {
+      "year": 2025,
+      "evaluated_players": 29,
+      "training_players": 45,
+      "selected": {
+        "conventional": {
+          "family": "conventional",
+          "penalty": 10.0
+        },
+        "tracking": {
+          "family": "jets",
+          "penalty": 10.0
+        },
+        "jets": {
+          "family": "jets",
+          "penalty": 10.0
+        },
+        "kinematics": {
+          "family": "kinematics",
+          "penalty": 100.0
+        },
+        "history": {
+          "family": "history",
+          "penalty": 100.0
+        },
+        "strong_control": {
+          "family": "conventional",
+          "penalty": 10.0
+        }
+      },
+      "inner_mse": {
+        "conventional:10": 0.0028651875053955058,
+        "conventional:100": 0.0029552382678839496,
+        "conventional:1000": 0.00315113330799218,
+        "quadratic:10": 0.009331252255842016,
+        "quadratic:100": 0.007152480451511371,
+        "quadratic:1000": 0.0042693646881168225,
+        "kinematics:10": 0.0032526088134453776,
+        "kinematics:100": 0.0031363001539705874,
+        "kinematics:1000": 0.0032364660570313834,
+        "jets:10": 0.0030397660169827,
+        "jets:100": 0.0030403047282412795,
+        "jets:1000": 0.0032389856786488886,
+        "history:10": 0.003911710078794642,
+        "history:100": 0.0032578829900716286,
+        "history:1000": 0.0033430845014989696
+      },
+      "model_fits": 60
+    }
+  ]
+}

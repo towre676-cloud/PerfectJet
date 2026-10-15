@@ -1,0 +1,209 @@
+{
+  "protocol": {
+    "schema": "perfectjet/repeat-controls/1",
+    "status": "exploratory strong-control follow-up after stopped-flow results",
+    "target": "second distinct-attempt three-gate area acceleration vector",
+    "features": "first distinct-attempt vector, no NFL measurements or labels",
+    "ordering": "source attempt ID order, not claimed chronological order",
+    "calibration": "earlier classes only; player-grouped symmetric repeat pairs in inner folds",
+    "controls": [
+      "prior",
+      "raw",
+      "scalar_shrinkage",
+      "diagonal_reliability",
+      "ridge",
+      "reliable"
+    ],
+    "ridge_penalties": [
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0
+    ],
+    "scalar_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "uncertainty": "paired class-stratified fixed errors and whole original-player refits",
+    "limits": "repeat prediction, not NFL prediction; reused cohorts and adaptive methodology"
+  },
+  "players": 55,
+  "mse": {
+    "prior": 0.26276032036741304,
+    "raw": 0.2241689589986241,
+    "scalar_shrinkage": 0.18873257109918784,
+    "diagonal_reliability": 0.1803970269524128,
+    "ridge": 0.17002060004799407,
+    "reliable": 0.17290328574552277
+  },
+  "comparisons": {
+    "reliable_vs_raw": {
+      "gain": 0.2286921145644254,
+      "fixed_interval_90": [
+        0.14436955414015532,
+        0.3120809552888175
+      ]
+    },
+    "reliable_vs_prior": {
+      "gain": 0.341973378995142,
+      "fixed_interval_90": [
+        0.17611156221655747,
+        0.46634966991284543
+      ]
+    },
+    "reliable_vs_scalar_shrinkage": {
+      "gain": 0.08387150803634225,
+      "fixed_interval_90": [
+        -0.019909379579519958,
+        0.17376346903107268
+      ]
+    },
+    "reliable_vs_diagonal_reliability": {
+      "gain": 0.041540270000496315,
+      "fixed_interval_90": [
+        -0.06330887033755526,
+        0.13402792175669564
+      ]
+    },
+    "reliable_vs_ridge": {
+      "gain": -0.01695492014917588,
+      "fixed_interval_90": [
+        -0.05719997362660275,
+        0.019966732342234915
+      ]
+    }
+  },
+  "folds": [
+    {
+      "year": 2024,
+      "players": 26,
+      "chosen": {
+        "ridge": 10.0,
+        "scalar": 0.75
+      },
+      "training_players": 33,
+      "mse": {
+        "prior": 0.2873096238168332,
+        "raw": 0.31364645591453677,
+        "scalar_shrinkage": 0.26871391342913054,
+        "diagonal_reliability": 0.2536950588192269,
+        "ridge": 0.25190197786060475,
+        "reliable": 0.25861843976968674
+      },
+      "calibration": {
+        "training_groups": 33,
+        "repeat_degrees_of_freedom": 29,
+        "empirical_generalized_signal_noise_eigenvalues": [
+          -0.023548562492574383,
+          0.342407279304939,
+          5.543082801052014
+        ],
+        "clipped_nonpositive_modes": 1,
+        "calibrated": true,
+        "noise_covariance": [
+          [
+            0.18423326364032155,
+            -0.008300767897435819,
+            -0.05465259929158607
+          ],
+          [
+            -0.008300767897435819,
+            0.1585719236822037,
+            0.006863119629846924
+          ],
+          [
+            -0.05465259929158607,
+            0.006863119629846924,
+            0.2029729812860597
+          ]
+        ],
+        "signal_covariance": [
+          [
+            0.3478507740709459,
+            0.33453041864364297,
+            0.18805570167272578
+          ],
+          [
+            0.33453041864364297,
+            0.3248719614761381,
+            0.1985690211628367
+          ],
+          [
+            0.18805570167272578,
+            0.1985690211628367,
+            0.20123076425230083
+          ]
+        ],
+        "scope": "method-of-moments independent-attempt Gaussian working model; window correlation retained; physical-coordinate output; covariance clipping is an estimator, not a proof of absent biology"
+      }
+    },
+    {
+      "year": 2025,
+      "players": 29,
+      "chosen": {
+        "ridge": 10.0,
+        "scalar": 0.5
+      },
+      "training_players": 64,
+      "mse": {
+        "prior": 0.24075060003345009,
+        "raw": 0.14394775486711636,
+        "scalar_shrinkage": 0.11702516073441176,
+        "diagonal_reliability": 0.11468155010630365,
+        "ridge": 0.09660970959530868,
+        "reliable": 0.09605521662041036
+      },
+      "calibration": {
+        "training_groups": 64,
+        "repeat_degrees_of_freedom": 55,
+        "empirical_generalized_signal_noise_eigenvalues": [
+          -0.04737535625221705,
+          0.2131118324967132,
+          3.246077516533251
+        ],
+        "clipped_nonpositive_modes": 1,
+        "calibrated": true,
+        "noise_covariance": [
+          [
+            0.16589665732615688,
+            0.01355692042493067,
+            -0.031713475169170204
+          ],
+          [
+            0.01355692042493067,
+            0.18425208339453608,
+            -0.004994055384477289
+          ],
+          [
+            -0.031713475169170204,
+            -0.004994055384477289,
+            0.1711492458129296
+          ]
+        ],
+        "signal_covariance": [
+          [
+            0.22021551669164194,
+            0.1984825127596927,
+            0.12825486121826438
+          ],
+          [
+            0.1984825127596927,
+            0.20920529964799425,
+            0.1563107107343737
+          ],
+          [
+            0.12825486121826438,
+            0.1563107107343737,
+            0.12938194957403545
+          ]
+        ],
+        "scope": "method-of-moments independent-attempt Gaussian working model; window correlation retained; physical-coordinate output; covariance clipping is an estimator, not a proof of absent biology"
+      }
+    }
+  ],
+  "ridge_model_fits": 32
+}

@@ -3262,6 +3262,146 @@
       "topic": "No scouting advantage from mechanism fit",
       "chapter": "docs/chapters/28_real_nfl_evidence.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T467",
+      "domain": "Stopped-flow readouts",
+      "topic": "C2 common-origin launch ambiguity witness",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T468",
+      "domain": "Stopped-flow readouts",
+      "topic": "Observed causal speed landmarks",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T469",
+      "domain": "Stopped-flow readouts",
+      "topic": "Endpoint availability and suffix invariance",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T470",
+      "domain": "Stopped-flow readouts",
+      "topic": "Time-position antisymmetric signature",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T471",
+      "domain": "Stopped-flow readouts",
+      "topic": "Positive acceleration kernel",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T472",
+      "domain": "Stopped-flow readouts",
+      "topic": "Exact sampled quadratic normalization",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T473",
+      "domain": "Stopped-flow readouts",
+      "topic": "Nuisance-annihilating position contrasts",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T474",
+      "domain": "Stopped-flow readouts",
+      "topic": "Minimum-variance rational jet readouts",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T475",
+      "domain": "Stopped-flow readouts",
+      "topic": "Null-polynomial identifiability witness",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T476",
+      "domain": "Stopped-flow readouts",
+      "topic": "Conditional noise and Taylor bias tradeoff",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T477",
+      "domain": "Stopped-flow readouts",
+      "topic": "Recovered rolling source coverage",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T478",
+      "domain": "Stopped-flow readouts",
+      "topic": "Disjoint-attempt measurement repeatability",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T479",
+      "domain": "Stopped-flow readouts",
+      "topic": "Strong complete-history controls",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T480",
+      "domain": "Stopped-flow readouts",
+      "topic": "Matched motor target versus get-off",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T481",
+      "domain": "Stopped-flow readouts",
+      "topic": "Full original-player procedure refits",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T482",
+      "domain": "Stopped-flow readouts",
+      "topic": "Correlated repeated-view covariance",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T483",
+      "domain": "Stopped-flow readouts",
+      "topic": "Generalized empirical signal-noise modes",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T484",
+      "domain": "Stopped-flow readouts",
+      "topic": "Physical-coordinate posterior transport",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T485",
+      "domain": "Stopped-flow readouts",
+      "topic": "Strong independent-repeat ridge control",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T486",
+      "domain": "Stopped-flow readouts",
+      "topic": "Adaptive evidence and prospective boundary",
+      "chapter": "docs/chapters/29_stopped_flow.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

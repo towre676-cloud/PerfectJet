@@ -1,0 +1,15 @@
+{
+  "schema": "perfectjet/reliable-stopped-flow/1",
+  "status": "exploratory refinement declared after the initial stopped-flow outcome run",
+  "source": "forty area acceleration at speed gates 2,3,4 yd/s",
+  "measurement_groups": "complete three-gate vectors; distinct attempts, never independent gates",
+  "noise_ridge_fraction": 0.05,
+  "signal_estimator": "athlete mean covariance minus average mean-noise covariance; generalized nonpositive modes clipped",
+  "features": "three physical-coordinate posterior deviations; no latent-axis mixing",
+  "controls": [
+    "strong conventional",
+    "raw three-gate acceleration means"
+  ],
+  "model_selection": "inner original-player folds, penalties 10/100/1000; source covariance rebuilt in every fold",
+  "claim_limit": "working independent-attempt Gaussian model and estimated covariances; inspected cohorts, no prospective confirmation"
+}

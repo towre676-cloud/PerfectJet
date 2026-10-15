@@ -55,6 +55,8 @@ GROUPS['28']=('Real NFL evidence', ['Recovered official source hash equality',
     'Position-interaction conventional controls','Independent real NFL tracking replication',
     'Strong history forecasting controls','No scouting advantage from mechanism fit'])
 
+GROUPS['29']=('Stopped-flow readouts', ['C2 common-origin launch ambiguity witness', 'Observed causal speed landmarks', 'Endpoint availability and suffix invariance', 'Time-position antisymmetric signature', 'Positive acceleration kernel', 'Exact sampled quadratic normalization', 'Nuisance-annihilating position contrasts', 'Minimum-variance rational jet readouts', 'Null-polynomial identifiability witness', 'Conditional noise and Taylor bias tradeoff', 'Recovered rolling source coverage', 'Disjoint-attempt measurement repeatability', 'Strong complete-history controls', 'Matched motor target versus get-off', 'Full original-player procedure refits', 'Correlated repeated-view covariance', 'Generalized empirical signal-noise modes', 'Physical-coordinate posterior transport', 'Strong independent-repeat ridge control', 'Adaptive evidence and prospective boundary'])
+
 def build():
     rows=[]
     for prefix,(domain,topics) in GROUPS.items():

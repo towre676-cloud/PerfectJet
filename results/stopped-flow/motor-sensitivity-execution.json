@@ -1,0 +1,11 @@
+{
+  "completed_at_utc": "2026-10-15T00:39:52.065132+00:00",
+  "elapsed_seconds": 154.9306481210001,
+  "model_fits_excluding_refits": 120,
+  "requested_refits": 32,
+  "checkpoint_sha256": "2ade4c164b540b124583ff630e7ace485b8147aefb6136471e5eec210f881957",
+  "source_sha256": {
+    "scripts/run_motor_sensitivity.py": "ce87232452a2bb6320c81f8437a22661ccd35463fc2f737f6e376ea665a14cdb",
+    "src/perfectjet/applications/nfl_scouting/rolling.py": "8d07b56d84ad06072a6d53632ab07247bfe9c64766f9714fed91861c6f53697b"
+  }
+}

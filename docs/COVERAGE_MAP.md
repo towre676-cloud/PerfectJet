@@ -470,3 +470,23 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T464 | Real NFL evidence | Independent real NFL tracking replication | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
 | PJ-T465 | Real NFL evidence | Strong history forecasting controls | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
 | PJ-T466 | Real NFL evidence | No scouting advantage from mechanism fit | [28_real_nfl_evidence](chapters/28_real_nfl_evidence.md) |
+| PJ-T467 | Stopped-flow readouts | C2 common-origin launch ambiguity witness | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T468 | Stopped-flow readouts | Observed causal speed landmarks | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T469 | Stopped-flow readouts | Endpoint availability and suffix invariance | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T470 | Stopped-flow readouts | Time-position antisymmetric signature | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T471 | Stopped-flow readouts | Positive acceleration kernel | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T472 | Stopped-flow readouts | Exact sampled quadratic normalization | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T473 | Stopped-flow readouts | Nuisance-annihilating position contrasts | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T474 | Stopped-flow readouts | Minimum-variance rational jet readouts | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T475 | Stopped-flow readouts | Null-polynomial identifiability witness | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T476 | Stopped-flow readouts | Conditional noise and Taylor bias tradeoff | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T477 | Stopped-flow readouts | Recovered rolling source coverage | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T478 | Stopped-flow readouts | Disjoint-attempt measurement repeatability | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T479 | Stopped-flow readouts | Strong complete-history controls | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T480 | Stopped-flow readouts | Matched motor target versus get-off | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T481 | Stopped-flow readouts | Full original-player procedure refits | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T482 | Stopped-flow readouts | Correlated repeated-view covariance | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T483 | Stopped-flow readouts | Generalized empirical signal-noise modes | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T484 | Stopped-flow readouts | Physical-coordinate posterior transport | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T485 | Stopped-flow readouts | Strong independent-repeat ridge control | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T486 | Stopped-flow readouts | Adaptive evidence and prospective boundary | [29_stopped_flow](chapters/29_stopped_flow.md) |

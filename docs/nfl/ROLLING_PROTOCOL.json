@@ -1,0 +1,51 @@
+{
+  "schema": "perfectjet/stopped-flow-transfer/1",
+  "status": "development protocol frozen before this run's outcome evaluation; cohorts previously inspected",
+  "source_primary": "FORTY_YARD_DASH",
+  "source_secondary": "five already declared defensive-front drills, retained separately by drill",
+  "speed_gates_yards_per_second": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "gate": "first two consecutive trailing 0.2-second displacement speeds at or above threshold; causal prefix only",
+  "gate_not_launch": true,
+  "sampling_seconds": 0.1,
+  "readout_horizon_seconds": 0.5,
+  "axis": "observed trailing 0.2-second displacement at gate; independent of NFL outcome",
+  "kinematics": [
+    "entry_speed",
+    "forward_displacement",
+    "terminal_speed",
+    "path_length",
+    "lateral_displacement_abs"
+  ],
+  "jets": [
+    "area_acceleration",
+    "minimum_variance_acceleration",
+    "minimum_variance_jerk"
+  ],
+  "full_history_control": "all six forward positions relative to gate and absolute lateral positions, plus kinematics",
+  "source_aggregation": "independent attempt means per athlete/drill/gate; no pseudo-replicate resampling of windows",
+  "primary_target": "existing context-adjusted rookie snap-to-LOS get-off; minimum 30 eligible plays",
+  "mechanism_target": "half-second forward displacement after NFL speed-2 gate; minimum 20 plays; separate gate/entry context model",
+  "source_information_control": "all conventional measurements plus identical accepted-attempt counts and gate support flags",
+  "comparator_families": [
+    "linear conventional",
+    "quadratic conventional with position interactions",
+    "kinematics",
+    "full-history"
+  ],
+  "penalties": [
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "evaluation": "train 2023 test 2024; train 2023-2024 test 2025; all inner context and transforms rebuilt by original player",
+  "uncertainty": "paired class-stratified player fixed-prediction bootstrap plus separate complete original-player refit sensitivity",
+  "decision": "lowest predicted quarter per class, compared using same budget and training lower-quartile target threshold",
+  "primary_ngs": true,
+  "chronology_sensitivity": "repeat without NGS grades",
+  "privacy": "restricted rows and predictions outside repository; public output aggregate allowlist only",
+  "speed_gate_arithmetic_tolerance": 1e-09
+}

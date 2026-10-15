@@ -3456,6 +3456,204 @@
       "status": "conditional",
       "assumptions": "Positive ratio and nonzero Delta_beta; curve Y(d)=tau+beta sqrt(d) is a physical approximation, not a demonstrated scouting edge.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E385",
+      "domain": "stopped_flow",
+      "title": "late hidden launch",
+      "equation": "x_L=2z^3/3-z^4/4-5/12; z=t+1, -1<=t<=0",
+      "status": "exact_checked",
+      "assumptions": "Common stationary start position -5/12; matches common C2 tail t+t^2/2 at zero.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E386",
+      "domain": "stopped_flow",
+      "title": "early hidden launch",
+      "equation": "x_E=z^7-z^8/4-z^9/3-5/12; z=(t+2)/2, -2<=t<=0",
+      "status": "exact_checked",
+      "assumptions": "Distinct launch at -2 with same start point and recorded tail; positive factor proof for velocity and acceleration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E387",
+      "domain": "stopped_flow",
+      "title": "launch observability obstruction",
+      "equation": "O(x_E)=O(x_L), launch(x_E)=-2 != -1=launch(x_L)",
+      "status": "derived",
+      "assumptions": "Observation is the entire t>=0 tail plus common start point; piecewise C2 nonnegative-acceleration histories.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E388",
+      "domain": "stopped_flow",
+      "title": "causal speed landmark",
+      "equation": "sigma_v=min{t_i: ||p_i-p_(i-2)||/0.2>=v and ||p_(i-1)-p_(i-3)||/0.2>=v}",
+      "status": "definition",
+      "assumptions": "Two overlapping trailing speeds; fixed 0.1-second sampling, arithmetic threshold ties declared.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E389",
+      "domain": "stopped_flow",
+      "title": "readout availability",
+      "equation": "F_sigma subset F_(sigma+0.5); readout available at sigma+0.5",
+      "status": "definition",
+      "assumptions": "No claim that future half-second movement is known at the gate; later suffix cannot alter readout.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E390",
+      "domain": "stopped_flow",
+      "title": "time-position area",
+      "equation": "A_tx=T(x(T)-x(0))/2-integral_0^T(x(t)-x(0))dt",
+      "status": "derived",
+      "assumptions": "Antisymmetric level-two time-position path-signature coordinate; bounded-variation position path.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E391",
+      "domain": "stopped_flow",
+      "title": "positive acceleration kernel",
+      "equation": "12 A_tx/T^3=integral_0^T 6t(T-t)a(t)/T^3 dt",
+      "status": "derived",
+      "assumptions": "C2 position path; kernel is nonnegative and has total mass one.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E392",
+      "domain": "stopped_flow",
+      "title": "Chen area composition",
+      "equation": "A(uv)=A(u)+A(v)+(delta_t(u)delta_x(v)-delta_x(u)delta_t(v))/2",
+      "status": "exact_checked",
+      "assumptions": "Piecewise-linear rational increments; preserves order information.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E393",
+      "domain": "stopped_flow",
+      "title": "sampled quadratic normalization",
+      "equation": "a_A=12 A_PL/(T^3-sum_i delta_t_i^3)",
+      "status": "exact_checked",
+      "assumptions": "Exact for sampled quadratic position; not a universal interpolation guarantee.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E394",
+      "domain": "stopped_flow",
+      "title": "six-position acceleration contrast",
+      "equation": "a_A=20x0-10x1-10x2-10x3-10x4+20x5",
+      "status": "exact_checked",
+      "assumptions": "Six samples at 0.1-second spacing; weights in reciprocal seconds squared.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E395",
+      "domain": "stopped_flow",
+      "title": "affine nuisance cancellation",
+      "equation": "sum_i w_i=0; sum_i w_i t_i=0",
+      "status": "exact_checked",
+      "assumptions": "Fixed-window readout; complete speed-gated pipeline is not invariant to a velocity boost.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E396",
+      "domain": "stopped_flow",
+      "title": "jet moment constraints",
+      "equation": "X^T w=h; X_ik=(t_i-T/2)^k/k!",
+      "status": "definition",
+      "assumptions": "Identifies a selected polynomial derivative without requiring all hidden coefficients.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E397",
+      "domain": "stopped_flow",
+      "title": "minimum-variance exact jet",
+      "equation": "w=C^-1 X (X^T C^-1 X)^-1 h",
+      "status": "exact_checked",
+      "assumptions": "Positive-definite covariance; full independent polynomial constraints; implementation returns null witness on failure.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E398",
+      "domain": "stopped_flow",
+      "title": "conditional noise ratio",
+      "equation": "Var(a_BLUE)/sigma^2=7500/7; (7500/7)/60000=1/56",
+      "status": "exact_checked",
+      "assumptions": "Six-point cubic-exact midpoint readout versus 0.1-second three-point difference noise; equal independent position errors, not an empirical NFL gain.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E399",
+      "domain": "stopped_flow",
+      "title": "jet remainder bound",
+      "equation": "abs(bias)<=M sum_i abs(w_i)abs(t_i-T/2)^(p+1)/(p+1)!",
+      "status": "derived",
+      "assumptions": "Bounded (p+1)-th position derivative and the declared polynomial-unbiased readout.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E400",
+      "domain": "stopped_flow",
+      "title": "repeated-view noise",
+      "equation": "N_hat=sum_i sum_j (z_ij-zbar_i)(z_ij-zbar_i)^T / sum_i(n_i-1)",
+      "status": "definition",
+      "assumptions": "Distinct attempts, not independent speed gates; shared within-attempt covariance retained.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E401",
+      "domain": "stopped_flow",
+      "title": "between-player correction",
+      "equation": "S_hat=Cov(zbar_i)-N_hat mean_i(1/n_i)",
+      "status": "conditional",
+      "assumptions": "Independent-attempt additive covariance working model; fitted estimator can have negative modes.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E402",
+      "domain": "stopped_flow",
+      "title": "generalized reliable modes",
+      "equation": "S q=lambda N q",
+      "status": "definition",
+      "assumptions": "Empirical covariance pencil; nonpositive estimated modes are reported, not declared biologically absent.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E403",
+      "domain": "stopped_flow",
+      "title": "physical-coordinate posterior",
+      "equation": "m_i=mu+S(S+N/n_i)^-1(zbar_i-mu)",
+      "status": "conditional",
+      "assumptions": "Gaussian working model, frozen fitted covariances; outputs retain the same physical coordinates across folds.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E404",
+      "domain": "stopped_flow",
+      "title": "conditional posterior covariance",
+      "equation": "V_i=S-S(S+N/n_i)^-1 S",
+      "status": "conditional",
+      "assumptions": "Does not integrate covariance-estimation error or establish NFL calibration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E405",
+      "domain": "stopped_flow",
+      "title": "no information from deterministic jets",
+      "equation": "sigma(B,X,phi(X))=sigma(B,X)",
+      "status": "derived",
+      "assumptions": "Jets can improve inductive bias but do not create additional measured information over complete positions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E406",
+      "domain": "stopped_flow",
+      "title": "development error gain",
+      "equation": "G=1-MSE_candidate/MSE_control",
+      "status": "definition",
+      "assumptions": "Paired original-player temporal comparisons; fixed predictions and complete procedure refits are distinct.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }

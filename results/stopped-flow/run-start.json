@@ -1,0 +1,136 @@
+{
+  "schema": "perfectjet/stopped-flow-run/1",
+  "started_at_utc": "2026-10-15T00:27:18.473152+00:00",
+  "protocol_sha256": "5b29211a602040e7018afcf34ca3fee982487d00c2aedbc6d679741f8bf8fcac",
+  "checkpoint_sha256": "2ade4c164b540b124583ff630e7ace485b8147aefb6136471e5eec210f881957",
+  "source_bytes": 2306804135,
+  "source_code_sha256": {
+    "src/perfectjet/stopped_jets.py": "4f7a790718560beefcc8a2091f19fc8c2675aa6fd4ae042b881368314187da63",
+    "src/perfectjet/applications/nfl_scouting/rolling.py": "8d07b56d84ad06072a6d53632ab07247bfe9c64766f9714fed91861c6f53697b",
+    "scripts/run_stopped_flow.py": "c99f3487f77912649b1d41db1641c1667323c93a69bc7ac6e2a798c0bbd9bdbb"
+  },
+  "official_source_manifest": {
+    "combine_results.csv": {
+      "sha256": "e4773ef68167d508f3916d446cd411dfd77a87e5765d3babcb986201fb143b86",
+      "bytes": 41020,
+      "matches_retained_official_snapshot": true
+    },
+    "combine_tracking.csv": {
+      "sha256": "541c69f6629f5f803b08033c5c386735582120973562134b2c1e7ec6553fb0d3",
+      "bytes": 83788174,
+      "matches_retained_official_snapshot": true
+    },
+    "game_tracking_2023.csv": {
+      "sha256": "385e620b6b94e8cd91f0d5776395b76b10d52a34401c764c21b4e98ab617855c",
+      "bytes": 335463637,
+      "matches_retained_official_snapshot": true
+    },
+    "game_tracking_2024.csv": {
+      "sha256": "06b7f34304414306dab53d5cb4c5d28485c5f62376442bcb913f9f01184ece6d",
+      "bytes": 717952893,
+      "matches_retained_official_snapshot": true
+    },
+    "game_tracking_2025.csv": {
+      "sha256": "419b6bc0388a9210f61911ec2f1351b1e8d56355c0ac8576f24a3bbcd95e54ca",
+      "bytes": 1022575093,
+      "matches_retained_official_snapshot": true
+    },
+    "games.csv": {
+      "sha256": "ca33543f6939af4ee393c568c60920c476ba91ddbfbdce5a06578b9492fa11fd",
+      "bytes": 43174,
+      "matches_retained_official_snapshot": true
+    },
+    "player_career_successes.csv": {
+      "sha256": "0d4b8975debda4e2481218f30a16429dad5b806ecdd2fc4367291ac1460ed0a9",
+      "bytes": 13801,
+      "matches_retained_official_snapshot": true
+    },
+    "player_play.csv": {
+      "sha256": "68926a268c0a49e58616001fb35ea179018d9cbbce1c5c31e7a4095273c35b2a",
+      "bytes": 146879042,
+      "matches_retained_official_snapshot": true
+    },
+    "players.csv": {
+      "sha256": "2cd7e0309e7aa40533028dc537c2c877dbedbe0fdb14f337fc18af31a5861c12",
+      "bytes": 47301,
+      "matches_retained_official_snapshot": true
+    },
+    "official_adapter": {
+      "version": "official-bdb2027-v2",
+      "competition": "nfl-big-data-bowl-2027",
+      "synthetic": false,
+      "audit": {
+        "source_rejections": {},
+        "play_rejections": {
+          "not_regular_season": 8836,
+          "not_rookie_season": 35414,
+          "nonfinite_or_negative_get_off": 7977,
+          "nullified_or_unknown_penalty": 1018
+        },
+        "unmatched_tracking_player_ids": [],
+        "unmatched_play_player_ids": [],
+        "unmatched_game_ids": [],
+        "positions": [
+          "DE",
+          "DT",
+          "NT",
+          "OLB",
+          "EDGE",
+          "DL"
+        ],
+        "drills": [
+          "PASS_RUSH_DRILL",
+          "RUN_THE_HOOP_DRILL",
+          "FOUR_BAG_AGILITY_DRILL",
+          "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+          "FORTY_YARD_DASH"
+        ],
+        "records_before_snap_exclusions": 14680,
+        "missing_snap_records": 14,
+        "nonunique_snap_records": 1,
+        "eligible_players": 74,
+        "eligible_records": 14665,
+        "tracked_players_without_eligible_outcome": 44,
+        "accepted_attempts": 745,
+        "players_by_draft_year": {
+          "2023": 37,
+          "2024": 37,
+          "2025": 44
+        },
+        "unmatched_tracking_player_ids_count": 0,
+        "unmatched_play_player_ids_count": 0,
+        "unmatched_game_ids_count": 0
+      },
+      "tracking_units": {
+        "time": "seconds since first actual timestamp in attempt",
+        "x": "yards",
+        "y": "yards",
+        "sample_rate_hz": 10
+      },
+      "timestamp_basis": "Timezone-naive source clocks preserved for relative differences/calendar dates; no timezone inferred; mixed naive/aware attempt clocks rejected",
+      "measurement_columns": {
+        "combine_height": "height",
+        "combine_weight": "weight",
+        "hand_size": "hand_size",
+        "arm_length": "arm_length",
+        "wing_span": "wing_span",
+        "ten_yd_split": "ten_yd_split",
+        "forty": "forty",
+        "vertical": "vertical",
+        "broad_jump": "broad",
+        "three_cone": "three_cone",
+        "short_shuttle": "shuttle",
+        "bench_reps": "bench",
+        "ngs_athleticism_score": "ngs_athleticism_score",
+        "ngs_college_production_score": "ngs_college_production_score",
+        "ngs_final_score": "ngs_final_score"
+      },
+      "measurement_availability": "Inferred proxy: latest accepted tracked Combine date per athlete; exact test publication dates absent",
+      "ngs_availability": "Unverified chronology; inclusion requires an explicit pre-draft interpretation and a no-NGS sensitivity",
+      "selection_position": "combine_results.combine_position; NFL position not used",
+      "private_data": "Do not publish raw competition data or individual derived rows with source archives",
+      "include_snap_context": true
+    }
+  },
+  "cohorts_have_prior_adaptive_use": true
+}

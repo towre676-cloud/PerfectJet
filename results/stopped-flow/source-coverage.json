@@ -1,0 +1,126 @@
+{
+  "source_players": 118,
+  "eligible_primary_players": 74,
+  "by_drill_gate": [
+    {
+      "drill": "FORTY_YARD_DASH",
+      "gate": 2.0,
+      "accepted_attempts": 177,
+      "players": 93,
+      "eligible_target_players": 57,
+      "players_with_independent_repeat_attempts": 84
+    },
+    {
+      "drill": "FORTY_YARD_DASH",
+      "gate": 3.0,
+      "accepted_attempts": 177,
+      "players": 93,
+      "eligible_target_players": 57,
+      "players_with_independent_repeat_attempts": 84
+    },
+    {
+      "drill": "FORTY_YARD_DASH",
+      "gate": 4.0,
+      "accepted_attempts": 177,
+      "players": 93,
+      "eligible_target_players": 57,
+      "players_with_independent_repeat_attempts": 84
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "gate": 2.0,
+      "accepted_attempts": 112,
+      "players": 112,
+      "eligible_target_players": 71,
+      "players_with_independent_repeat_attempts": 0
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "gate": 3.0,
+      "accepted_attempts": 112,
+      "players": 112,
+      "eligible_target_players": 71,
+      "players_with_independent_repeat_attempts": 0
+    },
+    {
+      "drill": "FOUR_BAG_AGILITY_DRILL",
+      "gate": 4.0,
+      "accepted_attempts": 112,
+      "players": 112,
+      "eligible_target_players": 71,
+      "players_with_independent_repeat_attempts": 0
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "gate": 2.0,
+      "accepted_attempts": 112,
+      "players": 112,
+      "eligible_target_players": 71,
+      "players_with_independent_repeat_attempts": 0
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "gate": 3.0,
+      "accepted_attempts": 112,
+      "players": 112,
+      "eligible_target_players": 71,
+      "players_with_independent_repeat_attempts": 0
+    },
+    {
+      "drill": "FRONT_START_WAVE_DRILL_AND_LATERAL_REACTION",
+      "gate": 4.0,
+      "accepted_attempts": 112,
+      "players": 112,
+      "eligible_target_players": 71,
+      "players_with_independent_repeat_attempts": 0
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "gate": 2.0,
+      "accepted_attempts": 225,
+      "players": 118,
+      "eligible_target_players": 74,
+      "players_with_independent_repeat_attempts": 106
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "gate": 3.0,
+      "accepted_attempts": 225,
+      "players": 118,
+      "eligible_target_players": 74,
+      "players_with_independent_repeat_attempts": 106
+    },
+    {
+      "drill": "PASS_RUSH_DRILL",
+      "gate": 4.0,
+      "accepted_attempts": 225,
+      "players": 118,
+      "eligible_target_players": 74,
+      "players_with_independent_repeat_attempts": 106
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "gate": 2.0,
+      "accepted_attempts": 119,
+      "players": 109,
+      "eligible_target_players": 69,
+      "players_with_independent_repeat_attempts": 10
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "gate": 3.0,
+      "accepted_attempts": 119,
+      "players": 109,
+      "eligible_target_players": 69,
+      "players_with_independent_repeat_attempts": 10
+    },
+    {
+      "drill": "RUN_THE_HOOP_DRILL",
+      "gate": 4.0,
+      "accepted_attempts": 119,
+      "players": 109,
+      "eligible_target_players": 69,
+      "players_with_independent_repeat_attempts": 10
+    }
+  ]
+}

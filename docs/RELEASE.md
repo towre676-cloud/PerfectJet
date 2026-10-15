@@ -1,3 +1,13 @@
+# Release 0.14.0 — Stopped-flow readouts
+
+This release preserves all earlier work and adds an exact common-origin launch-ambiguity witness, six-position acceleration contrasts, exact minimum-variance jet readouts, rolling Combine/NFL extraction, correlated repeated-view estimation, strong source-only repeat controls and temporal full-refit experiments. The atlas now contains 406 equations and 29 chapters. Public aggregate evidence and the source-complete notebook are included; restricted data and individual predictions remain private.
+
+The key results are 57 rather than ten eligible source-supported NFL players; 22.87% better repeat-attempt prediction than raw observations, but no advantage over ordinary multivariate ridge; a 24.49% matched-movement point gain that is not robust to full refitting; and negative primary get-off accuracy. No incremental scouting advantage or new Lean proof is claimed.
+
+Local validation and GitHub Actions results are recorded separately. Exact identities, software tests and real-data prediction results are not interchangeable forms of evidence. The complete release contains source, tests, archives, registry, monograph, notebook and aggregate receipts.
+
+---
+
 # PerfectJet 0.13.1
 
 Fix the external tracking test harness to use the repository's standard unittest runner. The initial v0.13.0 CI run exposed an undeclared pytest import, and its function-style tracking tests were not being collected by local unittest discovery. All ten tests now run under unittest without an additional dependency. The complete suite contains 302 tests. No mathematical model, raw data, experimental split, prediction or fitted empirical result changes.
