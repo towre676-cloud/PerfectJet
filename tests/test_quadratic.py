@@ -1,4 +1,6 @@
 import unittest,random
+from fractions import Fraction
+from math import log, sqrt
 from perfectjet.quadratic import QuadraticSquare,fundamental_unit,nagell_seeds,pell_solutions,quadratic_receipt
 from perfectjet.engine import arithmetic_problem
 
@@ -39,6 +41,41 @@ class QuadraticTests(unittest.TestCase):
         r=arithmetic_problem(1,8,8,1,10**6)
         self.assertEqual(r["answer"]["first_hits"][:4],[0,2,14,84])
         self.assertIn("Nagell",r["answer"]["completeness"])
+
+    def test_positive_asymptotic_removes_signed_duplicate_tails(self):
+        q=QuadraticSquare(2,1,0,7)
+        s=q.orbit_structure(); a=s["asymptotic"]
+        self.assertEqual(len(s["orbits"]),4)
+        self.assertEqual(len(s["positive_orbits"]),2)
+        self.assertEqual(a["logarithmic_weight"],"2")
+        self.assertAlmostEqual(a["coefficient"],2/log(3+sqrt(8)))
+        # Independently generated positive n sequences for n^2+7=2y^2.
+        bound=10**12; hits=set()
+        for n,y in ((1,2),(5,4)):
+            while n<=bound:
+                hits.add(n);n,y=3*n+4*y,2*n+3*y
+        self.assertEqual(len(hits),31)
+        self.assertEqual(q.hits(bound),sorted(hits))
+        self.assertLess(abs(len(hits)-a["coefficient"]*log(bound)),1)
+
+    def test_positive_unit_classes_deduplicate_endpoint_and_conjugate_seeds(self):
+        # Norm +8 has conjugate Nagell representatives in the same unit class;
+        # norm -8 has X=0 and duplicate sign choices. Each counts one n tail.
+        for c in (-1,1):
+            s=QuadraticSquare(1,2,0,c).orbit_structure()
+            self.assertEqual(s["asymptotic"]["logarithmic_weight"],"1")
+            self.assertEqual(len(s["positive_orbits"]),1)
+        # Congruence filtering gives a rational weight, not an integer orbit count.
+        q=QuadraticSquare(1,2,1,-1);s=q.orbit_structure()
+        self.assertEqual(Fraction(s["asymptotic"]["logarithmic_weight"]),Fraction(1,2))
+        self.assertEqual(q.hits(5000),brute(q,5000))
+
+    def test_integer_coefficients_and_orbit_indices_are_required(self):
+        for p in ((True,1,0,7),(2,1.0,0,7),(2,1,0,"7")):
+            with self.assertRaises(ValueError):QuadraticSquare(*p)
+        q=QuadraticSquare(2,1,0,7);o=q.orbit_structure()["orbits"][0]
+        for index in (-1,1.5,True):
+            with self.assertRaises(ValueError):q.nth_on_orbit(o,index)
 
 
 if __name__=="__main__":unittest.main()

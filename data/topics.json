@@ -3402,6 +3402,370 @@
       "topic": "Adaptive evidence and prospective boundary",
       "chapter": "docs/chapters/29_stopped_flow.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T487",
+      "domain": "Exact Observatory",
+      "topic": "Finite partial-system compiler",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T488",
+      "domain": "Exact Observatory",
+      "topic": "Efficient behavioral quotient and commuting replay",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T489",
+      "domain": "Exact Observatory",
+      "topic": "Constraint-aware history populations",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T490",
+      "domain": "Exact Observatory",
+      "topic": "Lexicographic rank and inverse rank",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T491",
+      "domain": "Exact Observatory",
+      "topic": "Exact uniform history draws",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T492",
+      "domain": "Exact Observatory",
+      "topic": "Cost distributions and minima",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T493",
+      "domain": "Exact Observatory",
+      "topic": "Typed sensor-trace conditioning",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T494",
+      "domain": "Exact Observatory",
+      "topic": "Minimum-cost pair separation",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T495",
+      "domain": "Exact Observatory",
+      "topic": "Initial-target-preserving adaptive experiments",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T496",
+      "domain": "Exact Observatory",
+      "topic": "Destructive-action prefix conditioning",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T497",
+      "domain": "Exact Observatory",
+      "topic": "Complete closed ambiguity witnesses",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T498",
+      "domain": "Exact Observatory",
+      "topic": "Global whole-state Krylov identities",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T499",
+      "domain": "Exact Observatory",
+      "topic": "Rational generating functions and remote coefficients",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T500",
+      "domain": "Exact Observatory",
+      "topic": "Question-dependent observable coordinates",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T501",
+      "domain": "Exact Observatory",
+      "topic": "Finite-field arithmetic interferometer",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T502",
+      "domain": "Exact Observatory",
+      "topic": "Seeded Pell residue transport",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T503",
+      "domain": "Exact Observatory",
+      "topic": "Independent absolute relative and sign populations",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T504",
+      "domain": "Exact Observatory",
+      "topic": "Local interactive mathematical workbench",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T505",
+      "domain": "Exact Observatory",
+      "topic": "JSON batch and Python interfaces",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T506",
+      "domain": "Exact Observatory",
+      "topic": "Representation adapter development plan",
+      "chapter": "docs/chapters/30_exact_observatory.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T507",
+      "domain": "Integrated Math Lab",
+      "topic": "Stable ranked equation IDs and installed atlas",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T508",
+      "domain": "Integrated Math Lab",
+      "topic": "Question-oriented exact workbench",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T509",
+      "domain": "Integrated Math Lab",
+      "topic": "Target-to-portfolio bounded workflow",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T510",
+      "domain": "Integrated Math Lab",
+      "topic": "Minimum-cost sensor repair",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T511",
+      "domain": "Integrated Math Lab",
+      "topic": "Exact ties and uncertain contenders",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T512",
+      "domain": "Integrated Math Lab",
+      "topic": "Finite Gaussian-rational Moyal algebra",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T513",
+      "domain": "Integrated Math Lab",
+      "topic": "Affine covariance and nonlinear counterexample",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T514",
+      "domain": "Integrated Math Lab",
+      "topic": "Complete Hahn coefficient gate",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T515",
+      "domain": "Integrated Math Lab",
+      "topic": "Classified rays and higher-order decoys",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T516",
+      "domain": "Integrated Math Lab",
+      "topic": "Cyclic obstruction invariant and extension repair",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T517",
+      "domain": "Integrated Math Lab",
+      "topic": "Sector connectivity and generated algebra",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T518",
+      "domain": "Integrated Math Lab",
+      "topic": "Exact conductor transport and CRT twists",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T519",
+      "domain": "Integrated Math Lab",
+      "topic": "Finite Dynkin theta and boundary reciprocity",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T520",
+      "domain": "Integrated Math Lab",
+      "topic": "Root-of-unity torus skein products",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T521",
+      "domain": "Integrated Math Lab",
+      "topic": "Scoped half-lift parity",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T522",
+      "domain": "Integrated Math Lab",
+      "topic": "Cancellation-conditioned precision bounds",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T523",
+      "domain": "Integrated Math Lab",
+      "topic": "Adaptive precision with external uncertainty",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T524",
+      "domain": "Integrated Math Lab",
+      "topic": "Colored weighted finite path populations",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T525",
+      "domain": "Integrated Math Lab",
+      "topic": "Chronology-sensitive histogram repricing",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T526",
+      "domain": "Integrated Math Lab",
+      "topic": "Finite-graph block contraction tails",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T527",
+      "domain": "Integrated Math Lab",
+      "topic": "Conserved outcome-channel partitions",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T528",
+      "domain": "Integrated Math Lab",
+      "topic": "Retry optimization and silent floor",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T529",
+      "domain": "Integrated Math Lab",
+      "topic": "Isolated circular logarithmic replacement",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T530",
+      "domain": "Integrated Math Lab",
+      "topic": "Character-twisted visible-ray coefficients",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T531",
+      "domain": "Integrated Math Lab",
+      "topic": "Progression residue local factors",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T532",
+      "domain": "Integrated Math Lab",
+      "topic": "Positive Pell unit-class asymptotics",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T533",
+      "domain": "Integrated Math Lab",
+      "topic": "Original-equation action histories",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T534",
+      "domain": "Integrated Math Lab",
+      "topic": "Bounded invariant-law discovery",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T535",
+      "domain": "Integrated Math Lab",
+      "topic": "Recovered active quintic partner",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T536",
+      "domain": "Integrated Math Lab",
+      "topic": "Universal sextic partner adapters",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T537",
+      "domain": "Integrated Math Lab",
+      "topic": "HTTP and DOM contract integration",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T538",
+      "domain": "Integrated Math Lab",
+      "topic": "Installed wheel resource replay",
+      "chapter": "docs/chapters/31_integrated_math_lab.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

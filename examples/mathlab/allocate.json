@@ -1,0 +1,7 @@
+{
+  "operation": "math-lab",
+  "lab": "allocate",
+  "params": {
+    "budget": 2
+  }
+}

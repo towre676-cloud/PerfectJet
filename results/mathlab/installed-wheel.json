@@ -1,0 +1,33 @@
+{
+  "version": "0.16.0",
+  "outside_checkout": true,
+  "equations": 450,
+  "tools": 25,
+  "computed": {
+    "pipeline": true,
+    "recover": true,
+    "compress": true,
+    "count": true,
+    "series": true,
+    "features": true,
+    "experiments": true,
+    "allocate": true,
+    "decision": true,
+    "precision": true,
+    "moyal": true,
+    "hahn": true,
+    "categorical": true,
+    "reach": true,
+    "conductor": true,
+    "theta": true,
+    "growth": true,
+    "branches": true,
+    "analytic": true,
+    "algebra": true,
+    "partners": true,
+    "deformation": true,
+    "rank": true,
+    "lattice": true,
+    "jets": true
+  }
+}

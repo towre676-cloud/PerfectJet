@@ -5,6 +5,9 @@ __pycache__/
 build/
 dist/
 releases/*.zip
+releases/*.zip.part*
+releases/*.parts.json
+releases/*.whl
 private_*/
 **/private_*
 **/raw_data/

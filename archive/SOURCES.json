@@ -56,6 +56,20 @@
       "scope": "complete extracted rendered lines1-1930; boundary line180 repeated during concatenation",
       "sha256": "f7dbfbca10938aa487fd29f2d822ce0cdd2d46dc2ddd15bac308186774f264cb",
       "size_bytes": 103758
+    },
+    {
+      "path": "archive/recovered/moyal_original.py",
+      "source_title": "symplectic_moyal_bridge_v4.py",
+      "scope": "Original recovered executable source; supported dependency-free adaptation is in src/perfectjet. Original source claims keep historical status.",
+      "sha256": "dbcd597b2d4fb7711971adb701b5ea0856c370f266a57a3c98837823b9e8892b",
+      "size_bytes": 18997
+    },
+    {
+      "path": "archive/recovered/hahn_original.py",
+      "source_title": "hahn_monomial_classifier.py",
+      "scope": "Original recovered executable source; supported dependency-free adaptation is in src/perfectjet. Original source claims keep historical status.",
+      "sha256": "24d9ed2dfee2b2295b00c618d09fc86850df5f40afa39a2362f5a7278f43b7ad",
+      "size_bytes": 1072
     }
   ]
 }

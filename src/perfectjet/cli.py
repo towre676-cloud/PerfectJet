@@ -59,6 +59,18 @@ def report():
 
 def main():
     import sys
+    if len(sys.argv)>1 and sys.argv[1] in {"lab", "math-lab"}:
+        if sys.argv[1]=="lab":
+            from .observatory.workbench import main as lab
+        else:
+            from .mathlab import main as lab
+        return lab(sys.argv[2:])
+    if len(sys.argv)>1 and sys.argv[1]=="observatory":
+        from .observatory.workbench import main as observatory
+        return observatory(sys.argv[2:])
+    if len(sys.argv)>1 and sys.argv[1]=="observe":
+        from .observatory.command import main as observe
+        return observe(sys.argv[2:])
     if len(sys.argv)>1 and sys.argv[1]=="math-bridges":
         from .applications.nfl_scouting.bridge_receipt import build_bridge_receipt
         parser=argparse.ArgumentParser(description="Synthetic and exact math-bridge receipts; no NFL gain claim")

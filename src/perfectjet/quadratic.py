@@ -18,7 +18,8 @@ The compiled population answers counts below a bound, the k-th solution at remot
 indices, and its growth rate, and every returned n is replayed in the original
 equation.
 """
-from math import isqrt, gcd, log
+from fractions import Fraction as Q
+from math import isqrt, gcd, log, log1p, sqrt
 
 
 def is_square(n):
@@ -67,6 +68,34 @@ def _mul(p, q, d):
     return (p[0]*q[0]+d*p[1]*q[1], p[0]*q[1]+p[1]*q[0])
 
 
+def _embedding_sign(point, d):
+    """Exact sign of x+y*sqrt(d), with d positive and nonsquare."""
+    x, y = point
+    if y == 0:return (x > 0)-(x < 0)
+    if x == 0:return (y > 0)-(y < 0)
+    if x > 0 and y > 0:return 1
+    if x < 0 and y < 0:return -1
+    comparison = (x*x > d*y*y)-(x*x < d*y*y)
+    return comparison if x > 0 else -comparison
+
+
+def _positive_unit_representative(point, unit, d):
+    """Unique representative with 1 <= x+y sqrt(d) < epsilon.
+
+    Only a positive real embedding is accepted. Equality is decided by integer
+    comparisons, so conjugate/end-point representatives are deduplicated exactly.
+    """
+    if _embedding_sign(point, d) <= 0:
+        raise ValueError("a positive real embedding is required")
+    cur = point
+    while _embedding_sign((cur[0]-1, cur[1]), d) < 0:
+        cur = _mul(cur, unit, d)
+    inverse = (unit[0], -unit[1])
+    while _embedding_sign((cur[0]-unit[0], cur[1]-unit[1]), d) >= 0:
+        cur = _mul(cur, inverse, d)
+    return cur
+
+
 def pell_solutions(d, n0, xmax):
     """All (X, Y) with X^2 - d Y^2 = n0 and |X| <= xmax, from Nagell seeds and the unit."""
     seeds, unit, bound = nagell_seeds(d, n0)
@@ -98,6 +127,8 @@ class QuadraticSquare:
     """Compile k y^2 = a n^2 + b n + c (integers, k > 0) into a navigable solution population."""
 
     def __init__(self, k, a, b, c):
+        if any(type(v) is not int for v in (k, a, b, c)):
+            raise ValueError("integer coefficients are required")
         if k <= 0:
             raise ValueError("k must be positive")
         self.k, self.a, self.b, self.c = k, a, b, c
@@ -199,33 +230,67 @@ class QuadraticSquare:
     # --------------------------------------------------------- populations
 
     def orbit_structure(self):
-        """Seeds, unit, and the admissible positions of each orbit modulo its period."""
+        """Signed seeds plus distinct positive tails and their logarithmic weight.
+
+        Raw signed seeds remain available for two-sided orbit navigation. They
+        are not separate populations of n >= 0. Positive real embeddings are
+        reduced modulo the unit to [1, epsilon), then deduplicated. Each class
+        has Y > 0 and X > 0 eventually, so it contributes one distinct positive
+        n for each admissible exponent. The other sign of Y adds no n values.
+        """
         if self.branch != "pell":
             return None
         seeds, unit, bound = nagell_seeds(self.d, self.n0)
+        if seeds is None:
+            raise OverflowError(f"Nagell search range {bound} exceeds the cap")
         m = 2*abs(self.a)
-        orbits = []
+        orbits, positive = [], set()
+
+        def residue_orbit(start):
+            # A norm-one unit is invertible modulo m: every orbit is a cycle.
+            cur, residues, seen = (start[0] % m, start[1] % m), [], {}
+            while cur not in seen:
+                seen[cur] = len(residues)
+                residues.append((cur[0]-self.b) % m == 0)
+                X, Y = _mul(cur, unit, self.d)
+                cur = X % m, Y % m
+            pre = seen[cur]
+            assert pre == 0
+            return {"seed": start, "preperiod": pre, "period": len(residues),
+                    "admissible": [i for i, ok in enumerate(residues) if ok]}
+
         for x, y in seeds:
             for sx, sy in ((1, 1), (1, -1), (-1, 1), (-1, -1)):
                 start = (sx*x, sy*y)
-                cur, residues = start, []
-                seen = {}
-                k = 0
-                while (cur[0] % m, cur[1] % m) not in seen:
-                    seen[(cur[0] % m, cur[1] % m)] = k
-                    residues.append((cur[0]-self.b) % m == 0)
-                    cur = _mul(cur, unit, self.d)
-                    k += 1
-                period = k-seen[(cur[0] % m, cur[1] % m)]
-                pre = seen[(cur[0] % m, cur[1] % m)]
-                orbits.append({"seed": start, "preperiod": pre, "period": period,
-                               "admissible": [i for i, ok in enumerate(residues) if ok]})
+                orbit = residue_orbit(start)
+                orbit["positive_forward_embedding"] = _embedding_sign(start, self.d) > 0
+                orbits.append(orbit)
+                if orbit["positive_forward_embedding"]:
+                    positive.add(_positive_unit_representative(start, unit, self.d))
+        positive_orbits = [residue_orbit(p) for p in sorted(positive)]
+        weight = sum((Q(len(o["admissible"]), o["period"]) for o in positive_orbits), Q(0))
+        # epsilon=u+sqrt(u^2-1). This form avoids converting a huge unit to float.
+        unit_log = log(unit[0])+log1p(sqrt(1-1/(unit[0]*unit[0])))
+        asymptotic = {
+            "domain": "distinct integers n >= 0; the two signs of y are identified",
+            "form": "A(N) = c log N + O(1)" if weight else "A(N) = O(1)",
+            "logarithmic_weight": str(weight),
+            "weight_numerator": weight.numerator, "weight_denominator": weight.denominator,
+            "unit_log": unit_log, "coefficient": float(weight)/unit_log,
+            "coefficient_expression": f"({weight}) / log({unit[0]} + {unit[1]} sqrt({self.d}))",
+            "normalization": "positive real unit classes, reduced to [1, epsilon), with duplicate classes removed",
+            "positive_unit_classes": len(positive_orbits),
+            "infinite_positive_classes": sum(bool(o["admissible"]) for o in positive_orbits),
+        }
         return {"unit": unit, "seeds": seeds, "nagell_bound": bound, "modulus": m, "orbits": orbits,
-                "growth": "A(N) ~ c log N, c = (admissible positions per period) / (period log epsilon), summed over orbits"
-                if any(o["admissible"] for o in orbits) else "no admissible orbit: finitely many hits"}
+                "positive_orbits": positive_orbits, "asymptotic": asymptotic,
+                "growth": (f"A(N) = ({asymptotic['coefficient_expression']}) log N + O(1); "
+                           "counts distinct n >= 0") if weight else "A(N) = O(1): no admissible positive unit class"}
 
     def nth_on_orbit(self, orbit, j):
         """The j-th admissible n (j >= 0) on an orbit going up from its seed, exact at remote indices."""
+        if type(j) is not int or j < 0:
+            raise ValueError("orbit index must be a nonnegative integer")
         adm, period, pre = orbit["admissible"], orbit["period"], orbit["preperiod"]
         cyc = [i for i in adm if i >= pre]
         if not cyc:
@@ -253,8 +318,10 @@ class QuadraticSquare:
         if self.branch == "pell":
             st = self.orbit_structure()
             rep.update({"unit": st["unit"], "seeds": st["seeds"], "modulus": st["modulus"],
-                        "orbits": [{k: v for k, v in o.items()} for o in st["orbits"]]})
+                        "orbits": [{k: v for k, v in o.items()} for o in st["orbits"]],
+                        "positive_orbits": st["positive_orbits"]})
             answer["growth"] = st["growth"]
+            answer["asymptotic"] = st["asymptotic"]
             complete = "complete: Nagell bound covers every class"
         elif self.branch == "linear":
             rep["y_residues_mod_b"] = self._linear_residues()

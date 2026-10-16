@@ -1,0 +1,8 @@
+{
+  "operation": "math-lab",
+  "lab": "categorical",
+  "params": {
+    "n": 3,
+    "k": 1
+  }
+}

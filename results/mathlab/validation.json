@@ -1,0 +1,19 @@
+{
+  "schema": "perfectjet/math-lab-validation/1",
+  "version": "0.16.0",
+  "full_unittest_methods": 538,
+  "full_suite_seconds": 65.585,
+  "full_suite_passed": true,
+  "followup_integration_tests_passed": 5,
+  "equation_entries": 450,
+  "original_417_records_unchanged": true,
+  "topic_entries": 538,
+  "canonical_chapters": 31,
+  "callable_tools": 25,
+  "families": 24,
+  "browser_rendering_verified": false,
+  "http_javascript_contract": "passed",
+  "installed_package_all_tools": "passed",
+  "new_lean_proof": false,
+  "scope": "Local exact/finite/software checks and installed-package execution; separate from remote CI and empirical outcomes."
+}

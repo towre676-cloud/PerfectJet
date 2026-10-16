@@ -1,0 +1,1 @@
+{"ui_contract":"passed","rendering_verified":false,"operations":["compile","rank","unrank","sample","series","sensor_closure","acceptance_closure","pair","adaptive","prefix","model_switch","custom_model_defaults","pell_original_point","canvas_control_flow"]}

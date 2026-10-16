@@ -1,0 +1,1465 @@
+{
+  "schema": "perfectjet/equation-power/1",
+  "date": "2026-10-16",
+  "criteria": [
+    "mathematical breadth",
+    "exact compression",
+    "composability",
+    "constructive witnesses",
+    "executable grounding"
+  ],
+  "ranking_scope": "Subjective ordinal family ranking. A representative tool is not a claim that every historical formula is implemented.",
+  "families": [
+    {
+      "rank": 1,
+      "name": "Target observability and recoverability"
+    },
+    {
+      "rank": 2,
+      "name": "All-future behavioral compression"
+    },
+    {
+      "rank": 3,
+      "name": "Minimal predictive state and global rational recurrences"
+    },
+    {
+      "rank": 4,
+      "name": "Exact populations and navigable possibilities"
+    },
+    {
+      "rank": 5,
+      "name": "Exact nonlinear feature closure and constructive repair"
+    },
+    {
+      "rank": 6,
+      "name": "Cheapest adaptive experiments with initial-target memory"
+    },
+    {
+      "rank": 7,
+      "name": "Joint measurement allocation and information synergy"
+    },
+    {
+      "rank": 8,
+      "name": "Error propagation that settles a decision"
+    },
+    {
+      "rank": 9,
+      "name": "Parameter-space stratification and algebraic exceptional loci"
+    },
+    {
+      "rank": 10,
+      "name": "Integral feasibility, kernels and saturation"
+    },
+    {
+      "rank": 11,
+      "name": "Deformation response and first-order protection"
+    },
+    {
+      "rank": 12,
+      "name": "Noise-aware jets, ordered areas and reliable coordinates"
+    },
+    {
+      "rank": 13,
+      "name": "Solution-carrying arithmetic and quadratic-to-Pell transport"
+    },
+    {
+      "rank": 14,
+      "name": "Universal covariant and transvectant partner identities"
+    },
+    {
+      "rank": 15,
+      "name": "Arithmetic kernels and finite cyclotomic closure"
+    },
+    {
+      "rank": 16,
+      "name": "Order effects, type histograms and partition sensitivities"
+    },
+    {
+      "rank": 17,
+      "name": "Energy balance and genuine invariant reductions"
+    },
+    {
+      "rank": 18,
+      "name": "Finite representations, Weil commutants and conductor arithmetic"
+    },
+    {
+      "rank": 19,
+      "name": "Stored-number arithmetic and prefix geometry"
+    },
+    {
+      "rank": 20,
+      "name": "Local dynamics, PSG balances and obstruction jets"
+    },
+    {
+      "rank": 21,
+      "name": "General closure, cohomological obstruction and representation profiles"
+    },
+    {
+      "rank": 22,
+      "name": "Application-specific physical and empirical models"
+    },
+    {
+      "rank": 23,
+      "name": "Special algebraic constants, regulators, codes and recurrence examples"
+    },
+    {
+      "rank": 24,
+      "name": "Exploratory physical proposals and unresolved historical relations"
+    }
+  ],
+  "assignments": {
+    "PJ-E085": 1,
+    "PJ-E315": 1,
+    "PJ-E087": 1,
+    "PJ-E088": 1,
+    "PJ-E091": 1,
+    "PJ-E083": 1,
+    "PJ-E084": 1,
+    "PJ-E086": 1,
+    "PJ-E089": 1,
+    "PJ-E090": 1,
+    "PJ-E092": 1,
+    "PJ-E316": 1,
+    "PJ-E317": 1,
+    "PJ-E318": 1,
+    "PJ-E344": 1,
+    "PJ-E352": 1,
+    "PJ-E353": 1,
+    "PJ-E363": 1,
+    "PJ-E378": 1,
+    "PJ-E383": 1,
+    "PJ-E407": 2,
+    "PJ-E076": 2,
+    "PJ-E079": 2,
+    "PJ-E077": 2,
+    "PJ-E078": 2,
+    "PJ-E074": 2,
+    "PJ-E075": 2,
+    "PJ-E080": 2,
+    "PJ-E081": 2,
+    "PJ-E082": 2,
+    "PJ-E415": 2,
+    "PJ-E416": 2,
+    "PJ-E413": 3,
+    "PJ-E414": 3,
+    "PJ-E299": 3,
+    "PJ-E302": 3,
+    "PJ-E072": 3,
+    "PJ-E073": 3,
+    "PJ-E067": 3,
+    "PJ-E068": 3,
+    "PJ-E069": 3,
+    "PJ-E070": 3,
+    "PJ-E071": 3,
+    "PJ-E300": 3,
+    "PJ-E356": 3,
+    "PJ-E357": 3,
+    "PJ-E358": 3,
+    "PJ-E055": 4,
+    "PJ-E408": 4,
+    "PJ-E057": 4,
+    "PJ-E058": 4,
+    "PJ-E059": 4,
+    "PJ-E410": 4,
+    "PJ-E323": 4,
+    "PJ-E052": 4,
+    "PJ-E053": 4,
+    "PJ-E054": 4,
+    "PJ-E056": 4,
+    "PJ-E060": 4,
+    "PJ-E061": 4,
+    "PJ-E062": 4,
+    "PJ-E063": 4,
+    "PJ-E064": 4,
+    "PJ-E065": 4,
+    "PJ-E066": 4,
+    "PJ-E322": 4,
+    "PJ-E409": 4,
+    "PJ-E094": 5,
+    "PJ-E095": 5,
+    "PJ-E321": 5,
+    "PJ-E093": 5,
+    "PJ-E096": 5,
+    "PJ-E097": 5,
+    "PJ-E098": 5,
+    "PJ-E099": 5,
+    "PJ-E412": 6,
+    "PJ-E411": 6,
+    "PJ-E366": 7,
+    "PJ-E365": 7,
+    "PJ-E374": 7,
+    "PJ-E367": 7,
+    "PJ-E368": 7,
+    "PJ-E373": 7,
+    "PJ-E364": 7,
+    "PJ-E369": 7,
+    "PJ-E370": 7,
+    "PJ-E371": 7,
+    "PJ-E372": 7,
+    "PJ-E102": 8,
+    "PJ-E103": 8,
+    "PJ-E107": 8,
+    "PJ-E110": 8,
+    "PJ-E319": 8,
+    "PJ-E320": 8,
+    "PJ-E105": 8,
+    "PJ-E100": 8,
+    "PJ-E101": 8,
+    "PJ-E104": 8,
+    "PJ-E106": 8,
+    "PJ-E108": 8,
+    "PJ-E109": 8,
+    "PJ-E361": 8,
+    "PJ-E362": 8,
+    "PJ-E384": 8,
+    "PJ-E306": 9,
+    "PJ-E307": 9,
+    "PJ-E303": 9,
+    "PJ-E310": 9,
+    "PJ-E304": 9,
+    "PJ-E308": 9,
+    "PJ-E309": 9,
+    "PJ-E311": 9,
+    "PJ-E312": 9,
+    "PJ-E313": 9,
+    "PJ-E314": 9,
+    "PJ-E050": 10,
+    "PJ-E051": 10,
+    "PJ-E296": 10,
+    "PJ-E297": 10,
+    "PJ-E298": 10,
+    "PJ-E301": 10,
+    "PJ-E048": 10,
+    "PJ-E049": 10,
+    "PJ-E324": 11,
+    "PJ-E325": 11,
+    "PJ-E220": 11,
+    "PJ-E221": 11,
+    "PJ-E247": 11,
+    "PJ-E248": 11,
+    "PJ-E397": 12,
+    "PJ-E396": 12,
+    "PJ-E399": 12,
+    "PJ-E392": 12,
+    "PJ-E395": 12,
+    "PJ-E402": 12,
+    "PJ-E345": 12,
+    "PJ-E346": 12,
+    "PJ-E347": 12,
+    "PJ-E348": 12,
+    "PJ-E349": 12,
+    "PJ-E350": 12,
+    "PJ-E351": 12,
+    "PJ-E354": 12,
+    "PJ-E355": 12,
+    "PJ-E385": 12,
+    "PJ-E386": 12,
+    "PJ-E387": 12,
+    "PJ-E388": 12,
+    "PJ-E389": 12,
+    "PJ-E390": 12,
+    "PJ-E391": 12,
+    "PJ-E393": 12,
+    "PJ-E394": 12,
+    "PJ-E398": 12,
+    "PJ-E400": 12,
+    "PJ-E401": 12,
+    "PJ-E403": 12,
+    "PJ-E404": 12,
+    "PJ-E405": 12,
+    "PJ-E406": 12,
+    "PJ-E326": 13,
+    "PJ-E328": 13,
+    "PJ-E327": 13,
+    "PJ-E417": 13,
+    "PJ-E015": 13,
+    "PJ-E016": 13,
+    "PJ-E001": 13,
+    "PJ-E002": 13,
+    "PJ-E003": 13,
+    "PJ-E004": 13,
+    "PJ-E005": 13,
+    "PJ-E006": 13,
+    "PJ-E007": 13,
+    "PJ-E008": 13,
+    "PJ-E009": 13,
+    "PJ-E010": 13,
+    "PJ-E011": 13,
+    "PJ-E012": 13,
+    "PJ-E013": 13,
+    "PJ-E014": 13,
+    "PJ-E017": 13,
+    "PJ-E018": 13,
+    "PJ-E019": 13,
+    "PJ-E020": 13,
+    "PJ-E021": 13,
+    "PJ-E022": 13,
+    "PJ-E023": 13,
+    "PJ-E024": 13,
+    "PJ-E025": 13,
+    "PJ-E026": 13,
+    "PJ-E027": 13,
+    "PJ-E028": 13,
+    "PJ-E029": 13,
+    "PJ-E030": 13,
+    "PJ-E031": 13,
+    "PJ-E032": 13,
+    "PJ-E033": 13,
+    "PJ-E034": 13,
+    "PJ-E035": 13,
+    "PJ-E036": 13,
+    "PJ-E037": 13,
+    "PJ-E038": 13,
+    "PJ-E039": 13,
+    "PJ-E040": 13,
+    "PJ-E041": 13,
+    "PJ-E042": 13,
+    "PJ-E043": 13,
+    "PJ-E044": 13,
+    "PJ-E045": 13,
+    "PJ-E046": 13,
+    "PJ-E047": 13,
+    "PJ-E305": 13,
+    "PJ-E332": 14,
+    "PJ-E334": 14,
+    "PJ-E333": 14,
+    "PJ-E336": 14,
+    "PJ-E337": 14,
+    "PJ-E329": 14,
+    "PJ-E331": 14,
+    "PJ-E330": 14,
+    "PJ-E335": 14,
+    "PJ-E338": 14,
+    "PJ-E195": 15,
+    "PJ-E196": 15,
+    "PJ-E189": 15,
+    "PJ-E191": 15,
+    "PJ-E192": 15,
+    "PJ-E199": 15,
+    "PJ-E178": 15,
+    "PJ-E179": 15,
+    "PJ-E180": 15,
+    "PJ-E181": 15,
+    "PJ-E182": 15,
+    "PJ-E183": 15,
+    "PJ-E184": 15,
+    "PJ-E185": 15,
+    "PJ-E186": 15,
+    "PJ-E187": 15,
+    "PJ-E188": 15,
+    "PJ-E190": 15,
+    "PJ-E193": 15,
+    "PJ-E197": 15,
+    "PJ-E198": 15,
+    "PJ-E200": 15,
+    "PJ-E264": 16,
+    "PJ-E263": 16,
+    "PJ-E267": 16,
+    "PJ-E266": 16,
+    "PJ-E268": 16,
+    "PJ-E269": 16,
+    "PJ-E262": 16,
+    "PJ-E265": 16,
+    "PJ-E270": 16,
+    "PJ-E113": 17,
+    "PJ-E112": 17,
+    "PJ-E124": 17,
+    "PJ-E125": 17,
+    "PJ-E123": 17,
+    "PJ-E111": 17,
+    "PJ-E114": 17,
+    "PJ-E115": 17,
+    "PJ-E116": 17,
+    "PJ-E117": 17,
+    "PJ-E118": 17,
+    "PJ-E119": 17,
+    "PJ-E120": 17,
+    "PJ-E121": 17,
+    "PJ-E166": 18,
+    "PJ-E168": 18,
+    "PJ-E167": 18,
+    "PJ-E173": 18,
+    "PJ-E175": 18,
+    "PJ-E176": 18,
+    "PJ-E157": 18,
+    "PJ-E158": 18,
+    "PJ-E159": 18,
+    "PJ-E160": 18,
+    "PJ-E161": 18,
+    "PJ-E162": 18,
+    "PJ-E163": 18,
+    "PJ-E164": 18,
+    "PJ-E165": 18,
+    "PJ-E169": 18,
+    "PJ-E170": 18,
+    "PJ-E171": 18,
+    "PJ-E172": 18,
+    "PJ-E174": 18,
+    "PJ-E177": 18,
+    "PJ-E227": 19,
+    "PJ-E231": 19,
+    "PJ-E228": 19,
+    "PJ-E230": 19,
+    "PJ-E229": 19,
+    "PJ-E232": 19,
+    "PJ-E233": 19,
+    "PJ-E234": 19,
+    "PJ-E145": 20,
+    "PJ-E144": 20,
+    "PJ-E148": 20,
+    "PJ-E147": 20,
+    "PJ-E128": 20,
+    "PJ-E130": 20,
+    "PJ-E126": 20,
+    "PJ-E127": 20,
+    "PJ-E129": 20,
+    "PJ-E131": 20,
+    "PJ-E132": 20,
+    "PJ-E133": 20,
+    "PJ-E134": 20,
+    "PJ-E135": 20,
+    "PJ-E136": 20,
+    "PJ-E137": 20,
+    "PJ-E138": 20,
+    "PJ-E139": 20,
+    "PJ-E140": 20,
+    "PJ-E141": 20,
+    "PJ-E142": 20,
+    "PJ-E143": 20,
+    "PJ-E146": 20,
+    "PJ-E149": 20,
+    "PJ-E150": 20,
+    "PJ-E283": 21,
+    "PJ-E288": 21,
+    "PJ-E289": 21,
+    "PJ-E290": 21,
+    "PJ-E294": 21,
+    "PJ-E295": 21,
+    "PJ-E284": 21,
+    "PJ-E285": 21,
+    "PJ-E286": 21,
+    "PJ-E287": 21,
+    "PJ-E291": 21,
+    "PJ-E292": 21,
+    "PJ-E293": 21,
+    "PJ-E254": 22,
+    "PJ-E250": 22,
+    "PJ-E342": 22,
+    "PJ-E375": 22,
+    "PJ-E376": 22,
+    "PJ-E278": 22,
+    "PJ-E251": 22,
+    "PJ-E252": 22,
+    "PJ-E253": 22,
+    "PJ-E255": 22,
+    "PJ-E256": 22,
+    "PJ-E257": 22,
+    "PJ-E258": 22,
+    "PJ-E259": 22,
+    "PJ-E260": 22,
+    "PJ-E261": 22,
+    "PJ-E271": 22,
+    "PJ-E272": 22,
+    "PJ-E273": 22,
+    "PJ-E274": 22,
+    "PJ-E275": 22,
+    "PJ-E276": 22,
+    "PJ-E277": 22,
+    "PJ-E279": 22,
+    "PJ-E280": 22,
+    "PJ-E281": 22,
+    "PJ-E282": 22,
+    "PJ-E339": 22,
+    "PJ-E340": 22,
+    "PJ-E341": 22,
+    "PJ-E343": 22,
+    "PJ-E359": 22,
+    "PJ-E360": 22,
+    "PJ-E377": 22,
+    "PJ-E379": 22,
+    "PJ-E380": 22,
+    "PJ-E381": 22,
+    "PJ-E382": 22,
+    "PJ-E203": 23,
+    "PJ-E211": 23,
+    "PJ-E212": 23,
+    "PJ-E218": 23,
+    "PJ-E222": 23,
+    "PJ-E153": 23,
+    "PJ-E151": 23,
+    "PJ-E152": 23,
+    "PJ-E154": 23,
+    "PJ-E155": 23,
+    "PJ-E156": 23,
+    "PJ-E201": 23,
+    "PJ-E202": 23,
+    "PJ-E204": 23,
+    "PJ-E205": 23,
+    "PJ-E206": 23,
+    "PJ-E207": 23,
+    "PJ-E208": 23,
+    "PJ-E209": 23,
+    "PJ-E210": 23,
+    "PJ-E213": 23,
+    "PJ-E214": 23,
+    "PJ-E215": 23,
+    "PJ-E216": 23,
+    "PJ-E217": 23,
+    "PJ-E219": 23,
+    "PJ-E223": 23,
+    "PJ-E224": 23,
+    "PJ-E225": 23,
+    "PJ-E226": 23,
+    "PJ-E240": 24,
+    "PJ-E242": 24,
+    "PJ-E244": 24,
+    "PJ-E235": 24,
+    "PJ-E236": 24,
+    "PJ-E237": 24,
+    "PJ-E238": 24,
+    "PJ-E239": 24,
+    "PJ-E241": 24,
+    "PJ-E243": 24,
+    "PJ-E245": 24,
+    "PJ-E246": 24,
+    "PJ-E249": 24,
+    "PJ-E194": 15,
+    "PJ-E122": 17,
+    "PJ-E418": 14,
+    "PJ-E419": 14,
+    "PJ-E420": 14,
+    "PJ-E421": 14,
+    "PJ-E422": 14,
+    "PJ-E423": 14,
+    "PJ-E424": 14,
+    "PJ-E425": 21,
+    "PJ-E426": 21,
+    "PJ-E427": 2,
+    "PJ-E428": 18,
+    "PJ-E429": 18,
+    "PJ-E430": 15,
+    "PJ-E431": 15,
+    "PJ-E432": 8,
+    "PJ-E433": 8,
+    "PJ-E434": 16,
+    "PJ-E435": 8,
+    "PJ-E436": 4,
+    "PJ-E437": 4,
+    "PJ-E438": 3,
+    "PJ-E439": 13,
+    "PJ-E440": 13,
+    "PJ-E441": 13,
+    "PJ-E442": 13,
+    "PJ-E443": 9,
+    "PJ-E444": 14,
+    "PJ-E445": 18,
+    "PJ-E446": 18,
+    "PJ-E447": 8,
+    "PJ-E448": 8,
+    "PJ-E449": 13,
+    "PJ-E450": 19
+  },
+  "callable_labs": {
+    "PJ-E085": [
+      "pipeline",
+      "recover"
+    ],
+    "PJ-E055": [
+      "pipeline",
+      "count"
+    ],
+    "PJ-E057": [
+      "pipeline",
+      "count"
+    ],
+    "PJ-E319": [
+      "pipeline",
+      "decision"
+    ],
+    "PJ-E088": [
+      "recover"
+    ],
+    "PJ-E315": [
+      "recover"
+    ],
+    "PJ-E076": [
+      "compress"
+    ],
+    "PJ-E079": [
+      "compress"
+    ],
+    "PJ-E407": [
+      "compress"
+    ],
+    "PJ-E058": [
+      "count"
+    ],
+    "PJ-E323": [
+      "count"
+    ],
+    "PJ-E413": [
+      "series"
+    ],
+    "PJ-E414": [
+      "series"
+    ],
+    "PJ-E094": [
+      "features"
+    ],
+    "PJ-E095": [
+      "features"
+    ],
+    "PJ-E321": [
+      "features"
+    ],
+    "PJ-E411": [
+      "experiments"
+    ],
+    "PJ-E412": [
+      "experiments"
+    ],
+    "PJ-E366": [
+      "allocate"
+    ],
+    "PJ-E367": [
+      "allocate"
+    ],
+    "PJ-E374": [
+      "allocate"
+    ],
+    "PJ-E110": [
+      "decision"
+    ],
+    "PJ-E432": [
+      "precision"
+    ],
+    "PJ-E433": [
+      "precision"
+    ],
+    "PJ-E418": [
+      "moyal"
+    ],
+    "PJ-E419": [
+      "moyal"
+    ],
+    "PJ-E420": [
+      "moyal"
+    ],
+    "PJ-E422": [
+      "hahn"
+    ],
+    "PJ-E423": [
+      "hahn"
+    ],
+    "PJ-E424": [
+      "hahn"
+    ],
+    "PJ-E425": [
+      "categorical"
+    ],
+    "PJ-E426": [
+      "categorical"
+    ],
+    "PJ-E427": [
+      "reach"
+    ],
+    "PJ-E428": [
+      "conductor"
+    ],
+    "PJ-E429": [
+      "conductor"
+    ],
+    "PJ-E430": [
+      "theta"
+    ],
+    "PJ-E431": [
+      "theta"
+    ],
+    "PJ-E434": [
+      "growth"
+    ],
+    "PJ-E435": [
+      "growth"
+    ],
+    "PJ-E436": [
+      "branches"
+    ],
+    "PJ-E437": [
+      "branches"
+    ],
+    "PJ-E438": [
+      "analytic"
+    ],
+    "PJ-E439": [
+      "analytic"
+    ],
+    "PJ-E326": [
+      "algebra"
+    ],
+    "PJ-E417": [
+      "algebra"
+    ],
+    "PJ-E440": [
+      "algebra"
+    ],
+    "PJ-E441": [
+      "algebra"
+    ],
+    "PJ-E332": [
+      "partners"
+    ],
+    "PJ-E333": [
+      "partners"
+    ],
+    "PJ-E334": [
+      "partners"
+    ],
+    "PJ-E444": [
+      "partners"
+    ],
+    "PJ-E220": [
+      "deformation"
+    ],
+    "PJ-E221": [
+      "deformation"
+    ],
+    "PJ-E324": [
+      "deformation"
+    ],
+    "PJ-E325": [
+      "deformation"
+    ],
+    "PJ-E303": [
+      "rank"
+    ],
+    "PJ-E306": [
+      "rank"
+    ],
+    "PJ-E307": [
+      "rank"
+    ],
+    "PJ-E050": [
+      "lattice"
+    ],
+    "PJ-E051": [
+      "lattice"
+    ],
+    "PJ-E296": [
+      "lattice"
+    ],
+    "PJ-E395": [
+      "jets"
+    ],
+    "PJ-E397": [
+      "jets"
+    ],
+    "PJ-E399": [
+      "jets"
+    ],
+    "PJ-E087": [
+      "recover"
+    ],
+    "PJ-E091": [
+      "recover"
+    ],
+    "PJ-E083": [
+      "recover"
+    ],
+    "PJ-E084": [
+      "recover"
+    ],
+    "PJ-E086": [
+      "recover"
+    ],
+    "PJ-E089": [
+      "recover"
+    ],
+    "PJ-E090": [
+      "recover"
+    ],
+    "PJ-E092": [
+      "recover"
+    ],
+    "PJ-E316": [
+      "recover"
+    ],
+    "PJ-E317": [
+      "recover"
+    ],
+    "PJ-E318": [
+      "recover"
+    ],
+    "PJ-E344": [
+      "recover"
+    ],
+    "PJ-E352": [
+      "recover"
+    ],
+    "PJ-E353": [
+      "recover"
+    ],
+    "PJ-E363": [
+      "recover"
+    ],
+    "PJ-E378": [
+      "recover"
+    ],
+    "PJ-E383": [
+      "recover"
+    ],
+    "PJ-E077": [
+      "compress"
+    ],
+    "PJ-E078": [
+      "compress"
+    ],
+    "PJ-E074": [
+      "compress"
+    ],
+    "PJ-E075": [
+      "compress"
+    ],
+    "PJ-E080": [
+      "compress"
+    ],
+    "PJ-E081": [
+      "compress"
+    ],
+    "PJ-E082": [
+      "compress"
+    ],
+    "PJ-E415": [
+      "compress"
+    ],
+    "PJ-E416": [
+      "compress"
+    ],
+    "PJ-E299": [
+      "series"
+    ],
+    "PJ-E302": [
+      "series"
+    ],
+    "PJ-E072": [
+      "series"
+    ],
+    "PJ-E073": [
+      "series"
+    ],
+    "PJ-E067": [
+      "series"
+    ],
+    "PJ-E068": [
+      "series"
+    ],
+    "PJ-E069": [
+      "series"
+    ],
+    "PJ-E070": [
+      "series"
+    ],
+    "PJ-E071": [
+      "series"
+    ],
+    "PJ-E300": [
+      "series"
+    ],
+    "PJ-E356": [
+      "series"
+    ],
+    "PJ-E357": [
+      "series"
+    ],
+    "PJ-E358": [
+      "series"
+    ],
+    "PJ-E408": [
+      "count"
+    ],
+    "PJ-E059": [
+      "count"
+    ],
+    "PJ-E410": [
+      "count"
+    ],
+    "PJ-E052": [
+      "count"
+    ],
+    "PJ-E053": [
+      "count"
+    ],
+    "PJ-E054": [
+      "count"
+    ],
+    "PJ-E056": [
+      "count"
+    ],
+    "PJ-E060": [
+      "count"
+    ],
+    "PJ-E061": [
+      "count"
+    ],
+    "PJ-E062": [
+      "count"
+    ],
+    "PJ-E063": [
+      "count"
+    ],
+    "PJ-E064": [
+      "count"
+    ],
+    "PJ-E065": [
+      "count"
+    ],
+    "PJ-E066": [
+      "count"
+    ],
+    "PJ-E322": [
+      "count"
+    ],
+    "PJ-E409": [
+      "count"
+    ],
+    "PJ-E093": [
+      "features"
+    ],
+    "PJ-E096": [
+      "features"
+    ],
+    "PJ-E097": [
+      "features"
+    ],
+    "PJ-E098": [
+      "features"
+    ],
+    "PJ-E099": [
+      "features"
+    ],
+    "PJ-E365": [
+      "allocate"
+    ],
+    "PJ-E368": [
+      "allocate"
+    ],
+    "PJ-E373": [
+      "allocate"
+    ],
+    "PJ-E364": [
+      "allocate"
+    ],
+    "PJ-E369": [
+      "allocate"
+    ],
+    "PJ-E370": [
+      "allocate"
+    ],
+    "PJ-E371": [
+      "allocate"
+    ],
+    "PJ-E372": [
+      "allocate"
+    ],
+    "PJ-E102": [
+      "decision"
+    ],
+    "PJ-E103": [
+      "decision"
+    ],
+    "PJ-E107": [
+      "decision"
+    ],
+    "PJ-E320": [
+      "decision"
+    ],
+    "PJ-E105": [
+      "decision"
+    ],
+    "PJ-E100": [
+      "decision"
+    ],
+    "PJ-E101": [
+      "decision"
+    ],
+    "PJ-E104": [
+      "decision"
+    ],
+    "PJ-E106": [
+      "decision"
+    ],
+    "PJ-E108": [
+      "decision"
+    ],
+    "PJ-E109": [
+      "decision"
+    ],
+    "PJ-E361": [
+      "decision"
+    ],
+    "PJ-E362": [
+      "decision"
+    ],
+    "PJ-E384": [
+      "decision"
+    ],
+    "PJ-E310": [
+      "rank"
+    ],
+    "PJ-E304": [
+      "rank"
+    ],
+    "PJ-E308": [
+      "rank"
+    ],
+    "PJ-E309": [
+      "rank"
+    ],
+    "PJ-E311": [
+      "rank"
+    ],
+    "PJ-E312": [
+      "rank"
+    ],
+    "PJ-E313": [
+      "rank"
+    ],
+    "PJ-E314": [
+      "rank"
+    ],
+    "PJ-E297": [
+      "lattice"
+    ],
+    "PJ-E298": [
+      "lattice"
+    ],
+    "PJ-E301": [
+      "lattice"
+    ],
+    "PJ-E048": [
+      "lattice"
+    ],
+    "PJ-E049": [
+      "lattice"
+    ],
+    "PJ-E247": [
+      "deformation"
+    ],
+    "PJ-E248": [
+      "deformation"
+    ],
+    "PJ-E396": [
+      "jets"
+    ],
+    "PJ-E392": [
+      "jets"
+    ],
+    "PJ-E402": [
+      "jets"
+    ],
+    "PJ-E345": [
+      "jets"
+    ],
+    "PJ-E346": [
+      "jets"
+    ],
+    "PJ-E347": [
+      "jets"
+    ],
+    "PJ-E348": [
+      "jets"
+    ],
+    "PJ-E349": [
+      "jets"
+    ],
+    "PJ-E350": [
+      "jets"
+    ],
+    "PJ-E351": [
+      "jets"
+    ],
+    "PJ-E354": [
+      "jets"
+    ],
+    "PJ-E355": [
+      "jets"
+    ],
+    "PJ-E385": [
+      "jets"
+    ],
+    "PJ-E386": [
+      "jets"
+    ],
+    "PJ-E387": [
+      "jets"
+    ],
+    "PJ-E388": [
+      "jets"
+    ],
+    "PJ-E389": [
+      "jets"
+    ],
+    "PJ-E390": [
+      "jets"
+    ],
+    "PJ-E391": [
+      "jets"
+    ],
+    "PJ-E393": [
+      "jets"
+    ],
+    "PJ-E394": [
+      "jets"
+    ],
+    "PJ-E398": [
+      "jets"
+    ],
+    "PJ-E400": [
+      "jets"
+    ],
+    "PJ-E401": [
+      "jets"
+    ],
+    "PJ-E403": [
+      "jets"
+    ],
+    "PJ-E404": [
+      "jets"
+    ],
+    "PJ-E405": [
+      "jets"
+    ],
+    "PJ-E406": [
+      "jets"
+    ],
+    "PJ-E328": [
+      "algebra"
+    ],
+    "PJ-E327": [
+      "algebra"
+    ],
+    "PJ-E015": [
+      "algebra"
+    ],
+    "PJ-E016": [
+      "algebra"
+    ],
+    "PJ-E001": [
+      "algebra"
+    ],
+    "PJ-E002": [
+      "algebra"
+    ],
+    "PJ-E003": [
+      "algebra"
+    ],
+    "PJ-E004": [
+      "algebra"
+    ],
+    "PJ-E005": [
+      "algebra"
+    ],
+    "PJ-E006": [
+      "algebra"
+    ],
+    "PJ-E007": [
+      "algebra"
+    ],
+    "PJ-E008": [
+      "algebra"
+    ],
+    "PJ-E009": [
+      "algebra"
+    ],
+    "PJ-E010": [
+      "algebra"
+    ],
+    "PJ-E011": [
+      "algebra"
+    ],
+    "PJ-E012": [
+      "algebra"
+    ],
+    "PJ-E013": [
+      "algebra"
+    ],
+    "PJ-E014": [
+      "algebra"
+    ],
+    "PJ-E017": [
+      "algebra"
+    ],
+    "PJ-E018": [
+      "algebra"
+    ],
+    "PJ-E019": [
+      "algebra"
+    ],
+    "PJ-E020": [
+      "algebra"
+    ],
+    "PJ-E021": [
+      "algebra"
+    ],
+    "PJ-E022": [
+      "algebra"
+    ],
+    "PJ-E023": [
+      "algebra"
+    ],
+    "PJ-E024": [
+      "algebra"
+    ],
+    "PJ-E025": [
+      "algebra"
+    ],
+    "PJ-E026": [
+      "algebra"
+    ],
+    "PJ-E027": [
+      "algebra"
+    ],
+    "PJ-E028": [
+      "algebra"
+    ],
+    "PJ-E029": [
+      "algebra"
+    ],
+    "PJ-E030": [
+      "algebra"
+    ],
+    "PJ-E031": [
+      "algebra"
+    ],
+    "PJ-E032": [
+      "algebra"
+    ],
+    "PJ-E033": [
+      "algebra"
+    ],
+    "PJ-E034": [
+      "algebra"
+    ],
+    "PJ-E035": [
+      "algebra"
+    ],
+    "PJ-E036": [
+      "algebra"
+    ],
+    "PJ-E037": [
+      "algebra"
+    ],
+    "PJ-E038": [
+      "algebra"
+    ],
+    "PJ-E039": [
+      "algebra"
+    ],
+    "PJ-E040": [
+      "algebra"
+    ],
+    "PJ-E041": [
+      "algebra"
+    ],
+    "PJ-E042": [
+      "algebra"
+    ],
+    "PJ-E043": [
+      "algebra"
+    ],
+    "PJ-E044": [
+      "algebra"
+    ],
+    "PJ-E045": [
+      "algebra"
+    ],
+    "PJ-E046": [
+      "algebra"
+    ],
+    "PJ-E047": [
+      "algebra"
+    ],
+    "PJ-E305": [
+      "algebra"
+    ],
+    "PJ-E336": [
+      "partners"
+    ],
+    "PJ-E337": [
+      "partners"
+    ],
+    "PJ-E329": [
+      "partners"
+    ],
+    "PJ-E331": [
+      "partners"
+    ],
+    "PJ-E330": [
+      "partners"
+    ],
+    "PJ-E335": [
+      "partners"
+    ],
+    "PJ-E338": [
+      "partners"
+    ],
+    "PJ-E195": [
+      "theta"
+    ],
+    "PJ-E196": [
+      "theta"
+    ],
+    "PJ-E189": [
+      "theta"
+    ],
+    "PJ-E191": [
+      "theta"
+    ],
+    "PJ-E192": [
+      "theta"
+    ],
+    "PJ-E199": [
+      "theta"
+    ],
+    "PJ-E178": [
+      "theta"
+    ],
+    "PJ-E179": [
+      "theta"
+    ],
+    "PJ-E180": [
+      "theta"
+    ],
+    "PJ-E181": [
+      "theta"
+    ],
+    "PJ-E182": [
+      "theta"
+    ],
+    "PJ-E183": [
+      "theta"
+    ],
+    "PJ-E184": [
+      "theta"
+    ],
+    "PJ-E185": [
+      "theta"
+    ],
+    "PJ-E186": [
+      "theta"
+    ],
+    "PJ-E187": [
+      "theta"
+    ],
+    "PJ-E188": [
+      "theta"
+    ],
+    "PJ-E190": [
+      "theta"
+    ],
+    "PJ-E193": [
+      "theta"
+    ],
+    "PJ-E197": [
+      "theta"
+    ],
+    "PJ-E198": [
+      "theta"
+    ],
+    "PJ-E200": [
+      "theta"
+    ],
+    "PJ-E264": [
+      "growth"
+    ],
+    "PJ-E263": [
+      "growth"
+    ],
+    "PJ-E267": [
+      "growth"
+    ],
+    "PJ-E266": [
+      "growth"
+    ],
+    "PJ-E268": [
+      "growth"
+    ],
+    "PJ-E269": [
+      "growth"
+    ],
+    "PJ-E262": [
+      "growth"
+    ],
+    "PJ-E265": [
+      "growth"
+    ],
+    "PJ-E270": [
+      "growth"
+    ],
+    "PJ-E113": [
+      "decision"
+    ],
+    "PJ-E112": [
+      "decision"
+    ],
+    "PJ-E124": [
+      "decision"
+    ],
+    "PJ-E125": [
+      "decision"
+    ],
+    "PJ-E123": [
+      "decision"
+    ],
+    "PJ-E111": [
+      "decision"
+    ],
+    "PJ-E114": [
+      "decision"
+    ],
+    "PJ-E115": [
+      "decision"
+    ],
+    "PJ-E116": [
+      "decision"
+    ],
+    "PJ-E117": [
+      "decision"
+    ],
+    "PJ-E118": [
+      "decision"
+    ],
+    "PJ-E119": [
+      "decision"
+    ],
+    "PJ-E120": [
+      "decision"
+    ],
+    "PJ-E121": [
+      "decision"
+    ],
+    "PJ-E194": [
+      "theta"
+    ],
+    "PJ-E122": [
+      "decision"
+    ],
+    "PJ-E421": [
+      "partners"
+    ],
+    "PJ-E442": [
+      "algebra"
+    ],
+    "PJ-E443": [
+      "rank"
+    ],
+    "PJ-E447": [
+      "decision"
+    ],
+    "PJ-E448": [
+      "decision"
+    ],
+    "PJ-E449": [
+      "algebra"
+    ]
+  }
+}

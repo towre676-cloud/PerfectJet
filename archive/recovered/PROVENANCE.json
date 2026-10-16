@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-16",
+  "originals": [
+    {
+      "name": "hahn_stratification_professional_push_v2.zip",
+      "sha256": "2928e08af6dc1cf2f75d5d1252c96aafe1d5cdb2601ec8adf117dd8dc165bbcf",
+      "size_bytes": 6481,
+      "scope": "Source bytes inspected during recovery; full original HTML does not imply every cited tqc implementation was recovered."
+    },
+    {
+      "name": "level_deformation_monograph_v4_54_1(5).html",
+      "sha256": "98d495a98b91063644e77d0141f2cd3dca61761f71aad8e609159d7c13ef2725",
+      "size_bytes": 4053819,
+      "scope": "Source bytes inspected during recovery; full original HTML does not imply every cited tqc implementation was recovered."
+    },
+    {
+      "name": "symplectic_moyal_bridge_v4.zip",
+      "sha256": "9bb51dcf309190e95d43280bb09f64dc8cbad9de09a4cb9829b897106f9d7d7e",
+      "size_bytes": 15315,
+      "scope": "Source bytes inspected during recovery; full original HTML does not imply every cited tqc implementation was recovered."
+    }
+  ],
+  "public_main_parent": "01fe017c41d7bdc7352be84fa6d4654a9d0c29c7",
+  "saved_v15_sha256": "63e1d36235c5f6e96f6e9eac649471bc4fdba2e35879f1d76f8ae627fe765a32"
+}

@@ -1,0 +1,10 @@
+test_every_tool_computes_json_and_references_real_equations (test_mathlab.IntegratedMathLabTests.test_every_tool_computes_json_and_references_real_equations) ... ok
+test_hidden_pipeline_does_not_promise_an_unavailable_repair (test_mathlab.IntegratedMathLabTests.test_hidden_pipeline_does_not_promise_an_unavailable_repair) ... ok
+test_installed_catalogue_retains_original_records_and_evidence (test_mathlab.IntegratedMathLabTests.test_installed_catalogue_retains_original_records_and_evidence) ... ok
+test_real_custom_recovered_inputs_are_honored (test_mathlab.IntegratedMathLabTests.test_real_custom_recovered_inputs_are_honored) ... ok
+test_recover_candidate_search_is_bounded_before_exhaustion (test_mathlab.IntegratedMathLabTests.test_recover_candidate_search_is_bounded_before_exhaustion) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.507s
+
+OK

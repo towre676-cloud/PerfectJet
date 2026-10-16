@@ -490,3 +490,55 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T484 | Stopped-flow readouts | Physical-coordinate posterior transport | [29_stopped_flow](chapters/29_stopped_flow.md) |
 | PJ-T485 | Stopped-flow readouts | Strong independent-repeat ridge control | [29_stopped_flow](chapters/29_stopped_flow.md) |
 | PJ-T486 | Stopped-flow readouts | Adaptive evidence and prospective boundary | [29_stopped_flow](chapters/29_stopped_flow.md) |
+| PJ-T487 | Exact Observatory | Finite partial-system compiler | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T488 | Exact Observatory | Efficient behavioral quotient and commuting replay | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T489 | Exact Observatory | Constraint-aware history populations | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T490 | Exact Observatory | Lexicographic rank and inverse rank | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T491 | Exact Observatory | Exact uniform history draws | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T492 | Exact Observatory | Cost distributions and minima | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T493 | Exact Observatory | Typed sensor-trace conditioning | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T494 | Exact Observatory | Minimum-cost pair separation | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T495 | Exact Observatory | Initial-target-preserving adaptive experiments | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T496 | Exact Observatory | Destructive-action prefix conditioning | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T497 | Exact Observatory | Complete closed ambiguity witnesses | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T498 | Exact Observatory | Global whole-state Krylov identities | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T499 | Exact Observatory | Rational generating functions and remote coefficients | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T500 | Exact Observatory | Question-dependent observable coordinates | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T501 | Exact Observatory | Finite-field arithmetic interferometer | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T502 | Exact Observatory | Seeded Pell residue transport | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T503 | Exact Observatory | Independent absolute relative and sign populations | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T504 | Exact Observatory | Local interactive mathematical workbench | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T505 | Exact Observatory | JSON batch and Python interfaces | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T506 | Exact Observatory | Representation adapter development plan | [30_exact_observatory](chapters/30_exact_observatory.md) |
+| PJ-T507 | Integrated Math Lab | Stable ranked equation IDs and installed atlas | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T508 | Integrated Math Lab | Question-oriented exact workbench | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T509 | Integrated Math Lab | Target-to-portfolio bounded workflow | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T510 | Integrated Math Lab | Minimum-cost sensor repair | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T511 | Integrated Math Lab | Exact ties and uncertain contenders | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T512 | Integrated Math Lab | Finite Gaussian-rational Moyal algebra | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T513 | Integrated Math Lab | Affine covariance and nonlinear counterexample | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T514 | Integrated Math Lab | Complete Hahn coefficient gate | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T515 | Integrated Math Lab | Classified rays and higher-order decoys | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T516 | Integrated Math Lab | Cyclic obstruction invariant and extension repair | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T517 | Integrated Math Lab | Sector connectivity and generated algebra | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T518 | Integrated Math Lab | Exact conductor transport and CRT twists | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T519 | Integrated Math Lab | Finite Dynkin theta and boundary reciprocity | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T520 | Integrated Math Lab | Root-of-unity torus skein products | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T521 | Integrated Math Lab | Scoped half-lift parity | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T522 | Integrated Math Lab | Cancellation-conditioned precision bounds | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T523 | Integrated Math Lab | Adaptive precision with external uncertainty | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T524 | Integrated Math Lab | Colored weighted finite path populations | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T525 | Integrated Math Lab | Chronology-sensitive histogram repricing | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T526 | Integrated Math Lab | Finite-graph block contraction tails | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T527 | Integrated Math Lab | Conserved outcome-channel partitions | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T528 | Integrated Math Lab | Retry optimization and silent floor | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T529 | Integrated Math Lab | Isolated circular logarithmic replacement | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T530 | Integrated Math Lab | Character-twisted visible-ray coefficients | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T531 | Integrated Math Lab | Progression residue local factors | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T532 | Integrated Math Lab | Positive Pell unit-class asymptotics | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T533 | Integrated Math Lab | Original-equation action histories | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T534 | Integrated Math Lab | Bounded invariant-law discovery | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T535 | Integrated Math Lab | Recovered active quintic partner | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T536 | Integrated Math Lab | Universal sextic partner adapters | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T537 | Integrated Math Lab | HTTP and DOM contract integration | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |
+| PJ-T538 | Integrated Math Lab | Installed wheel resource replay | [31_integrated_math_lab](chapters/31_integrated_math_lab.md) |

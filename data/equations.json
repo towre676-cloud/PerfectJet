@@ -3654,6 +3654,402 @@
       "status": "definition",
       "assumptions": "Paired original-player temporal comparisons; fixed predictions and complete procedure refits are distinct.",
       "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E407",
+      "domain": "observatory",
+      "title": "behavior compiler",
+      "equation": "q(F_a(s))=Fbar_a(q(s))",
+      "status": "exact_checked",
+      "assumptions": "Finite deterministic partial systems; sensors targets acceptance and definedness preserved by complete replay.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E408",
+      "domain": "observatory",
+      "title": "completion recursion",
+      "equation": "C(t,s,b)=sum_a C(t-1,F_a(s),b-c_a)",
+      "status": "exact_checked",
+      "assumptions": "Only defined actions whose cost fits; trace conditioning at each step and terminal acceptance.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E409",
+      "domain": "observatory",
+      "title": "prefix interval",
+      "equation": "rank(w)=sum of accepted completion counts under lexicographically smaller branches",
+      "status": "derived",
+      "assumptions": "Original action alphabet; different action words retain their multiplicity.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E410",
+      "domain": "observatory",
+      "title": "uniform history",
+      "equation": "W=unrank(U); U uniform on {0,...,C-1}",
+      "status": "derived",
+      "assumptions": "Exact integer draw and bijective rank/inverse rank.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E411",
+      "domain": "observatory",
+      "title": "initial target memory",
+      "equation": "belief={(s_initial,s_current)}",
+      "status": "exact_checked",
+      "assumptions": "Noninjective evolution cannot erase the remembered initial target; full observations of a fixed prefix remain available.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E412",
+      "domain": "observatory",
+      "title": "adaptive minimax",
+      "equation": "V(B)=min_a(c_a+max_o V(B_after_a_o))",
+      "status": "exact_checked",
+      "assumptions": "Positive costs; solved on reachable finite beliefs by AND/OR Dijkstra; bounded exploration reports limit.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E413",
+      "domain": "observatory",
+      "title": "global recurrence",
+      "equation": "A^r f=sum_(j=0)^(r-1) d_j A^j f",
+      "status": "exact_checked",
+      "assumptions": "Exact whole-state vector identity for A=sum action pullbacks and acceptance f.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E414",
+      "domain": "observatory",
+      "title": "rational count series",
+      "equation": "C_s(z)=P_s(z)/Q(z); Q(z)=1-sum_(i=1)^r c_i z^i",
+      "status": "derived",
+      "assumptions": "Global Krylov identity valid at every start; scalar minimality requires separate cancellation analysis.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E415",
+      "domain": "observatory",
+      "title": "modular shear sensor",
+      "equation": "q(u,v)=u^2+v^2 mod13; A(u,v)=(u+v,v); B(u,v)=(u,v+u)",
+      "status": "exact_checked",
+      "assumptions": "Specific finite-field laboratory; steps entering q0 are undefined; initial state (1,0).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E416",
+      "domain": "observatory",
+      "title": "demand dimensions",
+      "equation": "2197 absolute states ->85 behavior classes;57 sensor coordinates;15 acceptance coordinates;8 global count coordinates;7 scalar order",
+      "status": "exact_checked",
+      "assumptions": "Each number preserves its own specified question; fixed-start scalar numerator and denominator independently checked coprime.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E417",
+      "domain": "observatory",
+      "title": "Pell finite orbit",
+      "equation": "(x_n,y_n) modm = residue_state(n mod period)",
+      "status": "exact_checked",
+      "assumptions": "Only the orbit of the supplied integer seed under the supplied norm-one unit and inverse; not all integer norm solutions.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E418",
+      "domain": "moyal",
+      "title": "finite exact polynomial star product",
+      "equation": "f star g = sum_k (i hbar/2)^k Lambda^k(f,g)/k!",
+      "status": "exact_checked",
+      "assumptions": "Polynomial symbols; expansion terminates; coefficients in Q[i][hbar]; resource guards apply.",
+      "source": "src/perfectjet/moyal.py; recovered symplectic_moyal_bridge_v4.zip"
+    },
+    {
+      "id": "PJ-E419",
+      "domain": "moyal",
+      "title": "exact Moyal correction tower",
+      "equation": "[f,g]_star/(i hbar) = {f,g} - hbar^2 Lambda^3(f,g)/24 + hbar^4 Lambda^5(f,g)/1920 - ...",
+      "status": "exact_checked",
+      "assumptions": "Polynomial symbols and the retained flat symplectic convention; central and noncentral defects remain distinct.",
+      "source": "src/perfectjet/moyal.py"
+    },
+    {
+      "id": "PJ-E420",
+      "domain": "moyal",
+      "title": "affine symplectic star covariance",
+      "equation": "(f composed Phi) star (g composed Phi) = (f star g) composed Phi; Phi(z)=Mz+b, M^T J M=J",
+      "status": "exact_checked",
+      "assumptions": "Affine symplectic ordinary pullback; exact finite covariance checks and standard bidifferential argument.",
+      "source": "src/perfectjet/moyal.py; tests/test_moyal.py"
+    },
+    {
+      "id": "PJ-E421",
+      "domain": "moyal",
+      "title": "nonlinear covariance obstruction",
+      "equation": "Phi(q,p)=(q,p+q^2), f=p^2,g=p: star-pullback defect=-hbar^2/2; Poisson defect=0",
+      "status": "exact_checked",
+      "assumptions": "Explicit nonlinear symplectic shear under ordinary substitution in the unchanged flat star product.",
+      "source": "src/perfectjet/moyal.py::covariance_example"
+    },
+    {
+      "id": "PJ-E422",
+      "domain": "hahn",
+      "title": "monomial Hahn coefficient",
+      "equation": "S_k(a,b,c,d)=sum_(r=0)^k (-1)^r binom(k,r)(a)_(k-r)(b)_r(c)_r(d)_(k-r)",
+      "status": "exact_checked",
+      "assumptions": "Nonnegative integer exponents; falling factorials vanish beyond their argument.",
+      "source": "src/perfectjet/hahn.py; recovered hahn_monomial_classifier.py"
+    },
+    {
+      "id": "PJ-E423",
+      "domain": "hahn",
+      "title": "complete finite monomial exactness gate",
+      "equation": "exact iff S_k=0 for every odd k in {3,5,...,kappa}; kappa=min(a,d)+min(b,c)",
+      "status": "exact_checked",
+      "assumptions": "Formal polynomial equality, not a small numerical residual; every active odd order is retained.",
+      "source": "src/perfectjet/hahn.py"
+    },
+    {
+      "id": "PJ-E424",
+      "domain": "hahn",
+      "title": "classified rays and higher-order decoys",
+      "equation": "(qp^3,q^(3r+2)p^r) is exact; S3(1,4,3r+2,2r)=0 but S5=720r^2(3r-1)(3r+1)(3r+2)",
+      "status": "exact_checked",
+      "assumptions": "r>=1; four kappa=4 ray families and reversals implemented. Global absence of higher-kappa nonzero-Poisson exactness is conjectural.",
+      "source": "src/perfectjet/hahn.py; archive/extracted/hahn_stratification_final_form_extracted.txt"
+    },
+    {
+      "id": "PJ-E425",
+      "domain": "categorical",
+      "title": "cyclic obstruction invariant",
+      "equation": "omega_k(a,b,c)=exp(2pi i k a floor((b+c)/n)/n); product_j omega_k(1,j,1)=exp(2pi i k/n)",
+      "status": "exact_checked",
+      "assumptions": "Standard representatives in Z/n; phases represented exactly modulo integers.",
+      "source": "src/perfectjet/categorical.py"
+    },
+    {
+      "id": "PJ-E426",
+      "domain": "categorical",
+      "title": "constructive cyclic extension repair",
+      "equation": "B(a,b)=exp(2pi i k(a mod n)floor(b/n)/n) on Z/n^2; dB=q*omega_k",
+      "status": "exact_checked",
+      "assumptions": "q:Z/n^2->Z/n; explicit finite replay; no minimum-extension or arbitrary-group claim.",
+      "source": "src/perfectjet/categorical.py"
+    },
+    {
+      "id": "PJ-E427",
+      "domain": "categorical",
+      "title": "sector-connectivity reach algebra",
+      "equation": "generated_star_algebra(direct_sum_c End(V_c),P)=End(V) iff graph(P_cd!=0) is connected",
+      "status": "exact_checked",
+      "assumptions": "Full matrix block algebras and self-adjoint projector P; exact sector graph and small matrix-algebra replay; supplied physical access remains an assumption.",
+      "source": "src/perfectjet/categorical.py"
+    },
+    {
+      "id": "PJ-E428",
+      "domain": "conductor",
+      "title": "exact conductor-level transport",
+      "equation": "M=dL: F_M iota_d=pi*F_L; F_M pi*=d iota_d F_L; T_M iota_d=iota_d T_L^d",
+      "status": "exact_checked",
+      "assumptions": "Unnormalized Fourier F_N[j,k]=zeta_N^(jk), specified chirp and support/pullback maps; normalized square-root factors stated separately.",
+      "source": "src/perfectjet/conductor_transport.py"
+    },
+    {
+      "id": "PJ-E429",
+      "domain": "conductor",
+      "title": "twisted CRT factorization",
+      "equation": "F_(LK) -> F_L^(K) tensor F_K^(L); T_(LK) -> T_L^K tensor T_K^L",
+      "status": "exact_checked",
+      "assumptions": "Coprime L,K; CRT section (a,b)->Ka+Lb; twists retained rather than silently erased.",
+      "source": "src/perfectjet/conductor_transport.py"
+    },
+    {
+      "id": "PJ-E430",
+      "domain": "theta",
+      "title": "finite coupled-lattice theta numerator",
+      "equation": "sum_(a>=0) zeta^Q(a) x^|a| = N_(C,L)(x)/(1-x^L)^r; Q(a)=a^T C a/2",
+      "status": "exact_checked",
+      "assumptions": "Integral symmetric C with even diagonal; finite residue numerator; no automatic modular-form claim.",
+      "source": "src/perfectjet/conductor_transport.py::FiniteLatticeTheta"
+    },
+    {
+      "id": "PJ-E431",
+      "domain": "theta",
+      "title": "boundary-twisted theta reciprocity",
+      "equation": "x^(r(L-1))N(1/x)=zeta^Q((L-1)1) sum_rho zeta^(Q(rho)+(C1).rho) x^|rho|",
+      "status": "exact_checked",
+      "assumptions": "Same finite lattice conventions; boundary character must be included.",
+      "source": "src/perfectjet/conductor_transport.py"
+    },
+    {
+      "id": "PJ-E432",
+      "domain": "precision",
+      "title": "cancellation-conditioned summation bound",
+      "equation": "kappa_sum=sum|t_j|/|sum t_j|; relative error<=gamma_(N-1) kappa_sum; gamma_m=mu/(1-mu)",
+      "status": "exact_checked",
+      "assumptions": "Nonzero exact-input sum; recursive p-bit rounding and (N-1)u<1. Input/evaluation/model errors are separate; zero sums use absolute bounds.",
+      "source": "src/perfectjet/precision.py; Hahn numerical-stability envelope"
+    },
+    {
+      "id": "PJ-E433",
+      "domain": "precision",
+      "title": "adaptive precision and uncertainty-aware comparison",
+      "equation": "total_error=rounding_bound+evaluation_error+input_error+model_error; separated lower/upper intervals certify a leader",
+      "status": "exact_checked",
+      "assumptions": "Explicit error budgets; increasing arithmetic precision cannot remove fixed external uncertainty.",
+      "source": "src/perfectjet/precision.py"
+    },
+    {
+      "id": "PJ-E434",
+      "domain": "graphs",
+      "title": "colored weighted finite-path population",
+      "equation": "Z_n=sum_(paths gamma length n) product_e w_type(e); finite row-sum domination bounds every starting row",
+      "status": "exact_checked",
+      "assumptions": "Declared finite graph, nonnegative exact weights and explicit walk/self-avoidance/chronology semantics. Transfer to an external infinite model requires a domination map.",
+      "source": "src/perfectjet/weighted_growth.py"
+    },
+    {
+      "id": "PJ-E435",
+      "domain": "graphs",
+      "title": "block contraction tail certificate",
+      "equation": "rho=norm(W^B)_infinity<1 implies block-geometric all-walk domination",
+      "status": "exact_checked",
+      "assumptions": "Finite nonnegative weighted transition matrix; intermediate block residues and constants retained; does not assume monotonic root bounds.",
+      "source": "src/perfectjet/weighted_growth.py"
+    },
+    {
+      "id": "PJ-E436",
+      "domain": "branches",
+      "title": "complete outcome-channel conservation",
+      "equation": "sum_beta p_beta=1; channels=exact disjoint-union frame disjoint-union repeat disjoint-union silent",
+      "status": "exact_checked",
+      "assumptions": "Declared exact probability partition; frame corrections and device rates are supplied, not inferred.",
+      "source": "src/perfectjet/branch_channels.py"
+    },
+    {
+      "id": "PJ-E437",
+      "domain": "branches",
+      "title": "finite repeat failure and cost",
+      "equation": "p_fail(R)=p_silent sum_(j=0)^(R-1) p_repeat^j + p_exhaust p_repeat^R",
+      "status": "exact_checked",
+      "assumptions": "Independent identical attempts and explicit exhaustion cost/error convention; exact finite depth optimization under the stated strict threshold.",
+      "source": "src/perfectjet/branch_channels.py"
+    },
+    {
+      "id": "PJ-E438",
+      "domain": "analytic",
+      "title": "isolated circular logarithmic period",
+      "equation": "integral_(w=r exp(it), t=0..2pi) log(w) dw = 2pi i r; charge c multiplies the coefficient by c",
+      "status": "exact_checked",
+      "assumptions": "Specified circular representative, start, orientation and continuously tracked branch; declared divisor geometry must isolate one charge. Not a radius-independent topological period.",
+      "source": "src/perfectjet/analytic_recovery.py"
+    },
+    {
+      "id": "PJ-E439",
+      "domain": "analytic",
+      "title": "character-twisted visible-ray Dirichlet identity",
+      "equation": "sum_(n>=1) phi(n)chi(n)n^(-s)=L(s-1,chi)/L(s,chi), Re(s)>2",
+      "status": "exact_checked",
+      "assumptions": "Dirichlet character with exact cyclotomic values; finite coefficient identity replayed independently by formal Dirichlet division. Irrational phase twists remain separate.",
+      "source": "src/perfectjet/analytic_recovery.py"
+    },
+    {
+      "id": "PJ-E440",
+      "domain": "pell",
+      "title": "norm-unit coordinate recurrence",
+      "equation": "z_(n+2)=2a z_(n+1)-z_n for multiplication by a+b sqrt(D), norm one",
+      "status": "exact_checked",
+      "assumptions": "Each coordinate of the supplied seed orbit; invertibility retained modulo composite moduli.",
+      "source": "src/perfectjet/observatory/arithmetic.py; src/perfectjet/algebra_bridges.py"
+    },
+    {
+      "id": "PJ-E441",
+      "domain": "pell",
+      "title": "Pell history binomial fibers",
+      "equation": "accepted(H)=sum_(k=0)^H binom(H,k) 1_accept((2k-H) mod period)",
+      "status": "exact_checked",
+      "assumptions": "Advance/retreat words on the supplied modular seed orbit; original words retain multiplicity, and original-domain reconstruction requires its additional checks.",
+      "source": "src/perfectjet/algebra_bridges.py"
+    },
+    {
+      "id": "PJ-E442",
+      "domain": "pell",
+      "title": "positive-unit-class asymptotic normalization",
+      "equation": "A(N)=(sum_positive_classes |J_class|/p_class) log(N)/log(epsilon)+O(1)",
+      "status": "exact_checked",
+      "assumptions": "Deduplicated positive embedding classes normalized in [1,epsilon), reconstruction residues and distinct nonnegative inputs; signed y witnesses do not double the population.",
+      "source": "src/perfectjet/quadratic.py::QuadraticSquare.orbit_structure"
+    },
+    {
+      "id": "PJ-E443",
+      "domain": "invariants",
+      "title": "bounded invariant-law discovery",
+      "equation": "sum_nu c_nu NF_I(A^nu1 B^nu2 C^nu3 D^nu4)=0, excluding relations identically zero on the full family",
+      "status": "exact_checked",
+      "assumptions": "Exact Groebner normal forms and a bounded weighted-degree search; all-degree completeness is not claimed.",
+      "source": "src/perfectjet/invariants.py; src/perfectjet/algebra_bridges.py"
+    },
+    {
+      "id": "PJ-E444",
+      "domain": "invariants",
+      "title": "recovered active quintic partner",
+      "equation": "g=-xy(x-y)(x^2-xy+y^2); f=(2x^6-6x^5y+5x^4y^2+5x^2y^4-6xy^5+2y^6)/2; T3=T5=0,T1!=0",
+      "status": "exact_checked",
+      "assumptions": "Exact archived pair and active dimension replay; rounded complex Mobius matching is not promoted to an exact one-orbit proof.",
+      "source": "src/perfectjet/recovered_partners.py; archive/extracted/transvectant_rank_loci_exact_status.md"
+    },
+    {
+      "id": "PJ-E445",
+      "domain": "conductor",
+      "title": "torus skein product and central multiples",
+      "equation": "e_(p,q)e_(r,s)=A^(ps-qr)e_(p+r,q+s)+A^(-(ps-qr))e_(p-r,q-s)",
+      "status": "exact_checked",
+      "assumptions": "Torus convention e_v=e_-v; exact roots of unity, no unsupported coordinate reduction modulo L; L-divisible curves central at A^(2L)=1.",
+      "source": "src/perfectjet/conductor_transport.py::TorusSkein"
+    },
+    {
+      "id": "PJ-E446",
+      "domain": "conductor",
+      "title": "integer-height half-lift parity",
+      "equation": "sigma_(L+1)(d_lambda)/d_lambda=(-1)^<lambda,2rho_coroot>",
+      "status": "exact_checked",
+      "assumptions": "Even L and integer-height sine-product convention; implements parity criterion, not a general nonsimply-laced modular-data theorem.",
+      "source": "src/perfectjet/conductor_transport.py::half_lift_parity"
+    },
+    {
+      "id": "PJ-E447",
+      "domain": "branches",
+      "title": "silent failure asymptotic floor",
+      "equation": "lim_(R->infinity) p_fail(R)=p_silent/(1-p_repeat), p_repeat<1",
+      "status": "exact_checked",
+      "assumptions": "Declared independent identical-attempt repeat model; p_repeat=1 and exhaustion conventions handled separately.",
+      "source": "src/perfectjet/branch_channels.py"
+    },
+    {
+      "id": "PJ-E448",
+      "domain": "workflow",
+      "title": "observation-to-portfolio bound transport",
+      "equation": "v_i=w_i^T y; radius_i=sum_j |w_ij| error_j+model_error_i; portfolio radius=sum_i x_i radius_i",
+      "status": "exact_checked",
+      "assumptions": "Identified target rows, exact recovery weights and deterministic supplied bounds; conservative under shared errors; exhaustive finite portfolio certificate capped at 14 original items.",
+      "source": "src/perfectjet/workflow.py"
+    },
+    {
+      "id": "PJ-E449",
+      "domain": "analytic",
+      "title": "progression residue local factors",
+      "equation": "Residue_(s=2) sum_(n=r mod M) phi(n)n^(-s) = [product_(p divides M) p/(p+1)]/[phi(M) zeta(2)]",
+      "status": "exact_checked",
+      "assumptions": "Reduced residue class gcd(r,M)=1; integer modulus M; exact rational factor replayed. For M=3 it is 3/(8 zeta(2)).",
+      "source": "src/perfectjet/analytic_recovery.py::progression_residue_factor"
+    },
+    {
+      "id": "PJ-E450",
+      "domain": "precision",
+      "title": "exact p-bit rounding replay",
+      "equation": "round_p(x) is nearest p-significand-bit dyadic with ties to even; recursive sums replay each rounding step",
+      "status": "exact_checked",
+      "assumptions": "Exact rational inputs, arbitrary exponent range; not an assertion about IEEE underflow/overflow, flags or all hardware operations.",
+      "source": "src/perfectjet/precision.py"
     }
   ]
 }

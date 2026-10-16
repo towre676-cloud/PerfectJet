@@ -19,9 +19,19 @@ jobs:
         env:
           PYTHONPATH: src
       - run: python scripts/check_coverage.py
+      - run: python scripts/build_mathlab.py --check
+        env:
+          PYTHONPATH: src
+      - run: python -m perfectjet.cli math-lab --all --output results/mathlab/replay-ci.json
+        env:
+          PYTHONPATH: src
+      - run: python scripts/benchmark_observatory.py --output results/observatory/benchmark-ci.json
+      - run: python scripts/check_observatory_ui.py
       - uses: actions/upload-artifact@v4
         with:
           name: perfectjet-exact-replay
           path: |
             results/replay-ci.json
             results/math-bridges-ci.json
+            results/observatory/benchmark-ci.json
+            results/mathlab/replay-ci.json

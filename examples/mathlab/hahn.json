@@ -1,0 +1,8 @@
+{
+  "operation": "math-lab",
+  "lab": "hahn",
+  "params": {
+    "r": 2,
+    "decoy": false
+  }
+}

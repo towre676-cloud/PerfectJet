@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.14.0",
+  "version": "0.16.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "3625dfb8bc891f9838722161be97b8957d0d056e55129d7e8fa09857a3389091",
-      "size_bytes": 858
+      "sha256": "13eec3e3dbc5f7b25fd0a78b47f28148dca36ee25618ace84eeba0e4591aacf0",
+      "size_bytes": 1327
     },
     {
       "path": ".github/workflows/publish-v014.yml",
@@ -49,13 +49,33 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "a2d8a1b742a88f30b9a7caa0d4df31bf0d52ddd4f6316f88486eef8ca20ee1b5",
-      "size_bytes": 127
+      "sha256": "84bccce23e3fe81319a51ba4dafd82a06e363f4bfa0fb18fa18ec2e977951e65",
+      "size_bytes": 185
     },
     {
       "path": "README.md",
-      "sha256": "04e73950e0cee3ea53d3910e7e8013feb1a94384a448b0a8db8fda27c7d88007",
-      "size_bytes": 8505
+      "sha256": "38244c0c2d6a56e6b945beda782426d7c2913f0c60a9fca60a58af72e8dab208",
+      "size_bytes": 7486
+    },
+    {
+      "path": "Start_Math_Lab.bat",
+      "sha256": "8c48fabac868b54f157d01fe30a4ffa3b9e0964c0d7f3430e3512c79dd3d50b4",
+      "size_bytes": 72
+    },
+    {
+      "path": "Start_Math_Lab.command",
+      "sha256": "9c85e16400af3e89d32608697d3dc7ea5b08773611f2f9fd0f67ae4448e6c4f0",
+      "size_bytes": 58
+    },
+    {
+      "path": "Start_Observatory.bat",
+      "sha256": "717c8c0877e2ee1e5db7c9eef5739aa4bc39b3cab466dde4efdf8227530a7bb9",
+      "size_bytes": 254
+    },
+    {
+      "path": "Start_Observatory.command",
+      "sha256": "2b6c188a5de9c842a0005d664a5f8a586a00147763987929b15f54e130829361",
+      "size_bytes": 78
     },
     {
       "path": "archive/README.md",
@@ -64,8 +84,8 @@
     },
     {
       "path": "archive/SOURCES.json",
-      "sha256": "2c56a1f5cda2ceadaaad2b58c8a78452edde3a7d0a351ee1668f5c47a2e76b64",
-      "size_bytes": 2931
+      "sha256": "770e46dfa38de3a49ea52dfc84ade854c32b46da2e2059067d5b5cd40e04e194",
+      "size_bytes": 3713
     },
     {
       "path": "archive/SOURCE_METADATA.json",
@@ -113,19 +133,49 @@
       "size_bytes": 5828
     },
     {
+      "path": "archive/recovered/PROVENANCE.json",
+      "sha256": "f17ef1ba6a981fc2efa2443771e48e9dce2fac4379a15281242fac79b9463f94",
+      "size_bytes": 1161
+    },
+    {
+      "path": "archive/recovered/hahn_original.py",
+      "sha256": "24d9ed2dfee2b2295b00c618d09fc86850df5f40afa39a2362f5a7278f43b7ad",
+      "size_bytes": 1072
+    },
+    {
+      "path": "archive/recovered/moyal_original.py",
+      "sha256": "dbcd597b2d4fb7711971adb701b5ea0856c370f266a57a3c98837823b9e8892b",
+      "size_bytes": 18997
+    },
+    {
       "path": "archive/session/coverage.json",
       "sha256": "a49a946e56d601c063fc830c724648f9f6980af71a1b4caade402659437d6d44",
       "size_bytes": 1451
     },
     {
+      "path": "data/equation_id_contract.json",
+      "sha256": "5b90131ec6cdee82c22b574d11c1b4b0f2e456d26563b21e1ba19d2dbb28ea2d",
+      "size_bytes": 34726
+    },
+    {
+      "path": "data/equation_power.json",
+      "sha256": "1335a0899444feeba162b340a9d0ef76682b4faaa549fc5020a1d6457e397232",
+      "size_bytes": 23162
+    },
+    {
       "path": "data/equations.json",
-      "sha256": "0ac12bc41a966b5cb222ffbc3deecb4e373ff01c8b4831a7a31ce724ce3dc692",
-      "size_bytes": 149082
+      "sha256": "0f6cb73def66ce535f7ff71143d6cc46617e940493174172c4333272582b46f2",
+      "size_bytes": 168787
+    },
+    {
+      "path": "data/recovered_equations.json",
+      "sha256": "296ded89ce6b3478dadb95c9ca6d09a5e4465bba784f4e03dd9a55dc536b42e3",
+      "size_bytes": 13240
     },
     {
       "path": "data/topics.json",
-      "sha256": "a3bf378e91d6a2a96c36ca101bd6102d014b4e7ec9387c4f1fad6be7a6f57557",
-      "size_bytes": 134397
+      "sha256": "f5e47fbc763737909951783cdb72280c7558ad705c8d1f4f1d2badd9fbffcabe",
+      "size_bytes": 148770
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -134,18 +184,33 @@
     },
     {
       "path": "docs/COVERAGE_MAP.md",
-      "sha256": "224908bd4038f1d1728466b1bfc8a71ad27682360e9d5e7e8268b301063d9027",
-      "size_bytes": 72022
+      "sha256": "c5951111b8b42a0435afcc2cf043208ca289169e5007b2f2b424fc067f342047",
+      "size_bytes": 79023
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "ca46d05b9304f50964ca55850c451c90deebadbff4146e5390289ed82dfbf331",
-      "size_bytes": 68480
+      "sha256": "48c261c693dfe203feb47e94de0057cffb4b010688ffa260861d097cf8756e31",
+      "size_bytes": 80118
+    },
+    {
+      "path": "docs/MATH_LAB.md",
+      "sha256": "bc65ca0b914e87bec309c5097e689508e8abd77b56791b7b7b5df9dc065bc281",
+      "size_bytes": 17253
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "4bad1560302f12b225c985b9f7e89b7b8b0b9fdd6a870e48912f0ed98ac1abf6",
-      "size_bytes": 237280
+      "sha256": "be0ce60c8d724a6b42780375eaa150c33e762f84507b56adf137cb8cc4b47a18",
+      "size_bytes": 291672
+    },
+    {
+      "path": "docs/OBSERVATORY.md",
+      "sha256": "cdc29df2db30c59df054dbcc86b2ded99010f9ea2ab8008266df1f8b2f814285",
+      "size_bytes": 25328
+    },
+    {
+      "path": "docs/OBSERVATORY_VALIDATION.md",
+      "sha256": "1a47a31eb274d2028d78f0e9006c7e384fb4bb72cfbe61316829ea79b09aa8c0",
+      "size_bytes": 4444
     },
     {
       "path": "docs/QUICKSTART.md",
@@ -154,8 +219,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "66877030b712fe4bd545169c6509360d26e30bb602d23874d56ed9c0bd48c936",
-      "size_bytes": 24550
+      "sha256": "f5dbca3b0158209a7b99422a10eea22dece019092455a2dfc72840b78bef0f77",
+      "size_bytes": 26025
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -303,6 +368,16 @@
       "size_bytes": 21247
     },
     {
+      "path": "docs/chapters/30_exact_observatory.md",
+      "sha256": "cdc29df2db30c59df054dbcc86b2ded99010f9ea2ab8008266df1f8b2f814285",
+      "size_bytes": 25328
+    },
+    {
+      "path": "docs/chapters/31_integrated_math_lab.md",
+      "sha256": "bc65ca0b914e87bec309c5097e689508e8abd77b56791b7b7b5df9dc065bc281",
+      "size_bytes": 17253
+    },
+    {
       "path": "docs/nfl/DATA_CONTRACT.md",
       "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
       "size_bytes": 2392
@@ -326,6 +401,11 @@
       "path": "docs/nfl/OFFICIAL_ADAPTER.md",
       "sha256": "86e0ab6aee23590f496eb90a417a27cfef2a73ddbbf02f718450e6584b98287a",
       "size_bytes": 5904
+    },
+    {
+      "path": "docs/nfl/PARALLEL_REPEAT_DECISIONS.md",
+      "sha256": "b851ea70acc6c39914ad69c8bc6761da3ccff10e82ebbb83e26215674a1ca65a",
+      "size_bytes": 21298
     },
     {
       "path": "docs/nfl/PROTOCOL.md",
@@ -353,6 +433,156 @@
       "size_bytes": 2369
     },
     {
+      "path": "examples/mathlab/algebra.json",
+      "sha256": "94cd776bc59a3f876820098bf7e0c43d3c7db10ce4262ad18dbda3f79b0f7a55",
+      "size_bytes": 66
+    },
+    {
+      "path": "examples/mathlab/allocate.json",
+      "sha256": "1dc8aecf59957c163c4bb1bb17864195756b17d4f7e63996beb831f3ee3dd8be",
+      "size_bytes": 86
+    },
+    {
+      "path": "examples/mathlab/analytic.json",
+      "sha256": "db3ce8cf83891e25b47705c410d5f50d67f6ce895d458556f08b46290ad3492e",
+      "size_bytes": 67
+    },
+    {
+      "path": "examples/mathlab/branches.json",
+      "sha256": "4a6273cb500a5419f502166e7ea91475c9b931b890b96a5baed79bbb672a945b",
+      "size_bytes": 67
+    },
+    {
+      "path": "examples/mathlab/categorical.json",
+      "sha256": "25daa992288e752f4aa0c00e1a3d049c2f5257f419cc07f796b63025d0db0f98",
+      "size_bytes": 96
+    },
+    {
+      "path": "examples/mathlab/compress.json",
+      "sha256": "0337b1b3cac35ec7f77cb9cb7b2844776d4047c58480f57f46dfe570fa38171b",
+      "size_bytes": 86
+    },
+    {
+      "path": "examples/mathlab/conductor.json",
+      "sha256": "8558af62f98169722dccf08c951e618f401c744cac099226765169f1805775f8",
+      "size_bytes": 68
+    },
+    {
+      "path": "examples/mathlab/count.json",
+      "sha256": "ad479bba79c8e3a5b17f7db4ecda75c23945e67a972947bc13b51e7cdce0a2d6",
+      "size_bytes": 64
+    },
+    {
+      "path": "examples/mathlab/decision.json",
+      "sha256": "9cac62c9e7561c0bd0af82eadfb5aff9e828a8f897a07ce3b87949288eb4fde3",
+      "size_bytes": 85
+    },
+    {
+      "path": "examples/mathlab/deformation.json",
+      "sha256": "3b13c282878a7bcdff64cf265ed051f586ec0d6a4ec77f4c0f66795e6e870173",
+      "size_bytes": 70
+    },
+    {
+      "path": "examples/mathlab/experiments.json",
+      "sha256": "cedb531d94ed1aaf37e7496e125d905295f52d58d367ee0ecafc5a13b3f34150",
+      "size_bytes": 70
+    },
+    {
+      "path": "examples/mathlab/features.json",
+      "sha256": "982e8c9f9c2ba304a4c56501b327dfbe09bc545457499eb6cfe4e3a1a0b23df7",
+      "size_bytes": 67
+    },
+    {
+      "path": "examples/mathlab/growth.json",
+      "sha256": "ee87202a68902a86287baebbcb485818fd1866a1cb61c4c3a5c05d9c3306bdbf",
+      "size_bytes": 65
+    },
+    {
+      "path": "examples/mathlab/hahn.json",
+      "sha256": "1a647f510a5bc2649b7215b45860311d1fcd5c953ea2587fbcc295b49e9ac259",
+      "size_bytes": 97
+    },
+    {
+      "path": "examples/mathlab/jets.json",
+      "sha256": "cdc425ae4e848080bd0c022af0adb9583f12ed4139bd79452132e778b3ebfdd1",
+      "size_bytes": 63
+    },
+    {
+      "path": "examples/mathlab/lattice.json",
+      "sha256": "5928a62e2e8c86ffd644ae416d75df2bc395d3fb31df7ff006f99f263722d357",
+      "size_bytes": 82
+    },
+    {
+      "path": "examples/mathlab/moyal.json",
+      "sha256": "147f287d09dbe6e638b237ce6941c963ac3cc21728243cb2cc27f67e5440cb39",
+      "size_bytes": 83
+    },
+    {
+      "path": "examples/mathlab/partners.json",
+      "sha256": "fe972b8f900316d75fc20944a8cf626b8e5b1953cf17107af75bf7880fece253",
+      "size_bytes": 67
+    },
+    {
+      "path": "examples/mathlab/pipeline.json",
+      "sha256": "63b5c2c64b52e7177129d47daf77c921b44d57da8919b9c1baa382a46c689958",
+      "size_bytes": 67
+    },
+    {
+      "path": "examples/mathlab/precision.json",
+      "sha256": "9b31f83b6a6d8e38cf72da3b1060b99a79fbf3fb81c77217abf340a2fc154d74",
+      "size_bytes": 157
+    },
+    {
+      "path": "examples/mathlab/rank.json",
+      "sha256": "1c3e25df64e6a6c1dd0425c56cc0e1648f6ce746022292daf1db4a23359a1089",
+      "size_bytes": 85
+    },
+    {
+      "path": "examples/mathlab/reach.json",
+      "sha256": "a221d2ae1734415d21201bf141260fe694bed5522ce3b4c8df122a9e10bbfb96",
+      "size_bytes": 64
+    },
+    {
+      "path": "examples/mathlab/recover.json",
+      "sha256": "8a10e372d3973ca96cc92c5d0837029ce9f21ef69fef404bcd5175422f352ca3",
+      "size_bytes": 66
+    },
+    {
+      "path": "examples/mathlab/series.json",
+      "sha256": "290e4cd6f54a0b9ce0133415d106432bf0a9e2db4f4d55e1f52a081fdcc49cac",
+      "size_bytes": 228
+    },
+    {
+      "path": "examples/mathlab/theta.json",
+      "sha256": "44e1f88416098e538f7a3062a422c83fcdde67138892aceadc5939079d4f5ec0",
+      "size_bytes": 64
+    },
+    {
+      "path": "examples/observatory/branching-lab.json",
+      "sha256": "7f6bbfbc6cb7d9ba3bc571c5f82ca609acad4a8a42ba0e455fe1fada2b86fa76",
+      "size_bytes": 1831
+    },
+    {
+      "path": "examples/observatory/interferometer.json",
+      "sha256": "835044b38014eb493d044a447911eec16c88e38b7918b8732b1a9f8dad9e715b",
+      "size_bytes": 161706
+    },
+    {
+      "path": "examples/observatory/irreversible-button.json",
+      "sha256": "8818ef75ce7da2993e7e6f8019f7166654ef223fcf806e04ee537ee574a009ba",
+      "size_bytes": 1008
+    },
+    {
+      "path": "examples/observatory/pell-orbit.json",
+      "sha256": "90b4e3b66221156f29e3b6c282095f56d63eca296c134dcc3d4161258dd7a93c",
+      "size_bytes": 3144
+    },
+    {
+      "path": "examples/observatory/relative-interferometer.json",
+      "sha256": "38f9b5223ef78a71adbd89dfe8147856cf1785289d33cdf8e5f02becb1696b76",
+      "size_bytes": 12409
+    },
+    {
       "path": "examples/walkthrough.py",
       "sha256": "71c943cf8314c872f87de5142796a60fc83179af6c94673c904e2898bdb181ba",
       "size_bytes": 883
@@ -366,6 +596,11 @@
       "path": "integrations/upstreams.json",
       "sha256": "2e34e1302a35447c5be51698b5647abaf5323e6e85d8f70382c8120a2168b8c2",
       "size_bytes": 631
+    },
+    {
+      "path": "notebooks/Parallel_Repeat_Decisions.ipynb",
+      "sha256": "a9c6fb2771a65201a94de4ca555ff23706fc0008145600b3bd82b10eb3be5bf2",
+      "size_bytes": 5973
     },
     {
       "path": "notebooks/PerfectJet_Math_Bridges.ipynb",
@@ -384,8 +619,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "4f3676360a29398974498fe400c2623dd9d8220ef1d61c27bfe0990a08ba1529",
-      "size_bytes": 500
+      "sha256": "59a52e34551d398770bca38a6e23007739f733f7e76a8d9e75fb034679bc396d",
+      "size_bytes": 613
     },
     {
       "path": "releases/NFL_Big_Data_Bowl_2027_Research_Package.zip.part01",
@@ -416,6 +651,11 @@
       "path": "releases/assemble_release.py",
       "sha256": "eef175ec07ce190baaeb7f052f9acfd3efb5a3acf59f1c66b354c95530aa2483",
       "size_bytes": 2482
+    },
+    {
+      "path": "releases/perfectjet-0.16.0-py3-none-any.whl",
+      "sha256": "6dbe611bb0f24c8b9369e16e2b7ca1a6c69a5d089425e440b89c9d5b2750cad4",
+      "size_bytes": 357099
     },
     {
       "path": "releases/restore_nfl_research_package.py",
@@ -2553,6 +2793,46 @@
       "size_bytes": 149465
     },
     {
+      "path": "results/mathlab/all-examples.json",
+      "sha256": "333fc46cbd4005ebc82c7e005f84dca76fe2e1a134d59e849a5f52d0f6e0568d",
+      "size_bytes": 225563
+    },
+    {
+      "path": "results/mathlab/coverage.json",
+      "sha256": "8efa323cdb2d5a1c1bbd68ca0adf6d2f92f2a4069e3b68a56e973d1862736963",
+      "size_bytes": 201
+    },
+    {
+      "path": "results/mathlab/full-tests.log",
+      "sha256": "2bd848fba3f006b20d49435f355696bc65708db51e82098db8f45fdd1d0250a8",
+      "size_bytes": 639
+    },
+    {
+      "path": "results/mathlab/installed-wheel.json",
+      "sha256": "5d069f6c7fb775e7fd0b3bb27aca3d000137b946d26b103d2f6ac1ad2b2ffcc3",
+      "size_bytes": 639
+    },
+    {
+      "path": "results/mathlab/integration-tests.log",
+      "sha256": "e71266cba006b661d3fa2d807bc4de927bdd4eb54d1f33f0c2f92447db555721",
+      "size_bytes": 899
+    },
+    {
+      "path": "results/mathlab/interface-checks.log",
+      "sha256": "2850c7ac3208e2ff74c26b80dab01fac894749b712c3d3cef0a6f8763998a5dc",
+      "size_bytes": 383
+    },
+    {
+      "path": "results/mathlab/resources.json",
+      "sha256": "53123c738ab9c477526863fd3d9d56c412e89035d5a2da3f43862ea0d98337a5",
+      "size_bytes": 74
+    },
+    {
+      "path": "results/mathlab/validation.json",
+      "sha256": "fb65db0b3543517899f3a12db6510b24fccde13be8547a3f915f6089a6c21012",
+      "size_bytes": 651
+    },
+    {
       "path": "results/nfl-math-bridges/final_loading_checks.log",
       "sha256": "c3ab86005361127e4056d3229671c7b30dd544c40b4a088881fbe482d3cf7667",
       "size_bytes": 98
@@ -2626,6 +2906,31 @@
       "path": "results/nfl_math_bridges_analytic.json",
       "sha256": "eb6413ff9be2d29cc7be2f1d2e4a7eb75adfdf1487112abcceb175d14ecf1af1",
       "size_bytes": 20417
+    },
+    {
+      "path": "results/observatory/benchmark.json",
+      "sha256": "69c294c4a428486a6e3083ab41e92ce4afd2e6ad9c9d4a9c16f0a0423533682c",
+      "size_bytes": 248487
+    },
+    {
+      "path": "results/observatory/destructive-prefix.json",
+      "sha256": "a6f8d8479565a62c85bcc42afead77032a8e4b4f3de8bcd605fcc430dfe72713",
+      "size_bytes": 5799
+    },
+    {
+      "path": "results/observatory/pell.json",
+      "sha256": "056561244b8ad04781ef00bdf4134df951310b55bcb4be1b723ad33862483f26",
+      "size_bytes": 3469
+    },
+    {
+      "path": "results/observatory/ui-contract.json",
+      "sha256": "427ad480f8c5235d094f968ae237f15b4b6b52dc7e936d181929d0f100bed531",
+      "size_bytes": 259
+    },
+    {
+      "path": "results/parallel_repeat_decisions/PUBLIC_EVIDENCE.json",
+      "sha256": "17b52a074a9c8c9a4adf979aab672cb5f64e30fa6e3284024b65e3016f03e8d9",
+      "size_bytes": 14981
     },
     {
       "path": "results/real-nfl/analytic-bridge-replay.json",
@@ -2833,6 +3138,16 @@
       "size_bytes": 12090
     },
     {
+      "path": "run_observatory.py",
+      "sha256": "08b3fd8469fcfde574ddcd5e76613731f31b6f4afe8855b596731ff01cc2c9de",
+      "size_bytes": 294
+    },
+    {
+      "path": "scripts/benchmark_observatory.py",
+      "sha256": "f7c0a1ed502220f39b2c2c7195f5f5423f8b868fc8aa6b5823bc768ad1936966",
+      "size_bytes": 17495
+    },
+    {
       "path": "scripts/build_bridge_fixture.py",
       "sha256": "9070f4faa2f860c344e8ce391528460d55df26780398e300024b1d0d8d3c386a",
       "size_bytes": 2791
@@ -2844,13 +3159,18 @@
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "1d19eafbf83d803f216d868ded394d0e80a86ec44506f5a78c4f53bae3029aee",
-      "size_bytes": 73971
+      "sha256": "769fe534a84f44aa98e4d3a7c2174b8a67b278682db27b896459be5c5e36f41e",
+      "size_bytes": 74123
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "f75768d516fb41f53664697c76fada18137a2e8664d580a781fc4a6c7894cbc2",
-      "size_bytes": 61923
+      "sha256": "046ff82a8846b94be71d19a9d10cbc56ca0ec6f036c12ae8a727d311b226e4e4",
+      "size_bytes": 65056
+    },
+    {
+      "path": "scripts/build_mathlab.py",
+      "sha256": "b849d60ef755ba5e086dd8621266a5e0b9ab90f97a5707b313e8df9ed3f3b4df",
+      "size_bytes": 1984
     },
     {
       "path": "scripts/build_motor_notebook.py",
@@ -2874,13 +3194,23 @@
     },
     {
       "path": "scripts/build_topics.py",
-      "sha256": "c293821f593d8837679aadf31aec241c70b696aeac2f364d7098a68faac2e24e",
-      "size_bytes": 17210
+      "sha256": "1ebd480a1a696d762373b20aa070c8772f955f8282e9b84121ffcb276316e25b",
+      "size_bytes": 19367
     },
     {
       "path": "scripts/check_coverage.py",
       "sha256": "66fc8c19bf27e9d98da5748900bc62d6d7d7752b2b8d79862c3dced5933ddc75",
       "size_bytes": 1415
+    },
+    {
+      "path": "scripts/check_observatory_ui.js",
+      "sha256": "3626c83f946aac2acd14376ce0e8e76336e40f467d4fb7819fcda0e187f74538",
+      "size_bytes": 6452
+    },
+    {
+      "path": "scripts/check_observatory_ui.py",
+      "sha256": "76a6893b138800e46cafd7ec8da4d8d3b6012cb8955693b2b8d3059519ee7387",
+      "size_bytes": 1080
     },
     {
       "path": "scripts/ingest_public_nfl.py",
@@ -2896,6 +3226,11 @@
       "path": "scripts/prepare_official_bridge_data.py",
       "sha256": "7d989f36c97002f9ef8a72674f8f89b8580abd367222185f7da61609204fb54c",
       "size_bytes": 3752
+    },
+    {
+      "path": "scripts/replay_repeat_geometry.py",
+      "sha256": "fe5c0d167153ddefd62a77563f642cdc967c4ecea68896027612abad30b7efac",
+      "size_bytes": 2858
     },
     {
       "path": "scripts/run_external_tracking.py",
@@ -2928,6 +3263,11 @@
       "size_bytes": 2117
     },
     {
+      "path": "scripts/run_repeat_decisions.py",
+      "sha256": "3657a7e092a0c9b1671ead782c67149e51fea90437083af1896fa92b0aac0e13",
+      "size_bytes": 4014
+    },
+    {
       "path": "scripts/run_stopped_flow.py",
       "sha256": "c99f3487f77912649b1d41db1641c1667323c93a69bc7ac6e2a798c0bbd9bdbb",
       "size_bytes": 4797
@@ -2939,8 +3279,18 @@
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "62186094d43e19dc19b4b37e4d9ff3e0ad8ae29523f43accb17659ed6ff722cd",
+      "sha256": "ac95dd71b5b5892bc9cd55a3373bc3f6ea332ca3596786fd96fe6280b6f86085",
       "size_bytes": 104
+    },
+    {
+      "path": "src/perfectjet/algebra_bridges.py",
+      "sha256": "532d7dd64675a2d219b1ae56c374db9da08dfaf7615b4c8f80f1318feff294f5",
+      "size_bytes": 17806
+    },
+    {
+      "path": "src/perfectjet/analytic_recovery.py",
+      "sha256": "bad419e60bcd849ae3b27c6456f7a0de7e6b487288e38f6f665d604bbcbad5ec",
+      "size_bytes": 18072
     },
     {
       "path": "src/perfectjet/applications/__init__.py",
@@ -3053,6 +3403,11 @@
       "size_bytes": 7179
     },
     {
+      "path": "src/perfectjet/applications/nfl_scouting/repeat_decisions.py",
+      "sha256": "f145fa33d9d2c838e40531379bf21684f263e1399a02aea1bd2ddae072ce4138",
+      "size_bytes": 14786
+    },
+    {
       "path": "src/perfectjet/applications/nfl_scouting/rolling.py",
       "sha256": "8d07b56d84ad06072a6d53632ab07247bfe9c64766f9714fed91861c6f53697b",
       "size_bytes": 20960
@@ -3078,14 +3433,29 @@
       "size_bytes": 16079
     },
     {
+      "path": "src/perfectjet/branch_channels.py",
+      "sha256": "8068ecd16dfcd980064591626096dad4c74e0b4f5a1cf602d72aa1c17d5bb237",
+      "size_bytes": 10788
+    },
+    {
+      "path": "src/perfectjet/categorical.py",
+      "sha256": "4d73c8261f1079412f1b412316274bae15616c6cf96db3de65eeee14777f0521",
+      "size_bytes": 9378
+    },
+    {
       "path": "src/perfectjet/cli.py",
-      "sha256": "f9ff1d215d55ce2990587533423b586c36494eb03b9c035ad3df305ae99d1aa7",
-      "size_bytes": 7029
+      "sha256": "55b496b73b2c1e4a3d3b88838248f0cd0e6c6ee5131f825b201645b38b5c1b96",
+      "size_bytes": 7578
     },
     {
       "path": "src/perfectjet/collision.py",
       "sha256": "86fe0bbb39b73e62572cf653c2d87e25d6accc8f3bc40d467660d6cedf14e5b9",
       "size_bytes": 2772
+    },
+    {
+      "path": "src/perfectjet/conductor_transport.py",
+      "sha256": "e42c6dee0d2374490631912cf9d132e3fdafd97f4a9d61339bdbf4d6133c3483",
+      "size_bytes": 14889
     },
     {
       "path": "src/perfectjet/decisions.py",
@@ -3113,6 +3483,11 @@
       "size_bytes": 3277
     },
     {
+      "path": "src/perfectjet/hahn.py",
+      "sha256": "3dcd3590daef473c4d62a11150fb0c2703ddb4ca99dd2c9e24c2abbac8bdf81c",
+      "size_bytes": 5700
+    },
+    {
       "path": "src/perfectjet/invariants.py",
       "sha256": "bdc96ac97943df36a5dba2c5ffb7387944e63c671c39ddbdd6322021b37b0f69",
       "size_bytes": 12502
@@ -3138,6 +3513,66 @@
       "size_bytes": 9691
     },
     {
+      "path": "src/perfectjet/mathlab.py",
+      "sha256": "db7cdd043b96361bcacfaa60307df226fab1279c56bf61c007816b96adb302f5",
+      "size_bytes": 32285
+    },
+    {
+      "path": "src/perfectjet/moyal.py",
+      "sha256": "59b6376cbc43beb04207be8027853dc0c8f414d0077c0cacbe23dea4ee0aef80",
+      "size_bytes": 15813
+    },
+    {
+      "path": "src/perfectjet/observatory/__init__.py",
+      "sha256": "74f6e2c97219588f43c4baeebd48700d0d67cdb8cfecdc62cb910f7af672cf97",
+      "size_bytes": 632
+    },
+    {
+      "path": "src/perfectjet/observatory/arithmetic.py",
+      "sha256": "5bd2987ed3d545e931644f85450675253f2b5afe0e27607357331f2f174d50af",
+      "size_bytes": 11964
+    },
+    {
+      "path": "src/perfectjet/observatory/assets/index.html",
+      "sha256": "1f411176036e277f3e2be428487ed4cbb23d3cf54f57cc1f3f4ae11b353a8063",
+      "size_bytes": 70872
+    },
+    {
+      "path": "src/perfectjet/observatory/command.py",
+      "sha256": "7219b994f755a2c386a7e729be105c960424f29673e93125bf02aacb827ad262",
+      "size_bytes": 903
+    },
+    {
+      "path": "src/perfectjet/observatory/examples.py",
+      "sha256": "fbe847962ec6e60a98372969ac146ec4503ece47cfebf69070791bb3da8a23bf",
+      "size_bytes": 8064
+    },
+    {
+      "path": "src/perfectjet/observatory/experiments.py",
+      "sha256": "dc63b50ecc4f86e331d726e8c6efd8f959ee27bc0c2500e3151e9b89ed0be70d",
+      "size_bytes": 14209
+    },
+    {
+      "path": "src/perfectjet/observatory/histories.py",
+      "sha256": "1c9770d0b616d0787d14c2380799d625abbc6e0d29482b90881262b536bcfaf7",
+      "size_bytes": 11882
+    },
+    {
+      "path": "src/perfectjet/observatory/model.py",
+      "sha256": "87edf7546e4e0e4487687ecb2a17304cf900cce9f3e0cfb38a215aab1059e0c1",
+      "size_bytes": 13559
+    },
+    {
+      "path": "src/perfectjet/observatory/series.py",
+      "sha256": "4d8a79f76e7d175795be99de9d88a64f345b69ffafe83e6e616b9175f7f609ec",
+      "size_bytes": 19954
+    },
+    {
+      "path": "src/perfectjet/observatory/workbench.py",
+      "sha256": "89312c1574fe7f01533d381510377f1437bc79d3257bb2b80cb514148902e2ea",
+      "size_bytes": 10801
+    },
+    {
       "path": "src/perfectjet/parametric.py",
       "sha256": "26bfd8463d3135bd1038785c289382d670d1dfb05495220617174c8592e89e8e",
       "size_bytes": 14193
@@ -3153,14 +3588,19 @@
       "size_bytes": 5753
     },
     {
+      "path": "src/perfectjet/precision.py",
+      "sha256": "81ab4ca5e0c46565c6e73e088e6fa2e8f6b1a99419741c71276e1e3a9e0fb356",
+      "size_bytes": 15388
+    },
+    {
       "path": "src/perfectjet/psg.py",
       "sha256": "ff702aa425fbf97fb445e35bec0fe7d24924b5fd77727aed57b38d82b15544bc",
       "size_bytes": 904
     },
     {
       "path": "src/perfectjet/quadratic.py",
-      "sha256": "944fbe4a293f7c8857a55c4571ed601294533ecaa5059bb2926d0f67977fb43a",
-      "size_bytes": 11676
+      "sha256": "5d4fe739b998f71031785db34e6746c98c25b6765d61eeecf6dac6bae3943509",
+      "size_bytes": 15043
     },
     {
       "path": "src/perfectjet/readout.py",
@@ -3173,9 +3613,39 @@
       "size_bytes": 7600
     },
     {
+      "path": "src/perfectjet/recovered_partners.py",
+      "sha256": "91982bb07d89b3a4b90536ae110627fb3113f7fa905f448736730c4b788547d0",
+      "size_bytes": 9765
+    },
+    {
+      "path": "src/perfectjet/recovered_requests.py",
+      "sha256": "19dfbea8f9e0dafbf7d6991642efaf1731edcd3381577adf1cb58a185e33d536",
+      "size_bytes": 17724
+    },
+    {
       "path": "src/perfectjet/reliable_modes.py",
       "sha256": "5438abeb9a4748f31f38efbaeee2f1194f4beb33163d04772fcb3ade339bedfe",
       "size_bytes": 3619
+    },
+    {
+      "path": "src/perfectjet/repeat_allocation.py",
+      "sha256": "bc0a8544a95b39ae2f6d611efe09f82ff5155ccf2c2735077a8bb2d5f1be1d1d",
+      "size_bytes": 7372
+    },
+    {
+      "path": "src/perfectjet/replication_geometry.py",
+      "sha256": "6859fdae828b4f04c9441d78b374275f46a69d2ba977854b8470b20d0c4e657d",
+      "size_bytes": 9213
+    },
+    {
+      "path": "src/perfectjet/resources/equation_power.json",
+      "sha256": "1335a0899444feeba162b340a9d0ef76682b4faaa549fc5020a1d6457e397232",
+      "size_bytes": 23162
+    },
+    {
+      "path": "src/perfectjet/resources/equations.json",
+      "sha256": "0f6cb73def66ce535f7ff71143d6cc46617e940493174172c4333272582b46f2",
+      "size_bytes": 168787
     },
     {
       "path": "src/perfectjet/rings.py",
@@ -3208,6 +3678,41 @@
       "size_bytes": 2506
     },
     {
+      "path": "src/perfectjet/weighted_growth.py",
+      "sha256": "9f7be8ded28d994c8411af4f8cbd5c02f4f5326054e660e42df48c2ffcd1012a",
+      "size_bytes": 27038
+    },
+    {
+      "path": "src/perfectjet/workflow.py",
+      "sha256": "8e10688278f048dd093bd1b5f364122b481e0b06a82cf522095c443524dbb6b6",
+      "size_bytes": 9675
+    },
+    {
+      "path": "tests/test_algebra_bridges.py",
+      "sha256": "29793f25b85f5640d1de948ea2c1e862914d918f700fc2c5d0a9d3734f4a29f6",
+      "size_bytes": 6657
+    },
+    {
+      "path": "tests/test_analytic_recovery.py",
+      "sha256": "ffd13567c4ae17d2b71f083d5b8b8e3643acfb69678d64e9f8d44d2f903fdc34",
+      "size_bytes": 6590
+    },
+    {
+      "path": "tests/test_branch_channels.py",
+      "sha256": "bccfc0101268fbbb9923840db84fb1369667d5b858f1874507788de943cceac8",
+      "size_bytes": 7083
+    },
+    {
+      "path": "tests/test_categorical.py",
+      "sha256": "1f5067cae57b4a982e48fc280445a623a6c89ffb5d8ed61bbf5a967a9d558215",
+      "size_bytes": 3596
+    },
+    {
+      "path": "tests/test_conductor_transport.py",
+      "sha256": "79c4ceab10ae24f3fc3345b2b8a9b46eb54aff8f09deec36f894cfeed4b5f6d1",
+      "size_bytes": 5289
+    },
+    {
       "path": "tests/test_engine.py",
       "sha256": "d8c2fba7d9ff960a8c2898e36a699e6f6efcfc720ba2d3a7bdce2e97e68b62f6",
       "size_bytes": 7057
@@ -3216,6 +3721,11 @@
       "path": "tests/test_exact.py",
       "sha256": "adfb14a1ac03f5ce39ae98a816beb4a98bb04af05ddf471b38f31524fa8123cf",
       "size_bytes": 10447
+    },
+    {
+      "path": "tests/test_hahn.py",
+      "sha256": "5c64830101c800976381966ef2d3cbc41a6969dd4422a283b0042baf01503516",
+      "size_bytes": 3869
     },
     {
       "path": "tests/test_invariants.py",
@@ -3231,6 +3741,21 @@
       "path": "tests/test_launch_ambiguity.py",
       "sha256": "4439950c3094ae13c2c8f70419f1fe9b5e7ffc28177462efe49ef9dcb3577d52",
       "size_bytes": 1092
+    },
+    {
+      "path": "tests/test_mathlab.py",
+      "sha256": "575675ee82330237b4efc1f06bc72d29e24c10b645ad4d873668c8e3c6274f75",
+      "size_bytes": 2966
+    },
+    {
+      "path": "tests/test_mathlab_workbench.py",
+      "sha256": "1b353f2e6b14808bb15979ea9afc18b57cf5c2726b18acbb7526b9ff7df18618",
+      "size_bytes": 2618
+    },
+    {
+      "path": "tests/test_moyal.py",
+      "sha256": "c0e661b92b6301f1b19fbe18f95cc4d9c1a6c0b0e246c4760a32e2915519bf38",
+      "size_bytes": 5054
     },
     {
       "path": "tests/test_nfl_allocation.py",
@@ -3298,6 +3823,11 @@
       "size_bytes": 2550
     },
     {
+      "path": "tests/test_nfl_repeat_decisions.py",
+      "sha256": "10ab61a36c7266ee7035b3939a62828ff57a2d97b24971f15a5c91110ff42542",
+      "size_bytes": 2946
+    },
+    {
       "path": "tests/test_nfl_rolling.py",
       "sha256": "c3dd0bec096ae10aa91ce89434e9560ca97584eeb661a3d59cf1b342b20c437a",
       "size_bytes": 3898
@@ -3313,6 +3843,36 @@
       "size_bytes": 11559
     },
     {
+      "path": "tests/test_observatory_arithmetic.py",
+      "sha256": "bdc15d1cda5b1cc159e31bdc32d8ad4e69a09b3e5e3c20946b7d7e6fae27f23f",
+      "size_bytes": 6695
+    },
+    {
+      "path": "tests/test_observatory_examples.py",
+      "sha256": "983fb6e946f4fd937b8c26ab2aaaa858dea7c86d957287e9a37f597e8b2c8e47",
+      "size_bytes": 5179
+    },
+    {
+      "path": "tests/test_observatory_experiments.py",
+      "sha256": "945bfa0d78f738ed794ec8c180d2c3e0e2ae75871a28658f090ff2cd8200e6bc",
+      "size_bytes": 10924
+    },
+    {
+      "path": "tests/test_observatory_histories.py",
+      "sha256": "1a66163c523e0578ced84d336c9adc09d66c61ba88016ce9efc31942f9065fe0",
+      "size_bytes": 11748
+    },
+    {
+      "path": "tests/test_observatory_series.py",
+      "sha256": "f2a9bad65b666d29dc16b61a311c795b0e50e89f978ba23b4f018f81af41c62b",
+      "size_bytes": 11033
+    },
+    {
+      "path": "tests/test_observatory_workbench.py",
+      "sha256": "7930c386e4b83ab2d52eec61e29759f16857d8e1b9a4c35509cedd189d58611f",
+      "size_bytes": 5293
+    },
+    {
       "path": "tests/test_parametric.py",
       "sha256": "249e6353f199e4f7bc8a428cc6e1a1159e1d3b8f9b873694843849a0c595e491",
       "size_bytes": 5280
@@ -3323,14 +3883,39 @@
       "size_bytes": 2831
     },
     {
+      "path": "tests/test_precision.py",
+      "sha256": "78ee64461766d6f4e0c4864b007d4bdf356dd4144c0f08cbefe814168ae875fb",
+      "size_bytes": 5999
+    },
+    {
       "path": "tests/test_quadratic.py",
-      "sha256": "cb954aabf22003f53bb981450769cd4bf628292db3ba7b220fb81369a4d01649",
-      "size_bytes": 2039
+      "sha256": "ee16f234e129ae4643fe8ae66a77b86e8f17d24e0a48979ec96a8248b7149bb1",
+      "size_bytes": 3958
+    },
+    {
+      "path": "tests/test_recovered_partners.py",
+      "sha256": "367519f6ba99153bfe8a7cd336d3bdcfeade6be2b503830f93261ae35714a991",
+      "size_bytes": 3840
+    },
+    {
+      "path": "tests/test_recovered_requests.py",
+      "sha256": "a362085d4b8338f288110dc9be5bf822223904e9eb6648f30167c792348f905b",
+      "size_bytes": 7526
     },
     {
       "path": "tests/test_reliable_modes.py",
       "sha256": "6484320c1631143faea4c79d61879dab3cfdc203ca6451c4c3120bed0c34d945",
       "size_bytes": 2027
+    },
+    {
+      "path": "tests/test_repeat_allocation.py",
+      "sha256": "e26f095d8f2ebef0d528cc3d11e6cfa0f5ba4c31fffc50d0d0c1354927491d46",
+      "size_bytes": 3623
+    },
+    {
+      "path": "tests/test_replication_geometry.py",
+      "sha256": "9a1731f5fd6a305d415c068aa95d88e93e0d941b2e188641c71caf197cce9092",
+      "size_bytes": 7035
     },
     {
       "path": "tests/test_stopped_jets.py",
@@ -3346,6 +3931,16 @@
       "path": "tests/test_v03.py",
       "sha256": "f06ea161e18ae4757a52015cb32aa66cb046d9f7ac6f97c620a576f005ab9fd5",
       "size_bytes": 9559
+    },
+    {
+      "path": "tests/test_weighted_growth.py",
+      "sha256": "3b62e592820f223a134a4fb64537d0d5c73fb3cb909f14a8f776c3460ff499f9",
+      "size_bytes": 10782
+    },
+    {
+      "path": "tests/test_workflow.py",
+      "sha256": "fad3081bbad82c429fc7e98f92177170778714d517cda66a34f421adfff4fd4b",
+      "size_bytes": 2773
     }
   ]
 }

@@ -423,6 +423,21 @@ stopped_flow|no information from deterministic jets|sigma(B,X,phi(X))=sigma(B,X)
 stopped_flow|development error gain|G=1-MSE_candidate/MSE_control|definition|Paired original-player temporal comparisons; fixed predictions and complete procedure refits are distinct.
 """
 
+
+EQUATIONS += r"""
+observatory|behavior compiler|q(F_a(s))=Fbar_a(q(s))|exact_checked|Finite deterministic partial systems; sensors targets acceptance and definedness preserved by complete replay.
+observatory|completion recursion|C(t,s,b)=sum_a C(t-1,F_a(s),b-c_a)|exact_checked|Only defined actions whose cost fits; trace conditioning at each step and terminal acceptance.
+observatory|prefix interval|rank(w)=sum of accepted completion counts under lexicographically smaller branches|derived|Original action alphabet; different action words retain their multiplicity.
+observatory|uniform history|W=unrank(U); U uniform on {0,...,C-1}|derived|Exact integer draw and bijective rank/inverse rank.
+observatory|initial target memory|belief={(s_initial,s_current)}|exact_checked|Noninjective evolution cannot erase the remembered initial target; full observations of a fixed prefix remain available.
+observatory|adaptive minimax|V(B)=min_a(c_a+max_o V(B_after_a_o))|exact_checked|Positive costs; solved on reachable finite beliefs by AND/OR Dijkstra; bounded exploration reports limit.
+observatory|global recurrence|A^r f=sum_(j=0)^(r-1) d_j A^j f|exact_checked|Exact whole-state vector identity for A=sum action pullbacks and acceptance f.
+observatory|rational count series|C_s(z)=P_s(z)/Q(z); Q(z)=1-sum_(i=1)^r c_i z^i|derived|Global Krylov identity valid at every start; scalar minimality requires separate cancellation analysis.
+observatory|modular shear sensor|q(u,v)=u^2+v^2 mod13; A(u,v)=(u+v,v); B(u,v)=(u,v+u)|exact_checked|Specific finite-field laboratory; steps entering q0 are undefined; initial state (1,0).
+observatory|demand dimensions|2197 absolute states ->85 behavior classes;57 sensor coordinates;15 acceptance coordinates;8 global count coordinates;7 scalar order|exact_checked|Each number preserves its own specified question; fixed-start scalar numerator and denominator independently checked coprime.
+observatory|Pell finite orbit|(x_n,y_n) modm = residue_state(n mod period)|exact_checked|Only the orbit of the supplied integer seed under the supplied norm-one unit and inverse; not all integer norm solutions.
+"""
+
 def build():
     equations=[]
     for line in EQUATIONS.strip().splitlines():
@@ -432,16 +447,32 @@ def build():
         equations.append({'id':f'PJ-E{len(equations)+1:03d}','domain':domain,'title':title,
                           'equation':expression,'status':status,'assumptions':assumptions,
                           'source':'October 14 2026 session synthesis and recovered archival extracts'})
+    recovered=ROOT/'data/recovered_equations.json'
+    if recovered.exists():
+        extra=json.loads(recovered.read_text())['equations']
+        for row in extra:
+            expected=f'PJ-E{len(equations)+1:03d}'
+            if row['id']!=expected:raise ValueError(f'recovered equation ID conflict: expected {expected}, got {row["id"]}')
+            equations.append(row)
     statuses={'definition','derived','historical_report','conditional','exact_checked','numerical_checked','proposal','open','rejected'}
     for e in equations:
         if e['status'] not in statuses:raise ValueError(f"bad registry row {e}")
+    contract=ROOT/'data/equation_id_contract.json'
+    if contract.exists():
+        import hashlib
+        old=json.loads(contract.read_text())['sha256_of_canonical_records']
+        for e in equations:
+            if e['id'] in old:
+                digest=hashlib.sha256(json.dumps(e,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+                if digest!=old[e['id']]:raise ValueError(f'archived equation meaning changed for {e["id"]}')
     (ROOT/'data/equations.json').write_text(json.dumps({'schema':'perfectjet/equations/1','equations':equations},indent=2)+'\n')
     lines=['# Equation atlas','','Status describes the evidence available in this repository. Exact checking is not Lean verification.','','| ID | Domain | Title | Equation | Status | Assumptions and limits |','|---|---|---|---|---|---|']
     for e in equations:
         lines.append('| '+' | '.join(str(e[k]).replace('|','\\|').replace('\n',' ') for k in ('id','domain','title','equation','status','assumptions'))+' |')
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','','Version 0.14.0 · 15 October 2026 (UTC)','','A master synthesis of the two archival passes and both enhancement programs. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    version=re.search(r'__version__ = "([^\"]+)"',(ROOT/'src/perfectjet/__init__.py').read_text()).group(1)
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','',f'Version {version} · 16 October 2026 (UTC)','','A master synthesis of the two archival passes, both enhancement programs, and the recovered mathematical engines. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

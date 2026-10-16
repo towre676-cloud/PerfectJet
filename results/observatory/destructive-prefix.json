@@ -1,0 +1,273 @@
+{
+  "none": {
+    "status": "finite",
+    "worst_cost": 3,
+    "worst_remaining_cost": 3,
+    "prefix": [],
+    "prefix_cost": 0,
+    "tree": {
+      "kind": "observe",
+      "branches": [
+        {
+          "observation": {
+            "kind": "live",
+            "value": "unread"
+          },
+          "next": 0
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "id": 0,
+        "worst_cost": 3,
+        "candidates": [
+          {
+            "initial": "hidden 0",
+            "current": "hidden 0",
+            "target": 0
+          },
+          {
+            "initial": "hidden 1",
+            "current": "hidden 1",
+            "target": 1
+          }
+        ],
+        "kind": "action",
+        "action": "inspect",
+        "cost": 3,
+        "branches": [
+          {
+            "observation": {
+              "kind": "live",
+              "value": "bit 0"
+            },
+            "next": 1
+          },
+          {
+            "observation": {
+              "kind": "live",
+              "value": "bit 1"
+            },
+            "next": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "worst_cost": 0,
+        "candidates": [
+          {
+            "initial": "hidden 0",
+            "current": "read 0",
+            "target": 0
+          }
+        ],
+        "kind": "identified",
+        "target": 0
+      },
+      {
+        "id": 2,
+        "worst_cost": 0,
+        "candidates": [
+          {
+            "initial": "hidden 1",
+            "current": "read 1",
+            "target": 1
+          }
+        ],
+        "kind": "identified",
+        "target": 1
+      }
+    ],
+    "explored_beliefs": 4,
+    "solved_beliefs": 3,
+    "policy_beliefs": 3,
+    "target_semantics": "The target label of the initial hidden state is retained through every action."
+  },
+  "reset": {
+    "status": "infinite",
+    "worst_cost": null,
+    "worst_remaining_cost": null,
+    "prefix": [
+      "reset"
+    ],
+    "prefix_cost": 1,
+    "tree": {
+      "kind": "observe",
+      "branches": [
+        {
+          "observation": {
+            "kind": "live",
+            "value": "erased"
+          },
+          "next": 0,
+          "observations": [
+            {
+              "kind": "live",
+              "value": "unread"
+            },
+            {
+              "kind": "live",
+              "value": "erased"
+            }
+          ]
+        }
+      ]
+    },
+    "nodes": [],
+    "explored_beliefs": 1,
+    "solved_beliefs": 0,
+    "impossible_witness": {
+      "kind": "closed_ambiguity_region",
+      "root": 0,
+      "candidates": [
+        {
+          "initial": "hidden 0",
+          "current": "erased",
+          "target": 0
+        },
+        {
+          "initial": "hidden 1",
+          "current": "erased",
+          "target": 1
+        }
+      ],
+      "losing_beliefs": 1,
+      "action_obstructions": [
+        {
+          "action": "inspect",
+          "observation": {
+            "kind": "live",
+            "value": "erased"
+          },
+          "next": 0
+        },
+        {
+          "action": "reset",
+          "observation": {
+            "kind": "live",
+            "value": "erased"
+          },
+          "next": 0
+        }
+      ],
+      "losing_region": [
+        {
+          "id": 0,
+          "candidates": [
+            {
+              "initial": "hidden 0",
+              "current": "erased",
+              "target": 0
+            },
+            {
+              "initial": "hidden 1",
+              "current": "erased",
+              "target": 1
+            }
+          ],
+          "action_obstructions": [
+            {
+              "action": "inspect",
+              "observation": {
+                "kind": "live",
+                "value": "erased"
+              },
+              "next": 0
+            },
+            {
+              "action": "reset",
+              "observation": {
+                "kind": "live",
+                "value": "erased"
+              },
+              "next": 0
+            }
+          ]
+        }
+      ],
+      "reason": "Every action has a possible observation branch that remains in the losing region."
+    }
+  },
+  "inspect": {
+    "status": "finite",
+    "worst_cost": 3,
+    "worst_remaining_cost": 0,
+    "prefix": [
+      "inspect"
+    ],
+    "prefix_cost": 3,
+    "tree": {
+      "kind": "observe",
+      "branches": [
+        {
+          "observation": {
+            "kind": "live",
+            "value": "bit 0"
+          },
+          "next": 0,
+          "observations": [
+            {
+              "kind": "live",
+              "value": "unread"
+            },
+            {
+              "kind": "live",
+              "value": "bit 0"
+            }
+          ]
+        },
+        {
+          "observation": {
+            "kind": "live",
+            "value": "bit 1"
+          },
+          "next": 1,
+          "observations": [
+            {
+              "kind": "live",
+              "value": "unread"
+            },
+            {
+              "kind": "live",
+              "value": "bit 1"
+            }
+          ]
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "id": 0,
+        "worst_cost": 0,
+        "candidates": [
+          {
+            "initial": "hidden 0",
+            "current": "read 0",
+            "target": 0
+          }
+        ],
+        "kind": "identified",
+        "target": 0
+      },
+      {
+        "id": 1,
+        "worst_cost": 0,
+        "candidates": [
+          {
+            "initial": "hidden 1",
+            "current": "read 1",
+            "target": 1
+          }
+        ],
+        "kind": "identified",
+        "target": 1
+      }
+    ],
+    "explored_beliefs": 2,
+    "solved_beliefs": 2,
+    "policy_beliefs": 2,
+    "target_semantics": "The target label of the initial hidden state is retained through every action."
+  }
+}

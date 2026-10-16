@@ -1,3 +1,13 @@
+# Release 0.16.0 — Integrated Math Lab and recovered exact engines
+
+This release incorporates the saved 0.15 Observatory and adds the unified Math Lab, 25 callable tools, 450 equation entries and 538 indexed topics across 31 canonical chapters. The original 417 equation records are protected by immutable canonical hashes. All older research and the complete finite-system interface remain available.
+
+New dependency-free modules implement Moyal/Hahn exactness, cyclic obstruction repair, reach algebras, conductor/CRT transport, finite theta coefficients, precision repair, weighted graph bounds, outcome-channel retry scheduling, logarithmic and character arithmetic, recovered partners and the integrated bounded-decision workflow. Positive Pell unit classes fix the signed asymptotic double counting. JSON requests, browser controls, CLI and installed-wheel resources use the same engines. The new monograph chapter states the supported inputs, budgets and mathematical boundaries.
+
+Local software, independent exact comparisons, HTTP/JavaScript interaction checks and installed-wheel execution are recorded in `results/mathlab`. Browser rendering remains unverified when no browser executable is available. Local checks do not imply GitHub Actions success, empirical predictive advantage, live profitability, a new Lean execution theorem or closure of the archived global conjectures. The complete source archive and monograph are rebuilt with the new version.
+
+---
+
 # Release 0.14.0 — Stopped-flow readouts
 
 This release preserves all earlier work and adds an exact common-origin launch-ambiguity witness, six-position acceleration contrasts, exact minimum-variance jet readouts, rolling Combine/NFL extraction, correlated repeated-view estimation, strong source-only repeat controls and temporal full-refit experiments. The atlas now contains 406 equations and 29 chapters. Public aggregate evidence and the source-complete notebook are included; restricted data and individual predictions remain private.

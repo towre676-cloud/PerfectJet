@@ -359,6 +359,9 @@ CHAPTERS['27_nfl_math_bridges'] = (ROOT/'docs/nfl/MATH_BRIDGES.md').read_text()
 CHAPTERS['28_real_nfl_evidence'] = (ROOT/'docs/nfl/REAL_DATA.md').read_text()
 CHAPTERS['29_stopped_flow'] = (ROOT/'docs/nfl/STOPPED_FLOW.md').read_text()
 
+CHAPTERS['30_exact_observatory'] = (ROOT/'docs/OBSERVATORY.md').read_text()
+CHAPTERS['31_integrated_math_lab'] = (ROOT/'docs/MATH_LAB.md').read_text()
+
 def build():
     folder=ROOT/'docs/chapters';folder.mkdir(parents=True,exist_ok=True)
     for name,text in CHAPTERS.items():
