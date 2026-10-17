@@ -1,0 +1,9 @@
+test_degree8_locus_lies_on_c3_curve (test_modular.Degree8Tests.test_degree8_locus_lies_on_c3_curve) ... ok
+test_det_and_interreduction (test_modular.ModularTests.test_det_and_interreduction) ... ok
+test_groebner_matches_rational_on_small_ideals (test_modular.ModularTests.test_groebner_matches_rational_on_small_ideals) ... ok
+test_slice_emptiness_agrees_with_exact_results (test_modular.ModularTests.test_slice_emptiness_agrees_with_exact_results) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 10.908s
+
+OK

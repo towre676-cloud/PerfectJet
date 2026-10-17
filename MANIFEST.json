@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.16.0",
+  "version": "0.17.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -54,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "38244c0c2d6a56e6b945beda782426d7c2913f0c60a9fca60a58af72e8dab208",
-      "size_bytes": 7486
+      "sha256": "c80e35c51917de5fe096f160227ca54d6459fd0f421d50f4336c499e3066e86a",
+      "size_bytes": 8077
     },
     {
       "path": "Start_Math_Lab.bat",
@@ -159,13 +159,18 @@
     },
     {
       "path": "data/equation_power.json",
-      "sha256": "1335a0899444feeba162b340a9d0ef76682b4faaa549fc5020a1d6457e397232",
-      "size_bytes": 23162
+      "sha256": "00eb408407a256d82fd46ab47fa65a2bc3c30024c2612a10528c95cf9ea0d1c7",
+      "size_bytes": 24002
     },
     {
       "path": "data/equations.json",
-      "sha256": "0f6cb73def66ce535f7ff71143d6cc46617e940493174172c4333272582b46f2",
-      "size_bytes": 168787
+      "sha256": "bd8b038dd87ed7261b7d97940895599d4b6874a18e73ad4344cd0fcb3d3bbd6d",
+      "size_bytes": 175478
+    },
+    {
+      "path": "data/incidence_equations.json",
+      "sha256": "114df07a209e18a0d51c1f1ecbdf7c2e604435d57d79103c6369be5fedd347e5",
+      "size_bytes": 7165
     },
     {
       "path": "data/recovered_equations.json",
@@ -174,8 +179,8 @@
     },
     {
       "path": "data/topics.json",
-      "sha256": "f5e47fbc763737909951783cdb72280c7558ad705c8d1f4f1d2badd9fbffcabe",
-      "size_bytes": 148770
+      "sha256": "3d04e23ac4e89cc954a3d8e3a9ac199bf3f874aad07903afaccf5a7777164a00",
+      "size_bytes": 153093
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -184,23 +189,23 @@
     },
     {
       "path": "docs/COVERAGE_MAP.md",
-      "sha256": "c5951111b8b42a0435afcc2cf043208ca289169e5007b2f2b424fc067f342047",
-      "size_bytes": 79023
+      "sha256": "8d3312b5fd676e70579fae9e184cb5cd98c54ffa4686599cdbfc6c28f2585137",
+      "size_bytes": 81058
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "48c261c693dfe203feb47e94de0057cffb4b010688ffa260861d097cf8756e31",
-      "size_bytes": 80118
+      "sha256": "fd5afebaeca3bb133248f41e9b754ee16933d09260b4ed64db8569608ada8adb",
+      "size_bytes": 84025
     },
     {
       "path": "docs/MATH_LAB.md",
-      "sha256": "bc65ca0b914e87bec309c5097e689508e8abd77b56791b7b7b5df9dc065bc281",
-      "size_bytes": 17253
+      "sha256": "4391dc90a1bf7a941990d586edc075c24ebc1a11ce5aa6fe3b45a4704cab71a4",
+      "size_bytes": 18025
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "be0ce60c8d724a6b42780375eaa150c33e762f84507b56adf137cb8cc4b47a18",
-      "size_bytes": 291672
+      "sha256": "b2fa99d864dfb3382c0cd60531ac2376591976ae25734640e33ca53f6ca455c0",
+      "size_bytes": 310538
     },
     {
       "path": "docs/OBSERVATORY.md",
@@ -213,14 +218,24 @@
       "size_bytes": 4444
     },
     {
+      "path": "docs/PARTNER_INCIDENCE.md",
+      "sha256": "07cd02f37bb1cea29ad5481c0fad1869ef0b20dc16566c2898dee59016335f77",
+      "size_bytes": 14121
+    },
+    {
       "path": "docs/QUICKSTART.md",
       "sha256": "c40c41422584b0477cac26878ded834ea0412c5727d2a1258e21466e425288df",
       "size_bytes": 5614
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "f5dbca3b0158209a7b99422a10eea22dece019092455a2dfc72840b78bef0f77",
-      "size_bytes": 26025
+      "sha256": "86cf35b64235d54c8df4577efe013d0ffe25e8a9f1c34924a97dbfc1303ad679",
+      "size_bytes": 26515
+    },
+    {
+      "path": "docs/SEXTIC_INTEGRATION.md",
+      "sha256": "9f6c97baf28f21770f3db3534d575f9d1000f7ed665b5664292fc96fcb24b1a0",
+      "size_bytes": 2113
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -374,8 +389,13 @@
     },
     {
       "path": "docs/chapters/31_integrated_math_lab.md",
-      "sha256": "bc65ca0b914e87bec309c5097e689508e8abd77b56791b7b7b5df9dc065bc281",
-      "size_bytes": 17253
+      "sha256": "4391dc90a1bf7a941990d586edc075c24ebc1a11ce5aa6fe3b45a4704cab71a4",
+      "size_bytes": 18025
+    },
+    {
+      "path": "docs/chapters/32_partner_incidence.md",
+      "sha256": "07cd02f37bb1cea29ad5481c0fad1869ef0b20dc16566c2898dee59016335f77",
+      "size_bytes": 14121
     },
     {
       "path": "docs/nfl/DATA_CONTRACT.md",
@@ -519,8 +539,8 @@
     },
     {
       "path": "examples/mathlab/partners.json",
-      "sha256": "fe972b8f900316d75fc20944a8cf626b8e5b1953cf17107af75bf7880fece253",
-      "size_bytes": 67
+      "sha256": "a437e64b268917f2d0e383df7da96e85cc98a703ac3c9f68f0160882f336d961",
+      "size_bytes": 116
     },
     {
       "path": "examples/mathlab/pipeline.json",
@@ -619,7 +639,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "59a52e34551d398770bca38a6e23007739f733f7e76a8d9e75fb034679bc396d",
+      "sha256": "7131568c9d589dd9bf111458887ec5dd70b0e926a33e795d591e54192fec0eb8",
       "size_bytes": 613
     },
     {
@@ -651,11 +671,6 @@
       "path": "releases/assemble_release.py",
       "sha256": "eef175ec07ce190baaeb7f052f9acfd3efb5a3acf59f1c66b354c95530aa2483",
       "size_bytes": 2482
-    },
-    {
-      "path": "releases/perfectjet-0.16.0-py3-none-any.whl",
-      "sha256": "6dbe611bb0f24c8b9369e16e2b7ca1a6c69a5d089425e440b89c9d5b2750cad4",
-      "size_bytes": 357099
     },
     {
       "path": "releases/restore_nfl_research_package.py",
@@ -2793,9 +2808,14 @@
       "size_bytes": 149465
     },
     {
+      "path": "results/incidence-integration-replay.json",
+      "sha256": "11d0512e69b3ceb1464c8153670661b6407a8a03c1dc84f0ce74d9e773f9e89e",
+      "size_bytes": 210252
+    },
+    {
       "path": "results/mathlab/all-examples.json",
-      "sha256": "333fc46cbd4005ebc82c7e005f84dca76fe2e1a134d59e849a5f52d0f6e0568d",
-      "size_bytes": 225563
+      "sha256": "c029a02f0244cc2cfd59d5675f7a6836994e5c8340a6eb39e89dee0005876f5b",
+      "size_bytes": 213423
     },
     {
       "path": "results/mathlab/coverage.json",
@@ -2811,6 +2831,11 @@
       "path": "results/mathlab/installed-wheel.json",
       "sha256": "5d069f6c7fb775e7fd0b3bb27aca3d000137b946d26b103d2f6ac1ad2b2ffcc3",
       "size_bytes": 639
+    },
+    {
+      "path": "results/mathlab/integrated-math-bridges.json",
+      "sha256": "dc69a8e7bc673ae00537cbf90b65e4e7fc1871c43426d3f8f303aef2606acc84",
+      "size_bytes": 20421
     },
     {
       "path": "results/mathlab/integration-tests.log",
@@ -2908,6 +2933,11 @@
       "size_bytes": 20417
     },
     {
+      "path": "results/observatory/benchmark-integration.json",
+      "sha256": "10d32ee7938610680fe2856d6510af70fa6e3f8ca7cc8e3ba35ecd4a9f33446a",
+      "size_bytes": 248486
+    },
+    {
       "path": "results/observatory/benchmark.json",
       "sha256": "69c294c4a428486a6e3083ab41e92ce4afd2e6ad9c9d4a9c16f0a0423533682c",
       "size_bytes": 248487
@@ -2931,6 +2961,16 @@
       "path": "results/parallel_repeat_decisions/PUBLIC_EVIDENCE.json",
       "sha256": "17b52a074a9c8c9a4adf979aab672cb5f64e30fa6e3284024b65e3016f03e8d9",
       "size_bytes": 14981
+    },
+    {
+      "path": "results/partner_degree8_evidence.json",
+      "sha256": "9052baa48175d0ade1dc9a9028b4f7f4ac2fe4d5ce810afa84fcb15c329dd807",
+      "size_bytes": 7386
+    },
+    {
+      "path": "results/partner_incidence_solver_receipts.json",
+      "sha256": "2fc6e89f27ee09e24d290574586ac8f4e90ca906a210b921601d8078ea6f0f77",
+      "size_bytes": 9885
     },
     {
       "path": "results/real-nfl/analytic-bridge-replay.json",
@@ -2986,6 +3026,36 @@
       "path": "results/replay.json",
       "sha256": "5821c8f648608e31ac2efac0f17f7432c1d30f05eb3a2776b737f2ae9564f624",
       "size_bytes": 195692
+    },
+    {
+      "path": "results/sextic-integration/incidence-tests.log",
+      "sha256": "bd76d6f96520d819ced0cb2d8b3b0e95a3793b80787bb69f372f99a348e6d23c",
+      "size_bytes": 753
+    },
+    {
+      "path": "results/sextic-integration/integration-tests.log",
+      "sha256": "7a559f5f3b288fe7710f7d08453f712cd2e9ce60025f248acc51ca1c2ff5db00",
+      "size_bytes": 102
+    },
+    {
+      "path": "results/sextic-integration/mathlab-tests.log",
+      "sha256": "e359d4c7d2177ab16087f616efad17d8f800dc455ab465a9b4e5d0536271fc4c",
+      "size_bytes": 105
+    },
+    {
+      "path": "results/sextic-integration/modular-tests.log",
+      "sha256": "931026bc5dc2891db4d8c2959831eaafd047c6a26f25bb7c2752efc3a246227b",
+      "size_bytes": 555
+    },
+    {
+      "path": "results/sextic-integration/tests.log",
+      "sha256": "01f688b5c23058e2d91c53224879cba41a7674ded691f5603023b5e57bb50fba",
+      "size_bytes": 76868
+    },
+    {
+      "path": "results/sextic-integration-validation.json",
+      "sha256": "d4592b7b45a24d7f1f2136d3a5d8f58f5aa78b718201ba5565b0e45c4575fd36",
+      "size_bytes": 1182
     },
     {
       "path": "results/stopped-flow/exact-readout-identities.json",
@@ -3159,13 +3229,13 @@
     },
     {
       "path": "scripts/build_chapters.py",
-      "sha256": "769fe534a84f44aa98e4d3a7c2174b8a67b278682db27b896459be5c5e36f41e",
-      "size_bytes": 74123
+      "sha256": "dd7752290ba32d8c13392863eed37306e1b6d8546f0c7d9a42f2292b39573377",
+      "size_bytes": 74206
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "046ff82a8846b94be71d19a9d10cbc56ca0ec6f036c12ae8a727d311b226e4e4",
-      "size_bytes": 65056
+      "sha256": "d158bc20428f902cab8d418b04dc00f73bc025b5f295d6611f74efa0346de2b9",
+      "size_bytes": 65207
     },
     {
       "path": "scripts/build_mathlab.py",
@@ -3194,8 +3264,8 @@
     },
     {
       "path": "scripts/build_topics.py",
-      "sha256": "1ebd480a1a696d762373b20aa070c8772f955f8282e9b84121ffcb276316e25b",
-      "size_bytes": 19367
+      "sha256": "b1a1b6b6983a7dc99a556433bec6d0fef93fca1653fe315f6a85aee2f7f61528",
+      "size_bytes": 20010
     },
     {
       "path": "scripts/check_coverage.py",
@@ -3221,6 +3291,21 @@
       "path": "scripts/ingest_public_tracking.py",
       "sha256": "a453762bc09342ddc3bfcf1ee53845e052a0d7f637fb70f4b9c5ab2de2907ced",
       "size_bytes": 2629
+    },
+    {
+      "path": "scripts/msolve_partner_check.py",
+      "sha256": "ebb4dd9d49a7891b464fb310cb034f4e1fe334ce734dbea01da8fec0a3a710d2",
+      "size_bytes": 2840
+    },
+    {
+      "path": "scripts/partner_degree8_evidence.py",
+      "sha256": "88a639250a1c1d3c042682c0716e833744c1059bfc56fbe5520a1aefa43f47c7",
+      "size_bytes": 5353
+    },
+    {
+      "path": "scripts/partner_numeric_search.py",
+      "sha256": "70b942ac084c5e17b8ca779429daddcb65e75d417aaa998bf31b1a27f9a26179",
+      "size_bytes": 2865
     },
     {
       "path": "scripts/prepare_official_bridge_data.py",
@@ -3273,13 +3358,18 @@
       "size_bytes": 4797
     },
     {
+      "path": "scripts/singular_partner_check.py",
+      "sha256": "653145e5648950bf886494dcc830357618f6d20c6b284ec7744a48c3fbadb4ca",
+      "size_bytes": 4470
+    },
+    {
       "path": "scripts/source_manifest.py",
       "sha256": "be6052b845fb6e8730ff1e92a27ea30dd6e816f81d35a03a0964495f403938da",
       "size_bytes": 415
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "ac95dd71b5b5892bc9cd55a3373bc3f6ea332ca3596786fd96fe6280b6f86085",
+      "sha256": "a7171b3f95c3ed857fbed4ea9f593662f7d9c0b7bd488bd53955dc91cbf400fb",
       "size_bytes": 104
     },
     {
@@ -3444,8 +3534,8 @@
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "55b496b73b2c1e4a3d3b88838248f0cd0e6c6ee5131f825b201645b38b5c1b96",
-      "size_bytes": 7578
+      "sha256": "069fd740dca8c694a1ea6675aa351ae843cf4e68d5a2f3ed251ca5ae4beefaee",
+      "size_bytes": 7784
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -3488,6 +3578,11 @@
       "size_bytes": 5700
     },
     {
+      "path": "src/perfectjet/incidence.py",
+      "sha256": "8b2488c3fb76a02c49a434ea7c4a6723bc4f633c16233334ad687903a199a58a",
+      "size_bytes": 26295
+    },
+    {
       "path": "src/perfectjet/invariants.py",
       "sha256": "bdc96ac97943df36a5dba2c5ffb7387944e63c671c39ddbdd6322021b37b0f69",
       "size_bytes": 12502
@@ -3514,8 +3609,13 @@
     },
     {
       "path": "src/perfectjet/mathlab.py",
-      "sha256": "db7cdd043b96361bcacfaa60307df226fab1279c56bf61c007816b96adb302f5",
-      "size_bytes": 32285
+      "sha256": "7dbfc344ea2f0214ab90789774fcba5999b75d02b5c14d3557b99b15302238c0",
+      "size_bytes": 32485
+    },
+    {
+      "path": "src/perfectjet/modular.py",
+      "sha256": "fe1e78e9623ac086d8cdce41de2d4ce340f9fa03ee294fd632d7a8c532163dd8",
+      "size_bytes": 10296
     },
     {
       "path": "src/perfectjet/moyal.py",
@@ -3614,8 +3714,8 @@
     },
     {
       "path": "src/perfectjet/recovered_partners.py",
-      "sha256": "91982bb07d89b3a4b90536ae110627fb3113f7fa905f448736730c4b788547d0",
-      "size_bytes": 9765
+      "sha256": "9ae90a4e7d3f3efbe57551d6773766dfe209449c4603d0cc1bed91576eee5d06",
+      "size_bytes": 11419
     },
     {
       "path": "src/perfectjet/recovered_requests.py",
@@ -3639,13 +3739,13 @@
     },
     {
       "path": "src/perfectjet/resources/equation_power.json",
-      "sha256": "1335a0899444feeba162b340a9d0ef76682b4faaa549fc5020a1d6457e397232",
-      "size_bytes": 23162
+      "sha256": "00eb408407a256d82fd46ab47fa65a2bc3c30024c2612a10528c95cf9ea0d1c7",
+      "size_bytes": 24002
     },
     {
       "path": "src/perfectjet/resources/equations.json",
-      "sha256": "0f6cb73def66ce535f7ff71143d6cc46617e940493174172c4333272582b46f2",
-      "size_bytes": 168787
+      "sha256": "bd8b038dd87ed7261b7d97940895599d4b6874a18e73ad4344cd0fcb3d3bbd6d",
+      "size_bytes": 175478
     },
     {
       "path": "src/perfectjet/rings.py",
@@ -3728,6 +3828,16 @@
       "size_bytes": 3869
     },
     {
+      "path": "tests/test_incidence.py",
+      "sha256": "4fefedac57563f10fe1c9f311cedd1df43bb949f6542fec4fbc9f6436e100b08",
+      "size_bytes": 3148
+    },
+    {
+      "path": "tests/test_incidence_integration.py",
+      "sha256": "da39304d111f43425f43ec67e2861859180643c87b11dbe6da1bfba76308e50c",
+      "size_bytes": 1764
+    },
+    {
       "path": "tests/test_invariants.py",
       "sha256": "c93484612a34f05efbcd4ab38d49bee08b2a19446cda57b401134a18c701810b",
       "size_bytes": 4317
@@ -3744,13 +3854,18 @@
     },
     {
       "path": "tests/test_mathlab.py",
-      "sha256": "575675ee82330237b4efc1f06bc72d29e24c10b645ad4d873668c8e3c6274f75",
+      "sha256": "ac870e516e805383611c05e20f77abf3fa6f5d3ccd2b15901aa913d0eb986fbb",
       "size_bytes": 2966
     },
     {
       "path": "tests/test_mathlab_workbench.py",
       "sha256": "1b353f2e6b14808bb15979ea9afc18b57cf5c2726b18acbb7526b9ff7df18618",
       "size_bytes": 2618
+    },
+    {
+      "path": "tests/test_modular.py",
+      "sha256": "044d28979b699fdb8acfbc25f870ebaea2600c71df75f85c9ae5813f2ff33547",
+      "size_bytes": 2213
     },
     {
       "path": "tests/test_moyal.py",

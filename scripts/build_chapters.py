@@ -362,6 +362,8 @@ CHAPTERS['29_stopped_flow'] = (ROOT/'docs/nfl/STOPPED_FLOW.md').read_text()
 CHAPTERS['30_exact_observatory'] = (ROOT/'docs/OBSERVATORY.md').read_text()
 CHAPTERS['31_integrated_math_lab'] = (ROOT/'docs/MATH_LAB.md').read_text()
 
+CHAPTERS['32_partner_incidence'] = (ROOT/'docs/PARTNER_INCIDENCE.md').read_text()
+
 def build():
     folder=ROOT/'docs/chapters';folder.mkdir(parents=True,exist_ok=True)
     for name,text in CHAPTERS.items():

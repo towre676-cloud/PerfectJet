@@ -1,5 +1,8 @@
 {
   "operation": "math-lab",
   "lab": "partners",
-  "params": {}
+  "params": {
+    "operation": "incidence",
+    "degree": 5
+  }
 }

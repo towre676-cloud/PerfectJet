@@ -2,7 +2,7 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Its local Math Lab offers **25 computed tools and a searchable atlas of 450 equations in 24 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python 3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Its local Math Lab offers **25 computed tools and a searchable atlas of 464 equations in 24 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python 3.10 or newer is sufficient for the core; no third-party package is required.
 
 ## Open Math Lab
 
@@ -87,3 +87,7 @@ python scripts/build_release.py
 The [benchmark receipt](results/observatory/benchmark.json) preserves independent absolute/relative/sign-orbit counts, complete short-word enumeration, original-coordinate rank round trips, operator bases, the remote modular comparison and the adaptive-versus-fixed experiment. [Pell transport](results/observatory/pell.json) and [destructive-prefix calculations](results/observatory/destructive-prefix.json) are retained separately. [Validation](docs/OBSERVATORY_VALIDATION.md) states executed checks and interface verification limits.
 
 The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) follows `main`. The release builder makes a deterministic ZIP with a SHA256 manifest and creates split parts if needed. The current release is **0.15.0**. Computational identities, independent checks, historical claims and open proposals remain distinct; this release does not add Lean proofs.
+
+## Sextic research integration — v0.17.0
+
+PR #2's incidence and modular engines are integrated with the v0.16.0 Math Lab and all 450 original equation records. The catalogue now has 464 unique entries across the same 24 families. The partners tool computes exact supplied-form kernels through degree 20, with activity checked separately. Global classifications retain their optional external-solver assumptions; degrees 21 and above remain open. See [partner incidence](docs/PARTNER_INCIDENCE.md), [integration record](docs/SEXTIC_INTEGRATION.md), and the [monograph](docs/MONOGRAPH.md).

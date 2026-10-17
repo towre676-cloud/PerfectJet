@@ -4050,6 +4050,132 @@
       "status": "exact_checked",
       "assumptions": "Exact rational inputs, arbitrary exponent range; not an assertion about IEEE underflow/overflow, flags or all hardware operations.",
       "source": "src/perfectjet/precision.py"
+    },
+    {
+      "id": "PJ-E451",
+      "domain": "invariants",
+      "title": "line probe for partner hypersurfaces",
+      "equation": "rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N",
+      "status": "exact_checked",
+      "assumptions": "Exact on each line; genericity of the line supported by agreement of independent random lines.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E452",
+      "domain": "invariants",
+      "title": "partner hypersurfaces in degrees 3..19",
+      "equation": "codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96)",
+      "status": "numerical_checked",
+      "assumptions": "Two independent random lines for N<=14, one line for N<=19. Exact restrictions on tested lines only; genericity and global exclusion are not proved by line probes.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E453",
+      "domain": "invariants",
+      "title": "dense slice",
+      "equation": "f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots",
+      "status": "derived",
+      "assumptions": "Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E454",
+      "domain": "invariants",
+      "title": "covariants over a quotient ring",
+      "equation": "Clebsch invariants of the slice computed in Q[p,q,r]/I",
+      "status": "exact_checked",
+      "assumptions": "Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E455",
+      "domain": "invariants",
+      "title": "quintic partner classification",
+      "equation": "ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6",
+      "status": "conditional",
+      "assumptions": "Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E456",
+      "domain": "invariants",
+      "title": "octahedral quartic jump",
+      "equation": "dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5",
+      "status": "exact_checked",
+      "assumptions": "Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E457",
+      "domain": "invariants",
+      "title": "dihedral cubic jump",
+      "equation": "dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6",
+      "status": "exact_checked",
+      "assumptions": "Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E458",
+      "domain": "invariants",
+      "title": "degree-8 partner classification",
+      "equation": "ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3",
+      "status": "conditional",
+      "assumptions": "Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the earlier bielliptic conjecture. Upgraded: verified over Q by msolve (external solver).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E459",
+      "domain": "invariants",
+      "title": "C3 curve in moduli",
+      "equation": "x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3",
+      "status": "exact_checked",
+      "assumptions": "Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E460",
+      "domain": "invariants",
+      "title": "sextic partner jump",
+      "equation": "dim ker L_6(f)>=2 iff f has a root of multiplicity>=4",
+      "status": "conditional",
+      "assumptions": "Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E461",
+      "domain": "invariants",
+      "title": "septic partners",
+      "equation": "ker L_7(f)!=0 iff f has a root of multiplicity>=4",
+      "status": "conditional",
+      "assumptions": "Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver).",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E462",
+      "domain": "invariants",
+      "title": "partner classification through degree 20",
+      "equation": "extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12)",
+      "status": "conditional",
+      "assumptions": "Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E463",
+      "domain": "modular",
+      "title": "prime-field Groebner evidence",
+      "equation": "I proper over Q => I mod p proper for all but finitely many primes",
+      "status": "derived",
+      "assumptions": "Fixed integral generators with denominators cleared; finitely many tested primes alone do not certify characteristic-zero emptiness.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
+    },
+    {
+      "id": "PJ-E464",
+      "domain": "invariants",
+      "title": "orbit count check",
+      "equation": "slice points = 120/|Stab_PGL2(roots)|; 20 for C3(40/7), 10 for x^6+y^6",
+      "status": "derived",
+      "assumptions": "Ordered placements of three simple roots; stabilizer orders 6 and 12.",
+      "source": "October 14 2026 session synthesis and recovered archival extracts"
     }
   ]
 }
