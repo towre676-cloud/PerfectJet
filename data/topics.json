@@ -3766,6 +3766,118 @@
       "topic": "Installed wheel resource replay",
       "chapter": "docs/chapters/31_integrated_math_lab.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T539",
+      "domain": "Partner incidence",
+      "topic": "Line probes for hypersurface components",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T540",
+      "domain": "Partner incidence",
+      "topic": "Invariant identification on a line",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T541",
+      "domain": "Partner incidence",
+      "topic": "Dense slice with three simple roots",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T542",
+      "domain": "Partner incidence",
+      "topic": "Saturation away from repeated roots",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T543",
+      "domain": "Partner incidence",
+      "topic": "Covariants over a quotient ring",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T544",
+      "domain": "Partner incidence",
+      "topic": "Minimal polynomials of absolute invariants",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T545",
+      "domain": "Partner incidence",
+      "topic": "Single-orbit certificate from a stable Clebsch point",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T546",
+      "domain": "Partner incidence",
+      "topic": "Quintic partner classification",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T547",
+      "domain": "Partner incidence",
+      "topic": "Octahedral quartic jump",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T548",
+      "domain": "Partner incidence",
+      "topic": "Dihedral cubic jump",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T549",
+      "domain": "Partner incidence",
+      "topic": "Degenerate root patterns",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T550",
+      "domain": "Partner incidence",
+      "topic": "Degree-twelve hypersurface part",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T551",
+      "domain": "Partner incidence",
+      "topic": "Open lower-dimensional components",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T552",
+      "domain": "Partner incidence",
+      "topic": "Prime-field Groebner bases",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T553",
+      "domain": "Partner incidence",
+      "topic": "Sextic and septic partner emptiness modulo primes",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T554",
+      "domain": "Partner incidence",
+      "topic": "Fourfold-root uniform source",
+      "chapter": "docs/chapters/32_partner_incidence.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

@@ -75,7 +75,7 @@ LABS = [
     dict(id='branches', title='Keep every outcome channel', category='check', question='When should a retry stop, including silent failures?', description='Conserve branch probabilities and optimize a stated truncated-repeat model.', example={'params': {}}),
     dict(id='analytic', title='Replace repeated analytic work', category='structure', question='Which exact formula replaces this numerical loop or arithmetic sum?', description='Isolated logarithmic charge and visible-ray Dirichlet identities with local factors.', example={'params': {}}),
     dict(id='algebra', title='Carry arithmetic answers back', category='explore', question='What does a Pell history mean in the original equation?', description='Reconstruction, modular cycles, original-domain endpoints and complete word multiplicity.', example={'params': {}}),
-    dict(id='partners', title='Build an exact algebraic partner', category='structure', question='Which higher-order gates vanish, and is the remaining dynamics active?', description='Recover the archived quintic pair and replay universal sextic constructions.', example={'params': {}}),
+    dict(id='partners', title='Build an exact algebraic partner', category='structure', question='Which higher-order gates vanish, and is the remaining dynamics active?', description='Compute exact correction kernels and separate instance proofs from solver-dependent classifications.', example={'params': {'operation':'incidence','degree':5}}, fields=[_field('degree','Partner degree',5,low=3,high=20)]),
     dict(id='deformation', title='Test a beautiful relation', category='check', question='Does the relation survive the allowed perturbations?', description='Exact stationary response separates first-order protection from an accidental equality.', example={'params': {}}),
     dict(id='rank', title='Find exceptional parameters', category='structure', question='Where does rank change?', description='Partition a polynomial matrix into constructible constant-rank cells.', example={'params': {'parameter': 0}}, fields=[_field('parameter', 'Inspect parameter t', 0, low=-10, high=10)]),
     dict(id='lattice', title='Require whole-number settings', category='check', question='Does a rational solution correspond to an integer implementation?', description='Smith divisibility supplies a solution or an exact impossibility certificate.', example={'params': {'rhs': 1}}, fields=[_field('rhs', 'Right side of 2x = rhs', 1, low=-10, high=10)]),
@@ -278,8 +278,8 @@ def evaluate(request):
         return _out(lab, 'The result retains its original coordinates, domain and seeded-orbit completeness scope.', [('Computation', 'completed')], result, ['PJ-E326', 'PJ-E417', 'PJ-E440', 'PJ-E441'])
     if lab == 'partners':
         from .recovered_partners import receipt, evaluate as partner_evaluate
-        result = receipt() if not p else partner_evaluate(p.get('operation', 'r5'), {k: v for k, v in p.items() if k != 'operation'})
-        return _out(lab, 'The gates and active partner dimensions are replayed exactly. The archived orbit-classification claim and degree-12 converse keep their unresolved status.', [('Computation', 'completed')], result, ['PJ-E332', 'PJ-E333', 'PJ-E334', 'PJ-E444'])
+        result = dict(receipt(), incidence=partner_evaluate('incidence', {})) if not p else partner_evaluate(p.get('operation', 'r5'), {k: v for k, v in p.items() if k != 'operation'})
+        return _out(lab, 'Exact gates are replayed for the supplied form. Global degree 6–20 classifications depend on archived external solver receipts; degrees 21 and above remain open.', [('Computation', 'completed')], result, ['PJ-E332', 'PJ-E333', 'PJ-E334', 'PJ-E444', 'PJ-E455', 'PJ-E462'])
     if lab == 'deformation':
         from .deformation import deformation_receipt
         result = deformation_receipt()
