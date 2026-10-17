@@ -61,6 +61,13 @@ GROUPS['30']=('Exact Observatory', ['Finite partial-system compiler','Efficient 
 
 GROUPS['31']=('Integrated Math Lab', ['Stable ranked equation IDs and installed atlas','Question-oriented exact workbench','Target-to-portfolio bounded workflow','Minimum-cost sensor repair','Exact ties and uncertain contenders','Finite Gaussian-rational Moyal algebra','Affine covariance and nonlinear counterexample','Complete Hahn coefficient gate','Classified rays and higher-order decoys','Cyclic obstruction invariant and extension repair','Sector connectivity and generated algebra','Exact conductor transport and CRT twists','Finite Dynkin theta and boundary reciprocity','Root-of-unity torus skein products','Scoped half-lift parity','Cancellation-conditioned precision bounds','Adaptive precision with external uncertainty','Colored weighted finite path populations','Chronology-sensitive histogram repricing','Finite-graph block contraction tails','Conserved outcome-channel partitions','Retry optimization and silent floor','Isolated circular logarithmic replacement','Character-twisted visible-ray coefficients','Progression residue local factors','Positive Pell unit-class asymptotics','Original-equation action histories','Bounded invariant-law discovery','Recovered active quintic partner','Universal sextic partner adapters','HTTP and DOM contract integration','Installed wheel resource replay'])
 
+GROUPS['32']=('Partner incidence', ['Line probes for hypersurface components','Invariant identification on a line',
+    'Dense slice with three simple roots','Saturation away from repeated roots','Covariants over a quotient ring',
+    'Minimal polynomials of absolute invariants','Single-orbit certificate from a stable Clebsch point',
+    'Quintic partner classification','Octahedral quartic jump','Dihedral cubic jump','Degenerate root patterns',
+    'Degree-twelve hypersurface part','Open lower-dimensional components',
+    'Prime-field Groebner bases','Sextic and septic partner emptiness modulo primes','Fourfold-root uniform source'])
+
 def build():
     rows=[]
     for prefix,(domain,topics) in GROUPS.items():

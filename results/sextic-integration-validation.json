@@ -1,0 +1,36 @@
+{
+  "schema": "perfectjet/sextic-integration/1",
+  "version": "0.17.0",
+  "base": "16a4ec07dc235ad197f14e262f3b8906ad766d51",
+  "research_head": "c9b71859bd0c95af3e2cb1a592e4ffa669c6934a",
+  "unit_tests": {
+    "passed": 552,
+    "seconds": 90.334
+  },
+  "original_equation_records_unchanged": 450,
+  "equations": 464,
+  "families": 24,
+  "chapters": 32,
+  "topics": 554,
+  "optional_solvers": {
+    "Singular": "not installed; archived receipts preserved",
+    "msolve": "not installed; archived receipts preserved"
+  },
+  "checks": {
+    "coverage": "passed",
+    "installed_resources": "passed",
+    "mathlab_all_25_examples": "passed",
+    "math_bridges": "passed",
+    "observatory_independent_matrix_power": "passed",
+    "ui_contract": "passed; rendering not verified",
+    "installed_wheel": "passed"
+  },
+  "workflow_changes": false,
+  "open_obligations": [
+    "Degrees >=21",
+    "Independent rational or proof-carrying replay of external solver classifications",
+    "Formal verification of classification computations",
+    "Certified line genericity"
+  ],
+  "remote_ci": "To be assessed on published integration commit; old successful runs do not certify this tree"
+}

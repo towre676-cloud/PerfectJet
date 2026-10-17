@@ -9361,7 +9361,7 @@
       "schema": "perfectjet/math-lab-result/1",
       "lab": "partners",
       "title": "Build an exact algebraic partner",
-      "summary": "The gates and active partner dimensions are replayed exactly. The archived orbit-classification claim and degree-12 converse keep their unresolved status.",
+      "summary": "Exact gates are replayed for the supplied form. Global degree 6–20 classifications depend on archived external solver receipts; degrees 21 and above remain open.",
       "metrics": [
         {
           "label": "Computation",
@@ -9369,771 +9369,229 @@
         }
       ],
       "details": {
-        "schema": "perfectjet/recovered-partners/1",
-        "r5": {
-          "operation": "r5",
-          "form": [
-            {
-              "exponents": [
-                0,
-                6
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                1,
-                5
-              ],
-              "coefficient": "-3"
-            },
-            {
-              "exponents": [
-                2,
-                4
-              ],
-              "coefficient": "5/2"
-            },
-            {
-              "exponents": [
-                4,
-                2
-              ],
-              "coefficient": "5/2"
-            },
-            {
-              "exponents": [
-                5,
-                1
-              ],
-              "coefficient": "-3"
-            },
-            {
-              "exponents": [
-                6,
-                0
-              ],
-              "coefficient": "1"
-            }
-          ],
-          "partner": [
-            {
-              "exponents": [
-                1,
-                4
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                2,
-                3
-              ],
-              "coefficient": "-2"
-            },
-            {
-              "exponents": [
-                3,
-                2
-              ],
-              "coefficient": "2"
-            },
-            {
-              "exponents": [
-                4,
-                1
-              ],
-              "coefficient": "-1"
-            }
-          ],
-          "form_squarefree": true,
-          "partner_squarefree": true,
-          "gates": {
-            "T3_zero": true,
-            "T5_zero": true,
-            "T1_nonzero": true,
-            "correction_free": true,
-            "active": true,
-            "T1": [
-              {
-                "exponents": [
-                  0,
-                  9
-                ],
-                "coefficient": "-6"
-              },
+        "operation": "incidence",
+        "degree": 5,
+        "form": [
+          {
+            "exponents": [
+              0,
+              6
+            ],
+            "coefficient": "1"
+          },
+          {
+            "exponents": [
+              1,
+              5
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "exponents": [
+              2,
+              4
+            ],
+            "coefficient": "5/2"
+          },
+          {
+            "exponents": [
+              4,
+              2
+            ],
+            "coefficient": "5/2"
+          },
+          {
+            "exponents": [
+              5,
+              1
+            ],
+            "coefficient": "-3"
+          },
+          {
+            "exponents": [
+              6,
+              0
+            ],
+            "coefficient": "1"
+          }
+        ],
+        "kernel_dimension": 1,
+        "dimensions": {
+          "degree": 5,
+          "kernel_dimension": 1,
+          "active_dimension": 1
+        },
+        "kernel_basis": [
+          {
+            "partner": [
               {
                 "exponents": [
                   1,
-                  8
+                  4
                 ],
-                "coefficient": "27"
+                "coefficient": "1"
               },
               {
                 "exponents": [
                   2,
-                  7
+                  3
                 ],
-                "coefficient": "-68"
+                "coefficient": "-2"
               },
               {
                 "exponents": [
                   3,
-                  6
+                  2
                 ],
-                "coefficient": "112"
+                "coefficient": "2"
               },
               {
                 "exponents": [
                   4,
-                  5
-                ],
-                "coefficient": "-62"
-              },
-              {
-                "exponents": [
-                  5,
-                  4
-                ],
-                "coefficient": "-62"
-              },
-              {
-                "exponents": [
-                  6,
-                  3
-                ],
-                "coefficient": "112"
-              },
-              {
-                "exponents": [
-                  7,
-                  2
-                ],
-                "coefficient": "-68"
-              },
-              {
-                "exponents": [
-                  8,
                   1
                 ],
-                "coefficient": "27"
-              },
-              {
-                "exponents": [
-                  9,
-                  0
-                ],
-                "coefficient": "-6"
+                "coefficient": "-1"
               }
             ],
-            "T3": [],
-            "T5": []
-          },
-          "dimensions": {
-            "degree": 5,
-            "kernel_dimension": 1,
-            "active_dimension": 1
-          },
-          "eliminant": {
-            "variable": "b",
-            "expression": "b^6(b-1)^6(b^2-3b+3)(b^2-b+1)(b^2+b+1)(3b^2-3b+1)",
-            "coefficients_ascending": [
-              0,
-              0,
-              0,
-              0,
-              0,
-              0,
-              3,
-              -30,
-              139,
-              -396,
-              784,
-              -1172,
-              1426,
-              -1508,
-              1426,
-              -1172,
-              784,
-              -396,
-              139,
-              -30,
-              3
-            ],
-            "degree": 20,
-            "factors": [
-              {
-                "expression": "b",
-                "coefficients_ascending": [
-                  0,
-                  1
-                ],
-                "multiplicity": 6,
-                "kind": "collision boundary"
-              },
-              {
-                "expression": "b-1",
-                "coefficients_ascending": [
-                  -1,
-                  1
-                ],
-                "multiplicity": 6,
-                "kind": "collision boundary"
-              },
-              {
-                "expression": "b^2-3b+3",
-                "coefficients_ascending": [
-                  3,
-                  -3,
-                  1
-                ],
-                "multiplicity": 1,
-                "kind": "squarefree candidate"
-              },
-              {
-                "expression": "b^2-b+1",
-                "coefficients_ascending": [
-                  1,
-                  -1,
-                  1
-                ],
-                "multiplicity": 1,
-                "kind": "squarefree candidate"
-              },
-              {
-                "expression": "b^2+b+1",
-                "coefficients_ascending": [
-                  1,
-                  1,
-                  1
-                ],
-                "multiplicity": 1,
-                "kind": "squarefree candidate"
-              },
-              {
-                "expression": "3b^2-3b+1",
-                "coefficients_ascending": [
-                  1,
-                  -3,
-                  3
-                ],
-                "multiplicity": 1,
-                "kind": "squarefree candidate"
-              }
-            ],
-            "factor_expansion_replayed": true,
-            "maximal_minor_elimination_regenerated": false,
-            "scope": "Archived factorization reconstructed exactly; the a-coordinate equations and orbit-classification certificates are not regenerated."
-          },
-          "orbit_status": "The archived one-orbit assertion used numerical Mobius matching; no exact orbit certificate is asserted here.",
-          "scope": "One recovered rational sextic/quintic pair with exact gate and active-dimension replay."
-        },
-        "cubic": {
-          "operation": "cubic",
-          "form": [
-            {
-              "exponents": [
-                0,
-                6
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                3,
-                3
-              ],
-              "coefficient": "20"
-            },
-            {
-              "exponents": [
-                6,
-                0
-              ],
-              "coefficient": "1"
-            }
-          ],
-          "determinant": "0",
-          "A2_minus_B_over_6": "0",
-          "identity_replayed": true,
-          "partner_exists": true,
-          "kernel_basis": [
-            {
-              "partner": [
+            "gates": {
+              "T3_zero": true,
+              "T5_zero": true,
+              "T1_nonzero": true,
+              "correction_free": true,
+              "active": true,
+              "T1": [
                 {
                   "exponents": [
                     0,
-                    3
+                    9
                   ],
-                  "coefficient": "1"
+                  "coefficient": "-6"
+                },
+                {
+                  "exponents": [
+                    1,
+                    8
+                  ],
+                  "coefficient": "27"
+                },
+                {
+                  "exponents": [
+                    2,
+                    7
+                  ],
+                  "coefficient": "-68"
                 },
                 {
                   "exponents": [
                     3,
+                    6
+                  ],
+                  "coefficient": "112"
+                },
+                {
+                  "exponents": [
+                    4,
+                    5
+                  ],
+                  "coefficient": "-62"
+                },
+                {
+                  "exponents": [
+                    5,
+                    4
+                  ],
+                  "coefficient": "-62"
+                },
+                {
+                  "exponents": [
+                    6,
+                    3
+                  ],
+                  "coefficient": "112"
+                },
+                {
+                  "exponents": [
+                    7,
+                    2
+                  ],
+                  "coefficient": "-68"
+                },
+                {
+                  "exponents": [
+                    8,
+                    1
+                  ],
+                  "coefficient": "27"
+                },
+                {
+                  "exponents": [
+                    9,
                     0
                   ],
-                  "coefficient": "1"
+                  "coefficient": "-6"
                 }
               ],
-              "gates": {
-                "T3_zero": true,
-                "T5_zero": true,
-                "T1_nonzero": true,
-                "correction_free": true,
-                "active": true,
-                "T1": [
-                  {
-                    "exponents": [
-                      2,
-                      5
-                    ],
-                    "coefficient": "162"
-                  },
-                  {
-                    "exponents": [
-                      5,
-                      2
-                    ],
-                    "coefficient": "-162"
-                  }
-                ],
-                "T3": [],
-                "T5": []
-              }
+              "T3": [],
+              "T5": []
             }
-          ],
-          "dimensions": {
+          }
+        ],
+        "c3_degree8_identity": {
+          "lambdas_checked": 5,
+          "degree_bound_in_lambda": 2,
+          "identity": true
+        },
+        "classification": [
+          {
             "degree": 3,
-            "kernel_dimension": 1,
-            "active_dimension": 1
+            "statement": "ker L_3(f) != 0 iff B = 6A^2; dim ker L_3 >= 2 (three simple roots) iff f ~ x^6+y^6",
+            "status": "exact: det identity certified on the slice; jump classified on the slice"
           },
-          "criterion": "A cubic correction-free partner exists exactly when B=6A^2.",
-          "scope": "Exact supplied-form replay of the universal determinant identity; no full grid evaluated by this call."
-        },
-        "quartic": {
-          "operation": "quartic",
-          "form": [
-            {
-              "exponents": [
-                0,
-                6
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                2,
-                4
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                3,
-                3
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                4,
-                2
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                6,
-                0
-              ],
-              "coefficient": "1"
-            }
-          ],
-          "partner": [
-            {
-              "exponents": [
-                0,
-                4
-              ],
-              "coefficient": "20736"
-            },
-            {
-              "exponents": [
-                1,
-                3
-              ],
-              "coefficient": "3456"
-            },
-            {
-              "exponents": [
-                2,
-                2
-              ],
-              "coefficient": "254016"
-            },
-            {
-              "exponents": [
-                3,
-                1
-              ],
-              "coefficient": "3456"
-            },
-            {
-              "exponents": [
-                4,
-                0
-              ],
-              "coefficient": "20736"
-            }
-          ],
-          "partner_nonzero": true,
-          "universal_gates_replayed": true,
-          "gates": {
-            "T3_zero": true,
-            "T5_zero": true,
-            "T1_nonzero": true,
-            "correction_free": true,
-            "active": true,
-            "T1": [
-              {
-                "exponents": [
-                  0,
-                  8
-                ],
-                "coefficient": "-20736"
-              },
-              {
-                "exponents": [
-                  1,
-                  7
-                ],
-                "coefficient": "-2882304"
-              },
-              {
-                "exponents": [
-                  2,
-                  6
-                ],
-                "coefficient": "193536"
-              },
-              {
-                "exponents": [
-                  3,
-                  5
-                ],
-                "coefficient": "-1161216"
-              },
-              {
-                "exponents": [
-                  5,
-                  3
-                ],
-                "coefficient": "1161216"
-              },
-              {
-                "exponents": [
-                  6,
-                  2
-                ],
-                "coefficient": "-193536"
-              },
-              {
-                "exponents": [
-                  7,
-                  1
-                ],
-                "coefficient": "2882304"
-              },
-              {
-                "exponents": [
-                  8,
-                  0
-                ],
-                "coefficient": "20736"
-              }
-            ],
-            "T3": [],
-            "T5": []
-          },
-          "dimensions": {
+          {
             "degree": 4,
-            "kernel_dimension": 1,
-            "active_dimension": 1
+            "statement": "dim ker L_4 >= 1 always ((f,f)_4); >= 2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity >= 5",
+            "status": "exact on the slice plus the degenerate forms"
           },
-          "scope": "The universal quartic covariant is correction-free; a nonzero first transvectant is separately required for activity."
-        },
-        "degree12": {
-          "operation": "degree12",
-          "form": [
-            {
-              "exponents": [
-                0,
-                6
-              ],
-              "coefficient": "1"
-            },
-            {
-              "exponents": [
-                2,
-                4
-              ],
-              "coefficient": "-9/5"
-            },
-            {
-              "exponents": [
-                3,
-                3
-              ],
-              "coefficient": "32/25"
-            },
-            {
-              "exponents": [
-                4,
-                2
-              ],
-              "coefficient": "-9/5"
-            },
-            {
-              "exponents": [
-                6,
-                0
-              ],
-              "coefficient": "1"
-            }
-          ],
-          "form_squarefree": true,
-          "partner": [
-            {
-              "exponents": [
-                0,
-                12
-              ],
-              "coefficient": "2121033303434723328/3125"
-            },
-            {
-              "exponents": [
-                1,
-                11
-              ],
-              "coefficient": "7333742269503111168/15625"
-            },
-            {
-              "exponents": [
-                2,
-                10
-              ],
-              "coefficient": "-26099494547349307392/3125"
-            },
-            {
-              "exponents": [
-                3,
-                9
-              ],
-              "coefficient": "1581787548324200448/125"
-            },
-            {
-              "exponents": [
-                4,
-                8
-              ],
-              "coefficient": "-3559021983729451008/125"
-            },
-            {
-              "exponents": [
-                5,
-                7
-              ],
-              "coefficient": "28472175869835608064/3125"
-            },
-            {
-              "exponents": [
-                6,
-                6
-              ],
-              "coefficient": "147106241994150641664/15625"
-            },
-            {
-              "exponents": [
-                7,
-                5
-              ],
-              "coefficient": "28472175869835608064/3125"
-            },
-            {
-              "exponents": [
-                8,
-                4
-              ],
-              "coefficient": "-3559021983729451008/125"
-            },
-            {
-              "exponents": [
-                9,
-                3
-              ],
-              "coefficient": "1581787548324200448/125"
-            },
-            {
-              "exponents": [
-                10,
-                2
-              ],
-              "coefficient": "-26099494547349307392/3125"
-            },
-            {
-              "exponents": [
-                11,
-                1
-              ],
-              "coefficient": "7333742269503111168/15625"
-            },
-            {
-              "exponents": [
-                12,
-                0
-              ],
-              "coefficient": "2121033303434723328/3125"
-            }
-          ],
-          "partner_nonzero": true,
-          "s_A2_minus_25B_over_96": "0",
-          "on_invariant_hypersurface": true,
-          "gate_identities_replayed": true,
-          "gates": {
-            "T3_zero": true,
-            "T5_zero": true,
-            "T1_nonzero": true,
-            "correction_free": true,
-            "active": true,
-            "T1": [
-              {
-                "exponents": [
-                  0,
-                  16
-                ],
-                "coefficient": "-44002453617018667008/15625"
-              },
-              {
-                "exponents": [
-                  1,
-                  15
-                ],
-                "coefficient": "1107826479299058204672/15625"
-              },
-              {
-                "exponents": [
-                  2,
-                  14
-                ],
-                "coefficient": "-3307949160149991555072/15625"
-              },
-              {
-                "exponents": [
-                  3,
-                  13
-                ],
-                "coefficient": "64305703391835986067456/78125"
-              },
-              {
-                "exponents": [
-                  4,
-                  12
-                ],
-                "coefficient": "-10969552848760300634112/15625"
-              },
-              {
-                "exponents": [
-                  5,
-                  11
-                ],
-                "coefficient": "8479531649961950183424/15625"
-              },
-              {
-                "exponents": [
-                  6,
-                  10
-                ],
-                "coefficient": "-21468020605856048480256/15625"
-              },
-              {
-                "exponents": [
-                  7,
-                  9
-                ],
-                "coefficient": "1480553145231451619328/625"
-              },
-              {
-                "exponents": [
-                  9,
-                  7
-                ],
-                "coefficient": "-1480553145231451619328/625"
-              },
-              {
-                "exponents": [
-                  10,
-                  6
-                ],
-                "coefficient": "21468020605856048480256/15625"
-              },
-              {
-                "exponents": [
-                  11,
-                  5
-                ],
-                "coefficient": "-8479531649961950183424/15625"
-              },
-              {
-                "exponents": [
-                  12,
-                  4
-                ],
-                "coefficient": "10969552848760300634112/15625"
-              },
-              {
-                "exponents": [
-                  13,
-                  3
-                ],
-                "coefficient": "-64305703391835986067456/78125"
-              },
-              {
-                "exponents": [
-                  14,
-                  2
-                ],
-                "coefficient": "3307949160149991555072/15625"
-              },
-              {
-                "exponents": [
-                  15,
-                  1
-                ],
-                "coefficient": "-1107826479299058204672/15625"
-              },
-              {
-                "exponents": [
-                  16,
-                  0
-                ],
-                "coefficient": "44002453617018667008/15625"
-              }
-            ],
-            "T3": [],
-            "T5": []
+          {
+            "degree": 5,
+            "statement": "ker L_5(f) != 0 iff f ~ x^6+40/7 x^3y^3+y^6 or f has a root of multiplicity >= 4; never >= 2 on the slice",
+            "status": "exact on the slice plus the degenerate forms"
           },
-          "dimensions": {
+          {
+            "degree": 6,
+            "statement": "dim ker L_6 >= 2 iff f has a root of multiplicity >= 4",
+            "status": "conditional global classification: archived msolve over Q; independent two-prime evidence and exact degenerate-form replay"
+          },
+          {
+            "degree": 7,
+            "statement": "ker L_7 != 0 iff f has a root of multiplicity >= 4",
+            "status": "conditional global classification: archived msolve over Q; independent two-prime evidence and exact degenerate-form replay"
+          },
+          {
+            "degree": 8,
+            "statement": "ker L_8 != 0 iff f has a root of multiplicity >= 4 or an automorphism of order 3 (f ~ x^6+lambda x^3y^3+y^6 or x^3y^3)",
+            "status": "converse exact; forward classification conditional on archived msolve over Q, supported by modular and numerical evidence"
+          },
+          {
+            "degree": "9-20",
+            "statement": "odd N: extra partners iff a root of multiplicity >= 4; N=10 adds x^3y^3 and x^6+y^6; N=14 adds x^3y^3 and the octahedral sextic; N=12 is governed by A^2=25B/96; N=16,18,20 add x^3y^3",
+            "status": "slice verdicts over Q by msolve and modulo two primes by Singular; degenerate forms exact"
+          },
+          {
             "degree": 12,
-            "kernel_dimension": 1,
-            "active_dimension": 1
-          },
-          "sufficient_condition": "If A^2=25B/96 and G is nonzero, G is a degree-12 correction-free partner.",
-          "converse_status": "open",
-          "full_grid_evaluated": false,
-          "scope": "Exact instance replay; the converse that every degree-12 partner forces A^2=25B/96 is not asserted."
-        },
-        "full_grid_evaluated": false,
-        "converse_status": "degree-12 converse remains open",
+            "statement": "ker L_12 != 0 iff A^2 = 25B/96 over the algebraic closure; sufficiency uses G and closedness",
+            "status": "conditional global converse: archived msolve over Q; exact covariant construction and degenerate profiles"
+          }
+        ],
+        "external_solvers_rerun": false,
+        "classification_scope": "Nonzero binary sextics over the algebraic closure of Q, GL2 equivalence; exact supplied-form rational kernel replay is distinct from global classification.",
+        "external_evidence": "Archived msolve over Q and Singular finite-field receipts: results/partner_incidence_solver_receipts.json. These are not kernel-checked certificates and were not rerun by this call.",
+        "open_obligations": [
+          "Degrees >=21",
+          "Independent rational or proof-carrying replay of optional solver classifications",
+          "Line genericity is not certified by random probes"
+        ],
+        "scope": "Instance gates and activity are exact; kernel existence does not by itself imply activity.",
         "visual": {
           "kind": "flow",
           "nodes": [
@@ -10161,7 +9619,9 @@
         "PJ-E332",
         "PJ-E333",
         "PJ-E334",
-        "PJ-E444"
+        "PJ-E444",
+        "PJ-E455",
+        "PJ-E462"
       ],
       "scope": "Exact computation in the supplied mathematical model. No empirical sports or market advantage is inferred."
     },

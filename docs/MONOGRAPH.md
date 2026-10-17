@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.16.0 · 16 October 2026 (UTC)
+Version 0.17.0 · 17 October 2026 (UTC)
 
 A master synthesis of the two archival passes, both enhancement programs, and the recovered mathematical engines. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -37,6 +37,7 @@ A master synthesis of the two archival passes, both enhancement programs, and th
 - [29_stopped_flow](chapters/29_stopped_flow.md)
 - [30_exact_observatory](chapters/30_exact_observatory.md)
 - [31_integrated_math_lab](chapters/31_integrated_math_lab.md)
+- [32_partner_incidence](chapters/32_partner_incidence.md)
 
 ---
 
@@ -1234,7 +1235,7 @@ A concrete next stage is therefore an adapter contract carrying the original mod
 
 # PerfectJet Math Lab: recovered mathematics in one executable workflow
 
-PerfectJet 0.16.0 connects the strongest mathematical engines through one local interface and implements the recoveries identified in the October 16 equation assessment. The catalogue contains 450 stable equation entries organized into 24 ranked families. Twenty-five question-oriented tools are accessible from the browser, JSON and Python. The complete finite-system Observatory remains available in the same window. The new modules use the Python standard library; the optional historical NFL research dependencies remain separate.
+PerfectJet 0.17.0 connects the strongest mathematical engines through one local interface and implements the recoveries identified in the October 16 equation assessment. The catalogue contains 464 stable equation entries organized into 24 ranked families. Twenty-five question-oriented tools are accessible from the browser, JSON and Python. The complete finite-system Observatory remains available in the same window. The new modules use the Python standard library; the optional historical NFL research dependencies remain separate.
 
 The first 417 equation records retain their IDs and meanings. New entries PJ-E418 through PJ-E450 identify the recovered Moyal/Hahn gate, cyclic extension repair, sector connectivity, conductor transport, finite theta closure, cancellation control, weighted graph bounds, outcome-channel accounting, logarithmic periods, arithmetic character identities, positive Pell normalization, the archived quintic partner and the integrated decision workflow. Ranking is an explicit judgment of reusable mathematical reach. It does not convert a historical report, proposal, rejected formula or open converse into an implemented theorem. A representative tool link in the equation drawer launches a related family computation; it does not claim that every historical statement in that family is executable.
 
@@ -1242,7 +1243,7 @@ The first 417 equation records retain their IDs and meanings. New entries PJ-E41
 
 Extract the complete archive and run `python run_observatory.py`, or double-click `Start_Math_Lab.bat` on Windows. The launcher starts the loopback server and opens the page. Python 3.10 or newer is required. The first view offers five plain-language questions: what can we know, what possibilities fit, what should we measure, is a calculation reliable, and what hidden structure explains the result. Each tool has a computed example, exact printed results, its mathematical scope, expandable details and a downloadable calculation record. Available numeric and Boolean inputs change the computation; advanced requests use the same JSON router as the CLI. The page retains all earlier finite-model editing, action-history animation, cost ceilings, sensor traces, rank navigation, adaptive policies and remote series queries behind the Finite systems switch.
 
-The animation displays returned state counts, values, branches or other computed geometry. Bars are reserved for commensurate quantities; heterogeneous metrics use labeled flow nodes. Animation can be paused or replayed, and reduced-motion preferences are respected. A moving highlight does not represent new simulated observations. All 450 equation entries can be searched by ID, family, formula, evidence status or assumptions, and rejected entries remain labeled rejected.
+The animation displays returned state counts, values, branches or other computed geometry. Bars are reserved for commensurate quantities; heterogeneous metrics use labeled flow nodes. Animation can be paused or replayed, and reduced-motion preferences are respected. A moving highlight does not represent new simulated observations. All 464 equation entries can be searched by ID, family, formula, evidence status or assumptions, and rejected entries remain labeled rejected.
 
 For an installed checkout, `python -m pip install -e .` installs the core without optional scientific libraries. Run `perfectjet lab --open` for the interface. `perfectjet math-lab --lab precision` evaluates one tool, `perfectjet math-lab --request examples/mathlab/pipeline.json` evaluates an exported request, and `perfectjet math-lab --all --output results/mathlab/all-examples.json` recomputes every default example. The installed wheel includes the complete equation and ranking resources; an external repository path is not needed to read the atlas from an installed package.
 
@@ -1311,6 +1312,123 @@ The signed Pell asymptotic issue is corrected in `quadratic.py`. Positive embedd
 Run the complete suite with `PYTHONPATH=src python -m unittest discover -s tests`. Run `python scripts/check_coverage.py`, `PYTHONPATH=src python scripts/build_mathlab.py --check`, and `PYTHONPATH=src python scripts/check_observatory_ui.py` to check document coverage, installed resource freshness and the actual HTTP/JavaScript interaction bank. The interface bank executes the page's JavaScript against a DOM contract and real HTTP results. It explicitly records that browser rendering is unverified when no browser executable is installed; a passing DOM bank is not a screenshot or a visual-render claim.
 
 The package preserves all prior research directories and distinguishes mathematical computation from empirical validation. This release adds exact Python implementations, independent finite checks and replayable examples; it adds no new Lean proof of these executions. Its categorical, representation and analytic results retain their precise assumptions. Open global conjectures, arbitrary nonlinear closure, empirical scouting superiority and live market profitability are not silently closed by placing them beside a working engine.
+
+## Sextic partner classification (0.17.0)
+
+The existing partners card now includes exact incidence analysis. Submit `{"lab":"partners","params":{"operation":"incidence","degree":5}}` to compute a rational kernel, replay every basis vector's correction gates and distinguish active from commuting partners. A custom form uses the existing exact binary term array. Degrees 3–20 are accepted. The classification metadata is conditional on archived optional msolve/Singular results where stated; this request does not run those solvers. The original 450 stable equation records and all existing tools remain, with fourteen distinct research entries appended as PJ-E451–PJ-E464 in the existing ranked family. See PARTNER_INCIDENCE.md for assumptions and open obligations.
+
+
+---
+
+# Partner incidence over the full sextic space
+
+The partner question asks, for a binary sextic f and a degree N, whether some nonzero form g of degree N satisfies the correction gates (f,g)_3 = (f,g)_5 = 0. The set P_N of sextics whose kernel ker L_N(f) exceeds its generic dimension is closed and GL2-invariant. Earlier releases studied P_N on two-parameter families. PR #2 (originally labelled 0.14.0), integrated in release 0.17.0, studies it in the full seven-dimensional space of sextics, which is the formal frontier this atlas has listed since 0.1.0.
+
+## Two reductions that make the full space computable
+
+**Lines find hypersurfaces.** A line f0 + t f1 meets every hypersurface component of P_N whose defining invariant does not vanish at f1, and a generic line misses every component of codimension two or more. Along the line, the exact one-parameter locus (`loci.rank_locus`) is therefore the restriction of the hypersurface part of P_N. Its degree is the degree of that hypersurface. Dividing invariant monomials of the matching weight by it identifies the defining invariant exactly (`incidence.identify_hypersurface`). On two independent random lines, only two degrees between 3 and 19 have a hypersurface component:
+- degree 3, the quartic hypersurface A^2 = B/6;
+- degree 12, the quartic hypersurface A^2 = 25B/96.
+
+In both cases the restriction of the invariant equals the locus exactly, so on these lines the hypersurface part of P_N is that invariant hypersurface and nothing else. The tested lines find no hypersurface component in the other degrees. This alone does not establish a global exclusion.
+
+**The slice finds everything else.** Every sextic with at least three simple roots is GL2-equivalent to xy(x-y)(x^3+px^2y+qxy^2+ry^3), with three simple roots at 0, 1 and infinity. Rank conditions on L_N become polynomial ideals in (p,q,r). Saturating by r and by 1+p+q+r removes placements where 0 or 1 is a repeated root. Those sextics reappear at other placements. When the locus is zero-dimensional, `incidence.classify_zero_dimensional` works in the finite algebra Q[p,q,r]/I:
+- it computes the Clebsch invariants of the slice form with coefficients in that algebra (`clebsch_over`);
+- it inverts A when A is a unit;
+- it returns the exact minimal polynomials of the absolute invariants B/A^2, C/A^3 and D/A^5.
+
+If each minimal polynomial is linear, every point of the locus has the same Clebsch point. When that point belongs to a squarefree sextic, the GIT fibre over it is a single orbit, so the locus is exactly one GL2-orbit. Sextics with fewer than three simple roots are, up to GL2, seven fixed forms and the family x^2y^2(x-y)(x-sy). They are checked directly (`degenerate_profile`).
+
+## Classification in small degrees
+
+**Degree 3.** For every sextic, det L_3 = (A^2-B/6)/16, certified in 0.9.0. On the slice, dim ker L_3 >= 2 is a zero-dimensional locus of ten points. Each point has absolute invariants (6,-36,0), which are those of x^6+y^6. Ten is 120 ordered placements divided by the order-12 dihedral stabilizer of the six roots. Among the degenerate forms, only those with a root of multiplicity at least five have a two-dimensional cubic kernel.
+
+**Degree 4.** Every sextic has the quartic partner (f,f)_4, certified in 0.9.0. On the slice, dim ker L_4 >= 2 is zero-dimensional with all absolute invariants 0, which is the octahedral sextic xy(x^4-y^4). Among degenerate forms, only x^6 and x^5y have a larger quartic kernel. Hence dim ker L_4 >= 2 exactly when f is octahedral or has a root of multiplicity at least five.
+
+**Degree 5.** The ideal of 6-by-6 minors of the 8-by-6 matrix L_5 on the slice is zero-dimensional of length 20. In Q[p,q,r]/I, B-486A^2, C+26244A^3 and D+419904A^5 reduce to zero and A is a unit. These are the absolute invariants of x^6+(40/7)x^3y^3+y^6, the C3 sextic at the 40/7 obstruction. Twenty is 120 placements divided by its order-6 stabilizer, so every point is a reduced point of that single orbit. The degenerate forms with a quintic partner are exactly those with a root of multiplicity at least four. These include x^4y(x-y), which is the GL2 class of (x-y)^4(x^2+4xy+y^2) at (+/-16,-9). Therefore:
+
+> A binary sextic has a nonzero quintic g with (f,g)_3 = (f,g)_5 = 0 if and only if it has a root of multiplicity at least four, or it is GL2-equivalent over the algebraic closure to x^6 + (40/7) x^3 y^3 + y^6.
+
+The 7lambda-40 obstruction, found by an ansatz in the earliest archive and rediscovered in 0.3.0, is therefore the only squarefree source of quintic partners. On the slice no sextic has two independent quintic partners.
+
+**Degree 6.** Exact rational Groebner bases of the 6-by-6 minors of L_6 on the slice do not finish. `modular.py` computes the same ideal over a prime field instead:
+- it builds all 1005 nonzero minors by fraction-free Bareiss modulo P;
+- it interreduces them linearly, since polynomials of this degree in three variables span few monomials;
+- it decides emptiness away from repeated roots at 0 and 1 with one Rabinowitsch variable.
+
+Modulo 2147483629 and 1000000007 the locus is empty. A global numerical search on the slice agrees: about 1500 Gauss-Newton starts converge only to repeated-root forms. Among degenerate forms, a two-dimensional sextic kernel occurs exactly when there is a root of multiplicity at least four. With evidence modulo two primes rather than a rational proof:
+
+> dim ker L_6(f) >= 2 if and only if f has a root of multiplicity at least four.
+
+The engine is calibrated on degree 5. Modulo P it reports the quintic locus nonempty and the two-dimensional quintic locus empty, which matches the exact rational results above.
+
+**Degree 7.** The 8-by-8 minors of the 12-by-8 matrix L_7 on the slice give 493 nonzero polynomials. Modulo 2147483629 and 1000000007, the locus is empty away from repeated roots at 0 and 1. A numerical search with 3000 starts converges only to repeated-root forms. Among degenerate forms, the septic kernel is nonzero exactly when there is a root of multiplicity at least four. With the same evidential status as degree 6:
+
+> ker L_7(f) != 0 if and only if f has a root of multiplicity at least four.
+
+Across degrees 5 to 7, then, a root of multiplicity at least four is the uniform source of extra partners. The C3 class at 40/7 in degree 5 is the only exception.
+
+**Degree 8.** No line meets a hypersurface component, so P_8 has codimension at least two. The C3 family x^6+lambda x^3y^3+y^6 has the partner g_8 = xy(x^6+y^6-(7/20)lambda x^3y^3) for every lambda. Its gate coefficients are polynomials of degree at most two in lambda, and they vanish at five values (`c3_degree8_certificate`). On that family, the invariants satisfy exactly two relations of lowest weight (`c3_curve_relations`):
+
+R5 = AB^2 + BC/6 - 9D/2 = 0 and C^2 = 6B^3.
+
+These relations hold everywhere the degree-8 kernel is nonzero. On the slice, random projections det(R L_8) cut out a set containing the true locus. Modulo 2147483629 and 1000000007, the full three-variable radical test shows that R5 and C^2-6B^3 vanish on every point of it with no repeated root at 0 or 1. As a control, A does not vanish there. Plane sections meet the curve in 16 points, and on them both relations lie in the ideal itself. A global Gauss-Newton search gives the same answer: 557 squarefree degree-8 points on the slice all satisfy both relations to about 1e-14. The 26 points from three non-symmetric families satisfy them too.
+
+The solutions of the two relations in weighted projective space form a single rational curve, parametrized by (A, B=6t^2, C=36t^3, D determined by R5). The C3 family maps onto it. Its special members are:
+- (x^3-y^3)^2, the GL2 class of x^2y^2(x-y)^2;
+- the octahedral sextic, at (lambda^2+50)^2 = 0;
+- x^3y^3, at lambda = infinity.
+
+Every sextic on that curve, apart from the boundary, is therefore GL2-equivalent to a member of the C3 family, which has an automorphism of order three. Among degenerate forms, the degree-8 kernel is nonzero exactly for those with a root of multiplicity at least four, and for x^3y^3 and x^2y^2(x-y)^2. Hence, with the forward direction resting on two primes:
+
+> ker L_8(f) != 0 if and only if f has a root of multiplicity at least four or f has a projective automorphism of order three, that is, f is GL2-equivalent to x^6+lambda x^3y^3+y^6 for some lambda, or to x^3y^3.
+
+This explains the earlier degree-8 observations. Order-three sextics are bielliptic, because D3 contains involutions, so the earlier bielliptic observation is a consequence. The lines b = 15 +/- 3a/2 satisfy R5 but not C^2 = 6B^3, which is why they carry no partner. The cubic drop curve on the symmetric surface satisfies both relations; it is a second parametrization of the same C3 curve. A sextic like x(x^5-y^5), whose B, C and D do not lie on the curve, has no degree-8 partner, as predicted.
+
+**Degree 12.** The hypersurface part of P_12 is A^2 = 25B/96, where the covariant G of 0.9.0 is a partner. Lower-dimensional components of P_12 are not excluded by this method.
+
+**Status of the preceding investigation.** These were the obligations before the optional solver computations described below. They remain obligations for an independent dependency-free rational proof, while the archived external-solver classification covers degrees 3–20.
+
+## Archived external solver results and the classification through degree 20
+
+Release 0.14.0 adds two external computer-algebra checks: `scripts/singular_partner_check.py` uses Singular over a prime field, and `scripts/msolve_partner_check.py` uses msolve over Q. They are optional verifiers; the dependency-free core does not need them.
+- **The system.** For each degree N and kernel threshold k, a few random integer projections det(P L_N S) on the slice vanish wherever dim ker L_N >= k, so their common zero set contains the locus. A Rabinowitsch variable removes repeated roots at 0 and 1.
+- **Emptiness.** msolve decides over Q whether that system has a complex solution. An empty superset means an empty locus.
+- **Invariant relations.** Multiplying the Rabinowitsch polynomial by an invariant relation J tests whether J vanishes on every point of the locus.
+- **Controls.** The control relation A fails wherever the locus is nonempty, as it must, and Singular modulo 2147483629 and 1000000007 agrees with every msolve verdict. The receipts are in `results/partner_incidence_solver_receipts.json`.
+
+Points of the locus have three simple roots, so their invariants do not all vanish. In degrees 3, 4, 10 and 14 the relations give B = C = D = 0, or B = 6A^2 with C = -36A^3 and D = 0, and these force A to be nonzero. The Clebsch point is then that of the octahedral sextic or of x^6+y^6. Both are stable, so the GIT fibre over that point is a single GL2-orbit. Combined with the exact profiles of the degenerate root patterns (`degenerate_profile`) and the exact partners of the named sextics, this gives, over the algebraic closure, trusting the msolve computations:
+
+| N | Extra correction-free partners occur exactly when f |
+|---|---|
+| 3 | satisfies B = 6A^2; dim ker >= 2 exactly for x^6+y^6 or a root of multiplicity >= 5 |
+| 4 | (beyond (f,f)_4) is octahedral xy(x^4-y^4) or has a root of multiplicity >= 5 |
+| 5 | has a root of multiplicity >= 4, or is equivalent to x^6+(40/7)x^3y^3+y^6 |
+| 6 | (beyond f itself) has a root of multiplicity >= 4 |
+| 7, 9, 11, 13, 15, 17, 19 | has a root of multiplicity >= 4 |
+| 8 | has a root of multiplicity >= 4, or an automorphism of order three (x^6+lambda x^3y^3+y^6, or x^3y^3) |
+| 10 | has a root of multiplicity >= 4, is x^3y^3, or is equivalent to x^6+y^6 |
+| 12 | satisfies A^2 = 25B/96 (the hypersurface, which contains the degenerate cases) |
+| 14 | has a root of multiplicity >= 4, is x^3y^3, or is octahedral |
+| 16, 18, 20 | has a root of multiplicity >= 4, or is x^3y^3 |
+
+Every exceptional class beyond a fourfold root is a sextic with extra symmetry:
+- the dihedral sextic x^6+y^6, in degrees 3 and 10;
+- the octahedral sextic, in degrees 4 and 14;
+- the order-three family, in degree 8;
+- its 40/7 member, in degree 5.
+
+The only other exceptions are the two invariant hypersurfaces in degrees 3 and 12. This is a computer-assisted classification: its rational steps rest on msolve's correctness, and degrees 6 to 8 also have the independent dependency-free modular evidence above.
+
+## Scope
+
+The line method is exact on each line it uses. That the lines are generic is supported by agreement between independent random lines; the method does not prove genericity. The slice computations are exact, and the orbit identifications rest on the classical fact that Clebsch invariants separate orbits of squarefree sextics. Degrees 6 to 20 are settled over Q by msolve (an external solver) and modulo two primes by Singular and the dependency-free engine. Degrees 21 and above remain open.
+
+## Integration and trust boundary (17 October 2026)
+
+All statements concern nonzero sextics over the algebraic closure of Q. Exact rational instance kernels and their third, fifth and first transvectants can now be evaluated through Math Lab's existing partners tool with operation `incidence`, an optional exact term-array `form`, and integer `degree` from 3 through 20. A kernel vector is correction-free; activity additionally requires a nonzero first transvectant. The default Math Lab partner result includes this analysis alongside the preserved recovered constructions.
+
+The optional solver receipts are preserved byte for byte from PR #2. Their recorded verdicts are external computational evidence, not newly executed checks or Lean certificates. Finite-prime emptiness alone does not prove characteristic-zero emptiness. Lines establish exact restrictions, not certified genericity. The archived classification through degree 20 relies on msolve where stated. Degrees 21 and above, independent rational proof-carrying replay, and formal verification remain unresolved. Old catalogue entries retain their historical evidence status; new entries and the PR-ID mapping are in data/incidence_equations.json, without reusing any existing ID.
 
 
 ---
@@ -1771,3 +1889,17 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-E448 | workflow | observation-to-portfolio bound transport | v_i=w_i^T y; radius_i=sum_j \|w_ij\| error_j+model_error_i; portfolio radius=sum_i x_i radius_i | exact_checked | Identified target rows, exact recovery weights and deterministic supplied bounds; conservative under shared errors; exhaustive finite portfolio certificate capped at 14 original items. |
 | PJ-E449 | analytic | progression residue local factors | Residue_(s=2) sum_(n=r mod M) phi(n)n^(-s) = [product_(p divides M) p/(p+1)]/[phi(M) zeta(2)] | exact_checked | Reduced residue class gcd(r,M)=1; integer modulus M; exact rational factor replayed. For M=3 it is 3/(8 zeta(2)). |
 | PJ-E450 | precision | exact p-bit rounding replay | round_p(x) is nearest p-significand-bit dyadic with ties to even; recursive sums replay each rounding step | exact_checked | Exact rational inputs, arbitrary exponent range; not an assertion about IEEE underflow/overflow, flags or all hardware operations. |
+| PJ-E451 | invariants | line probe for partner hypersurfaces | rank_locus(L_N(f0+t f1)) = restriction of the codim-1 part of P_N | exact_checked | Exact on each line; genericity of the line supported by agreement of independent random lines. |
+| PJ-E452 | invariants | partner hypersurfaces in degrees 3..19 | codim-1 part of P_N nonempty only for N=3 (A^2=B/6) and N=12 (A^2=25B/96) | numerical_checked | Two independent random lines for N<=14, one line for N<=19. Exact restrictions on tested lines only; genericity and global exclusion are not proved by line probes. |
+| PJ-E453 | invariants | dense slice | f ~ xy(x-y)(x^3+px^2y+qxy^2+ry^3) for every sextic with three simple roots | derived | Simple roots sent to 0,1,infinity; saturate by r and 1+p+q+r. |
+| PJ-E454 | invariants | covariants over a quotient ring | Clebsch invariants of the slice computed in Q[p,q,r]/I | exact_checked | Normal forms modulo a Groebner basis; minimal polynomials of absolute invariants by Krylov iteration. |
+| PJ-E455 | invariants | quintic partner classification | ker L_5(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+(40/7)x^3y^3+y^6 | conditional | Over the algebraic closure; slice ideal of length 20 with B-486A^2, C+26244A^3, D+419904A^5 in I; degenerate forms checked directly. |
+| PJ-E456 | invariants | octahedral quartic jump | dim ker L_4(f)>=2 iff f ~ xy(x^4-y^4) or f has a root of multiplicity>=5 | exact_checked | Slice locus zero-dimensional with absolute invariants (0,0,0); degenerate forms checked directly. |
+| PJ-E457 | invariants | dihedral cubic jump | dim ker L_3(f)>=2 on the slice iff f ~ x^6+y^6 | exact_checked | Slice locus of length 10 with absolute invariants (6,-36,0); among degenerate forms only fivefold or sixfold roots. |
+| PJ-E458 | invariants | degree-8 partner classification | ker L_8(f)!=0 iff f has a root of multiplicity>=4 or f ~ x^6+lambda x^3y^3+y^6 (order-3 automorphism) or x^3y^3 | conditional | Converse exact (g8 for all lambda); forward: R5 and C^2-6B^3 vanish on the slice locus modulo two primes; 557 numeric points; supersedes the earlier bielliptic conjecture. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E459 | invariants | C3 curve in moduli | x^6+lambda x^3y^3+y^6: AB^2+BC/6-9D/2=0 and C^2=6B^3 | exact_checked | Lowest-weight relations on the family; a single rational curve in P(1,2,3,5); octahedral at (lambda^2+50)^2=0. |
+| PJ-E460 | invariants | sextic partner jump | dim ker L_6(f)>=2 iff f has a root of multiplicity>=4 | conditional | Slice ideal of 6x6 minors is the unit ideal away from repeated roots at 0,1 modulo 2147483629 and 1000000007; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E461 | invariants | septic partners | ker L_7(f)!=0 iff f has a root of multiplicity>=4 | conditional | Slice ideal of 8x8 minors is the unit ideal off repeated roots modulo two primes; degenerate forms exact; rational proof open. Upgraded: verified over Q by msolve (external solver). |
+| PJ-E462 | invariants | partner classification through degree 20 | extra partners iff fourfold root, x^3y^3 (even N>=8), x^6+y^6 (N=3,10), octahedral (N=4,14), order-3 family (N=8), C3(40/7) (N=5), or A^2=B/6 (N=3), A^2=25B/96 (N=12) | conditional | Computer-assisted: slice verdicts over Q by the external solver msolve, cross-checked modulo two primes by Singular; degenerate forms exact; trusting msolve. |
+| PJ-E463 | modular | prime-field Groebner evidence | I proper over Q => I mod p proper for all but finitely many primes | derived | Fixed integral generators with denominators cleared; finitely many tested primes alone do not certify characteristic-zero emptiness. |
+| PJ-E464 | invariants | orbit count check | slice points = 120/\|Stab_PGL2(roots)\|; 20 for C3(40/7), 10 for x^6+y^6 | derived | Ordered placements of three simple roots; stabilizer orders 6 and 12. |

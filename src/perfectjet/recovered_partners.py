@@ -162,7 +162,7 @@ def sextic_partners(form=None):
 
 def evaluate(operation,params=None):
     operations={"r5":archived_r5,"cubic":cubic_partner,"quartic":quartic_partner,
-                "degree12":degree12_partner_report,"sextic":sextic_partners}
+                "degree12":degree12_partner_report,"sextic":sextic_partners,"incidence":incidence_report}
     if operation not in operations:raise ValueError("unknown recovered-partner operation: "+str(operation))
     if params is None:params={}
     if not isinstance(params,dict):raise ValueError("params must be an object")
@@ -176,3 +176,22 @@ def receipt():
             "cubic":cubic_partner(x**6+20*x**3*y**3+y**6),
             "quartic":quartic_partner(),"degree12":degree12_partner_report(),
             "full_grid_evaluated":False,"converse_status":"degree-12 converse remains open"}
+
+
+def incidence_report(form=None, degree=5):
+    """Exact supplied-form kernel; global classification evidence is reported separately."""
+    if type(degree) is not int or not 3 <= degree <= 20:
+        raise ValueError("degree must be an integer in 3..20")
+    from .incidence import correction_matrix, THEOREMS, c3_degree8_certificate
+    f = _form(form, archived_r5_pair()[0])
+    basis = nullspace(correction_matrix(f, degree), degree+1)
+    partners = [Poly({(degree-i,i): c for i,c in enumerate(v) if c}) for v in basis]
+    return {"operation":"incidence", "degree":degree, "form":f.record(),
+            "kernel_dimension":len(basis), "dimensions":partner_dimensions(f,degree),
+            "kernel_basis":[{"partner":g.record(),"gates":_gate_replay(f,g)} for g in partners],
+            "c3_degree8_identity":c3_degree8_certificate(), "classification":THEOREMS,
+            "external_solvers_rerun":False,
+            "classification_scope":"Nonzero binary sextics over the algebraic closure of Q, GL2 equivalence; exact supplied-form rational kernel replay is distinct from global classification.",
+            "external_evidence":"Archived msolve over Q and Singular finite-field receipts: results/partner_incidence_solver_receipts.json. These are not kernel-checked certificates and were not rerun by this call.",
+            "open_obligations":["Degrees >=21", "Independent rational or proof-carrying replay of optional solver classifications", "Line genericity is not certified by random probes"],
+            "scope":"Instance gates and activity are exact; kernel existence does not by itself imply activity."}

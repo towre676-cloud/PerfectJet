@@ -557,7 +557,21 @@
     "PJ-E447": 8,
     "PJ-E448": 8,
     "PJ-E449": 13,
-    "PJ-E450": 19
+    "PJ-E450": 19,
+    "PJ-E451": 14,
+    "PJ-E452": 14,
+    "PJ-E453": 14,
+    "PJ-E454": 14,
+    "PJ-E455": 14,
+    "PJ-E456": 14,
+    "PJ-E457": 14,
+    "PJ-E458": 14,
+    "PJ-E459": 14,
+    "PJ-E460": 14,
+    "PJ-E461": 14,
+    "PJ-E462": 14,
+    "PJ-E463": 14,
+    "PJ-E464": 14
   },
   "callable_labs": {
     "PJ-E085": [
@@ -1460,6 +1474,48 @@
     ],
     "PJ-E449": [
       "algebra"
+    ],
+    "PJ-E451": [
+      "partners"
+    ],
+    "PJ-E452": [
+      "partners"
+    ],
+    "PJ-E453": [
+      "partners"
+    ],
+    "PJ-E454": [
+      "partners"
+    ],
+    "PJ-E455": [
+      "partners"
+    ],
+    "PJ-E456": [
+      "partners"
+    ],
+    "PJ-E457": [
+      "partners"
+    ],
+    "PJ-E458": [
+      "partners"
+    ],
+    "PJ-E459": [
+      "partners"
+    ],
+    "PJ-E460": [
+      "partners"
+    ],
+    "PJ-E461": [
+      "partners"
+    ],
+    "PJ-E462": [
+      "partners"
+    ],
+    "PJ-E463": [
+      "partners"
+    ],
+    "PJ-E464": [
+      "partners"
     ]
   }
 }

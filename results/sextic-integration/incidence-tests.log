@@ -1,0 +1,11 @@
+test_degenerate_forms (test_incidence.ClassificationTests.test_degenerate_forms) ... ok
+test_quintic_partners_are_the_c3_orbit (test_incidence.ClassificationTests.test_quintic_partners_are_the_c3_orbit) ... ok
+test_small_degree_jumps (test_incidence.ClassificationTests.test_small_degree_jumps) ... ok
+test_line_probe_finds_the_two_hypersurfaces (test_incidence.HypersurfaceTests.test_line_probe_finds_the_two_hypersurfaces) ... ok
+test_clebsch_over_free_ring_specializes (test_incidence.SymbolicCovariantTests.test_clebsch_over_free_ring_specializes) ... ok
+test_minimal_polynomial (test_incidence.SymbolicCovariantTests.test_minimal_polynomial) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 14.987s
+
+OK
