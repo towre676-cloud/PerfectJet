@@ -44,8 +44,8 @@
     },
     {
       "path": ".github/workflows/publish-v017.yml",
-      "sha256": "d43db044b72737a9d6db759adc20849c266b0376f171ac3f2a27b9cab49babff",
-      "size_bytes": 3705
+      "sha256": "581cc7024b17211837d5bda9c24012f43e9e1b344504ce35ad0bb8fadd2f2381",
+      "size_bytes": 3762
     },
     {
       "path": ".github/workflows/research-snapshot.yml",
@@ -3259,8 +3259,8 @@
     },
     {
       "path": "scripts/build_release.py",
-      "sha256": "54b3acb44af0eae6203f580911fc94ead17398203535d891666d052de4936cd9",
-      "size_bytes": 3394
+      "sha256": "4f6efc1851ac2fa778725cffff8fd73bd860c6f80cdfd1fe6cdad5e3028e1a1f",
+      "size_bytes": 3474
     },
     {
       "path": "scripts/build_stopped_flow_evidence.py",
