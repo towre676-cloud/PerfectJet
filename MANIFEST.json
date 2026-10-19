@@ -44,8 +44,8 @@
     },
     {
       "path": ".github/workflows/publish-v017.yml",
-      "sha256": "c41aaba8db9d49b0f08e8a37c22831892a8a8ff263670126ad67ce24d8b71270",
-      "size_bytes": 3683
+      "sha256": "d43db044b72737a9d6db759adc20849c266b0376f171ac3f2a27b9cab49babff",
+      "size_bytes": 3705
     },
     {
       "path": ".github/workflows/research-snapshot.yml",
@@ -3038,6 +3038,11 @@
       "size_bytes": 195692
     },
     {
+      "path": "results/sextic-integration-validation.json",
+      "sha256": "d4592b7b45a24d7f1f2136d3a5d8f58f5aa78b718201ba5565b0e45c4575fd36",
+      "size_bytes": 1182
+    },
+    {
       "path": "results/sextic-integration/incidence-tests.log",
       "sha256": "bd76d6f96520d819ced0cb2d8b3b0e95a3793b80787bb69f372f99a348e6d23c",
       "size_bytes": 753
@@ -3061,11 +3066,6 @@
       "path": "results/sextic-integration/tests.log",
       "sha256": "01f688b5c23058e2d91c53224879cba41a7674ded691f5603023b5e57bb50fba",
       "size_bytes": 76868
-    },
-    {
-      "path": "results/sextic-integration-validation.json",
-      "sha256": "d4592b7b45a24d7f1f2136d3a5d8f58f5aa78b718201ba5565b0e45c4575fd36",
-      "size_bytes": 1182
     },
     {
       "path": "results/stopped-flow/exact-readout-identities.json",
@@ -3259,8 +3259,8 @@
     },
     {
       "path": "scripts/build_release.py",
-      "sha256": "4012a0570bb9b5b30d927688fd1007108dcf17135e5052f5c54cf1b6999e003f",
-      "size_bytes": 3300
+      "sha256": "54b3acb44af0eae6203f580911fc94ead17398203535d891666d052de4936cd9",
+      "size_bytes": 3394
     },
     {
       "path": "scripts/build_stopped_flow_evidence.py",

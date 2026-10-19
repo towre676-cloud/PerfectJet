@@ -19,7 +19,7 @@ def eligible(path):
             and rel.as_posix()!='MANIFEST.json')
 
 def main():
-    files=sorted(p for p in ROOT.rglob('*') if eligible(p))
+    files=sorted((p for p in ROOT.rglob('*') if eligible(p)), key=lambda p: p.relative_to(ROOT).as_posix())
     manifest={'schema':'perfectjet/release-manifest/1','version':VERSION,'files':[
         {'path':p.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
          'size_bytes':p.stat().st_size} for p in files]}
@@ -28,7 +28,7 @@ def main():
     release=ROOT/'releases';release.mkdir(exist_ok=True)
     dest=release/NAME
     with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
-        for p in sorted(files):
+        for p in sorted(files, key=lambda p: p.relative_to(ROOT).as_posix()):
             info=zipfile.ZipInfo('PerfectJet/'+p.relative_to(ROOT).as_posix(),(2026,10,14,0,0,0))
             info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
             archive.writestr(info,p.read_bytes())
