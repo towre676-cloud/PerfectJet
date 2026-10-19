@@ -86,7 +86,7 @@ python scripts/build_release.py
 
 The [benchmark receipt](results/observatory/benchmark.json) preserves independent absolute/relative/sign-orbit counts, complete short-word enumeration, original-coordinate rank round trips, operator bases, the remote modular comparison and the adaptive-versus-fixed experiment. [Pell transport](results/observatory/pell.json) and [destructive-prefix calculations](results/observatory/destructive-prefix.json) are retained separately. [Validation](docs/OBSERVATORY_VALIDATION.md) states executed checks and interface verification limits.
 
-The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) follows `main`. The release builder makes a deterministic ZIP with a SHA256 manifest and creates split parts if needed. The current release is **0.15.0**. Computational identities, independent checks, historical claims and open proposals remain distinct; this release does not add Lean proofs.
+The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) follows `main`. The release builder makes a deterministic ZIP with a SHA256 manifest and creates split parts if needed. The current release is **0.17.0**. Download the [verified v0.17.0 ZIP and checksum](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.17.0); see [installation and verification](docs/INSTALL.md). Computational identities, independent checks, historical claims and open proposals remain distinct; this release does not add Lean proofs.
 
 ## Sextic research integration — v0.17.0
 

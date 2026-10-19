@@ -1,0 +1,92 @@
+name: Verify and publish PerfectJet v0.17.0
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-v017.yml']
+permissions:
+  contents: read
+concurrency:
+  group: perfectjet-v017-publication
+  cancel-in-progress: false
+jobs:
+  verify:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install setuptools wheel
+      - name: Preserve Unix source bytes on Windows
+        if: runner.os == 'Windows'
+        shell: bash
+        run: |
+          git config core.autocrlf false
+          git rm --cached -r .
+          git reset --hard HEAD
+      - run: python scripts/build_release.py
+      - name: Verify committed manifest and checksum
+        run: git diff --exit-code -- MANIFEST.json releases/PerfectJet-v0.17.0.zip.sha256
+      - run: python scripts/verify_release.py releases/PerfectJet-v0.17.0.zip
+      - name: Full mathematical and JavaScript checks
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -m pip install -e '.[scouting]'
+          python -m unittest discover -s tests -v
+          python scripts/build_mathlab.py --check
+          python scripts/check_observatory_ui.py
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild twice and require identical bytes
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/build_release.py
+          cp releases/PerfectJet-v0.17.0.zip /tmp/first.zip
+          python scripts/build_release.py
+          cmp /tmp/first.zip releases/PerfectJet-v0.17.0.zip
+          git diff --exit-code -- MANIFEST.json releases/PerfectJet-v0.17.0.zip.sha256
+      - name: Publish versioned release without modifying historical releases
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view v0.17.0 >/dev/null 2>&1; then
+            echo 'Release already exists; refusing to overwrite.' >&2
+            exit 1
+          fi
+          gh release create v0.17.0 releases/PerfectJet-v0.17.0.zip releases/PerfectJet-v0.17.0.zip.sha256 docs/INSTALL.md docs/MONOGRAPH.md --target "$GITHUB_SHA" --title 'PerfectJet v0.17.0 — Integrated exact Math Lab and sextic partners' --notes-file docs/RELEASE.md --latest
+      - name: Independently download and verify the published assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir /tmp/published-download
+          cd /tmp/published-download
+          curl --fail --location --retry 4 --output PerfectJet-v0.17.0.zip https://github.com/towre676-cloud/PerfectJet/releases/download/v0.17.0/PerfectJet-v0.17.0.zip
+          curl --fail --location --retry 4 --output PerfectJet-v0.17.0.zip.sha256 https://github.com/towre676-cloud/PerfectJet/releases/download/v0.17.0/PerfectJet-v0.17.0.zip.sha256
+          sha256sum -c PerfectJet-v0.17.0.zip.sha256
+          cmp PerfectJet-v0.17.0.zip "$GITHUB_WORKSPACE/releases/PerfectJet-v0.17.0.zip"
+          python -m pip install setuptools wheel
+          python "$GITHUB_WORKSPACE/scripts/verify_release.py" /tmp/published-download/PerfectJet-v0.17.0.zip

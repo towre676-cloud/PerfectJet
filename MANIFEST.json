@@ -43,6 +43,11 @@
       "size_bytes": 5479
     },
     {
+      "path": ".github/workflows/publish-v017.yml",
+      "sha256": "c41aaba8db9d49b0f08e8a37c22831892a8a8ff263670126ad67ce24d8b71270",
+      "size_bytes": 3683
+    },
+    {
       "path": ".github/workflows/research-snapshot.yml",
       "sha256": "43df217273b1fed8b26c8a58b461ebc1c03369cfd83b2feb877b4b725dba3eb4",
       "size_bytes": 905
@@ -54,8 +59,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "c80e35c51917de5fe096f160227ca54d6459fd0f421d50f4336c499e3066e86a",
-      "size_bytes": 8077
+      "sha256": "8875ddd043b5adb87ab65708d2dac0f520794b131a3b71ee4dcec0024169eebe",
+      "size_bytes": 8248
     },
     {
       "path": "Start_Math_Lab.bat",
@@ -198,6 +203,11 @@
       "size_bytes": 84025
     },
     {
+      "path": "docs/INSTALL.md",
+      "sha256": "15091824f84a8cc0e477fa8a1c91cdc83881b5a5b93126ac5847b8c0b24661d5",
+      "size_bytes": 2708
+    },
+    {
       "path": "docs/MATH_LAB.md",
       "sha256": "4391dc90a1bf7a941990d586edc075c24ebc1a11ce5aa6fe3b45a4704cab71a4",
       "size_bytes": 18025
@@ -229,8 +239,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "86cf35b64235d54c8df4577efe013d0ffe25e8a9f1c34924a97dbfc1303ad679",
-      "size_bytes": 26515
+      "sha256": "fd9acb6c2f68352d2f0a2e712ce54bd5fc27899b5bcded344e7c13517141e15a",
+      "size_bytes": 28088
     },
     {
       "path": "docs/SEXTIC_INTEGRATION.md",
@@ -2809,8 +2819,8 @@
     },
     {
       "path": "results/incidence-integration-replay.json",
-      "sha256": "11d0512e69b3ceb1464c8153670661b6407a8a03c1dc84f0ce74d9e773f9e89e",
-      "size_bytes": 210252
+      "sha256": "d19009854801d174e3432f425807a4afb7f50c3df7656dd73024e3d30be821d5",
+      "size_bytes": 210442
     },
     {
       "path": "results/mathlab/all-examples.json",
@@ -3249,8 +3259,8 @@
     },
     {
       "path": "scripts/build_release.py",
-      "sha256": "9ab981304f5af6f460c791e9d885fffa92c0d18b5f232c8b752a2b549af3a67d",
-      "size_bytes": 3204
+      "sha256": "4012a0570bb9b5b30d927688fd1007108dcf17135e5052f5c54cf1b6999e003f",
+      "size_bytes": 3300
     },
     {
       "path": "scripts/build_stopped_flow_evidence.py",
@@ -3366,6 +3376,11 @@
       "path": "scripts/source_manifest.py",
       "sha256": "be6052b845fb6e8730ff1e92a27ea30dd6e816f81d35a03a0964495f403938da",
       "size_bytes": 415
+    },
+    {
+      "path": "scripts/verify_release.py",
+      "sha256": "cf5888f04720c4a39b8950270e0dcada3b98ad6e9578a93d689f4915c853eb47",
+      "size_bytes": 5523
     },
     {
       "path": "src/perfectjet/__init__.py",

@@ -23,7 +23,7 @@ def main():
     manifest={'schema':'perfectjet/release-manifest/1','version':VERSION,'files':[
         {'path':p.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
          'size_bytes':p.stat().st_size} for p in files]}
-    (ROOT/'MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    (ROOT/'MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n', encoding='utf-8', newline='\n')
     files.append(ROOT/'MANIFEST.json')
     release=ROOT/'releases';release.mkdir(exist_ok=True)
     dest=release/NAME
@@ -33,7 +33,7 @@ def main():
             info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
             archive.writestr(info,p.read_bytes())
     digest=hashlib.sha256(dest.read_bytes()).hexdigest()
-    (release/(NAME+'.sha256')).write_text(digest+'  '+NAME+'\n')
+    (release/(NAME+'.sha256')).write_text(digest+'  '+NAME+'\n', encoding='utf-8', newline='\n')
     if dest.stat().st_size > 40 * 1024 * 1024:
         parts=[]
         with dest.open('rb') as source:
@@ -45,7 +45,7 @@ def main():
                 index+=1
         assembly={'schema':'perfectjet/release-parts/1','output':NAME,
                   'bytes':dest.stat().st_size,'sha256':digest,'parts':parts}
-        (release/f'PerfectJet-v{VERSION}.parts.json').write_text(json.dumps(assembly,indent=2)+'\n')
+        (release/f'PerfectJet-v{VERSION}.parts.json').write_text(json.dumps(assembly,indent=2)+'\n', encoding='utf-8', newline='\n')
     with zipfile.ZipFile(dest) as archive:
         assert archive.testzip() is None
         for entry in manifest['files']:
