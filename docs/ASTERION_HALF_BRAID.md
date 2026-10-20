@@ -72,6 +72,12 @@ T_i=\zeta^5R_i,\quad (T_1T_2)^3=I,\quad
 
 Thus T is a linear PSL2(Z) representation. This twist changes its squared generators to zeta^10 U,zeta^10 V; it must not be silently substituted for the original pure-loop normalization. Positive braids and the opposite orientation likewise must not be mixed.
 
+## Compact closure of the extension and normalized image
+
+The established pure-loop theorem supplies one positive Hermitian form H preserved by U,V. Since their spectra are simple, their spectral projectors are H-orthogonal. The displayed half-braids are polynomial spectral functions of U and V with unit-modulus eigenvalues, so both preserve that same H. Their determinants generate mu17 and they contain the pure-loop image. It follows that the extended braid image has exactly the same compact closure as the original pure-loop group: after unitarization it is {g in U(5):det(g)^17=1}. Its Zariski closure is likewise unchanged. Half-braid projective order 34 is compatible with pure-generator order 17 inside this same closed group.
+
+The normalized generators T_i also preserve H, have determinant one and have the same projective image as R_i. Their squared subgroup already has the same dense PU(5) projective image as U,V. The projection SU(5) to PU(5) has finite kernel, so a closed subgroup of SU(5) projecting onto PU(5) has the full dimension 24 and must be SU(5). Thus the normalized triangle-group image is dense in SU(5). This is a closure corollary of the established pure-loop theorem, not a claim that the triangle-group homomorphism is faithful.
+
 ## Exact algebraic classification and replay
 
 Tuba–Wenzl Proposition 2.7 and Main Theorem 2.9 classify simple five-dimensional B3 representations using the generator eigenvalues and the fifth root gamma of their determinant. Equivalently one can specify the central scalar. In this case

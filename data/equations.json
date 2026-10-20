@@ -6385,10 +6385,10 @@
     {
       "id": "PJ-HB012",
       "domain": "asterion-half-braid",
-      "title": "pure-loop spectral recovery from half-braids",
-      "equation": "Spec(Ri^2)=(zeta^4,zeta^2,zeta^11,1,zeta)",
-      "status": "exact_checked",
-      "assumptions": "Exact field arithmetic in the independent algebraic model; identification with analytic operators is up to simultaneous conjugacy, using KZ descent and classification.",
+      "title": "half-braid and normalized compact closures",
+      "equation": "closure(<R1,R2>)={g in U5:det(g)^17=1}; closure(<T1,T2>)=SU5",
+      "status": "derived",
+      "assumptions": "Up to the established pure-loop unitarizing conjugacy: unit-modulus spectral half-roots preserve the same H; normalized projective image is densePU5 and SU5->PU5 has finite kernel. This is not a discrete-image presentation.",
       "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
     }
   ]

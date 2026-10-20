@@ -20,9 +20,9 @@
   ],
   "schema": "perfectjet/asterion-half-braid-ledger/1",
   "sources": {
-    "data/asterion_braid_equations.json": "d282e126973db096a20abb14270b680e713bed3fe9cc2482bed5e816c5e8b473",
-    "docs/ASTERION_HALF_BRAID.md": "62c8af33ed411d4dc54d6f1fdf420d9960773840966d8d9dbd4c180b0569502f",
-    "scripts/build_asterion_braid_catalogue.py": "7e16036647b23f4b696b0b7f485b6859691155fccb4af53276be40ba5bed6780",
+    "data/asterion_braid_equations.json": "ab282a5c726af3d3d32c0daddeadfb3c0107c6b8db2ad63cdb3880b3fed0cb63",
+    "docs/ASTERION_HALF_BRAID.md": "057eaaabedd1d092ebee3b2e8199e34675a62dd652d3b162f2ffe1dbe92dbd5b",
+    "scripts/build_asterion_braid_catalogue.py": "c6e743deaa705b234256cc6a247275bbedea198870f4d4429e2ee1451e1d7ed1",
     "scripts/verify_asterion_braid.py": "78a45a89054e3b8fe169f016a0956b71479e0f2a549b8050e6f96b810512ca11",
     "src/perfectjet/asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
     "src/perfectjet/asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
