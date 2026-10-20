@@ -3878,6 +3878,181 @@
       "topic": "Fourfold-root uniform source",
       "chapter": "docs/chapters/32_partner_incidence.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T555",
+      "domain": "Asterion basis calculus",
+      "topic": "Coined certified basis nomenclature",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T556",
+      "domain": "Asterion basis calculus",
+      "topic": "Exact commutator-word basis compiler",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T557",
+      "domain": "Asterion basis calculus",
+      "topic": "Reversible unimodular basis optimization",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T558",
+      "domain": "Asterion basis calculus",
+      "topic": "Root-lattice cocycle E8 reference algebra",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T559",
+      "domain": "Asterion basis calculus",
+      "topic": "Full bracket transport certificates",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T560",
+      "domain": "Asterion basis calculus",
+      "topic": "Order-thirty Coxeter lift and difference kernel",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T561",
+      "domain": "Asterion basis calculus",
+      "topic": "Full adjoint phase multiplicities",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T562",
+      "domain": "Asterion basis calculus",
+      "topic": "Principal divided-power polynomial coordinates",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T563",
+      "domain": "Asterion basis calculus",
+      "topic": "Complete normalized transvectant coupling catalogue",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T564",
+      "domain": "Asterion basis calculus",
+      "topic": "Seventy-six trilinear channel bounds",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T565",
+      "domain": "Asterion basis calculus",
+      "topic": "Minimal eight lowering seeds",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T566",
+      "domain": "Asterion basis calculus",
+      "topic": "Two-component polynomial coordinates modulo five",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T567",
+      "domain": "Asterion basis calculus",
+      "topic": "Explicit two-A4 exterior model",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T568",
+      "domain": "Asterion basis calculus",
+      "topic": "Exact fifth-cyclotomic arithmetic",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T569",
+      "domain": "Asterion basis calculus",
+      "topic": "All homogeneous bracket kernels",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T570",
+      "domain": "Asterion basis calculus",
+      "topic": "Thirty-one equal Cartan blocks",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T571",
+      "domain": "Asterion basis calculus",
+      "topic": "Homogeneous Jacobi identities",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T572",
+      "domain": "Asterion basis calculus",
+      "topic": "Obstruction to label-only symmetry",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T573",
+      "domain": "Asterion basis calculus",
+      "topic": "Internal two-dimensional covariance",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T574",
+      "domain": "Asterion basis calculus",
+      "topic": "Lattice index and rational descent boundary",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T575",
+      "domain": "Asterion basis calculus",
+      "topic": "Independent replay and corrupted-certificate rejection",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T576",
+      "domain": "Asterion basis calculus",
+      "topic": "Infinitesimal gauge versus genuine deformation",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T577",
+      "domain": "Asterion basis calculus",
+      "topic": "Linearized Jacobi cohomology",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T578",
+      "domain": "Asterion basis calculus",
+      "topic": "Exact second-order obstruction witnesses",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T579",
+      "domain": "Asterion basis calculus",
+      "topic": "Small-dimensional rigidity comparisons",
+      "chapter": "docs/chapters/34_asterion_basis.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
     }
   ]
 }

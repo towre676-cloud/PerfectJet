@@ -2,7 +2,13 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Its local Math Lab offers **25 computed tools and a searchable atlas of 464 equations in 24 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python 3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Its local Math Lab offers **26 computed tools and a searchable atlas of 504 equations in 25 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python 3.10 or newer is sufficient for the core; no third-party package is required.
+
+## Asterion basis calculus
+
+The Asterion research program supplies a prescribed 248-vector integral basis of E8, exact principal-polynomial arithmetic with all 170 couplings computed, a two-component polynomial presentation indexed by nonzero triples modulo five, and independently replayable coordinate and bracket certificates. The named mixed basis has determinant -1 and preserves the Chevalley integer lattice; its complete bracket table has 9,062 output terms compared with Chevalley's 8,347, so no sparsity improvement is claimed. All 2,511,496 distinct Jacobi triples are checked in both the Chevalley and modulo-five presentations. The finite grading has 124 two-dimensional components and 31 Cartan subalgebras, with explicit normalizer witnesses. Classical constructions retain attribution; Asterion names this project's basis prescription, notation and implementation.
+
+Run `python -m perfectjet asterion overview`, `python -m perfectjet asterion bracket --chart principal --left '[7,3]' --right '[11,6]'`, or `python -m perfectjet asterion report --exhaustive`. Regenerate all numerical evidence with `python scripts/verify_asterion.py`, and independently recompute it with `python scripts/verify_asterion.py --check`. The [mathematical account](docs/ASTERION_BASIS.md), [complete monograph](docs/MONOGRAPH.md), and [retained numerical evidence](results/asterion/validation.json) include arithmetic limits, negative comparisons, deformation obstructions and the new PJ-A001–PJ-A040 equation records.
 
 ## Open Math Lab
 

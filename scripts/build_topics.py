@@ -68,6 +68,8 @@ GROUPS['32']=('Partner incidence', ['Line probes for hypersurface components','I
     'Degree-twelve hypersurface part','Open lower-dimensional components',
     'Prime-field Groebner bases','Sextic and septic partner emptiness modulo primes','Fourfold-root uniform source'])
 
+GROUPS['34']=('Asterion basis calculus', ['Coined certified basis nomenclature','Exact commutator-word basis compiler','Reversible unimodular basis optimization','Root-lattice cocycle E8 reference algebra','Full bracket transport certificates','Order-thirty Coxeter lift and difference kernel','Full adjoint phase multiplicities','Principal divided-power polynomial coordinates','Complete normalized transvectant coupling catalogue','Seventy-six trilinear channel bounds','Minimal eight lowering seeds','Two-component polynomial coordinates modulo five','Explicit two-A4 exterior model','Exact fifth-cyclotomic arithmetic','All homogeneous bracket kernels','Thirty-one equal Cartan blocks','Homogeneous Jacobi identities','Obstruction to label-only symmetry','Internal two-dimensional covariance','Lattice index and rational descent boundary','Independent replay and corrupted-certificate rejection','Infinitesimal gauge versus genuine deformation','Linearized Jacobi cohomology','Exact second-order obstruction witnesses','Small-dimensional rigidity comparisons'])
+
 def build():
     rows=[]
     for prefix,(domain,topics) in GROUPS.items():

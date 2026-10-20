@@ -17,9 +17,10 @@ class IntegratedMathLabTests(unittest.TestCase):
             if row['id'] in original:
                 digest = hashlib.sha256(json.dumps(row, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest()
                 self.assertEqual(digest, original[row['id']], row['id'])
-        self.assertEqual(len(cat['equations']), 464)
-        self.assertEqual(len({row['id'] for row in cat['equations']}), 464)
-        self.assertEqual(len(cat['families']), 24)
+        self.assertEqual(len(cat['equations']), len(source))
+        self.assertEqual(len({row['id'] for row in cat['equations']}), len(source))
+        self.assertEqual(len(cat['families']), 25)
+        self.assertTrue({f'PJ-A{i:03d}' for i in range(1,41)} <= {row['id'] for row in source})
         self.assertEqual({e['status'] for e in cat['equations'] if e['id'] in ('PJ-E122','PJ-E194')}, {'rejected'})
 
     def test_every_tool_computes_json_and_references_real_equations(self):

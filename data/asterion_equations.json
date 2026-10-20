@@ -1,0 +1,371 @@
+{
+  "schema": "perfectjet/equations/1",
+  "research_date": "2026-10-20",
+  "scope": "Asterion is coined project nomenclature for exact basis compilation and verified coordinate transports; classical constructions retain attribution, with no global-priority or new-Lean claim.",
+  "equations": [
+    {
+      "id": "PJ-A001",
+      "domain": "asterion",
+      "title": "certified Asterion basis",
+      "equation": "A_j=sum_i S_ij e_i; S^-1 S=SS^-1=I",
+      "status": "definition",
+      "assumptions": "The Asterion name denotes this project's basis prescription and certificate. S is square over the declared characteristic-zero coefficient field; distinct coordinate charts each contain248 vectors.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A002",
+      "domain": "asterion",
+      "title": "transported bracket tensor",
+      "equation": "cPrime_ab^d=sum_ijk S_ia S_jb c_ij^k (S^-1)_dk",
+      "status": "derived",
+      "assumptions": "Columns of S are new basis vectors in old coordinates. The formula changes coordinates in the same Lie algebra; arbitrary GL changes are not Lie automorphisms.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A003",
+      "domain": "asterion",
+      "title": "basis transport preserves Jacobi",
+      "equation": "[x,y]_S=S^-1[Sx,Sy]; Jacobi_S(x,y,z)=S^-1 Jacobi(Sx,Sy,Sz)",
+      "status": "derived",
+      "assumptions": "Invertible linear S and a correct source bracket. This proves identities for all vectors once the source algebra and intertwining map are certified.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A004",
+      "domain": "asterion",
+      "title": "same integral lattice criterion",
+      "equation": "S in GL_n(Z) => span_Z(A_j)=span_Z(e_i)",
+      "status": "derived",
+      "assumptions": "The specific E8 Asterion response basis from eight seeds e_i+f_i and sixteen simple probes has248 integral vectors and determinant-1, so it is a Z-basis of the same Chevalley lattice. A separate one-Cartan-seed run has determinant-5 and index5. These instance checks do not make every rational basis unimodular.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A005",
+      "domain": "asterion",
+      "title": "reversible integral basis shear",
+      "equation": "Snew=S(I+k E_ij); Snew^-1=(I-k E_ij)S^-1, i!=j, k in Z",
+      "status": "derived",
+      "assumptions": "A single elementary column shear is unimodular. A bounded search over such moves certifies only the best evaluated candidate, not a global optimum.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A006",
+      "domain": "asterion",
+      "title": "declared bracket arithmetic objective",
+      "equation": "C(B)=(number of retained tensor terms, maximum coefficient bit height, conversion cost)",
+      "status": "definition",
+      "assumptions": "Lexicographic or explicitly weighted costs must be declared with the exact workload and coefficient representation. Table compression alone is not a runtime speedup.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A007",
+      "domain": "asterion",
+      "title": "commutator-word basis candidates",
+      "equation": "v_seed=s; v_[u,v]=[v_u,v_v]",
+      "status": "definition",
+      "assumptions": "An ordered seed family and ordered finite word grammar produce concrete candidate vectors. The word label is a reproducible recipe, not an independence proof.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md"
+    },
+    {
+      "id": "PJ-A008",
+      "domain": "asterion",
+      "title": "deterministic independent word selection",
+      "equation": "accept v iff rank(previous columns with v)=rank(previous columns)+1",
+      "status": "exact_checked",
+      "assumptions": "Exact breadth-first independent-column selection with primitive normalization. On E8, the prescribed eight seeds e_i+f_i and sixteen probes yield248 vectors after3943 candidates, maximum selected depth28, determinant-1. A single Cartan seed H1+2H2+...+8H8 instead yields248 vectors after3935 candidates, depth29, determinant-5. Exhaustion before full rank is reported as incomplete. Full30628-pair bracket transport passes; the resulting tensor has9062 output terms over8200 nonzero input pairs, versus8347 terms over7752 pairs in the reference basis, so this mixed basis is about8.57% denser and does not establish a sparsity win.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A009",
+      "domain": "asterion",
+      "title": "E8 root lattice norm",
+      "equation": "Phi={alpha in Z^8 : alpha^T A alpha=2}; card(Phi)=240",
+      "status": "exact_checked",
+      "assumptions": "The supplied E8 Cartan matrix and ordered simple-root coordinates give240 norm-two roots, complete under all eight simple reflections. The reference248-dimensional bracket passes all2511496 distinct-basis Jacobi triples; repeated-index cases follow from skew symmetry.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A010",
+      "domain": "asterion",
+      "title": "integral root-lattice sign cocycle",
+      "equation": "epsilon(alpha,beta)=(-1)^(sum_i alpha_i beta_i+sum_(i>j)alpha_i A_ij beta_j)",
+      "status": "definition",
+      "assumptions": "The chosen simple-root ordering fixes the triangular bilinear exponent. Changing its convention requires simultaneous changes to all root-vector signs.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/abs/2602.19632"
+    },
+    {
+      "id": "PJ-A011",
+      "domain": "asterion",
+      "title": "gauged root-addition bracket",
+      "equation": "[E_alpha,E_beta]=s_alpha s_beta epsilon(alpha,beta) E_(alpha+beta)/s_(alpha+beta)",
+      "status": "exact_checked",
+      "assumptions": "Use s_alpha=1 for positive roots and-1 for negative roots; this formula applies when alpha+beta is a root. Opposite roots use [E_alpha,E_-alpha]=H_alpha. The implemented fixed sign convention passes all2511496 distinct-basis Jacobi triples.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A012",
+      "domain": "asterion",
+      "title": "Cartan action and opposite root rule",
+      "equation": "[H_i,E_alpha]=(A alpha)_i E_alpha; [E_alpha,E_-alpha]=sum_i alpha_i H_i; [H_i,H_j]=0",
+      "status": "exact_checked",
+      "assumptions": "Simply laced E8, length-squared2 and the stated cocycle gauge. All nonroot nonzero sums vanish. The concrete bracket is replayed exhaustively for Jacobi on2511496 unordered distinct triples, and Coxeter equivariance on30628 unordered basis pairs.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A013",
+      "domain": "asterion",
+      "title": "derivation replay of Jacobi",
+      "equation": "ad_x([y,z])=[ad_x(y),z]+[y,ad_x(z)]",
+      "status": "exact_checked",
+      "assumptions": "The concrete E8 reference bracket passes all C(248,3)=2511496 distinct-basis Jacobi triples in exact integer arithmetic. Verified skew symmetry handles repeated indices. This is a finite full-basis certificate in Python, not a new Lean theorem or a generic claim about every supplied bracket.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A014",
+      "domain": "asterion",
+      "title": "order-thirty Coxeter lift",
+      "equation": "C=product_i exp(ad e_i)exp(-ad f_i)exp(ad e_i); C^30=I",
+      "status": "exact_checked",
+      "assumptions": "The fixed Chevalley product uses finite nilpotent exponentials. Actual C^30 is identity on all248 basis vectors; root action has eight disjoint30-cycles; C preserves all30628 unordered basis brackets. The order also follows from the cited classical lifting result.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/abs/1608.00510; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A015",
+      "domain": "asterion",
+      "title": "rational cyclic Coxeter coordinates",
+      "equation": "e8_Q isomorphic to (Q[t]/(t^30-1))^8 direct-sum Q[t]/Phi_30(t)",
+      "status": "derived",
+      "assumptions": "This is a Q[t]-module statement with t acting by C, not an associative polynomial model of the Lie bracket. Cartan cyclicity over Q does not prove an integral lattice basis.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/abs/0811.2324"
+    },
+    {
+      "id": "PJ-A016",
+      "domain": "asterion",
+      "title": "Coxeter difference bracket kernel",
+      "equation": "K_ij(d)=[u_i,C^d u_j]; [C^a u_i,C^b u_j]=C^a K_ij(b-a)",
+      "status": "exact_checked",
+      "assumptions": "C is the actual order30 Lie automorphism. The1920 computed seed brackets reconstruct all57600 ordered root-root brackets, each compared with the direct cocycle law. Indices are modulo30.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A017",
+      "domain": "asterion",
+      "title": "root bracket table reconstruction size",
+      "equation": "8^2*30=1920 seed brackets reconstruct240^2=57600 ordered root brackets",
+      "status": "exact_checked",
+      "assumptions": "All57600 ordered root brackets are actually reconstructed and checked from1920 difference-kernel seeds. Eight signed root cycles each have length30. This is table compression, not an established runtime speedup.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A018",
+      "domain": "asterion",
+      "title": "full adjoint Coxeter phase multiplicities",
+      "equation": "dim(g_k)=9 if gcd(k,30)=1, else8; [g_k,g_l] subset g_(k+l mod30)",
+      "status": "derived",
+      "assumptions": "Work over a field containing a primitive thirtieth root. Eight primitive phases account for72 dimensions, not the entire248-dimensional adjoint representation.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_e8.py"
+    },
+    {
+      "id": "PJ-A019",
+      "domain": "asterion",
+      "title": "principal triple from the Cartan matrix",
+      "equation": "e=sum_i e_i; A r=2*1; h=sum_i r_i H_i; f=sum_i r_i f_i",
+      "status": "exact_checked",
+      "assumptions": "For the fixed symmetric E8 matrix and normalized simple generators, the exact solved coefficients r produce a triple satisfying [h,e]=2e,[h,f]=-2f,[e,f]=h. All744 basis-chain relations are replayed.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_principal.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A020",
+      "domain": "asterion",
+      "title": "principal Asterion chain vectors",
+      "equation": "A_(m,j)=(ad f)^j z_m/j!, 0<=j<=2m; m in {1,7,11,13,17,19,23,29}",
+      "status": "definition",
+      "assumptions": "Choose [e,z_m]=0,[h,z_m]=2m z_m, with explicit primitive rational seed normalization and z_1=e. The principal construction is classical; the stored normalization is project-specific.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/html/2309.08213v3"
+    },
+    {
+      "id": "PJ-A021",
+      "domain": "asterion",
+      "title": "principal raising and lowering laws",
+      "equation": "[h,A_(m,j)]=(2m-2j)A_(m,j); [f,A_(m,j)]=(j+1)A_(m,j+1); [e,A_(m,j)]=(2m-j+1)A_(m,j-1)",
+      "status": "exact_checked",
+      "assumptions": "All three relations are replayed on all248 concrete chain vectors:744 exact checks. Out-of-range chain vectors are zero. Each of the248 inverse columns is also replayed.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_principal.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A022",
+      "domain": "asterion",
+      "title": "eight binary-form coordinate spaces",
+      "equation": "A_(m,j) maps to binom(2m,j)x^(2m-j)y^j; sum_m(2m+1)=248",
+      "status": "exact_checked",
+      "assumptions": "Degrees2,14,22,26,34,38,46,58 retain248 scalar coordinates. All248 inverse columns replay. These divided chains happen to be integral in the fixed normalization, but their absolute determinant has21186 bits and exceeds1, so they are not a Z-basis of the Chevalley lattice.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_principal.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A023",
+      "domain": "asterion",
+      "title": "unnormalized binary transvectant",
+      "equation": "T_r(P,Q)=sum_(j=0)^r (-1)^j binom(r,j) (partial_x^(r-j)partial_y^j P)(partial_x^j partial_y^(r-j) Q)",
+      "status": "definition",
+      "assumptions": "P and Q are homogeneous binary forms; r is nonnegative. This convention omits factorial normalization and therefore changes the numeric coupling constants relative to normalized sources.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/html/2309.08213v3"
+    },
+    {
+      "id": "PJ-A024",
+      "domain": "asterion",
+      "title": "E8 transvectant coupling law",
+      "equation": "[P_a,Q_b]=sum_(c in M,abs(a-b)<=c<=a+b) kappa_ab^c T_(a+b-c)(P_a,Q_b)",
+      "status": "exact_checked",
+      "assumptions": "All170 permitted couplings are explicitly computed and nonzero in this fixed highest-seed/binomial normalization. The resulting transvectant law matches all30876 unordered basis pairs including diagonals; all744 chain relations and248 inverse columns pass. Principal T1 coefficient is1/2 in the unnormalized convention.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_principal.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A025",
+      "domain": "asterion",
+      "title": "finite principal coupling channel bounds",
+      "equation": "170 unordered-input channels;76 unordered trilinear triangles;68 nonprincipal triangle slots",
+      "status": "exact_checked",
+      "assumptions": "Exact enumeration gives170 channels,76 unordered trilinear triangles and68 triangles beyond the fixed principal action. All170 concrete couplings are nonzero in the chosen normalization. The68 triangle slots are not independent free parameters; cyclic conversion requires Killing-form normalization.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_principal.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A026",
+      "domain": "asterion",
+      "title": "minimal number of lowering seeds",
+      "equation": "dim(e8/(ad f)e8)=8",
+      "status": "derived",
+      "assumptions": "For this fixed principal lowering operator there is one Jordan chain per irreducible summand. This proves eight seeds are necessary and sufficient for its polynomial-module generation.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_principal.py"
+    },
+    {
+      "id": "PJ-A027",
+      "domain": "asterion",
+      "title": "two-component polynomial basis space",
+      "equation": "W=span_C{x^a y^b z^c:(a,b,c) in F5^3 minus{0}}; V=C^2 tensor W; dim(V)=2(125-1)=248",
+      "status": "definition",
+      "assumptions": "Monomials live in C[x,y,z]/(x^5-1,y^5-1,z^5-1). W is the nonconstant monomial subspace, not the augmentation ideal or an associative subalgebra.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; docs/ASTERION_BASIS.md"
+    },
+    {
+      "id": "PJ-A028",
+      "domain": "asterion",
+      "title": "two-output homogeneous bracket",
+      "equation": "[u[a],v[b]]=beta_(a,b)(u,v)[a+b]",
+      "status": "exact_checked",
+      "assumptions": "The actual Q(zeta5) polynomial basis has124 grades of dimension2. All7440 independent degree-pair maps, comprising29760 basis brackets, are extracted and replayed against the exterior model. The868 same-line pairs commute. Coefficients remain characteristic zero.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_jordan.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A029",
+      "domain": "asterion",
+      "title": "two-A4 exterior model dimension",
+      "equation": "L0=sl(V) direct-sum sl(W); Li=Lambda^i(V) tensor Lambda^(2i mod5)(W), i=1..4; dim(L)=48+4*50=248",
+      "status": "exact_checked",
+      "assumptions": "V and W are five-dimensional; the source exterior products, contractions and signs are implemented explicitly. All248 Fourier basis columns roundtrip and satisfy the three defining eigenconditions; all7440 grade maps replay against the actual exterior bracket.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://doi.org/10.1007/s13398-025-01768-3; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A030",
+      "domain": "asterion",
+      "title": "homogeneous polynomial Jacobi equations",
+      "equation": "beta_(a+b,c)(beta_(a,b)(u,v),w)+beta_(b+c,a)(beta_(b,c)(v,w),u)+beta_(c+a,b)(beta_(c,a)(w,u),v)=0",
+      "status": "exact_checked",
+      "assumptions": "The complete concrete248-vector Jordan kernel passes all2511496 distinct-basis Jacobi triples using exact integer power-basis arithmetic modulo Phi5. Skew symmetry handles repeated labels. This is exhaustive for the displayed kernel; it does not prove an arbitrary proposed beta law.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_jordan.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A031",
+      "domain": "asterion",
+      "title": "thirty-one equal Cartan blocks",
+      "equation": "H_l=direct-sum_(a in l minus{0})g_a; dim(H_l)=8; number(l)=(125-1)/4=31",
+      "status": "exact_checked",
+      "assumptions": "All31 projective lines partition248 displayed vectors and pass all868 within-line commutators. In addition,3720 exact rank-two minor certificates exclude every outside-grade normalizer direction. Each eight-dimensional abelian block is self-normalizing, giving a computational Cartan certificate; mutual Killing orthogonality also follows from the grading and cited theorem.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/pdf/0810.2737; python -m perfectjet asterion report --exhaustive; results/asterion"
+    },
+    {
+      "id": "PJ-A032",
+      "domain": "asterion",
+      "title": "finite homogeneous kernel catalogue size",
+      "equation": "7440 complete grade maps;29760 basis brackets;34080 nonzero scalar outputs;50 distinct coefficients; denominator1 in Z[zeta5]; max power-basis entry2",
+      "status": "exact_checked",
+      "assumptions": "A complete exact census replaces the59520 raw-slot bound by actual coefficients:34080 nonzero scalar outputs and50 distinct nonzero Q(zeta5) values. Every coefficient has integral power-basis entries of magnitude at most2. This gives a closed free rank248 Z[zeta5]-Lie lattice (Z-rank992), not an identified rank248 Chevalley Z-lattice.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_jordan.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A033",
+      "domain": "asterion",
+      "title": "order-five clock and shift",
+      "equation": "D e_j=zeta_5^j e_j; P e_j=e_(j+1 mod5); DP=zeta_5 PD",
+      "status": "exact_checked",
+      "assumptions": "The fixed two-A4 model combines clocks D and D^2 with the common shift P. Its three commuting order-five symmetries are checked on the248 extracted joint eigenvectors, with exact cyclotomic coefficients.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; https://arxiv.org/pdf/0810.2737; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A034",
+      "domain": "asterion",
+      "title": "exact homogeneous Fourier projector",
+      "equation": "P_a=(1/125)sum_(s in F5^3)zeta_5^(-a dot s)sigma_s",
+      "status": "exact_checked",
+      "assumptions": "Exact extraction and inverse roundtrip are checked on all248 Fourier vectors, together with their three eigenconditions. Although the projector formula has powers-of-five denominators, all displayed bracket coefficients cancel to Z[zeta5]. Rational descent and equality with the Chevalley Z-lattice are not established.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_jordan.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A035",
+      "domain": "asterion",
+      "title": "obstruction to label-only SL3 symmetry",
+      "equation": "T_g(u[a])=u[ga] for all g in SL3(F5) implies dim([V,V])<=124",
+      "status": "exact_checked",
+      "assumptions": "The general dimension obstruction is derived from transitivity and alternating two-dimensional fibers. The concrete polynomial bracket also supplies an exact failure of the untwisted determinant-one label swap. A compatible full symmetry requires internal fiber transformations.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; docs/ASTERION_BASIS.md; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A036",
+      "domain": "asterion",
+      "title": "required internal covariance law",
+      "equation": "T_g(a+b) beta_(a,b)(u,v)=beta_(ga,gb)(T_g(a)u,T_g(b)v)",
+      "status": "derived",
+      "assumptions": "A correct symmetry must act within the two-dimensional fibers as well as on labels. A nonsplit normalizer extension may add scalar composition data; a naive globally split action is not assumed.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; docs/ASTERION_BASIS.md"
+    },
+    {
+      "id": "PJ-A037",
+      "domain": "asterion",
+      "title": "infinitesimal basis gauge",
+      "equation": "d1(F)(x,y)=[x,Fy]+[Fx,y]-F[x,y]",
+      "status": "derived",
+      "assumptions": "This is the first-order transported bracket for S=I+tF. The image is tangent to the GL(V) basis-change orbit; an apparent deformation in that image is a coordinate effect.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_deformations.py"
+    },
+    {
+      "id": "PJ-A038",
+      "domain": "asterion",
+      "title": "linearized Jacobi and cohomology",
+      "equation": "d2(phi)=cyclic_sum([phi(x,y),z]+phi([x,y],z)); H2=ker(d2)/im(d1)",
+      "status": "exact_checked",
+      "assumptions": "The bounded exact adjoint complex checks d2*d1=0. Concrete examples give sl2 ranks(d1,d2)=(6,3), H2=0; abelian3 H2=9; Heisenberg3 H2=5; sl2 direct-sum sl2 H2=0. The E8 spaces C2=7595744,C3=622851008 are reported without allocating those matrices.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_deformations.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A039",
+      "domain": "asterion",
+      "title": "second-order deformation obstruction",
+      "equation": "d2(psi)=-cyclic_sum(phi(phi(x,y),z))",
+      "status": "exact_checked",
+      "assumptions": "For mu_t=mu+t phi+t^2 psi, the exact left-nested Jacobi convention matches the implementation. The finite system returns a correction or a left-nullspace obstruction. On abelian3, phi(e0,e1)=e0 and phi(e1,e2)=e1 gives quadratic residual-e0 on(e0,e1,e2), so it cannot extend to second order.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_deformations.py; python -m perfectjet asterion report --exhaustive"
+    },
+    {
+      "id": "PJ-A040",
+      "domain": "asterion",
+      "title": "small-dimensional rigidity comparisons",
+      "equation": "semisimple characteristic-zero g => H2(g,g)=0; abelian dimension3 => dim H2=9",
+      "status": "derived",
+      "assumptions": "The first statement is Whitehead rigidity in its infinitesimal form. The abelian count is dim Hom(Lambda^2(K^3),K^3)=9. Small executable examples do not compute the full E8 cochain complex or prove a new rigidity theorem.",
+      "source": "docs/ASTERION_BASIS.md; docs/chapters/34_asterion_basis.md; src/perfectjet/asterion_deformations.py"
+    }
+  ],
+  "preserved_prefix": {
+    "equation_count": 464,
+    "sha256_of_canonical_records": "9c01a6f89a4b672ec144f0921dacb1300c2f320a317c5f72df55b4fedd9c2143"
+  }
+}

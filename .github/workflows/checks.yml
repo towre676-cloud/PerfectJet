@@ -22,6 +22,9 @@ jobs:
       - run: python scripts/build_mathlab.py --check
         env:
           PYTHONPATH: src
+      - run: python scripts/verify_asterion.py --check
+        env:
+          PYTHONPATH: src
       - run: python -m perfectjet.cli math-lab --all --output results/mathlab/replay-ci.json
         env:
           PYTHONPATH: src
@@ -35,3 +38,4 @@ jobs:
             results/math-bridges-ci.json
             results/observatory/benchmark-ci.json
             results/mathlab/replay-ci.json
+            results/asterion/

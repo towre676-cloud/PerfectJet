@@ -55,6 +55,7 @@ def _field(key, label, value, kind='number', low=None, high=None, help=None):
 
 
 LABS = [
+    dict(id='asterion', title='Build an exact Lie basis', category='structure', question='How do polynomial coordinates change the arithmetic of E8?', description='Compute exact E8 brackets, all 170 polynomial couplings, a two-component modulo-five presentation and certified basis changes.', example={'params': {'operation':'overview'}}),
     dict(id='pipeline', title='Make a complete decision', category='explore', question='What can I choose with the information and budget I have?', description='Recover values, count every feasible portfolio, then separate a winner under declared error bounds.', example={'params': {}}, fields=[_field('uncertainty', 'Measurement uncertainty', 0, low=0, high=20)]),
     dict(id='recover', title='Can we know the answer?', category='know', question='Do these measurements reveal the target?', description='Get an exact recovery formula or a hidden-direction witness and a repair.', example={'params': {}}, fields=[_field('repair', 'Add the missing measurement', False, 'checkbox')]),
     dict(id='compress', title='Keep only the useful state', category='know', question='How small can the world become without losing its future answers?', description='Compile a finite arithmetic model and replay its all-future behavioral quotient.', example={'params': {'prime': 13}}, fields=[_field('prime', 'Arithmetic modulus (prime)', 13, low=2, high=13)]),
@@ -125,6 +126,10 @@ def evaluate(request):
     if lab == 'overview':
         cat = catalogue()
         return _out(lab, 'Start with a question. Each card computes an answer with the same exact Python engine used by the command line.', [('Callable tools', len(LABS)), ('Equation entries', len(cat['equations']))], {'labs': LABS}, [])
+    if lab == 'asterion':
+        from .asterion import evaluate as asterion_evaluate
+        result = asterion_evaluate(p)
+        return _out(lab, 'Asterion coordinates give exact polynomial and commutator presentations of E8, with explicit arithmetic and replay scope.', [('Lie algebra dimension', 248), ('Computed polynomial couplings', 170), ('Modulo-five components', 124)], result, [f'PJ-A{i:03d}' for i in range(1,41)], scope='Exact arithmetic in explicitly constructed Lie algebras. The Asterion name is coined for this program; classical constructions retain their attribution. Exhaustive checks are separately requested and reported.')
     if lab == 'pipeline':
         spec = dict(p)
         uncertainty = spec.pop('uncertainty', None)

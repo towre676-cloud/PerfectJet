@@ -558,3 +558,28 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T552 | Partner incidence | Prime-field Groebner bases | [32_partner_incidence](chapters/32_partner_incidence.md) |
 | PJ-T553 | Partner incidence | Sextic and septic partner emptiness modulo primes | [32_partner_incidence](chapters/32_partner_incidence.md) |
 | PJ-T554 | Partner incidence | Fourfold-root uniform source | [32_partner_incidence](chapters/32_partner_incidence.md) |
+| PJ-T555 | Asterion basis calculus | Coined certified basis nomenclature | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T556 | Asterion basis calculus | Exact commutator-word basis compiler | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T557 | Asterion basis calculus | Reversible unimodular basis optimization | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T558 | Asterion basis calculus | Root-lattice cocycle E8 reference algebra | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T559 | Asterion basis calculus | Full bracket transport certificates | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T560 | Asterion basis calculus | Order-thirty Coxeter lift and difference kernel | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T561 | Asterion basis calculus | Full adjoint phase multiplicities | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T562 | Asterion basis calculus | Principal divided-power polynomial coordinates | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T563 | Asterion basis calculus | Complete normalized transvectant coupling catalogue | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T564 | Asterion basis calculus | Seventy-six trilinear channel bounds | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T565 | Asterion basis calculus | Minimal eight lowering seeds | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T566 | Asterion basis calculus | Two-component polynomial coordinates modulo five | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T567 | Asterion basis calculus | Explicit two-A4 exterior model | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T568 | Asterion basis calculus | Exact fifth-cyclotomic arithmetic | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T569 | Asterion basis calculus | All homogeneous bracket kernels | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T570 | Asterion basis calculus | Thirty-one equal Cartan blocks | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T571 | Asterion basis calculus | Homogeneous Jacobi identities | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T572 | Asterion basis calculus | Obstruction to label-only symmetry | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T573 | Asterion basis calculus | Internal two-dimensional covariance | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T574 | Asterion basis calculus | Lattice index and rational descent boundary | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T575 | Asterion basis calculus | Independent replay and corrupted-certificate rejection | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T576 | Asterion basis calculus | Infinitesimal gauge versus genuine deformation | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T577 | Asterion basis calculus | Linearized Jacobi cohomology | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T578 | Asterion basis calculus | Exact second-order obstruction witnesses | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T579 | Asterion basis calculus | Small-dimensional rigidity comparisons | [34_asterion_basis](chapters/34_asterion_basis.md) |

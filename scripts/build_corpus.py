@@ -457,6 +457,9 @@ def build():
     incidence=ROOT/'data/incidence_equations.json'
     if incidence.exists():
         equations.extend(json.loads(incidence.read_text())['equations'])
+    asterion=ROOT/'data/asterion_equations.json'
+    if asterion.exists():
+        equations.extend(json.loads(asterion.read_text())['equations'])
     statuses={'definition','derived','historical_report','conditional','exact_checked','numerical_checked','proposal','open','rejected'}
     for e in equations:
         if e['status'] not in statuses:raise ValueError(f"bad registry row {e}")

@@ -1,3 +1,7 @@
+# Asterion research addition — 20 October 2026 UTC
+
+Current source adds the Asterion basis calculus, 40 stable equation records and one callable Math Lab tool: 504 equations, 25 ranked families and 26 tools. The research account is [ASTERION_BASIS.md](ASTERION_BASIS.md); reproducible numerical receipts are under `results/asterion/`. This source addition does not replace or retag the historical v0.17.0 download. Exact exhaustive checks cover both E8 presentations, all polynomial couplings and the prescribed integral basis. A new name and implementation do not assert a new abstract simple Lie algebra or historical priority for classical constructions.
+
 # Release 0.17.0 — Integrated sextic partners and downloadable Math Lab
 
 This distribution starts from verified main commit `478547d1d0e7b338261d5b48d1a6d0f8d4942735` and adds release documentation, packaging verification and publication infrastructure. The mathematical source, equation records and stable identifiers remain unchanged: 464 equations across 24 ranked families, 25 computed Math Lab tools, the complete finite-system Observatory and recovered sextic-partner research.

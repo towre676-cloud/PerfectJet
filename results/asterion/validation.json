@@ -1,0 +1,2791 @@
+{
+  "arithmetic": "exact rational and Q(zeta_5); no floating equality",
+  "asterion_e8_basis": {
+    "basis_matrix_nonzero_entries": 256,
+    "basis_matrix_sha256": "827ba2285d73f1f1aad51be981ebd1186184975232439e0b363135d4593dee92",
+    "basis_name": "Asterion response basis",
+    "basis_vectors": 248,
+    "candidate_words_examined": 3943,
+    "certificate_replay": {
+      "bracket_pairs": 30628,
+      "inverse_unit_columns_each_side": 248,
+      "optimization_replayed": null,
+      "scope": "Stored bracket pairs and any optimization report replayed exactly; inverse equality holds on the full ambient space.",
+      "valid": true,
+      "word_columns": 248
+    },
+    "chevalley_comparison": {
+      "asterion_is_denser": true,
+      "baseline": "supplied Chevalley Cartan/root basis",
+      "baseline_tensor_cost": {
+        "full_unordered_tensor": true,
+        "height_definition": "bit_length(abs(numerator)) + bit_length(denominator)",
+        "input_workload": "Pairs of current basis indices, not fixed ambient input vectors.",
+        "max_coefficient_height_bits": 4,
+        "nonzero_input_pairs": 7752,
+        "objective": [
+          8347,
+          4,
+          17085
+        ],
+        "objective_order": "lexicographic: output terms, maximum height, total height",
+        "output_terms": 8347,
+        "pair_count": 30628,
+        "total_coefficient_height_bits": 17085
+      },
+      "finding": "The Asterion response basis is denser; no sparsity advantage is established.",
+      "nonzero_input_pair_difference": 448,
+      "output_term_difference": 715,
+      "output_term_ratio": "9062/8347",
+      "scope": "Exact full unordered bracket tensors in their respective basis coordinates; no runtime advantage follows from this comparison.",
+      "sparsity_advantage_established": false
+    },
+    "determinant": "-1",
+    "dimension": 248,
+    "integral_columns": true,
+    "inverse_matrix_nonzero_entries": 256,
+    "inverse_matrix_sha256": "316fc26dba76380e9bdc675904d32a3200426f8b1bf4de0191851d7d0ba339b3",
+    "maximum_selected_word_depth": 28,
+    "passed": true,
+    "probe_count": 16,
+    "same_chevalley_integer_lattice": true,
+    "schema": "perfectjet/asterion-e8-response/1",
+    "scope": "A prescribed mixed basis of the supplied E8 algebra; classical algebra, exact implementation, no priority claim.",
+    "seed_count": 8,
+    "selection_transcript_sha256": "a0efa134bc47a3eb5746500383822a005a10d80bd8f64a34765b3e384f144e75",
+    "tensor_cost": {
+      "full_unordered_tensor": true,
+      "height_definition": "bit_length(abs(numerator)) + bit_length(denominator)",
+      "input_workload": "Pairs of current basis indices, not fixed ambient input vectors.",
+      "max_coefficient_height_bits": 4,
+      "nonzero_input_pairs": 8200,
+      "objective": [
+        9062,
+        4,
+        18545
+      ],
+      "objective_order": "lexicographic: output terms, maximum height, total height",
+      "output_terms": 9062,
+      "pair_count": 30628,
+      "total_coefficient_height_bits": 18545
+    }
+  },
+  "chart_transport": {
+    "ambient_coordinates": 250,
+    "cartan_column_denominators": [
+      1,
+      5
+    ],
+    "cartan_inverse_integral": true,
+    "cartan_inverse_size": [
+      8,
+      8
+    ],
+    "cartan_lattice": {
+      "ambient_coordinates": "first four diagonal entries in each trace-zero sl5 block",
+      "jordan_fourier_basis_unimodular_over_Z_claim": false,
+      "standard_a4_basis_embedding_determinant": "5",
+      "standard_a4_basis_in_chevalley_is_integral": true,
+      "standard_a4_cartan_lattice_index_in_chevalley_cartan": 5,
+      "standard_basis": "E_ii-E_(i+1)(i+1), i=0,1,2,3, in each of two sl5 copies"
+    },
+    "cartan_transport_determinant": "1/5",
+    "construction_field": "Q",
+    "conversion_field": "Q(zeta_5)",
+    "dimension": 248,
+    "intertwining": {
+      "basis_pairs_checked": 30628,
+      "exhaustive": true,
+      "passed": true
+    },
+    "new_simple_lie_algebra_claim": false,
+    "one_dimensional_root_columns": 240,
+    "passed": true,
+    "root_column_denominators": [
+      1
+    ],
+    "root_columns_have_unit_coefficients": true,
+    "roundtrips": {
+      "chevalley_a4_basis_roundtrips": 248,
+      "chevalley_jordan_basis_roundtrips": 248,
+      "jordan_chevalley_basis_roundtrips": 248,
+      "passed": true
+    },
+    "simple_ambient_weights": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        -2,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -2,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        -1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        -2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        -2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        -2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    ],
+    "simple_cartan_verified": true,
+    "simple_f_normalizations": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "trace_constraints": 2
+  },
+  "chevalley_coxeter": {
+    "cartan_characteristic_polynomial_ascending": [
+      1,
+      1,
+      0,
+      -1,
+      -1,
+      -1,
+      0,
+      1,
+      1
+    ],
+    "cartan_characteristic_polynomial_is_phi30": true,
+    "cartan_exponents": [
+      1,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29
+    ],
+    "coefficient_field": "Q",
+    "coxeter_equivariance": {
+      "all_distinct_basis_pairs": true,
+      "checked": 30628,
+      "passed": true
+    },
+    "coxeter_order": 30,
+    "dimension": 248,
+    "jacobi": {
+      "checked": 2511496,
+      "exhaustive_distinct_triples": true,
+      "mode": "full",
+      "passed": true
+    },
+    "kernel_seed_brackets": 1920,
+    "orbit_kernel": {
+      "checked": 57600,
+      "passed": true,
+      "seed_brackets": 1920,
+      "table_redundancy_factor": 30
+    },
+    "order_thirty_on_all_basis_vectors": true,
+    "ordinary_polynomial_multiplication": false,
+    "passed": true,
+    "phase_multiplicities": [
+      8,
+      9,
+      8,
+      8,
+      8,
+      8,
+      8,
+      9,
+      8,
+      8,
+      8,
+      9,
+      8,
+      9,
+      8,
+      8,
+      8,
+      9,
+      8,
+      9,
+      8,
+      8,
+      8,
+      9,
+      8,
+      8,
+      8,
+      8,
+      8,
+      9
+    ],
+    "rank": 8,
+    "root_count": 240,
+    "root_orbit_lengths": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "root_sign_convention": "lattice 2-cocycle with negative-root gauge",
+    "signed_monodromy": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "deformations": {
+    "E8_full_complex_not_allocated": {
+      "C1_dimension": 61504,
+      "C2_dimension": 7595744,
+      "C3_dimension": 622851008,
+      "d1_shape": [
+        7595744,
+        61504
+      ],
+      "d2_shape": [
+        622851008,
+        7595744
+      ],
+      "dense_matrix_entries": 4731483975548928,
+      "dimension": 248
+    },
+    "abelian3": {
+      "B2_dimension": 0,
+      "C1_dimension": 9,
+      "C2_dimension": 9,
+      "C3_dimension": 3,
+      "H2_dimension": 9,
+      "Z2_dimension": 9,
+      "arithmetic": "exact rational",
+      "basis_jacobi_verified": true,
+      "basis_triples_checked": 1,
+      "cohomology": "adjoint H2 = Z2/B2",
+      "d1_shape": [
+        9,
+        9
+      ],
+      "d2_d1_zero": true,
+      "d2_shape": [
+        3,
+        9
+      ],
+      "dense_matrix_entries": 108,
+      "derivations_dimension": 9,
+      "dimension": 3,
+      "rank_d1": 0,
+      "rank_d2": 0,
+      "scope": "Bounded classical infinitesimal deformation problem; not a classification of finite deformations or E8."
+    },
+    "obstructed_abelian_direction": {
+      "extends_to_order_two": false,
+      "first_order_cocycle": true,
+      "left_null_witness": [
+        1,
+        0,
+        0
+      ],
+      "quadratic_obstruction": [
+        -1,
+        0,
+        0
+      ],
+      "scope": "Exact Jacobi extension through order two only.",
+      "witness_rhs": 1
+    },
+    "schema": "perfectjet/asterion-deformations/1",
+    "sl2": {
+      "B2_dimension": 6,
+      "C1_dimension": 9,
+      "C2_dimension": 9,
+      "C3_dimension": 3,
+      "H2_dimension": 0,
+      "Z2_dimension": 6,
+      "arithmetic": "exact rational",
+      "basis_jacobi_verified": true,
+      "basis_triples_checked": 1,
+      "cohomology": "adjoint H2 = Z2/B2",
+      "d1_shape": [
+        9,
+        9
+      ],
+      "d2_d1_zero": true,
+      "d2_shape": [
+        3,
+        9
+      ],
+      "dense_matrix_entries": 108,
+      "derivations_dimension": 3,
+      "dimension": 3,
+      "rank_d1": 6,
+      "rank_d2": 3,
+      "representatives": [],
+      "scope": "Bounded classical infinitesimal deformation problem; not a classification of finite deformations or E8."
+    }
+  },
+  "exhaustive_requested": true,
+  "jordan_polynomials": {
+    "all_ambient_coefficients_replayed": true,
+    "basis_brackets_compiled": 29760,
+    "cartans": {
+      "ambient_brackets_checked": 868,
+      "cartan_identification": "abelian and self-normalizing, certified by graded 2x2 minors",
+      "line_dimension": 8,
+      "lines": 31,
+      "normalizer_dimension_each": 8,
+      "normalizer_minor_sha256": "07a124c29d8019c9ae35150e8dc79116fa4b3d78784b039fa4d7c5adada3081b",
+      "normalizer_minors_checked": 3720,
+      "passed": true
+    },
+    "checksum_encoding": "sorted grades; r,s,t order; four Fraction strings; compact JSON ASCII",
+    "chevalley_Z_lattice_identified": false,
+    "closed_free_Z_zeta5_lattice": true,
+    "closed_over_Z_zeta5": true,
+    "coefficient_field": "Q(zeta_5), Phi_5=1+z+z^2+z^3+z^4",
+    "construction": "explicit 2A4 exterior algebra bracket with clock-shift Fourier basis",
+    "cyclotomic_integer_structure_constants": true,
+    "dimension": 248,
+    "distinct_nonzero_coefficients": 50,
+    "fiber_dimension": 2,
+    "grade_pair_maps": 7440,
+    "grading_identification": "Elduque Theorem 2.1",
+    "integral_lattice_claim": false,
+    "integral_lattice_claim_scope": "Chevalley Z lattice and rational descent not identified; Z[zeta5] closure censused separately",
+    "jacobi": {
+      "algorithm": "integer power-basis products modulo Phi_5; common denominator D^2",
+      "coefficient_field": "Q(zeta_5), Phi_5=1+z+z^2+z^3+z^4",
+      "common_coefficient_denominator": 1,
+      "distinct_structure_coefficients": 50,
+      "exhaustive": true,
+      "passed": true,
+      "triples_checked": 2511496
+    },
+    "kernel_sha256": "f742d9a603dd090802eafd4bf03fb9ea786cfb7f5b9933b1e69933d941767f34",
+    "max_absolute_power_basis_coefficient": "2",
+    "max_absolute_power_basis_numerator": 2,
+    "max_power_basis_denominator": 1,
+    "new_simple_lie_algebra_claim": false,
+    "no_go": {
+      "alternating_fiber_image_dimension_bound": 1,
+      "conclusion": "degree permutation alone cannot preserve an E8 Jordan bracket",
+      "derived_dimension_bound": 124,
+      "determinant_mod5": 1,
+      "e8_dimension": 248,
+      "required_covariance": "T_g(a+b) beta_ab(u,v) = beta_ga,gb(T_g(a)u,T_g(b)v)",
+      "swap_matrix_mod5": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ]
+    },
+    "no_go_counterexample": {
+      "bracket_of_mapped_inputs": [
+        [
+          [
+            1,
+            0,
+            4,
+            0
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "exact_mismatch": true,
+      "left": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "mapped_left": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "mapped_original_bracket": [
+        [
+          [
+            1,
+            0,
+            4,
+            0
+          ],
+          [
+            "-2",
+            "-1",
+            "-1",
+            "-1"
+          ]
+        ]
+      ],
+      "mapped_right": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        1,
+        0,
+        0
+      ]
+    },
+    "nonzero_grades": 124,
+    "nonzero_scalar_outputs": 34080,
+    "power_basis_denominator_lcm": 1,
+    "same_Chevalley_Z_lattice_claim": false,
+    "split_e8_identification": "Cabrera-Draper-Garvin Proposition 3.1, solution (17)"
+  },
+  "limitations": [
+    "Classical E8 and its gradings are identified by the cited constructions.",
+    "No new complex simple Lie algebra or new Lean proof is asserted.",
+    "Rational or cyclotomic coordinate charts do not establish the same integral lattice.",
+    "Stored coefficient counts and table reductions are not runtime speedup claims."
+  ],
+  "nomenclature": {
+    "basis_contract": "ordered independent vectors, exact inverse, bracket transport, normalization and evidence",
+    "name": "Asterion basis calculus",
+    "position": "j identifies a chain position or a direction inside a grade",
+    "priority_scope": "coined program nomenclature and explicit implementation; no worldwide naming or mathematical-priority claim",
+    "sector": "sigma identifies a polynomial module, finite grade, or compiled seed",
+    "symbol": "A_(sigma,j)"
+  },
+  "passed": true,
+  "principal_polynomials": {
+    "allowed_coupling_slots": 170,
+    "arithmetic": "fractions.Fraction; no floating-point arithmetic",
+    "basis_absolute_determinant": {
+      "denominator": "1",
+      "exact_representation": "abs(product of the 59 height_blocks determinant values)",
+      "numerator_bit_length": 21186,
+      "numerator_unsigned_big_endian_sha256": "7d04357d2be268bb7697e8f7a6174909a3aafcc2bee59dc3dd96fc942a10f141",
+      "prime_power_factors": [
+        [
+          2,
+          4380
+        ],
+        [
+          3,
+          2177
+        ],
+        [
+          5,
+          1020
+        ],
+        [
+          7,
+          718
+        ],
+        [
+          11,
+          484
+        ],
+        [
+          13,
+          351
+        ],
+        [
+          17,
+          289
+        ],
+        [
+          19,
+          281
+        ],
+        [
+          23,
+          207
+        ],
+        [
+          29,
+          168
+        ],
+        [
+          31,
+          68
+        ],
+        [
+          37,
+          77
+        ],
+        [
+          41,
+          58
+        ],
+        [
+          43,
+          66
+        ],
+        [
+          47,
+          35
+        ],
+        [
+          53,
+          47
+        ]
+      ]
+    },
+    "chain_dimensions": [
+      3,
+      15,
+      23,
+      27,
+      35,
+      39,
+      47,
+      59
+    ],
+    "common_coordinate_denominator": "1",
+    "couplings": [
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 1,
+        "right_exponent": 1,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 7,
+        "right_exponent": 7,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 11,
+        "right_exponent": 11,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 13,
+        "right_exponent": 13,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 17,
+        "right_exponent": 17,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 19,
+        "right_exponent": 19,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 1,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "703/8302694400",
+        "left_exponent": 7,
+        "output_exponent": 1,
+        "right_exponent": 7,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "-211/25280640",
+        "left_exponent": 7,
+        "output_exponent": 7,
+        "right_exponent": 7,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "37/2600",
+        "left_exponent": 7,
+        "output_exponent": 11,
+        "right_exponent": 7,
+        "transvectant_order": 3
+      },
+      {
+        "coefficient": "-1/2",
+        "left_exponent": 7,
+        "output_exponent": 13,
+        "right_exponent": 7,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1189/11239772544000",
+        "left_exponent": 7,
+        "output_exponent": 7,
+        "right_exponent": 11,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "-37/416556000",
+        "left_exponent": 7,
+        "output_exponent": 11,
+        "right_exponent": 11,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "41/848160",
+        "left_exponent": 7,
+        "output_exponent": 13,
+        "right_exponent": 11,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 7,
+        "output_exponent": 17,
+        "right_exponent": 11,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "-43/177470092800000",
+        "left_exponent": 7,
+        "output_exponent": 7,
+        "right_exponent": 13,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "1591/1631145600000",
+        "left_exponent": 7,
+        "output_exponent": 11,
+        "right_exponent": 13,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "-19/343728000",
+        "left_exponent": 7,
+        "output_exponent": 13,
+        "right_exponent": 13,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "-43/11100",
+        "left_exponent": 7,
+        "output_exponent": 17,
+        "right_exponent": 13,
+        "transvectant_order": 3
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 7,
+        "output_exponent": 19,
+        "right_exponent": 13,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "33041/10065368875161600000",
+        "left_exponent": 7,
+        "output_exponent": 11,
+        "right_exponent": 17,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "-1927/4939239368448000",
+        "left_exponent": 7,
+        "output_exponent": 13,
+        "right_exponent": 17,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "-71/6109747840",
+        "left_exponent": 7,
+        "output_exponent": 17,
+        "right_exponent": 17,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "47/7038240",
+        "left_exponent": 7,
+        "output_exponent": 19,
+        "right_exponent": 17,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "-1/2",
+        "left_exponent": 7,
+        "output_exponent": 23,
+        "right_exponent": 17,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/2247037606674432",
+        "left_exponent": 7,
+        "output_exponent": 13,
+        "right_exponent": 19,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "29/1587547247616",
+        "left_exponent": 7,
+        "output_exponent": 17,
+        "right_exponent": 19,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "1/264615120",
+        "left_exponent": 7,
+        "output_exponent": 19,
+        "right_exponent": 19,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "1/888",
+        "left_exponent": 7,
+        "output_exponent": 23,
+        "right_exponent": 19,
+        "transvectant_order": 3
+      },
+      {
+        "coefficient": "-1537/38615043471317913600",
+        "left_exponent": 7,
+        "output_exponent": 17,
+        "right_exponent": 23,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "53/5224984313472000",
+        "left_exponent": 7,
+        "output_exponent": 19,
+        "right_exponent": 23,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "-19/33907144320",
+        "left_exponent": 7,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 7,
+        "output_exponent": 29,
+        "right_exponent": 23,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1/1035858558518784000",
+        "left_exponent": 7,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "1/2750267520",
+        "left_exponent": 7,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "1189/2329746963029950464000",
+        "left_exponent": 11,
+        "output_exponent": 1,
+        "right_exponent": 11,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "-41/2421721392330240000",
+        "left_exponent": 11,
+        "output_exponent": 7,
+        "right_exponent": 11,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "1387577/2061329325479424000",
+        "left_exponent": 11,
+        "output_exponent": 11,
+        "right_exponent": 11,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "41/1288687518720",
+        "left_exponent": 11,
+        "output_exponent": 13,
+        "right_exponent": 11,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "-181/86553360",
+        "left_exponent": 11,
+        "output_exponent": 17,
+        "right_exponent": 11,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "1/252",
+        "left_exponent": 11,
+        "output_exponent": 19,
+        "right_exponent": 11,
+        "transvectant_order": 3
+      },
+      {
+        "coefficient": "1763/35824482070401024000000",
+        "left_exponent": 11,
+        "output_exponent": 7,
+        "right_exponent": 13,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "1591/14063650368768000000",
+        "left_exponent": 11,
+        "output_exponent": 11,
+        "right_exponent": 13,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "41/887304958848000",
+        "left_exponent": 11,
+        "output_exponent": 13,
+        "right_exponent": 13,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "43/7263396000",
+        "left_exponent": 11,
+        "output_exponent": 17,
+        "right_exponent": 13,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "7/2941200",
+        "left_exponent": 11,
+        "output_exponent": 19,
+        "right_exponent": 13,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 11,
+        "output_exponent": 23,
+        "right_exponent": 13,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "1927/97391577169022534221824000000",
+        "left_exponent": 11,
+        "output_exponent": 7,
+        "right_exponent": 17,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "-8507/294941075386555293696000000",
+        "left_exponent": 11,
+        "output_exponent": 11,
+        "right_exponent": 17,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "47/3074380152496773120000",
+        "left_exponent": 11,
+        "output_exponent": 13,
+        "right_exponent": 17,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "-373/302538369461328000",
+        "left_exponent": 11,
+        "output_exponent": 17,
+        "right_exponent": 17,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "1/1279340116992",
+        "left_exponent": 11,
+        "output_exponent": 19,
+        "right_exponent": 17,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "1/2544480",
+        "left_exponent": 11,
+        "output_exponent": 23,
+        "right_exponent": 17,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "43/649619762412202367385600000",
+        "left_exponent": 11,
+        "output_exponent": 11,
+        "right_exponent": 19,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "1/224705558297528539545600",
+        "left_exponent": 11,
+        "output_exponent": 13,
+        "right_exponent": 19,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "1/2653896383650676736",
+        "left_exponent": 11,
+        "output_exponent": 17,
+        "right_exponent": 19,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "373/439894481951232000",
+        "left_exponent": 11,
+        "output_exponent": 19,
+        "right_exponent": 19,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "29/45969856128",
+        "left_exponent": 11,
+        "output_exponent": 23,
+        "right_exponent": 19,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 11,
+        "output_exponent": 29,
+        "right_exponent": 19,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "53/16305776814304822274409627648000",
+        "left_exponent": 11,
+        "output_exponent": 13,
+        "right_exponent": 23,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "1537/23384738983231963141668864000",
+        "left_exponent": 11,
+        "output_exponent": 17,
+        "right_exponent": 23,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "29/199037041247943714816000",
+        "left_exponent": 11,
+        "output_exponent": 19,
+        "right_exponent": 23,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "-5/49084578883372032",
+        "left_exponent": 11,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "1/2470608",
+        "left_exponent": 11,
+        "output_exponent": 29,
+        "right_exponent": 23,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "1/141825963216742609933320192000000",
+        "left_exponent": 11,
+        "output_exponent": 19,
+        "right_exponent": 29,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "1/609089705087704264359936000",
+        "left_exponent": 11,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "-1/156702542540544000",
+        "left_exponent": 11,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "1591/15511210043330985984000000000",
+        "left_exponent": 13,
+        "output_exponent": 1,
+        "right_exponent": 13,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "-43/6222146885911756800000000",
+        "left_exponent": 13,
+        "output_exponent": 7,
+        "right_exponent": 13,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "43/499629684153600000000",
+        "left_exponent": 13,
+        "output_exponent": 11,
+        "right_exponent": 13,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "-569/53829834170112000000",
+        "left_exponent": 13,
+        "output_exponent": 13,
+        "right_exponent": 13,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "137/35953810200000",
+        "left_exponent": 13,
+        "output_exponent": 17,
+        "right_exponent": 13,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "127/34268850000",
+        "left_exponent": 13,
+        "output_exponent": 19,
+        "right_exponent": 13,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "-7/15000",
+        "left_exponent": 13,
+        "output_exponent": 23,
+        "right_exponent": 13,
+        "transvectant_order": 3
+      },
+      {
+        "coefficient": "-82861/45584127693960997142524723200000000",
+        "left_exponent": 13,
+        "output_exponent": 7,
+        "right_exponent": 17,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "2021/201543068180812784025600000000",
+        "left_exponent": 13,
+        "output_exponent": 11,
+        "right_exponent": 17,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "6439/2472109080622655265792000000",
+        "left_exponent": 13,
+        "output_exponent": 13,
+        "right_exponent": 17,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "-107/447813747385804800000",
+        "left_exponent": 13,
+        "output_exponent": 17,
+        "right_exponent": 17,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "-1/1620216924480000",
+        "left_exponent": 13,
+        "output_exponent": 19,
+        "right_exponent": 17,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "41/72042264000",
+        "left_exponent": 13,
+        "output_exponent": 23,
+        "right_exponent": 17,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "1/2",
+        "left_exponent": 13,
+        "output_exponent": 29,
+        "right_exponent": 17,
+        "transvectant_order": 1
+      },
+      {
+        "coefficient": "43/79760995846773133916378234880000000",
+        "left_exponent": 13,
+        "output_exponent": 7,
+        "right_exponent": 19,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "1/528976092249936213442560000000",
+        "left_exponent": 13,
+        "output_exponent": 11,
+        "right_exponent": 19,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "127/149232578904346141325721600000",
+        "left_exponent": 13,
+        "output_exponent": 13,
+        "right_exponent": 19,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "-1/6416492901260682240000",
+        "left_exponent": 13,
+        "output_exponent": 17,
+        "right_exponent": 19,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "137/1535000218598246400000",
+        "left_exponent": 13,
+        "output_exponent": 19,
+        "right_exponent": 19,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "-1/48531643776000",
+        "left_exponent": 13,
+        "output_exponent": 23,
+        "right_exponent": 19,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "1/1850",
+        "left_exponent": 13,
+        "output_exponent": 29,
+        "right_exponent": 19,
+        "transvectant_order": 3
+      },
+      {
+        "coefficient": "53/81131609777841372888965578752000000000",
+        "left_exponent": 13,
+        "output_exponent": 11,
+        "right_exponent": 23,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "-53/1473343405006828584080584212480000000",
+        "left_exponent": 13,
+        "output_exponent": 13,
+        "right_exponent": 23,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "1/85553923109385231006105600000",
+        "left_exponent": 13,
+        "output_exponent": 17,
+        "right_exponent": 23,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "-1/793820246380687798272000000",
+        "left_exponent": 13,
+        "output_exponent": 19,
+        "right_exponent": 23,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "1/71232498623430144000",
+        "left_exponent": 13,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "-1/9774072000",
+        "left_exponent": 13,
+        "output_exponent": 29,
+        "right_exponent": 23,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "29/150951060164837364401057844221706240000000",
+        "left_exponent": 13,
+        "output_exponent": 17,
+        "right_exponent": 29,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "1/11063607013932729763215085977600000000",
+        "left_exponent": 13,
+        "output_exponent": 19,
+        "right_exponent": 29,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "-1/19621389785325330230452224000000",
+        "left_exponent": 13,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "-1/1783109984066611200000",
+        "left_exponent": 13,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "71299/580788908924804315384631743446253568000000000",
+        "left_exponent": 17,
+        "output_exponent": 1,
+        "right_exponent": 17,
+        "transvectant_order": 33
+      },
+      {
+        "coefficient": "-3337/306859219406969571996299389462118400000000",
+        "left_exponent": 17,
+        "output_exponent": 7,
+        "right_exponent": 17,
+        "transvectant_order": 27
+      },
+      {
+        "coefficient": "-17531/225259559646953792466561940684800000000",
+        "left_exponent": 17,
+        "output_exponent": 11,
+        "right_exponent": 17,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "-4387/224835167370392378505719709696000000",
+        "left_exponent": 17,
+        "output_exponent": 13,
+        "right_exponent": 17,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "892163/24183354294083906768015769600000",
+        "left_exponent": 17,
+        "output_exponent": 17,
+        "right_exponent": 17,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "1/168846175751263718400000",
+        "left_exponent": 17,
+        "output_exponent": 19,
+        "right_exponent": 17,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "6359/240059047672604160000",
+        "left_exponent": 17,
+        "output_exponent": 23,
+        "right_exponent": 17,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "-1/2214144",
+        "left_exponent": 17,
+        "output_exponent": 29,
+        "right_exponent": 17,
+        "transvectant_order": 5
+      },
+      {
+        "coefficient": "47/31007595053454608061308818306199715840000000",
+        "left_exponent": 17,
+        "output_exponent": 7,
+        "right_exponent": 19,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "1/161702049941337349165841205166080000000",
+        "left_exponent": 17,
+        "output_exponent": 11,
+        "right_exponent": 19,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "-1/189326716799482133900333631406080000",
+        "left_exponent": 17,
+        "output_exponent": 13,
+        "right_exponent": 19,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "1/1898746119641601167992750080000",
+        "left_exponent": 17,
+        "output_exponent": 17,
+        "right_exponent": 19,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "521/301649352237661261484851200000",
+        "left_exponent": 17,
+        "output_exponent": 19,
+        "right_exponent": 19,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "-1/245025786589968384000",
+        "left_exponent": 17,
+        "output_exponent": 23,
+        "right_exponent": 19,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "-1/59011223040",
+        "left_exponent": 17,
+        "output_exponent": 29,
+        "right_exponent": 19,
+        "transvectant_order": 7
+      },
+      {
+        "coefficient": "-53/918395353331239963403069104120345663635456000000000",
+        "left_exponent": 17,
+        "output_exponent": 7,
+        "right_exponent": 23,
+        "transvectant_order": 33
+      },
+      {
+        "coefficient": "53/490310320088709066341872299092943568896000000000",
+        "left_exponent": 17,
+        "output_exponent": 11,
+        "right_exponent": 23,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "1/11430032546618335387830941995247861760000000",
+        "left_exponent": 17,
+        "output_exponent": 13,
+        "right_exponent": 23,
+        "transvectant_order": 27
+      },
+      {
+        "coefficient": "6359/313638333684349845790044467442745344000000",
+        "left_exponent": 17,
+        "output_exponent": 17,
+        "right_exponent": 23,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "-1/33548034053755529611876564992000000",
+        "left_exponent": 17,
+        "output_exponent": 19,
+        "right_exponent": 23,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "-103/1406459266610538735508193280000",
+        "left_exponent": 17,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "1/456461399538144000",
+        "left_exponent": 17,
+        "output_exponent": 29,
+        "right_exponent": 23,
+        "transvectant_order": 11
+      },
+      {
+        "coefficient": "1/4349081497071055221473372126194724813576161198080000000",
+        "left_exponent": 17,
+        "output_exponent": 13,
+        "right_exponent": 29,
+        "transvectant_order": 33
+      },
+      {
+        "coefficient": "-1/27373222762508558865745655611843251812696064000000",
+        "left_exponent": 17,
+        "output_exponent": 17,
+        "right_exponent": 29,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "-1/176957390251164894956146155186905363251200000000",
+        "left_exponent": 17,
+        "output_exponent": 19,
+        "right_exponent": 29,
+        "transvectant_order": 27
+      },
+      {
+        "coefficient": "1/24588549750284561333527724884082688000000",
+        "left_exponent": 17,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "-1/565774835224549015012147200000",
+        "left_exponent": 17,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "43/67117408274020820682768999220425894395904000000000",
+        "left_exponent": 19,
+        "output_exponent": 1,
+        "right_exponent": 19,
+        "transvectant_order": 37
+      },
+      {
+        "coefficient": "1/25813822882000961211039591239911263436800000000",
+        "left_exponent": 19,
+        "output_exponent": 7,
+        "right_exponent": 19,
+        "transvectant_order": 31
+      },
+      {
+        "coefficient": "373/354831729678687101818007609803800576000000000",
+        "left_exponent": 19,
+        "output_exponent": 11,
+        "right_exponent": 19,
+        "transvectant_order": 27
+      },
+      {
+        "coefficient": "137/689880441987409519086760534411837440000000",
+        "left_exponent": 19,
+        "output_exponent": 13,
+        "right_exponent": 19,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "521/5237915092125466279700916102758400000",
+        "left_exponent": 19,
+        "output_exponent": 17,
+        "right_exponent": 19,
+        "transvectant_order": 21
+      },
+      {
+        "coefficient": "-2753/17812997548338372813203433062400000",
+        "left_exponent": 19,
+        "output_exponent": 19,
+        "right_exponent": 19,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "-1/1903850361804054343680000",
+        "left_exponent": 19,
+        "output_exponent": 23,
+        "right_exponent": 19,
+        "transvectant_order": 15
+      },
+      {
+        "coefficient": "-1/86570019164160",
+        "left_exponent": 19,
+        "output_exponent": 29,
+        "right_exponent": 19,
+        "transvectant_order": 9
+      },
+      {
+        "coefficient": "53/80873894814348991177274265308837639139738255360000000000",
+        "left_exponent": 19,
+        "output_exponent": 7,
+        "right_exponent": 23,
+        "transvectant_order": 35
+      },
+      {
+        "coefficient": "1/127615941242399173543050072881156484759552000000000",
+        "left_exponent": 19,
+        "output_exponent": 11,
+        "right_exponent": 23,
+        "transvectant_order": 31
+      },
+      {
+        "coefficient": "-1/3560348457967843035512385342727753291530240000000",
+        "left_exponent": 19,
+        "output_exponent": 13,
+        "right_exponent": 23,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "-1/1231259240988959606815028678555074560000000",
+        "left_exponent": 19,
+        "output_exponent": 17,
+        "right_exponent": 23,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "-1/628086293554411025393553049780224000000",
+        "left_exponent": 19,
+        "output_exponent": 19,
+        "right_exponent": 23,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "59/48084029406881098289554111856640000",
+        "left_exponent": 19,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "-1/3991877711337496780800",
+        "left_exponent": 19,
+        "output_exponent": 29,
+        "right_exponent": 23,
+        "transvectant_order": 13
+      },
+      {
+        "coefficient": "1/112978437595241249879098328428534481382687507480576000000000000",
+        "left_exponent": 19,
+        "output_exponent": 11,
+        "right_exponent": 29,
+        "transvectant_order": 37
+      },
+      {
+        "coefficient": "1/797875242983494005839469061318140556423993239797760000000000",
+        "left_exponent": 19,
+        "output_exponent": 13,
+        "right_exponent": 29,
+        "transvectant_order": 35
+      },
+      {
+        "coefficient": "-1/16154307413294426014619798659329295057262582169600000000",
+        "left_exponent": 19,
+        "output_exponent": 17,
+        "right_exponent": 29,
+        "transvectant_order": 31
+      },
+      {
+        "coefficient": "-1/2927690311218454546333243292112275605605580800000000",
+        "left_exponent": 19,
+        "output_exponent": 19,
+        "right_exponent": 29,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "-1/827051850147078036680066337597067100160000000",
+        "left_exponent": 19,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 25
+      },
+      {
+        "coefficient": "-1/27346590094239039680505063014400000",
+        "left_exponent": 19,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 19
+      },
+      {
+        "coefficient": "53/11998011332470990667494453835215746757314540062015225856000000000000",
+        "left_exponent": 23,
+        "output_exponent": 1,
+        "right_exponent": 23,
+        "transvectant_order": 45
+      },
+      {
+        "coefficient": "-1/7206597715932250887943097271152315422412954258028625920000000000",
+        "left_exponent": 23,
+        "output_exponent": 7,
+        "right_exponent": 23,
+        "transvectant_order": 39
+      },
+      {
+        "coefficient": "-1/125397981084058419615000126667604783690840001006796800000000",
+        "left_exponent": 23,
+        "output_exponent": 11,
+        "right_exponent": 23,
+        "transvectant_order": 35
+      },
+      {
+        "coefficient": "1/299071663023462569373560233112081589538752068321280000000",
+        "left_exponent": 23,
+        "output_exponent": 13,
+        "right_exponent": 23,
+        "transvectant_order": 33
+      },
+      {
+        "coefficient": "-103/70529338791483547030572319531032938909049815040000000",
+        "left_exponent": 23,
+        "output_exponent": 17,
+        "right_exponent": 23,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "59/71825839668343206573547865379146474559897600000000",
+        "left_exponent": 23,
+        "output_exponent": 19,
+        "right_exponent": 23,
+        "transvectant_order": 27
+      },
+      {
+        "coefficient": "-2333/152081226056730489054364115170641838080000000",
+        "left_exponent": 23,
+        "output_exponent": 23,
+        "right_exponent": 23,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "-1/2210770004584979210485432320000",
+        "left_exponent": 23,
+        "output_exponent": 29,
+        "right_exponent": 23,
+        "transvectant_order": 17
+      },
+      {
+        "coefficient": "1/19855010856665774922459010619647570326953202435498322706992988160000000000000",
+        "left_exponent": 23,
+        "output_exponent": 7,
+        "right_exponent": 29,
+        "transvectant_order": 45
+      },
+      {
+        "coefficient": "1/2826703247335326520635918649122922098982637864635868607676416000000000000",
+        "left_exponent": 23,
+        "output_exponent": 11,
+        "right_exponent": 29,
+        "transvectant_order": 41
+      },
+      {
+        "coefficient": "-1/9906310531382023596789861884396703843625124207816159338168320000000000",
+        "left_exponent": 23,
+        "output_exponent": 13,
+        "right_exponent": 29,
+        "transvectant_order": 39
+      },
+      {
+        "coefficient": "1/19826382609463544563346760911088152473501830015898091520000000000",
+        "left_exponent": 23,
+        "output_exponent": 17,
+        "right_exponent": 29,
+        "transvectant_order": 35
+      },
+      {
+        "coefficient": "-1/7726173091798927265438883101268051740318788592074752000000000",
+        "left_exponent": 23,
+        "output_exponent": 19,
+        "right_exponent": 29,
+        "transvectant_order": 33
+      },
+      {
+        "coefficient": "-1/4570924155098684855840947656356956749402262732800000000",
+        "left_exponent": 23,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 29
+      },
+      {
+        "coefficient": "1/16696793116573191623654881165008175104000000",
+        "left_exponent": 23,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 23
+      },
+      {
+        "coefficient": "1/6379039295904811227839463591562254208922498702715841512101724266592764103229440000000000000000",
+        "left_exponent": 29,
+        "output_exponent": 1,
+        "right_exponent": 29,
+        "transvectant_order": 57
+      },
+      {
+        "coefficient": "1/70245373198951790306565521692798632657777515476335159508263035078551271374848000000000000000",
+        "left_exponent": 29,
+        "output_exponent": 7,
+        "right_exponent": 29,
+        "transvectant_order": 51
+      },
+      {
+        "coefficient": "-1/4166933517127258771655746919803454482697283901792667101677272802527281152000000000000000",
+        "left_exponent": 29,
+        "output_exponent": 11,
+        "right_exponent": 29,
+        "transvectant_order": 47
+      },
+      {
+        "coefficient": "-1/8578108592546378606074003169317844448432915426993767689420380447461867520000000000000",
+        "left_exponent": 29,
+        "output_exponent": 13,
+        "right_exponent": 29,
+        "transvectant_order": 45
+      },
+      {
+        "coefficient": "-1/8928253889785373784427825724570052588270137572878011613291466457088000000000000",
+        "left_exponent": 29,
+        "output_exponent": 17,
+        "right_exponent": 29,
+        "transvectant_order": 41
+      },
+      {
+        "coefficient": "-1/6364663845939733173396655646186571747590299196102061271289954304000000000000",
+        "left_exponent": 29,
+        "output_exponent": 19,
+        "right_exponent": 29,
+        "transvectant_order": 39
+      },
+      {
+        "coefficient": "1/555087480751314714421904216978647922812635204074901130444800000000000",
+        "left_exponent": 29,
+        "output_exponent": 23,
+        "right_exponent": 29,
+        "transvectant_order": 35
+      },
+      {
+        "coefficient": "1/2574068345941751838772564051826535927629065538764800000000",
+        "left_exponent": 29,
+        "output_exponent": 29,
+        "right_exponent": 29,
+        "transvectant_order": 29
+      }
+    ],
+    "exponents": [
+      1,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29
+    ],
+    "height_blocks": [
+      {
+        "determinant": "-18517467404129890376094140282346014285454983006729011200000000000",
+        "dimension": 1,
+        "height": -29
+      },
+      {
+        "determinant": "18517467404129890376094140282346014285454983006729011200000000000",
+        "dimension": 1,
+        "height": -28
+      },
+      {
+        "determinant": "-9258733702064945188047070141173007142727491503364505600000000000",
+        "dimension": 1,
+        "height": -27
+      },
+      {
+        "determinant": "3086244567354981729349023380391002380909163834454835200000000000",
+        "dimension": 1,
+        "height": -26
+      },
+      {
+        "determinant": "-771561141838745432337255845097750595227290958613708800000000000",
+        "dimension": 1,
+        "height": -25
+      },
+      {
+        "determinant": "-154312228367749086467451169019550119045458191722741760000000000",
+        "dimension": 1,
+        "height": -24
+      },
+      {
+        "determinant": "-92729716767847755281968098693456981226632201446645005095894081197169470188763366174706546769920000000000000000000",
+        "dimension": 2,
+        "height": -23
+      },
+      {
+        "determinant": "-13247102395406822183138299813350997318090314492377857870842011599595638598394766596386649538560000000000000000000",
+        "dimension": 2,
+        "height": -22
+      },
+      {
+        "determinant": "-827943899712926386446143738334437332380644655773616116927625724974727412399672912274165596160000000000000000000",
+        "dimension": 2,
+        "height": -21
+      },
+      {
+        "determinant": "-30664588878256532831338656975349530828912765028652448775097249073138052311098996750895022080000000000000000000",
+        "dimension": 2,
+        "height": -20
+      },
+      {
+        "determinant": "4384190946610296966521737613035134435360386200631078844257886929046673879056335486194020708517053617966362490840457801419980800000000000000000000000000",
+        "dimension": 3,
+        "height": -19
+      },
+      {
+        "determinant": "79712562665641763027667956600638807915643385466019615350143398709939525073751554294436740154855520326661136197099232753090560000000000000000000000000",
+        "dimension": 3,
+        "height": -18
+      },
+      {
+        "determinant": "216023689868569333245217542780953331773330228850020686636053637409516122444444554892432971929297407363331456517935337036637931027524675980293735830341550080000000000000000000000000000000",
+        "dimension": 4,
+        "height": -17
+      },
+      {
+        "determinant": "791295567284136751813983673190305244590953219230845005992870466701524258038258442829424805601822004993888119113316252881457622811445699561515515862056960000000000000000000000000000000",
+        "dimension": 4,
+        "height": -16
+      },
+      {
+        "determinant": "-883142374201045481935249635257037103338117432177282372759900074443665466560556297800697327680604916287821561510397603662341096887774218260619995381760000000000000000000000000000000",
+        "dimension": 4,
+        "height": -15
+      },
+      {
+        "determinant": "872239381926958500676789763216826768729004871286204812602370443894978238578327207704392422400597448185502776800392694975151700629900462479624686796800000000000000000000000000000",
+        "dimension": 4,
+        "height": -14
+      },
+      {
+        "determinant": "180723803684504806887476498077247495329370510573314187561954131863604247333418057267755276709536068471129432661638002201443051383562726986804133968432218527780479131923251200000000000000000000000000000000",
+        "dimension": 5,
+        "height": -13
+      },
+      {
+        "determinant": "27612498653094699295259969148548127628628038284692771208854718390161076750713224945417154577469223601394871300479450298157838255700951411276414662862065474068827980431360000000000000000000000000000000",
+        "dimension": 5,
+        "height": -12
+      },
+      {
+        "determinant": "-48393386341320003828915616076036662944061088305483038017289336391319556991772913441866861717775899651713955149293557484760282654133088779287957072918920027924299160949778902782396334080000000000000000000000000000000000000",
+        "dimension": 6,
+        "height": -11
+      },
+      {
+        "determinant": "1036638312476062031765645225800326948654994072906262194316760627879946811296894232201590765755754764083584070203147987163641639443332450341408158707000836020056533662142083901685760000000000000000000000000000000000000",
+        "dimension": 6,
+        "height": -10
+      },
+      {
+        "determinant": "-17354436034755502763933792842639402042215302559814657270927912297097323849836398976589131123143215916577858318133057820819893517466503074911966942639522924442910719790325065318400000000000000000000000000000000000",
+        "dimension": 6,
+        "height": -9
+      },
+      {
+        "determinant": "74199929601862018123815051435580790090172850450813563234152796951941954357699316879222408735581063188831631951827514599197877259222930147664868548509530968704658093272727552000000000000000000000000000000000",
+        "dimension": 6,
+        "height": -8
+      },
+      {
+        "determinant": "-4171718233938645712464391807901489026938888008536935170592146828466475158547042727710234066129220546274944877062267799649774847003566380309289830044342327443269836580792779092367769600000000000000000000000000000000000",
+        "dimension": 7,
+        "height": -7
+      },
+      {
+        "determinant": "-2131739479926030855315728674344320143763595999160397234781661728791144997481823919155133391482798810537260630449993893395491897873771435883446389949867180105454564147255700357120000000000000000000000000000000000",
+        "dimension": 7,
+        "height": -6
+      },
+      {
+        "determinant": "1529818368507689967037232718650334465310212167791060717659807857159466884629147318525819336140447320264031146695930453791178025071542414649418074063357707283754389182873600000000000000000000000000000000000",
+        "dimension": 7,
+        "height": -5
+      },
+      {
+        "determinant": "174775213647530789028095334478684970581463592632985394273125304104645303815567102202894054068555699249723299324771239071031199088495302604022086448412507883241367142400000000000000000000000000000000",
+        "dimension": 7,
+        "height": -4
+      },
+      {
+        "determinant": "-14066943921236273584635935445893471833801692830822785639685351356293352706653001228984647638158565251254772760729141194118453738449892358453872428347074702999552000000000000000000000000000000",
+        "dimension": 7,
+        "height": -3
+      },
+      {
+        "determinant": "-393098433831310960967308676791596759762837569758456317218185279325561251597567855586250096864724018586243463391507947172201420462532922920217772100702699520000000000000000000000000000",
+        "dimension": 7,
+        "height": -2
+      },
+      {
+        "determinant": "3816078521064639384290126269058234738458482600844802762797789295200391439044651476062006787495003537412050616888361029171377726401703233515321536020480000000000000000000000000000",
+        "dimension": 8,
+        "height": -1
+      },
+      {
+        "determinant": "17695175267520247096585101620304652706656151303381672531625379532255155036360131140539441562494317234012271476224357375773338142039092787937280000000000000000000000000000",
+        "dimension": 8,
+        "height": 0
+      },
+      {
+        "determinant": "25397478831845592747294074516576664328106845616120906204681672103862323398288419410542399178238325505349954237948778659286670384090316800000000000000000000000000",
+        "dimension": 8,
+        "height": 1
+      },
+      {
+        "determinant": "46799249445819479766955435674153059015716564854136823917493710572474423625995269232805198693339037337576925012556717884752632217600000000000000000000000",
+        "dimension": 7,
+        "height": 2
+      },
+      {
+        "determinant": "-114141838254078635639154389736613628109479789873546433833485144183146988816835677098305012110299459665278386195242057465856000000000000000000000",
+        "dimension": 7,
+        "height": 3
+      },
+      {
+        "determinant": "-283666739530811574741582034270097279323349637380874740010374381461692948018598181011494250405377223941376483472179200000000000000000000",
+        "dimension": 7,
+        "height": 4
+      },
+      {
+        "determinant": "326583175738545796973677254974926522860736956699064039427162889275793084379523863924064824141863541171814400000000000000000000",
+        "dimension": 7,
+        "height": 5
+      },
+      {
+        "determinant": "666321843477701418008739150939468903035102303981675081747044463565773846406889837000456307365380096000000000000000000",
+        "dimension": 7,
+        "height": 6
+      },
+      {
+        "determinant": "-196175681053736954438312102108661601959697039066643926504348304602406132706772292752606494720000000000000000",
+        "dimension": 7,
+        "height": 7
+      },
+      {
+        "determinant": "-635045850454665044018267121867316753117243815297693769456572117763834277180478377164800000000000000",
+        "dimension": 6,
+        "height": 8
+      },
+      {
+        "determinant": "3260749583756421641774483338758880680982482850710626593064481354191831386030080000000000000",
+        "dimension": 6,
+        "height": 9
+      },
+      {
+        "determinant": "-20097926911018298782026232223480030442607798176062907687659613380935680000000000000",
+        "dimension": 6,
+        "height": 10
+      },
+      {
+        "determinant": "33319551394688578905564030906955635733994020722029425836058214400000000000",
+        "dimension": 6,
+        "height": 11
+      },
+      {
+        "determinant": "1033112328283879615540737277794704475634763231993098823270400000000",
+        "dimension": 5,
+        "height": 12
+      },
+      {
+        "determinant": "-27374813677648248190245590770489515384264644383211520000000",
+        "dimension": 5,
+        "height": 13
+      },
+      {
+        "determinant": "16819200916720733125692719722000226951249264640000000",
+        "dimension": 4,
+        "height": 14
+      },
+      {
+        "determinant": "-18491416712901875533981758067566390804480000000",
+        "dimension": 4,
+        "height": 15
+      },
+      {
+        "determinant": "9122441367472959403057070370403123200000",
+        "dimension": 4,
+        "height": 16
+      },
+      {
+        "determinant": "4050529876861750232246852075520000",
+        "dimension": 4,
+        "height": 17
+      },
+      {
+        "determinant": "-56810472473130762454548480000",
+        "dimension": 3,
+        "height": 18
+      },
+      {
+        "determinant": "741573627729881506560000",
+        "dimension": 3,
+        "height": 19
+      },
+      {
+        "determinant": "351957108557134080000",
+        "dimension": 2,
+        "height": 20
+      },
+      {
+        "determinant": "159980503889606400",
+        "dimension": 2,
+        "height": 21
+      },
+      {
+        "determinant": "69708280561920",
+        "dimension": 2,
+        "height": 22
+      },
+      {
+        "determinant": "29142257760",
+        "dimension": 2,
+        "height": 23
+      },
+      {
+        "determinant": "-549853920",
+        "dimension": 1,
+        "height": 24
+      },
+      {
+        "determinant": "10182480",
+        "dimension": 1,
+        "height": 25
+      },
+      {
+        "determinant": "185136",
+        "dimension": 1,
+        "height": 26
+      },
+      {
+        "determinant": "3306",
+        "dimension": 1,
+        "height": 27
+      },
+      {
+        "determinant": "58",
+        "dimension": 1,
+        "height": 28
+      },
+      {
+        "determinant": "1",
+        "dimension": 1,
+        "height": 29
+      }
+    ],
+    "highest_seeds": [
+      {
+        "coordinates": [
+          [
+            128,
+            "1"
+          ],
+          [
+            129,
+            "1"
+          ],
+          [
+            130,
+            "1"
+          ],
+          [
+            131,
+            "1"
+          ],
+          [
+            132,
+            "1"
+          ],
+          [
+            133,
+            "1"
+          ],
+          [
+            134,
+            "1"
+          ],
+          [
+            135,
+            "1"
+          ]
+        ],
+        "exponent": 1
+      },
+      {
+        "coordinates": [
+          [
+            171,
+            "1"
+          ],
+          [
+            172,
+            "1"
+          ],
+          [
+            173,
+            "-1"
+          ],
+          [
+            174,
+            "-2"
+          ],
+          [
+            175,
+            "3"
+          ],
+          [
+            176,
+            "-1"
+          ],
+          [
+            177,
+            "-1"
+          ]
+        ],
+        "exponent": 7
+      },
+      {
+        "coordinates": [
+          [
+            196,
+            "2"
+          ],
+          [
+            197,
+            "2"
+          ],
+          [
+            198,
+            "1"
+          ],
+          [
+            199,
+            "1"
+          ],
+          [
+            200,
+            "1"
+          ],
+          [
+            201,
+            "1"
+          ]
+        ],
+        "exponent": 11
+      },
+      {
+        "coordinates": [
+          [
+            207,
+            "1"
+          ],
+          [
+            208,
+            "2"
+          ],
+          [
+            209,
+            "-1"
+          ],
+          [
+            210,
+            "1"
+          ],
+          [
+            211,
+            "-1"
+          ]
+        ],
+        "exponent": 13
+      },
+      {
+        "coordinates": [
+          [
+            224,
+            "1"
+          ],
+          [
+            225,
+            "-1"
+          ],
+          [
+            226,
+            "1"
+          ],
+          [
+            227,
+            "-1"
+          ]
+        ],
+        "exponent": 17
+      },
+      {
+        "coordinates": [
+          [
+            231,
+            "1"
+          ],
+          [
+            232,
+            "-1"
+          ],
+          [
+            233,
+            "1"
+          ]
+        ],
+        "exponent": 19
+      },
+      {
+        "coordinates": [
+          [
+            240,
+            "1"
+          ],
+          [
+            241,
+            "-1"
+          ]
+        ],
+        "exponent": 23
+      },
+      {
+        "coordinates": [
+          [
+            247,
+            "1"
+          ]
+        ],
+        "exponent": 29
+      }
+    ],
+    "largest_coordinate_denominator": "1",
+    "lattice_caution": "Rational divided chains need not be a Z-basis of the Chevalley lattice; integer-column index is computed after primitive column scaling.",
+    "nonzero_coupling_slots": 170,
+    "normalization": "b_(m,j)=(ad f)^j z_m/j! <-> binom(2m,j)x^(2m-j)y^j; z_1=e; unnormalized transvectants",
+    "polynomial_degrees": [
+      2,
+      14,
+      22,
+      26,
+      34,
+      38,
+      46,
+      58
+    ],
+    "primitive_integer_column_lattice_index": "1159431121774357281466517904955997699822947986983156781556600924485748097528005527592039843130123962910186065378852231812513723083373451171281151956017223171028167154684861172532354898850473001616192066848877329360286925905098714018922040762517728464551276044241754940431429637814243101063417455779617645471489092482245984579400451534003106387477189601682369145525011302052247257268829885255688878540058473258258696154226327773671585490234458862523099635850468888577114269944812784194842522724776630643620657237466786396767763763172819466654702281349813797086287587462945067731357302079195521282069617351882657969033599570549469891860778851999316809795278659378350260157421643235456216800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "primitive_integer_column_lattice_index_prime_power_factors": [
+      [
+        2,
+        95
+      ],
+      [
+        3,
+        74
+      ],
+      [
+        5,
+        92
+      ],
+      [
+        7,
+        39
+      ],
+      [
+        19,
+        15
+      ],
+      [
+        29,
+        23
+      ],
+      [
+        31,
+        68
+      ],
+      [
+        37,
+        77
+      ],
+      [
+        41,
+        58
+      ],
+      [
+        43,
+        66
+      ],
+      [
+        47,
+        35
+      ],
+      [
+        53,
+        47
+      ]
+    ],
+    "principal_h_chevalley_coefficients": [
+      "92",
+      "182",
+      "270",
+      "220",
+      "168",
+      "114",
+      "58",
+      "136"
+    ],
+    "same_chevalley_integer_lattice": false,
+    "schema": "perfectjet.asterion.principal.v1",
+    "status": "exact classical principal basis and computed E8 couplings",
+    "verification": {
+      "all_checks_passed": true,
+      "basis_rank": 248,
+      "bracket_pairs_checked": 30876,
+      "bracket_replay_exhaustive": true,
+      "chain_relations_checked": 744,
+      "inverse_columns_checked": 248
+    },
+    "zero_coupling_slots": 0
+  },
+  "response_compiler": {
+    "certificate_replay": {
+      "bracket_pairs": 3,
+      "inverse_unit_columns_each_side": 3,
+      "optimization_replayed": null,
+      "scope": "Stored bracket pairs and any optimization report replayed exactly; inverse equality holds on the full ambient space.",
+      "valid": true,
+      "word_columns": 3
+    },
+    "compiled": {
+      "bracket_coverage": {
+        "full_unordered_pairs": true,
+        "pairs": 3
+      },
+      "bracket_images": [
+        {
+          "coordinates": [
+            [
+              0,
+              "2"
+            ],
+            [
+              2,
+              "-4"
+            ]
+          ],
+          "left": 0,
+          "right": 1
+        },
+        {
+          "coordinates": [
+            [
+              1,
+              "-1"
+            ]
+          ],
+          "left": 0,
+          "right": 2
+        },
+        {
+          "coordinates": [
+            [
+              2,
+              "2"
+            ]
+          ],
+          "left": 1,
+          "right": 2
+        }
+      ],
+      "columns": [
+        [
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ]
+      ],
+      "determinant": "1",
+      "dimension": 3,
+      "integral_columns": true,
+      "inverse_rows": [
+        [
+          [
+            2,
+            "1"
+          ]
+        ],
+        [
+          [
+            0,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ],
+          [
+            2,
+            "-1"
+          ]
+        ]
+      ],
+      "labels": [
+        "A(e+f;)",
+        "A(e+f;e)",
+        "A(e+f;e,e)"
+      ],
+      "name": "Asterion response basis",
+      "provenance": {
+        "basis_words": [
+          {
+            "normalization_factor": "1",
+            "seed": 0,
+            "word": []
+          },
+          {
+            "normalization_factor": "1",
+            "seed": 0,
+            "word": [
+              0
+            ]
+          },
+          {
+            "normalization_factor": "-1/2",
+            "seed": 0,
+            "word": [
+              0,
+              0
+            ]
+          }
+        ],
+        "elimination_history": [
+          {
+            "accepted": true,
+            "eliminations": [],
+            "normalization_factor": "1",
+            "pivot": 1,
+            "pivot_value": "1",
+            "seed": 0,
+            "word": []
+          },
+          {
+            "accepted": true,
+            "eliminations": [],
+            "normalization_factor": "1",
+            "pivot": 0,
+            "pivot_value": "1",
+            "seed": 0,
+            "word": [
+              0
+            ]
+          },
+          {
+            "accepted": false,
+            "eliminations": [
+              [
+                1,
+                "1"
+              ]
+            ],
+            "normalization_factor": "-1",
+            "pivot": null,
+            "pivot_value": "0",
+            "seed": 0,
+            "word": [
+              1
+            ]
+          },
+          {
+            "accepted": true,
+            "eliminations": [
+              [
+                0,
+                "1"
+              ]
+            ],
+            "normalization_factor": "-1/2",
+            "pivot": 2,
+            "pivot_value": "-1",
+            "seed": 0,
+            "word": [
+              0,
+              0
+            ]
+          }
+        ],
+        "max_candidates": 100000,
+        "max_depth": 64,
+        "prescription": "breadth-first independent adjoint words; primitive first-positive normalization",
+        "probe_labels": [
+          "e",
+          "f"
+        ],
+        "probes": [
+          [
+            [
+              1,
+              "1"
+            ]
+          ],
+          [
+            [
+              2,
+              "1"
+            ]
+          ]
+        ],
+        "seed_labels": [
+          "e+f"
+        ],
+        "seeds": [
+          [
+            [
+              1,
+              "1"
+            ],
+            [
+              2,
+              "1"
+            ]
+          ]
+        ],
+        "unimodular_moves": []
+      },
+      "same_integer_lattice": true,
+      "schema": "perfectjet/asterion-basis/1",
+      "scope": "Exact rational coordinates; integer-lattice equality means an integral unimodular ambient matrix."
+    },
+    "jacobi": {
+      "alternation_checks": 3,
+      "full_basis_jacobi": true,
+      "jacobi_triples": 1,
+      "scope": "Exact characteristic-zero replay; repeated-index Jacobi follows from verified skew symmetry.",
+      "skew_pair_checks": 3,
+      "valid": true
+    },
+    "name": "Asterion basis calculus",
+    "optimization": {
+      "accepted_moves": [
+        {
+          "after": [
+            3,
+            3,
+            8
+          ],
+          "before": [
+            6,
+            3,
+            14
+          ],
+          "inverse_multiple": 1,
+          "multiple": -1,
+          "source": 1,
+          "target": 0
+        }
+      ],
+      "completed_improving_rounds": 1,
+      "declared_move_count": 6,
+      "declared_moves": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "final": {
+        "full_unordered_tensor": true,
+        "height_definition": "bit_length(abs(numerator)) + bit_length(denominator)",
+        "input_workload": "Pairs of current basis indices, not fixed ambient input vectors.",
+        "max_coefficient_height_bits": 3,
+        "nonzero_input_pairs": 3,
+        "objective": [
+          3,
+          3,
+          8
+        ],
+        "objective_order": "lexicographic: output terms, maximum height, total height",
+        "output_terms": 3,
+        "pair_count": 3,
+        "total_coefficient_height_bits": 8
+      },
+      "global_optimality_claimed": false,
+      "initial": {
+        "full_unordered_tensor": true,
+        "height_definition": "bit_length(abs(numerator)) + bit_length(denominator)",
+        "input_workload": "Pairs of current basis indices, not fixed ambient input vectors.",
+        "max_coefficient_height_bits": 3,
+        "nonzero_input_pairs": 3,
+        "objective": [
+          6,
+          3,
+          14
+        ],
+        "objective_order": "lexicographic: output terms, maximum height, total height",
+        "output_terms": 6,
+        "pair_count": 3,
+        "total_coefficient_height_bits": 14
+      },
+      "input_columns": [
+        [
+          [
+            0,
+            "1"
+          ],
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            1,
+            "1"
+          ]
+        ],
+        [
+          [
+            2,
+            "1"
+          ]
+        ]
+      ],
+      "integer_lattice_preserved_relative_to_input": true,
+      "max_pairs": 4096,
+      "max_trials": 48,
+      "multiples": [
+        -1,
+        1
+      ],
+      "requested_rounds": 2,
+      "schema": "perfectjet/asterion-shear-search/1",
+      "scope": "Exact strict descent on the declared pair workload and finite elementary-move search.",
+      "trial_limit_reached": false,
+      "trials": 24,
+      "workload_pairs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "optimized_inverse": {
+      "unit_columns_each_side": 3,
+      "valid": true
+    },
+    "schema": "perfectjet/asterion-response-receipt/1",
+    "scope": "Full sl2 demonstration; generic compiler and shear search also accept the E8 sparse bracket."
+  },
+  "schema": "perfectjet/asterion-replay/1",
+  "source_sha256": {
+    "asterion.py": "efce5e033477d3fe14d8acfdd6db699982b41d855fb98dc3da3b19a3f4d35b33",
+    "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+    "asterion_deformations.py": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+    "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+    "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+    "asterion_transport.py": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754"
+  }
+}

@@ -105,6 +105,10 @@
     {
       "rank": 24,
       "name": "Exploratory physical proposals and unresolved historical relations"
+    },
+    {
+      "rank": 25,
+      "name": "Asterion basis calculus"
     }
   ],
   "assignments": {
@@ -571,7 +575,47 @@
     "PJ-E461": 14,
     "PJ-E462": 14,
     "PJ-E463": 14,
-    "PJ-E464": 14
+    "PJ-E464": 14,
+    "PJ-A001": 25,
+    "PJ-A002": 25,
+    "PJ-A003": 25,
+    "PJ-A004": 25,
+    "PJ-A005": 25,
+    "PJ-A006": 25,
+    "PJ-A007": 25,
+    "PJ-A008": 25,
+    "PJ-A009": 25,
+    "PJ-A010": 25,
+    "PJ-A011": 25,
+    "PJ-A012": 25,
+    "PJ-A013": 25,
+    "PJ-A014": 25,
+    "PJ-A015": 25,
+    "PJ-A016": 25,
+    "PJ-A017": 25,
+    "PJ-A018": 25,
+    "PJ-A019": 25,
+    "PJ-A020": 25,
+    "PJ-A021": 25,
+    "PJ-A022": 25,
+    "PJ-A023": 25,
+    "PJ-A024": 25,
+    "PJ-A025": 25,
+    "PJ-A026": 25,
+    "PJ-A027": 25,
+    "PJ-A028": 25,
+    "PJ-A029": 25,
+    "PJ-A030": 25,
+    "PJ-A031": 25,
+    "PJ-A032": 25,
+    "PJ-A033": 25,
+    "PJ-A034": 25,
+    "PJ-A035": 25,
+    "PJ-A036": 25,
+    "PJ-A037": 25,
+    "PJ-A038": 25,
+    "PJ-A039": 25,
+    "PJ-A040": 25
   },
   "callable_labs": {
     "PJ-E085": [
@@ -1516,6 +1560,126 @@
     ],
     "PJ-E464": [
       "partners"
+    ],
+    "PJ-A001": [
+      "asterion"
+    ],
+    "PJ-A002": [
+      "asterion"
+    ],
+    "PJ-A003": [
+      "asterion"
+    ],
+    "PJ-A004": [
+      "asterion"
+    ],
+    "PJ-A005": [
+      "asterion"
+    ],
+    "PJ-A006": [
+      "asterion"
+    ],
+    "PJ-A007": [
+      "asterion"
+    ],
+    "PJ-A008": [
+      "asterion"
+    ],
+    "PJ-A009": [
+      "asterion"
+    ],
+    "PJ-A010": [
+      "asterion"
+    ],
+    "PJ-A011": [
+      "asterion"
+    ],
+    "PJ-A012": [
+      "asterion"
+    ],
+    "PJ-A013": [
+      "asterion"
+    ],
+    "PJ-A014": [
+      "asterion"
+    ],
+    "PJ-A015": [
+      "asterion"
+    ],
+    "PJ-A016": [
+      "asterion"
+    ],
+    "PJ-A017": [
+      "asterion"
+    ],
+    "PJ-A018": [
+      "asterion"
+    ],
+    "PJ-A019": [
+      "asterion"
+    ],
+    "PJ-A020": [
+      "asterion"
+    ],
+    "PJ-A021": [
+      "asterion"
+    ],
+    "PJ-A022": [
+      "asterion"
+    ],
+    "PJ-A023": [
+      "asterion"
+    ],
+    "PJ-A024": [
+      "asterion"
+    ],
+    "PJ-A025": [
+      "asterion"
+    ],
+    "PJ-A026": [
+      "asterion"
+    ],
+    "PJ-A027": [
+      "asterion"
+    ],
+    "PJ-A028": [
+      "asterion"
+    ],
+    "PJ-A029": [
+      "asterion"
+    ],
+    "PJ-A030": [
+      "asterion"
+    ],
+    "PJ-A031": [
+      "asterion"
+    ],
+    "PJ-A032": [
+      "asterion"
+    ],
+    "PJ-A033": [
+      "asterion"
+    ],
+    "PJ-A034": [
+      "asterion"
+    ],
+    "PJ-A035": [
+      "asterion"
+    ],
+    "PJ-A036": [
+      "asterion"
+    ],
+    "PJ-A037": [
+      "asterion"
+    ],
+    "PJ-A038": [
+      "asterion"
+    ],
+    "PJ-A039": [
+      "asterion"
+    ],
+    "PJ-A040": [
+      "asterion"
     ]
   }
 }
