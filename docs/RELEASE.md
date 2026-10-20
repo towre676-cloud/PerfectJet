@@ -1,3 +1,11 @@
+# Source version 0.20.0 — Double-elliptic normalization and obstruction
+
+This source update adds a separate DELL laboratory, 35 stable equations and one Math Lab tool: 675 equations across 27 families and 29 tools. The published KS current retains attribution. Exact sparse polynomial calculations prove first-shell normalization rigidity, a second momentum-order identity, and a first mixed-nome identity. A two-witness analytic argument classifies the unchanged-coordinate particlewise profile ansatz and extends its obstruction to an explicitly scoped coordinate-elliptic neighborhood. Formal independence and moment-map descent are distinct from all-order commutativity, convergence and self-duality, which remain open. The existing E8 kernel sources and numerical certificates are preserved.
+
+Run `PYTHONPATH=src python scripts/verify_dell.py --check` for independent reconstruction of the retained evidence. `python scripts/build_release.py` builds the deterministic complete source ZIP; `python scripts/verify_release.py releases/PerfectJet-v0.20.0.zip` checks the archive, isolated wheel, all tools and launcher HTTP. These local checks are distinct from remote CI or publication of a GitHub Release. The [DELL research account](DELL_RESEARCH.md) and dedicated proof documents define every scope and remaining gate.
+
+---
+
 # Release 0.18.0 — Asterion extension
 
 The finite E8 basis now feeds exact current algebras, all-degree Jordan-refined state populations, rational hypergeometric recoupling, five-channel KZ transport, principal Rees boundaries, explicit level-one relations and equivariant rigidity. The catalogue contains 592 stable records in 26 families, with 27 computed Math Lab tools. All 504 prior equation records retain their canonical bytes; PJ-H001–PJ-H088 distinguish executable certificates, definitions and proposals.

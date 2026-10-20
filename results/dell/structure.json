@@ -1,0 +1,108 @@
+{
+  "all_rank_statement": "det d(e1,...,eN)/d(logY1,...,logYN)=(product Yi)*product_i<j(Yi-Yj)",
+  "analytic_convergence_claimed": false,
+  "commutativity_consequence_claimed": false,
+  "finite_replays": [
+    {
+      "Vandermonde_value": "-6",
+      "determinant": "-6",
+      "momenta": [
+        "1",
+        "3"
+      ],
+      "particles": 2,
+      "passed": true
+    },
+    {
+      "Vandermonde_value": "-240",
+      "determinant": "-240",
+      "momenta": [
+        "1",
+        "3",
+        "5"
+      ],
+      "particles": 3,
+      "passed": true
+    },
+    {
+      "Vandermonde_value": "80640",
+      "determinant": "80640",
+      "momenta": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "particles": 4,
+      "passed": true
+    },
+    {
+      "Vandermonde_value": "278691840",
+      "determinant": "278691840",
+      "momenta": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      "particles": 5,
+      "passed": true
+    },
+    {
+      "Vandermonde_value": "-11771943321600",
+      "determinant": "-11771943321600",
+      "momenta": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "particles": 6,
+      "passed": true
+    },
+    {
+      "Vandermonde_value": "-7051864927371264000",
+      "determinant": "-7051864927371264000",
+      "momenta": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "11",
+        "13"
+      ],
+      "particles": 7,
+      "passed": true
+    },
+    {
+      "Vandermonde_value": "68239486529186247475200000",
+      "determinant": "68239486529186247475200000",
+      "momenta": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9",
+        "11",
+        "13",
+        "15"
+      ],
+      "particles": 8,
+      "passed": true
+    }
+  ],
+  "formal_consequence": "Generic functional independence of H1,...,H_(N-1),Y_all; H's descend and remain generically independent under the regular Y_all moment-map reduction by simultaneous X scaling.",
+  "passed": true,
+  "proof": "The ordinary Jacobian is alternating, has Vandermonde degree and leading coefficient1. Multiply column j byYj. At P=W=0,T=1 the literal current gives elementary symmetric polynomials.",
+  "source_sha256": {
+    "dell.py": "54a6bcb563f90f3f0c15106a950bcd80b5979a8a7e6b5edb3844c8f48a19a685",
+    "dell_normalization.py": "8dafa2b006d21410b928889366111c04f3fa9a579fced34e36e5d3a509d56421",
+    "dell_normalization_boundary.py": "29c8929392e2d07e8cafad30138e1aa3a7d824f9416352e78e5426728aa88fe3",
+    "dell_obstructions.py": "cfdb659630d98d818a8ff0f4525495823ae3cbe221c236f5ffc4dd9a748b2465",
+    "dell_quantum.py": "89d0f32b121634ffa228184c4fc3d764afe80085d25f90b570bdab374bf59270"
+  }
+}

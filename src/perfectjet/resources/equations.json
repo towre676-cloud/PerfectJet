@@ -5760,6 +5760,321 @@
       "status": "exact_checked",
       "assumptions": "Even2<=d<=30; full-rank Sturm panel of at most2qcoefficients. Computed multivariate moment tensors stop at8; higher displayed coefficients specializeu=e1.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-D001",
+      "domain": "double-elliptic",
+      "title": "multiplicative theta convention",
+      "equation": "theta(Z;P)=(1-Z)*prod_(m>=1)(1-P^m)(1-P^m Z)(1-P^m/Z)",
+      "status": "definition",
+      "assumptions": "P is the standard multiplicative coordinate nome; in Koroteev-Shakirov equation3.3 it equals the square of the paper's p. Theta ratios cancel the scalar product factors.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D002",
+      "domain": "double-elliptic",
+      "title": "momentum shell energy and charge",
+      "equation": "E(n)=sum_i n_i(n_i-1)/2; charge(n)=sum_i n_i",
+      "status": "definition",
+      "assumptions": "Integer n_i; E is nonnegative and the momentum nome is W. Position nome P and momentum nome W are independent formal parameters.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D003",
+      "domain": "double-elliptic",
+      "title": "signless normalized DELL current modes",
+      "equation": "C_a=sum_(charge(n)=a) W^E(n)*F_n(X;T,P)*Y^n; F_n=prod_(i<j)theta(T^(n_i-n_j)Xi/Xj;P)/theta(Xi/Xj;P)",
+      "status": "definition",
+      "assumptions": "The published Koroteev-Shakirov current is reconstructed with the common coordinate Vandermonde divided out and the overall (-1)^a mode sign removed. This defines the tested model; it is not a new DELL construction.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D004",
+      "domain": "double-elliptic",
+      "title": "common left-factor cancellation",
+      "equation": "(M C0)^(-1)*(M Ca)=C0^(-1)*Ca",
+      "status": "derived",
+      "assumptions": "Associative operator algebra; M and C0 are invertible in the declared completion. No commutativity of factors is assumed. This identifies raw and theta-ratio current conventions after left normalization.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D005",
+      "domain": "double-elliptic",
+      "title": "formal normalized Hamiltonian recurrence",
+      "equation": "C0=1+sum_(r>=1)W^r A_r; H_a^[r]=C_a^[r]-sum_(j=1)^r A_j*H_a^[r-j]",
+      "status": "derived",
+      "assumptions": "H_a=C0^(-1)*Ca; products are ordinary for classical functions and ordered for quantum difference operators. Every coefficient uses finitely many earlier coefficients.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D006",
+      "domain": "double-elliptic",
+      "title": "current charge recurrence",
+      "equation": "C_(a+N)=W^a*(Y1*...*YN)*C_a",
+      "status": "derived",
+      "assumptions": "For the literal signless current, shift every n_i by1. Ratios depend only on differences. In the quantum action convention the total shift commutes with all coordinate-ratio coefficients. Formal Laurent W interpretation handles negative a.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D007",
+      "domain": "double-elliptic",
+      "title": "finite shell completeness",
+      "equation": "E(n)<=M => n_i(n_i-1)/2<=M for each i",
+      "status": "derived",
+      "assumptions": "All scalar summands are nonnegative on integers. Enumerating precisely this finite coordinate range and filtering total E and charge is exhaustive at every declared momentum order.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D008",
+      "domain": "double-elliptic",
+      "title": "logarithmic canonical Poisson bracket",
+      "equation": "{F,G}=sum_i[(Xi*d_Xi F)(Yi*d_Yi G)-(Yi*d_Yi F)(Xi*d_Xi G)]",
+      "status": "definition",
+      "assumptions": "Classical independent nonzero multiplicative coordinates. Exact jet derivatives are computed before rational specialization; evaluating a zero bracket at finitely many points alone is not a global identity proof.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D009",
+      "domain": "double-elliptic",
+      "title": "integrable deformation compatibility",
+      "equation": "{H_i^0,H_j^r}+{H_i^r,H_j^0}=-sum_(s=1)^(r-1){H_i^s,H_j^(r-s)}",
+      "status": "derived",
+      "assumptions": "Coefficient equation for formal Poisson commutativity. The new order enters linearly; no general solvability or completeness is asserted.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D010",
+      "domain": "double-elliptic",
+      "title": "canonical deformation equivalence",
+      "equation": "H_i^1 -> H_i^1+{H_i^0,G}",
+      "status": "derived",
+      "assumptions": "An infinitesimal canonical change of coordinates. This is a gauge equivalence of first-order corrections, not a classification of all DELL systems.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D011",
+      "domain": "double-elliptic",
+      "title": "three-particle first-shell expansion",
+      "equation": "C0=1+WA+O(W²); C1=h1+WB+O(W²); C2=h2+WC+O(W²); H1=h1+W(B-Ah1); H2=h2+W(C-Ah2)",
+      "status": "derived",
+      "assumptions": "Coordinate nome P=0; A has six permutation shifts(-1,0,1), B has three shifts(-1,1,1), C has three shifts(2,0,0). Equations use signless oriented coefficients.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D012",
+      "domain": "double-elliptic",
+      "title": "exact first-shell Poisson cancellation",
+      "equation": "{h1,h2}=0; {B,h2}+{h1,C}=h1*{A,h2}+h2*{h1,A}=R",
+      "status": "exact_checked",
+      "assumptions": "Classical N=3,P=0. Sparse Laurent-polynomial numerator cancellation proves rational identities in symbolic T,X,Y; this is stronger than sampled evaluations, and is only first order in W.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D013",
+      "domain": "double-elliptic",
+      "title": "common-power normalization rigidity",
+      "equation": "{C1/C0^s,C2/C0^s}=W*(1-s)*R+O(W²); R(2;(1,3,7);(2,5,11))=8356261/901120",
+      "status": "derived",
+      "assumptions": "Classical P=0,N=3; common exponent s. The nonzero exact witness forces s=1 for an identity over generic parameters. Not a full normalizer classification outside this ansatz.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D014",
+      "domain": "double-elliptic",
+      "title": "six-mode first-order normalizer classification",
+      "equation": "rho=sum_(n in perm(-1,0,1))lambda_n(T)*F_n*Y^n; {C1/(1+W rho),C2/(1+W rho)}=O(W²) iff all lambda_n=1",
+      "status": "derived",
+      "assumptions": "Classical N=3,P=0. The lambda_n depend on coupling T only. Valid at T!=0,1; the exact rank certificate excludes further exceptional nonzero couplings within these six fixed functions.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D015",
+      "domain": "double-elliptic",
+      "title": "normalizer rank and coupling boundary",
+      "equation": "det(M6(T))=-(T-1)^14/T^8; rank(M)=6 for T!=0,1; rank(M)|T=1=0",
+      "status": "exact_checked",
+      "assumptions": "M6 is the retained six-row coefficient minor of the normalizer compatibility map. At T=1 the six coefficients are unconstrained at first order. Zero coupling is excluded by the Laurent current definition.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D016",
+      "domain": "double-elliptic",
+      "title": "standard trigonometric Ruijsenaars weights",
+      "equation": "a_I(X;T)=prod_(i in I,j notin I)(T Xi-Xj)/(Xi-Xj); H1f=sum_i a_i f(Yi); H2f=sum_(i<j)a_ij f(Yi)f(Yj)",
+      "status": "definition",
+      "assumptions": "N=3 and unchanged standard coordinate coefficients; one common meromorphic particlewise momentum profile f. This ansatz is narrower than a general DELL family.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D017",
+      "domain": "double-elliptic",
+      "title": "particlewise momentum obstruction identity",
+      "equation": "{H1f,H2f}|X=(1,3,7),Y=(u,v,v)=K(T)*(f(v)-f(u))*(f(v)*u*fprime(u)-f(u)*v*fprime(v))",
+      "status": "exact_checked",
+      "assumptions": "K1(T)=(5T^4-26T^3+126T-105)/72. A second coordinate witness X=(1,2,5) has K2(T)=(7T^4-27T^3+90T-70)/16; a retained Bezout identity proves the only common coupling root is T=1.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D018",
+      "domain": "double-elliptic",
+      "title": "classified particlewise profile",
+      "equation": "{H1f,H2f}=0 and T!=1 => Y*fprime(Y)/f(Y)=lambda => f(Y)=C*Y^lambda locally",
+      "status": "derived",
+      "assumptions": "Two independent coordinate witnesses and an exact Bezout identity close all exceptional couplings except T=1. Nonconstant meromorphic f on a connected logarithmic cover gives local powers; globally single-valued on C* forces integer lambda. At T=1 arbitrary momentum profiles commute.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D019",
+      "domain": "double-elliptic",
+      "title": "particlewise ellipticization no-go",
+      "equation": "f(PY)=f(Y),0<abs(P)<1 and f(Y)=C*Y^m,m in Z => m=0",
+      "status": "derived",
+      "assumptions": "Together with the classified unchanged-coordinate ansatz this excludes nonconstant single-valued elliptic particlewise profiles at T!=1. It does not exclude general double-elliptic systems or coupled momentum interactions.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D020",
+      "domain": "double-elliptic",
+      "title": "explicit failed momentum ellipticization direction",
+      "equation": "f(Y)=Y+epsilon/Y => {H1f,H2f}|T=2,X=(1,3,7),Y=(2,3,3)=-95epsilon/216+95epsilon²/1296",
+      "status": "exact_checked",
+      "assumptions": "An exact nonzero first-order direction within the particlewise ansatz. This is a Laurent test profile, not itself an elliptic function; monomial profiles provide positive controls.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D021",
+      "domain": "double-elliptic",
+      "title": "forced mixed momentum Fourier mode",
+      "equation": "[W Y^(-1,2,0)]H1=-F_(-1,1,0)*F_(0,1,0)",
+      "status": "derived",
+      "assumptions": "N=3 signless normalized current; the numerator first shell has no(-1,2,0) mode, while C0^(-1)C1 supplies this product. Nonzero generic meromorphic coefficient; no assertion of a new unknown Hamiltonian.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D022",
+      "domain": "double-elliptic",
+      "title": "ordered quantum coefficient multiplication",
+      "equation": "(f(X)*S^n)*(g(X)*S^m)=f(X)*g(Q^n X)*S^(n+m)",
+      "status": "definition",
+      "assumptions": "Literal action S_i f(X)=f(X1,...,Q Xi,...,XN). Q is the quantum shift parameter, distinct from both elliptic nomes; finite coefficient checks do not prove the full quantum commutativity conjecture.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D023",
+      "domain": "double-elliptic",
+      "title": "right normalization is simultaneous conjugacy",
+      "equation": "Ca*C0^(-1)=C0*(C0^(-1)*Ca)*C0^(-1)",
+      "status": "derived",
+      "assumptions": "Invertible C0 in an associative completed operator algebra. Left and right families have equivalent commutativity; right normalization is not a valid noncommutativity negative control.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D024",
+      "domain": "double-elliptic",
+      "title": "coefficientwise quantum commutator gate",
+      "equation": "[H1,H2]_(W^r P^s)=sum_(a+b=r,c+d=s)(H1^[a,c]*H2^[b,d]-H2^[a,c]*H1^[b,d])",
+      "status": "definition",
+      "assumptions": "Every ordered output-shift coefficient is tested exactly at the declared rational parameter specializations and finite truncation. The retained receipt, rather than this formula, records which bounded panels actually passed.",
+      "source": "docs/DELL_RESEARCH.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D025",
+      "domain": "double-elliptic",
+      "title": "global second momentum-order Poisson cancellation",
+      "equation": "[W^2]{C0^(-1)C1,C0^(-1)C2}=0 at P=0",
+      "status": "exact_checked",
+      "assumptions": "N=3, rational identity in symbolic T,X,Y. The three exact numerators over Delta^5 have19902,13548,19902terms and cancel coefficientwise. This is finite-order commutativity, not all-order integrability.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D026",
+      "domain": "double-elliptic",
+      "title": "second-order homogeneous normalizer rank",
+      "equation": "det M21=-128*(T-1)^44*(T+1)^2*(T+2)^5*(T+3)^2*(T^2+T+1)^3/T^31",
+      "status": "exact_checked",
+      "assumptions": "P=0,N=3. A21function ansatz of symmetric products of first-shell functions has generic full rank. Hence no nonzero W² denominator correction in that ansatz at couplings where this minor is nonzero. A vanishing minor alone does not prove a rank drop.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D027",
+      "domain": "double-elliptic",
+      "title": "global first mixed-nome compatibility",
+      "equation": "[W^a P^b]{H1,H2}=0 for a,b in {0,1}",
+      "status": "exact_checked",
+      "assumptions": "N=3. Exact Laurent-polynomial identities in all T,X,Y, with P the product nome. The mixed raw3696terms and normalizer6864terms cancel after denominator clearing; no extrapolation to all elliptic orders.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D028",
+      "domain": "double-elliptic",
+      "title": "coordinate-deformed first-shell rigidity",
+      "equation": "lambda_n(T,P)=1 mod P² for all six first-shell functions",
+      "status": "derived",
+      "assumptions": "The global mixed-nome identity supplies a solution; the invertible constant-coordinate-nome minor makes both coefficients unique for each fixed T!=0,1. Numerator modes and six-function normalizer ansatz are fixed.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D029",
+      "domain": "double-elliptic",
+      "title": "multiaffine profile obstruction",
+      "equation": "sum_i zi Pi(z)=0 => {H1[f],H2[f]}|z2=z3=s=P1(z,s,s)*(g(u)-z*g(v)/s)",
+      "status": "derived",
+      "assumptions": "g(y)=y*fprime(y),z=f(u),s=f(v),s!=0. Base Hamiltonians are multiaffine and commute in log-canonical variables. A nonzero restricted P1 polynomial forces a nonconstant common profile to be a local power.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D030",
+      "domain": "double-elliptic",
+      "title": "local coordinate-elliptic no-go extension",
+      "equation": "T!=0,1 and abs(P)<delta(T) => no nonconstant elliptic particlewise profile in the unchanged elliptic-RS ansatz",
+      "status": "derived",
+      "assumptions": "Conditional on the standard commuting multiaffine elliptic-RS weights holomorphic near P=0 with the declared trigonometric limit. A nonzero P=0 witness persists analytically. No numerical delta or all-moduli classification is claimed.",
+      "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D031",
+      "domain": "double-elliptic",
+      "title": "DELL homogeneity and moment-map descent",
+      "equation": "sum_i Xi*d_Xi H_a=0; sum_i Yi*d_Yi H_a=a*H_a; {H_a,Y_all}=0",
+      "status": "derived",
+      "assumptions": "Directly from current coefficients depending on coordinate ratios and fixed momentum charge. The formal Hamiltonians descend under regular simultaneous-position-scaling reduction at fixed nonzero Y_all.",
+      "source": "docs/DELL_STRUCTURE.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D032",
+      "domain": "double-elliptic",
+      "title": "generic formal functional independence",
+      "equation": "det d(e1,...,eN)/d(logY1,...,logYN)=(prod_i Yi)*prod_(i<j)(Yi-Yj)",
+      "status": "derived",
+      "assumptions": "At P=W=0,T=1 the normalized currents give elementary symmetric polynomials. This nonzero specialization proves generic independence of H1,...,H_(N-1),Y_all and their regular reduced family in the formal deformation; it does not prove commutativity or convergence.",
+      "source": "docs/DELL_STRUCTURE.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D033",
+      "domain": "double-elliptic",
+      "title": "complete second-order normalizer boundary",
+      "equation": "dim ker(T on actual productfunctions)=1 at T=-1;19 at T=1;0 at all other nonzero T",
+      "status": "derived",
+      "assumptions": "The first denominator shell is fixed to A and the second correction lies in products of its six functions. Three symbolic21minors and exact exceptional-field rank certificates classify all nonzero couplings. Function-space dependencies are quotiented out.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D034",
+      "domain": "double-elliptic",
+      "title": "resonant freedom is an existing integral",
+      "equation": "rho_star=H1^0*H2^0/Y_all at T=-1; {rho_star,H1^0/H2^0}=0",
+      "status": "exact_checked",
+      "assumptions": "A retained nine-product expansion proves membership in the second-order normalizer ansatz. This is one nonzero homogeneous normalizer direction, not a new independent conserved quantity.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-D035",
+      "domain": "double-elliptic",
+      "title": "cube-root coefficient redundancy",
+      "equation": "f1*f4=f0*f5; f2*f3=f0*f5 when T²+T+1=0",
+      "status": "exact_checked",
+      "assumptions": "Zero-based f_i order is lexicographic perm(-1,0,1). The21nominal products span19actual functions. The two coefficient-kernel directions represent identically zero functions, so they give no new normalizer freedom.",
+      "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
     }
   ]
 }

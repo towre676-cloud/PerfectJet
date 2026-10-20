@@ -1,0 +1,53 @@
+{
+  "files": {
+    "classical.json": {
+      "bytes": 50733,
+      "sha256": "5f3fafc1d35ec957a6d5cc018c913b217e13b433bd9ea102334cbcd734afe782"
+    },
+    "mixed-normalization.json": {
+      "bytes": 2050,
+      "sha256": "0fee22f39c458c0b865e5ca2955f76bf2d12f9971c3c10274ccbc2990e82326e"
+    },
+    "normalization-boundary.json": {
+      "bytes": 47587,
+      "sha256": "e03c8f0f67b77a2b2ecb01a08ffbbc7b1015ba1ca2c95141604fc82b63f8b7a7"
+    },
+    "normalization.json": {
+      "bytes": 7654,
+      "sha256": "ac7a178ef0696c1f7e61e4b43561b08da251a3cdfe2be6dbee58b982fe4e5aa7"
+    },
+    "normalization_polynomials.json.gz": {
+      "bytes": 18522,
+      "sha256": "6baca6fd4f8898f254aea03226737c9cdec74ef539bd4fc9242ae94f7d47cca8"
+    },
+    "obstructions.json": {
+      "bytes": 6947,
+      "sha256": "247e550671d06dcd0317d08c20111d0fab9ab5aee80b77f66980c5de3532cfd2"
+    },
+    "quantum.json": {
+      "bytes": 9721,
+      "sha256": "fc531b1452952e36e9d72ac5d99264d9b65ef17cf58c8bb175ec37ec9e5919e8"
+    },
+    "second-normalization.json": {
+      "bytes": 29334,
+      "sha256": "d4f74142fe3a1785569b7f293b8e390195a62efb8444cab3849b53e9c4416622"
+    },
+    "structure.json": {
+      "bytes": 2724,
+      "sha256": "e27adfed8c4730ea9148fbad83bf01a27ccff1f813e005fd6fd24849038b4c48"
+    },
+    "validation.json": {
+      "bytes": 188504,
+      "sha256": "31ba6c1f4cb6802af2dfb356395ba181c5ef8ec9f4c8867d2efedbb4a2a3a88a"
+    }
+  },
+  "schema": "perfectjet/dell-receipts/1",
+  "scope": "Symbolic rational identity and finite-ansatz proofs; analytic no-go theorem; separate finite exact classical/quantum parameter panels. General self-dual DELL remains open.",
+  "source_sha256": {
+    "dell.py": "54a6bcb563f90f3f0c15106a950bcd80b5979a8a7e6b5edb3844c8f48a19a685",
+    "dell_normalization.py": "8dafa2b006d21410b928889366111c04f3fa9a579fced34e36e5d3a509d56421",
+    "dell_normalization_boundary.py": "29c8929392e2d07e8cafad30138e1aa3a7d824f9416352e78e5426728aa88fe3",
+    "dell_obstructions.py": "cfdb659630d98d818a8ff0f4525495823ae3cbe221c236f5ffc4dd9a748b2465",
+    "dell_quantum.py": "89d0f32b121634ffa228184c4fc3d764afe80085d25f90b570bdab374bf59270"
+  }
+}

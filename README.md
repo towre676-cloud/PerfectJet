@@ -2,7 +2,13 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Version **0.19.0** offers **28 computed tools and a searchable atlas of 640 equations in 26 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 675 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+
+## Double-elliptic normalization and obstruction
+
+The separate DELL laboratory reconstructs the published Koroteev–Shakirov current, proves a six-function first-shell normalizer classification, proves global finite-order rational identities in both elliptic nomes, and classifies why a common particlewise elliptic momentum replacement cannot preserve unchanged Ruijsenaars coordinate weights. A 21-function second-order normalizer calculation and independent exact classical and quantum compilers retain their explicit scopes. These are scoped results about a specified model and ansatz; general self-dual DELL and an exceptional E8 construction remain open. Claude's weight-five and weight-six kernel programme is unaffected.
+
+Run `python -m perfectjet dell --exhaustive`, open the `dell` Math Lab card, or independently regenerate the [retained certificates](results/dell/validation.json) with `python scripts/verify_dell.py --check`. The [research account](docs/DELL_RESEARCH.md), [normalizer proof](docs/DELL_NORMALIZATION.md), [profile obstruction](docs/DELL_OBSTRUCTIONS.md), and [formal independence argument](docs/DELL_STRUCTURE.md) separate symbolic theorems, imported constructions and finite parameter checks. All 640 earlier equation records and all earlier E8 certificates remain intact; PJ-D001–PJ-D035 are appended.
 
 ## Asterion next push: higher kernels, elliptic compatibility and monodromy
 
@@ -104,7 +110,7 @@ python scripts/build_release.py
 
 The [benchmark receipt](results/observatory/benchmark.json) preserves independent absolute/relative/sign-orbit counts, complete short-word enumeration, original-coordinate rank round trips, operator bases, the remote modular comparison and the adaptive-versus-fixed experiment. [Pell transport](results/observatory/pell.json) and [destructive-prefix calculations](results/observatory/destructive-prefix.json) are retained separately. [Validation](docs/OBSERVATORY_VALIDATION.md) states executed checks and interface verification limits.
 
-The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) follows `main`. The release builder makes a deterministic ZIP with a SHA256 manifest and creates split parts if needed. The current release is **0.17.0**. Download the [verified v0.17.0 ZIP and checksum](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.17.0); see [installation and verification](docs/INSTALL.md). Computational identities, independent checks, historical claims and open proposals remain distinct; this release does not add Lean proofs.
+The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archive/refs/heads/main.zip) follows `main`. The release builder makes a deterministic versioned ZIP with a SHA256 manifest and creates split parts if needed. The [historical v0.17.0 ZIP and checksum](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.17.0) remain versioned downloads; see [installation and verification](docs/INSTALL.md) for current-source builds. A source commit does not by itself publish a GitHub Release. Computational identities, independent checks, historical claims and open proposals remain distinct; this work does not add Lean proofs.
 
 ## Sextic research integration — v0.17.0
 

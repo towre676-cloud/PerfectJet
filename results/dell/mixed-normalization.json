@@ -1,0 +1,53 @@
+{
+  "checks": {
+    "first_momentum_order_coordinate_coefficients_zero": true,
+    "zeroth_momentum_order_coordinate_coefficients_zero": true
+  },
+  "conditional_on_first_shell_minor": "The independently certified M0 determinant -(t-1)^14/t^8 implies lambda_n(p)=1 modulo p^2 for all six n and every fixed t!=0,1.",
+  "passed": true,
+  "proof": {
+    "first_momentum_denominator": "Delta^4",
+    "first_momentum_zero_terms_by_coordinate_order": [
+      0,
+      0
+    ],
+    "normalizer_numerator_terms_by_coordinate_order": [
+      2652,
+      6864
+    ],
+    "normalizer_sha256_by_coordinate_order": [
+      "a1c45e036f74aab91a41cbed6809c9b4f76c7fb90d412d9137a9b4021c2a85fb",
+      "e7a340acad568a065ee282f69c1dba568e68be8df17c0615d5bb3730748ee059"
+    ],
+    "raw_numerator_terms_by_coordinate_order": [
+      1128,
+      3696
+    ],
+    "raw_sha256_by_coordinate_order": [
+      "97c6d1a06962c5d0a3aa61c14a0a14a44255ae9bea7b37cc08f44e03f65193d4",
+      "ef4a754827ca9e2bbcc9a1484c88d2f205d7a1e97ff4d6b4161fd8965b980111"
+    ],
+    "zeroth_momentum_denominator": "Delta^3",
+    "zeroth_momentum_zero_terms_by_coordinate_order": [
+      0,
+      0
+    ]
+  },
+  "schema": "perfectjet/dell-mixed-normalization/1",
+  "scope": {
+    "all_order_integrability_claim": false,
+    "coordinate_nome_order": 1,
+    "full_coordinate_ellipticity_claim": false,
+    "global_rational_coefficient_identities": true,
+    "momentum_nome_order": 1,
+    "particles": 3
+  },
+  "source_sha256": {
+    "dell.py": "54a6bcb563f90f3f0c15106a950bcd80b5979a8a7e6b5edb3844c8f48a19a685",
+    "dell_normalization.py": "8dafa2b006d21410b928889366111c04f3fa9a579fced34e36e5d3a509d56421",
+    "dell_normalization_boundary.py": "29c8929392e2d07e8cafad30138e1aa3a7d824f9416352e78e5426728aa88fe3",
+    "dell_obstructions.py": "cfdb659630d98d818a8ff0f4525495823ae3cbe221c236f5ffc4dd9a748b2465",
+    "dell_quantum.py": "89d0f32b121634ffa228184c4fc3d764afe80085d25f90b570bdab374bf59270"
+  },
+  "theta_ratio_correction": "S_n=sum_(i<j)[(1-t^(n_i-n_j))*x_i/x_j+(1-t^(n_j-n_i))*x_j/x_i]"
+}

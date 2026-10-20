@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "ca67203a4203840e7206e2d319c8fe0652f11a6dffbf493b0cc251dc39b9349c",
-      "size_bytes": 1595
+      "sha256": "89a1b9b8980f4f12bba9683c804580a124b38e84f16daa0f9bcf189aeda8e0d9",
+      "size_bytes": 1711
     },
     {
       "path": ".github/workflows/publish-v014.yml",
@@ -64,8 +64,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "8cc818e87b1286e5ff0a4f92ac28474f8f880a54be5f8607dd10a87e5053e4ed",
-      "size_bytes": 13322
+      "sha256": "244ceb163e15b14fe9241f56cea5a9956b18538718186d6e3de5b2e53889611e",
+      "size_bytes": 14745
     },
     {
       "path": "Start_Math_Lab.bat",
@@ -178,19 +178,24 @@
       "size_bytes": 23438
     },
     {
+      "path": "data/dell_equations.json",
+      "sha256": "06028981e7d9475f0a6c9cfd93b70c4deb73f485c5aaabb7c2fff8c3627a8ba3",
+      "size_bytes": 20355
+    },
+    {
       "path": "data/equation_id_contract.json",
       "sha256": "5b90131ec6cdee82c22b574d11c1b4b0f2e456d26563b21e1ba19d2dbb28ea2d",
       "size_bytes": 34726
     },
     {
       "path": "data/equation_power.json",
-      "sha256": "88c208c903f35377b8fe7f9bbf3df2dc64975c7f0ac0840d7aa6a7866e50fb01",
-      "size_bytes": 38551
+      "sha256": "4733520886fae96d2056487c4ed6b2f32b45a3a57dbf5371385e3846cf653815",
+      "size_bytes": 40604
     },
     {
       "path": "data/equations.json",
-      "sha256": "8e369877def2f04bea38a665a68b181e75ad5edca5ec8791367efd9d05d841fb",
-      "size_bytes": 266223
+      "sha256": "f04edaf4ee4038fe2dd674de1df37c2f0be7c84322608d1ff7b90df28df858ec",
+      "size_bytes": 286130
     },
     {
       "path": "data/incidence_equations.json",
@@ -333,14 +338,39 @@
       "size_bytes": 89418
     },
     {
+      "path": "docs/DELL_DISCOVERIES.json",
+      "sha256": "26383291da685cee91e25f742c22304ef5eb9218e34f106c6adbaa01f3230fa8",
+      "size_bytes": 3475
+    },
+    {
+      "path": "docs/DELL_NORMALIZATION.md",
+      "sha256": "98229b3a0ad2d8d5f862008339f2e4140f9618c9f4da3e2e7e07d4b58606edfa",
+      "size_bytes": 13736
+    },
+    {
+      "path": "docs/DELL_OBSTRUCTIONS.md",
+      "sha256": "3d48a51ff9d66202ce0c6054744b137e51184e82f55bbf38fd85b794f374a63b",
+      "size_bytes": 13396
+    },
+    {
+      "path": "docs/DELL_RESEARCH.md",
+      "sha256": "484cb72f5ee371cd09c007c2248874bef8b5b00dca2376d73b745c84b41194cb",
+      "size_bytes": 13382
+    },
+    {
+      "path": "docs/DELL_STRUCTURE.md",
+      "sha256": "dec42686505ddd6d9500bc43d6aa53e9589ab8accd9ca000b65dd89c397663f7",
+      "size_bytes": 4283
+    },
+    {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "08bf7b5aeff87ff68da6aaddd34c8639bdc11a24d54165abc093f209402318ff",
-      "size_bytes": 133718
+      "sha256": "78f6f7f85f0b482aca6488be9665373f174d274c61907de650a2eaf3c89fda0d",
+      "size_bytes": 145870
     },
     {
       "path": "docs/INSTALL.md",
-      "sha256": "2b7f2170ea86c95d18a1b4184ba6c9bbdc129dfaa8682d460b609fc06e02b6e0",
-      "size_bytes": 2708
+      "sha256": "127375fdc3225a2eb92928df29edc79269d787bd2c74bd8d39d913131c06cb64",
+      "size_bytes": 2906
     },
     {
       "path": "docs/MATH_LAB.md",
@@ -349,8 +379,8 @@
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "03d43c249ee554b9a1a12e38300a60589d1633e69438f3efb3e334f4d334c62b",
-      "size_bytes": 442616
+      "sha256": "112d996b15896ec0155bd4b068fdb2853ddd93ff97b9fda5a24ac7fb94d62bef",
+      "size_bytes": 497673
     },
     {
       "path": "docs/OBSERVATORY.md",
@@ -374,8 +404,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "6e355d175b2b4f8226ebb6ab316ed956795665bfa09b8ad426ea650ec79b7be3",
-      "size_bytes": 30731
+      "sha256": "fb4bbf8bd4d3a8d7c75402dc9e7bdff7888535dbca04b067b5c798da87a26817",
+      "size_bytes": 32063
     },
     {
       "path": "docs/SEXTIC_INTEGRATION.md",
@@ -573,6 +603,16 @@
       "size_bytes": 14308
     },
     {
+      "path": "docs/chapters/37_dell_research.md",
+      "sha256": "947b239d14954b0a377aec6f8da612a6fdebe1b5283015f706611de1ce06055d",
+      "size_bytes": 55018
+    },
+    {
+      "path": "docs/dell_sources.json",
+      "sha256": "6828d3e061d7637255de4cc314a2552488f560d481f5630e1de5e2a237d5b8ee",
+      "size_bytes": 4325
+    },
+    {
       "path": "docs/nfl/DATA_CONTRACT.md",
       "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
       "size_bytes": 2392
@@ -649,8 +689,8 @@
     },
     {
       "path": "examples/mathlab/asterion-frontiers.json",
-      "sha256": "e225b6dfe0080f22ff9d6d0a3eee41d504d9ab4752cb5fbc8a443c701a595327",
-      "size_bytes": 115
+      "sha256": "d7fed5afcb386d1a3473c4892469aca90c2e2927f98dc1e4f5bd8eefff5ff0c2",
+      "size_bytes": 127
     },
     {
       "path": "examples/mathlab/asterion.json",
@@ -691,6 +731,11 @@
       "path": "examples/mathlab/deformation.json",
       "sha256": "3b13c282878a7bcdff64cf265ed051f586ec0d6a4ec77f4c0f66795e6e870173",
       "size_bytes": 70
+    },
+    {
+      "path": "examples/mathlab/dell.json",
+      "sha256": "c0c3bf2c1e180b7f219de340a35a9d90c747cb57d73d1a74a5c596176d61815e",
+      "size_bytes": 99
     },
     {
       "path": "examples/mathlab/experiments.json",
@@ -829,7 +874,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "420e90a64c2b1aa0b3c733aaa9f99e78f3cc7d9ce15d328fd03583bd806de527",
+      "sha256": "d7532043b14fe173897b3f0e70dd5bc0d59d8965b38efd01ecc574e92201d9c4",
       "size_bytes": 613
     },
     {
@@ -3113,6 +3158,61 @@
       "size_bytes": 76071
     },
     {
+      "path": "results/dell/classical.json",
+      "sha256": "5f3fafc1d35ec957a6d5cc018c913b217e13b433bd9ea102334cbcd734afe782",
+      "size_bytes": 50733
+    },
+    {
+      "path": "results/dell/manifest.json",
+      "sha256": "81238782995739332ad263861ec1076fffc01d077f606d3105764e1e1f919b40",
+      "size_bytes": 2161
+    },
+    {
+      "path": "results/dell/mixed-normalization.json",
+      "sha256": "0fee22f39c458c0b865e5ca2955f76bf2d12f9971c3c10274ccbc2990e82326e",
+      "size_bytes": 2050
+    },
+    {
+      "path": "results/dell/normalization-boundary.json",
+      "sha256": "e03c8f0f67b77a2b2ecb01a08ffbbc7b1015ba1ca2c95141604fc82b63f8b7a7",
+      "size_bytes": 47587
+    },
+    {
+      "path": "results/dell/normalization.json",
+      "sha256": "ac7a178ef0696c1f7e61e4b43561b08da251a3cdfe2be6dbee58b982fe4e5aa7",
+      "size_bytes": 7654
+    },
+    {
+      "path": "results/dell/normalization_polynomials.json.gz",
+      "sha256": "6baca6fd4f8898f254aea03226737c9cdec74ef539bd4fc9242ae94f7d47cca8",
+      "size_bytes": 18522
+    },
+    {
+      "path": "results/dell/obstructions.json",
+      "sha256": "247e550671d06dcd0317d08c20111d0fab9ab5aee80b77f66980c5de3532cfd2",
+      "size_bytes": 6947
+    },
+    {
+      "path": "results/dell/quantum.json",
+      "sha256": "fc531b1452952e36e9d72ac5d99264d9b65ef17cf58c8bb175ec37ec9e5919e8",
+      "size_bytes": 9721
+    },
+    {
+      "path": "results/dell/second-normalization.json",
+      "sha256": "d4f74142fe3a1785569b7f293b8e390195a62efb8444cab3849b53e9c4416622",
+      "size_bytes": 29334
+    },
+    {
+      "path": "results/dell/structure.json",
+      "sha256": "e27adfed8c4730ea9148fbad83bf01a27ccff1f813e005fd6fd24849038b4c48",
+      "size_bytes": 2724
+    },
+    {
+      "path": "results/dell/validation.json",
+      "sha256": "31ba6c1f4cb6802af2dfb356395ba181c5ef8ec9f4c8867d2efedbb4a2a3a88a",
+      "size_bytes": 188504
+    },
+    {
       "path": "results/external-tracking/execution-receipt.json",
       "sha256": "93d211d51d539aa7d1de7ebf9a000be42532a379ea53abb43649af0a0b2da07a",
       "size_bytes": 862
@@ -3578,6 +3678,16 @@
       "size_bytes": 65514
     },
     {
+      "path": "scripts/build_dell_catalogue.py",
+      "sha256": "6fc572e32ce86f2d331e9b5bddc3bc4e6f27c045f3f2492e997166098aaea3de",
+      "size_bytes": 15557
+    },
+    {
+      "path": "scripts/build_dell_documents.py",
+      "sha256": "77bac43fb1344954df5801c926397079b4c88c7b35cfd93d1fbdc80eb322873f",
+      "size_bytes": 1725
+    },
+    {
       "path": "scripts/build_mathlab.py",
       "sha256": "04635ba9fb5be81bb52d7724d8e1f690fd82061ef4dab3095fa21255ec9f291f",
       "size_bytes": 2154
@@ -3723,13 +3833,18 @@
       "size_bytes": 2618
     },
     {
+      "path": "scripts/verify_dell.py",
+      "sha256": "e289d107a202d077fee7817ca0483055274db8fd9f382516c8c91f4d8bf78d9c",
+      "size_bytes": 2421
+    },
+    {
       "path": "scripts/verify_release.py",
       "sha256": "ab3e24648e16a4eae7f1d124180d0997564cb31535588a52b876f6a17be7355b",
       "size_bytes": 6096
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "bb14f2b3926a5d2ee00c356a9e3b981af916bb1d218b39152558a2d65d719fdd",
+      "sha256": "a8f8fc83042fb21d19b05e6cdbe6185b8f70dc2f8b2fcef50ed364b8af300252",
       "size_bytes": 104
     },
     {
@@ -4019,8 +4134,8 @@
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "29abd9f83cefa1fe4add3293ca699b9ab1746511a239f574ffe45394fd3f241b",
-      "size_bytes": 7921
+      "sha256": "470eb7859b8d8d69e8b0a8defcab36068d858d5b7f1eac503a08aa21395d4299",
+      "size_bytes": 8042
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -4041,6 +4156,31 @@
       "path": "src/perfectjet/deformation.py",
       "sha256": "627b1a38092122976782d201599f762f98b2445f52636f48efc440f48854f0a9",
       "size_bytes": 4554
+    },
+    {
+      "path": "src/perfectjet/dell.py",
+      "sha256": "54a6bcb563f90f3f0c15106a950bcd80b5979a8a7e6b5edb3844c8f48a19a685",
+      "size_bytes": 19699
+    },
+    {
+      "path": "src/perfectjet/dell_normalization.py",
+      "sha256": "8dafa2b006d21410b928889366111c04f3fa9a579fced34e36e5d3a509d56421",
+      "size_bytes": 22699
+    },
+    {
+      "path": "src/perfectjet/dell_normalization_boundary.py",
+      "sha256": "29c8929392e2d07e8cafad30138e1aa3a7d824f9416352e78e5426728aa88fe3",
+      "size_bytes": 8972
+    },
+    {
+      "path": "src/perfectjet/dell_obstructions.py",
+      "sha256": "cfdb659630d98d818a8ff0f4525495823ae3cbe221c236f5ffc4dd9a748b2465",
+      "size_bytes": 13300
+    },
+    {
+      "path": "src/perfectjet/dell_quantum.py",
+      "sha256": "89d0f32b121634ffa228184c4fc3d764afe80085d25f90b570bdab374bf59270",
+      "size_bytes": 13714
     },
     {
       "path": "src/perfectjet/dynamics.py",
@@ -4094,8 +4234,8 @@
     },
     {
       "path": "src/perfectjet/mathlab.py",
-      "sha256": "53f46fb3849d18236abb167ecb7bcd0011124a1eea68b8949dd687b58b777efb",
-      "size_bytes": 36018
+      "sha256": "9231d5474c1503c6a2c46409985440e7ee572fd76c32c8c0d23475bf68852ed7",
+      "size_bytes": 36895
     },
     {
       "path": "src/perfectjet/modular.py",
@@ -4229,13 +4369,13 @@
     },
     {
       "path": "src/perfectjet/resources/equation_power.json",
-      "sha256": "88c208c903f35377b8fe7f9bbf3df2dc64975c7f0ac0840d7aa6a7866e50fb01",
-      "size_bytes": 38551
+      "sha256": "4733520886fae96d2056487c4ed6b2f32b45a3a57dbf5371385e3846cf653815",
+      "size_bytes": 40604
     },
     {
       "path": "src/perfectjet/resources/equations.json",
-      "sha256": "8e369877def2f04bea38a665a68b181e75ad5edca5ec8791367efd9d05d841fb",
-      "size_bytes": 266223
+      "sha256": "f04edaf4ee4038fe2dd674de1df37c2f0be7c84322608d1ff7b90df28df858ec",
+      "size_bytes": 286130
     },
     {
       "path": "src/perfectjet/rings.py",
@@ -4319,13 +4459,13 @@
     },
     {
       "path": "tests/test_asterion_extension.py",
-      "sha256": "614730b0d6093751f87077225772dc4c1c48f2f0512b5e869d598e10a6b59e9c",
-      "size_bytes": 4434
+      "sha256": "8864f5f0d53ef270a3a75e152a58390aa5010c0e689f882e1e6daded10148239",
+      "size_bytes": 4443
     },
     {
       "path": "tests/test_asterion_frontiers.py",
-      "sha256": "cd5fa0ab460adff97c0f41d1428d9ecd4616fdd4ea628638cbe0697b0e0b1a51",
-      "size_bytes": 4516
+      "sha256": "6d8f51c9a7f795994e2f92deca71231d9e71a21b47d8faa168a91970756ad70e",
+      "size_bytes": 4529
     },
     {
       "path": "tests/test_asterion_higher.py",
@@ -4428,6 +4568,31 @@
       "size_bytes": 5289
     },
     {
+      "path": "tests/test_dell.py",
+      "sha256": "09af1fad428ebd92015594b46f6e3d9ec8c88376453fcf96427c071d81cbe5c3",
+      "size_bytes": 3711
+    },
+    {
+      "path": "tests/test_dell_normalization.py",
+      "sha256": "e6529feffc7dc433c84abc13143803b089182bc8092870cd7f62ffa765bab169",
+      "size_bytes": 10484
+    },
+    {
+      "path": "tests/test_dell_obstructions.py",
+      "sha256": "819a87af206ff2f9d117edde62fdcc66b0633bd9a6d193da64c74f193fc43078",
+      "size_bytes": 4546
+    },
+    {
+      "path": "tests/test_dell_publication.py",
+      "sha256": "a491756a25fbb9adaa8bf0ebf0c74cede0f7b9770a8ab0e699e09dd51863a343",
+      "size_bytes": 4461
+    },
+    {
+      "path": "tests/test_dell_quantum.py",
+      "sha256": "f1959f817f709047e927276ebe7dbbacf99fa3871cabb029d0e0231c781e02f0",
+      "size_bytes": 4412
+    },
+    {
       "path": "tests/test_engine.py",
       "sha256": "d8c2fba7d9ff960a8c2898e36a699e6f6efcfc720ba2d3a7bdce2e97e68b62f6",
       "size_bytes": 7057
@@ -4469,7 +4634,7 @@
     },
     {
       "path": "tests/test_mathlab.py",
-      "sha256": "aec6065641907628981ba39970a9550278f6b085ba970740ce6f21a3177375b2",
+      "sha256": "235a3b00dbaaa4799b813b1859dd8526070dd377f390ef7109486c1d8e5ca98a",
       "size_bytes": 3078
     },
     {

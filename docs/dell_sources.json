@@ -1,0 +1,83 @@
+{
+  "schema": "perfectjet/dell-source-audit/1",
+  "research_date": "2026-10-20",
+  "scope": "Primary-source attribution and explicit separation of reconstruction, project proofs, finite evaluation and open targets. A source's conjecture is not promoted to a theorem by the local finite calculations.",
+  "sources": [
+    {
+      "id": "DELL-S01",
+      "authors": "Peter Koroteev; Shamil Shakirov",
+      "title": "The Quantum DELL System",
+      "year": 2019,
+      "url": "https://arxiv.org/html/1906.10354v2",
+      "locations": [
+        "equations 1.10-1.13",
+        "equations 3.2-3.3",
+        "equations 3.7-3.9"
+      ],
+      "use": "Published current, left normalization, theta convention and originally conjectural quantum commutativity.",
+      "convention_audit": "The implementation calls the standard multiplicative theta nome P; it equals the square of this paper's p. Quantum shifts follow the stated action on functions, fixing S_i X_i=Q X_i S_i. The overall Fourier-mode sign is removed consistently."
+    },
+    {
+      "id": "DELL-S02",
+      "authors": "A. Grekov; A. Zotov",
+      "title": "Characteristic determinant and Manakov triple for the double elliptic integrable system",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2010.08077",
+      "publication": "SciPost Physics 10, 055",
+      "doi": "10.21468/SciPostPhys.10.3.055",
+      "locations": [
+        "equation 1.1",
+        "determinant and Manakov construction"
+      ],
+      "use": "Theta-ratio current convention and an existing structural comparison. Dividing all raw modes by the same left coordinate factor leaves the left-normalized Hamiltonians unchanged."
+    },
+    {
+      "id": "DELL-S03",
+      "authors": "A. Mironov; A. Morozov",
+      "title": "On the status of DELL systems",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2309.06403",
+      "publication": "Nuclear Physics B 999, 116448",
+      "doi": "10.1016/j.nuclphysb.2024.116448",
+      "use": "Distinguishes the KS model and the desired self-dual DELL programme; prevents conflating a reconstructed formal current with a universal self-dual construction."
+    },
+    {
+      "id": "DELL-S04",
+      "authors": "H. W. Braden; A. Marshakov; A. Mironov; A. Morozov",
+      "title": "On Double-Elliptic Integrable Systems. 1. A Duality Argument for the case of SU(2)",
+      "year": 2000,
+      "url": "https://arxiv.org/abs/hep-th/9906240",
+      "use": "Historical two-particle benchmark. The present work does not claim to introduce the first double-elliptic Hamiltonian."
+    },
+    {
+      "id": "DELL-S05",
+      "authors": "S. N. M. Ruijsenaars",
+      "title": "Complete integrability of relativistic Calogero-Moser systems and elliptic function identities",
+      "year": 1987,
+      "url": "https://doi.org/10.1007/BF01207363",
+      "use": "Imported classical and quantum type-A Ruijsenaars involutivity; the scoped profile theorem does not claim this historical result."
+    },
+    {
+      "id": "DELL-S06",
+      "authors": "Peter Koroteev",
+      "title": "The Diamond: DELL vertex",
+      "url": "https://math.berkeley.edu/~pkoroteev/diamond.html",
+      "accessed": "2026-10-20",
+      "use": "Author-maintained status check distinguishing general KS quantum commutativity and open geometric identifications from established constructions."
+    }
+  ],
+  "project_results": [
+    "Global symbolic first- and second-momentum-order classical identities and first mixed-coordinate/momentum-nome identity.",
+    "Complete six-function first-shell and21product second-order normalizer boundary, including quotient by actual function dependencies.",
+    "Analytic common-profile classification for unchanged three-particle RS weights for all couplings, with a conditional coordinate-elliptic neighborhood extension.",
+    "Formal generic functional independence and moment-map descent, separated from commutativity.",
+    "Exact finite-order classical and normal-ordered quantum replays with explicit nonzero controls."
+  ],
+  "not_claimed": [
+    "A proof of all-order many-body quantum DELL commutativity",
+    "A complete self-dual DELL construction",
+    "A quantum dynamical E8 double-elliptic R-matrix",
+    "An all-model uniqueness or no-existence theorem",
+    "Verified worldwide priority for the scoped project theorems"
+  ]
+}

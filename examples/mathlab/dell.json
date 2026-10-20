@@ -1,0 +1,7 @@
+{
+  "operation": "math-lab",
+  "lab": "dell",
+  "params": {
+    "operation": "normalization"
+  }
+}

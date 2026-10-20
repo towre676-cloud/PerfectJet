@@ -113,6 +113,10 @@
     {
       "rank": 26,
       "name": "Asterion fields, hypergeometric transport and higher relations"
+    },
+    {
+      "rank": 27,
+      "name": "Double-elliptic normalization and obstruction"
     }
   ],
   "assignments": {
@@ -755,7 +759,42 @@
     "PJ-X045": 26,
     "PJ-X046": 26,
     "PJ-X047": 26,
-    "PJ-X048": 26
+    "PJ-X048": 26,
+    "PJ-D001": 27,
+    "PJ-D002": 27,
+    "PJ-D003": 27,
+    "PJ-D004": 27,
+    "PJ-D005": 27,
+    "PJ-D006": 27,
+    "PJ-D007": 27,
+    "PJ-D008": 27,
+    "PJ-D009": 27,
+    "PJ-D010": 27,
+    "PJ-D011": 27,
+    "PJ-D012": 27,
+    "PJ-D013": 27,
+    "PJ-D014": 27,
+    "PJ-D015": 27,
+    "PJ-D016": 27,
+    "PJ-D017": 27,
+    "PJ-D018": 27,
+    "PJ-D019": 27,
+    "PJ-D020": 27,
+    "PJ-D021": 27,
+    "PJ-D022": 27,
+    "PJ-D023": 27,
+    "PJ-D024": 27,
+    "PJ-D025": 27,
+    "PJ-D026": 27,
+    "PJ-D027": 27,
+    "PJ-D028": 27,
+    "PJ-D029": 27,
+    "PJ-D030": 27,
+    "PJ-D031": 27,
+    "PJ-D032": 27,
+    "PJ-D033": 27,
+    "PJ-D034": 27,
+    "PJ-D035": 27
   },
   "callable_labs": {
     "PJ-E085": [
@@ -2364,6 +2403,111 @@
     "PJ-X048": [
       "asterion",
       "asterion-frontiers"
+    ],
+    "PJ-D001": [
+      "dell"
+    ],
+    "PJ-D002": [
+      "dell"
+    ],
+    "PJ-D003": [
+      "dell"
+    ],
+    "PJ-D004": [
+      "dell"
+    ],
+    "PJ-D005": [
+      "dell"
+    ],
+    "PJ-D006": [
+      "dell"
+    ],
+    "PJ-D007": [
+      "dell"
+    ],
+    "PJ-D008": [
+      "dell"
+    ],
+    "PJ-D009": [
+      "dell"
+    ],
+    "PJ-D010": [
+      "dell"
+    ],
+    "PJ-D011": [
+      "dell"
+    ],
+    "PJ-D012": [
+      "dell"
+    ],
+    "PJ-D013": [
+      "dell"
+    ],
+    "PJ-D014": [
+      "dell"
+    ],
+    "PJ-D015": [
+      "dell"
+    ],
+    "PJ-D016": [
+      "dell"
+    ],
+    "PJ-D017": [
+      "dell"
+    ],
+    "PJ-D018": [
+      "dell"
+    ],
+    "PJ-D019": [
+      "dell"
+    ],
+    "PJ-D020": [
+      "dell"
+    ],
+    "PJ-D021": [
+      "dell"
+    ],
+    "PJ-D022": [
+      "dell"
+    ],
+    "PJ-D023": [
+      "dell"
+    ],
+    "PJ-D024": [
+      "dell"
+    ],
+    "PJ-D025": [
+      "dell"
+    ],
+    "PJ-D026": [
+      "dell"
+    ],
+    "PJ-D027": [
+      "dell"
+    ],
+    "PJ-D028": [
+      "dell"
+    ],
+    "PJ-D029": [
+      "dell"
+    ],
+    "PJ-D030": [
+      "dell"
+    ],
+    "PJ-D031": [
+      "dell"
+    ],
+    "PJ-D032": [
+      "dell"
+    ],
+    "PJ-D033": [
+      "dell"
+    ],
+    "PJ-D034": [
+      "dell"
+    ],
+    "PJ-D035": [
+      "dell"
     ]
   }
 }

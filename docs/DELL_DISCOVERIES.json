@@ -1,0 +1,91 @@
+{
+  "schema": "perfectjet/dell-discovery-ledger/1",
+  "worldwide_priority_verified": false,
+  "results": [
+    {
+      "id": "DELL-R001",
+      "status": "proved finite-ansatz classification",
+      "statement": "First-shell normalizer: all six coefficients are1 for nonzero T!=1; the free coupling has rank0.",
+      "proof": "DELL_NORMALIZATION.md"
+    },
+    {
+      "id": "DELL-R002",
+      "status": "proved finite-order functional identity",
+      "statement": "Global Poisson cancellation through W² at P0, with full symbolic phase variables.",
+      "proof": "DELL_NORMALIZATION.md"
+    },
+    {
+      "id": "DELL-R003",
+      "status": "proved finite-order functional identity",
+      "statement": "Global mixed W1P1 cancellation and unique first-shell coefficients modulo P² for T!=0,1.",
+      "proof": "DELL_NORMALIZATION.md"
+    },
+    {
+      "id": "DELL-R004",
+      "status": "proved finite-ansatz classification",
+      "statement": "Second-order actual-function freedom: one at T=-1,19 at T1,zero otherwise; cube-root nominal kernels are function identities.",
+      "proof": "DELL_NORMALIZATION.md"
+    },
+    {
+      "id": "DELL-R005",
+      "status": "proved scoped analytic obstruction",
+      "statement": "Unchanged trigonometricRS coordinate weights admit only common monomial profiles for T!=1; genuine momentum elliptic profiles are excluded.",
+      "proof": "DELL_OBSTRUCTIONS.md"
+    },
+    {
+      "id": "DELL-R006",
+      "status": "proved conditional analytic extension",
+      "statement": "The multiaffine obstruction persists near coordinate nome0 under the stated holomorphic commuting-base hypotheses; no radius or all-moduli claim.",
+      "proof": "DELL_OBSTRUCTIONS.md"
+    },
+    {
+      "id": "DELL-R007",
+      "status": "proved formal structural consequence",
+      "statement": "Generic functional independence and regular center-of-mass descent for the declared formal current, without all-order commutativity or convergence inference.",
+      "proof": "DELL_STRUCTURE.md"
+    },
+    {
+      "id": "DELL-R008",
+      "status": "bounded exact evidence",
+      "statement": "Independent classical two-nome panel through5particles and quantum panel through4particles; parameter points and orders are explicit.",
+      "proof": "DELL_RESEARCH.md"
+    }
+  ],
+  "open_gates": [
+    {
+      "id": "DELL-P001",
+      "target": "Global coordinate-elliptic first-shell identity and exact theta-function uniqueness theorem",
+      "status": "open"
+    },
+    {
+      "id": "DELL-P002",
+      "target": "Higher-order normalizer and deformation classification modulo canonical equivalence",
+      "status": "open"
+    },
+    {
+      "id": "DELL-P003",
+      "target": "All-order quantum KS commutativity in a specified operator completion",
+      "status": "open"
+    },
+    {
+      "id": "DELL-P004",
+      "target": "Convergence and analytic/global symplectic domains",
+      "status": "open"
+    },
+    {
+      "id": "DELL-P005",
+      "target": "Explicit position-momentum duality and equivalence between distinct DELL constructions",
+      "status": "open"
+    },
+    {
+      "id": "DELL-P006",
+      "target": "Exceptional-root E8 double-elliptic phase space and commuting Hamiltonians",
+      "status": "open"
+    }
+  ],
+  "preservation": {
+    "equation_prefix_count": 640,
+    "canonical_equation_prefix_sha256": "cf4fd30ac37c92e32cc6710ee4d4798287b4031d49f6cd334854e6bc250a43a4",
+    "earlier_E8_programme_unchanged": true
+  }
+}
