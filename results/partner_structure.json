@@ -1,0 +1,525 @@
+{
+  "arithmetic": "rational polynomial identities and division-free Sylvester determinants",
+  "formal_status": "mathematical proofs and exact replay; no new Lean theorem",
+  "high_multiplicity_thresholds": {
+    "4": 7,
+    "5": 5,
+    "6": 3
+  },
+  "monomial_dimension_series": {
+    "3+3": "t^4/(1-t^2)+2*t^12",
+    "4+2": "t^3/(1-t)+t^6",
+    "5+1": "2*t^3/(1-t)+t^4",
+    "6": "3*t^3/(1-t)"
+  },
+  "proof_scope": "characteristic zero; nonzero binary sextics; uniform degree N>=13",
+  "rows": [
+    {
+      "common_factor": [
+        {
+          "coefficient": "2",
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-3",
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            3
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 0,
+      "third_factorization": true
+    },
+    {
+      "common_factor": [
+        {
+          "coefficient": "-1",
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            2
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "32",
+          "exponents": [
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "-56",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "28",
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "-4",
+          "exponents": [
+            3,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 1,
+      "third_factorization": true
+    },
+    {
+      "common_factor": [
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            1
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "384",
+          "exponents": [
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1744",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "3232",
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "-3120",
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": "1644",
+          "exponents": [
+            4,
+            0
+          ]
+        },
+        {
+          "coefficient": "-435",
+          "exponents": [
+            5,
+            0
+          ]
+        },
+        {
+          "coefficient": "33",
+          "exponents": [
+            6,
+            0
+          ]
+        },
+        {
+          "coefficient": "7",
+          "exponents": [
+            7,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "exponents": [
+            8,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 2,
+      "third_factorization": true
+    },
+    {
+      "common_factor": [
+        {
+          "coefficient": "2",
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "exponents": [
+            1,
+            0
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "576",
+          "exponents": [
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "-2976",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "6388",
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "-7340",
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": "4841",
+          "exponents": [
+            4,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1820",
+          "exponents": [
+            5,
+            0
+          ]
+        },
+        {
+          "coefficient": "362",
+          "exponents": [
+            6,
+            0
+          ]
+        },
+        {
+          "coefficient": "-32",
+          "exponents": [
+            7,
+            0
+          ]
+        },
+        {
+          "coefficient": "1",
+          "exponents": [
+            8,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 3,
+      "third_factorization": true
+    },
+    {
+      "common_factor": [
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "exponents": [
+            1,
+            0
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "384",
+          "exponents": [
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1744",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "3232",
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "-3120",
+          "exponents": [
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": "1644",
+          "exponents": [
+            4,
+            0
+          ]
+        },
+        {
+          "coefficient": "-435",
+          "exponents": [
+            5,
+            0
+          ]
+        },
+        {
+          "coefficient": "33",
+          "exponents": [
+            6,
+            0
+          ]
+        },
+        {
+          "coefficient": "7",
+          "exponents": [
+            7,
+            0
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "exponents": [
+            8,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 4,
+      "third_factorization": true
+    },
+    {
+      "common_factor": [
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-2",
+          "exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "1",
+          "exponents": [
+            2,
+            0
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "-32",
+          "exponents": [
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": "56",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-28",
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "4",
+          "exponents": [
+            3,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 5,
+      "third_factorization": true
+    },
+    {
+      "common_factor": [
+        {
+          "coefficient": "2",
+          "exponents": [
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": "3",
+          "exponents": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": "-2",
+          "exponents": [
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": "-6",
+          "exponents": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": "-3",
+          "exponents": [
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": "3",
+          "exponents": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": "3",
+          "exponents": [
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": "-1",
+          "exponents": [
+            3,
+            0
+          ]
+        }
+      ],
+      "fifth_factorization": true,
+      "resultant": [
+        {
+          "coefficient": "1",
+          "exponents": [
+            0,
+            0
+          ]
+        }
+      ],
+      "resultant_identity": true,
+      "root_multiplicity": 6,
+      "third_factorization": true
+    }
+  ],
+  "schema": "perfectjet/partner-structure/1",
+  "source_sha256": {
+    "docs/PARTNER_STRUCTURE.md": "0c9712ddde056c7b09d6778a5ef3381ed40babfec75afcf42a006fe7b14e88c2",
+    "scripts/verify_partner_structure.py": "7298a4ca7836dca8dbf4f001a99882f6dc6a5384bd94ee0391885b65727cce9b",
+    "src/perfectjet/partner_structure.py": "e12e4fb89ff74190742a6530e7bd9c181adf503c4913004abae8f72371a92168",
+    "src/perfectjet/polynomial.py": "e19ee2d48bf546a96d97a9dbb3cbdcbb5a1579e6e3156224254a34c5c05173bc",
+    "src/perfectjet/transvectants.py": "11d51a064629185335894f4494cabcde6552b497acfdf44144398f02d198ede7",
+    "tests/test_partner_structure.py": "cb798db12126cd222c1bd11613f5b5a989f6d0a504b7e7c8fb019106593f3199"
+  },
+  "unresolved": "global squarefree and mixed low-multiplicity classification for N>=21"
+}
