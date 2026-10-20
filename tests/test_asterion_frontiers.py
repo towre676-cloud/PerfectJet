@@ -18,9 +18,15 @@ class FrontierIntegrationTests(unittest.TestCase):
         self.assertEqual(prefix["equation_count"],592)
         raw = json.dumps(source[:592],sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()
         self.assertEqual(hashlib.sha256(raw).hexdigest(),prefix["sha256_of_canonical_records"])
-        self.assertEqual(source[592:],frontier["equations"])
-        self.assertEqual([r["id"] for r in source[592:]],[f"PJ-X{i:03d}" for i in range(1,49)])
-        self.assertEqual(len(source),640)
+        self.assertEqual(source[592:640],frontier["equations"])
+        self.assertEqual([r["id"] for r in source[592:640]],[f"PJ-X{i:03d}" for i in range(1,49)])
+        primitive = json.loads((ROOT/"data/asterion_primitive_equations.json").read_text())
+        self.assertEqual(primitive["preserved_prefix"]["equation_count"],640)
+        raw = json.dumps(source[:640],sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()
+        self.assertEqual(hashlib.sha256(raw).hexdigest(),primitive["preserved_prefix"]["sha256_of_canonical_records"])
+        self.assertEqual(source[640:],primitive["equations"])
+        self.assertEqual([r["id"] for r in source[640:]],[f"PJ-P{i:03d}" for i in range(1,15)])
+        self.assertEqual(len(source),654)
 
     def test_strict_public_parameters(self):
         for request in ({"operation":"frontiers","max_degree":True},
@@ -64,13 +70,20 @@ class FrontierIntegrationTests(unittest.TestCase):
         self.assertEqual(closure["exact_kernel_dimension"],185629)
         self.assertEqual(closure["exact_kernel_character"],
                          {"1":1,"248":1,"3875":2,"30380":1,"147250":1})
-        self.assertFalse(closure["complete_minimal_differential_generator_list_computed"])
+        self.assertTrue(closure["complete_minimal_differential_generator_list_computed"])
+        self.assertTrue(closure["full_Li_bigraded_kernel_embedding_computed"])
+        self.assertTrue(closure["explicit_new_primitive_affine_null_lifts_computed"])
+        primitives = report["components"]["primitives"]
+        self.assertTrue(primitives["passed"])
+        self.assertEqual(primitives["kernel_multiplicities"]["w6-30380"],1)
+        self.assertTrue(primitives["closed_forms"]["passed"])
+        self.assertEqual(primitives["length_four_3875"]["values_on_x_h1_F_Q"][0],63)
 
     def test_all_earlier_research_identifiers_survive(self):
         ledger = evaluate({"operation":"discoveries"})
         ids = {row["id"] for row in ledger["programme"]}
         self.assertTrue({f"AST-P{i:03d}" for i in range(1,65)} <= ids)
-        self.assertEqual(len(ledger["discoveries"]),48)
+        self.assertEqual(len(ledger["discoveries"]),53)
         contract = ledger["preserved_baseline"]
         programme = [{k:v for k,v in row.items() if k != "frontier_update"}
                      for row in ledger["programme"]]

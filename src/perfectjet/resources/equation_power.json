@@ -755,7 +755,21 @@
     "PJ-X045": 26,
     "PJ-X046": 26,
     "PJ-X047": 26,
-    "PJ-X048": 26
+    "PJ-X048": 26,
+    "PJ-P001": 26,
+    "PJ-P002": 26,
+    "PJ-P003": 26,
+    "PJ-P004": 26,
+    "PJ-P005": 26,
+    "PJ-P006": 26,
+    "PJ-P007": 26,
+    "PJ-P008": 26,
+    "PJ-P009": 26,
+    "PJ-P010": 26,
+    "PJ-P011": 26,
+    "PJ-P012": 26,
+    "PJ-P013": 26,
+    "PJ-P014": 26
   },
   "callable_labs": {
     "PJ-E085": [
@@ -2362,6 +2376,62 @@
       "asterion-frontiers"
     ],
     "PJ-X048": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P001": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P002": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P003": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P004": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P005": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P006": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P007": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P008": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P009": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P010": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P011": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P012": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P013": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-P014": [
       "asterion",
       "asterion-frontiers"
     ]

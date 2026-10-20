@@ -321,3 +321,24 @@ Detailed proofs are in `ASTERION_KERNEL_CHARACTERS.md`,
 `ASTERION_JACOBI.md`. Primary-source boundaries and the preservation audit
 are in `ASTERION_NEXT_PUSH_SOURCES.md`, `asterion_frontier_sources.json`
 and `ASTERION_CLOSURE_AUDIT.md`.
+
+## Update: the weight-six generator gates are closed
+
+[ASTERION_PRIMITIVES.md](ASTERION_PRIMITIVES.md) closes the three exact gates
+named above. It uses an exact Frenkel–Kac lattice criterion for null vectors,
+checked on all 61,504 bracket and form pairs, and confirms the retained
+weight-four lift R_Q.
+
+- Weight five: P₂₄₈=20u^[0]B(x,z)−21u^[0]B(y,y)−12u^[1]B(x,y) with u=e_θ,
+  and a 112-term P₁₄₇₂₅₀. Both have certified null lifts and two independent
+  nonmembership certificates. The 3875 class of K₅ is D F_Q.
+- Weight six: K₆ is 248+3875+30380+147250 in Li degree three and 1+3875 in
+  Li degree two. The forced V₃₀₃₈₀ primitive has an explicit closed form of
+  six contraction tensors and a pure length-three null lift. Both length-four
+  summands are products of lower kernel classes.
+- F₀ ≡ (91/155)·Σ_a x_(tᵃ)^[0]P₂₄₈^(t_a) modulo the arc ideal. Its
+  individual associated-graded image is zero.
+- Minimal differential generators through weight six: F_Q (weight four),
+  P₂₄₈ and P₁₄₇₂₅₀ (weight five) and P₃₀₃₈₀ (weight six).
+
+Weight seven, the all-weight presentation and finite generation remain open.

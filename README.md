@@ -2,7 +2,11 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Version **0.19.0** offers **28 computed tools and a searchable atlas of 640 equations in 26 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Version **0.19.0** offers **28 computed tools and a searchable atlas of 654 equations in 26 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+
+## Asterion primitives: explicit E8 arc-kernel generators through weight six
+
+Run `python -m perfectjet asterion primitives` (stored certificates replayed) or add `--exhaustive` to repeat every search. An exact Frenkel–Kac lattice criterion certifies affine null lifts. The [primitive-generator report](docs/ASTERION_PRIMITIVES.md) gives the weight-five primitives in closed form, P₂₄₈=20u^[0]B(x,z)−21u^[0]B(y,y)−12u^[1]B(x,y), and a 112-term P₁₄₇₂₅₀. It also gives the forced weight-six V₃₀₃₈₀ primitive, the Li-bigraded weight-six kernel, the minimal differential generators through weight six and the decision F₀ ≡ (91/155)·Σ_a x_(tᵃ)^[0]P₂₄₈^(t_a) modulo the arc ideal. 14 PJ-P records follow the 640 earlier equation records unchanged. Weight seven and any all-weight presentation remain open.
 
 ## Asterion next push: higher kernels, elliptic compatibility and monodromy
 

@@ -24,7 +24,7 @@ class ExtensionPublicationTests(unittest.TestCase):
         self.assertEqual(records[504:592], extension["equations"])
         self.assertEqual([r["id"] for r in records[504:592]], [f"PJ-H{i:03d}" for i in range(1, 89)])
         cat = catalogue()
-        self.assertEqual(len(cat["equations"]), 640)
+        self.assertEqual(len(cat["equations"]), 654)
         for row in cat["equations"][504:592]:
             self.assertIn("asterion-extension", row["callable_labs"])
         for name in ("equations.json", "equation_power.json"):

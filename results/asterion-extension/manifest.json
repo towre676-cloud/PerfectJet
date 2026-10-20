@@ -1,50 +1,50 @@
 {
   "files": {
     "boundary.json": {
-      "bytes": 17312,
-      "sha256": "563cd7a0e288d124d145debe17290593d1be5d14ffed3e13f2884f6ae8b91b11"
+      "bytes": 17410,
+      "sha256": "569a98b01d69aa9104cb36a18afbd40317a552f368a7f6f8484768cfe566969e"
     },
     "cartan_conformal_relations.json.gz": {
-      "bytes": 5272,
-      "sha256": "cf2287714c0b3c77a23f838f8a1d0f3e843f3b5ce6b57539d1ca59700f018774"
+      "bytes": 5324,
+      "sha256": "8bb955615462915596597ef1af56cc091106bb3d00c838a4e324ad14ce45a2d7"
     },
     "currents.json": {
-      "bytes": 28470,
-      "sha256": "b7c30da74efbe8f71f4901b36220b9e0cbb1c1227e7aba9a6d4ce6f53f4d083c"
+      "bytes": 28568,
+      "sha256": "34c05d24c27a062061e505235721949d5654b85248d6eaf720ee7d34b8d3fb37"
     },
     "higher.json": {
-      "bytes": 32802,
-      "sha256": "c5516fdb200acd4c0551dd2edb7e6c6ce8e80dcfdbfeb306d6b855184f300388"
+      "bytes": 32900,
+      "sha256": "b04d68f11b70c511f435dc4a3742c563330d5787a4de382e61d92f3ceae4207f"
     },
     "kz.json": {
-      "bytes": 133895,
-      "sha256": "5bf277f07f31095e60790e684073b1aa3282f901fb54547e3367d8640c835bdb"
+      "bytes": 133993,
+      "sha256": "735b6a71d65125c93da54d905e08f13379ab37fc70d87e80adf24d0af59e91db"
     },
     "periods.json": {
-      "bytes": 6373,
-      "sha256": "7cbca771db996aead32ea84c4e8a237536dc4d1de893d47a62d784bd4e115e47"
+      "bytes": 6471,
+      "sha256": "71e9f0b7101880b6fcfb2421f43f587ce21fe9c5c3eb20c4f86be19bb9fa11b2"
     },
     "recoupling_tables.json.gz": {
-      "bytes": 44525,
-      "sha256": "d7b0682d73b33fc34ba99e6619cfb7c0c644c3da1e21ff012c7376d832c18b6a"
+      "bytes": 44574,
+      "sha256": "68a07cd8ce90b8b23c4ee0eb56aebac46c024249bfe811a853226d640ca98da9"
     },
     "relations.json": {
-      "bytes": 447529,
-      "sha256": "71318d2d606480df2805124ca630cff94c22884fd1c47d61f89fe679c6a1a9c0"
+      "bytes": 447627,
+      "sha256": "da413a4a0e5e824190d0d817d55b5acabc512a8421921c80d9720b617de3942f"
     },
     "rigidity.json": {
-      "bytes": 412539,
-      "sha256": "bda21e14139da93a4d75c920fd7660d886675501b51c4fc17a120f508a6eadf5"
+      "bytes": 412637,
+      "sha256": "0063cf62b3771fa4501bc79caf90ecae476a937f505daec714da1cabba0a94e0"
     },
     "validation.json": {
-      "bytes": 1328224,
-      "sha256": "a8ce61508eedd9f7689c8cd2b3f4b48245a0cd008605b31a4c24e8d8ce3197d4"
+      "bytes": 1328322,
+      "sha256": "1606c34c9bad4ea85e067afa7771540f9ae3c91f0d0546f5b2b889a192bf7982"
     }
   },
   "schema": "perfectjet/asterion-extension-receipts/1",
   "scope": "Exact regeneration of the stated certificates; not a full differential-kernel or global-boundary classification.",
   "source_sha256": {
-    "asterion.py": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+    "asterion.py": "72b13b0c128b7f656d2971974abb8444d0c3e9740b28bada2a760ebf2bf5a788",
     "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
     "asterion_boundary.py": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
     "asterion_currents.py": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
@@ -52,7 +52,7 @@
     "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
     "asterion_elliptic.py": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
     "asterion_extension.py": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
-    "asterion_frontiers.py": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+    "asterion_frontiers.py": "6cf636c422e8545c37059177d8a96330ab17c468130c38d995ee05709297f2a4",
     "asterion_higher.py": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
     "asterion_jacobi.py": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
     "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
@@ -62,6 +62,7 @@
     "asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
     "asterion_monodromy_algebra.py": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
     "asterion_periods.py": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+    "asterion_primitives.py": "16852ec62e83abfb6fa0e70f7651157e2277d0166e817a5d6c88201e1bbcc430",
     "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
     "asterion_quartic.py": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
     "asterion_quartic_characters.py": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
