@@ -460,6 +460,9 @@ def build():
     asterion=ROOT/'data/asterion_equations.json'
     if asterion.exists():
         equations.extend(json.loads(asterion.read_text())['equations'])
+    extension=ROOT/'data/asterion_extension_equations.json'
+    if extension.exists():
+        equations.extend(json.loads(extension.read_text())['equations'])
     statuses={'definition','derived','historical_report','conditional','exact_checked','numerical_checked','proposal','open','rejected'}
     for e in equations:
         if e['status'] not in statuses:raise ValueError(f"bad registry row {e}")
@@ -478,7 +481,7 @@ def build():
     (ROOT/'docs/EQUATION_ATLAS.md').write_text('\n'.join(lines)+'\n')
     chapters=sorted((ROOT/'docs/chapters').glob('*.md'))
     version=re.search(r'__version__ = "([^\"]+)"',(ROOT/'src/perfectjet/__init__.py').read_text()).group(1)
-    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','',f'Version {version} · 17 October 2026 (UTC)','','A master synthesis of the two archival passes, both enhancement programs, and the recovered mathematical engines. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
+    monograph=['# PerfectJet — Representations, Arithmetic, and Closure','',f'Version {version} · 20 October 2026 (UTC)','','A master synthesis of the two archival passes, both enhancement programs, and the recovered mathematical engines. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
     for p in chapters:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]

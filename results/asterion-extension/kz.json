@@ -1,0 +1,4122 @@
+{
+  "all_five_integrable_channels": true,
+  "all_integer_level_resonance_certificate": {
+    "exceptional_level_checks": {
+      "18": [
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 0,
+          "channel": 1,
+          "coefficients": [
+            [
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "1/18",
+                "0",
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/48",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [
+            {
+              "order": 1,
+              "source_log_coefficients": [
+                "0"
+              ],
+              "target_channel": 3875,
+              "zero_source": true
+            }
+          ],
+          "rho": "-5/4",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 1,
+          "channel": 248,
+          "coefficients": [
+            [
+              [
+                "0",
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "75/403",
+                "5/16",
+                "-3/35",
+                "0",
+                "3/868"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/48",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "-5/8",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 2,
+          "channel": 3875,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "1",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "-35/66",
+                "1/2",
+                "10/3",
+                "0"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/48",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "-1/4",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 3,
+          "channel": 30380,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0",
+                "1/50",
+                "5/8",
+                "-2/115"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/48",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "0",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 4,
+          "channel": 27000,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "0",
+                "7/64",
+                "0",
+                "-93/5",
+                "31/48"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/48",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "1/24",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        }
+      ],
+      "30": [
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 0,
+          "channel": 1,
+          "coefficients": [
+            [
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "1/30",
+                "0",
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/60",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [
+            {
+              "order": 1,
+              "source_log_coefficients": [
+                "0"
+              ],
+              "target_channel": 30380,
+              "zero_source": true
+            }
+          ],
+          "rho": "-1",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 1,
+          "channel": 248,
+          "coefficients": [
+            [
+              [
+                "0",
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "5/31",
+                "1/4",
+                "-3/49",
+                "0",
+                "3/1519"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/60",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "-1/2",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 2,
+          "channel": 3875,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "1",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "-35/78",
+                "2/5",
+                "5/2",
+                "0"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/60",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "-1/5",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 3,
+          "channel": 30380,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0",
+                "1/60",
+                "1/2",
+                "-2/145"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/60",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "0",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 4,
+          "channel": 27000,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "0",
+                "35/368",
+                "0",
+                "-15",
+                "31/60"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/60",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "1/30",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        }
+      ],
+      "32": [
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 0,
+          "channel": 1,
+          "coefficients": [
+            [
+              [
+                "1",
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "1/32",
+                "0",
+                "0",
+                "0"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/62",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [
+            {
+              "order": 1,
+              "source_log_coefficients": [
+                "0"
+              ],
+              "target_channel": 27000,
+              "zero_source": true
+            }
+          ],
+          "rho": "-30/31",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 1,
+          "channel": 248,
+          "coefficients": [
+            [
+              [
+                "0",
+                "1",
+                "0",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "225/1426",
+                "15/62",
+                "-9/154",
+                "0",
+                "2/1085"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/62",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "-15/31",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 2,
+          "channel": 3875,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "1",
+                "0",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "-7/16",
+                "12/31",
+                "12/5",
+                "0"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/62",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "-6/31",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 3,
+          "channel": 30380,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "0",
+                "1",
+                "0"
+              ]
+            ],
+            [
+              [
+                "0",
+                "0",
+                "3/185",
+                "15/31",
+                "-1/75"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/62",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "0",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        },
+        {
+          "all_positive_integer_resonances_passed": true,
+          "branch": 4,
+          "channel": 27000,
+          "coefficients": [
+            [
+              [
+                "0",
+                "0",
+                "0",
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "0",
+                "35/376",
+                "0",
+                "-465/32",
+                "1/2"
+              ]
+            ]
+          ],
+          "computed_order": 1,
+          "has_logarithms": false,
+          "hbar": "1/62",
+          "log_free_all_orders_certified": true,
+          "normalization": "channel-leading vector; all resonance integration constants zero",
+          "obstructions": [],
+          "passed": true,
+          "recurrence_residual_zero": true,
+          "requested_order": 1,
+          "resonances": [],
+          "rho": "1/31",
+          "scope": "formal local solution; no global analytic-continuation claim"
+        }
+      ]
+    },
+    "exceptional_levels": [
+      18,
+      30,
+      32
+    ],
+    "level_one_adjoint_primary_claim": false,
+    "log_free_at_every_integer_level_ge4": true,
+    "max_eigenvalue_gap": 62,
+    "min_k_plus_h_dual": 34,
+    "passed": true,
+    "possible_resonant_orders": [
+      1
+    ],
+    "scope": "all integer WZW levels k>=4; all five invariant channels"
+  },
+  "all_positive_integer_formal_resonant_levels": [
+    1,
+    2,
+    18,
+    30,
+    32
+  ],
+  "arithmetic": {
+    "denominator_primes": [
+      2,
+      3,
+      5,
+      7,
+      31
+    ],
+    "matrices": {
+      "A": [
+        [
+          "-60",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "-30",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "2"
+        ]
+      ],
+      "A_tensor": [
+        [
+          "-60",
+          "0",
+          "0",
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "-30",
+          "-10"
+        ],
+        [
+          "0",
+          "1",
+          "1",
+          "0",
+          "-10"
+        ]
+      ],
+      "B": [
+        [
+          "0",
+          "-450/31",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "-15",
+          "35",
+          "0",
+          "-35/4"
+        ],
+        [
+          "0",
+          "18/7",
+          "-24",
+          "-6/5",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-120",
+          "-30",
+          "930"
+        ],
+        [
+          "0",
+          "-12/217",
+          "0",
+          "4/5",
+          "-31"
+        ]
+      ],
+      "B_tensor": [
+        [
+          "0",
+          "0",
+          "0",
+          "-12",
+          "-12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-12",
+          "-12"
+        ],
+        [
+          "0",
+          "0",
+          "-60",
+          "-12",
+          "-12"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "-20",
+          "10"
+        ],
+        [
+          "0",
+          "-1",
+          "0",
+          "10",
+          "-20"
+        ]
+      ],
+      "C_tensor": [
+        [
+          "0",
+          "0",
+          "0",
+          "12",
+          "0"
+        ],
+        [
+          "0",
+          "-60",
+          "0",
+          "12",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "12",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "1",
+          "-10",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1",
+          "-10",
+          "-30"
+        ]
+      ],
+      "channel_transform": [
+        [
+          "1",
+          "0",
+          "1",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "-4",
+          "1",
+          "31"
+        ],
+        [
+          "0",
+          "0",
+          "-4",
+          "-1",
+          "31"
+        ],
+        [
+          "0",
+          "1",
+          "-2",
+          "1/30",
+          "-31/12"
+        ],
+        [
+          "0",
+          "0",
+          "4",
+          "0",
+          "31/6"
+        ]
+      ],
+      "crossing": [
+        [
+          "1/248",
+          "15/62",
+          "-875/248",
+          "-245/248",
+          "7875/248"
+        ],
+        [
+          "1/60",
+          "1/2",
+          "-35/12",
+          "0",
+          "-35/8"
+        ],
+        [
+          "-1/56",
+          "-3/14",
+          "-3/8",
+          "-1/40",
+          "-9/8"
+        ],
+        [
+          "-1/2",
+          "0",
+          "-5/2",
+          "1/2",
+          "15"
+        ],
+        [
+          "3/217",
+          "-6/217",
+          "-3/31",
+          "2/155",
+          "23/62"
+        ]
+      ],
+      "crossing_tensor": [
+        [
+          "0",
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "-1",
+          "-1"
+        ]
+      ]
+    },
+    "matrix_denominator_lcm": 26040,
+    "matrix_sha256": "ab7e7673b2f9c2d66fab37bd63b246512c680a9fef827f677b5daaea5fce59ea",
+    "max_absolute_numerator": 7875,
+    "minimal_localization_proved": false
+  },
+  "candidate_resonant_wzw_levels_ge4": [
+    18,
+    30,
+    32
+  ],
+  "channels": [
+    1,
+    248,
+    3875,
+    30380,
+    27000
+  ],
+  "construction": "five invariant four-tensors; exact sparse Casimir contractions",
+  "controlled_complex_transport_available": true,
+  "dense_248_power4_array_used": false,
+  "dimension": 5,
+  "exhaustive_requested": true,
+  "finite_lie_dimension": 248,
+  "global_monodromy_certified": false,
+  "global_monodromy_scope": "this component encloses two based generator holonomies and certifies noncommutativity; the independent asterion_monodromy exhaustive certificate proves the level-four compact and Zariski group closures",
+  "local_solutions": [
+    {
+      "all_positive_integer_resonances_passed": true,
+      "branch": 0,
+      "channel": 1,
+      "coefficients": [
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "1/4",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "225/4216",
+            "1/8",
+            "-9/280",
+            "0",
+            "1/434"
+          ]
+        ],
+        [
+          [
+            "225/4216",
+            "133/1224",
+            "-9/280",
+            "-1/7",
+            "1/434"
+          ]
+        ],
+        [
+          [
+            "925/17918",
+            "41/408",
+            "-4/119",
+            "-3/14",
+            "15709/4094790"
+          ]
+        ],
+        [
+          [
+            "3575/71672",
+            "41003/427720",
+            "-167/4760",
+            "-13348/48433",
+            "21983/4094790"
+          ]
+        ],
+        [
+          [
+            "211105/4362744",
+            "8951/96237",
+            "-1340783/36698376",
+            "-32145/96866",
+            "1200466/175375893"
+          ]
+        ],
+        [
+          [
+            "1062765/22540844",
+            "26252916827/287917108908",
+            "-8127739/214073860",
+            "-292423650/759962203",
+            "44939690/5436652683"
+          ]
+        ],
+        [
+          [
+            "1166343138915/25288719399086",
+            "1400803399/15563086968",
+            "-132279133979/3359032937260",
+            "-8592097/19739278",
+            "1505382540611/156195031582590"
+          ]
+        ]
+      ],
+      "computed_order": 8,
+      "has_logarithms": false,
+      "hbar": "1/34",
+      "log_free_all_orders_certified": true,
+      "normalization": "channel-leading vector; all resonance integration constants zero",
+      "obstructions": [],
+      "passed": true,
+      "recurrence_residual_zero": true,
+      "requested_order": 8,
+      "resonances": [],
+      "rho": "-30/17",
+      "scope": "formal local solution; no global analytic-continuation claim"
+    },
+    {
+      "all_positive_integer_resonances_passed": true,
+      "branch": 1,
+      "channel": 248,
+      "coefficients": [
+        [
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "225/992",
+            "15/34",
+            "-9/56",
+            "0",
+            "6/217"
+          ]
+        ],
+        [
+          [
+            "225/1054",
+            "15075/36992",
+            "-18/119",
+            "-45/38",
+            "96/3689"
+          ]
+        ],
+        [
+          [
+            "466275/2293504",
+            "487795/1257728",
+            "-1600413/9839872",
+            "-2205/1292",
+            "2956089/76259008"
+          ]
+        ],
+        [
+          [
+            "7625475/38989568",
+            "154170885/406246144",
+            "-29218365/167277824",
+            "-141230925/65189152",
+            "66090585/1296403136"
+          ]
+        ],
+        [
+          [
+            "597799521/3148407616",
+            "2602403331/6906184448",
+            "-33415360605/178976816816",
+            "-5747093055/2216431168",
+            "1681317008085/26865362187328"
+          ]
+        ],
+        [
+          [
+            "39748525575/214091717888",
+            "1026161124878219/2719220346002176",
+            "-9668313375765/48681694173952",
+            "-178863177242475/59688768408136",
+            "4806747305745/65244451026368"
+          ]
+        ],
+        [
+          [
+            "15387990172936425/84295830726067456",
+            "2195433972477603/5778343235254624",
+            "-580515891595235937/2760008651192208640",
+            "-27461690725057875/8117672503506496",
+            "90200370133097697/1069503352336980848"
+          ]
+        ],
+        [
+          [
+            "129157691272877025/716514561171573376",
+            "4373936739693656421/11394892859922118528",
+            "-5205304855416087477/23460073535133773440",
+            "-1425194777717355699/379501189538928688",
+            "1720854809244251769/18181556989728674416"
+          ]
+        ]
+      ],
+      "computed_order": 8,
+      "has_logarithms": false,
+      "hbar": "1/34",
+      "log_free_all_orders_certified": true,
+      "normalization": "channel-leading vector; all resonance integration constants zero",
+      "obstructions": [],
+      "passed": true,
+      "recurrence_residual_zero": true,
+      "requested_order": 8,
+      "resonances": [],
+      "rho": "-15/17",
+      "scope": "formal local solution; no global analytic-continuation claim"
+    },
+    {
+      "all_positive_integer_resonances_passed": true,
+      "branch": 2,
+      "channel": 3875,
+      "coefficients": [
+        [
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-35/52",
+            "12/17",
+            "60/11",
+            "0"
+          ]
+        ],
+        [
+          [
+            "-7875/93496",
+            "-1435/1768",
+            "239295/330616",
+            "1230/187",
+            "-6503/79794"
+          ]
+        ],
+        [
+          [
+            "-7875/54808",
+            "-233215115/258872328",
+            "4219123/5620472",
+            "9029725/1115829",
+            "-188587/1356498"
+          ]
+        ],
+        [
+          [
+            "-20977250/111458919",
+            "-1421730625/1466943192",
+            "4887301579/6234508566",
+            "11037125/1149642",
+            "-23139903181/122381893062"
+          ]
+        ],
+        [
+          [
+            "-260477875/1166031768",
+            "-220277393340305/214492032704664",
+            "347732372791/423946582488",
+            "15111839390980/1365640762707",
+            "-488957601151/2080492182054"
+          ]
+        ],
+        [
+          [
+            "-559437161250625/2216417671281528",
+            "-327766492032455/303863712998274",
+            "4201964775422780851/4897067598680183784",
+            "19132019223621335/1532248935757254",
+            "-26697995636877044/95966622824814621"
+          ]
+        ],
+        [
+          [
+            "-580149278254875/2093283356210332",
+            "-4763922876498792895/4229285653405613268",
+            "1382283210241968415/1541669429214131932",
+            "2024771358598844621570/146027835199532702559",
+            "-2257551436278856543/7069541214761343747"
+          ]
+        ],
+        [
+          [
+            "-2176378650338831225/7283769736420778406",
+            "-3239320665807763985/2765302157995977906",
+            "3588983181997831792628/3836549488424086458141",
+            "88005667113885722890/5786650812102694507",
+            "-57152808385859877802474/159263267171708530236393"
+          ]
+        ]
+      ],
+      "computed_order": 8,
+      "has_logarithms": false,
+      "hbar": "1/34",
+      "log_free_all_orders_certified": true,
+      "normalization": "channel-leading vector; all resonance integration constants zero",
+      "obstructions": [],
+      "passed": true,
+      "recurrence_residual_zero": true,
+      "requested_order": 8,
+      "resonances": [],
+      "rho": "-6/17",
+      "scope": "formal local solution; no global analytic-continuation claim"
+    },
+    {
+      "all_positive_integer_resonances_passed": true,
+      "branch": 3,
+      "channel": 30380,
+      "coefficients": [
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "3/115",
+            "15/17",
+            "-1/40"
+          ]
+        ],
+        [
+          [
+            "0",
+            "-17/1472",
+            "141/3910",
+            "129579/106352",
+            "-47/1360"
+          ]
+        ],
+        [
+          [
+            "-425/410688",
+            "-1/46",
+            "13008659/282896320",
+            "172678/112999",
+            "-24968287/576959600"
+          ]
+        ],
+        [
+          [
+            "-225/91264",
+            "-110931131/3551656320",
+            "107043687/1923694976",
+            "5313317031/2919894160",
+            "-1009058607/19616626400"
+          ]
+        ],
+        [
+          [
+            "-9963427/2446696576",
+            "-105706573/2625137280",
+            "2494080726589/38354714070400",
+            "4526914833/2158182640",
+            "-12181791562793/205787792800800"
+          ]
+        ],
+        [
+          [
+            "-1302485/226053488",
+            "-15285582886915/312239603385216",
+            "483471770687/6520301391968",
+            "2358884292673477/997606112971104",
+            "-46623027567269/699678495522720"
+          ]
+        ],
+        [
+          [
+            "-8054492951615/1075491967215744",
+            "-101498621158429/1769357752516224",
+            "61920886610413156051/745710569445900240000",
+            "463301786272028/176659415838633",
+            "-120811539822139138709/1636685557819861846752"
+          ]
+        ],
+        [
+          [
+            "-168761609839295/18283363442667648",
+            "-365910812157069027013/5582802910246659864000",
+            "1162652529832144233487/12677079680580304080000",
+            "1826537288939214227465573/635755545981102249612000",
+            "-4013408998984767469021/49685097290960091776400"
+          ]
+        ]
+      ],
+      "computed_order": 8,
+      "has_logarithms": false,
+      "hbar": "1/34",
+      "log_free_all_orders_certified": true,
+      "normalization": "channel-leading vector; all resonance integration constants zero",
+      "obstructions": [],
+      "passed": true,
+      "recurrence_residual_zero": true,
+      "requested_order": 8,
+      "resonances": [],
+      "rho": "0",
+      "scope": "formal local solution; no global analytic-continuation claim"
+    },
+    {
+      "all_positive_integer_resonances_passed": true,
+      "branch": 4,
+      "channel": 27000,
+      "coefficients": [
+        [
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "0",
+            "35/264",
+            "0",
+            "-155/6",
+            "31/34"
+          ]
+        ],
+        [
+          [
+            "525/35464",
+            "35/187",
+            "-1379/3608",
+            "-620/17",
+            "695107/591294"
+          ]
+        ],
+        [
+          [
+            "2625/92752",
+            "27435625/81331536",
+            "-89635/122672",
+            "-155957225/3388814",
+            "28691195/20103996"
+          ]
+        ],
+        [
+          [
+            "40485375/840425872",
+            "537425/1021904",
+            "-429401251/406657680",
+            "-231592775/4215354",
+            "303574925855/182162307756"
+          ]
+        ],
+        [
+          [
+            "6008625/81177499",
+            "1563761059/2136801264",
+            "-71446491/52372580",
+            "-485522762937/7656871196",
+            "177905304443/93841188844"
+          ]
+        ],
+        [
+          [
+            "1414130025/13533074672",
+            "34357715287/36325621488",
+            "-5539390938849/3338395841456",
+            "-2327781290904/32541702583",
+            "70261905019699/33192536634660"
+          ]
+        ],
+        [
+          [
+            "51957028725/375364755376",
+            "863682797090243683/742410828400113288",
+            "-551560807045073/283763646523760",
+            "-57433574957669155/723597298635588",
+            "20385548303931763/8746233403232910"
+          ]
+        ],
+        [
+          [
+            "37343041702162646975/213525603257077027332",
+            "2906962981834569875/2103497347133654316",
+            "-457667553421960199/206225230111142580",
+            "-89158645241938150/1025096173067083",
+            "85802505866532838189/33797045790836458065"
+          ]
+        ]
+      ],
+      "computed_order": 8,
+      "has_logarithms": false,
+      "hbar": "1/34",
+      "log_free_all_orders_certified": true,
+      "normalization": "channel-leading vector; all resonance integration constants zero",
+      "obstructions": [],
+      "passed": true,
+      "recurrence_residual_zero": true,
+      "requested_order": 8,
+      "resonances": [],
+      "rho": "1/17",
+      "scope": "formal local solution; no global analytic-continuation claim"
+    }
+  ],
+  "low_level_five_channel_integrable_claim": false,
+  "low_level_formal_system_diagnostics": {
+    "1": [
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 0,
+        "channel": 1,
+        "coefficients": [
+          [
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "225/961",
+              "1/2",
+              "-9/49",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "12/6727"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": true,
+        "hbar": "1/31",
+        "log_free_all_orders_certified": false,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [
+          {
+            "order": 2,
+            "source_log_coefficients": [
+              "12/6727"
+            ],
+            "target_channel": 27000,
+            "zero_source": false
+          }
+        ],
+        "rho": "-60/31",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 1,
+        "channel": 248,
+        "coefficients": [
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "450/1891",
+              "15/31",
+              "-18/91",
+              "0",
+              "-12/217"
+            ]
+          ],
+          [
+            [
+              "225/961",
+              "711315/1524146",
+              "-549/2821",
+              "45/52",
+              "-366/6727"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/31",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "-30/31",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 2,
+        "channel": 3875,
+        "coefficients": [
+          [
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-5/7",
+              "24/31",
+              "120/19",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-225/2387",
+              "-395/434",
+              "750333/894691",
+              "4740/589",
+              "-12247/115444"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/31",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "-12/31",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 3,
+        "channel": 30380,
+        "coefficients": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "6/215",
+              "30/31",
+              "-4/145"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-1519/114724",
+              "273/6665",
+              "1701609/1198367",
+              "-182/4495"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/31",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "0",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 4,
+        "channel": 27000,
+        "coefficients": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "5/36",
+              "0",
+              "-310/11",
+              "1"
+            ]
+          ],
+          [
+            [
+              "125/7688",
+              "5/24",
+              "-277/616",
+              "-465/11",
+              "605485/443982"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/31",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "2/31",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      }
+    ],
+    "2": [
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 0,
+        "channel": 1,
+        "coefficients": [
+          [
+            [
+              "1",
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "1/2",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "225/1984",
+              "1/4",
+              "-9/112",
+              "0",
+              "3/217"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/32",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "-15/8",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 1,
+        "channel": 248,
+        "coefficients": [
+          [
+            [
+              "0",
+              "1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "225/961",
+              "15/32",
+              "-9/49",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "3/1736"
+            ]
+          ],
+          [
+            [
+              "225/992",
+              "12350295/27553792",
+              "-279/1568",
+              "-8550/14161",
+              "3/3472"
+            ],
+            [
+              "0",
+              "15/63488",
+              "0",
+              "-45/952",
+              "3/1792"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": true,
+        "hbar": "1/32",
+        "log_free_all_orders_certified": false,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [
+          {
+            "order": 1,
+            "source_log_coefficients": [
+              "3/1736"
+            ],
+            "target_channel": 27000,
+            "zero_source": false
+          }
+        ],
+        "rho": "-15/16",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 2,
+        "channel": 3875,
+        "coefficients": [
+          [
+            [
+              "0",
+              "0",
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-7/10",
+              "3/4",
+              "6",
+              "0"
+            ]
+          ],
+          [
+            [
+              "-45/496",
+              "-7/8",
+              "51/64",
+              "15/2",
+              "-3/31"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/32",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "-3/8",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 3,
+        "channel": 30380,
+        "coefficients": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "1",
+              "0"
+            ]
+          ],
+          [
+            [
+              "0",
+              "0",
+              "3/110",
+              "15/16",
+              "-2/75"
+            ]
+          ],
+          [
+            [
+              "0",
+              "-98/7755",
+              "69/1760",
+              "37927/28160",
+              "-23/600"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/32",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "0",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      },
+      {
+        "all_positive_integer_resonances_passed": true,
+        "branch": 4,
+        "channel": 27000,
+        "coefficients": [
+          [
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "1"
+            ]
+          ],
+          [
+            [
+              "0",
+              "35/256",
+              "0",
+              "-465/17",
+              "31/32"
+            ]
+          ],
+          [
+            [
+              "125/7936",
+              "1645/8192",
+              "-1851/4352",
+              "-21855/544",
+              "2796765/2158592"
+            ]
+          ]
+        ],
+        "computed_order": 2,
+        "has_logarithms": false,
+        "hbar": "1/32",
+        "log_free_all_orders_certified": true,
+        "normalization": "channel-leading vector; all resonance integration constants zero",
+        "obstructions": [],
+        "passed": true,
+        "recurrence_residual_zero": true,
+        "requested_order": 2,
+        "resonances": [],
+        "rho": "1/16",
+        "scope": "formal local solution; no global analytic-continuation claim"
+      }
+    ]
+  },
+  "monodromy_generator_certificate": {
+    "base_point": "1/2",
+    "chart": "tensor",
+    "commutator_difference_error_upper_bound": "6114613270889487474551920649573618166673338033164193340777848876025/14474011154664524427946373126085988481658748083205070504932198000989141204992",
+    "commutator_difference_norm_lower_bound": "1130023190931806215948650299370005474341872523878265686706254512346685435604149/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+    "crossing_symmetry_verified": true,
+    "first_loop": {
+      "approximation_exact": [
+        [
+          [
+            "15230445937309402788623019610582826329/170141183460469231731687303715884105728",
+            "341961328438042217033478284643799769501/340282366920938463463374607431768211456"
+          ],
+          [
+            "14693133907383253327956419511637203439/340282366920938463463374607431768211456",
+            "3485017997987759256024109152966816375/85070591730234615865843651857942052864"
+          ],
+          [
+            "2149585563410100852401021947296728987/170141183460469231731687303715884105728",
+            "2123454636915932272708685915047394429/170141183460469231731687303715884105728"
+          ],
+          [
+            "-8803514127612676822448947721376604183/170141183460469231731687303715884105728",
+            "-71158247526005043450960006477678307255/340282366920938463463374607431768211456"
+          ],
+          [
+            "-26101859488128070934077708107781951201/170141183460469231731687303715884105728",
+            "-175679296500641709826152023935809626945/340282366920938463463374607431768211456"
+          ]
+        ],
+        [
+          [
+            "-1647881408758137956604352419537665009/42535295865117307932921825928971026432",
+            "-686026811563010388372807636156380343/340282366920938463463374607431768211456"
+          ],
+          [
+            "306806803880188296321150271922036692319/340282366920938463463374607431768211456",
+            "20300695647723464002135247025396275255/170141183460469231731687303715884105728"
+          ],
+          [
+            "-5304663484068320245016275462818647969/170141183460469231731687303715884105728",
+            "6607338500405578504502418418313273919/170141183460469231731687303715884105728"
+          ],
+          [
+            "39720283527165458284679388039812495323/340282366920938463463374607431768211456",
+            "35310862404529055243139236391139772783/85070591730234615865843651857942052864"
+          ],
+          [
+            "43692570263930510810122000900148893799/85070591730234615865843651857942052864",
+            "220331371144337825922892113549292804911/340282366920938463463374607431768211456"
+          ]
+        ],
+        [
+          [
+            "-11500046138099363829937038280571119383/85070591730234615865843651857942052864",
+            "-13254205088517721955417056192683976873/340282366920938463463374607431768211456"
+          ],
+          [
+            "-201100377984962186272172547001949999423/340282366920938463463374607431768211456",
+            "82421992749353258538991916977072347931/340282366920938463463374607431768211456"
+          ],
+          [
+            "278804600617137049088478010042257310279/340282366920938463463374607431768211456",
+            "27767528524572882367874908691693007823/340282366920938463463374607431768211456"
+          ],
+          [
+            "466451543006122584897744279994971794947/340282366920938463463374607431768211456",
+            "293531551405274695567690103623226620797/170141183460469231731687303715884105728"
+          ],
+          [
+            "343681119064663006720668858132760385773/85070591730234615865843651857942052864",
+            "1091347114902093565065087219395905073723/340282366920938463463374607431768211456"
+          ]
+        ],
+        [
+          [
+            "-50831468747913442399817496491990971837/340282366920938463463374607431768211456",
+            "2375340569154211987700920931872392243/42535295865117307932921825928971026432"
+          ],
+          [
+            "-9324736192156316564311375382500693695/85070591730234615865843651857942052864",
+            "-38786634349482390827099800211000358141/340282366920938463463374607431768211456"
+          ],
+          [
+            "-6465441945958917399413064983417371797/170141183460469231731687303715884105728",
+            "-198153124076785550342064650180388595/10633823966279326983230456482242756608"
+          ],
+          [
+            "192502134064489542255918834434423797143/170141183460469231731687303715884105728",
+            "355538177476396634590622855281360804351/340282366920938463463374607431768211456"
+          ],
+          [
+            "313491609986283241254924369360302050589/340282366920938463463374607431768211456",
+            "41680610008487878850059878801716188333/42535295865117307932921825928971026432"
+          ]
+        ],
+        [
+          [
+            "20837358674506101253640869501307085065/340282366920938463463374607431768211456",
+            "404225683401846441945606388112461943/340282366920938463463374607431768211456"
+          ],
+          [
+            "67799256236361252662720383564964900647/340282366920938463463374607431768211456",
+            "6867118403167749351419464187179133247/42535295865117307932921825928971026432"
+          ],
+          [
+            "10313553480805417437088829150355692201/170141183460469231731687303715884105728",
+            "1800290072008376002495198101460303931/42535295865117307932921825928971026432"
+          ],
+          [
+            "-219053145532543752594521101010670536535/340282366920938463463374607431768211456",
+            "-218929852157105951940876309677315812065/340282366920938463463374607431768211456"
+          ],
+          [
+            "-132843640724144290203197013636760394215/170141183460469231731687303715884105728",
+            "-173208958469157082499388774306107793985/170141183460469231731687303715884105728"
+          ]
+        ]
+      ],
+      "chart": "tensor",
+      "closed_path": true,
+      "completed": true,
+      "error_bound_method": "Banach-valued Cauchy coefficient estimate; rational exponential majorant; exact Gaussian Taylor recurrence; outward error rounding",
+      "global_monodromy_certified": false,
+      "hbar": "1/34",
+      "infinity_norm_error_bound": "576749161679839483676708329/170141183460469231731687303715884105728",
+      "passed": true,
+      "path": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "-1/2",
+          "1/2"
+        ],
+        [
+          "-1/2",
+          "-1/2"
+        ],
+        [
+          "1/2",
+          "-1/2"
+        ],
+        [
+          "1/2",
+          "0"
+        ]
+      ],
+      "precision_bits": 128,
+      "requested_tolerance": "1/100000000",
+      "scope": "one prescribed polygon transport; a closed path certifies one loop holonomy, not the monodromy group",
+      "single_loop_holonomy_certified": true,
+      "step_count": 128,
+      "steps": [
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "1/32"
+          ],
+          "propagated_error_bound": "3601/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "1102729125698990440817/104355492026333106633553954052621480472401930696523776000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "1/16"
+          ],
+          "propagated_error_bound": "10601/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "438896109692762758223355739585654034173022190484430676963253/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "3/32"
+          ],
+          "propagated_error_bound": "23569/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "35421763194721186147893213416050168222271018163463210443619/2536452416279982165006549026703766402542746086078481587018410016191074325382526220007112704000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "1/8"
+          ],
+          "propagated_error_bound": "23523/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "27219407147231640347017630625885489460784578140397892762821/1775516691395987515504584318692636481779922260254937110912887011333752027767768354004978892800"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "5/32"
+          ],
+          "propagated_error_bound": "89077/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "34301649716671877432190829650794674674842021953225023094873/2088843166348220606475981551403101743270496776770514248132808248627943562079727475299975168000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "3/16"
+          ],
+          "propagated_error_bound": "163935/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "27800721518435105304153235565806780404453943722790400073483/1614106083087261377731440289720578619799929327504488282648079101212501843425243958186344448000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "7/32"
+          ],
+          "propagated_error_bound": "74237/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "630005131392488010347836871937585042713938007395045434767669/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "1/4"
+          ],
+          "propagated_error_bound": "533069/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "159747344610126780573775180147451872422420383240974110353521/8877583456979937577522921593463182408899611301274685554564435056668760138838841770024894464000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "9/32"
+          ],
+          "propagated_error_bound": "238019/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "4568867875793725009529802566892252180638185024466994002853/253645241627998216500654902670376640254274608607848158701841001619107432538252622000711270400"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "5/16"
+          ],
+          "propagated_error_bound": "1695551/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "316624097448006984114939143157100270437821501301319402117309/17755166913959875155045843186926364817799222602549371109128870113337520277677683540049788928000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "11/32"
+          ],
+          "propagated_error_bound": "3014745/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "24846586655327030658162826101763609649752672307931666972007/1420413353116790012403667454954109185423937808203949688730309609067001622214214683203983114240"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "3/8"
+          ],
+          "propagated_error_bound": "2677773/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "607126062675670801215756203356473246703669148904970222550159/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "13/32"
+          ],
+          "propagated_error_bound": "4754741/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "56523790882248576326512427227098977762458949478490740962791/3228212166174522755462880579441157239599858655008976565296158202425003686850487916372688896000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "7/16"
+          ],
+          "propagated_error_bound": "8440425/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "635315154626125862428745998581775142160552228563893993467283/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "15/32"
+          ],
+          "propagated_error_bound": "29961603/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "323923738744642879682336991979441342100667852240530473759711/17755166913959875155045843186926364817799222602549371109128870113337520277677683540049788928000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "1/2"
+          ],
+          "propagated_error_bound": "53173759/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "131884844847858732164202765542962355949662140003755989263117/7102066765583950062018337274770545927119689041019748443651548045335008111071073416019915571200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "15/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "47182137/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "12183865418507167608536287224528493793255395273741603646619/645642433234904551092576115888231447919971731001795313059231640485000737370097583274537779200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "7/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "161807749/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "52742176405498250814186910297579610352665738137243790885713875701/3621237009507723590271464579333421847253651373681867844053882823450661241729304392243243918834008064"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "13/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "269937003/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "91783869960875693558089585673816097544855698607669304077239590595889/7720968149050795894054287277403066502225420214918355887873710176813248420382586419932037120000000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "3/8",
+            "1/2"
+          ],
+          "propagated_error_bound": "55039973/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "5636332843353938799911031284479354017754928510162033674917991441199/557727183696025746230730656836609853772457625098663516377332989532716227796888322041982897706185523200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "11/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "11014479/5316911983139663491615228241121378304",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "51421369451145983363148125126327104023998715536905119629077/5805755271173730803293536959046856315854763100141576366133834691039431371074536659289636864000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "5/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "1110812861/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "2141469346865106145597899419917578890506196575589620488414084529341/269485746036495808959179221287252958999440413571950665392818952659182788891203335493647169611418828800"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "9/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "431699989/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "223066203841458804332873868116610686033812117894339823/30718281858062067742293846344163260930448482011331091884306003656293287677643051107352576"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/4",
+            "1/2"
+          ],
+          "propagated_error_bound": "165811093/21267647932558653966460912964485513216",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "833466313131266743055278014108998092943526229554389439042926771/123779173011785028147737361292385800331791280497697351781472010889433806672320867283763200000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "7/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "252135673/21267647932558653966460912964485513216",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "13813468719280232318014443576702403391393512120395151037919/2186747422965359603130565147237975024096952901255826177346960003596664414784942761182232576000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "3/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "1519743161/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "51999137794882877285125787572556673459009591431703068910830781101421/8692109180401370359756780642486082991357594511354966290633632132325666035242627393548244486011958067200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "5/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "9086562833/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "80309472394044692571859829150904432795359874829961423335283497/13863116381359046518040334643872559611120798451866890482200479903688453380508315266837211670118400"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/8",
+            "1/2"
+          ],
+          "propagated_error_bound": "13484403163/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "40602679438205828426057784159266674702980699708115203/7151833797474586979754943235423454459514458941192309171938170432313725783457609522610176"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "3/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "19881091125/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "43278243927501316198600286576438198393655170347739579681217533/7828439143306258908255032699673959378164093427018702393644160356926347544853885852057600000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "29140299799/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "547666335382391048853559792003331617966139612045680955093/102644587354593952868444067157654777165608602228848125211577127572671382965630791095156736000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "21241998789/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "294488206673182316018512849699678402349697245066305330624444473533/57829480190163652970517457507956004700484702706598001941201344077529365101795559747807519013496422400"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "0",
+            "1/2"
+          ],
+          "propagated_error_bound": "61636255857/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "403749584341596050361482715168430409674622661900571642863082590709/83116951368959667105922498118104241397441594273882592799234644049674197937790349386817755699489013760"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "89023229699/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "9900831122061411515234660094602042298329255953599559/2087181151727400639300242469436698446359506799134166670968888578093535746577822912610304"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "128050762543/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "32988252112108477826766214649189395373496584858442357801203840847/7110328947060349671371946889108399700393737219453462215056502927849569521513263005696000000000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-3/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "45872275813/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "2254561044017843331042973550776149393982964790005628395218314303/496269895329678406376081096158831610988565474513216761477677749063934820235638149525428746888151040"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/8",
+            "1/2"
+          ],
+          "propagated_error_bound": "262005223095/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "193084955477164399161211766877338750399155999702321458439494487/43364054716793683770196771349438244789105372105284592614316186023646787426760161319540379258716160"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-5/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "93224564857/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "20593690081676177995223205728520039484614005157558423/4715483342791534777678325579097726119552959805451265441818600120877988168194340654415872"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-3/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "529114154931/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "23535413101749560554698358363452280311836638363273488675189420141/5491218280663133405048918483760113786315920823471480804358331291780179530582973190509979140488167424"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-7/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "748643594027/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "10533535448551193303964560572933567442998521470613348474868009/2502986771798093735410837648894790714970189794274176437450971849510607321091373570981888000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/4",
+            "1/2"
+          ],
+          "propagated_error_bound": "1056445559079/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "5203177970527247681472198524512761416226307290701609861440444680539/1258623566202287511316470037926563710949134413543963576800414900182745693416744116468607820726408314880"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-9/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "1487090896253/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "1955300451574401985197067375307051794961763967162025082351/481282328746765118082672799826493688561428910032051517041430473189781706493844415854768291840"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-5/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "522097788125/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "6084895854823794047344196516622975250948252205750175701261665109/1523416803917804065559283058836118726503092475998463362633994811514027939477583384970055413105950720"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-11/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "2926374335781/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "893998312258007858361467072066940187375189212915526907282533695/227562241031416593909808870050926130374475106747903993563324762265679490592447023466278666794696704"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-3/8",
+            "1/2"
+          ],
+          "propagated_error_bound": "1023025062377/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "1418078636965542597065645085830587773682151172493356123569/366840129816816315162023139102971517389258837964503442084036564459392189978537623552000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-13/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "1427746488553/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "1232601010545698575699262782406364601879876257991/323908805979908708967976713358565796150247690070833577046882135640448299454284431360"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-7/16",
+            "1/2"
+          ],
+          "propagated_error_bound": "7955553337103/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "11758437579860679482910529829545511209830126931871197576446480127893/3137473905140003260047414376105462090388996639869480442881203842066226153360343645734827517048059330560"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-15/32",
+            "1/2"
+          ],
+          "propagated_error_bound": "11062838183401/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "11528502706458133482508032320883341278779943584709019408691034123/3122029755753134186866106004173890375195180811845592367812892962817361374851647446569202486656106496"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "1/2"
+          ],
+          "propagated_error_bound": "3839535968347/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "-1/32",
+            "0"
+          ],
+          "tail_bound": "2020344227844032142097754829299229095765967154528543201615574695/555040358156522151578432758372304426927745019906649801083420526970870938718435450079138987307433984"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "15/32"
+          ],
+          "propagated_error_bound": "10643711907635/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "85092431406449872878291733269733299686374938157760565756501/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "7/16"
+          ],
+          "propagated_error_bound": "29505805937197/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "171093521685212394204484919868316506345474327517977346401617/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "13/32"
+          ],
+          "propagated_error_bound": "40897038154943/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "86012074162048558055850155696664480646129833399924849232421/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "3/8"
+          ],
+          "propagated_error_bound": "56686054717265/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "86485117386394446698321770935392607246902783173958001039951/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "11/32"
+          ],
+          "propagated_error_bound": "78570697154531/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "86961787057424485683063594842922597959787531246977216159309/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "5/16"
+          ],
+          "propagated_error_bound": "54452144201189/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "683101938013680046864220719601980206109729486659468963841/185189390293376725017484349965165685627375040387225210312520066302651362786592948224000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "9/32"
+          ],
+          "propagated_error_bound": "9434293303603/21267647932558653966460912964485513216",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "12557840178052820236510808574262300033023733943103253384581/3386320279650317257462570970791601108614857881366403845714652640962767776669128196096000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "1/4"
+          ],
+          "propagated_error_bound": "209225074693041/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "88358279222801427407956063017014396249033081311839244095639/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "7/32"
+          ],
+          "propagated_error_bound": "36250009068907/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "177578623763382053338104001829677400808512138097700178495077/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "3/16"
+          ],
+          "propagated_error_bound": "401959670479347/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "2548265237297664124772581171824958274439166185078763749069/677264055930063451492514194158320221722971576273280769142930528192553555333825639219200000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "5/32"
+          ],
+          "propagated_error_bound": "557143228518213/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "25585428052615539893671173959026395002520282685939877720167/6772640559300634514925141941583202217229715762732807691429305281925535553338256392192000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "1/8"
+          ],
+          "propagated_error_bound": "772238112130327/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "287549267073040434704530290902567210221824920205317174313/75853574264167106567161589745731864832972816542607446144008219157565998197388471592550400000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "3/32"
+          ],
+          "propagated_error_bound": "1070374135951363/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "180221588806867097042156974968402360188031849834337476968691/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "1/16"
+          ],
+          "propagated_error_bound": "1483610783923453/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "90295962063769221015391457230955640403985189688041637871859/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "1/32"
+          ],
+          "propagated_error_bound": "1028192332121823/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "3616328597635250994565270731755174881214132996960462725071/948169678302088832089519871821648310412160206782593076800102739469574977467355894906880000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "0"
+          ],
+          "propagated_error_bound": "1425143957282629/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "180886426439718364770443154275872361056040300698443379061467/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-1/32"
+          ],
+          "propagated_error_bound": "3950691394065543/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "180798253310485951655718436456914924351920478556898790313149/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-1/16"
+          ],
+          "propagated_error_bound": "2737962437300429/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "18055369559776065828862049734343724069425937562662883192979/4740848391510444160447599359108241552060801033912965384000513697347874887336779474534400000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-3/32"
+          ],
+          "propagated_error_bound": "7590001405149733/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "90079961333807063144469198887075211413420877239289557682849/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-1/8"
+          ],
+          "propagated_error_bound": "2630063534900633/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "44907234594583161982823567279770461026420472488997070787861/11852120978776110401118998397770603880152002584782413460001284243369687218341948686336000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-5/32"
+          ],
+          "propagated_error_bound": "14581782170254685/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "25568089620804030247186181286462080004322646831774294701981/6772640559300634514925141941583202217229715762732807691429305281925535553338256392192000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-3/16"
+          ],
+          "propagated_error_bound": "20211334102693597/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "44555386300671901927534547661298662462441996143209571355353/11852120978776110401118998397770603880152002584782413460001284243369687218341948686336000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-7/32"
+          ],
+          "propagated_error_bound": "28014272977139327/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "88691813465102015413148505008691159475844840332724950303837/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-1/4"
+          ],
+          "propagated_error_bound": "38829672818731799/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "17648297404072179461165210745330901915823830377717243961789/4740848391510444160447599359108241552060801033912965384000513697347874887336779474534400000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-9/32"
+          ],
+          "propagated_error_bound": "6727568356138133/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "175538839120478164946990770714024488166050455881144255993529/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-5/16"
+          ],
+          "propagated_error_bound": "37299454938226031/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "34913774311433711729837898752475426622191229691479119504727/9481696783020888320895198718216483104121602067825930768001027394695749774673558949068800000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-11/32"
+          ],
+          "propagated_error_bound": "103399123207673727/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "173588636801192435921415884166400136312743904443509246863753/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-3/8"
+          ],
+          "propagated_error_bound": "17914770299295121/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "172611383156642686329824244562065363499946980731170222169793/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-13/32"
+          ],
+          "propagated_error_bound": "198648644542587345/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "34329601629472457116036640870352446966043391902586146125279/9481696783020888320895198718216483104121602067825930768001027394695749774673558949068800000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-7/16"
+          ],
+          "propagated_error_bound": "68835106659447025/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "85353584590131493351095966014376412366244171886483560536071/23704241957552220802237996795541207760304005169564826920002568486739374436683897372672000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-15/32"
+          ],
+          "propagated_error_bound": "190820205986419463/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "169907132255603092603755579027401526300342552817137246121627/47408483915104441604475993591082415520608010339129653840005136973478748873367794745344000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/2",
+            "-1/2"
+          ],
+          "propagated_error_bound": "528979365033093041/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "-1/32"
+          ],
+          "tail_bound": "21210765321218566707230534465272360066333174168104839175341/5926060489388055200559499198885301940076001292391206730000642121684843609170974343168000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-15/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "366600548385751985/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "6052507175873252439310652383784667817778407377538805300627/1693160139825158628731285485395800554307428940683201922857326320481383888334564098048000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-7/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "508938472422294347/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "504103324196714943329407528646976554809784565947953803610500301/138760089539130537894608189593076106731936254976662450270855131742717734679608862519784746826858496"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-13/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "1415439938995702035/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "14419780463645489510174346707798671263367045363374911381534376733/3902537194691417733582632505217362968993976014806990459766116203521701718564559308211503108320133120"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-3/8",
+            "-1/2"
+          ],
+          "propagated_error_bound": "1971744987400592753/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "23601157287955741347372627629481874116216138700228689504680755921871/6274947810280006520094828752210924180777993279738960885762407684132452306720687291469655034096118661120"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-11/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "2751791803517514117/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "225665803428878913659610740516472249833368191851/58892510178165219812359402428830144754590489103787923099433115570990599900778987520"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-5/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "3847972484055825245/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "366937115734332868874313772230714744847433006503639392784763/93911073233104976681477923610360708451650262518912881173513360501604400634505631629312000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-9/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "5392001351608982665/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "907499405672511748858397818063359326721934496520694517738720827/227562241031416593909808870050926130374475106747903993563324762265679490592447023466278666794696704"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/4",
+            "-1/2"
+          ],
+          "propagated_error_bound": "7572239153626729965/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "5319943609315283925975547222350882902600323708942401341079380249/1305785831929546341907956907573816051288364979427254310829138409869166805266500044260047496947957760"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-7/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "10658957106048718325/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "54763826579144304866276349286112217106727398009530142897/13144265280899047342594005037278188973316335778186280927602092755183113832815078584268881920"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-3/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "15041346742144620903/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "167755285399118947188317878248352502593888305799303088165021908379/39331986443821484728639688685205115967160450423248861775012965630710802919273253639643994397700259840"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-5/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "21282000788462556271/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "241331479095162029727450400521346446972509027470245551881991/55212943495546185339944948137385089300813010167812715532006731974498690906427358183424000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/8",
+            "-1/2"
+          ],
+          "propagated_error_bound": "30197533902519613735/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "251287623546426622217088803073636473391541692851640040107411451/56032839598603402092335902895511365166488987994606946983248278487552852352887481535816113678450688"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-3/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "10744640558317661609/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "54362654445603478334672116934034589924491430671953309/11788708356978836944195813947744315298882399513628163604546500302194970420485851636039680"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "61369353936004421411/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "200033444794390934227560331116364945208766687829145717552641049/42125081724885292805334006453740009223702361473705032825335723565828307785995585281839225565609984"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "-1/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "43969311084391638835/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "2430436210214963675419928027928167263598745991850809477751976267/496269895329678406376081096158831610988565474513216761477677749063934820235638149525428746888151040"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "0",
+            "-1/2"
+          ],
+          "propagated_error_bound": "126490664564983897479/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "899394191215306700449274909504998476591963758950140523224922425791/177758223676508741784298672227709992509843430486336555376412573196239238037831575142400000000000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "22836817236982632343/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "98383293500296942541375090074683306004350672023635585/18784630365546605753702182224930286017235561192207500038719997202841821719200406213492736"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "132527629464845499669/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "451619691854403323790655810097482423349503660244767386235344562361/83116951368959667105922498118104241397441594273882592799234644049674197937790349386817755699489013760"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "3/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "386427270665586289241/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "655395073910683651612077946984464927092270906110394219934671198717/115658960380327305941034915015912009400969405413196003882402688155058730203591119495615038026992844800"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/8",
+            "-1/2"
+          ],
+          "propagated_error_bound": "283198888414336861155/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "608742085919551094302409785666355159862613389246407399983/102644587354593952868444067157654777165608602228848125211577127572671382965630791095156736000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "5/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "835083659958342115501/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "50856705041657691447976286654068566656178599878517902594386249/7828439143306258908255032699673959378164093427018702393644160356926347544853885852057600000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "3/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "1239258819282319142999/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "58212642482152641595660756587469915354932464107502981/8012204780629424511154034150963118153892138212313188470817950333945452193497622698262528"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "7/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "926192741594872465077/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "343488400113451864039213311063288257979503907199251289671663439/41589349144077139554121003931617678833362395355600671446601439711065360141524945800511635010355200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/4",
+            "-1/2"
+          ],
+          "propagated_error_bound": "2791303974197062177381/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "164803602009863667966813537924731219611226943489530030810551446191257/17384218360802740719513561284972165982715189022709932581267264264651332070485254787096488972023916134400"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "9/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "4244510529663351708417/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "11986917168498719497948135733184691393302853126853421628007/1093373711482679801565282573618987512048476450627913088673480001798332207392471380591116288000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "5/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "407566793394424728793/21267647932558653966460912964485513216",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "3166892996480056519365707804525622596215843815731050890167378993/247558346023570056295474722584771600663582560995394703562944021778867613344641734567526400000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "11/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "10137229573873316763201/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "3708235743237386588936658550825018303064498291829832981/245746254864496541938350770753306087443587856090648735074448029250346301421144408858820608"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "3/8",
+            "-1/2"
+          ],
+          "propagated_error_bound": "1996756936706404745949/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "336146880210574350012039942742268756596931068272448523402881729391927/18633014440237710219463249014718633165104165738403446007160624726720638546191773482703604298846673305600"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "13/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "6393358701331820288667/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "11576556780757715321488555783203768742411671652871533847393/527795933743066436663048814458805119623160281831052396921257699185402851915866969026330624000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "7/16",
+            "-1/2"
+          ],
+          "propagated_error_bound": "2607182666964644245865/21267647932558653966460912964485513216",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "8721436388582910118942358173701541099362713526568872523313479398429/318701247826300426417560375335205630727118642913522009358475994018694987312507612595418798689248870400"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "15/32",
+            "-1/2"
+          ],
+          "propagated_error_bound": "69590191347972239938445/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "271334009875558700165715015646784699874471575534442982269831195233569/7720968149050795894054287277403066502225420214918355887873710176813248420382586419932037120000000000000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-1/2"
+          ],
+          "propagated_error_bound": "119323622029129707043269/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "1/32",
+            "0"
+          ],
+          "tail_bound": "28286827656460335631722680956182328572514871635392722683368025355/603539501584620598378577429888903641208941895613644640675647137241776873621550732040540653139001344"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-15/32"
+          ],
+          "propagated_error_bound": "26467754608782740925611/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "467715130469859563769394758267663470971683456502204518463451/7102066765583950062018337274770545927119689041019748443651548045335008111071073416019915571200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-7/16"
+          ],
+          "propagated_error_bound": "375740271838397240710653/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "1229264886533937521295422942109123769479985896735130160583999/17755166913959875155045843186926364817799222602549371109128870113337520277677683540049788928000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-13/32"
+          ],
+          "propagated_error_bound": "83344782387080149076571/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "32164055090075154287614985769872005187552179578725368842033/443879172848996878876146079673159120444980565063734277728221752833438006941942088501244723200"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-3/8"
+          ],
+          "propagated_error_bound": "591587606378253868372713/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "2678044206787062274486188919496766499704041217804481736728299/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-11/32"
+          ],
+          "propagated_error_bound": "262445864933504838876553/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "1391230227601318260386877750789555677198255806148981674697631/17755166913959875155045843186926364817799222602549371109128870113337520277677683540049788928000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-5/16"
+          ],
+          "propagated_error_bound": "1862860716568989724987031/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "89841057234072927903898211633106088366094036548763255722951/1109697932122492197190365199182897801112451412659335694320554382083595017354855221253111808000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-9/32"
+          ],
+          "propagated_error_bound": "6611363547707595313010277/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "267490788339854208174813077462255923434524049887205943975551/3228212166174522755462880579441157239599858655008976565296158202425003686850487916372688896000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-1/4"
+          ],
+          "propagated_error_bound": "11731990365995241960578559/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "2992368230610649319836545268720433406768611517135366190660417/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-7/32"
+          ],
+          "propagated_error_bound": "20818640051268988141006733/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "774961329434766274030297948534825241079843914410839415793567/8877583456979937577522921593463182408899611301274685554564435056668760138838841770024894464000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-3/16"
+          ],
+          "propagated_error_bound": "18471536374618132454427645/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "24781008774585336077325967667908131987746914157155689920287/277424483030623049297591299795724450278112853164833923580138595520898754338713805313277952000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-5/32"
+          ],
+          "propagated_error_bound": "65556185264472791476218913/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "1703018871711739635909676930484073208191621019293730761553987/17755166913959875155045843186926364817799222602549371109128870113337520277677683540049788928000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-1/8"
+          ],
+          "propagated_error_bound": "3635334301711818723921147/10633823966279326983230456482242756608",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "3721719006525101713536509817387385399898228906167434804796611/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-3/32"
+          ],
+          "propagated_error_bound": "51607758910360730127763897/85070591730234615865843651857942052864",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "500415826148449392761413053192915241897771119556958381235899/4438791728489968788761460796731591204449805650637342777282217528334380069419420885012447232000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-1/16"
+          ],
+          "propagated_error_bound": "366315799140643660660887771/340282366920938463463374607431768211456",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "4235380058531392337850065235646611018122764542152189800179009/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "-1/32"
+          ],
+          "propagated_error_bound": "81254294129688673649189823/42535295865117307932921825928971026432",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "4409312662934255646409100367100263694194641656636964594256877/35510333827919750310091686373852729635598445205098742218257740226675040555355367080099577856000"
+        },
+        {
+          "cauchy_radius": "1/4",
+          "endpoint": [
+            "1/2",
+            "0"
+          ],
+          "propagated_error_bound": "576749161679839483676708329/170141183460469231731687303715884105728",
+          "rounding_bound": "5/340282366920938463463374607431768211456",
+          "step": [
+            "0",
+            "1/32"
+          ],
+          "tail_bound": "3526418882588890199191237116966677770992706557822763977089/27742448303062304929759129979572445027811285316483392358013859552089875433871380531327795200"
+        }
+      ],
+      "taylor_order": 40,
+      "tolerance_met": true
+    },
+    "global_monodromy_certified": false,
+    "hbar": "1/34",
+    "monodromy_density_claim": false,
+    "nonabelian_image_certified": true,
+    "passed": true,
+    "scope": "two based generator holonomies with rational enclosures; no identification or density theorem for their generated group",
+    "second_loop_approximation_exact": [
+      [
+        [
+          "278804600617137049088478010042257310279/340282366920938463463374607431768211456",
+          "27767528524572882367874908691693007823/340282366920938463463374607431768211456"
+        ],
+        [
+          "-201100377984962186272172547001949999423/340282366920938463463374607431768211456",
+          "82421992749353258538991916977072347931/340282366920938463463374607431768211456"
+        ],
+        [
+          "-11500046138099363829937038280571119383/85070591730234615865843651857942052864",
+          "-13254205088517721955417056192683976873/340282366920938463463374607431768211456"
+        ],
+        [
+          "-908272933252529441984931152536069748145/340282366920938463463374607431768211456",
+          "-504284012091544173929707012149451832129/340282366920938463463374607431768211456"
+        ],
+        [
+          "-343681119064663006720668858132760385773/85070591730234615865843651857942052864",
+          "-1091347114902093565065087219395905073723/340282366920938463463374607431768211456"
+        ]
+      ],
+      [
+        [
+          "-5304663484068320245016275462818647969/170141183460469231731687303715884105728",
+          "6607338500405578504502418418313273919/170141183460469231731687303715884105728"
+        ],
+        [
+          "306806803880188296321150271922036692319/340282366920938463463374607431768211456",
+          "20300695647723464002135247025396275255/170141183460469231731687303715884105728"
+        ],
+        [
+          "-1647881408758137956604352419537665009/42535295865117307932921825928971026432",
+          "-686026811563010388372807636156380343/340282366920938463463374607431768211456"
+        ],
+        [
+          "-135049997528556584955808615560783079873/340282366920938463463374607431768211456",
+          "-79087921526221604950335167984733713779/340282366920938463463374607431768211456"
+        ],
+        [
+          "-43692570263930510810122000900148893799/85070591730234615865843651857942052864",
+          "-220331371144337825922892113549292804911/340282366920938463463374607431768211456"
+        ]
+      ],
+      [
+        [
+          "2149585563410100852401021947296728987/170141183460469231731687303715884105728",
+          "2123454636915932272708685915047394429/170141183460469231731687303715884105728"
+        ],
+        [
+          "14693133907383253327956419511637203439/340282366920938463463374607431768211456",
+          "3485017997987759256024109152966816375/85070591730234615865843651857942052864"
+        ],
+        [
+          "15230445937309402788623019610582826329/170141183460469231731687303715884105728",
+          "341961328438042217033478284643799769501/340282366920938463463374607431768211456"
+        ],
+        [
+          "8649172680257697055814380193202673509/85070591730234615865843651857942052864",
+          "52260524487318333187596008729065659845/170141183460469231731687303715884105728"
+        ],
+        [
+          "26101859488128070934077708107781951201/170141183460469231731687303715884105728",
+          "175679296500641709826152023935809626945/340282366920938463463374607431768211456"
+        ]
+      ],
+      [
+        [
+          "-6465441945958917399413064983417371797/170141183460469231731687303715884105728",
+          "-198153124076785550342064650180388595/10633823966279326983230456482242756608"
+        ],
+        [
+          "-9324736192156316564311375382500693695/85070591730234615865843651857942052864",
+          "-38786634349482390827099800211000358141/340282366920938463463374607431768211456"
+        ],
+        [
+          "-50831468747913442399817496491990971837/340282366920938463463374607431768211456",
+          "2375340569154211987700920931872392243/42535295865117307932921825928971026432"
+        ],
+        [
+          "71512658142695843256913299508545543697/340282366920938463463374607431768211456",
+          "22093297408493603790143824867631297687/340282366920938463463374607431768211456"
+        ],
+        [
+          "-313491609986283241254924369360302050589/340282366920938463463374607431768211456",
+          "-41680610008487878850059878801716188333/42535295865117307932921825928971026432"
+        ]
+      ],
+      [
+        [
+          "-962027883711625009418941041734580101/42535295865117307932921825928971026432",
+          "-1007677575701233801126939500738749551/42535295865117307932921825928971026432"
+        ],
+        [
+          "-30500311467735986405474882034962125867/340282366920938463463374607431768211456",
+          "-16150312875859603984255913286432707835/340282366920938463463374607431768211456"
+        ],
+        [
+          "7498527518351835286544156747670971693/85070591730234615865843651857942052864",
+          "-19406950236635542343552973843091599887/340282366920938463463374607431768211456"
+        ],
+        [
+          "-14768349257305083883598278221424474449/42535295865117307932921825928971026432",
+          "-18697670273712727106005632975316384199/42535295865117307932921825928971026432"
+        ],
+        [
+          "47804328537994660848530342086781262159/340282366920938463463374607431768211456",
+          "-6486518435205567099149259099243040653/170141183460469231731687303715884105728"
+        ]
+      ]
+    ],
+    "second_loop_error_bound": "576749161679839483676708329/42535295865117307932921825928971026432",
+    "second_loop_path": [
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "3/2",
+        "-1/2"
+      ],
+      [
+        "3/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0"
+      ]
+    ],
+    "two_generator_approximations_certified": true
+  },
+  "new_racah_matrix_claim": false,
+  "normalization": "long roots squared length 2; C_ad=60; h_dual=30",
+  "passed": true,
+  "schema": "perfectjet/asterion-kz/1",
+  "source_sha256": {
+    "asterion.py": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+    "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+    "asterion_boundary.py": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
+    "asterion_currents.py": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
+    "asterion_deformations.py": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+    "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "asterion_elliptic.py": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
+    "asterion_extension.py": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
+    "asterion_frontiers.py": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+    "asterion_higher.py": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
+    "asterion_jacobi.py": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
+    "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+    "asterion_kernel_characters.py": "5dfef1c18dfe41358ccd402fb01f3818e0e2150487163240ec75f0b3a0325b39",
+    "asterion_kernel_tower.py": "70d79724fb1bdd8346c2089ff1d9173e37cb6561b9cb30167c51ddc957c71d67",
+    "asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+    "asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+    "asterion_monodromy_algebra.py": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
+    "asterion_periods.py": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+    "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+    "asterion_quartic.py": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
+    "asterion_quartic_characters.py": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
+    "asterion_relations.py": "503996dedc93e8330dd1c769704119cf2a430e304e38cb2186de7ba3eba9d108",
+    "asterion_rigidity.py": "bf98c2b41e77378397f9a34ce6276f1745d1eafa804a23363661a03e6e3be6dc",
+    "asterion_transport.py": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754"
+  },
+  "sources": [
+    "https://arxiv.org/abs/2106.04470",
+    "https://arxiv.org/abs/1511.09077",
+    "https://arxiv.org/abs/math/0212387"
+  ],
+  "split_casimir_eigenvalues": [
+    "-60",
+    "-30",
+    "-12",
+    "0",
+    "2"
+  ],
+  "verification": {
+    "arithmetic": "exact rational; normalized invariant form has C_ad=60",
+    "checks": {
+      "casimir_annihilating_polynomial": true,
+      "complete_adjoint_quadratic_casimir_60": true,
+      "complete_metric_invariance": true,
+      "crossing_involution": true,
+      "crossing_transports_residue": true,
+      "diagonal_channel_spectrum": true,
+      "evaluation_inverse": true,
+      "independent_tensor_evaluations": true,
+      "infinitesimal_braid": true,
+      "projector_rank_one_on_invariants": true,
+      "projector_resolution": true,
+      "three_residue_sum": true
+    },
+    "complete_lowered_structure_entries_checked": 8088,
+    "four_root_circuit_evaluations": 192,
+    "independent_evaluation_quadruples": 581,
+    "passed": true,
+    "tensor_spanning_dependency": "known E8 adjoint tensor square is multiplicity-free with five summands"
+  },
+  "wzw_level": 4
+}

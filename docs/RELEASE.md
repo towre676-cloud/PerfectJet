@@ -1,3 +1,13 @@
+# Release 0.18.0 — Asterion extension
+
+The finite E8 basis now feeds exact current algebras, all-degree Jordan-refined state populations, rational hypergeometric recoupling, five-channel KZ transport, principal Rees boundaries, explicit level-one relations and equivariant rigidity. The catalogue contains 592 stable records in 26 families, with 27 computed Math Lab tools. All 504 prior equation records retain their canonical bytes; PJ-H001–PJ-H088 distinguish executable certificates, definitions and proposals.
+
+The strongest explicit relation is a 783-term highest-weight jet polynomial with an 804-term affine null lift. Full-sector exact pairing against 14,441 PBW monomials and two independent old-source rank certificates establish a 3,875-dimensional arc-kernel submodule. A new projected-polarization certificate proves that it exhausts the complete weight-four kernel, with31 missing states in each Jordan grade. The complete differential kernel and its minimal syzygies remain open. Other results include all-order Fourier density formulas and the first grade imbalance at degree five; 30 independent neutral Cartan conformal null relations; exact KZ matrices with arithmetic prime31, logarithmic diagnostics and integrable-level compatibility; selected recoupling systems where exponent-only equations lose independent constraints; a class-four boundary and quadratic-completion bounds493–496; and exact gauge reconstruction of the seven-dimensional fixed-action deformation tangent.
+
+Reproduce the new numerical evidence with `PYTHONPATH=src python scripts/verify_asterion_extension.py --check`, and the retained finite-basis evidence with `PYTHONPATH=src python scripts/verify_asterion.py --check`. The monograph, primary sources, discovery ledger and full programme accompany the source distribution. Historical releases remain intact. Local replay, installed-wheel and launcher checks are distinct from remote CI status and historical-priority review.
+
+---
+
 # Asterion research addition — 20 October 2026 UTC
 
 Current source adds the Asterion basis calculus, 40 stable equation records and one callable Math Lab tool: 504 equations, 25 ranked families and 26 tools. The research account is [ASTERION_BASIS.md](ASTERION_BASIS.md); reproducible numerical receipts are under `results/asterion/`. This source addition does not replace or retag the historical v0.17.0 download. Exact exhaustive checks cover both E8 presentations, all polynomial couplings and the prescribed integral basis. A new name and implementation do not assert a new abstract simple Lie algebra or historical priority for classical constructions.

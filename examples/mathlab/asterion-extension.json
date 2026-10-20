@@ -1,0 +1,8 @@
+{
+  "operation": "math-lab",
+  "lab": "asterion-extension",
+  "params": {
+    "operation": "currents",
+    "max_degree": 8
+  }
+}

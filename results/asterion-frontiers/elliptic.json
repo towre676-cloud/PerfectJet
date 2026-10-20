@@ -1,0 +1,194 @@
+{
+  "analytic_proof": {
+    "finite_series_is_not_analytic_proof": true,
+    "ingredients": [
+      "odd normalized Jacobi theta",
+      "Fay trisecant identity",
+      "opposite-root derivative limit of Fay",
+      "invariant E8 metric and root-triple signs"
+    ],
+    "status": "classical theorem with explicit coefficient reduction in ASTERION_ELLIPTIC.md"
+  },
+  "arithmetic": "exact rational coefficients of formal p-series at rational multiplicative coordinates",
+  "cdybe_convention": "h_i^(1)*d_i r23(v)-h_i^(2)*d_i r13(u+v)+h_i^(3)*d_i r12(u)+[r12,r13]+[r12,r23]+[r13,r23]=0",
+  "complete_root_fay_reduction": {
+    "all_cartan_components_vanish_structurally": true,
+    "cartan_multipliers": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "dynamical_rank": 8,
+    "opposite_root_derivative_checks": 240,
+    "opposite_root_tensor_arrangement_checks": 720,
+    "ordered_three_root_fay_checks": 13440,
+    "p_order": 2,
+    "passed": true,
+    "root_spectral_unitarity_checks": 240,
+    "scope": "All E8 root coefficient types at the declared exact Cartan/spectral specialization through p^order; analytic universality uses the stated Fay proof.",
+    "spectral_multipliers": [
+      23,
+      29,
+      667
+    ],
+    "zero_weight_tensor_components": 19712
+  },
+  "coordinates": "lambda_i=lambda(h_i), x_alpha=sum(alpha_i*lambda_i), X=exp(z), L_i=exp(lambda_i)",
+  "degenerations": {
+    "elliptic_to_trigonometric_root_checks": 240,
+    "passed": true,
+    "rational_cdybe": {
+      "cartan_coordinates": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "derivative_scale": 1,
+      "dynamical_derivative_terms": 4290,
+      "nonzero_bracket_products": 84816,
+      "ordinary_cybe_nonzero_components": 4290,
+      "ordinary_cybe_witness": [
+        [
+          0,
+          8,
+          247
+        ],
+        [
+          "-1/7688"
+        ]
+      ],
+      "passed": true,
+      "residual_components": 0,
+      "residual_witness": null,
+      "scope": "Direct exact rational E8 tensor CDYBE after the sequential degeneration.",
+      "spectral_coordinates": [
+        "2/101",
+        "3/103",
+        "509/10403"
+      ],
+      "tensor_terms_per_r": [
+        304,
+        304,
+        304
+      ]
+    },
+    "rational_formula": "r_rat(z,lambda)=Omega/z+sum_alpha (1/x_alpha)*e_alpha tensor e_minus_alpha",
+    "rational_tensor_terms": 303,
+    "representative_formal_limit": {
+      "passed": true,
+      "phi_series": [
+        "5/6",
+        0,
+        "5/12",
+        0,
+        "-7/144",
+        0,
+        "55/6048"
+      ],
+      "rational_phi": "5/6",
+      "rational_rho": "1/2",
+      "rho_series": [
+        "1/2",
+        0,
+        "1/6",
+        0,
+        "-1/90",
+        0,
+        "1/945"
+      ],
+      "scope": "p->0 first, followed by additive scaling z,x -> epsilon*(z,x); exact formal epsilon coefficients."
+    },
+    "scope": "Sequential p->0 and additive-scaling degeneration; no arbitrary simultaneous limiting path is claimed.",
+    "trigonometric_to_rational_root_checks": 240
+  },
+  "direct_tensor_cdybe": {
+    "derivative_scale": 1,
+    "dynamical_derivative_terms": 4290,
+    "nonzero_bracket_products": 84816,
+    "ordinary_cybe_nonzero_components": 4290,
+    "ordinary_cybe_witness": [
+      [
+        0,
+        8,
+        247
+      ],
+      [
+        "-10850373176757415426125000/29432649518724201755501063493059852075713480125001",
+        "-29432649518724201755501074343433028833128906250841/78665205531491261839406250",
+        "-25122144873069623571510249735254387560684198077467207246128009018519670501547029168957499259091555639/6188214561311763419094100880706794312165352539062500"
+      ]
+    ],
+    "p_order": 2,
+    "passed": true,
+    "residual_components": 0,
+    "residual_witness": null,
+    "scope": "Direct full E8 tensor arithmetic at the declared specialization; zero residual is exact at every retained p coefficient.",
+    "tensor_terms_per_r": [
+      304,
+      304,
+      304
+    ]
+  },
+  "domain": "Im(tau)>0; p=exp(2*pi*i*tau); z and every x_alpha avoid 2*pi*i*Z+log(p)*Z; finite formal checks avoid X=1 and all root multipliers=1",
+  "exhaustive": true,
+  "formula": "r(z,lambda)=rho(z)*Omega_h+sum_alpha Phi(z,x_alpha)*e_alpha tensor e_minus_alpha",
+  "metric": {
+    "cartan_casimir_terms": 64,
+    "cartan_metric": "B(h_i,h_j)=Cartan_ij; Omega_h=sum(Cartan^-1)_ij*h_i tensor h_j",
+    "casimir_terms": 304,
+    "normalized_theta_product_at_zero": true,
+    "passed": true,
+    "rank": 8,
+    "root_count": 240,
+    "root_metric_gradient_checks": 240,
+    "root_pair_metric": "B(e_alpha,e_minus_alpha)=1",
+    "simple_generator_invariance_checks": 16,
+    "spectral_residue": "Res_(z=0) r(z,lambda)=Omega"
+  },
+  "p_order": 2,
+  "passed": true,
+  "quantum_r_matrix_constructed": false,
+  "schema": "perfectjet/asterion-elliptic-r/1",
+  "scope": "An actual rank-eight classical dynamical elliptic E8 r-matrix with spectral parameter. No quantum R-matrix or new Lie bracket is asserted.",
+  "source_sha256": {
+    "asterion.py": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+    "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+    "asterion_boundary.py": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
+    "asterion_currents.py": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
+    "asterion_deformations.py": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+    "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "asterion_elliptic.py": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
+    "asterion_extension.py": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
+    "asterion_frontiers.py": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+    "asterion_higher.py": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
+    "asterion_jacobi.py": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
+    "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+    "asterion_kernel_characters.py": "5dfef1c18dfe41358ccd402fb01f3818e0e2150487163240ec75f0b3a0325b39",
+    "asterion_kernel_tower.py": "70d79724fb1bdd8346c2089ff1d9173e37cb6561b9cb30167c51ddc957c71d67",
+    "asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+    "asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+    "asterion_monodromy_algebra.py": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
+    "asterion_periods.py": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+    "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+    "asterion_quartic.py": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
+    "asterion_quartic_characters.py": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
+    "asterion_relations.py": "503996dedc93e8330dd1c769704119cf2a430e304e38cb2186de7ba3eba9d108",
+    "asterion_rigidity.py": "bf98c2b41e77378397f9a34ce6276f1745d1eafa804a23363661a03e6e3be6dc",
+    "asterion_transport.py": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754"
+  },
+  "sources": [
+    "https://arxiv.org/abs/hep-th/9407154",
+    "https://arxiv.org/abs/math/0207008",
+    "https://arxiv.org/abs/1707.06469"
+  ]
+}

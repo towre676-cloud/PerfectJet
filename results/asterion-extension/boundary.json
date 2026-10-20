@@ -1,0 +1,727 @@
+{
+  "all_parameter_jacobi_proof": {
+    "all_parameter_jacobi_established": true,
+    "argument": "Each fixed input/output Jacobi coefficient is a polynomial in t and vanishes for every nonzero rational t by the exact gauge identity and E8 Jacobi. It is therefore the zero polynomial and also vanishes at t=0.",
+    "computational_scope": "Full source-triple and basis-pair replay when exhaustive=true; otherwise source Jacobi is generator-panel replay plus the classical lattice-cocycle E8 construction, with that scope stated explicitly.",
+    "identity": "[x_a,y_b]_t=S_t^-1[S_t x_a,S_t y_b]_E8 for t!=0; all channel exponents are nonnegative integers",
+    "nested_bracket_exponent": "w_a+w_b+w_c-w_d, independent of intermediate spin"
+  },
+  "arithmetic": "fractions.Fraction; no floating point",
+  "boundary_structure": {
+    "four_factor_witness": {
+      "initial_input": [
+        [
+          40,
+          "1"
+        ]
+      ],
+      "repeated_input": [
+        [
+          3,
+          "1"
+        ]
+      ],
+      "successive_images": [
+        [
+          [
+            89,
+            "7/42181080"
+          ]
+        ],
+        [
+          [
+            162,
+            "-49/12139032483"
+          ]
+        ],
+        [
+          [
+            208,
+            "-49/14646096055"
+          ]
+        ]
+      ]
+    },
+    "full_algebra_center_dimension": 0,
+    "full_algebra_perfect": true,
+    "levi_dimension": 3,
+    "levi_factor": "sl2",
+    "module_image_witnesses": [
+      {
+        "channel": [
+          7,
+          7,
+          13
+        ],
+        "image": [
+          [
+            41,
+            "-98"
+          ]
+        ],
+        "left_basis_index": 3,
+        "right_basis_index": 4
+      },
+      {
+        "channel": [
+          7,
+          11,
+          17
+        ],
+        "image": [
+          [
+            68,
+            "154"
+          ]
+        ],
+        "left_basis_index": 3,
+        "right_basis_index": 19
+      },
+      {
+        "channel": [
+          7,
+          13,
+          19
+        ],
+        "image": [
+          [
+            103,
+            "182"
+          ]
+        ],
+        "left_basis_index": 3,
+        "right_basis_index": 42
+      },
+      {
+        "channel": [
+          7,
+          17,
+          23
+        ],
+        "image": [
+          [
+            142,
+            "-238"
+          ]
+        ],
+        "left_basis_index": 3,
+        "right_basis_index": 69
+      },
+      {
+        "channel": [
+          7,
+          23,
+          29
+        ],
+        "image": [
+          [
+            189,
+            "322"
+          ]
+        ],
+        "left_basis_index": 3,
+        "right_basis_index": 143
+      },
+      {
+        "channel": [
+          11,
+          13,
+          23
+        ],
+        "image": [
+          [
+            142,
+            "286"
+          ]
+        ],
+        "left_basis_index": 18,
+        "right_basis_index": 42
+      },
+      {
+        "channel": [
+          11,
+          19,
+          29
+        ],
+        "image": [
+          [
+            189,
+            "418"
+          ]
+        ],
+        "left_basis_index": 18,
+        "right_basis_index": 104
+      },
+      {
+        "channel": [
+          13,
+          17,
+          29
+        ],
+        "image": [
+          [
+            189,
+            "442"
+          ]
+        ],
+        "left_basis_index": 41,
+        "right_basis_index": 69
+      }
+    ],
+    "nilpotency_class": 4,
+    "nilradical_abelianization_dimension": 38,
+    "nilradical_abelianization_spins": [
+      7,
+      11
+    ],
+    "nilradical_center_dimension": 59,
+    "nilradical_center_spins": [
+      29
+    ],
+    "nilradical_derived": [
+      {
+        "dimension": 245,
+        "spins": [
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ]
+      },
+      {
+        "dimension": 207,
+        "spins": [
+          13,
+          17,
+          19,
+          23,
+          29
+        ]
+      },
+      {
+        "dimension": 59,
+        "spins": [
+          29
+        ]
+      },
+      {
+        "dimension": 0,
+        "spins": []
+      }
+    ],
+    "nilradical_dimension": 245,
+    "nilradical_lower_central": [
+      {
+        "dimension": 245,
+        "spins": [
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ]
+      },
+      {
+        "dimension": 207,
+        "spins": [
+          13,
+          17,
+          19,
+          23,
+          29
+        ]
+      },
+      {
+        "dimension": 145,
+        "spins": [
+          19,
+          23,
+          29
+        ]
+      },
+      {
+        "dimension": 59,
+        "spins": [
+          29
+        ]
+      },
+      {
+        "dimension": 0,
+        "spins": []
+      }
+    ],
+    "proof": "Each block is irreducible under the verified principal sl2 action. A witnessed nonzero equivariant channel maps onto its whole target. Therefore module-support iteration computes exact lower-central and derived ideals. The center is an sl2-submodule; no trivial block occurs in the full algebra."
+  },
+  "cotangent_double": {
+    "base_dimension": 248,
+    "base_ordered_pairs_checked": 61504,
+    "base_ordered_structure_terms": 10488,
+    "coadjoint_nonzero_transpose_entries_checked": 10488,
+    "dimension": 496,
+    "dual_ideal_abelian": true,
+    "gram_matrix": "[[0,I],[I,0]]",
+    "invariance_proof": "<[(x,xi),(y,eta)],(z,zeta)>=zeta([x,y])-eta([x,z])+xi([y,z]), which equals <(x,xi),[(y,eta),(z,zeta)]> by base skew symmetry.",
+    "jacobi_proof": "The dual part of Jacobi is the representation identity [ad_x^*,ad_y^*]=ad_[x,y]^*, the transpose of base Jacobi; primal Jacobi is base Jacobi.",
+    "jacobi_scope": "Cotangent Jacobi follows from separately verified base Jacobi; arbitrary base Jacobi is not asserted here.",
+    "pairing_rank": 496,
+    "passed": true,
+    "primal_and_dual_isotropic": true,
+    "real_signature": [
+      248,
+      248
+    ]
+  },
+  "diagonal_contraction_cone": {
+    "binary_admissible_weights": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "binary_box_points_checked": 128,
+    "constraint_count_with_multiplicity": 170,
+    "dimension": 7,
+    "interior_point": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "nonzero_ternary_cut_nilpotency_class_counts": {
+      "1": 2,
+      "2": 126
+    },
+    "nonzero_weights_strictly_positive_on_nonprincipal_blocks": true,
+    "pointed": true,
+    "proof": "Slots (m,m,1) force w_m>=0. A zero coordinate propagates through nonzero channels to every spin. All weights in {1,2}^7 are admissible because 1+1>=2; only all-zero weights add another ternary point. At the all-one point every nonprincipal inequality is strict, proving full dimension. Binary cuts are therefore exactly zero and all-one.",
+    "scope": "Exact cone inequalities and complete binary/ternary boxes; extremal rays and isomorphism classes are not enumerated.",
+    "ternary_admissible_count": 129,
+    "ternary_box_points_checked": 2187,
+    "variables": [
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29
+    ],
+    "zero_coordinate_closure_certificates": [
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 7
+      },
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 11
+      },
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 13
+      },
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 17
+      },
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 19
+      },
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 23
+      },
+      {
+        "forced_zero_spins": [
+          1,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "starting_zero_spin": 29
+      }
+    ]
+  },
+  "dimension": 248,
+  "higher_channel_count": 154,
+  "invariant_forms": {
+    "all_invariant_symmetric_forms_dimension": 1,
+    "all_invariant_symmetric_forms_maximum_rank": 3,
+    "limiting_killing_radical_dimension": 245,
+    "limiting_killing_rank": 3,
+    "monodromy_caution": "The punctured scaling gauge has integral weights, so this family alone supplies no nontrivial monodromy or physical observable.",
+    "nondegenerate_invariant_symmetric_form_exists": false,
+    "proof": [
+      "The eight pairwise nonisomorphic irreducible sl2 modules are mutually orthogonal for any invariant symmetric bilinear form (Schur).",
+      "For m>1, the boundary bracket [V_m,V_m] has no V_1 component; hence B([s,x],y)=B(s,[x,y])=0 for all s in sl2 and x,y in V_m.",
+      "Since [sl2,V_m]=V_m, the entire V_m block is in the radical. This holds for every m>1.",
+      "The remaining form on V_1=sl2 is a scalar multiple of its Killing form and extends by zero. Thus the invariant-form space is exactly one-dimensional and every such form has rank zero or three."
+    ],
+    "pulled_back_killing_block_valuations": [
+      [
+        1,
+        0
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        11,
+        20
+      ],
+      [
+        13,
+        24
+      ],
+      [
+        17,
+        32
+      ],
+      [
+        19,
+        36
+      ],
+      [
+        23,
+        44
+      ],
+      [
+        29,
+        56
+      ]
+    ]
+  },
+  "leading_channel_count": 16,
+  "leading_support": [
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 1,
+      "right": 1,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 7,
+      "right": 7,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 11,
+      "right": 11,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 13,
+      "right": 13,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 17,
+      "right": 17,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 19,
+      "right": 19,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 23,
+      "right": 23,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 1,
+      "output": 29,
+      "right": 29,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "-1/2",
+      "left": 7,
+      "output": 13,
+      "right": 7,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 7,
+      "output": 17,
+      "right": 11,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 7,
+      "output": 19,
+      "right": 13,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "-1/2",
+      "left": 7,
+      "output": 23,
+      "right": 17,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 7,
+      "output": 29,
+      "right": 23,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 11,
+      "output": 23,
+      "right": 13,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 11,
+      "output": 29,
+      "right": 19,
+      "transvectant_order": 1
+    },
+    {
+      "coefficient": "1/2",
+      "left": 13,
+      "output": 29,
+      "right": 17,
+      "transvectant_order": 1
+    }
+  ],
+  "limitations": [
+    "For nonzero t the family is isomorphic to E8; no new simple Lie algebra or punctured-family monodromy is claimed.",
+    "The first-order limit uses projected, channel-weighted transvectants; its eight degrees are not an unrestricted ordinary Poisson subalgebra.",
+    "Cone inequalities are exact; global extremal-ray, contraction-isomorphism, cohomology, and compatible connection classifications remain open tasks.",
+    "The cotangent construction and contraction mechanism are classical; no literature priority claim is made for the E8-specific computed presentation."
+  ],
+  "parameter": "t",
+  "passed": true,
+  "principal_transport": {
+    "all_checks_passed": true,
+    "basis_rank": 248,
+    "bracket_pairs_checked": 30876,
+    "bracket_replay_exhaustive": true,
+    "chain_relations_checked": 744,
+    "inverse_columns_checked": 248
+  },
+  "quadratic_completion_bounds": {
+    "canonical_cotangent_upper_bound": 496,
+    "embedded_dimension": 248,
+    "isotropic_embedding_lower_bound": 496,
+    "isotropic_minimum_achieved_by_cotangent": true,
+    "maximum_restricted_invariant_form_rank": 3,
+    "minimum_restricted_radical_dimension": 245,
+    "proof": "If R is the radical of the restricted form on g, r maps to (d+g -> B(r,d)) in (D/g)*. This is well-defined because B(r,g)=0 and injective because B is nondegenerate on D. Thus dim(D/g)>=dim R>=dim g-rank(B|g). For an isotropic embedding R=g, giving dim D>=2dim g.",
+    "unrestricted_minimum_attained_known": false,
+    "unrestricted_quadratic_completion_lower_bound": 493
+  },
+  "schema": "perfectjet.asterion.boundary.v1",
+  "source_e8_jacobi": {
+    "checked": 2511496,
+    "exhaustive_distinct_triples": true,
+    "mode": "full",
+    "passed": true
+  },
+  "source_sha256": {
+    "asterion.py": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+    "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+    "asterion_boundary.py": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
+    "asterion_currents.py": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
+    "asterion_deformations.py": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+    "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "asterion_elliptic.py": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
+    "asterion_extension.py": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
+    "asterion_frontiers.py": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+    "asterion_higher.py": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
+    "asterion_jacobi.py": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
+    "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+    "asterion_kernel_characters.py": "5dfef1c18dfe41358ccd402fb01f3818e0e2150487163240ec75f0b3a0325b39",
+    "asterion_kernel_tower.py": "70d79724fb1bdd8346c2089ff1d9173e37cb6561b9cb30167c51ddc957c71d67",
+    "asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+    "asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+    "asterion_monodromy_algebra.py": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
+    "asterion_periods.py": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+    "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+    "asterion_quartic.py": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
+    "asterion_quartic_characters.py": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
+    "asterion_relations.py": "503996dedc93e8330dd1c769704119cf2a430e304e38cb2186de7ba3eba9d108",
+    "asterion_rigidity.py": "bf98c2b41e77378397f9a34ce6276f1745d1eafa804a23363661a03e6e3be6dc",
+    "asterion_transport.py": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754"
+  },
+  "status": "exact computed E8 principal Rees boundary; classical construction mechanisms",
+  "valuation_certificate": {
+    "admissible": true,
+    "constraints_checked": 170,
+    "criterion": "w_a+w_b-w_c >= 0 for every actual nonzero coupling; w_1=0",
+    "failed_channels": [],
+    "leading_channels": 16,
+    "necessary_and_sufficient": true,
+    "weights": [
+      [
+        1,
+        0
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        13,
+        12
+      ],
+      [
+        17,
+        16
+      ],
+      [
+        19,
+        18
+      ],
+      [
+        23,
+        22
+      ],
+      [
+        29,
+        28
+      ]
+    ]
+  },
+  "weights": [
+    [
+      1,
+      0
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      11,
+      10
+    ],
+    [
+      13,
+      12
+    ],
+    [
+      17,
+      16
+    ],
+    [
+      19,
+      18
+    ],
+    [
+      23,
+      22
+    ],
+    [
+      29,
+      28
+    ]
+  ]
+}

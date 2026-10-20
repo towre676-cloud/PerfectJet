@@ -70,6 +70,36 @@ GROUPS['32']=('Partner incidence', ['Line probes for hypersurface components','I
 
 GROUPS['34']=('Asterion basis calculus', ['Coined certified basis nomenclature','Exact commutator-word basis compiler','Reversible unimodular basis optimization','Root-lattice cocycle E8 reference algebra','Full bracket transport certificates','Order-thirty Coxeter lift and difference kernel','Full adjoint phase multiplicities','Principal divided-power polynomial coordinates','Complete normalized transvectant coupling catalogue','Seventy-six trilinear channel bounds','Minimal eight lowering seeds','Two-component polynomial coordinates modulo five','Explicit two-A4 exterior model','Exact fifth-cyclotomic arithmetic','All homogeneous bracket kernels','Thirty-one equal Cartan blocks','Homogeneous Jacobi identities','Obstruction to label-only symmetry','Internal two-dimensional covariance','Lattice index and rational descent boundary','Independent replay and corrupted-certificate rejection','Infinitesimal gauge versus genuine deformation','Linearized Jacobi cohomology','Exact second-order obstruction witnesses','Small-dimensional rigidity comparisons'])
 
+GROUPS['35']=('Asterion fields, hypergeometry and relations', [
+    'Principal Rees family and polynomial Jacobi specialization',
+    'Class-four nilradical and leading interaction channels',
+    'Diagonal contraction cone and complete bounded cut classifications',
+    'Invariant-form obstruction and quadratic completion bounds',
+    'Canonical cotangent extension with nondegenerate pairing',
+    'Affine current cocycle and mode derivation',
+    'All-order level-one state character and PBW retention',
+    'Jordan sector Fourier populations and eta-quotient Sturm proof',
+    'First nonuniform affine null-ideal trace at degree five',
+    'Thirty independent Cartan conformal null relations',
+    'Five exact invariant tensors and split-Casimir residues',
+    'Spectral projectors and arithmetic prime thirty-one',
+    'Logarithmic Frobenius recurrences and resonance compatibility',
+    'Controlled complex transport and noncommuting holonomy',
+    'Rational Racah recoupling and terminating hypergeometric series',
+    'Full intermediate-channel Jacobi constraints',
+    'Finite differential current algebra and actual homotopy transfer',
+    'Moyal enveloping closure and symmetric-square obstruction',
+    'Principal quantum embedding obstruction and dynamical derivatives',
+    'Affine PBW straightening and explicit singular-square descendants',
+    'Explicit weight-four arc-kernel generator and full null lift',
+    'Projected polarization and complete low-weight kernel dimensions',
+    'Uniform thirty-one-dimensional kernel in every Jordan sector',
+    'Literal reduced Jacobi Jacobian and gauge reconstruction',
+    'Smooth local rigidity and the full-support gauge component',
+    'Modular hypergeometric periods and character cancellation',
+    'Evidence-separated discovery ledger and research acceptance gates',
+    'Higher-weight differential syzygies and extended quantum frontiers'])
+
 def build():
     rows=[]
     for prefix,(domain,topics) in GROUPS.items():

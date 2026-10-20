@@ -36,7 +36,8 @@ def main():
             assert z.testzip() is None
             assert all(n.startswith('PerfectJet/') and '..' not in Path(n).parts and '\\' not in n for n in names)
             manifest = json.loads(z.read('PerfectJet/MANIFEST.json'))
-            assert manifest['version'] == '0.17.0'
+            release_version = manifest['version']
+            assert re.fullmatch(r'\d+\.\d+\.\d+', release_version)
             assert set(names) == {'PerfectJet/'+e['path'] for e in manifest['files']} | {'PerfectJet/MANIFEST.json'}
             for entry in manifest['files']:
                 raw = z.read('PerfectJet/'+entry['path'])
@@ -44,12 +45,14 @@ def main():
                 assert hashlib.sha256(raw).hexdigest() == entry['sha256'], entry['path']
             z.extractall(base)
         root = base/'PerfectJet'
-        assert 'version = "0.17.0"' in (root/'pyproject.toml').read_text()
-        assert '__version__ = "0.17.0"' in (root/'src/perfectjet/__init__.py').read_text()
+        assert f'version = "{release_version}"' in (root/'pyproject.toml').read_text()
+        assert f'__version__ = "{release_version}"' in (root/'src/perfectjet/__init__.py').read_text()
         equations = json.loads((root/'data/equations.json').read_text())['equations']
         original = json.loads((root/'data/equation_id_contract.json').read_text())['sha256_of_canonical_records']
         ids = {e['id'] for e in equations}
-        assert len(ids) == len(equations) == 464
+        assert len(ids) == len(equations) and len(equations) >= 464
+        family_count = len(json.loads((root/'data/equation_power.json').read_text())['families'])
+        tool_count = len(list((root/'examples/mathlab').glob('*.json')))
         for e in equations:
             if e['id'] in original:
                 assert hashlib.sha256(json.dumps(e, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest() == original[e['id']]
@@ -64,19 +67,20 @@ def main():
         python = base/'venv'/('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
         run(str(python), '-m', 'pip', 'install', '--no-index', '--no-deps', str(next(wheels.glob('*.whl'))), cwd=base, env=env)
         check = '''
-import json
+import json, sys
 from importlib.metadata import version
 from perfectjet.mathlab import LABS, catalogue, evaluate
-assert version('perfectjet') == '0.17.0'
+expected_version, expected_equations, expected_families, expected_tools = sys.argv[1:]
+assert version('perfectjet') == expected_version
 cat = catalogue()
-assert len(cat['equations']) == 464 and len(cat['families']) == 24 and len(LABS) == 25
+assert len(cat['equations']) == int(expected_equations) and len(cat['families']) == int(expected_families) and len(LABS) == int(expected_tools)
 for lab in LABS:
     result = evaluate(dict(operation='math-lab', lab=lab['id'], params=lab['example']['params']))
     assert result['lab'] == lab['id'] and result['scope'] and result['summary']
     json.dumps(result, allow_nan=False)
-print('Installed wheel: all 25 Math Lab tools passed')
+print(f'Installed wheel: all {len(LABS)} Math Lab tools passed')
 '''
-        run(str(python), '-c', check, cwd=base, env=env)
+        run(str(python), '-c', check, release_version, str(len(equations)), str(family_count), str(tool_count), cwd=base, env=env)
         # Invoke the actual supplied source launcher with an isolated interpreter.
         process = subprocess.Popen([str(python), str(root/'run_observatory.py'), '--port', '0'], cwd=base, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         try:
@@ -91,7 +95,7 @@ print('Installed wheel: all 25 Math Lab tools passed')
                 with urllib.request.urlopen(req, timeout=120) as response:
                     return json.load(response)
             cat = query({'operation':'math-catalog'})
-            assert len(cat['labs']) == 25
+            assert len(cat['labs']) == tool_count
             for lab in cat['labs']:
                 result = query(dict(operation='math-lab', lab=lab['id'], params=lab['example']['params']))
                 assert result['lab'] == lab['id'] and result['scope']
@@ -99,7 +103,7 @@ print('Installed wheel: all 25 Math Lab tools passed')
         finally:
             process.terminate()
             process.communicate(timeout=30)
-    print(json.dumps(dict(version='0.17.0', sha256=expected, manifest_files=len(manifest['files']), equations=464, families=24, installed_tools=25, launcher_http_tools=25, desktop_rendering='not checked by this script')))
+    print(json.dumps(dict(version=release_version, sha256=expected, manifest_files=len(manifest['files']), equations=len(equations), families=family_count, installed_tools=tool_count, launcher_http_tools=tool_count, desktop_rendering='not checked by this script')))
 
 
 if __name__ == '__main__':

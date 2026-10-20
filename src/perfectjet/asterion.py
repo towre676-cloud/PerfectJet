@@ -306,9 +306,45 @@ def evaluate(params):
         "benchmark": {"operation", "repeats"},
         "deformations": {"operation"},
         "compile": {"operation", "exhaustive", "include_basis"},
+        "extension": {"operation", "exhaustive", "max_degree"},
+        "boundary": {"operation", "exhaustive"},
+        "currents": {"operation", "max_degree"},
+        "kz": {"operation", "exhaustive"},
+        "relations": {"operation", "exhaustive"},
+        "higher": {"operation", "exhaustive"},
+        "rigidity": {"operation", "exhaustive"},
+        "periods": {"operation"},
+        "discoveries": {"operation"},
+        "frontiers": {"operation", "exhaustive", "max_degree"},
+        "kernel-characters": {"operation", "exhaustive"},
+        "kernel-tower": {"operation", "exhaustive"},
+        "quartic": {"operation", "exhaustive"},
+        "elliptic": {"operation", "exhaustive"},
+        "monodromy": {"operation", "exhaustive"},
+        "monodromy-algebra": {"operation", "exhaustive"},
+        "jacobi": {"operation", "exhaustive", "max_degree"},
     }
     if operation not in allowed or set(params) - allowed[operation]:
         raise ValueError("unknown Asterion operation or unsupported parameter")
+    if operation in ("frontiers", "kernel-characters", "kernel-tower", "quartic", "elliptic",
+                     "monodromy", "monodromy-algebra", "jacobi"):
+        from .asterion_frontiers import frontier_component_report, frontiers_report
+        options = {"exhaustive":params.get("exhaustive",False),
+                   "max_degree":params.get("max_degree",4)}
+        return (frontiers_report(**options) if operation == "frontiers"
+                else frontier_component_report(operation,**options))
+    if operation in ("extension", "boundary", "currents", "kz", "relations", "higher", "rigidity", "periods", "discoveries"):
+        from .asterion_extension import component_report, extension_report, research_ledger
+        exhaustive = params.get("exhaustive", False)
+        if not isinstance(exhaustive, bool):
+            raise ValueError("exhaustive must be a Boolean")
+        if operation == "discoveries":
+            return research_ledger()
+        if operation == "extension":
+            return extension_report(exhaustive=exhaustive,
+                                    max_degree=params.get("max_degree", 12))
+        return component_report(operation, exhaustive=exhaustive,
+                                max_degree=params.get("max_degree", 12))
     if operation == "overview":
         from .asterion_e8 import E8LieAlgebra
         from .asterion_principal import PrincipalE8
@@ -355,7 +391,9 @@ def evaluate(params):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("operation", nargs="?", default="overview",
-                        choices=("overview", "report", "bracket", "convert", "benchmark", "compile", "deformations"))
+                        choices=("overview", "report", "bracket", "convert", "benchmark", "compile", "deformations",
+                                 "extension", "boundary", "currents", "kz", "relations", "higher", "rigidity", "periods", "discoveries",
+                                 "frontiers", "kernel-characters", "kernel-tower", "quartic", "elliptic", "monodromy", "monodromy-algebra", "jacobi"))
     parser.add_argument("--chart", choices=("e8", "principal", "jordan"), default="e8")
     parser.add_argument("--left", help="JSON basis index or coordinate label")
     parser.add_argument("--right", help="JSON basis index or coordinate label")
@@ -366,6 +404,7 @@ def main(argv=None):
     parser.add_argument("--exhaustive", action="store_true")
     parser.add_argument("--include-tables", action="store_true")
     parser.add_argument("--repeats", type=int, default=3)
+    parser.add_argument("--max-degree", type=int)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args(argv)
     params = {"operation": args.operation}
@@ -387,6 +426,16 @@ def main(argv=None):
             params["inverse"] = args.inverse
     elif args.operation == "benchmark":
         params["repeats"] = args.repeats
+    elif args.operation == "extension":
+        params.update(exhaustive=args.exhaustive, max_degree=args.max_degree if args.max_degree is not None else 12)
+    elif args.operation == "currents":
+        params["max_degree"] = args.max_degree if args.max_degree is not None else 12
+    elif args.operation in ("frontiers", "jacobi"):
+        params.update(exhaustive=args.exhaustive,max_degree=args.max_degree if args.max_degree is not None else 4)
+    elif args.operation in ("kernel-characters", "kernel-tower", "quartic", "elliptic", "monodromy", "monodromy-algebra"):
+        params["exhaustive"] = args.exhaustive
+    elif args.operation in ("boundary", "kz", "relations", "higher", "rigidity"):
+        params["exhaustive"] = args.exhaustive
     result = evaluate(params)
     content = json.dumps(json_ready(result), indent=2, sort_keys=True, allow_nan=False) + "\n"
     if args.output:

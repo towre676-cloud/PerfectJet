@@ -1,0 +1,499 @@
+{
+  "schema": "perfectjet/asterion-extension-sources/1",
+  "date": "2026-10-20",
+  "scope": "Primary-source map and reviewed scope; unreviewed claims are not imported as theorems.",
+  "sources": [
+    {
+      "id": "AST-S001",
+      "title": "On Lusztig's canonical bases of simple Lie algebras",
+      "authors": [
+        "Meinolf Geck"
+      ],
+      "url": "https://arxiv.org/abs/2602.19632",
+      "year": 2026,
+      "version": "arXiv:2602.19632v1,2026-02-23",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_abstract_and_selected_cocycle_construction",
+      "used_for": "Modern cocycle construction and canonical Chevalley basis benchmark."
+    },
+    {
+      "id": "AST-S002",
+      "title": "Structure Constants for Simple Lie Algebras from a Principal sl2-Triple",
+      "authors": [
+        "Abdelmalek Abdesselam",
+        "Alexander Thomas"
+      ],
+      "url": "https://arxiv.org/html/2309.08213v3",
+      "year": 2024,
+      "version": "v3;2024-10-10",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Principal bases, binary transvectants and exceptional-type computation boundary."
+    },
+    {
+      "id": "AST-S003",
+      "title": "Linear models of the exceptional Lie algebra e8",
+      "authors": [
+        "Yolanda Cabrera",
+        "Cristina Draper",
+        "Antonio Garvin"
+      ],
+      "url": "https://doi.org/10.1007/s13398-025-01768-3",
+      "year": 2025,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Explicit two-A4 exterior construction; Remark3.5 doubled finite-group direction; scalar cocycle gauge boundary."
+    },
+    {
+      "id": "AST-S004",
+      "title": "Jordan gradings on exceptional simple Lie algebras",
+      "authors": [
+        "Alberto Elduque"
+      ],
+      "url": "https://arxiv.org/pdf/0810.2737",
+      "year": 2009,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Theorem2.1 uniqueness, order-five class and orthogonal Cartan decomposition."
+    },
+    {
+      "id": "AST-S005",
+      "title": "Lifting of elements of Weyl groups",
+      "authors": [
+        "Jeffrey Adams",
+        "Xuhua He"
+      ],
+      "url": "https://arxiv.org/abs/1608.00510",
+      "year": 2016,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Actual orders of elliptic Weyl lifts, especially E8."
+    },
+    {
+      "id": "AST-S006",
+      "title": "Coxeter Elements and Root Bases",
+      "authors": [
+        "Alexander Kirillov Jr.",
+        "Jaimal Thind"
+      ],
+      "url": "https://arxiv.org/abs/0811.2324",
+      "year": 2008,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Classical Coxeter-based root bases and combinatorial brackets."
+    },
+    {
+      "id": "AST-S007",
+      "title": "Zhu algebra and the C2-algebra of a classically free vertex operator algebra",
+      "authors": [
+        "Bailin Song",
+        "Xianlong Zeng"
+      ],
+      "url": "https://arxiv.org/html/2606.14407v1",
+      "year": 2026,
+      "version": "v1;2026-06-12",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Already proves E8 level-one failure of classical freeness; Section6 weight-four mixed-quotient contradiction147498 versus at least151125."
+    },
+    {
+      "id": "AST-S008",
+      "title": "Arc spaces and vertex algebras",
+      "authors": [
+        "Tomoyuki Arakawa",
+        "Anne Moreau"
+      ],
+      "url": "https://www.imo.universite-paris-saclay.fr/~anne.moreau/CEMPI-arc_space-vertex_algebras.WEB_VERSION.pdf",
+      "year": 2023,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Li filtration, jet/arc algebras, singular support and vertex-algebra geometry."
+    },
+    {
+      "id": "AST-S009",
+      "title": "Derived jet and arc spaces",
+      "authors": [
+        "Roi Docampo",
+        "Lance Edward Miller",
+        "C. Eric Overton-Walker"
+      ],
+      "url": "https://arxiv.org/abs/2604.08429",
+      "year": 2026,
+      "version": "arXiv:2604.08429v2,2026-05-20",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_abstract_and_stated_comparison_hypotheses",
+      "used_for": "Derived jet/arc functors, cotangent complexes and higher homotopy invariants; no automatic identification with a VOA kernel."
+    },
+    {
+      "id": "AST-S010",
+      "title": "Universal Racah matrices and adjoint knot polynomials. I. Arborescent knots",
+      "authors": [
+        "A. Mironov",
+        "A. Morozov"
+      ],
+      "url": "https://arxiv.org/abs/1511.09077",
+      "year": 2015,
+      "version": "v2;2018-01-06",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Prior universal adjoint Racah matrices and quantum-group comparison."
+    },
+    {
+      "id": "AST-S011",
+      "title": "Split Casimir operator and universal formulation of the simple Lie algebras",
+      "authors": [
+        "A. P. Isaev",
+        "S. O. Krivonos"
+      ],
+      "url": "https://arxiv.org/abs/2106.04470",
+      "year": 2021,
+      "version": "v2;2021-06-09",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Universal split Casimir characteristic identities and invariant projectors."
+    },
+    {
+      "id": "AST-S012",
+      "title": "Fusion Rules for Affine Kac-Moody Algebras",
+      "authors": [
+        "Alex J. Feingold"
+      ],
+      "url": "https://arxiv.org/abs/math/0212387",
+      "year": 2002,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Tensor products versus level-restricted fusion; a five-channel generic block is not a level-one adjoint primary block."
+    },
+    {
+      "id": "AST-S013",
+      "title": "Derived KZ equations",
+      "authors": [
+        "Vadim Schechtman",
+        "Alexander Varchenko"
+      ],
+      "url": "https://arxiv.org/abs/2012.02585",
+      "year": 2020,
+      "version": "v2;2020-12-27",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Prior derived KZ and derived Gauss-Manin correspondence."
+    },
+    {
+      "id": "AST-S014",
+      "title": "On connection between associators and 6j-symbols",
+      "authors": [
+        "Elena Lanina",
+        "Artem Novokhatnii",
+        "Alexey Sleptsov",
+        "Radomir Stepanov"
+      ],
+      "url": "https://arxiv.org/abs/2610.08044",
+      "year": 2026,
+      "version": "v1;2026-10-06",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "abstract_index_only;direct_full_text_fetch_unavailable",
+      "used_for": "Recent proposed rationalized-associator/Racah relation; proved examples in abstract are small sl2 and checked examples in other types, not an E8 theorem."
+    },
+    {
+      "id": "AST-S015",
+      "title": "DLMF Section34.4:6j Symbol",
+      "authors": [
+        "NIST Digital Library of Mathematical Functions"
+      ],
+      "url": "https://dlmf.nist.gov/34.4#E3",
+      "year": 2026,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "official_reference_formula",
+      "used_for": "Authoritative defining factorial/hypergeometric formula and normalization for ordinary6j symbols."
+    },
+    {
+      "id": "AST-S016",
+      "title": "An elementary approach to6j-symbols",
+      "authors": [
+        "Hjalmar Rosengren"
+      ],
+      "url": "https://arxiv.org/html/math/0312310v1",
+      "year": 2003,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Classical, quantum and elliptic6j constructions and limiting relations."
+    },
+    {
+      "id": "AST-S017",
+      "title": "Algebraic Geometry of Lie Bialgebras Defined by Solutions of the Classical Yang-Baxter Equation",
+      "authors": [
+        "Raschid Abedin",
+        "Igor Burban"
+      ],
+      "url": "https://doi.org/10.1007/s00220-021-04188-7",
+      "year": 2021,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Lie-bialgebra twists and Manin triples; nondegenerate nondynamical elliptic CYBE case only typeA in stated classification."
+    },
+    {
+      "id": "AST-S018",
+      "title": "Quantum Lie algebras; their existence, uniqueness and q-antisymmetry",
+      "authors": [
+        "Gustav W. Delius",
+        "Mark D. Gould"
+      ],
+      "url": "https://arxiv.org/abs/q-alg/9605025",
+      "year": 1996,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Established quantum Lie-algebra constructions; naive q-number replacement is not a new existence theorem."
+    },
+    {
+      "id": "AST-S019",
+      "title": "hbar-Vertex algebras and chiralization of star products",
+      "authors": [
+        "Simone Castellan"
+      ],
+      "url": "https://arxiv.org/abs/2308.13412",
+      "year": 2023,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Prior hbar-vertex, Lie conformal and Poisson-vertex machinery for compatible star/chiral structures."
+    },
+    {
+      "id": "AST-S020",
+      "title": "Elliptic quantum groups and their finite-dimensional representations",
+      "authors": [
+        "Sachin Gautam",
+        "Valerio Toledano-Laredo"
+      ],
+      "url": "https://arxiv.org/abs/1707.06469",
+      "year": 2017,
+      "version": "v2;2019-02-26",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "All-semisimple-type half-current representation framework; distinction from typeA nondynamicalRLL models."
+    },
+    {
+      "id": "AST-S021",
+      "title": "Elliptic Quantum Toroidal Algebras, Z-algebra Structure and Representations",
+      "authors": [
+        "Hitoshi Konno",
+        "Kazuyuki Oshima"
+      ],
+      "url": "https://arxiv.org/abs/2405.11177",
+      "year": 2024,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Arbitrary toroidal type, Hopf algebroid and horizontal/vertical elliptic affine subalgebras."
+    },
+    {
+      "id": "AST-S022",
+      "title": "Homotopy transfer for L-infinity structures and the BV-formalism",
+      "authors": [
+        "James Maunder"
+      ],
+      "url": "https://arxiv.org/abs/2408.12461",
+      "year": 2024,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Rooted-tree transfer formulas from genuine contraction data; prior general theorem."
+    },
+    {
+      "id": "AST-S023",
+      "title": "Pre-Lie deformation theory",
+      "authors": [
+        "Vladimir Dotsenko",
+        "Sergey Shadrin",
+        "Bruno Vallette"
+      ],
+      "url": "https://arxiv.org/abs/1502.03280",
+      "year": 2015,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Gauge and homotopy-transfer structure through pre-Lie deformation theory."
+    },
+    {
+      "id": "AST-S024",
+      "title": "The bracket of the exceptional Lie algebra E8",
+      "authors": [
+        "Andreas Kollross"
+      ],
+      "url": "https://arxiv.org/abs/2504.16513",
+      "year": 2026,
+      "version": "v3;2026-05-16",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Independent triality/oct-octonion bracket; May2026 revision includes E6, E7 and F4 representation data."
+    },
+    {
+      "id": "AST-S025",
+      "title": "On spaces of modular forms spanned by eta-quotients",
+      "authors": [
+        "Jeremy Rouse",
+        "John J. Webb"
+      ],
+      "url": "https://arxiv.org/abs/1311.1460",
+      "year": 2013,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_text_or_abstract",
+      "used_for": "Primary eta-quotient modularity framework; modularity and cusp checks are required before using a finite Sturm bound."
+    },
+    {
+      "id": "AST-S026",
+      "title": "Walsh eta-units at squarefree level-integral structure and Fricke values",
+      "authors": [
+        "K. Srinivasa Raghava"
+      ],
+      "url": "https://arxiv.org/abs/2607.11926",
+      "year": 2026,
+      "version": "arXiv:2607.11926v2,2026-10-12",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_abstract_only;current_title_and_revision_verified",
+      "used_for": "Prospective comparison for squarefree-level eta-unit arithmetic and integral cusp lattices. The revised abstract is reviewed; none of its specialized theorems is used to prove the implemented level-five identity or a bridge to the prime31."
+    },
+    {
+      "id": "AST-S027",
+      "title": "Lie Algebra Homology and Cohomology, Chapter7",
+      "authors": [
+        "Charles A. Weibel"
+      ],
+      "url": "https://math.mit.edu/~hrm/palestine/weibel/07-lie_algebra_homology_and_cohomology.pdf",
+      "year": 1994,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "author_text_hosted_by_MIT",
+      "used_for": "Whitehead second lemma and finite adjoint cohomology interpretation."
+    },
+    {
+      "id": "AST-S028",
+      "title": "Deformations of Lie Algebra Structures",
+      "authors": [
+        "Albert Nijenhuis",
+        "R. W. Richardson Jr."
+      ],
+      "url": "https://iumj.org/article/1789/",
+      "year": 1967,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "publisher_metadata;full_text_fetch_unavailable",
+      "used_for": "Classical deformation, linearized Jacobi and obstruction theory."
+    },
+    {
+      "id": "AST-S029",
+      "title": "An elementary proof of Newman's eta-quotient theorem",
+      "authors": [
+        "David Savitt"
+      ],
+      "url": "https://arxiv.org/abs/2507.16225",
+      "year": 2025,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_full_text",
+      "used_for": "Theorem1.1 and cusp condition for the exact eta quotient; authorPDF reviewed."
+    },
+    {
+      "id": "AST-S030",
+      "title": "Heterotic compactifications with principal bundles for general groups and general levels",
+      "authors": [
+        "Jacques Distler",
+        "Eric Sharpe"
+      ],
+      "url": "https://arxiv.org/abs/hep-th/0701244",
+      "year": 2007,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_abstract_and_source_construction_crosscheck",
+      "used_for": "Alternate subgroup construction of E8 level-one partition functions; used only for the A4-squared lattice/character construction."
+    },
+    {
+      "id": "AST-S031",
+      "title": "On the congruence of modular forms",
+      "authors": [
+        "Jacob Sturm"
+      ],
+      "url": "https://doi.org/10.1007/BFb0072985",
+      "year": 1987,
+      "version": null,
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "publisher_record;standard_theorem_dependency_explicit",
+      "used_for": "Finite coefficient bound after modularity and holomorphy; published primary theorem, bibliographic record reviewed."
+    },
+    {
+      "id": "AST-S032",
+      "title": "k-Structure of Basic Representation of Affine Algebras",
+      "authors": [
+        "Benedikt König"
+      ],
+      "url": "https://link.springer.com/article/10.1007/s00220-025-05256-y",
+      "doi": "10.1007/s00220-025-05256-y",
+      "year": 2025,
+      "published": "2025-03-19",
+      "version": "Communications in Mathematical Physics406,82(2025)",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "review_level": "primary_full_text_appendixD_equationD6",
+      "used_for": "Independent published decomposition of the E8 basic representation through affine weight 4. EquationD.6 gives dimension 213126; used as an attribution and crosscheck, not as a new representation decomposition."
+    },
+    {
+      "id": "AST-S033",
+      "title": "DLMF elliptic-integral, theta-function and modular-function formulas",
+      "authors": [
+        "NIST Digital Library of Mathematical Functions"
+      ],
+      "url": "https://dlmf.nist.gov/19.5",
+      "related_urls": [
+        "https://dlmf.nist.gov/20.9",
+        "https://dlmf.nist.gov/23.15"
+      ],
+      "year": null,
+      "version": "online reference, reviewed2026-10-20",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "official_mathematical_reference",
+      "review_level": "official_formulas19.5.1,20.9,23.15",
+      "used_for": "Classical Gauss hypergeometric period, theta and modular-function normalizations in the exact finite-series adapter. The code is a coefficient replay, not a new identity or an E8 KZ correspondence."
+    }
+  ]
+}

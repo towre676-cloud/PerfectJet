@@ -56,6 +56,8 @@ def _field(key, label, value, kind='number', low=None, high=None, help=None):
 
 LABS = [
     dict(id='asterion', title='Build an exact Lie basis', category='structure', question='How do polynomial coordinates change the arithmetic of E8?', description='Compute exact E8 brackets, all 170 polynomial couplings, a two-component modulo-five presentation and certified basis changes.', example={'params': {'operation':'overview'}}),
+    dict(id='asterion-extension', title='Extend Lie geometry', category='structure', question='How do finite interactions determine fields, densities and transport?', description='Compute exact current populations, singular Lie boundaries, hypergeometric recoupling, five-channel transport and explicit relation certificates.', example={'params': {'operation':'currents','max_degree':8}}),
+    dict(id='asterion-frontiers', title='Test the next mathematical frontier', category='structure', question='Which higher relations, elliptic identities and transport groups can we prove?', description='Replay higher-weight kernel characters, elliptic dynamical compatibility, the level-four monodromy closure and rank-eight charge moments.', example={'params': {'operation':'jacobi','max_degree':4}}),
     dict(id='pipeline', title='Make a complete decision', category='explore', question='What can I choose with the information and budget I have?', description='Recover values, count every feasible portfolio, then separate a winner under declared error bounds.', example={'params': {}}, fields=[_field('uncertainty', 'Measurement uncertainty', 0, low=0, high=20)]),
     dict(id='recover', title='Can we know the answer?', category='know', question='Do these measurements reveal the target?', description='Get an exact recovery formula or a hidden-direction witness and a repair.', example={'params': {}}, fields=[_field('repair', 'Add the missing measurement', False, 'checkbox')]),
     dict(id='compress', title='Keep only the useful state', category='know', question='How small can the world become without losing its future answers?', description='Compile a finite arithmetic model and replay its all-future behavioral quotient.', example={'params': {'prime': 13}}, fields=[_field('prime', 'Arithmetic modulus (prime)', 13, low=2, high=13)]),
@@ -130,6 +132,22 @@ def evaluate(request):
         from .asterion import evaluate as asterion_evaluate
         result = asterion_evaluate(p)
         return _out(lab, 'Asterion coordinates give exact polynomial and commutator presentations of E8, with explicit arithmetic and replay scope.', [('Lie algebra dimension', 248), ('Computed polynomial couplings', 170), ('Modulo-five components', 124)], result, [f'PJ-A{i:03d}' for i in range(1,41)], scope='Exact arithmetic in explicitly constructed Lie algebras. The Asterion name is coined for this program; classical constructions retain their attribution. Exhaustive checks are separately requested and reported.')
+    if lab == 'asterion-extension':
+        from .asterion import evaluate as asterion_evaluate
+        request = dict(p)
+        request.setdefault('operation', 'currents')
+        if request['operation'] not in ('extension','boundary','currents','kz','relations','higher','rigidity','periods','discoveries'):
+            raise ValueError('select an Asterion extension operation')
+        result = asterion_evaluate(request)
+        return _out(lab, 'The finite E8 basis becomes a layer in exact current, boundary, transport and relation calculations.', [('Finite directions',248), ('Jordan sectors',125), ('Transport channels',5)], result, [f'PJ-H{i:03d}' for i in range(1,89)], scope='Every component declares its own finite replay and proof dependencies. Research proposals and unresolved completeness gates remain explicitly open.')
+    if lab == 'asterion-frontiers':
+        from .asterion import evaluate as asterion_evaluate
+        request = dict(p)
+        request.setdefault('operation','jacobi')
+        if request['operation'] not in ('frontiers','kernel-characters','kernel-tower','quartic','elliptic','monodromy','monodromy-algebra','jacobi'):
+            raise ValueError('select an Asterion frontier operation')
+        result = asterion_evaluate(request)
+        return _out(lab, 'Higher jet relations, elliptic compatibility and the five-channel monodromy group have independent exact certificates.', [('Finite directions',248),('Transport channels',5),('Lattice rank',8)],result,[f'PJ-X{i:03d}' for i in range(1,49)],scope='Topological group closure, analytic identities and finite kernel weights have distinct proof dependencies. The full infinite arc kernel and quantum elliptic presentation retain explicit acceptance gates.')
     if lab == 'pipeline':
         spec = dict(p)
         uncertainty = spec.pop('uncertainty', None)

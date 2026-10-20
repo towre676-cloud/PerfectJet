@@ -1,0 +1,483 @@
+{
+  "schema": "perfectjet/asterion-frontier-sources/1",
+  "date": "2026-10-20",
+  "scope": "Primary-source review for the next push. New sources AST-S034..053 supplement the existing33-source manifest; AST-S007,012,020 have additional passage reviews.",
+  "sources": [
+    {
+      "id": "AST-S007",
+      "merge_action": "supplement_existing",
+      "authors": [
+        "Bailin Song",
+        "Xianlong Zeng"
+      ],
+      "title": "Zhu's algebra and the C2-algebra of a classically free vertex operator algebra",
+      "url": "https://arxiv.org/html/2606.14407v1",
+      "version": "v1,2026-06-12; no later version shown on the abstract page",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Theorems1.2/4.9 and1.4/5.1",
+        "Section6.3, equations6.3.1–6.3.2 and final dimension contradiction"
+      ],
+      "used_for": "Published non-freeness benchmark and the exact old mixed-quotient definition.",
+      "claim_boundary": "Does not supply an all-weight E8 arc-kernel presentation. The project weight4 certificate is compared with this existing theorem.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S034",
+      "merge_action": "append_new",
+      "authors": [
+        "Shashank Kanade"
+      ],
+      "title": "Classical freeness of affine sl_n at level1 via combinatorics",
+      "url": "https://arxiv.org/html/2606.19234v1",
+      "version": "v1,2026-06-17",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Introduction paragraphs on Song–Zeng and the Buchberger strategy",
+        "Lemma12",
+        "Theorem39 and Section9 questions"
+      ],
+      "used_for": "A recent primary follow-up citing Song–Zeng; explicit leading-term and Hilbert-series completion strategy.",
+      "claim_boundary": "The theorem is for typeA. It is a method lead, not an E8 freeness or kernel theorem.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S035",
+      "merge_action": "append_new",
+      "authors": [
+        "Matthias R. Gaberdiel",
+        "Terry Gannon"
+      ],
+      "title": "Zhu's algebra, the C2-algebra, and twisted modules",
+      "url": "https://arxiv.org/pdf/0811.3892",
+      "version": "v1,2008-11-24; Contemp.Math.497(2009),65–78",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "SectionIV.3, E8 C2 dimension4125 and module decomposition",
+        "SectionIV.5, E8 anomaly and level caveats"
+      ],
+      "used_for": "Earlier C2 algebra information and separation from Zhu and arc-map kernels.",
+      "claim_boundary": "The C2-versus-Zhu anomaly is not itself the later explicit differential arc-kernel classification.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S036",
+      "merge_action": "append_new",
+      "authors": [
+        "Duncan Laurie"
+      ],
+      "title": "Young wall realizations of level1 irreducible highest weight and Fock space crystals of quantum affine algebras in typeE",
+      "url": "https://arxiv.org/pdf/2311.03905",
+      "version": "v3,2024-02-19; J.Algebra661(2025),430–478",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Sections3.2 and3.3.2, E8 energy and Young columns",
+        "Theorems4.9–4.10, reduced Young walls and the basic crystal"
+      ],
+      "used_for": "Concrete E8 affine combinatorics for a prospective normal-monomial bijection.",
+      "claim_boundary": "A crystal realization is not a Gröbner basis of the augmented arc ideal; that map must still be constructed.",
+      "related_urls": [
+        "https://doi.org/10.1016/j.jalgebra.2024.07.047"
+      ]
+    },
+    {
+      "id": "AST-S037",
+      "merge_action": "append_new",
+      "authors": [
+        "Prakash Belkale"
+      ],
+      "title": "Unitarity of the KZ/Hitchin connection on conformal blocks in genus0 for arbitrary Lie algebras",
+      "url": "https://arxiv.org/html/1101.5846v3",
+      "version": "v3,2011-03-16; published2012",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Theorem1.1",
+        "Section8.1, equation8.1",
+        "Section9 Hodge metric",
+        "Section10 and Remark10.1, projective descent"
+      ],
+      "used_for": "Compactness after identifying the five-dimensional level4 system with the full conformal-block bundle.",
+      "claim_boundary": "The moduli-space descent is projectively unitary. Unit-modulus determinants are a separate input for the chosen linear lift.",
+      "related_urls": [
+        "https://doi.org/10.1016/j.matpur.2012.02.008"
+      ]
+    },
+    {
+      "id": "AST-S012",
+      "merge_action": "supplement_existing",
+      "authors": [
+        "Alex J. Feingold"
+      ],
+      "title": "Fusion Rules for Affine Kac-Moody Algebras",
+      "url": "https://arxiv.org/pdf/math/0212387",
+      "version": "arXiv original; Theorems6.1–6.3 reviewed",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Theorems6.1 and6.2",
+        "Theorem6.3 and the highest-root sl2 argument"
+      ],
+      "used_for": "Fusion equals tensor product when k is at least the highest-root pairing of the sum of the two highest weights.",
+      "claim_boundary": "For adjoint E8 this gives k>=4, not a physical five-channel adjoint-primary block at level1.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S038",
+      "merge_action": "append_new",
+      "authors": [
+        "Eric C. Rowell",
+        "Imre Tuba"
+      ],
+      "title": "Finite Linear Quotients of B3 of Low Dimension",
+      "url": "https://arxiv.org/pdf/0806.0168",
+      "version": "v1,2008-06-01",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Theorem2.1(d)(iv)",
+        "Theorem4.1",
+        "Lemma5.1(d) and its finite primitive group proof"
+      ],
+      "used_for": "Finite-image exclusion in degree 5 using projective generator order.",
+      "claim_boundary": "Lemma5.1 is a finite primitive linear-group restriction independent of a B3 extension. It proves infinitude, not compact density.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S039",
+      "merge_action": "append_new",
+      "authors": [
+        "Imre Tuba",
+        "Hans Wenzl"
+      ],
+      "title": "Representations of the braid group B3 and of SL(2,Z)",
+      "url": "https://arxiv.org/pdf/math/9912013",
+      "version": "v1,1999-12-02",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Main Theorem2.9",
+        "Section3 exceptional-type tensor-category application"
+      ],
+      "used_for": "Classification of irreducible B3 representations through degree 5 by eigenvalue and determinant-root data.",
+      "claim_boundary": "Applying it requires actual half-braids and a checked braid relation; two pure loops do not automatically supply those data.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S040",
+      "merge_action": "append_new",
+      "authors": [
+        "Michael J. Larsen",
+        "Eric C. Rowell",
+        "Zhenghan Wang"
+      ],
+      "title": "The N-eigenvalue Problem and Two Applications",
+      "url": "https://arxiv.org/pdf/math/0506025",
+      "version": "v3,2005-12-22",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Definition1.1/no-cycle condition",
+        "Lemmas2.1–2.2 and Propositions2.3–2.4"
+      ],
+      "used_for": "A primary template for reducing compact closures to connected simple factors.",
+      "claim_boundary": "Its generating-conjugacy-class hypothesis must be checked. The pure-loop argument instead states its own prime-dimension Clifford reduction.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S041",
+      "merge_action": "append_new",
+      "authors": [
+        "Robert Zeier",
+        "Thomas Schulte-Herbrüggen"
+      ],
+      "title": "Symmetry Principles in Quantum Systems Theory",
+      "url": "https://arxiv.org/pdf/1012.5256",
+      "version": "v3,2011-07-21; JMP52,113510(2011)",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Table1, PDFpage11, degree 5 row",
+        "Section7 discussion of su5",
+        "Highest-weight table, PDFpage50, degree 5 row"
+      ],
+      "used_for": "The only compact simple algebras with a faithful irreducible complex representation of degree 5 are su5,so5,and su2 of highest weight4.",
+      "claim_boundary": "The2014 erratum changes a different alternating-square table. The degree 5 classification is also independently obtained from the Weyl dimension formula.",
+      "related_urls": [
+        "https://doi.org/10.1063/1.3657939",
+        "https://doi.org/10.1063/1.4904017"
+      ]
+    },
+    {
+      "id": "AST-S042",
+      "merge_action": "append_new",
+      "authors": [
+        "Pavel Etingof",
+        "Alexander Varchenko"
+      ],
+      "title": "Geometry and classification of solutions of the classical dynamical Yang-Baxter equation",
+      "url": "https://arxiv.org/pdf/q-alg/9703040",
+      "version": "v2,1997-06-16; CMP192(1998),77–120",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Section4.3, elliptic formula4.7",
+        "Theorem4.2",
+        "Introduction KZB system with Cartan derivatives"
+      ],
+      "used_for": "All-type classical dynamical elliptic r-matrix with spectral parameter, including E8.",
+      "claim_boundary": "Zero-weight, coupling, spectral and gauge assumptions matter. A dynamical elliptic solution is not a nondynamical Belavin matrix.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S043",
+      "merge_action": "append_new",
+      "authors": [
+        "Valerio Toledano Laredo",
+        "Yaping Yang"
+      ],
+      "title": "Universal KZB Equations for arbitrary root systems",
+      "url": "https://arxiv.org/pdf/1801.10259",
+      "version": "v1,2018-01-31",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "TheoremA/Theorem2.5, flatness relations",
+        "Theorem5.2, completed monodromy map",
+        "Theorem5.15, nonquadraticity and non-1-formality"
+      ],
+      "used_for": "A root-system E8 KZB construction and explicit finite families of algebra relations for its realization.",
+      "claim_boundary": "The connection is universal and completed. A finite matrix realization requires a homomorphism satisfying all defining relations.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S044",
+      "merge_action": "append_new",
+      "authors": [
+        "Valerio Toledano Laredo",
+        "Yaping Yang"
+      ],
+      "title": "The elliptic Casimir connection of a simple Lie algebra",
+      "url": "https://arxiv.org/pdf/1805.12261",
+      "version": "v1,2018-05-30",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "TheoremA/Theorem3.6",
+        "TheoremsB–C, modular extension",
+        "Conjecture1.4",
+        "Trigonometric degeneration in Sections1.7–1.8"
+      ],
+      "used_for": "An E8-valid specialization into a deformed double current algebra, with flatness and degeneration theorems.",
+      "claim_boundary": "The cited version labels the quantum-toroidal monodromy identification as a conjecture; the audit does not promote it to a theorem.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S020",
+      "merge_action": "supplement_existing",
+      "authors": [
+        "Sachin Gautam",
+        "Valerio Toledano Laredo"
+      ],
+      "title": "Elliptic quantum groups and their finite-dimensional representations",
+      "url": "https://arxiv.org/pdf/1707.06469",
+      "version": "arXiv primary full text reviewed",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Sections1.6–1.10",
+        "Theorem constructing the quantum-loop-to-elliptic functor",
+        "Section1.9 coefficient-field distinction"
+      ],
+      "used_for": "All-type half-current and dynamical representation framework.",
+      "claim_boundary": "The dense subcategory, spectral noncollision and meromorphic coefficient field must be retained; a plain vector-space functor does not supply a finite E8 R matrix automatically.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S045",
+      "merge_action": "append_new",
+      "authors": [
+        "Kazuhiro Sakai"
+      ],
+      "title": "En Jacobi forms and Seiberg-Witten curves",
+      "url": "https://arxiv.org/pdf/1706.04619",
+      "version": "v3,2019-04-30",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Definition2.1/equations2.1–2.4",
+        "Section2.2, equations2.8–2.11"
+      ],
+      "used_for": "W(E8)-invariant lattice theta normalization, rank8 elliptic variable, and index1 form.",
+      "claim_boundary": "Its historical discussion of unknown E8 ring generators is superseded by AST-S046.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S046",
+      "merge_action": "append_new",
+      "authors": [
+        "Kazuhiro Sakai"
+      ],
+      "title": "The ring of Weyl invariant E8 Jacobi forms",
+      "url": "https://arxiv.org/pdf/2410.12907",
+      "version": "v2,2026-07-10; Math.Z.313,71(2026)",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Theorems3.13 and4.17–4.18",
+        "Corollaries4.19–4.20",
+        "Minimal194-generator construction"
+      ],
+      "used_for": "Current complete ring theorem via joint covariants of a binary quartic and sextic.",
+      "claim_boundary": "Finite generation and the194-generator result are established literature, not new Asterion closure targets.",
+      "related_urls": [
+        "https://doi.org/10.1007/s00209-026-04085-6"
+      ]
+    },
+    {
+      "id": "AST-S047",
+      "merge_action": "append_new",
+      "authors": [
+        "Pierre de la Harpe",
+        "Claude Pache",
+        "Boris Venkov"
+      ],
+      "title": "Construction of spherical cubature formulas using lattices",
+      "url": "https://www.unige.ch/math/folks/delaharpe/articles/10HaPaVe2006.pdf",
+      "version": "author PDF,2006",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Introduction E8 shell/Lehmer discussion, PDFpage4",
+        "Section6.2 harmonic theta method"
+      ],
+      "used_for": "Every E8 shell is a spherical7-design; strength 8 is equivalent to vanishing of the corresponding Ramanujan tau coefficient.",
+      "claim_boundary": "A finite shell census does not prove Lehmer nonvanishing for every positive integer.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S048",
+      "merge_action": "append_new",
+      "authors": [
+        "Tom De Medts",
+        "Louis Olyslager"
+      ],
+      "title": "Constructing Chayet-Garibaldi algebras from affine vertex algebras (including the3876-dimensional algebra for E8)",
+      "url": "https://arxiv.org/pdf/2503.24103",
+      "version": "v3,2026-01-14",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Main Theorem",
+        "Theorem5.23"
+      ],
+      "used_for": "Existing affine-VOA construction of the symmetric weight-two3876-dimensional algebra.",
+      "claim_boundary": "This nonassociative product is distinct from the commutative C2 product and the differential arc kernel.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S049",
+      "merge_action": "append_new",
+      "authors": [
+        "E. B. Dynkin"
+      ],
+      "title": "Semisimple subalgebras of semisimple Lie algebras",
+      "url": "https://www.mathnet.ru/eng/sm5435",
+      "version": "Mat.Sb.30(72):2(1952),349–462",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Bibliographic record and classification provenance only; the full Russian proof was not reviewed"
+      ],
+      "used_for": "Historical provenance of semisimple-subalgebra classification.",
+      "claim_boundary": "The audit relies on the explicitly reviewed degree 5 table and a stated small-rank derivation, not on an unreviewed Dynkin table.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S050",
+      "merge_action": "append_new",
+      "authors": [
+        "Giovanni Felder"
+      ],
+      "title": "Conformal field theory and integrable systems associated to elliptic curves",
+      "url": "https://arxiv.org/pdf/hep-th/9407154",
+      "version": "v1,1994-07-23",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Section2, equations3–5, KZB kernels and dynamical compatibility",
+        "Section3, equation6, the quantum dynamical shifts"
+      ],
+      "used_for": "Original elliptic dynamical construction and distinction between the z connection and modular tau equation.",
+      "claim_boundary": "The displayed explicit quantum vector matrix is typeA; it is not an E8 quantum adjoint R matrix.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S051",
+      "merge_action": "append_new",
+      "authors": [
+        "Pavel Etingof"
+      ],
+      "title": "On the dynamical Yang-Baxter equation",
+      "url": "https://arxiv.org/pdf/math/0207008",
+      "version": "2002 primary review by a theorem author",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Section2.6, equation3, classical dynamical equation",
+        "Section2.7, Example3 and Remarks1–4",
+        "Section2.8, Theorem2.3"
+      ],
+      "used_for": "The exact plus-theta kernel convention, unitarity, Casimir residue and all-type rational/trigonometric degenerations used by the implementation.",
+      "claim_boundary": "The classical example is valid for every reductive algebra. Its existence does not itself supply a certified quantum E8 exchange matrix.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S052",
+      "merge_action": "append_new",
+      "authors": [
+        "Claude Mitschi",
+        "Michael F. Singer"
+      ],
+      "title": "Monodromy groups of parameterized linear differential equations with regular singularities",
+      "url": "https://arxiv.org/html/1106.2664v2",
+      "version": "v2,2012-06-01",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Introduction, classical Schlesinger density theorem",
+        "Section3.1, classical Picard–Vessiot theory",
+        "Section4, distinct parameterized theorem"
+      ],
+      "used_for": "The regular-singular pointwise identification of differential Galois group with monodromy Zariski closure.",
+      "claim_boundary": "The parameterized Kolchin-density theorem is a different statement. No parameterized Galois group or parameter-wide Zariski-open claim is inferred.",
+      "related_urls": []
+    },
+    {
+      "id": "AST-S053",
+      "merge_action": "append_new",
+      "authors": [
+        "Mikaël Cavallin"
+      ],
+      "title": "An algorithm for computing weight multiplicities in irreducible modules for complex semisimple Lie algebras",
+      "url": "https://arxiv.org/html/1603.07196v2",
+      "version": "v2,2016-04-05",
+      "retrieved_utc": "2026-10-20",
+      "source_type": "primary",
+      "reviewed_passages": [
+        "Introduction, Freudenthal formula on PDFpage2",
+        "Section2.1, Weyl chamber uniqueness",
+        "Theorem2 and its distinct conditional improved recursion"
+      ],
+      "used_for": "The classical Freudenthal recursion and Weyl symmetry underlying the exact bounded character engine.",
+      "claim_boundary": "The implementation uses the classical recursion, not an asserted new multiplicity formula or Cavallin's conditional improved formula. Its E8 outputs still require exact reconstruction checks.",
+      "related_urls": [
+        "https://doi.org/10.1016/j.jalgebra.2016.08.044"
+      ]
+    }
+  ]
+}

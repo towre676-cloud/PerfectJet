@@ -25,6 +25,9 @@ jobs:
       - run: python scripts/verify_asterion.py --check
         env:
           PYTHONPATH: src
+      - run: python scripts/verify_asterion_extension.py --check
+        env:
+          PYTHONPATH: src
       - run: python -m perfectjet.cli math-lab --all --output results/mathlab/replay-ci.json
         env:
           PYTHONPATH: src
@@ -39,3 +42,4 @@ jobs:
             results/observatory/benchmark-ci.json
             results/mathlab/replay-ci.json
             results/asterion/
+            results/asterion-extension/

@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/equation-power/1",
-  "date": "2026-10-16",
+  "date": "2026-10-20",
   "criteria": [
     "mathematical breadth",
     "exact compression",
@@ -109,6 +109,10 @@
     {
       "rank": 25,
       "name": "Asterion basis calculus"
+    },
+    {
+      "rank": 26,
+      "name": "Asterion fields, hypergeometric transport and higher relations"
     }
   ],
   "assignments": {
@@ -615,7 +619,143 @@
     "PJ-A037": 25,
     "PJ-A038": 25,
     "PJ-A039": 25,
-    "PJ-A040": 25
+    "PJ-A040": 25,
+    "PJ-H001": 26,
+    "PJ-H002": 26,
+    "PJ-H003": 26,
+    "PJ-H004": 26,
+    "PJ-H005": 26,
+    "PJ-H006": 26,
+    "PJ-H007": 26,
+    "PJ-H008": 26,
+    "PJ-H009": 26,
+    "PJ-H010": 26,
+    "PJ-H011": 26,
+    "PJ-H012": 26,
+    "PJ-H013": 26,
+    "PJ-H014": 26,
+    "PJ-H015": 26,
+    "PJ-H016": 26,
+    "PJ-H017": 26,
+    "PJ-H018": 26,
+    "PJ-H019": 26,
+    "PJ-H020": 26,
+    "PJ-H021": 26,
+    "PJ-H022": 26,
+    "PJ-H023": 26,
+    "PJ-H024": 26,
+    "PJ-H025": 26,
+    "PJ-H026": 26,
+    "PJ-H027": 26,
+    "PJ-H028": 26,
+    "PJ-H029": 26,
+    "PJ-H030": 26,
+    "PJ-H031": 26,
+    "PJ-H032": 26,
+    "PJ-H033": 26,
+    "PJ-H034": 26,
+    "PJ-H035": 26,
+    "PJ-H036": 26,
+    "PJ-H037": 26,
+    "PJ-H038": 26,
+    "PJ-H039": 26,
+    "PJ-H040": 26,
+    "PJ-H041": 26,
+    "PJ-H042": 26,
+    "PJ-H043": 26,
+    "PJ-H044": 26,
+    "PJ-H045": 26,
+    "PJ-H046": 26,
+    "PJ-H047": 26,
+    "PJ-H048": 26,
+    "PJ-H049": 26,
+    "PJ-H050": 26,
+    "PJ-H051": 26,
+    "PJ-H052": 26,
+    "PJ-H053": 26,
+    "PJ-H054": 26,
+    "PJ-H055": 26,
+    "PJ-H056": 26,
+    "PJ-H057": 26,
+    "PJ-H058": 26,
+    "PJ-H059": 26,
+    "PJ-H060": 26,
+    "PJ-H061": 26,
+    "PJ-H062": 26,
+    "PJ-H063": 26,
+    "PJ-H064": 26,
+    "PJ-H065": 26,
+    "PJ-H066": 26,
+    "PJ-H067": 26,
+    "PJ-H068": 26,
+    "PJ-H069": 26,
+    "PJ-H070": 26,
+    "PJ-H071": 26,
+    "PJ-H072": 26,
+    "PJ-H073": 26,
+    "PJ-H074": 26,
+    "PJ-H075": 26,
+    "PJ-H076": 26,
+    "PJ-H077": 26,
+    "PJ-H078": 26,
+    "PJ-H079": 26,
+    "PJ-H080": 26,
+    "PJ-H081": 26,
+    "PJ-H082": 26,
+    "PJ-H083": 26,
+    "PJ-H084": 26,
+    "PJ-H085": 26,
+    "PJ-H086": 26,
+    "PJ-H087": 26,
+    "PJ-H088": 26,
+    "PJ-X001": 26,
+    "PJ-X002": 26,
+    "PJ-X003": 26,
+    "PJ-X004": 26,
+    "PJ-X005": 26,
+    "PJ-X006": 26,
+    "PJ-X007": 26,
+    "PJ-X008": 26,
+    "PJ-X009": 26,
+    "PJ-X010": 26,
+    "PJ-X011": 26,
+    "PJ-X012": 26,
+    "PJ-X013": 26,
+    "PJ-X014": 26,
+    "PJ-X015": 26,
+    "PJ-X016": 26,
+    "PJ-X017": 26,
+    "PJ-X018": 26,
+    "PJ-X019": 26,
+    "PJ-X020": 26,
+    "PJ-X021": 26,
+    "PJ-X022": 26,
+    "PJ-X023": 26,
+    "PJ-X024": 26,
+    "PJ-X025": 26,
+    "PJ-X026": 26,
+    "PJ-X027": 26,
+    "PJ-X028": 26,
+    "PJ-X029": 26,
+    "PJ-X030": 26,
+    "PJ-X031": 26,
+    "PJ-X032": 26,
+    "PJ-X033": 26,
+    "PJ-X034": 26,
+    "PJ-X035": 26,
+    "PJ-X036": 26,
+    "PJ-X037": 26,
+    "PJ-X038": 26,
+    "PJ-X039": 26,
+    "PJ-X040": 26,
+    "PJ-X041": 26,
+    "PJ-X042": 26,
+    "PJ-X043": 26,
+    "PJ-X044": 26,
+    "PJ-X045": 26,
+    "PJ-X046": 26,
+    "PJ-X047": 26,
+    "PJ-X048": 26
   },
   "callable_labs": {
     "PJ-E085": [
@@ -1680,6 +1820,550 @@
     ],
     "PJ-A040": [
       "asterion"
+    ],
+    "PJ-H001": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H002": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H003": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H004": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H005": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H006": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H007": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H008": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H009": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H010": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H011": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H012": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H013": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H014": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H015": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H016": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H017": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H018": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H019": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H020": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H021": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H022": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H023": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H024": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H025": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H026": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H027": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H028": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H029": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H030": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H031": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H032": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H033": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H034": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H035": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H036": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H037": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H038": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H039": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H040": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H041": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H042": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H043": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H044": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H045": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H046": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H047": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H048": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H049": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H050": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H051": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H052": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H053": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H054": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H055": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H056": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H057": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H058": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H059": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H060": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H061": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H062": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H063": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H064": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H065": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H066": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H067": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H068": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H069": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H070": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H071": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H072": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H073": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H074": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H075": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H076": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H077": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H078": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H079": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H080": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H081": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H082": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H083": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H084": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H085": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H086": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H087": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-H088": [
+      "asterion",
+      "asterion-extension"
+    ],
+    "PJ-X001": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X002": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X003": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X004": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X005": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X006": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X007": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X008": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X009": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X010": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X011": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X012": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X013": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X014": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X015": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X016": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X017": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X018": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X019": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X020": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X021": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X022": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X023": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X024": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X025": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X026": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X027": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X028": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X029": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X030": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X031": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X032": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X033": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X034": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X035": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X036": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X037": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X038": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X039": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X040": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X041": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X042": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X043": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X044": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X045": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X046": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X047": [
+      "asterion",
+      "asterion-frontiers"
+    ],
+    "PJ-X048": [
+      "asterion",
+      "asterion-frontiers"
     ]
   }
 }

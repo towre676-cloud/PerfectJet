@@ -1,9 +1,6 @@
 name: Verify and publish PerfectJet v0.17.0
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/publish-v017.yml', 'scripts/build_release.py', 'scripts/verify_release.py']
 permissions:
   contents: read
 concurrency:

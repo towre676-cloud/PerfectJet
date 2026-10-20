@@ -1,0 +1,802 @@
+{
+  "schema": "perfectjet/asterion-extension-equations/1",
+  "preserved_prefix": {
+    "equation_count": 504,
+    "sha256_of_canonical_records": "6b338bf36d1ead0bd39e5b2ab7c469488de842485d8fbda1e8bdd1ed5725c96e"
+  },
+  "scope": "Evidence-aware extensions; proposal records explicitly retain their open obligations.",
+  "equations": [
+    {
+      "id": "PJ-H001",
+      "domain": "asterion-extension",
+      "title": "principal Rees bracket",
+      "equation": "[P_a,Q_b]_t=sum_c kappa_ab^c t^(a+b-c-1) T_(a+b-c)(P_a,Q_b)",
+      "status": "derived",
+      "assumptions": "Use the actual 170 rational couplings and the eight principal spins; t is a deformation parameter, not a current mode.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H002",
+      "domain": "asterion-extension",
+      "title": "nonnegative Rees exponents",
+      "equation": "a+b-c-1>=0 and a+b-c-1 is even on every allowed channel",
+      "status": "exact_checked",
+      "assumptions": "All eight spins are odd and the actual bracket has positive odd transvectant order.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H003",
+      "domain": "asterion-extension",
+      "title": "punctured-family scaling",
+      "equation": "S_t|V_m=t^(m-1); [x,y]_t=S_t^-1[S_t x,S_t y] for t!=0",
+      "status": "derived",
+      "assumptions": "Every nonzero fiber is isomorphic to E8; this integer-power gauge creates no automatic new monodromy.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H004",
+      "domain": "asterion-extension",
+      "title": "polynomial Jacobi specialization",
+      "equation": "Jacobi_t=0 for t!=0 => Jacobi_t=0 in Q[t] => Jacobi_0=0",
+      "status": "derived",
+      "assumptions": "Polynomial structure constants over an infinite characteristic-zero field and a verified reference bracket.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H005",
+      "domain": "asterion-extension",
+      "title": "boundary channel support",
+      "equation": "support([ , ]_0)={a+b-c=1}; card(support)=16",
+      "status": "exact_checked",
+      "assumptions": "Count reduced principal channels, not basis tensor entries; the other 154 channels vanish at this boundary.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H006",
+      "domain": "asterion-extension",
+      "title": "nilradical lower-central dimensions",
+      "equation": "dim gamma_i(n)=(245,207,145,59,0)",
+      "status": "exact_checked",
+      "assumptions": "The concrete leading-channel algebra is sl2 semidirect n; nilpotency class four follows from nonzero channel images and vanishing next term.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H007",
+      "domain": "asterion-extension",
+      "title": "boundary center",
+      "equation": "Z(n)=V_29; dim Z(n)=59",
+      "status": "derived",
+      "assumptions": "Center of the nilradical, not of the full semidirect product; sl2 acts nontrivially on V_29.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H008",
+      "domain": "asterion-extension",
+      "title": "Killing-form valuations",
+      "equation": "B_t|V_m=t^(2m-2)B_1|V_m",
+      "status": "derived",
+      "assumptions": "Pull back the E8 invariant form through S_t. Its specialization has rank three.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H009",
+      "domain": "asterion-extension",
+      "title": "all invariant forms at the boundary",
+      "equation": "n subset rad B for every invariant symmetric B on g_0; rank B<=3",
+      "status": "derived",
+      "assumptions": "Multiplicity-free sl2 types are orthogonal, and [V_m,V_m]_0 has no V_1 output for m>1.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H010",
+      "domain": "asterion-extension",
+      "title": "quadratic completion lower bound",
+      "equation": "dim D>=dim g_0+dim rad(B|g_0)>=493",
+      "status": "derived",
+      "assumptions": "Assume g_0 embeds as a Lie subalgebra in finite-dimensional D with a nondegenerate invariant symmetric form; isotropic embeddings require dimension at least 496.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H011",
+      "domain": "asterion-extension",
+      "title": "cotangent Lie extension",
+      "equation": "[(x,alpha),(y,beta)]=([x,y],ad_x^* beta-ad_y^* alpha)",
+      "status": "derived",
+      "assumptions": "The coadjoint action is (ad_x^* beta)(z)=-beta([x,z]); this classical construction gives dimension 496.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H012",
+      "domain": "asterion-extension",
+      "title": "canonical nondegenerate pairing",
+      "equation": "<(x,alpha),(y,beta)>=alpha(y)+beta(x)",
+      "status": "derived",
+      "assumptions": "On g semidirect g*, the canonical symmetric form is invariant and nondegenerate for every family parameter.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H013",
+      "domain": "asterion-extension",
+      "title": "quadratic Casimir braid identities",
+      "equation": "[Omega_12,Omega_13+Omega_23]=0; [Omega_ij,Omega_kl]=0 for disjoint pairs",
+      "status": "derived",
+      "assumptions": "A nondegenerate invariant symmetric form supplies the Casimir; these identities imply the usual configuration-space connection is flat.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py; docs/ASTERION_KZ.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H014",
+      "domain": "asterion-extension",
+      "title": "diagonal valuation cone",
+      "equation": "w_a+w_b-w_c>=0 whenever kappa_ab^c!=0",
+      "status": "definition",
+      "assumptions": "A declared integral valuation satisfying all inequalities defines a polynomial contraction; the full cone classification is a separate research gate.",
+      "source": "docs/ASTERION_BOUNDARY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "id": "PJ-H015",
+      "domain": "asterion-extension",
+      "title": "affine current bracket",
+      "equation": "[X[m],Y[n]]=[X,Y][m+n]+m delta_(m+n,0)(X,Y)K",
+      "status": "derived",
+      "assumptions": "The normalized invariant form is transported through the actual Jordan chart; K is central and mode indices are integers.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H016",
+      "domain": "asterion-extension",
+      "title": "affine cocycle",
+      "equation": "omega(X[m],Y[n])=m delta_(m+n,0)(X,Y)",
+      "status": "derived",
+      "assumptions": "Skew symmetry uses the mode-sum condition; the cocycle identity uses invariance of the bilinear form.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H017",
+      "domain": "asterion-extension",
+      "title": "mode derivation",
+      "equation": "[d,X[m]]=m X[m]; [d,K]=0",
+      "status": "derived",
+      "assumptions": "The derivation extends the current algebra; it is not a derivation of an arbitrary nonideal jet truncation.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H018",
+      "domain": "asterion-extension",
+      "title": "level-one Sugawara central charge",
+      "equation": "c=k dim(g)/(k+h_dual)=248/(1+30)=8",
+      "status": "derived",
+      "assumptions": "Use the simple affine E8 vertex algebra at level one; this does not permit independent adjoint primary insertions at level one.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H019",
+      "domain": "asterion-extension",
+      "title": "simple E8 state character",
+      "equation": "H(q)=E4(q)/phi(q)^8; phi(q)=product_(m>=1)(1-q^m)",
+      "status": "derived",
+      "assumptions": "Unshifted conformal grading: coefficients begin 1,248,4124,34752,213126. The normalized character includes q^(-1/3).",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H020",
+      "domain": "asterion-extension",
+      "title": "colored-partition recurrence",
+      "equation": "n p_r(n)=r sum_(j=1)^n sigma_1(j)p_r(n-j)",
+      "status": "exact_checked",
+      "assumptions": "p_r(0)=1 and r is a nonnegative integer; all coefficients use exact integer arithmetic.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H021",
+      "domain": "asterion-extension",
+      "title": "universal current population",
+      "equation": "U(q)=product_(m>=1)(1-q^m)^(-248)",
+      "status": "derived",
+      "assumptions": "PBW dimensions of the universal affine vacuum module; simple-quotient null relations have not yet been imposed.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H022",
+      "domain": "asterion-extension",
+      "title": "basis-independent state retention",
+      "equation": "rho_n=dim L_1(E8)_n / dim V^1(E8)_n",
+      "status": "definition",
+      "assumptions": "This fixed-graded-algebra density differs from coordinate-dependent bracket sparsity and from geometric packing density.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H023",
+      "domain": "asterion-extension",
+      "title": "A4 root-lattice theta enumeration",
+      "equation": "Theta_A4(q)=sum_(x in Z^5,sum x_i=0) q^(sum x_i^2/2)",
+      "status": "exact_checked",
+      "assumptions": "The enumeration uses a proved norm bound for each requested finite coefficient; the full identity is a formal theta series.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H024",
+      "domain": "asterion-extension",
+      "title": "simple Jordan twining series",
+      "equation": "T(q)=(5 Theta_A4(q)^2-E4(q))/(4 phi(q)^8)",
+      "status": "derived",
+      "assumptions": "All 124 nonidentity dual-grading automorphisms are conjugate to the fixed-dimension-48 order-five class; the A4+A4 gluing identifies its trace.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H025",
+      "domain": "asterion-extension",
+      "title": "all-order twining eta identity",
+      "equation": "5 Theta_A4(tau)^2-E4(tau)=4 eta(tau)^10/eta(5tau)^2",
+      "status": "derived",
+      "assumptions": "Both sides are holomorphic weight-four forms on Gamma0(5); the Sturm bound is two. Cusp holomorphy and matching coefficients through q squared give an all-order proof.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H026",
+      "domain": "asterion-extension",
+      "title": "universal Jordan twining series",
+      "equation": "U_T(q)=phi(q)^2/phi(q^5)^50",
+      "status": "derived",
+      "assumptions": "A nonidentity grading automorphism has eigenmultiplicities 48,50,50,50,50 on E8; PBW gives this all-order trace.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H027",
+      "domain": "asterion-extension",
+      "title": "finite Fourier grade populations",
+      "equation": "d_(n,0)=(H_n+124T_n)/125; d_(n,a!=0)=(H_n-T_n)/125",
+      "status": "derived",
+      "assumptions": "Use the 125-character Fourier inversion for G=F5^3; all nonidentity twines coincide. The same formula applies to universal PBW counts.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H028",
+      "domain": "asterion-extension",
+      "title": "graded relation deficit",
+      "equation": "r_(n,a)=u_(n,a)-d_(n,a); sum_a r_(n,a)=U_n-H_n",
+      "status": "definition",
+      "assumptions": "The deficit counts the full null ideal at a degree and grade; it is not the arc-kernel dimension.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H029",
+      "domain": "asterion-extension",
+      "title": "neutral-sector imbalance",
+      "equation": "r_(n,0)-r_(n,a!=0)=[q^n](U_T-T)",
+      "status": "derived",
+      "assumptions": "This is exact Fourier algebra and gives an all-order test of whether discarded states are grade-uniform.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H030",
+      "domain": "asterion-extension",
+      "title": "asymptotic retention",
+      "equation": "log rho_n ~ (4*pi/sqrt(3)-2*pi*sqrt(248/6))*sqrt(n)",
+      "status": "derived",
+      "assumptions": "Character asymptotics describe n tending to infinity for the fixed level-one simple quotient and universal PBW population.",
+      "source": "docs/ASTERION_CURRENTS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H031",
+      "domain": "asterion-extension",
+      "title": "split Casimir from exact metric",
+      "equation": "Omega=sum_(a,b) G^ab ad(X_a) tensor ad(X_b)",
+      "status": "definition",
+      "assumptions": "G is the normalized invariant metric with roots of squared length two; large fourth-order arrays are unnecessary.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H032",
+      "domain": "asterion-extension",
+      "title": "five adjoint tensor channels",
+      "equation": "248 tensor 248=1+248+3875+27000+30380",
+      "status": "derived",
+      "assumptions": "Multiplicity-free E8 representation decomposition; four adjoint invariant tensors therefore form a five-dimensional space.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H033",
+      "domain": "asterion-extension",
+      "title": "spectral projectors",
+      "equation": "P_lambda=product_(mu!=lambda)(Omega-mu I)/(lambda-mu)",
+      "status": "derived",
+      "assumptions": "The five actual split-Casimir eigenvalues are -60,-30,-12,0,2; denominator primes lie among 2,3,5,7,31.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H034",
+      "domain": "asterion-extension",
+      "title": "KZ pair residues",
+      "equation": "A=Omega_12|Inv(g^tensor4); B=Omega_23|Inv(g^tensor4)",
+      "status": "exact_checked",
+      "assumptions": "The implementation reconstructs matrices from invariant-tensor evaluations and checks additional evaluations independently.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H035",
+      "domain": "asterion-extension",
+      "title": "five-channel KZ system",
+      "equation": "F'(z)=(A/z+B/(z-1))F(z)/(k+30)",
+      "status": "derived",
+      "assumptions": "Generic complex level k!=-30. All five classical tensor channels survive the integrable fusion interpretation when k>=4.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H036",
+      "domain": "asterion-extension",
+      "title": "five invariant tensor frame",
+      "equation": "t=(G_ab G_cd,G_ac G_bd,G_ad G_bc,B([a,b],[c,d]),B([a,c],[b,d]))",
+      "status": "definition",
+      "assumptions": "A certified invertible evaluation minor fixes the frame. Tensor identities must be checked beyond the interpolation points.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H037",
+      "domain": "asterion-extension",
+      "title": "crossing involution",
+      "equation": "C^2=I; B=C A C^-1 for the declared pair permutation",
+      "status": "exact_checked",
+      "assumptions": "The exact permutation convention accompanies the matrices; crossing does not by itself prove every desired quantum identity.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H038",
+      "domain": "asterion-extension",
+      "title": "residue characteristic identity",
+      "equation": "A(A+60I)(A+30I)(A+12I)(A-2I)=0",
+      "status": "exact_checked",
+      "assumptions": "The factors encode eigenvalues 0,-60,-30,-12,2 in root-length-squared-two normalization.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H039",
+      "domain": "asterion-extension",
+      "title": "Frobenius recurrence",
+      "equation": "((n+rho)I-h A)v_n=-h B sum_(m<n)v_m; h=1/(k+30)",
+      "status": "derived",
+      "assumptions": "F=z^rho sum_n v_n z^n near zero. Singular recurrence matrices require compatibility or logarithmic terms.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H040",
+      "domain": "asterion-extension",
+      "title": "resonance condition",
+      "equation": "rho_j-rho_i in positive integers with rho_i=lambda_i/(k+30)",
+      "status": "definition",
+      "assumptions": "Resonance is a candidate for logarithms, not a proof that logarithms occur; compatibility must be evaluated on the actual residues.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H041",
+      "domain": "asterion-extension",
+      "title": "resonance compatibility witness",
+      "equation": "ell^T M=0 and ell^T rhs!=0 => M v=rhs has no solution",
+      "status": "derived",
+      "assumptions": "An exact left-kernel row certifies failure of a log-free Frobenius recurrence at the specified order and level.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H042",
+      "domain": "asterion-extension",
+      "title": "logarithmic Frobenius ansatz",
+      "equation": "F=z^rho sum_n sum_j v_(n,j) z^n (log z)^j",
+      "status": "definition",
+      "assumptions": "Generalized recurrence coefficients must be solved when resonance blocks an ordinary series; unresolved log orders remain explicit.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H043",
+      "domain": "asterion-extension",
+      "title": "certified noncommuting holonomy pair",
+      "equation": "||UV-VU||>=positive rational lower bound at k=4",
+      "status": "exact_checked",
+      "assumptions": "Gaussian-rational Taylor transport, rational Cauchy bounds and reflected-path crossing enclose both generator holonomies. This certifies a nonabelian image, not a classification or density theorem for the full monodromy group.",
+      "source": "docs/ASTERION_KZ.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_kz.py"
+    },
+    {
+      "id": "PJ-H044",
+      "domain": "asterion-extension",
+      "title": "terminating hypergeometric sum",
+      "equation": "_4F_3(a,b,c,-N;d,e,f;1)=sum_(j=0)^N (a)_j(b)_j(c)_j(-N)_j/((d)_j(e)_j(f)_j j!)",
+      "status": "exact_checked",
+      "assumptions": "Use rising factorials, nonnegative integer N, and no zero denominator on the sum's support.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H045",
+      "domain": "asterion-extension",
+      "title": "Racah factorial sum",
+      "equation": "{a b p;c d q}=Delta(a,b,p)Delta(a,d,q)Delta(c,b,q)Delta(c,d,p) sum_z (-1)^z(z+1)!/(four lower factorials times three upper factorials)",
+      "status": "derived",
+      "assumptions": "Admissible triangle data fix all factorial arguments and summation bounds; rational normalization can avoid unnecessary radicals.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H046",
+      "domain": "asterion-extension",
+      "title": "principal recoupling",
+      "equation": "F_pq=(-1)^(a+b+c+d)*sqrt((2p+1)(2q+1))*{a b p;c d q}",
+      "status": "derived",
+      "assumptions": "Clebsch-Gordan normalization and phase conventions must be fixed before comparing the polynomial implementation.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H047",
+      "domain": "asterion-extension",
+      "title": "recoupling orthogonality",
+      "equation": "sum_q F_pq F_rq=delta_pr",
+      "status": "derived",
+      "assumptions": "Use normalized coordinates or the declared rational-frame Gram matrix; a nonorthonormal polynomial frame uses a weighted identity.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H048",
+      "domain": "asterion-extension",
+      "title": "associativity pentagon",
+      "equation": "F_(12)3,4 F_1,2,(34)=F_2,3,4 F_1,(23),4 F_1,2,3",
+      "status": "derived",
+      "assumptions": "The symbol denotes compatible recouplings of four representations; pentagon consistency alone does not impose E8 Jacobi on arbitrary reduced constants.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H049",
+      "domain": "asterion-extension",
+      "title": "reduced Jacobi constraints",
+      "equation": "sum_channels recoupling_factor * kappa_ab^p * kappa_pc^d + cyclic=0",
+      "status": "definition",
+      "assumptions": "Compile all components of Hom_sl2(V_a tensor V_b tensor V_c,V_d), including intermediate spins outside the eight E8 exponents.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H050",
+      "domain": "asterion-extension",
+      "title": "forbidden-channel cancellation",
+      "equation": "Jacobi_component_q=0 also for q notin M",
+      "status": "derived",
+      "assumptions": "Only the first bracket's actual output is restricted to M; recoupling intermediate spaces can contain additional spins.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H051",
+      "domain": "asterion-extension",
+      "title": "differential current Lie algebra",
+      "equation": "L=Omega^*(M) tensor (t g[t]/t^(N+1)); d=d_dR tensor 1",
+      "status": "derived",
+      "assumptions": "The bracket is wedge times Lie bracket with graded signs. Positive current order makes the coefficient ideal nilpotent.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H052",
+      "domain": "asterion-extension",
+      "title": "homotopy transfer contract",
+      "equation": "p i=1; 1-i p=d h+h d",
+      "status": "definition",
+      "assumptions": "Actual cochain maps and a homotopy are required before transferring a DGLA to an L-infinity algebra.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H053",
+      "domain": "asterion-extension",
+      "title": "finite higher brackets by current order",
+      "equation": "ell_n=0 for n>N on positive-order currents modulo t^(N+1)",
+      "status": "derived",
+      "assumptions": "Every n-input transferred tree has current order at least n; the chosen homotopy acts on the geometric factor only.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H054",
+      "domain": "asterion-extension",
+      "title": "Moyal enveloping closure",
+      "equation": "[x tensor f,y tensor g]_star=([x,y] tensor (f star g+g star f)+(xy+yx) tensor (f star g-g star f))/2",
+      "status": "derived",
+      "assumptions": "The identity holds in U(g) tensor A_star. Symmetric products force directions beyond bare g when scalar multiplication is noncommutative.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H055",
+      "domain": "asterion-extension",
+      "title": "E8 symmetric closure obstruction",
+      "equation": "S^2(248)=1+3875+27000; Hom_E8(S^2(g),g)=0",
+      "status": "derived",
+      "assumptions": "There is no E8-equivariant symmetric multiplication into the adjoint that closes the generic Moyal correction inside 248 directions.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H056",
+      "domain": "asterion-extension",
+      "title": "principal quantum embedding obstruction",
+      "equation": "delta(sum_i e_i)=sum_i h_i wedge e_i notin wedge^2(sl2_principal)",
+      "status": "derived",
+      "assumptions": "For the standard Drinfeld-Jimbo cobracket, the principal embedding is not a Lie-bialgebra embedding. This does not exclude every twisted or quasi-Hopf alternative.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H057",
+      "domain": "asterion-extension",
+      "title": "compatible twist search",
+      "equation": "delta^f(s) subset wedge^2(s); delta^f(x)=delta(x)+[x tensor1+1tensor x,f]",
+      "status": "proposal",
+      "assumptions": "The classical twist equation and higher quantization obligations must also hold; solving the linear inclusion alone is insufficient.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H058",
+      "domain": "asterion-extension",
+      "title": "elliptic E8 dynamical dependence",
+      "equation": "R=R(z,lambda), lambda in h^*, dim h=8",
+      "status": "proposal",
+      "assumptions": "Use an established dynamical or half-current elliptic framework. An ordinary theta rescaling of the existing finite brackets does not prove Yang-Baxter consistency.",
+      "source": "docs/ASTERION_HIGHER.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H059",
+      "domain": "asterion-extension",
+      "title": "affine PBW straightening",
+      "equation": "X[-m]Y[-n]=Y[-n]X[-m]+[X,Y][-(m+n)]",
+      "status": "exact_checked",
+      "assumptions": "Negative modes acting on the vacuum; a declared total order and exact commutators produce PBW normal forms.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H060",
+      "domain": "asterion-extension",
+      "title": "vacuum annihilation",
+      "equation": "X[m]|0>=0 for m>=0; K|0>=k|0>",
+      "status": "definition",
+      "assumptions": "A positive-mode action can introduce central terms while commuting through negative modes.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H061",
+      "domain": "asterion-extension",
+      "title": "level-one singular vector",
+      "equation": "s=(e_theta[-1])^2|0>; s=0 in L_1(E8)",
+      "status": "derived",
+      "assumptions": "The vector is nonzero in the universal level-one vacuum module and generates the standard integrability null submodule.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H062",
+      "domain": "asterion-extension",
+      "title": "null descendant propagation",
+      "equation": "s=0 => X_1[m_1]...X_r[m_r]s=0",
+      "status": "derived",
+      "assumptions": "Exact PBW replay certifies each displayed descendant; a null descendant is not automatically a new arc-kernel generator.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H063",
+      "domain": "asterion-extension",
+      "title": "Li leading symbol",
+      "equation": "sigma_Li(v)=leading filtration component of the exact PBW relation",
+      "status": "definition",
+      "assumptions": "Conformal degree, PBW length and Li degree are distinct gradings and must be recorded separately.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H064",
+      "domain": "asterion-extension",
+      "title": "arc-to-Li map",
+      "equation": "pi:J_infinity(V/C2(V)) surjects onto gr_Li(V)",
+      "status": "derived",
+      "assumptions": "This canonical map can have nonzero kernel even when the vertex algebra has a simple character formula.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H065",
+      "domain": "asterion-extension",
+      "title": "arc relation defect",
+      "equation": "Delta(q)=sum_n dim(ker pi)_n q^n",
+      "status": "definition",
+      "assumptions": "The arc-kernel differs from the entire affine null ideal. Computing characters alone does not identify these missing relations.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H066",
+      "domain": "asterion-extension",
+      "title": "complete weight-four arc kernel",
+      "equation": "dim J_infinity(R)_4-dim V_4=217001-213126=3875",
+      "status": "exact_checked",
+      "assumptions": "Projected polarization proves the cubic ideal and mixed-jet quotient dimensions; the explicit3875 null-symbol submodule therefore exhausts the weight-four kernel. The infinite differential kernel remains unclassified.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H067",
+      "domain": "asterion-extension",
+      "title": "exact nonmembership functional",
+      "equation": "ell^T M=0; ell^T v!=0 => v notin image M",
+      "status": "derived",
+      "assumptions": "A fully enumerated sector's relation matrix M and exact functional certify that a new relation is not generated by the declared old relations.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H068",
+      "domain": "asterion-extension",
+      "title": "complete kernel presentation gate",
+      "equation": "ker pi=<explicit generators and their differential consequences>",
+      "status": "proposal",
+      "assumptions": "Requires inclusion in both directions and a completeness argument; finitely many computed degrees alone do not close the global gate.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H069",
+      "domain": "asterion-extension",
+      "title": "projected polarization spectrum",
+      "equation": "mu P_I delta|_(248,30380,779247,1763125)=(54/31,3/7,13/7,3)",
+      "status": "exact_checked",
+      "assumptions": "Four explicit highest vectors exhaust Sym^3(g). The complementary scalars39/31,18/7,8/7,0 identify the projected-gradient kernel and prove the complete weight-four arc dimension.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H070",
+      "domain": "asterion-extension",
+      "title": "relation entropy",
+      "equation": "S_rel(n)=log(dim U_n/dim V_n)=-log rho_n",
+      "status": "definition",
+      "assumptions": "This logarithmic retention measure is a declared interpretation of exact graded counts; it does not assign physical entropy without further assumptions.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H071",
+      "domain": "asterion-extension",
+      "title": "index-five lattice gluing",
+      "equation": "E8=union_(i mod5) (A4+omega_i) direct-sum (A4+omega_(2i))",
+      "status": "derived",
+      "assumptions": "The union consists of five cosets of A4+A4; weight one realizes 48+4*50=248.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py; docs/ASTERION_CURRENTS.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H072",
+      "domain": "asterion-extension",
+      "title": "hypergeometric modular period",
+      "equation": "E4=(1-lambda+lambda^2)*(_2F_1(1/2,1/2;1;lambda))^4",
+      "status": "derived",
+      "assumptions": "Choose the branch near the modular cusp and compatible theta conventions. The hypergeometric period cancels in the unrefined normalized character E4/eta^8.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py; docs/ASTERION_PERIODS.md; src/perfectjet/asterion_periods.py; https://dlmf.nist.gov/19.5"
+    },
+    {
+      "id": "PJ-H073",
+      "domain": "asterion-extension",
+      "title": "explicit quadratic highest vector",
+      "equation": "e_i Q=0 for i=1..8; wt(Q)=omega_3875; Q in Sym^2(g)",
+      "status": "exact_checked",
+      "assumptions": "The primitive seven-term quadratic is constructed by exact raising-map nullspace; its finite irreducible module has dimension 3875.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H074",
+      "domain": "asterion-extension",
+      "title": "equivariant cubic jet generator",
+      "equation": "F_Q=sum_a (ad(t_a)Q)*partial(t^a)",
+      "status": "exact_checked",
+      "assumptions": "Use the actual invariant dual basis. The displayed highest vector has 783 nonzero terms and Li degree one at conformal weight four.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H075",
+      "domain": "asterion-extension",
+      "title": "reduced affine Gram certificate",
+      "equation": "G=[[45696,-336,-2016],[-336,210,84],[-2016,84,112]]; G*(1,-8,24)^T=0",
+      "status": "exact_checked",
+      "assumptions": "The frame is Sym(F_Q), Q_(3,1), Q_(2,2). Full-sector pairing, not only this reduced matrix, certifies the null relation.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H076",
+      "domain": "asterion-extension",
+      "title": "explicit weight-four null lift",
+      "equation": "R=Sym(F_Q)-8 Q_(3,1)+24 Q_(2,2)",
+      "status": "exact_checked",
+      "assumptions": "The actual PBW lift has 804 terms. Its leading Li symbol is F_Q and it vanishes in the level-one simple quotient.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H077",
+      "domain": "asterion-extension",
+      "title": "complete root-weight radical check",
+      "equation": "<w,R>=0 for all 14441 PBW monomials of conformal weight4 and root weight omega_3875",
+      "status": "exact_checked",
+      "assumptions": "The exhaustive flag regenerates the complete sector; other root weights pair to zero by Cartan invariance. Counts are not a full infinite-kernel presentation.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H078",
+      "domain": "asterion-extension",
+      "title": "old-source highest-weight exclusion",
+      "equation": "ker(raise on Sym^3(g)_omega)=0; ker(raise and Omega12-2 on (Sym^2(g) tensor g)_omega)=0",
+      "status": "exact_checked",
+      "assumptions": "Full-column-rank modular certificates at prime1009 prove rational injectivity and exclude a 3875 component from the old differential relation sources.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py"
+    },
+    {
+      "id": "PJ-H079",
+      "domain": "asterion-extension",
+      "title": "recoupling constraint loss certificate",
+      "equation": "rank J_(7,11,13;17)=13; rank J_restricted=4",
+      "status": "exact_checked",
+      "assumptions": "All 15 intermediate equation coordinates are retained. Keeping only exponent-labelled coordinates loses nine independent quadratic constraints in this specific problem.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py; docs/ASTERION_HIGHER.md; src/perfectjet/asterion_higher.py"
+    },
+    {
+      "id": "PJ-H080",
+      "domain": "asterion-extension",
+      "title": "first graded relation imbalance",
+      "equation": "U_T(q)-T(q)=48 q^5+O(q^6)",
+      "status": "derived",
+      "assumptions": "Together with finite Fourier inversion, null removal is uniform across all125 grades through degree4 and first differs by48 between neutral and each nonneutral grade at degree5.",
+      "source": "docs/ASTERION_RELATIONS.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_relations.py; docs/ASTERION_CURRENTS.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H081",
+      "domain": "asterion-extension",
+      "title": "equivariant two-cochain dimension",
+      "equation": "dim Hom_sl2(wedge^2(g),g)=170; dim End_sl2(g)=8",
+      "status": "derived",
+      "assumptions": "The multiplicity-free principal decomposition and Clebsch-Gordan rules give these finite dimensions; all eight spins occur once.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "id": "PJ-H082",
+      "domain": "asterion-extension",
+      "title": "actual diagonal gauge derivative",
+      "equation": "G_(a,b,c),m=kappa_ab^c*(delta_am+delta_bm-delta_cm)",
+      "status": "exact_checked",
+      "assumptions": "Columns are the derivatives of diagonal basis scalings in the actual principal coordinates; the exact matrix has rank eight.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "id": "PJ-H083",
+      "domain": "asterion-extension",
+      "title": "principal-action fixed gauge",
+      "equation": "s_1=0 => dim im G_fixed=7 in a 162-dimensional coefficient slice",
+      "status": "exact_checked",
+      "assumptions": "All eight principal action coefficients are fixed. On gauge tangents their variation depends on the single parameter s_1.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "id": "PJ-H084",
+      "domain": "asterion-extension",
+      "title": "Whitehead equivariant exactness",
+      "equation": "H^2(g,g)=0 => Z^2(g,g)^sl2=d(End_sl2(g))",
+      "status": "derived",
+      "assumptions": "Uses Whitehead's lemma and exactness of taking invariants for finite-dimensional semisimple sl2 modules. The principal centralizer is zero.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "id": "PJ-H085",
+      "domain": "asterion-extension",
+      "title": "reduced tangent rank",
+      "equation": "dim ker D(Jacobi)_fixed=7; rank D(Jacobi)_fixed=162-7=155",
+      "status": "exact_checked",
+      "assumptions": "155 literal independent selected Jacobian rows and seven actual gauge columns give matching bounds. The complete grid is not assembled; Whitehead supplies an independent theoretical cross-check.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "id": "PJ-H086",
+      "domain": "asterion-extension",
+      "title": "reconstructed gauge tangent",
+      "equation": "s=G_pivot^-1 v_pivot; v is tangent iff v=G s",
+      "status": "derived",
+      "assumptions": "The supplied invertible gauge minor gives an exact membership test and a failing row functional; completeness uses the declared Whitehead dependency.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "id": "PJ-H087",
+      "domain": "asterion-extension",
+      "title": "Cartan conformal null relations",
+      "equation": "s_l=(1/2)sum_(i,j in l)G^ij J_i[-1]J_j[-1]|0>; s_l-s_0=0 in L_1(E8)",
+      "status": "derived",
+      "assumptions": "The31Jordan Cartans have disjoint quadratic supports, giving30independent neutral null relations; they do not exhaust the216neutral quadratic null states.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py; docs/ASTERION_CURRENTS.md; src/perfectjet/asterion_currents.py"
+    },
+    {
+      "id": "PJ-H088",
+      "domain": "asterion-extension",
+      "title": "Cartan average and Sugawara",
+      "equation": "omega=(1/31)sum_(l=1)^31 s_l=s_l in L_1(E8)",
+      "status": "derived",
+      "assumptions": "The universal Sugawara expression is the average; equality of individual rank-eight Cartan states holds in the simple level-one quotient. No unrestricted mod31 equivalence is asserted.",
+      "source": "docs/ASTERION_RIGIDITY.md; docs/ASTERION_EXTENSION.md; src/perfectjet/asterion_rigidity.py; docs/ASTERION_CURRENTS.md; src/perfectjet/asterion_currents.py"
+    }
+  ]
+}

@@ -1,0 +1,1067 @@
+{
+  "all_order_transformations": {
+    "S": "Theta(-1/tau,z/tau)=tau^4*exp(pi*i*(z,z)/tau)*Theta(tau,z)",
+    "T": "Theta(tau+1,z)=Theta(tau,z)",
+    "elliptic": "Theta(tau,z+tau*lambda+mu)=q^(-|lambda|^2/2)*e^(-2*pi*i*(lambda,z))*Theta(tau,z)",
+    "physical_character_S": "chi(-1/tau,z/tau)=exp(pi*i*(z,z)/tau)*chi(tau,z)",
+    "proof_inputs": "evenness, unimodularity, Poisson summation, eta transformations"
+  },
+  "analytic_scope": "Classical Jacobi/weighted-theta theorems; not a proof of an elliptic quantum R matrix or KZ-to-KZB monodromy identification",
+  "charge_multiplicity": "dim V[n,alpha]=p8(n-|alpha|^2/2)",
+  "complete_tensor_coverage": "D8 permutations and even sign changes; partitions through4 plus all-odd degree8",
+  "degree8_defect": {
+    "H8_root": "sum_alpha_root (alpha,u)^8-30*|u|^8",
+    "all_order_identity": "sum_n [M8_n(u)-N_n*n^4*|u|^8/8]*q^n=H8_root(u)*Delta(q)",
+    "all_shell_8design_criterion": "shell_n is an8-design iff tau(n)=0",
+    "arithmetic_boundary": "Lehmer's conjecture remains open",
+    "fock_identity": "angular_defect_H(q,u)=H8_root(u)*q*phi(q)^16",
+    "nonvanishing_for_all_shells_proved": false,
+    "ramanujan_tau_through_bound": [
+      0,
+      1,
+      -24,
+      252,
+      -1472
+    ],
+    "root_axis_value": "-3/2"
+  },
+  "derivative_convention": "D_tau=(2*pi*i)^(-1)*d_tau; D_zi=(2*pi*i)^(-1)*d_zi",
+  "elliptic_shift_checks": 213128,
+  "exhaustive_requested": true,
+  "harmonic_modular_relation_compiler": {
+    "all_order_theorem": "Theta_(E8,P_d) in S_(4+d)=Delta*Q[E4,E6]_(d-8)",
+    "angular_degrees": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "coefficient_scope": "Exact e1 directional specialization; polynomial-valued identity follows from harmonic theta modularity and the same Sturm bound",
+    "first_two_dimensional_angular_sector": 20,
+    "global_priority_claim": false,
+    "maximum_q_degree": 4,
+    "passed": true,
+    "sectors": [
+      {
+        "axis_specialized_coefficients": [],
+        "axis_weighted_theta": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "basis_Delta_E4_E6_exponents": [],
+        "cusp_dimension": 0,
+        "harmonic_degree": 2,
+        "modular_weight": 6,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 0
+      },
+      {
+        "axis_specialized_coefficients": [],
+        "axis_weighted_theta": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "basis_Delta_E4_E6_exponents": [],
+        "cusp_dimension": 0,
+        "harmonic_degree": 4,
+        "modular_weight": 8,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 0
+      },
+      {
+        "axis_specialized_coefficients": [],
+        "axis_weighted_theta": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "basis_Delta_E4_E6_exponents": [],
+        "cusp_dimension": 0,
+        "harmonic_degree": 6,
+        "modular_weight": 10,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 0
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-3/2"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "-3/2",
+          "36",
+          "-378",
+          "2208"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            0,
+            0
+          ]
+        ],
+        "cusp_dimension": 1,
+        "harmonic_degree": 8,
+        "modular_weight": 12,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 1
+      },
+      {
+        "axis_specialized_coefficients": [],
+        "axis_weighted_theta": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "basis_Delta_E4_E6_exponents": [],
+        "cusp_dimension": 0,
+        "harmonic_degree": 10,
+        "modular_weight": 14,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 1
+      },
+      {
+        "axis_specialized_coefficients": [
+          "441/416"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "441/416",
+          "11907/52",
+          "-369117/104",
+          "191394/13"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            1,
+            0
+          ]
+        ],
+        "cusp_dimension": 1,
+        "harmonic_degree": 12,
+        "modular_weight": 16,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 1
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-363/512"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "-363/512",
+          "11979/32",
+          "388773/128",
+          "-209451/2"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            0,
+            1
+          ]
+        ],
+        "cusp_dimension": 1,
+        "harmonic_degree": 14,
+        "modular_weight": 18,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 1
+      },
+      {
+        "axis_specialized_coefficients": [
+          "1729/8704"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "1729/8704",
+          "98553/1088",
+          "21894327/2176",
+          "-8546447/136"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            2,
+            0
+          ]
+        ],
+        "cusp_dimension": 1,
+        "harmonic_degree": 16,
+        "modular_weight": 20,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 1
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-1911/48640"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "-1911/48640",
+          "17199/1520",
+          "61555221/12160",
+          "7517874/95"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            1,
+            1
+          ]
+        ],
+        "cusp_dimension": 1,
+        "harmonic_degree": 18,
+        "modular_weight": 22,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 1
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-15275/22528",
+          "62867/90112"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "1767/90112",
+          "13351329/11264",
+          "-1195294779/22528",
+          "2135954199/1408"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "cusp_dimension": 2,
+        "harmonic_degree": 20,
+        "modular_weight": 24,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 2
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-969/1507328"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "-969/1507328",
+          "2907/94208",
+          "47433519/376832",
+          "127000047/5888"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            2,
+            1
+          ]
+        ],
+        "cusp_dimension": 1,
+        "harmonic_degree": 22,
+        "modular_weight": 26,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 2
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-1644503/2662400",
+          "25975901/42598400"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "-336147/42598400",
+          "5644073169/5324800",
+          "2154572360451/10649600",
+          "-6162176265819/665600"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "cusp_dimension": 2,
+        "harmonic_degree": 24,
+        "modular_weight": 28,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 2
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-1428625/3538944",
+          "2871659/7077888"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "1601/786432",
+          "2858851/4096",
+          "-25262604297/65536",
+          "562832881/96"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "cusp_dimension": 2,
+        "harmonic_degree": 26,
+        "modular_weight": 30,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 2
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-9136151/14254080",
+          "587184983/912261120"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "823773/304087040",
+          "42220478439/38010880",
+          "36488835841311/76021760",
+          "212022257639781/4751360"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "cusp_dimension": 2,
+        "harmonic_degree": 28,
+        "modular_weight": 32,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 2
+      },
+      {
+        "axis_specialized_coefficients": [
+          "-13146315/16252928",
+          "1678080495/2080374784"
+        ],
+        "axis_weighted_theta": [
+          "0",
+          "-4647825/2080374784",
+          "5858360235/4194304",
+          "-226622515060305/520093696",
+          "-1379741659302825/8126464"
+        ],
+        "basis_Delta_E4_E6_exponents": [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "cusp_dimension": 2,
+        "harmonic_degree": 30,
+        "modular_weight": 34,
+        "residual": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "sturm_bound": 2
+      }
+    ]
+  },
+  "harmonic_projection_coefficients": [
+    "1",
+    "-7/5",
+    "7/12",
+    "-7/96",
+    "1/768"
+  ],
+  "heat_equations": [
+    "(2*D_tau-sum_i D_zi^2)Theta=0",
+    "(2*D_tau-sum_i D_zi^2)H=(2/3)*(1-E2)*H",
+    "(2*D_tau-sum_i D_zi^2)chi=-(2/3)*E2*chi"
+  ],
+  "heat_residual": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "lattice_points_enumerated": 26641,
+  "lattice_shell_counts": [
+    1,
+    240,
+    2160,
+    6720,
+    17520
+  ],
+  "maximum_lattice_degree": 4,
+  "moment_rows": [
+    {
+      "exponents": [
+        2
+      ],
+      "moment": "60",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "60"
+    },
+    {
+      "exponents": [
+        4
+      ],
+      "moment": "36",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "36"
+    },
+    {
+      "exponents": [
+        2,
+        2
+      ],
+      "moment": "12",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "12"
+    },
+    {
+      "exponents": [
+        6
+      ],
+      "moment": "30",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "30"
+    },
+    {
+      "exponents": [
+        4,
+        2
+      ],
+      "moment": "6",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "6"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2
+      ],
+      "moment": "2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "2"
+    },
+    {
+      "exponents": [
+        8
+      ],
+      "moment": "57/2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "30"
+    },
+    {
+      "exponents": [
+        6,
+        2
+      ],
+      "moment": "9/2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "30/7"
+    },
+    {
+      "exponents": [
+        4,
+        4
+      ],
+      "moment": "9/2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "18/7"
+    },
+    {
+      "exponents": [
+        4,
+        2,
+        2
+      ],
+      "moment": "1/2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "6/7"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "moment": "1/2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "2/7"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "moment": "1/2",
+      "residual": "0",
+      "shell": 1,
+      "spherical": "0"
+    },
+    {
+      "exponents": [
+        2
+      ],
+      "moment": "1080",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "1080"
+    },
+    {
+      "exponents": [
+        4
+      ],
+      "moment": "1296",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "1296"
+    },
+    {
+      "exponents": [
+        2,
+        2
+      ],
+      "moment": "432",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "432"
+    },
+    {
+      "exponents": [
+        6
+      ],
+      "moment": "2160",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "2160"
+    },
+    {
+      "exponents": [
+        4,
+        2
+      ],
+      "moment": "432",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "432"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2
+      ],
+      "moment": "144",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "144"
+    },
+    {
+      "exponents": [
+        8
+      ],
+      "moment": "4356",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "4320"
+    },
+    {
+      "exponents": [
+        6,
+        2
+      ],
+      "moment": "612",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "4320/7"
+    },
+    {
+      "exponents": [
+        4,
+        4
+      ],
+      "moment": "324",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "2592/7"
+    },
+    {
+      "exponents": [
+        4,
+        2,
+        2
+      ],
+      "moment": "132",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "864/7"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "moment": "36",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "288/7"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "moment": "-12",
+      "residual": "0",
+      "shell": 2,
+      "spherical": "0"
+    },
+    {
+      "exponents": [
+        2
+      ],
+      "moment": "5040",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "5040"
+    },
+    {
+      "exponents": [
+        4
+      ],
+      "moment": "9072",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "9072"
+    },
+    {
+      "exponents": [
+        2,
+        2
+      ],
+      "moment": "3024",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "3024"
+    },
+    {
+      "exponents": [
+        6
+      ],
+      "moment": "22680",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "22680"
+    },
+    {
+      "exponents": [
+        4,
+        2
+      ],
+      "moment": "4536",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "4536"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2
+      ],
+      "moment": "1512",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "1512"
+    },
+    {
+      "exponents": [
+        8
+      ],
+      "moment": "67662",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "68040"
+    },
+    {
+      "exponents": [
+        6,
+        2
+      ],
+      "moment": "9774",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "9720"
+    },
+    {
+      "exponents": [
+        4,
+        4
+      ],
+      "moment": "6318",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "5832"
+    },
+    {
+      "exponents": [
+        4,
+        2,
+        2
+      ],
+      "moment": "1854",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "1944"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "moment": "702",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "648"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "moment": "126",
+      "residual": "0",
+      "shell": 3,
+      "spherical": "0"
+    },
+    {
+      "exponents": [
+        2
+      ],
+      "moment": "17520",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "17520"
+    },
+    {
+      "exponents": [
+        4
+      ],
+      "moment": "42048",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "42048"
+    },
+    {
+      "exponents": [
+        2,
+        2
+      ],
+      "moment": "14016",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "14016"
+    },
+    {
+      "exponents": [
+        6
+      ],
+      "moment": "140160",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "140160"
+    },
+    {
+      "exponents": [
+        4,
+        2
+      ],
+      "moment": "28032",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "28032"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2
+      ],
+      "moment": "9344",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "9344"
+    },
+    {
+      "exponents": [
+        8
+      ],
+      "moment": "562848",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "560640"
+    },
+    {
+      "exponents": [
+        6,
+        2
+      ],
+      "moment": "79776",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "560640/7"
+    },
+    {
+      "exponents": [
+        4,
+        4
+      ],
+      "moment": "45216",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "336384/7"
+    },
+    {
+      "exponents": [
+        4,
+        2,
+        2
+      ],
+      "moment": "16544",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "112128/7"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "moment": "5024",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "37376/7"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "moment": "-736",
+      "residual": "0",
+      "shell": 4,
+      "spherical": "0"
+    }
+  ],
+  "normalized_character": "H(tau,z)=Theta_E8(tau,z)/phi(q)^8",
+  "passed": true,
+  "refined_character_totals": [
+    1,
+    248,
+    4124,
+    34752,
+    213126
+  ],
+  "schema": "perfectjet/asterion-jacobi/1",
+  "source_sha256": {
+    "asterion.py": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+    "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+    "asterion_boundary.py": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
+    "asterion_currents.py": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
+    "asterion_deformations.py": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+    "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "asterion_elliptic.py": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
+    "asterion_extension.py": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
+    "asterion_frontiers.py": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+    "asterion_higher.py": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
+    "asterion_jacobi.py": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
+    "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+    "asterion_kernel_characters.py": "5dfef1c18dfe41358ccd402fb01f3818e0e2150487163240ec75f0b3a0325b39",
+    "asterion_kernel_tower.py": "70d79724fb1bdd8346c2089ff1d9173e37cb6561b9cb30167c51ddc957c71d67",
+    "asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+    "asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+    "asterion_monodromy_algebra.py": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
+    "asterion_periods.py": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+    "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+    "asterion_quartic.py": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
+    "asterion_quartic_characters.py": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
+    "asterion_relations.py": "503996dedc93e8330dd1c769704119cf2a430e304e38cb2186de7ba3eba9d108",
+    "asterion_rigidity.py": "bf98c2b41e77378397f9a34ce6276f1745d1eafa804a23363661a03e6e3be6dc",
+    "asterion_transport.py": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754"
+  },
+  "sources": [
+    "https://arxiv.org/abs/1706.04619",
+    "https://www.unige.ch/math/folks/delaharpe/articles/10HaPaVe2006.pdf",
+    "https://people.math.harvard.edu/~elkies/M272.19/oct23.pdf"
+  ],
+  "theta": "Theta_E8(tau,z)=sum_alpha q^(|alpha|^2/2)*exp(2*pi*i*(alpha,z))",
+  "weyl_reflection_checks": 213128
+}

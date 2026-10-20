@@ -19,7 +19,7 @@ class IntegratedMathLabTests(unittest.TestCase):
                 self.assertEqual(digest, original[row['id']], row['id'])
         self.assertEqual(len(cat['equations']), len(source))
         self.assertEqual(len({row['id'] for row in cat['equations']}), len(source))
-        self.assertEqual(len(cat['families']), 25)
+        self.assertEqual(len(cat['families']), 26)
         self.assertTrue({f'PJ-A{i:03d}' for i in range(1,41)} <= {row['id'] for row in source})
         self.assertEqual({e['status'] for e in cat['equations'] if e['id'] in ('PJ-E122','PJ-E194')}, {'rejected'})
 

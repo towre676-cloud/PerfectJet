@@ -583,3 +583,31 @@ Every entry has a canonical chapter. Coverage means preserved discussion, not im
 | PJ-T577 | Asterion basis calculus | Linearized Jacobi cohomology | [34_asterion_basis](chapters/34_asterion_basis.md) |
 | PJ-T578 | Asterion basis calculus | Exact second-order obstruction witnesses | [34_asterion_basis](chapters/34_asterion_basis.md) |
 | PJ-T579 | Asterion basis calculus | Small-dimensional rigidity comparisons | [34_asterion_basis](chapters/34_asterion_basis.md) |
+| PJ-T580 | Asterion fields, hypergeometry and relations | Principal Rees family and polynomial Jacobi specialization | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T581 | Asterion fields, hypergeometry and relations | Class-four nilradical and leading interaction channels | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T582 | Asterion fields, hypergeometry and relations | Diagonal contraction cone and complete bounded cut classifications | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T583 | Asterion fields, hypergeometry and relations | Invariant-form obstruction and quadratic completion bounds | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T584 | Asterion fields, hypergeometry and relations | Canonical cotangent extension with nondegenerate pairing | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T585 | Asterion fields, hypergeometry and relations | Affine current cocycle and mode derivation | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T586 | Asterion fields, hypergeometry and relations | All-order level-one state character and PBW retention | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T587 | Asterion fields, hypergeometry and relations | Jordan sector Fourier populations and eta-quotient Sturm proof | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T588 | Asterion fields, hypergeometry and relations | First nonuniform affine null-ideal trace at degree five | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T589 | Asterion fields, hypergeometry and relations | Thirty independent Cartan conformal null relations | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T590 | Asterion fields, hypergeometry and relations | Five exact invariant tensors and split-Casimir residues | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T591 | Asterion fields, hypergeometry and relations | Spectral projectors and arithmetic prime thirty-one | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T592 | Asterion fields, hypergeometry and relations | Logarithmic Frobenius recurrences and resonance compatibility | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T593 | Asterion fields, hypergeometry and relations | Controlled complex transport and noncommuting holonomy | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T594 | Asterion fields, hypergeometry and relations | Rational Racah recoupling and terminating hypergeometric series | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T595 | Asterion fields, hypergeometry and relations | Full intermediate-channel Jacobi constraints | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T596 | Asterion fields, hypergeometry and relations | Finite differential current algebra and actual homotopy transfer | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T597 | Asterion fields, hypergeometry and relations | Moyal enveloping closure and symmetric-square obstruction | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T598 | Asterion fields, hypergeometry and relations | Principal quantum embedding obstruction and dynamical derivatives | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T599 | Asterion fields, hypergeometry and relations | Affine PBW straightening and explicit singular-square descendants | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T600 | Asterion fields, hypergeometry and relations | Explicit weight-four arc-kernel generator and full null lift | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T601 | Asterion fields, hypergeometry and relations | Projected polarization and complete low-weight kernel dimensions | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T602 | Asterion fields, hypergeometry and relations | Uniform thirty-one-dimensional kernel in every Jordan sector | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T603 | Asterion fields, hypergeometry and relations | Literal reduced Jacobi Jacobian and gauge reconstruction | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T604 | Asterion fields, hypergeometry and relations | Smooth local rigidity and the full-support gauge component | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T605 | Asterion fields, hypergeometry and relations | Modular hypergeometric periods and character cancellation | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T606 | Asterion fields, hypergeometry and relations | Evidence-separated discovery ledger and research acceptance gates | [35_asterion_extension](chapters/35_asterion_extension.md) |
+| PJ-T607 | Asterion fields, hypergeometry and relations | Higher-weight differential syzygies and extended quantum frontiers | [35_asterion_extension](chapters/35_asterion_extension.md) |

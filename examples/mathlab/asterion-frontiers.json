@@ -1,0 +1,5 @@
+{
+  "operation": "math-lab",
+  "lab": "asterion-frontiers",
+  "params": {"operation": "jacobi", "max_degree": 4}
+}

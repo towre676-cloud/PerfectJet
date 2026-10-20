@@ -1,0 +1,442 @@
+{
+  "schema": "perfectjet/asterion-frontier-equations/1",
+  "preserved_prefix": {
+    "equation_count": 592,
+    "sha256_of_canonical_records": "d31eeba55780cd3588f4c66cd074efd490e6664f376fadcc1b75229062580570"
+  },
+  "scope": "Exact finite certificates and stated analytic/theoretical consequences; no worldwide priority or full infinite-kernel claim.",
+  "equations": [
+    {
+      "id": "PJ-X001",
+      "domain": "asterion-frontiers",
+      "title": "length-three jet ambient character",
+      "equation": "Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t²)+dim wedge^3g*t³)/((1-t)(1-t²)(1-t³))",
+      "status": "derived",
+      "assumptions": "t counts total derivative degree, with ordinary polynomial length fixed at3.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X002",
+      "domain": "asterion-frontiers",
+      "title": "complete length-three arc character",
+      "equation": "H3(t)=(151373t+961248t²+3321371t³+4932875t⁴+4123000t⁵+1763125t⁶)/((1-t)(1-t²)(1-t³))",
+      "status": "exact_checked",
+      "assumptions": "The finite pair-projector covariance ranks and earlier cubic-polarization certificates determine this all-jet fixed-length sector.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X003",
+      "domain": "asterion-frontiers",
+      "title": "weight-five length-three population",
+      "equation": "dim A[weight5,length3]=1112621",
+      "status": "exact_checked",
+      "assumptions": "A is the arc algebra of the level-one E8 C2 algebra; the derivative degree is2.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X004",
+      "domain": "asterion-frontiers",
+      "title": "weight-five complete arc population",
+      "equation": "dim A5=1112621+96008+248=1208877",
+      "status": "derived",
+      "assumptions": "Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym³g.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X005",
+      "domain": "asterion-frontiers",
+      "title": "weight-five complete kernel",
+      "equation": "dim K5=1208877-1057504=151373",
+      "status": "derived",
+      "assumptions": "The canonical arc-to-associated-graded map is a surjective E8-equivariant graded map.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X006",
+      "domain": "asterion-frontiers",
+      "title": "weight-five kernel character",
+      "equation": "K5=V248+V3875+V147250",
+      "status": "derived",
+      "assumptions": "Exact arc finite-character comparison with independently computed lattice/Freudenthal VOA character; no explicit new highest null lifts are asserted.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X007",
+      "domain": "asterion-frontiers",
+      "title": "weight-five primitive quotient",
+      "equation": "K5/(D K4+g[0]*K4)=V248+V147250; dimension147498",
+      "status": "derived",
+      "assumptions": "Primitive means for the graded commutative differential ideal. D is injective and g[0]*K4=0.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X008",
+      "domain": "asterion-frontiers",
+      "title": "weight-six exact arc and kernel characters",
+      "equation": "dim A6=4716373; K6=1+248+2*3875+30380+147250; dim K6=185629",
+      "status": "derived",
+      "assumptions": "Complete finite characters through weight6: the quartic dual multiplication kernel is exactly1+3875 by two explicit nonzero witnesses and a Casimir cutoff. Minimal generator list and Li placement are not inferred; see ASTERION_QUARTIC.md and asterion_frontiers.py.",
+      "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "id": "PJ-X009",
+      "domain": "asterion-frontiers",
+      "title": "divided-jet translation",
+      "equation": "D x^[r]=(r+1)x^[r+1]; E x^[r]=x^[r-1] for r>0; E x^[0]=0",
+      "status": "definition",
+      "assumptions": "D and E extend by the commutative Leibniz rule; this fixes the divided-jet normalization.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X010",
+      "domain": "asterion-frontiers",
+      "title": "translation Heisenberg relation",
+      "equation": "[E,D]=N; N|ordinary degree p=p",
+      "status": "exact_checked",
+      "assumptions": "The operator identity holds on the polynomial jet algebra and descends to its homogeneous differential-ideal quotient.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X011",
+      "domain": "asterion-frontiers",
+      "title": "lowering preserves the arc ideal",
+      "equation": "E(D^s q)=s*degree(q)*D^(s-1)q",
+      "status": "derived",
+      "assumptions": "q is any homogeneous ordinary relation; E q=0. This is an all-order operator consequence, not a finite extrapolation.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X012",
+      "domain": "asterion-frontiers",
+      "title": "highest kernel symbol is lowering primitive",
+      "equation": "E F_Q=0",
+      "status": "exact_checked",
+      "assumptions": "F_Q is the retained783-term weight-four cubic jet symbol constructed using the invariant dual basis.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X013",
+      "domain": "asterion-frontiers",
+      "title": "exact translation-tower left inverse",
+      "equation": "E^r D^r F_Q=3^r r! F_Q",
+      "status": "derived",
+      "assumptions": "Ordinary degree3, EF_Q=0 and [E,D]=3 on this homogeneous sector; the initial nonzero arc class is imported from the earlier full certificate.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X014",
+      "domain": "asterion-frontiers",
+      "title": "translation injectivity",
+      "equation": "D v=0 and ordinary degree p>0 => v=0",
+      "status": "derived",
+      "assumptions": "E is locally nilpotent and [E,D]=p; iterating D^rE^r v=(-p)^r r!v proves injectivity in the arc quotient.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X015",
+      "domain": "asterion-frontiers",
+      "title": "annihilator syzygy tower",
+      "equation": "D^r(x[0]*F_Q)=sum_(j=0)^r binom(r,j) D^j(x[0])*D^(r-j)F_Q=0",
+      "status": "derived",
+      "assumptions": "The undifferentiated product lies in the ordinary cubic ideal. This gives relations among descendants, not automatic new primitive generators.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X016",
+      "domain": "asterion-frontiers",
+      "title": "lattice-to-Freudenthal multiplicities",
+      "equation": "mult(V_n,mu)=p8(n-(mu,mu)/2)",
+      "status": "exact_checked",
+      "assumptions": "For the E8 lattice VOA, then Weyl-chamber-folded exact Freudenthal subtraction. The code independently reconstructs scalar characters through weight6.",
+      "source": "docs/ASTERION_KERNEL_TOWER.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "id": "PJ-X017",
+      "domain": "asterion-frontiers",
+      "title": "normalized elliptic theta product",
+      "equation": "Theta(z;p)=(exp(z/2)-exp(-z/2))*product_n[(1-p^n exp(z))(1-p^n exp(-z))/(1-p^n)^2]",
+      "status": "definition",
+      "assumptions": "Im tau>0,p=exp(2pi i tau); Theta is odd with derivative1 at0 and has quasiperiods2pi i,log p.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X018",
+      "domain": "asterion-frontiers",
+      "title": "elliptic scalar kernels",
+      "equation": "rho(z)=Thetaprime(z)/Theta(z); Phi(z,x)=Theta(z+x)/(Theta(z)Theta(x))",
+      "status": "definition",
+      "assumptions": "Meromorphic away from the theta divisors in spectral and dynamical parameters; numerator zeros are permitted.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X019",
+      "domain": "asterion-frontiers",
+      "title": "rank-eight E8 dynamical tensor",
+      "equation": "r(z,lambda)=rho(z)*Omega_h+sum_alpha Phi(z,lambda(h_alpha))*e_alpha tensor e_-alpha",
+      "status": "derived",
+      "assumptions": "Actual normalized E8 metric, all240roots and64inverse-Cartan coefficients; this is the classical Felder tensor.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X020",
+      "domain": "asterion-frontiers",
+      "title": "dynamical elliptic Yang-Baxter equation",
+      "equation": "Alt(d r)+[r12,r13]+[r12,r23]+[r13,r23]=0",
+      "status": "exact_checked",
+      "assumptions": "Alt uses h_i in slots1,-2,+3 with partial/lambda_i,lambda_i=lambda(h_i). Analytic all-orders proof uses theta addition; direct series replay is bounded.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X021",
+      "domain": "asterion-frontiers",
+      "title": "spectral unitarity and residue",
+      "equation": "r21(-z,lambda)=-r(z,lambda); Res_z=0 r=Omega",
+      "status": "derived",
+      "assumptions": "Odd theta and the derivative-one normalization fix signs and the residue; all root and Cartan terms are retained.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X022",
+      "domain": "asterion-frontiers",
+      "title": "three-root elliptic Fay generator",
+      "equation": "Phi(u,-b)Phi(u+v,a+b)-Phi(u,a)Phi(v,a+b)+Phi(u+v,a)Phi(v,b)=0",
+      "status": "exact_checked",
+      "assumptions": "The analytic theta-addition identity generates every three-root coefficient;13440ordered E8 root triples are checked against the actual bracket signs.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X023",
+      "domain": "asterion-frontiers",
+      "title": "opposite-root derivative generator",
+      "equation": "partial_a Phi(v,a)+(rho(u)-rho(u+v))*Phi(v,a)-Phi(u,-a)*Phi(u+v,a)=0",
+      "status": "derived",
+      "assumptions": "A Laurent limit of Fay supplies all three Cartan-slot arrangements. Deleting dynamical derivatives leaves a nonzero ordinary CYBE tensor.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X024",
+      "domain": "asterion-frontiers",
+      "title": "rational degeneration",
+      "equation": "r_rat(z,lambda)=Omega/z+sum_alpha e_alpha tensor e_-alpha/lambda(h_alpha)",
+      "status": "exact_checked",
+      "assumptions": "Sequential cusp p->0 followed by additive scaling; the independent full E8 rational CDYBE is replayed.",
+      "source": "docs/ASTERION_ELLIPTIC.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "id": "PJ-X025",
+      "domain": "asterion-frontiers",
+      "title": "level-four exact local spectrum",
+      "equation": "Spec(U)=Spec(V)={zeta17^0,zeta17^1,zeta17^2,zeta17^4,zeta17^11}",
+      "status": "derived",
+      "assumptions": "Five-channel connection hbar=1/34, log-free exact local Frobenius basis; based counterclockwise generators.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X026",
+      "domain": "asterion-frontiers",
+      "title": "actual and projective local order",
+      "equation": "U^17=V^17=I; po(U)=po(V)=17",
+      "status": "derived",
+      "assumptions": "Five distinct local eigenvalues with exact17th-root exponents. Finite local orders do not imply finite group image.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X027",
+      "domain": "asterion-frontiers",
+      "title": "exact determinant image",
+      "equation": "det U=det V=zeta17; det Gamma=mu17",
+      "status": "derived",
+      "assumptions": "Trace of each residue is-100; exponent sum18 is1mod17.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X028",
+      "domain": "asterion-frontiers",
+      "title": "actual-loop spectral projectors",
+      "equation": "P_i(U)=product_(j!=i)(U-lambda_j I)/(lambda_i-lambda_j)",
+      "status": "exact_checked",
+      "assumptions": "Gaussian-rational loop enclosures and rigorous cyclotomic root balls propagate every matrix error.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X029",
+      "domain": "asterion-frontiers",
+      "title": "fixed-level irreducibility certificate",
+      "equation": "P_j V P_i !=0 for all i!=j;20certified blocks",
+      "status": "exact_checked",
+      "assumptions": "The strongly connected spectral graph excludes every proper U-invariant spectral subset at hbar1/34 itself.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X030",
+      "domain": "asterion-frontiers",
+      "title": "compact connected monodromy closure",
+      "equation": "closure(Gamma)^0=SU(5)",
+      "status": "derived",
+      "assumptions": "Specialized irreducibility, prime-dimensional primitivity, finite-primitive classification, level-four WZW unitarity and exclusion of projective self-duality.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X031",
+      "domain": "asterion-frontiers",
+      "title": "full compact monodromy closure",
+      "equation": "closure(Gamma)={g in U(5):det(g)^17=1}; projective closure PU(5)",
+      "status": "derived",
+      "assumptions": "Up to a fixed unitarizing conjugacy; contains17SU5cosets. The countable dense image is not given a discrete presentation.",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X032",
+      "domain": "asterion-frontiers",
+      "title": "complex Zariski closure",
+      "equation": "ZariskiClosure(Gamma)={g in GL5(C):det(g)^17=1}",
+      "status": "derived",
+      "assumptions": "Complexify the connected SU5component and retain the exact17determinant cosets; identity component SL5(C).",
+      "source": "docs/ASTERION_MONODROMY.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "id": "PJ-X033",
+      "domain": "asterion-frontiers",
+      "title": "residue associative algebra",
+      "equation": "Q<A,B>=M5(Q); dimension25",
+      "status": "exact_checked",
+      "assumptions": "Explicit independent word matrices and exact closure replays for the actual five-channel E8 residues.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X034",
+      "domain": "asterion-frontiers",
+      "title": "residue Lie algebra",
+      "equation": "Lie_Q(A,B)=gl5(Q); dimension25",
+      "status": "exact_checked",
+      "assumptions": "Actual nested commutator words, not a generic matrix substitution.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X035",
+      "domain": "asterion-frontiers",
+      "title": "centered residue Lie algebra",
+      "equation": "Lie_Q(A+20I,B+20I)=sl5(Q); dimension24",
+      "status": "exact_checked",
+      "assumptions": "Each original residue has trace-100; centering removes its scalar part.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X036",
+      "domain": "asterion-frontiers",
+      "title": "connected residue coupling graph",
+      "equation": "support_offdiag(B)={0<->1,1<->2,2<->3,3<->4,1<->4}",
+      "status": "exact_checked",
+      "assumptions": "The ten nonzero entries have distinct ad_A weights plus/minus30,18,12,2,32.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X037",
+      "domain": "asterion-frontiers",
+      "title": "spectral matrix-unit generator",
+      "equation": "L_ij(ad_A)(B)=B_ij E_ij",
+      "status": "exact_checked",
+      "assumptions": "Degree10Lagrange polynomial vanishes at all other off-diagonal weights and0. Path commutators generate the remaining matrix units.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X038",
+      "domain": "asterion-frontiers",
+      "title": "cyclotomic self-duality obstruction",
+      "equation": "S={0,1,2,4,11}; no a modulo17 satisfies S=a-S",
+      "status": "exact_checked",
+      "assumptions": "All17similitude factors are exhausted; every candidate bilinear form has rank at most3.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X039",
+      "domain": "asterion-frontiers",
+      "title": "residue-adjoint and invariant forms differ",
+      "equation": "A^T H=H A, B^T H=H B has a positive solution; A^T G+G A=B^T G+G B=0 has onlyG0",
+      "status": "exact_checked",
+      "assumptions": "Selfadjoint residue metrics are not automatically monodromy-invariant metrics; the latter use the unitary WZW theorem.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X040",
+      "domain": "asterion-frontiers",
+      "title": "formal-parameter monodromy closure",
+      "equation": "ZariskiClosure(Gamma_formal)=GL5 over the algebraic closure of C((hbar))",
+      "status": "derived",
+      "assumptions": "The documented torus/generic proof uses residue Lie generation. Pointwise differential Galois GL5 follows for small infinite-order parameters by Schlesinger; no rational-specialization transfer is made.",
+      "source": "docs/ASTERION_MONODROMY_ALGEBRA.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "id": "PJ-X041",
+      "domain": "asterion-frontiers",
+      "title": "rank-eight refined character",
+      "equation": "H(tau,z)=Theta_E8(tau,z)/phi(q)^8; q=exp(2pi i tau)",
+      "status": "derived",
+      "assumptions": "Eight Cartan chemical potentials retain every lattice charge; the finite248directions occur at conformal weight1.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X042",
+      "domain": "asterion-frontiers",
+      "title": "exact charge populations",
+      "equation": "dim V[N,alpha]=p8(N-|alpha|²/2)",
+      "status": "exact_checked",
+      "assumptions": "Complete doubled-coordinate E8 lattice enumeration and oscillator convolution; alpha outside the lattice has multiplicity0.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X043",
+      "domain": "asterion-frontiers",
+      "title": "elliptic lattice translation",
+      "equation": "Theta(tau,z+tau*lambda+mu)=q^(-|lambda|²/2)*exp(-2pi i(lambda,z))*Theta(tau,z)",
+      "status": "derived",
+      "assumptions": "lambda,mu in the integral E8 lattice; exact reindexing proves all orders without truncation-edge assumptions.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X044",
+      "domain": "asterion-frontiers",
+      "title": "oscillator-corrected heat identity",
+      "equation": "(2D_tau-sum_i D_zi²)H=(2/3)(1-E2)H",
+      "status": "exact_checked",
+      "assumptions": "D_tau andD_zi mean derivatives divided by2pi i; the physical q^(-1/3)character has RHS-(2/3)E2chi.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X045",
+      "domain": "asterion-frontiers",
+      "title": "first angular defect polynomial",
+      "equation": "H8_root(u)=sum_root(alpha,u)^8-30|u|^8; Laplacian H8_root=0",
+      "status": "derived",
+      "assumptions": "Root shell is a7design; H8_root(e1)=-3/2 proves a nonzero degree8angular defect.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X046",
+      "domain": "asterion-frontiers",
+      "title": "all-shell Ramanujan angular relation",
+      "equation": "M8_n(u)-N_n*n^4*|u|^8/8=tau(n)*H8_root(u)",
+      "status": "exact_checked",
+      "assumptions": "Weighted harmonic theta modularity gives the all-order identity; whole degree8moment tensors are independently replayed at bounded shells.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X047",
+      "domain": "asterion-frontiers",
+      "title": "affine angular defect density",
+      "equation": "sum_n defect_H,n(u)q^n=H8_root(u)*q*phi(q)^16",
+      "status": "derived",
+      "assumptions": "Oscillator convolution of H8_rootDelta divides byphi^8. This is a charge-angle observable, not a geometric packing gain.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "id": "PJ-X048",
+      "domain": "asterion-frontiers",
+      "title": "higher angular modular relation compiler",
+      "equation": "Theta_(E8,P_d) in S_(4+d)=Delta*Q[E4,E6]_(d-8)",
+      "status": "exact_checked",
+      "assumptions": "Even2<=d<=30; full-rank Sturm panel of at most2qcoefficients. Computed multivariate moment tensors stop at8; higher displayed coefficients specializeu=e1.",
+      "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
+    }
+  ]
+}

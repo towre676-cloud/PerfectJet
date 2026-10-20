@@ -1,0 +1,1736 @@
+{
+  "arithmetic": "exact rational; Wigner symbols retain sign and rational square",
+  "current_form_dgla": {
+    "all_order_reason": "Every rooted transfer tree has a lowest binary vertex followed by h; h of a constant current bracket is zero.",
+    "all_transferred_brackets_arity_at_least_three_vanish": true,
+    "cohomology_dimension": 3,
+    "contraction_side_conditions": "h^2=0, p*h=0, h*i=0, p*i=id, d*i=0, p*d=0",
+    "d_squared_and_contraction_columns": 21,
+    "degree_one_dimension": 9,
+    "degree_zero_dimension": 12,
+    "differential_rank": 9,
+    "dimension": 21,
+    "graded_jacobi_triples": 9261,
+    "graded_skew_and_leibniz_pairs": 441,
+    "passed": true,
+    "scope": "A genuine finite current-form DGLA and contraction. This formal example has strict transferred Lie structure; it does not exhibit a nonzero higher bracket."
+  },
+  "dynamical_boundary": {
+    "alternated_derivative_tensor": {
+      "(0, 1, 2)": "-1/4",
+      "(0, 2, 1)": "1/4",
+      "(1, 0, 2)": "1/4",
+      "(1, 2, 0)": "-1/4",
+      "(2, 0, 1)": "-1/4",
+      "(2, 1, 0)": "1/4"
+    },
+    "classical_dynamical_ybe_holds": true,
+    "dynamical_residual": {},
+    "elliptic_extension_status": "Not implemented: elliptic/spectral kernels, poles, dynamical derivatives and quantum consistency require separate certificates.",
+    "ordinary_cybe_holds": false,
+    "ordinary_cybe_tensor": {
+      "(0, 1, 2)": "1/4",
+      "(0, 2, 1)": "-1/4",
+      "(1, 0, 2)": "-1/4",
+      "(1, 2, 0)": "1/4",
+      "(2, 0, 1)": "1/4",
+      "(2, 1, 0)": "-1/4"
+    },
+    "parameter": 2,
+    "passed": true,
+    "r_tensor": {
+      "(1, 2)": "1/2",
+      "(2, 1)": "-1/2"
+    },
+    "scope": "A proved rational dynamical boundary; no elliptic quantization is asserted."
+  },
+  "jacobi_constraints": [
+    {
+      "actual_coupling_products_match_one_dimensional_kernel": true,
+      "equation_intermediates": [
+        6,
+        7,
+        8
+      ],
+      "evaluation": {
+        "equations_checked": 3,
+        "outside_sector_equations": 2,
+        "passed": true,
+        "residuals": [
+          0,
+          0,
+          0
+        ]
+      },
+      "external_spins": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "full_polynomial_equation_rank": 1,
+      "independent_constraints_lost_by_truncation": 0,
+      "monomial_coordinate_kernel_dimension": 1,
+      "omitted_constraint_witness": null,
+      "outside_sector_intermediates": [
+        6,
+        8
+      ],
+      "quadratic_monomial_count": 2,
+      "quadratic_monomials": [
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            7,
+            7,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            7,
+            7
+          ],
+          [
+            7,
+            7,
+            1
+          ]
+        ]
+      ],
+      "retained_sector_equation_rank": 1,
+      "scope": "Rank of exact quadratic polynomial equations in distinct coupling monomials; not a classification of all nonlinear coupling solutions."
+    },
+    {
+      "actual_coupling_products_match_one_dimensional_kernel": null,
+      "equation_intermediates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "evaluation": {
+        "equations_checked": 15,
+        "outside_sector_equations": 11,
+        "passed": true,
+        "residuals": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "external_spins": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "full_polynomial_equation_rank": 2,
+      "independent_constraints_lost_by_truncation": 0,
+      "monomial_coordinate_kernel_dimension": 2,
+      "omitted_constraint_witness": null,
+      "outside_sector_intermediates": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "quadratic_monomial_count": 4,
+      "quadratic_monomials": [
+        [
+          [
+            1,
+            7,
+            7
+          ],
+          [
+            7,
+            7,
+            1
+          ]
+        ],
+        [
+          [
+            7,
+            7,
+            7
+          ],
+          [
+            7,
+            7,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            7,
+            11
+          ],
+          [
+            7,
+            11,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            7,
+            13
+          ],
+          [
+            7,
+            13,
+            7
+          ]
+        ]
+      ],
+      "retained_sector_equation_rank": 2,
+      "scope": "Rank of exact quadratic polynomial equations in distinct coupling monomials; not a classification of all nonlinear coupling solutions."
+    },
+    {
+      "actual_coupling_products_match_one_dimensional_kernel": true,
+      "equation_intermediates": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "equations_checked": 15,
+        "outside_sector_equations": 11,
+        "passed": true,
+        "residuals": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "external_spins": [
+        7,
+        11,
+        13,
+        17
+      ],
+      "full_polynomial_equation_rank": 13,
+      "independent_constraints_lost_by_truncation": 9,
+      "monomial_coordinate_kernel_dimension": 1,
+      "omitted_constraint_witness": [
+        66,
+        "208609/5625",
+        "19395657/7920625",
+        "-283594/25",
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "outside_sector_intermediates": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "quadratic_monomial_count": 14,
+      "quadratic_monomials": [
+        [
+          [
+            7,
+            11,
+            7
+          ],
+          [
+            7,
+            13,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            11
+          ],
+          [
+            11,
+            13,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            13
+          ],
+          [
+            13,
+            13,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            17
+          ],
+          [
+            7,
+            13,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            17
+          ],
+          [
+            11,
+            13,
+            11
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            17
+          ],
+          [
+            13,
+            17,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            13,
+            11
+          ],
+          [
+            11,
+            11,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            13,
+            13
+          ],
+          [
+            11,
+            13,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            13,
+            17
+          ],
+          [
+            11,
+            13,
+            13
+          ]
+        ],
+        [
+          [
+            7,
+            13,
+            17
+          ],
+          [
+            11,
+            17,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            13,
+            19
+          ],
+          [
+            11,
+            19,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            17,
+            17
+          ],
+          [
+            11,
+            13,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            19,
+            17
+          ],
+          [
+            11,
+            13,
+            19
+          ]
+        ],
+        [
+          [
+            7,
+            23,
+            17
+          ],
+          [
+            11,
+            13,
+            23
+          ]
+        ]
+      ],
+      "retained_sector_equation_rank": 4,
+      "scope": "Rank of exact quadratic polynomial equations in distinct coupling monomials; not a classification of all nonlinear coupling solutions."
+    },
+    {
+      "actual_coupling_products_match_one_dimensional_kernel": true,
+      "equation_intermediates": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "evaluation": {
+        "equations_checked": 23,
+        "outside_sector_equations": 17,
+        "passed": true,
+        "residuals": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "external_spins": [
+        11,
+        13,
+        17,
+        19
+      ],
+      "full_polynomial_equation_rank": 17,
+      "independent_constraints_lost_by_truncation": 11,
+      "monomial_coordinate_kernel_dimension": 1,
+      "omitted_constraint_witness": [
+        "441525466085/44728839162",
+        "-124799003048025/516866585872",
+        "-16477783003/178915356648",
+        "36003409384315/140090724255384",
+        "375486904529/35743312361456",
+        "-87922853210/1060866767257479",
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "outside_sector_intermediates": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18,
+        20,
+        21,
+        22,
+        24
+      ],
+      "quadratic_monomial_count": 18,
+      "quadratic_monomials": [
+        [
+          [
+            7,
+            13,
+            19
+          ],
+          [
+            11,
+            17,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            17,
+            19
+          ],
+          [
+            11,
+            13,
+            7
+          ]
+        ],
+        [
+          [
+            11,
+            11,
+            19
+          ],
+          [
+            13,
+            17,
+            11
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            11
+          ],
+          [
+            11,
+            17,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            13
+          ],
+          [
+            13,
+            17,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            17
+          ],
+          [
+            17,
+            17,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            19
+          ],
+          [
+            11,
+            17,
+            11
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            19
+          ],
+          [
+            13,
+            17,
+            13
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            19
+          ],
+          [
+            17,
+            19,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            13,
+            23
+          ],
+          [
+            17,
+            23,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            17,
+            13
+          ],
+          [
+            13,
+            13,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            17,
+            17
+          ],
+          [
+            13,
+            17,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            17,
+            19
+          ],
+          [
+            13,
+            17,
+            17
+          ]
+        ],
+        [
+          [
+            11,
+            17,
+            19
+          ],
+          [
+            13,
+            19,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            17,
+            23
+          ],
+          [
+            13,
+            23,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            19,
+            19
+          ],
+          [
+            13,
+            17,
+            19
+          ]
+        ],
+        [
+          [
+            11,
+            23,
+            19
+          ],
+          [
+            13,
+            17,
+            23
+          ]
+        ],
+        [
+          [
+            11,
+            29,
+            19
+          ],
+          [
+            13,
+            17,
+            29
+          ]
+        ]
+      ],
+      "retained_sector_equation_rank": 6,
+      "scope": "Rank of exact quadratic polynomial equations in distinct coupling monomials; not a classification of all nonlinear coupling solutions."
+    },
+    {
+      "actual_coupling_products_match_one_dimensional_kernel": true,
+      "equation_intermediates": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "evaluation": {
+        "equations_checked": 15,
+        "outside_sector_equations": 11,
+        "passed": true,
+        "residuals": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "external_spins": [
+        7,
+        11,
+        19,
+        23
+      ],
+      "full_polynomial_equation_rank": 11,
+      "independent_constraints_lost_by_truncation": 7,
+      "monomial_coordinate_kernel_dimension": 1,
+      "omitted_constraint_witness": [
+        "5963067/437",
+        "115258/969",
+        "853281/541880",
+        "-122227/49128552",
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "outside_sector_intermediates": [
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        18
+      ],
+      "quadratic_monomial_count": 12,
+      "quadratic_monomials": [
+        [
+          [
+            7,
+            11,
+            7
+          ],
+          [
+            7,
+            19,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            11
+          ],
+          [
+            11,
+            19,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            13
+          ],
+          [
+            13,
+            19,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            11,
+            17
+          ],
+          [
+            17,
+            19,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            17,
+            23
+          ],
+          [
+            11,
+            19,
+            17
+          ]
+        ],
+        [
+          [
+            7,
+            19,
+            13
+          ],
+          [
+            11,
+            13,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            19,
+            17
+          ],
+          [
+            11,
+            17,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            19,
+            19
+          ],
+          [
+            11,
+            19,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            19,
+            23
+          ],
+          [
+            11,
+            19,
+            19
+          ]
+        ],
+        [
+          [
+            7,
+            19,
+            23
+          ],
+          [
+            11,
+            23,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            23,
+            23
+          ],
+          [
+            11,
+            19,
+            23
+          ]
+        ],
+        [
+          [
+            7,
+            29,
+            23
+          ],
+          [
+            11,
+            19,
+            29
+          ]
+        ]
+      ],
+      "retained_sector_equation_rank": 4,
+      "scope": "Rank of exact quadratic polynomial equations in distinct coupling monomials; not a classification of all nonlinear coupling solutions."
+    }
+  ],
+  "moyal_boundary": {
+    "closed_in_eight_blocks": false,
+    "commutator_terms": [
+      {
+        "coefficient": 3364,
+        "hbar_power": 1,
+        "x_power": 57,
+        "y_power": 57
+      },
+      {
+        "coefficient": 1428139104,
+        "hbar_power": 3,
+        "x_power": 55,
+        "y_power": 55
+      },
+      {
+        "coefficient": 157468402780920,
+        "hbar_power": 5,
+        "x_power": 53,
+        "y_power": 53
+      },
+      {
+        "coefficient": 7119386441577249840,
+        "hbar_power": 7,
+        "x_power": 51,
+        "y_power": 51
+      },
+      {
+        "coefficient": 160742397001236344043750,
+        "hbar_power": 9,
+        "x_power": 49,
+        "y_power": 49
+      },
+      {
+        "coefficient": 2020935247592562128547720000,
+        "hbar_power": 11,
+        "x_power": 47,
+        "y_power": 47
+      },
+      {
+        "coefficient": 15138372524756487137806745070000,
+        "hbar_power": 13,
+        "x_power": 45,
+        "y_power": 45
+      },
+      {
+        "coefficient": 70652947197684919256020908776700000,
+        "hbar_power": 15,
+        "x_power": 43,
+        "y_power": 43
+      },
+      {
+        "coefficient": 211805327284989199726591004429044743750,
+        "hbar_power": 17,
+        "x_power": 41,
+        "y_power": 41
+      },
+      {
+        "coefficient": 416426614229317947064794711631841186250000,
+        "hbar_power": 19,
+        "x_power": 39,
+        "y_power": 39
+      },
+      {
+        "coefficient": 544409385161066970695915583470292834255562500,
+        "hbar_power": 21,
+        "x_power": 37,
+        "y_power": 37
+      },
+      {
+        "coefficient": 477225393763838381924896309371045866385494625000,
+        "hbar_power": 23,
+        "x_power": 35,
+        "y_power": 35
+      },
+      {
+        "coefficient": 281582866712071471934935693208474188078541224359375,
+        "hbar_power": 25,
+        "x_power": 33,
+        "y_power": 33
+      },
+      {
+        "coefficient": 111824498452219563008417538882380723716934525202000000,
+        "hbar_power": 27,
+        "x_power": 31,
+        "y_power": 31
+      },
+      {
+        "coefficient": 29777404159890609620067835400052674859229270581037500000,
+        "hbar_power": 29,
+        "x_power": 29,
+        "y_power": 29
+      },
+      {
+        "coefficient": 5277836765698632825089786791401164207630017253221395000000,
+        "hbar_power": 31,
+        "x_power": 27,
+        "y_power": 27
+      },
+      {
+        "coefficient": 615752620616323165420347369779748893507789541301258603593750,
+        "hbar_power": 33,
+        "x_power": 25,
+        "y_power": 25
+      },
+      {
+        "coefficient": 46569525928965617552799380907712101189664755224464936406250000,
+        "hbar_power": 35,
+        "x_power": 23,
+        "y_power": 23
+      },
+      {
+        "coefficient": 2237889478368738899352203883274582496283221709581663749570312500,
+        "hbar_power": 37,
+        "x_power": 21,
+        "y_power": 21
+      },
+      {
+        "coefficient": 66593067473725631215541289644000734201140403098887565017578125000,
+        "hbar_power": 39,
+        "x_power": 19,
+        "y_power": 19
+      },
+      {
+        "coefficient": 1187346271950738525837587103951356993155821053057665419926220703125,
+        "hbar_power": 41,
+        "x_power": 17,
+        "y_power": 17
+      },
+      {
+        "coefficient": 12160108884828826009906982876347895318610224915478726249698437500000,
+        "hbar_power": 43,
+        "x_power": 15,
+        "y_power": 15
+      },
+      {
+        "coefficient": 67709697199615053918800245561482598933170570552097452981275390625000,
+        "hbar_power": 45,
+        "x_power": 13,
+        "y_power": 13
+      },
+      {
+        "coefficient": 190539221906779827956512809433885352409532724902387097103644531250000,
+        "hbar_power": 47,
+        "x_power": 11,
+        "y_power": 11
+      },
+      {
+        "coefficient": 245060011168371164782504782541455438366852250352772520722161865234375,
+        "hbar_power": 49,
+        "x_power": 9,
+        "y_power": 9
+      },
+      {
+        "coefficient": 124548146852630991983578901244598528675859026061644387002322265625000,
+        "hbar_power": 51,
+        "x_power": 7,
+        "y_power": 7
+      },
+      {
+        "coefficient": 19929511161832462795630731294944829878829401485190556846162597656250,
+        "hbar_power": 53,
+        "x_power": 5,
+        "y_power": 5
+      },
+      {
+        "coefficient": 671027311846210868539755262456054878075064023070389119399414062500,
+        "hbar_power": 55,
+        "x_power": 3,
+        "y_power": 3
+      },
+      {
+        "coefficient": "3783988600636527454171552231895046304934571558667607816162109375/2",
+        "hbar_power": 57,
+        "x_power": 1,
+        "y_power": 1
+      }
+    ],
+    "convention": "star=m compose exp((hbar/2)*(d_x tensor d_y-d_y tensor d_x))",
+    "escaped_term_count": 21,
+    "input_degrees": [
+      58,
+      58
+    ],
+    "leading_term": {
+      "coefficient": 3364,
+      "hbar_power": 1,
+      "x_power": 57,
+      "y_power": 57
+    },
+    "retained_polynomial_degrees": [
+      2,
+      14,
+      22,
+      26,
+      34,
+      38,
+      46,
+      58
+    ],
+    "scope": "Ordinary canonical Moyal multiplication on binary polynomials. Weighted E8 transvectant couplings define a different bracket; no quantization of E8 is claimed."
+  },
+  "passed": true,
+  "pentagon": {
+    "binary_parenthesizations": 5,
+    "direct_matrix": [
+      [
+        0,
+        "-1/3",
+        "1/3"
+      ],
+      [
+        -1,
+        "2/3",
+        "1/3"
+      ],
+      [
+        2,
+        "2/3",
+        "1/3"
+      ]
+    ],
+    "edge_matrices": [
+      {
+        "from": 0,
+        "matrix": [
+          [
+            "-1/2",
+            "1/2",
+            0
+          ],
+          [
+            "3/2",
+            "1/2",
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "to": 1
+      },
+      {
+        "from": 1,
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            "-1/3",
+            "2/3"
+          ],
+          [
+            0,
+            "4/3",
+            "1/3"
+          ]
+        ],
+        "to": 2
+      },
+      {
+        "from": 2,
+        "matrix": [
+          [
+            "-1/2",
+            "1/2",
+            0
+          ],
+          [
+            "3/2",
+            "1/2",
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "to": 3
+      },
+      {
+        "from": 0,
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            "1/2"
+          ],
+          [
+            0,
+            2,
+            "1/2"
+          ]
+        ],
+        "to": 4
+      },
+      {
+        "from": 4,
+        "matrix": [
+          [
+            0,
+            "-1/3",
+            "1/3"
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            "4/3",
+            "2/3"
+          ]
+        ],
+        "to": 3
+      },
+      {
+        "from": 0,
+        "matrix": [
+          [
+            0,
+            "-1/3",
+            "1/3"
+          ],
+          [
+            -1,
+            "2/3",
+            "1/3"
+          ],
+          [
+            2,
+            "2/3",
+            "1/3"
+          ]
+        ],
+        "to": 3
+      }
+    ],
+    "input_spins": [
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "intertwiner_input_checks": 24,
+    "long_path_matrix": [
+      [
+        0,
+        "-1/3",
+        "1/3"
+      ],
+      [
+        -1,
+        "2/3",
+        "1/3"
+      ],
+      [
+        2,
+        "2/3",
+        "1/3"
+      ]
+    ],
+    "multiplicity": 3,
+    "output_spin": 1,
+    "passed": true,
+    "scope": "Exact rational polynomial intertwiners; ordinary representation associativity, not a new quantum associator.",
+    "short_path_matrix": [
+      [
+        0,
+        "-1/3",
+        "1/3"
+      ],
+      [
+        -1,
+        "2/3",
+        "1/3"
+      ],
+      [
+        2,
+        "2/3",
+        "1/3"
+      ]
+    ]
+  },
+  "principal_dj_boundary": {
+    "delta_e_simple_cartan_matrix_rank": 8,
+    "normalization": "delta(e_i)=e_i wedge h_i; common nonzero rescaling does not change the obstruction",
+    "passed": true,
+    "principal_e_wedge_h_matrix_rank": 1,
+    "principal_h_coefficients": [
+      92,
+      182,
+      270,
+      220,
+      168,
+      114,
+      58,
+      136
+    ],
+    "principal_inclusion_is_lie_bialgebra_map": false,
+    "scope": "Obstruction for the standard Drinfeld-Jimbo cobracket and this principal inclusion; it does not exclude other Lie bialgebra structures or quantizations.",
+    "witness_on_delta_principal_e": 182,
+    "witness_on_principal_e_wedge_h": 0,
+    "witness_terms": [
+      {
+        "coefficient": 182,
+        "coordinate": "e_1 wedge h_1"
+      },
+      {
+        "coefficient": -92,
+        "coordinate": "e_1 wedge h_2"
+      }
+    ]
+  },
+  "recoupling_panels": [
+    {
+      "highest_input_checks": 42,
+      "left_intermediates": [
+        6,
+        7,
+        8
+      ],
+      "passed": true,
+      "right_intermediates": [
+        0,
+        1,
+        2
+      ],
+      "six_j_square_checks": 9,
+      "spins": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "weighted_orthogonality_checks": 9
+    },
+    {
+      "highest_input_checks": 120,
+      "left_intermediates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "passed": true,
+      "right_intermediates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "six_j_square_checks": 225,
+      "spins": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "weighted_orthogonality_checks": 225
+    },
+    {
+      "highest_input_checks": 120,
+      "left_intermediates": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "passed": true,
+      "right_intermediates": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "six_j_square_checks": 225,
+      "spins": [
+        7,
+        11,
+        13,
+        17
+      ],
+      "weighted_orthogonality_checks": 225
+    },
+    {
+      "highest_input_checks": 276,
+      "left_intermediates": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "passed": true,
+      "right_intermediates": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "six_j_square_checks": 529,
+      "spins": [
+        11,
+        13,
+        17,
+        19
+      ],
+      "weighted_orthogonality_checks": 529
+    },
+    {
+      "highest_input_checks": 120,
+      "left_intermediates": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "passed": true,
+      "right_intermediates": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "six_j_square_checks": 225,
+      "spins": [
+        7,
+        11,
+        19,
+        23
+      ],
+      "weighted_orthogonality_checks": 225
+    }
+  ],
+  "schema": "perfectjet/asterion-higher/1",
+  "scope": "Every coefficient in each listed recoupling panel is checked. Exhaustive enlarges these stated panels and the finite DGLA; it does not mean all E8 spin quadruples or a full elliptic quantum theory.",
+  "source_sha256": {
+    "asterion.py": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+    "asterion_basis.py": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+    "asterion_boundary.py": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
+    "asterion_currents.py": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
+    "asterion_deformations.py": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+    "asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "asterion_elliptic.py": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
+    "asterion_extension.py": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
+    "asterion_frontiers.py": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+    "asterion_higher.py": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
+    "asterion_jacobi.py": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
+    "asterion_jordan.py": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+    "asterion_kernel_characters.py": "5dfef1c18dfe41358ccd402fb01f3818e0e2150487163240ec75f0b3a0325b39",
+    "asterion_kernel_tower.py": "70d79724fb1bdd8346c2089ff1d9173e37cb6561b9cb30167c51ddc957c71d67",
+    "asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+    "asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+    "asterion_monodromy_algebra.py": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
+    "asterion_periods.py": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+    "asterion_principal.py": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+    "asterion_quartic.py": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
+    "asterion_quartic_characters.py": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
+    "asterion_relations.py": "503996dedc93e8330dd1c769704119cf2a430e304e38cb2186de7ba3eba9d108",
+    "asterion_rigidity.py": "bf98c2b41e77378397f9a34ce6276f1745d1eafa804a23363661a03e6e3be6dc",
+    "asterion_transport.py": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754"
+  },
+  "symmetric_square_boundary": {
+    "adjoint_highest_weight": [
+      2,
+      4,
+      6,
+      5,
+      4,
+      3,
+      2,
+      3
+    ],
+    "adjoint_highest_weight_space_dimension": 36,
+    "highest_vector_kernel_dimension": 0,
+    "no_adjoint_summand": true,
+    "passed": true,
+    "raising_matrix_rank": 36,
+    "raising_matrix_shape": [
+      50,
+      36
+    ],
+    "scope": "Complete reducibility in characteristic zero identifies adjoint multiplicity with this highest-vector kernel; no copy of the adjoint occurs in Sym^2(E8).",
+    "symmetric_square_dimension": 30876
+  }
+}

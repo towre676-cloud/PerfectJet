@@ -1,6 +1,6 @@
 {
   "schema": "perfectjet/release-manifest/1",
-  "version": "0.17.0",
+  "version": "0.19.0",
   "files": [
     {
       "path": ".gitattributes",
@@ -34,8 +34,8 @@
     },
     {
       "path": ".github/workflows/checks.yml",
-      "sha256": "13eec3e3dbc5f7b25fd0a78b47f28148dca36ee25618ace84eeba0e4591aacf0",
-      "size_bytes": 1327
+      "sha256": "ca67203a4203840e7206e2d319c8fe0652f11a6dffbf493b0cc251dc39b9349c",
+      "size_bytes": 1595
     },
     {
       "path": ".github/workflows/publish-v014.yml",
@@ -44,8 +44,13 @@
     },
     {
       "path": ".github/workflows/publish-v017.yml",
-      "sha256": "581cc7024b17211837d5bda9c24012f43e9e1b344504ce35ad0bb8fadd2f2381",
-      "size_bytes": 3762
+      "sha256": "bbff48201d95a91e50456241b73f3c1a9b9b5ce262fc194c5f14e8a232a61baa",
+      "size_bytes": 3626
+    },
+    {
+      "path": ".github/workflows/publish-v018.yml",
+      "sha256": "7958308eaf319aba6b495f763d76ccfba6ca89cdf8df08b3e886143ae9a5da66",
+      "size_bytes": 3773
     },
     {
       "path": ".github/workflows/research-snapshot.yml",
@@ -59,8 +64,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "8875ddd043b5adb87ab65708d2dac0f520794b131a3b71ee4dcec0024169eebe",
-      "size_bytes": 8248
+      "sha256": "8cc818e87b1286e5ff0a4f92ac28474f8f880a54be5f8607dd10a87e5053e4ed",
+      "size_bytes": 13322
     },
     {
       "path": "Start_Math_Lab.bat",
@@ -158,19 +163,34 @@
       "size_bytes": 1451
     },
     {
+      "path": "data/asterion_equations.json",
+      "sha256": "12d8788e5f20714474897e3c5da1092bc5210821c84eb4b75e8b1bcc82beb6f0",
+      "size_bytes": 25615
+    },
+    {
+      "path": "data/asterion_extension_equations.json",
+      "sha256": "b49368f16e50c4598b81d80312e0fdc9798e0ef96a70c7f7acebd5ae1db451e4",
+      "size_bytes": 42866
+    },
+    {
+      "path": "data/asterion_frontier_equations.json",
+      "sha256": "0ae1ce6f7ae6f992955aca94f048fe1c2164d386e6ddd215efdcce499c873b49",
+      "size_bytes": 23438
+    },
+    {
       "path": "data/equation_id_contract.json",
       "sha256": "5b90131ec6cdee82c22b574d11c1b4b0f2e456d26563b21e1ba19d2dbb28ea2d",
       "size_bytes": 34726
     },
     {
       "path": "data/equation_power.json",
-      "sha256": "00eb408407a256d82fd46ab47fa65a2bc3c30024c2612a10528c95cf9ea0d1c7",
-      "size_bytes": 24002
+      "sha256": "88c208c903f35377b8fe7f9bbf3df2dc64975c7f0ac0840d7aa6a7866e50fb01",
+      "size_bytes": 38551
     },
     {
       "path": "data/equations.json",
-      "sha256": "bd8b038dd87ed7261b7d97940895599d4b6874a18e73ad4344cd0fcb3d3bbd6d",
-      "size_bytes": 175478
+      "sha256": "8e369877def2f04bea38a665a68b181e75ad5edca5ec8791367efd9d05d841fb",
+      "size_bytes": 266223
     },
     {
       "path": "data/incidence_equations.json",
@@ -184,8 +204,8 @@
     },
     {
       "path": "data/topics.json",
-      "sha256": "3d04e23ac4e89cc954a3d8e3a9ac199bf3f874aad07903afaccf5a7777164a00",
-      "size_bytes": 153093
+      "sha256": "2aa78ee6faa407d0c5b3ec0994c24af7ce5c25818fdb0cfc91451ec958bf109c",
+      "size_bytes": 172361
     },
     {
       "path": "docs/ARCHITECTURE.md",
@@ -193,18 +213,133 @@
       "size_bytes": 4814
     },
     {
+      "path": "docs/ASTERION_BASIS.md",
+      "sha256": "e0f1b08ac501b87185869c2b18972b92d6ea085a3d96d9134c06bc700c7f4775",
+      "size_bytes": 31064
+    },
+    {
+      "path": "docs/ASTERION_BOUNDARY.md",
+      "sha256": "0481bd04aa280f7c7d62892c40f64661869c8da045392b0ca91137aee3be26b5",
+      "size_bytes": 9150
+    },
+    {
+      "path": "docs/ASTERION_CLOSURE_AUDIT.md",
+      "sha256": "aff45d16f382f882a14af220ded7a7a31c251984965b5371bdda9146cc28c87c",
+      "size_bytes": 74197
+    },
+    {
+      "path": "docs/ASTERION_CURRENTS.md",
+      "sha256": "603a6ddacd86ad8c46a6e0c7b90d09e25f2899edab8cebf02a00e7cb837db151",
+      "size_bytes": 10258
+    },
+    {
+      "path": "docs/ASTERION_DISCOVERIES.json",
+      "sha256": "0a709c44255e806332c76435c0d0288ad710d523154617748ac013a957a690c2",
+      "size_bytes": 130546
+    },
+    {
+      "path": "docs/ASTERION_ELLIPTIC.md",
+      "sha256": "ef2eec8e2aa6fe20942dec7ddcad664cb0c292edb3e77b55034420e53ff514ba",
+      "size_bytes": 13089
+    },
+    {
+      "path": "docs/ASTERION_EQUATION_GUIDE.md",
+      "sha256": "f82ff6a933557cfdb74b35273d55455a74cd7b64fc4b33741f4b395604747bf3",
+      "size_bytes": 5480
+    },
+    {
+      "path": "docs/ASTERION_EXTENSION.md",
+      "sha256": "108b50910065c332005ffc461f2c9a760c11368ccd76c89aa4482718ca7ea9e2",
+      "size_bytes": 37719
+    },
+    {
+      "path": "docs/ASTERION_FRONTIERS.md",
+      "sha256": "a5f1039556b5aeeb6befa6780efa156aa1791c9588599594d1ac476800f63306",
+      "size_bytes": 14308
+    },
+    {
+      "path": "docs/ASTERION_HIGHER.md",
+      "sha256": "95e46420c5307e915e160c312b1340118024d6249e9f66293acff4d2b9970ee9",
+      "size_bytes": 11687
+    },
+    {
+      "path": "docs/ASTERION_JACOBI.md",
+      "sha256": "cde40f208b797f53de682abe475dfdea262e1643af44a443fa718bd3a019be21",
+      "size_bytes": 7057
+    },
+    {
+      "path": "docs/ASTERION_KERNEL_CHARACTERS.md",
+      "sha256": "904031b8d90bc5713ba45ba271096893c99e2d0ed815c68f03681e11ccac9937",
+      "size_bytes": 6943
+    },
+    {
+      "path": "docs/ASTERION_KERNEL_TOWER.md",
+      "sha256": "2273af34faae43806f591f9d7f7401aa2af14402476727c8c650e13827fd3507",
+      "size_bytes": 11943
+    },
+    {
+      "path": "docs/ASTERION_KZ.md",
+      "sha256": "f6a8815c9658504abe257db1e15b43180cee0758084dd5167530370a7c9f2423",
+      "size_bytes": 11846
+    },
+    {
+      "path": "docs/ASTERION_MONODROMY.md",
+      "sha256": "d3776eb3a24dafa34af707468d143fdd24d1b02b689cd835c6996a70bc0da14b",
+      "size_bytes": 9258
+    },
+    {
+      "path": "docs/ASTERION_MONODROMY_ALGEBRA.md",
+      "sha256": "9f1fd61dcc929fe36918f3c55ceded8ef8e9477bcbd4d7ed74a7035500bf4156",
+      "size_bytes": 7036
+    },
+    {
+      "path": "docs/ASTERION_NEXT_PUSH_SOURCES.md",
+      "sha256": "5231c16f82c0a29c0356c2ecfd6395d248cef38b1680774772cc7211ac49795d",
+      "size_bytes": 10821
+    },
+    {
+      "path": "docs/ASTERION_PERIODS.md",
+      "sha256": "68b74752151168ded3bdadf83f06a0c9fc522aafb653d0501143968a0524afc6",
+      "size_bytes": 3434
+    },
+    {
+      "path": "docs/ASTERION_QUARTIC.md",
+      "sha256": "4314bc66efe2b46e14a5c8676a6965433555e6c209a22514536ffa38135324b4",
+      "size_bytes": 15033
+    },
+    {
+      "path": "docs/ASTERION_QUARTIC_CHARACTERS.md",
+      "sha256": "e9faf86019a31bd5f519d9422988c4bea4005c5c351a96bff39a857e1a8832b4",
+      "size_bytes": 3838
+    },
+    {
+      "path": "docs/ASTERION_RELATIONS.md",
+      "sha256": "73c3fef4301999c8b2e837de65dd8328f232821ecc96d1e24681e73855b49260",
+      "size_bytes": 12686
+    },
+    {
+      "path": "docs/ASTERION_RESEARCH_PROGRAMME.md",
+      "sha256": "58d81a2472fb4760e516a4e00e049574d2196f23edefed392c692900642bf007",
+      "size_bytes": 51263
+    },
+    {
+      "path": "docs/ASTERION_RIGIDITY.md",
+      "sha256": "bc178078b4b4be611494f2287650ed3043775e81b6d9339900dd334b8cd8fe19",
+      "size_bytes": 10450
+    },
+    {
       "path": "docs/COVERAGE_MAP.md",
-      "sha256": "8d3312b5fd676e70579fae9e184cb5cd98c54ffa4686599cdbfc6c28f2585137",
-      "size_bytes": 81058
+      "sha256": "9dbb6cafa83215d0905868058a7627a10429e7ddd400e9361bf462d59971e3ca",
+      "size_bytes": 89418
     },
     {
       "path": "docs/EQUATION_ATLAS.md",
-      "sha256": "fd5afebaeca3bb133248f41e9b754ee16933d09260b4ed64db8569608ada8adb",
-      "size_bytes": 84025
+      "sha256": "08bf7b5aeff87ff68da6aaddd34c8639bdc11a24d54165abc093f209402318ff",
+      "size_bytes": 133718
     },
     {
       "path": "docs/INSTALL.md",
-      "sha256": "15091824f84a8cc0e477fa8a1c91cdc83881b5a5b93126ac5847b8c0b24661d5",
+      "sha256": "2b7f2170ea86c95d18a1b4184ba6c9bbdc129dfaa8682d460b609fc06e02b6e0",
       "size_bytes": 2708
     },
     {
@@ -214,8 +349,8 @@
     },
     {
       "path": "docs/MONOGRAPH.md",
-      "sha256": "b2fa99d864dfb3382c0cd60531ac2376591976ae25734640e33ca53f6ca455c0",
-      "size_bytes": 310538
+      "sha256": "03d43c249ee554b9a1a12e38300a60589d1633e69438f3efb3e334f4d334c62b",
+      "size_bytes": 442616
     },
     {
       "path": "docs/OBSERVATORY.md",
@@ -239,13 +374,28 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "fd9acb6c2f68352d2f0a2e712ce54bd5fc27899b5bcded344e7c13517141e15a",
-      "size_bytes": 28088
+      "sha256": "6e355d175b2b4f8226ebb6ab316ed956795665bfa09b8ad426ea650ec79b7be3",
+      "size_bytes": 30731
     },
     {
       "path": "docs/SEXTIC_INTEGRATION.md",
       "sha256": "9f6c97baf28f21770f3db3534d575f9d1000f7ed665b5664292fc96fcb24b1a0",
       "size_bytes": 2113
+    },
+    {
+      "path": "docs/asterion_extension_sources.json",
+      "sha256": "60f7c637fab8b3cfa874f39fb70590e5802a05b78eadd9bc107020e32fff4dfb",
+      "size_bytes": 18192
+    },
+    {
+      "path": "docs/asterion_frontier_ledger_proposals.json",
+      "sha256": "290dd7f16f871c71d3afe9615ba7ea59a933ee607fe6456a35e724dc6856f1cf",
+      "size_bytes": 37544
+    },
+    {
+      "path": "docs/asterion_frontier_sources.json",
+      "sha256": "0d69a613578b5a43f7dc0d7aee563149ccd8902527d5c1636cf9650abc1ffc46",
+      "size_bytes": 20203
     },
     {
       "path": "docs/chapters/01_purpose_and_historical_audit.md",
@@ -408,6 +558,21 @@
       "size_bytes": 14121
     },
     {
+      "path": "docs/chapters/34_asterion_basis.md",
+      "sha256": "e0f1b08ac501b87185869c2b18972b92d6ea085a3d96d9134c06bc700c7f4775",
+      "size_bytes": 31064
+    },
+    {
+      "path": "docs/chapters/35_asterion_extension.md",
+      "sha256": "108b50910065c332005ffc461f2c9a760c11368ccd76c89aa4482718ca7ea9e2",
+      "size_bytes": 37719
+    },
+    {
+      "path": "docs/chapters/36_asterion_frontiers.md",
+      "sha256": "a5f1039556b5aeeb6befa6780efa156aa1791c9588599594d1ac476800f63306",
+      "size_bytes": 14308
+    },
+    {
       "path": "docs/nfl/DATA_CONTRACT.md",
       "sha256": "aa46759b3902a474c54f1e40feeb4cb51caba65bbe332a6bd5105863fca079c8",
       "size_bytes": 2392
@@ -476,6 +641,21 @@
       "path": "examples/mathlab/analytic.json",
       "sha256": "db3ce8cf83891e25b47705c410d5f50d67f6ce895d458556f08b46290ad3492e",
       "size_bytes": 67
+    },
+    {
+      "path": "examples/mathlab/asterion-extension.json",
+      "sha256": "fcfb726a16c3a6dd5cd36fb96aea4077a5f9b63611f1ef1fee2551506c9ba2cb",
+      "size_bytes": 129
+    },
+    {
+      "path": "examples/mathlab/asterion-frontiers.json",
+      "sha256": "e225b6dfe0080f22ff9d6d0a3eee41d504d9ab4752cb5fbc8a443c701a595327",
+      "size_bytes": 115
+    },
+    {
+      "path": "examples/mathlab/asterion.json",
+      "sha256": "e20c023c09a9186a1bb0ef42844df4592f652efa0895f830e698452ed9c12e6a",
+      "size_bytes": 98
     },
     {
       "path": "examples/mathlab/branches.json",
@@ -649,7 +829,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "7131568c9d589dd9bf111458887ec5dd70b0e926a33e795d591e54192fec0eb8",
+      "sha256": "420e90a64c2b1aa0b3c733aaa9f99e78f3cc7d9ce15d328fd03583bd806de527",
       "size_bytes": 613
     },
     {
@@ -2798,6 +2978,141 @@
       "size_bytes": 85
     },
     {
+      "path": "results/asterion-extension/boundary.json",
+      "sha256": "563cd7a0e288d124d145debe17290593d1be5d14ffed3e13f2884f6ae8b91b11",
+      "size_bytes": 17312
+    },
+    {
+      "path": "results/asterion-extension/cartan_conformal_relations.json.gz",
+      "sha256": "cf2287714c0b3c77a23f838f8a1d0f3e843f3b5ce6b57539d1ca59700f018774",
+      "size_bytes": 5272
+    },
+    {
+      "path": "results/asterion-extension/currents.json",
+      "sha256": "b7c30da74efbe8f71f4901b36220b9e0cbb1c1227e7aba9a6d4ce6f53f4d083c",
+      "size_bytes": 28470
+    },
+    {
+      "path": "results/asterion-extension/higher.json",
+      "sha256": "c5516fdb200acd4c0551dd2edb7e6c6ce8e80dcfdbfeb306d6b855184f300388",
+      "size_bytes": 32802
+    },
+    {
+      "path": "results/asterion-extension/kz.json",
+      "sha256": "5bf277f07f31095e60790e684073b1aa3282f901fb54547e3367d8640c835bdb",
+      "size_bytes": 133895
+    },
+    {
+      "path": "results/asterion-extension/manifest.json",
+      "sha256": "c90eb99708e5ac6b9ae303ed9c1ba580d3e0fab4646f55fe6c1c5811a507b04e",
+      "size_bytes": 3922
+    },
+    {
+      "path": "results/asterion-extension/periods.json",
+      "sha256": "7cbca771db996aead32ea84c4e8a237536dc4d1de893d47a62d784bd4e115e47",
+      "size_bytes": 6373
+    },
+    {
+      "path": "results/asterion-extension/recoupling_tables.json.gz",
+      "sha256": "d7b0682d73b33fc34ba99e6619cfb7c0c644c3da1e21ff012c7376d832c18b6a",
+      "size_bytes": 44525
+    },
+    {
+      "path": "results/asterion-extension/relations.json",
+      "sha256": "71318d2d606480df2805124ca630cff94c22884fd1c47d61f89fe679c6a1a9c0",
+      "size_bytes": 447529
+    },
+    {
+      "path": "results/asterion-extension/rigidity.json",
+      "sha256": "bda21e14139da93a4d75c920fd7660d886675501b51c4fc17a120f508a6eadf5",
+      "size_bytes": 412539
+    },
+    {
+      "path": "results/asterion-extension/validation.json",
+      "sha256": "a8ce61508eedd9f7689c8cd2b3f4b48245a0cd008605b31a4c24e8d8ce3197d4",
+      "size_bytes": 1328224
+    },
+    {
+      "path": "results/asterion-frontiers/elliptic.json",
+      "sha256": "5c36b738a94c888f37ae42a3ee4f781b4cd0882c01e7bf250c1c11ac8482596a",
+      "size_bytes": 7545
+    },
+    {
+      "path": "results/asterion-frontiers/jacobi.json",
+      "sha256": "a616b18c1a865caae0cca4285a1a6e1626c43c2a943c70d4755de7769ebb4b78",
+      "size_bytes": 21759
+    },
+    {
+      "path": "results/asterion-frontiers/kernel-characters.json",
+      "sha256": "59a48912ff923c5497f152627062a408d9b6cba3a778bc89f9d258eb971f665b",
+      "size_bytes": 45988
+    },
+    {
+      "path": "results/asterion-frontiers/kernel-tower.json",
+      "sha256": "7cf102a257aa27760f55c0707f4fe1be6195227da356ccda8c5201f85a7e1c0f",
+      "size_bytes": 122641
+    },
+    {
+      "path": "results/asterion-frontiers/manifest.json",
+      "sha256": "f1c58c63992c95afccbce14555a57078589ceee0c44479e586a6da739410e262",
+      "size_bytes": 3718
+    },
+    {
+      "path": "results/asterion-frontiers/monodromy-algebra.json",
+      "sha256": "f8421beb1164a31eacd9d7370f5cdce937b034ce616a4a6d766cb19eabe762b8",
+      "size_bytes": 76584
+    },
+    {
+      "path": "results/asterion-frontiers/monodromy.json",
+      "sha256": "5fd2e222e9fd06d5e4f94842c5ca818bc9a5675222245c126aca688f92b40c0f",
+      "size_bytes": 137334
+    },
+    {
+      "path": "results/asterion-frontiers/quartic.json",
+      "sha256": "104121ca857b2a19a9550c6bba278f71de6fcaf38d0f314540ced0d5e61d82ce",
+      "size_bytes": 3718485
+    },
+    {
+      "path": "results/asterion-frontiers/validation.json",
+      "sha256": "b3aa102b45118f2bf7c8e255ac92ea30940a62c5c328c8d8e7eb56c831381a46",
+      "size_bytes": 5113144
+    },
+    {
+      "path": "results/asterion/cartan_normalizers.json.gz",
+      "sha256": "37235787577bcb9659361e1aaf9ac5504cd6f42b93e9ab68eacef295c6b76eb5",
+      "size_bytes": 25782
+    },
+    {
+      "path": "results/asterion/compound_seed_basis.json.gz",
+      "sha256": "9f176c56fff8733a139b60a74ad60f0ee336afcc8a7de08de2936a12f0a37aed",
+      "size_bytes": 152652
+    },
+    {
+      "path": "results/asterion/jordan_kernels.json.gz",
+      "sha256": "2186d55fdfe337d3e5c9801005a2a8344677cedeef7e74251730ef6173026acc",
+      "size_bytes": 112316
+    },
+    {
+      "path": "results/asterion/manifest.json",
+      "sha256": "65e361bf87e01519905ac2932221bca7582127df14949af8830c26f6cedda5cc",
+      "size_bytes": 1034
+    },
+    {
+      "path": "results/asterion/response_basis.json.gz",
+      "sha256": "2bff9ee56827f8302c9282bf2937aa720aa4df81f53769cc5fbb274ddce82cb7",
+      "size_bytes": 152520
+    },
+    {
+      "path": "results/asterion/transport_columns.json.gz",
+      "sha256": "5812876de39122b6ceed1a9259865cb732490a566f6ddff5e499f47f0bf1feba",
+      "size_bytes": 2636
+    },
+    {
+      "path": "results/asterion/validation.json",
+      "sha256": "a752c83de28e2849e2d92149a370520d77b0ff9d9ebc5c8efd497bc9f99dd688",
+      "size_bytes": 76071
+    },
+    {
       "path": "results/external-tracking/execution-receipt.json",
       "sha256": "93d211d51d539aa7d1de7ebf9a000be42532a379ea53abb43649af0a0b2da07a",
       "size_bytes": 862
@@ -2824,8 +3139,8 @@
     },
     {
       "path": "results/mathlab/all-examples.json",
-      "sha256": "c029a02f0244cc2cfd59d5675f7a6836994e5c8340a6eb39e89dee0005876f5b",
-      "size_bytes": 213423
+      "sha256": "73f4e282717e8621d947ddc7a14f78f94bb8ef6abbe1317a1e65c21d06eef66a",
+      "size_bytes": 261266
     },
     {
       "path": "results/mathlab/coverage.json",
@@ -3228,6 +3543,21 @@
       "size_bytes": 17495
     },
     {
+      "path": "scripts/build_asterion_bundle.py",
+      "sha256": "85c56495feaa562d1911a3866a39925d0dbee761be8884198088bad842820592",
+      "size_bytes": 5261
+    },
+    {
+      "path": "scripts/build_asterion_extension_catalogue.py",
+      "sha256": "d12905eac8e353308d82c51c33845ff416fe526651d3407d3d59e58dbc16a746",
+      "size_bytes": 24989
+    },
+    {
+      "path": "scripts/build_asterion_frontier_catalogue.py",
+      "sha256": "0c3d1fbbdfd613a357b8bc4a33ad5281d632fe3da076061c551662caf7d6c49b",
+      "size_bytes": 13581
+    },
+    {
       "path": "scripts/build_bridge_fixture.py",
       "sha256": "9070f4faa2f860c344e8ce391528460d55df26780398e300024b1d0d8d3c386a",
       "size_bytes": 2791
@@ -3244,13 +3574,13 @@
     },
     {
       "path": "scripts/build_corpus.py",
-      "sha256": "d158bc20428f902cab8d418b04dc00f73bc025b5f295d6611f74efa0346de2b9",
-      "size_bytes": 65207
+      "sha256": "317f535c7e36d3a9f7c2077598278534974e8018e57cd811046aba2c3bafaf5f",
+      "size_bytes": 65514
     },
     {
       "path": "scripts/build_mathlab.py",
-      "sha256": "b849d60ef755ba5e086dd8621266a5e0b9ab90f97a5707b313e8df9ed3f3b4df",
-      "size_bytes": 1984
+      "sha256": "04635ba9fb5be81bb52d7724d8e1f690fd82061ef4dab3095fa21255ec9f291f",
+      "size_bytes": 2154
     },
     {
       "path": "scripts/build_motor_notebook.py",
@@ -3274,8 +3604,8 @@
     },
     {
       "path": "scripts/build_topics.py",
-      "sha256": "b1a1b6b6983a7dc99a556433bec6d0fef93fca1653fe315f6a85aee2f7f61528",
-      "size_bytes": 20010
+      "sha256": "f140e9296fd37810fb0287cc7fba64f00d3e98d43e9498b7e631c84d30b7faa2",
+      "size_bytes": 22986
     },
     {
       "path": "scripts/check_coverage.py",
@@ -3378,14 +3708,34 @@
       "size_bytes": 415
     },
     {
+      "path": "scripts/verify_asterion.py",
+      "sha256": "7c11959dadf916a0ada2b52f31fc5b9880d9ef76c5ca2b6178523dc38fd37758",
+      "size_bytes": 4605
+    },
+    {
+      "path": "scripts/verify_asterion_extension.py",
+      "sha256": "96dff33d1b12d751d05734a90842263b692bdea7001d245b85b99ebac2076c73",
+      "size_bytes": 3657
+    },
+    {
+      "path": "scripts/verify_asterion_frontiers.py",
+      "sha256": "68352f6fc872e3ee51210936ed1aa4c171efbc0f662df66969a8ab595127d4fe",
+      "size_bytes": 2618
+    },
+    {
       "path": "scripts/verify_release.py",
-      "sha256": "cf5888f04720c4a39b8950270e0dcada3b98ad6e9578a93d689f4915c853eb47",
-      "size_bytes": 5523
+      "sha256": "ab3e24648e16a4eae7f1d124180d0997564cb31535588a52b876f6a17be7355b",
+      "size_bytes": 6096
     },
     {
       "path": "src/perfectjet/__init__.py",
-      "sha256": "a7171b3f95c3ed857fbed4ea9f593662f7d9c0b7bd488bd53955dc91cbf400fb",
+      "sha256": "bb14f2b3926a5d2ee00c356a9e3b981af916bb1d218b39152558a2d65d719fdd",
       "size_bytes": 104
+    },
+    {
+      "path": "src/perfectjet/__main__.py",
+      "sha256": "b9cbe0fa5b12bab9eb38a20fe2d0aac16dc07615ab70cfbe3822515a36246559",
+      "size_bytes": 164
     },
     {
       "path": "src/perfectjet/algebra_bridges.py",
@@ -3538,6 +3888,126 @@
       "size_bytes": 16079
     },
     {
+      "path": "src/perfectjet/asterion.py",
+      "sha256": "bd0c8f3922e020f7fb3f68cbe7f8d74a986d90ce13364da20c63f957e995f232",
+      "size_bytes": 24031
+    },
+    {
+      "path": "src/perfectjet/asterion_basis.py",
+      "sha256": "5016994fdce750b1408e875fc20d84b3f3d697b243777b0b51ea2311fb8da350",
+      "size_bytes": 37933
+    },
+    {
+      "path": "src/perfectjet/asterion_boundary.py",
+      "sha256": "e9661a98120b7ce64bf26d3b5b2c6e5d2cb5f323e7c2747e381012ff728def6e",
+      "size_bytes": 27273
+    },
+    {
+      "path": "src/perfectjet/asterion_currents.py",
+      "sha256": "83577050cf4cfdaf50eeb7e6e7e4dd04c070d49fb3857e478672825f4ae827cd",
+      "size_bytes": 28120
+    },
+    {
+      "path": "src/perfectjet/asterion_deformations.py",
+      "sha256": "8c888757bcccbda75fc6f415dcc02d19a964e466c07bb4faa41f5ba94969cfe7",
+      "size_bytes": 15804
+    },
+    {
+      "path": "src/perfectjet/asterion_e8.py",
+      "sha256": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+      "size_bytes": 17630
+    },
+    {
+      "path": "src/perfectjet/asterion_elliptic.py",
+      "sha256": "a599818fb707dbdabfe5e5aee51bacf073b11a77a4001a9fb3a665997f42e481",
+      "size_bytes": 24888
+    },
+    {
+      "path": "src/perfectjet/asterion_extension.py",
+      "sha256": "d26f9cd0e9c9a53091b71bce58ecc7d5459c7074090c993644b88ba7d6c55644",
+      "size_bytes": 4011
+    },
+    {
+      "path": "src/perfectjet/asterion_frontiers.py",
+      "sha256": "4c449e2b8dcac8cf0f7e6a3e9afcf911493cf125324ca5c751ef8ad1e21886d8",
+      "size_bytes": 5712
+    },
+    {
+      "path": "src/perfectjet/asterion_higher.py",
+      "sha256": "5791d945e3208f7ab4ea7961b20a404821190bf534bdd8819c4af68b3578d914",
+      "size_bytes": 42209
+    },
+    {
+      "path": "src/perfectjet/asterion_jacobi.py",
+      "sha256": "49fb72e5b0fc3bd950f76c1ab6b9c9154d7fd4e97df62aabb192267ed4812443",
+      "size_bytes": 17224
+    },
+    {
+      "path": "src/perfectjet/asterion_jordan.py",
+      "sha256": "7451587e6ba0880f5fa0fbcb355109103aa77f008d2a0ed40d34e51c0449fbde",
+      "size_bytes": 35102
+    },
+    {
+      "path": "src/perfectjet/asterion_kernel_characters.py",
+      "sha256": "5dfef1c18dfe41358ccd402fb01f3818e0e2150487163240ec75f0b3a0325b39",
+      "size_bytes": 16458
+    },
+    {
+      "path": "src/perfectjet/asterion_kernel_tower.py",
+      "sha256": "70d79724fb1bdd8346c2089ff1d9173e37cb6561b9cb30167c51ddc957c71d67",
+      "size_bytes": 38884
+    },
+    {
+      "path": "src/perfectjet/asterion_kz.py",
+      "sha256": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+      "size_bytes": 41947
+    },
+    {
+      "path": "src/perfectjet/asterion_monodromy.py",
+      "sha256": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+      "size_bytes": 19406
+    },
+    {
+      "path": "src/perfectjet/asterion_monodromy_algebra.py",
+      "sha256": "9f37911b038d0c762cd09d35f3620be383e12ab3fdf67fe4c2ad5f0acb19cb77",
+      "size_bytes": 18512
+    },
+    {
+      "path": "src/perfectjet/asterion_periods.py",
+      "sha256": "ab3436baffa70f9b86aaac6d41b9f3efc76516db12c01ce0c767faa3cc7afc14",
+      "size_bytes": 9526
+    },
+    {
+      "path": "src/perfectjet/asterion_principal.py",
+      "sha256": "bd3d1d6361ed31bf7563b7eaf9e0fa09042155ee7da1d211d01c87e6a4e6b0fd",
+      "size_bytes": 18674
+    },
+    {
+      "path": "src/perfectjet/asterion_quartic.py",
+      "sha256": "f8b1b40a214533226cac2c46efe28ca3280c728f7bdc48f9a3c415dc346dcab6",
+      "size_bytes": 18849
+    },
+    {
+      "path": "src/perfectjet/asterion_quartic_characters.py",
+      "sha256": "0ad5938c558064f640c88044316e8e0e138331fd12b61462d6f12639320af2ec",
+      "size_bytes": 12755
+    },
+    {
+      "path": "src/perfectjet/asterion_relations.py",
+      "sha256": "503996dedc93e8330dd1c769704119cf2a430e304e38cb2186de7ba3eba9d108",
+      "size_bytes": 44314
+    },
+    {
+      "path": "src/perfectjet/asterion_rigidity.py",
+      "sha256": "bf98c2b41e77378397f9a34ce6276f1745d1eafa804a23363661a03e6e3be6dc",
+      "size_bytes": 36524
+    },
+    {
+      "path": "src/perfectjet/asterion_transport.py",
+      "sha256": "db4d81c21ea1a5ec9325c7859d91a3e12e2ebfab4b117e7741db2eaf2ed99754",
+      "size_bytes": 20611
+    },
+    {
       "path": "src/perfectjet/branch_channels.py",
       "sha256": "8068ecd16dfcd980064591626096dad4c74e0b4f5a1cf602d72aa1c17d5bb237",
       "size_bytes": 10788
@@ -3549,8 +4019,8 @@
     },
     {
       "path": "src/perfectjet/cli.py",
-      "sha256": "069fd740dca8c694a1ea6675aa351ae843cf4e68d5a2f3ed251ca5ae4beefaee",
-      "size_bytes": 7784
+      "sha256": "29abd9f83cefa1fe4add3293ca699b9ab1746511a239f574ffe45394fd3f241b",
+      "size_bytes": 7921
     },
     {
       "path": "src/perfectjet/collision.py",
@@ -3624,8 +4094,8 @@
     },
     {
       "path": "src/perfectjet/mathlab.py",
-      "sha256": "7dbfc344ea2f0214ab90789774fcba5999b75d02b5c14d3557b99b15302238c0",
-      "size_bytes": 32485
+      "sha256": "53f46fb3849d18236abb167ecb7bcd0011124a1eea68b8949dd687b58b777efb",
+      "size_bytes": 36018
     },
     {
       "path": "src/perfectjet/modular.py",
@@ -3753,14 +4223,19 @@
       "size_bytes": 9213
     },
     {
+      "path": "src/perfectjet/resources/asterion_discoveries.json",
+      "sha256": "0a709c44255e806332c76435c0d0288ad710d523154617748ac013a957a690c2",
+      "size_bytes": 130546
+    },
+    {
       "path": "src/perfectjet/resources/equation_power.json",
-      "sha256": "00eb408407a256d82fd46ab47fa65a2bc3c30024c2612a10528c95cf9ea0d1c7",
-      "size_bytes": 24002
+      "sha256": "88c208c903f35377b8fe7f9bbf3df2dc64975c7f0ac0840d7aa6a7866e50fb01",
+      "size_bytes": 38551
     },
     {
       "path": "src/perfectjet/resources/equations.json",
-      "sha256": "bd8b038dd87ed7261b7d97940895599d4b6874a18e73ad4344cd0fcb3d3bbd6d",
-      "size_bytes": 175478
+      "sha256": "8e369877def2f04bea38a665a68b181e75ad5edca5ec8791367efd9d05d841fb",
+      "size_bytes": 266223
     },
     {
       "path": "src/perfectjet/rings.py",
@@ -3811,6 +4286,131 @@
       "path": "tests/test_analytic_recovery.py",
       "sha256": "ffd13567c4ae17d2b71f083d5b8b8e3643acfb69678d64e9f8d44d2f903fdc34",
       "size_bytes": 6590
+    },
+    {
+      "path": "tests/test_asterion_basis.py",
+      "sha256": "12334971720c96fb1338dcad5376c9da34ecd24ab4524615b88070dea6f7c9ea",
+      "size_bytes": 12389
+    },
+    {
+      "path": "tests/test_asterion_boundary.py",
+      "sha256": "db847265cf706d26a88f7beadcca98dbc97d4c0f9f559553bee85e87894604dd",
+      "size_bytes": 5774
+    },
+    {
+      "path": "tests/test_asterion_currents.py",
+      "sha256": "91eeac7d699a5febfe7167392d422d78a5c752ef08dab3efdfa2db93eae6709f",
+      "size_bytes": 10848
+    },
+    {
+      "path": "tests/test_asterion_deformations.py",
+      "sha256": "735d23e76d6299137066240939616e6776ed43554bbed1e5e443744400bdfea6",
+      "size_bytes": 7326
+    },
+    {
+      "path": "tests/test_asterion_e8.py",
+      "sha256": "a78321d93f38a77bbaba1ea3398501d7725bb8fac2afaf1f2b57f8888b0489ad",
+      "size_bytes": 5836
+    },
+    {
+      "path": "tests/test_asterion_elliptic.py",
+      "sha256": "4c0b2a3669e098fc8c7dc4e84ae2494507ff48d6c8a570981189eaa22b803c26",
+      "size_bytes": 6806
+    },
+    {
+      "path": "tests/test_asterion_extension.py",
+      "sha256": "614730b0d6093751f87077225772dc4c1c48f2f0512b5e869d598e10a6b59e9c",
+      "size_bytes": 4434
+    },
+    {
+      "path": "tests/test_asterion_frontiers.py",
+      "sha256": "cd5fa0ab460adff97c0f41d1428d9ecd4616fdd4ea628638cbe0697b0e0b1a51",
+      "size_bytes": 4516
+    },
+    {
+      "path": "tests/test_asterion_higher.py",
+      "sha256": "a84c50c31b0ca0d713632b4b11367b6eb2e5b6adc1369844d8e50938a8c95a39",
+      "size_bytes": 10125
+    },
+    {
+      "path": "tests/test_asterion_interface.py",
+      "sha256": "c23feb517e6df69ba5cfbfa4ab438db9714d4b0ed7ddea8512fdeb447c36637e",
+      "size_bytes": 3499
+    },
+    {
+      "path": "tests/test_asterion_jacobi.py",
+      "sha256": "4cb19853aff8e7f0a734cd47295635b2d0870e1fa1fec58401afea211f583cfd",
+      "size_bytes": 4087
+    },
+    {
+      "path": "tests/test_asterion_jordan.py",
+      "sha256": "76f4f5cdcbe93db8dada0617589245284138029e77ee67dbb87b71c34da0ceb7",
+      "size_bytes": 7484
+    },
+    {
+      "path": "tests/test_asterion_kernel_characters.py",
+      "sha256": "75640e2f4e3622954b0c5072f7c40c0d1b957b8724fd0f283b026bee9aebb414",
+      "size_bytes": 5481
+    },
+    {
+      "path": "tests/test_asterion_kernel_tower.py",
+      "sha256": "ec920d3afece09744e1d65548f29ab33197b779c18d695fbba554e25ac97479c",
+      "size_bytes": 10186
+    },
+    {
+      "path": "tests/test_asterion_kz.py",
+      "sha256": "6f5fa47dcf1652e89228d78281330e5d684af05e50910763e39228459650135e",
+      "size_bytes": 10337
+    },
+    {
+      "path": "tests/test_asterion_monodromy.py",
+      "sha256": "d037f27ac36d725968102317cdbe72ac8ab8a2553d2809017398054f1f708cd4",
+      "size_bytes": 6064
+    },
+    {
+      "path": "tests/test_asterion_monodromy_algebra.py",
+      "sha256": "076eddbbc9b4c317b8c46b0a375c41a8ff5e7bcb8ae98bcb7e4fd55cf9301a6a",
+      "size_bytes": 4145
+    },
+    {
+      "path": "tests/test_asterion_periods.py",
+      "sha256": "a4dfd934e2643026c5c44ca35a2290fd1088bda0ccb2106f2eb21e6e120c0cb9",
+      "size_bytes": 3295
+    },
+    {
+      "path": "tests/test_asterion_principal.py",
+      "sha256": "d6b5b69e5d6867734e21a8b08128f0413a96ef236a8316354bfc35c3f6832f39",
+      "size_bytes": 3733
+    },
+    {
+      "path": "tests/test_asterion_publication.py",
+      "sha256": "2ce923f3966e49b5dcd597ba87cccee1e966457d09e174215a7d9da364d90533",
+      "size_bytes": 5116
+    },
+    {
+      "path": "tests/test_asterion_quartic.py",
+      "sha256": "07b0c12ac1fad960b152a26545dda7759db3443461ffa6c058851df94baebc04",
+      "size_bytes": 4224
+    },
+    {
+      "path": "tests/test_asterion_quartic_characters.py",
+      "sha256": "b721560f6cdb9b7e68d51cde6a5d77d7bcb54bea5dc86861fec7f2b2f227f67d",
+      "size_bytes": 5676
+    },
+    {
+      "path": "tests/test_asterion_relations.py",
+      "sha256": "d74720cc2f82fe21dec69168aae45049fc97bc5fbad22acd0c061128a7ad9330",
+      "size_bytes": 8765
+    },
+    {
+      "path": "tests/test_asterion_rigidity.py",
+      "sha256": "479fc358e7d4538d76bb9f8a701050f7ad5cd97509b09fe1eadd72a447b0b7b2",
+      "size_bytes": 5188
+    },
+    {
+      "path": "tests/test_asterion_transport.py",
+      "sha256": "235be4d87688fb2c87fb5f3a1a40a1a7b2b7b72bdf008aa6b4f1c00aacb519a4",
+      "size_bytes": 6420
     },
     {
       "path": "tests/test_branch_channels.py",
@@ -3869,8 +4469,8 @@
     },
     {
       "path": "tests/test_mathlab.py",
-      "sha256": "ac870e516e805383611c05e20f77abf3fa6f5d3ccd2b15901aa913d0eb986fbb",
-      "size_bytes": 2966
+      "sha256": "aec6065641907628981ba39970a9550278f6b085ba970740ce6f21a3177375b2",
+      "size_bytes": 3078
     },
     {
       "path": "tests/test_mathlab_workbench.py",

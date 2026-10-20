@@ -11,6 +11,8 @@ import json
 from pathlib import Path
 
 from perfectjet.asterion import report
+from perfectjet.asterion_basis import verify_certificate
+from perfectjet.asterion_e8 import E8LieAlgebra
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,6 +61,17 @@ def build():
         }),
         "validation.json": encoded(result),
     }
+    # The supplementary index-five certificate is retained from the original
+    # construction. Replay all of its bracket identities before refreshing
+    # the complete source binding, including newly added extension modules.
+    supplement_path = ROOT / "results/asterion/compound_seed_basis.json.gz"
+    if supplement_path.is_file():
+        supplement = json.loads(gzip.decompress(supplement_path.read_bytes()))
+        replay = verify_certificate(E8LieAlgebra().bracket, supplement["certificate"])
+        if not replay["valid"]:
+            raise ArithmeticError("supplementary compound-seed certificate failed replay")
+        supplement["source_sha256"] = result["source_sha256"]
+        payloads["compound_seed_basis.json.gz"] = compressed(supplement)
     manifest = {
         "schema": "perfectjet/asterion-receipts/1",
         "scope": "deterministic exact full replay; no performance or mathematical-priority inference",

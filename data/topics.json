@@ -4053,6 +4053,258 @@
       "topic": "Small-dimensional rigidity comparisons",
       "chapter": "docs/chapters/34_asterion_basis.md",
       "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T580",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Principal Rees family and polynomial Jacobi specialization",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T581",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Class-four nilradical and leading interaction channels",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T582",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Diagonal contraction cone and complete bounded cut classifications",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T583",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Invariant-form obstruction and quadratic completion bounds",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T584",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Canonical cotangent extension with nondegenerate pairing",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T585",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Affine current cocycle and mode derivation",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T586",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "All-order level-one state character and PBW retention",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T587",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Jordan sector Fourier populations and eta-quotient Sturm proof",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T588",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "First nonuniform affine null-ideal trace at degree five",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T589",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Thirty independent Cartan conformal null relations",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T590",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Five exact invariant tensors and split-Casimir residues",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T591",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Spectral projectors and arithmetic prime thirty-one",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T592",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Logarithmic Frobenius recurrences and resonance compatibility",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T593",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Controlled complex transport and noncommuting holonomy",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T594",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Rational Racah recoupling and terminating hypergeometric series",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T595",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Full intermediate-channel Jacobi constraints",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T596",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Finite differential current algebra and actual homotopy transfer",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T597",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Moyal enveloping closure and symmetric-square obstruction",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T598",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Principal quantum embedding obstruction and dynamical derivatives",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T599",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Affine PBW straightening and explicit singular-square descendants",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T600",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Explicit weight-four arc-kernel generator and full null lift",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T601",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Projected polarization and complete low-weight kernel dimensions",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T602",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Uniform thirty-one-dimensional kernel in every Jordan sector",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T603",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Literal reduced Jacobi Jacobian and gauge reconstruction",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T604",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Smooth local rigidity and the full-support gauge component",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T605",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Modular hypergeometric periods and character cancellation",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T606",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Evidence-separated discovery ledger and research acceptance gates",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T607",
+      "domain": "Asterion fields, hypergeometry and relations",
+      "topic": "Higher-weight differential syzygies and extended quantum frontiers",
+      "chapter": "docs/chapters/35_asterion_extension.md",
+      "coverage": "canonical synthesis; see evidence status and missing-source limits"
+    },
+    {
+      "id": "PJ-T608",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Complete weight-five and weight-six arc kernel characters",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T609",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "All-order translation injectivity and differential annihilator syzygies",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T610",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Schur covariants and the entire length-three jet Hilbert series",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T611",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Exact quartic multiplication kernel and explicit invariant arc class",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T612",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Classical rank-eight elliptic E8 CDYBE and Fay proof",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T613",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Specialized level-four compact and differential Galois groups",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T614",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Rank-eight Jacobi charge character and harmonic density compiler",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
+    },
+    {
+      "id": "PJ-T615",
+      "domain": "Asterion higher kernels, elliptic compatibility and monodromy",
+      "topic": "Preserved research gates, priority boundaries and remaining null lifts",
+      "chapter": "docs/chapters/36_asterion_frontiers.md",
+      "coverage": "Exact certificates and declared theorem dependencies; full infinite presentation and worldwide priority remain explicit boundaries."
     }
   ]
 }

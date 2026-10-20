@@ -1,0 +1,911 @@
+{
+  "schema": "perfectjet/asterion-frontier-ledger-proposals/1",
+  "date": "2026-10-20",
+  "scope": "Proposals for root integration only; does not mutate the shared discovery ledger or programme.",
+  "baseline": {
+    "discoveries": 32,
+    "programme_gates": 64,
+    "source_records": 33,
+    "ledger_sha256": "3f9c3a93fc5b4bd99b351f7d2fd964186bb099b771fd4303a1cc3e83233cdd86"
+  },
+  "preserved_programme_ids": [
+    "AST-P001",
+    "AST-P002",
+    "AST-P003",
+    "AST-P004",
+    "AST-P005",
+    "AST-P006",
+    "AST-P007",
+    "AST-P008",
+    "AST-P009",
+    "AST-P010",
+    "AST-P011",
+    "AST-P012",
+    "AST-P013",
+    "AST-P014",
+    "AST-P015",
+    "AST-P016",
+    "AST-P017",
+    "AST-P018",
+    "AST-P019",
+    "AST-P020",
+    "AST-P021",
+    "AST-P022",
+    "AST-P023",
+    "AST-P024",
+    "AST-P025",
+    "AST-P026",
+    "AST-P027",
+    "AST-P028",
+    "AST-P029",
+    "AST-P030",
+    "AST-P031",
+    "AST-P032",
+    "AST-P033",
+    "AST-P034",
+    "AST-P035",
+    "AST-P036",
+    "AST-P037",
+    "AST-P038",
+    "AST-P039",
+    "AST-P040",
+    "AST-P041",
+    "AST-P042",
+    "AST-P043",
+    "AST-P044",
+    "AST-P045",
+    "AST-P046",
+    "AST-P047",
+    "AST-P048",
+    "AST-P049",
+    "AST-P050",
+    "AST-P051",
+    "AST-P052",
+    "AST-P053",
+    "AST-P054",
+    "AST-P055",
+    "AST-P056",
+    "AST-P057",
+    "AST-P058",
+    "AST-P059",
+    "AST-P060",
+    "AST-P061",
+    "AST-P062",
+    "AST-P063",
+    "AST-P064"
+  ],
+  "proposed_new_source_ids": [
+    "AST-S034",
+    "AST-S035",
+    "AST-S036",
+    "AST-S037",
+    "AST-S038",
+    "AST-S039",
+    "AST-S040",
+    "AST-S041",
+    "AST-S042",
+    "AST-S043",
+    "AST-S044",
+    "AST-S045",
+    "AST-S046",
+    "AST-S047",
+    "AST-S048",
+    "AST-S049",
+    "AST-S050",
+    "AST-S051",
+    "AST-S052",
+    "AST-S053"
+  ],
+  "supplemental_existing_source_ids": [
+    "AST-S007",
+    "AST-S012",
+    "AST-S020"
+  ],
+  "status_definitions": {
+    "computed_certificate": "Exact concrete output retained with a replayable certificate.",
+    "derived_from_certified_data": "A stated proof uses specified exact finite data.",
+    "literature_result": "A cited primary source already establishes the result.",
+    "candidate_pending_certificate": "Plausible or reported result awaiting its stated proof and receipt.",
+    "research_target": "A proposed task with explicit acceptance criteria; not claimed solved or globally novel."
+  },
+  "discoveries": [
+    {
+      "id": "AST-D033",
+      "title": "An injective differential translation tower of arc-kernel modules",
+      "claim": {
+        "divided_jets": "D*x[r]=(r+1)*x[r+1]; E*x[r]=x[r-1]",
+        "commutator": "[E,D]=N, ordinary polynomial-degree operator",
+        "nonzero_generator": "F_Q has ordinary degree3 and E(F_Q)=0",
+        "all_order_left_inverse": "E^r D^r F_Q=3^r*r!*F_Q for all r>=0",
+        "derivative_injective_on_arc_positive_ordinary_degree": true,
+        "kernel_dimension_lower_bound_each_conformal_weight_at_least4": 3875,
+        "Jordan_grade_count": 125,
+        "kernel_lower_bound_each_grade_each_weight_at_least4": 31
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/kernel-tower.json",
+        "src/perfectjet/asterion_kernel_tower.py#translation_tower_receipt"
+      ],
+      "dependencies": [
+        "AST-D031"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "This is an all-weight lower bound obtained from an injective translation operator, not a complete higher-weight kernel character or generation theorem. E descends to the old arc algebra; only D is claimed to preserve the arc-map kernel.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D034",
+      "title": "An explicit all-order family of differential annihilator syzygies",
+      "claim": {
+        "ordinary_current_annihilator": "g[0]*K[4]=0",
+        "reason": "F_Q lies in S^2(g[0])*g[1] and all ordinary cubics vanish",
+        "leibniz_family": "sum_(j=0)^r binom(r,j)*j!*x^[j]*D^(r-j)F_Q=0 in the arc algebra",
+        "weight5_component_of_known_differential_ideal": "D(K4), dimension3875"
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/kernel-tower.json",
+        "src/perfectjet/asterion_kernel_tower.py#differential_annihilator_receipt"
+      ],
+      "dependencies": [
+        "AST-D031",
+        "AST-D033"
+      ],
+      "source_ids": [],
+      "claim_boundary": "The displayed family follows by differentiating an exact ordinary annihilator. It is not asserted to generate every differential syzygy or the full higher arc kernel.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D035",
+      "title": "Exact finite E8-module characters of the level-one VOA through weight six",
+      "claim": {
+        "conformal_weight_range": [
+          0,
+          6
+        ],
+        "dimensions": [
+          1,
+          248,
+          4124,
+          34752,
+          213126,
+          1057504,
+          4530744
+        ],
+        "method": "dominant-chamber-folded exact Freudenthal recursion plus lattice/Fock weight multiplicities",
+        "coefficients": "nonnegative integral multiplicities; Weyl-dimension sum recovers each character coefficient"
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/kernel-tower.json",
+        "src/perfectjet/asterion_kernel_tower.py#E8Freudenthal.voa_character"
+      ],
+      "dependencies": [
+        "AST-D001",
+        "AST-D015"
+      ],
+      "source_ids": [
+        "AST-S035",
+        "AST-S036",
+        "AST-S053"
+      ],
+      "claim_boundary": "Finite-module decompositions are computed only in the declared weight range. The all-degree scalar character is known literature; this computation does not classify the arc ideal.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D036",
+      "title": "The complete length-three arc Hilbert sector",
+      "claim": {
+        "sector": "ordinary polynomial length3 in the old E8 arc algebra",
+        "statement": "rational Hilbert series and finite E8-character decomposition from exact polarization maps",
+        "weight5_Li2_dimension": 1112621,
+        "jet_degree_numerator_coefficients": [
+          0,
+          151373,
+          961248,
+          3321371,
+          4932875,
+          4123000,
+          1763125
+        ],
+        "denominator_factors": [
+          "1-t",
+          "1-t^2",
+          "1-t^3"
+        ],
+        "first_jet_degree_coefficients": [
+          0,
+          151373,
+          1112621,
+          4585365
+        ],
+        "proof": "S3 polynomial covariants and exact pair-diagonal image modules; pair-fixed lines reconstructed from sparse Lie polarization and independent Schur/tensor characters"
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/kernel-characters.json",
+        "src/perfectjet/asterion_kernel_characters.py"
+      ],
+      "dependencies": [
+        "AST-D031"
+      ],
+      "source_ids": [
+        "AST-S007",
+        "AST-S034"
+      ],
+      "claim_boundary": "This is a complete all-order Hilbert/finite-character theorem for ordinary polynomial length3. It does not classify the full arc algebra, higher-length sectors or the infinite differential kernel.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D037",
+      "title": "Complete weight-five arc defect and new primitive module dimensions",
+      "claim": {
+        "old_arc_dimension_weight5": 1208877,
+        "simple_VOA_dimension_weight5": 1057504,
+        "kernel_dimension_weight5": 151373,
+        "kernel_Li_differential_degree": 2,
+        "kernel_irreducible_dimensions": [
+          248,
+          3875,
+          147250
+        ],
+        "generated_by_weight4_at_weight5_dimension": 3875,
+        "primitive_quotient_dimension": 147498,
+        "primitive_quotient_irreducible_dimensions": [
+          248,
+          147250
+        ],
+        "short_current_injection_dimension": 96256,
+        "Jordan_kernel_neutral_dimension": 1209,
+        "Jordan_kernel_each_nonzero_grade_dimension": 1211,
+        "Jordan_primitive_neutral_dimension": 1178,
+        "Jordan_primitive_each_nonzero_grade_dimension": 1180,
+        "Jordan_nonzero_grade_count": 124,
+        "all_weight_kernel_dimension_lower_bound_starts_at5": 151373
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/kernel-characters.json",
+        "results/asterion-frontiers/kernel-tower.json"
+      ],
+      "dependencies": [
+        "AST-D033",
+        "AST-D034",
+        "AST-D035",
+        "AST-D036"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "The primitive module dimensions force new relations and give their exact finite-grade distribution. Explicit null-lift formulas for their highest vectors, actual Jordan-coordinate vectors and generation at every higher weight remain separate tasks.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D038",
+      "title": "A weight-six lower bound forces another primitive arc sector",
+      "claim": {
+        "old_arc_dimension_lower_bound_weight6": 4712497,
+        "simple_VOA_dimension_weight6": 4530744,
+        "kernel_dimension_lower_bound_weight6": 181753,
+        "kernel_Li3_dimension_lower_bound": 181753,
+        "new_primitive_Li3_dimension_lower_bound_beyond_DK5": 30380,
+        "short_current_injection_dimension": 127132,
+        "forced_length3_kernel_irreducible_dimensions": [
+          248,
+          3875,
+          30380,
+          147250
+        ],
+        "forced_new_primitive_module_dimension": 30380,
+        "Jordan_forced_primitive_neutral_dimension": 248,
+        "Jordan_forced_primitive_each_nonzero_grade_dimension": 243
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/kernel-characters.json",
+        "results/asterion-frontiers/kernel-tower.json"
+      ],
+      "dependencies": [
+        "AST-D033",
+        "AST-D035",
+        "AST-D037"
+      ],
+      "source_ids": [],
+      "claim_boundary": "This certificate isolates a forced submodule in the length3/Li3 sector. Earlier kernel products have ordinary degree at least4, so itsV30380 cannot be filled by those products or translatedK5. The separate AST-D048 classification supplies the full weight-six finite character; its Li allocation and minimal generator list remain unresolved.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D039",
+      "title": "Exact associative and Lie algebras generated by the five-channel residues",
+      "claim": {
+        "associative_algebra": "M5(Q)",
+        "associative_dimension": 25,
+        "associative_word_maximum_length": 5,
+        "residue_Lie_algebra": "gl5(Q)",
+        "residue_Lie_dimension": 25,
+        "Lie_word_maximum_length": 7,
+        "centered_residue_Lie_algebra": "sl5(Q)",
+        "centered_residue_Lie_dimension": 24,
+        "common_commutant_dimension": 1,
+        "common_selfadjoint_form_dimension": 1,
+        "common_infinitesimally_invariant_bilinear_form_dimension": 0,
+        "method": "exact words, replayed pivot ranks and constructive ad_A spectral matrix units"
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/monodromy-algebra.json",
+        "src/perfectjet/asterion_monodromy_algebra.py#KZResidueAlgebra.receipt"
+      ],
+      "dependencies": [
+        "AST-D021"
+      ],
+      "source_ids": [],
+      "claim_boundary": "Residue irreducibility and the positive selfadjoint residue form do not alone prove specialized monodromy irreducibility or a common invariant Hermitian monodromy form.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D040",
+      "title": "Formal full monodromy and the rational-parameter determinant obstruction",
+      "claim": {
+        "formal_closure": "GL5 over the algebraic closure of C((hbar)); hbar constant for d/dz",
+        "analytic_statement": "There exists epsilon>0 such that 0<|hbar|<epsilon and exp(4*pi*i*hbar) of infinite order imply GL5(C) monodromy Zariski closure.",
+        "pointwise_differential_Galois_group_in_that_range": "GL5(C), by regular-singular Schlesinger density",
+        "rational_hbar_determinant_exact_order": "denominator(100*hbar)",
+        "rational_hbar_connected_closure": "contained in SL5"
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/monodromy-algebra.json",
+        "docs/ASTERION_MONODROMY_ALGEBRA.md"
+      ],
+      "dependencies": [
+        "AST-D039"
+      ],
+      "source_ids": [
+        "AST-S052"
+      ],
+      "claim_boundary": "No numerical epsilon, parameterized Kolchin group, generic Picard–Vessiot group over C(hbar)(z), or Zariski-open set of all complex parameters is computed. Rational specializations require a separate proof.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D041",
+      "title": "The specialized level-four compact and Zariski monodromy closures",
+      "claim": {
+        "level": 4,
+        "hbar": "1/34",
+        "pure_loop_generators": 2,
+        "local_generator_order": 17,
+        "local_spectrum_exponents_mod17": [
+          0,
+          1,
+          2,
+          4,
+          11
+        ],
+        "certified_nonzero_offdiagonal_projector_blocks": 20,
+        "projector_block_smallest_center_norm_lower_bound_exceeds": "0.0547440",
+        "largest_projector_block_error_upper_bound_less_than": "0.000002852",
+        "actual_specialized_irreducibility": true,
+        "primitive": true,
+        "infinite": true,
+        "compact_closure_up_to_unitarizing_conjugacy": "{g in U(5):det(g)^17=1}",
+        "compact_identity_component": "SU(5)",
+        "compact_components": 17,
+        "compact_abstract_group": "SU(5) x C17",
+        "scalar_splitting_exponent_mod17": 7,
+        "projective_compact_closure": "PU(5)",
+        "complex_Zariski_closure": "{g in GL(5,C):det(g)^17=1}",
+        "complex_Zariski_identity_component": "SL(5,C)"
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/monodromy.json",
+        "src/perfectjet/asterion_monodromy.py#monodromy_receipt",
+        "docs/ASTERION_MONODROMY.md"
+      ],
+      "dependencies": [
+        "AST-D021",
+        "AST-D030"
+      ],
+      "source_ids": [
+        "AST-S012",
+        "AST-S037",
+        "AST-S038",
+        "AST-S041"
+      ],
+      "claim_boundary": "The claim requires an exhaustive receipt: fast mode leaves the actual-level gate open. It uses the cited conformal-block unitarity and group classifications. No explicit unitarizing matrix, abstract presentation or faithfulness of the countable image, other-level classification, or higher-strand universality is claimed.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D042",
+      "title": "An exhaustive classical dynamical elliptic E8 tensor and its limits",
+      "claim": {
+        "Lie_dimension": 248,
+        "independent_dynamical_coordinates": 8,
+        "Casimir_nonzero_entries": 304,
+        "all_nz_r_entries_each_tensor": 304,
+        "possible_weight_zero_CDYBE_coordinates": 19712,
+        "three_Cartan_coordinates": 512,
+        "one_Cartan_opposite_root_coordinates": 5760,
+        "three_root_coordinates": 13440,
+        "nonzero_bracket_products": 84816,
+        "nonzero_CYBE_components_without_dynamical_derivatives": 4290,
+        "nonzero_CDYBE_components_with_all_derivatives": 0,
+        "analytic_statement": "all-nome meromorphic CDYBE reduced to classical Fay and derivative identities",
+        "finite_implementation_replay": "exact rational theta-product coefficients through p^2 in exhaustive mode",
+        "degeneration": "sequential p->0 trigonometric, then epsilon-scaled rational tensor",
+        "count_specialization": {
+          "dynamical_multiplicative_coordinates": [
+            2,
+            3,
+            5,
+            7,
+            11,
+            13,
+            17,
+            19
+          ],
+          "spectral_multiplicative_coordinates": [
+            23,
+            29,
+            667
+          ]
+        }
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/elliptic.json",
+        "src/perfectjet/asterion_elliptic.py#elliptic_receipt",
+        "docs/ASTERION_ELLIPTIC.md"
+      ],
+      "dependencies": [
+        "AST-D001",
+        "AST-D027"
+      ],
+      "source_ids": [
+        "AST-S020",
+        "AST-S042",
+        "AST-S050",
+        "AST-S051"
+      ],
+      "claim_boundary": "This implements an established classical all-type solution, with a full E8 tensor reduction. It does not construct a quantum R matrix, flat modular KZB realization, or KZ-to-KZB map. Exact finite nome coefficients do not provide analytic numerical tail bounds at a nonzero nome. The sparse entry, product and4,290-residual counts refer to that retained rational specialization; at permitted theta-numerator zeros individual entries may disappear.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D043",
+      "title": "A rank-eight charged affine carrier with exact heat and Ward normalization",
+      "claim": {
+        "charged_theta": "Theta_L(tau,z)=sum_alpha q^(|alpha|^2/2)*exp(2*pi*i*(alpha,z))",
+        "vacuum_normalized_character": "H=Theta_L/phi(q)^8",
+        "physical_character": "chi=q^(-1/3)*H=Theta_L/eta^8",
+        "charge_multiplicity": "dim V[N,alpha]=p8(N-|alpha|^2/2)",
+        "heat_operator": "L=2*D_tau-sum_i D_zi^2",
+        "derivatives": "D_tau=(2*pi*i)^(-1)*partial_tau; D_zi=(2*pi*i)^(-1)*partial_zi",
+        "heat_equations": [
+          "L(Theta)=0",
+          "L(H)=(2/3)*(1-E2)*H",
+          "L(chi)=-(2/3)*E2*chi"
+        ],
+        "finite_enumeration_bound": "receipt maximum_lattice_degree, at most8",
+        "theta_Jacobi_weight": 4,
+        "theta_Jacobi_index": 1,
+        "physical_character_modular_weight": 0
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/jacobi.json",
+        "src/perfectjet/asterion_jacobi.py#jacobi_receipt",
+        "docs/ASTERION_JACOBI.md"
+      ],
+      "dependencies": [
+        "AST-D015",
+        "AST-D032"
+      ],
+      "source_ids": [
+        "AST-S045"
+      ],
+      "claim_boundary": "Classical lattice/VOA and Jacobi theorems supply the all-order transformations. Finite charge and moment checks retain their explicit bound. Jacobi z uses exp(2*pi*i*z), whereas the elliptic tensor uses additive periods2*pi*i; compare via z_ell=2*pi*i*z_Jac and the Cartan metric coordinate map.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D044",
+      "title": "The exact degree-eight angular defect and its Lehmer boundary",
+      "claim": {
+        "all_shells_are_7designs": true,
+        "root_harmonic": "H8_root(u)=sum_alpha_root(alpha,u)^8-30*|u|^8",
+        "root_harmonic_at_first_unit_coordinate": "-3/2",
+        "all_order_identity": "M8_n(u)-N_n*n^4*|u|^8/8=tau(n)*H8_root(u)",
+        "oscillator_convolution": "angular_defect_H(q,u)=H8_root(u)*q*phi(q)^16",
+        "shell_8design_criterion": "tau(n)=0",
+        "all_shell_8design_nonexistence_proved": false
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/jacobi.json",
+        "src/perfectjet/asterion_jacobi.py#jacobi_receipt"
+      ],
+      "dependencies": [
+        "AST-D043"
+      ],
+      "source_ids": [
+        "AST-S047"
+      ],
+      "claim_boundary": "The harmonic-theta and Lehmer equivalence are established mathematics integrated into the exact program. Complete tensor coefficients are replayed only through the declared shell range; finite nonzero defects do not prove Ramanujan tau nonvanishing for every n.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D045",
+      "title": "A bounded-angular-degree modular relation compiler",
+      "claim": {
+        "even_angular_degrees": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          30
+        ],
+        "all_order_sector_theorem": "Theta_(E8,P_d) lies in Delta*Q[E4,E6]_(d-8)",
+        "implemented_coefficients": "direction u=e1; full-rank Sturm panels and independent later coefficients",
+        "first_two_dimensional_cusp_sector_angular_degree": 20,
+        "whole_moment_tensor_finite_replay_through_angular_degree": 8
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/jacobi.json",
+        "src/perfectjet/asterion_jacobi.py#harmonic_theta_receipt"
+      ],
+      "dependencies": [
+        "AST-D043",
+        "AST-D044"
+      ],
+      "source_ids": [
+        "AST-S047"
+      ],
+      "claim_boundary": "The modular theorem is polynomial-valued in u, but computed coefficient arrays above angular degree8 are only the e1 specialization. No entire multivariate degree30 tensor or all-angular-degree implementation is claimed.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D046",
+      "title": "The published 2026 weak E8 Jacobi ring theorem is prior art",
+      "claim": {
+        "ring": "weak W(E8)-invariant Jacobi forms",
+        "known_identification": "joint covariants of a binary quartic and sextic",
+        "minimal_generator_count": 194,
+        "published": "Math.Z.313,71(2026)",
+        "finite_generation_open_in_this_programme": false
+      },
+      "evidence_status": "literature_result",
+      "evidence": [
+        "https://arxiv.org/pdf/2410.12907",
+        "docs/ASTERION_NEXT_PUSH_SOURCES.md"
+      ],
+      "dependencies": [],
+      "source_ids": [
+        "AST-S046"
+      ],
+      "claim_boundary": "This records a primary literature result to prevent an obsolete finite-generation target. The project has not implemented all194 generators or claimed that the rank-eight classical tensor realizes the universal KZB connection.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D047",
+      "title": "An explicit nonzero quartic arc class and exact invariant line",
+      "claim": {
+        "dual_quartic": "F0(x,y)=2*B(x,y)^2-B([x,y],[x,y])-2*B(x,x)*B(y,y)",
+        "sector": "length4/Li2 at conformal weight6; x zero jet, y divided first jet",
+        "exact_dual_identification": "Arc(R)[length4,Li2]^*=ker[mu:Sym^2(1+V3875)->Sym^4(g)]",
+        "metric": "B(h_i,h_j)=Cartan_ij; B(e_alpha,e_minus_alpha)=1; symmetric tensors use averaged symmetrization",
+        "tensor_operator": "T0=2*Id-Omega-2*|C><C|=14*(K_3875-31*K_1)",
+        "T0_eigenvalues_on_1_V3875_I27000": [
+          -434,
+          14,
+          0
+        ],
+        "Omega_eigenvalues_on_1_V3875_I27000": [
+          -60,
+          -12,
+          2
+        ],
+        "exact_tensor_norm_squared": 947856,
+        "exact_quartic_arc_invariant_dimension": 1,
+        "polynomial_Cartan_witness": "F0(h0,h2)=-8",
+        "total_arc_weight6_lower_bound": 4712498,
+        "total_kernel_weight6_lower_bound": 181754,
+        "whole_weight6_kernel_invariant_dimension_lower_bound": 1,
+        "explicit_F0_VOA_image_computed": false
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/quartic.json",
+        "src/perfectjet/asterion_quartic.py#quartic_receipt",
+        "docs/ASTERION_QUARTIC.md"
+      ],
+      "dependencies": [
+        "AST-D001",
+        "AST-D031",
+        "AST-D036",
+        "AST-D038"
+      ],
+      "source_ids": [],
+      "claim_boundary": "The full duality and nonzero self-pairing prove that F0 survives the arc quotient. Its individual VOA image and an affine null lift are not computed. Invariant counts alone do not locate the kernel singlet in Li degree2 or3. This standalone invariant calculation is included in the separate exact quartic classification AST-D048; do not count its line twice.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D048",
+      "title": "Exact quartic classification completes the weight-six arc-kernel finite character",
+      "claim": {
+        "source": "Sym^2(W), W=1+V3875",
+        "source_character": {
+          "1": 2,
+          "3875": 2,
+          "27000": 1,
+          "147250": 1,
+          "2450240": 1,
+          "4881384": 1
+        },
+        "source_dimension": 7513626,
+        "target_Sym4g_character": {
+          "1": 1,
+          "3875": 1,
+          "27000": 2,
+          "147250": 1,
+          "2450240": 1,
+          "4096000": 1,
+          "4881384": 1,
+          "70680000": 1,
+          "79143000": 1
+        },
+        "target_dimension": 161455750,
+        "includes_D047_invariant_line": true,
+        "independent_grounding": "actual adjoint weights, complete3875 weight support, Newton identities, fixed norm16/32 bounds and exact Freudenthal reconstruction",
+        "exact_quartic_multiplication_kernel_character": {
+          "1": 1,
+          "3875": 1
+        },
+        "exact_quartic_arc_dimension": 3876,
+        "kernel_total_Casimir_upper_bound": 168,
+        "excluded_kernel_modules_by_Casimir": {
+          "2450240": 180,
+          "4881384": 200
+        },
+        "multiplication_27000_nonzero_coefficient": "8/49",
+        "multiplication_147250_highest_vector_nonzero_terms": 1421,
+        "multiplication_147250_highest_vector_Casimir": 144,
+        "exact_total_arc_weight6_dimension": 4716373,
+        "exact_total_simple_weight6_dimension": 4530744,
+        "exact_total_arc_kernel_weight6_dimension": 185629,
+        "exact_total_arc_kernel_weight6_character": {
+          "1": 1,
+          "248": 1,
+          "3875": 2,
+          "30380": 1,
+          "147250": 1
+        },
+        "exact_total_arc_weight6_character": {
+          "1": 5,
+          "248": 8,
+          "3875": 8,
+          "27000": 3,
+          "30380": 5,
+          "147250": 3,
+          "779247": 2,
+          "2450240": 1
+        },
+        "weight6_factor_lengths5_and6_vanish": "Each monomial has at least three zero jets, so ordinary cubic relations kill it.",
+        "full_Li_bigraded_kernel_embedding_computed": false,
+        "complete_minimal_differential_generator_list_computed": false,
+        "explicit_new_primitive_affine_null_lifts_computed": false,
+        "shared_multiplication_blocks_grounded_by_actual_witnesses_or_Casimir_exclusion": true
+      },
+      "evidence_status": "derived_from_certified_data",
+      "evidence": [
+        "results/asterion-frontiers/validation.json#/finite_weight_six_closure",
+        "results/asterion-frontiers/quartic.json",
+        "results/asterion-frontiers/quartic.json#/quartic_characters",
+        "src/perfectjet/asterion_quartic.py#quartic_receipt",
+        "src/perfectjet/asterion_frontiers.py#frontiers_report",
+        "docs/ASTERION_QUARTIC.md"
+      ],
+      "dependencies": [
+        "AST-D035",
+        "AST-D038",
+        "AST-D047"
+      ],
+      "source_ids": [
+        "AST-S053"
+      ],
+      "claim_boundary": "This is an exact quartic-sector theorem and complete conformal-weight-six finite E8 character/dimension calculation, obtained from witnessed multiplication blocks, the positive-form Casimir cutoff and independently reconstructed characters. It does not compute the full Li-bigraded kernel embedding, a minimal differential generator list, explicit new primitive affine null lifts, or the infinite kernel. The explicitF0 VOA image remains open.",
+      "priority_claim": "No worldwide novelty claim is made."
+    }
+  ],
+  "programme_updates": [
+    {
+      "id": "AST-P016",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "charged_heat_Ward_normalization_completed;explicit_operator_comparison_target",
+      "additional_evidence": [
+        "AST-D043"
+      ],
+      "next_acceptance_criteria": [
+        "Retain one normalization dictionary for theta, H, chi and Sugawara operators.",
+        "Compare actual operator identities on a declared carrier."
+      ],
+      "remaining_claim_boundary": "The differential character identity does not identify every operator or KZB connection.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P018",
+      "preserved_baseline_state": "entire_weight4_kernel_explicit_and_complete;higher_weight_generators_target",
+      "proposed_state": "finite_arc_kernel_characters_complete_through_weight6;weight5_primitive_quotient_exact;explicit_lifts_and_weight6_minimal_generators_target",
+      "additional_evidence": [
+        "AST-D037",
+        "AST-D038",
+        "AST-D048"
+      ],
+      "next_acceptance_criteria": [
+        "Determine the exact Li2/Li3 allocation of the complete weight-six kernel.",
+        "Compute derivative and current-product images to identify its minimal differential generators.",
+        "Construct actual primitive highest vectors, affine null lifts and nonmembership certificates.",
+        "Continue complete finite-kernel characters at weight7; full generation still requires an all-weight proof."
+      ],
+      "remaining_claim_boundary": "Complete finite characters through weight6 do not provide explicit kernel embeddings or an infinite differential presentation.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P019",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "exact_annihilator_syzygy_family_completed;complete_syzygy_module_target",
+      "additional_evidence": [
+        "AST-D034"
+      ],
+      "next_acceptance_criteria": [
+        "Compute additional intersections and syzygies among all known primitive modules.",
+        "Give a complete range or a proved infinite presentation."
+      ],
+      "remaining_claim_boundary": "An all-order family of syzygies need not generate every syzygy.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P020",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "finite_kernel_characters_complete_through_weight6;weight5_and_forced_weight6_grading_exact;full_Li_and_vector_transport_target",
+      "additional_evidence": [
+        "AST-D031",
+        "AST-D037",
+        "AST-D038",
+        "AST-D048"
+      ],
+      "next_acceptance_criteria": [
+        "Preserve the certified exact finite-grade dimensions forK5 and the forcedV30380 sector atweight6.",
+        "Transport actual new primitive highest vectors into the Jordan chart for coordinate-level claims.",
+        "Compute further grade modules without extrapolating uniformity fromV3875."
+      ],
+      "remaining_claim_boundary": "Representation-identification and twining determine exact grade populations; new primitive coefficient vectors are not yet transported into Jordan coordinates.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P022",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "all_order_length3_and_exact_arc_characters_through_weight6_completed;full_resolution_target",
+      "additional_evidence": [
+        "AST-D036",
+        "AST-D048"
+      ],
+      "next_acceptance_criteria": [
+        "Extend the complete finite arc and kernel characters to weight7.",
+        "Resolve the weight-six Li allocation and multiplication/differential maps.",
+        "Prove an augmented-ideal normal-form theorem or all-order exact resolution."
+      ],
+      "remaining_claim_boundary": "One complete sector is not the full infinite kernel presentation.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P028",
+      "preserved_baseline_state": "two_complex_generator_enclosures_and_noncommutativity_completed;normalized_connection_target",
+      "proposed_state": "actual_level4_compact_and_Zariski_closures_completed;other_levels_and_image_structure_target",
+      "additional_evidence": [
+        "AST-D041"
+      ],
+      "next_acceptance_criteria": [
+        "Preserve the exhaustive loop/projector/theorem hypothesis receipt.",
+        "Construct an explicit common positive Hermitian matrix if numerical unitarization is claimed.",
+        "Prove any other-level or discrete-image theorem independently."
+      ],
+      "remaining_claim_boundary": "The classified closure is det^(-1)(mu17), not an assertion that the raw image lies in SU5; projectively it is dense in PU5.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P030",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "level4_full_five_channel_fusion_identification_completed;lower_level_truncation_target",
+      "additional_evidence": [
+        "AST-D041"
+      ],
+      "next_acceptance_criteria": [
+        "Compute actual fusion truncation and conformal-block dimension at each claimed lower level.",
+        "Retain the distinction between a formal classical five-channel ODE and physical fusion blocks."
+      ],
+      "remaining_claim_boundary": "No physical level-one five-channel adjoint-primary interpretation is asserted.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P044",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "classical_rank8_dynamical_elliptic_CDYBE_completed;quantum_and_KZB_realizations_target",
+      "additional_evidence": [
+        "AST-D042"
+      ],
+      "next_acceptance_criteria": [
+        "Retain all root/Fay reductions and declared analytic pole exclusions.",
+        "Implement an actual KZB homomorphism or quantum exchange matrix with every defining relation."
+      ],
+      "remaining_claim_boundary": "The completed tensor is a classical established solution, not a finite quantum R matrix.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P045",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "sequential_classical_elliptic_trigonometric_rational_limits_completed;quantum_limits_target",
+      "additional_evidence": [
+        "AST-D042"
+      ],
+      "next_acceptance_criteria": [
+        "Retain the actual sequential rescalings and coordinate dictionary.",
+        "Prove each quantum limit and its convergence or formal topology separately."
+      ],
+      "remaining_claim_boundary": "No arbitrary simultaneous degeneration path is established.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P055",
+      "preserved_baseline_state": "research_target",
+      "proposed_state": "rank8_charged_Jacobi_character_and_classical_tensor_completed;flat_modular_KZB_comparison_target",
+      "additional_evidence": [
+        "AST-D042",
+        "AST-D043",
+        "AST-D046"
+      ],
+      "next_acceptance_criteria": [
+        "Supply the KZB modular tau operator and mixed-curvature identities.",
+        "Construct a map of the actual KZ and KZB local systems before equating their monodromy.",
+        "Treat the194-generator weak Jacobi theorem as prior art and identify any implemented subset."
+      ],
+      "remaining_claim_boundary": "Charge heat equations, scalar periods and classical CDYBE alone do not supply a KZB local-system identification.",
+      "original_record_and_acceptance_criteria_preserved": true
+    },
+    {
+      "id": "AST-P064",
+      "preserved_baseline_state": "classical_finite_series_adapter_completed;KZ_comparison_target",
+      "proposed_state": "classical_period_adapter_and_charged_normalization_completed;KZ_period_map_target",
+      "additional_evidence": [
+        "AST-D032",
+        "AST-D043"
+      ],
+      "next_acceptance_criteria": [
+        "Preserve q=Q^2 and z_ell=2*pi*i*z_Jac, with the Cartan coordinate conversion.",
+        "Give an explicit intertwining map of differential systems for any proposed KZ-period bridge."
+      ],
+      "remaining_claim_boundary": "Shared modular functions or the integer31 do not identify separate local systems.",
+      "original_record_and_acceptance_criteria_preserved": true
+    }
+  ],
+  "merge_preconditions": [
+    "Require retained individual frontier receipts and validation.json component passed=true for every computational assertion.",
+    "Require group_closure_certified_in_this_run=true for AST-D041; a fast monodromy receipt is insufficient.",
+    "Preserve every AST-P001..064 original record and acceptance criteria; these updates narrow completion scope and retain the next gate.",
+    "Append AST-S034..053; use supplemental reviews for existing AST-S007,012,020 without overwriting their earlier provenance."
+  ],
+  "worldwide_priority_claim": false
+}

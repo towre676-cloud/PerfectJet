@@ -15,6 +15,9 @@ def build(check=False):
     resources = ROOT/'src/perfectjet/resources'
     resources.mkdir(exist_ok=True)
     expected = {'equations.json': equations, 'equation_power.json': power}
+    discoveries = ROOT/'docs/ASTERION_DISCOVERIES.json'
+    if discoveries.is_file():
+        expected['asterion_discoveries.json'] = json.loads(discoveries.read_text())
     for name, content in expected.items():
         path = resources/name
         encoded = json.dumps(content, indent=2, ensure_ascii=False)+'\n'
