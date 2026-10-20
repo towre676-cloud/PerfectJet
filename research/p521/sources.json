@@ -1,0 +1,194 @@
+{
+  "schema": "perfectjet.p521.sources.v1",
+  "research_date": "2026-10-20",
+  "scope": "Public P-521 parameter provenance. No private-key recovery or ECDLP break is claimed.",
+  "sources": [
+    {
+      "id": "nist-sp800-186",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-186.pdf",
+      "title": "NIST SP 800-186, February 2023",
+      "sections": [
+        "3.2.1.5",
+        "C.2.1.1",
+        "C.3.1"
+      ],
+      "role": "Official P-521 constants and distinction between coefficient generation and base-point selection",
+      "sha256": null,
+      "hash_note": "Parsed PDF text was inspected; original PDF bytes were not downloaded."
+    },
+    {
+      "id": "anthropic-origins",
+      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "title": "Claude reveals ECDSA curve origins",
+      "publication_date": "2026-10-16",
+      "role": "Known curve-seed recipes and six FreeLIP base-point positive controls; explicitly leaves P-521 base-point origin open",
+      "code_license": "CC0 1.0 as stated by source"
+    },
+    {
+      "id": "valsorda-verification",
+      "url": "https://words.filippo.io/seeds-solved/",
+      "publication_date": "2026-10-16",
+      "role": "Independent curve-seed verification and skipped-candidate observations",
+      "implementation_url": "https://github.com/FiloSottile/mostly-harmless/blob/main/seeds/seeds.go"
+    },
+    {
+      "id": "freelip-original",
+      "url": "https://github.com/oreparaz/crypto-archeology/blob/1de75d5681e620a49f2404c5760075f3e0664413/freelip_1.0/lip.c",
+      "repository": "oreparaz/crypto-archeology",
+      "commit": "1de75d5681e620a49f2404c5760075f3e0664413",
+      "path": "freelip_1.0/lip.c",
+      "git_blob_sha1": "5a3eb7029264572075860c47340f6e044d1026ef",
+      "bytes": 204387,
+      "sha256": "5c507451e8c13323f106a66b5f76cdf17dfbe9eb7f289eb1ac0c706855625bff",
+      "role": "Archived original FreeLIP 1.0 implementation of zrstarts, zrstart, zrandom and zrandomb",
+      "license": "Original notices permit non-commercial copying/redistribution/use; original source is not vendored in this release. Mathematical behavior is independently implemented.",
+      "readme_url": "https://github.com/oreparaz/crypto-archeology/blob/1de75d5681e620a49f2404c5760075f3e0664413/freelip_1.0/README",
+      "readme_git_blob_sha1": "81d803b77656b2f1403d1dad5431c00631df9220",
+      "readme_date": "1995-05-01",
+      "author_notices": [
+        "Arjen K. Lenstra, copyright 1989",
+        "Paul Leyland, maintainer and FreeLIP 1.0 adaptation"
+      ],
+      "function_start_lines": {
+        "zrstarts": 3787,
+        "zrstart": 3815,
+        "zrandom": 3833,
+        "zrandomb": 9249
+      }
+    },
+    {
+      "id": "ntl-official-history",
+      "url": "https://libntl.org/doc/tour-changes.html",
+      "role": "Documents PRNG replacement at 3.1b to 3.5a, and later ARC4 byte-discard changes",
+      "limitation": "The 3.1b to 3.5a entry is undated. It does not establish a PRNG switch in summer 1997."
+    }
+  ],
+  "p521": {
+    "p_expression": "2**521-1",
+    "p_hex": "1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "a": -3,
+    "cofactor": 1,
+    "b_hex": "51953eb9618e1c9a1f929a21a0b68540eea2da725b99b315f3b8b489918ef109e156193951ec7e937b1652c0bd3bb1bf073573df883d2c34f1ef451fd46b503f00",
+    "gx_hex": "c6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66",
+    "gy_hex": "11839296a789a3bc0045c8a5fb42c7d1bd998f54449579b446817afbd17273e662c97ee72995ef42640c550b9013fad0761353c7086a272c24088be94769fd16650",
+    "n_hex": "1fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffa51868783bf2f966b7fcc0148f709a5d03bb5c9b8899c47aebb6fb71e91386409",
+    "curve_seed_hex": "d09e8800291cb85396cc6717393284aaa0da64ba",
+    "independent_checks": {
+      "curve_equation_residue": 0,
+      "n_times_G_is_infinity": true,
+      "b_bit_length": 519,
+      "gx_bit_length": 520,
+      "gy_bit_length": 521
+    },
+    "known_curve_seed_provenance": {
+      "unix_timestamp": 871002724,
+      "utc": "1997-08-08T01:12:04Z",
+      "candidate_index_one_based": 1136,
+      "bytes_per_candidate": 20,
+      "output_rule": "new_lrand48_state >> 40",
+      "status": "Published result reproduced as a positive control; not a new discovery"
+    }
+  },
+  "original_freelip_rng": {
+    "modulus": "162259276829213363391578010288127",
+    "multiplier": "56455876562739436995171414077326",
+    "multiplier_expression": "pow(3,121,2**107-1)",
+    "default_seed": 7157891,
+    "seed_rules": {
+      "zrstarts": "Initialize state to supplied long and modulus/multiplier to fixed constants.",
+      "zrstart": "Reduce arbitrary-length supplied seed modulo modulus."
+    },
+    "zrandom_bound": "bound=M-(M mod b); repeat state=A*state mod M until state<bound; output state mod b.",
+    "zrandom_power_of_two_rejection_interval": "For b=2**w: [2**107-2**w, 2**107-2], inclusive.",
+    "zrandomb_assembly": "Use one more radix limb than bound; fill high limb first using zrandom(RADIX); reduce resulting integer modulo supplied bound.",
+    "rejection_gap_certificates": [
+      {
+        "limb_bits": 26,
+        "rejected_states": 67108863,
+        "floor_sum_unshifted": "783482630212631",
+        "floor_sum_shifted": "783482697321494",
+        "nonzero_small_modular_returns": 0,
+        "maximum_consecutive_rejections": 1
+      },
+      {
+        "limb_bits": 30,
+        "rejected_states": 1073741823,
+        "floor_sum_unshifted": "200571564189449281",
+        "floor_sum_shifted": "200571565263191104",
+        "nonzero_small_modular_returns": 0,
+        "maximum_consecutive_rejections": 1
+      },
+      {
+        "limb_bits": 31,
+        "rejected_states": 2147483647,
+        "floor_sum_unshifted": "802286258205132554",
+        "floor_sum_shifted": "802286260352616201",
+        "nonzero_small_modular_returns": 0,
+        "maximum_consecutive_rejections": 1
+      },
+      {
+        "limb_bits": 32,
+        "rejected_states": 4294967295,
+        "floor_sum_unshifted": "3209145035715201135",
+        "floor_sum_shifted": "3209145040010168430",
+        "nonzero_small_modular_returns": 0,
+        "maximum_consecutive_rejections": 1
+      }
+    ]
+  },
+  "p521_middle_limb_deduction": {
+    "model": "22 successive accepted low-26-bit FreeLIP outputs, high limb first, concatenated into U<2**572, then reduced modulo p.",
+    "proof": "U=Gx+q*p, 0<=q<=2**51. Since Gx mod 2**52 >2**51, subtracting q does not borrow across bit 52. Therefore bits 52..519 of U equal those of Gx.",
+    "quotient_upper_bound": "2251799813685248",
+    "gx_low_52_hex": "0xe7e31c2e5bd66",
+    "fixed_output_indices_one_based": [
+      3,
+      20
+    ],
+    "fixed_low26_outputs": [
+      52041272,
+      7041088,
+      20607847,
+      37669734,
+      9328337,
+      2737736,
+      5128527,
+      62202360,
+      10665345,
+      45405147,
+      44585687,
+      41414631,
+      23372792,
+      31199866,
+      12577335,
+      36915379,
+      50730409,
+      2736023
+    ],
+    "priority": "Elementary deduction; no worldwide-priority claim."
+  },
+  "unresolved": [
+    "Historical P-521 base-point generating recipe",
+    "P-521/P-384/P-256/P-224 base-point origins are unresolved in the inspected October16 report",
+    "All NTL 3.1/3.5 release dates and exact archived transition source are not established by this source review"
+  ],
+  "lrand48_31bit_in_32bit_slots_exclusion": {
+    "model": "Seventeen successive 31-bit lrand48 outputs, each held in a32-bit slot, concatenated and reduced modulo2**521\u22121.",
+    "raw_upper_bound_expression": "2**543",
+    "quotient_upper_bound": "4194304",
+    "gx_low32_hex": "0xc2e5bd66",
+    "proof": "The quotient correction cannot borrow across bit32. Every raw slot top bit is zero, but fixed Gx bit63 is one. Thus no state satisfies this assembly. Reversing whole slot order preserves the zero-bit obstruction; byte swaps within a slot require separate contracts.",
+    "violating_slot_indices_zero_based": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      13,
+      15
+    ]
+  }
+}

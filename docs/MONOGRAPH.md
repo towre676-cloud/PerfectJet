@@ -4188,3 +4188,24 @@ coefficient would destroy this semiclassical correspondence.
 | PJ-D033 | dim ker(T on actual productfunctions)=1 at T=-1;19 at T=1;0 at all other nonzero T | derived: The first denominator shell is fixed to A and the second correction lies in products of its six functions. Three symbolic21minors and exact exceptional-field rank certificates classify all nonzero couplings. Function-space dependencies are quotiented out. |
 | PJ-D034 | rho_star=H1^0*H2^0/Y_all at T=-1; {rho_star,H1^0/H2^0}=0 | exact_checked: A retained nine-product expansion proves membership in the second-order normalizer ansatz. This is one nonzero homogeneous normalizer direction, not a new independent conserved quantity. |
 | PJ-D035 | f1*f4=f0*f5; f2*f3=f0*f5 when T²+T+1=0 | exact_checked: Zero-based f_i order is lexicographic perm(-1,0,1). The21nominal products span19actual functions. The two coefficient-kernel directions represent identically zero functions, so they give no new normalizer freedom. |
+
+---
+
+# Asterion half-braid registry supplement
+
+The following existing catalogue records complete the master registry after the half-braid extension. Their definitions and evidence remain in [the half-braid account](ASTERION_HALF_BRAID.md); this supplement changes no equation or proof status.
+
+| ID | Title | Equation | Evidence | Assumptions and limits |
+|---|---|---|---|---|
+| PJ-HB001 | flat three-point lift | A+B+C=-60I; [A,B+C]=[B,A+C]=[C,A+B]=0 | exact_checked | Actual E8 residues; h=1/34. Flat permutation-equivariant descent gives a linear B3 representation. |
+| PJ-HB002 | tensor exchange parities | P12\|channels=diag(1,-1,1,-1,1) | exact_checked | Channel order1,248,3875,30380,27000; actual invariant tensor permutations, not arbitrary square-root choices. |
+| PJ-HB003 | based half-braid reconstruction | R1=sum_i mu_i P_i(U); R2=X R1 X | derived | Simple pure spectrum; positive counterclockwise exchanges at ordered base(0,1/2,1); canonical local logarithms. |
+| PJ-HB004 | exact half-braid spectrum | mu=(zeta^2,zeta,zeta^14,-1,-zeta^9) | exact_checked | zeta=exp(2pi i/17); squared spectrum agrees with existing U,V channel by channel. |
+| PJ-HB005 | linear braid and squares | R1 R2 R1=R2 R1 R2; R1^2=U; R2^2=V | derived | Exact flat equivariant KZ descent; exact cyclotomic braid model and rigorous same-chart consistency replay. Residual enclosure alone is not an equality proof. |
+| PJ-HB006 | central full twist | (R1 R2)^3=zeta^4 I | exact_checked | Central rotation integrates h(A+B+C); independently verified in the Tuba-Wenzl model overQ(zeta17). |
+| PJ-HB007 | half-braid orders and determinants | ord(Ri)=po(Ri)=34; det(Ri)=zeta^9 | derived | Displayed five distinct signed half phases, with the tensor-permutation lift fixed. |
+| PJ-HB008 | Tuba-Wenzl class | gamma=zeta^12; gamma^5=det R1; gamma^6=zeta^4 | exact_checked | Five-dimensional simple B3 module; all20 Proposition2.8 polynomials are nonzero; uniqueness is Theorem2.9. |
+| PJ-HB009 | cyclotomic integral realization | rho(B3) is conjugate to a subgroup of GL5(Z[zeta17]) | derived | Retained ordered triangular matrices have integral cyclotomic coefficients and unit determinant; exact chart conjugator is not computed. |
+| PJ-HB010 | linear modular normalization | Ti=zeta^5 Ri; (T1 T2)^3=(T1 T2 T1)^2=I; det Ti=1 | exact_checked | Common character twist changes pure squares tozeta^10U,zeta^10V; original normalization is kept distinct. |
+| PJ-HB011 | triangle-group quotient | normalized image is a quotient of Delta(2,3,34) | derived | s=T1T2T1,t=T1T2; s^2=t^3=(t^-1s)^34=1. Faithfulness and the full normal kernel remain open. |
+| PJ-HB012 | half-braid and normalized compact closures | closure(<R1,R2>)={g in U5:det(g)^17=1}; closure(<T1,T2>)=SU5 | derived | Up to the established pure-loop unitarizing conjugacy: unit-modulus spectral half-roots preserve the same H; normalized projective image is densePU5 and SU5->PU5 has finite kernel. This is not a discrete-image presentation. |

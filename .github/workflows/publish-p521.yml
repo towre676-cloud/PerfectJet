@@ -1,0 +1,79 @@
+name: Verify and publish P-521 provenance research
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'research/p521/**'
+      - '.github/workflows/publish-p521.yml'
+permissions:
+  contents: read
+concurrency:
+  group: p521-provenance-v0.1.0-publication
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check retained proofs without optional dependencies
+        run: |
+          python research/p521/run_research.py --check --output /tmp/verification.json
+          cmp /tmp/verification.json research/p521/results/verification.json
+      - name: Install optional discovery tools and run adversarial research tests
+        run: |
+          python -m pip install -r research/p521/requirements-discovery.txt
+          python -m unittest discover -s research/p521/tests -v
+      - name: Rebuild twice and check extracted package
+        run: |
+          python research/p521/build_release.py
+          cp dist/PerfectJet-P521-Provenance-v0.1.0.zip /tmp/first-p521.zip
+          python research/p521/build_release.py
+          cmp /tmp/first-p521.zip dist/PerfectJet-P521-Provenance-v0.1.0.zip
+          python -m zipfile -e dist/PerfectJet-P521-Provenance-v0.1.0.zip /tmp/p521-package
+          cd /tmp/p521-package/PerfectJet-P521-Provenance
+          python research/p521/run_research.py --check --output /tmp/extracted-verification.json
+          cmp /tmp/extracted-verification.json research/p521/results/verification.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: p521-provenance-v0.1.0-${{ github.sha }}
+          path: dist/PerfectJet-P521-Provenance-v0.1.0.zip*
+  publish:
+    needs: verify
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: p521-provenance-v0.1.0-${{ github.sha }}
+          path: dist
+      - name: Publish the verified research archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd dist
+          sha256sum -c PerfectJet-P521-Provenance-v0.1.0.zip.sha256
+          cd ..
+          if gh release view p521-provenance-v0.1.0 >/dev/null 2>&1; then
+            echo 'The versioned release already exists; refusing to overwrite.' >&2
+            exit 1
+          fi
+          gh release create p521-provenance-v0.1.0 dist/PerfectJet-P521-Provenance-v0.1.0.zip dist/PerfectJet-P521-Provenance-v0.1.0.zip.sha256 --target "$GITHUB_SHA" --title 'P-521 Provenance Laboratory 0.1.0 — exact all-state exclusions' --notes-file research/p521/RELEASE_NOTES.md --prerelease --latest=false
+      - name: Independently download and check the public archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir /tmp/p521-published
+          gh release download p521-provenance-v0.1.0 --dir /tmp/p521-published
+          cd /tmp/p521-published
+          sha256sum -c PerfectJet-P521-Provenance-v0.1.0.zip.sha256
+          cmp PerfectJet-P521-Provenance-v0.1.0.zip "$GITHUB_WORKSPACE/dist/PerfectJet-P521-Provenance-v0.1.0.zip"

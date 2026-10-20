@@ -1,0 +1,431 @@
+{
+  "conclusion": "Declared FreeLIP and lrand48 generator/assembly families are excluded.",
+  "open": "The historical P-521 base-point generation recipe remains unknown.",
+  "previously_explained_base_points": {
+    "all_pass": true,
+    "attribution": "Previously explained by Anthropic; independently implemented replay",
+    "controls": [
+      {
+        "candidate_index": 2,
+        "curve": "P-192",
+        "matches_published_x": true,
+        "rejected_draws": 0,
+        "seed": 20000,
+        "x": "0x188da80eb03090f67cbf20eb43a18800f4ff0afd82ff1012"
+      },
+      {
+        "candidate_index": 3,
+        "curve": "prime239v1",
+        "matches_published_x": true,
+        "rejected_draws": 0,
+        "seed": 20420,
+        "x": "0xffa963cdca8816ccc33b8642bedf905c3d358573d3f27fbbd3b3cb9aaaf"
+      },
+      {
+        "candidate_index": 2,
+        "curve": "prime239v2",
+        "matches_published_x": true,
+        "rejected_draws": 0,
+        "seed": 20507,
+        "x": "0x38af09d98727705120c921bb5e9e26296a3cdcf2f35757a0eafd87b830e7"
+      },
+      {
+        "candidate_index": 1,
+        "curve": "prime239v3",
+        "matches_published_x": true,
+        "rejected_draws": 0,
+        "seed": 20509,
+        "x": "0x6768ae8e18bb92cfcf005c949aa2c6d94853d0e660bbf854b1c9505fe95a"
+      },
+      {
+        "candidate_index": 5,
+        "curve": "prime192v2",
+        "matches_published_x": true,
+        "rejected_draws": 0,
+        "seed": 20512,
+        "x": "0xeea2bae7e1497842f2de7769cfe9c989c072ad696f48034a"
+      },
+      {
+        "candidate_index": 1,
+        "curve": "prime192v3",
+        "matches_published_x": true,
+        "rejected_draws": 0,
+        "seed": 20517,
+        "x": "0x7d29778100c65a1da1783716588dce2b8b4aee8e228f1896"
+      }
+    ]
+  },
+  "proofs": {
+    "freelip-recovery.json": {
+      "profiles": [
+        {
+          "gap_patterns_verified": 1,
+          "limb_count": 20,
+          "observations_used": 8,
+          "order": "msb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 58656340,
+            "first_multiple_index": -3597,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -3598,
+            "maximum": -583788402232460517699473914367848103,
+            "minimum": -583788479494909649270424469839524308,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 58656340
+          }
+        },
+        {
+          "gap_patterns_verified": 1,
+          "limb_count": 20,
+          "observations_used": 8,
+          "order": "lsb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 5948247,
+            "first_multiple_index": -6101,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -6102,
+            "maximum": -989958191063750081434583399384749326,
+            "minimum": -989958268326199213005533954856425531,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 5948247
+          }
+        },
+        {
+          "gap_patterns_verified": 1,
+          "limb_count": 21,
+          "observations_used": 8,
+          "order": "msb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 58656340,
+            "first_multiple_index": -3597,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -3598,
+            "maximum": -583788402232460517699473914367848103,
+            "minimum": -583788479494909649270424469839524308,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 58656340
+          }
+        },
+        {
+          "gap_patterns_verified": 1,
+          "limb_count": 21,
+          "observations_used": 8,
+          "order": "lsb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 59873846,
+            "first_multiple_index": -1417,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -1418,
+            "maximum": -230066122493653256963249811574772033,
+            "minimum": -230066199756102388534200367046448238,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 59873846
+          }
+        },
+        {
+          "gap_patterns_verified": 1,
+          "limb_count": 22,
+          "observations_used": 8,
+          "order": "msb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 58656340,
+            "first_multiple_index": -3597,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -3598,
+            "maximum": -583788402232460517699473914367848103,
+            "minimum": -583788479494909649270424469839524308,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 58656340
+          }
+        },
+        {
+          "gap_patterns_verified": 1,
+          "limb_count": 22,
+          "observations_used": 8,
+          "order": "lsb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 24583026,
+            "first_multiple_index": -6948,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -6949,
+            "maximum": -1127436854669045625186925178058184973,
+            "minimum": -1127436931931494756757875733529861178,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 24583026
+          }
+        }
+      ],
+      "scope": "All states modulo 2^107-1 for the fixed FreeLIP multiplier, low26 output, listed assemblies, and final field reduction; consecutive raw draws with no rejection loop.",
+      "source_rejection": false,
+      "synthetic_recovery_controls": "Checked by the separate discovery tests; not inferred from receipt summary flags.",
+      "verified": true
+    },
+    "freelip-source-recovery.json": {
+      "profiles": [
+        {
+          "gap_patterns_verified": 128,
+          "limb_count": 20,
+          "observations_used": 8,
+          "order": "msb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 58656340,
+            "first_multiple_index": -3597,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -3598,
+            "maximum": -583788402232460517699473914367848103,
+            "minimum": -583788479494909649270424469839524308,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 58656340
+          }
+        },
+        {
+          "gap_patterns_verified": 128,
+          "limb_count": 20,
+          "observations_used": 8,
+          "order": "lsb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 5948247,
+            "first_multiple_index": -6101,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -6102,
+            "maximum": -989958191063750081434583399384749326,
+            "minimum": -989958268326199213005533954856425531,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 5948247
+          }
+        },
+        {
+          "gap_patterns_verified": 128,
+          "limb_count": 21,
+          "observations_used": 8,
+          "order": "msb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 58656340,
+            "first_multiple_index": -3597,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -3598,
+            "maximum": -583788402232460517699473914367848103,
+            "minimum": -583788479494909649270424469839524308,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 58656340
+          }
+        },
+        {
+          "gap_patterns_verified": 128,
+          "limb_count": 21,
+          "observations_used": 8,
+          "order": "lsb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 59873846,
+            "first_multiple_index": -1417,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -1418,
+            "maximum": -230066122493653256963249811574772033,
+            "minimum": -230066199756102388534200367046448238,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 59873846
+          }
+        },
+        {
+          "gap_patterns_verified": 128,
+          "limb_count": 22,
+          "observations_used": 8,
+          "order": "msb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 58656340,
+            "first_multiple_index": -3597,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -3598,
+            "maximum": -583788402232460517699473914367848103,
+            "minimum": -583788479494909649270424469839524308,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 58656340
+          }
+        },
+        {
+          "gap_patterns_verified": 128,
+          "limb_count": 22,
+          "observations_used": 8,
+          "order": "lsb",
+          "sample_certificate": {
+            "excludes_every_state": true,
+            "first_compatible_quotient": 24583026,
+            "first_multiple_index": -6948,
+            "gaps": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "last_multiple_index": -6949,
+            "maximum": -1127436854669045625186925178058184973,
+            "minimum": -1127436931931494756757875733529861178,
+            "quotient_maximum": 16067,
+            "quotient_minimum": -15886,
+            "quotient_residue_modulo_2_26": 24583026
+          }
+        }
+      ],
+      "scope": "All states modulo 2^107-1 for the fixed FreeLIP multiplier, low26 output, listed assemblies, and final field reduction; including the source rejection loop.",
+      "source_rejection": true,
+      "synthetic_recovery_controls": "Checked by the separate discovery tests; not inferred from receipt summary flags.",
+      "verified": true
+    },
+    "lcg_forensics.json": {
+      "assembly_coordinate_order_cases": 180,
+      "assembly_proof_rows": 179,
+      "byte_trace_proofs": 188,
+      "native": {
+        "exhaustive_search_rerun": false,
+        "first_states": 327680000,
+        "traces": 3302
+      },
+      "scope": "Consecutive POSIX LCG top8 bytes, stated assembly and mod(2^521-1) only.",
+      "verified": true
+    },
+    "word-obstructions.json": {
+      "assembly_cases": 4,
+      "coordinate_proofs": 2,
+      "scope": "Seventeen31-bit unsigned values in32-bit slots, either word order, direct assembly followed by reduction modulo the P-521 prime.",
+      "verified": true
+    }
+  },
+  "public_arithmetic": {
+    "base_point_nonzero": true,
+    "base_point_on_curve": true,
+    "field_modulus_is_prime_lucas_lehmer": true,
+    "seed_provenance": {
+      "attribution": "Anthropic, 2026-10-16; reproduced here, not a new discovery",
+      "candidate_index_1_based": 1136,
+      "datetime_utc": "1997-08-08T01:12:04+00:00",
+      "matches_standard": true,
+      "seed": "D09E8800291CB85396CC6717393284AAA0DA64BA",
+      "timestamp": 871002724
+    },
+    "standard_order_annihilates_base_point": true
+  },
+  "receipt_sha256": {
+    "freelip-recovery.json": "3239077c8ce14a0189eea871818dbd2a15034f1514f56f2d017d085ab92ec3f0",
+    "freelip-source-recovery.json": "e8ce82b8e0ad92dc0f0707778130283ff8795bdd22bd490e0ff9f201a91d42ba",
+    "lcg_forensics.json": "78e26b5e9e40208df3f8adf505aff2e93f3589ffc5f62b7e755a2197b1b13f1d",
+    "word-obstructions.json": "f57f44202fe6958fe00807c155cd446046b13a3492d971db79914a86075e9d40"
+  },
+  "research_version": "0.1.0",
+  "schema": "perfectjet/p521-research-verification/1",
+  "security_claim": "No private-key recovery, ECDLP algorithm or security break established.",
+  "target": "Public P-521 base-point provenance",
+  "verified": true
+}

@@ -1,0 +1,651 @@
+{
+  "all_controls_pass": true,
+  "profiles": [
+    {
+      "branches": [
+        {
+          "interior": {
+            "first_output_index": 0,
+            "highest_limb": 19,
+            "lowest_limb": 0,
+            "outputs": [
+              52041272,
+              7041088,
+              20607847,
+              37669734,
+              9328337,
+              2737736,
+              5128527,
+              62202360,
+              10665345,
+              45405147,
+              44585687,
+              41414631,
+              23372792,
+              31199866,
+              12577335,
+              36915379,
+              50730409,
+              2736023,
+              60787824,
+              48610662
+            ],
+            "prefix": 2661740802050217063228768716723360960729859168756973147706671368418802944996427808491545080627771902352094241225065558662157113545570916814161637315895999846
+          },
+          "observations_used": 8,
+          "recovery": {
+            "certificate": {
+              "denominator": 162259276829213363391578010288127,
+              "gaps": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "maximum": -583788402232460517699473914367848103,
+              "minimum": -583788479494909649270424469839524308,
+              "numerator": [
+                -3960,
+                1708,
+                -6946,
+                982,
+                9113,
+                -4528,
+                -453,
+                4265
+              ],
+              "outputs": [
+                52041272,
+                7041088,
+                20607847,
+                37669734,
+                9328337,
+                2737736,
+                5128527,
+                62202360
+              ],
+              "schema": "perfectjet/freelip-dual-exclusion/1"
+            },
+            "complete": true,
+            "states": [],
+            "status": "excluded"
+          }
+        }
+      ],
+      "candidates": [],
+      "complete": true,
+      "limb_count": 20,
+      "order": "msb",
+      "rejection_gap_proof": null,
+      "schema": "perfectjet/freelip-coordinate-recovery/1",
+      "scope": "All 107-bit states of the specified multiplier, low26 output and limb assembly only.",
+      "source_rejection": false,
+      "target": "0xc6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66"
+    },
+    {
+      "branches": [
+        {
+          "interior": {
+            "first_output_index": 0,
+            "highest_limb": 19,
+            "lowest_limb": 0,
+            "outputs": [
+              48610662,
+              60787824,
+              2736023,
+              50730409,
+              36915379,
+              12577335,
+              31199866,
+              23372792,
+              41414631,
+              44585687,
+              45405147,
+              10665345,
+              62202360,
+              5128527,
+              2737736,
+              9328337,
+              37669734,
+              20607847,
+              7041088,
+              52041272
+            ],
+            "prefix": 2661740802050217063228768716723360960729859168756973147706671368418802944996427808491545080627771902352094241225065558662157113545570916814161637315895999846
+          },
+          "observations_used": 8,
+          "recovery": {
+            "certificate": {
+              "denominator": 162259276829213363391578010288127,
+              "gaps": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "maximum": -989958191063750081434583399384749326,
+              "minimum": -989958268326199213005533954856425531,
+              "numerator": [
+                -3960,
+                1708,
+                -6946,
+                982,
+                9113,
+                -4528,
+                -453,
+                4265
+              ],
+              "outputs": [
+                48610662,
+                60787824,
+                2736023,
+                50730409,
+                36915379,
+                12577335,
+                31199866,
+                23372792
+              ],
+              "schema": "perfectjet/freelip-dual-exclusion/1"
+            },
+            "complete": true,
+            "states": [],
+            "status": "excluded"
+          }
+        }
+      ],
+      "candidates": [],
+      "complete": true,
+      "limb_count": 20,
+      "order": "lsb",
+      "rejection_gap_proof": null,
+      "schema": "perfectjet/freelip-coordinate-recovery/1",
+      "scope": "All 107-bit states of the specified multiplier, low26 output and limb assembly only.",
+      "source_rejection": false,
+      "target": "0xc6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66"
+    },
+    {
+      "branches": [
+        {
+          "interior": {
+            "first_output_index": 1,
+            "highest_limb": 19,
+            "lowest_limb": 1,
+            "outputs": [
+              52041272,
+              7041088,
+              20607847,
+              37669734,
+              9328337,
+              2737736,
+              5128527,
+              62202360,
+              10665345,
+              45405147,
+              44585687,
+              41414631,
+              23372792,
+              31199866,
+              12577335,
+              36915379,
+              50730409,
+              2736023,
+              60787824
+            ],
+            "prefix": 39663028747591630566548834990313067447094010841205316002766361362022205367631134517364875683602272009135696906224870065780835055493875098439479430256
+          },
+          "observations_used": 8,
+          "recovery": {
+            "certificate": {
+              "denominator": 162259276829213363391578010288127,
+              "gaps": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "maximum": -583788402232460517699473914367848103,
+              "minimum": -583788479494909649270424469839524308,
+              "numerator": [
+                -3960,
+                1708,
+                -6946,
+                982,
+                9113,
+                -4528,
+                -453,
+                4265
+              ],
+              "outputs": [
+                52041272,
+                7041088,
+                20607847,
+                37669734,
+                9328337,
+                2737736,
+                5128527,
+                62202360
+              ],
+              "schema": "perfectjet/freelip-dual-exclusion/1"
+            },
+            "complete": true,
+            "states": [],
+            "status": "excluded"
+          }
+        }
+      ],
+      "candidates": [],
+      "complete": true,
+      "limb_count": 21,
+      "order": "msb",
+      "rejection_gap_proof": null,
+      "schema": "perfectjet/freelip-coordinate-recovery/1",
+      "scope": "All 107-bit states of the specified multiplier, low26 output and limb assembly only.",
+      "source_rejection": false,
+      "target": "0xc6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66"
+    },
+    {
+      "branches": [
+        {
+          "interior": {
+            "first_output_index": 1,
+            "highest_limb": 19,
+            "lowest_limb": 1,
+            "outputs": [
+              60787824,
+              2736023,
+              50730409,
+              36915379,
+              12577335,
+              31199866,
+              23372792,
+              41414631,
+              44585687,
+              45405147,
+              10665345,
+              62202360,
+              5128527,
+              2737736,
+              9328337,
+              37669734,
+              20607847,
+              7041088,
+              52041272
+            ],
+            "prefix": 39663028747591630566548834990313067447094010841205316002766361362022205367631134517364875683602272009135696906224870065780835055493875098439479430256
+          },
+          "observations_used": 8,
+          "recovery": {
+            "certificate": {
+              "denominator": 162259276829213363391578010288127,
+              "gaps": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "maximum": -230066122493653256963249811574772033,
+              "minimum": -230066199756102388534200367046448238,
+              "numerator": [
+                -3960,
+                1708,
+                -6946,
+                982,
+                9113,
+                -4528,
+                -453,
+                4265
+              ],
+              "outputs": [
+                60787824,
+                2736023,
+                50730409,
+                36915379,
+                12577335,
+                31199866,
+                23372792,
+                41414631
+              ],
+              "schema": "perfectjet/freelip-dual-exclusion/1"
+            },
+            "complete": true,
+            "states": [],
+            "status": "excluded"
+          }
+        }
+      ],
+      "candidates": [],
+      "complete": true,
+      "limb_count": 21,
+      "order": "lsb",
+      "rejection_gap_proof": null,
+      "schema": "perfectjet/freelip-coordinate-recovery/1",
+      "scope": "All 107-bit states of the specified multiplier, low26 output and limb assembly only.",
+      "source_rejection": false,
+      "target": "0xc6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66"
+    },
+    {
+      "branches": [
+        {
+          "interior": {
+            "first_output_index": 2,
+            "highest_limb": 19,
+            "lowest_limb": 2,
+            "outputs": [
+              52041272,
+              7041088,
+              20607847,
+              37669734,
+              9328337,
+              2737736,
+              5128527,
+              62202360,
+              10665345,
+              45405147,
+              44585687,
+              41414631,
+              23372792,
+              31199866,
+              12577335,
+              36915379,
+              50730409,
+              2736023
+            ],
+            "prefix": 591025184804076411821675821994439772473186416047890722792839428216549834126697995027376349025998592512841476592792124536347911588756369031063
+          },
+          "observations_used": 8,
+          "recovery": {
+            "certificate": {
+              "denominator": 162259276829213363391578010288127,
+              "gaps": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "maximum": -583788402232460517699473914367848103,
+              "minimum": -583788479494909649270424469839524308,
+              "numerator": [
+                -3960,
+                1708,
+                -6946,
+                982,
+                9113,
+                -4528,
+                -453,
+                4265
+              ],
+              "outputs": [
+                52041272,
+                7041088,
+                20607847,
+                37669734,
+                9328337,
+                2737736,
+                5128527,
+                62202360
+              ],
+              "schema": "perfectjet/freelip-dual-exclusion/1"
+            },
+            "complete": true,
+            "states": [],
+            "status": "excluded"
+          }
+        }
+      ],
+      "candidates": [],
+      "complete": true,
+      "limb_count": 22,
+      "order": "msb",
+      "rejection_gap_proof": null,
+      "schema": "perfectjet/freelip-coordinate-recovery/1",
+      "scope": "All 107-bit states of the specified multiplier, low26 output and limb assembly only.",
+      "source_rejection": false,
+      "target": "0xc6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66"
+    },
+    {
+      "branches": [
+        {
+          "interior": {
+            "first_output_index": 2,
+            "highest_limb": 19,
+            "lowest_limb": 2,
+            "outputs": [
+              2736023,
+              50730409,
+              36915379,
+              12577335,
+              31199866,
+              23372792,
+              41414631,
+              44585687,
+              45405147,
+              10665345,
+              62202360,
+              5128527,
+              2737736,
+              9328337,
+              37669734,
+              20607847,
+              7041088,
+              52041272
+            ],
+            "prefix": 591025184804076411821675821994439772473186416047890722792839428216549834126697995027376349025998592512841476592792124536347911588756369031063
+          },
+          "observations_used": 8,
+          "recovery": {
+            "certificate": {
+              "denominator": 162259276829213363391578010288127,
+              "gaps": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "maximum": -1127436854669045625186925178058184973,
+              "minimum": -1127436931931494756757875733529861178,
+              "numerator": [
+                -3960,
+                1708,
+                -6946,
+                982,
+                9113,
+                -4528,
+                -453,
+                4265
+              ],
+              "outputs": [
+                2736023,
+                50730409,
+                36915379,
+                12577335,
+                31199866,
+                23372792,
+                41414631,
+                44585687
+              ],
+              "schema": "perfectjet/freelip-dual-exclusion/1"
+            },
+            "complete": true,
+            "states": [],
+            "status": "excluded"
+          }
+        }
+      ],
+      "candidates": [],
+      "complete": true,
+      "limb_count": 22,
+      "order": "lsb",
+      "rejection_gap_proof": null,
+      "schema": "perfectjet/freelip-coordinate-recovery/1",
+      "scope": "All 107-bit states of the specified multiplier, low26 output and limb assembly only.",
+      "source_rejection": false,
+      "target": "0xc6858e06b70404e9cd9e3ecb662395b4429c648139053fb521f828af606b4d3dbaa14b5e77efe75928fe1dc127a2ffa8de3348b3c1856a429bf97e7e31c2e5bd66"
+    }
+  ],
+  "schema": "perfectjet/freelip-recovery-suite/1",
+  "source_rejection": false,
+  "synthetic_controls": [
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 20000,
+      "limb_count": 20,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 20000,
+      "limb_count": 20,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 20000,
+      "limb_count": 21,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 20000,
+      "limb_count": 21,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 20000,
+      "limb_count": 22,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 20000,
+      "limb_count": 22,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 871002724,
+      "limb_count": 20,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 871002724,
+      "limb_count": 20,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 871002724,
+      "limb_count": 21,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 871002724,
+      "limb_count": 21,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 871002724,
+      "limb_count": 22,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 871002724,
+      "limb_count": 22,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 123456789012345678901234567890,
+      "limb_count": 20,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 123456789012345678901234567890,
+      "limb_count": 20,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 123456789012345678901234567890,
+      "limb_count": 21,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 123456789012345678901234567890,
+      "limb_count": 21,
+      "order": "lsb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 123456789012345678901234567890,
+      "limb_count": 22,
+      "order": "msb",
+      "recovered": true
+    },
+    {
+      "candidate_count": 1,
+      "complete": true,
+      "initial_state": 123456789012345678901234567890,
+      "limb_count": 22,
+      "order": "lsb",
+      "recovered": true
+    }
+  ]
+}

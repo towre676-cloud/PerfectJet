@@ -1,0 +1,31 @@
+# Independent mathematical review of the P-521 FreeLIP exclusions
+
+Reviewed on 20 October 2026. The reviewed claim concerns the published P-521 base-point x-coordinate and a precisely specified historical pseudorandom-generator recipe. It concerns no secret signing key. The result does not determine how the base point was actually generated, and worldwide priority has not been established.
+
+The independent checker is `verify_certificate.py`. It uses only the Python standard library and imports neither the discovery module nor an LLL implementation. It fixes the public target and arithmetic constants in its own source, reconstructs the forced observation windows, verifies complete assembly and rejection-gap coverage, and checks each integer contradiction. The original consecutive-output receipt has six valid exclusions. The source-faithful receipt has 768 valid exclusions: six assembly layouts and all 128 possible raw-step gap patterns between eight accepted outputs. Both receipts pass this checker.
+
+## Exact scope and coordinate extraction
+
+The generator state is a residue modulo \(M=2^{107}-1\), the multiplier is \(A=3^{121}\bmod M\), and a returned limb is the low 26 bits of an accepted state. The assembly layouts are 20, 21, or 22 such limbs, with either high-first or low-first order, followed by reduction modulo \(p=2^{521}-1\). The exclusion covers every one of the \(M\) internal state residues, arbitrary prior warmup, and any number of earlier whole coordinate attempts under this same recipe. Other output widths, generators, nonlinear output transformations, and group operations applied after coordinate generation require separate analysis.
+
+For 20 limbs the assembled raw integer is below \(2^{520}<p\), so a matching raw coordinate must equal the published \(G_x\) directly. For 21 and 22 limbs, write the raw integer as \(H2^{521}+L\), with \(0\le L\le p\). The upper part satisfies \(H\le2^{25}-1\) or \(H\le2^{51}-1\), respectively. Reduction yields \(H+L\equiv G_x\pmod p\). The fixed target is far enough from both endpoints that only \(L=G_x-H\) is possible. Its low 26 bits exceed \(2^{25}-1\), and its low 52 bits exceed \(2^{51}-1\), so subtraction cannot borrow across the respective boundary. Consequently all the selected interior limbs are forced. These endpoint and no-borrow inequalities are recomputed by the independent checker. No assumed state, seed, candidate index, or lattice computation enters this step.
+
+## Source rejection loop
+
+The archived [FreeLIP 1.0 source](https://github.com/oreparaz/crypto-archeology/blob/master/freelip_1.0/lip.c), specifically `zrandom`, rejects raw states greater than or equal to \(M-(M\bmod2^{26})\). Thus there are \(2^{26}-1\) rejected states. An exclusion for consecutive raw draws alone would omit a real source behavior and would not establish the source-faithful claim.
+
+Two rejected states in succession are impossible for this multiplier. Put \(q_0=9944586160332543\) and \(q_1=21699637613853658\). These positive integers obey \(q_0+Aq_1\equiv0\pmod M\). If consecutive rejected states were \(M-r,M-s\), then \(1\le r,s\le2^{26}-1\) and \(q_0r+q_1s\) would be a positive multiple of \(M\). Its upper bound is \((q_0+q_1)(2^{26}-1)<M\), a contradiction. All these inequalities and the congruence are checked exactly. Accepted outputs therefore have raw recurrence gaps one or two. Enumerating all seven-gap vectors in \(\{1,2\}^7\) covers all possible histories of the eight selected accepted outputs. The independent verifier rejects missing or duplicate gap patterns.
+
+## Dual-lattice and quotient proofs
+
+For observed low limbs \(y_i\), write accepted states as \(x_i=y_i+2^{26}u_i\). Their high parts satisfy \(u_i\equiv A^{t_i}u_0+d_i\pmod M\), where \(t_i\) is the cumulative raw-step gap and \(d_i=(A^{t_i}y_0-y_i)2^{-26}\bmod M\). Every feasible high-part vector lies in the corresponding affine lattice and in the integer box \(0\le u_i\le\lfloor(M-1-y_i)/2^{26}\rfloor\). Each stored rational dual functional is integral on all lattice generators, while its exact image interval over that entire box contains no integer. This is a proof of emptiness; it does not assume that LLL is complete or correctly implemented.
+
+The independent checker also verifies a second, shorter contradiction for every stored source-faithful certificate. Its integer vector \(q\) satisfies \(\sum_iq_iA^{t_i}\equiv0\pmod M\). Hence \(\sum_iq_ix_i=kM\) for an integer \(k\). Bounds on the states give an interval for \(k\), while \(M\equiv-1\pmod{2^{26}}\) forces \(k\equiv-\sum_iq_iy_i\pmod{2^{26}}\). For every certificate, the permitted quotient interval contains no integer of the required residue.
+
+For example, the high-first consecutive-output certificate has \(q=(-3960,1708,-6946,982,9113,-4528,-453,4265)\). Its quotient must satisfy \(-15886\le k\le16067\), but also \(k\equiv58656340\pmod{67108864}\). This is impossible. The remaining rejection-gap certificates carry their own exact vectors and are checked separately.
+
+## Adversarial checks and conclusion
+
+The independent test suite checks all six original certificates and all 768 source-faithful certificates. It rejects corrupted coordinates, observation windows, numerators, bounds, recurrence gaps, missing gap patterns, duplicate gap patterns, and a corrupted no-consecutive-rejection witness. Satisfiable controls include the zero state, ordinary nonzero states, an endpoint state, and a deliberately constructed rare rejection. A true trace containing a gap of two remains satisfiable under the matching certificate functional, while replacing its gap by one is rejected. The separate discovery tests also pass known P-192 calibration, synthetic state recovery, boundary-window cases, and source-loop recovery controls.
+
+The reviewed mathematical exclusions are valid within the declared models. The contribution is a reproducible, independently checkable all-state exclusion for these P-521 provenance hypotheses, using classical lattice and modular methods. It is not a new cryptanalytic attack, an explanation of the actual base-point origin, or a demonstrated new lattice-reduction algorithm. A general exclusion of every historical FreeLIP configuration would require additional output widths and assembly contracts.
