@@ -5333,7 +5333,7 @@
       "id": "PJ-X001",
       "domain": "asterion-frontiers",
       "title": "length-three jet ambient character",
-      "equation": "Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t²)+dim wedge^3g*t³)/((1-t)(1-t²)(1-t³))",
+      "equation": "Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t\u00b2)+dim wedge^3g*t\u00b3)/((1-t)(1-t\u00b2)(1-t\u00b3))",
       "status": "derived",
       "assumptions": "t counts total derivative degree, with ordinary polynomial length fixed at3.",
       "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
@@ -5342,7 +5342,7 @@
       "id": "PJ-X002",
       "domain": "asterion-frontiers",
       "title": "complete length-three arc character",
-      "equation": "H3(t)=(151373t+961248t²+3321371t³+4932875t⁴+4123000t⁵+1763125t⁶)/((1-t)(1-t²)(1-t³))",
+      "equation": "H3(t)=(151373t+961248t\u00b2+3321371t\u00b3+4932875t\u2074+4123000t\u2075+1763125t\u2076)/((1-t)(1-t\u00b2)(1-t\u00b3))",
       "status": "exact_checked",
       "assumptions": "The finite pair-projector covariance ranks and earlier cubic-polarization certificates determine this all-jet fixed-length sector.",
       "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
@@ -5362,7 +5362,7 @@
       "title": "weight-five complete arc population",
       "equation": "dim A5=1112621+96008+248=1208877",
       "status": "derived",
-      "assumptions": "Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym³g.",
+      "assumptions": "Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym\u00b3g.",
       "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
     },
     {
@@ -5702,7 +5702,7 @@
       "id": "PJ-X042",
       "domain": "asterion-frontiers",
       "title": "exact charge populations",
-      "equation": "dim V[N,alpha]=p8(N-|alpha|²/2)",
+      "equation": "dim V[N,alpha]=p8(N-|alpha|\u00b2/2)",
       "status": "exact_checked",
       "assumptions": "Complete doubled-coordinate E8 lattice enumeration and oscillator convolution; alpha outside the lattice has multiplicity0.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
@@ -5711,7 +5711,7 @@
       "id": "PJ-X043",
       "domain": "asterion-frontiers",
       "title": "elliptic lattice translation",
-      "equation": "Theta(tau,z+tau*lambda+mu)=q^(-|lambda|²/2)*exp(-2pi i(lambda,z))*Theta(tau,z)",
+      "equation": "Theta(tau,z+tau*lambda+mu)=q^(-|lambda|\u00b2/2)*exp(-2pi i(lambda,z))*Theta(tau,z)",
       "status": "derived",
       "assumptions": "lambda,mu in the integral E8 lattice; exact reindexing proves all orders without truncation-edge assumptions.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
@@ -5720,7 +5720,7 @@
       "id": "PJ-X044",
       "domain": "asterion-frontiers",
       "title": "oscillator-corrected heat identity",
-      "equation": "(2D_tau-sum_i D_zi²)H=(2/3)(1-E2)H",
+      "equation": "(2D_tau-sum_i D_zi\u00b2)H=(2/3)(1-E2)H",
       "status": "exact_checked",
       "assumptions": "D_tau andD_zi mean derivatives divided by2pi i; the physical q^(-1/3)character has RHS-(2/3)E2chi.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
@@ -5855,7 +5855,7 @@
       "id": "PJ-D011",
       "domain": "double-elliptic",
       "title": "three-particle first-shell expansion",
-      "equation": "C0=1+WA+O(W²); C1=h1+WB+O(W²); C2=h2+WC+O(W²); H1=h1+W(B-Ah1); H2=h2+W(C-Ah2)",
+      "equation": "C0=1+WA+O(W\u00b2); C1=h1+WB+O(W\u00b2); C2=h2+WC+O(W\u00b2); H1=h1+W(B-Ah1); H2=h2+W(C-Ah2)",
       "status": "derived",
       "assumptions": "Coordinate nome P=0; A has six permutation shifts(-1,0,1), B has three shifts(-1,1,1), C has three shifts(2,0,0). Equations use signless oriented coefficients.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5873,7 +5873,7 @@
       "id": "PJ-D013",
       "domain": "double-elliptic",
       "title": "common-power normalization rigidity",
-      "equation": "{C1/C0^s,C2/C0^s}=W*(1-s)*R+O(W²); R(2;(1,3,7);(2,5,11))=8356261/901120",
+      "equation": "{C1/C0^s,C2/C0^s}=W*(1-s)*R+O(W\u00b2); R(2;(1,3,7);(2,5,11))=8356261/901120",
       "status": "derived",
       "assumptions": "Classical P=0,N=3; common exponent s. The nonzero exact witness forces s=1 for an identity over generic parameters. Not a full normalizer classification outside this ansatz.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5882,7 +5882,7 @@
       "id": "PJ-D014",
       "domain": "double-elliptic",
       "title": "six-mode first-order normalizer classification",
-      "equation": "rho=sum_(n in perm(-1,0,1))lambda_n(T)*F_n*Y^n; {C1/(1+W rho),C2/(1+W rho)}=O(W²) iff all lambda_n=1",
+      "equation": "rho=sum_(n in perm(-1,0,1))lambda_n(T)*F_n*Y^n; {C1/(1+W rho),C2/(1+W rho)}=O(W\u00b2) iff all lambda_n=1",
       "status": "derived",
       "assumptions": "Classical N=3,P=0. The lambda_n depend on coupling T only. Valid at T!=0,1; the exact rank certificate excludes further exceptional nonzero couplings within these six fixed functions.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5936,7 +5936,7 @@
       "id": "PJ-D020",
       "domain": "double-elliptic",
       "title": "explicit failed momentum ellipticization direction",
-      "equation": "f(Y)=Y+epsilon/Y => {H1f,H2f}|T=2,X=(1,3,7),Y=(2,3,3)=-95epsilon/216+95epsilon²/1296",
+      "equation": "f(Y)=Y+epsilon/Y => {H1f,H2f}|T=2,X=(1,3,7),Y=(2,3,3)=-95epsilon/216+95epsilon\u00b2/1296",
       "status": "exact_checked",
       "assumptions": "An exact nonzero first-order direction within the particlewise ansatz. This is a Laurent test profile, not itself an elliptic function; monomial profiles provide positive controls.",
       "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5992,7 +5992,7 @@
       "title": "second-order homogeneous normalizer rank",
       "equation": "det M21=-128*(T-1)^44*(T+1)^2*(T+2)^5*(T+3)^2*(T^2+T+1)^3/T^31",
       "status": "exact_checked",
-      "assumptions": "P=0,N=3. A21function ansatz of symmetric products of first-shell functions has generic full rank. Hence no nonzero W² denominator correction in that ansatz at couplings where this minor is nonzero. A vanishing minor alone does not prove a rank drop.",
+      "assumptions": "P=0,N=3. A21function ansatz of symmetric products of first-shell functions has generic full rank. Hence no nonzero W\u00b2 denominator correction in that ansatz at couplings where this minor is nonzero. A vanishing minor alone does not prove a rank drop.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
     },
     {
@@ -6008,7 +6008,7 @@
       "id": "PJ-D028",
       "domain": "double-elliptic",
       "title": "coordinate-deformed first-shell rigidity",
-      "equation": "lambda_n(T,P)=1 mod P² for all six first-shell functions",
+      "equation": "lambda_n(T,P)=1 mod P\u00b2 for all six first-shell functions",
       "status": "derived",
       "assumptions": "The global mixed-nome identity supplies a solution; the invertible constant-coordinate-nome minor makes both coefficients unique for each fixed T!=0,1. Numerator modes and six-function normalizer ansatz are fixed.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -6071,10 +6071,217 @@
       "id": "PJ-D035",
       "domain": "double-elliptic",
       "title": "cube-root coefficient redundancy",
-      "equation": "f1*f4=f0*f5; f2*f3=f0*f5 when T²+T+1=0",
+      "equation": "f1*f4=f0*f5; f2*f3=f0*f5 when T\u00b2+T+1=0",
       "status": "exact_checked",
       "assumptions": "Zero-based f_i order is lexicographic perm(-1,0,1). The21nominal products span19actual functions. The two coefficient-kernel directions represent identically zero functions, so they give no new normalizer freedom.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
+    },
+    {
+      "id": "PJ-E465",
+      "domain": "conductor",
+      "title": "arithmetic E8 trace form",
+      "equation": "G_ij=Tr_K/Q(alpha*zeta^(i-j)); alpha=(5-zeta-2zeta^2-2zeta^3-zeta^4+zeta^6+2zeta^7)/15",
+      "status": "derived",
+      "assumptions": "K=Q(zeta_30), G=B^T A B in the supplied unimodular Krylov basis; Norm(alpha)=1/1265625 and det(G)=1. The cyclotomic realization is classical; explicit source-coordinate identity, no priority claim.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E466",
+      "domain": "conductor",
+      "title": "integral Coxeter commutant",
+      "equation": "End_Z[<C>](E8)=Z[zeta_30]",
+      "status": "derived",
+      "assumptions": "The supplied cyclic vector has an integral Krylov basis; a commuting map is multiplication by its value at 1. This concerns integral linear endomorphisms, not all Lie endomorphisms.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E467",
+      "domain": "conductor",
+      "title": "Coxeter isometry centralizer",
+      "equation": "u*conjugate(u)=1; C_O(E8)(C)=<C>, order 30",
+      "status": "derived",
+      "assumptions": "Use the specified trace form, trace nondegeneracy and Kronecker; alternatively exhaustive root-image replay. The centralizer theorem is classical, not newly discovered here.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E468",
+      "domain": "conductor",
+      "title": "semilinear arithmetic isometry",
+      "equation": "S_a(x)=u_a*sigma_a(x) is an isometry iff alpha*u_a*conjugate(u_a)=sigma_a(alpha)",
+      "status": "derived",
+      "assumptions": "a is a unit modulo 30 and sigma_a(zeta)=zeta^a; S_a must also preserve the integral lattice to be an integral isometry. The norm ratio is sigma_a(alpha)/alpha.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E469",
+      "domain": "conductor",
+      "title": "complete Coxeter normalizer by cyclic root images",
+      "equation": "K_a(r)=[r,C^a r,...,C^(7a)r]; U=K_a(r)B^-1; K_a(r)^T A K_a(r)=G; |N_O(E8)(<C>)|=240",
+      "status": "derived",
+      "assumptions": "Enumerate all eight unit exponents and all 240 actual roots; exactly 30 lifts per exponent. Completeness follows from the cyclic basis. There are two root orbits of size 120; the group is not identified with the roots by cardinality.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E470",
+      "domain": "conductor",
+      "title": "nonsplit arithmetic normalizer extension",
+      "equation": "S C=C^7 S; S^4=C^25; (C^i S)^4=C^(25+10i)!=I",
+      "status": "derived",
+      "assumptions": "S(x)=(zeta^2+zeta^3+zeta^4+zeta^5-zeta^7)*sigma_7(x). Every lift of the quotient element 7 has nonidentity fourth power, so 1->C30->N->(Z/30)^*->1 has no section. No historical novelty claim.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E471",
+      "domain": "observability",
+      "title": "Raghava moments as positive power moments",
+      "equation": "mu_j=(2j)!*r_j/4^j=sum_q w_q*((q-1/2)^2)^j",
+      "status": "derived",
+      "assumptions": "Principal phases 0<=q<1 and nonnegative weights; mu_0=r_0 is mass. Positivity is essential for global finite uniqueness; this identifies a folded spectral measure.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E472",
+      "domain": "observability",
+      "title": "exact Hankel annihilator reconstruction",
+      "equation": "H_(s-1)*(p_0,...,p_(s-1))^T=-(mu_s,...,mu_(2s-1))^T",
+      "status": "derived",
+      "assumptions": "H_ij=mu_(i+j); s distinct positive-mass folded atoms make H_(s-1) positive definite. p(X)=X^s+sum_(j<s)p_j X^j. This step uses 2s coordinates and a declared atom count.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E473",
+      "domain": "observability",
+      "title": "conductor-independent finite positive uniqueness",
+      "equation": "sum_q w_q*p(x_q)^2=0 => support(mu) subset roots(p); mu_0..mu_(2s) determine the positive s-atom profile",
+      "status": "derived",
+      "assumptions": "The extra moment mu_(2s) proves support containment for every nonnegative finite competitor, without a competitor conductor or support-size bound; Vandermonde then fixes weights. Signed measures are excluded.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E474",
+      "domain": "recurrences",
+      "title": "all later Raghava moments from a finite annihilator",
+      "equation": "mu_(n+s)+sum_(j=0)^(s-1)p_j*mu_(n+j)=0 for every n>=0",
+      "status": "derived",
+      "assumptions": "p vanishes on the recovered folded support. The identity determines all subsequent even moment coordinates; it does not recover the integral lattice or Lie bracket.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E475",
+      "domain": "observability",
+      "title": "finite E8 folded spectral certificate",
+      "equation": "E8: x={1,4,16,49}/225, each weight 2; mass and r_1..r_8 certify this folded profile",
+      "status": "derived",
+      "assumptions": "Nine coordinates including mass uniquely determine the folded reflection spectrum among all nonnegative finite phase profiles. Four further odd Mellin observations suffice to orient it.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E476",
+      "domain": "observability",
+      "title": "sharp eight-coordinate positive rational collision",
+      "equation": "delta_i=1/prod_(j!=i)(x_i-x_j); sum_i delta_i*x_i^k=0 (k<8); sum_i delta_i*x_i^8=1",
+      "status": "derived",
+      "assumptions": "Use the nine interlaced nodes 0,1/225,1/100,4/225,1/25,16/225,1/9,49/225,1/4 and weights 2*1_(i odd)+epsilon*delta_i, epsilon=14144/3243658447265625. All weights are positive, phases have conductor dividing 30, and r_0..r_7 match E8. Minimality among dimension-eight integer representations is not proved.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E477",
+      "domain": "series",
+      "title": "oriented recovery by absolutely convergent odd Mellin traces",
+      "equation": "y_k=(-1)^(k+1)*2^(2k)/(2k+1)!*sum_q w_q B_(2k+1)(q); B_(2k+1)(1/2+t)=t*(t^2-1/4)*P_(k-1)(t^2)",
+      "status": "derived",
+      "assumptions": "k>=1; y_k is Im(sum_n Tr(T^n)/n^(2k+1))/pi^(2k+1). For s* interior folded nodes, s* rows invert a scaled Vandermonde system and recover orientation. Reflection: 9 even+4 odd sufficient; adjoint:33 even+14 odd. No minimum claim for the combined scheme.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E478",
+      "domain": "invariants",
+      "title": "affine correction-gate identity",
+      "equation": "(f,g)_r at y=1 = sum_(i=0)^r (-1)^i binom(r,i)(6-r+i)_i(N-i)_(r-i)F^(r-i)G^(i)",
+      "status": "derived",
+      "assumptions": "f=y^6 F(x/y), g=y^N G(x/y), characteristic zero, unnormalized transvectants and falling factorial notation. Pure powers span, so a pure-power verification proves this bilinear identity.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E479",
+      "domain": "invariants",
+      "title": "third correction gate as a differential equation",
+      "equation": "-120FG'''+60(N-2)F'G''-12(N-1)(N-2)F''G'+N(N-1)(N-2)F'''G=0",
+      "status": "derived",
+      "assumptions": "Exact third transvectant in affine coordinates. The fifth gate must also vanish for correction-free membership; solving the third equation alone is insufficient.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E480",
+      "domain": "invariants",
+      "title": "all-degree local indicial obstruction",
+      "equation": "I_(r,k)(N,s)=sum_i (-1)^i binom(r,i)(6-r+i)_i(N-i)_(r-i)(k)_(r-i)(s)_i; I_(3,k)=I_(5,k)=0",
+      "status": "derived",
+      "assumptions": "k is the exact multiplicity of a root of a nonzero sextic and s is the valuation of a nonzero partner at that point; includes infinity after a projective change. This is necessary local information, not global sufficiency.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E481",
+      "domain": "invariants",
+      "title": "finite resultant certificate for unbounded degrees",
+      "equation": "N>=13: allowed s for k=0..6 are {0,1,2},{0,1},{0},{N/2},{N},{N-1,N},{N-2,N-1,N}",
+      "status": "derived",
+      "assumptions": "After common-factor removal, the indicial resultants have positive exceptional degrees only 1,2,4,6,12. Their exact polynomial identities prove the infinite-degree statement; N/2 requires N even. Listed valuations need not all occur globally.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E482",
+      "domain": "invariants",
+      "title": "complete high-multiplicity partner kernels",
+      "equation": "K_N(l^k h)=l^(N-k+4)*S_(k-4), dim K_N=k-3 for exact k=4,5,6",
+      "status": "derived",
+      "assumptions": "Characteristic zero, l does not divide h. Thresholds respectively N>=7, N>=5, N>=3; uniform N>=13 is valid. Necessity uses indicial resultants; sufficiency uses total available transverse degree at most two.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E483",
+      "domain": "invariants",
+      "title": "finite jets bound every partner space",
+      "equation": "dim K_N(f)<=3; simple root gives dim<=2 for N>=5; double root gives dim<=1 for N>=7",
+      "status": "derived",
+      "assumptions": "Jet evaluation is injective: at a regular point use (G,G',G''); at a simple root use (G,G'); at a double root use G. Characteristic zero and nonzero sextic. These are bounds, not existence or complete squarefree classification.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E484",
+      "domain": "invariants",
+      "title": "triple-root odd-degree exclusion",
+      "equation": "f has a triple root and odd N>=13 => K_N(f)=0",
+      "status": "derived",
+      "assumptions": "The local common indicial factor is 2s-N; reduced resultants are nonzero for N>=13, so no integer valuation is possible in odd degree.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E485",
+      "domain": "invariants",
+      "title": "complete high-degree two-triple-root family",
+      "equation": "K_N((l*m)^3)=span((l*m)^(N/2)) for even N>=14; K_N=0 for odd N>=13",
+      "status": "derived",
+      "assumptions": "Independent linear forms l,m. Divisibility at both triple roots proves necessity; odd transvectant terms cancel in pairs for sufficiency. The surviving partners are inactive because the first transvectant also vanishes.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E486",
+      "domain": "invariants",
+      "title": "all-degree pure-power partner characterization",
+      "equation": "l^N in K_N(f) iff l^4 divides f, for every N>=3",
+      "status": "derived",
+      "assumptions": "Nonzero sextic in characteristic zero. After l=x, the third gate is -(N)_3*x^(N-3)*partial_y^3 f; fifth vanishes too. The pure-power partner is active iff f is not proportional to l^6.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E487",
+      "domain": "invariants",
+      "title": "complete monomial-sextic dimension generating series",
+      "equation": "H_x6=3t^3/(1-t); H_x5y=2t^3/(1-t)+t^4; H_x4y2=t^3/(1-t)+t^6; H_x3y3=t^4/(1-t^2)+2t^12",
+      "status": "derived",
+      "assumptions": "H_f(t)=sum_(N>=3)dim K_N(f)t^N. Complete for these four root patterns up to exchanging x,y. Distinct monomial inputs have distinct gate output exponents; exact exceptional degrees are4,6,12. This is a dimension series, not a claim that kernels form a graded algebra or module.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
     }
   ]
 }

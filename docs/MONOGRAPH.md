@@ -1,6 +1,6 @@
 # PerfectJet — Representations, Arithmetic, and Closure
 
-Version 0.19.0 · 20 October 2026 (UTC)
+Version 0.20.0 · 20 October 2026 (UTC)
 
 A master synthesis of the two archival passes, both enhancement programs, and the recovered mathematical engines. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.
 
@@ -38,9 +38,11 @@ A master synthesis of the two archival passes, both enhancement programs, and th
 - [30_exact_observatory](chapters/30_exact_observatory.md)
 - [31_integrated_math_lab](chapters/31_integrated_math_lab.md)
 - [32_partner_incidence](chapters/32_partner_incidence.md)
+- [33_exact_research_frontiers](chapters/33_exact_research_frontiers.md)
 - [34_asterion_basis](chapters/34_asterion_basis.md)
 - [35_asterion_extension](chapters/35_asterion_extension.md)
 - [36_asterion_frontiers](chapters/36_asterion_frontiers.md)
+- [37_dell_research](chapters/37_dell_research.md)
 
 ---
 
@@ -1436,6 +1438,187 @@ The optional solver receipts are preserved byte for byte from PR #2. Their recor
 
 ---
 
+# Exact research frontiers: arithmetic symmetry, finite spectra and all-degree partners
+
+**Research checkpoint, 20 October 2026 UTC.** This chapter adds 23 equations to the 675-record source catalogue without changing any preceding record. They stand as mathematical research: exact correspondences, finite uniqueness certificates, structural obstructions and all-degree boundary classifications. The historical literature already contains cyclotomic E8 lattices, Coxeter centralizer results and finite moment reconstruction methods. No worldwide priority, new Lean theorem, classifier improvement or enlarged Math Lab tool count is asserted here.
+
+## Arithmetic information beyond the Coxeter spectrum
+
+Let \(K=\mathbb Q(\zeta)\), \(\zeta=\zeta_{30}\), \(O=\mathbb Z[\zeta]\), and let \(C,A\) be the supplied E8 Coxeter and Cartan matrices. The integral Krylov basis \(B=(v,Cv,\ldots,C^7v)\), with \(v\) the eighth simple root, satisfies \(CB=BD\) for multiplication by \(\zeta\), and \(G=B^TAB\). The actual bilinear form has the arithmetic description
+
+\[
+G_{ij}=\operatorname{Tr}_{K/\mathbb Q}(\alpha\zeta^{i-j}),\qquad
+\alpha=\frac{5-\zeta-2\zeta^2-2\zeta^3-\zeta^4+\zeta^6+2\zeta^7}{15}.
+\]
+
+These are finite rational identities, not a match of complex eigenvalues. The element \(\alpha\) is real and totally positive, with \(N(\alpha)=1/1265625\), \(\operatorname{disc}(K)=1265625\) and \(\det G=1\). Consequently \(\alpha O\) is the codifferent: the trace pairing remains integral and self-dual despite the displayed denominator. This arithmetic metric is information that a bare spectrum does not contain.
+
+An integral map commuting with \(C\) is fixed by its value at 1 in the cyclic basis and equals multiplication by an element of \(O\). Thus the integral commutant is \(O\). A commuting map is an isometry exactly when \(u\bar u=1\). Every conjugate then has modulus one; Kronecker's theorem makes \(u\) a root of unity, and the roots of unity in \(K\) are \(\mu_{30}\). Therefore the isometry centralizer is exactly \(\langle C\rangle\), of order 30. This recovers a classical centralizer result in explicit coordinates.
+
+A normalizing map with \(UC=C^aU\), \(a\in(\mathbb Z/30)^\times\), has the semilinear form \(x\mapsto u_a\sigma_a(x)\), \(\sigma_a(\zeta)=\zeta^a\). Trace nondegeneracy proves the precise isometry condition
+
+\[
+\alpha u_a\bar u_a=\sigma_a(\alpha).
+\]
+
+The direction of the norm ratio is essential. An arbitrary field automorphism need not preserve this metric. To find every integral lift, enumerate the 240 actual roots \(r\) and set
+
+\[
+K_a(r)=(r,C^ar,\ldots,C^{7a}r),\qquad
+U=K_a(r)B^{-1},\qquad K_a(r)^TAK_a(r)=G.
+\]
+
+The complete finite enumeration yields 30 lifts for each of the eight unit exponents. Completeness follows because an isometry sends \(v\) to a root, and that root image fixes every column of an intertwiner in the cyclic basis. Hence the normalizer \(N\) has order 240 and fits into
+
+\[
+1\longrightarrow C_{30}\longrightarrow N\longrightarrow(\mathbb Z/30)^\times\longrightarrow1.
+\]
+
+This extension is **nonsplit**. An explicit lift of7 is
+
+\[
+S(x)=(\zeta^2+\zeta^3+\zeta^4+\zeta^5-\zeta^7)\sigma_7(x),
+\qquad SC=C^7S,\quad S^4=C^{25}.
+\]
+
+Every other lift of7 is \(C^iS\), and
+
+\[
+(C^iS)^4=C^{25+10i}\ne I.
+\]
+
+The quotient element7 has order four, but no lift has fourth power one. A section would have to provide such a lift, which is impossible. The normalizer has two root orbits of size 120; its 240 elements are not identified with the 240 roots by cardinality. Complete proofs, conventions and exact replay belong to the [trace-form and normalizer account](https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md). These statements are PJ-E465–PJ-E470.
+
+## A finite and sharp spectral certificate
+
+For the existing Raghava coordinates define ordinary positive moments
+
+\[
+\mu_j=\frac{(2j)!}{4^j}r_j=\sum_q w_qx_q^j,
+\qquad x_q=(q-\tfrac12)^2,\qquad\mu_0=r_0.
+\]
+
+Here \(0\le q<1\) and \(w_q\ge0\). Equal folded nodes are combined. For an \(s\)-node positive measure, the Hankel matrix \(H_{ij}=\mu_{i+j}\), \(0\le i,j<s\), is positive definite: its quadratic form is a positive sum of squares of a polynomial of degree below \(s\), which cannot vanish at all \(s\) distinct nodes unless it is zero. Solve
+
+\[
+H(p_0,\ldots,p_{s-1})^T=-(\mu_s,\ldots,\mu_{2s-1})^T
+\]
+
+and put \(p(X)=X^s+\sum_{j<s}p_jX^j\). The first \(2s\) coordinates determine this monic annihilator. The extra coordinate \(\mu_{2s}\) supplies the global certificate
+
+\[
+\sum_q w_qp(x_q)^2=0.
+\]
+
+Every nonnegative competitor with the same \(\mu_0,\ldots,\mu_{2s}\) must therefore be supported on the roots of \(p\). Vandermonde inversion fixes the weights. No conductor bound or bound on the competing support size is assumed. Signed competitors would invalidate the square argument. Once recovered, \(p\) gives every subsequent moment by \(\mu_{n+s}+\sum_{j<s}p_j\mu_{n+j}=0\).
+
+For E8 reflection the folded nodes are \(1,4,16,49\), divided by 225, each with weight 2. Thus **mass and the first eight Raghava moments** certify the folded spectrum among every nonnegative finite phase profile. Nine coordinates including mass suffice, without restricting competitors to conductor 30.
+
+The count is sharp among positive rational weighted profiles. Take the increasing nodes
+
+\[
+0,\ 1/225,\ 1/100,\ 4/225,\ 1/25,\ 16/225,\ 1/9,\ 49/225,\ 1/4,
+\qquad\delta_i=\frac1{\prod_{j\ne i}(x_i-x_j)}.
+\]
+
+Comparing the degree-eight coefficient in Lagrange interpolation gives \(\sum_i\delta_ix_i^k=0\) for \(0\le k<8\), and1 at \(k=8\). With
+
+\[
+\varepsilon=\frac{14144}{3243658447265625}
+=\min_{i\text{ odd}}\frac1{-\delta_i},\qquad
+w'_i=2\mathbf1_{i\text{ odd}}+\varepsilon\delta_i,
+\]
+
+all nine weights are positive. All offsets are rational and the corresponding symmetric phases have conductor dividing30. This profile has mass8 and matches \(r_0,\ldots,r_7\), but differs in \(\mu_8\) by \(\varepsilon\). The weights are rational, so minimality among actual dimension-eight integer representations is not established.
+
+Even coordinates lose orientation between \(q\) and \(1-q\). Restore it with absolutely convergent odd Mellin observations, at weights at least three:
+
+\[
+y_k=\pi^{-(2k+1)}\operatorname{Im}\sum_{n\ge1}\frac{\operatorname{Tr}(T^n)}{n^{2k+1}}
+=\frac{(-1)^{k+1}2^{2k}}{(2k+1)!}\sum_qw_qB_{2k+1}(q),\quad k\ge1.
+\]
+
+The Bernoulli factorization \(B_{2k+1}(1/2+t)=t(t^2-1/4)P_{k-1}(t^2)\), with \(P_{k-1}\) monic, gives a scaled Vandermonde system on the interior folded nodes. If there are \(s_*\) such nodes, \(s_*\) odd rows recover their pair-weight differences; the two self-dual endpoints already have no orientation ambiguity. Reflection has four interior nodes, so nine even coordinates plus odd weights3,5,7,9 suffice. The adjoint has 16 folded nodes and 14 interior nodes, so 33 even and 14 odd coordinates suffice. These are spectral conclusions, not recovery of the integral metric or Lie bracket. See the [finite reconstruction proof](https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md). These statements are PJ-E471–PJ-E477.
+
+## All-degree sextic structure from local polynomial identities
+
+Let \(K_N(f)=\{g\in S_N:(f,g)_3=(f,g)_5=0\}\), with nonzero binary sextic \(f\), characteristic zero and \(N\ge3\). Activity additionally requires \((f,g)_1\ne0\). With \(f=y^6F(t)\), \(g=y^NG(t)\), \(t=x/y\), the unnormalized affine gate is
+
+\[
+(f,g)_r\big|_{y=1}=\sum_{i=0}^r(-1)^i\binom ri
+(6-r+i)_i(N-i)_{r-i}F^{(r-i)}G^{(i)}.
+\]
+
+Falling factorials are used. Verification on pure powers proves the identity by bilinearity because pure powers span in characteristic zero. The third equation is
+
+\[
+-120FG'''+60(N-2)F'G''-12(N-1)(N-2)F''G'+N(N-1)(N-2)F'''G=0.
+\]
+
+At a point of exact multiplicity \(k\) in \(f\), write \(F=at^k+\cdots\), \(G=bt^s+\cdots\), \(ab\ne0\). The leading gate coefficient is
+
+\[
+I_{r,k}(N,s)=\sum_i(-1)^i\binom ri(6-r+i)_i(N-i)_{r-i}(k)_{r-i}(s)_i.
+\]
+
+Both \(I_{3,k}\) and \(I_{5,k}\) must vanish. Remove their displayed common factors in \(s\). The remaining resultants are exact polynomials in \(N\): for \(k=1,5\) they are respectively \(-4(N-4)(N-2)(N-1)\) and its negative; for \(k=2,4\), \(-(N-6)(N-2)^3(N-1)^3(N+8)\); for \(k=3\), \((N-12)^2(N-2)^2(N-1)^4\); and for \(k=0,6\),1. These identities, not finite-degree extrapolation, prove for all \(N\ge13\):
+
+| Exact multiplicity \(k\) of \(f\) | Allowed valuation \(s\) of a nonzero partner |
+|---|---|
+|0|0,1,2|
+|1|0,1|
+|2|0|
+|3|\(N/2\), requiring even \(N\)|
+|4|\(N\)|
+|5|\(N-1,N\)|
+|6|\(N-2,N-1,N\)|
+
+For exact multiplicity \(k=4,5,6\), write \(f=\ell^kh\), \(\ell\nmid h\). The complete partner space is
+
+\[
+K_N(f)=\ell^{N-k+4}S_{k-4},\qquad\dim K_N(f)=k-3.
+\]
+
+The respective ranges are \(N\ge7,5,3\). Necessity follows from the local resultants. For sufficiency choose \(\ell=x\): the transverse degrees of \(f\) and every proposed partner sum to at most 2, so every third or fifth transvectant term differentiates more times transversely than the inputs allow. This proves a whole unbounded-degree stratum, rather than checking additional examples.
+
+A particularly clean geometric equivalence holds for every \(N\ge3\):
+
+\[
+\ell^N\in K_N(f)\quad\Longleftrightarrow\quad\ell^4\mid f.
+\]
+
+After \(\ell=x\), the third gate is \(-(N)_3x^{N-3}\partial_y^3f\). Its vanishing is exactly the fourfold-root condition; the fifth gate then vanishes too. Its first gate is \(-Nx^{N-1}\partial_yf\), so the pure-power partner is active precisely when \(f\) is not proportional to \(\ell^6\).
+
+Finite jet evaluation is injective: at a regular point a nonzero solution cannot vanish to order 3, so \(\dim K_N(f)\le3\). A simple root gives \(\dim K_N(f)\le2\) for \(N\ge5\); a double root gives \(\dim K_N(f)\le1\) for \(N\ge7\). A triple root excludes every odd \(N\ge13\). For two independent triple-root factors,
+
+\[
+K_N((\ell m)^3)=\operatorname{span}((\ell m)^{N/2})\quad(N\ge14\text{ even}),
+\]
+
+and it is zero for odd \(N\ge13\). The even partner is inactive. Divisibility at both roots proves necessity; cancellation of paired odd-transvectant terms proves sufficiency.
+
+Finally, monomial sextics have complete dimension series \(H_f(t)=\sum_{N\ge3}\dim K_N(f)t^N\):
+
+\[
+H_{x^6}=\frac{3t^3}{1-t},\quad
+H_{x^5y}=\frac{2t^3}{1-t}+t^4,\quad
+H_{x^4y^2}=\frac{t^3}{1-t}+t^6,\quad
+H_{x^3y^3}=\frac{t^4}{1-t^2}+2t^{12}.
+\]
+
+Each monomial partner has distinct gate output exponents, so common indicial roots give the full basis, including exceptional degrees 4,6,12. No graded-algebra or module structure is asserted for the kernels. Full factors, resultant certificates, thresholds and exact replay appear in the [partner structure proof](../PARTNER_STRUCTURE.md). These statements are PJ-E478–PJ-E487. They do not claim a global squarefree classification in degree 21 and above and do not upgrade the trust status of the archived external-solver classification.
+
+## Research consequence and evidence boundaries
+
+The spectral question now has a finite positive uniqueness theorem, a sharp counterexample and an orientation inverse. The lattice question retains the arithmetic form and a nonsplit symmetry extension. The sextic question now has exact local obstructions in every degree, complete high-multiplicity strata and complete two-root dimension series. These are complementary mathematical advances with their own standards of success.
+
+The next serious targets are an explicit E8-to-H4 arithmetic restriction of scalars over the golden subfield, carrying the metric and lifts, and a global finite-type or differential-operator-gcd theorem for squarefree sextic partners. More finite searches would remain evidence until they supplied the missing all-degree argument. The chapter supplies exact solved boundary cases with which any such global theorem must agree.
+
+The catalogue stores these claims as `derived`, with explicit assumptions and proof links. Exact Python checks accompany their separate implementation receipts; they are not Lean kernel formalization. The 23 new rows are present in the installed searchable equation resources, while the existing 29 Math Lab tools retain their previous supported parameter ranges. Every preceding 675 record and all 27 family ranks are preserved.
+
+
+---
+
 # Asterion basis calculus
 
 Asterion is the name introduced by this project for a **certified prescription for choosing, transporting and evaluating a Lie-algebra basis**. Its elements are written \(\mathsf A_{\sigma, j}\). The label \(\sigma\) records a seed, sector or commutator word; \(j\) records a position within its explicitly defined family. The name does not assert a new complex simple Lie algebra, a new classification, or historical priority for principal triples, Coxeter bases or Jordan gradings. The mathematical object delivered by a run is a concrete basis with a reproducible construction and an independently checkable multiplication law. A collection of alternative coordinate charts is not itself one basis: each chart must have the full declared rank, and a basis compiled from mixed candidates must undergo its own rank and transport checks.
@@ -1995,6 +2178,333 @@ For the physical character \(\chi=E_4/\eta^8=q^{-1/3}Z\), the period cancels: \(
 Primary source IDs AST-S001 through AST-S033 resolve to full bibliographic records and reviewed scopes in [asterion_extension_sources.json](asterion_extension_sources.json). The discovery ledger [ASTERION_DISCOVERIES.json](ASTERION_DISCOVERIES.json) carries numerical assertions, evidence paths, statuses and dependencies. The 64 stable programme entries appear in [ASTERION_RESEARCH_PROGRAMME.md](ASTERION_RESEARCH_PROGRAMME.md). The finite construction and nomenclature are developed in [ASTERION_BASIS.md](ASTERION_BASIS.md).
 
 The [equation leverage guide](ASTERION_EQUATION_GUIDE.md) ranks the new mechanisms by proof compression and composability, with stable formula identifiers and precise witness scopes.
+
+
+---
+
+# Asterion next push: higher kernels, elliptic compatibility and monodromy
+
+Version0.19.0 · 20October2026 · Exact mathematical research report
+
+The next push determines exact arc-kernel characters through weight six, proves an
+infinite translation tower and a further primitive-relation obstruction at
+weight six, implements the classical rank-eight dynamical elliptic E8
+r-matrix with an all-orders proof, and identifies the compact and complex
+Zariski closures of the existing five-channel level-four KZ monodromy.
+The full all-weight arc kernel and a constructed quantum elliptic E8
+presentation remain open tasks in this programme. These results are new to
+the programme; worldwide mathematical priority has not been established.
+
+All64 earlier programme identifiers and acceptance gates are retained. The
+companion closure audit records which portions have been completed and which
+larger questions survive. Earlier exact bases, transports, integer lattices,
+currents and weight-four null certificates are preserved.
+
+## The higher kernel grows beyond its first generator
+
+Let V=L1(E8), R=V/C2(V), A=J∞R, and K=ker(A→grLi V). The earlier
+projected-polarization proof gives
+
+\[
+R=\mathbb Q\oplus\mathfrak e_8\oplus(\mathbf1\oplus V_{3875}),
+\qquad R_{\text{ordinary degree}\ge3}=0.
+\]
+
+Thus dimR=4125. This is a finite nonreduced algebra, while its arc algebra
+has infinitely many derivative variables. Ordinary polynomial degree, Li
+degree and conformal weight must be kept distinct.
+
+The new all-jet calculation fixes ordinary polynomial degree three and
+lets the total derivative degree d vary. Its exact Hilbert series is
+
+\[
+\boxed{H_{A,\ell=3}(t)=
+\frac{151373t+961248t^2+3321371t^3+4932875t^4
+      +4123000t^5+1763125t^6}
+ {(1-t)(1-t^2)(1-t^3)}.}
+\]
+
+This is an all-derivative theorem for one polynomial-length sector. The
+proof uses the finite E8 pair projector and S3 covariants on three jet
+positions. Its boundary restriction maps have exact ranks; the earlier
+cubic multiplication certificate supplies the finite representation data.
+It is not an asserted Hilbert series for the entire arc algebra.
+
+At conformal weight five, the length-three piece has dimension1112621.
+The length-two and length-one pieces have dimensions96008 and248. Higher
+lengths vanish at that weight. Therefore
+
+\[
+\dim A_5=1208877,\qquad
+\dim V_5=1057504,\qquad
+\boxed{\dim K_5=151373.}
+\]
+
+The finite E8 character is
+
+\[
+K_5\cong V_{248}\oplus V_{3875}\oplus V_{147250}.
+\]
+
+The independent VOA character comes from the lattice realization:
+weight μ occurs with multiplicity p8(5−|μ|²/2). Exact Freudenthal recursion,
+folded to the Weyl chamber, subtracts finite irreducibles and gives
+
+\[
+V_5\cong2\mathbf1\oplus5V_{248}\oplus3V_{3875}
+\oplus V_{27000}\oplus3V_{30380}\oplus V_{147250}\oplus V_{779247}.
+\]
+
+The scalar dimension agrees independently with E4/φ8. The recursion
+retains complete norm bounds, dominant-weight rows and Weyl dimensions;
+no large irreducible-character table is assumed without a computation.
+
+## A lowering operator gives infinite certificates
+
+For divided jets define derivations
+
+\[
+D x^{[r]}=(r+1)x^{[r+1]},\qquad
+E x^{[r]}=x^{[r-1]}\ (r>0),\quad E x^{[0]}=0.
+\]
+
+They satisfy [E,D]=N, the ordinary polynomial-degree operator. For a
+homogeneous ordinary relation q,
+E(D^s q)=s·deg(q)D^(s−1)q, so E preserves the differential arc ideal and
+descends to A. It is locally nilpotent on every fixed jet polynomial.
+
+The earlier nonzero783-term symbol FQ has ordinary degree3 and EFQ=0.
+Consequently
+
+\[
+E^rD^rF_Q=3^r r!F_Q,\qquad r\ge0.
+\]
+
+Every derivative remains nonzero. More generally D is injective on every
+positive ordinary degree of A: if Dv=0 and Nv=pv, p>0, then
+D^rE^rv=(−p)^r r!v; local nilpotence of E forces v=0. This is an all-weight
+operator proof with finite exact replays, not an extrapolation of a few
+computed derivatives.
+
+The cubic-zero theorem also gives x[0]FQ=0 for every current x. The first
+kernel module therefore contributes only DK4 at weight five. The primitive
+quotient for the graded commutative differential ideal is exactly
+
+\[
+\boxed{K_5/(DK_4+\mathfrak e_8[0]K_4)
+\cong V_{248}\oplus V_{147250},\quad \dim=147498.}
+\]
+
+This proves that the weight-four3875 module does not differentially
+generate the kernel. It does not assert that this quotient classifies
+unfiltered VOA strong generators. Differentiating x[0]FQ=0 also gives the
+explicit infinite syzygy family
+
+\[
+\sum_{j=0}^r\binom rj D^j(x[0])D^{r-j}F_Q=0.
+\]
+
+At weight six, the length-three series gives4585365 states. The complete
+short-current arc sector has dimension127132 and injects into grLi V;
+exact highest-weight affine Gram blocks verify this. Since dimV6=4530744,
+the kernel in the length-three sector has dimension at least181753.
+Injectivity of D gives151373 dimensions from DK5. Products of lower kernel
+classes have greater ordinary length, so at least30380 further primitive
+dimensions are necessary in this sector. The length-four sector is
+classified independently by a new finite multiplication theorem below.
+
+| Conformal weight | Arc dimension | Simple VOA dimension | Kernel dimension | New differential-ideal primitives |
+|---|---:|---:|---:|---:|
+|4|217001|213126|3875|3875|
+|5|1208877|1057504|151373|147498|
+|6|4716373|4530744|185629|at least30380 in the certified length-three sector|
+
+The quartic sector is dual to the multiplication kernel
+ker[Sym²(1+3875)→Sym⁴(g)]. Independent Newton/Freudenthal calculations give
+source character2·1+2·3875+27000+147250+2450240+4881384 and target
+1+3875+2·27000+147250+2450240+4096000+4881384+70680000+79143000.
+Multiplicity forces at least1+3875 in the kernel. A compact-form Casimir
+bound of168 excludes2450240 and4881384. Two actual nonzero multiplication
+witnesses exclude27000 and147250; the latter is a1421-term highest quartic,
+verified against all eight raising operators and Casimir eigenvalue144.
+The remaining singlet and3875 image ranks are nonzero by C² and C·Q.
+Thus the quartic kernel is exactly1+3875, dimension3876.
+
+Lengths five and six at conformal weight six contain at least three zero
+jets and vanish. Combining all four remaining lengths proves
+
+\[
+\boxed{\dim A_6=4716373,\qquad
+ K_6\cong\mathbf1\oplus V_{248}\oplus2V_{3875}\oplus V_{30380}
+ \oplus V_{147250},\quad\dim K_6=185629.}
+\]
+
+An explicit nonzero invariant quartic arc class is
+F0(x,y)=2B(x,y)²−B([x,y],[x,y])−2B(x,x)B(y,y), with squared tensor norm
+947856. Its individual VOA image is not computed. The exact total character
+does not locate every kernel copy in Li degrees two and three, or settle
+which quartic classes are products of earlier generators.
+
+The next exact closure gates are the full Li-bigraded kernel embedding,
+the minimal generator list through weight six, and explicit highest null
+lifts for the weight-five248 and147250 modules.
+An all-weight differential or vertex-Poisson presentation requires further
+primitive generators, their syzygies and a completeness proof.
+
+## Classical elliptic compatibility is now explicit
+
+Use the derivative-one odd theta Θ with quasiperiods2πi and logp, and
+ρ(z)=Θ′(z)/Θ(z), Φ(z,x)=Θ(z+x)/(Θ(z)Θ(x)). For λ_i=λ(h_i) and
+xα=λ(hα), the actual normalized E8 tensor is
+
+\[
+\boxed{r(z,\lambda)=\rho(z)\sum_{i,j}(A^{-1})_{ij}h_i\otimes h_j
+ +\sum_{\alpha\in R}\Phi(z,x_\alpha)e_\alpha\otimes e_{-\alpha}.}
+\]
+
+There are304 terms:64 Cartan coefficients and240 roots. The eight dynamical
+derivatives use the root coordinates, with the inverse metric confined to
+the Cartan Casimir. The meromorphic domain excludes theta divisors in the
+spectral differences and root evaluations. Numerator zeros are allowed.
+
+The full classical dynamical Yang–Baxter equation is
+
+\[
+\sum_i(h_i^{(1)}\partial_i r^{23}-h_i^{(2)}\partial_i r^{13}
+ +h_i^{(3)}\partial_i r^{12})
+ +[r^{12},r^{13}]+[r^{12},r^{23}]+[r^{13},r^{23}]=0.
+\]
+
+The analytic proof reduces every possible weight-zero tensor coefficient
+to theta addition or its opposite-root derivative limit. It covers512
+Cartan triples,5760 Cartan/opposite-root coordinates and13440 ordered
+root triples. Exact finite series computations independently check the full
+tensor through p² in exhaustive mode:84816 bracket products cancel,
+including4290 components that remain nonzero when the dynamical derivative
+term is omitted. Independent spectral specializations and reversed-sign
+controls were also checked.
+
+The cusp limit and additive scaling give, sequentially, trigonometric and
+rational dynamical tensors. The rational limit is independently checked:
+r_rat=Ω/z+Σα eα⊗e−α/xα. This is a classical Felder construction with its
+historical attribution. A quantum E8 R-matrix, its shifted quantum identity,
+and an explicit KZB flat connection remain separate implementation gates.
+
+## The level-four monodromy closure is determined
+
+For the existing five-channel equation
+
+\[
+F'=\frac1{34}\left(\frac A z+\frac B{z-1}\right)F,
+\qquad\operatorname{spec}A=(-60,-30,-12,0,2),
+\]
+
+let Γ be generated by the two based counterclockwise local holonomies U,V.
+Their exact spectrum is ζ17 to the exponents0,1,2,4,11. Both have actual
+and projective order17, and detU=detV=ζ17. Rigorous rational complex loop
+enclosures, together with rigorous cyclotomic balls, certify all20 blocks
+Pj(U)VPi(U), i≠j, as nonzero. This proves irreducibility at this rational
+parameter itself. The smallest block-center norm lower bound exceeds0.0547,
+while the largest propagated block error is below0.000002852.
+
+Prime dimension and order17 exclude an imprimitive line system. The finite
+primitive degree-five classification excludes projective element order17,
+so Γ is infinite. At level four all five adjoint fusion channels survive;
+the full five-dimensional invariant fiber is the conformal-block bundle.
+Belkale's unitarity theorem supplies a preserved positive metric.
+
+Clifford theory then forces the compact identity component to act
+irreducibly. The proper connected irreducible compact candidates in degree
+five preserve a symmetric form. But the exponent set S={0,1,2,4,11} has no
+symmetry S=a−S modulo17, excluding projective self-duality. Hence the
+identity component is SU(5). Up to one fixed unitarizing conjugacy,
+
+\[
+\boxed{\overline\Gamma=\{g\in U(5):\det(g)^{17}=1\},\qquad
+ \overline\Gamma^{\mathrm{Zar}}=\{g\in GL_5(\mathbb C):\det(g)^{17}=1\}.}
+\]
+
+There are17 components; the complex connected component is SL5 and the
+projective compact closure is PU5. The compact group is abstractly
+SU5×C17. This determines closures, not a discrete presentation or a
+faithfulness theorem for the countable dense image.
+Regular-singular Schlesinger density also gives the same specialized
+complex algebraic group as the pointwise differential Galois group.
+
+An independent residue calculation gives associative algebra M5(Q), Lie
+algebra gl5(Q), and centered Lie algebra sl5(Q). Degree-ten polynomials
+in adA isolate the actual off-diagonal matrix units. These results support
+a formal/small infinite-order-parameter GL5 theorem, but were not substituted
+for the specialized rational-parameter loop proof. Finite determinant image
+prevents GL5 closure at every rational parameter.
+
+## A precise elliptic interpretation of density
+
+The common extended carrier is the rank-eight charge character
+
+\[
+H(\tau,z)=\Theta_{E_8}(\tau,z)/\varphi(q)^8,
+\quad \Theta_{E_8}(\tau,z)=\sum_{\alpha\in E_8}
+q^{|\alpha|^2/2}e^{2\pi i(\alpha,z)}.
+\]
+
+Its weight-one component is the original248-dimensional algebra; higher
+weights contain oscillator composites and further lattice charges. The
+elliptic translation law follows by exact charge reindexing. The normalized
+heat identity includes the oscillator correction
+
+\[
+(2D_\tau-\sum_iD_{z_i}^2)H=\tfrac23(1-E_2)H.
+\]
+
+The first angular defect is governed by an exact all-shell relation:
+
+\[
+\sum_{|\alpha|^2=2n}(\alpha,u)^8-
+\frac{240\sigma_3(n)n^4}{8}|u|^8
+=\tau(n)\left(\sum_{\alpha\text{ root}}(\alpha,u)^8-30|u|^8\right).
+\]
+
+After oscillator convolution its series is H8_root(u)qφ(q)^16. Thus the
+extended density has a concrete charge-angle observable and an exact
+arithmetic boundary: an E8 shell is an8-design if and only if τ(n)=0.
+Universal nonvanishing is Lehmer's conjecture and remains open.
+
+The harmonic-theta compiler further expresses each even angular sector
+through degree30 in ΔQ[E4,E6]_(d−8), determined by a Sturm panel of at most
+two coefficients. Degree20 is the first two-dimensional cusp sector.
+Whole multivariate moment tensors are replayed through degree8; the higher
+displayed coefficients specialize to the first coordinate direction.
+
+## Evidence, preservation and next work
+
+The executable entry point is `python -m perfectjet asterion frontiers
+--exhaustive --max-degree 4`. Seven component receipts and the aggregate are
+retained under `results/asterion-frontiers/`. The verifier script regenerates
+all outputs and compares exact deterministic bytes in `--check` mode.
+Earlier `results/asterion/` and `results/asterion-extension/` remain bound to
+the current source hashes and independently replayable.
+
+The focused source package includes the engines, tests, proofs,48 new
+equation records, the preserved592-record prefix, source reviews, discovery
+ledger and all64 original programme gates. A successful finite test is not
+silently promoted to an all-order theorem; every all-order conclusion states
+its operator, modular, theta-addition or representation-theoretic proof.
+
+The outstanding priorities are now sharper: finish the explicit Li placement
+and minimal generator classification through weight six, construct
+the forced higher primitive lifts, determine whether differential generators
+eventually stabilize, implement an actual quantum dynamical E8 identity and
+KZB connection, and study the discrete dense monodromy image or other levels.
+None of these remaining tasks is hidden by the completed closure results.
+
+Detailed proofs are in `ASTERION_KERNEL_CHARACTERS.md`,
+`ASTERION_KERNEL_TOWER.md`, `ASTERION_QUARTIC.md`,
+`ASTERION_QUARTIC_CHARACTERS.md`, `ASTERION_ELLIPTIC.md`,
+`ASTERION_MONODROMY.md`, `ASTERION_MONODROMY_ALGEBRA.md` and
+`ASTERION_JACOBI.md`. Primary-source boundaries and the preservation audit
+are in `ASTERION_NEXT_PUSH_SOURCES.md`, `asterion_frontier_sources.json`
+and `ASTERION_CLOSURE_AUDIT.md`.
 
 
 ---
@@ -2597,387 +3107,112 @@ Status describes the evidence available in this repository. Exact checking is no
 | PJ-H086 | asterion-extension | reconstructed gauge tangent | s=G_pivot^-1 v_pivot; v is tangent iff v=G s | derived | The supplied invertible gauge minor gives an exact membership test and a failing row functional; completeness uses the declared Whitehead dependency. |
 | PJ-H087 | asterion-extension | Cartan conformal null relations | s_l=(1/2)sum_(i,j in l)G^ij J_i[-1]J_j[-1]\|0>; s_l-s_0=0 in L_1(E8) | derived | The31Jordan Cartans have disjoint quadratic supports, giving30independent neutral null relations; they do not exhaust the216neutral quadratic null states. |
 | PJ-H088 | asterion-extension | Cartan average and Sugawara | omega=(1/31)sum_(l=1)^31 s_l=s_l in L_1(E8) | derived | The universal Sugawara expression is the average; equality of individual rank-eight Cartan states holds in the simple level-one quotient. No unrestricted mod31 equivalence is asserted. |
-
-
-<!-- ASTERION_FRONTIER_APPENDIX -->
-
-# Asterion next push: higher kernels, elliptic compatibility and monodromy
-
-Version0.19.0 · 20October2026 · Exact mathematical research report
-
-The next push determines exact arc-kernel characters through weight six, proves an
-infinite translation tower and a further primitive-relation obstruction at
-weight six, implements the classical rank-eight dynamical elliptic E8
-r-matrix with an all-orders proof, and identifies the compact and complex
-Zariski closures of the existing five-channel level-four KZ monodromy.
-The full all-weight arc kernel and a constructed quantum elliptic E8
-presentation remain open tasks in this programme. These results are new to
-the programme; worldwide mathematical priority has not been established.
-
-All64 earlier programme identifiers and acceptance gates are retained. The
-companion closure audit records which portions have been completed and which
-larger questions survive. Earlier exact bases, transports, integer lattices,
-currents and weight-four null certificates are preserved.
-
-## The higher kernel grows beyond its first generator
-
-Let V=L1(E8), R=V/C2(V), A=J∞R, and K=ker(A→grLi V). The earlier
-projected-polarization proof gives
-
-\[
-R=\mathbb Q\oplus\mathfrak e_8\oplus(\mathbf1\oplus V_{3875}),
-\qquad R_{\text{ordinary degree}\ge3}=0.
-\]
-
-Thus dimR=4125. This is a finite nonreduced algebra, while its arc algebra
-has infinitely many derivative variables. Ordinary polynomial degree, Li
-degree and conformal weight must be kept distinct.
-
-The new all-jet calculation fixes ordinary polynomial degree three and
-lets the total derivative degree d vary. Its exact Hilbert series is
-
-\[
-\boxed{H_{A,\ell=3}(t)=
-\frac{151373t+961248t^2+3321371t^3+4932875t^4
-      +4123000t^5+1763125t^6}
- {(1-t)(1-t^2)(1-t^3)}.}
-\]
-
-This is an all-derivative theorem for one polynomial-length sector. The
-proof uses the finite E8 pair projector and S3 covariants on three jet
-positions. Its boundary restriction maps have exact ranks; the earlier
-cubic multiplication certificate supplies the finite representation data.
-It is not an asserted Hilbert series for the entire arc algebra.
-
-At conformal weight five, the length-three piece has dimension1112621.
-The length-two and length-one pieces have dimensions96008 and248. Higher
-lengths vanish at that weight. Therefore
-
-\[
-\dim A_5=1208877,\qquad
-\dim V_5=1057504,\qquad
-\boxed{\dim K_5=151373.}
-\]
-
-The finite E8 character is
-
-\[
-K_5\cong V_{248}\oplus V_{3875}\oplus V_{147250}.
-\]
-
-The independent VOA character comes from the lattice realization:
-weight μ occurs with multiplicity p8(5−|μ|²/2). Exact Freudenthal recursion,
-folded to the Weyl chamber, subtracts finite irreducibles and gives
-
-\[
-V_5\cong2\mathbf1\oplus5V_{248}\oplus3V_{3875}
-\oplus V_{27000}\oplus3V_{30380}\oplus V_{147250}\oplus V_{779247}.
-\]
-
-The scalar dimension agrees independently with E4/φ8. The recursion
-retains complete norm bounds, dominant-weight rows and Weyl dimensions;
-no large irreducible-character table is assumed without a computation.
-
-## A lowering operator gives infinite certificates
-
-For divided jets define derivations
-
-\[
-D x^{[r]}=(r+1)x^{[r+1]},\qquad
-E x^{[r]}=x^{[r-1]}\ (r>0),\quad E x^{[0]}=0.
-\]
-
-They satisfy [E,D]=N, the ordinary polynomial-degree operator. For a
-homogeneous ordinary relation q,
-E(D^s q)=s·deg(q)D^(s−1)q, so E preserves the differential arc ideal and
-descends to A. It is locally nilpotent on every fixed jet polynomial.
-
-The earlier nonzero783-term symbol FQ has ordinary degree3 and EFQ=0.
-Consequently
-
-\[
-E^rD^rF_Q=3^r r!F_Q,\qquad r\ge0.
-\]
-
-Every derivative remains nonzero. More generally D is injective on every
-positive ordinary degree of A: if Dv=0 and Nv=pv, p>0, then
-D^rE^rv=(−p)^r r!v; local nilpotence of E forces v=0. This is an all-weight
-operator proof with finite exact replays, not an extrapolation of a few
-computed derivatives.
-
-The cubic-zero theorem also gives x[0]FQ=0 for every current x. The first
-kernel module therefore contributes only DK4 at weight five. The primitive
-quotient for the graded commutative differential ideal is exactly
-
-\[
-\boxed{K_5/(DK_4+\mathfrak e_8[0]K_4)
-\cong V_{248}\oplus V_{147250},\quad \dim=147498.}
-\]
-
-This proves that the weight-four3875 module does not differentially
-generate the kernel. It does not assert that this quotient classifies
-unfiltered VOA strong generators. Differentiating x[0]FQ=0 also gives the
-explicit infinite syzygy family
-
-\[
-\sum_{j=0}^r\binom rj D^j(x[0])D^{r-j}F_Q=0.
-\]
-
-At weight six, the length-three series gives4585365 states. The complete
-short-current arc sector has dimension127132 and injects into grLi V;
-exact highest-weight affine Gram blocks verify this. Since dimV6=4530744,
-the kernel in the length-three sector has dimension at least181753.
-Injectivity of D gives151373 dimensions from DK5. Products of lower kernel
-classes have greater ordinary length, so at least30380 further primitive
-dimensions are necessary in this sector. The length-four sector is
-classified independently by a new finite multiplication theorem below.
-
-| Conformal weight | Arc dimension | Simple VOA dimension | Kernel dimension | New differential-ideal primitives |
-|---|---:|---:|---:|---:|
-|4|217001|213126|3875|3875|
-|5|1208877|1057504|151373|147498|
-|6|4716373|4530744|185629|at least30380 in the certified length-three sector|
-
-The quartic sector is dual to the multiplication kernel
-ker[Sym²(1+3875)→Sym⁴(g)]. Independent Newton/Freudenthal calculations give
-source character2·1+2·3875+27000+147250+2450240+4881384 and target
-1+3875+2·27000+147250+2450240+4096000+4881384+70680000+79143000.
-Multiplicity forces at least1+3875 in the kernel. A compact-form Casimir
-bound of168 excludes2450240 and4881384. Two actual nonzero multiplication
-witnesses exclude27000 and147250; the latter is a1421-term highest quartic,
-verified against all eight raising operators and Casimir eigenvalue144.
-The remaining singlet and3875 image ranks are nonzero by C² and C·Q.
-Thus the quartic kernel is exactly1+3875, dimension3876.
-
-Lengths five and six at conformal weight six contain at least three zero
-jets and vanish. Combining all four remaining lengths proves
-
-\[
-\boxed{\dim A_6=4716373,\qquad
- K_6\cong\mathbf1\oplus V_{248}\oplus2V_{3875}\oplus V_{30380}
- \oplus V_{147250},\quad\dim K_6=185629.}
-\]
-
-An explicit nonzero invariant quartic arc class is
-F0(x,y)=2B(x,y)²−B([x,y],[x,y])−2B(x,x)B(y,y), with squared tensor norm
-947856. Its individual VOA image is not computed. The exact total character
-does not locate every kernel copy in Li degrees two and three, or settle
-which quartic classes are products of earlier generators.
-
-The next exact closure gates are the full Li-bigraded kernel embedding,
-the minimal generator list through weight six, and explicit highest null
-lifts for the weight-five248 and147250 modules.
-An all-weight differential or vertex-Poisson presentation requires further
-primitive generators, their syzygies and a completeness proof.
-
-## Classical elliptic compatibility is now explicit
-
-Use the derivative-one odd theta Θ with quasiperiods2πi and logp, and
-ρ(z)=Θ′(z)/Θ(z), Φ(z,x)=Θ(z+x)/(Θ(z)Θ(x)). For λ_i=λ(h_i) and
-xα=λ(hα), the actual normalized E8 tensor is
-
-\[
-\boxed{r(z,\lambda)=\rho(z)\sum_{i,j}(A^{-1})_{ij}h_i\otimes h_j
- +\sum_{\alpha\in R}\Phi(z,x_\alpha)e_\alpha\otimes e_{-\alpha}.}
-\]
-
-There are304 terms:64 Cartan coefficients and240 roots. The eight dynamical
-derivatives use the root coordinates, with the inverse metric confined to
-the Cartan Casimir. The meromorphic domain excludes theta divisors in the
-spectral differences and root evaluations. Numerator zeros are allowed.
-
-The full classical dynamical Yang–Baxter equation is
-
-\[
-\sum_i(h_i^{(1)}\partial_i r^{23}-h_i^{(2)}\partial_i r^{13}
- +h_i^{(3)}\partial_i r^{12})
- +[r^{12},r^{13}]+[r^{12},r^{23}]+[r^{13},r^{23}]=0.
-\]
-
-The analytic proof reduces every possible weight-zero tensor coefficient
-to theta addition or its opposite-root derivative limit. It covers512
-Cartan triples,5760 Cartan/opposite-root coordinates and13440 ordered
-root triples. Exact finite series computations independently check the full
-tensor through p² in exhaustive mode:84816 bracket products cancel,
-including4290 components that remain nonzero when the dynamical derivative
-term is omitted. Independent spectral specializations and reversed-sign
-controls were also checked.
-
-The cusp limit and additive scaling give, sequentially, trigonometric and
-rational dynamical tensors. The rational limit is independently checked:
-r_rat=Ω/z+Σα eα⊗e−α/xα. This is a classical Felder construction with its
-historical attribution. A quantum E8 R-matrix, its shifted quantum identity,
-and an explicit KZB flat connection remain separate implementation gates.
-
-## The level-four monodromy closure is determined
-
-For the existing five-channel equation
-
-\[
-F'=\frac1{34}\left(\frac A z+\frac B{z-1}\right)F,
-\qquad\operatorname{spec}A=(-60,-30,-12,0,2),
-\]
-
-let Γ be generated by the two based counterclockwise local holonomies U,V.
-Their exact spectrum is ζ17 to the exponents0,1,2,4,11. Both have actual
-and projective order17, and detU=detV=ζ17. Rigorous rational complex loop
-enclosures, together with rigorous cyclotomic balls, certify all20 blocks
-Pj(U)VPi(U), i≠j, as nonzero. This proves irreducibility at this rational
-parameter itself. The smallest block-center norm lower bound exceeds0.0547,
-while the largest propagated block error is below0.000002852.
-
-Prime dimension and order17 exclude an imprimitive line system. The finite
-primitive degree-five classification excludes projective element order17,
-so Γ is infinite. At level four all five adjoint fusion channels survive;
-the full five-dimensional invariant fiber is the conformal-block bundle.
-Belkale's unitarity theorem supplies a preserved positive metric.
-
-Clifford theory then forces the compact identity component to act
-irreducibly. The proper connected irreducible compact candidates in degree
-five preserve a symmetric form. But the exponent set S={0,1,2,4,11} has no
-symmetry S=a−S modulo17, excluding projective self-duality. Hence the
-identity component is SU(5). Up to one fixed unitarizing conjugacy,
-
-\[
-\boxed{\overline\Gamma=\{g\in U(5):\det(g)^{17}=1\},\qquad
- \overline\Gamma^{\mathrm{Zar}}=\{g\in GL_5(\mathbb C):\det(g)^{17}=1\}.}
-\]
-
-There are17 components; the complex connected component is SL5 and the
-projective compact closure is PU5. The compact group is abstractly
-SU5×C17. This determines closures, not a discrete presentation or a
-faithfulness theorem for the countable dense image.
-Regular-singular Schlesinger density also gives the same specialized
-complex algebraic group as the pointwise differential Galois group.
-
-An independent residue calculation gives associative algebra M5(Q), Lie
-algebra gl5(Q), and centered Lie algebra sl5(Q). Degree-ten polynomials
-in adA isolate the actual off-diagonal matrix units. These results support
-a formal/small infinite-order-parameter GL5 theorem, but were not substituted
-for the specialized rational-parameter loop proof. Finite determinant image
-prevents GL5 closure at every rational parameter.
-
-## A precise elliptic interpretation of density
-
-The common extended carrier is the rank-eight charge character
-
-\[
-H(\tau,z)=\Theta_{E_8}(\tau,z)/\varphi(q)^8,
-\quad \Theta_{E_8}(\tau,z)=\sum_{\alpha\in E_8}
-q^{|\alpha|^2/2}e^{2\pi i(\alpha,z)}.
-\]
-
-Its weight-one component is the original248-dimensional algebra; higher
-weights contain oscillator composites and further lattice charges. The
-elliptic translation law follows by exact charge reindexing. The normalized
-heat identity includes the oscillator correction
-
-\[
-(2D_\tau-\sum_iD_{z_i}^2)H=\tfrac23(1-E_2)H.
-\]
-
-The first angular defect is governed by an exact all-shell relation:
-
-\[
-\sum_{|\alpha|^2=2n}(\alpha,u)^8-
-\frac{240\sigma_3(n)n^4}{8}|u|^8
-=\tau(n)\left(\sum_{\alpha\text{ root}}(\alpha,u)^8-30|u|^8\right).
-\]
-
-After oscillator convolution its series is H8_root(u)qφ(q)^16. Thus the
-extended density has a concrete charge-angle observable and an exact
-arithmetic boundary: an E8 shell is an8-design if and only if τ(n)=0.
-Universal nonvanishing is Lehmer's conjecture and remains open.
-
-The harmonic-theta compiler further expresses each even angular sector
-through degree30 in ΔQ[E4,E6]_(d−8), determined by a Sturm panel of at most
-two coefficients. Degree20 is the first two-dimensional cusp sector.
-Whole multivariate moment tensors are replayed through degree8; the higher
-displayed coefficients specialize to the first coordinate direction.
-
-## Evidence, preservation and next work
-
-The executable entry point is `python -m perfectjet asterion frontiers
---exhaustive --max-degree 4`. Seven component receipts and the aggregate are
-retained under `results/asterion-frontiers/`. The verifier script regenerates
-all outputs and compares exact deterministic bytes in `--check` mode.
-Earlier `results/asterion/` and `results/asterion-extension/` remain bound to
-the current source hashes and independently replayable.
-
-The focused source package includes the engines, tests, proofs,48 new
-equation records, the preserved592-record prefix, source reviews, discovery
-ledger and all64 original programme gates. A successful finite test is not
-silently promoted to an all-order theorem; every all-order conclusion states
-its operator, modular, theta-addition or representation-theoretic proof.
-
-The outstanding priorities are now sharper: finish the explicit Li placement
-and minimal generator classification through weight six, construct
-the forced higher primitive lifts, determine whether differential generators
-eventually stabilize, implement an actual quantum dynamical E8 identity and
-KZB connection, and study the discrete dense monodromy image or other levels.
-None of these remaining tasks is hidden by the completed closure results.
-
-Detailed proofs are in `ASTERION_KERNEL_CHARACTERS.md`,
-`ASTERION_KERNEL_TOWER.md`, `ASTERION_QUARTIC.md`,
-`ASTERION_QUARTIC_CHARACTERS.md`, `ASTERION_ELLIPTIC.md`,
-`ASTERION_MONODROMY.md`, `ASTERION_MONODROMY_ALGEBRA.md` and
-`ASTERION_JACOBI.md`. Primary-source boundaries and the preservation audit
-are in `ASTERION_NEXT_PUSH_SOURCES.md`, `asterion_frontier_sources.json`
-and `ASTERION_CLOSURE_AUDIT.md`.
-
-
-## PJ-X frontier equation register
-
-| ID | Title | Equation | Evidence and hypotheses |
-|---|---|---|---|
-| PJ-X001 | length-three jet ambient character | Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t²)+dim wedge^3g*t³)/((1-t)(1-t²)(1-t³)) | derived; t counts total derivative degree, with ordinary polynomial length fixed at3. |
-| PJ-X002 | complete length-three arc character | H3(t)=(151373t+961248t²+3321371t³+4932875t⁴+4123000t⁵+1763125t⁶)/((1-t)(1-t²)(1-t³)) | exact_checked; The finite pair-projector covariance ranks and earlier cubic-polarization certificates determine this all-jet fixed-length sector. |
-| PJ-X003 | weight-five length-three population | dim A[weight5,length3]=1112621 | exact_checked; A is the arc algebra of the level-one E8 C2 algebra; the derivative degree is2. |
-| PJ-X004 | weight-five complete arc population | dim A5=1112621+96008+248=1208877 | derived; Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym³g. |
-| PJ-X005 | weight-five complete kernel | dim K5=1208877-1057504=151373 | derived; The canonical arc-to-associated-graded map is a surjective E8-equivariant graded map. |
-| PJ-X006 | weight-five kernel character | K5=V248+V3875+V147250 | derived; Exact arc finite-character comparison with independently computed lattice/Freudenthal VOA character; no explicit new highest null lifts are asserted. |
-| PJ-X007 | weight-five primitive quotient | K5/(D K4+g[0]*K4)=V248+V147250; dimension147498 | derived; Primitive means for the graded commutative differential ideal. D is injective and g[0]*K4=0. |
-| PJ-X008 | weight-six exact arc and kernel characters | dim A6=4716373; K6=1+248+2*3875+30380+147250; dim K6=185629 | derived; Complete finite characters through weight6: the quartic dual multiplication kernel is exactly1+3875 by two explicit nonzero witnesses and a Casimir cutoff. Minimal generator list and Li placement are not inferred; see ASTERION_QUARTIC.md and asterion_frontiers.py. |
-| PJ-X009 | divided-jet translation | D x^[r]=(r+1)x^[r+1]; E x^[r]=x^[r-1] for r>0; E x^[0]=0 | definition; D and E extend by the commutative Leibniz rule; this fixes the divided-jet normalization. |
-| PJ-X010 | translation Heisenberg relation | [E,D]=N; N\|ordinary degree p=p | exact_checked; The operator identity holds on the polynomial jet algebra and descends to its homogeneous differential-ideal quotient. |
-| PJ-X011 | lowering preserves the arc ideal | E(D^s q)=s*degree(q)*D^(s-1)q | derived; q is any homogeneous ordinary relation; E q=0. This is an all-order operator consequence, not a finite extrapolation. |
-| PJ-X012 | highest kernel symbol is lowering primitive | E F_Q=0 | exact_checked; F_Q is the retained783-term weight-four cubic jet symbol constructed using the invariant dual basis. |
-| PJ-X013 | exact translation-tower left inverse | E^r D^r F_Q=3^r r! F_Q | derived; Ordinary degree3, EF_Q=0 and [E,D]=3 on this homogeneous sector; the initial nonzero arc class is imported from the earlier full certificate. |
-| PJ-X014 | translation injectivity | D v=0 and ordinary degree p>0 => v=0 | derived; E is locally nilpotent and [E,D]=p; iterating D^rE^r v=(-p)^r r!v proves injectivity in the arc quotient. |
-| PJ-X015 | annihilator syzygy tower | D^r(x[0]*F_Q)=sum_(j=0)^r binom(r,j) D^j(x[0])*D^(r-j)F_Q=0 | derived; The undifferentiated product lies in the ordinary cubic ideal. This gives relations among descendants, not automatic new primitive generators. |
-| PJ-X016 | lattice-to-Freudenthal multiplicities | mult(V_n,mu)=p8(n-(mu,mu)/2) | exact_checked; For the E8 lattice VOA, then Weyl-chamber-folded exact Freudenthal subtraction. The code independently reconstructs scalar characters through weight6. |
-| PJ-X017 | normalized elliptic theta product | Theta(z;p)=(exp(z/2)-exp(-z/2))*product_n[(1-p^n exp(z))(1-p^n exp(-z))/(1-p^n)^2] | definition; Im tau>0,p=exp(2pi i tau); Theta is odd with derivative1 at0 and has quasiperiods2pi i,log p. |
-| PJ-X018 | elliptic scalar kernels | rho(z)=Thetaprime(z)/Theta(z); Phi(z,x)=Theta(z+x)/(Theta(z)Theta(x)) | definition; Meromorphic away from the theta divisors in spectral and dynamical parameters; numerator zeros are permitted. |
-| PJ-X019 | rank-eight E8 dynamical tensor | r(z,lambda)=rho(z)*Omega_h+sum_alpha Phi(z,lambda(h_alpha))*e_alpha tensor e_-alpha | derived; Actual normalized E8 metric, all240roots and64inverse-Cartan coefficients; this is the classical Felder tensor. |
-| PJ-X020 | dynamical elliptic Yang-Baxter equation | Alt(d r)+[r12,r13]+[r12,r23]+[r13,r23]=0 | exact_checked; Alt uses h_i in slots1,-2,+3 with partial/lambda_i,lambda_i=lambda(h_i). Analytic all-orders proof uses theta addition; direct series replay is bounded. |
-| PJ-X021 | spectral unitarity and residue | r21(-z,lambda)=-r(z,lambda); Res_z=0 r=Omega | derived; Odd theta and the derivative-one normalization fix signs and the residue; all root and Cartan terms are retained. |
-| PJ-X022 | three-root elliptic Fay generator | Phi(u,-b)Phi(u+v,a+b)-Phi(u,a)Phi(v,a+b)+Phi(u+v,a)Phi(v,b)=0 | exact_checked; The analytic theta-addition identity generates every three-root coefficient;13440ordered E8 root triples are checked against the actual bracket signs. |
-| PJ-X023 | opposite-root derivative generator | partial_a Phi(v,a)+(rho(u)-rho(u+v))*Phi(v,a)-Phi(u,-a)*Phi(u+v,a)=0 | derived; A Laurent limit of Fay supplies all three Cartan-slot arrangements. Deleting dynamical derivatives leaves a nonzero ordinary CYBE tensor. |
-| PJ-X024 | rational degeneration | r_rat(z,lambda)=Omega/z+sum_alpha e_alpha tensor e_-alpha/lambda(h_alpha) | exact_checked; Sequential cusp p->0 followed by additive scaling; the independent full E8 rational CDYBE is replayed. |
-| PJ-X025 | level-four exact local spectrum | Spec(U)=Spec(V)={zeta17^0,zeta17^1,zeta17^2,zeta17^4,zeta17^11} | derived; Five-channel connection hbar=1/34, log-free exact local Frobenius basis; based counterclockwise generators. |
-| PJ-X026 | actual and projective local order | U^17=V^17=I; po(U)=po(V)=17 | derived; Five distinct local eigenvalues with exact17th-root exponents. Finite local orders do not imply finite group image. |
-| PJ-X027 | exact determinant image | det U=det V=zeta17; det Gamma=mu17 | derived; Trace of each residue is-100; exponent sum18 is1mod17. |
-| PJ-X028 | actual-loop spectral projectors | P_i(U)=product_(j!=i)(U-lambda_j I)/(lambda_i-lambda_j) | exact_checked; Gaussian-rational loop enclosures and rigorous cyclotomic root balls propagate every matrix error. |
-| PJ-X029 | fixed-level irreducibility certificate | P_j V P_i !=0 for all i!=j;20certified blocks | exact_checked; The strongly connected spectral graph excludes every proper U-invariant spectral subset at hbar1/34 itself. |
-| PJ-X030 | compact connected monodromy closure | closure(Gamma)^0=SU(5) | derived; Specialized irreducibility, prime-dimensional primitivity, finite-primitive classification, level-four WZW unitarity and exclusion of projective self-duality. |
-| PJ-X031 | full compact monodromy closure | closure(Gamma)={g in U(5):det(g)^17=1}; projective closure PU(5) | derived; Up to a fixed unitarizing conjugacy; contains17SU5cosets. The countable dense image is not given a discrete presentation. |
-| PJ-X032 | complex Zariski closure | ZariskiClosure(Gamma)={g in GL5(C):det(g)^17=1} | derived; Complexify the connected SU5component and retain the exact17determinant cosets; identity component SL5(C). |
-| PJ-X033 | residue associative algebra | Q<A,B>=M5(Q); dimension25 | exact_checked; Explicit independent word matrices and exact closure replays for the actual five-channel E8 residues. |
-| PJ-X034 | residue Lie algebra | Lie_Q(A,B)=gl5(Q); dimension25 | exact_checked; Actual nested commutator words, not a generic matrix substitution. |
-| PJ-X035 | centered residue Lie algebra | Lie_Q(A+20I,B+20I)=sl5(Q); dimension24 | exact_checked; Each original residue has trace-100; centering removes its scalar part. |
-| PJ-X036 | connected residue coupling graph | support_offdiag(B)={0<->1,1<->2,2<->3,3<->4,1<->4} | exact_checked; The ten nonzero entries have distinct ad_A weights plus/minus30,18,12,2,32. |
-| PJ-X037 | spectral matrix-unit generator | L_ij(ad_A)(B)=B_ij E_ij | exact_checked; Degree10Lagrange polynomial vanishes at all other off-diagonal weights and0. Path commutators generate the remaining matrix units. |
-| PJ-X038 | cyclotomic self-duality obstruction | S={0,1,2,4,11}; no a modulo17 satisfies S=a-S | exact_checked; All17similitude factors are exhausted; every candidate bilinear form has rank at most3. |
-| PJ-X039 | residue-adjoint and invariant forms differ | A^T H=H A, B^T H=H B has a positive solution; A^T G+G A=B^T G+G B=0 has onlyG0 | exact_checked; Selfadjoint residue metrics are not automatically monodromy-invariant metrics; the latter use the unitary WZW theorem. |
-| PJ-X040 | formal-parameter monodromy closure | ZariskiClosure(Gamma_formal)=GL5 over the algebraic closure of C((hbar)) | derived; The documented torus/generic proof uses residue Lie generation. Pointwise differential Galois GL5 follows for small infinite-order parameters by Schlesinger; no rational-specialization transfer is made. |
-| PJ-X041 | rank-eight refined character | H(tau,z)=Theta_E8(tau,z)/phi(q)^8; q=exp(2pi i tau) | derived; Eight Cartan chemical potentials retain every lattice charge; the finite248directions occur at conformal weight1. |
-| PJ-X042 | exact charge populations | dim V[N,alpha]=p8(N-\|alpha\|²/2) | exact_checked; Complete doubled-coordinate E8 lattice enumeration and oscillator convolution; alpha outside the lattice has multiplicity0. |
-| PJ-X043 | elliptic lattice translation | Theta(tau,z+tau*lambda+mu)=q^(-\|lambda\|²/2)*exp(-2pi i(lambda,z))*Theta(tau,z) | derived; lambda,mu in the integral E8 lattice; exact reindexing proves all orders without truncation-edge assumptions. |
-| PJ-X044 | oscillator-corrected heat identity | (2D_tau-sum_i D_zi²)H=(2/3)(1-E2)H | exact_checked; D_tau andD_zi mean derivatives divided by2pi i; the physical q^(-1/3)character has RHS-(2/3)E2chi. |
-| PJ-X045 | first angular defect polynomial | H8_root(u)=sum_root(alpha,u)^8-30\|u\|^8; Laplacian H8_root=0 | derived; Root shell is a7design; H8_root(e1)=-3/2 proves a nonzero degree8angular defect. |
-| PJ-X046 | all-shell Ramanujan angular relation | M8_n(u)-N_n*n^4*\|u\|^8/8=tau(n)*H8_root(u) | exact_checked; Weighted harmonic theta modularity gives the all-order identity; whole degree8moment tensors are independently replayed at bounded shells. |
-| PJ-X047 | affine angular defect density | sum_n defect_H,n(u)q^n=H8_root(u)*q*phi(q)^16 | derived; Oscillator convolution of H8_rootDelta divides byphi^8. This is a charge-angle observable, not a geometric packing gain. |
-| PJ-X048 | higher angular modular relation compiler | Theta_(E8,P_d) in S_(4+d)=Delta*Q[E4,E6]_(d-8) | exact_checked; Even2<=d<=30; full-rank Sturm panel of at most2qcoefficients. Computed multivariate moment tensors stop at8; higher displayed coefficients specializeu=e1. |
+| PJ-X001 | asterion-frontiers | length-three jet ambient character | Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t²)+dim wedge^3g*t³)/((1-t)(1-t²)(1-t³)) | derived | t counts total derivative degree, with ordinary polynomial length fixed at3. |
+| PJ-X002 | asterion-frontiers | complete length-three arc character | H3(t)=(151373t+961248t²+3321371t³+4932875t⁴+4123000t⁵+1763125t⁶)/((1-t)(1-t²)(1-t³)) | exact_checked | The finite pair-projector covariance ranks and earlier cubic-polarization certificates determine this all-jet fixed-length sector. |
+| PJ-X003 | asterion-frontiers | weight-five length-three population | dim A[weight5,length3]=1112621 | exact_checked | A is the arc algebra of the level-one E8 C2 algebra; the derivative degree is2. |
+| PJ-X004 | asterion-frontiers | weight-five complete arc population | dim A5=1112621+96008+248=1208877 | derived | Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym³g. |
+| PJ-X005 | asterion-frontiers | weight-five complete kernel | dim K5=1208877-1057504=151373 | derived | The canonical arc-to-associated-graded map is a surjective E8-equivariant graded map. |
+| PJ-X006 | asterion-frontiers | weight-five kernel character | K5=V248+V3875+V147250 | derived | Exact arc finite-character comparison with independently computed lattice/Freudenthal VOA character; no explicit new highest null lifts are asserted. |
+| PJ-X007 | asterion-frontiers | weight-five primitive quotient | K5/(D K4+g[0]*K4)=V248+V147250; dimension147498 | derived | Primitive means for the graded commutative differential ideal. D is injective and g[0]*K4=0. |
+| PJ-X008 | asterion-frontiers | weight-six exact arc and kernel characters | dim A6=4716373; K6=1+248+2*3875+30380+147250; dim K6=185629 | derived | Complete finite characters through weight6: the quartic dual multiplication kernel is exactly1+3875 by two explicit nonzero witnesses and a Casimir cutoff. Minimal generator list and Li placement are not inferred; see ASTERION_QUARTIC.md and asterion_frontiers.py. |
+| PJ-X009 | asterion-frontiers | divided-jet translation | D x^[r]=(r+1)x^[r+1]; E x^[r]=x^[r-1] for r>0; E x^[0]=0 | definition | D and E extend by the commutative Leibniz rule; this fixes the divided-jet normalization. |
+| PJ-X010 | asterion-frontiers | translation Heisenberg relation | [E,D]=N; N\|ordinary degree p=p | exact_checked | The operator identity holds on the polynomial jet algebra and descends to its homogeneous differential-ideal quotient. |
+| PJ-X011 | asterion-frontiers | lowering preserves the arc ideal | E(D^s q)=s*degree(q)*D^(s-1)q | derived | q is any homogeneous ordinary relation; E q=0. This is an all-order operator consequence, not a finite extrapolation. |
+| PJ-X012 | asterion-frontiers | highest kernel symbol is lowering primitive | E F_Q=0 | exact_checked | F_Q is the retained783-term weight-four cubic jet symbol constructed using the invariant dual basis. |
+| PJ-X013 | asterion-frontiers | exact translation-tower left inverse | E^r D^r F_Q=3^r r! F_Q | derived | Ordinary degree3, EF_Q=0 and [E,D]=3 on this homogeneous sector; the initial nonzero arc class is imported from the earlier full certificate. |
+| PJ-X014 | asterion-frontiers | translation injectivity | D v=0 and ordinary degree p>0 => v=0 | derived | E is locally nilpotent and [E,D]=p; iterating D^rE^r v=(-p)^r r!v proves injectivity in the arc quotient. |
+| PJ-X015 | asterion-frontiers | annihilator syzygy tower | D^r(x[0]*F_Q)=sum_(j=0)^r binom(r,j) D^j(x[0])*D^(r-j)F_Q=0 | derived | The undifferentiated product lies in the ordinary cubic ideal. This gives relations among descendants, not automatic new primitive generators. |
+| PJ-X016 | asterion-frontiers | lattice-to-Freudenthal multiplicities | mult(V_n,mu)=p8(n-(mu,mu)/2) | exact_checked | For the E8 lattice VOA, then Weyl-chamber-folded exact Freudenthal subtraction. The code independently reconstructs scalar characters through weight6. |
+| PJ-X017 | asterion-frontiers | normalized elliptic theta product | Theta(z;p)=(exp(z/2)-exp(-z/2))*product_n[(1-p^n exp(z))(1-p^n exp(-z))/(1-p^n)^2] | definition | Im tau>0,p=exp(2pi i tau); Theta is odd with derivative1 at0 and has quasiperiods2pi i,log p. |
+| PJ-X018 | asterion-frontiers | elliptic scalar kernels | rho(z)=Thetaprime(z)/Theta(z); Phi(z,x)=Theta(z+x)/(Theta(z)Theta(x)) | definition | Meromorphic away from the theta divisors in spectral and dynamical parameters; numerator zeros are permitted. |
+| PJ-X019 | asterion-frontiers | rank-eight E8 dynamical tensor | r(z,lambda)=rho(z)*Omega_h+sum_alpha Phi(z,lambda(h_alpha))*e_alpha tensor e_-alpha | derived | Actual normalized E8 metric, all240roots and64inverse-Cartan coefficients; this is the classical Felder tensor. |
+| PJ-X020 | asterion-frontiers | dynamical elliptic Yang-Baxter equation | Alt(d r)+[r12,r13]+[r12,r23]+[r13,r23]=0 | exact_checked | Alt uses h_i in slots1,-2,+3 with partial/lambda_i,lambda_i=lambda(h_i). Analytic all-orders proof uses theta addition; direct series replay is bounded. |
+| PJ-X021 | asterion-frontiers | spectral unitarity and residue | r21(-z,lambda)=-r(z,lambda); Res_z=0 r=Omega | derived | Odd theta and the derivative-one normalization fix signs and the residue; all root and Cartan terms are retained. |
+| PJ-X022 | asterion-frontiers | three-root elliptic Fay generator | Phi(u,-b)Phi(u+v,a+b)-Phi(u,a)Phi(v,a+b)+Phi(u+v,a)Phi(v,b)=0 | exact_checked | The analytic theta-addition identity generates every three-root coefficient;13440ordered E8 root triples are checked against the actual bracket signs. |
+| PJ-X023 | asterion-frontiers | opposite-root derivative generator | partial_a Phi(v,a)+(rho(u)-rho(u+v))*Phi(v,a)-Phi(u,-a)*Phi(u+v,a)=0 | derived | A Laurent limit of Fay supplies all three Cartan-slot arrangements. Deleting dynamical derivatives leaves a nonzero ordinary CYBE tensor. |
+| PJ-X024 | asterion-frontiers | rational degeneration | r_rat(z,lambda)=Omega/z+sum_alpha e_alpha tensor e_-alpha/lambda(h_alpha) | exact_checked | Sequential cusp p->0 followed by additive scaling; the independent full E8 rational CDYBE is replayed. |
+| PJ-X025 | asterion-frontiers | level-four exact local spectrum | Spec(U)=Spec(V)={zeta17^0,zeta17^1,zeta17^2,zeta17^4,zeta17^11} | derived | Five-channel connection hbar=1/34, log-free exact local Frobenius basis; based counterclockwise generators. |
+| PJ-X026 | asterion-frontiers | actual and projective local order | U^17=V^17=I; po(U)=po(V)=17 | derived | Five distinct local eigenvalues with exact17th-root exponents. Finite local orders do not imply finite group image. |
+| PJ-X027 | asterion-frontiers | exact determinant image | det U=det V=zeta17; det Gamma=mu17 | derived | Trace of each residue is-100; exponent sum18 is1mod17. |
+| PJ-X028 | asterion-frontiers | actual-loop spectral projectors | P_i(U)=product_(j!=i)(U-lambda_j I)/(lambda_i-lambda_j) | exact_checked | Gaussian-rational loop enclosures and rigorous cyclotomic root balls propagate every matrix error. |
+| PJ-X029 | asterion-frontiers | fixed-level irreducibility certificate | P_j V P_i !=0 for all i!=j;20certified blocks | exact_checked | The strongly connected spectral graph excludes every proper U-invariant spectral subset at hbar1/34 itself. |
+| PJ-X030 | asterion-frontiers | compact connected monodromy closure | closure(Gamma)^0=SU(5) | derived | Specialized irreducibility, prime-dimensional primitivity, finite-primitive classification, level-four WZW unitarity and exclusion of projective self-duality. |
+| PJ-X031 | asterion-frontiers | full compact monodromy closure | closure(Gamma)={g in U(5):det(g)^17=1}; projective closure PU(5) | derived | Up to a fixed unitarizing conjugacy; contains17SU5cosets. The countable dense image is not given a discrete presentation. |
+| PJ-X032 | asterion-frontiers | complex Zariski closure | ZariskiClosure(Gamma)={g in GL5(C):det(g)^17=1} | derived | Complexify the connected SU5component and retain the exact17determinant cosets; identity component SL5(C). |
+| PJ-X033 | asterion-frontiers | residue associative algebra | Q<A,B>=M5(Q); dimension25 | exact_checked | Explicit independent word matrices and exact closure replays for the actual five-channel E8 residues. |
+| PJ-X034 | asterion-frontiers | residue Lie algebra | Lie_Q(A,B)=gl5(Q); dimension25 | exact_checked | Actual nested commutator words, not a generic matrix substitution. |
+| PJ-X035 | asterion-frontiers | centered residue Lie algebra | Lie_Q(A+20I,B+20I)=sl5(Q); dimension24 | exact_checked | Each original residue has trace-100; centering removes its scalar part. |
+| PJ-X036 | asterion-frontiers | connected residue coupling graph | support_offdiag(B)={0<->1,1<->2,2<->3,3<->4,1<->4} | exact_checked | The ten nonzero entries have distinct ad_A weights plus/minus30,18,12,2,32. |
+| PJ-X037 | asterion-frontiers | spectral matrix-unit generator | L_ij(ad_A)(B)=B_ij E_ij | exact_checked | Degree10Lagrange polynomial vanishes at all other off-diagonal weights and0. Path commutators generate the remaining matrix units. |
+| PJ-X038 | asterion-frontiers | cyclotomic self-duality obstruction | S={0,1,2,4,11}; no a modulo17 satisfies S=a-S | exact_checked | All17similitude factors are exhausted; every candidate bilinear form has rank at most3. |
+| PJ-X039 | asterion-frontiers | residue-adjoint and invariant forms differ | A^T H=H A, B^T H=H B has a positive solution; A^T G+G A=B^T G+G B=0 has onlyG0 | exact_checked | Selfadjoint residue metrics are not automatically monodromy-invariant metrics; the latter use the unitary WZW theorem. |
+| PJ-X040 | asterion-frontiers | formal-parameter monodromy closure | ZariskiClosure(Gamma_formal)=GL5 over the algebraic closure of C((hbar)) | derived | The documented torus/generic proof uses residue Lie generation. Pointwise differential Galois GL5 follows for small infinite-order parameters by Schlesinger; no rational-specialization transfer is made. |
+| PJ-X041 | asterion-frontiers | rank-eight refined character | H(tau,z)=Theta_E8(tau,z)/phi(q)^8; q=exp(2pi i tau) | derived | Eight Cartan chemical potentials retain every lattice charge; the finite248directions occur at conformal weight1. |
+| PJ-X042 | asterion-frontiers | exact charge populations | dim V[N,alpha]=p8(N-\|alpha\|²/2) | exact_checked | Complete doubled-coordinate E8 lattice enumeration and oscillator convolution; alpha outside the lattice has multiplicity0. |
+| PJ-X043 | asterion-frontiers | elliptic lattice translation | Theta(tau,z+tau*lambda+mu)=q^(-\|lambda\|²/2)*exp(-2pi i(lambda,z))*Theta(tau,z) | derived | lambda,mu in the integral E8 lattice; exact reindexing proves all orders without truncation-edge assumptions. |
+| PJ-X044 | asterion-frontiers | oscillator-corrected heat identity | (2D_tau-sum_i D_zi²)H=(2/3)(1-E2)H | exact_checked | D_tau andD_zi mean derivatives divided by2pi i; the physical q^(-1/3)character has RHS-(2/3)E2chi. |
+| PJ-X045 | asterion-frontiers | first angular defect polynomial | H8_root(u)=sum_root(alpha,u)^8-30\|u\|^8; Laplacian H8_root=0 | derived | Root shell is a7design; H8_root(e1)=-3/2 proves a nonzero degree8angular defect. |
+| PJ-X046 | asterion-frontiers | all-shell Ramanujan angular relation | M8_n(u)-N_n*n^4*\|u\|^8/8=tau(n)*H8_root(u) | exact_checked | Weighted harmonic theta modularity gives the all-order identity; whole degree8moment tensors are independently replayed at bounded shells. |
+| PJ-X047 | asterion-frontiers | affine angular defect density | sum_n defect_H,n(u)q^n=H8_root(u)*q*phi(q)^16 | derived | Oscillator convolution of H8_rootDelta divides byphi^8. This is a charge-angle observable, not a geometric packing gain. |
+| PJ-X048 | asterion-frontiers | higher angular modular relation compiler | Theta_(E8,P_d) in S_(4+d)=Delta*Q[E4,E6]_(d-8) | exact_checked | Even2<=d<=30; full-rank Sturm panel of at most2qcoefficients. Computed multivariate moment tensors stop at8; higher displayed coefficients specializeu=e1. |
+| PJ-D001 | double-elliptic | multiplicative theta convention | theta(Z;P)=(1-Z)*prod_(m>=1)(1-P^m)(1-P^m Z)(1-P^m/Z) | definition | P is the standard multiplicative coordinate nome; in Koroteev-Shakirov equation3.3 it equals the square of the paper's p. Theta ratios cancel the scalar product factors. |
+| PJ-D002 | double-elliptic | momentum shell energy and charge | E(n)=sum_i n_i(n_i-1)/2; charge(n)=sum_i n_i | definition | Integer n_i; E is nonnegative and the momentum nome is W. Position nome P and momentum nome W are independent formal parameters. |
+| PJ-D003 | double-elliptic | signless normalized DELL current modes | C_a=sum_(charge(n)=a) W^E(n)*F_n(X;T,P)*Y^n; F_n=prod_(i<j)theta(T^(n_i-n_j)Xi/Xj;P)/theta(Xi/Xj;P) | definition | The published Koroteev-Shakirov current is reconstructed with the common coordinate Vandermonde divided out and the overall (-1)^a mode sign removed. This defines the tested model; it is not a new DELL construction. |
+| PJ-D004 | double-elliptic | common left-factor cancellation | (M C0)^(-1)*(M Ca)=C0^(-1)*Ca | derived | Associative operator algebra; M and C0 are invertible in the declared completion. No commutativity of factors is assumed. This identifies raw and theta-ratio current conventions after left normalization. |
+| PJ-D005 | double-elliptic | formal normalized Hamiltonian recurrence | C0=1+sum_(r>=1)W^r A_r; H_a^[r]=C_a^[r]-sum_(j=1)^r A_j*H_a^[r-j] | derived | H_a=C0^(-1)*Ca; products are ordinary for classical functions and ordered for quantum difference operators. Every coefficient uses finitely many earlier coefficients. |
+| PJ-D006 | double-elliptic | current charge recurrence | C_(a+N)=W^a*(Y1*...*YN)*C_a | derived | For the literal signless current, shift every n_i by1. Ratios depend only on differences. In the quantum action convention the total shift commutes with all coordinate-ratio coefficients. Formal Laurent W interpretation handles negative a. |
+| PJ-D007 | double-elliptic | finite shell completeness | E(n)<=M => n_i(n_i-1)/2<=M for each i | derived | All scalar summands are nonnegative on integers. Enumerating precisely this finite coordinate range and filtering total E and charge is exhaustive at every declared momentum order. |
+| PJ-D008 | double-elliptic | logarithmic canonical Poisson bracket | {F,G}=sum_i[(Xi*d_Xi F)(Yi*d_Yi G)-(Yi*d_Yi F)(Xi*d_Xi G)] | definition | Classical independent nonzero multiplicative coordinates. Exact jet derivatives are computed before rational specialization; evaluating a zero bracket at finitely many points alone is not a global identity proof. |
+| PJ-D009 | double-elliptic | integrable deformation compatibility | {H_i^0,H_j^r}+{H_i^r,H_j^0}=-sum_(s=1)^(r-1){H_i^s,H_j^(r-s)} | derived | Coefficient equation for formal Poisson commutativity. The new order enters linearly; no general solvability or completeness is asserted. |
+| PJ-D010 | double-elliptic | canonical deformation equivalence | H_i^1 -> H_i^1+{H_i^0,G} | derived | An infinitesimal canonical change of coordinates. This is a gauge equivalence of first-order corrections, not a classification of all DELL systems. |
+| PJ-D011 | double-elliptic | three-particle first-shell expansion | C0=1+WA+O(W²); C1=h1+WB+O(W²); C2=h2+WC+O(W²); H1=h1+W(B-Ah1); H2=h2+W(C-Ah2) | derived | Coordinate nome P=0; A has six permutation shifts(-1,0,1), B has three shifts(-1,1,1), C has three shifts(2,0,0). Equations use signless oriented coefficients. |
+| PJ-D012 | double-elliptic | exact first-shell Poisson cancellation | {h1,h2}=0; {B,h2}+{h1,C}=h1*{A,h2}+h2*{h1,A}=R | exact_checked | Classical N=3,P=0. Sparse Laurent-polynomial numerator cancellation proves rational identities in symbolic T,X,Y; this is stronger than sampled evaluations, and is only first order in W. |
+| PJ-D013 | double-elliptic | common-power normalization rigidity | {C1/C0^s,C2/C0^s}=W*(1-s)*R+O(W²); R(2;(1,3,7);(2,5,11))=8356261/901120 | derived | Classical P=0,N=3; common exponent s. The nonzero exact witness forces s=1 for an identity over generic parameters. Not a full normalizer classification outside this ansatz. |
+| PJ-D014 | double-elliptic | six-mode first-order normalizer classification | rho=sum_(n in perm(-1,0,1))lambda_n(T)*F_n*Y^n; {C1/(1+W rho),C2/(1+W rho)}=O(W²) iff all lambda_n=1 | derived | Classical N=3,P=0. The lambda_n depend on coupling T only. Valid at T!=0,1; the exact rank certificate excludes further exceptional nonzero couplings within these six fixed functions. |
+| PJ-D015 | double-elliptic | normalizer rank and coupling boundary | det(M6(T))=-(T-1)^14/T^8; rank(M)=6 for T!=0,1; rank(M)\|T=1=0 | exact_checked | M6 is the retained six-row coefficient minor of the normalizer compatibility map. At T=1 the six coefficients are unconstrained at first order. Zero coupling is excluded by the Laurent current definition. |
+| PJ-D016 | double-elliptic | standard trigonometric Ruijsenaars weights | a_I(X;T)=prod_(i in I,j notin I)(T Xi-Xj)/(Xi-Xj); H1f=sum_i a_i f(Yi); H2f=sum_(i<j)a_ij f(Yi)f(Yj) | definition | N=3 and unchanged standard coordinate coefficients; one common meromorphic particlewise momentum profile f. This ansatz is narrower than a general DELL family. |
+| PJ-D017 | double-elliptic | particlewise momentum obstruction identity | {H1f,H2f}\|X=(1,3,7),Y=(u,v,v)=K(T)*(f(v)-f(u))*(f(v)*u*fprime(u)-f(u)*v*fprime(v)) | exact_checked | K1(T)=(5T^4-26T^3+126T-105)/72. A second coordinate witness X=(1,2,5) has K2(T)=(7T^4-27T^3+90T-70)/16; a retained Bezout identity proves the only common coupling root is T=1. |
+| PJ-D018 | double-elliptic | classified particlewise profile | {H1f,H2f}=0 and T!=1 => Y*fprime(Y)/f(Y)=lambda => f(Y)=C*Y^lambda locally | derived | Two independent coordinate witnesses and an exact Bezout identity close all exceptional couplings except T=1. Nonconstant meromorphic f on a connected logarithmic cover gives local powers; globally single-valued on C* forces integer lambda. At T=1 arbitrary momentum profiles commute. |
+| PJ-D019 | double-elliptic | particlewise ellipticization no-go | f(PY)=f(Y),0<abs(P)<1 and f(Y)=C*Y^m,m in Z => m=0 | derived | Together with the classified unchanged-coordinate ansatz this excludes nonconstant single-valued elliptic particlewise profiles at T!=1. It does not exclude general double-elliptic systems or coupled momentum interactions. |
+| PJ-D020 | double-elliptic | explicit failed momentum ellipticization direction | f(Y)=Y+epsilon/Y => {H1f,H2f}\|T=2,X=(1,3,7),Y=(2,3,3)=-95epsilon/216+95epsilon²/1296 | exact_checked | An exact nonzero first-order direction within the particlewise ansatz. This is a Laurent test profile, not itself an elliptic function; monomial profiles provide positive controls. |
+| PJ-D021 | double-elliptic | forced mixed momentum Fourier mode | [W Y^(-1,2,0)]H1=-F_(-1,1,0)*F_(0,1,0) | derived | N=3 signless normalized current; the numerator first shell has no(-1,2,0) mode, while C0^(-1)C1 supplies this product. Nonzero generic meromorphic coefficient; no assertion of a new unknown Hamiltonian. |
+| PJ-D022 | double-elliptic | ordered quantum coefficient multiplication | (f(X)*S^n)*(g(X)*S^m)=f(X)*g(Q^n X)*S^(n+m) | definition | Literal action S_i f(X)=f(X1,...,Q Xi,...,XN). Q is the quantum shift parameter, distinct from both elliptic nomes; finite coefficient checks do not prove the full quantum commutativity conjecture. |
+| PJ-D023 | double-elliptic | right normalization is simultaneous conjugacy | Ca*C0^(-1)=C0*(C0^(-1)*Ca)*C0^(-1) | derived | Invertible C0 in an associative completed operator algebra. Left and right families have equivalent commutativity; right normalization is not a valid noncommutativity negative control. |
+| PJ-D024 | double-elliptic | coefficientwise quantum commutator gate | [H1,H2]_(W^r P^s)=sum_(a+b=r,c+d=s)(H1^[a,c]*H2^[b,d]-H2^[a,c]*H1^[b,d]) | definition | Every ordered output-shift coefficient is tested exactly at the declared rational parameter specializations and finite truncation. The retained receipt, rather than this formula, records which bounded panels actually passed. |
+| PJ-D025 | double-elliptic | global second momentum-order Poisson cancellation | [W^2]{C0^(-1)C1,C0^(-1)C2}=0 at P=0 | exact_checked | N=3, rational identity in symbolic T,X,Y. The three exact numerators over Delta^5 have19902,13548,19902terms and cancel coefficientwise. This is finite-order commutativity, not all-order integrability. |
+| PJ-D026 | double-elliptic | second-order homogeneous normalizer rank | det M21=-128*(T-1)^44*(T+1)^2*(T+2)^5*(T+3)^2*(T^2+T+1)^3/T^31 | exact_checked | P=0,N=3. A21function ansatz of symmetric products of first-shell functions has generic full rank. Hence no nonzero W² denominator correction in that ansatz at couplings where this minor is nonzero. A vanishing minor alone does not prove a rank drop. |
+| PJ-D027 | double-elliptic | global first mixed-nome compatibility | [W^a P^b]{H1,H2}=0 for a,b in {0,1} | exact_checked | N=3. Exact Laurent-polynomial identities in all T,X,Y, with P the product nome. The mixed raw3696terms and normalizer6864terms cancel after denominator clearing; no extrapolation to all elliptic orders. |
+| PJ-D028 | double-elliptic | coordinate-deformed first-shell rigidity | lambda_n(T,P)=1 mod P² for all six first-shell functions | derived | The global mixed-nome identity supplies a solution; the invertible constant-coordinate-nome minor makes both coefficients unique for each fixed T!=0,1. Numerator modes and six-function normalizer ansatz are fixed. |
+| PJ-D029 | double-elliptic | multiaffine profile obstruction | sum_i zi Pi(z)=0 => {H1[f],H2[f]}\|z2=z3=s=P1(z,s,s)*(g(u)-z*g(v)/s) | derived | g(y)=y*fprime(y),z=f(u),s=f(v),s!=0. Base Hamiltonians are multiaffine and commute in log-canonical variables. A nonzero restricted P1 polynomial forces a nonconstant common profile to be a local power. |
+| PJ-D030 | double-elliptic | local coordinate-elliptic no-go extension | T!=0,1 and abs(P)<delta(T) => no nonconstant elliptic particlewise profile in the unchanged elliptic-RS ansatz | derived | Conditional on the standard commuting multiaffine elliptic-RS weights holomorphic near P=0 with the declared trigonometric limit. A nonzero P=0 witness persists analytically. No numerical delta or all-moduli classification is claimed. |
+| PJ-D031 | double-elliptic | DELL homogeneity and moment-map descent | sum_i Xi*d_Xi H_a=0; sum_i Yi*d_Yi H_a=a*H_a; {H_a,Y_all}=0 | derived | Directly from current coefficients depending on coordinate ratios and fixed momentum charge. The formal Hamiltonians descend under regular simultaneous-position-scaling reduction at fixed nonzero Y_all. |
+| PJ-D032 | double-elliptic | generic formal functional independence | det d(e1,...,eN)/d(logY1,...,logYN)=(prod_i Yi)*prod_(i<j)(Yi-Yj) | derived | At P=W=0,T=1 the normalized currents give elementary symmetric polynomials. This nonzero specialization proves generic independence of H1,...,H_(N-1),Y_all and their regular reduced family in the formal deformation; it does not prove commutativity or convergence. |
+| PJ-D033 | double-elliptic | complete second-order normalizer boundary | dim ker(T on actual productfunctions)=1 at T=-1;19 at T=1;0 at all other nonzero T | derived | The first denominator shell is fixed to A and the second correction lies in products of its six functions. Three symbolic21minors and exact exceptional-field rank certificates classify all nonzero couplings. Function-space dependencies are quotiented out. |
+| PJ-D034 | double-elliptic | resonant freedom is an existing integral | rho_star=H1^0*H2^0/Y_all at T=-1; {rho_star,H1^0/H2^0}=0 | exact_checked | A retained nine-product expansion proves membership in the second-order normalizer ansatz. This is one nonzero homogeneous normalizer direction, not a new independent conserved quantity. |
+| PJ-D035 | double-elliptic | cube-root coefficient redundancy | f1*f4=f0*f5; f2*f3=f0*f5 when T²+T+1=0 | exact_checked | Zero-based f_i order is lexicographic perm(-1,0,1). The21nominal products span19actual functions. The two coefficient-kernel directions represent identically zero functions, so they give no new normalizer freedom. |
+| PJ-E465 | conductor | arithmetic E8 trace form | G_ij=Tr_K/Q(alpha*zeta^(i-j)); alpha=(5-zeta-2zeta^2-2zeta^3-zeta^4+zeta^6+2zeta^7)/15 | derived | K=Q(zeta_30), G=B^T A B in the supplied unimodular Krylov basis; Norm(alpha)=1/1265625 and det(G)=1. The cyclotomic realization is classical; explicit source-coordinate identity, no priority claim. |
+| PJ-E466 | conductor | integral Coxeter commutant | End_Z[<C>](E8)=Z[zeta_30] | derived | The supplied cyclic vector has an integral Krylov basis; a commuting map is multiplication by its value at 1. This concerns integral linear endomorphisms, not all Lie endomorphisms. |
+| PJ-E467 | conductor | Coxeter isometry centralizer | u*conjugate(u)=1; C_O(E8)(C)=<C>, order 30 | derived | Use the specified trace form, trace nondegeneracy and Kronecker; alternatively exhaustive root-image replay. The centralizer theorem is classical, not newly discovered here. |
+| PJ-E468 | conductor | semilinear arithmetic isometry | S_a(x)=u_a*sigma_a(x) is an isometry iff alpha*u_a*conjugate(u_a)=sigma_a(alpha) | derived | a is a unit modulo 30 and sigma_a(zeta)=zeta^a; S_a must also preserve the integral lattice to be an integral isometry. The norm ratio is sigma_a(alpha)/alpha. |
+| PJ-E469 | conductor | complete Coxeter normalizer by cyclic root images | K_a(r)=[r,C^a r,...,C^(7a)r]; U=K_a(r)B^-1; K_a(r)^T A K_a(r)=G; \|N_O(E8)(<C>)\|=240 | derived | Enumerate all eight unit exponents and all 240 actual roots; exactly 30 lifts per exponent. Completeness follows from the cyclic basis. There are two root orbits of size 120; the group is not identified with the roots by cardinality. |
+| PJ-E470 | conductor | nonsplit arithmetic normalizer extension | S C=C^7 S; S^4=C^25; (C^i S)^4=C^(25+10i)!=I | derived | S(x)=(zeta^2+zeta^3+zeta^4+zeta^5-zeta^7)*sigma_7(x). Every lift of the quotient element 7 has nonidentity fourth power, so 1->C30->N->(Z/30)^*->1 has no section. No historical novelty claim. |
+| PJ-E471 | observability | Raghava moments as positive power moments | mu_j=(2j)!*r_j/4^j=sum_q w_q*((q-1/2)^2)^j | derived | Principal phases 0<=q<1 and nonnegative weights; mu_0=r_0 is mass. Positivity is essential for global finite uniqueness; this identifies a folded spectral measure. |
+| PJ-E472 | observability | exact Hankel annihilator reconstruction | H_(s-1)*(p_0,...,p_(s-1))^T=-(mu_s,...,mu_(2s-1))^T | derived | H_ij=mu_(i+j); s distinct positive-mass folded atoms make H_(s-1) positive definite. p(X)=X^s+sum_(j<s)p_j X^j. This step uses 2s coordinates and a declared atom count. |
+| PJ-E473 | observability | conductor-independent finite positive uniqueness | sum_q w_q*p(x_q)^2=0 => support(mu) subset roots(p); mu_0..mu_(2s) determine the positive s-atom profile | derived | The extra moment mu_(2s) proves support containment for every nonnegative finite competitor, without a competitor conductor or support-size bound; Vandermonde then fixes weights. Signed measures are excluded. |
+| PJ-E474 | recurrences | all later Raghava moments from a finite annihilator | mu_(n+s)+sum_(j=0)^(s-1)p_j*mu_(n+j)=0 for every n>=0 | derived | p vanishes on the recovered folded support. The identity determines all subsequent even moment coordinates; it does not recover the integral lattice or Lie bracket. |
+| PJ-E475 | observability | finite E8 folded spectral certificate | E8: x={1,4,16,49}/225, each weight 2; mass and r_1..r_8 certify this folded profile | derived | Nine coordinates including mass uniquely determine the folded reflection spectrum among all nonnegative finite phase profiles. Four further odd Mellin observations suffice to orient it. |
+| PJ-E476 | observability | sharp eight-coordinate positive rational collision | delta_i=1/prod_(j!=i)(x_i-x_j); sum_i delta_i*x_i^k=0 (k<8); sum_i delta_i*x_i^8=1 | derived | Use the nine interlaced nodes 0,1/225,1/100,4/225,1/25,16/225,1/9,49/225,1/4 and weights 2*1_(i odd)+epsilon*delta_i, epsilon=14144/3243658447265625. All weights are positive, phases have conductor dividing 30, and r_0..r_7 match E8. Minimality among dimension-eight integer representations is not proved. |
+| PJ-E477 | series | oriented recovery by absolutely convergent odd Mellin traces | y_k=(-1)^(k+1)*2^(2k)/(2k+1)!*sum_q w_q B_(2k+1)(q); B_(2k+1)(1/2+t)=t*(t^2-1/4)*P_(k-1)(t^2) | derived | k>=1; y_k is Im(sum_n Tr(T^n)/n^(2k+1))/pi^(2k+1). For s* interior folded nodes, s* rows invert a scaled Vandermonde system and recover orientation. Reflection: 9 even+4 odd sufficient; adjoint:33 even+14 odd. No minimum claim for the combined scheme. |
+| PJ-E478 | invariants | affine correction-gate identity | (f,g)_r at y=1 = sum_(i=0)^r (-1)^i binom(r,i)(6-r+i)_i(N-i)_(r-i)F^(r-i)G^(i) | derived | f=y^6 F(x/y), g=y^N G(x/y), characteristic zero, unnormalized transvectants and falling factorial notation. Pure powers span, so a pure-power verification proves this bilinear identity. |
+| PJ-E479 | invariants | third correction gate as a differential equation | -120FG'''+60(N-2)F'G''-12(N-1)(N-2)F''G'+N(N-1)(N-2)F'''G=0 | derived | Exact third transvectant in affine coordinates. The fifth gate must also vanish for correction-free membership; solving the third equation alone is insufficient. |
+| PJ-E480 | invariants | all-degree local indicial obstruction | I_(r,k)(N,s)=sum_i (-1)^i binom(r,i)(6-r+i)_i(N-i)_(r-i)(k)_(r-i)(s)_i; I_(3,k)=I_(5,k)=0 | derived | k is the exact multiplicity of a root of a nonzero sextic and s is the valuation of a nonzero partner at that point; includes infinity after a projective change. This is necessary local information, not global sufficiency. |
+| PJ-E481 | invariants | finite resultant certificate for unbounded degrees | N>=13: allowed s for k=0..6 are {0,1,2},{0,1},{0},{N/2},{N},{N-1,N},{N-2,N-1,N} | derived | After common-factor removal, the indicial resultants have positive exceptional degrees only 1,2,4,6,12. Their exact polynomial identities prove the infinite-degree statement; N/2 requires N even. Listed valuations need not all occur globally. |
+| PJ-E482 | invariants | complete high-multiplicity partner kernels | K_N(l^k h)=l^(N-k+4)*S_(k-4), dim K_N=k-3 for exact k=4,5,6 | derived | Characteristic zero, l does not divide h. Thresholds respectively N>=7, N>=5, N>=3; uniform N>=13 is valid. Necessity uses indicial resultants; sufficiency uses total available transverse degree at most two. |
+| PJ-E483 | invariants | finite jets bound every partner space | dim K_N(f)<=3; simple root gives dim<=2 for N>=5; double root gives dim<=1 for N>=7 | derived | Jet evaluation is injective: at a regular point use (G,G',G''); at a simple root use (G,G'); at a double root use G. Characteristic zero and nonzero sextic. These are bounds, not existence or complete squarefree classification. |
+| PJ-E484 | invariants | triple-root odd-degree exclusion | f has a triple root and odd N>=13 => K_N(f)=0 | derived | The local common indicial factor is 2s-N; reduced resultants are nonzero for N>=13, so no integer valuation is possible in odd degree. |
+| PJ-E485 | invariants | complete high-degree two-triple-root family | K_N((l*m)^3)=span((l*m)^(N/2)) for even N>=14; K_N=0 for odd N>=13 | derived | Independent linear forms l,m. Divisibility at both triple roots proves necessity; odd transvectant terms cancel in pairs for sufficiency. The surviving partners are inactive because the first transvectant also vanishes. |
+| PJ-E486 | invariants | all-degree pure-power partner characterization | l^N in K_N(f) iff l^4 divides f, for every N>=3 | derived | Nonzero sextic in characteristic zero. After l=x, the third gate is -(N)_3*x^(N-3)*partial_y^3 f; fifth vanishes too. The pure-power partner is active iff f is not proportional to l^6. |
+| PJ-E487 | invariants | complete monomial-sextic dimension generating series | H_x6=3t^3/(1-t); H_x5y=2t^3/(1-t)+t^4; H_x4y2=t^3/(1-t)+t^6; H_x3y3=t^4/(1-t^2)+2t^12 | derived | H_f(t)=sum_(N>=3)dim K_N(f)t^N. Complete for these four root patterns up to exchanging x,y. Distinct monomial inputs have distinct gate output exponents; exact exceptional degrees are4,6,12. This is a dimension series, not a claim that kernels form a graded algebra or module. |
 
 <!-- BEGIN DELL RESEARCH CHAPTER -->
 

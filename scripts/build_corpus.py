@@ -463,12 +463,27 @@ def build():
     extension=ROOT/'data/asterion_extension_equations.json'
     if extension.exists():
         equations.extend(json.loads(extension.read_text())['equations'])
+    # These registries were appended by their dedicated research builders.
+    # Retain them when regenerating the complete canonical atlas.
+    for relative in ('data/asterion_frontier_equations.json','data/dell_equations.json'):
+        registry=ROOT/relative
+        if registry.exists():
+            equations.extend(json.loads(registry.read_text())['equations'])
+    research=ROOT/'data/research_frontier_equations.json'
+    if research.exists():
+        extension=json.loads(research.read_text())
+        prefix=extension['preserved_prefix']
+        digest=hashlib.sha256(json.dumps(equations,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()
+        if len(equations)!=prefix['equation_count'] or digest!=prefix['sha256_of_canonical_records']:
+            raise ValueError('research extension must preserve every preceding canonical equation')
+        equations.extend(extension['equations'])
+    if len({e['id'] for e in equations})!=len(equations):
+        raise ValueError('duplicate stable equation ID')
     statuses={'definition','derived','historical_report','conditional','exact_checked','numerical_checked','proposal','open','rejected'}
     for e in equations:
         if e['status'] not in statuses:raise ValueError(f"bad registry row {e}")
     contract=ROOT/'data/equation_id_contract.json'
     if contract.exists():
-        import hashlib
         old=json.loads(contract.read_text())['sha256_of_canonical_records']
         for e in equations:
             if e['id'] in old:
@@ -483,9 +498,18 @@ def build():
     version=re.search(r'__version__ = "([^\"]+)"',(ROOT/'src/perfectjet/__init__.py').read_text()).group(1)
     monograph=['# PerfectJet — Representations, Arithmetic, and Closure','',f'Version {version} · 20 October 2026 (UTC)','','A master synthesis of the two archival passes, both enhancement programs, and the recovered mathematical engines. The repository distinguishes mathematical identities, executable exact checks, numerical evidence, historical reports, and proposals. It imports neither a complete upstream solver nor new Lean proofs.','','## Contents','']
     monograph += [f'- [{p.stem}](chapters/{p.name})' for p in chapters]
-    for p in chapters:monograph += ['','---','',p.read_text()]
+    # The dedicated DELL proof builder owns a trailing marked appendix.
+    # Keep its publication contract while regenerating every equation row.
+    dell_chapter=ROOT/'docs/chapters/37_dell_research.md'
+    for p in chapters:
+        if p!=dell_chapter:monograph += ['','---','',p.read_text()]
     monograph += ['','---','','# Complete equation registry','', '\n'.join(lines[2:])]
-    (ROOT/'docs/MONOGRAPH.md').write_text('\n'.join(monograph)+'\n')
+    text='\n'.join(monograph).rstrip()
+    if dell_chapter.exists():
+        text+='\n\n<!-- BEGIN DELL RESEARCH CHAPTER -->\n\n'+dell_chapter.read_text()
+    else:text+='\n'
+    (ROOT/'docs/MONOGRAPH.md').write_text(text)
+
     print(json.dumps({'equations':len(equations),'chapters':len(chapters)}))
 
 if __name__=='__main__':build()

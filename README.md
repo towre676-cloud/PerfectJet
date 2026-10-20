@@ -2,7 +2,9 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 675 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 698 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+
+The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the existing 29 Math Lab tools and published 0.20.0 release identity retain their own scope.
 
 ## Double-elliptic normalization and obstruction
 

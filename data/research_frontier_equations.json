@@ -1,0 +1,218 @@
+{
+  "schema": "perfectjet/equations/1",
+  "research_date": "2026-10-20",
+  "preserved_prefix": {
+    "equation_count": 675,
+    "sha256_of_canonical_records": "81e9651a8511715ab50f1a27af799bcf27aeba150e39aedf50f37b25ab7814af"
+  },
+  "scope": "Mathematical proofs and separately scoped exact replay; no new Lean claim or historical priority claim.",
+  "equations": [
+    {
+      "id": "PJ-E465",
+      "domain": "conductor",
+      "title": "arithmetic E8 trace form",
+      "equation": "G_ij=Tr_K/Q(alpha*zeta^(i-j)); alpha=(5-zeta-2zeta^2-2zeta^3-zeta^4+zeta^6+2zeta^7)/15",
+      "status": "derived",
+      "assumptions": "K=Q(zeta_30), G=B^T A B in the supplied unimodular Krylov basis; Norm(alpha)=1/1265625 and det(G)=1. The cyclotomic realization is classical; explicit source-coordinate identity, no priority claim.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E466",
+      "domain": "conductor",
+      "title": "integral Coxeter commutant",
+      "equation": "End_Z[<C>](E8)=Z[zeta_30]",
+      "status": "derived",
+      "assumptions": "The supplied cyclic vector has an integral Krylov basis; a commuting map is multiplication by its value at 1. This concerns integral linear endomorphisms, not all Lie endomorphisms.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E467",
+      "domain": "conductor",
+      "title": "Coxeter isometry centralizer",
+      "equation": "u*conjugate(u)=1; C_O(E8)(C)=<C>, order 30",
+      "status": "derived",
+      "assumptions": "Use the specified trace form, trace nondegeneracy and Kronecker; alternatively exhaustive root-image replay. The centralizer theorem is classical, not newly discovered here.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E468",
+      "domain": "conductor",
+      "title": "semilinear arithmetic isometry",
+      "equation": "S_a(x)=u_a*sigma_a(x) is an isometry iff alpha*u_a*conjugate(u_a)=sigma_a(alpha)",
+      "status": "derived",
+      "assumptions": "a is a unit modulo 30 and sigma_a(zeta)=zeta^a; S_a must also preserve the integral lattice to be an integral isometry. The norm ratio is sigma_a(alpha)/alpha.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E469",
+      "domain": "conductor",
+      "title": "complete Coxeter normalizer by cyclic root images",
+      "equation": "K_a(r)=[r,C^a r,...,C^(7a)r]; U=K_a(r)B^-1; K_a(r)^T A K_a(r)=G; |N_O(E8)(<C>)|=240",
+      "status": "derived",
+      "assumptions": "Enumerate all eight unit exponents and all 240 actual roots; exactly 30 lifts per exponent. Completeness follows from the cyclic basis. There are two root orbits of size 120; the group is not identified with the roots by cardinality.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E470",
+      "domain": "conductor",
+      "title": "nonsplit arithmetic normalizer extension",
+      "equation": "S C=C^7 S; S^4=C^25; (C^i S)^4=C^(25+10i)!=I",
+      "status": "derived",
+      "assumptions": "S(x)=(zeta^2+zeta^3+zeta^4+zeta^5-zeta^7)*sigma_7(x). Every lift of the quotient element 7 has nonidentity fourth power, so 1->C30->N->(Z/30)^*->1 has no section. No historical novelty claim.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_TRACE_NORMALIZER.md"
+    },
+    {
+      "id": "PJ-E471",
+      "domain": "observability",
+      "title": "Raghava moments as positive power moments",
+      "equation": "mu_j=(2j)!*r_j/4^j=sum_q w_q*((q-1/2)^2)^j",
+      "status": "derived",
+      "assumptions": "Principal phases 0<=q<1 and nonnegative weights; mu_0=r_0 is mass. Positivity is essential for global finite uniqueness; this identifies a folded spectral measure.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E472",
+      "domain": "observability",
+      "title": "exact Hankel annihilator reconstruction",
+      "equation": "H_(s-1)*(p_0,...,p_(s-1))^T=-(mu_s,...,mu_(2s-1))^T",
+      "status": "derived",
+      "assumptions": "H_ij=mu_(i+j); s distinct positive-mass folded atoms make H_(s-1) positive definite. p(X)=X^s+sum_(j<s)p_j X^j. This step uses 2s coordinates and a declared atom count.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E473",
+      "domain": "observability",
+      "title": "conductor-independent finite positive uniqueness",
+      "equation": "sum_q w_q*p(x_q)^2=0 => support(mu) subset roots(p); mu_0..mu_(2s) determine the positive s-atom profile",
+      "status": "derived",
+      "assumptions": "The extra moment mu_(2s) proves support containment for every nonnegative finite competitor, without a competitor conductor or support-size bound; Vandermonde then fixes weights. Signed measures are excluded.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E474",
+      "domain": "recurrences",
+      "title": "all later Raghava moments from a finite annihilator",
+      "equation": "mu_(n+s)+sum_(j=0)^(s-1)p_j*mu_(n+j)=0 for every n>=0",
+      "status": "derived",
+      "assumptions": "p vanishes on the recovered folded support. The identity determines all subsequent even moment coordinates; it does not recover the integral lattice or Lie bracket.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E475",
+      "domain": "observability",
+      "title": "finite E8 folded spectral certificate",
+      "equation": "E8: x={1,4,16,49}/225, each weight 2; mass and r_1..r_8 certify this folded profile",
+      "status": "derived",
+      "assumptions": "Nine coordinates including mass uniquely determine the folded reflection spectrum among all nonnegative finite phase profiles. Four further odd Mellin observations suffice to orient it.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E476",
+      "domain": "observability",
+      "title": "sharp eight-coordinate positive rational collision",
+      "equation": "delta_i=1/prod_(j!=i)(x_i-x_j); sum_i delta_i*x_i^k=0 (k<8); sum_i delta_i*x_i^8=1",
+      "status": "derived",
+      "assumptions": "Use the nine interlaced nodes 0,1/225,1/100,4/225,1/25,16/225,1/9,49/225,1/4 and weights 2*1_(i odd)+epsilon*delta_i, epsilon=14144/3243658447265625. All weights are positive, phases have conductor dividing 30, and r_0..r_7 match E8. Minimality among dimension-eight integer representations is not proved.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E477",
+      "domain": "series",
+      "title": "oriented recovery by absolutely convergent odd Mellin traces",
+      "equation": "y_k=(-1)^(k+1)*2^(2k)/(2k+1)!*sum_q w_q B_(2k+1)(q); B_(2k+1)(1/2+t)=t*(t^2-1/4)*P_(k-1)(t^2)",
+      "status": "derived",
+      "assumptions": "k>=1; y_k is Im(sum_n Tr(T^n)/n^(2k+1))/pi^(2k+1). For s* interior folded nodes, s* rows invert a scaled Vandermonde system and recover orientation. Reflection: 9 even+4 odd sufficient; adjoint:33 even+14 odd. No minimum claim for the combined scheme.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; https://github.com/towre676-cloud/perfectpower/blob/main/docs/COXETER_RECONSTRUCTION.md"
+    },
+    {
+      "id": "PJ-E478",
+      "domain": "invariants",
+      "title": "affine correction-gate identity",
+      "equation": "(f,g)_r at y=1 = sum_(i=0)^r (-1)^i binom(r,i)(6-r+i)_i(N-i)_(r-i)F^(r-i)G^(i)",
+      "status": "derived",
+      "assumptions": "f=y^6 F(x/y), g=y^N G(x/y), characteristic zero, unnormalized transvectants and falling factorial notation. Pure powers span, so a pure-power verification proves this bilinear identity.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E479",
+      "domain": "invariants",
+      "title": "third correction gate as a differential equation",
+      "equation": "-120FG'''+60(N-2)F'G''-12(N-1)(N-2)F''G'+N(N-1)(N-2)F'''G=0",
+      "status": "derived",
+      "assumptions": "Exact third transvectant in affine coordinates. The fifth gate must also vanish for correction-free membership; solving the third equation alone is insufficient.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E480",
+      "domain": "invariants",
+      "title": "all-degree local indicial obstruction",
+      "equation": "I_(r,k)(N,s)=sum_i (-1)^i binom(r,i)(6-r+i)_i(N-i)_(r-i)(k)_(r-i)(s)_i; I_(3,k)=I_(5,k)=0",
+      "status": "derived",
+      "assumptions": "k is the exact multiplicity of a root of a nonzero sextic and s is the valuation of a nonzero partner at that point; includes infinity after a projective change. This is necessary local information, not global sufficiency.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E481",
+      "domain": "invariants",
+      "title": "finite resultant certificate for unbounded degrees",
+      "equation": "N>=13: allowed s for k=0..6 are {0,1,2},{0,1},{0},{N/2},{N},{N-1,N},{N-2,N-1,N}",
+      "status": "derived",
+      "assumptions": "After common-factor removal, the indicial resultants have positive exceptional degrees only 1,2,4,6,12. Their exact polynomial identities prove the infinite-degree statement; N/2 requires N even. Listed valuations need not all occur globally.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E482",
+      "domain": "invariants",
+      "title": "complete high-multiplicity partner kernels",
+      "equation": "K_N(l^k h)=l^(N-k+4)*S_(k-4), dim K_N=k-3 for exact k=4,5,6",
+      "status": "derived",
+      "assumptions": "Characteristic zero, l does not divide h. Thresholds respectively N>=7, N>=5, N>=3; uniform N>=13 is valid. Necessity uses indicial resultants; sufficiency uses total available transverse degree at most two.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E483",
+      "domain": "invariants",
+      "title": "finite jets bound every partner space",
+      "equation": "dim K_N(f)<=3; simple root gives dim<=2 for N>=5; double root gives dim<=1 for N>=7",
+      "status": "derived",
+      "assumptions": "Jet evaluation is injective: at a regular point use (G,G',G''); at a simple root use (G,G'); at a double root use G. Characteristic zero and nonzero sextic. These are bounds, not existence or complete squarefree classification.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E484",
+      "domain": "invariants",
+      "title": "triple-root odd-degree exclusion",
+      "equation": "f has a triple root and odd N>=13 => K_N(f)=0",
+      "status": "derived",
+      "assumptions": "The local common indicial factor is 2s-N; reduced resultants are nonzero for N>=13, so no integer valuation is possible in odd degree.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E485",
+      "domain": "invariants",
+      "title": "complete high-degree two-triple-root family",
+      "equation": "K_N((l*m)^3)=span((l*m)^(N/2)) for even N>=14; K_N=0 for odd N>=13",
+      "status": "derived",
+      "assumptions": "Independent linear forms l,m. Divisibility at both triple roots proves necessity; odd transvectant terms cancel in pairs for sufficiency. The surviving partners are inactive because the first transvectant also vanishes.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E486",
+      "domain": "invariants",
+      "title": "all-degree pure-power partner characterization",
+      "equation": "l^N in K_N(f) iff l^4 divides f, for every N>=3",
+      "status": "derived",
+      "assumptions": "Nonzero sextic in characteristic zero. After l=x, the third gate is -(N)_3*x^(N-3)*partial_y^3 f; fifth vanishes too. The pure-power partner is active iff f is not proportional to l^6.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-E487",
+      "domain": "invariants",
+      "title": "complete monomial-sextic dimension generating series",
+      "equation": "H_x6=3t^3/(1-t); H_x5y=2t^3/(1-t)+t^4; H_x4y2=t^3/(1-t)+t^6; H_x3y3=t^4/(1-t^2)+2t^12",
+      "status": "derived",
+      "assumptions": "H_f(t)=sum_(N>=3)dim K_N(f)t^N. Complete for these four root patterns up to exchanging x,y. Distinct monomial inputs have distinct gate output exponents; exact exceptional degrees are4,6,12. This is a dimension series, not a claim that kernels form a graded algebra or module.",
+      "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    }
+  ]
+}
