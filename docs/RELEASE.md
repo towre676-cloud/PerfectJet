@@ -1,3 +1,9 @@
+# Exact Coxeter and sextic research checkpoint — 20 October 2026
+
+The current source contains **698 equations**, including 23 appended Coxeter and all-degree sextic statements, across the preserved 27 families and 29 Math Lab tools. Every preceding 675 equation record is unchanged. The [new research chapter](chapters/33_exact_research_frontiers.md), [complete equation atlas](EQUATION_ATLAS.md), and [all-degree sextic proof](PARTNER_STRUCTURE.md) give the proofs, scope and exact replay commands. Source version 0.20.0 is retained; this checkpoint does not claim publication of a replacement binary release or new Lean theorems.
+
+---
+
 # Source version 0.20.0 — Double-elliptic normalization and obstruction
 
 This source update adds a separate DELL laboratory, 35 stable equations and one Math Lab tool: 675 equations across 27 families and 29 tools. The published KS current retains attribution. Exact sparse polynomial calculations prove first-shell normalization rigidity, a second momentum-order identity, and a first mixed-nome identity. A two-witness analytic argument classifies the unchanged-coordinate particlewise profile ansatz and extends its obstruction to an explicitly scoped coordinate-elliptic neighborhood. Formal independence and moment-map descent are distinct from all-order commutativity, convergence and self-duality, which remain open. The existing E8 kernel sources and numerical certificates are preserved.

@@ -1,0 +1,24 @@
+{
+  "additional_catalogue_checks": {
+    "log_sha256": "f340497162406840a3c57a8055cecae26fb74405e52fbc2604b703254a1b0688",
+    "status": "passed",
+    "tests": 4
+  },
+  "callable_mathlab_tools": 29,
+  "date_utc": "2026-10-20",
+  "equations": 698,
+  "families": 27,
+  "full_suite": {
+    "command": "PYTHONPATH=src python -m unittest discover -s tests -v",
+    "log_sha256": "56456f6eb543d667ba123ef0557aecb6752d1208887afbac458cceb2ec0d0507",
+    "seconds": 772.969,
+    "status": "passed",
+    "tests": 813
+  },
+  "historical_priority": "not established",
+  "new_lean_theorems": 0,
+  "preceding_equations_unchanged": 675,
+  "resource_and_chapter_checks": "passed",
+  "scope": "All-degree boundary strata; global squarefree degree21+ classification remains open.",
+  "source_engine_commit": "b057df7edc52beedc886e8a74a43fae597e76469"
+}
