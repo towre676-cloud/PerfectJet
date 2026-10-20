@@ -299,15 +299,21 @@ weight-eight rows below and writes
 
 At weight eight (length three, Li degree five) the computed sectors are:
 
-| Highest weight | A multiplicity | Kernel multiplicity |
-|---|---:|---:|
-| 4096000 | 2 | 0 |
-| 2450240 | 2 | 0 |
-| 779247 | 6 | 0 |
-| 27000 | 4 | 0 |
+| Highest weight | A multiplicity | Kernel multiplicity | Interpretation |
+|---|---:|---:|---|
+| 4096000 | 2 | 0 | — |
+| 2450240 | 2 | 0 | — |
+| 779247 | 6 | 0 | — |
+| 27000 | 4 | 0 | — |
+| 147250 | 7 | 1 | D³P₁₄₇₂₅₀ |
 
 These A multiplicities agree with the length-three character at jet degree
-five.
+five. Every computed kernel class at weights seven and eight is identified
+exactly with a derivative of a lower generator, and the file records this
+for each row. No new length-three generator appears at the computed weights.
+The 248, 1, 3875 and 30380 sectors at weight eight, the weight-seven 248 and
+singlet sectors, and all length-four or longer sectors beyond weight six
+remain open.
 
 D is injective, so D(K₆∩len 3)=248+3875+30380+147250 lies in K₇∩len 3. Among
 the computed weights, the length-three kernel equals these translates. No new
