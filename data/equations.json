@@ -5333,7 +5333,7 @@
       "id": "PJ-X001",
       "domain": "asterion-frontiers",
       "title": "length-three jet ambient character",
-      "equation": "Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t\u00b2)+dim wedge^3g*t\u00b3)/((1-t)(1-t\u00b2)(1-t\u00b3))",
+      "equation": "Hilb S^3(g tensor Q[t])=(dim S^3g+dim S21g*(t+t²)+dim wedge^3g*t³)/((1-t)(1-t²)(1-t³))",
       "status": "derived",
       "assumptions": "t counts total derivative degree, with ordinary polynomial length fixed at3.",
       "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
@@ -5342,7 +5342,7 @@
       "id": "PJ-X002",
       "domain": "asterion-frontiers",
       "title": "complete length-three arc character",
-      "equation": "H3(t)=(151373t+961248t\u00b2+3321371t\u00b3+4932875t\u2074+4123000t\u2075+1763125t\u2076)/((1-t)(1-t\u00b2)(1-t\u00b3))",
+      "equation": "H3(t)=(151373t+961248t²+3321371t³+4932875t⁴+4123000t⁵+1763125t⁶)/((1-t)(1-t²)(1-t³))",
       "status": "exact_checked",
       "assumptions": "The finite pair-projector covariance ranks and earlier cubic-polarization certificates determine this all-jet fixed-length sector.",
       "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
@@ -5362,7 +5362,7 @@
       "title": "weight-five complete arc population",
       "equation": "dim A5=1112621+96008+248=1208877",
       "status": "derived",
-      "assumptions": "Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym\u00b3g.",
+      "assumptions": "Lengths at least4 vanish at this weight because the ordinary cubic ideal contains all Sym³g.",
       "source": "docs/ASTERION_KERNEL_CHARACTERS.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_kernel_characters.py"
     },
     {
@@ -5702,7 +5702,7 @@
       "id": "PJ-X042",
       "domain": "asterion-frontiers",
       "title": "exact charge populations",
-      "equation": "dim V[N,alpha]=p8(N-|alpha|\u00b2/2)",
+      "equation": "dim V[N,alpha]=p8(N-|alpha|²/2)",
       "status": "exact_checked",
       "assumptions": "Complete doubled-coordinate E8 lattice enumeration and oscillator convolution; alpha outside the lattice has multiplicity0.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
@@ -5711,7 +5711,7 @@
       "id": "PJ-X043",
       "domain": "asterion-frontiers",
       "title": "elliptic lattice translation",
-      "equation": "Theta(tau,z+tau*lambda+mu)=q^(-|lambda|\u00b2/2)*exp(-2pi i(lambda,z))*Theta(tau,z)",
+      "equation": "Theta(tau,z+tau*lambda+mu)=q^(-|lambda|²/2)*exp(-2pi i(lambda,z))*Theta(tau,z)",
       "status": "derived",
       "assumptions": "lambda,mu in the integral E8 lattice; exact reindexing proves all orders without truncation-edge assumptions.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
@@ -5720,7 +5720,7 @@
       "id": "PJ-X044",
       "domain": "asterion-frontiers",
       "title": "oscillator-corrected heat identity",
-      "equation": "(2D_tau-sum_i D_zi\u00b2)H=(2/3)(1-E2)H",
+      "equation": "(2D_tau-sum_i D_zi²)H=(2/3)(1-E2)H",
       "status": "exact_checked",
       "assumptions": "D_tau andD_zi mean derivatives divided by2pi i; the physical q^(-1/3)character has RHS-(2/3)E2chi.",
       "source": "docs/ASTERION_JACOBI.md; docs/ASTERION_FRONTIERS.md; src/perfectjet/asterion_jacobi.py"
@@ -5855,7 +5855,7 @@
       "id": "PJ-D011",
       "domain": "double-elliptic",
       "title": "three-particle first-shell expansion",
-      "equation": "C0=1+WA+O(W\u00b2); C1=h1+WB+O(W\u00b2); C2=h2+WC+O(W\u00b2); H1=h1+W(B-Ah1); H2=h2+W(C-Ah2)",
+      "equation": "C0=1+WA+O(W²); C1=h1+WB+O(W²); C2=h2+WC+O(W²); H1=h1+W(B-Ah1); H2=h2+W(C-Ah2)",
       "status": "derived",
       "assumptions": "Coordinate nome P=0; A has six permutation shifts(-1,0,1), B has three shifts(-1,1,1), C has three shifts(2,0,0). Equations use signless oriented coefficients.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5873,7 +5873,7 @@
       "id": "PJ-D013",
       "domain": "double-elliptic",
       "title": "common-power normalization rigidity",
-      "equation": "{C1/C0^s,C2/C0^s}=W*(1-s)*R+O(W\u00b2); R(2;(1,3,7);(2,5,11))=8356261/901120",
+      "equation": "{C1/C0^s,C2/C0^s}=W*(1-s)*R+O(W²); R(2;(1,3,7);(2,5,11))=8356261/901120",
       "status": "derived",
       "assumptions": "Classical P=0,N=3; common exponent s. The nonzero exact witness forces s=1 for an identity over generic parameters. Not a full normalizer classification outside this ansatz.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5882,7 +5882,7 @@
       "id": "PJ-D014",
       "domain": "double-elliptic",
       "title": "six-mode first-order normalizer classification",
-      "equation": "rho=sum_(n in perm(-1,0,1))lambda_n(T)*F_n*Y^n; {C1/(1+W rho),C2/(1+W rho)}=O(W\u00b2) iff all lambda_n=1",
+      "equation": "rho=sum_(n in perm(-1,0,1))lambda_n(T)*F_n*Y^n; {C1/(1+W rho),C2/(1+W rho)}=O(W²) iff all lambda_n=1",
       "status": "derived",
       "assumptions": "Classical N=3,P=0. The lambda_n depend on coupling T only. Valid at T!=0,1; the exact rank certificate excludes further exceptional nonzero couplings within these six fixed functions.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5936,7 +5936,7 @@
       "id": "PJ-D020",
       "domain": "double-elliptic",
       "title": "explicit failed momentum ellipticization direction",
-      "equation": "f(Y)=Y+epsilon/Y => {H1f,H2f}|T=2,X=(1,3,7),Y=(2,3,3)=-95epsilon/216+95epsilon\u00b2/1296",
+      "equation": "f(Y)=Y+epsilon/Y => {H1f,H2f}|T=2,X=(1,3,7),Y=(2,3,3)=-95epsilon/216+95epsilon²/1296",
       "status": "exact_checked",
       "assumptions": "An exact nonzero first-order direction within the particlewise ansatz. This is a Laurent test profile, not itself an elliptic function; monomial profiles provide positive controls.",
       "source": "docs/DELL_OBSTRUCTIONS.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -5992,7 +5992,7 @@
       "title": "second-order homogeneous normalizer rank",
       "equation": "det M21=-128*(T-1)^44*(T+1)^2*(T+2)^5*(T+3)^2*(T^2+T+1)^3/T^31",
       "status": "exact_checked",
-      "assumptions": "P=0,N=3. A21function ansatz of symmetric products of first-shell functions has generic full rank. Hence no nonzero W\u00b2 denominator correction in that ansatz at couplings where this minor is nonzero. A vanishing minor alone does not prove a rank drop.",
+      "assumptions": "P=0,N=3. A21function ansatz of symmetric products of first-shell functions has generic full rank. Hence no nonzero W² denominator correction in that ansatz at couplings where this minor is nonzero. A vanishing minor alone does not prove a rank drop.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
     },
     {
@@ -6008,7 +6008,7 @@
       "id": "PJ-D028",
       "domain": "double-elliptic",
       "title": "coordinate-deformed first-shell rigidity",
-      "equation": "lambda_n(T,P)=1 mod P\u00b2 for all six first-shell functions",
+      "equation": "lambda_n(T,P)=1 mod P² for all six first-shell functions",
       "status": "derived",
       "assumptions": "The global mixed-nome identity supplies a solution; the invertible constant-coordinate-nome minor makes both coefficients unique for each fixed T!=0,1. Numerator modes and six-function normalizer ansatz are fixed.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -6071,7 +6071,7 @@
       "id": "PJ-D035",
       "domain": "double-elliptic",
       "title": "cube-root coefficient redundancy",
-      "equation": "f1*f4=f0*f5; f2*f3=f0*f5 when T\u00b2+T+1=0",
+      "equation": "f1*f4=f0*f5; f2*f3=f0*f5 when T²+T+1=0",
       "status": "exact_checked",
       "assumptions": "Zero-based f_i order is lexicographic perm(-1,0,1). The21nominal products span19actual functions. The two coefficient-kernel directions represent identically zero functions, so they give no new normalizer freedom.",
       "source": "docs/DELL_NORMALIZATION.md; docs/dell_sources.json; python -m perfectjet.dell --exhaustive"
@@ -6282,6 +6282,114 @@
       "status": "derived",
       "assumptions": "H_f(t)=sum_(N>=3)dim K_N(f)t^N. Complete for these four root patterns up to exchanging x,y. Distinct monomial inputs have distinct gate output exponents; exact exceptional degrees are4,6,12. This is a dimension series, not a claim that kernels form a graded algebra or module.",
       "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-HB001",
+      "domain": "asterion-half-braid",
+      "title": "flat three-point lift",
+      "equation": "A+B+C=-60I; [A,B+C]=[B,A+C]=[C,A+B]=0",
+      "status": "exact_checked",
+      "assumptions": "Actual E8 residues; h=1/34. Flat permutation-equivariant descent gives a linear B3 representation.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB002",
+      "domain": "asterion-half-braid",
+      "title": "tensor exchange parities",
+      "equation": "P12|channels=diag(1,-1,1,-1,1)",
+      "status": "exact_checked",
+      "assumptions": "Channel order1,248,3875,30380,27000; actual invariant tensor permutations, not arbitrary square-root choices.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB003",
+      "domain": "asterion-half-braid",
+      "title": "based half-braid reconstruction",
+      "equation": "R1=sum_i mu_i P_i(U); R2=X R1 X",
+      "status": "derived",
+      "assumptions": "Simple pure spectrum; positive counterclockwise exchanges at ordered base(0,1/2,1); canonical local logarithms.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB004",
+      "domain": "asterion-half-braid",
+      "title": "exact half-braid spectrum",
+      "equation": "mu=(zeta^2,zeta,zeta^14,-1,-zeta^9)",
+      "status": "exact_checked",
+      "assumptions": "zeta=exp(2pi i/17); squared spectrum agrees with existing U,V channel by channel.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB005",
+      "domain": "asterion-half-braid",
+      "title": "linear braid and squares",
+      "equation": "R1 R2 R1=R2 R1 R2; R1^2=U; R2^2=V",
+      "status": "derived",
+      "assumptions": "Exact flat equivariant KZ descent; exact cyclotomic braid model and rigorous same-chart consistency replay. Residual enclosure alone is not an equality proof.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB006",
+      "domain": "asterion-half-braid",
+      "title": "central full twist",
+      "equation": "(R1 R2)^3=zeta^4 I",
+      "status": "exact_checked",
+      "assumptions": "Central rotation integrates h(A+B+C); independently verified in the Tuba-Wenzl model overQ(zeta17).",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB007",
+      "domain": "asterion-half-braid",
+      "title": "half-braid orders and determinants",
+      "equation": "ord(Ri)=po(Ri)=34; det(Ri)=zeta^9",
+      "status": "derived",
+      "assumptions": "Displayed five distinct signed half phases, with the tensor-permutation lift fixed.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB008",
+      "domain": "asterion-half-braid",
+      "title": "Tuba-Wenzl class",
+      "equation": "gamma=zeta^12; gamma^5=det R1; gamma^6=zeta^4",
+      "status": "exact_checked",
+      "assumptions": "Five-dimensional simple B3 module; all20 Proposition2.8 polynomials are nonzero; uniqueness is Theorem2.9.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB009",
+      "domain": "asterion-half-braid",
+      "title": "cyclotomic integral realization",
+      "equation": "rho(B3) is conjugate to a subgroup of GL5(Z[zeta17])",
+      "status": "derived",
+      "assumptions": "Retained ordered triangular matrices have integral cyclotomic coefficients and unit determinant; exact chart conjugator is not computed.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB010",
+      "domain": "asterion-half-braid",
+      "title": "linear modular normalization",
+      "equation": "Ti=zeta^5 Ri; (T1 T2)^3=(T1 T2 T1)^2=I; det Ti=1",
+      "status": "exact_checked",
+      "assumptions": "Common character twist changes pure squares tozeta^10U,zeta^10V; original normalization is kept distinct.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB011",
+      "domain": "asterion-half-braid",
+      "title": "triangle-group quotient",
+      "equation": "normalized image is a quotient of Delta(2,3,34)",
+      "status": "derived",
+      "assumptions": "s=T1T2T1,t=T1T2; s^2=t^3=(t^-1s)^34=1. Faithfulness and the full normal kernel remain open.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB012",
+      "domain": "asterion-half-braid",
+      "title": "pure-loop spectral recovery from half-braids",
+      "equation": "Spec(Ri^2)=(zeta^4,zeta^2,zeta^11,1,zeta)",
+      "status": "exact_checked",
+      "assumptions": "Exact field arithmetic in the independent algebraic model; identification with analytic operators is up to simultaneous conjugacy, using KZ descent and classification.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
     }
   ]
 }

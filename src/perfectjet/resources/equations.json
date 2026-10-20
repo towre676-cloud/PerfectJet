@@ -6282,6 +6282,114 @@
       "status": "derived",
       "assumptions": "H_f(t)=sum_(N>=3)dim K_N(f)t^N. Complete for these four root patterns up to exchanging x,y. Distinct monomial inputs have distinct gate output exponents; exact exceptional degrees are4,6,12. This is a dimension series, not a claim that kernels form a graded algebra or module.",
       "source": "docs/chapters/33_exact_research_frontiers.md; docs/PARTNER_STRUCTURE.md"
+    },
+    {
+      "id": "PJ-HB001",
+      "domain": "asterion-half-braid",
+      "title": "flat three-point lift",
+      "equation": "A+B+C=-60I; [A,B+C]=[B,A+C]=[C,A+B]=0",
+      "status": "exact_checked",
+      "assumptions": "Actual E8 residues; h=1/34. Flat permutation-equivariant descent gives a linear B3 representation.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB002",
+      "domain": "asterion-half-braid",
+      "title": "tensor exchange parities",
+      "equation": "P12|channels=diag(1,-1,1,-1,1)",
+      "status": "exact_checked",
+      "assumptions": "Channel order1,248,3875,30380,27000; actual invariant tensor permutations, not arbitrary square-root choices.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB003",
+      "domain": "asterion-half-braid",
+      "title": "based half-braid reconstruction",
+      "equation": "R1=sum_i mu_i P_i(U); R2=X R1 X",
+      "status": "derived",
+      "assumptions": "Simple pure spectrum; positive counterclockwise exchanges at ordered base(0,1/2,1); canonical local logarithms.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB004",
+      "domain": "asterion-half-braid",
+      "title": "exact half-braid spectrum",
+      "equation": "mu=(zeta^2,zeta,zeta^14,-1,-zeta^9)",
+      "status": "exact_checked",
+      "assumptions": "zeta=exp(2pi i/17); squared spectrum agrees with existing U,V channel by channel.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB005",
+      "domain": "asterion-half-braid",
+      "title": "linear braid and squares",
+      "equation": "R1 R2 R1=R2 R1 R2; R1^2=U; R2^2=V",
+      "status": "derived",
+      "assumptions": "Exact flat equivariant KZ descent; exact cyclotomic braid model and rigorous same-chart consistency replay. Residual enclosure alone is not an equality proof.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB006",
+      "domain": "asterion-half-braid",
+      "title": "central full twist",
+      "equation": "(R1 R2)^3=zeta^4 I",
+      "status": "exact_checked",
+      "assumptions": "Central rotation integrates h(A+B+C); independently verified in the Tuba-Wenzl model overQ(zeta17).",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB007",
+      "domain": "asterion-half-braid",
+      "title": "half-braid orders and determinants",
+      "equation": "ord(Ri)=po(Ri)=34; det(Ri)=zeta^9",
+      "status": "derived",
+      "assumptions": "Displayed five distinct signed half phases, with the tensor-permutation lift fixed.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB008",
+      "domain": "asterion-half-braid",
+      "title": "Tuba-Wenzl class",
+      "equation": "gamma=zeta^12; gamma^5=det R1; gamma^6=zeta^4",
+      "status": "exact_checked",
+      "assumptions": "Five-dimensional simple B3 module; all20 Proposition2.8 polynomials are nonzero; uniqueness is Theorem2.9.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB009",
+      "domain": "asterion-half-braid",
+      "title": "cyclotomic integral realization",
+      "equation": "rho(B3) is conjugate to a subgroup of GL5(Z[zeta17])",
+      "status": "derived",
+      "assumptions": "Retained ordered triangular matrices have integral cyclotomic coefficients and unit determinant; exact chart conjugator is not computed.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB010",
+      "domain": "asterion-half-braid",
+      "title": "linear modular normalization",
+      "equation": "Ti=zeta^5 Ri; (T1 T2)^3=(T1 T2 T1)^2=I; det Ti=1",
+      "status": "exact_checked",
+      "assumptions": "Common character twist changes pure squares tozeta^10U,zeta^10V; original normalization is kept distinct.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB011",
+      "domain": "asterion-half-braid",
+      "title": "triangle-group quotient",
+      "equation": "normalized image is a quotient of Delta(2,3,34)",
+      "status": "derived",
+      "assumptions": "s=T1T2T1,t=T1T2; s^2=t^3=(t^-1s)^34=1. Faithfulness and the full normal kernel remain open.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
+    },
+    {
+      "id": "PJ-HB012",
+      "domain": "asterion-half-braid",
+      "title": "pure-loop spectral recovery from half-braids",
+      "equation": "Spec(Ri^2)=(zeta^4,zeta^2,zeta^11,1,zeta)",
+      "status": "exact_checked",
+      "assumptions": "Exact field arithmetic in the independent algebraic model; identification with analytic operators is up to simultaneous conjugacy, using KZ descent and classification.",
+      "source": "docs/ASTERION_HALF_BRAID.md; src/perfectjet/kz_half_braid.py; results/asterion-half-braid/manifest.json"
     }
   ]
 }

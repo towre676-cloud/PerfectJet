@@ -2,7 +2,7 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 698 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 710 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
 
 The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the existing 29 Math Lab tools and published 0.20.0 release identity retain their own scope.
 
@@ -117,3 +117,5 @@ The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archi
 ## Sextic research integration — v0.17.0
 
 PR #2's incidence and modular engines are integrated with the v0.16.0 Math Lab and all 450 original equation records. The catalogue now has 464 unique entries across the same 24 families. The partners tool computes exact supplied-form kernels through degree 20, with activity checked separately. Global classifications retain their optional external-solver assumptions; degrees 21 and above remain open. See [partner incidence](docs/PARTNER_INCIDENCE.md), [integration record](docs/SEXTIC_INTEGRATION.md), and the [monograph](docs/MONOGRAPH.md).
+
+The [Asterion half-braid extension](docs/ASTERION_HALF_BRAID.md) now gives exact B3 operators, squares matching the pure loops, central character zeta17^4 and a Tuba–Wenzl classification. Replay with `PYTHONPATH=src python scripts/verify_asterion_braid.py --check`.

@@ -90,3 +90,7 @@ Prakash Belkale, *Unitarity of the KZ/Hitchin connection on conformal blocks in 
 Alex J. Feingold, *Fusion Rules for Affine Kac-Moody Algebras*, [arXiv:math/0212387](https://arxiv.org/abs/math/0212387), Theorems6.1-6.2, supplies the fusion/tensor stability criterion.
 
 Robert Zeier and Thomas Schulte-Herbrueggen, *Symmetry Principles in Quantum Systems Theory*, [arXiv:1012.5256](https://arxiv.org/abs/1012.5256), Table1 and the degree-five highest-weight table, supplies the compact irreducible subgroup list. The2014 erratum concerns a different table and leaves this degree-five list unchanged.
+
+## Half-braid extension
+
+The subsequent [half-braid certificate](ASTERION_HALF_BRAID.md) constructs a genuine linear B3 extension, identifies its Tuba–Wenzl class, and proves the central scalar zeta17^4. Its exact cyclotomic model and bounded same-chart replay do not supply a presentation of the countable dense image or a canonical endpoint associator.

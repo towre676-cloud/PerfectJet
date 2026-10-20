@@ -130,7 +130,7 @@ The next closure targets are now the weight-six Li2/Li3 allocation, actual deriv
 
 The exhaustive implementation now certifies the actual loop pair at h=1/34, not merely the residue algebra or a formal expansion near zero. It encloses U,V and evaluates the spectral projectors of U with rigorous root-of-unity balls. All twenty off-diagonal blocks P_j(U)V P_i(U) are nonzero: the smallest retained center-norm lower bound exceeds 0.0547440 and the largest propagated block error is below 0.000002852. Since U has distinct eigenvalues, a common invariant subspace is a subset of its five eigenspaces. The strongly connected block graph excludes every proper subset. These certified analytic gates are recorded only in an exhaustive receipt; the fast receipt explicitly leaves specialized irreducibility open.
 
-The resulting proof chain does not require an uncomputed half-braid extension:
+The pure-loop closure proof chain is independent of the subsequently constructed half-braid extension:
 
 1. The exact U spectrum is zeta17 raised to {0,1,2,4,11}; both pure generators have order 17. A nontrivial imprimitivity system in prime dimension five consists of five lines. An order-17 permutation in S5 is trivial, so both generators would fix every line, contradicting irreducibility.
 2. A finite primitive degree-five linear group has no projective element of order 17 by Rowell–Tuba Lemma 5.1(d). The determinant-normalizing central extension preserves this projective order. The primitive image is therefore infinite.
@@ -148,6 +148,8 @@ It has seventeen components and is abstractly SU5×C17: the determinant sequence
 The proof is a theorem-dependent computational result: rigorous loop/projector enclosures supply the specialized analytic input, while the cited unitarity and finite/compact-group classification results supply the structural implications. Its evidence is [ASTERION_MONODROMY.md](ASTERION_MONODROMY.md), `monodromy_receipt(exhaustive=True)` and the retained frontier receipt. No explicit positive Hermitian matrix, effective word-approximation rate, discrete-image presentation, other-level closure theorem or higher-strand universality follows.
 
 The separate exact residue compiler proves associative M5(Q), Lie gl5(Q) and centered Lie sl5(Q), using dimensions 25,25,24. It also proves that a sufficiently small analytic specialization with exp(4πi h) of infinite multiplicative order has GL5(C) Zariski closure, without computing a numerical neighborhood. Every rational specialization has a finite determinant obstruction, so that generic/formal statement cannot replace the fixed-level proof above. See [ASTERION_MONODROMY_ALGEBRA.md](ASTERION_MONODROMY_ALGEBRA.md).
+
+The half-braid acceptance gate is now completed for this level-four representation: [ASTERION_HALF_BRAID.md](ASTERION_HALF_BRAID.md) proves linear B3 descent, exact squares U,V, the central character zeta17^4 and the Tuba–Wenzl class. Exact cyclotomic matrices, all twenty simplicity checks and a fresh bounded same-chart replay are source-bound in `results/asterion-half-braid`. The canonical endpoint associator and full countable-image presentation remain open.
 
 ## 4. Classical E8 elliptic compatibility is complete; quantum and KZB closure remain separate
 
@@ -635,7 +637,7 @@ Baseline ledger SHA256: `3f9c3a93fc5b4bd99b351f7d2fd964186bb099b771fd4303a1cc3e8
 
 **Preserved claim boundary:** A local matrix ODE is not yet a global connection matrix or monodromy representation.
 
-**Next closure:** Retain all exact residue/projector/braid identities and the convention dictionary needed for a half-braid extension.
+**Completed update:** Exact permutation-equivariant descent and the half-braid convention dictionary are retained in [ASTERION_HALF_BRAID.md](ASTERION_HALF_BRAID.md). **Next closure:** Compute an explicit same-chart conjugator or normalized endpoint associator.
 
 ### AST-P026 — Frobenius recurrence with resonant obstructions
 
@@ -707,7 +709,7 @@ Baseline ledger SHA256: `3f9c3a93fc5b4bd99b351f7d2fd964186bb099b771fd4303a1cc3e8
 
 **Preserved claim boundary:** The recent paper proves specified smaller cases; its abstract is not an E8 proof.
 
-**Next closure:** Construct half-braid matrices and verify the braid relation, central scalar and Tuba–Wenzl class before identifying an associator.
+**Completed update:** Half-braid construction, braid relation, central scalar and Tuba–Wenzl class are certified in [ASTERION_HALF_BRAID.md](ASTERION_HALF_BRAID.md). **Next closure:** Identify a canonical endpoint associator and determine the normal kernel of the normalized Delta(2,3,34) representation; the countable-image presentation remains open.
 
 ### AST-P030 — Level-restricted fusion separate from classical channels
 

@@ -1,6 +1,6 @@
-# Exact Coxeter and sextic research checkpoint — 20 October 2026
+# Exact half-braid, Coxeter and sextic research checkpoint — 20 October 2026
 
-The current source contains **698 equations**, including 23 appended Coxeter and all-degree sextic statements, across the preserved 27 families and 29 Math Lab tools. Every preceding 675 equation record is unchanged. The [new research chapter](chapters/33_exact_research_frontiers.md), [complete equation atlas](EQUATION_ATLAS.md), and [all-degree sextic proof](PARTNER_STRUCTURE.md) give the proofs, scope and exact replay commands. Source version 0.20.0 is retained; this checkpoint does not claim publication of a replacement binary release or new Lean theorems.
+The current source contains **710 equations**, including twelve half-braid statements and the preceding 23 Coxeter and all-degree sextic statements, across the preserved 27 families and 29 Math Lab tools. Every preceding 675 equation record is unchanged. The [new research chapter](chapters/33_exact_research_frontiers.md), [complete equation atlas](EQUATION_ATLAS.md), and [all-degree sextic proof](PARTNER_STRUCTURE.md) give the proofs, scope and exact replay commands. Source version 0.20.0 is retained; this checkpoint does not claim publication of a replacement binary release or new Lean theorems.
 
 ---
 
@@ -228,3 +228,5 @@ Local validation:34unittest methods passed, including exhaustive small selection
 Written mathematical arguments accompany the kernels. No new Lean verification is claimed. Original archives can contain stronger unsupported claims and remain separated from corrected canonical content. External numerical reports,large upstream data,chemical models,BLAST adapters,scouting/betting claims,and live applications are documented with boundaries rather than advertised as reproduced implementations.
 
 The ZIP includes all eligible repository files and a manifest with per-file hashes. It excludes git internals,caches,and prior ZIPs. GitHub Actions status must be read from GitHub; local success does not assert a remote run passed. The original PerfectJet repository was empty and the release is published to main.
+
+The subsequent [level-four half-braid extension](ASTERION_HALF_BRAID.md) appends twelve statements (PJ-HB001–PJ-HB012) without changing the preceding 698 records. It supplies exact cyclotomic B3 matrices, central scalar zeta17^4 and source-bound replay certificates. The dense-image presentation remains open.

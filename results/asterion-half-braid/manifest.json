@@ -1,0 +1,33 @@
+{
+  "certificates": {
+    "certificate.json": {
+      "bytes": 171857,
+      "sha256": "4f4e38834d9a67dc3bb5db76b7f41b10a45c9e4cec06be00fb66c4edbf322fd7"
+    }
+  },
+  "open": [
+    "explicit same-chart algebraic conjugator",
+    "canonical endpoint associator",
+    "kernel of the triangle-group representation",
+    "presentation of the countable dense image"
+  ],
+  "proof_dependency": "classical KZ descent and Tuba--Wenzl classification; no Lean formalization or priority claim",
+  "proved": [
+    "linear B3 extension of the declared pure-loop pair",
+    "exact cyclotomic braid and central identities",
+    "Tuba--Wenzl simple equivalence class",
+    "common character twist with trivial center and determinant"
+  ],
+  "schema": "perfectjet/asterion-half-braid-ledger/1",
+  "sources": {
+    "data/asterion_braid_equations.json": "d282e126973db096a20abb14270b680e713bed3fe9cc2482bed5e816c5e8b473",
+    "docs/ASTERION_HALF_BRAID.md": "62c8af33ed411d4dc54d6f1fdf420d9960773840966d8d9dbd4c180b0569502f",
+    "scripts/build_asterion_braid_catalogue.py": "7e16036647b23f4b696b0b7f485b6859691155fccb4af53276be40ba5bed6780",
+    "scripts/verify_asterion_braid.py": "78a45a89054e3b8fe169f016a0956b71479e0f2a549b8050e6f96b810512ca11",
+    "src/perfectjet/asterion_e8.py": "ec92e31d3375fdfdb9cb1519210725abf5026c4ca668ccbaed48f421375762fc",
+    "src/perfectjet/asterion_kz.py": "49897374ca03c1c87c038ea048d2c54889abdc7083e25ff7da87e04fabb041d3",
+    "src/perfectjet/asterion_monodromy.py": "874333130f04ea9653728a7b1a061cb5e23d2088b3b9663391c335e17b0af6b1",
+    "src/perfectjet/kz_half_braid.py": "e727240e5c194d800022ea139237a43a223c365b66b1d4f55e58d44f5f6fc274",
+    "src/perfectjet/rings.py": "9edc43208c99877b4d9e6b5580b090a7ea73a8a63807b33b6baedfb2bb27de71"
+  }
+}
