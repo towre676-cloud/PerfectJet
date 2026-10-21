@@ -1,0 +1,27 @@
+name: Sharp FreeLIP recovery and P-521 mathematics
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/p521_math/**'
+      - 'research/p521/**'
+      - '.github/workflows/p521-math.yml'
+  pull_request:
+    paths:
+      - 'research/p521_math/**'
+      - 'research/p521/**'
+      - '.github/workflows/p521-math.yml'
+permissions:
+  contents: read
+jobs:
+  exact-proof-replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify every retained mathematical claim offline
+        run: python research/p521_math/verify_all.py
+      - name: Test constructive recovery and adversarial receipts
+        run: python -m unittest discover -s research/p521_math/tests -v

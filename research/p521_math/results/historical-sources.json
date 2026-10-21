@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-10-21",
+  "scope": "Historical primary-source evidence for P-521 generator provenance; no origin recovery claimed.",
+  "sources": [
+    {
+      "id": "ntl15-author-tar",
+      "kind": "author_distribution_preserved_by_internet_archive",
+      "version": "NTL 1.5",
+      "original_url": "http://www.cs.wisc.edu/~shoup/ntl/ntl-1.5.tar.Z",
+      "archive_url": "https://web.archive.org/web/19970801214429id_/http://www.cs.wisc.edu/~shoup/ntl/ntl-1.5.tar.Z",
+      "archive_capture": "1997-08-01T21:44:29Z",
+      "original_http_last_modified": "Mon, 07 Jul 1997 16:12:11 GMT",
+      "bytes": 446513,
+      "sha256": "c2d80c5293c824b16f89ac7e5e0aeb29e3996f8560b877c44858f41c43717e1c",
+      "sha1_base32": "PRGFKILF6MDDAQFNECN6RBRIB45DHDMS",
+      "copyright_notice": "Research and educational purposes only; archive/source not vendored.",
+      "files": {
+        "README": {
+          "bytes": 26367,
+          "sha256": "dd130798b1b2e1090f3bda561bb6d3d365ba3a753daf09124f86fd98d1bdf933"
+        },
+        "lip.c": {
+          "bytes": 81764,
+          "sha256": "3fe2f59879c2dbc57fa5e324676cf5d56dc21176030b93e4b11eeb808864cde2",
+          "locations": {
+            "zrstarts": [
+              3155,
+              3177
+            ],
+            "zrstart": [
+              3179,
+              3189
+            ],
+            "zrandom": [
+              3191,
+              3214
+            ],
+            "zrandomb": [
+              4694,
+              4714
+            ],
+            "zrandoml": [
+              4716,
+              4750
+            ]
+          }
+        },
+        "lip.h": {
+          "bytes": 13943,
+          "sha256": "578173101d0469f0a36c97dee8b876e1f32766dcd7c809ee290a2ae306b8a14c",
+          "locations": {
+            "SINGLE_MUL_radix_override": [
+              40,
+              47
+            ]
+          }
+        },
+        "ZZ.h": {
+          "bytes": 25549,
+          "sha256": "1097310ae098a6f73187e0bafec4d68922a1fa862e4c057bda5a47e30dc3ccdf",
+          "locations": {
+            "SetSeed": [
+              552,
+              555
+            ],
+            "RandomBnd": [
+              557,
+              560
+            ],
+            "RandomLen": [
+              566,
+              569
+            ],
+            "single_precision_RandomBnd": [
+              577,
+              578
+            ]
+          }
+        },
+        "ZZ.c": {
+          "bytes": 16635,
+          "sha256": "4a1f20a6801408acbde7f16649a6de473397003ead162a91f7a3622185420c7a",
+          "locations": {
+            "single_precision_RandomLen": [
+              766,
+              773
+            ]
+          }
+        },
+        "MakeDesc.c": {
+          "bytes": 3721,
+          "sha256": "cf6fa9b7239373c26d8f04c1086ee1108ddf87a1a75e826c387f15fe57be06d4",
+          "locations": {
+            "default_radix_width": [
+              139,
+              146
+            ]
+          }
+        },
+        "makefile": {
+          "bytes": 7062,
+          "sha256": "81c633f69cafae735337e960e8953ce5f3b05bb2bbb9735a12452cf4b3e047c5"
+        }
+      },
+      "release_date": null,
+      "release_date_note": "Archive capture establishes availability by 1997-08-01. Last-Modified and tar member times are metadata, not established release dates."
+    },
+    {
+      "id": "ntl15-author-page",
+      "kind": "author_webpage_preserved_by_internet_archive",
+      "archive_url": "https://web.archive.org/web/19970803064110id_/http://www.cs.wisc.edu/~shoup/ntl/",
+      "archive_capture": "1997-08-03T06:41:10Z",
+      "bytes": 1915,
+      "sha256": "7b90940769232f73902161df48ee8f933d1ee8827c4a843934338b292ad2181a",
+      "claim": "Author page identifies NTL 1.5 and links ntl-1.5.tar.Z."
+    },
+    {
+      "id": "ntl20-author-announcement",
+      "kind": "archived_author_usenet_announcement",
+      "url": "https://ns1.omnitech.net/data/Books/Math/97/NTL/",
+      "author": "Victor Shoup",
+      "date_header": "29 Dec 1997 13:03:56 GMT",
+      "newsgroups": [
+        "sci.math.symbolic",
+        "sci.math",
+        "sci.math.research"
+      ],
+      "claim": "Author announces NTL 2.0 availability; preceding version identified as 1.7.",
+      "release_date": null,
+      "release_date_note": "Announcement timestamp is exact as preserved; first public release date is not established."
+    },
+    {
+      "id": "ntl31-author-page",
+      "kind": "author_webpage_preserved_by_internet_archive",
+      "archive_url": "https://web.archive.org/web/19990203204956id_/http://www.cs.wisc.edu/%7Eshoup/ntl/",
+      "archive_capture": "1999-02-03T20:49:56Z",
+      "claim": "Author page identifies 3.1b; says 3.0f remains available.",
+      "release_date": null
+    },
+    {
+      "id": "ntl-current-author-changelog",
+      "kind": "author_documentation",
+      "url": "https://libntl.org/doc/tour-changes.html",
+      "claims": [
+        {
+          "versions": [
+            "3.0d",
+            "3.0e"
+          ],
+          "description": "RandomBits, RandomBits_ZZ, RandomBits_long bugs fixed in ZZ.c and lip.c.",
+          "date": null
+        },
+        {
+          "versions": [
+            "3.0e",
+            "3.0f"
+          ],
+          "description": "Another RandomBits and RandomBits_ZZ bug fixed in lip.c.",
+          "date": null
+        },
+        {
+          "versions": [
+            "3.1b",
+            "3.5a"
+          ],
+          "description": "PRNG replaced and ZZ/byte array conversions added.",
+          "date": null
+        },
+        {
+          "versions": [
+            "5.0c",
+            "5.1a"
+          ],
+          "description": "Discard first 256 bytes of ARC4 streams.",
+          "date": "2001-06-08"
+        }
+      ]
+    },
+    {
+      "id": "ntl-author-history",
+      "kind": "author_retrospective_paper",
+      "url": "https://www.shoup.net/papers/akl-chapter.pdf",
+      "title": "Arithmetic Software Libraries",
+      "written": "January 2020",
+      "claims": [
+        "NTL 1.0 publicly released in 1997.",
+        "Original NTL integer package derived from Lenstra LIP; FreeLIP released in 1995."
+      ]
+    },
+    {
+      "id": "ntl31-contemporary-newsletter",
+      "kind": "contemporaneous_first_party_observation_of_release_news_not_author_release_record",
+      "url": "https://www.schneier.com/crypto-gram/archives/1998/1215.html",
+      "author": "Bruce Schneier",
+      "date": "1998-12-15",
+      "quote": "Version 3.1b has just been released.",
+      "limitations": "Not the software author and does not give exact release date."
+    }
+  ],
+  "ntl15_semantics": {
+    "modulus": "162259276829213363391578010288127",
+    "multiplier": "56455876562739436995171414077326",
+    "SetSeed": "Use full arbitrary precision signed ZZ value; canonical residue modulo M; map residue zero to one. No byte-array seed API found in this version.",
+    "zrandom": "For positive b, threshold M-(M mod b); repeatedly replace S by A*S mod M until S<threshold; return S mod b. Low residue, not high word.",
+    "RandomBnd_ZZ": "For bound>1, use floor((bitlength(bound)-1)/w)+2 accepted radix-2^w outputs, first output most significant; reduce concatenation modulo bound. Bound<=1 yields zero.",
+    "RandomLen_ZZ": "For requested length L>1, take ceil(L/w) accepted radix-2^w outputs, first output least significant; mask highest limb to L-(ceil(L/w)-1)*w bits and force highest requested bit to one. L<=0 yields zero; L=1 yields one without consuming RNG.",
+    "RandomBits": "No RandomBits symbol in recovered NTL 1.5 source. It must not be attributed an inferred implementation.",
+    "default_radix": "Largest even integer at most min(bits_per_long-2,double_precision-3); IEEE53 with long32 gives30; IEEE53 with long64 gives50; supported SINGLE_MUL forces26.",
+    "P521_direct_RandomLen521_exclusion": "GX has bitlength520, whereas every RandomLen521 output has bit520 set. This excludes only direct assignment without later transformations."
+  },
+  "unresolved": [
+    "No NTL3.0/3.1/3.5 source archive recovered in this search.",
+    "No exact author release dates established for3.0/3.1/3.5.",
+    "No recovered base-point seed or positive P-521 origin.",
+    "Contemporary NTL3.5 PRNG availability at curve-generation dates remains unestablished."
+  ]
+}
