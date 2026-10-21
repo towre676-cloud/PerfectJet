@@ -12,7 +12,7 @@ if str(ROOT) not in sys.path:
 
 def verify_all():
     from research.p521.curve import GX
-    from research.p521_math import accepted_observer, portable_models, raw_observer, rotations
+    from research.p521_math import accepted_observer, ntl15_replay, portable_models, raw_observer, rotations
     from research.p521_math import verify_accepted_observer, verify_raw_observer
 
     folder = Path(__file__).with_name("results")
@@ -26,6 +26,12 @@ def verify_all():
     }
     if results["portable_models"] is not True:
         raise ValueError("Portable-source receipt failed exact verification")
+    # This validates retained conformance observations, not a new all-state
+    # theorem or a fresh execution of the externally supplied historical C.
+    source_replay = json.loads((folder / "ntl15-source-replay.json").read_text(encoding="utf-8"))
+    results["ntl15_retained_conformance"] = ntl15_replay.verify_document(source_replay)
+    if results["ntl15_retained_conformance"] is not True:
+        raise ValueError("Retained NTL 1.5 conformance observations failed consistency checks")
     # These are separate implementations of the finite proofs.
     results["independent_raw"] = verify_raw_observer.verify_document(documents["raw-observer"])
     results["independent_accepted"] = verify_accepted_observer.verify_document(documents["accepted-observer"])

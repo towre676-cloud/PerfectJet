@@ -75,6 +75,8 @@ The [field-chart search](ROTATIONS.md) checks whether the entire published `Gx` 
 
 The [portable-source models](PORTABLE_MODELS.md) separately test the historically supported limb widths and recovered integer wrappers. Actual source configurations and analytic variants are labeled separately. Each retained exclusion is checked by an exact integer contradiction. Known-origin controls replay the full wrapper, including partial top limbs and rejection predicates.
 
+The [historical recovery follow-up](HISTORICAL_SEARCH.md) records a bounded search of author distributions, dated source records and software mirrors. Authentic NTL 2.0/3.0-era source remains missing, so no guessed `RandomBits` implementation is added. A separate digest-gated NTL 1.5 C replay compares recovered source behavior with the model, including output values, final states and rejection boundaries. Its finite conformance evidence is distinct from the complete arithmetic exclusions.
+
 An all-state exclusion can reject a specified generator/output/conversion family decisively. It does not measure how close a different historical recipe is to being found. The remaining positive target is a reproducible recipe that yields the entire published point, supported by historical evidence. No such recipe was recovered here.
 
 ## Verify the claims offline

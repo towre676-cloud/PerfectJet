@@ -1,0 +1,452 @@
+{
+  "scope": "Bounded distribution and source-record search for NTL 2.0/3.0-era releases. Negative endpoint outcomes are not absence proofs.",
+  "queries": [
+    {
+      "url": "https://snapshot.debian.org/package/ntl/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 4101,
+      "sha256": "1d697e031c60308ac46fc964bc6caf70b9575607cc5521691b7143a9aa1a0264",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:00 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://archive.debian.org/debian/dists/hamm/main/source/math/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 20645,
+      "sha256": "643a359d64485b05adf842e3ced74c322c8b94ed667edc9db2cbc36e8e1685aa",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:01 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://archive.debian.org/debian/dists/slink/main/source/math/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 40232,
+      "sha256": "a01ef3fa03643a8a83d11ad80d59072b6f28437e3d12f9ad52b7e742e8af2c82",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:01 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://sources.debian.org/src/ntl/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 7545,
+      "sha256": "1185f6920f48e3f8d5a02d500163134eeec44360f3d7f758a986ffda817a2b54",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:01 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftpmirror.your.org/pub/FreeBSD-Archive/ports/distfiles/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 9583872,
+      "sha256": "08dd5c4474a43c7ab18fb955aabff930a3aff3e4c18c9996759a590aa542f135",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:30 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://distfiles.macports.org/ntl/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 2111,
+      "sha256": "f5cb70e4c1af07cdb0bec5d3702af970087bbd45d78dac3830efbfd2a6e1bb1a",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:29 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.netbsd.org/pub/pkgsrc/distfiles/LOCAL_PORTS/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 38214,
+      "sha256": "0c3da64f749170f46d4f228237f381264b82a98f966b931cdd7995c6aab991f3",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:28 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.netbsd.org/pub/pkgsrc/distfiles/ntl/",
+      "outcome": "HTTP Error 503: Service Unavailable",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://archive.debian.org/debian/pool/main/n/ntl/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 45460,
+      "sha256": "6f05bd70591871f6a5c27693d1b4c1cef4e3e562ea746e93f8ba22c6da5eab46",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:28 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://snapshot.debian.org/mr/package/ntl/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 434,
+      "sha256": "0cc9ae0aeb43d1595febe5d72da846c3cd8168e674927f81a5b747ff8489bdaf",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:28 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.netlib.org/number/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.icm.edu.pl/packages/ntl/",
+      "outcome": "HTTP Error 503: Service Unavailable",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.lip6.fr/pub/math/ntl/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.gnu.org/gnu/ntl/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://cgit.freebsd.org/ports/log/math/ntl",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 21865,
+      "sha256": "8bb92e7725cd79b2bb7201d72a3ca34b2e847ef2564a814f350e4d5643475ead",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:54 GMT",
+      "last_modified_header": "Wed, 21 Oct 2026 01:06:44 GMT"
+    },
+    {
+      "url": "https://cgit.freebsd.org/ports/plain/math/ntl/Makefile?h=release/3.0.0",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NetBSD/pkgsrc/pkgsrc-1999Q4/math/ntl/Makefile",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://sources.debian.org/api/src/ntl/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 734,
+      "sha256": "0ebd56ac055185a9d0360fa140a8071d3822ef9dc77cead5bb3850e872698ca9",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:44 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/sci/math/multiplePrecision/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 6996,
+      "sha256": "aa34cf3a9596692a6a78c7214c5e758a90b8194e6f0a6912edcf375a4c4a0f22",
+      "response_date_header": "Wed, 21 Oct 2026 01:06:44 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/sci/math/multiplePrecision/ntl/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.netlib.org/number/ntl/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.jaist.ac.jp/pub/FreeBSD/distfiles/ntl/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://api.github.com/repos/NetBSD/pkgsrc/commits?path=math/ntl&until=2000-01-01T00:00:00Z&per_page=100",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:04 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://api.github.com/repos/freebsd/freebsd-ports/commits?path=math/ntl&until=2000-01-01T00:00:00Z&per_page=100",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:05 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.icm.edu.pl/packages/number/",
+      "outcome": "HTTP Error 503: Service Unavailable",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.icm.edu.pl/pub/NTL/",
+      "outcome": "HTTP Error 503: Service Unavailable",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/sci/math/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 2839,
+      "sha256": "fcbd613b974139fea418eee50d9444901b51a601eef7e07337cc033492f23ab1",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:02 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.netlib.org/master_counts2.html",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 2067087,
+      "sha256": "6b62e32292dfcb0392b442bc1c775acec5db886400cd0ccc997865c01037e1e6",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:09 GMT",
+      "last_modified_header": "Thu, 11 May 2023 16:14:08 GMT"
+    },
+    {
+      "url": "https://rpmfind.net/linux/rpm2html/search.php?query=ntl",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 11212,
+      "sha256": "ef7c1818b838be64194a7127016abc387bcc4b0256044cf4750e4da6eb314e95",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:03 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=*/ntl-3.0*&output=json&filter=statuscode:200&collapse=urlkey",
+      "outcome": "HTTP Error 503: Service Unavailable",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=*/ntl-2.0*&output=json&filter=statuscode:200&collapse=urlkey",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:37 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://web.archive.org/cdx/search/cdx?url=*/ntl-3.1*&output=json&filter=statuscode:200&collapse=urlkey",
+      "outcome": "HTTP Error 503: Service Unavailable",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://archive.org/advancedsearch.php?q=ntl+AND+mediatype:software&output=json&rows=50",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 65702,
+      "sha256": "864a9c6290fd1afbff53428ac67155e7d98ee93c5d6109c368acb8a0b8c19931",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:29 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/sci/math/multiplePrecision/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 6996,
+      "sha256": "aa34cf3a9596692a6a78c7214c5e758a90b8194e6f0a6912edcf375a4c4a0f22",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:29 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.netlib.org/math/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 900,
+      "sha256": "7c9f60aa4d8ba4f5bb506c50454d199f9212a078b15d379c9c4599542595981c",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:33 GMT",
+      "last_modified_header": "Fri, 17 Jul 2015 20:23:12 GMT"
+    },
+    {
+      "url": "https://www.ibiblio.org/pub/Linux/libs/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 35685,
+      "sha256": "e0980025ce0915f82d2fb631fd5af5d7811dc0e85ef7a8c1eff40eb1e0a594a8",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:44 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.ibiblio.org/pub/Linux/science/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 3973,
+      "sha256": "b8f34a5273ed5c08fb9d0162cccfdcbacf914af997bd3e32e2e90afff8d47fc7",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:44 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.ibiblio.org/pub/Linux/science/math/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://www.ibiblio.org/pub/Linux/libs/c++/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/Linux/sunsite/libs/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/Linux/sunsite/science/math/",
+      "outcome": "HTTP Error 404: Not Found",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/crypt/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 2360,
+      "sha256": "099c3f2f7742672324aa3be0aa0aa9e400b558192a59cfb46600bb4c74469dae",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:38 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/crypt/math/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 8229,
+      "sha256": "ca64f94fc55eaaf10cb6d32a54126e9317c3276e1c148d38bee116b2e401cc8e",
+      "response_date_header": "Wed, 21 Oct 2026 01:07:38 GMT",
+      "last_modified_header": null
+    },
+    {
+      "url": "https://cgit.freebsd.org/ports/commit/math/ntl?id=dd8dce73978efd7b52d35f7877d0b9232a8cd966",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 21698,
+      "sha256": "707ebc24671ce55febae115a8d511decb7f551f0dc3c7421d58068f2cfe07b88",
+      "response_date_header": "Wed, 21 Oct 2026 01:08:18 GMT",
+      "last_modified_header": "Wed, 21 Oct 2026 01:08:18 GMT"
+    },
+    {
+      "url": "https://cgit.freebsd.org/ports/plain/math/ntl/Makefile?id=dd8dce73978efd7b52d35f7877d0b9232a8cd966",
+      "outcome": "HTTP Error 429: Too Many Requests",
+      "status": null,
+      "bytes": null,
+      "sha256": null,
+      "response_date_header": null,
+      "last_modified_header": null
+    },
+    {
+      "url": "https://api.github.com/repos/NetBSD/pkgsrc/commits?path=math/ntl&until=2006-01-01T00:00:00Z&per_page=100",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 47119,
+      "sha256": "4a6b841750af541cd6c90c7645798f8335d802482b1a984a833c04aa3c80bfe4",
+      "response_date_header": "Wed, 21 Oct 2026 01:08:19 GMT",
+      "last_modified_header": "Wed, 28 Sep 2005 20:52:18 GMT"
+    },
+    {
+      "url": "https://ftp.funet.fi/pub/sci/math/multiplePrecision/nmbth/",
+      "outcome": "HTTP 200",
+      "status": 200,
+      "bytes": 1032,
+      "sha256": "36ab6da8d56dfdec62007dea0e9323006af4723fdf51bf889f687689c483c5ab",
+      "response_date_header": "Wed, 21 Oct 2026 01:08:18 GMT",
+      "last_modified_header": null
+    }
+  ],
+  "schema": "perfectjet/ntl-distribution-search/1",
+  "recovered_source_distributions": [],
+  "receipt_note": "Hashes and headers identify responses received during the bounded search. Raw response bodies are not embedded here. Failed or absent results do not prove global archive absence.",
+  "findings": {
+    "debian_snapshot_first_listed_version": "5.4.2-1",
+    "freebsd_initial_port": {
+      "commit": "dd8dce73978efd7b52d35f7877d0b9232a8cd966",
+      "date": "2000-07-10",
+      "version": "4.1a"
+    },
+    "netbsd_initial_import": {
+      "commit": "ddeaffdcedc588aea18aa7d5e172d8a3e275ae81",
+      "date": "2001-01-26"
+    },
+    "target_version_source_recovery": false,
+    "missing_semantics": [
+      "NTL 2.0 integer RNG and assembly",
+      "NTL 3.0d RandomBits before first fix",
+      "NTL 3.0e first correction",
+      "NTL 3.0f second correction",
+      "NTL 3.1 stream identity",
+      "NTL 3.5a generator replacement and chronology"
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schema": "perfectjet-ntl-author-source-search-v1",
+  "searched_at_utc": "2026-10-21T01:07:50.602367+00:00",
+  "scope": "Author distributions, Wayback captures, dated primary records for NTL 2.0 and 3.0 era",
+  "recovered_new_source_distributions": [],
+  "limitations": [
+    "No candidate NTL 2.x/3.x source bytes were recovered by this search.",
+    "Access failures are not archive-absence evidence.",
+    "Current download-page coverage and git root do not establish that earlier archives do not exist elsewhere."
+  ],
+  "attempts": [
+    {
+      "method": "web_open",
+      "url": "https://libntl.org/download.html",
+      "status": "retrieved",
+      "observation": "Current author download index lists NTL 11.6.0 through 5.1a; ends with Download NTL 5.1 (2001.06.08), link ntl-5.1a.tar.gz, 646668 bytes. No 2.x/3.x link present."
+    },
+    {
+      "method": "web_open",
+      "url": "https://www.shoup.net/ntl/download.html",
+      "status": "redirected_to_current_download_index",
+      "resolved_url": "https://libntl.org/download.html"
+    },
+    {
+      "method": "web_open",
+      "url": "https://www.shoup.net/ntl/",
+      "status": "redirected",
+      "resolved_url": "https://libntl.org/",
+      "observation": "Author page links official libntl/ntl GitHub."
+    },
+    {
+      "method": "local_git_history",
+      "repository": "https://github.com/libntl/ntl",
+      "status": "inspected",
+      "first_commit": "c96ef935be00aaab6b8017d08654c8a217c92692",
+      "date": "2020-12-31T13:49:40-05:00",
+      "subject": "Initial commit, NTL 11.4.3",
+      "observation": "No pre-2020 imported upstream source history in this checkout. Current tags start v11.4.4.",
+      "upstream_url": "https://github.com/libntl/ntl"
+    },
+    {
+      "method": "urllib_get",
+      "url": "https://web.archive.org/cdx/search/cdx?url=www.cs.wisc.edu/~shoup/ntl/*&output=json&filter=statuscode:200&filter=mimetype:application.*&collapse=urlkey&filter=timestamp:199[6789].*",
+      "status": "access_failure",
+      "error": "TimeoutError: The read operation timed out",
+      "timeout_seconds": 25
+    },
+    {
+      "method": "web_open",
+      "url": "https://web.archive.org/cdx/search/cdx?url=www.cs.wisc.edu%2F~shoup%2Fntl%2F*&output=json&filter=statuscode%3A200&collapse=urlkey",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool."
+    },
+    {
+      "method": "web_open",
+      "url": "https://web.archive.org/web/19990203204956id_/http://www.cs.wisc.edu/%7Eshoup/ntl/",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool."
+    },
+    {
+      "method": "web_open",
+      "url": "https://web.archive.org/web/19990203204956/http://www.cs.wisc.edu/%7Eshoup/ntl/",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool."
+    },
+    {
+      "method": "web_open",
+      "url": "https://web.archive.org/web/19970803064110/http://www.cs.wisc.edu/~shoup/ntl/",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool."
+    },
+    {
+      "method": "web_open",
+      "url": "https://archive.org/wayback/available?url=www.cs.wisc.edu/~shoup/ntl/ntl-3.0f.tar.gz&timestamp=19990203",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool."
+    },
+    {
+      "method": "web_open",
+      "url": "https://libntl.org/ntl-3.0f.tar.gz",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool.",
+      "candidate_origin": "Hypothesized URL, not observed archive link"
+    },
+    {
+      "method": "web_open",
+      "url": "https://libntl.org/ntl-2.0.tar.Z",
+      "status": "access_failure",
+      "error": "URL is not accessible via this tool.",
+      "candidate_origin": "Hypothesized URL, not observed archive link"
+    },
+    {
+      "method": "urllib_get",
+      "url": "https://libntl.org/download.html",
+      "status": "access_failure",
+      "error": "HTTPError: HTTP Error 406: Not Acceptable",
+      "timeout_seconds": 10
+    },
+    {
+      "method": "web_open",
+      "url": "https://ns1.omnitech.net/data/Books/Math/97/NTL/",
+      "status": "retrieved",
+      "observation": "Author-attributed Usenet announcement header 29 Dec 1997 13:03:56 GMT announces NTL 2.0; names original Wisconsin directory and predecessor 1.7. Distribution bytes not linked in fetched text. Already cited in existing repository.",
+      "byte_hash": null,
+      "hash_limitation": "Browser/search text retrieval does not expose original response bytes."
+    },
+    {
+      "method": "web_open",
+      "url": "https://www.cs.wisc.edu/~shoup/ntl/",
+      "status": "http_error",
+      "http_status": 404,
+      "observation": "Current author directory returned Not Found; this does not exclude Wayback captures."
+    },
+    {
+      "method": "web_open",
+      "url": "https://libntl.org/doc/tour-roadmap.html",
+      "status": "retrieved",
+      "observation": "Author retrospective identifies origin in Lenstra LIP and later GMP restructure, but contains no target release archive.",
+      "byte_hash": null
+    }
+  ],
+  "search_queries": [
+    "\"ntl-2.0\" tar",
+    "\"ntl-3.0\" tar",
+    "\"ntl-3.0f\"",
+    "\"NTL\" \"3.0f\" \"tar\"",
+    "\"NTL\" \"2.0\" \"1998\" shoup source",
+    "\"ntl-3.1b\" OR \"ntl-3.0e\" OR \"ntl-2.0.tar\"",
+    "\"NTL\" \"3.0d\" \"download\"",
+    "\"ntl\" \"3.1b\" download -site:libntl.org -site:shoup.net",
+    "\"ntl-3\" \"tar.gz\" Shoup",
+    "\"WinNTL\" \"3.0\"",
+    "\"ntl-2.0.tar.Z\"",
+    "\"ntl\" \"3.0f\" -site:libntl.org -site:shoup.net -site:libntl.shoup.net",
+    "\"ntl\" \"2.0.tar\" OR \"3.0f.tar\" OR \"3.1b.tar\"",
+    "\"NTL\" \"1998\" \"ftp\" Shoup",
+    "\"NTL 3.0\" Shoup source code",
+    "\"NTL 2.0\" Shoup download",
+    "\"WinNTL-3\" ZIP",
+    "\"ntl-3.1b.tar.gz\"",
+    "\"ntl-3.0f\" \"shoup\"",
+    "\"ntl-3.1\" \".gz\"",
+    "\"ntl-2.0\" source -transportation -blogspot -kingshot",
+    "\"WinNTL-3_0\""
+  ],
+  "search_observations": [
+    "No search query identified recoverable NTL 2.x or 3.x source bytes.",
+    "Search rediscovered author announcement for NTL 2.0 at ns1.omnitech.net/data/Books/Math/97/NTL/; already in repository evidence.",
+    "Search rediscovered 1998 NTL 3.1b citations, including author-hosted academic manuscripts; these are not software distributions."
+  ],
+  "primary_reference_urls": [
+    "https://libntl.org/doc/tour-changes.html",
+    "https://libntl.org/download.html",
+    "https://ns1.omnitech.net/data/Books/Math/97/NTL/",
+    "https://github.com/libntl/ntl/commit/c96ef935be00aaab6b8017d08654c8a217c92692"
+  ],
+  "next_gap": "Need source bytes and an independent dated record for at least one NTL 2.0/3.0d/3.0e/3.0f/3.1b distribution; changelog fixes do not determine pre-fix RandomBits semantics.",
+  "reused_local_evidence": [
+    {
+      "bytes": 446513,
+      "sha256": "c2d80c5293c824b16f89ac7e5e0aeb29e3996f8560b877c44858f41c43717e1c",
+      "not_new_recovery": true,
+      "filename": "ntl-1.5.tar.Z"
+    },
+    {
+      "bytes": 1915,
+      "sha256": "7b90940769232f73902161df48ee8f933d1ee8827c4a843934338b292ad2181a",
+      "not_new_recovery": true,
+      "filename": "ntl15-index.html"
+    },
+    {
+      "bytes": 2163,
+      "sha256": "03912aedf8ade48a95b2c6478caf455b82301634057600a0e41776005ae3b076",
+      "not_new_recovery": true,
+      "filename": "index5.html"
+    }
+  ],
+  "search_query_status": "Executed through web search; relevant hits were author changelog, already-known 2.0 announcement and research-paper references, plus unrelated namesakes. No source distribution byte recovery. Null hashes mean original bytes unavailable; no substitute hashes were manufactured.",
+  "receipt_note": "Response hashes identify retrieved bytes where available; source archive authenticity remains tied to historical-sources.json. Raw web-response bodies are not embedded here.",
+  "supplementary_attempts": [
+    {
+      "method": "urllib_get",
+      "url": "https://libntl.org/ntl-3.0f.tar.gz",
+      "status": "access_failure",
+      "error": "HTTP 406: Not Acceptable",
+      "candidate_origin": "Hypothesized endpoint, not observed archive link"
+    },
+    {
+      "method": "urllib_get",
+      "url": "https://libntl.org/ntl-2.0.tar.gz",
+      "status": "access_failure",
+      "error": "HTTP 406: Not Acceptable",
+      "candidate_origin": "Hypothesized endpoint, not observed archive link"
+    },
+    {
+      "method": "web_open",
+      "url": "https://archive.softwareheritage.org/browse/search/?q=ntl",
+      "status": "access_failure",
+      "error": "URL inaccessible via tool"
+    },
+    {
+      "method": "web_open",
+      "url": "https://www.netlib.org/number-theory/",
+      "status": "access_failure",
+      "error": "URL inaccessible via tool"
+    },
+    {
+      "method": "web_open",
+      "url": "https://ftp.funet.fi/pub/sci/math/c%2B%2B/",
+      "status": "retrieved_listing",
+      "observation": "No NTL entry in this exact directory listing; not recursive absence proof",
+      "response_sha256": null
+    }
+  ]
+}

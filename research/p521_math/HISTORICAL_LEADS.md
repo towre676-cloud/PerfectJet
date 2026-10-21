@@ -1,5 +1,7 @@
 # Historical generator evidence
 
+The subsequent [source-recovery audit](HISTORICAL_SEARCH.md) records the author/archive and distribution searches, the still missing NTL 2.x/3.x implementations, and a digest-gated execution harness for the authentic 1.5 source. No successor source distribution or P-521 origin was recovered. Existing source pins and mathematical certificates below retain their original scope.
+
 The useful new artifact is **the author's NTL 1.5 distribution, preserved on 1 August 1997**. Its integer RNG matches the FreeLIP multiplicative generator already studied. Its public wrappers and machine configuration add concrete models that are easy to miss: `RandomLen` assembles limbs in the opposite order from `RandomBnd`, forces the highest requested bit, and the ordinary 64-bit-long configuration uses **50-bit limbs** with 53-bit doubles.
 
 This is evidence about historically available software, not a recovered P-521 seed or an attribution of that software to the curve designers. Machine-readable source pins are in [results/historical-sources.json](results/historical-sources.json).
