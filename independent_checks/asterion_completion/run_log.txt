@@ -1,0 +1,49 @@
+{
+ "A_checks": {
+  "dim_g0_is_248": true,
+  "dim_nilradical_is_245": true,
+  "no_mm_to_1_channel_at_boundary": true,
+  "all_mm1_valuations_positive_for_m_gt_1": true,
+  "lower_bound_is_493": true,
+  "cotangent_upper_bound_is_496": true,
+  "abelianization_matches_repo_38": true
+ },
+ "B": {
+  "0": {
+   "omega2": 162,
+   "omega3": 68,
+   "jacobi_bounds": {
+    "inputs_g_g_W_paired_with_W_linear_in_omega2": 22688,
+    "inputs_g_g_W": 45789,
+    "inputs_g_W_W": 44897,
+    "inputs_W_W_W": 14449
+   }
+  },
+  "1": {
+   "omega2": 169,
+   "omega3": 68,
+   "jacobi_bounds": {
+    "inputs_g_g_W_paired_with_W_linear_in_omega2": 23012,
+    "inputs_g_g_W": 46283,
+    "inputs_g_W_W": 45623,
+    "inputs_W_W_W": 14834
+   }
+  },
+  "2": {
+   "omega2": 176,
+   "omega3": 68,
+   "jacobi_bounds": {
+    "inputs_g_g_W_paired_with_W_linear_in_omega2": 23336,
+    "inputs_g_g_W": 46777,
+    "inputs_g_W_W": 46378,
+    "inputs_W_W_W": 15233
+   }
+  }
+ },
+ "C_checks": {
+  "form_nondegenerate": true,
+  "radical_is_V_dim7": true,
+  "phi_injective": true,
+  "bound_attained_at_form_level": true
+ }
+}
