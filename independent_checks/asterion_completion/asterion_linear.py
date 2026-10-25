@@ -944,7 +944,7 @@ def frac_str(x):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", type=Path,
-                    default=Path(__file__).resolve().parents[2] / "PerfectJet")
+                    default=Path(__file__).resolve().parents[1])  # repository root
     ap.add_argument("--out", type=Path, default=Path(__file__).resolve().parent)
     args = ap.parse_args()
     out_dir = args.out
