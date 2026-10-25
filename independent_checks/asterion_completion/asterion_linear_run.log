@@ -1,0 +1,26 @@
+repo: /home/hatch/workspace/research/PerfectJet
+channels: omega2=162, S=7, unknowns=169
+stage: checks
+  check omega2_channel_count: 162
+  check s_scalar_count: 7
+  check total_unknowns: 169
+  check jacobi_channel_components: 22688
+  check beta_invariance_failures: 0
+  check repo_bracket_mismatches: 0
+  check repo_bracket_pairs_tested: 3744
+  check g0_jacobi_failures: 0
+  check omega2_channel_invariance_failures: 0
+  check omega2_channel_invariance_tests: 308
+  check paired_g0_nonzero_instances: 0
+stage: numeric cross-check of F (pairing-verified brackets)
+  numeric cross-check: 24 tuples, 0 failures
+stage: sector extraction (assembling 22688 equations)
+  assembled 22688 equations in 344.4s
+  system written to asterion_linear_system.json.gz
+stage: modular rank pass
+  mod 1000003: rank=160, consistent=False
+  mod 999983: rank=160, consistent=False
+stage: exact solve over Q (subsystem + verification loop)
+  row 826 not satisfied by subsystem solution; adding it (subsystem size 161)
+  INCONSISTENT: Farkas certificate on 161 rows, constant sum 1
+results written to asterion_linear_results.json; total 355.3s

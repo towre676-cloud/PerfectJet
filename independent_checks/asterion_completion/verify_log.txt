@@ -1,0 +1,35 @@
+loaded 22688 stored equations
+A. Farkas support (row, lambda): [(826, Fraction(750140620033193209655193330568396800000000, 1))]
+   combined coefficients all zero: True; constant sum = 1
+   obstructing row 826: sector [7, 7, 7, 7], J = 1, coeffs = {}, const = 1/750140620033193209655193330568396800000000
+B. contraction verification, sector (7,7,7,7):
+   sector (7, 7, 7, 7): 2255 weight tuples, channels [1, 3, 5, 7, 9, 11, 13]
+   Gram off-diagonal sum (must be 0): 0; diagonal all nonzero: True
+   J=1: contraction const = 1/750140620033193209655193330568396800000000, params = 0; stored const = 1/750140620033193209655193330568396800000000, params = 0; match = True
+   J=3: contraction const = 1/53524227696202354321398486269952000000, params = 0; stored const = 1/53524227696202354321398486269952000000, params = 0; match = True
+   J=5: contraction const = 41/2918274581691473634373769625600000, params = 0; stored const = 41/2918274581691473634373769625600000, params = 0; match = True
+   J=7: contraction const = 1/11572711493198248673280000, params = 0; stored const = 1/11572711493198248673280000, params = 0; match = True
+   J=9: contraction const = 1/802842319319040000, params = 0; stored const = 1/802842319319040000, params = 0; match = True
+   J=11: contraction const = -1/11161463040, params = 0; stored const = -1/11161463040, params = 0; match = True
+   J=13: contraction const = -5/196, params = 1; stored const = -5/196, params = 1; match = True
+   residual identity on 40 fresh tuples: True
+E. contraction verification, sector (7,11,7,11):
+   sector (7, 11, 7, 11): 4055 weight tuples, channels [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+   Gram off-diagonal sum (must be 0): 0; diagonal all nonzero: True
+   J=4: contraction const = 1/89843132750305237459214304944318758791413760000000000, params = 0; stored const = 1/89843132750305237459214304944318758791413760000000000, params = 0; match = True
+   J=5: contraction const = 79/13068092036408034539522080719173637642387456000000000, params = 0; stored const = 79/13068092036408034539522080719173637642387456000000000, params = 0; match = True
+   J=6: contraction const = 73/8054790456365899001184714447222409789440000000000, params = 0; stored const = 73/8054790456365899001184714447222409789440000000000, params = 0; match = True
+   J=7: contraction const = 1/38156556886599285428382412805505024000000000, params = 0; stored const = 1/38156556886599285428382412805505024000000000, params = 0; match = True
+   J=8: contraction const = 29/236724962301971669707335741210624000000000, params = 0; stored const = 29/236724962301971669707335741210624000000000, params = 0; match = True
+   J=9: contraction const = 1/1217016707419685982686643486720000000, params = 0; stored const = 1/1217016707419685982686643486720000000, params = 0; match = True
+   J=10: contraction const = 1/139654497131888625743560704000000, params = 0; stored const = 1/139654497131888625743560704000000, params = 0; match = True
+   J=11: contraction const = 1/13729444089657922289664000000, params = 0; stored const = 1/13729444089657922289664000000, params = 0; match = True
+   J=12: contraction const = 1/1385458225193345022720000, params = 0; stored const = 1/1385458225193345022720000, params = 0; match = True
+   J=13: contraction const = 1/366912365385646080000, params = 0; stored const = 1/366912365385646080000, params = 0; match = True
+   J=14: contraction const = -1/4518625189478400, params = 0; stored const = -1/4518625189478400, params = 0; match = True
+   J=15: contraction const = -1/83601745920, params = 0; stored const = -1/83601745920, params = 0; match = True
+   J=16: contraction const = -1/2382380, params = 0; stored const = -1/2382380, params = 0; match = True
+   J=17: contraction const = -59/5544, params = 1; stored const = -59/5544, params = 1; match = True
+   J=18: contraction const = -154, params = 0; stored const = -154, params = 0; match = True
+D. global spot check on 300 random (sector, tuple) pairs: True
+ALL CHECKS PASSED
