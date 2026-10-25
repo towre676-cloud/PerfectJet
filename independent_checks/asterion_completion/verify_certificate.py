@@ -149,7 +149,7 @@ def contraction_check(md, cp, stored, sectors_meta, sector, do_residual=False):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", type=Path,
-                    default=HERE.parents[1] / "PerfectJet")
+                    default=HERE.parents[1])  # repository root
     args = ap.parse_args()
     ok = True
 
