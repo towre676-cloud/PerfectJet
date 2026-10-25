@@ -361,7 +361,7 @@ def part_c() -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--repo", type=Path,
-                    default=Path(__file__).resolve().parents[2])  # repository root, when run from independent_checks/asterion_completion/
+                    default=Path(__file__).resolve().parents[1])  # repository root, when run from independent_checks/asterion_completion/
     ap.add_argument("--out", type=Path, default=Path(__file__).with_name(
         "perfectjet_interval_results.json"))
     args = ap.parse_args()
