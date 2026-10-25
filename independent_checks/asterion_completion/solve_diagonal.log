@@ -1,0 +1,14 @@
+=== e = 1 (dimension 494) ===
+coefficient matrix 1205x4 over monomials (z2^2, z2z3, z3^2, sigma): rank_Q = 4
+invertible row subset: equation indices [0, 1, 7, 187], det = 1/2224751289223385954113093193508130899637034309244335265681457174594581050226515204605580016316435090729348877239468852030122230597802363987467560806827538389855275107690956407701504000000000000000000000000000000000000000000
+lambda (on the 4 chosen equations) = ['8251546820365125306207126636252364800000000', '-535242276962023543213984862699520000000', '0', '0']
+sum lambda_i * eq_i = (1)*sigma
+lambda support: [(0, '8251546820365125306207126636252364800000000'), (1, '-535242276962023543213984862699520000000')] (the other two rows of the invertible subset have weight 0)
+CERTIFICATE e=1: the two support equations above, combined with the rational weights lambda, give exactly sigma.  Hence every common zero of the 1,205 diagonal equations has sigma = 0, contradicting sigma != 0.  Dimension 494 is EXCLUDED (given the stage-two linear solution space and the normal form).
+=== e = 2 (dimension 495) ===
+coefficient matrix 1205x12 over the monomial vector: rank_Q = 4, nullity = 8
+det direction (1,-1,0,...) orthogonal to the whole null space: True  (equivalently det lies in the row space)
+rows spanning det: [0, 1]
+lambda support: [(0, '8251546820365125306207126636252364800000000'), (1, '-535242276962023543213984862699520000000')]
+sum lambda_i * eq_i = (1)*z13*z15 + (-1)*z14*z14
+CERTIFICATE e=2: the exhibited rational combination of the 2 equations above is exactly det(S_11) = z13*z15 - z14^2.  Hence every common zero of the 1,205 diagonal equations has det(S_11) = 0, contradicting det != 0.  Dimension 495 is EXCLUDED (given the stage-two linear solution space and the normal form).

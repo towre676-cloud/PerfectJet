@@ -1,0 +1,9 @@
+e=1: (A) channel-identity checks: 588, failures so far: 0
+e=1: (B) p=0: assembled 2732730, recorded 2732730, OK
+e=1: (B) p=1: assembled 2459457, recorded 2459457, OK
+e=1: (B) p=2: assembled 1639638, recorded 1639638, OK
+e=2: (A) channel-identity checks: 588, failures so far: 0
+e=2: (B) p=0: assembled 2732730, recorded 2732730, OK
+e=2: (B) p=1: assembled 2459457, recorded 2459457, OK
+e=2: (B) p=2: assembled 1639638, recorded 1639638, OK
+TOTAL FAILURES: 0
