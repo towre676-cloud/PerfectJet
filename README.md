@@ -2,7 +2,7 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 710 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 724 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
 
 The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the existing 29 Math Lab tools and published 0.20.0 release identity retain their own scope.
 
@@ -17,6 +17,10 @@ The [mathematical follow-up](research/p521_math/README.md) establishes sharp rec
 The separate DELL laboratory reconstructs the published Koroteev–Shakirov current, proves a six-function first-shell normalizer classification, proves global finite-order rational identities in both elliptic nomes, and classifies why a common particlewise elliptic momentum replacement cannot preserve unchanged Ruijsenaars coordinate weights. A 21-function second-order normalizer calculation and independent exact classical and quantum compilers retain their explicit scopes. These are scoped results about a specified model and ansatz; general self-dual DELL and an exceptional E8 construction remain open. Claude's weight-five and weight-six kernel programme is unaffected.
 
 Run `python -m perfectjet dell --exhaustive`, open the `dell` Math Lab card, or independently regenerate the [retained certificates](results/dell/validation.json) with `python scripts/verify_dell.py --check`. The [research account](docs/DELL_RESEARCH.md), [normalizer proof](docs/DELL_NORMALIZATION.md), [profile obstruction](docs/DELL_OBSTRUCTIONS.md), and [formal independence argument](docs/DELL_STRUCTURE.md) separate symbolic theorems, imported constructions and finite parameter checks. All 640 earlier equation records and all earlier E8 certificates remain intact; PJ-D001–PJ-D035 are appended.
+
+## Asterion primitives: explicit E8 arc-kernel generators through weight six
+
+Run `python -m perfectjet asterion primitives` (stored certificates replayed) or add `--exhaustive` to repeat every search. An exact Frenkel–Kac lattice criterion certifies affine null lifts. The [primitive-generator report](docs/ASTERION_PRIMITIVES.md) gives the weight-five primitives in closed form, P₂₄₈=20u^[0]B(x,z)−21u^[0]B(y,y)−12u^[1]B(x,y), and a 112-term P₁₄₇₂₅₀. It also gives the forced weight-six V₃₀₃₈₀ primitive, the Li-bigraded weight-six kernel, the minimal differential generators through weight six and the decision F₀ ≡ (91/155)·Σ_a x_(tᵃ)^[0]P₂₄₈^(t_a) modulo the arc ideal. 14 PJ-P records follow the 710 earlier equation records unchanged. Weight seven and any all-weight presentation remain open.
 
 ## Asterion next push: higher kernels, elliptic compatibility and monodromy
 

@@ -1343,6 +1343,27 @@ Baseline ledger SHA256: `3f9c3a93fc5b4bd99b351f7d2fd964186bb099b771fd4303a1cc3e8
 
 **Next closure:** Preserve the exact nome convention and classical finite-series adapter; construct a map of differential systems for any KZ-period comparison.
 
+## 7. Weight-six generator closure (post-v0.19 update)
+
+The receipt `results/asterion-frontiers/primitives.json` and
+[ASTERION_PRIMITIVES.md](ASTERION_PRIMITIVES.md) close the next-closure items
+recorded for AST-P018 through weight six. The preserved gate texts above are
+unchanged; the ledger records the new states inside each `frontier_update`
+field as `primitives_update`.
+
+| Gate | Closed item | Certificate |
+|---|---|---|
+| AST-P018 | Weight-five 248 and 147250 representatives, affine null lifts and nonmembership | lattice V_L null criterion; highest-vector and full-weight-space ranks |
+| AST-P018 | Exact Li2/Li3 allocation of K6 | product functionals on length four; total character; direct length-three sectors |
+| AST-P018 | Minimal differential generators through weight six | 3875 (w4); 248, 147250 (w5); 30380 (w6) |
+| AST-P018 | Individual gr image of F0 | zero; F0=c·x^[0]-contraction of P₂₄₈ modulo the ideal |
+| AST-P019 | First syzygies through weight six | g[0]F_Q=0 and x^[0]DF_Q=−x^[1]F_Q, replayed as dual-functional values 63 and −63 |
+| AST-P020 | Explicit primitive modules for grade transport | P₂₄₈, P₁₄₇₂₅₀ and P₃₀₃₈₀ in Chevalley coordinates; Jordan transport not attempted |
+
+Still open: the weight-seven length-four Li-degree-three character and
+kernel; the weight-seven length-three sectors of types 248 and 1; the complete syzygy module; and any all-weight or finite-generation
+theorem.
+
 ## Change control
 
 Proposed additions and status changes are prepared separately in [asterion_frontier_ledger_proposals.json](asterion_frontier_ledger_proposals.json). They must cite frozen numerical receipts before merger. The preserved 64-gate snapshot remains a historical baseline even when the main ledger later adopts a narrower completed theorem or a new gate.

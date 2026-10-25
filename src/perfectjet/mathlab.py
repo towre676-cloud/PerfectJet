@@ -145,10 +145,10 @@ def evaluate(request):
         from .asterion import evaluate as asterion_evaluate
         request = dict(p)
         request.setdefault('operation','jacobi')
-        if request['operation'] not in ('frontiers','kernel-characters','kernel-tower','quartic','elliptic','monodromy','monodromy-algebra','jacobi'):
+        if request['operation'] not in ('frontiers','kernel-characters','kernel-tower','quartic','elliptic','monodromy','monodromy-algebra','jacobi','primitives'):
             raise ValueError('select an Asterion frontier operation')
         result = asterion_evaluate(request)
-        return _out(lab, 'Higher jet relations, elliptic compatibility and the five-channel monodromy group have independent exact certificates.', [('Finite directions',248),('Transport channels',5),('Lattice rank',8)],result,[f'PJ-X{i:03d}' for i in range(1,49)],scope='Topological group closure, analytic identities and finite kernel weights have distinct proof dependencies. The full infinite arc kernel and quantum elliptic presentation retain explicit acceptance gates.')
+        return _out(lab, 'Higher jet relations, elliptic compatibility and the five-channel monodromy group have independent exact certificates.', [('Finite directions',248),('Transport channels',5),('Lattice rank',8)],result,[f'PJ-X{i:03d}' for i in range(1,49)]+[f'PJ-P{i:03d}' for i in range(1,15)],scope='Topological group closure, analytic identities and finite kernel weights have distinct proof dependencies. The full infinite arc kernel and quantum elliptic presentation retain explicit acceptance gates.')
     if lab == 'dell':
         from .dell import evaluate as dell_evaluate
         result = dell_evaluate(p)

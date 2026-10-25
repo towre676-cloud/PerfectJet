@@ -33,7 +33,8 @@ class ResearchFrontierCatalogueTests(unittest.TestCase):
         indexed = {r['id']: r for r in cat['equations']}
         self.assertEqual(len(LABS), 29)
         self.assertEqual(len(cat['families']), 27)
-        for row in canonical['equations'][675:]:
+        # Research-frontier and half-braid records; the later PJ-P block is callable from the Asterion labs.
+        for row in canonical['equations'][675:710]:
             self.assertEqual(indexed[row['id']]['equation'], row['equation'])
             self.assertIn(row['id'], power['assignments'])
             self.assertEqual(indexed[row['id']]['callable_labs'], [])

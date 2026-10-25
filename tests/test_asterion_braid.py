@@ -67,12 +67,12 @@ class HalfBraidTests(unittest.TestCase):
         source=json.loads((root/'data/equations.json').read_text())['equations']
         extension=json.loads((root/'data/asterion_braid_equations.json').read_text())
         prefix=extension['preserved_prefix']
-        self.assertEqual(len(source),710)
-        self.assertEqual(source[698:],extension['equations'])
+        self.assertGreaterEqual(len(source),710)
+        self.assertEqual(source[698:710],extension['equations'])
         raw=json.dumps(source[:698],sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()
         self.assertEqual(hashlib.sha256(raw).hexdigest(),prefix['sha256_of_canonical_records'])
-        self.assertEqual(len({r['id'] for r in source}),710)
-        self.assertEqual([r['id'] for r in source[698:]],[f'PJ-HB{i:03d}' for i in range(1,13)])
+        self.assertEqual(len({r['id'] for r in source}),len(source))
+        self.assertEqual([r['id'] for r in source[698:710]],[f'PJ-HB{i:03d}' for i in range(1,13)])
 
     def test_fresh_rigorous_analytic_replay_and_negative_control(self):
         r=analytic_replay()

@@ -323,11 +323,12 @@ def evaluate(params):
         "monodromy": {"operation", "exhaustive"},
         "monodromy-algebra": {"operation", "exhaustive"},
         "jacobi": {"operation", "exhaustive", "max_degree"},
+        "primitives": {"operation", "exhaustive"},
     }
     if operation not in allowed or set(params) - allowed[operation]:
         raise ValueError("unknown Asterion operation or unsupported parameter")
     if operation in ("frontiers", "kernel-characters", "kernel-tower", "quartic", "elliptic",
-                     "monodromy", "monodromy-algebra", "jacobi"):
+                     "monodromy", "monodromy-algebra", "jacobi", "primitives"):
         from .asterion_frontiers import frontier_component_report, frontiers_report
         options = {"exhaustive":params.get("exhaustive",False),
                    "max_degree":params.get("max_degree",4)}
@@ -393,7 +394,7 @@ def main(argv=None):
     parser.add_argument("operation", nargs="?", default="overview",
                         choices=("overview", "report", "bracket", "convert", "benchmark", "compile", "deformations",
                                  "extension", "boundary", "currents", "kz", "relations", "higher", "rigidity", "periods", "discoveries",
-                                 "frontiers", "kernel-characters", "kernel-tower", "quartic", "elliptic", "monodromy", "monodromy-algebra", "jacobi"))
+                                 "frontiers", "kernel-characters", "kernel-tower", "quartic", "elliptic", "monodromy", "monodromy-algebra", "jacobi", "primitives"))
     parser.add_argument("--chart", choices=("e8", "principal", "jordan"), default="e8")
     parser.add_argument("--left", help="JSON basis index or coordinate label")
     parser.add_argument("--right", help="JSON basis index or coordinate label")
@@ -432,7 +433,7 @@ def main(argv=None):
         params["max_degree"] = args.max_degree if args.max_degree is not None else 12
     elif args.operation in ("frontiers", "jacobi"):
         params.update(exhaustive=args.exhaustive,max_degree=args.max_degree if args.max_degree is not None else 4)
-    elif args.operation in ("kernel-characters", "kernel-tower", "quartic", "elliptic", "monodromy", "monodromy-algebra"):
+    elif args.operation in ("kernel-characters", "kernel-tower", "quartic", "elliptic", "monodromy", "monodromy-algebra", "primitives"):
         params["exhaustive"] = args.exhaustive
     elif args.operation in ("boundary", "kz", "relations", "higher", "rigidity"):
         params["exhaustive"] = args.exhaustive

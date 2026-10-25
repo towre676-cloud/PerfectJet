@@ -3,7 +3,7 @@ from __future__ import annotations
 
 
 FRONTIER_COMPONENTS = ("kernel-characters", "kernel-tower", "quartic", "elliptic",
-                       "monodromy", "monodromy-algebra", "jacobi")
+                       "monodromy", "monodromy-algebra", "jacobi", "primitives")
 
 
 def _options(exhaustive, max_degree):
@@ -33,6 +33,9 @@ def frontier_component_report(component, *, exhaustive=False, max_degree=4):
     elif component == "monodromy-algebra":
         from .asterion_monodromy_algebra import monodromy_algebra_receipt
         result = monodromy_algebra_receipt(exhaustive=exhaustive)
+    elif component == "primitives":
+        from .asterion_primitives import primitives_receipt
+        result = primitives_receipt(exhaustive=exhaustive)
     elif component == "jacobi":
         from .asterion_jacobi import jacobi_receipt
         result = jacobi_receipt(max_degree,exhaustive=exhaustive)
@@ -45,7 +48,7 @@ def frontier_component_report(component, *, exhaustive=False, max_degree=4):
 
 
 def frontiers_report(*, exhaustive=False, max_degree=4):
-    """Replay all seven components with separate declared closure scopes."""
+    """Replay all eight components with separate declared closure scopes."""
     _options(exhaustive,max_degree)
     from .asterion import source_digests
     reports = {name:frontier_component_report(name,exhaustive=exhaustive,max_degree=max_degree)
@@ -73,9 +76,11 @@ def frontiers_report(*, exhaustive=False, max_degree=4):
                "exact_arc_character":dict(sorted(arc6.items())),
                "higher_length_vanishing":"length5 at weight6 has four zero jets; length6 has six. All vanish because every zero-jet cubic vanishes.",
                "proof":"Complete lengths1,2,3 plus the independently classified length4 multiplication kernel; finite E8 character subtraction across the surjective arc map.",
-               "full_Li_bigraded_kernel_embedding_computed":False,
-               "complete_minimal_differential_generator_list_computed":False,
-               "explicit_new_primitive_affine_null_lifts_computed":False}
+               "full_Li_bigraded_kernel_embedding_computed":reports["primitives"]["gates"]["li_bigraded_kernel_through_weight_six"],
+               "complete_minimal_differential_generator_list_computed":reports["primitives"]["gates"]["minimal_differential_generators_through_weight_six"],
+               "explicit_new_primitive_affine_null_lifts_computed":reports["primitives"]["gates"]["weight_five_affine_null_lifts_certified"],
+               "li_bigraded_kernel":reports["primitives"]["li_bigraded_kernel_through_weight_six"],
+               "minimal_generators":reports["primitives"]["minimal_generators_through_weight_six"]}
     if not finite6["passed"]:
         raise ArithmeticError("the combined exact weight-six character closure failed")
     return {"schema":"perfectjet/asterion-frontiers/1","passed":True,
@@ -85,7 +90,7 @@ def frontiers_report(*, exhaustive=False, max_degree=4):
             "claim_scope":"Exact receipts and proofs in the accompanying monographs; worldwide priority is unverified.",
             "remaining_programme":[
                 "Complete all-weight arc kernel and minimal differential/vertex-Poisson presentation",
-                "Explicit primitive relation lifts beyond the certified first weight-four vector",
+                "Kernel generators and syzygies beyond weight six (weight-seven/eight length-four sectors and an all-weight argument)",
                 "All-order quantum elliptic E8 R-matrix with an implemented quantum dynamical identity",
                 "An explicit flat KZB connection and a certified map from the existing KZ local system",
                 "Discrete monodromy image presentation, faithfulness and quantitative word approximation",

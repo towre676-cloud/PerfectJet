@@ -1587,6 +1587,229 @@
       ],
       "claim_boundary": "This is an exact quartic-sector theorem and complete conformal-weight-six finite E8 character/dimension calculation, obtained from witnessed multiplication blocks, the positive-form Casimir cutoff and independently reconstructed characters. It does not compute the full Li-bigraded kernel embedding, a minimal differential generator list, explicit new primitive affine null lifts, or the infinite kernel. The explicitF0 VOA image remains open.",
       "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D049",
+      "title": "Exact lattice null criterion for the level-one E8 vacuum module",
+      "claim": {
+        "map": "h_i->h_i(-1)|0>, e_alpha->sign(ht alpha)e^alpha",
+        "ordered_pairs_checked": 61504,
+        "weight_four_lift_image_terms": 0,
+        "Sym_F_Q_alone_image_terms": 44
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/primitives.json#/lattice_realization",
+        "results/asterion-frontiers/primitives.json#/weight_four_lift_replay",
+        "src/perfectjet/asterion_primitives.py#primitives_receipt",
+        "docs/ASTERION_PRIMITIVES.md"
+      ],
+      "dependencies": [
+        "AST-D037"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "A finite exact realization check; the Frenkel-Kac identification and Borcherds formula are classical inputs.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D050",
+      "title": "Explicit weight-five 248 and 147250 primitive generators with null lifts",
+      "claim": {
+        "P_248": "20 u[0]B(x,z)-21 u[0]B(y,y)-12 u[1]B(x,y)",
+        "P_248_lift_correction": "-4 K(0,3)-87 K(1,2)+614 u[4]",
+        "P_248_terms": 763,
+        "P_147250": "2H002-3H011",
+        "P_147250_terms": 112,
+        "kernel_multiplicities": {
+          "w5-248": 1,
+          "w5-3875": 1,
+          "w5-147250": 1
+        },
+        "full_weight_space_nonmembership": {
+          "w5-248": true,
+          "w5-147250": true
+        }
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/primitives.json#/sectors/w5-248",
+        "results/asterion-frontiers/primitives.json#/sectors/w5-147250",
+        "results/asterion-frontiers/primitives.json#/closed_forms",
+        "results/asterion-frontiers/primitives.json#/full_weight_space_nonmembership",
+        "src/perfectjet/asterion_primitives.py#primitives_receipt",
+        "docs/ASTERION_PRIMITIVES.md"
+      ],
+      "dependencies": [
+        "AST-D037",
+        "AST-D038"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "Finite weight-five certificates; primitive refers to the commutative differential ideal of the arc algebra.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D051",
+      "title": "Explicit forced weight-six V30380 primitive",
+      "claim": {
+        "P_30380": "6A003+2A012+12A021+10A102+2B012-(5/6)B111",
+        "terms": 825,
+        "lift_correction_terms": 0,
+        "arc_multiplicity": 3,
+        "kernel_multiplicity": 1
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/primitives.json#/sectors/w6-30380",
+        "results/asterion-frontiers/primitives.json#/closed_forms",
+        "src/perfectjet/asterion_primitives.py#primitives_receipt",
+        "docs/ASTERION_PRIMITIVES.md"
+      ],
+      "dependencies": [
+        "AST-D048"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "A finite weight-six certificate; the contraction-tensor expression is verified exactly against the searched vector.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D052",
+      "title": "The invariant quartic F0 is the contraction of the weight-five 248 primitive",
+      "claim": {
+        "kappa": 6510,
+        "c": "91/155",
+        "T0_ideal_annihilation_evaluations": 123256,
+        "length_four_3875_values": [
+          63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "length_four_3875_syzygy_values": [
+          -63,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/primitives.json#/length_four_singlet",
+        "results/asterion-frontiers/primitives.json#/length_four_3875",
+        "src/perfectjet/asterion_primitives.py#primitives_receipt",
+        "docs/ASTERION_PRIMITIVES.md"
+      ],
+      "dependencies": [
+        "AST-D047",
+        "AST-D048"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "F0 has zero associated-graded image; both length-four summands are products of lower kernel classes.",
+      "priority_claim": "No worldwide novelty claim is made."
+    },
+    {
+      "id": "AST-D053",
+      "title": "Li-bigraded weight-six kernel and minimal differential generators through weight six",
+      "claim": {
+        "li_bigraded": {
+          "proof": "Length<=2 sectors inject (retained affine Gram blocks). A6 length-4=1+3875 is spanned by nonzero products of kernel classes (T0 and the weight -lambda dual functional), so it lies in K. The exact total K6 character then forces the length-3 part, including multiplicity 0 for the singlet; the direct 248, 3875, 30380 and 147250 sector computations confirm the other length-3 multiplicities.",
+          "weight_4": {
+            "li_1_length_3": {
+              "3875": 1
+            }
+          },
+          "weight_5": {
+            "li_2_length_3": {
+              "147250": 1,
+              "248": 1,
+              "3875": 1
+            },
+            "li_3_length_2": {},
+            "li_4_length_1": {}
+          },
+          "weight_6": {
+            "li_2_length_4": {
+              "1": 1,
+              "3875": 1
+            },
+            "li_3_length_3": {
+              "147250": 1,
+              "248": 1,
+              "30380": 1,
+              "3875": 1
+            },
+            "li_4_length_2": {},
+            "li_5_length_1": {}
+          }
+        },
+        "generators": [
+          {
+            "conformal_weight": 4,
+            "current_length": 3,
+            "generator": "F_Q (783 terms, retained weight-four certificate)",
+            "li_degree": 1,
+            "module": "3875",
+            "new": true
+          },
+          {
+            "conformal_weight": 5,
+            "current_length": 3,
+            "generator": "P_248",
+            "kernel_multiplicity": 1,
+            "li_degree": 2,
+            "module": "248",
+            "new": true
+          },
+          {
+            "conformal_weight": 5,
+            "current_length": 3,
+            "generator": "P_147250",
+            "kernel_multiplicity": 1,
+            "li_degree": 2,
+            "module": "147250",
+            "new": true
+          },
+          {
+            "conformal_weight": 6,
+            "current_length": 3,
+            "generator": "P_30380",
+            "kernel_multiplicity": 1,
+            "li_degree": 3,
+            "module": "30380",
+            "new": true
+          }
+        ]
+      },
+      "evidence_status": "computed_certificate",
+      "evidence": [
+        "results/asterion-frontiers/primitives.json#/li_bigraded_kernel_through_weight_six",
+        "results/asterion-frontiers/primitives.json#/minimal_generators_through_weight_six",
+        "src/perfectjet/asterion_primitives.py#primitives_receipt",
+        "docs/ASTERION_PRIMITIVES.md"
+      ],
+      "dependencies": [
+        "AST-D048"
+      ],
+      "source_ids": [
+        "AST-S007"
+      ],
+      "claim_boundary": "Complete through conformal weight six for the commutative differential ideal; no all-weight presentation, finite generation or vertex-Poisson statement.",
+      "priority_claim": "No worldwide novelty claim is made."
     }
   ],
   "programme": [
@@ -2035,7 +2258,21 @@
           "Continue complete finite-kernel characters at weight7; full generation still requires an all-weight proof."
         ],
         "remaining_claim_boundary": "Complete finite characters through weight6 do not provide explicit kernel embeddings or an infinite differential presentation.",
-        "original_record_and_acceptance_criteria_preserved": true
+        "original_record_and_acceptance_criteria_preserved": true,
+        "primitives_update": {
+          "proposed_state": "weight6_kernel_li_bigraded_and_minimal_generators_explicit;weight7_classification_target",
+          "additional_evidence": [
+            "AST-D050",
+            "AST-D051",
+            "AST-D053"
+          ],
+          "next_acceptance_criteria": [
+            "Classify the weight-seven length-four Li-degree-three arc character and its kernel.",
+            "Complete the remaining weight-seven length-three sectors (248 and the singlet).",
+            "Seek an all-weight argument before any finite-generation claim."
+          ],
+          "source": "docs/ASTERION_PRIMITIVES.md"
+        }
       }
     },
     {
@@ -2072,7 +2309,19 @@
           "Give a complete range or a proved infinite presentation."
         ],
         "remaining_claim_boundary": "An all-order family of syzygies need not generate every syzygy.",
-        "original_record_and_acceptance_criteria_preserved": true
+        "original_record_and_acceptance_criteria_preserved": true,
+        "primitives_update": {
+          "proposed_state": "first_syzygies_through_weight6_recorded;complete_syzygy_module_target",
+          "additional_evidence": [
+            "AST-D052",
+            "AST-D053"
+          ],
+          "next_acceptance_criteria": [
+            "Compute the kernel of g[0]K5+g[1]K4 -> A6 length4 explicitly.",
+            "Extend syzygies to weight seven with normal-form certificates."
+          ],
+          "source": "docs/ASTERION_PRIMITIVES.md"
+        }
       }
     },
     {
@@ -2113,7 +2362,18 @@
           "Compute further grade modules without extrapolating uniformity fromV3875."
         ],
         "remaining_claim_boundary": "Representation-identification and twining determine exact grade populations; new primitive coefficient vectors are not yet transported into Jordan coordinates.",
-        "original_record_and_acceptance_criteria_preserved": true
+        "original_record_and_acceptance_criteria_preserved": true,
+        "primitives_update": {
+          "proposed_state": "weight6_primitive_modules_explicit;Jordan_transport_of_new_vectors_target",
+          "additional_evidence": [
+            "AST-D050",
+            "AST-D051"
+          ],
+          "next_acceptance_criteria": [
+            "Transport P_248, P_147250 and P_30380 into Jordan coordinates if coordinate formulas are claimed."
+          ],
+          "source": "docs/ASTERION_PRIMITIVES.md"
+        }
       }
     },
     {

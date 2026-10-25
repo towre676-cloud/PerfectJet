@@ -4,7 +4,7 @@
   "base_through": "PJ-E417",
   "generated_from": "data/equations.json",
   "canonicalisation": "sha256 of json.dumps(record, sort_keys=True, ensure_ascii=False, separators=(',', ':')) encoded as UTF-8, as used by scripts/build_corpus.py for the base contract",
-  "count": 293,
+  "count": 307,
   "sha256_of_canonical_records": {
     "PJ-E418": "19f249938274bb7929f758db75e25e7605f860ff26f20f753c17e94fcefc5388",
     "PJ-E419": "29b1f0bb0f43e556a18e5daf1c7b4aa36d8e47ed1cf7a1e4a65e0936cec47356",
@@ -298,6 +298,20 @@
     "PJ-HB009": "83869f9fe0469310e625978b0981ae259add1606c1c3c61ecd22b898c1120ed2",
     "PJ-HB010": "a1f6ea6587d56c5885e3828468d026e43f064730514cd1241671cdb28131ffe7",
     "PJ-HB011": "bafe471301283295cd45a8f22c7b6055699911ff7c40024f2c338e0c5a257dbf",
-    "PJ-HB012": "d0f3f897dab3c815d6d0adfbce589563045d3c9c93d28043d209c1b6a44779e8"
+    "PJ-HB012": "d0f3f897dab3c815d6d0adfbce589563045d3c9c93d28043d209c1b6a44779e8",
+    "PJ-P001": "a44eba4a64914c5e48bc2e7b9356fb802e3789530d3ec18fc645d1b1fa0f253a",
+    "PJ-P002": "a36273641a29da8608f9392e41ce47418b7024007a6e5acb69be746057c40703",
+    "PJ-P003": "869bfaf224ca25f8b40c7cf71d861e12115761f0b5aa3226d872ea1df9e0d50b",
+    "PJ-P004": "dcbf32f3d61072a29a930d36a160d17ebfc900a9e15180c5e69f944bd9dec0b2",
+    "PJ-P005": "404e24667341f9e09b9821c5c559ab1c5d8eb3f0a62c10713f356a8f2fd80e37",
+    "PJ-P006": "93659947e530cc0e6c51713733552e6f3beb4cc8aa544e71ea2eef86f623a0d4",
+    "PJ-P007": "5e9c4a888264b29d8353ed5ed48237933c7c5cee486b02b5f915ed6814246f2b",
+    "PJ-P008": "4a2c0757c451c7d0e76a4bdfc636b27d274f2a86e0aeac73a73fa7a9b3d0e8d7",
+    "PJ-P009": "c2712e30bed788492cbec2c7ab2e3fd1adb0bee546819031bc0e894b66dc8dd2",
+    "PJ-P010": "23c24b32d88224d6a3f268f3ade8ba5d859c52dadef47aa096353e8d9d765378",
+    "PJ-P011": "a2616aa55b24633b630677985bb259a4769e026a8d7a7c4a5abad1c28bddd16f",
+    "PJ-P012": "01904067af3ec0f2b494593f08c440981c7669667124872af00fbb1102ba3b1f",
+    "PJ-P013": "47a46d8d5c3282c6d7afbbe894e967da70400c15f096494c63233395eafe98a9",
+    "PJ-P014": "5945dd847562a5ea7f0b546eaaa845c5bd2a792f89199403ad058bb5e0d425f6"
   }
 }
