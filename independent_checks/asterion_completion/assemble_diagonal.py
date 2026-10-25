@@ -306,7 +306,7 @@ def main():
     # Default --repo is the repository root, when this script is run
     # from independent_checks/asterion_completion/ inside a checkout.
     ap.add_argument("--repo", type=Path,
-                    default=Path(__file__).resolve().parents[2])
+                    default=Path(__file__).resolve().parents[1])  # repository root
     args = ap.parse_args()
     e = args.e
     t0 = time.time()
