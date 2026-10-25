@@ -1,0 +1,240 @@
+{
+ "schema": "perfectjet-interval-analysis/1",
+ "part_A_repo_verification": {
+  "exponents": [
+   1,
+   7,
+   11,
+   13,
+   17,
+   19,
+   23,
+   29
+  ],
+  "block_dimensions": {
+   "1": 3,
+   "7": 15,
+   "11": 23,
+   "13": 27,
+   "17": 35,
+   "19": 39,
+   "23": 47,
+   "29": 59
+  },
+  "dim_g0": 248,
+  "dim_sl2_block": 3,
+  "dim_nilradical": 245,
+  "coupling_channel_count": 170,
+  "leading_channel_count": 16,
+  "leading_triples": [
+   [
+    1,
+    1,
+    1
+   ],
+   [
+    1,
+    7,
+    7
+   ],
+   [
+    1,
+    11,
+    11
+   ],
+   [
+    1,
+    13,
+    13
+   ],
+   [
+    1,
+    17,
+    17
+   ],
+   [
+    1,
+    19,
+    19
+   ],
+   [
+    1,
+    23,
+    23
+   ],
+   [
+    1,
+    29,
+    29
+   ],
+   [
+    7,
+    7,
+    13
+   ],
+   [
+    7,
+    11,
+    17
+   ],
+   [
+    7,
+    13,
+    19
+   ],
+   [
+    7,
+    17,
+    23
+   ],
+   [
+    7,
+    23,
+    29
+   ],
+   [
+    11,
+    13,
+    23
+   ],
+   [
+    11,
+    19,
+    29
+   ],
+   [
+    13,
+    17,
+    29
+   ]
+  ],
+  "channels_mm_to_1_at_boundary": [],
+  "valuation_of_mm1_channels": {
+   "1": 0,
+   "7": 12,
+   "11": 20,
+   "13": 24,
+   "17": 32,
+   "19": 36,
+   "23": 44,
+   "29": 56
+  },
+  "nonprincipal_self_brackets_at_boundary": [
+   [
+    7,
+    7,
+    13
+   ]
+  ],
+  "nn_bracket_output_spins": [
+   13,
+   17,
+   19,
+   23,
+   29
+  ],
+  "abelianization_spins": [
+   7,
+   11
+  ],
+  "abelianization_dimension": 38,
+  "quadratic_completion_bound_248_3": {
+   "embedded_dimension": 248,
+   "maximum_restricted_invariant_form_rank": 3,
+   "minimum_restricted_radical_dimension": 245,
+   "unrestricted_quadratic_completion_lower_bound": 493,
+   "canonical_cotangent_upper_bound": 496,
+   "isotropic_embedding_lower_bound": 496,
+   "isotropic_minimum_achieved_by_cotangent": true,
+   "unrestricted_minimum_attained_known": false,
+   "proof": "If R is the radical of the restricted form on g, r maps to (d+g -> B(r,d)) in (D/g)*. This is well-defined because B(r,g)=0 and injective because B is nondegenerate on D. Thus dim(D/g)>=dim R>=dim g-rank(B|g). For an isotropic embedding R=g, giving dim D>=2dim g."
+  },
+  "checks": {
+   "dim_g0_is_248": true,
+   "dim_nilradical_is_245": true,
+   "no_mm_to_1_channel_at_boundary": true,
+   "all_mm1_valuations_positive_for_m_gt_1": true,
+   "lower_bound_is_493": true,
+   "cotangent_upper_bound_is_496": true,
+   "abelianization_matches_repo_38": true
+  }
+ },
+ "part_B_equivariant_system_size": {
+  "lam2_n_dimension_check": 29890,
+  "lam3_n_dimension_check": 2421090,
+  "by_e": {
+   "0": {
+    "dim_D": 493,
+    "dim_W": 245,
+    "B_parameters": {
+     "c_on_sl2_block": 1,
+     "A_block_scalars_a_m_nonzero": 7,
+     "S_scalars_on_irreducible_blocks": 7,
+     "S_on_trivial_block_symmetric": 0
+    },
+    "omega2_free_singlet_parameters": 162,
+    "omega3_free_singlet_parameters": 68,
+    "jacobi_singlet_components_upper_bounds": {
+     "inputs_g_g_W_paired_with_W_linear_in_omega2": 22688,
+     "inputs_g_g_W": 45789,
+     "inputs_g_W_W": 44897,
+     "inputs_W_W_W": 14449
+    }
+   },
+   "1": {
+    "dim_D": 494,
+    "dim_W": 246,
+    "B_parameters": {
+     "c_on_sl2_block": 1,
+     "A_block_scalars_a_m_nonzero": 7,
+     "S_scalars_on_irreducible_blocks": 7,
+     "S_on_trivial_block_symmetric": 1
+    },
+    "omega2_free_singlet_parameters": 169,
+    "omega3_free_singlet_parameters": 68,
+    "jacobi_singlet_components_upper_bounds": {
+     "inputs_g_g_W_paired_with_W_linear_in_omega2": 23012,
+     "inputs_g_g_W": 46283,
+     "inputs_g_W_W": 45623,
+     "inputs_W_W_W": 14834
+    }
+   },
+   "2": {
+    "dim_D": 495,
+    "dim_W": 247,
+    "B_parameters": {
+     "c_on_sl2_block": 1,
+     "A_block_scalars_a_m_nonzero": 7,
+     "S_scalars_on_irreducible_blocks": 7,
+     "S_on_trivial_block_symmetric": 3
+    },
+    "omega2_free_singlet_parameters": 176,
+    "omega3_free_singlet_parameters": 68,
+    "jacobi_singlet_components_upper_bounds": {
+     "inputs_g_g_W_paired_with_W_linear_in_omega2": 23336,
+     "inputs_g_g_W": 46777,
+     "inputs_g_W_W": 46378,
+     "inputs_W_W_W": 15233
+    }
+   }
+  },
+  "note": "Counts are dimensions of sl2-singlet (equivariant) parameter and component spaces over Q. omega2/omega3 are the only free parts of the invariant 3-form omega in the equivariant normal form; Jacobi is a system of quadratic equations in them whose s-invariant scalar components number at most the tabulated bounds. Gauge freedom (per-block rescalings of W and GL(e) on the trivial block) can normalise c and the seven a_m."
+ },
+ "part_C_finite_field_mechanism": {
+  "field": "F_101",
+  "analogue": "h = sl2 semidirect V (V = Sym^6, abelian, dim 7); dim h = 10",
+  "form_matrix_rank_on_D_dim17": 17,
+  "restricted_form_rank_on_h": 3,
+  "restricted_radical_dimension": 7,
+  "phi_rank_V_to_dual_of_D_over_h": 7,
+  "analogue_lower_bound": 17,
+  "dim_D": 17,
+  "checks": {
+   "form_nondegenerate": true,
+   "radical_is_V_dim7": true,
+   "phi_injective": true,
+   "bound_attained_at_form_level": true
+  },
+  "scope": "Form-level mechanism only: nondegeneracy, radical and injectivity of phi are checked; no Lie bracket on the 17-dimensional space is constructed or claimed."
+ }
+}

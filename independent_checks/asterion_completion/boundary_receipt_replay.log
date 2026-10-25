@@ -1,0 +1,4 @@
+passed True elapsed 10.755101680755615
+cotangent 496 496 61504
+bounds {'embedded_dimension': 248, 'maximum_restricted_invariant_form_rank': 3, 'minimum_restricted_radical_dimension': 245, 'unrestricted_quadratic_completion_lower_bound': 493, 'canonical_cotangent_upper_bound': 496, 'isotropic_embedding_lower_bound': 496, 'isotropic_minimum_achieved_by_cotangent': True, 'unrestricted_minimum_attained_known': False, 'proof': 'If R is the radical of the restricted form on g, r maps to (d+g -> B(r,d)) in (D/g)*. This is well-defined because B(r,g)=0 and injective because B is nondegenerate on D. Thus dim(D/g)>=dim R>=dim g-rank(B|g). For an isotropic embedding R=g, giving dim D>=2dim g.'}
+structure dims 245 [{'spins': [7, 11, 13, 17, 19, 23, 29], 'dimension': 245}, {'spins': [13, 17, 19, 23, 29], 'dimension': 207}, {'spins': [19, 23, 29], 'dimension': 145}, {'spins': [29], 'dimension': 59}, {'spins': [], 'dimension': 0}] 59 True 0
