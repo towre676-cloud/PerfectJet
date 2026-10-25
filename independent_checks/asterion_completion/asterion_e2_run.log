@@ -1,0 +1,45 @@
+=== e = 2 (dimension 495) ===
+repo: /home/hatch/workspace/research/PerfectJet
+channels: omega2=176 (mixed 14), S=10, unknowns=186
+stage: checks
+  check e: 2
+  check omega2_channel_count: 176
+  check mixed_channel_count: 14
+  check s_param_count: 10
+  check total_unknowns: 186
+  check pr7_total_with_omega3: 254
+  check jacobi_channel_components_total: 23336
+  check jacobi_channel_components_affine: 22131
+  check jacobi_channel_components_diagonal_quadratic: 1205
+  check affine_sector_count: 2239
+  check diagonal_sector_count: 49
+  check beta_invariance_failures: 0
+  check repo_bracket_mismatches: 0
+  check repo_bracket_pairs_tested: 3744
+  check g0_jacobi_failures: 0
+  check omega2_channel_invariance_failures: 0
+  check omega2_channel_invariance_tests: 338
+  check paired_g0_nonzero_instances: 0
+  check triv_bracket_support_failures: 0
+stage: numeric cross-check of F (pairing-verified brackets)
+  numeric cross-check: {'tuples': 24, 'failures': 0, 'diagonal_tuples_skipped': 0}
+stage: quadratic evidence in diagonal sector (7,7,7,7)
+  quadratic evidence: {'applicable': True, 'found': True, 'sector': [7, 7, 7, 7], 'tuple': [12, 8, 6, 2], 'channel': [7, [7, 0], [0, 0]], 'F_at_p0_p1_p2': ['2732730', '2459457', '1639638'], 'second_difference': '-546546', 'trials': 3}
+stage: sector extraction (affine sectors only)
+  ... 250 sectors, 670 rows, 2s
+  ... 500 sectors, 2081 rows, 13s
+  ... 750 sectors, 4397 rows, 36s
+  ... 1250 sectors, 9393 rows, 102s
+  ... 1500 sectors, 12626 rows, 157s
+  ... 1750 sectors, 15804 rows, 238s
+  ... 2000 sectors, 18803 rows, 310s
+  ... 2250 sectors, 21834 rows, 400s
+  assembled 22131 affine equations (2239 affine sectors; 49 diagonal sectors deferred) in 406.7s
+  affine rows: 12677 identically zero, 0 constant-only nonzero
+  system written to asterion_e2_system.json.gz
+stage: modular rank pass
+  mod 1000003: rank=170, consistent=True
+  mod 999983: rank=170, consistent=True
+stage: exact solve over Q (subsystem + verification loop)
+  CONSISTENT: rank=170, solution affine dimension 16 (verified against all 22131 rows)
+results written to asterion_e2_results.json; total 414.5s

@@ -1,0 +1,44 @@
+=== e = 1 (dimension 494) ===
+repo: /home/hatch/workspace/research/PerfectJet
+channels: omega2=169 (mixed 7), S=8, unknowns=177
+stage: checks
+  check e: 1
+  check omega2_channel_count: 169
+  check mixed_channel_count: 7
+  check s_param_count: 8
+  check total_unknowns: 177
+  check pr7_total_with_omega3: 245
+  check jacobi_channel_components_total: 23012
+  check jacobi_channel_components_affine: 21807
+  check jacobi_channel_components_diagonal_quadratic: 1205
+  check affine_sector_count: 1915
+  check diagonal_sector_count: 49
+  check beta_invariance_failures: 0
+  check repo_bracket_mismatches: 0
+  check repo_bracket_pairs_tested: 3744
+  check g0_jacobi_failures: 0
+  check omega2_channel_invariance_failures: 0
+  check omega2_channel_invariance_tests: 349
+  check paired_g0_nonzero_instances: 0
+  check triv_bracket_support_failures: 0
+stage: numeric cross-check of F (pairing-verified brackets)
+  numeric cross-check: {'tuples': 24, 'failures': 0, 'diagonal_tuples_skipped': 2}
+stage: quadratic evidence in diagonal sector (7,7,7,7)
+  quadratic evidence: {'applicable': True, 'found': True, 'sector': [7, 7, 7, 7], 'tuple': [12, 8, 6, 2], 'channel': [7, [7, 0], [0, 0]], 'F_at_p0_p1_p2': ['2732730', '2459457', '1639638'], 'second_difference': '-546546', 'trials': 2}
+stage: sector extraction (affine sectors only)
+  ... 250 sectors, 690 rows, 2s
+  ... 500 sectors, 2455 rows, 17s
+  ... 750 sectors, 4786 rows, 39s
+  ... 1000 sectors, 8147 rows, 86s
+  ... 1250 sectors, 11438 rows, 134s
+  ... 1500 sectors, 15053 rows, 208s
+  ... 1750 sectors, 18963 rows, 315s
+  assembled 21807 affine equations (1915 affine sectors; 49 diagonal sectors deferred) in 402.5s
+  affine rows: 12369 identically zero, 0 constant-only nonzero
+  system written to asterion_e1_system.json.gz
+stage: modular rank pass
+  mod 1000003: rank=165, consistent=True
+  mod 999983: rank=165, consistent=True
+stage: exact solve over Q (subsystem + verification loop)
+  CONSISTENT: rank=165, solution affine dimension 12 (verified against all 21807 rows)
+results written to asterion_e1_results.json; total 410.2s

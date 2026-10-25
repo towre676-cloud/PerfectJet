@@ -1,0 +1,35 @@
+e=1: loaded 21807 stored affine equations; outcome = consistent
+D. bookkeeping:
+   stored sectors that are diagonal: 0 (must be 0); diagonal sectors deferred: 49 with 1205 channel equations
+A. outcome check against all stored rows:
+   particular + 12 null vectors satisfy all 21807 rows: True (bad rows: 0)
+B. contraction verification of three sectors:
+   sector (11, 13, (11, 0), (17, 0)): 12003 weight tuples, channels [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
+   Gram off-diagonal sum (must be 0): 0; diagonal all nonzero: True
+   J=6: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=7: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=8: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=9: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=10: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=11: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=12: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=13: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=14: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=15: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=16: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=17: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=18: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=19: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=20: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=21: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=22: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   J=23: contraction const = 0, params = 2; stored const = 0, params = 2; match = True
+   J=24: contraction const = 0, params = 1; stored const = 0, params = 1; match = True
+   sector (1, 7, (7, 0), (0, 0)): 43 weight tuples, channels [7]
+   Gram off-diagonal sum (must be 0): 0; diagonal all nonzero: True
+   J=7: contraction const = 0, params = 0; stored const = 0, params = 0; match = True
+   sector (1, 13, (0, 0), (13, 0)): 79 weight tuples, channels [13]
+   Gram off-diagonal sum (must be 0): 0; diagonal all nonzero: True
+   J=13: contraction const = 0, params = 0; stored const = 0, params = 0; match = True
+C. global spot check on 285 random (sector, tuple) pairs: True
+ALL CHECKS PASSED
