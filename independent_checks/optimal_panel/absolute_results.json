@@ -1,0 +1,98 @@
+{
+  "system": "Arithmetic interferometer F_13 \u2014 absolute phases",
+  "fixture": "examples/observatory/interferometer.json",
+  "states": 2197,
+  "actions": [
+    "A",
+    "B"
+  ],
+  "negation_symmetry_violations": 0,
+  "translation_symmetry_violations": 0,
+  "full_group_orbits": 85,
+  "orbit_size_distribution": {
+    "13": 1,
+    "26": 84
+  },
+  "pairs_inter_orbit_corrected": 170352,
+  "pairs_intra_orbit_inseparable": 27378,
+  "sign_only_pair_set_diagnostic": {
+    "sign_only_pairs": 196638,
+    "removed_translation_equivalent_pairs": 26286,
+    "removed_pairs_that_can_ever_separate": 0
+  },
+  "intra_orbit_configs_that_can_separate": 0,
+  "d1_from_automaton_distribution": {
+    "1": 170352
+  },
+  "pairs_never_separable_inter_orbit": 0,
+  "max_word_len": 6,
+  "words_enumerated": 126,
+  "witness_count_per_pair_min": 126,
+  "witness_count_per_pair_max": 126,
+  "witness_count_per_pair_mean": 126.0,
+  "every_word_separates_every_pair": true,
+  "two_cheapest_per_pair_distribution": {
+    "2": 170352
+  },
+  "committed_pairs_depth1": {
+    "A": 0,
+    "B": 0
+  },
+  "lower_bound_disjoint_family": 0,
+  "lower_bound_single_pair": 2,
+  "greedy": {
+    "cost": 2,
+    "words": [
+      [
+        "A"
+      ],
+      [
+        "B"
+      ]
+    ],
+    "verified_2_robust": true
+  },
+  "exhaustive_search_cost_upto_5": {
+    "best_cost": 2,
+    "sets_examined": 158
+  },
+  "optimal_cost": 2,
+  "optimal_certified": true,
+  "sensitivity_by_word_length_cap": {
+    "0": {
+      "words": 0,
+      "optimal_cost": null
+    },
+    "1": {
+      "words": 2,
+      "optimal_cost": 2,
+      "greedy_cost": 2
+    },
+    "2": {
+      "words": 6,
+      "optimal_cost": 2,
+      "greedy_cost": 2
+    },
+    "3": {
+      "words": 14,
+      "optimal_cost": 2,
+      "greedy_cost": 2
+    },
+    "4": {
+      "words": 30,
+      "optimal_cost": 2,
+      "greedy_cost": 2
+    },
+    "5": {
+      "words": 62,
+      "optimal_cost": 2,
+      "greedy_cost": 2
+    },
+    "6": {
+      "words": 126,
+      "optimal_cost": 2,
+      "greedy_cost": 2
+    }
+  },
+  "seconds": 255.8
+}

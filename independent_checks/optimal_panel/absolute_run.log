@@ -1,0 +1,4 @@
+full-group orbits: 85; corrected pairs: 170352; sign-only pairs: 196638; t=0.1s
+automaton: 199928 configs; t=1.3s
+words <= 6: 126; t=3.0s
+absolute: OPTIMAL 2 | every word separates every pair: True | removed pairs that can separate: 0 | d1 dist: {'1': 170352}
