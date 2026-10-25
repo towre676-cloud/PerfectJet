@@ -1,0 +1,8 @@
+system: The branching laboratory
+pairs: 6; experiments (words len 1..3): 39
+witness counts per pair: [4, 13, 13, 13, 13, 4]; feasible: True
+optimal panel cost 10: [['route', 'inspect alpha'], ['route', 'inspect beta'], ['route', 'inspect alpha', 'route'], ['route', 'inspect beta', 'route']]
+optimal verified 2-robust: True; cheaper limits proved infeasible by exact search: {'5': 5, '6': 5, '7': 8, '8': 17, '9': 17}
+greedy panel cost 11: [['route'], ['route', 'inspect alpha'], ['route', 'inspect beta'], ['route', 'inspect alpha', 'route'], ['route', 'inspect beta', 'route']]
+all experiments cost: 102
+wrote observatory_panel.json

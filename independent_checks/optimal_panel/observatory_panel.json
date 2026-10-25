@@ -1,0 +1,525 @@
+{
+  "system": "The branching laboratory",
+  "fixture": "examples/observatory/branching-lab.json",
+  "initial_belief": [
+    "hidden:alpha:0",
+    "hidden:alpha:1",
+    "hidden:beta:0",
+    "hidden:beta:1"
+  ],
+  "pairs": [
+    [
+      "hidden:alpha:0",
+      "hidden:alpha:1"
+    ],
+    [
+      "hidden:alpha:0",
+      "hidden:beta:0"
+    ],
+    [
+      "hidden:alpha:0",
+      "hidden:beta:1"
+    ],
+    [
+      "hidden:alpha:1",
+      "hidden:beta:0"
+    ],
+    [
+      "hidden:alpha:1",
+      "hidden:beta:1"
+    ],
+    [
+      "hidden:beta:0",
+      "hidden:beta:1"
+    ]
+  ],
+  "word_lengths": [
+    1,
+    3
+  ],
+  "experiments_considered": 39,
+  "witness_counts_per_pair": [
+    4,
+    13,
+    13,
+    13,
+    13,
+    4
+  ],
+  "feasible": true,
+  "optimal_panel": {
+    "cost": 10,
+    "words": [
+      [
+        "route",
+        "inspect alpha"
+      ],
+      [
+        "route",
+        "inspect beta"
+      ],
+      [
+        "route",
+        "inspect alpha",
+        "route"
+      ],
+      [
+        "route",
+        "inspect beta",
+        "route"
+      ]
+    ],
+    "verified_2_robust": true,
+    "certified_no_cheaper_panel": true,
+    "exact_search_certificate": {
+      "lower_bound_start": 5,
+      "infeasible_limits": {
+        "5": 5,
+        "6": 5,
+        "7": 8,
+        "8": 17,
+        "9": 17
+      },
+      "feasible_limit_nodes": 5
+    }
+  },
+  "greedy_panel": {
+    "cost": 11,
+    "words": [
+      [
+        "route"
+      ],
+      [
+        "route",
+        "inspect alpha"
+      ],
+      [
+        "route",
+        "inspect beta"
+      ],
+      [
+        "route",
+        "inspect alpha",
+        "route"
+      ],
+      [
+        "route",
+        "inspect beta",
+        "route"
+      ]
+    ],
+    "verified_2_robust": true
+  },
+  "all_experiments_cost": 102,
+  "coverage_table": [
+    {
+      "word": [
+        "route"
+      ],
+      "cost": 1,
+      "covers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "inspect alpha"
+      ],
+      "cost": 1,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta"
+      ],
+      "cost": 1,
+      "covers": []
+    },
+    {
+      "word": [
+        "route",
+        "route"
+      ],
+      "cost": 2,
+      "covers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect alpha"
+      ],
+      "cost": 2,
+      "covers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect beta"
+      ],
+      "cost": 2,
+      "covers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "route"
+      ],
+      "cost": 2,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect alpha"
+      ],
+      "cost": 2,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect beta"
+      ],
+      "cost": 2,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "route"
+      ],
+      "cost": 2,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect alpha"
+      ],
+      "cost": 2,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect beta"
+      ],
+      "cost": 2,
+      "covers": []
+    },
+    {
+      "word": [
+        "route",
+        "route",
+        "route"
+      ],
+      "cost": 3,
+      "covers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "route",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "route",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect alpha",
+        "route"
+      ],
+      "cost": 3,
+      "covers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect alpha",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect alpha",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect beta",
+        "route"
+      ],
+      "cost": 3,
+      "covers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect beta",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "word": [
+        "route",
+        "inspect beta",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "route",
+        "route"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "route",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "route",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect alpha",
+        "route"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect alpha",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect alpha",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect beta",
+        "route"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect beta",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect alpha",
+        "inspect beta",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "route",
+        "route"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "route",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "route",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect alpha",
+        "route"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect alpha",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect alpha",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect beta",
+        "route"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect beta",
+        "inspect alpha"
+      ],
+      "cost": 3,
+      "covers": []
+    },
+    {
+      "word": [
+        "inspect beta",
+        "inspect beta",
+        "inspect beta"
+      ],
+      "cost": 3,
+      "covers": []
+    }
+  ]
+}
