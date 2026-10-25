@@ -1,0 +1,3 @@
+base contract verified: 417 hashes match (through PJ-E417)
+catalogue equations: 710; not covered by base contract: 293
+extension verified: 293 hashes match; all 710 catalogue equations covered exactly once
