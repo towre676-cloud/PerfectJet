@@ -1,0 +1,97 @@
+{
+  "system": "The branching laboratory",
+  "pairs": [
+    [
+      "hidden:alpha:0",
+      "hidden:alpha:1"
+    ],
+    [
+      "hidden:alpha:0",
+      "hidden:beta:0"
+    ],
+    [
+      "hidden:alpha:0",
+      "hidden:beta:1"
+    ],
+    [
+      "hidden:alpha:1",
+      "hidden:beta:0"
+    ],
+    [
+      "hidden:alpha:1",
+      "hidden:beta:1"
+    ],
+    [
+      "hidden:beta:0",
+      "hidden:beta:1"
+    ]
+  ],
+  "experiments_considered": 39,
+  "witness_counts_per_pair": [
+    4,
+    13,
+    13,
+    13,
+    13,
+    4
+  ],
+  "expected_witness_counts": [
+    4,
+    13,
+    13,
+    13,
+    13,
+    4
+  ],
+  "witness_counts_match_wave1": true,
+  "coverage_table_matches_wave1": true,
+  "greedy_cost": 11,
+  "greedy_words": [
+    [
+      "route"
+    ],
+    [
+      "route",
+      "inspect alpha"
+    ],
+    [
+      "route",
+      "inspect beta"
+    ],
+    [
+      "route",
+      "inspect alpha",
+      "route"
+    ],
+    [
+      "route",
+      "inspect beta",
+      "route"
+    ]
+  ],
+  "expected_greedy_cost": 11,
+  "optimal_cost": 10,
+  "optimal_words": [
+    [
+      "route",
+      "inspect alpha"
+    ],
+    [
+      "route",
+      "inspect beta"
+    ],
+    [
+      "route",
+      "inspect alpha",
+      "route"
+    ],
+    [
+      "route",
+      "inspect beta",
+      "route"
+    ]
+  ],
+  "expected_optimal_cost": 10,
+  "optimal_verified_2_robust": true,
+  "all_expectations_met": true
+}

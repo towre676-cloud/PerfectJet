@@ -1,0 +1,14 @@
+inter-orbit 1,0,1 6,11,0 -> finite 1 ['A']
+inter-orbit 0,0,6 1,3,12 -> finite 1 ['A']
+inter-orbit 0,0,11 0,4,2 -> finite 1 ['A']
+inter-orbit 1,10,6 2,4,3 -> finite 1 ['A']
+inter-orbit 10,8,8 12,9,8 -> finite 1 ['A']
+inter-orbit 5,6,5 8,12,1 -> finite 1 ['A']
+inter-orbit 2,10,12 10,8,1 -> finite 1 ['A']
+inter-orbit 6,8,10 12,0,6 -> finite 1 ['A']
+same-full-orbit 0,6,7 5,12,11 -> infinite
+same-full-orbit 2,6,11 2,11,6 -> infinite
+same-full-orbit 7,9,6 8,10,7 -> infinite
+same-full-orbit 4,2,2 4,6,6 -> infinite
+same-full-orbit 1,3,2 11,0,12 -> infinite
+repo pair_experiment cross-check (absolute) consistent: True

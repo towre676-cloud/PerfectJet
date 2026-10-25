@@ -1,0 +1,1 @@
+relative: pairs 1008 | every word separates every pair: True | LB 2 | greedy 2 | exhaustive best <=5: 2 | OPTIMAL 2 certified: True
