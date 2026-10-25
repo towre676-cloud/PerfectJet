@@ -1184,7 +1184,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--e", type=int, required=True, choices=(0, 1, 2))
     ap.add_argument("--repo", type=Path,
-                    default=Path(__file__).resolve().parents[2] / "PerfectJet")
+                    default=Path(__file__).resolve().parents[1])  # repository root
     ap.add_argument("--out", type=Path, default=Path(__file__).resolve().parent)
     ap.add_argument("--sectors-only", action="store_true",
                     help="extract and write the system, skip the solve")
