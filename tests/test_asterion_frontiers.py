@@ -25,9 +25,9 @@ class FrontierIntegrationTests(unittest.TestCase):
         self.assertEqual(primitive["preserved_prefix"]["equation_count"],710)
         raw = json.dumps(source[:710],sort_keys=True,ensure_ascii=False,separators=(",",":")).encode()
         self.assertEqual(hashlib.sha256(raw).hexdigest(),primitive["preserved_prefix"]["sha256_of_canonical_records"])
-        self.assertEqual(source[710:],primitive["equations"])
-        self.assertEqual([r["id"] for r in source[710:]],[f"PJ-P{i:03d}" for i in range(1,15)])
-        self.assertEqual(len(source),724)
+        self.assertEqual(source[710:724],primitive["equations"])
+        self.assertEqual([r["id"] for r in source[710:724]],[f"PJ-P{i:03d}" for i in range(1,15)])
+        self.assertGreaterEqual(len(source),724)
 
     def test_strict_public_parameters(self):
         for request in ({"operation":"frontiers","max_degree":True},

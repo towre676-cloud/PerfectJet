@@ -19,6 +19,10 @@ jobs:
         env:
           PYTHONPATH: src
       - run: python scripts/check_coverage.py
+      - run: python scripts/build_collision_catalogue.py --check
+      - run: python scripts/verify_collision_pell.py --check
+      - run: python independent_checks/collision_pell/verify.py
+      - run: node scripts/check_collision_explorer.cjs
       - run: python scripts/build_mathlab.py --check
         env:
           PYTHONPATH: src

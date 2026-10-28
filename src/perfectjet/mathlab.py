@@ -55,6 +55,7 @@ def _field(key, label, value, kind='number', low=None, high=None, help=None):
 
 
 LABS = [
+    dict(id='collision', title='Explore arithmetic collisions', category='structure', question='How do prime collisions connect Pell arithmetic, exact populations and analytic boundaries?', description='Compute collision residues, navigate divisor pairs, extract finite zeta factors and classify conductor families.', example={'params': {'operation':'report','order':16,'limit':1000}}),
     dict(id='asterion', title='Build an exact Lie basis', category='structure', question='How do polynomial coordinates change the arithmetic of E8?', description='Compute exact E8 brackets, all 170 polynomial couplings, a two-component modulo-five presentation and certified basis changes.', example={'params': {'operation':'overview'}}),
     dict(id='asterion-extension', title='Extend Lie geometry', category='structure', question='How do finite interactions determine fields, densities and transport?', description='Compute exact current populations, singular Lie boundaries, hypergeometric recoupling, five-channel transport and explicit relation certificates.', example={'params': {'operation':'currents','max_degree':8}}),
     dict(id='asterion-frontiers', title='Test the next mathematical frontier', category='structure', question='Which higher relations, elliptic identities and transport groups can we prove?', description='Replay higher-weight kernel characters, elliptic dynamical compatibility, the level-four monodromy closure and rank-eight charge moments.', example={'params': {'operation':'jacobi','max_degree':4}}),
@@ -98,6 +99,20 @@ def catalogue():
     enriched = [dict(e, **{k: ranks.get(e['id'], {}).get(k) for k in ('family_rank', 'family', 'callable_labs')}) for e in equations]
     from .recovered_requests import schemas
     request_shapes = schemas()
+    request_shapes['collision'] = {
+        'description': 'Exact collision arithmetic, positive residue populations, and proved conductor classifications.',
+        'sample_params': {'operation':'report','order':16,'limit':1000},
+        'additional_samples': [
+            {'operation':'projection','conductor':4,'order':8},
+            {'operation':'norm','conductor':3,'order':8},
+            {'operation':'population','conductor':6,'residue':0,'factorization':[[2,4],[3,3],[5,2]],'rank':0},
+            {'operation':'constants','prime_cutoff':1000,'s':2},
+            {'operation':'pell','index':'10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000','modulus':1000000007},
+            {'operation':'extract','order':4},
+            {'operation':'four','a':[4,1],'b':[2,4]},
+        ],
+        'limits': 'Explicit conductor, polynomial, output-bit and prime-product budgets; exact remote inputs use decimal strings.',
+    }
     labs = [dict(lab, request_schema=request_shapes.get(lab['id'])) for lab in LABS]
     return {'schema': 'perfectjet/math-lab-catalogue/1', 'labs': labs,
             'equations': enriched, 'families': ranking.get('families', []),
@@ -129,6 +144,21 @@ def evaluate(request):
     if lab == 'overview':
         cat = catalogue()
         return _out(lab, 'Start with a question. Each card computes an answer with the same exact Python engine used by the command line.', [('Callable tools', len(LABS)), ('Equation entries', len(cat['equations']))], {'labs': LABS}, [])
+    if lab == 'collision':
+        from .collision_research import evaluate as collision_evaluate
+        result = collision_evaluate(p)
+        operation = p.get('operation','report')
+        if operation == 'report':
+            metrics = [('Pell identity',result['pell_identity_verified']),('Natural boundary','Re(s)=0'),('Summatory count',result['summatory_count'])]
+            visual = {'kind':'bars','values':[{'label':str(i),'value':v} for i,v in enumerate(result['local_coefficients'][:17])]}
+        elif operation == 'population':
+            metrics = [('Conductor',result['conductor']),('Count',result.get('count',result.get('local_count','exact')))]
+            histogram = result.get('residue_histogram',[])
+            visual = {'kind':'bars','values':[{'label':str(i),'value':v} for i,v in enumerate(histogram)]} if histogram else None
+        else:
+            metrics = [('Operation',operation),('Arithmetic','Exact'),('Scope','See proof and record')]
+            visual = None
+        return _out(lab,'Prime collision rules expose exact populations, Pell recurrences and provable boundaries of analytic continuation.',metrics,result,[f'PJ-C{i:03d}' for i in range(1,21)],scope='Written all-conductor proofs use the classical Estermann theorem. Finite checks are executable evidence, not Lean formalization. A prime-local projection and a global residue condition have different meanings.',visual=visual)
     if lab == 'asterion':
         from .asterion import evaluate as asterion_evaluate
         result = asterion_evaluate(p)
