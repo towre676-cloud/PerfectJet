@@ -1,0 +1,1318 @@
+{
+  "Freudenthal_recursion_states": 44,
+  "Schur_components": {
+    "exterior_cube": {
+      "ambient_Schur_dimension": 2511496,
+      "dominant_weight_rows": [
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 18
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 18
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 16
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 16
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 14
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 14
+        },
+        {
+          "Schur_weight_multiplicity": 1,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 12
+        },
+        {
+          "Schur_weight_multiplicity": 6,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 6,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 10
+        },
+        {
+          "Schur_weight_multiplicity": 28,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "higher_irrep_contribution": 28,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 8
+        },
+        {
+          "Schur_weight_multiplicity": 28,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "higher_irrep_contribution": 27,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 8
+        },
+        {
+          "Schur_weight_multiplicity": 107,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 106,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 6
+        },
+        {
+          "Schur_weight_multiplicity": 364,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 363,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 4
+        },
+        {
+          "Schur_weight_multiplicity": 1127,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 1127,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 2
+        },
+        {
+          "Schur_weight_multiplicity": 3256,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 3255,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 0
+        }
+      ],
+      "irreducibles": [
+        {
+          "dimension": 2450240,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 27000,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 30380,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 3875,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 1,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "passed": true,
+      "reconstructed_dimension": 2511496
+    },
+    "mixed_S21": {
+      "ambient_Schur_dimension": 5084248,
+      "dominant_weight_rows": [
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 18
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 18
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 16
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 16
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 14
+        },
+        {
+          "Schur_weight_multiplicity": 1,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 14
+        },
+        {
+          "Schur_weight_multiplicity": 2,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 2,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 12
+        },
+        {
+          "Schur_weight_multiplicity": 13,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 12,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 10
+        },
+        {
+          "Schur_weight_multiplicity": 56,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "higher_irrep_contribution": 55,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 8
+        },
+        {
+          "Schur_weight_multiplicity": 64,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "higher_irrep_contribution": 63,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 8
+        },
+        {
+          "Schur_weight_multiplicity": 216,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 215,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 6
+        },
+        {
+          "Schur_weight_multiplicity": 728,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 727,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 4
+        },
+        {
+          "Schur_weight_multiplicity": 2263,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 2261,
+          "highest_irrep_multiplicity": 2,
+          "squared_norm": 2
+        },
+        {
+          "Schur_weight_multiplicity": 6568,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 6568,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 0
+        }
+      ],
+      "irreducibles": [
+        {
+          "dimension": 4096000,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 779247,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 147250,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 27000,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 30380,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 3875,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 248,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 2
+        }
+      ],
+      "passed": true,
+      "reconstructed_dimension": 5084248
+    },
+    "symmetric_cube": {
+      "ambient_Schur_dimension": 2573000,
+      "dominant_weight_rows": [
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 18
+        },
+        {
+          "Schur_weight_multiplicity": 1,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 18
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 16
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 16
+        },
+        {
+          "Schur_weight_multiplicity": 0,
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 14
+        },
+        {
+          "Schur_weight_multiplicity": 1,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 14
+        },
+        {
+          "Schur_weight_multiplicity": 1,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 12
+        },
+        {
+          "Schur_weight_multiplicity": 7,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 6,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 10
+        },
+        {
+          "Schur_weight_multiplicity": 28,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "higher_irrep_contribution": 28,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 8
+        },
+        {
+          "Schur_weight_multiplicity": 36,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "higher_irrep_contribution": 36,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 8
+        },
+        {
+          "Schur_weight_multiplicity": 109,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 108,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 6
+        },
+        {
+          "Schur_weight_multiplicity": 364,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 364,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 4
+        },
+        {
+          "Schur_weight_multiplicity": 1136,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "higher_irrep_contribution": 1135,
+          "highest_irrep_multiplicity": 1,
+          "squared_norm": 2
+        },
+        {
+          "Schur_weight_multiplicity": 3320,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "higher_irrep_contribution": 3320,
+          "highest_irrep_multiplicity": 0,
+          "squared_norm": 0
+        }
+      ],
+      "irreducibles": [
+        {
+          "dimension": 1763125,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 779247,
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 30380,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 1
+        },
+        {
+          "dimension": 248,
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1
+        }
+      ],
+      "passed": true,
+      "reconstructed_dimension": 2573000
+    }
+  },
+  "character_formulas": [
+    "Sym^3 chi=(chi^3+3 chi psi2(chi)+2 psi3(chi))/6",
+    "S21 chi=(chi^3-psi3(chi))/3",
+    "exterior^3 chi=(chi^3-3 chi psi2(chi)+2 psi3(chi))/6"
+  ],
+  "distinct_adjoint_weights": 241,
+  "dominant_weight_norm_bound": 18,
+  "g_tensor_3875": {
+    "dominant_weight_rows": [
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 0
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "higher_irrep_contribution": 0,
+        "highest_irrep_multiplicity": 1,
+        "tensor_weight_multiplicity": 1
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "higher_irrep_contribution": 7,
+        "highest_irrep_multiplicity": 1,
+        "tensor_weight_multiplicity": 8
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "higher_irrep_contribution": 7,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 7
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 40,
+        "highest_irrep_multiplicity": 1,
+        "tensor_weight_multiplicity": 41
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 169,
+        "highest_irrep_multiplicity": 1,
+        "tensor_weight_multiplicity": 170
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "higher_irrep_contribution": 608,
+        "highest_irrep_multiplicity": 1,
+        "tensor_weight_multiplicity": 609
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "higher_irrep_contribution": 1960,
+        "highest_irrep_multiplicity": 0,
+        "tensor_weight_multiplicity": 1960
+      }
+    ],
+    "irreducibles": [
+      {
+        "dimension": 779247,
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 147250,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 30380,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 3875,
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 248,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "reconstructed_dimension": 961000
+  },
+  "g_tensor_I27000": {
+    "identity": "g tensor I=Sym^3(g)+S21(g)-g-g tensor3875",
+    "irreducibles": [
+      {
+        "dimension": 248,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 27000,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 1763125,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 30380,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 4096000,
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "multiplicity": 1
+      },
+      {
+        "dimension": 779247,
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 1
+      }
+    ],
+    "reconstructed_dimension": 6696000
+  },
+  "large_tensor_product_tables_imported": false,
+  "passed": true,
+  "quadratic_tensor_checks": {
+    "g_tensor_3875_dimension": true,
+    "g_tensor_I27000_dimension": true
+  }
+}

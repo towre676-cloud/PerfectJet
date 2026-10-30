@@ -29,7 +29,7 @@ normalized form, u=e_θ and v=e_(θ−α₆).
 | Forced weight-six V₃₀₃₈₀ primitive | explicit | closed formula of six contraction tensors, pure length-three null lift |
 | Minimal differential generators through weight six | closed | 3875 at weight 4; 248, 147250 at weight 5; 30380 at weight 6 |
 | Individual gr image of F₀ | zero | F₀ ≡ (91/155)·Σ_a x_(tᵃ)^[0]P₂₄₈^(t_a) modulo the arc ideal |
-| Weight-seven length-three kernel | partial | seven of the nine highest weights computed; no new length-three primitive among them |
+| Weight-seven length-three kernel | closed (30 October completion) | all nine highest weights; kernel = D of weight-six length three; no new cubic primitive |
 | All-weight presentation, finite generation | open | not claimed |
 
 ## 1. An exact lattice criterion for null vectors
@@ -277,6 +277,14 @@ claimed.
 
 ## 6. Weight seven, length three
 
+**Update, 30 October:** the two missing sectors are now closed; see
+[the complete calculation and proof](ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md).
+The singlet has arc multiplicity 1 and kernel multiplicity 0. The adjoint
+has arc multiplicity 9 and kernel multiplicity 1, represented by D²P₂₄₈.
+Thus K₇ in length three is exactly 248+3875+30380+147250, all derivatives.
+The full weight-seven classification remains open. The text below records
+the original computation and its historical boundary.
+
 The same solver computes K₇ in length three (Li degree four), one highest
 weight at a time. The length-three arc character at weight seven is
 1+9·248+6·3875+2·27000+5·30380+5·147250+4·779247+2450240+4096000.
@@ -311,16 +319,17 @@ These A multiplicities agree with the length-three character at jet degree
 five. Every computed kernel class at weights seven and eight is identified
 exactly with a derivative of a lower generator, and the file records this
 for each row. No new length-three generator appears at the computed weights.
-The 248, 1, 3875 and 30380 sectors at weight eight, the weight-seven 248 and
-singlet sectors, and all length-four or longer sectors beyond weight six
-remain open.
+The 248, 1, 3875 and 30380 sectors at weight eight, and all length-four or
+longer sectors beyond weight six
+remain open. The formerly missing weight-seven 248 and singlet sectors are
+closed by the linked 30 October completion.
 
 D is injective, so D(K₆∩len 3)=248+3875+30380+147250 lies in K₇∩len 3. Among
 the computed weights, the length-three kernel equals these translates. No new
-length-three generator appears there. The 248 and 1 weight-seven sectors,
-and the length-four Li-degree-three sector, are not computed here.
-They need the corresponding arc character first, so weight seven is not
-classified.
+length-three generator appears there. The original calculation omitted the
+248 and 1 weight-seven sectors;
+the linked completion now resolves both. The length-four Li-degree-three
+sector remains open, so the full weight-seven kernel is not classified.
 
 ## 7. Replay, evidence and boundaries
 
@@ -344,7 +353,8 @@ weight-seven sectors. Tampered coefficients,
 dropped corrections and stale digests are rejected by the tests.
 
 The claims are finite: they cover conformal weights at most six, plus the
-listed weight-seven sectors. They concern the commutative differential ideal
+complete length-three weight-seven sector as certified in the linked
+completion. They concern the commutative differential ideal
 of the arc algebra, not strong generators of an unfiltered vertex algebra.
 They do not assert finite generation of K, a vertex-Poisson presentation or
 stabilization of the generator pattern. The Frenkel–Kac identification and
