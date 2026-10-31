@@ -24,6 +24,13 @@ extension supplies a finite-input guarantee for the same two-term main term
 All statements below hold for real \(X\ge1\). The executable interface accepts
 integers, rational strings and `Fraction` inputs, so its input value is exact.
 
+The current engine also proves an explicit
+[square-root/log-squared remainder](COLLISION_SQRT_REMAINDER.md), giving
+\(S(X)=M(X)+O(\sqrt X(1+\log X)^2)\). Automatic mode takes the smaller
+of that bound and the sigma-grid bound below. Its constants use a
+[finite zeta-factor extraction](COLLISION_CONSTANT_EXTRACTION.md), intersected
+with the direct enclosures for an independent check.
+
 ## The explicit theorem
 
 Put \(c=2\gamma-1\). For \(1/2<\sigma<1\), define
@@ -322,6 +329,17 @@ one 210th of its integral; the latter derivative integral is
 \(4(\log n_r+1)/n_r\). These improvements concern the omitted primes;
 they preserve every finite Euler factor.
 
+Those direct enclosures remain available through `asymptotic_constants`.
+The counting engine now intersects them with the sharper extracted
+enclosures from `extracted_asymptotic_constants`. The exact identity
+\(H(s)=\zeta(2s)^{-2}\prod_p R(p^{-s})\) leaves a residual beginning at
+\(p^{-3s}\). Certified \(\zeta(2)\) and \(\zeta'(2)\) values come from
+separate Euler--Maclaurin formulas with absolute integral remainders.
+The resulting omitted-prime uncertainties are of order \(P^{-2}\) for
+\(C\) and \(\log(P)P^{-2}\) for \(D\). The
+[extraction proof](COLLISION_CONSTANT_EXTRACTION.md) supplies every formula,
+tail sign and interval endpoint rule.
+
 ## Certificate interface and interpretation
 
 ```python
@@ -357,12 +375,21 @@ the error relative to the mathematical main term \(M(X)\).
 The automatic choice compares the finite rational grid
 \(\sigma\in\{0.51,0.525,0.55,0.575,0.60,0.65,0.70,0.75,0.80,0.85,0.90\}\); it selects the
 smallest certified radius on this grid, rather than asserting a global
-optimum. Taking \(\sigma\) too close to \(1/2\) makes the absolute-coefficient
+optimum. It then compares that radius with the explicit square-root/log-squared
+radius. A supplied rational `sigma` retains the requested sigma theorem
+without that second comparison. Taking \(\sigma\) too close to \(1/2\) makes the absolute-coefficient
 norm large; taking it too close to one raises \(X^\sigma\)
 and the tail-kernel coefficient. Increasing the prime cutoff reduces the
 Euler-product uncertainty and tightens the constant intervals. These
 effects are included in the executable comparison, not inferred from a
 floating-point minimizer.
+
+Version-two receipts identify the selected theorem in
+`selected_remainder_method` and retain both bounds in `remainder_candidates`.
+The `sigma` field always records the best sigma-grid candidate, including
+when `sqrt_log` supplies the selected radius. `constant_evidence` records
+both independent constant constructions and their intersection. The original
+direct constant API remains available.
 
 The final count enclosure also uses \(1\le A(n)\le d(n)\), whence, for
 \(N=\lfloor X\rfloor\),
@@ -389,46 +416,80 @@ cumulative inputs. It records 27 exact comparisons through \(10^{12}\),
 including square and prime-power neighbors and rational inputs. A separate
 replay checks 211 count enclosures against the pre-existing coefficient
 implementation through \(10^6\), 128 coefficients against original signed
-factor pairs, and 1,000 divisor-remainder inputs.
+factor pairs, and 1,000 divisor-remainder inputs. It also checks the new
+\(\zeta(2),\zeta'(2)\) intervals against independent defining-series
+integral bounds and checks 15 direct/extracted constant intersections.
 
-The following results use **prime cutoff 10,000, 80-bit outward intervals,
-and the eleven-candidate automatic sigma grid**. The prediction is the
-midpoint of the certified main-term interval. Observed errors are rounded
-to the nearest 0.01; guaranteed absolute errors and main-term widths are
-rounded upward to integers, and guaranteed percentages are rounded upward
-to six decimal places. Percentages divide the guaranteed error by the
-independently computed exact cumulative count.
+The following results use **prime cutoff 10,000 and 80-bit outward
+intervals**, with automatic selection between the eleven-candidate sigma
+grid and the square-root/log-squared theorem. The prediction is the
+midpoint of the intersected main-term interval. Observed errors are
+rounded to the nearest 0.01; guaranteed absolute errors are rounded upward
+to integers, main-term widths upward to three decimal places, and
+guaranteed percentages upward to six decimal places. Percentages divide
+the guaranteed prediction error by the exact cumulative count.
 
-| X | Exact S(X) | Observed absolute prediction error | Guaranteed prediction error | Guaranteed relative error | Main-term interval width | sigma |
-|---:|---:|---:|---:|---:|---:|---:|
-| 1,000,000 | 8,875,548 | 120.03 | 929,978 | 10.477970% | 966 | 0.70 |
-| 100,000,000 | 1,158,932,442 | 1,091.83 | 19,393,256 | 1.673373% | 109,066 | 0.65 |
-| 10,000,000,000 | 143,030,090,968 | 64,479.04 | 349,033,655 | 0.244029% | 12,160,077 | 0.60 |
-| 1,000,000,000,000 | 17,016,685,657,676 | 15,698,140.32 | 6,106,127,342 | 0.035884% | 1,341,357,667 | 0.60 |
+| X | Exact S(X) | Observed absolute prediction error | Guaranteed prediction error | Guaranteed relative error | Main-term interval width | Selected bound |
+|---:|---:|---:|---:|---:|---:|:---|
+| 1,000,000 | 8,875,548 | 107.45 | 929,495 | 10.472533% | 0.122 | sigma = 0.70 |
+| 100,000,000 | 1,158,932,442 | 774.57 | 19,338,730 | 1.668668% | 13.411 | sigma = 0.65 |
+| 10,000,000,000 | 143,030,090,968 | 2,129.09 | 337,446,117 | 0.235927% | 1,467.667 | square-root/log-squared |
+| 1,000,000,000,000 | 17,016,685,657,676 | 55,631.50 | 4,492,555,528 | 0.026401% | 159,429.844 | square-root/log-squared |
 
-The exact errors are substantially smaller than the guaranteed bounds on
-these inputs. The guarantee continues to use the proved majorant and
-constant intervals; no empirical reduction factor is applied. The
-machine-readable receipt retains exact rational endpoints, each candidate
-radius, and the final integer enclosure.
-
-The parameter study compares cutoffs 100, 1,000, and 10,000 at seven values
-of X through \(10^{24}\). Cutoff 1,000 provides a convenient default;
-cutoff 10,000 gives the narrowest reported certificates. At \(10^{12}\),
-the latter gives the integer enclosure
+At \(X=10^{12}\), the final integer enclosure is
 
 \[
- 17{,}010{,}563{,}832{,}195
+ 17{,}012{,}193{,}046{,}518
  \le S(10^{12})\le
- 17{,}022{,}776{,}086{,}877.
+ 17{,}021{,}178{,}157{,}571.
 \]
 
-At \(10^{24}\), the grid selects \(\sigma=0.55\). With cutoff 10,000,
-the main-term interval half-width exceeds the analytic remainder by a
-factor of 34,000. The limiting uncertainty there comes from the omitted
-prime contributions to C and D. Increasing the dyadic precision alone
-cannot remove it; a larger prime computation or a sharper proven tail
-estimate is the appropriate next improvement.
+The exact errors are substantially smaller than the guaranteed bounds on
+these inputs. Every guarantee continues to use the proved remainders and
+constant intervals; no empirical reduction factor is applied. The receipt
+retains exact rational endpoints, both remainder candidates, the selected
+method, and the final integer enclosure. The sigma field continues to
+identify the best grid candidate when the square-root theorem is selected.
+
+The extracted constant calculation replaces the quadratic prime tails
+with cubic residual tails. At the same cutoff and precision, the direct
+constant widths divided by the extracted widths are at least the following
+integers; every displayed ratio is rounded downward.
+
+| Prime cutoff | C width reduction | D width reduction | K width reduction |
+|---:|---:|---:|---:|
+| 1,000 | 942 | 669 | 684 |
+| 10,000 | 9,898 | 6,939 | 7,061 |
+
+The receipt also compares the previous certificate, using direct constant
+intervals and the minimum sigma-grid bound, with the new automatic
+certificate. The cutoff, precision, and sigma grid are held fixed. The
+table reports the factor by which the guaranteed prediction error shrinks,
+rounded downward to three decimal places.
+
+| X | Improvement at cutoff 1,000 | Improvement at cutoff 10,000 |
+|---:|---:|---:|
+| \(10^6\) | 1.004 | 1.000 |
+| \(10^{12}\) | 2.601 | 1.359 |
+| \(10^{24}\) | 864.855 | 7,907.968 |
+| \(10^{100}\) | 918.743 | 9,568.292 |
+
+The small-input improvement is modest because the analytic remainder
+already dominates there. At large inputs, the much narrower constant
+intervals materially improve the finite-input guarantee. The studies at
+\(10^{24}\) and \(10^{100}\) evaluate certified bounds without computing
+exact cumulative counts. They are comparisons of guaranteed errors, not
+observed numerical accuracy.
+
+The cutoff study compares 100, 1,000, and 10,000 at seven values of X
+through \(10^{24}\). Cutoff 1,000 remains a convenient default, while
+10,000 gives the narrowest reported certificates. At \(10^{24}\), cutoff
+10,000 gives a certified prediction-error bound below
+\(3.976\times10^{-7}\) percent of the prediction; the main-term interval half-width is about
+eight times the selected analytic remainder. The remaining large-input
+uncertainty chiefly concerns the omitted prime contributions. Further
+prime computation or sharper proved tails can reduce it; increasing
+dyadic precision alone cannot remove those tails.
 
 Regenerate the deterministic records and verify their source hashes with:
 
@@ -442,5 +503,7 @@ PYTHONPATH=src python -m unittest discover -s tests -p 'test_collision*.py'
 The full evidence is in
 [validation.json](../results/collision-finite-x/validation.json), with its
 source binding in
-[manifest.json](../results/collision-finite-x/manifest.json). No timings or
-run dates enter the reproducibility record.
+[manifest.json](../results/collision-finite-x/manifest.json). It includes
+eight matched certificate-improvement rows through \(10^{100}\), the
+constant-width comparisons, and all prior exact comparisons. No timings
+or run dates enter the reproducibility record.

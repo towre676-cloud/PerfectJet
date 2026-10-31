@@ -56,12 +56,32 @@ class FiniteXTests(unittest.TestCase):
         row = counting_certificate(10**6, prime_cutoff=100, include_exact=True)
         self.assertEqual(row['exact_count'], 8875548)
         self.assertTrue(row['exact_count_enclosed'])
-        self.assertEqual(row['remainder_upper'], min(c['remainder_upper'] for c in row['parameter_candidates']))
+        self.assertEqual(row['remainder_upper'], min(row['remainder_candidates'].values()))
+        self.assertEqual(row['remainder_candidates']['sigma'], min(c['remainder_upper'] for c in row['parameter_candidates']))
         receipt = certificate_receipt(10**6, sigma='3/4', prime_cutoff=100)
         json.dumps(receipt, allow_nan=False)
-        self.assertEqual(receipt['schema'], 'perfectjet/conductor-two-finite-x/1')
+        self.assertEqual(receipt['schema'], 'perfectjet/conductor-two-finite-x/2')
         result = evaluate({'operation':'approximate','X':'1000000','sigma':'3/4','prime_cutoff':100})
         self.assertEqual(result, receipt)
+        # Editing an exported receipt must not alter evidence cached for the
+        # next caller. The immutable interval endpoints are checked separately.
+        receipt['constant_evidence']['extracted']['identity'] = 'edited by caller'
+        replay = certificate_receipt(10**6, sigma='3/4', prime_cutoff=100)
+        self.assertNotEqual(replay['constant_evidence']['extracted']['identity'], 'edited by caller')
+
+    def test_large_input_uses_stronger_theorem_and_extracted_constants(self):
+        row = counting_certificate(10**24, prime_cutoff=1000)
+        self.assertEqual(row['selected_remainder_method'], 'sqrt_log')
+        self.assertLess(row['remainder_upper'], row['remainder_candidates']['sigma'])
+        direct = row['constant_evidence']['direct_intervals']
+        current = row['constants']
+        for name in ('C', 'D', 'K'):
+            old_width = Q(direct[name]['upper']) - Q(direct[name]['lower'])
+            new_width = Q(current[name]['upper']) - Q(current[name]['lower'])
+            self.assertLess(new_width * 500, old_width)
+        explicit = counting_certificate(10**24, sigma='3/5', prime_cutoff=1000)
+        self.assertEqual(explicit['selected_remainder_method'], 'sigma')
+        self.assertEqual(set(explicit['remainder_candidates']), {'sigma'})
 
     def test_public_cli_and_strict_inputs(self):
         completed = subprocess.run([sys.executable, '-m', 'perfectjet',

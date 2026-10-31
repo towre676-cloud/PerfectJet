@@ -6,6 +6,7 @@ for the two-term main term, not an exact count.
 """
 from fractions import Fraction
 from functools import lru_cache
+from copy import deepcopy
 import re
 
 from .collision_intervals import Interval, asymptotic_constants
@@ -44,7 +45,34 @@ def _ceil(value):
 
 @lru_cache(maxsize=24)
 def _constants(cutoff, bits):
-    return asymptotic_constants(prime_cutoff=cutoff, bits=bits)
+    from .collision_constant_extraction import extracted_asymptotic_constants
+    direct = asymptotic_constants(prime_cutoff=cutoff, bits=bits)
+    extracted = extracted_asymptotic_constants(prime_cutoff=cutoff, bits=bits)
+
+    def intersection(left, right):
+        lower, upper = max(left.lower, right.lower), min(left.upper, right.upper)
+        if lower > upper:
+            raise ArithmeticError("independent asymptotic constant enclosures disagree")
+        return Interval(lower, upper, bits=bits)
+
+    result = {name: intersection(direct[name], extracted[name])
+              for name in ("C", "D", "gamma", "K")}
+    result["K"] = intersection(result["K"],
+        result["C"] * (2 * result["gamma"] - 1 + result["D"]))
+    result["evidence"] = {
+        "method": "intersection of direct and finite-zeta-extracted constant enclosures",
+        "direct": {
+            "partial_C": direct["partial_C"].record(),
+            "partial_D": direct["partial_D"].record(),
+            "C_tail_loss_upper": direct["C_tail_loss_bound"],
+            "D_tail": direct["D_tail_bound"].record(),
+            "tail_method": direct["tail_method"],
+        },
+        "extracted": extracted["evidence"],
+        "direct_intervals": {name: direct[name].record() for name in ("C", "D", "K")},
+        "extracted_intervals": {name: extracted[name].record() for name in ("C", "D", "K")},
+    }
+    return result
 
 
 @lru_cache(maxsize=128)
@@ -64,9 +92,9 @@ def counting_certificate(X, sigma="auto", prime_cutoff=1000, bits=80,
                          include_exact=False):
     """Enclose S(X)=sum(n<=X) A(n), for rational X>=1.
 
-    Auto compares a documented finite rational sigma grid using rigorous
-    upper bounds. It does not claim a global parameter optimum. Increasing
-    prime_cutoff can improve both the constants and the majorant.
+    Auto compares a documented finite rational sigma grid and an explicit
+    square-root/log-squared theorem. A supplied sigma retains that theorem's
+    bound. Increasing prime_cutoff improves the constant and product tails.
     """
     X = _rational(X, "X")
     if X < 1:
@@ -103,7 +131,14 @@ def counting_certificate(X, sigma="auto", prime_cutoff=1000, bits=80,
                            "remainder_upper": radius,
                            "tail_log_upper": b["tail_log_upper"]})
     best = min(candidates, key=lambda row: row["remainder_upper"])
-    radius = best["remainder_upper"]
+    remainder_candidates = {"sigma": best["remainder_upper"]}
+    sqrt_evidence = None
+    if sigma == "auto":
+        from .collision_sqrt_remainder import sqrt_remainder_bound
+        sqrt_evidence = sqrt_remainder_bound(X, prime_cutoff, bits)
+        remainder_candidates["sqrt_log"] = sqrt_evidence["remainder_upper"]
+    selected_method = min(remainder_candidates, key=remainder_candidates.get)
+    radius = remainder_candidates[selected_method]
     raw_lower, raw_upper = main.lower - radius, main.upper + radius
     N = X.numerator // X.denominator
     # 1<=A(n)<=d(n) and sum d(n)<=N H_N<=N(1+log N).
@@ -113,7 +148,7 @@ def counting_certificate(X, sigma="auto", prime_cutoff=1000, bits=80,
     upper = min(structural_upper.numerator // structural_upper.denominator,
                 raw_upper.numerator // raw_upper.denominator)
     record = {
-        "schema": "perfectjet/conductor-two-finite-x/1",
+        "schema": "perfectjet/conductor-two-finite-x/2",
         "X": X, "floor_X": N, "sigma": best["sigma"],
         "prime_cutoff": prime_cutoff, "bits": bits,
         "prediction": (main.lower + main.upper) / 2,
@@ -122,21 +157,22 @@ def counting_certificate(X, sigma="auto", prime_cutoff=1000, bits=80,
         "analytic_enclosure": {"lower": raw_lower, "upper": raw_upper},
         "count_enclosure": {"lower": lower, "upper": upper},
         "constants": {name: constants[name].record() for name in ("C", "D", "gamma", "K")},
-        "constant_evidence": {
-            "partial_C": constants["partial_C"].record(),
-            "partial_D": constants["partial_D"].record(),
-            "C_tail_loss_upper": constants["C_tail_loss_bound"],
-            "D_tail": constants["D_tail_bound"].record(),
-            "tail_method": constants["tail_method"],
-        },
+        "constant_evidence": deepcopy(constants["evidence"]),
         "majorant_method": "zeta(2sigma)^2 extraction with a positive residual Euler product and modulo-210 prime tails",
         "parameter_candidates": candidates,
-        "parameter_selection": "minimum certified radius on the stated finite sigma grid" if sigma == "auto" else "supplied rational sigma",
-        "theorem": "abs(S(X)-C*X*log(X)-K*X) <= B_sigma*X^sigma*max(6/5,exp(-1-(1-sigma)*(2*gamma-1))/(1-sigma))",
-        "proof": "docs/COLLISION_FINITE_X.md",
+        "remainder_candidates": remainder_candidates,
+        "selected_remainder_method": selected_method,
+        "sigma_role": "best sigma candidate; the selected theorem is named separately",
+        "parameter_selection": "minimum of the finite sigma-grid bound and the square-root/log-squared bound" if sigma == "auto" else "supplied rational sigma",
+        "theorem": (sqrt_evidence["theorem"] if selected_method == "sqrt_log" else
+                    "abs(S(X)-C*X*log(X)-K*X) <= B_sigma*X^sigma*max(6/5,exp(-1-(1-sigma)*(2*gamma-1))/(1-sigma))"),
+        "proof": "docs/COLLISION_SQRT_REMAINDER.md" if selected_method == "sqrt_log" else "docs/COLLISION_FINITE_X.md",
+        "constant_proof": "docs/COLLISION_CONSTANT_EXTRACTION.md",
         "arithmetic": "outward-rounded rational intervals with explicit series and Euler-product tails",
         "count_semantics": "positive grouped conductor-two coefficients A(p^e)=1 for even e and e+1 for odd e",
     }
+    if sqrt_evidence is not None:
+        record["sqrt_remainder_evidence"] = sqrt_evidence
     if include_exact:
         from .collision_counting import exact_count
         exact = exact_count(N)

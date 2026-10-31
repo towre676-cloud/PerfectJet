@@ -154,7 +154,7 @@ def evaluate(request):
             visual = {'kind':'bars','values':[{'label':str(i),'value':v} for i,v in enumerate(result['local_coefficients'][:17])]}
         elif operation == 'approximate':
             bounds = result['count_enclosure']
-            metrics = [('Count lower',bounds['lower']),('Count upper',bounds['upper']),('Sigma',result['sigma'])]
+            metrics = [('Count lower',bounds['lower']),('Count upper',bounds['upper']),('Remainder',result['selected_remainder_method'])]
             visual = None
         elif operation == 'population':
             metrics = [('Conductor',result['conductor']),('Count',result.get('count',result.get('local_count','exact')))]

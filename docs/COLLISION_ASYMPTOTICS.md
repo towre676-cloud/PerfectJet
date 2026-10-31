@@ -150,6 +150,12 @@ secondary coefficient. This proof does not establish an error of exactly
 makes this convolution effective, with an explicit remainder and executable
 count enclosures.
 
+The [square-supported refinement](COLLISION_SQRT_REMAINDER.md) further proves
+an effective `O(sqrt(X)*(1+log(X))^2)` remainder. It uses the positive
+factorization of the absolute convolution coefficients and preserves the
+same main term. The original epsilon-exponent proof above remains a separate
+valid route.
+
 ## Certified Dirichlet values at positive integer s
 
 The standard-library module `perfectjet.collision_constants` returns exact

@@ -23,8 +23,10 @@ third-party package is needed for the command-line research engines.
 - Conductor four has an explicit reversible transport from admissible `(m,n)`
   to `(u,v,w)`, with `gcd(u,v)=1` and `m*n=u*v*w^4`.
 - The conductor-two positive arithmetic function has an elementary two-term
-  summatory asymptotic, a certified finite-input remainder, and rational
-  intervals for both asymptotic coefficients.
+  summatory asymptotic, an explicit square-root/log-squared remainder, and
+  rational intervals for both asymptotic coefficients. Finite zeta extraction
+  sharply reduces the constant tails; automatic mode retains the smaller
+  of two independently proved remainder constructions.
 - Actual factor pairs can be counted, ranked, selected, conditioned and sampled
   by their **total** collision residue. Supplied factorization and output-bit
   budgets remain explicit.

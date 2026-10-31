@@ -15,7 +15,8 @@ sys.path.insert(0, str(ROOT / "src"))
 def _compact(certificate):
     keys = ("X", "floor_X", "sigma", "prime_cutoff", "bits", "prediction",
             "main_term", "remainder_upper", "prediction_error_upper",
-            "count_enclosure", "exact_count", "observed_error", "exact_count_enclosed")
+            "count_enclosure", "exact_count", "observed_error", "exact_count_enclosed",
+            "selected_remainder_method", "remainder_candidates")
     record = {key: certificate[key] for key in keys if key in certificate}
     record["parameter_candidates"] = [
         {key: row[key] for key in ("sigma", "B_upper", "remainder_upper")}
@@ -28,6 +29,8 @@ def build():
     from perfectjet.collision_asymptotic import counting_certificate
     from perfectjet.collision_counting import coefficient_sieve, exact_count, exact_counts
     from perfectjet.collision_intervals import asymptotic_constants
+    from perfectjet.collision_intervals import Interval
+    from perfectjet.collision_constant_extraction import extracted_asymptotic_constants
     from perfectjet.collision_research import json_value
     from perfectjet.collision_zeta import conductor_two_values
 
@@ -68,21 +71,64 @@ def build():
             row = _compact(counting_certificate(10**exponent, prime_cutoff=cutoff))
             row["relative_prediction_error_upper"] = row["prediction_error_upper"] / max(Fraction(1), row["prediction"])
             optimization.append(row)
-    constants = asymptotic_constants(prime_cutoff=10000)
+    # A matched comparison preserves cutoff, precision, and the sigma grid.
+    # The baseline uses the direct constant intervals and the sigma theorem;
+    # the new certificate may also select the independent sqrt/log theorem.
+    constant_comparisons, improvements = [], []
+    for cutoff in (1000, 10000):
+        direct = asymptotic_constants(prime_cutoff=cutoff)
+        extracted = extracted_asymptotic_constants(prime_cutoff=cutoff)
+        constant_row = {"prime_cutoff": cutoff, "bits": 80, "constants": {}}
+        sample = counting_certificate(1, prime_cutoff=cutoff)
+        for name in ("C", "D", "K"):
+            intersected = sample["constants"][name]
+            old_width = direct[name].upper - direct[name].lower
+            extracted_width = extracted[name].upper - extracted[name].lower
+            new_width = Fraction(intersected["upper"]) - Fraction(intersected["lower"])
+            constant_row["constants"][name] = {
+                "direct": direct[name].record(), "extracted": extracted[name].record(),
+                "intersection": intersected, "direct_width": old_width,
+                "extracted_width": extracted_width, "intersection_width": new_width,
+                "direct_to_extracted_width_ratio": old_width / extracted_width,
+                "direct_to_intersection_width_ratio": old_width / new_width,
+            }
+        constant_comparisons.append(constant_row)
+        for exponent in (6, 12, 24, 100):
+            X = 10**exponent
+            current = counting_certificate(X, prime_cutoff=cutoff)
+            x = Interval(X)
+            baseline_main = direct["C"] * x * x.log() + direct["K"] * x
+            baseline_remainder = min(row["remainder_upper"] for row in current["parameter_candidates"])
+            baseline_error = baseline_remainder + (baseline_main.upper - baseline_main.lower) / 2
+            new_error = current["prediction_error_upper"]
+            improvements.append({
+                "X": X, "prime_cutoff": cutoff, "bits": 80,
+                "baseline_method": "direct constants and minimum sigma-grid remainder",
+                "baseline_prediction": (baseline_main.lower + baseline_main.upper) / 2,
+                "baseline_main_term": baseline_main.record(),
+                "baseline_remainder_upper": baseline_remainder,
+                "baseline_prediction_error_upper": baseline_error,
+                "current": _compact(current),
+                "guaranteed_prediction_error_improvement_factor": baseline_error / new_error,
+                "analytic_remainder_improvement_factor": baseline_remainder / current["remainder_upper"],
+            })
+    constants = counting_certificate(1, prime_cutoff=10000)["constants"]
     return json_value({
-        "schema": "perfectjet/collision-finite-x-replay/1",
+        "schema": "perfectjet/collision-finite-x-replay/2",
         "coefficient_replay": {"every_n_through": limit, "coefficients_equal": True,
                                "methods": ["prime-power update sieve", "pre-existing least-prime recurrence"]},
         "cumulative_replay": {"sample_count": len(samples), "every_comparison_equal": True,
                               "integer_inputs": samples},
         "sieve_convolution_decade_replay": {"all_equal": True, "counts": {str(n): count for n, count in decade_counts.items()},
                                            "sieve_computed_through": 10_000_000},
-        "constant_intervals": {key: constants[key].record() for key in ("C", "D", "gamma", "K")},
+        "constant_intervals": constants,
+        "constant_extraction_comparison": constant_comparisons,
+        "certificate_improvement_study": improvements,
         "exact_comparisons": comparisons,
         "parameter_study": optimization,
         "all_exact_counts_enclosed": all(row["exact_count_enclosed"] for row in comparisons),
         "proof": "docs/COLLISION_FINITE_X.md",
-        "interpretation": "Guaranteed intervals follow from the written theorem and rational interval algorithms. Observed errors are exact-count comparisons, not a replacement for the remainder theorem. Auto chooses the smallest certified radius on its stated finite grid; no global parameter optimality is asserted.",
+        "interpretation": "Guaranteed intervals follow from the written theorems and rational interval algorithms. Observed errors are exact-count comparisons, not a replacement for the remainder theorems. Auto compares the finite sigma grid and the independently proved sqrt/log remainder. Improvement rows compare the old direct-constant, sigma-only certificate with the current certificate at the same cutoff, precision and sigma grid.",
     })
 
 
@@ -92,7 +138,9 @@ def sources():
              "docs/COLLISION_FINITE_X.md", "docs/COLLISION_ASYMPTOTICS.md"]
     paths += ["src/perfectjet/" + name for name in (
         "collision_asymptotic.py", "collision_counting.py", "collision_intervals.py", "collision_majorant.py",
-        "collision_constants.py", "collision_zeta.py", "collision.py")]
+        "collision_constants.py", "collision_zeta.py", "collision.py",
+        "collision_zeta_intervals.py", "collision_constant_extraction.py", "collision_sqrt_remainder.py")]
+    paths += [path.relative_to(ROOT).as_posix() for path in (ROOT / "docs").glob("COLLISION_*.md")]
     paths += [path.relative_to(ROOT).as_posix() for path in (ROOT / "tests").glob("test_collision*.py")]
     return {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest() for name in sorted(set(paths))}
 
@@ -120,7 +168,9 @@ def main():
                       "all_coefficients_through": report["coefficient_replay"]["every_n_through"],
                       "independent_cumulative_samples": report["cumulative_replay"]["sample_count"],
                       "exact_comparisons": len(report["exact_comparisons"]),
-                      "parameter_study_rows": len(report["parameter_study"])}))
+                      "parameter_study_rows": len(report["parameter_study"]),
+                      "constant_comparison_cutoffs": len(report["constant_extraction_comparison"]),
+                      "certificate_improvement_rows": len(report["certificate_improvement_study"])}))
 
 
 if __name__ == "__main__":

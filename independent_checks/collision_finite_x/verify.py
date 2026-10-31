@@ -18,6 +18,9 @@ sys.path.insert(0, str(ROOT / "src"))
 def main():
     from perfectjet.collision_asymptotic import counting_certificate
     from perfectjet.collision_intervals import Interval, euler_gamma_bounds
+    from perfectjet.collision_constant_extraction import extracted_asymptotic_constants
+    from perfectjet.collision_intervals import asymptotic_constants
+    from perfectjet.collision_zeta_intervals import zeta_two_constants
     from perfectjet.collision_zeta import conductor_two_values
 
     def valuation_pair_sign(left, right):
@@ -64,6 +67,35 @@ def main():
         if not interval["lower"] <= count <= interval["upper"]:
             raise ArithmeticError(f"independent exact count outside enclosure: {X}")
         enclosed += 1
+    # An independent integral-test enclosure of the defining series checks
+    # the signs and scale of the new Euler--Maclaurin zeta calculations.
+    # It does not reuse the production Euler--Maclaurin formulas.
+    summation_limit = 1000
+    zeta_partial = sum((Fraction(1, n*n) for n in range(1, summation_limit + 1)), Fraction(0))
+    log_partial = Interval(0)
+    for n in range(1, summation_limit + 1):
+        log_partial += Interval(n).log() / (n*n)
+    direct_zeta = Interval(zeta_partial + Fraction(1, summation_limit + 1),
+                           zeta_partial + Fraction(1, summation_limit))
+    upper_log_tail = (Interval(summation_limit).log() + 1) / summation_limit
+    lower_log_tail = (Interval(summation_limit + 1).log() + 1) / (summation_limit + 1)
+    direct_derivative = Interval(-log_partial.upper - upper_log_tail.upper,
+                                 -log_partial.lower - lower_log_tail.lower)
+    zeta = zeta_two_constants()
+    for independent, production in ((direct_zeta, zeta["zeta2"]),
+                                    (direct_derivative, zeta["zeta2_derivative"])):
+        if not independent.lower <= production.lower <= production.upper <= independent.upper:
+            raise ArithmeticError("new zeta enclosure lies outside the independent defining-series bounds")
+    # Direct and extracted expressions are separately certified.  Their
+    # intersections must exist at every cutoff checked here.
+    extraction_comparisons = 0
+    for cutoff in (2, 7, 100, 1000, 10000):
+        direct = asymptotic_constants(cutoff)
+        extracted = extracted_asymptotic_constants(cutoff)
+        for name in ("C", "D", "K"):
+            if max(direct[name].lower, extracted[name].lower) > min(direct[name].upper, extracted[name].upper):
+                raise ArithmeticError(f"direct/extracted constant intervals disagree: {cutoff}, {name}")
+            extraction_comparisons += 1
     # Direct divisor summation supplies a separate finite check of the 6/5
     # hyperbola bound, including rational y on both sides of jumps.
     gamma = euler_gamma_bounds()
@@ -80,6 +112,8 @@ def main():
                       "independently_enclosed_counts": enclosed,
                       "original_coefficient_oracle_through": 1_000_000,
                       "direct_divisor_remainder_checks": len(divisor_points),
+                      "independent_defining_series_zeta_checks": 2,
+                      "direct_extracted_constant_intersections": extraction_comparisons,
                       "scope": "Finite independent checks; the all-X justification is the written proof."}))
 
 
