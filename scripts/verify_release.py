@@ -50,9 +50,12 @@ def main():
         equations = json.loads((root/'data/equations.json').read_text())['equations']
         original = json.loads((root/'data/equation_id_contract.json').read_text())['sha256_of_canonical_records']
         ids = {e['id'] for e in equations}
-        assert len(ids) == len(equations) and len(equations) >= 464
+        assert len(ids) == len(equations) and len(equations) == 744
         family_count = len(json.loads((root/'data/equation_power.json').read_text())['families'])
         tool_count = len(list((root/'examples/mathlab').glob('*.json')))
+        assert family_count == 27 and tool_count == 30
+        assert f'v{release_version}' in (root/'docs/INSTALL.md').read_text()
+        assert f'v{release_version}' in (root/'docs/RELEASE.md').read_text()
         for e in equations:
             if e['id'] in original:
                 assert hashlib.sha256(json.dumps(e, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode()).hexdigest() == original[e['id']]
@@ -78,32 +81,41 @@ for lab in LABS:
     result = evaluate(dict(operation='math-lab', lab=lab['id'], params=lab['example']['params']))
     assert result['lab'] == lab['id'] and result['scope'] and result['summary']
     json.dumps(result, allow_nan=False)
-print(f'Installed wheel: all {len(LABS)} Math Lab tools passed')
+from perfectjet.collision_asymptotic import counting_certificate
+certificate = counting_certificate(10**12, prime_cutoff=10000, include_exact=True)
+assert certificate['count_enclosure'] == {'lower': 17012193046518, 'upper': 17021178157571}
+assert certificate['exact_count'] == 17016685657676 and certificate['exact_count_enclosed']
+print(f'Installed wheel: all {len(LABS)} Math Lab tools and certified X=10^12 replay passed')
 '''
         run(str(python), '-c', check, release_version, str(len(equations)), str(family_count), str(tool_count), cwd=base, env=env)
-        # Invoke the actual supplied source launcher with an isolated interpreter.
-        process = subprocess.Popen([str(python), str(root/'run_observatory.py'), '--port', '0'], cwd=base, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-        try:
-            line = process.stdout.readline()
-            url = re.search(r'http://127\.0\.0\.1:\d+', line).group()
-            with urllib.request.urlopen(url, timeout=30) as response:
-                page = response.read().decode()
-            assert 'id="mathLabView"' in page and 'id="atlasSearch"' in page
-            token = page.split("token='")[1].split("'")[0]
-            def query(payload):
-                req = urllib.request.Request(url+'/api/evaluate', json.dumps(payload).encode(), {'Content-Type':'application/json', 'X-Observatory-Token':token})
-                with urllib.request.urlopen(req, timeout=120) as response:
-                    return json.load(response)
-            cat = query({'operation':'math-catalog'})
-            assert len(cat['labs']) == tool_count
-            for lab in cat['labs']:
-                result = query(dict(operation='math-lab', lab=lab['id'], params=lab['example']['params']))
-                assert result['lab'] == lab['id'] and result['scope']
-            assert 'python run_observatory.py' in (root/'Start_Math_Lab.bat').read_text()
-        finally:
-            process.terminate()
-            process.communicate(timeout=30)
-    print(json.dumps(dict(version=release_version, sha256=expected, manifest_files=len(manifest['files']), equations=len(equations), families=family_count, installed_tools=tool_count, launcher_http_tools=tool_count, desktop_rendering='not checked by this script')))
+        # Exercise both user entry points with the isolated interpreter.
+        commands = [
+            [str(python), str(root/'run_observatory.py'), '--port', '0'],
+            [str(python), '-m', 'perfectjet', 'lab', '--port', '0'],
+        ]
+        for command in commands:
+            process = subprocess.Popen(command, cwd=base, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            try:
+                line = process.stdout.readline()
+                url = re.search(r'http://127\.0\.0\.1:\d+', line).group()
+                with urllib.request.urlopen(url, timeout=30) as response:
+                    page = response.read().decode()
+                assert 'id="mathLabView"' in page and 'id="atlasSearch"' in page
+                token = page.split("token='")[1].split("'")[0]
+                def query(payload):
+                    req = urllib.request.Request(url+'/api/evaluate', json.dumps(payload).encode(), {'Content-Type':'application/json', 'X-Observatory-Token':token})
+                    with urllib.request.urlopen(req, timeout=120) as response:
+                        return json.load(response)
+                cat = query({'operation':'math-catalog'})
+                assert len(cat['labs']) == tool_count
+                for lab in cat['labs']:
+                    result = query(dict(operation='math-lab', lab=lab['id'], params=lab['example']['params']))
+                    assert result['lab'] == lab['id'] and result['scope']
+                assert 'python run_observatory.py' in (root/'Start_Math_Lab.bat').read_text()
+            finally:
+                process.terminate()
+                process.communicate(timeout=30)
+    print(json.dumps(dict(version=release_version, sha256=expected, manifest_files=len(manifest['files']), equations=len(equations), families=family_count, installed_tools=tool_count, launcher_http_tools=tool_count, launcher_paths=len(commands), research_exact_X=10**12, desktop_rendering='not checked by this script')))
 
 
 if __name__ == '__main__':

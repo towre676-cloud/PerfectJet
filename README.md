@@ -2,7 +2,9 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **30 computed tools and a searchable atlas of 744 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Version **0.21.0** offers **30 computed tools and a searchable atlas of 744 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+
+Download the [v0.21.0 release](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.21.0) and follow the [installation guide](docs/INSTALL.md). The complete source ZIP includes proofs, tests, research receipts and the graphical Math Lab.
 
 ## Collision arithmetic and Pell research
 
@@ -10,9 +12,9 @@ Conductor-two counting now has a [certified finite-input approximation](docs/COL
 
 The [collision/Pell laboratory](research/collision_pell/README.md) develops the collision numerator into two all-conductor classifications, a constructive fourth-power transport, positive divisor-pair populations and certified Euler-product bounds. Every nontrivial full Galois norm has the imaginary axis as a natural boundary. The prime-local divisibility projection has finite zeta factorizations precisely at conductors **1 and 4**; conductor four has a reversible size-preserving map to two coprime factors and a fourth power. The [proof chapter](docs/chapters/39_collision_pell_and_analytic_boundaries.md) includes the Pell recurrence, an elementary two-term summatory asymptotic and the distinction between local projections, global residues and signed phase sums. Historical priority remains unassessed.
 
-Run `python -m perfectjet collision-research report`, choose **Explore arithmetic collisions** in Math Lab, or open the [offline explorer](research/collision_pell/explorer.html). Exact finite zeta extraction retains its residual; no naive infinite zeta product is evaluated. Run `python scripts/verify_collision_pell.py --check`, `python independent_checks/collision_pell/verify.py`, and `node scripts/check_collision_explorer.cjs` for separate source-bound and independent replays. PJ-C001–PJ-C020 preserve every preceding equation record. This source extension does not publish a new GitHub Release.
+Run `python -m perfectjet collision-research report`, choose **Explore arithmetic collisions** in Math Lab, or open the [offline explorer](research/collision_pell/explorer.html). Exact finite zeta extraction retains its residual; no naive infinite zeta product is evaluated. Run `python scripts/verify_collision_pell.py --check`, `python independent_checks/collision_pell/verify.py`, and `node scripts/check_collision_explorer.cjs` for separate source-bound and independent replays. PJ-C001–PJ-C020 preserve every preceding equation record. This research is included in v0.21.0.
 
-The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the existing 29 Math Lab tools and published 0.20.0 release identity retain their own scope.
+The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the current distribution includes 30 Math Lab tools; historical release identities retain their original scope.
 
 ## P-521 public-parameter provenance research
 

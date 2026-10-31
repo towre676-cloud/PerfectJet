@@ -1,2 +1,15 @@
 # Preserve extracted archival whitespace; canonical source remains normally checked.
 archive/extracted/* whitespace=-blank-at-eof
+
+# Deterministic release bytes across Linux and Windows checkouts.
+* text=auto eol=lf
+*.zip binary
+*.part* binary
+*.xz binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.ipynb text eol=lf
+
+# Preserve the historical CSV byte contract.
+results/nfl-synthetic/review_sheet.csv -text

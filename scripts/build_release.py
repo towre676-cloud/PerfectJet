@@ -15,7 +15,7 @@ def eligible(path):
                                   'game_tracking_2023.csv','game_tracking_2024.csv','game_tracking_2025.csv',
                                   'kaggle.json'}
             and not (rel.parts[0]=='releases' and
-                     (path.suffix in {'.zip','.sha256'} or path.name.startswith('PerfectJet-v')))
+                     (path.suffix in {'.zip','.sha256'} or path.name.startswith(('PerfectJet-v', '.'))))
             and rel.as_posix()!='MANIFEST.json')
 
 def main():
