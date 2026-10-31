@@ -8,7 +8,7 @@ permissions:
   contents: read
 concurrency:
   group: perfectjet-v021-publication-final
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   verify:
     strategy:
@@ -91,6 +91,7 @@ jobs:
       contents: write
     env:
       GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
       PYTHONUTF8: '1'
     steps:
       - uses: actions/checkout@v4
