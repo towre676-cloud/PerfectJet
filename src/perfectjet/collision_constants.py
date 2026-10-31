@@ -117,5 +117,6 @@ def constants_receipt(prime_cutoff=100, s=2):
             "leading_summatory_constant": _record(constant_bounds(prime_cutoff)),
             "dirichlet_value": _record(conductor_two_zeta_bounds(s, prime_cutoff)),
             "limits": ("Dirichlet intervals apply to the conductor-two product at integer s>=2. "
-                       "The summatory asymptotic is not a finite-X error certificate. "
+                       "This constants receipt is not a finite-X error certificate; "
+                       "use collision-research approximate for certified cumulative counts. "
                        "No claim of literature priority or physical predictive performance.")}

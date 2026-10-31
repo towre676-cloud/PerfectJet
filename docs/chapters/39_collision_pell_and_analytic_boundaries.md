@@ -150,8 +150,13 @@ For a finite prime cutoff \(P\), the exact leading-constant enclosure is
 \(C_P(1-2/(P+1))\le C\le C_P\), with
 \(C_P=\prod_{p\le P}(1-2/(p+1)^2)\). The library also supplies exact
 rational enclosures for \(Z_2(s)\) at integer \(s\ge2\), and rounds JSON
-endpoints outward. The asymptotic is not a certified finite-\(X\) error bar.
-Full derivation and budgets are in [the asymptotic account](../COLLISION_ASYMPTOTICS.md).
+endpoints outward. The [finite-input extension](../COLLISION_FINITE_X.md)
+adds a guaranteed error bar, intervals for the secondary coefficient and
+automatic rational-parameter selection. The [square-supported refinement](../COLLISION_SQRT_REMAINDER.md)
+proves an explicit \(O(\sqrt X(1+\log X)^2)\) remainder, and a
+[finite zeta extraction](../COLLISION_CONSTANT_EXTRACTION.md) sharply reduces
+the constant uncertainties. The asymptotic proof is retained
+in [the original account](../COLLISION_ASYMPTOTICS.md).
 
 For actual populations retain phase residues:
 

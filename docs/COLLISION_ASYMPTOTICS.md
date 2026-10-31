@@ -85,9 +85,10 @@ For P>=2, the positive derivative tail satisfies
 \]
 
 Use `(p+1)(p^2+2p-1)>=p^3`, followed by the decreasing-function integral
-bound on `sum_(n>P) log(n)/n^2`. The executable API currently certifies C,
-not D or Euler's constant gamma; an unqualified floating evaluation of the
-secondary constant is not a certified interval.
+bound on `sum_(n>P) log(n)/n^2`. The original `collision_constants` API
+certifies C. The extension in [COLLISION_FINITE_X.md](COLLISION_FINITE_X.md)
+also certifies D, Euler's constant gamma and the secondary coefficient using
+rational intervals.
 
 ## A summatory theorem with a proof
 
@@ -145,7 +146,15 @@ for n>X,
 Finally `sum h(n)/n=C` and `sum h(n)log(n)/n=-H'(1)=-CD`.
 Taking sigma=1/2+epsilon proves the theorem, including the sign of the
 secondary coefficient. This proof does not establish an error of exactly
-`O(sqrt X)` or give an optimized numerical remainder constant.
+`O(sqrt X)`. The separate [finite-input theorem](COLLISION_FINITE_X.md)
+makes this convolution effective, with an explicit remainder and executable
+count enclosures.
+
+The [square-supported refinement](COLLISION_SQRT_REMAINDER.md) further proves
+an effective `O(sqrt(X)*(1+log(X))^2)` remainder. It uses the positive
+factorization of the absolute convolution coefficients and preserves the
+same main term. The original epsilon-exponent proof above remains a separate
+valid route.
 
 ## Certified Dirichlet values at positive integer s
 
