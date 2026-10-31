@@ -64,6 +64,7 @@ SHAPES = {
     'population': {'conductor', 'exponent', 'residue', 'rank', 'factorization'},
     'four': {'a', 'b', 'u', 'v', 'w'},
     'constants': {'prime_cutoff', 's'},
+    'approximate': {'X', 'sigma', 'prime_cutoff', 'bits', 'include_exact'},
     'classify': {'max_conductor'},
 }
 
@@ -164,6 +165,11 @@ def evaluate(request=None):
         out = dict(receipt(),a=a,b=b,u=u,v=v,w=w,
                    roundtrip_verified=collision_four_inverse_vectors(u,v,w)==(a,b),
                    size_verified=all(x+y==r+s+4*t for x,y,r,s,t in zip(a,b,u,v,w)))
+    elif operation == 'approximate':
+        from .collision_asymptotic import counting_certificate
+        if 'X' not in p:
+            raise ValueError('approximate requires X')
+        out = counting_certificate(**p)
     elif operation == 'constants':
         from .collision_constants import constants_receipt
         out = constants_receipt(integer(p.get('prime_cutoff', 100), 'prime_cutoff', 2), integer(p.get('s', 2), 's', 2))
@@ -193,6 +199,10 @@ def main(argv=None):
     parser.add_argument('--modulus')
     parser.add_argument('--prime-cutoff', type=int)
     parser.add_argument('--s', type=int)
+    parser.add_argument('--x', dest='X', help='exact rational X for the finite-input counting certificate')
+    parser.add_argument('--sigma', help='rational sigma in (1/2,1), or auto')
+    parser.add_argument('--bits', type=int)
+    parser.add_argument('--include-exact', action='store_true', default=None)
     parser.add_argument('--max-conductor', type=int)
     parser.add_argument('--factorization', type=json.loads)
     for field in ('a','b','u','v','w'):

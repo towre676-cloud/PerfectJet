@@ -4983,7 +4983,7 @@
           },
           "endpoint_rounding": "outward to multiples of 2^-128"
         },
-        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. The summatory asymptotic is not a finite-X error certificate. No claim of literature priority or physical predictive performance."
+        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. This constants receipt is not a finite-X error certificate; use collision-research approximate for certified cumulative counts. No claim of literature priority or physical predictive performance."
       }
     },
     {
@@ -6472,7 +6472,7 @@
           },
           "endpoint_rounding": "outward to multiples of 2^-128"
         },
-        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. The summatory asymptotic is not a finite-X error certificate. No claim of literature priority or physical predictive performance.",
+        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. This constants receipt is not a finite-X error certificate; use collision-research approximate for certified cumulative counts. No claim of literature priority or physical predictive performance.",
         "visual": {
           "kind": "flow",
           "nodes": [
@@ -6521,6 +6521,189 @@
             "id": "2",
             "label": "Scope",
             "value": "See proof and record"
+          }
+        ],
+        "edges": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "2"
+          ]
+        ]
+      },
+      "equation_ids": [
+        "PJ-C001",
+        "PJ-C002",
+        "PJ-C003",
+        "PJ-C004",
+        "PJ-C005",
+        "PJ-C006",
+        "PJ-C007",
+        "PJ-C008",
+        "PJ-C009",
+        "PJ-C010",
+        "PJ-C011",
+        "PJ-C012",
+        "PJ-C013",
+        "PJ-C014",
+        "PJ-C015",
+        "PJ-C016",
+        "PJ-C017",
+        "PJ-C018",
+        "PJ-C019",
+        "PJ-C020"
+      ],
+      "scope": "Written all-conductor proofs use the classical Estermann theorem. Finite checks are executable evidence, not Lean formalization. A prime-local projection and a global residue condition have different meanings."
+    },
+    {
+      "schema": "perfectjet/math-lab-result/1",
+      "lab": "collision",
+      "title": "Explore arithmetic collisions",
+      "summary": "Prime collision rules expose exact populations, Pell recurrences and provable boundaries of analytic continuation.",
+      "metrics": [
+        {
+          "label": "Count lower",
+          "value": 7619246
+        },
+        {
+          "label": "Count upper",
+          "value": 10132090
+        },
+        {
+          "label": "Sigma",
+          "value": "3/4"
+        }
+      ],
+      "details": {
+        "schema": "perfectjet/conductor-two-finite-x/1",
+        "X": "1000000/1",
+        "floor_X": 1000000,
+        "sigma": "3/4",
+        "prime_cutoff": 1000,
+        "bits": 80,
+        "prediction": "10730024218852470675396876203891/1208925819614629174706176",
+        "main_term": {
+          "lower": "670287477548261849874107721681/75557863725914323419136",
+          "upper": "5367724398466375876404014430443/604462909807314587353088",
+          "endpoint_rounding": "outward to multiples of 2^-80"
+        },
+        "remainder_upper": "1513497526172614494645390899535/1208925819614629174706176",
+        "prediction_error_upper": "759461052126447786028271778265/604462909807314587353088",
+        "analytic_enclosure": {
+          "lower": "9211102114599575103340332647361/1208925819614629174706176",
+          "upper": "12248946323105366247453419760421/1208925819614629174706176"
+        },
+        "count_enclosure": {
+          "lower": 7619246,
+          "upper": 10132090
+        },
+        "constants": {
+          "C": {
+            "lower": "712208576152934463580617/1208925819614629174706176",
+            "upper": "356280675276998132721495/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "D": {
+            "lower": "164457257329671049036247/151115727451828646838272",
+            "upper": "662526042771312900392041/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "gamma": {
+            "lower": "697810920785488755610043/1208925819614629174706176",
+            "upper": "697810920785488755610051/1208925819614629174706176",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "K": {
+            "lower": "885074537458620783150717/1208925819614629174706176",
+            "upper": "445524967578367045557209/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          }
+        },
+        "constant_evidence": {
+          "partial_C": {
+            "lower": "89070168819249533180341/151115727451828646838272",
+            "upper": "356280675276998132721495/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "partial_D": {
+            "lower": "164457257329671049036247/151115727451828646838272",
+            "upper": "657829029318684196145553/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "C_tail_loss_upper": "643033205335525517037792931416480640439384385844602633801022030266081488774658242216444838305121679666232811743655916396877869091166599889848827738651/1298848804975154602967264573340784392637496951860090692534471392112295396461673480483845162343659623167356258374044769498293221971568581487011758402560000",
+          "D_tail": {
+            "lower": "0",
+            "upper": "587126681578588030811/75557863725914323419136",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "tail_method": "minimum of all-integer and reduced-residue modulo-210 integral tails"
+        },
+        "majorant_method": "zeta(2sigma)^2 extraction with a positive residual Euler product and modulo-210 prime tails",
+        "parameter_candidates": [
+          {
+            "sigma": "3/4",
+            "B_upper": "33805189486004460851300791/1208925819614629174706176",
+            "coefficient_upper": "213947889617691366980553/151115727451828646838272",
+            "remainder_upper": "1513497526172614494645390899535/1208925819614629174706176",
+            "tail_log_upper": "21721010443418956127/151115727451828646838272"
+          }
+        ],
+        "parameter_selection": "supplied rational sigma",
+        "theorem": "abs(S(X)-C*X*log(X)-K*X) <= B_sigma*X^sigma*max(6/5,exp(-1-(1-sigma)*(2*gamma-1))/(1-sigma))",
+        "proof": "docs/COLLISION_FINITE_X.md",
+        "arithmetic": "outward-rounded rational intervals with explicit series and Euler-product tails",
+        "count_semantics": "positive grouped conductor-two coefficients A(p^e)=1 for even e and e+1 for odd e",
+        "visual": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "id": "0",
+              "label": "Count lower",
+              "value": 7619246
+            },
+            {
+              "id": "1",
+              "label": "Count upper",
+              "value": 10132090
+            },
+            {
+              "id": "2",
+              "label": "Sigma",
+              "value": "3/4"
+            }
+          ],
+          "edges": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "2"
+            ]
+          ]
+        }
+      },
+      "visual": {
+        "kind": "flow",
+        "nodes": [
+          {
+            "id": "0",
+            "label": "Count lower",
+            "value": 7619246
+          },
+          {
+            "id": "1",
+            "label": "Count upper",
+            "value": 10132090
+          },
+          {
+            "id": "2",
+            "label": "Sigma",
+            "value": "3/4"
           }
         ],
         "edges": [

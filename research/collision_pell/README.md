@@ -23,7 +23,8 @@ third-party package is needed for the command-line research engines.
 - Conductor four has an explicit reversible transport from admissible `(m,n)`
   to `(u,v,w)`, with `gcd(u,v)=1` and `m*n=u*v*w^4`.
 - The conductor-two positive arithmetic function has an elementary two-term
-  summatory asymptotic and certified rational constant/value enclosures.
+  summatory asymptotic, a certified finite-input remainder, and rational
+  intervals for both asymptotic coefficients.
 - Actual factor pairs can be counted, ranked, selected, conditioned and sampled
   by their **total** collision residue. Supplied factorization and output-bit
   budgets remain explicit.
@@ -45,6 +46,7 @@ python -m perfectjet collision-research projection --conductor 4 --order 12
 python -m perfectjet collision-research norm --conductor 3 --order 12
 python -m perfectjet collision-research classify --max-conductor 32
 python -m perfectjet collision-research constants --prime-cutoff 10000 --s 2
+python -m perfectjet collision-research approximate --x 1000000000000 --prime-cutoff 10000 --include-exact
 python -m perfectjet collision-research population --conductor 6 --factorization '[[2,4],[3,3],[5,2]]' --rank 7
 python -m perfectjet collision-research pell --index 100000000000000000000000000000000000000000000000000 --modulus 1000000007
 python -m perfectjet collision-research extract --order 4
@@ -90,6 +92,8 @@ and [asymptotic proof](../../docs/COLLISION_ASYMPTOTICS.md).
 
 ```bash
 python scripts/verify_collision_pell.py --check
+python scripts/verify_collision_finite_x.py --check
+python independent_checks/collision_finite_x/verify.py
 python independent_checks/collision_pell/verify.py
 node scripts/check_collision_explorer.cjs
 python -m unittest discover -s tests -p 'test_collision*.py' -v
@@ -99,6 +103,6 @@ The main receipt is deterministic and source-bound. The independent verifier
 uses original integer pairs, a separate Pell recurrence, literal formal
 logarithms, and determinant/interpolation norms. The browser-core replay also
 executes validation, UI handlers and export against a minimal DOM; this checks
-behavior, not screenshot layout. The asymptotic does not provide a certified
-finite-input error bar, and numerical observations do not prove analytic
-continuation or historical originality.
+behavior, not screenshot layout. The [finite-input extension](../../docs/COLLISION_FINITE_X.md)
+provides a guaranteed count enclosure; its exact-count comparisons record
+observed accuracy separately from the proven remainder.

@@ -107,11 +107,12 @@ def catalogue():
             {'operation':'norm','conductor':3,'order':8},
             {'operation':'population','conductor':6,'residue':0,'factorization':[[2,4],[3,3],[5,2]],'rank':0},
             {'operation':'constants','prime_cutoff':1000,'s':2},
+            {'operation':'approximate','X':'1000000','prime_cutoff':1000,'sigma':'3/4'},
             {'operation':'pell','index':'10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000','modulus':1000000007},
             {'operation':'extract','order':4},
             {'operation':'four','a':[4,1],'b':[2,4]},
         ],
-        'limits': 'Explicit conductor, polynomial, output-bit and prime-product budgets; exact remote inputs use decimal strings.',
+        'limits': 'Explicit conductor, polynomial, output-bit and prime-product budgets; exact remote inputs use decimal strings. Approximate returns a certified finite-X count enclosure.',
     }
     labs = [dict(lab, request_schema=request_shapes.get(lab['id'])) for lab in LABS]
     return {'schema': 'perfectjet/math-lab-catalogue/1', 'labs': labs,
@@ -151,6 +152,10 @@ def evaluate(request):
         if operation == 'report':
             metrics = [('Pell identity',result['pell_identity_verified']),('Natural boundary','Re(s)=0'),('Summatory count',result['summatory_count'])]
             visual = {'kind':'bars','values':[{'label':str(i),'value':v} for i,v in enumerate(result['local_coefficients'][:17])]}
+        elif operation == 'approximate':
+            bounds = result['count_enclosure']
+            metrics = [('Count lower',bounds['lower']),('Count upper',bounds['upper']),('Sigma',result['sigma'])]
+            visual = None
         elif operation == 'population':
             metrics = [('Conductor',result['conductor']),('Count',result.get('count',result.get('local_count','exact')))]
             histogram = result.get('residue_histogram',[])
