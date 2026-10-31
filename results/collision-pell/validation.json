@@ -4983,7 +4983,7 @@
           },
           "endpoint_rounding": "outward to multiples of 2^-128"
         },
-        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. The summatory asymptotic is not a finite-X error certificate. No claim of literature priority or physical predictive performance."
+        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. This constants receipt is not a finite-X error certificate; use collision-research approximate for certified cumulative counts. No claim of literature priority or physical predictive performance."
       }
     },
     {
@@ -6472,7 +6472,7 @@
           },
           "endpoint_rounding": "outward to multiples of 2^-128"
         },
-        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. The summatory asymptotic is not a finite-X error certificate. No claim of literature priority or physical predictive performance.",
+        "limits": "Dirichlet intervals apply to the conductor-two product at integer s>=2. This constants receipt is not a finite-X error certificate; use collision-research approximate for certified cumulative counts. No claim of literature priority or physical predictive performance.",
         "visual": {
           "kind": "flow",
           "nodes": [
@@ -6521,6 +6521,282 @@
             "id": "2",
             "label": "Scope",
             "value": "See proof and record"
+          }
+        ],
+        "edges": [
+          [
+            "0",
+            "1"
+          ],
+          [
+            "1",
+            "2"
+          ]
+        ]
+      },
+      "equation_ids": [
+        "PJ-C001",
+        "PJ-C002",
+        "PJ-C003",
+        "PJ-C004",
+        "PJ-C005",
+        "PJ-C006",
+        "PJ-C007",
+        "PJ-C008",
+        "PJ-C009",
+        "PJ-C010",
+        "PJ-C011",
+        "PJ-C012",
+        "PJ-C013",
+        "PJ-C014",
+        "PJ-C015",
+        "PJ-C016",
+        "PJ-C017",
+        "PJ-C018",
+        "PJ-C019",
+        "PJ-C020"
+      ],
+      "scope": "Written all-conductor proofs use the classical Estermann theorem. Finite checks are executable evidence, not Lean formalization. A prime-local projection and a global residue condition have different meanings."
+    },
+    {
+      "schema": "perfectjet/math-lab-result/1",
+      "lab": "collision",
+      "title": "Explore arithmetic collisions",
+      "summary": "Prime collision rules expose exact populations, Pell recurrences and provable boundaries of analytic continuation.",
+      "metrics": [
+        {
+          "label": "Count lower",
+          "value": 7623714
+        },
+        {
+          "label": "Count upper",
+          "value": 10127597
+        },
+        {
+          "label": "Remainder",
+          "value": "sigma"
+        }
+      ],
+      "details": {
+        "schema": "perfectjet/conductor-two-finite-x/2",
+        "X": "1000000/1",
+        "floor_X": 1000000,
+        "sigma": "3/4",
+        "prime_cutoff": 1000,
+        "bits": 80,
+        "prediction": "21460018156432857563700044145897/2417851639229258349412352",
+        "main_term": {
+          "lower": "10730002127944828686660461690853/1208925819614629174706176",
+          "upper": "2682504007122007219259895613761/302231454903657293676544",
+          "endpoint_rounding": "outward to multiples of 2^-80"
+        },
+        "remainder_upper": "1513497526172614494645390899535/1208925819614629174706176",
+        "prediction_error_upper": "3027008952888429179669902563261/2417851639229258349412352",
+        "analytic_enclosure": {
+          "lower": "4608252300886107096007535395659/604462909807314587353088",
+          "upper": "12243513554660643371684973354579/1208925819614629174706176"
+        },
+        "count_enclosure": {
+          "lower": 7623714,
+          "upper": 10127597
+        },
+        "constants": {
+          "C": {
+            "lower": "712380397466350231117573/1208925819614629174706176",
+            "upper": "356190385888320251372999/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "D": {
+            "lower": "660217726907232196415497/604462909807314587353088",
+            "upper": "660224737826009429451287/604462909807314587353088",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "gamma": {
+            "lower": "697810920785488755610043/1208925819614629174706176",
+            "upper": "697810920785488755610051/1208925819614629174706176",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          },
+          "K": {
+            "lower": "888103225461681046845321/1208925819614629174706176",
+            "upper": "888111954717114034869807/1208925819614629174706176",
+            "endpoint_rounding": "outward to multiples of 2^-80"
+          }
+        },
+        "constant_evidence": {
+          "method": "intersection of direct and finite-zeta-extracted constant enclosures",
+          "direct": {
+            "partial_C": {
+              "lower": "89070168819249533180341/151115727451828646838272",
+              "upper": "356280675276998132721495/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "partial_D": {
+              "lower": "164457257329671049036247/151115727451828646838272",
+              "upper": "657829029318684196145553/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "C_tail_loss_upper": "643033205335525517037792931416480640439384385844602633801022030266081488774658242216444838305121679666232811743655916396877869091166599889848827738651/1298848804975154602967264573340784392637496951860090692534471392112295396461673480483845162343659623167356258374044769498293221971568581487011758402560000",
+            "D_tail": {
+              "lower": "0",
+              "upper": "587126681578588030811/75557863725914323419136",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "tail_method": "minimum of all-integer and reduced-residue modulo-210 integral tails"
+          },
+          "extracted": {
+            "identity": "H(s)=zeta(2s)^(-2)*prod_p R(p^(-s)); R(x)=(1+2x-x^2)/((1-x)^2*(1+x)^4)",
+            "prime_cutoff": 1000,
+            "effective_prime_cutoff": 1000,
+            "zeta2": {
+              "lower": "1988603264976517361362865/1208925819614629174706176",
+              "upper": "994301632488258680681433/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "zeta2_derivative": {
+              "lower": "-566713145888523102209141/604462909807314587353088",
+              "upper": "-1133426291777046204418281/1208925819614629174706176",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "zeta_evaluation": {
+              "summation_cutoff": 64,
+              "included_finite_indices": [
+                1,
+                63
+              ],
+              "order": 12,
+              "bits": 80,
+              "work_bits": 96,
+              "zeta_remainder_upper": "236364091/3896386201087270475289120696597121722324898283520",
+              "derivative_remainder_upper": "36633181128156672838527468376548887766708858887/86086942585094871212468401581396957533665287543316065220396951722027147033216811008000",
+              "method": "separate Euler-Maclaurin formulas with absolute periodic-Bernoulli integral remainders",
+              "derivative_rule": "B_(2k)*N^(-2k-1)*(H_(2k)-1-log(N))"
+            },
+            "residual_partial_product": {
+              "lower": "481891159636378811486965/302231454903657293676544",
+              "upper": "963782319272757622974143/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "residual_derivative_magnitude_partial_sum": {
+              "lower": "1435712767248685429896347/1208925819614629174706176",
+              "upper": "358928191812171357474369/302231454903657293676544",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "residual_log_tail": {
+              "lower": "0",
+              "upper": "635212952494009099/1208925819614629174706176",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "residual_derivative_tail": {
+              "lower": "-3505459388616517611/302231454903657293676544",
+              "upper": "0",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "tail_method": "minimum of integer and reduced-residue modulo-210 integral tails"
+          },
+          "direct_intervals": {
+            "C": {
+              "lower": "712208576152934463580617/1208925819614629174706176",
+              "upper": "356280675276998132721495/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "D": {
+              "lower": "164457257329671049036247/151115727451828646838272",
+              "upper": "662526042771312900392041/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "K": {
+              "lower": "885074537458620783150717/1208925819614629174706176",
+              "upper": "445524967578367045557209/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            }
+          },
+          "extracted_intervals": {
+            "C": {
+              "lower": "712380397466350231117573/1208925819614629174706176",
+              "upper": "356190385888320251372999/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "D": {
+              "lower": "660217726907232196415497/604462909807314587353088",
+              "upper": "660224737826009429451287/604462909807314587353088",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            },
+            "K": {
+              "lower": "888103225461681046845321/1208925819614629174706176",
+              "upper": "888111954717114034869807/1208925819614629174706176",
+              "endpoint_rounding": "outward to multiples of 2^-80"
+            }
+          }
+        },
+        "majorant_method": "zeta(2sigma)^2 extraction with a positive residual Euler product and modulo-210 prime tails",
+        "parameter_candidates": [
+          {
+            "sigma": "3/4",
+            "B_upper": "33805189486004460851300791/1208925819614629174706176",
+            "coefficient_upper": "213947889617691366980553/151115727451828646838272",
+            "remainder_upper": "1513497526172614494645390899535/1208925819614629174706176",
+            "tail_log_upper": "21721010443418956127/151115727451828646838272"
+          }
+        ],
+        "remainder_candidates": {
+          "sigma": "1513497526172614494645390899535/1208925819614629174706176"
+        },
+        "selected_remainder_method": "sigma",
+        "sigma_role": "best sigma candidate; the selected theorem is named separately",
+        "parameter_selection": "supplied rational sigma",
+        "theorem": "abs(S(X)-C*X*log(X)-K*X) <= B_sigma*X^sigma*max(6/5,exp(-1-(1-sigma)*(2*gamma-1))/(1-sigma))",
+        "proof": "docs/COLLISION_FINITE_X.md",
+        "constant_proof": "docs/COLLISION_CONSTANT_EXTRACTION.md",
+        "arithmetic": "outward-rounded rational intervals with explicit series and Euler-product tails",
+        "count_semantics": "positive grouped conductor-two coefficients A(p^e)=1 for even e and e+1 for odd e",
+        "visual": {
+          "kind": "flow",
+          "nodes": [
+            {
+              "id": "0",
+              "label": "Count lower",
+              "value": 7623714
+            },
+            {
+              "id": "1",
+              "label": "Count upper",
+              "value": 10127597
+            },
+            {
+              "id": "2",
+              "label": "Remainder",
+              "value": "sigma"
+            }
+          ],
+          "edges": [
+            [
+              "0",
+              "1"
+            ],
+            [
+              "1",
+              "2"
+            ]
+          ]
+        }
+      },
+      "visual": {
+        "kind": "flow",
+        "nodes": [
+          {
+            "id": "0",
+            "label": "Count lower",
+            "value": 7623714
+          },
+          {
+            "id": "1",
+            "label": "Count upper",
+            "value": 10127597
+          },
+          {
+            "id": "2",
+            "label": "Remainder",
+            "value": "sigma"
           }
         ],
         "edges": [
