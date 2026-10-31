@@ -7,7 +7,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: perfectjet-v021-publication
+  group: perfectjet-v021-publication-final
   cancel-in-progress: false
 jobs:
   verify:
@@ -67,14 +67,21 @@ jobs:
           python scripts/verify_asterion_extension.py --check
           python scripts/verify_dell.py --check
           python scripts/check_observatory_ui.py
+      - name: Stage evidence with a stable flat artifact layout
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/release-evidence"
+          cp releases/PerfectJet-v0.21.0.zip.sha256 "$RUNNER_TEMP/release-evidence/"
+          cp "$RUNNER_TEMP/verify-release.txt" "$RUNNER_TEMP/release-evidence/"
+          if [ -f "$RUNNER_TEMP/regressions.txt" ]; then
+            cp "$RUNNER_TEMP/regressions.txt" "$RUNNER_TEMP/release-evidence/"
+          fi
       - name: Retain platform verification evidence
         uses: actions/upload-artifact@v4
         with:
           name: perfectjet-v021-${{ runner.os }}-${{ github.sha }}
-          path: |
-            releases/PerfectJet-v0.21.0.zip.sha256
-            ${{ runner.temp }}/verify-release.txt
-            ${{ runner.temp }}/regressions.txt
+          path: ${{ runner.temp }}/release-evidence/
           if-no-files-found: error
   publish:
     needs: verify
