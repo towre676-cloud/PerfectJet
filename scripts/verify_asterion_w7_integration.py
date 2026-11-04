@@ -55,7 +55,7 @@ def build():
         'w7-adjoint-ideal.json.gz','w7-schur-reconstruction.json','w7-source-null-replay.json',
         'w7-completion-summary.json','w7-verification.json'))
     paths.extend(ROOT/'scripts'/name for name in ('verify_asterion.py','verify_asterion_extension.py',
-        'verify_asterion_frontiers.py','verify_asterion_w7_rank_certificates.py',
+        'verify_asterion_frontiers.py','verify_asterion_w7_rank_certificates.py','audit_asterion_w7_provenance.py',
         'replay_asterion_w7_prior_sectors.py','verify_asterion_w7_integration.py'))
     paths.extend(ROOT/name for name in ('src/perfectjet/weight_seven.py','docs/ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md',
         'docs/INSTALL.md','tests/test_weight_seven_integration.py','.github/workflows/asterion-w7.yml'))
