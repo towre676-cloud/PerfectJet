@@ -1,7 +1,58 @@
 {
   "schema": "perfectjet/asterion-length-three-boundary/1",
-  "scope": "Listed highest weights only; the weight-seven 248 and singlet sectors, every length-four sector and all-weight statements are open.",
+  "scope": "Weight-seven length three complete. Weight-eight listed sectors only. Weight-seven length four and longer, full weight seven and all-weight statements remain open.",
   "sectors": {
+    "w7-1": {
+      "arc_multiplicity": 1,
+      "class": null,
+      "completion_certificate": "src/perfectjet/resources/asterion_w7_certificates.json",
+      "conformal_weight": 7,
+      "current_length": 3,
+      "highest_weight_root_coordinates": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ideal_highest_rank": 0,
+      "kernel_multiplicity": 0,
+      "label": "w7-1",
+      "lattice_null_dimension": 0,
+      "li_degree": 4,
+      "lower_length_highest_vectors": 3,
+      "new_primitive": false,
+      "new_primitive_multiplicity": 0,
+      "polynomial_highest_vectors": 1,
+      "projected_lattice_rank_Q": 4,
+      "top_monomial_columns": 49376,
+      "top_shapes": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "weyl_dimension": 1
+    },
     "w7-147250": {
       "arc_multiplicity": 5,
       "conformal_weight": 7,
@@ -56,6 +107,58 @@
       "representative_terms": [],
       "top_monomial_columns": 15,
       "weyl_dimension": 2450240
+    },
+    "w7-248": {
+      "arc_multiplicity": 9,
+      "class": "D^2 P_248 from weight five",
+      "completion_certificate": "src/perfectjet/resources/asterion_w7_certificates.json",
+      "conformal_weight": 7,
+      "current_length": 3,
+      "equals_derivative_of_lower_class": true,
+      "highest_weight_root_coordinates": [
+        2,
+        4,
+        6,
+        5,
+        4,
+        3,
+        2,
+        3
+      ],
+      "ideal_highest_rank": 5,
+      "kernel_multiplicity": 1,
+      "label": "w7-248",
+      "lattice_null_dimension": 6,
+      "li_degree": 4,
+      "lower_length_highest_vectors": 4,
+      "new_primitive": false,
+      "new_primitive_multiplicity": 0,
+      "polynomial_highest_vectors": 14,
+      "projected_lattice_rank_Q": 12,
+      "top_monomial_columns": 16986,
+      "top_shapes": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      "weyl_dimension": 248
     },
     "w7-27000": {
       "arc_multiplicity": 2,

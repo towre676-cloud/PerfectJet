@@ -14,7 +14,7 @@ from pathlib import Path
 
 from perfectjet.asterion import json_ready, source_digests
 from perfectjet.asterion_primitives import (
-    LAMBDA_3875, OMEGA_147250, OMEGA_30380, OMEGA_779247, JetAlgebra, LatticeE8VOA,
+    ZERO, THETA, LAMBDA_3875, OMEGA_147250, OMEGA_30380, OMEGA_779247, JetAlgebra, LatticeE8VOA,
     _in_span, decode_polynomial, g_tensor_i_highest, ideal_highest_images, length_three_sector,
     load_certificates,
 )
@@ -22,11 +22,12 @@ from perfectjet.asterion_primitives import (
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT/"results/asterion-primitives/length-three-boundary.json"
 TARGETS = {
+    1: ZERO, 248: THETA,
     4096000: (6, 12, 18, 15, 12, 9, 5, 9), 2450240: (6, 12, 18, 15, 12, 8, 4, 9),
     779247: OMEGA_779247, 27000: (4, 8, 12, 10, 8, 6, 4, 6), 147250: OMEGA_147250,
     30380: OMEGA_30380, 3875: LAMBDA_3875,
 }
-PLAN = [(7, d) for d in (4096000, 2450240, 779247, 27000, 147250, 30380, 3875)]
+PLAN = [(7, d) for d in (4096000, 2450240, 779247, 27000, 147250, 30380, 3875, 248, 1)]
 PLAN += [(8, d) for d in (4096000, 2450240, 779247, 27000, 147250)]
 
 
@@ -68,11 +69,11 @@ def main():
                 len(symbols) == 1 and _in_span(derived, ideal+symbols) and _in_span(symbols[0], ideal+[derived]))
         if result["representatives"]:
             previous[weight, dimension] = result["representatives"][0]["symbol"]
-        row["new_primitive"] = row["kernel_multiplicity"] > (1 if "equals_derivative_of_lower_class" in row else 0)
+        row["new_primitive"] = row["kernel_multiplicity"] > (1 if row.get("equals_derivative_of_lower_class", False) else 0)
         existing["sectors"][label] = json_ready(row)
         existing.update({"schema": "perfectjet/asterion-length-three-boundary/1",
                          "source_sha256": source_digests(),
-                         "scope": "Listed highest weights only; the weight-seven 248 and singlet sectors, every length-four sector and all-weight statements are open."})
+                         "scope": "Weight-seven length three is complete when all nine sectors are present. Weight-eight listed sectors only; length four and longer and all-weight statements remain open."})
         OUTPUT.parent.mkdir(parents=True, exist_ok=True)
         OUTPUT.write_text(json.dumps(existing, indent=2, sort_keys=True)+"\n", encoding="utf-8")
         print(json.dumps({k: row[k] for k in ("label", "arc_multiplicity", "kernel_multiplicity", "new_primitive")}), flush=True)

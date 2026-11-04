@@ -32,6 +32,8 @@ Run `python -m perfectjet dell --exhaustive`, open the `dell` Math Lab card, or 
 
 Run `python -m perfectjet asterion primitives` (stored certificates replayed) or add `--exhaustive` to repeat every search. An exact Frenkel–Kac lattice criterion certifies affine null lifts. The [primitive-generator report](docs/ASTERION_PRIMITIVES.md) gives the weight-five primitives in closed form, P₂₄₈=20u^[0]B(x,z)−21u^[0]B(y,y)−12u^[1]B(x,y), and a 112-term P₁₄₇₂₅₀. It also gives the forced weight-six V₃₀₃₈₀ primitive, the Li-bigraded weight-six kernel, the minimal differential generators through weight six and the decision F₀ ≡ (91/155)·Σ_a x_(tᵃ)^[0]P₂₄₈^(t_a) modulo the arc ideal. 14 PJ-P records follow the 710 earlier equation records unchanged. Weight seven and any all-weight presentation remain open.
 
+The [30 October weight-seven length-three completion](docs/ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md) resolves the missing singlet and adjoint sectors: kernel multiplicities **0** and **1**, respectively. The adjoint is exactly D²P₂₄₈; together with the seven earlier sectors this proves that the entire cubic kernel at weight seven is 248+3875+30380+147250, with no new cubic primitive. Explicit lifts, exact rational rank matrices and an independent Bareiss/lattice replay are included. The length-four sector and the full weight-seven classification remain open.
+
 ## Asterion next push: higher kernels, elliptic compatibility and monodromy
 
 The next push determines exact arc-kernel characters through weight six: **151,373 dimensions at weight five**, including **147,498 new differential-ideal primitive dimensions**, and **185,629 dimensions at weight six**, with a forced new30380 primitive module. The quartic arc sector is classified as1+3875 by actual multiplication witnesses. An exact lowering/translation identity proves infinite nonzero relation towers. The classical rank-eight elliptic E8 dynamical r-matrix now has an implemented full CDYBE and an all-orders Fay proof. The specialized five-channel level-four monodromy has compact closure `{g in U(5):det(g)^17=1}`, with identitySU(5) and projectively dense image inPU(5); actual bounded holonomies certify irreducibility at this rational parameter. The rank-eight charge character supplies elliptic, heat and harmonic-density relations with an explicit Lehmer boundary.
@@ -139,3 +141,9 @@ The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archi
 PR #2's incidence and modular engines are integrated with the v0.16.0 Math Lab and all 450 original equation records. The catalogue now has 464 unique entries across the same 24 families. The partners tool computes exact supplied-form kernels through degree 20, with activity checked separately. Global classifications retain their optional external-solver assumptions; degrees 21 and above remain open. See [partner incidence](docs/PARTNER_INCIDENCE.md), [integration record](docs/SEXTIC_INTEGRATION.md), and the [monograph](docs/MONOGRAPH.md).
 
 The [Asterion half-braid extension](docs/ASTERION_HALF_BRAID.md) now gives exact B3 operators, squares matching the pure loops, central character zeta17^4 and a Tuba–Wenzl classification. Replay with `PYTHONPATH=src python scripts/verify_asterion_braid.py --check`.
+
+The completed [weight-seven Asterion cubic theorem](docs/ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md)
+is available after source installation with `python -m perfectjet.weight_seven`.
+This source-bound retained-evidence report covers all nine length-three sectors;
+the independent replay workflow recomputes their exact rank bounds and null
+lift evidence. Quartic and longer-length classification remain open.

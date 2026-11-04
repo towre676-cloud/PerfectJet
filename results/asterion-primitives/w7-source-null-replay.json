@@ -1,0 +1,18 @@
+{
+  "lattice_replayed": true,
+  "passed": true,
+  "representatives": [
+    {
+      "affine_lift_null": true,
+      "correction_terms": 145,
+      "ideal_highest_rank": 3,
+      "lattice_image_terms": 0,
+      "nonzero_modulo_ideal": true,
+      "passed": true,
+      "raising_annihilated": true,
+      "shapes": true,
+      "symbol_terms": 763,
+      "weights": true
+    }
+  ]
+}

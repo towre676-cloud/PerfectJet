@@ -1,0 +1,88 @@
+name: Finalize verified Asterion receipts and isolated installation
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/asterion-w7-missing-sectors-20261030]
+    paths: ['.github/workflows/asterion-w7.yml']
+permissions:
+  contents: write
+  actions: write
+  statuses: write
+concurrency:
+  group: asterion-cubic-integration-finalization
+  cancel-in-progress: false
+jobs:
+  recover-and-install:
+    if: github.ref == 'refs/heads/codex/asterion-w7-missing-sectors-20261030'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      PYTHONPATH: src
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@v4
+        with:
+          name: asterion-cubic-verification-41857689251
+          run-id: 41857689251
+          github-token: ${{ github.token }}
+          path: /tmp/w7-verified-evidence
+      - name: Recover only bytes matching the completed exhaustive replay
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p verification
+          set -euo pipefail
+          python scripts/recover_asterion_w7_verified_receipts.py /tmp/w7-verified-evidence 2>&1 | tee verification/recovery.log
+      - name: Verify strict publication provenance and installed-report integrity
+        run: |
+          python -m unittest tests.test_asterion_publication.AsterionPublicationTests.test_retained_receipts_have_exact_hashes_and_current_sources tests.test_asterion_publication.AsterionPublicationTests.test_independent_compound_seed_lattice_counterexample tests.test_asterion_extension.ExtensionPublicationTests.test_retained_full_mathematical_replay_and_source_binding tests.test_asterion_frontiers.FrontierIntegrationTests.test_all_retained_bytes_and_source_bindings tests.test_weight_seven_integration -v
+      - name: Install and run the wheel in isolation from source metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          python -I -m pip wheel --no-deps --wheel-dir /tmp/w7-wheels "$GITHUB_WORKSPACE"
+          python -m venv /tmp/w7-venv
+          cd /tmp
+          /tmp/w7-venv/bin/python -I -m pip install --force-reinstall --no-index --no-deps /tmp/w7-wheels/*.whl
+          /tmp/w7-venv/bin/python -I -m perfectjet.weight_seven | tee "$GITHUB_WORKSPACE/verification/installed-report.json"
+      - name: Preserve verified generated receipts on the PR branch only
+        id: preserve
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add results/asterion results/asterion-extension results/asterion-frontiers results/asterion-primitives src/perfectjet/resources/asterion_w7_integration.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve exhaustively verified cubic certificates and isolated install evidence'
+            git push origin HEAD:refs/heads/codex/asterion-w7-missing-sectors-20261030
+          fi
+          git rev-parse HEAD | tee verification/VERIFIED_COMMIT.txt
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Bind verified mathematical replay and fresh installation to the resulting commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERIFIED_SHA: ${{ steps.preserve.outputs.sha }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/statuses/$VERIFIED_SHA" -f state=success -f context='Asterion exhaustive replay and isolated install' -f description='936-test replay hashes preserved; strict provenance and isolated wheel passed' -f target_url="$RUN_URL"
+      - name: Run standard repository checks against the resulting PR commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/checks.yml/dispatches" -f ref='codex/asterion-w7-missing-sectors-20261030'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: asterion-final-verification-${{ github.run_id }}
+          path: |
+            verification/
+            results/asterion/
+            results/asterion-extension/
+            results/asterion-frontiers/
+            results/asterion-primitives/w7-provenance-audit.json
+            src/perfectjet/resources/asterion_w7_integration.json

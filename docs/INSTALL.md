@@ -26,3 +26,24 @@ python -m perfectjet collision-research approximate --x 1000000000000 --prime-cu
 ```
 
 For the pinned historical numerical research suite, create a separate Python 3.12 environment and run `python -m pip install '.[scouting]'` followed by `python -m unittest discover -s tests -v`. The optional dependency pins require a newer Python than the dependency-free core.
+
+## Completed Asterion cubic theorem
+
+After installing the current source checkout, run this from any directory:
+
+```sh
+python -m perfectjet.weight_seven
+```
+
+This checks the installed source and certificate bindings and reports the complete
+weight-seven **length-three** kernel, of dimension 181,753, with no new cubic
+primitive. It reads retained replay evidence; it does not rerun the lattice
+calculation. The source checkout includes
+[the proof and full replay commands](ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md).
+The older `asterion primitives` and frontier reports retain their explicitly
+bounded weight-five/six and selected-sector scopes. Weight-seven quartic,
+longer-length and full primitive classification remain open.
+
+This integration preserves the published v0.21.0 tag and assets. Install this
+checkout to use the newly integrated theorem; the historical release archive
+is not retroactively changed.

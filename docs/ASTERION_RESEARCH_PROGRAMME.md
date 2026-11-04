@@ -1122,3 +1122,20 @@ Claim boundary: Charge heat equations, scalar periods and classical CDYBE alone 
 Preserve q=Q^2 and z_ell=2*pi*i*z_Jac, with the Cartan coordinate conversion. Give an explicit intertwining map of differential systems for any proposed KZ-period bridge.
 
 Claim boundary: Shared modular functions or the integer31 do not identify separate local systems.
+
+## Completed weight-seven cubic classification (3 November integration)
+
+The complete length-three component is
+`K_7^(length 3) = V_248 + V_3875 + V_30380 + V_147250`, of dimension
+181,753. All four classes are derivatives of lower-weight relations; no new
+cubic primitive occurs. The nine highest-weight sectors are covered by exact
+rank bounds, independent integer elimination, ideal nonmembership calculations
+and full source null lifts. The integration replays the seven inherited
+sectors as well as the singlet and adjoint completion.
+
+See [the cubic proof and replay guide](ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md).
+After source installation, `python -m perfectjet.weight_seven` checks current
+source/resource bindings and displays the retained theorem evidence. The
+weight-seven quartic sector, longer lengths, full primitive quotient and
+all-weight finite generation remain open. The published v0.21.0 artifacts
+retain their historical contents.

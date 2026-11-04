@@ -1,0 +1,52 @@
+{
+  "base_commit": "992e955a32e53fb8f710357717865905e8e4f9f4",
+  "evidence_sha256": {
+    "w7-1-projected-rank.json.gz": "e1c5fa8c34452759db741d0d96529dbff7c216efc6a06a6b8f763a7fc37f9af3",
+    "w7-248-projected-rank.json.gz": "2eaa6fa1122538d23cf707a188cfb08cb3457133fb207544ee5d22a1116081f9",
+    "w7-adjoint-ideal.json.gz": "cdc0de5987f8c78521d5309ec9da81b1dae8459021e71c595fe4544cdb7f0b93",
+    "w7-completion-summary.json": "86bc4575d6128a9b7af7c518727ea576c9eba441608ae4dde72c14535b04ea0b",
+    "w7-schur-reconstruction.json": "950669fc658834ba337b6f6821c790c0522c95db7f4305a2f97b5149114931a7",
+    "w7-source-null-replay.json": "180215356a988b66c391753b2c89c7377f9a3b067209df281cb51cec31a6c8dd"
+  },
+  "independent_projected_lattice_replay": [
+    {
+      "independent_rank_Q": 4,
+      "lattice_replayed": true,
+      "sector": 1,
+      "stored_image_matrix_verified": true
+    },
+    {
+      "independent_rank_Q": 12,
+      "lattice_replayed": true,
+      "sector": 248,
+      "stored_image_matrix_verified": true
+    }
+  ],
+  "schema": "perfectjet/asterion-w7-verification/1",
+  "scope": "Weight-seven length three only; full weight seven remains open.",
+  "source_null_replay": {
+    "lattice_replayed": true,
+    "passed": true,
+    "representatives": [
+      {
+        "affine_lift_null": true,
+        "correction_terms": 145,
+        "ideal_highest_rank": 3,
+        "lattice_image_terms": 0,
+        "nonzero_modulo_ideal": true,
+        "passed": true,
+        "raising_annihilated": true,
+        "shapes": true,
+        "symbol_terms": 763,
+        "weights": true
+      }
+    ]
+  },
+  "tests": {
+    "tests.test_asterion_lattice_projection": 4,
+    "tests.test_asterion_primitives": 12,
+    "tests.test_asterion_w7_certificates": 2,
+    "tests.test_asterion_w7_translation": 3,
+    "total_passed": 21
+  }
+}

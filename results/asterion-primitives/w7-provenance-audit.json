@@ -1,0 +1,43 @@
+{
+  "added_source_bindings": {
+    "asterion_lattice_projection.py": "1b1fd00e55f95974894a6454ca1ced195da61dfd77a8ac778fef6be1c95f8fcc"
+  },
+  "changed_source_bindings": {
+    "asterion_primitives.py": {
+      "after": "32547c910e3e62c42dff118e12c8c40d1690ba2d2022e05fc96220cc85ef3088",
+      "before": "16852ec62e83abfb6fa0e70f7651157e2277d0166e817a5d6c88201e1bbcc430"
+    }
+  },
+  "mathematical_payload_sha256": {
+    "results/asterion-extension/boundary.json": "8ad2509998c31f40992028f0db14ad13183d54f9ceeb345ccd6abcf0a886b08d",
+    "results/asterion-extension/cartan_conformal_relations.json.gz": "a43dae92ccfee61ec273a5c61f316dad3e4d5679fb78386fe0e46d3fb151f02e",
+    "results/asterion-extension/currents.json": "32593142b43fa3b66e2b3fe581e821e0e3baaccb6b26e34fd07a316d30eaebc2",
+    "results/asterion-extension/higher.json": "4976871ce1e2bdb74b58471f6555133f8dbbe533fed86858073aaa45718552bd",
+    "results/asterion-extension/kz.json": "051b2879d60dcd7285d84810b4b0b33834d8244d53a1f59c80d8e347c9d1126b",
+    "results/asterion-extension/periods.json": "de35dd3f8112529ca8aa98c160331a72b1616340eb843b3d880c3ceef4f27d6f",
+    "results/asterion-extension/recoupling_tables.json.gz": "9272e63743af78bbd4cd4059d8ca238393480351c6fbe942e96eb43daf4f4c61",
+    "results/asterion-extension/relations.json": "d17439ea8e84a1f69e907cfaa3692ecffd263b332adad7e8615954d3b99403e0",
+    "results/asterion-extension/rigidity.json": "8f09e54d2b6bd2a8a0c79851fe41d2b7b852f1b96ee00ed64e2e5288c07aebf8",
+    "results/asterion-extension/validation.json": "4255993541e63700478afcc24caed37cd12b2bba3914d96ea56c7dd526c39a92",
+    "results/asterion-frontiers/elliptic.json": "0ba4162b400d4d575af82c0dc113e3cdb218fb3bb9f3546f5fbb48f5fee9bcb7",
+    "results/asterion-frontiers/jacobi.json": "3b00a2fbc11a5af85bd413debb21d8d3fee9ec350362633c503ae253e2eb2e44",
+    "results/asterion-frontiers/kernel-characters.json": "f9f55c262e2078f10f720d1bce246883421d1ac844867028b4c449ce69f76105",
+    "results/asterion-frontiers/kernel-tower.json": "a8cd2356d12ee45b15c9ec15314def8b69d04cd32acde44472a638257890b7b1",
+    "results/asterion-frontiers/monodromy-algebra.json": "8e83ffc06f7f8952e6d6e96832c317931f95b19f0c69f0497f3ee099ee70c7e0",
+    "results/asterion-frontiers/monodromy.json": "25123073201528afa2c52b37b518e3130e02c4ac956ec734414d2215a309135a",
+    "results/asterion-frontiers/primitives.json": "60169edbb86f3e0b1fcfb338f6b31b88e82a03f9ef72f12fa32a653f79ae33e7",
+    "results/asterion-frontiers/quartic.json": "482764505868a88fab74a679a4f7db4ff99f2fafa0127275b2a57479491c7515",
+    "results/asterion-frontiers/validation.json": "f869198f13adc9aba40d243b22186b3fd5b021af4e396a3e28aa61eb25ee0588",
+    "results/asterion/cartan_normalizers.json.gz": "e7fc74d864a7953bfa3ba71dc9b9738a9b488b442d4d2c74ce4deb40eecd8bdd",
+    "results/asterion/compound_seed_basis.json.gz": "5596f7c300a398acabf3545821548d34b65925e754b137c4e90b1a6cda755d82",
+    "results/asterion/jordan_kernels.json.gz": "1af3b2b23fcc5b94ac3abc95733ec084eedd9e8740cec1de6a68d41a7c163b46",
+    "results/asterion/response_basis.json.gz": "2e7a4f2b68ce9e30166c11f548194bc0f421f828a9723ef6ef079b2c811043c1",
+    "results/asterion/transport_columns.json.gz": "5256ddb7b776cb956b25ab3d5c156f728dfb78a705ffafb5d64f7d57a5738084",
+    "results/asterion/validation.json": "d57bfcd83707886025277b60447b02e28f6d18587635ea09d15c284652bebc78"
+  },
+  "mathematical_payloads_unchanged": true,
+  "original_pr_commit": "081ee6d76726ead700eb87fb423835afa5ac8ba4",
+  "preserved_main_commit": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+  "schema": "perfectjet/asterion-w7-provenance-audit/1",
+  "scope": "Compare exhaustive regenerated receipts against original PR mathematical payloads; only source metadata excluded. Historical cubic boundary binding preserved."
+}

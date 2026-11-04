@@ -372,6 +372,25 @@ class JetAlgebra:
         return out
 
     @staticmethod
+    def mobius_lower(polynomial):
+        """Leading-length action of L_1: x^[r] -> (r+1)x^[r-1], r>0.
+
+        With D and conformal weight H this satisfies [L_1,D]=2H.
+        It descends to the arc quotient because I has weight two and is
+        killed by L_1, hence L_1 D^k I=k(k+3)D^(k-1)I.
+        """
+        out = {}
+        for monomial, z in polynomial.items():
+            for position, (i, r) in enumerate(monomial):
+                if not r or (position and monomial[position-1] == (i, r)):
+                    continue
+                multiplicity = monomial.count((i, r))
+                rest = monomial[:position]+monomial[position+multiplicity:]
+                new = tuple(sorted(rest+((i, r),)*(multiplicity-1)+((i, r-1),)))
+                _add(out, {new: z*multiplicity*(r+1)})
+        return out
+
+    @staticmethod
     def multiply(left, right):
         out = {}
         for a, x in left.items():
