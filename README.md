@@ -2,9 +2,19 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Source version **0.20.0** offers **29 computed tools and a searchable atlas of 724 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Version **0.21.0** offers **30 computed tools and a searchable atlas of 744 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
 
-The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the existing 29 Math Lab tools and published 0.20.0 release identity retain their own scope.
+Download the [v0.21.0 release](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.21.0) and follow the [installation guide](docs/INSTALL.md). The complete source ZIP includes proofs, tests, research receipts and the graphical Math Lab.
+
+## Collision arithmetic and Pell research
+
+Conductor-two counting now has a [certified finite-input approximation](docs/COLLISION_FINITE_X.md): supply X to obtain the two-term prediction, rigorous intervals for its constants, and integer bounds guaranteed to contain the cumulative count. The [square-supported theorem](docs/COLLISION_SQRT_REMAINDER.md) proves an explicit square-root/log-squared remainder; automatic mode compares it with the earlier sigma bounds. A [finite zeta-factor extraction](docs/COLLISION_CONSTANT_EXTRACTION.md) tightens the leading and secondary constants, with rigorously evaluated zeta derivatives. Run `python -m perfectjet collision-research approximate --x 1000000000000 --prime-cutoff 10000 --include-exact`; omit `--include-exact` for inputs beyond the exact-count replay budget. `python scripts/verify_collision_finite_x.py --check` reproduces the parameter studies and exact-count comparisons.
+
+The [collision/Pell laboratory](research/collision_pell/README.md) develops the collision numerator into two all-conductor classifications, a constructive fourth-power transport, positive divisor-pair populations and certified Euler-product bounds. Every nontrivial full Galois norm has the imaginary axis as a natural boundary. The prime-local divisibility projection has finite zeta factorizations precisely at conductors **1 and 4**; conductor four has a reversible size-preserving map to two coprime factors and a fourth power. The [proof chapter](docs/chapters/39_collision_pell_and_analytic_boundaries.md) includes the Pell recurrence, an elementary two-term summatory asymptotic and the distinction between local projections, global residues and signed phase sums. Historical priority remains unassessed.
+
+Run `python -m perfectjet collision-research report`, choose **Explore arithmetic collisions** in Math Lab, or open the [offline explorer](research/collision_pell/explorer.html). Exact finite zeta extraction retains its residual; no naive infinite zeta product is evaluated. Run `python scripts/verify_collision_pell.py --check`, `python independent_checks/collision_pell/verify.py`, and `node scripts/check_collision_explorer.cjs` for separate source-bound and independent replays. PJ-C001–PJ-C020 preserve every preceding equation record. This research is included in v0.21.0.
+
+The [exact research frontiers](docs/chapters/33_exact_research_frontiers.md) append 23 equations on the arithmetic Coxeter normalizer, sharp finite spectral recovery and all-degree sextic boundary strata. Every preceding 675 catalogue record remains unchanged. These are proof-backed research additions; the current distribution includes 30 Math Lab tools; historical release identities retain their original scope.
 
 ## P-521 public-parameter provenance research
 
@@ -131,3 +141,9 @@ The [complete source archive](https://github.com/towre676-cloud/PerfectJet/archi
 PR #2's incidence and modular engines are integrated with the v0.16.0 Math Lab and all 450 original equation records. The catalogue now has 464 unique entries across the same 24 families. The partners tool computes exact supplied-form kernels through degree 20, with activity checked separately. Global classifications retain their optional external-solver assumptions; degrees 21 and above remain open. See [partner incidence](docs/PARTNER_INCIDENCE.md), [integration record](docs/SEXTIC_INTEGRATION.md), and the [monograph](docs/MONOGRAPH.md).
 
 The [Asterion half-braid extension](docs/ASTERION_HALF_BRAID.md) now gives exact B3 operators, squares matching the pure loops, central character zeta17^4 and a Tuba–Wenzl classification. Replay with `PYTHONPATH=src python scripts/verify_asterion_braid.py --check`.
+
+The completed [weight-seven Asterion cubic theorem](docs/ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md)
+is available after source installation with `python -m perfectjet.weight_seven`.
+This source-bound retained-evidence report covers all nine length-three sectors;
+the independent replay workflow recomputes their exact rank bounds and null
+lift evidence. Quartic and longer-length classification remain open.

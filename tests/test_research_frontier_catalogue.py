@@ -31,7 +31,7 @@ class ResearchFrontierCatalogueTests(unittest.TestCase):
         self.assertEqual(json.loads((ROOT/'src/perfectjet/resources/equation_power.json').read_text()), power)
         cat = catalogue()
         indexed = {r['id']: r for r in cat['equations']}
-        self.assertEqual(len(LABS), 29)
+        self.assertEqual(len(LABS), 30)
         self.assertEqual(len(cat['families']), 27)
         # Research-frontier and half-braid records; the later PJ-P block is callable from the Asterion labs.
         for row in canonical['equations'][675:710]:

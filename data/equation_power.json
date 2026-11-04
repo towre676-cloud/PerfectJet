@@ -843,7 +843,27 @@
     "PJ-P011": 26,
     "PJ-P012": 26,
     "PJ-P013": 26,
-    "PJ-P014": 26
+    "PJ-P014": 26,
+    "PJ-C001": 15,
+    "PJ-C002": 15,
+    "PJ-C003": 15,
+    "PJ-C004": 15,
+    "PJ-C005": 15,
+    "PJ-C006": 15,
+    "PJ-C007": 15,
+    "PJ-C008": 15,
+    "PJ-C009": 15,
+    "PJ-C010": 15,
+    "PJ-C011": 15,
+    "PJ-C012": 15,
+    "PJ-C013": 15,
+    "PJ-C014": 15,
+    "PJ-C015": 15,
+    "PJ-C016": 15,
+    "PJ-C017": 15,
+    "PJ-C018": 15,
+    "PJ-C019": 15,
+    "PJ-C020": 15
   },
   "callable_labs": {
     "PJ-E085": [
@@ -2648,6 +2668,66 @@
     "PJ-P014": [
       "asterion",
       "asterion-frontiers"
+    ],
+    "PJ-C001": [
+      "collision"
+    ],
+    "PJ-C002": [
+      "collision"
+    ],
+    "PJ-C003": [
+      "collision"
+    ],
+    "PJ-C004": [
+      "collision"
+    ],
+    "PJ-C005": [
+      "collision"
+    ],
+    "PJ-C006": [
+      "collision"
+    ],
+    "PJ-C007": [
+      "collision"
+    ],
+    "PJ-C008": [
+      "collision"
+    ],
+    "PJ-C009": [
+      "collision"
+    ],
+    "PJ-C010": [
+      "collision"
+    ],
+    "PJ-C011": [
+      "collision"
+    ],
+    "PJ-C012": [
+      "collision"
+    ],
+    "PJ-C013": [
+      "collision"
+    ],
+    "PJ-C014": [
+      "collision"
+    ],
+    "PJ-C015": [
+      "collision"
+    ],
+    "PJ-C016": [
+      "collision"
+    ],
+    "PJ-C017": [
+      "collision"
+    ],
+    "PJ-C018": [
+      "collision"
+    ],
+    "PJ-C019": [
+      "collision"
+    ],
+    "PJ-C020": [
+      "collision"
     ]
   }
 }

@@ -60,6 +60,9 @@ def report():
 
 def main():
     import sys
+    if len(sys.argv)>1 and sys.argv[1]=="collision-research":
+        from .collision_research import main as collision_research
+        return collision_research(sys.argv[2:])
     if len(sys.argv)>1 and sys.argv[1]=="dell":
         from .dell import main as dell
         return dell(sys.argv[2:])

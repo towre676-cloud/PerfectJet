@@ -1,0 +1,110 @@
+{
+  "analytic_peer_review": {
+    "individual_phase_obstruction": "c0=1,c1=2,cD=zeta,c(D-1)=2*zeta^2 contradicts self-inversiveness for every L>1; equal endpoint moduli force roots on both sides",
+    "norm_boundary": "The integer Galois norm has constant one and an off-unit root. Estermann applies; a globally meromorphic cyclotomic denominator cannot remove the boundary.",
+    "projection_exception": "For nonsquares the leading coefficient is two. For L=k^2 reciprocity forces the gcd-sum S_L=k^3, whose prime-power factors permit only k=1,2.",
+    "scope": "Written mathematical peer review; numerical checks do not prove universal or analytic continuation claims. No individual complex-phase Euler-product classification is inferred."
+  },
+  "comparison_counts": {
+    "binomial_reconstruction": 1,
+    "constant_extended_product_containment": 6,
+    "constant_interval_formula": 6,
+    "divisor_coefficients": 720,
+    "factor_pair_histograms": 4140,
+    "factor_pair_rank": 5826,
+    "finite_extraction_evaluation": 21,
+    "fourth_power_coefficient_formula": 500,
+    "fourth_power_integer_roundtrip": 2390,
+    "fourth_power_integer_size": 2390,
+    "fourth_power_local_map": 881,
+    "fourth_power_total_count": 201,
+    "global_vs_prime_local": 1,
+    "independent_prime_list": 6,
+    "invalid_inputs": 86,
+    "large_pell_decimal_residue": 2,
+    "large_pell_json_digits": 2,
+    "literal_formal_logarithm": 30,
+    "local_populations": 2418,
+    "local_rank": 5952,
+    "mobius_integrality": 80,
+    "norm_complete_interpolation": 6,
+    "norm_extra_rational_point": 6,
+    "norm_reciprocity_obstruction": 5,
+    "outward_receipt_endpoints": 18,
+    "pell_euler_exponents": 1,
+    "pell_integer_recurrence": 201,
+    "pell_logarithms": 1,
+    "pell_modular_remote": 8,
+    "pell_norm": 201,
+    "prime_local_projection": 372,
+    "projection_obstruction": 12,
+    "public_json_operations": 9,
+    "python_string_limit_unchanged": 1,
+    "random_rational_series": 30,
+    "zeta_interval_formula": 18
+  },
+  "complete_norm_interpolations": [
+    {
+      "conductor": 1,
+      "field_degree": 1,
+      "integer_determinant_samples": 1,
+      "norm_degree": 0
+    },
+    {
+      "conductor": 2,
+      "field_degree": 1,
+      "integer_determinant_samples": 3,
+      "norm_degree": 2
+    },
+    {
+      "conductor": 3,
+      "field_degree": 2,
+      "integer_determinant_samples": 9,
+      "norm_degree": 8
+    },
+    {
+      "conductor": 4,
+      "field_degree": 2,
+      "integer_determinant_samples": 13,
+      "norm_degree": 12
+    },
+    {
+      "conductor": 5,
+      "field_degree": 4,
+      "integer_determinant_samples": 33,
+      "norm_degree": 32
+    },
+    {
+      "conductor": 6,
+      "field_degree": 2,
+      "integer_determinant_samples": 21,
+      "norm_degree": 20
+    }
+  ],
+  "elapsed_seconds": 0.436,
+  "independence": [
+    "Original divisor pairs and separate trial-division valuations, not package residue convolution.",
+    "Linear Pell iteration and finite modular cycles, not package binary unit powering.",
+    "Literal formal logarithms and direct Mobius inversion, not package logarithmic-derivative/divisor recursion.",
+    "Complete norm polynomial interpolation from rational field multiplication determinants, with independent Mobius cyclotomic construction.",
+    "Trial-division prime oracle, exact product endpoints and longer-product containment."
+  ],
+  "limitations": "Finite tests use bounded conductors and samples. They verify implementation and hypotheses; the all-conductor classification is a separate proof and Estermann is an external classical theorem.",
+  "schema": "perfectjet/independent-collision-pell-replay/1",
+  "source_sha256": {
+    "docs/COLLISION_ASYMPTOTICS.md": "beca3a9259b58d76a932f4cacd73153d6b631b5a26c47547393b31a44c737768",
+    "docs/COLLISION_NORM_CLASSIFICATION.md": "6df5c898ee7336d25fefc3ba70b7a1a8f2921a080ac9063d0da469e09bf5ef1c",
+    "docs/COLLISION_PROJECTION_CLASSIFICATION.md": "6fb1c0197c2273f321db1ce5b44dac762d6c214edc0816f6a5ffc2fb79a584d8",
+    "independent_checks/collision_pell/verify.py": "b74b1bb8bfb8a69432e531b46ce4a7bc90d38e669a15c3cb83b6995f292744b9",
+    "src/perfectjet/collision.py": "86fe0bbb39b73e62572cf653c2d87e25d6accc8f3bc40d467660d6cedf14e5b9",
+    "src/perfectjet/collision_constants.py": "bd61e710a63e525f920da215f67b84bb0a9d48564545cce701bcb1d7e161516f",
+    "src/perfectjet/collision_four.py": "bd631b9e4e1e2ad5837719426e77e0b9bf09ef5406f0faed0069938c403b6274",
+    "src/perfectjet/collision_norm.py": "513b5360e632904a635c377acd2e6211fa987d18e242db63601542e792463359",
+    "src/perfectjet/collision_population.py": "2f3c261f76103449ce462d282d45b4733685f72a44f29d7bfb9f9345c90defc1",
+    "src/perfectjet/collision_projection.py": "a351952a8fa5403a2e813a59d7e125b2fc07040bd4f24f034c68b3aa09989c2f",
+    "src/perfectjet/collision_research.py": "3ff4c056ad43e142bf231d2bfbe16803963b13d2ff941363f4123b5e10f9a625",
+    "src/perfectjet/collision_zeta.py": "742617e94c5ef79b727fc3f0460e7bd821d068df9bde3e6c4b83fa9e9b7117f8"
+  },
+  "status": "passed",
+  "total_comparisons": 26548
+}

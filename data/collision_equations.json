@@ -1,0 +1,189 @@
+{
+  "schema": "perfectjet/collision-equations/1",
+  "preserved_prefix": {
+    "equation_count": 724,
+    "sha256_of_canonical_records": "656b35b8a79227e7dfbb9b98d6a76b9d501ea6a462e734f23600d953609a914f"
+  },
+  "equations": [
+    {
+      "id": "PJ-C001",
+      "domain": "collision-pell",
+      "title": "parity collision local factor",
+      "equation": "L2(x)=(1+2x-x^2)/(1-x^2)^2",
+      "status": "exact_checked",
+      "assumptions": "Formal series, or |x|<1; signed exponent-pair weights.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C002",
+      "domain": "collision-pell",
+      "title": "Pell factorization",
+      "equation": "1+2x-x^2=(1+(1+sqrt(2))*x)*(1+(1-sqrt(2))*x)",
+      "status": "exact_checked",
+      "assumptions": "Exact quadratic-field identity; not an empirical fit.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C003",
+      "domain": "collision-pell",
+      "title": "positive collision coefficient",
+      "equation": "A(p^k)=1 if k even, k+1 if k odd",
+      "status": "derived",
+      "assumptions": "Regroup signed pair series only in its absolute-convergence region Re(s)>1.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C004",
+      "domain": "collision-pell",
+      "title": "ordinary cardinality descendant",
+      "equation": "A(n)=tau(product(p^v_p(n),v_p(n) odd))",
+      "status": "derived",
+      "assumptions": "An alternative positive population; individual signed terms remain signed.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C005",
+      "domain": "collision-pell",
+      "title": "Pell-Lucas logarithmic coefficient",
+      "equation": "[x^n]x*L2_prime/L2=(-1)^(n+1)*P_n+4*1_(2|n)",
+      "status": "exact_checked",
+      "assumptions": "P0=P1=2; P_n=2P_(n-1)+P_(n-2); n>=1.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C006",
+      "domain": "collision-pell",
+      "title": "formal integer Euler exponents",
+      "equation": "b_n=(1/n)*sum_(d|n)mu(d)*c_(n/d)",
+      "status": "derived",
+      "assumptions": "Formal local identity; no assertion of convergence of an infinite zeta product in Re(s)>0.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C007",
+      "domain": "collision-pell",
+      "title": "finite zeta extraction",
+      "equation": "L(x)=product_(n<=M)(1-x^n)^(-b_n)*R_M(x); R_M=1+O(x^(M+1))",
+      "status": "exact_checked",
+      "assumptions": "Residual rational factor retained; sufficiently small primes may require separate factors.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C008",
+      "domain": "collision-pell",
+      "title": "non-unit primitive numerator roots",
+      "equation": "N_L has roots inside and outside |x|=1 for every L>1",
+      "status": "derived",
+      "assumptions": "c0=1,c1=2,cD=zeta,c(D-1)=2*zeta^2 contradict self-inversiveness; primitive zeta, D=2L-2.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C009",
+      "domain": "collision-pell",
+      "title": "integer Galois norm",
+      "equation": "P_L(x)=product_(a in units mod L)N_(L,zeta^a)(x) in Z[x]",
+      "status": "exact_checked",
+      "assumptions": "Full prime-local Galois norm; differs from trace, character average and an individual complex product.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C010",
+      "domain": "collision-pell",
+      "title": "all-conductor norm boundary",
+      "equation": "NormEuler_L has natural boundary Re(s)=0 iff L>1",
+      "status": "derived",
+      "assumptions": "Meromorphic continuation Re(s)>0 by classical Estermann; L1=zeta(s)^2. No individual-phase conclusion.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C011",
+      "domain": "collision-pell",
+      "title": "local character projection",
+      "equation": "C_L(x)=sum_(r,s<L,L|rs)x^(r+s)",
+      "status": "exact_checked",
+      "assumptions": "1/L times all characters locally; Euler product imposes divisibility separately at each prime.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C012",
+      "domain": "collision-pell",
+      "title": "projection degree and leading term",
+      "equation": "deg C_L=2L-min_(d|L)(d+L/d); leading=1 for square L,2 otherwise",
+      "status": "derived",
+      "assumptions": "Exact degree proof, not numerical root classification.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C013",
+      "domain": "collision-pell",
+      "title": "projection gcd sum and derivative",
+      "equation": "C_L(1)=sum_(r<L)gcd(r,L); C_L_prime(1)=L*(C_L(1)-L)",
+      "status": "exact_checked",
+      "assumptions": "All positive integer conductors; gcd(0,L)=L.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C014",
+      "domain": "collision-pell",
+      "title": "exceptional projection classification",
+      "equation": "C_L has all unit-modulus roots iff L in {1,4}",
+      "status": "derived",
+      "assumptions": "Square-conductor reciprocity plus gcd-sum inequality; classical Estermann supplies analytic consequence.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C015",
+      "domain": "collision-pell",
+      "title": "exceptional conductor four",
+      "equation": "ProjectionEuler_4(s)=zeta(s)^2*zeta(4s)/zeta(2s)",
+      "status": "exact_checked",
+      "assumptions": "Prime-local 4|v_p(m)v_p(n) for every p; differs from 4|kappa(m,n).",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C016",
+      "domain": "collision-pell",
+      "title": "two-term collision counting asymptotic",
+      "equation": "sum_(n<=X)A(n)=C*X*log(X)+C*(2*gamma-1+D)*X+O_epsilon(X^(1/2+epsilon))",
+      "status": "derived",
+      "assumptions": "C=product_p(1-2/(p+1)^2); D=sum_p 4p*log(p)/((p+1)*(p^2+2p-1)); elementary convolution proof.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C017",
+      "domain": "collision-pell",
+      "title": "certified leading constant",
+      "equation": "C_P*(1-2/(P+1)) <= C <= C_P",
+      "status": "exact_checked",
+      "assumptions": "Finite exact prime product, integer P>=2; JSON rounding is outward. Not a finite-X asymptotic error bar.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C018",
+      "domain": "collision-pell",
+      "title": "positive residue block populations",
+      "equation": "C_(L,c)(dL+r)=d*G_(r,c)+B_(r,c)",
+      "status": "exact_checked",
+      "assumptions": "Actual exponent splits; count/rank/unrank at remote exponent without enumerating all splits.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C019",
+      "domain": "collision-pell",
+      "title": "global residue factor-pair convolution",
+      "equation": "hist_(mn=N,kappa mod L)=cyclic_convolution_p hist_(a+b=v_p(N),ab mod L)",
+      "status": "exact_checked",
+      "assumptions": "Supplied distinct primes verified within declared work budget; original integer outputs have separate bit guard.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    },
+    {
+      "id": "PJ-C020",
+      "domain": "collision-pell",
+      "title": "Pell unit binary transport",
+      "equation": "(1+sqrt(2))^n=u_n+v_n*sqrt(2); u_n^2-2v_n^2=(-1)^n",
+      "status": "exact_checked",
+      "assumptions": "Exact or modular binary powering; remote modular values are not the complete integers.",
+      "source": "docs/chapters/39_collision_pell_and_analytic_boundaries.md; src/perfectjet/collision_zeta.py; research/collision_pell/README.md"
+    }
+  ]
+}
