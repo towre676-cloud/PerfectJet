@@ -3,7 +3,6 @@ on:
   workflow_dispatch:
   push:
     branches: [codex/release-v022rc1]
-    paths: ['.github/workflows/publish-v022rc1.yml']
 permissions:
   contents: read
 concurrency:

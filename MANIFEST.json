@@ -74,8 +74,8 @@
     },
     {
       "path": ".github/workflows/publish-v022rc1.yml",
-      "sha256": "672248b118c758a6690a8fa396a00c5117e8781652e8d689b06e3dbadfcd4f13",
-      "size_bytes": 8141
+      "sha256": "c048721283fd188780e20c25eba633fecb5a2727525e92858eb17cc4bc596ba1",
+      "size_bytes": 8088
     },
     {
       "path": ".github/workflows/research-snapshot.yml",
@@ -89,8 +89,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e708852ad6e16c93b4b1f90da9934beef53542f83f2a77d432029ba86c5511fd",
-      "size_bytes": 21250
+      "sha256": "b8b8eed84a66b291a87d5242f7f01c8b03170481667ec33ea9a83c162ac008da",
+      "size_bytes": 21401
     },
     {
       "path": "Start_Math_Lab.bat",

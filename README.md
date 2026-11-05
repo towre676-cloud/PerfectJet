@@ -2,9 +2,9 @@
 
 **An exact Math Lab: ask a question, preserve its answer, and compute what matters.**
 
-PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Version **0.21.0** offers **30 computed tools and a searchable atlas of 744 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
+PerfectJet connects arithmetic, observable dynamics, behavioral equivalence, operator closure and exact populations. Release candidate **0.22.0rc1** offers **30 computed tools and a searchable atlas of 744 equations in 27 ranked families**. Start with what you want to know: recover a hidden target, explore feasible choices, choose measurements, check numerical reliability, or reveal algebraic structure. The complete earlier finite-system Observatory remains available in the same window. Python3.10 or newer is sufficient for the core; no third-party package is required.
 
-Download the [v0.21.0 release](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.21.0) and follow the [installation guide](docs/INSTALL.md). The complete source ZIP includes proofs, tests, research receipts and the graphical Math Lab.
+Download the [v0.22.0rc1 candidate](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.22.0rc1) (or the retained [v0.21.0 stable release](https://github.com/towre676-cloud/PerfectJet/releases/tag/v0.21.0)) and follow the [installation guide](docs/INSTALL.md). The complete source ZIP includes proofs, tests, research receipts and the graphical Math Lab.
 
 ## Collision arithmetic and Pell research
 
@@ -143,7 +143,7 @@ PR #2's incidence and modular engines are integrated with the v0.16.0 Math Lab a
 The [Asterion half-braid extension](docs/ASTERION_HALF_BRAID.md) now gives exact B3 operators, squares matching the pure loops, central character zeta17^4 and a Tuba–Wenzl classification. Replay with `PYTHONPATH=src python scripts/verify_asterion_braid.py --check`.
 
 The completed [weight-seven Asterion cubic theorem](docs/ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md)
-is available after source installation with `python -m perfectjet.weight_seven`.
+is included in v0.22.0rc1 and available after installation with `python -m perfectjet.weight_seven`.
 This source-bound retained-evidence report covers all nine length-three sectors;
 the independent replay workflow recomputes their exact rank bounds and null
 lift evidence. Quartic and longer-length classification remain open.
