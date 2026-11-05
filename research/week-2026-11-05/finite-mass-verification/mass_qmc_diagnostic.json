@@ -1,0 +1,38 @@
+{
+  "purpose": "QMC crosscheck only; not a proof or rigorous numeric enclosure",
+  "sample_design": {
+    "scrambled_sobol_replicas": 12,
+    "samples_per_replica": 131072,
+    "simplex": "6D uniform stick-breaking"
+  },
+  "means": {
+    "I_1": -0.06702182599926933,
+    "I_prime_1": 0.027762377024683465,
+    "I_double_prime_1": -0.02959595801425254,
+    "I_7_8": -0.07074281666658522,
+    "I_9_8": -0.06376631210190062
+  },
+  "replica_standard_errors": {
+    "I_1": 0.000139126613375932,
+    "I_prime_1": 4.333330579018509e-06,
+    "I_double_prime_1": 7.189830716183629e-06,
+    "I_7_8": 0.00013923397415828808,
+    "I_9_8": 0.00013904194657599813
+  },
+  "bounds_from_sampled_I_and_Iprime": {
+    "rho_7_8": [
+      -0.07158143894112697,
+      -0.07049212312735476
+    ],
+    "rho_9_8": [
+      -0.06426716856243517,
+      -0.0635515288711839
+    ]
+  },
+  "sampled_second_derivative_bounds": {
+    "lower": 0.015333305065309619,
+    "value": 0.02959595801425254,
+    "upper": 0.11104950809873386
+  },
+  "all_replicate_bounds_pass": true
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "asterion/weight7-quartic-3875-products/1",
+  "passed": true,
+  "product_classes": [
+    "P3875(y sym P248)",
+    "P3875(x sym D P248)"
+  ],
+  "product_coordinate_vectors": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "20",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-12",
+      "-21",
+      "0"
+    ],
+    [
+      "60",
+      "0",
+      "0",
+      "-64",
+      "-4",
+      "-24",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-33",
+      "0"
+    ]
+  ],
+  "ranks_ideal_idealP_idealDP_idealPDP": [
+    13,
+    14,
+    14,
+    15
+  ],
+  "arc_3875_multiplicity": 2,
+  "kernel_3875_multiplicity": 2,
+  "VOA_image_rank_on_arc_3875": 0,
+  "new_primitive_3875_multiplicity": 0,
+  "proof": "Multiplication and translation preserve the Li kernel. The verified weight5 adjoint class supplies both products, whose rank increase exhausts this entire arc multiplicity space.",
+  "null_lift_dependency": "weight5_adjoint_source_replay.json"
+}

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "sectors": {
+    "adjoint": {
+      "source_rank": 11,
+      "ideal_rank": 9,
+      "arc_multiplicity": 2,
+      "products_exhaust_arc": true,
+      "integer_replay_passed": true
+    },
+    "3875": {
+      "source_rank": 15,
+      "ideal_rank": 13,
+      "arc_multiplicity": 2,
+      "products_exhaust_arc": true,
+      "integer_replay_passed": true
+    },
+    "singlet": {
+      "source_rank": 5,
+      "ideal_rank": 4,
+      "arc_multiplicity": 1,
+      "D_F0_exhausts_arc": true,
+      "integer_replay_passed": true
+    }
+  }
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_VOA_receipt.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_VOA_receipt.json.evidence.gz",
+    "original_size": 673695,
+    "original_sha256": "ddad432a987167850ef060b69b76facbe33beee8e2dc8576da6b28a57c6b05ab",
+    "stored_sha256": "c80894756a17a008b78823c8b9ba0ea66886dc54d1678b5c380e661ad65172aa"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_3875_ideal_receipt.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_3875_ideal_receipt.json.evidence.gz",
+    "original_size": 434617,
+    "original_sha256": "131cdf8fef7fc0e1b2016bf20423d7079f6dc1f1e64f7fa8858b9f422a56c3a8",
+    "stored_sha256": "5ed52664695b2604bf1d2e47fc1423e7ea26faf963c77ab60e0905ac4236d6d9"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_adjoint_ideal_receipt.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_adjoint_ideal_receipt.json.evidence.gz",
+    "original_size": 354373,
+    "original_sha256": "c1204497ce71eb8c798ecdae94d0537f1c498371c57e89cad27a5f762b982a76",
+    "stored_sha256": "2761c2d0a6e3dd705b172a54a366d7aba8bb636fadd8b54f89e4f46d6cb83325"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_1763125.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_1763125.json.evidence.gz",
+    "original_size": 544466,
+    "original_sha256": "eb5c2f89cb52759fd9efec0f1ae5288a0943dc30a3ab14c09f8fd30529d4d3fc",
+    "stored_sha256": "25e3f48ac0eb553f75c6f884ed8cb787cb874fceb82e39cf892967439c3d0b76"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_2450240.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_2450240.json.evidence.gz",
+    "original_size": 1854961,
+    "original_sha256": "d9cd204eef47ae84ac8654049ec2c2d462d1d437d60fae7e54bd855dafced3fe",
+    "stored_sha256": "cb9b56dd5e812c02da7addbfa1955de3395affe4f19d29a6e1aebfbf937d2507"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_4096000.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_4096000.json.evidence.gz",
+    "original_size": 889192,
+    "original_sha256": "1c15f6a98f41847cc44fd47f9ae310d4d2b9f66a47ca0da4fa9ccdd1f1cec6d5",
+    "stored_sha256": "9dcc1c068dc142dbb87f942c5d5876a95cd66b4f13efaf465742a2c1ed43a93d"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_779247.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_779247.json.evidence.gz",
+    "original_size": 10065394,
+    "original_sha256": "87d6f4b9e1683620ac2a4da1247988e434b1c75847394549dd663999862ed994",
+    "stored_sha256": "9ed5bea93944a7a8c10a9673443fffc0cccda8e7773c29265aac1bed3a4b0fe5"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_147250.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_147250.json.evidence.gz",
+    "original_size": 11378882,
+    "original_sha256": "e291ae11c14dc2eda4c063170ebdf6307605cbc987efb4aebf7f31040d60c72a",
+    "stored_sha256": "ece076bef9d63d0751670116d6280cf876d41219fd2b3b329738886d5efcd34d"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_779247.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_779247.json.evidence.gz",
+    "original_size": 11138675,
+    "original_sha256": "1413f9d588a4ca75f579ea8988c92154a104972513d8ac03ec26837d5354af9c",
+    "stored_sha256": "409bd4904c015f990a0009aa8e7dcf884bbfe4382d5417a1be584b1f42a666ef"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_old_products_147250.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_old_products_147250.json.evidence.gz",
+    "original_size": 1338920,
+    "original_sha256": "c39df2a7ecec6bc4e788a9f9a284cafba72239afd013d26352816ed7aab5886d",
+    "stored_sha256": "e6809df332d1347eaf1c422a7cb65946f52e1ca10c1fde537512471c6b1a87f8"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_zero_arc_27000.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_zero_arc_27000.json.evidence.gz",
+    "original_size": 20067060,
+    "original_sha256": "e83d382480ce1d95466ee5c921c4d8185d512d71deeea53e03489dac8b4122fd",
+    "stored_sha256": "78fb629265983a467d169604628dd08c4719f35f9b0eb3f753fb659bd7fd4a2f"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/resources/asterion_primitive_certificates.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/resources/asterion_primitive_certificates.json.evidence.gz",
+    "original_size": 279569,
+    "original_sha256": "86d82f4a9c47faa2b3efe6d07b72b0cf208c295607b48e67d21fbb53273af3fd",
+    "stored_sha256": "e57911061a24936b8f05efb71cb15646bdd8e3513c8faf0189203b0a8ea9acfb"
+  },
+  {
+    "path": "asterion-complete-weight7/Asterion_Research_Advance/weight7_short_and_long_receipt.json",
+    "stored_path": "asterion-complete-weight7/Asterion_Research_Advance/weight7_short_and_long_receipt.json.evidence.gz",
+    "original_size": 524010,
+    "original_sha256": "f1ff15d5a2cffe83b6019c905e4e0e676690e022a4a6aab0c12493473b11b453",
+    "stored_sha256": "e440b147dad6f6170d08a8689ff6d28f446402782c9cc542cdfd83e8d3ada466"
+  },
+  {
+    "path": "first-mass-response-verification/first_mass_response_verification/joint_mass_response_certificate.json",
+    "stored_path": "first-mass-response-verification/first_mass_response_verification/joint_mass_response_certificate.json.evidence.gz",
+    "original_size": 5781757,
+    "original_sha256": "4dfc165b5e7d49e77deae1e6fc8cd38b8fc81f212b700424a75eda1fbc164cd5",
+    "stored_sha256": "698d4f7108de55f96bc788f2b136aeb6d163701371759179d7ce36a6d0df1438"
+  }
+]
