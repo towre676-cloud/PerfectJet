@@ -24,6 +24,7 @@ def run(*args, cwd, env=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive', type=Path)
+    parser.add_argument('--e8-lattice', action='store_true', help='regenerate E8 lattice images and full source null lift with the installed wheel')
     args = parser.parse_args()
     archive = args.archive.resolve()
     expected = archive.with_suffix(archive.suffix+'.sha256').read_text().split()[0]
@@ -37,7 +38,7 @@ def main():
             assert all(n.startswith('PerfectJet/') and '..' not in Path(n).parts and '\\' not in n for n in names)
             manifest = json.loads(z.read('PerfectJet/MANIFEST.json'))
             release_version = manifest['version']
-            assert re.fullmatch(r'\d+\.\d+\.\d+', release_version)
+            assert re.fullmatch(r'\d+\.\d+\.\d+(?:rc\d+)?', release_version)
             assert set(names) == {'PerfectJet/'+e['path'] for e in manifest['files']} | {'PerfectJet/MANIFEST.json'}
             for entry in manifest['files']:
                 raw = z.read('PerfectJet/'+entry['path'])
@@ -88,6 +89,32 @@ assert certificate['exact_count'] == 17016685657676 and certificate['exact_count
 print(f'Installed wheel: all {len(LABS)} Math Lab tools and certified X=10^12 replay passed')
 '''
         run(str(python), '-c', check, release_version, str(len(equations)), str(family_count), str(tool_count), cwd=base, env=env)
+        # Run outside src/ with isolated imports: the checker must use the wheel.
+        run(str(python), '-I', '-m', 'perfectjet.weight_seven', cwd=base, env=env)
+        e8_check = """
+import json, pathlib, sys
+from importlib.resources import files
+import perfectjet
+from perfectjet.weight_seven import report
+assert pathlib.Path(perfectjet.__file__).resolve().is_relative_to(pathlib.Path(sys.prefix).resolve())
+record = report()
+assert record['kernel_dimension'] == 181753
+assert record['new_cubic_primitive_multiplicity'] == 0
+assert 'remain open' in record['scope']
+root = pathlib.Path(sys.argv[1])
+for name, digest in record['evidence_sha256'].items():
+    import hashlib
+    assert hashlib.sha256((root/name).read_bytes()).hexdigest() == digest, name
+for name in record['installed_resource_sha256']:
+    assert files('perfectjet.resources').joinpath(name).is_file()
+assert (root/'docs/ASTERION_WEIGHT_SEVEN_LENGTH_THREE.md').is_file()
+print('Isolated installed E8 module, resources, documentation and evidence inventory passed')
+"""
+        run(str(python), '-I', '-c', e8_check, str(root), cwd=base, env=env)
+        checker = [str(python), '-I', str(root/'scripts/verify_asterion_w7_rank_certificates.py')]
+        if args.e8_lattice:
+            checker += ['--lattice', '--source-null']
+        run(*checker, cwd=base, env=env)
         # Exercise both user entry points with the isolated interpreter.
         commands = [
             [str(python), str(root/'run_observatory.py'), '--port', '0'],
@@ -115,7 +142,7 @@ print(f'Installed wheel: all {len(LABS)} Math Lab tools and certified X=10^12 re
             finally:
                 process.terminate()
                 process.communicate(timeout=30)
-    print(json.dumps(dict(version=release_version, sha256=expected, manifest_files=len(manifest['files']), equations=len(equations), families=family_count, installed_tools=tool_count, launcher_http_tools=tool_count, launcher_paths=len(commands), research_exact_X=10**12, desktop_rendering='not checked by this script')))
+    print(json.dumps(dict(version=release_version, sha256=expected, manifest_files=len(manifest['files']), equations=len(equations), families=family_count, installed_tools=tool_count, launcher_http_tools=tool_count, launcher_paths=len(commands), research_exact_X=10**12, e8_installed=True, e8_independent_ranks=True, e8_lattice_replayed=args.e8_lattice, desktop_rendering='not checked by this script')))
 
 
 if __name__ == '__main__':
