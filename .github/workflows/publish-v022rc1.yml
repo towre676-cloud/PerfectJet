@@ -137,8 +137,11 @@ jobs:
           sha256sum PerfectJet-v0.22.0rc1.zip MANIFEST.json SOURCE_COMMIT.txt INSTALL.md RELEASE-v0.22.0rc1.md verification-Linux.txt verification-Windows.txt regressions.txt research-checks.txt > SHA256SUMS
       - name: Create a new draft without changing historical releases or tags
         shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.PERFECTJET_RELEASE_TOKEN }}
         run: |
           set -euo pipefail
+          : "${GH_TOKEN:?PERFECTJET_RELEASE_TOKEN is required}"
           if gh release view v0.22.0rc1 >/dev/null 2>&1; then
             echo 'Release already exists; refusing to overwrite.' >&2
             exit 1
@@ -150,8 +153,11 @@ jobs:
           gh release create v0.22.0rc1 releases/PerfectJet-v0.22.0rc1.zip releases/PerfectJet-v0.22.0rc1.zip.sha256 releases/MANIFEST.json releases/SOURCE_COMMIT.txt releases/SHA256SUMS releases/INSTALL.md releases/RELEASE-v0.22.0rc1.md releases/verification-Linux.txt releases/verification-Windows.txt releases/regressions.txt releases/research-checks.txt --target "$CANDIDATE_SHA" --draft --prerelease --title 'PerfectJet v0.22.0rc1 — Completed E8 cubic theorem release candidate' --notes-file docs/RELEASE-v0.22.0rc1.md
       - name: Install and verify fresh draft downloads before publishing the candidate
         shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.PERFECTJET_RELEASE_TOKEN }}
         run: |
           set -euo pipefail
+          : "${GH_TOKEN:?PERFECTJET_RELEASE_TOKEN is required}"
           mkdir "$RUNNER_TEMP/draft-download"
           gh release download v0.22.0rc1 --dir "$RUNNER_TEMP/draft-download"
           cd "$RUNNER_TEMP/draft-download"
