@@ -7,7 +7,7 @@ NAME=f'PerfectJet-v{VERSION}.zip'
 
 def eligible(path):
     rel=path.relative_to(ROOT)
-    return (path.is_file() and not any(x in {'.git','__pycache__','.venv','.pytest_cache','dist','build'}
+    return (path.is_file() and not path.name.startswith('.validation.') and not any(x in {'.git','__pycache__','.venv','.pytest_cache','dist','build'}
                                       or x.endswith('.egg-info') or x.startswith('private_')
                                       or x in {'raw_data','restricted_data'} for x in rel.parts)
             and path.name not in {'combine_results.csv','combine_tracking.csv','player_play.csv',
