@@ -1,0 +1,30 @@
+name: Recovered complete weight-seven research audit
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'research/week-2026-11-05/asterion-complete-weight7/**'
+      - 'research/week-2026-11-05/*MANIFEST.json'
+      - 'research/week-2026-11-05/COMPRESSED_EVIDENCE.json'
+      - 'scripts/audit_complete_weight7.py'
+      - '.github/workflows/complete-weight7-audit.yml'
+permissions:
+  contents: read
+jobs:
+  research-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regenerate isolated research theorem and focused tests
+        run: python scripts/audit_complete_weight7.py --output audit-evidence
+      - name: Retain replay results, including partial failure logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: complete-weight7-research-${{ github.sha }}
+          path: audit-evidence/
+          if-no-files-found: error
