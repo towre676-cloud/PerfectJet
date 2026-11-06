@@ -1,0 +1,68 @@
+[
+  {
+    "id": "01",
+    "title": "Complete weight-seven E8 theorem",
+    "target": "PerfectJet",
+    "sources": [
+      "Asterion_Research_Advance_2026-11-04.zip"
+    ],
+    "summary": "Latest package reports K7 = 1 + 3\u00b7248 + 3\u00b73875 + 2\u00b730380 + 2\u00b7147250 + 779247, dimension 1,146,877; no new differential generator through weight seven. Quartic kernel dimension 965,124; all nineteen source types classified. Includes exact pure-braid infinite-order witness.",
+    "boundary": "This is substantially newer than merged PR #13 (cubic kernel 181,753). Weight eight and all-weight generation remain open. Focused source snapshot is not a drop-in full checkout. Fresh replay here passed 40 focused tests and character/trace checks; full --weight7 regeneration and complete repository regressions remain integration gates.",
+    "next_step": "Import focused modules and certificates on a new branch from current main; reconcile package imports and provenance; update theorem documentation and installed interface; run full weight-seven and repository replays. Coordinate with open release PR #15 so its cubic-only scope is explicit.",
+    "priority": "1",
+    "status": "Archive work; integration required",
+    "source_refs": [
+      {
+        "name": "Asterion_Research_Advance_2026-11-04.zip",
+        "url": "https://chatgpt.com/library?file_id=libfile_35d83eafa6708191b7014e6aa705e7d5&account_id=personal",
+        "library_file_id": "libfile_35d83eafa6708191b7014e6aa705e7d5"
+      }
+    ],
+    "base_snapshot": "8f38d6f2ee66c25a0618c45c36212e61905355c2"
+  },
+  {
+    "id": "19",
+    "title": "Pisot / PSG / flavor / finite-mass reconciliation",
+    "target": "PerfectJet archival/research layer; annular references separate",
+    "sources": [
+      "pisot-psg-reconciliation.zip",
+      "psg-flavor-benchmark.zip",
+      "finite-mass-verification.zip",
+      "first-mass-response-verification.zip",
+      "research-reconciliation.html"
+    ],
+    "summary": "Exact finite matrix/counterterm audits, scalar reduction, unique flip/corrected subcritical cycle, finite- and first-mass response verifiers and cross-program synthesis.",
+    "boundary": "Several cited monographs predate the target week; the new work is their correction/reconciliation and finite checks. Does not validate broad geometric/physical interpretations. Distinct graph, flavor and period representation requirements must stay separate.",
+    "next_step": "Import new checkers, receipts and correction ledger with source links; preserve historical source wording as archival material and put corrected statements in active documentation.",
+    "priority": "3",
+    "status": "Archive work; integration required",
+    "source_refs": [
+      {
+        "name": "pisot-psg-reconciliation.zip",
+        "url": "https://chatgpt.com/library?file_id=libfile_09528d9929688191af0d00732f11ada7&account_id=personal",
+        "library_file_id": "libfile_09528d9929688191af0d00732f11ada7"
+      },
+      {
+        "name": "psg-flavor-benchmark.zip",
+        "url": "https://chatgpt.com/library?file_id=libfile_41eefcc4f594819192fa9b189146d3e9&account_id=personal",
+        "library_file_id": "libfile_41eefcc4f594819192fa9b189146d3e9"
+      },
+      {
+        "name": "finite-mass-verification.zip",
+        "url": "https://chatgpt.com/library?file_id=libfile_04c41e33d0d88191aac6362c1c5104b2&account_id=personal",
+        "library_file_id": "libfile_04c41e33d0d88191aac6362c1c5104b2"
+      },
+      {
+        "name": "first-mass-response-verification.zip",
+        "url": "https://chatgpt.com/library?file_id=libfile_9896c5c975708191bf7a063f27b12fa1&account_id=personal",
+        "library_file_id": "libfile_9896c5c975708191bf7a063f27b12fa1"
+      },
+      {
+        "name": "research-reconciliation.html",
+        "url": "https://chatgpt.com/library?file_id=libfile_d164c41152c48191bcfb3a148382a8ab&account_id=personal",
+        "library_file_id": "libfile_d164c41152c48191bcfb3a148382a8ab"
+      }
+    ],
+    "base_snapshot": "8f38d6f2ee66c25a0618c45c36212e61905355c2"
+  }
+]

@@ -1,0 +1,413 @@
+{
+  "conformal_degree": 7,
+  "irreducibles": [
+    {
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "dimension": 6696000
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "multiplicity": 1,
+      "dimension": 4096000
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 1,
+      "dimension": 2450240
+    },
+    {
+      "dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 4,
+      "dimension": 779247
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "multiplicity": 4,
+      "dimension": 147250
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "multiplicity": 4,
+      "dimension": 27000
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "multiplicity": 8,
+      "dimension": 30380
+    },
+    {
+      "dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 8,
+      "dimension": 3875
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "multiplicity": 12,
+      "dimension": 248
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "multiplicity": 4,
+      "dimension": 1
+    }
+  ],
+  "dominant_weight_rows": [
+    {
+      "dynkin_labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_coordinates": [
+        7,
+        14,
+        20,
+        16,
+        12,
+        8,
+        4,
+        10
+      ],
+      "squared_norm": 14,
+      "lattice_weight_multiplicity": 1,
+      "higher_irrep_contribution": 0,
+      "highest_irrep_multiplicity": 1
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "root_coordinates": [
+        6,
+        12,
+        18,
+        15,
+        12,
+        9,
+        5,
+        9
+      ],
+      "squared_norm": 14,
+      "lattice_weight_multiplicity": 1,
+      "higher_irrep_contribution": 0,
+      "highest_irrep_multiplicity": 1
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "root_coordinates": [
+        6,
+        12,
+        18,
+        15,
+        12,
+        8,
+        4,
+        9
+      ],
+      "squared_norm": 12,
+      "lattice_weight_multiplicity": 8,
+      "higher_irrep_contribution": 7,
+      "highest_irrep_multiplicity": 1
+    },
+    {
+      "dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "root_coordinates": [
+        6,
+        11,
+        16,
+        13,
+        10,
+        7,
+        4,
+        8
+      ],
+      "squared_norm": 10,
+      "lattice_weight_multiplicity": 44,
+      "higher_irrep_contribution": 40,
+      "highest_irrep_multiplicity": 4
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "root_coordinates": [
+        5,
+        10,
+        15,
+        12,
+        9,
+        6,
+        3,
+        8
+      ],
+      "squared_norm": 8,
+      "lattice_weight_multiplicity": 192,
+      "higher_irrep_contribution": 188,
+      "highest_irrep_multiplicity": 4
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "root_coordinates": [
+        4,
+        8,
+        12,
+        10,
+        8,
+        6,
+        4,
+        6
+      ],
+      "squared_norm": 8,
+      "lattice_weight_multiplicity": 192,
+      "higher_irrep_contribution": 188,
+      "highest_irrep_multiplicity": 4
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "root_coordinates": [
+        4,
+        8,
+        12,
+        10,
+        8,
+        6,
+        3,
+        6
+      ],
+      "squared_norm": 6,
+      "lattice_weight_multiplicity": 726,
+      "higher_irrep_contribution": 718,
+      "highest_irrep_multiplicity": 8
+    },
+    {
+      "dynkin_labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_coordinates": [
+        4,
+        7,
+        10,
+        8,
+        6,
+        4,
+        2,
+        5
+      ],
+      "squared_norm": 4,
+      "lattice_weight_multiplicity": 2464,
+      "higher_irrep_contribution": 2456,
+      "highest_irrep_multiplicity": 8
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "root_coordinates": [
+        2,
+        4,
+        6,
+        5,
+        4,
+        3,
+        2,
+        3
+      ],
+      "squared_norm": 2,
+      "lattice_weight_multiplicity": 7704,
+      "higher_irrep_contribution": 7692,
+      "highest_irrep_multiplicity": 12
+    },
+    {
+      "dynkin_labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "root_coordinates": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "squared_norm": 0,
+      "lattice_weight_multiplicity": 22528,
+      "higher_irrep_contribution": 22524,
+      "highest_irrep_multiplicity": 4
+    }
+  ],
+  "reconstructed_dimension": 17333248,
+  "independent_E4_eta_dimension": 17333248,
+  "passed": true,
+  "weight_formula": "m_n(mu)=p8(n-||mu||\u00b2/2), from the E8 lattice-VOA realization",
+  "method": "Weyl-chamber-folded exact Freudenthal recursion",
+  "complete_dominant_weight_bound": 14
+}

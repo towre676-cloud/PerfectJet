@@ -1,0 +1,862 @@
+{
+  "date": "2026-11-05",
+  "kind": "isolated recovered research source import",
+  "verification": "40 focused E8 tests and exact character/pure-braid checks passed. Full weight-seven regeneration and full installed-package integration have not been rerun.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 1228,
+      "sha256": "342da9249f634882b9ec9859ce80ab47600d995310f535b5ff3ec59b7906c9fe"
+    },
+    {
+      "path": "COMPRESSED_EVIDENCE.json",
+      "size": 6140,
+      "sha256": "82d7ae72f5f9c60df9afcd0b14051ece60368b84155808354749f67e5453f82c"
+    },
+    {
+      "path": "RECOVERED_WORKSTREAMS.json",
+      "size": 4057,
+      "sha256": "14ab9932609107784fa85800cf75634bb3b9ec0d8bb206a5ca941fa3ca5ebae7"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/COMPLETE_WEIGHT7_THEOREM.json",
+      "size": 6369,
+      "sha256": "a07b03fbfd4e3a252fdd639590d266da8a64cd9d98130b820a6b74bf40447f56"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/COMPLETE_WEIGHT7_THEOREM.md",
+      "size": 12929,
+      "sha256": "b9976fa5346eae0f6c8b8fa141f3dd892d8762f3b35d38bae09a8c57400d9689"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/QUARTIC_SMALL_SECTOR_THEOREM.md",
+      "size": 10297,
+      "sha256": "4f2ad133f60dc0a630499465b40f56776fe7e5028dd175097cd1a16223598c5f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/RESEARCH_ADVANCE.md",
+      "size": 13026,
+      "sha256": "03fe8f66cb5de94414d57cc386b59effe749809024549ab52e92b1972919080e"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/SHA256SUMS.json",
+      "size": 12486,
+      "sha256": "5e527bea32ef1acdfdf209611282063d830b5f24551798412deadc4e740b6d44"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/SOURCE_PROVENANCE.json",
+      "size": 13775,
+      "sha256": "4476902d53565f651ee3389adbd3b5e30017b7c35740593d536ae94891593798"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/VALIDATION.json",
+      "size": 2018,
+      "sha256": "bb21e4d502fdefadbe7377f746e5c322a6e7070a4ab5c3b96ecca0d4ef37b910"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/VOA_weight7_character.json",
+      "size": 6273,
+      "sha256": "c6d8e66a693bd31fbffa6a9919ac8a9e3610271607702c5f9859d9cb3d343f43"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/arc_length3_replay.json",
+      "size": 39041,
+      "sha256": "f98ae1f6948e88387eda560c83f36d87b62ac8f4d2bee09eb14098fcf8184c32"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/assemble_weight7_theorem.py",
+      "size": 5286,
+      "sha256": "9066a013cd4f6cc96f62c6d952c86787056ca6043981bd7507036030b5951426"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/braid_infinite_order_receipt.json",
+      "size": 15911,
+      "sha256": "dc4f3fe672e13be0d8d1ab7440fe8def109f15bf60e7eec924fab0dfbe9b0c2d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/braid_infinite_order_replay.py",
+      "size": 4538,
+      "sha256": "270a88ac2a7d7829f014ab0ee7f8875ad880d1a50b0b0fc8376b615579543432"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/docs/ASTERION_HALF_BRAID.md",
+      "size": 11416,
+      "sha256": "b4450c40a54d2459fcef46cd30f5eb9eb4bdca338a861523c213d39d05d9f0f3"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/docs/ASTERION_MONODROMY.md",
+      "size": 9617,
+      "sha256": "e3de4e86f52a2a5ecaffcc412f4dbac3fbeaf607e4b1f9a048fb40a01699fa5f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/docs/ASTERION_MONODROMY_ALGEBRA.md",
+      "size": 7395,
+      "sha256": "de400d241cb850e8ab57c482612f97562501eec4a1759786da19f457273757d2"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/docs/ASTERION_QUARTIC.md",
+      "size": 15034,
+      "sha256": "c6ce39de191cfcb795629cffa2aabfd78e886021b731ccf48c5eb5c3251c342b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/docs/ASTERION_QUARTIC_CHARACTERS.md",
+      "size": 3839,
+      "sha256": "b990656d63d4e00d3af067de60186f345d3c6f15642b47fdf16fffc4900a21a5"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/full_evaluator_crosscheck.json",
+      "size": 197,
+      "sha256": "abcadb5f8d1d08efd9f2a3e5038abd212ba2428b1fda15514b485a3f5e0cea9b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/monodromy_replay.json",
+      "size": 134994,
+      "sha256": "29f0158062294da13ccbaa554aead629674f3e10d309a11a454e9f31a6b2ebb2"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/primitive_147250_source.json",
+      "size": 29001,
+      "sha256": "6b18dee9703e2d10626e6cde1689e1f1d69b6cf945ee7eaa1c6f48a7f87575d8"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/primitive_30380_source.json",
+      "size": 208475,
+      "sha256": "6aeb77f48913de45c1636d0e04adace02f6228d8d3fd8d51ed60e4cb0804a126"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_147250_product_receipt.json",
+      "size": 3699,
+      "sha256": "8caefa712cb4022fac63505701de2fcd3b0dc60c5b9a0cfe5b71d5f000d542f2"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_VOA.py",
+      "size": 2612,
+      "sha256": "e8c37e070b5eeaec961c5dfd679377016fa7a7df34be5e17fff1cff0eb82ca3d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_VOA_receipt.json.evidence.gz",
+      "size": 17190,
+      "sha256": "c80894756a17a008b78823c8b9ba0ea66886dc54d1678b5c380e661ad65172aa"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_ideal.py",
+      "size": 6167,
+      "sha256": "6876d00331544dcd9c5c58ac2206c79674f9ed253e6306e62971c75824eeab84"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_ideal_receipt.json",
+      "size": 172264,
+      "sha256": "529cd22590deeeb44cc3f8eb8385ed4f810e07f068fbdf58c0ffc637cd64c64f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_partial_products.json",
+      "size": 8747,
+      "sha256": "c49a2953ca1945bb57ebb7508aff2b2446746d876192bbdbd5f2d1e5c030396c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_products.py",
+      "size": 4390,
+      "sha256": "6264f88d7976319ce8b9f123fd8e0877b8e0d5d368b25825ca6969d60fe9794c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_30380_triple_casimir.py",
+      "size": 4149,
+      "sha256": "5dccb494189b866e60b7897180787be05be6316de4abf8d4c64e3d306768eace"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_3875_ideal.py",
+      "size": 5893,
+      "sha256": "55b3269cba894c9c2e2430a022a20f25db1201c4341bfbc51320c55a010b79c7"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_3875_ideal_receipt.json.evidence.gz",
+      "size": 21602,
+      "sha256": "5ed52664695b2604bf1d2e47fc1423e7ea26faf963c77ab60e0905ac4236d6d9"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_3875_products.py",
+      "size": 1879,
+      "sha256": "1b72e2e2d48cc70f73cde57e44acadd4725fedf77f0305a4d742c06c08fc1b8f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_3875_products_receipt.json",
+      "size": 1035,
+      "sha256": "dccaf972e1e71c43cf5547959be4bcd3a5d43a917c9461f05a8fdd0a0b9d0ad0"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_adjoint_ideal.py",
+      "size": 6153,
+      "sha256": "299825d5cdc706ede63a8ac1a9600c6a90a09ba402b6f440a3f0eca6a9c49aa0"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_adjoint_ideal_receipt.json.evidence.gz",
+      "size": 25562,
+      "sha256": "2761c2d0a6e3dd705b172a54a366d7aba8bb636fadd8b54f89e4f46d6cb83325"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_adjoint_products.py",
+      "size": 2300,
+      "sha256": "e5ad1d087b6b3dca973ca093f7320f0dbdacbb5aa41596672a18382d9075b236"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_adjoint_products_receipt.json",
+      "size": 1172,
+      "sha256": "14457e0e4bdc02b9e031d25b806b414e6f5a52f7b759ed3faa1699617f71b24f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_casimir_cutoff.py",
+      "size": 5825,
+      "sha256": "d639f3a2520e9e082ae5d626c83675c62026aae374df628549e376980fea4e24"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_casimir_cutoff_receipt.json",
+      "size": 12112,
+      "sha256": "a41ef72a7a26f9bc77dbb7857c4eefe74b4a5384ab39590720ee21267eb565e2"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_frontier_verification.json",
+      "size": 1126,
+      "sha256": "5f127d66ddb13a4cc156a6ea18783e84c3b7a170a6becb597d5d1cf2fb4d70b5"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_1763125.json.evidence.gz",
+      "size": 11819,
+      "sha256": "25e3f48ac0eb553f75c6f884ed8cb787cb874fceb82e39cf892967439c3d0b76"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_2450240.json.evidence.gz",
+      "size": 201186,
+      "sha256": "cb9b56dd5e812c02da7addbfa1955de3395affe4f19d29a6e1aebfbf937d2507"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_4096000.json.evidence.gz",
+      "size": 93847,
+      "sha256": "9dcc1c068dc142dbb87f942c5d5876a95cd66b4f13efaf465742a2c1ed43a93d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_6696000.json",
+      "size": 188748,
+      "sha256": "8017bee8e9289c739a870b5f909fc546f9efa5e82a0daaccc46410d86bbe3eaa"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_779247.json",
+      "size": 10065394,
+      "sha256": "87d6f4b9e1683620ac2a4da1247988e434b1c75847394549dd663999862ed994"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_full_779247.json.evidence.gz",
+      "size": 1097706,
+      "sha256": "9ed5bea93944a7a8c10a9673443fffc0cccda8e7773c29265aac1bed3a4b0fe5"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_147250.json",
+      "size": 11378882,
+      "sha256": "e291ae11c14dc2eda4c063170ebdf6307605cbc987efb4aebf7f31040d60c72a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_147250.json.evidence.gz",
+      "size": 1256440,
+      "sha256": "ece076bef9d63d0751670116d6280cf876d41219fd2b3b329738886d5efcd34d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_779247.json",
+      "size": 11138675,
+      "sha256": "1413f9d588a4ca75f579ea8988c92154a104972513d8ac03ec26837d5354af9c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_ideal_only_779247.json.evidence.gz",
+      "size": 1210230,
+      "sha256": "409bd4904c015f990a0009aa8e7dcf884bbfe4382d5417a1be584b1f42a666ef"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_independent_rank_verification.json",
+      "size": 553,
+      "sha256": "b6a8694841d4422561d5593cccd624efacd4e9bb024ca7fc6445785faf61ee5b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_old_products.py",
+      "size": 4568,
+      "sha256": "9656140a95f729644a9f6f182dfc939a4edf9bf2de05c18038a75f0ce66b5b73"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_old_products_147250.json",
+      "size": 1338920,
+      "sha256": "c39df2a7ecec6bc4e788a9f9a284cafba72239afd013d26352816ed7aab5886d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_old_products_147250.json.evidence.gz",
+      "size": 156200,
+      "sha256": "e6809df332d1347eaf1c422a7cb65946f52e1ca10c1fde537512471c6b1a87f8"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_old_products_779247.json",
+      "size": 211750,
+      "sha256": "621a9c45a25f20b39ef1d81263a17974d17c228ee71154abd187a26d19f88bae"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_remaining_sectors.py",
+      "size": 7701,
+      "sha256": "d5912b6524ac7ca81d9e77542260d4ecc887573ca346e8b9bcec2063ac40818d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_schur_receipt.json",
+      "size": 110438,
+      "sha256": "804a0c619dd7ed944543dbed5ba97471744723b156594b80e8953c026bccaf9c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_schur_replay.py",
+      "size": 4424,
+      "sha256": "c4e0397e0550a40895a1e45485c13b466c08e0e80bd3047e011ba38bf03bd03b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_singlet_ideal.py",
+      "size": 3072,
+      "sha256": "e3cdd00bc5679fa9879b73928dce16cb8cadc794609f9b181e947a2c9fe75b04"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_singlet_ideal_receipt.json",
+      "size": 29085,
+      "sha256": "ec062a1a737b9a823531fbc0f322913636f091df07240cf6249191465595deeb"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_147250.json",
+      "size": 18141,
+      "sha256": "a11803a060e9d28940848531b55ca223486c248359d7e0ed30615d42a9fb0056"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_1763125.json",
+      "size": 3316,
+      "sha256": "de017bc583dea3be1e087c0d8b8856576c2db8bd152dc70284197c0336b7b60c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_2450240.json",
+      "size": 9461,
+      "sha256": "dc357784d60b4edfd3a19ac06c265c5c9eeda65094647843e53cf4dbde600ee3"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_27000.json",
+      "size": 24703,
+      "sha256": "f93e4f7e1aec063646fbeb1b883ca30375dd5a06662344e4a9c9430a7b0a5de0"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_4096000.json",
+      "size": 16245,
+      "sha256": "15e8a9fc6e8b046cd6e8a46c9cf1cfb73c2627cc6de435daa3583d8670a6a7d0"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_6696000.json",
+      "size": 2742,
+      "sha256": "c14bc36ce68b45a4b481a688c3f232a1491ee3a23ce4537227e43f3acf345127"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_span_certificate_779247.json",
+      "size": 42078,
+      "sha256": "67398806b15fc81f32f60b6e37d473821ede19ea905b3c410e61c2f39509e739"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/quartic_zero_arc_27000.json.evidence.gz",
+      "size": 2192739,
+      "sha256": "78fb629265983a467d169604628dd08c4719f35f9b0eb3f753fb659bd7fd4a2f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/replay.py",
+      "size": 2983,
+      "sha256": "43d534c64967d45d0176cb157ece711a4c40da3bbed09ab728a75705860da224"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/replay_extra_primitives.py",
+      "size": 658,
+      "sha256": "0ec2ba6e2bc4fee1a0819cc5fbf93a4bbfabae4768d2900f271842a190139acf"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/replay_monodromy.py",
+      "size": 448,
+      "sha256": "078bd41cb7b8cd7eff5115f685872ecff34708f76c55090f9c5453f11edf01dd"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/replay_quartic_sources.py",
+      "size": 1138,
+      "sha256": "ff846a3b6adc3df2a88a67db4302bb823b480a4d00e4a678d13e9e2f596f8889"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/replay_weight7_characters.py",
+      "size": 619,
+      "sha256": "ec2219496a03b366d65ef776bd22fbf44e5e17de0cf20012ef56640913750d0b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/__init__.py",
+      "size": 105,
+      "sha256": "4fc79541fd4fb9c71a29e956c943d457598d837a55911ad742dcff52139cd49b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion.py",
+      "size": 24125,
+      "sha256": "2932c79d136f803181dd2ff27aaabf4dbc245c812402ab61c212c520ed8dc4ed"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_basis.py",
+      "size": 37934,
+      "sha256": "499efa49b54189ba0b5534037d6e6ee68ee908d959ed317ccafa2fab21e99527"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_boundary.py",
+      "size": 27274,
+      "sha256": "d5f23b238d693c7b3811df83b42c9c0c6a4b0b4ddaacd8d8baa1d421f0956b9b"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_currents.py",
+      "size": 28121,
+      "sha256": "03def095fc4465fb4771620701e2e6a259b60b1c2fe9369e2b3bcb7b0eb84f5a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_deformations.py",
+      "size": 15805,
+      "sha256": "ac1952a5ccab215a7c28855ec4c1a4ee6b493c01e1a6ef05b35936349948c8d1"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_e8.py",
+      "size": 17631,
+      "sha256": "46b6bad0cf5ad7fd74e684094a9770602c08c64d1751bbd354711736ebfd3dc0"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_elliptic.py",
+      "size": 24889,
+      "sha256": "2b88df0d54434396cb8e0375e1794b10377a476917bad470139f7280f5b750dc"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_extension.py",
+      "size": 4012,
+      "sha256": "a7a454663407adaaac550194e9fa5bc8bf622f3d04cbba8585bcf32f94419c02"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_frontiers.py",
+      "size": 6332,
+      "sha256": "3016681f878d825ad501c58137c24c9a019277f624949911b038cd567d87560c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_higher.py",
+      "size": 42210,
+      "sha256": "701f83f7bf55e1cb31413edbc47bca338bf06afd6bc7ccfc7c24836752c117b8"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_jacobi.py",
+      "size": 17225,
+      "sha256": "2758e2dfdc721b802e3f99ccfa92eab01cf9f9e9e9230e3c887dbcacf5e2f35f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_jordan.py",
+      "size": 35103,
+      "sha256": "fc22f3ff9d79d8bde6459a1484a479efc209893d14038b8d2348eb73b22ecece"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_kernel_characters.py",
+      "size": 16459,
+      "sha256": "78ce3ac3cb0a853af2a1d1a823b7a9e6da4ee1f3ea1cc6c3fbbaeda7042250b3"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_kernel_tower.py",
+      "size": 38885,
+      "sha256": "928fa4ba2eb72bbbd91fbe4cf24b396108344a5c37499aae3917c9eca80b1926"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_kz.py",
+      "size": 41948,
+      "sha256": "ad043c99fc76364d5f9a682fa6397cdfacc60068c6c18f058271eb6d2b3b3c5f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_lattice_projection.py",
+      "size": 7399,
+      "sha256": "e425fe84accb70a9c4eab2c0aa85e9d537ab7e2a34c8eed5d0c17dda7bcc822c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_lattice_projection4.py",
+      "size": 3449,
+      "sha256": "dc0a78edf61e529739070b60ddeab96a3f444dda5fd5b455c02387b1d1f38749"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_monodromy.py",
+      "size": 19407,
+      "sha256": "3be368601ecd869967c4c6a7c237c3c0010af16470509e0e40321d7d1dd2d36e"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_monodromy_algebra.py",
+      "size": 18513,
+      "sha256": "3d1b4b856272057f162e7b3b944ed2a79a85239cf4a46beb5e2febde0668b64a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_periods.py",
+      "size": 9527,
+      "sha256": "d9bf58a32b5d162c3c423b6e12120b781df313039f4c5348ec72e84c1b77cc5a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_primitives.py",
+      "size": 74294,
+      "sha256": "8db9aaafd9c1485bbdb05366cb5543346eb4fdb4184a4f0c213f6b490d72c9cb"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_principal.py",
+      "size": 18675,
+      "sha256": "d91278e3ec0d989a9e6321620bbded4c9d103459255aa73296d23278147917e9"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_quartic.py",
+      "size": 18850,
+      "sha256": "040722db2dfb31859ba3548ba21520a64732c4822608c56b556463832d10bf83"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_quartic_characters.py",
+      "size": 12756,
+      "sha256": "9a14d58da415d71660d9e3a8f5de6733dfd8d2593628da46915bb6db1fcaca2e"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_relations.py",
+      "size": 44315,
+      "sha256": "e9a772e33d65704a283eb8dac792b019c13ac1109270fe0752f5e95e687d94f2"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_rigidity.py",
+      "size": 36525,
+      "sha256": "5b8d90601eacfea7d7a92a30a4607be09261d6bd2eef97a2053dfc0b804899c7"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/asterion_transport.py",
+      "size": 20612,
+      "sha256": "46fe0d91141163d65ce6d47ce56fcb36fe4c4b5c7081c786e5f17620f756fcd9"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/exact.py",
+      "size": 3278,
+      "sha256": "33a7be095fbfac107eafa796de097706216be22220c27b7a9b82f25b79b4eb4a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/kz_half_braid.py",
+      "size": 11551,
+      "sha256": "9e444acf0cb5b8f54f09aa15645e78faac8756cd5b741ff1774725c95e0491bb"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/resources/asterion_primitive_certificates.json.evidence.gz",
+      "size": 6266,
+      "sha256": "e57911061a24936b8f05efb71cb15646bdd8e3513c8faf0189203b0a8ea9acfb"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/src/perfectjet/rings.py",
+      "size": 4312,
+      "sha256": "a878a805a22b45312540fd77e2fa1ce25f4c007b80d7bcb69f9861c3729db67e"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/tests/test_asterion_braid.py",
+      "size": 4382,
+      "sha256": "66547fd33e4734bcb285f29cb2fca484d87d71ca06033e251fdeeaec5a59c90d"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/tests/test_asterion_lattice_projection.py",
+      "size": 2810,
+      "sha256": "15ed9942285cc4f2ce2d202eb56c87671c5e55fcedffd2dffa2120f367d3c767"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/tests/test_asterion_lattice_projection4.py",
+      "size": 3202,
+      "sha256": "c5d01ad0e995e42c6e00b5b0c6d04392f10cd9bb94359ee64e1447e06ddf155c"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/tests/test_asterion_quartic_characters.py",
+      "size": 5677,
+      "sha256": "336a85fd8b7a24506601b7651a4f2f346ae6963bb4bb30c8e531492a3c7d59fe"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/tests/test_quartic_covariant_checkpoint.py",
+      "size": 5840,
+      "sha256": "10d11a34eb4a986972a2b62903152f6c6fdfe7f7fb8a75179504ff82b527a7bd"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/tests/test_weight7_complete.py",
+      "size": 6803,
+      "sha256": "5ab9a6902ad3e1a046ce31cf6893762d9cdc35508db3c1dd198a22ace809066a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/verify_30380_and_cutoff.py",
+      "size": 3678,
+      "sha256": "ae23c029d3dca41e46cffc9743d5c2b55c47b902620b2a7db68c0fc0ad9e04eb"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/verify_polynomial_spans.py",
+      "size": 3101,
+      "sha256": "dceace3c4a8b865bd815fd11ec5d93be73196c2fded6eb79bdc0be9d3011a01a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/verify_quartic_small_matrices.py",
+      "size": 3459,
+      "sha256": "89cd83ac33bd227bcb2f0fa04c9e168efec7a9b7f902d1d83fa26ed746bcfe17"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight4_3875_source_replay.json",
+      "size": 203,
+      "sha256": "9098ab1a952849193cee9bbcb47b154b47947dabc01afab8f06495511dbe81fd"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight5_147250_source_replay.json",
+      "size": 184,
+      "sha256": "f4e459a524b6f7083ed93fee5d65f8a00d5e9f6af79506c2ef67ef3139810b6a"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight5_adjoint_source_replay.json",
+      "size": 1002,
+      "sha256": "9fa501b960810003e80259e88c6320e7b511f6a36033bf031ad80b23f8cf58c1"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight6_30380_nonmembership_replay.json",
+      "size": 314,
+      "sha256": "ddb4e3552e8fac8c9378378138100f7c250ae7d6bf53c7d2f05bccdb8beb42f5"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight6_30380_source_replay.json",
+      "size": 198,
+      "sha256": "1ed4a395d0e2e37f4aa21fd2ce586d7471a0494dd2ace11415cd3bd6aa194031"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight6_quartic_source_replay.json",
+      "size": 58487,
+      "sha256": "40c76c13be00af05a5733dd89fdf2f6f6f92eb14661a55b1d21ef26c5ad3d193"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight7_regression.log",
+      "size": 6377,
+      "sha256": "c43e0afc74052c222eabdfc85d068c268570dbf2e7825d665b3be9162da8c8b3"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight7_short_and_long.py",
+      "size": 3130,
+      "sha256": "1a5c750af57fd96a4928b01f6faffcf84d9895c496e077143c4505698676076f"
+    },
+    {
+      "path": "asterion-complete-weight7/Asterion_Research_Advance/weight7_short_and_long_receipt.json.evidence.gz",
+      "size": 12709,
+      "sha256": "e440b147dad6f6170d08a8689ff6d28f446402782c9cc542cdfd83e8d3ada466"
+    },
+    {
+      "path": "finite-mass-verification/FINITE_MASS_ENVELOPE.md",
+      "size": 8301,
+      "sha256": "b86ec8f29d656bd507722a6206b6636e25fe5ed2fd464d66824e60dd4b5f1a92"
+    },
+    {
+      "path": "finite-mass-verification/build_mass_figure.py",
+      "size": 5567,
+      "sha256": "941666d875273594a1f612c43682abbf732042c57b96f29ff792aafa91c6aa79"
+    },
+    {
+      "path": "finite-mass-verification/crossed_box.py",
+      "size": 5534,
+      "sha256": "bff6020b58188d065e6f868771e859d6dc7d92602e2676bbd9a7477f16297061"
+    },
+    {
+      "path": "finite-mass-verification/finite_mass_envelope.py",
+      "size": 5297,
+      "sha256": "9ab65098fbcf7fbf80dc5fe6b12ed98d59528240c66b306c0e7f32536e45e6a7"
+    },
+    {
+      "path": "finite-mass-verification/finite_mass_envelope_certificate.json",
+      "size": 2905,
+      "sha256": "a57614c36ea8b31d626796e9dcce4b4f6cec171176a346efc808eacb8363c110"
+    },
+    {
+      "path": "finite-mass-verification/finite_mass_envelope_figure.svg",
+      "size": 29176,
+      "sha256": "315d7abacc6eb2082f79bdda74c1af252e5d24fb06db6f072242cc906cc179a7"
+    },
+    {
+      "path": "finite-mass-verification/mass_qmc_diagnostic.json",
+      "size": 1041,
+      "sha256": "f928cd535898ab5ab4ba233b1249fe9bebb0ca88fd81f74a4bd5c120756b285b"
+    },
+    {
+      "path": "finite-mass-verification/mass_qmc_diagnostic.py",
+      "size": 2743,
+      "sha256": "f4f91ac3f8405d5d5990486f592b8d9cdf3a8372d5db7dc4f1ea98bb5c3d1b82"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/FIRST_MASS_RESPONSE_MINIMUM.md",
+      "size": 4259,
+      "sha256": "22c08926d32509b49a727d5b2275a09f78b8db87dbf27c6a801f88f5abc187d4"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/README.txt",
+      "size": 1345,
+      "sha256": "bb76d5e6ebe3d7080bea291d4befeef0e87b5c3fa6ca17a9c8c2f77857b98521"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/SHA256SUMS.txt",
+      "size": 1549,
+      "sha256": "2f4ce26fba4dee3e27ee74bd3abc7f6e5d26cd4c0393a81cf9b603b18665d39c"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/__pycache__/joint_mass_response_build.cpython-313.pyc",
+      "size": 19109,
+      "sha256": "5585b095e4f3c480dcf0694b99146d9bffdb0e6d4dece2f1168f5f90c21d5dae"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/build_direct_mass_readout.py",
+      "size": 4999,
+      "sha256": "46f311c5f6325076f17a3b2dd88ac0c92c9c06ac14b83b49557fe1998e221b22"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/first_mass_response_minimum.py",
+      "size": 7376,
+      "sha256": "ae2817d268c30a111991adbafb840e7bea3999dea8ec41de78439d551063748d"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/first_mass_response_minimum_certificate.json",
+      "size": 6027,
+      "sha256": "043f1d947fa240e01947084a18055752295657f2116aedb056cef0f49ca71bde"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/g10_coeffs_big.json",
+      "size": 12781,
+      "sha256": "d58b7514d6a4ea3942160052eb242f0bdd123b984eb2afe66538288797228530"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/g11_coeffs_big.json",
+      "size": 15173,
+      "sha256": "e40f89aba798bbc4ba55b91f069ebc9c0e2cd3da836c2e3f4827215e80df03c7"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/g345_coeffs.json",
+      "size": 3896,
+      "sha256": "2aa118a1b645383645e1a8654ba33be7b03710da253961b9cf5996d09e62a801"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/g78_coeffs_big.json",
+      "size": 8912,
+      "sha256": "60632525fde960063fbc64967dc767fa19b214cfe765d99e91f27e75783649ea"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/integrated_connection.json.gz",
+      "size": 806624,
+      "sha256": "969ed3fb999cca667836315420f9a44d4d9ca81f063c29f47b15c5211c5f75ed"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/joint_mass_response_build.py",
+      "size": 7424,
+      "sha256": "5d2c065fbd83cac423416ff8a921a9d12f6bcbd92b54bad0d1df13286ae30006"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/joint_mass_response_certificate.json.evidence.gz",
+      "size": 528516,
+      "sha256": "698d4f7108de55f96bc788f2b136aeb6d163701371759179d7ce36a6d0df1438"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/observable_quotient_jet0_rref.json.gz",
+      "size": 173639,
+      "sha256": "2e6d39c0e794b71c796599e740e4e22ddd636ef88fbfb32be551cf16d854f7cd"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/physical_J64_readout_certificate.json",
+      "size": 76849,
+      "sha256": "9cf029a2e9e54e3c7c81737b431178d7305ac49ed58fb7a6a9c1bb5467dfdab2"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/physical_hyperplane_basepoint_evaluation.json",
+      "size": 940,
+      "sha256": "f0846abb596cf3c016df6b39558e93f1eabfb88886300eeaeae7f8a17f7f955d"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/physical_mass_response_hyperplane_certificate.json",
+      "size": 803,
+      "sha256": "d1e6656bf8cc7063dff99b82dde49af59c54d35d4cc5615f39c177ab94c2fa8c"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/physical_minimality_certificate.json",
+      "size": 10388,
+      "sha256": "858b77c3082538ba024bbad1080a1209316a240898b412079dfe4b17cc00a0be"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/physical_quotient_jet0.json.gz",
+      "size": 188962,
+      "sha256": "8278f1b9ee60a71ca73882e61cd9c5f07c956f84006399c5e4c6d7ae8793252b"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/threshold9_physical_seed_certificate.json",
+      "size": 7014,
+      "sha256": "edf804134f61170c5210de0b3476d46eb41075b5625716378e4630c94277816d"
+    },
+    {
+      "path": "first-mass-response-verification/first_mass_response_verification/verify_full_relation_ring.py",
+      "size": 2340,
+      "sha256": "6253b282540096f7ab3dfb5f1e4caa4a68640e81f9169bf7a647725fa04ec46a"
+    },
+    {
+      "path": "pisot-psg-reconciliation/README.txt",
+      "size": 2948,
+      "sha256": "2b286d53a03d5d5360f55351d4fe03df99b105f85e8e3ef370ec905e8e7ca57e"
+    },
+    {
+      "path": "pisot-psg-reconciliation/arithmetic_matrix_audit.json",
+      "size": 1551,
+      "sha256": "aa52e7f789e82dac677fdfc40b9f388f57856c8c8db97db4025d688e1b30f8ad"
+    },
+    {
+      "path": "pisot-psg-reconciliation/arithmetic_matrix_audit.py",
+      "size": 3568,
+      "sha256": "9e1e758047fc5d22e2f4518d2c2fee871fc069b33b0784f0f50f83880a67e921"
+    },
+    {
+      "path": "pisot-psg-reconciliation/build_reconciliation.py",
+      "size": 37279,
+      "sha256": "8e9eeda996abb5d87629a96607379da7c8cdb4a6a11db62750cf34c6984124c1"
+    },
+    {
+      "path": "pisot-psg-reconciliation/integral-and-flavor-checks-100dps.json",
+      "size": 3175,
+      "sha256": "5f4666300c9e9a994aa39fa1daa6035908bacf0a48f2db2d095a2d535fc8eb83"
+    },
+    {
+      "path": "pisot-psg-reconciliation/integral-and-flavor-checks.json",
+      "size": 3137,
+      "sha256": "5cf6b0fada2feb2f782b478e03f76e4a82a506c850fe3b509652dbdbc6fdb289"
+    },
+    {
+      "path": "pisot-psg-reconciliation/pisot-scalar-certificate.json",
+      "size": 4254,
+      "sha256": "959dd1b71d3ea4c3b2d2651b4dd2d9885ac8efb06607a47eff78e3c348ea36ca"
+    },
+    {
+      "path": "pisot-psg-reconciliation/pisot_scalar_check.py",
+      "size": 5767,
+      "sha256": "3ceb44c72e3ed47fd9b2fd8b4392860ed5b14bd525f6b8f7f6a9e1b739e43715"
+    },
+    {
+      "path": "pisot-psg-reconciliation/recheck_integral_and_flavor.py",
+      "size": 4027,
+      "sha256": "41a3dcae4f321724ec0456c598d0152d1f805e89368dd4c4a06b8429dbb198b3"
+    },
+    {
+      "path": "pisot-psg-reconciliation/requirements.txt",
+      "size": 48,
+      "sha256": "4197e16d9c137fecb15ac82710caba91e6fb973e7943f9667b995bdd2c9eb397"
+    },
+    {
+      "path": "pisot-psg-reconciliation/research-reconciliation.html",
+      "size": 80656,
+      "sha256": "4cf655dfcd09a652d88e4e96764e01f24323d3ff55e0b5395c716ef3b2696706"
+    },
+    {
+      "path": "psg-flavor-benchmark/README.txt",
+      "size": 3586,
+      "sha256": "6b2dfeed79ec4d227c41d1dcca80b240da6f083e0939ab438583604cf7e204dc"
+    },
+    {
+      "path": "psg-flavor-benchmark/benchmark-80dps.json",
+      "size": 2224,
+      "sha256": "0c65e092ca83edd3a46db2e9bec55ac188df243ef95619815e4e571ad53e5eff"
+    },
+    {
+      "path": "psg-flavor-benchmark/psg_flavor_benchmark.py",
+      "size": 3797,
+      "sha256": "a427b1c5e6ae26111f38f0cc091265e9910b0dc1263a322ddf42558a85a59fe5"
+    },
+    {
+      "path": "restore_evidence.py",
+      "size": 1016,
+      "sha256": "c0821907656b24714dfc368ec35b22c9edfc2cddbc4fa0c5a5e0d18e2c6abfa2"
+    }
+  ]
+}

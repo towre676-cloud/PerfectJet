@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "R_Q_lattice_image_terms": 0,
+  "Sym_F_Q_alone_image_terms": 44,
+  "statement": "The retained 804-term lift R_Q=Sym(F_Q)-8Q31+24Q22 maps to zero in V_L; Sym(F_Q) alone does not."
+}

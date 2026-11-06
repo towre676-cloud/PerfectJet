@@ -1,0 +1,34 @@
+{
+  "source_replay": {
+    "passed": true,
+    "lattice_replayed": true,
+    "representatives": [
+      {
+        "symbol_terms": 763,
+        "correction_terms": 145,
+        "shapes": true,
+        "weights": true,
+        "raising_annihilated": true,
+        "ideal_highest_rank": 3,
+        "nonzero_modulo_ideal": true,
+        "lattice_image_terms": 0,
+        "affine_lift_null": true,
+        "passed": true
+      }
+    ]
+  },
+  "quartic_product": {
+    "passed": true,
+    "T0_ideal_annihilation": {
+      "passed": true,
+      "evaluations": 123256,
+      "statement": "T0 vanishes on I_x Sym2_y, Sym2_x I_y and the crossed relations; x^3z is assigned zero"
+    },
+    "kappa": "6510",
+    "T0_of_Y": "1614480",
+    "T0_of_F0": "947856",
+    "T0_norm_trace_identity": 947856,
+    "F0_equals_c_Y_modulo_ideal": "91/155",
+    "statement": "A6 length-4 has a one-dimensional singlet (dual to ker mu); T0 is a nonzero functional on it, so F0-c*Y lies in the arc ideal with c=T0(F0)/T0(Y)."
+  }
+}
