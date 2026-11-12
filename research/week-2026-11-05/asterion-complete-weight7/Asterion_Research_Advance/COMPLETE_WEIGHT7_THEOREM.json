@@ -1,0 +1,277 @@
+{
+  "schema": "asterion/complete-weight7-theorem/1",
+  "passed": true,
+  "quartic_sector_table": [
+    {
+      "dimension": 1,
+      "source": 5,
+      "ideal": 4,
+      "arc": 1,
+      "image": 0,
+      "kernel": 1,
+      "new_primitives": 0,
+      "proof": "complete covariants, corrected image ranks and old products"
+    },
+    {
+      "dimension": 248,
+      "source": 11,
+      "ideal": 9,
+      "arc": 2,
+      "image": 0,
+      "kernel": 2,
+      "new_primitives": 0,
+      "proof": "complete covariants, corrected image ranks and old products"
+    },
+    {
+      "dimension": 3875,
+      "source": 15,
+      "ideal": 13,
+      "arc": 2,
+      "image": 0,
+      "kernel": 2,
+      "new_primitives": 0,
+      "proof": "complete covariants, corrected image ranks and old products"
+    },
+    {
+      "dimension": 27000,
+      "source": 18,
+      "ideal": 18,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "explicit highest polynomials, ideal spanning and exact lattice output"
+    },
+    {
+      "dimension": 30380,
+      "source": 17,
+      "ideal": 15,
+      "arc": 2,
+      "image": 1,
+      "kernel": 1,
+      "new_primitives": 0,
+      "proof": "complete covariants, corrected image ranks and old products"
+    },
+    {
+      "dimension": 147250,
+      "source": 10,
+      "ideal": 9,
+      "arc": 1,
+      "image": 0,
+      "kernel": 1,
+      "new_primitives": 0,
+      "proof": "complete ideal plus old-generator product spanning"
+    },
+    {
+      "dimension": 779247,
+      "source": 16,
+      "ideal": 15,
+      "arc": 1,
+      "image": 0,
+      "kernel": 1,
+      "new_primitives": 0,
+      "proof": "complete ideal plus old-generator product spanning"
+    },
+    {
+      "dimension": 1763125,
+      "source": 5,
+      "ideal": 5,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "explicit highest polynomials, ideal spanning and exact lattice output"
+    },
+    {
+      "dimension": 2450240,
+      "source": 10,
+      "ideal": 10,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "explicit highest polynomials, ideal spanning and exact lattice output"
+    },
+    {
+      "dimension": 4096000,
+      "source": 14,
+      "ideal": 14,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "explicit highest polynomials, ideal spanning and exact lattice output"
+    },
+    {
+      "dimension": 4881384,
+      "source": 4,
+      "ideal": 4,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 6696000,
+      "source": 5,
+      "ideal": 4,
+      "arc": 1,
+      "image": 1,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "explicit highest polynomials, ideal spanning and exact lattice output"
+    },
+    {
+      "dimension": 26411008,
+      "source": 6,
+      "ideal": 6,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 70680000,
+      "source": 8,
+      "ideal": 8,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 76271625,
+      "source": 5,
+      "ideal": 5,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 79143000,
+      "source": 3,
+      "ideal": 3,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 203205000,
+      "source": 1,
+      "ideal": 1,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 281545875,
+      "source": 4,
+      "ideal": 4,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    },
+    {
+      "dimension": 344452500,
+      "source": 1,
+      "ideal": 1,
+      "arc": 0,
+      "image": 0,
+      "kernel": 0,
+      "new_primitives": 0,
+      "proof": "Casimir cutoff"
+    }
+  ],
+  "quartic_arc_character": {
+    "1": 1,
+    "248": 2,
+    "3875": 2,
+    "30380": 2,
+    "6696000": 1,
+    "147250": 1,
+    "779247": 1
+  },
+  "quartic_VOA_image_character": {
+    "30380": 1,
+    "6696000": 1
+  },
+  "quartic_kernel_character": {
+    "1": 1,
+    "248": 2,
+    "3875": 2,
+    "30380": 1,
+    "147250": 1,
+    "779247": 1
+  },
+  "quartic_arc_dimension": 7691504,
+  "quartic_VOA_image_dimension": 6726380,
+  "quartic_kernel_dimension": 965124,
+  "cubic_kernel_character": {
+    "248": 1,
+    "3875": 1,
+    "30380": 1,
+    "147250": 1
+  },
+  "cubic_kernel_dimension": 181753,
+  "total_weight7_kernel_character": {
+    "1": 1,
+    "248": 3,
+    "3875": 3,
+    "30380": 2,
+    "147250": 2,
+    "779247": 1
+  },
+  "total_weight7_kernel_dimension": 1146877,
+  "total_arc_character": {
+    "1": 5,
+    "248": 15,
+    "3875": 11,
+    "27000": 4,
+    "30380": 10,
+    "147250": 6,
+    "779247": 5,
+    "2450240": 1,
+    "4096000": 1,
+    "6696000": 1
+  },
+  "total_arc_dimension": 18480125,
+  "simple_VOA_character": {
+    "6696000": 1,
+    "4096000": 1,
+    "2450240": 1,
+    "779247": 4,
+    "147250": 4,
+    "27000": 4,
+    "30380": 8,
+    "3875": 8,
+    "248": 12,
+    "1": 4
+  },
+  "simple_VOA_dimension": 17333248,
+  "dimension_difference_checked": true,
+  "all_19_quartic_types_classified": true,
+  "short_kernel_zero": true,
+  "lengths5_through7_arc_zero": true,
+  "new_weight7_primitive_character": {},
+  "new_weight7_primitive_dimension": 0,
+  "generator_degrees_sufficient_through_weight7": [
+    4,
+    5,
+    6
+  ],
+  "all_weight_finite_generation_proved": false,
+  "proof_of_no_new_cubic_primitive": "E*x[r]=x[r-1], [E,D]=ordinary_length, E locally nilpotent and ideal-stable. Hence D is injective in every positive current length. The four existing cubic classes of weight6 have independent nonzero derivatives with exactly the computed weight7 cubic kernel character.",
+  "cubic_character_rederived_here_from_full_characters": true,
+  "relation_to_PR13": "agrees with the earlier cubic theorem; no re-execution of its original projected matrices is required for this independent character argument"
+}

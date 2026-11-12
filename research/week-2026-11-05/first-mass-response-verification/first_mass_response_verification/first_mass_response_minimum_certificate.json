@@ -1,0 +1,201 @@
+{
+  "all_checks_passed": true,
+  "theorem": "First seventh-mass-response minimum on the selected threshold-nine physical branch",
+  "deformation": {
+    "m7_squared": "M*rho",
+    "derivative_at_rho_1": "M*J64",
+    "fixed_parameters": [
+      "s",
+      "t",
+      "M"
+    ]
+  },
+  "coefficient_field": "C(s,t)",
+  "ranks": {
+    "universal_joint_observable_I_J64": 18,
+    "after_physical_Gram_constraint": 17,
+    "lower_projection_before_mass_boundary": 13,
+    "selected_physical_joint_I_J64": 16,
+    "selected_physical_joint_I_d_rho_I": 16
+  },
+  "rank_filtration": "18 -> 17 -> 16",
+  "mass_character": {
+    "one_form": "(1/2) dlog[s/(t(s+t))]",
+    "chi_s": "t/[2 s(s+t)]",
+    "chi_t": "-(s+2t)/[2 t(s+t)]",
+    "threshold_square_value": "-1/2"
+  },
+  "physical_mass_hyperplane": {
+    "definition": "H_mass = w + sum_{i=0}^{11} g_i z_i",
+    "equation": "d H_mass = (1/2)dlog[s/(t(s+t))] H_mass",
+    "source_support_original_indices": [
+      9,
+      10,
+      12,
+      23,
+      24,
+      25,
+      26,
+      33,
+      34,
+      35,
+      36,
+      51,
+      52,
+      54,
+      55,
+      57
+    ],
+    "threshold_regular_denominator_values": {
+      "s": "9",
+      "Q=3s^2+4st+4t^2": "171",
+      "7s+4t": "51",
+      "s^2+st-t": "57",
+      "3s-4t": "39",
+      "st-s-t": "-33"
+    },
+    "boundary_argument": "All source coordinates in H_mass are lower undotted masters, hence O((s-9)^2) on the certified threshold germ. The character sqrt(s/[t(s+t)]) is finite and nonzero there, so the locally constant quotient has zero limit and H_mass vanishes identically on the selected germ and its analytic continuations."
+  },
+  "direct_readout": {
+    "certificate": "physical_J64_readout_certificate.json",
+    "physical_frame_dimension": 16,
+    "identity": "e37 - sum_i dphys_i*basis_i = scale*Hmass_source + (d4/rel4)*Gram_source",
+    "basepoint": [
+      12,
+      -3
+    ],
+    "basepoint_coefficients": [
+      [
+        0,
+        "0"
+      ],
+      [
+        1,
+        "1"
+      ],
+      [
+        2,
+        "0"
+      ],
+      [
+        3,
+        "0"
+      ],
+      [
+        5,
+        "1/13824"
+      ],
+      [
+        6,
+        "1/96"
+      ],
+      [
+        7,
+        "0"
+      ],
+      [
+        8,
+        "25/1363968"
+      ],
+      [
+        9,
+        "-775/4091904"
+      ],
+      [
+        10,
+        "-57383/4091904"
+      ],
+      [
+        11,
+        "0"
+      ],
+      [
+        12,
+        "-181/1105920"
+      ],
+      [
+        13,
+        "1267/368640"
+      ],
+      [
+        14,
+        "0"
+      ],
+      [
+        15,
+        "445871/245514240"
+      ],
+      [
+        16,
+        "-11408527/163676160"
+      ]
+    ]
+  },
+  "minimality_argument": {
+    "upper_bound": "The exact direct readout reconstructs J64 from the existing physical 16-state scalar frame after the two physical invariant hyperplanes are imposed.",
+    "lower_bound": "The first component I alone already has certified minimal rational flat rank 16.",
+    "conclusion": "rank_phys(I,M J64)=rank_phys(I,d_rho I|_{rho=1})=16."
+  },
+  "checks": {
+    "universal_joint_rank_18": true,
+    "physical_Gram_restriction_rank_17": true,
+    "lower_joint_rank_13_before_boundary": true,
+    "mass_character_exact": [
+      [
+        [
+          1,
+          0,
+          "-1/2"
+        ],
+        [
+          0,
+          1,
+          "-1"
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          "1"
+        ],
+        [
+          0,
+          2,
+          "1"
+        ]
+      ]
+    ],
+    "hyperplane_24_exact_PDE_identities": true,
+    "mass_hyperplane_support_exact": true,
+    "mass_hyperplane_uses_no_dotted64_or_top60_64": true,
+    "splitting_coefficients_regular_at_threshold": true,
+    "mass_character_unit_nonzero_at_threshold": true,
+    "physical_threshold_certificate_passes": true,
+    "threshold_certificate_identifies_only_index64_as_squared": true,
+    "threshold_germ_is_O_h2_for_undotted_entries": true,
+    "physical_J64_readout_exact_in_16_frame": true,
+    "ordinary_scalar_minimum_16_dependency": true
+  },
+  "scope": [
+    "This is an infinitesimal first-mass-response theorem at rho=1.",
+    "It does not prove that a finite unequal-mass family at rho != 1 has rank16.",
+    "It does not transfer equal-mass differential-field minimality to the full unequal-mass family.",
+    "It uses the selected threshold-nine physical boundary and its ordered analytic continuation."
+  ],
+  "dependencies_sha256": {
+    "joint_mass_response_certificate.json": "4dfc165b5e7d49e77deae1e6fc8cd38b8fc81f212b700424a75eda1fbc164cd5",
+    "physical_mass_response_hyperplane_certificate.json": "d1e6656bf8cc7063dff99b82dde49af59c54d35d4cc5615f39c177ab94c2fa8c",
+    "physical_J64_readout_certificate.json": "9cf029a2e9e54e3c7c81737b431178d7305ac49ed58fb7a6a9c1bb5467dfdab2",
+    "physical_minimality_certificate.json": "858b77c3082538ba024bbad1080a1209316a240898b412079dfe4b17cc00a0be",
+    "threshold9_physical_seed_certificate.json": "edf804134f61170c5210de0b3476d46eb41075b5625716378e4630c94277816d",
+    "observable_quotient_jet0_rref.json.gz": "2e6d39c0e794b71c796599e740e4e22ddd636ef88fbfb32be551cf16d854f7cd",
+    "physical_quotient_jet0.json.gz": "8278f1b9ee60a71ca73882e61cd9c5f07c956f84006399c5e4c6d7ae8793252b",
+    "integrated_connection.json.gz": "969ed3fb999cca667836315420f9a44d4d9ca81f063c29f47b15c5211c5f75ed"
+  },
+  "replay_logs_tail": {
+    "joint_mass_response_build.py": "  \"universal_joint_dimension\": 18,\n  \"physical_joint_dimension\": 17,\n  \"physical_lower_dimension\": 13,\n  \"elapsed_seconds\": 4.622407913208008\n}\nchi_s (1/2*t)/(s**2 + s*t)\nchi_t (-1/2*s - t)/(s*t + t**2)\nlow index map [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]",
+    "verify_full_relation_ring.py": "base 5 57383/7104\nbase 6 0\nbase 7 181/1920\nbase 8 -1267/640\nbase 9 0\nbase 10 -445871/426240\nbase 11 11408527/284160\nPASS",
+    "build_direct_mass_readout.py": "      \"445871/245514240\"\n    ],\n    [\n      16,\n      \"-11408527/163676160\"\n    ]\n  ]\n}"
+  }
+}

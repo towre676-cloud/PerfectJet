@@ -1,0 +1,51 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "s_0": true,
+    "s_1": true,
+    "s_2": true,
+    "s_3": true,
+    "s_4": true,
+    "s_5": true,
+    "s_6": true,
+    "s_7": true,
+    "s_8": true,
+    "s_9": true,
+    "s_10": true,
+    "s_11": true,
+    "t_0": true,
+    "t_1": true,
+    "t_2": true,
+    "t_3": true,
+    "t_4": true,
+    "t_5": true,
+    "t_6": true,
+    "t_7": true,
+    "t_8": true,
+    "t_9": true,
+    "t_10": true,
+    "t_11": true
+  },
+  "relation_twist": {
+    "s": "(1/2*t)/(s**2 + s*t)",
+    "t": "(-1/2*s - t)/(s*t + t**2)"
+  },
+  "basepoint": [
+    12,
+    -3
+  ],
+  "base_coefficients": [
+    "-1/24",
+    "-6",
+    "0",
+    "-25/2368",
+    "775/7104",
+    "57383/7104",
+    "0",
+    "181/1920",
+    "-1267/640",
+    "0",
+    "-445871/426240",
+    "11408527/284160"
+  ]
+}

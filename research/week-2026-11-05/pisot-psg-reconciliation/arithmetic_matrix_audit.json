@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite-matrix audit; no corpus provenance or global tiling certification.",
+  "sources": [
+    {
+      "name": "triskelion_writeup.md",
+      "library_file_id": "libfile_3117ef75ff4c8191baa3ca37ae0e609d",
+      "file_id": "file_00000000e99071fd9b0c472b63811175",
+      "lines": "123-198"
+    },
+    {
+      "name": "# Pisot Embeddings, Delzant Polytop.txt",
+      "library_file_id": "libfile_014e5b3db7648191afabba9bffaaaca4",
+      "file_id": "file_0000000035fc722f87a815f281636f44",
+      "lines": "101-132"
+    }
+  ],
+  "checks": {
+    "A_symmetric": true,
+    "core_leaf_block_form": true,
+    "basis_orthogonal": true,
+    "exact_2_plus_2_plus_2_decomposition": true,
+    "A_characteristic_polynomial": true,
+    "B_characteristic_polynomial": true,
+    "B_L_factor": true,
+    "B_eventual_period_three_from_power_two": true,
+    "B_path_counts_24_in_each_eventual_residue": true,
+    "T_exact_full_rank": true
+  },
+  "A_characteristic_polynomial": "(x**2 - 2*x - 1)*(x**2 + x - 1)**2",
+  "B_characteristic_polynomial": "x**6*(x - 1)**2*(x**2 + x + 1)**2",
+  "B_zero_algebraic_multiplicity": 6,
+  "B_zero_geometric_multiplicity": 3,
+  "B_trace_at_n": "6 if n is a positive multiple of 3; 0 otherwise",
+  "T_determinant": "24193617/20000000",
+  "T_rank": 3,
+  "T_singular_values_approx": [
+    "1.65365157974096590892470101200",
+    "0.959527293359960118466595417450",
+    "0.762376433343474293575124442301"
+  ],
+  "claimed_two_loop_primitive_actual_time_derivative": "-(b**2 + b*b1*m + b1**2*m**2)/b**2"
+}

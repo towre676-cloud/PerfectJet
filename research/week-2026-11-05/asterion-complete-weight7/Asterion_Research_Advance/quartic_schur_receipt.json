@@ -1,0 +1,6099 @@
+{
+  "schema": "asterion/quartic-schur-replay/1",
+  "passed": true,
+  "source_commit": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+  "method": "S4 Frobenius characters; 241 distinct adjoint weights; exact Freudenthal subtraction; hook dimensions",
+  "norm_bound": 32,
+  "S4_class_order": [
+    "1^4",
+    "2,1,1",
+    "2,2",
+    "3,1",
+    "4"
+  ],
+  "S4_characters": {
+    "4": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "31": [
+      3,
+      1,
+      -1,
+      0,
+      -1
+    ],
+    "22": [
+      2,
+      0,
+      2,
+      -1,
+      0
+    ],
+    "211": [
+      3,
+      -1,
+      -1,
+      0,
+      1
+    ],
+    "1111": [
+      1,
+      -1,
+      1,
+      1,
+      -1
+    ]
+  },
+  "class_sizes": [
+    1,
+    6,
+    3,
+    8,
+    6
+  ],
+  "Schur_components": {
+    "4": {
+      "passed": true,
+      "irreducibles": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 79143000
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 70680000
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 4881384
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 4096000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 2450240
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 147250
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 27000
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 3875
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 1
+        }
+      ],
+      "dominant_weight_rows": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            25,
+            19,
+            13,
+            7,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            11,
+            21,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            16
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            8,
+            12
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            13,
+            7,
+            14
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            7,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            7,
+            12
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            6,
+            12
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            17,
+            25,
+            20,
+            15,
+            10,
+            5,
+            13
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            11,
+            6,
+            12
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            15,
+            10,
+            5,
+            12
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            6,
+            11
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 7,
+          "higher_irrep_contribution": 6,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            5,
+            11
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 7,
+          "higher_irrep_contribution": 7,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            6,
+            9
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 36,
+          "higher_irrep_contribution": 36,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            21,
+            17,
+            13,
+            9,
+            5,
+            11
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 28,
+          "higher_irrep_contribution": 28,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 28,
+          "higher_irrep_contribution": 27,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 84,
+          "higher_irrep_contribution": 84,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            5,
+            9
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 109,
+          "higher_irrep_contribution": 108,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            8,
+            4,
+            9
+          ],
+          "squared_norm": 12,
+          "Schur_weight_multiplicity": 267,
+          "higher_irrep_contribution": 266,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            11,
+            16,
+            13,
+            10,
+            7,
+            4,
+            8
+          ],
+          "squared_norm": 10,
+          "Schur_weight_multiplicity": 772,
+          "higher_irrep_contribution": 772,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            5,
+            10,
+            15,
+            12,
+            9,
+            6,
+            3,
+            8
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 2065,
+          "higher_irrep_contribution": 2064,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            4,
+            6
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 2172,
+          "higher_irrep_contribution": 2170,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            3,
+            6
+          ],
+          "squared_norm": 6,
+          "Schur_weight_multiplicity": 5365,
+          "higher_irrep_contribution": 5365,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            7,
+            10,
+            8,
+            6,
+            4,
+            2,
+            5
+          ],
+          "squared_norm": 4,
+          "Schur_weight_multiplicity": 13328,
+          "higher_irrep_contribution": 13327,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            2,
+            4,
+            6,
+            5,
+            4,
+            3,
+            2,
+            3
+          ],
+          "squared_norm": 2,
+          "Schur_weight_multiplicity": 32104,
+          "higher_irrep_contribution": 32104,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "squared_norm": 0,
+          "Schur_weight_multiplicity": 75190,
+          "higher_irrep_contribution": 75189,
+          "highest_irrep_multiplicity": 1
+        }
+      ],
+      "reconstructed_dimension": 161455750,
+      "independent_symmetric_power_dimension": 161455750
+    },
+    "31": {
+      "passed": true,
+      "irreducibles": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 281545875
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 70680000
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 76271625
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 1763125
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 26411008
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 6696000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 4096000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 2450240
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 3,
+          "dimension": 779247
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 147250
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 27000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 3,
+          "dimension": 30380
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 3875
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 248
+        }
+      ],
+      "dominant_weight_rows": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            25,
+            19,
+            13,
+            7,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            11,
+            21,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            16
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            8,
+            12
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            13,
+            7,
+            14
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            7,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            7,
+            12
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            6,
+            12
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            17,
+            25,
+            20,
+            15,
+            10,
+            5,
+            13
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            11,
+            6,
+            12
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 2,
+          "higher_irrep_contribution": 2,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            15,
+            10,
+            5,
+            12
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 3,
+          "higher_irrep_contribution": 3,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            6,
+            11
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 13,
+          "higher_irrep_contribution": 12,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            5,
+            11
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 19,
+          "higher_irrep_contribution": 18,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            6,
+            9
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 64,
+          "higher_irrep_contribution": 63,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            21,
+            17,
+            13,
+            9,
+            5,
+            11
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 77,
+          "higher_irrep_contribution": 76,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 70,
+          "higher_irrep_contribution": 70,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 245,
+          "higher_irrep_contribution": 244,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            5,
+            9
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 289,
+          "higher_irrep_contribution": 287,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            8,
+            4,
+            9
+          ],
+          "squared_norm": 12,
+          "Schur_weight_multiplicity": 780,
+          "higher_irrep_contribution": 779,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            11,
+            16,
+            13,
+            10,
+            7,
+            4,
+            8
+          ],
+          "squared_norm": 10,
+          "Schur_weight_multiplicity": 2268,
+          "higher_irrep_contribution": 2265,
+          "highest_irrep_multiplicity": 3
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            5,
+            10,
+            15,
+            12,
+            9,
+            6,
+            3,
+            8
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 6139,
+          "higher_irrep_contribution": 6138,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            4,
+            6
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 6295,
+          "higher_irrep_contribution": 6293,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            3,
+            6
+          ],
+          "squared_norm": 6,
+          "Schur_weight_multiplicity": 15988,
+          "higher_irrep_contribution": 15985,
+          "highest_irrep_multiplicity": 3
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            7,
+            10,
+            8,
+            6,
+            4,
+            2,
+            5
+          ],
+          "squared_norm": 4,
+          "Schur_weight_multiplicity": 39830,
+          "higher_irrep_contribution": 39828,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            2,
+            4,
+            6,
+            5,
+            4,
+            3,
+            2,
+            3
+          ],
+          "squared_norm": 2,
+          "Schur_weight_multiplicity": 95924,
+          "higher_irrep_contribution": 95922,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "squared_norm": 0,
+          "Schur_weight_multiplicity": 224010,
+          "higher_irrep_contribution": 224010,
+          "highest_irrep_multiplicity": 0
+        }
+      ],
+      "reconstructed_dimension": 476648250,
+      "independent_symmetric_power_dimension": 476648250
+    },
+    "22": {
+      "passed": true,
+      "irreducibles": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 203205000
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 70680000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 26411008
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 4881384
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 4096000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 2450240
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 779247
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 147250
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 3,
+          "dimension": 27000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 30380
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 3,
+          "dimension": 3875
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 1
+        }
+      ],
+      "dominant_weight_rows": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            25,
+            19,
+            13,
+            7,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            11,
+            21,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            16
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            8,
+            12
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            13,
+            7,
+            14
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            7,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            7,
+            12
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            6,
+            12
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            17,
+            25,
+            20,
+            15,
+            10,
+            5,
+            13
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            11,
+            6,
+            12
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 1,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            15,
+            10,
+            5,
+            12
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 2,
+          "higher_irrep_contribution": 2,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            6,
+            11
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 6,
+          "higher_irrep_contribution": 5,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            5,
+            11
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 12,
+          "higher_irrep_contribution": 12,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            6,
+            9
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 28,
+          "higher_irrep_contribution": 28,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            21,
+            17,
+            13,
+            9,
+            5,
+            11
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 49,
+          "higher_irrep_contribution": 48,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 49,
+          "higher_irrep_contribution": 48,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 161,
+          "higher_irrep_contribution": 161,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            5,
+            9
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 180,
+          "higher_irrep_contribution": 179,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            8,
+            4,
+            9
+          ],
+          "squared_norm": 12,
+          "Schur_weight_multiplicity": 513,
+          "higher_irrep_contribution": 511,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            11,
+            16,
+            13,
+            10,
+            7,
+            4,
+            8
+          ],
+          "squared_norm": 10,
+          "Schur_weight_multiplicity": 1496,
+          "higher_irrep_contribution": 1495,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            5,
+            10,
+            15,
+            12,
+            9,
+            6,
+            3,
+            8
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 4074,
+          "higher_irrep_contribution": 4073,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            4,
+            6
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 4159,
+          "higher_irrep_contribution": 4156,
+          "highest_irrep_multiplicity": 3
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            3,
+            6
+          ],
+          "squared_norm": 6,
+          "Schur_weight_multiplicity": 10623,
+          "higher_irrep_contribution": 10622,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            7,
+            10,
+            8,
+            6,
+            4,
+            2,
+            5
+          ],
+          "squared_norm": 4,
+          "Schur_weight_multiplicity": 26502,
+          "higher_irrep_contribution": 26499,
+          "highest_irrep_multiplicity": 3
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            2,
+            4,
+            6,
+            5,
+            4,
+            3,
+            2,
+            3
+          ],
+          "squared_norm": 2,
+          "Schur_weight_multiplicity": 63820,
+          "higher_irrep_contribution": 63820,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "squared_norm": 0,
+          "Schur_weight_multiplicity": 148976,
+          "higher_irrep_contribution": 148974,
+          "highest_irrep_multiplicity": 2
+        }
+      ],
+      "reconstructed_dimension": 315223376,
+      "independent_symmetric_power_dimension": 315223376
+    },
+    "211": {
+      "passed": true,
+      "irreducibles": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 344452500
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 76271625
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 1763125
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 26411008
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 6696000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicity": 2,
+          "dimension": 4096000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 2450240
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 3,
+          "dimension": 779247
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 2,
+          "dimension": 147250
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 27000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "multiplicity": 4,
+          "dimension": 30380
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 3875
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 3,
+          "dimension": 248
+        }
+      ],
+      "dominant_weight_rows": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            25,
+            19,
+            13,
+            7,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            11,
+            21,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            16
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            8,
+            12
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            13,
+            7,
+            14
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            7,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            7,
+            12
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            6,
+            12
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            17,
+            25,
+            20,
+            15,
+            10,
+            5,
+            13
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            11,
+            6,
+            12
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            15,
+            10,
+            5,
+            12
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 3,
+          "higher_irrep_contribution": 3,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            6,
+            11
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 6,
+          "higher_irrep_contribution": 6,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            5,
+            11
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 17,
+          "higher_irrep_contribution": 16,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            6,
+            9
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 28,
+          "higher_irrep_contribution": 27,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            21,
+            17,
+            13,
+            9,
+            5,
+            11
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 70,
+          "higher_irrep_contribution": 69,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 63,
+          "higher_irrep_contribution": 63,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 238,
+          "higher_irrep_contribution": 237,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            5,
+            9
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 252,
+          "higher_irrep_contribution": 250,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            8,
+            4,
+            9
+          ],
+          "squared_norm": 12,
+          "Schur_weight_multiplicity": 759,
+          "higher_irrep_contribution": 758,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            11,
+            16,
+            13,
+            10,
+            7,
+            4,
+            8
+          ],
+          "squared_norm": 10,
+          "Schur_weight_multiplicity": 2220,
+          "higher_irrep_contribution": 2217,
+          "highest_irrep_multiplicity": 3
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            5,
+            10,
+            15,
+            12,
+            9,
+            6,
+            3,
+            8
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 6083,
+          "higher_irrep_contribution": 6081,
+          "highest_irrep_multiplicity": 2
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            4,
+            6
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 6111,
+          "higher_irrep_contribution": 6110,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            3,
+            6
+          ],
+          "squared_norm": 6,
+          "Schur_weight_multiplicity": 15881,
+          "higher_irrep_contribution": 15877,
+          "highest_irrep_multiplicity": 4
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            7,
+            10,
+            8,
+            6,
+            4,
+            2,
+            5
+          ],
+          "squared_norm": 4,
+          "Schur_weight_multiplicity": 39676,
+          "higher_irrep_contribution": 39675,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            2,
+            4,
+            6,
+            5,
+            4,
+            3,
+            2,
+            3
+          ],
+          "squared_norm": 2,
+          "Schur_weight_multiplicity": 95544,
+          "higher_irrep_contribution": 95541,
+          "highest_irrep_multiplicity": 3
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "squared_norm": 0,
+          "Schur_weight_multiplicity": 222678,
+          "higher_irrep_contribution": 222678,
+          "highest_irrep_multiplicity": 0
+        }
+      ],
+      "reconstructed_dimension": 469021878,
+      "independent_symmetric_power_dimension": 469021878
+    },
+    "1111": {
+      "passed": true,
+      "irreducibles": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 146325270
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 4096000
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 2450240
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 779247
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "multiplicity": 1,
+          "dimension": 147250
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 27000
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 3875
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "multiplicity": 1,
+          "dimension": 248
+        }
+      ],
+      "dominant_weight_rows": [
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            25,
+            19,
+            13,
+            7,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            11,
+            21,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            16
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            8,
+            12
+          ],
+          "squared_norm": 32,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            20,
+            30,
+            24,
+            18,
+            12,
+            6,
+            15
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            13,
+            7,
+            14
+          ],
+          "squared_norm": 30,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            19,
+            28,
+            23,
+            18,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            7,
+            14
+          ],
+          "squared_norm": 28,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            27,
+            22,
+            17,
+            12,
+            6,
+            14
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            10,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            7,
+            12
+          ],
+          "squared_norm": 26,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            9,
+            18,
+            26,
+            21,
+            16,
+            11,
+            6,
+            13
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            12,
+            6,
+            12
+          ],
+          "squared_norm": 24,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            9,
+            17,
+            25,
+            20,
+            15,
+            10,
+            5,
+            13
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            16,
+            11,
+            6,
+            12
+          ],
+          "squared_norm": 22,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            16,
+            24,
+            20,
+            15,
+            10,
+            5,
+            12
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 1,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            6,
+            11
+          ],
+          "squared_norm": 20,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            15,
+            22,
+            18,
+            14,
+            10,
+            5,
+            11
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 5,
+          "higher_irrep_contribution": 5,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            6,
+            9
+          ],
+          "squared_norm": 18,
+          "Schur_weight_multiplicity": 0,
+          "higher_irrep_contribution": 0,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            21,
+            17,
+            13,
+            9,
+            5,
+            11
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 21,
+          "higher_irrep_contribution": 21,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            8,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 16,
+          "Schur_weight_multiplicity": 21,
+          "higher_irrep_contribution": 21,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            7,
+            14,
+            20,
+            16,
+            12,
+            8,
+            4,
+            10
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 77,
+          "higher_irrep_contribution": 77,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            9,
+            5,
+            9
+          ],
+          "squared_norm": 14,
+          "Schur_weight_multiplicity": 72,
+          "higher_irrep_contribution": 71,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            12,
+            18,
+            15,
+            12,
+            8,
+            4,
+            9
+          ],
+          "squared_norm": 12,
+          "Schur_weight_multiplicity": 246,
+          "higher_irrep_contribution": 245,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            6,
+            11,
+            16,
+            13,
+            10,
+            7,
+            4,
+            8
+          ],
+          "squared_norm": 10,
+          "Schur_weight_multiplicity": 724,
+          "higher_irrep_contribution": 723,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "root_coordinates": [
+            5,
+            10,
+            15,
+            12,
+            9,
+            6,
+            3,
+            8
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 2009,
+          "higher_irrep_contribution": 2008,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            4,
+            6
+          ],
+          "squared_norm": 8,
+          "Schur_weight_multiplicity": 1988,
+          "higher_irrep_contribution": 1987,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            8,
+            12,
+            10,
+            8,
+            6,
+            3,
+            6
+          ],
+          "squared_norm": 6,
+          "Schur_weight_multiplicity": 5258,
+          "higher_irrep_contribution": 5258,
+          "highest_irrep_multiplicity": 0
+        },
+        {
+          "dynkin_labels": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            4,
+            7,
+            10,
+            8,
+            6,
+            4,
+            2,
+            5
+          ],
+          "squared_norm": 4,
+          "Schur_weight_multiplicity": 13174,
+          "higher_irrep_contribution": 13173,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "root_coordinates": [
+            2,
+            4,
+            6,
+            5,
+            4,
+            3,
+            2,
+            3
+          ],
+          "squared_norm": 2,
+          "Schur_weight_multiplicity": 31724,
+          "higher_irrep_contribution": 31723,
+          "highest_irrep_multiplicity": 1
+        },
+        {
+          "dynkin_labels": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "root_coordinates": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "squared_norm": 0,
+          "Schur_weight_multiplicity": 73850,
+          "higher_irrep_contribution": 73850,
+          "highest_irrep_multiplicity": 0
+        }
+      ],
+      "reconstructed_dimension": 153829130,
+      "independent_symmetric_power_dimension": 153829130
+    }
+  },
+  "power_sum_weight_rows": [
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm": 32,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 32,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "norm": 32,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "norm": 32,
+      "power_sum_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 30,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "norm": 30,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "norm": 28,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      "norm": 28,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "norm": 26,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm": 26,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0
+      ],
+      "norm": 26,
+      "power_sum_coefficients": [
+        4,
+        2,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm": 24,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "norm": 24,
+      "power_sum_coefficients": [
+        6,
+        2,
+        2,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "norm": 22,
+      "power_sum_coefficients": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "norm": 22,
+      "power_sum_coefficients": [
+        12,
+        2,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 20,
+      "power_sum_coefficients": [
+        24,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "norm": 20,
+      "power_sum_coefficients": [
+        76,
+        14,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "norm": 18,
+      "power_sum_coefficients": [
+        144,
+        4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      "norm": 18,
+      "power_sum_coefficients": [
+        368,
+        72,
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "norm": 16,
+      "power_sum_coefficients": [
+        588,
+        14,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 16,
+      "power_sum_coefficients": [
+        546,
+        14,
+        14,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 14,
+      "power_sum_coefficients": [
+        1932,
+        14,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "norm": 14,
+      "power_sum_coefficients": [
+        2164,
+        74,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "norm": 12,
+      "power_sum_coefficients": [
+        6156,
+        42,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm": 10,
+      "power_sum_coefficients": [
+        17952,
+        96,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "norm": 8,
+      "power_sum_coefficients": [
+        48888,
+        112,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "norm": 8,
+      "power_sum_coefficients": [
+        49696,
+        368,
+        72,
+        1,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "norm": 6,
+      "power_sum_coefficients": [
+        127476,
+        214,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 4,
+      "power_sum_coefficients": [
+        318024,
+        308,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "norm": 2,
+      "power_sum_coefficients": [
+        765872,
+        760,
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "norm": 0,
+      "power_sum_coefficients": [
+        1787056,
+        2672,
+        304,
+        64,
+        8
+      ]
+    }
+  ],
+  "weight7_length4_ambient": {
+    "jet_shapes": [
+      [
+        3,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "Schur_coefficients": {
+      "4": 3,
+      "31": 4,
+      "22": 1,
+      "211": 1
+    },
+    "irreducibles": [
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 5,
+        "dimension": 1
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 11,
+        "dimension": 248
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 15,
+        "dimension": 3875
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "multiplicity": 18,
+        "dimension": 27000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 17,
+        "dimension": 30380
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "multiplicity": 10,
+        "dimension": 147250
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 16,
+        "dimension": 779247
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "multiplicity": 5,
+        "dimension": 1763125
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 10,
+        "dimension": 2450240
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "multiplicity": 14,
+        "dimension": 4096000
+      },
+      {
+        "dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 4,
+        "dimension": 4881384
+      },
+      {
+        "dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 5,
+        "dimension": 6696000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "multiplicity": 6,
+        "dimension": 26411008
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "multiplicity": 8,
+        "dimension": 70680000
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 5,
+        "dimension": 76271625
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ],
+        "multiplicity": 3,
+        "dimension": 79143000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "multiplicity": 1,
+        "dimension": 203205000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "multiplicity": 4,
+        "dimension": 281545875
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 1,
+        "dimension": 344452500
+      }
+    ],
+    "dimension": 3175205504
+  },
+  "auxiliary_S31_plus_S22_plus_S211": {
+    "irreducibles": [
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 2,
+        "dimension": 1
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 5,
+        "dimension": 248
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 6,
+        "dimension": 3875
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "multiplicity": 6,
+        "dimension": 27000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 8,
+        "dimension": 30380
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "multiplicity": 4,
+        "dimension": 147250
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 7,
+        "dimension": 779247
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ],
+        "multiplicity": 2,
+        "dimension": 1763125
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 4,
+        "dimension": 2450240
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "multiplicity": 5,
+        "dimension": 4096000
+      },
+      {
+        "dynkin_labels": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 1,
+        "dimension": 4881384
+      },
+      {
+        "dynkin_labels": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "multiplicity": 2,
+        "dimension": 6696000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "multiplicity": 3,
+        "dimension": 26411008
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0
+        ],
+        "multiplicity": 2,
+        "dimension": 70680000
+      },
+      {
+        "dynkin_labels": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "multiplicity": 2,
+        "dimension": 76271625
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        "multiplicity": 1,
+        "dimension": 203205000
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "multiplicity": 1,
+        "dimension": 281545875
+      },
+      {
+        "dynkin_labels": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "multiplicity": 1,
+        "dimension": 344452500
+      }
+    ],
+    "arc_upper_bound_claim": false
+  },
+  "arc_ideal_rank_computed": false,
+  "VOA_rank_computed": false,
+  "primitive_quotient_computed": false,
+  "scope": "complete polynomial source characters only; no arc quotient or VOA kernel conclusion"
+}
