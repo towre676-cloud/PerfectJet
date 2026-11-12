@@ -1,3 +1,4 @@
+import json
 import unittest
 from fractions import Fraction as Q
 
@@ -39,7 +40,10 @@ class ParametricKernelTowerTests(unittest.TestCase):
         # Flatten the one-dimensional rational-point lists.
         flat = {pt for c in depth2["drop_locus"]["drop_cells"]
                 for pt in c.get("rational_points", [])}
-        self.assertIn((Q(0),), flat)
+        self.assertIn(["0"], flat)
+
+    def test_report_is_json_serializable(self):
+        json.dumps(self.report)
 
     def test_point_replay_matches_known_strata(self):
         zero = replay_point(self.report, [0], family, self.basis, evolution, constraints)
