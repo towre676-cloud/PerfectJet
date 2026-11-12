@@ -38,8 +38,8 @@ class ParametricKernelTowerTests(unittest.TestCase):
     def test_boundary_delta_zero_is_a_rank_drop_at_depth_two(self):
         depth2 = self.report["depths"][2]
         # Flatten the one-dimensional rational-point lists.
-        flat = {pt for c in depth2["drop_locus"]["drop_cells"]
-                for pt in c.get("rational_points", [])}
+        flat = [pt for c in depth2["drop_locus"]["drop_cells"]
+                for pt in c.get("rational_points", [])]
         self.assertIn(["0"], flat)
 
     def test_report_is_json_serializable(self):
