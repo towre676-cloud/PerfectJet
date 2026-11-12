@@ -36,9 +36,6 @@ class ParametricKernelTowerTests(unittest.TestCase):
 
     def test_boundary_delta_zero_is_a_rank_drop_at_depth_two(self):
         depth2 = self.report["depths"][2]
-        points = {tuple(map(Q, c.get("rational_points", ())))
-                  for c in depth2["drop_locus"]["drop_cells"]
-                  if c.get("rational_points")}
         # Flatten the one-dimensional rational-point lists.
         flat = {pt for c in depth2["drop_locus"]["drop_cells"]
                 for pt in c.get("rational_points", [])}
