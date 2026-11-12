@@ -36,6 +36,14 @@ def _serialize_cell(cell, names):
     }
 
 
+def _serialize_drop_cell(cell):
+    out = dict(cell)
+    if "rational_points" in out:
+        out["rational_points"] = [[str(x) for x in point]
+                                  for point in out["rational_points"]]
+    return out
+
+
 def parametric_polynomial_observation_matrix(
         family, domain_basis, evolution_factory, constraints_factory, *,
         nvars, parameter_degree, depth):
@@ -123,7 +131,8 @@ def parametric_kernel_tower(
             "drop_locus": {
                 "generic_rank": drops["generic_rank"],
                 "cell_count": drops["cells"],
-                "drop_cells": drops["drop_cells"],
+                "drop_cells": [_serialize_drop_cell(cell)
+                               for cell in drops["drop_cells"]],
             },
         })
 
