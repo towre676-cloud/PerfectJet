@@ -1,20 +1,9 @@
 """Exact kernel towers for rational matrices and polynomial operators.
 
-This module isolates the common algebra behind observability, repeated
-constraint refinement, and polynomial partner problems. It is deliberately
-small: all arithmetic is exact, dependency-free, and built on PerfectJet's
-existing exact and polynomial layers.
-
-Conventions
------------
-States are coefficient column vectors. A matrix constraint C acts by C x and
-an evolution matrix A acts by A x. The depth-r tower is
-
-    [ C ; C A ; ... ; C A^r ].
-
-For polynomial operators, domain_basis fixes the coefficient columns.
-Each constraint is a linear callable returning a Poly. Evolution may change
-polynomial degree; no finite codomain basis is required.
+The finite-state matrix API certifies permanent stabilization.  The polynomial
+API is deliberately more conservative: evolution may leave the supplied input
+span, so a finite-depth rank plateau is reported only as an observed plateau,
+not as an infinite-tail theorem.
 """
 from __future__ import annotations
 
@@ -47,16 +36,11 @@ def _serialize_matrix(rows):
 
 
 def matrix_kernel_tower(constraint, evolution, max_depth=None, include_matrices=False):
-    """Compute the exact finite-dimensional kernel/observability tower.
+    """Compute an exact finite-dimensional observability/kernel tower.
 
-    constraint is an m-by-n exact rational matrix and evolution is an n-by-n
-    matrix. The routine stops as soon as cumulative row rank is unchanged, or
-    when the kernel is zero. If max_depth is omitted, depth n is sufficient to
-    encounter one of those conditions.
-
-    The returned lost_witness at a rank-increasing depth is a vector that
-    survived the preceding cumulative constraints and is detected by the new
-    block.
+    For square evolution A and constraint C, the cumulative matrix is
+    [C; CA; ...; CA^r].  Once adding CA^r fails to increase row rank, the
+    cumulative row space is A-invariant and every later block is redundant.
     """
     c = _matrix(constraint, "constraint")
     a = _matrix(evolution, "evolution")
@@ -88,19 +72,14 @@ def matrix_kernel_tower(constraint, evolution, max_depth=None, include_matrices=
             for vector in nullspace(previous_rows, n):
                 response = _response(block, vector)
                 if any(response):
-                    lost = {
-                        "vector": _serialize_vector(vector),
-                        "new_block_response": _serialize_vector(response),
-                    }
+                    lost = {"vector": _serialize_vector(vector),
+                            "new_block_response": _serialize_vector(response)}
                     break
 
-        entry = {
-            "depth": depth,
-            "rank": current_rank,
-            "kernel_dimension": n-current_rank,
-            "kernel_basis": [_serialize_vector(v) for v in kernel],
-            "lost_witness": lost,
-        }
+        entry = {"depth": depth, "rank": current_rank,
+                 "kernel_dimension": n-current_rank,
+                 "kernel_basis": [_serialize_vector(v) for v in kernel],
+                 "lost_witness": lost}
         if include_matrices:
             entry["block"] = _serialize_matrix(block)
             entry["cumulative"] = _serialize_matrix(cumulative)
@@ -123,6 +102,8 @@ def matrix_kernel_tower(constraint, evolution, max_depth=None, include_matrices=
     if stabilized:
         evolved_basis = matmul(basis, a) if basis else []
         closure = rank(basis + evolved_basis, n) == len(basis)
+        if not closure:
+            raise ArithmeticError("claimed matrix-tower stabilization failed closure replay")
 
     final_rank = rank(cumulative, n)
     return {
@@ -137,16 +118,31 @@ def matrix_kernel_tower(constraint, evolution, max_depth=None, include_matrices=
         "observable_row_space_closed": closure,
         "history": history,
         "scope": (
-            "Exact rational finite-dimensional tower. Stabilization is certified "
-            "by cumulative row-space closure under right multiplication by evolution."
+            "Exact rational finite-state tower. Permanent stabilization is "
+            "certified by cumulative row-space closure under right multiplication "
+            "by the supplied square evolution matrix."
         ),
     }
 
 
+def _validate_polynomial_problem(domain_basis, evolution, constraints):
+    if not isinstance(domain_basis, (list, tuple)) or not domain_basis:
+        raise ValueError("domain_basis must be a nonempty sequence")
+    if any(not isinstance(p, Poly) for p in domain_basis):
+        raise ValueError("domain_basis entries must be Poly objects")
+    variables = domain_basis[0].variables
+    if any(p.variables != variables for p in domain_basis):
+        raise ValueError("domain_basis variable counts differ")
+    if not callable(evolution):
+        raise ValueError("evolution must be callable")
+    if (not isinstance(constraints, (list, tuple)) or not constraints
+            or any(not callable(c) for c in constraints)):
+        raise ValueError("constraints must be a nonempty callable sequence")
+    return variables
+
+
 def _operator_block(images_by_constraint, width):
-    """Turn polynomial images of basis columns into a coefficient matrix block."""
-    rows = []
-    channels = []
+    rows, channels = [], []
     for channel, images in enumerate(images_by_constraint):
         if len(images) != width:
             raise ValueError("constraint image count differs from domain width")
@@ -164,42 +160,54 @@ def _operator_block(images_by_constraint, width):
     return rows, channels
 
 
-def polynomial_kernel_tower(domain_basis, evolution, constraints, max_depth=None,
-                            include_matrices=False):
-    """Compute repeated polynomial constraint kernels on a fixed input space.
+def polynomial_observation_records(domain_basis, evolution, constraints, depth):
+    """Return keyed exact rows for all constraint/evolution iterates through depth.
 
-    domain_basis is the coefficient basis for the input observable. The
-    evolution callable may change degree at every iterate. Each constraint is
-    applied to every evolved basis element and all nonzero output coefficients
-    become exact matrix rows. Constraint channels remain distinct even when
-    they produce the same output monomial.
-
-    Linearity of the supplied callables is an explicit applicability
-    assumption; the returned witness replays only the resulting exact matrices.
+    Keys are (iterate, constraint_index, exponent_tuple).  This representation
+    is stable under parameter specialization because missing rows are understood
+    as exact zero rows; it is used by the parametric incidence engine.
     """
-    if not isinstance(domain_basis, (list, tuple)) or not domain_basis:
-        raise ValueError("domain_basis must be a nonempty sequence")
-    if any(not isinstance(p, Poly) for p in domain_basis):
-        raise ValueError("domain_basis entries must be Poly objects")
-    variables = domain_basis[0].variables
-    if any(p.variables != variables for p in domain_basis):
-        raise ValueError("domain_basis variable counts differ")
-    if not callable(evolution):
-        raise ValueError("evolution must be callable")
-    if not isinstance(constraints, (list, tuple)) or not constraints or any(not callable(c) for c in constraints):
-        raise ValueError("constraints must be a nonempty callable sequence")
-    n = len(domain_basis)
-    if max_depth is None:
-        max_depth = n
-    if type(max_depth) is not int or max_depth < 0:
-        raise ValueError("max_depth must be a nonnegative integer")
+    variables = _validate_polynomial_problem(domain_basis, evolution, constraints)
+    if type(depth) is not int or depth < 0:
+        raise ValueError("depth must be a nonnegative integer")
+    evolved = list(domain_basis)
+    records = {}
+    for iterate in range(depth + 1):
+        for channel, constraint in enumerate(constraints):
+            images = [constraint(p) for p in evolved]
+            if any(not isinstance(p, Poly) or p.variables != variables for p in images):
+                raise ValueError("constraints must return Poly objects with unchanged variable count")
+            monomials = sorted(set().union(*(p.terms.keys() for p in images)))
+            for exponent in monomials:
+                row = [p.terms.get(exponent, Q(0)) for p in images]
+                if any(row):
+                    records[(iterate, channel, exponent)] = row
+        if iterate != depth:
+            evolved = [evolution(p) for p in evolved]
+            if any(not isinstance(p, Poly) or p.variables != variables for p in evolved):
+                raise ValueError("evolution must return Poly objects with unchanged variable count")
+    return records
 
+
+def polynomial_kernel_tower(domain_basis, evolution, constraints, max_depth,
+                            include_matrices=False):
+    """Compute a bounded repeated polynomial-constraint tower.
+
+    Unlike the finite-state matrix API, evolution may leave the supplied input
+    span. Therefore an unchanged rank at one iterate is only an observed
+    plateau. The routine never converts such a plateau into an infinite-tail
+    claim. A zero surviving kernel *is* permanent and is reported as certified.
+    """
+    variables = _validate_polynomial_problem(domain_basis, evolution, constraints)
+    if type(max_depth) is not int or max_depth < 0:
+        raise ValueError("explicit max_depth must be a nonnegative integer")
+    n = len(domain_basis)
     evolved = list(domain_basis)
     cumulative = []
     history = []
     previous_rank = None
-    stabilized = False
-    stabilization_depth = None
+    plateaus = []
+    zero_kernel_depth = None
 
     for depth in range(max_depth + 1):
         images = [[constraint(p) for p in evolved] for constraint in constraints]
@@ -214,56 +222,46 @@ def polynomial_kernel_tower(domain_basis, evolution, constraints, max_depth=None
             for vector in nullspace(previous_rows, n):
                 response = _response(block, vector)
                 if any(response):
-                    lost = {
-                        "vector": _serialize_vector(vector),
-                        "new_block_response": _serialize_vector(response),
-                    }
+                    lost = {"vector": _serialize_vector(vector),
+                            "new_block_response": _serialize_vector(response)}
                     break
+        if previous_rank is not None and current_rank == previous_rank:
+            plateaus.append(depth)
 
-        entry = {
-            "depth": depth,
-            "rows_added": len(block),
-            "channels": channels,
-            "rank": current_rank,
-            "kernel_dimension": n-current_rank,
-            "kernel_basis": [_serialize_vector(v) for v in kernel],
-            "lost_witness": lost,
-        }
+        entry = {"depth": depth, "rows_added": len(block), "channels": channels,
+                 "rank": current_rank, "kernel_dimension": n-current_rank,
+                 "kernel_basis": [_serialize_vector(v) for v in kernel],
+                 "lost_witness": lost}
         if include_matrices:
             entry["block"] = _serialize_matrix(block)
             entry["cumulative"] = _serialize_matrix(cumulative)
         history.append(entry)
 
         if current_rank == n:
-            stabilized = True
-            stabilization_depth = depth
+            zero_kernel_depth = depth
             break
-        if previous_rank is not None and current_rank == previous_rank:
-            stabilized = True
-            stabilization_depth = depth-1
-            break
-
         previous_rank = current_rank
-        next_evolved = [evolution(p) for p in evolved]
-        if any(not isinstance(p, Poly) for p in next_evolved):
-            raise ValueError("evolution must return Poly objects")
-        if any(p.variables != variables for p in next_evolved):
-            raise ValueError("evolution changed polynomial variable count")
-        evolved = next_evolved
+        if depth != max_depth:
+            evolved = [evolution(p) for p in evolved]
+            if any(not isinstance(p, Poly) or p.variables != variables for p in evolved):
+                raise ValueError("evolution must return Poly objects with unchanged variable count")
 
     final_rank = rank(cumulative, n)
     return {
-        "schema": "perfectjet/kernel-tower/polynomial-v1",
+        "schema": "perfectjet/kernel-tower/polynomial-v2",
         "domain_dimension": n,
         "constraint_count": len(constraints),
-        "stabilized": stabilized,
-        "stabilization_depth": stabilization_depth,
-        "persistent_kernel_dimension": n-final_rank,
-        "persistent_kernel_basis": [_serialize_vector(v) for v in nullspace(cumulative, n)],
+        "bounded_through_depth": history[-1]["depth"],
+        "zero_kernel_certified": zero_kernel_depth is not None,
+        "zero_kernel_depth": zero_kernel_depth,
+        "observed_plateau_depths": plateaus,
+        "surviving_kernel_dimension": n-final_rank,
+        "surviving_kernel_basis": [_serialize_vector(v) for v in nullspace(cumulative, n)],
         "history": history,
         "scope": (
-            "Exact coefficient-kernel tower on the supplied finite input span. "
-            "Evolution may leave that span because each iterate is constrained "
-            "directly in the ambient sparse polynomial ring."
+            "Exact coefficient-kernel tower on the supplied finite input span, "
+            "checked only through the reported depth. Evolution may leave that "
+            "span, so a finite-depth plateau is not an infinite stabilization "
+            "certificate. Zero kernel is permanent."
         ),
     }
