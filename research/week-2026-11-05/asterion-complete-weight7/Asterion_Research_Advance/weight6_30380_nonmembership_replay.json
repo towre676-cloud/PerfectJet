@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "lattice_replayed": false,
+  "representatives": [
+    {
+      "symbol_terms": 825,
+      "correction_terms": 0,
+      "shapes": true,
+      "weights": true,
+      "raising_annihilated": true,
+      "ideal_highest_rank": 4,
+      "nonzero_modulo_ideal": true,
+      "passed": true
+    }
+  ]
+}

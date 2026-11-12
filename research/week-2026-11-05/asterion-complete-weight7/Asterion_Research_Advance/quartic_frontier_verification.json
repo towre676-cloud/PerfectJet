@@ -1,0 +1,52 @@
+{
+  "schema": "asterion/weight7-quartic-frontier-checkpoint/1",
+  "passed": true,
+  "quartic_30380": {
+    "source_multiplicity": 17,
+    "ideal_rank_Q": 15,
+    "arc_multiplicity": 2,
+    "VOA_image_multiplicity": 1,
+    "kernel_multiplicity": 1,
+    "new_primitive_multiplicity": 0
+  },
+  "quartic_Casimir_bound": 196,
+  "zero_arc_types": [
+    4881384,
+    26411008,
+    70680000,
+    76271625,
+    79143000,
+    203205000,
+    281545875,
+    344452500
+  ],
+  "resolved_quartic_type_count": 12,
+  "remaining_quartic_types": [
+    27000,
+    147250,
+    779247,
+    1763125,
+    2450240,
+    4096000,
+    6696000
+  ],
+  "short_kernel_zero": true,
+  "long_arc_zero_lengths": [
+    5,
+    6,
+    7
+  ],
+  "known_quartic_kernel_character": {
+    "1": 1,
+    "248": 2,
+    "3875": 2,
+    "30380": 1
+  },
+  "known_quartic_kernel_dimension": 38627,
+  "known_quartic_new_primitives": 0,
+  "inherited_cubic_kernel_dimension": 181753,
+  "total_known_weight7_kernel_dimension_lower_bound": 220380,
+  "complete_weight7_classification": false,
+  "cubic_result_replayed_here": false,
+  "superseded_by": "COMPLETE_WEIGHT7_THEOREM.json"
+}

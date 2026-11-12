@@ -1,0 +1,254 @@
+{
+  "repository": "towre676-cloud/PerfectJet",
+  "main_commit": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+  "PR13_head": "081ee6d76726ead700eb87fb423835afa5ac8ba4",
+  "retrieved": "2026-11-04",
+  "sources": [
+    {
+      "path": "src/perfectjet/__init__.py",
+      "github_blob_sha": "57a5814a02e0863bddafcbda148b571e5584d58d",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/__init__.py"
+    },
+    {
+      "path": "src/perfectjet/asterion.py",
+      "github_blob_sha": "cba51f3fcbd1556a506c1945a14e54e3deed0fed",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_basis.py",
+      "github_blob_sha": "bd87d0874bb24c7c4e173ca2fffebff83c7b4230",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_basis.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_boundary.py",
+      "github_blob_sha": "be3d384e7f765b161d1bcccd9f681226bbef1c88",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_boundary.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_currents.py",
+      "github_blob_sha": "0753e19088511bf65a2d4d795a55bb8666bddebc",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_currents.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_deformations.py",
+      "github_blob_sha": "f3853f6ed93a67a742adcba28d723e7926438102",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_deformations.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_e8.py",
+      "github_blob_sha": "89f098861f7375d34bf38e975d17f5ec58edf3c9",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_e8.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_elliptic.py",
+      "github_blob_sha": "cb5a23b2e40ad2fb13fda3fd356319e28be5486c",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_elliptic.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_extension.py",
+      "github_blob_sha": "8271b01ad24936d68eb611f1291b4a8d4831cf94",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_extension.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_frontiers.py",
+      "github_blob_sha": "96869f5d9e50e245cdc1442daad71b7f066b89d1",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_frontiers.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_higher.py",
+      "github_blob_sha": "d9eada498eacaedf3ec638719e15e4c77e928821",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_higher.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_jacobi.py",
+      "github_blob_sha": "735d980cba5827b4ba51013c1f4f47db5f58efef",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_jacobi.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_jordan.py",
+      "github_blob_sha": "e548528bbef37388777ccc9143651e4250f6d3a6",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_jordan.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_kernel_characters.py",
+      "github_blob_sha": "811e4aa4a474da92bff8893ce78d53f5096e5ab7",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_kernel_characters.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_kernel_tower.py",
+      "github_blob_sha": "7767fd50308c2e8e39df121a42b7786d225e7b13",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_kernel_tower.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_kz.py",
+      "github_blob_sha": "8654c69cdb5e1013e88b33a32b44dde2b215193d",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_kz.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_monodromy.py",
+      "github_blob_sha": "c175c68bf3647fb07fd3850dca62812541585a14",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_monodromy.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_monodromy_algebra.py",
+      "github_blob_sha": "32ebec62eea6c4abbb251969164ec12a5705804e",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_monodromy_algebra.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_periods.py",
+      "github_blob_sha": "b6fafae933713fc4ada63bfe84e821875cf876b4",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_periods.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_primitives.py",
+      "github_blob_sha": "d382993be56d83e86af7b16dd20d7b228ccddaeb",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_primitives.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_principal.py",
+      "github_blob_sha": "90ab087e27825363f4cccf2d7599de15c8f8f35e",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_principal.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_quartic.py",
+      "github_blob_sha": "ade4b5650dc3f46d5fd35e7d016311510836ea3f",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_quartic.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_quartic_characters.py",
+      "github_blob_sha": "7eeb66fdd71617607a9ce2bd6044ff8effac95fc",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_quartic_characters.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_relations.py",
+      "github_blob_sha": "13716cee901a492524068a7076a03a1bedc75d0b",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_relations.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_rigidity.py",
+      "github_blob_sha": "54d62f20716051af8329c98c89e7a69a5bae2f78",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_rigidity.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_transport.py",
+      "github_blob_sha": "375322db8eb8c6244119accb7a89c23339092cd6",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/asterion_transport.py"
+    },
+    {
+      "path": "src/perfectjet/kz_half_braid.py",
+      "github_blob_sha": "1420b2e86b2397be648c9cd66c6e2802f5225df2",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/kz_half_braid.py"
+    },
+    {
+      "path": "tests/test_asterion_braid.py",
+      "github_blob_sha": "542c13b413ba9cb00ce8d55b63802706fdd3baef",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/tests/test_asterion_braid.py"
+    },
+    {
+      "path": "tests/test_asterion_quartic_characters.py",
+      "github_blob_sha": "6fe036a125bc313ecfe6408b1dfca669cdb07d13",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/tests/test_asterion_quartic_characters.py"
+    },
+    {
+      "path": "src/perfectjet/exact.py",
+      "github_blob_sha": "ff0a4d21d8809270042743f7970773563642299a",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/exact.py"
+    },
+    {
+      "path": "src/perfectjet/rings.py",
+      "github_blob_sha": "01676d8dcc63c2f902ceef497dba34fce44f4cc4",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/src/perfectjet/rings.py"
+    },
+    {
+      "path": "src/perfectjet/asterion_lattice_projection.py",
+      "github_blob_sha": "24ea1c90bf89834bc8ec8dbbbc439420fd408828",
+      "source_ref": "081ee6d76726ead700eb87fb423835afa5ac8ba4",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/081ee6d76726ead700eb87fb423835afa5ac8ba4/src/perfectjet/asterion_lattice_projection.py"
+    },
+    {
+      "path": "tests/test_asterion_lattice_projection.py",
+      "github_blob_sha": "6ce479ec9e99830c4e39b1946d2074d9d36c20fd",
+      "source_ref": "081ee6d76726ead700eb87fb423835afa5ac8ba4",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/081ee6d76726ead700eb87fb423835afa5ac8ba4/tests/test_asterion_lattice_projection.py"
+    },
+    {
+      "path": "docs/ASTERION_MONODROMY.md",
+      "github_blob_sha": "94ef58ebcb3d3fe86b12fa87f35ff4200c8c5941",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/docs/ASTERION_MONODROMY.md"
+    },
+    {
+      "path": "docs/ASTERION_QUARTIC_CHARACTERS.md",
+      "github_blob_sha": "986682e50c123de1cac9b68f7a5e733c80c2b7d5",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/docs/ASTERION_QUARTIC_CHARACTERS.md"
+    },
+    {
+      "path": "docs/ASTERION_HALF_BRAID.md",
+      "github_blob_sha": "fdf324aa78d2198caba9a04e42be4a4ceb16df77",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/docs/ASTERION_HALF_BRAID.md"
+    },
+    {
+      "path": "docs/ASTERION_MONODROMY_ALGEBRA.md",
+      "github_blob_sha": "284cda6b6f67509b5865b52fb67821238aaa6521",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/docs/ASTERION_MONODROMY_ALGEBRA.md"
+    },
+    {
+      "path": "docs/ASTERION_QUARTIC.md",
+      "github_blob_sha": "bdfbd34bc0fb6baf855689a6c1ce1452253cfa23",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "url": "https://github.com/towre676-cloud/PerfectJet/blob/9b69eab9beff3011bc6216b30a460c2c6d0e97be/docs/ASTERION_QUARTIC.md"
+    },
+    {
+      "path": "src/perfectjet/resources/asterion_primitive_certificates.json",
+      "github_blob_sha": "467978f331162db8bcb95e86ecbc3453f6d01edd",
+      "source_ref": "9b69eab9beff3011bc6216b30a460c2c6d0e97be",
+      "extraction": "Only sectors.w5-248 retained; not the complete upstream resource."
+    }
+  ],
+  "new_primitive_source_extractions": [
+    {
+      "file": "primitive_147250_source.json",
+      "source_blob": "467978f331162db8bcb95e86ecbc3453f6d01edd",
+      "selector": "sectors.w5-147250"
+    },
+    {
+      "file": "primitive_30380_source.json",
+      "source_blob": "467978f331162db8bcb95e86ecbc3453f6d01edd",
+      "selector": "sectors.w6-30380"
+    }
+  ]
+}
