@@ -1,0 +1,52 @@
+{
+  "schema": "asterion/weight7-quartic-adjoint-products/1",
+  "passed": true,
+  "product_classes": [
+    "[x^[1],P248]",
+    "g^[2]*F_Q projected to adjoint"
+  ],
+  "product_coordinate_vectors": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-20",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-21",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "2",
+      "2",
+      "1",
+      "0",
+      "-1",
+      "0",
+      "0"
+    ]
+  ],
+  "ranks_ideal_idealP_idealQ_idealPQ": [
+    9,
+    10,
+    10,
+    11
+  ],
+  "arc_adjoint_multiplicity": 2,
+  "kernel_adjoint_multiplicity": 2,
+  "new_primitive_adjoint_multiplicity": 0,
+  "VOA_image_rank_on_arc_adjoint": 0,
+  "null_lift_dependencies": [
+    "weight4_3875_source_replay.json",
+    "weight5_adjoint_source_replay.json"
+  ],
+  "proof": "Both product classes belong to the multiplicative Li kernel. Their independence modulo the ideal exhausts the two-dimensional adjoint multiplicity space. All its classes are old products.",
+  "coupling_formula": "2x B([x,y],z)+2[x,y]Bxz+[x,[[x,y],z]]+[[x,y],[x,z]] =2F3+2F2+F4-F6; this is14 times the contraction of z with2P3875(x sym [x,y])."
+}

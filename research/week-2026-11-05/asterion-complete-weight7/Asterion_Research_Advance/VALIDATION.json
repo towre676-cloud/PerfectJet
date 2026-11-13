@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-04",
+  "focused_tests_passed": 40,
+  "focused_tests_failed": 0,
+  "test_groups": [
+    {
+      "module": "test_asterion_quartic_characters",
+      "tests": 7,
+      "passed": true
+    },
+    {
+      "module": "test_asterion_braid",
+      "selected_tests": [
+        "test_exact_descent_hypotheses_and_tensor_parity",
+        "test_exact_tw_model_relations_and_simplicity",
+        "test_independent_decode_and_corruption_rejection",
+        "test_half_spectrum_has_actual_and_projective_order34"
+      ],
+      "tests": 4,
+      "passed": true
+    },
+    {
+      "module": "test_asterion_lattice_projection",
+      "tests": 4,
+      "passed": true
+    },
+    {
+      "module": "test_asterion_lattice_projection4",
+      "tests": 5,
+      "passed": true
+    },
+    {
+      "module": "test_quartic_covariant_checkpoint",
+      "tests": 8,
+      "passed": true
+    },
+    {
+      "module": "test_weight7_complete",
+      "tests": 12,
+      "passed": true
+    }
+  ],
+  "fresh_exhaustive_monodromy_replay_passed": true,
+  "exact_four_adjoint_Schur_reconstruction_passed": true,
+  "exact_pure_braid_trace_witness_passed": true,
+  "full_PerfectJet_regression_run": false,
+  "weight_seven_quartic_arc_ideal_ranks_computed": true,
+  "weight_seven_quartic_VOA_ranks_computed": true,
+  "weight_seven_quartic_primitive_quotient_computed": true,
+  "quartic_rank_scope": "all19 polynomial-source irreducible types",
+  "complete_quartic_classification": true,
+  "quartic_kernel_character_on_resolved_types": {
+    "1": 1,
+    "248": 2,
+    "3875": 2,
+    "30380": 1,
+    "147250": 1,
+    "779247": 1
+  },
+  "resolved_quartic_kernel_dimension": 965124,
+  "resolved_quartic_new_primitive_multiplicity": 0,
+  "complete_weight7_classification": true,
+  "total_weight7_kernel_dimension": 1146877,
+  "new_weight7_primitive_dimension": 0,
+  "all_weight_finite_generation_proved": false,
+  "fresh_combined_regression_tests": 40,
+  "fresh_combined_regression_passed": true,
+  "regression_log": "weight7_regression.log"
+}
